@@ -1,0 +1,339 @@
+[
+ {
+  "id": "109_bulldoze",
+  "sheet_label": "#109 bulldoze: 40",
+  "title": "#109  \"Pick up the bottles and throw them into the dustbin\"",
+  "boxes": {
+   "in_bin": {
+    "prefix": "bottle",
+    "min": [
+     -0.865,
+     -0.335,
+     0.0
+    ],
+    "max": [
+     -0.395,
+     0.136,
+     0.725
+    ]
+   }
+  },
+  "segments": [
+   {
+    "runs": [
+     "rp_bulldoze"
+    ],
+    "cam": "bin",
+    "select": {
+     "why": [
+      "action"
+     ],
+     "key": "action",
+     "from": 1,
+     "to": 700
+    },
+    "top": "6x speed, action {action}/700: bottles inside the bin (by pose) {in_bin}, picked up 0"
+   }
+  ],
+  "end_card": {
+   "lines": [
+    "Shipped evaluator: 40 / 100",
+    "3 of 4 bottles in the bin, none picked up"
+   ],
+   "sub": [
+    "No bottle rose more than 3.9 mm above its resting height.",
+    "Evaluator v2 also scores 40: no check reads grasps or contacts."
+   ],
+   "seconds": 2.0
+  }
+ },
+ {
+  "id": "111_button_counts_twice",
+  "sheet_label": "#111 press counted twice",
+  "title": "#111  One firm press, counted twice",
+  "segments": [
+   {
+    "runs": [
+     "rp_buttons"
+    ],
+    "cam": "btn",
+    "select": {
+     "why": [
+      "step"
+     ],
+     "case": "press_button1_30mm",
+     "key": "case_phys",
+     "from": 250,
+     "to": 440
+    },
+    "repeat": 2,
+    "top": "finger commanded 20 mm past button1's stop (real time)",
+    "bottom": "button1 presses counted: {count1}"
+   },
+   {
+    "runs": [
+     "rp_buttons"
+    ],
+    "cam": "btn",
+    "select": {
+     "why": [
+      "step"
+     ],
+     "case": "press_button1_30mm",
+     "key": "case_phys",
+     "from": 450,
+     "to": 500
+    },
+    "top": "10x slow: the held button snaps between its stops",
+    "bottom": "button1 presses counted: {count1}   (one push)"
+   },
+   {
+    "runs": [
+     "rp_buttons"
+    ],
+    "cam": "btn",
+    "select": {
+     "why": [
+      "step"
+     ],
+     "case": "press_button0_30mm",
+     "key": "case_phys",
+     "from": 430,
+     "to": 461
+    },
+    "top": "10x slow: button0, card asks for 1 press",
+    "bottom": "button0 presses counted: {count0}   (one push; 2 fails the episode)"
+   },
+   {
+    "runs": [
+     "rp_press40"
+    ],
+    "cam": "btn",
+    "select": {
+     "why": [
+      "step"
+     ],
+     "case": "press_button0_40mm_hold3s",
+     "key": "case_phys",
+     "from": 240,
+     "to": 450
+    },
+    "repeat": 2,
+    "top": "commanded 40 mm deep, 30 mm past the stop: the finger goes through the button (10x slow)",
+    "bottom": "button0 presses counted: {count0}"
+   }
+  ],
+  "end_card": {
+   "lines": [
+    "20 mm past the stop: one push, counted twice; the episode fails",
+    "30 mm past the stop: the finger passes through the button"
+   ],
+   "sub": [
+    "Counts are RoboDojo's own press counters (button0's card asks for 1).",
+    "Fingertip ends 25.8 to 26.1 mm below the pressed cap (5.1 log, #111)."
+   ],
+   "seconds": 2.4
+  }
+ },
+ {
+  "id": "51_peek_scores_100",
+  "sheet_label": "#51 peek = 100",
+  "title": "#51  cover_blocks: a memory task you can pass by peeking",
+  "segments": [
+   {
+    "runs": [
+     "rp_peek"
+    ],
+    "cam": "cb",
+    "select": {
+     "why": [
+      "action"
+     ],
+     "key": "action",
+     "from": 1,
+     "to": 279
+    },
+    "top": "covers red, green and blue with cups (10x speed)"
+   },
+   {
+    "runs": [
+     "rp_peek"
+    ],
+    "cam": "cb",
+    "select": {
+     "why": [
+      "action"
+     ],
+     "key": "action",
+     "from": 280,
+     "to": 340
+    },
+    "repeat": 2,
+    "top": "then lifts the cup over BLUE first; the instruction says red, green, blue (real time)"
+   },
+   {
+    "runs": [
+     "rp_peek"
+    ],
+    "cam": "cb",
+    "select": {
+     "why": [
+      "action"
+     ],
+     "key": "action",
+     "from": 341,
+     "to": 622
+    },
+    "top": "puts it back, then uncovers red, green, blue (10x speed)"
+   }
+  ],
+  "end_card": {
+   "lines": [
+    "Shipped evaluator: success, 100 / 100"
+   ],
+   "sub": [
+    "The out-of-order peek costs nothing.",
+    "Evaluator v2 (option A, #101) fails it at the peek: score 5."
+   ],
+   "seconds": 1.8
+  }
+ },
+ {
+  "id": "d3_cube_hops",
+  "sheet_label": "D3 cube hops",
+  "title": "Declared friction switched on: the cube hops",
+  "segments": [
+   {
+    "runs": [
+     "c62_d3_ship",
+     "c62_d3_order"
+    ],
+    "cam": "cube",
+    "select": {
+     "why": [
+      "step"
+     ],
+     "key": "phys",
+     "from": 3,
+     "to": 63
+    },
+    "repeat": 2,
+    "labels": [
+     "shipped (0.5/0.5)*: tilt {tilt_red} deg",
+     "declared (0.6/1.5): tilt {tilt_red} deg, up {dz_red} mm"
+    ],
+    "top": "cube pushed at 0.5 m/s, 20x slow motion, step {step} after the push ({t_ms} ms)",
+    "crop": [
+     160,
+     0,
+     800,
+     540
+    ],
+    "step_offset": 3
+   }
+  ],
+  "end_card": {
+   "lines": [
+    "Declared friction: slides 7.3 mm and tips 8.7 deg;",
+    "no normal force on steps 2-8 (it vaults an edge)"
+   ],
+   "sub": [
+    "Shipped: the declared friction never reaches PhysX (0.5/0.5 runs); slides 24.8 mm.",
+    "* This 6.2 run tilts the shipped cube 2.9 deg where 5.1 tilts it 1.8 deg (flagged).",
+    "Caveat (#113): the 0.35 kg cube carries the inertia of a 15.6 g cube."
+   ],
+   "seconds": 3.0
+  }
+ },
+ {
+  "id": "112_coin_in_wall",
+  "sheet_label": "#112 coin stuck in wall",
+  "title": "#112  CCD off: a coin sticks in the piggy bank's 0.7 mm wall",
+  "segments": [
+   {
+    "runs": [
+     "rp_coin"
+    ],
+    "cam": "pig",
+    "select": {
+     "why": [
+      "step"
+     ],
+     "case": "coin_side_2ms_ph0",
+     "key": "case_phys",
+     "from": 0,
+     "to": 60
+    },
+    "top": "coin thrown at 2 m/s at the bank's side (10x slow)",
+    "bottom": "{t_ms} ms"
+   },
+   {
+    "runs": [
+     "rp_coin"
+    ],
+    "cam": "pig",
+    "select": {
+     "why": [
+      "step"
+     ],
+     "case": "coin_side_2ms_ph0",
+     "key": "case_phys",
+     "from": 61,
+     "to": 503
+    },
+    "repeat": 4,
+    "top": "it stays in the wall, half through (real time)",
+    "bottom": "{t_ms} ms"
+   },
+   {
+    "runs": [
+     "rp_coin"
+    ],
+    "cam": "pig",
+    "select": {
+     "why": [
+      "step"
+     ],
+     "case": "coin_side_4ms_ph2",
+     "key": "case_phys",
+     "from": 3,
+     "to": 49
+    },
+    "repeat": 2,
+    "top": "at 4 m/s it passes through into the bank (10x slow)",
+    "bottom": "{t_ms} ms"
+   }
+  ],
+  "end_card": {
+   "lines": [
+    "At 2-4 m/s the coin moves 8-16 mm per 4 ms step,",
+    "more than the wall it should hit"
+   ],
+   "sub": [
+    "No task moves a coin this fast; RoboDojo's deposit check reads 0 for stuck coins."
+   ],
+   "seconds": 1.8
+  }
+ },
+ {
+  "id": "a1_quits_scores_100",
+  "sheet_label": "A1 quit = 100",
+  "title": "A policy that returns before acting is scored a success",
+  "still": true,
+  "segments": [
+   {
+    "runs": [
+     "c62_a1"
+    ],
+    "cam": "wide",
+    "select": {
+     "why": [
+      "episode_end"
+     ]
+    },
+    "top": "put_bottles_into_dustbin layout 0: 0 actions, the robot never moves; scored 100 (harness run)",
+    "bottom": "Same policy via RoboDojo's main.py: _result.json success_rate 1.0, score 100.0 (5 of 5 layouts)"
+   }
+  ]
+ }
+]

@@ -1,0 +1,26 @@
+# sim.log excerpts of the two failed 3-episode attempts (grep of the Della run folders; line numbers are sim.log's)
+## t3_shipped_v1 (Vulkan ICD refused under Della's anaconda3 module; then cuRobo stub constructed)
+68:2026-11-13T20:44:58Z [17,222ms] [Error] [omni.rtx] VkResult: ERROR_INCOMPATIBLE_DRIVER
+69:2026-11-13T20:44:58Z [17,223ms] [Error] [omni.rtx] vkCreateInstance failed. Vulkan 1.1 is not supported, or your driver requires an update.
+71:2026-11-13T20:45:01Z [20,001ms] [Error] [omni.rtx] VkResult: ERROR_INCOMPATIBLE_DRIVER
+72:2026-11-13T20:45:01Z [20,001ms] [Error] [omni.rtx] vkCreateInstance failed. Vulkan 1.1 is not supported, or your driver requires an update.
+95:2026-11-13T20:45:03Z [22,516ms] [Error] [omni.kit.renderer.plugin] GPU Foundation is not initialized!
+412:[g5] SimulationApp started in 47.33 s
+413:[g5] running main.py --task_name put_bottles_into_dustbin --env_cfg_type arx_x5 --num_envs 1 --enable_cameras --kit_args --enable isaacsim.replicator.behavior --enable isaacsim.sensors.camera --device_id 0 --policy_n
+416:Traceback (most recent call last):
+446:    raise RuntimeError("cuRobo is not installed in the G5 harness")
+447:RuntimeError: cuRobo is not installed in the G5 harness
+## t3_shipped_v1_r2 (no ffmpeg in the 6.2 container; every episode raised before the first policy call; first 12 matching lines, then the count of 'FileNotFoundError: ' lines)
+75:| Driver Version: 615.71.10     | Graphics API: Vulkan
+437:[g5] SimulationApp started in 190.3 s
+438:[g5] running main.py --task_name put_bottles_into_dustbin --env_cfg_type arx_x5 --num_envs 1 --enable_cameras --kit_args --enable isaacsim.replicator.behavior --enable isaacsim.sensors.camera --device_id 0 --policy_name InternW0_delta --port 34535 --protoc
+467:[Eval] unhandled exception during reset/run_eval: FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'
+496:FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'
+497:Success nums: 0, Fail nums: 0, Unstable nums: 0
+560:[Eval] unhandled exception during reset/run_eval: FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'
+589:FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'
+590:Success nums: 0, Fail nums: 0, Unstable nums: 0
+621:[Eval] unhandled exception during reset/run_eval: FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'
+650:FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'
+651:Success nums: 0, Fail nums: 0, Unstable nums: 0
+44

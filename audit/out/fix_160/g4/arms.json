@@ -1,0 +1,5 @@
+{"reference": "shipped", "arms": {
+ "shipped": {"fixes": "none (PR #153's runs, audit/out/g4/put_bottles_into_dustbin/raw)", "tags": ["g4_shipped_s0_l10to16", "g4_shipped_s1_l10to16", "g4_shipped_s2_l10to15"]},
+ "corrected": {"fixes": "all seven, before #160's fix (audit/out/g4/put_bottles_into_dustbin/raw)", "tags": ["g4_corr7_s0_l10to16", "g4_corr7_s1_l10to16", "g4_corr7_s2_l10to15"]},
+ "corrected_fix160": {"fixes": "all seven with #160's fix, drive limited at the motor's peak (now scenario gripper_drive_limit: motor_peak)", "tags": ["f160_b4_g4_s0", "f160_b4_g4_s1", "f160_b4_g4_s2"]},
+ "corrected_trip": {"fixes": "all seven with #160's fix as decided (option 2): drive limited at the SDK's trip, 323.54 N on joint7 (the corrected default)", "tags": ["f160_b6_g4_s0", "f160_b6_g4_s1", "f160_b6_g4_s2"]}}}

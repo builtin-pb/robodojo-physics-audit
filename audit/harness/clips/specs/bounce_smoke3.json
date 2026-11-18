@@ -1,0 +1,108 @@
+{
+ "purpose": "S16 bounce camera smoke 3 (6.2 replay of b51_bounce): the first production render (e40, 40 degrees down) drew the bottle over the table top from the rise to the peak, so it read as bouncing onto the table; three lower views from x = -2.15 m (23 to 26 degrees down, 18 mm lens) whose line of sight through the peak passes beyond the table's far edge and which still see 10 to 13 cm down into the bin at the impact; the same eight states",
+ "cameras": [
+  {
+   "name": "l135",
+   "eye": [
+    -2.15,
+    0.33,
+    1.35
+   ],
+   "target": [
+    -0.5,
+    0.33,
+    0.66
+   ],
+   "focal_mm": 18,
+   "res": [
+    960,
+    540
+   ]
+  },
+  {
+   "name": "l140",
+   "eye": [
+    -2.15,
+    0.33,
+    1.4
+   ],
+   "target": [
+    -0.5,
+    0.33,
+    0.66
+   ],
+   "focal_mm": 18,
+   "res": [
+    960,
+    540
+   ]
+  },
+  {
+   "name": "l145",
+   "eye": [
+    -2.15,
+    0.33,
+    1.45
+   ],
+   "target": [
+    -0.5,
+    0.33,
+    0.64
+   ],
+   "focal_mm": 18,
+   "res": [
+    960,
+    540
+   ]
+  }
+ ],
+ "windows": [
+  {
+   "case": null,
+   "unit": "action",
+   "from": 140,
+   "to": 146,
+   "stride": 6
+  },
+  {
+   "case": null,
+   "unit": "step",
+   "from": 1530,
+   "to": 1546,
+   "stride": 8
+  },
+  {
+   "case": null,
+   "unit": "action",
+   "from": 163,
+   "to": 163,
+   "stride": 1
+  },
+  {
+   "case": null,
+   "unit": "action",
+   "from": 174,
+   "to": 174,
+   "stride": 1
+  },
+  {
+   "case": null,
+   "unit": "action",
+   "from": 200,
+   "to": 200,
+   "stride": 1
+  }
+ ],
+ "mode_sweep": [
+  {
+   "name": "pt8",
+   "carb": {
+    "/rtx/rendermode": "PathTracing",
+    "/rtx/pathtracing/spp": 8,
+    "/rtx/pathtracing/totalSpp": 8,
+    "/rtx/pathtracing/optixDenoiser/enabled": true
+   },
+   "warmup": 4
+  }
+ ]
+}

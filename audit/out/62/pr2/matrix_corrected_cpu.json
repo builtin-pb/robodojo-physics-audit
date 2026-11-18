@@ -1,0 +1,1863 @@
+{
+  "task": "put_bottles_into_dustbin",
+  "preset": "corrected",
+  "in_place_reset": false,
+  "tag_prefix": "rev96_mat_cpu",
+  "expected_repo_head": "7f950f53790a1b229a3c35d1be1610c2c42a01d4",
+  "expected_repo_diff_sha1": "c3e571253b3b4e72d56d4777fe24c9c89585c81b",
+  "cells": {
+    "cpu__num_envs_1": {
+      "tag": "rev96_mat_cpu_corrected_cpu_n1_reopen",
+      "wall_seconds": 117.22,
+      "contact_evidence_status": "verified_cpu_contact_report",
+      "reset0_error": null,
+      "reset1_error": null,
+      "cross_env_identical_reset0": true,
+      "cross_env_identical_reset1": true,
+      "reset0_equals_reset1": true,
+      "reset0_env0": {
+        "objects": {
+          "bottle0": {
+            "type": "rigid",
+            "colliders_enabled": 1,
+            "approximations": [
+              "convexHull"
+            ],
+            "aabb": [
+              0.053,
+              0.053,
+              0.185
+            ],
+            "engine_mass_kg": [
+              0.02
+            ],
+            "engine_shape_materials": [
+              [
+                0.25809,
+                0.21779,
+                0.25
+              ]
+            ],
+            "usd_material_purposes": [
+              "physics"
+            ]
+          },
+          "bottle1": {
+            "type": "rigid",
+            "colliders_enabled": 1,
+            "approximations": [
+              "convexDecomposition"
+            ],
+            "aabb": [
+              0.055,
+              0.055,
+              0.19
+            ],
+            "engine_mass_kg": [
+              0.07
+            ],
+            "engine_shape_materials": [
+              [
+                0.25809,
+                0.21779,
+                0.25
+              ]
+            ],
+            "usd_material_purposes": [
+              "physics"
+            ]
+          },
+          "bottle2": {
+            "type": "rigid",
+            "colliders_enabled": 1,
+            "approximations": [
+              "convexHull"
+            ],
+            "aabb": [
+              0.064,
+              0.064,
+              0.204
+            ],
+            "engine_mass_kg": [
+              0.024
+            ],
+            "engine_shape_materials": [
+              [
+                0.25809,
+                0.21779,
+                0.25
+              ]
+            ],
+            "usd_material_purposes": [
+              "physics"
+            ]
+          },
+          "bottle3": {
+            "type": "rigid",
+            "colliders_enabled": 1,
+            "approximations": [
+              "convexHull"
+            ],
+            "aabb": [
+              0.07,
+              0.07,
+              0.24
+            ],
+            "engine_mass_kg": [
+              0.22
+            ],
+            "engine_shape_materials": [
+              [
+                0.34,
+                0.28,
+                0.2
+              ]
+            ],
+            "usd_material_purposes": [
+              "physics"
+            ]
+          },
+          "camera_stand": {
+            "type": "geometry",
+            "colliders_enabled": 12,
+            "approximations": [
+              "none"
+            ],
+            "aabb": [
+              0.3,
+              0.58751,
+              0.109666
+            ],
+            "engine_mass_kg": null,
+            "engine_shape_materials": null,
+            "usd_material_purposes": [
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics"
+            ]
+          },
+          "dustbin": {
+            "type": "geometry",
+            "colliders_enabled": 1,
+            "approximations": [
+              "convexDecomposition"
+            ],
+            "aabb": [
+              0.47,
+              0.47,
+              0.65
+            ],
+            "engine_mass_kg": null,
+            "engine_shape_materials": null,
+            "usd_material_purposes": [
+              "physics"
+            ]
+          }
+        },
+        "fixtures": {
+          "Ground": {
+            "colliders_enabled": 1,
+            "approximations": [
+              "none"
+            ],
+            "usd_purposes": [
+              "physics"
+            ]
+          },
+          "Room": {
+            "colliders_enabled": 50,
+            "approximations": [
+              "boundingCube",
+              "convexDecomposition",
+              "none"
+            ],
+            "usd_purposes": [
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics"
+            ]
+          },
+          "Table": {
+            "colliders_enabled": 1,
+            "approximations": [
+              "none"
+            ],
+            "usd_purposes": [
+              "physics"
+            ]
+          }
+        },
+        "robots": {
+          "robot0": {
+            "masses_kg": [
+              0.43995,
+              0.066982,
+              1.0795,
+              0.54534,
+              0.11714,
+              0.63488,
+              0.44089,
+              0.0001,
+              0.064798,
+              0.064798,
+              0.0001
+            ],
+            "coms_finite": true,
+            "inertias_positive": true,
+            "dof_stiffnesses": [
+              4400.0,
+              4400.0,
+              4400.0,
+              4400.0,
+              4400.0,
+              4400.0,
+              2300.0,
+              2300.0
+            ],
+            "dof_dampings": [
+              40.0,
+              40.0,
+              40.0,
+              40.0,
+              40.0,
+              40.0,
+              100.0,
+              100.0
+            ],
+            "dof_max_forces": [
+              100.0,
+              100.0,
+              100.0,
+              100.0,
+              100.0,
+              100.0,
+              100.0,
+              100.0
+            ],
+            "dof_max_velocities": [
+              5.0,
+              5.0,
+              5.0,
+              5.0,
+              5.0,
+              5.0,
+              1000.0,
+              1000.0
+            ],
+            "unique_shape_materials": [
+              [
+                0.25645,
+                0.24897,
+                0.1
+              ],
+              [
+                0.36069,
+                0.30639,
+                0.4
+              ],
+              [
+                0.60069,
+                0.36619,
+                0.5
+              ]
+            ],
+            "per_finger_engine_materials": {
+              "link7": [
+                [
+                  0.25645,
+                  0.24897,
+                  0.1
+                ]
+              ],
+              "link8": [
+                [
+                  0.25645,
+                  0.24897,
+                  0.1
+                ]
+              ]
+            }
+          },
+          "robot1": {
+            "masses_kg": [
+              0.43995,
+              0.066982,
+              1.0795,
+              0.54534,
+              0.11714,
+              0.63488,
+              0.44089,
+              0.0001,
+              0.064798,
+              0.064798,
+              0.0001
+            ],
+            "coms_finite": true,
+            "inertias_positive": true,
+            "dof_stiffnesses": [
+              4400.0,
+              4400.0,
+              4400.0,
+              4400.0,
+              4400.0,
+              4400.0,
+              2300.0,
+              2300.0
+            ],
+            "dof_dampings": [
+              40.0,
+              40.0,
+              40.0,
+              40.0,
+              40.0,
+              40.0,
+              100.0,
+              100.0
+            ],
+            "dof_max_forces": [
+              100.0,
+              100.0,
+              100.0,
+              100.0,
+              100.0,
+              100.0,
+              100.0,
+              100.0
+            ],
+            "dof_max_velocities": [
+              5.0,
+              5.0,
+              5.0,
+              5.0,
+              5.0,
+              5.0,
+              1000.0,
+              1000.0
+            ],
+            "unique_shape_materials": [
+              [
+                0.25645,
+                0.24897,
+                0.1
+              ],
+              [
+                0.36069,
+                0.30639,
+                0.4
+              ],
+              [
+                0.60069,
+                0.36619,
+                0.5
+              ]
+            ],
+            "per_finger_engine_materials": {
+              "link7": [
+                [
+                  0.25645,
+                  0.24897,
+                  0.1
+                ]
+              ],
+              "link8": [
+                [
+                  0.25645,
+                  0.24897,
+                  0.1
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "reset1_env0": {
+        "objects": {
+          "bottle0": {
+            "type": "rigid",
+            "colliders_enabled": 1,
+            "approximations": [
+              "convexHull"
+            ],
+            "aabb": [
+              0.053,
+              0.053,
+              0.185
+            ],
+            "engine_mass_kg": [
+              0.02
+            ],
+            "engine_shape_materials": [
+              [
+                0.25809,
+                0.21779,
+                0.25
+              ]
+            ],
+            "usd_material_purposes": [
+              "physics"
+            ]
+          },
+          "bottle1": {
+            "type": "rigid",
+            "colliders_enabled": 1,
+            "approximations": [
+              "convexDecomposition"
+            ],
+            "aabb": [
+              0.055,
+              0.055,
+              0.19
+            ],
+            "engine_mass_kg": [
+              0.07
+            ],
+            "engine_shape_materials": [
+              [
+                0.25809,
+                0.21779,
+                0.25
+              ]
+            ],
+            "usd_material_purposes": [
+              "physics"
+            ]
+          },
+          "bottle2": {
+            "type": "rigid",
+            "colliders_enabled": 1,
+            "approximations": [
+              "convexHull"
+            ],
+            "aabb": [
+              0.064,
+              0.064,
+              0.204
+            ],
+            "engine_mass_kg": [
+              0.024
+            ],
+            "engine_shape_materials": [
+              [
+                0.25809,
+                0.21779,
+                0.25
+              ]
+            ],
+            "usd_material_purposes": [
+              "physics"
+            ]
+          },
+          "bottle3": {
+            "type": "rigid",
+            "colliders_enabled": 1,
+            "approximations": [
+              "convexHull"
+            ],
+            "aabb": [
+              0.07,
+              0.07,
+              0.24
+            ],
+            "engine_mass_kg": [
+              0.22
+            ],
+            "engine_shape_materials": [
+              [
+                0.34,
+                0.28,
+                0.2
+              ]
+            ],
+            "usd_material_purposes": [
+              "physics"
+            ]
+          },
+          "camera_stand": {
+            "type": "geometry",
+            "colliders_enabled": 12,
+            "approximations": [
+              "none"
+            ],
+            "aabb": [
+              0.3,
+              0.58751,
+              0.109666
+            ],
+            "engine_mass_kg": null,
+            "engine_shape_materials": null,
+            "usd_material_purposes": [
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics"
+            ]
+          },
+          "dustbin": {
+            "type": "geometry",
+            "colliders_enabled": 1,
+            "approximations": [
+              "convexDecomposition"
+            ],
+            "aabb": [
+              0.47,
+              0.47,
+              0.65
+            ],
+            "engine_mass_kg": null,
+            "engine_shape_materials": null,
+            "usd_material_purposes": [
+              "physics"
+            ]
+          }
+        },
+        "fixtures": {
+          "Ground": {
+            "colliders_enabled": 1,
+            "approximations": [
+              "none"
+            ],
+            "usd_purposes": [
+              "physics"
+            ]
+          },
+          "Room": {
+            "colliders_enabled": 50,
+            "approximations": [
+              "boundingCube",
+              "convexDecomposition",
+              "none"
+            ],
+            "usd_purposes": [
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics"
+            ]
+          },
+          "Table": {
+            "colliders_enabled": 1,
+            "approximations": [
+              "none"
+            ],
+            "usd_purposes": [
+              "physics"
+            ]
+          }
+        },
+        "robots": {
+          "robot0": {
+            "masses_kg": [
+              0.43995,
+              0.066982,
+              1.0795,
+              0.54534,
+              0.11714,
+              0.63488,
+              0.44089,
+              0.0001,
+              0.064798,
+              0.064798,
+              0.0001
+            ],
+            "coms_finite": true,
+            "inertias_positive": true,
+            "dof_stiffnesses": [
+              4400.0,
+              4400.0,
+              4400.0,
+              4400.0,
+              4400.0,
+              4400.0,
+              2300.0,
+              2300.0
+            ],
+            "dof_dampings": [
+              40.0,
+              40.0,
+              40.0,
+              40.0,
+              40.0,
+              40.0,
+              100.0,
+              100.0
+            ],
+            "dof_max_forces": [
+              100.0,
+              100.0,
+              100.0,
+              100.0,
+              100.0,
+              100.0,
+              100.0,
+              100.0
+            ],
+            "dof_max_velocities": [
+              5.0,
+              5.0,
+              5.0,
+              5.0,
+              5.0,
+              5.0,
+              1000.0,
+              1000.0
+            ],
+            "unique_shape_materials": [
+              [
+                0.25645,
+                0.24897,
+                0.1
+              ],
+              [
+                0.36069,
+                0.30639,
+                0.4
+              ],
+              [
+                0.60069,
+                0.36619,
+                0.5
+              ]
+            ],
+            "per_finger_engine_materials": {
+              "link7": [
+                [
+                  0.25645,
+                  0.24897,
+                  0.1
+                ]
+              ],
+              "link8": [
+                [
+                  0.25645,
+                  0.24897,
+                  0.1
+                ]
+              ]
+            }
+          },
+          "robot1": {
+            "masses_kg": [
+              0.43995,
+              0.066982,
+              1.0795,
+              0.54534,
+              0.11714,
+              0.63488,
+              0.44089,
+              0.0001,
+              0.064798,
+              0.064798,
+              0.0001
+            ],
+            "coms_finite": true,
+            "inertias_positive": true,
+            "dof_stiffnesses": [
+              4400.0,
+              4400.0,
+              4400.0,
+              4400.0,
+              4400.0,
+              4400.0,
+              2300.0,
+              2300.0
+            ],
+            "dof_dampings": [
+              40.0,
+              40.0,
+              40.0,
+              40.0,
+              40.0,
+              40.0,
+              100.0,
+              100.0
+            ],
+            "dof_max_forces": [
+              100.0,
+              100.0,
+              100.0,
+              100.0,
+              100.0,
+              100.0,
+              100.0,
+              100.0
+            ],
+            "dof_max_velocities": [
+              5.0,
+              5.0,
+              5.0,
+              5.0,
+              5.0,
+              5.0,
+              1000.0,
+              1000.0
+            ],
+            "unique_shape_materials": [
+              [
+                0.25645,
+                0.24897,
+                0.1
+              ],
+              [
+                0.36069,
+                0.30639,
+                0.4
+              ],
+              [
+                0.60069,
+                0.36619,
+                0.5
+              ]
+            ],
+            "per_finger_engine_materials": {
+              "link7": [
+                [
+                  0.25645,
+                  0.24897,
+                  0.1
+                ]
+              ],
+              "link8": [
+                [
+                  0.25645,
+                  0.24897,
+                  0.1
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "reset0_slide": {
+        "label": "bottle2",
+        "axis_tilt_deg": 0.9,
+        "slide_along_axis_mm": 61.46,
+        "slide_x_mm": 61.46,
+        "lateral_mm": 2.82,
+        "vertical_mm": 0.08,
+        "rotation_deg": 5.602,
+        "max_tilt_deg": 6.031,
+        "final_tilt_deg": 5.602,
+        "final_yaw_deg": 5.431,
+        "other_rigid_contact_points": 0,
+        "predicted_mm": {
+          "pair_0.5": 25.5,
+          "pair_5000": "about 2 (one step)"
+        },
+        "resolved_pair": {
+          "eff_mu_kinetic": 0.20338,
+          "combine_mode": "average",
+          "coulomb_mm": 62.65,
+          "discrete_250hz_mm": 61.65,
+          "pair_key": "pet_plastic__table_laminate",
+          "nominal_mu_kinetic": 0.2,
+          "realised_mu_kinetic": 0.20338
+        }
+      },
+      "reset1_slide": {
+        "label": "bottle2",
+        "axis_tilt_deg": 0.9,
+        "slide_along_axis_mm": 61.46,
+        "slide_x_mm": 61.46,
+        "lateral_mm": 2.82,
+        "vertical_mm": 0.08,
+        "rotation_deg": 5.602,
+        "max_tilt_deg": 6.031,
+        "final_tilt_deg": 5.602,
+        "final_yaw_deg": 5.431,
+        "other_rigid_contact_points": 0,
+        "predicted_mm": {
+          "pair_0.5": 25.5,
+          "pair_5000": "about 2 (one step)"
+        },
+        "resolved_pair": {
+          "eff_mu_kinetic": 0.20338,
+          "combine_mode": "average",
+          "coulomb_mm": 62.65,
+          "discrete_250hz_mm": 61.65,
+          "pair_key": "pet_plastic__table_laminate",
+          "nominal_mu_kinetic": 0.2,
+          "realised_mu_kinetic": 0.20338
+        }
+      },
+      "reset0_contact_materials": [
+        [
+          "/World/envs/env_X/rigid/bottle/bottle_22_N/physics_material",
+          "/World/envs/env_X/Table/material_0122/material_0122_0_N/physics_material"
+        ],
+        [
+          "/World/envs/env_X/rigid/bottle/bottle_25_N/physics_material",
+          "/World/envs/env_X/Table/material_0122/material_0122_0_N/physics_material"
+        ],
+        [
+          "/World/envs/env_X/rigid/bottle/bottle_41_N/physics_material",
+          "/World/envs/env_X/Table/material_0122/material_0122_0_N/physics_material"
+        ],
+        [
+          "/World/envs/env_X/rigid/bottle/bottle_60_N/physics_material",
+          "/World/envs/env_X/Table/material_0122/material_0122_0_N/physics_material"
+        ]
+      ],
+      "reset1_contact_materials": [
+        [
+          "/World/envs/env_X/rigid/bottle/bottle_22_N/physics_material",
+          "/World/envs/env_X/Table/material_0122/material_0122_0_N/physics_material"
+        ],
+        [
+          "/World/envs/env_X/rigid/bottle/bottle_25_N/physics_material",
+          "/World/envs/env_X/Table/material_0122/material_0122_0_N/physics_material"
+        ],
+        [
+          "/World/envs/env_X/rigid/bottle/bottle_41_N/physics_material",
+          "/World/envs/env_X/Table/material_0122/material_0122_0_N/physics_material"
+        ],
+        [
+          "/World/envs/env_X/rigid/bottle/bottle_60_N/physics_material",
+          "/World/envs/env_X/Table/material_0122/material_0122_0_N/physics_material"
+        ]
+      ]
+    },
+    "cpu__num_envs_4": {
+      "tag": "rev96_mat_cpu_corrected_cpu_n4_reopen",
+      "wall_seconds": 43.72,
+      "contact_evidence_status": "verified_cpu_contact_report",
+      "reset0_error": null,
+      "reset1_error": null,
+      "cross_env_identical_reset0": true,
+      "cross_env_identical_reset1": true,
+      "reset0_equals_reset1": true,
+      "reset0_env0": {
+        "objects": {
+          "bottle0": {
+            "type": "rigid",
+            "colliders_enabled": 1,
+            "approximations": [
+              "convexHull"
+            ],
+            "aabb": [
+              0.053,
+              0.053,
+              0.185
+            ],
+            "engine_mass_kg": [
+              0.02
+            ],
+            "engine_shape_materials": [
+              [
+                0.25809,
+                0.21779,
+                0.25
+              ]
+            ],
+            "usd_material_purposes": [
+              "physics"
+            ]
+          },
+          "bottle1": {
+            "type": "rigid",
+            "colliders_enabled": 1,
+            "approximations": [
+              "convexDecomposition"
+            ],
+            "aabb": [
+              0.055,
+              0.055,
+              0.19
+            ],
+            "engine_mass_kg": [
+              0.07
+            ],
+            "engine_shape_materials": [
+              [
+                0.25809,
+                0.21779,
+                0.25
+              ]
+            ],
+            "usd_material_purposes": [
+              "physics"
+            ]
+          },
+          "bottle2": {
+            "type": "rigid",
+            "colliders_enabled": 1,
+            "approximations": [
+              "convexHull"
+            ],
+            "aabb": [
+              0.064,
+              0.064,
+              0.204
+            ],
+            "engine_mass_kg": [
+              0.024
+            ],
+            "engine_shape_materials": [
+              [
+                0.25809,
+                0.21779,
+                0.25
+              ]
+            ],
+            "usd_material_purposes": [
+              "physics"
+            ]
+          },
+          "bottle3": {
+            "type": "rigid",
+            "colliders_enabled": 1,
+            "approximations": [
+              "convexHull"
+            ],
+            "aabb": [
+              0.07,
+              0.07,
+              0.24
+            ],
+            "engine_mass_kg": [
+              0.22
+            ],
+            "engine_shape_materials": [
+              [
+                0.34,
+                0.28,
+                0.2
+              ]
+            ],
+            "usd_material_purposes": [
+              "physics"
+            ]
+          },
+          "camera_stand": {
+            "type": "geometry",
+            "colliders_enabled": 12,
+            "approximations": [
+              "none"
+            ],
+            "aabb": [
+              0.3,
+              0.58751,
+              0.109666
+            ],
+            "engine_mass_kg": null,
+            "engine_shape_materials": null,
+            "usd_material_purposes": [
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics"
+            ]
+          },
+          "dustbin": {
+            "type": "geometry",
+            "colliders_enabled": 1,
+            "approximations": [
+              "convexDecomposition"
+            ],
+            "aabb": [
+              0.47,
+              0.47,
+              0.65
+            ],
+            "engine_mass_kg": null,
+            "engine_shape_materials": null,
+            "usd_material_purposes": [
+              "physics"
+            ]
+          }
+        },
+        "fixtures": {
+          "Ground": {
+            "colliders_enabled": 1,
+            "approximations": [
+              "none"
+            ],
+            "usd_purposes": [
+              "physics"
+            ]
+          },
+          "Room": {
+            "colliders_enabled": 50,
+            "approximations": [
+              "boundingCube",
+              "convexDecomposition",
+              "none"
+            ],
+            "usd_purposes": [
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics"
+            ]
+          },
+          "Table": {
+            "colliders_enabled": 1,
+            "approximations": [
+              "none"
+            ],
+            "usd_purposes": [
+              "physics"
+            ]
+          }
+        },
+        "robots": {
+          "robot0": {
+            "masses_kg": [
+              0.43995,
+              0.066982,
+              1.0795,
+              0.54534,
+              0.11714,
+              0.63488,
+              0.44089,
+              0.0001,
+              0.064798,
+              0.064798,
+              0.0001
+            ],
+            "coms_finite": true,
+            "inertias_positive": true,
+            "dof_stiffnesses": [
+              4400.0,
+              4400.0,
+              4400.0,
+              4400.0,
+              4400.0,
+              4400.0,
+              2300.0,
+              2300.0
+            ],
+            "dof_dampings": [
+              40.0,
+              40.0,
+              40.0,
+              40.0,
+              40.0,
+              40.0,
+              100.0,
+              100.0
+            ],
+            "dof_max_forces": [
+              100.0,
+              100.0,
+              100.0,
+              100.0,
+              100.0,
+              100.0,
+              100.0,
+              100.0
+            ],
+            "dof_max_velocities": [
+              5.0,
+              5.0,
+              5.0,
+              5.0,
+              5.0,
+              5.0,
+              1000.0,
+              1000.0
+            ],
+            "unique_shape_materials": [
+              [
+                0.25645,
+                0.24897,
+                0.1
+              ],
+              [
+                0.36069,
+                0.30639,
+                0.4
+              ],
+              [
+                0.60069,
+                0.36619,
+                0.5
+              ]
+            ],
+            "per_finger_engine_materials": {
+              "link7": [
+                [
+                  0.25645,
+                  0.24897,
+                  0.1
+                ]
+              ],
+              "link8": [
+                [
+                  0.25645,
+                  0.24897,
+                  0.1
+                ]
+              ]
+            }
+          },
+          "robot1": {
+            "masses_kg": [
+              0.43995,
+              0.066982,
+              1.0795,
+              0.54534,
+              0.11714,
+              0.63488,
+              0.44089,
+              0.0001,
+              0.064798,
+              0.064798,
+              0.0001
+            ],
+            "coms_finite": true,
+            "inertias_positive": true,
+            "dof_stiffnesses": [
+              4400.0,
+              4400.0,
+              4400.0,
+              4400.0,
+              4400.0,
+              4400.0,
+              2300.0,
+              2300.0
+            ],
+            "dof_dampings": [
+              40.0,
+              40.0,
+              40.0,
+              40.0,
+              40.0,
+              40.0,
+              100.0,
+              100.0
+            ],
+            "dof_max_forces": [
+              100.0,
+              100.0,
+              100.0,
+              100.0,
+              100.0,
+              100.0,
+              100.0,
+              100.0
+            ],
+            "dof_max_velocities": [
+              5.0,
+              5.0,
+              5.0,
+              5.0,
+              5.0,
+              5.0,
+              1000.0,
+              1000.0
+            ],
+            "unique_shape_materials": [
+              [
+                0.25645,
+                0.24897,
+                0.1
+              ],
+              [
+                0.36069,
+                0.30639,
+                0.4
+              ],
+              [
+                0.60069,
+                0.36619,
+                0.5
+              ]
+            ],
+            "per_finger_engine_materials": {
+              "link7": [
+                [
+                  0.25645,
+                  0.24897,
+                  0.1
+                ]
+              ],
+              "link8": [
+                [
+                  0.25645,
+                  0.24897,
+                  0.1
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "reset1_env0": {
+        "objects": {
+          "bottle0": {
+            "type": "rigid",
+            "colliders_enabled": 1,
+            "approximations": [
+              "convexHull"
+            ],
+            "aabb": [
+              0.053,
+              0.053,
+              0.185
+            ],
+            "engine_mass_kg": [
+              0.02
+            ],
+            "engine_shape_materials": [
+              [
+                0.25809,
+                0.21779,
+                0.25
+              ]
+            ],
+            "usd_material_purposes": [
+              "physics"
+            ]
+          },
+          "bottle1": {
+            "type": "rigid",
+            "colliders_enabled": 1,
+            "approximations": [
+              "convexDecomposition"
+            ],
+            "aabb": [
+              0.055,
+              0.055,
+              0.19
+            ],
+            "engine_mass_kg": [
+              0.07
+            ],
+            "engine_shape_materials": [
+              [
+                0.25809,
+                0.21779,
+                0.25
+              ]
+            ],
+            "usd_material_purposes": [
+              "physics"
+            ]
+          },
+          "bottle2": {
+            "type": "rigid",
+            "colliders_enabled": 1,
+            "approximations": [
+              "convexHull"
+            ],
+            "aabb": [
+              0.064,
+              0.064,
+              0.204
+            ],
+            "engine_mass_kg": [
+              0.024
+            ],
+            "engine_shape_materials": [
+              [
+                0.25809,
+                0.21779,
+                0.25
+              ]
+            ],
+            "usd_material_purposes": [
+              "physics"
+            ]
+          },
+          "bottle3": {
+            "type": "rigid",
+            "colliders_enabled": 1,
+            "approximations": [
+              "convexHull"
+            ],
+            "aabb": [
+              0.07,
+              0.07,
+              0.24
+            ],
+            "engine_mass_kg": [
+              0.22
+            ],
+            "engine_shape_materials": [
+              [
+                0.34,
+                0.28,
+                0.2
+              ]
+            ],
+            "usd_material_purposes": [
+              "physics"
+            ]
+          },
+          "camera_stand": {
+            "type": "geometry",
+            "colliders_enabled": 12,
+            "approximations": [
+              "none"
+            ],
+            "aabb": [
+              0.3,
+              0.58751,
+              0.109666
+            ],
+            "engine_mass_kg": null,
+            "engine_shape_materials": null,
+            "usd_material_purposes": [
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics"
+            ]
+          },
+          "dustbin": {
+            "type": "geometry",
+            "colliders_enabled": 1,
+            "approximations": [
+              "convexDecomposition"
+            ],
+            "aabb": [
+              0.47,
+              0.47,
+              0.65
+            ],
+            "engine_mass_kg": null,
+            "engine_shape_materials": null,
+            "usd_material_purposes": [
+              "physics"
+            ]
+          }
+        },
+        "fixtures": {
+          "Ground": {
+            "colliders_enabled": 1,
+            "approximations": [
+              "none"
+            ],
+            "usd_purposes": [
+              "physics"
+            ]
+          },
+          "Room": {
+            "colliders_enabled": 50,
+            "approximations": [
+              "boundingCube",
+              "convexDecomposition",
+              "none"
+            ],
+            "usd_purposes": [
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics",
+              "physics"
+            ]
+          },
+          "Table": {
+            "colliders_enabled": 1,
+            "approximations": [
+              "none"
+            ],
+            "usd_purposes": [
+              "physics"
+            ]
+          }
+        },
+        "robots": {
+          "robot0": {
+            "masses_kg": [
+              0.43995,
+              0.066982,
+              1.0795,
+              0.54534,
+              0.11714,
+              0.63488,
+              0.44089,
+              0.0001,
+              0.064798,
+              0.064798,
+              0.0001
+            ],
+            "coms_finite": true,
+            "inertias_positive": true,
+            "dof_stiffnesses": [
+              4400.0,
+              4400.0,
+              4400.0,
+              4400.0,
+              4400.0,
+              4400.0,
+              2300.0,
+              2300.0
+            ],
+            "dof_dampings": [
+              40.0,
+              40.0,
+              40.0,
+              40.0,
+              40.0,
+              40.0,
+              100.0,
+              100.0
+            ],
+            "dof_max_forces": [
+              100.0,
+              100.0,
+              100.0,
+              100.0,
+              100.0,
+              100.0,
+              100.0,
+              100.0
+            ],
+            "dof_max_velocities": [
+              5.0,
+              5.0,
+              5.0,
+              5.0,
+              5.0,
+              5.0,
+              1000.0,
+              1000.0
+            ],
+            "unique_shape_materials": [
+              [
+                0.25645,
+                0.24897,
+                0.1
+              ],
+              [
+                0.36069,
+                0.30639,
+                0.4
+              ],
+              [
+                0.60069,
+                0.36619,
+                0.5
+              ]
+            ],
+            "per_finger_engine_materials": {
+              "link7": [
+                [
+                  0.25645,
+                  0.24897,
+                  0.1
+                ]
+              ],
+              "link8": [
+                [
+                  0.25645,
+                  0.24897,
+                  0.1
+                ]
+              ]
+            }
+          },
+          "robot1": {
+            "masses_kg": [
+              0.43995,
+              0.066982,
+              1.0795,
+              0.54534,
+              0.11714,
+              0.63488,
+              0.44089,
+              0.0001,
+              0.064798,
+              0.064798,
+              0.0001
+            ],
+            "coms_finite": true,
+            "inertias_positive": true,
+            "dof_stiffnesses": [
+              4400.0,
+              4400.0,
+              4400.0,
+              4400.0,
+              4400.0,
+              4400.0,
+              2300.0,
+              2300.0
+            ],
+            "dof_dampings": [
+              40.0,
+              40.0,
+              40.0,
+              40.0,
+              40.0,
+              40.0,
+              100.0,
+              100.0
+            ],
+            "dof_max_forces": [
+              100.0,
+              100.0,
+              100.0,
+              100.0,
+              100.0,
+              100.0,
+              100.0,
+              100.0
+            ],
+            "dof_max_velocities": [
+              5.0,
+              5.0,
+              5.0,
+              5.0,
+              5.0,
+              5.0,
+              1000.0,
+              1000.0
+            ],
+            "unique_shape_materials": [
+              [
+                0.25645,
+                0.24897,
+                0.1
+              ],
+              [
+                0.36069,
+                0.30639,
+                0.4
+              ],
+              [
+                0.60069,
+                0.36619,
+                0.5
+              ]
+            ],
+            "per_finger_engine_materials": {
+              "link7": [
+                [
+                  0.25645,
+                  0.24897,
+                  0.1
+                ]
+              ],
+              "link8": [
+                [
+                  0.25645,
+                  0.24897,
+                  0.1
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "reset0_slide": {
+        "label": "bottle2",
+        "axis_tilt_deg": 0.9,
+        "slide_along_axis_mm": 61.56,
+        "slide_x_mm": 61.56,
+        "lateral_mm": 1.67,
+        "vertical_mm": -0.0,
+        "rotation_deg": 5.006,
+        "max_tilt_deg": 5.006,
+        "final_tilt_deg": 5.006,
+        "final_yaw_deg": 5.006,
+        "other_rigid_contact_points": 0,
+        "predicted_mm": {
+          "pair_0.5": 25.5,
+          "pair_5000": "about 2 (one step)"
+        },
+        "resolved_pair": {
+          "eff_mu_kinetic": 0.20338,
+          "combine_mode": "average",
+          "coulomb_mm": 62.65,
+          "discrete_250hz_mm": 61.65,
+          "pair_key": "pet_plastic__table_laminate",
+          "nominal_mu_kinetic": 0.2,
+          "realised_mu_kinetic": 0.20338
+        }
+      },
+      "reset1_slide": {
+        "label": "bottle2",
+        "axis_tilt_deg": 0.9,
+        "slide_along_axis_mm": 61.56,
+        "slide_x_mm": 61.56,
+        "lateral_mm": 1.67,
+        "vertical_mm": -0.0,
+        "rotation_deg": 5.006,
+        "max_tilt_deg": 5.006,
+        "final_tilt_deg": 5.006,
+        "final_yaw_deg": 5.006,
+        "other_rigid_contact_points": 0,
+        "predicted_mm": {
+          "pair_0.5": 25.5,
+          "pair_5000": "about 2 (one step)"
+        },
+        "resolved_pair": {
+          "eff_mu_kinetic": 0.20338,
+          "combine_mode": "average",
+          "coulomb_mm": 62.65,
+          "discrete_250hz_mm": 61.65,
+          "pair_key": "pet_plastic__table_laminate",
+          "nominal_mu_kinetic": 0.2,
+          "realised_mu_kinetic": 0.20338
+        }
+      },
+      "reset0_contact_materials": [
+        [
+          "/World/envs/env_X/rigid/bottle/bottle_22_N/physics_material",
+          "/World/envs/env_X/Table/material_0122/material_0122_0_N/physics_material"
+        ],
+        [
+          "/World/envs/env_X/rigid/bottle/bottle_25_N/physics_material",
+          "/World/envs/env_X/Table/material_0122/material_0122_0_N/physics_material"
+        ],
+        [
+          "/World/envs/env_X/rigid/bottle/bottle_41_N/physics_material",
+          "/World/envs/env_X/Table/material_0122/material_0122_0_N/physics_material"
+        ],
+        [
+          "/World/envs/env_X/rigid/bottle/bottle_60_N/physics_material",
+          "/World/envs/env_X/Table/material_0122/material_0122_0_N/physics_material"
+        ]
+      ],
+      "reset1_contact_materials": [
+        [
+          "/World/envs/env_X/rigid/bottle/bottle_22_N/physics_material",
+          "/World/envs/env_X/Table/material_0122/material_0122_0_N/physics_material"
+        ],
+        [
+          "/World/envs/env_X/rigid/bottle/bottle_25_N/physics_material",
+          "/World/envs/env_X/Table/material_0122/material_0122_0_N/physics_material"
+        ],
+        [
+          "/World/envs/env_X/rigid/bottle/bottle_41_N/physics_material",
+          "/World/envs/env_X/Table/material_0122/material_0122_0_N/physics_material"
+        ],
+        [
+          "/World/envs/env_X/rigid/bottle/bottle_60_N/physics_material",
+          "/World/envs/env_X/Table/material_0122/material_0122_0_N/physics_material"
+        ]
+      ]
+    }
+  },
+  "comparisons": {
+    "vs_cpu__num_envs_1": {
+      "cpu__num_envs_1": "IDENTICAL",
+      "cpu__num_envs_4": "IDENTICAL"
+    },
+    "vs_cpu_num_envs_1": {
+      "cpu__num_envs_1": "IDENTICAL",
+      "cpu__num_envs_4": "IDENTICAL"
+    }
+  },
+  "matrix_passed": true,
+  "matrix_failures": [],
+  "total_wall_seconds": 160.95
+}

@@ -1,0 +1,1 @@
+g4_pmin010_s2_l10to15|--task put_bottles_into_dustbin --policy script_bottles --evaluator v2 --fast_log --contact_processing_off --bottle_trace --seed 2 --layouts 10,11,12,13,14,15 --physics_preset corrected --physics_params /scratch/<user>/isaac/work/g4bottles/robodojo-physics/docs/params --physics_scenario_opt_in bottles_primary_empty --pad_friction 0.1,0.075,min

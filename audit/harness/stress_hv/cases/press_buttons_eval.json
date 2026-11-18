@@ -1,0 +1,62 @@
+[
+ {
+  "name": "settle_buttons_noaction_button0",
+  "kind": "joint_probe",
+  "target": "button0",
+  "steps": 250
+ },
+ {
+  "name": "settle_buttons_noaction_button1",
+  "kind": "joint_probe",
+  "target": "button1",
+  "steps": 250
+ },
+ {
+  "name": "settle_buttons_noaction_button2",
+  "kind": "joint_probe",
+  "target": "button2",
+  "steps": 250
+ },
+ {
+  "name": "press_button1_10mm",
+  "kind": "robot_press",
+  "target": "button1",
+  "point_offset": [
+   0,
+   0,
+   0.036
+  ],
+  "depth": 0.01,
+  "restore": false,
+  "log_eval": true,
+  "log_root": true
+ },
+ {
+  "name": "press_button1_30mm",
+  "kind": "robot_press",
+  "target": "button1",
+  "point_offset": [
+   0,
+   0,
+   0.036
+  ],
+  "depth": 0.03,
+  "restore": false,
+  "log_eval": true,
+  "log_root": true
+ },
+ {
+  "name": "press_button0_30mm",
+  "kind": "robot_press",
+  "target": "button0",
+  "point_offset": [
+   0,
+   0,
+   0.036
+  ],
+  "depth": 0.03,
+  "restore": false,
+  "log_eval": true,
+  "log_root": true
+ }
+]

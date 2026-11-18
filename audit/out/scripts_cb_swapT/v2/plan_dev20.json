@@ -1,0 +1,30 @@
+[
+ {
+  "name": "st2_dev_ship_s0",
+  "seed": 0,
+  "layouts": "0-9",
+  "procs": 2,
+  "args": "--task swap_T --policy script_swap_T_v2 --evaluator v2 --contact_log --log_poses --physics_preset shipped"
+ },
+ {
+  "name": "st2_dev_corr_s0",
+  "seed": 0,
+  "layouts": "0-9",
+  "procs": 3,
+  "args": "--task swap_T --policy script_swap_T_v2 --evaluator v2 --contact_log --log_poses --physics_preset corrected --physics_params $W/wt-sT2/docs/params --physics_scenario_opt_in swap_T_primary"
+ },
+ {
+  "name": "st2_dev_ship_s1",
+  "seed": 1,
+  "layouts": "0-9",
+  "procs": 2,
+  "args": "--task swap_T --policy script_swap_T_v2 --evaluator v2 --contact_log --log_poses --physics_preset shipped"
+ },
+ {
+  "name": "st2_dev_corr_s1",
+  "seed": 1,
+  "layouts": "0-9",
+  "procs": 3,
+  "args": "--task swap_T --policy script_swap_T_v2 --evaluator v2 --contact_log --log_poses --physics_preset corrected --physics_params $W/wt-sT2/docs/params --physics_scenario_opt_in swap_T_primary"
+ }
+]

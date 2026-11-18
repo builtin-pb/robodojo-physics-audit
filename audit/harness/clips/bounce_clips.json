@@ -1,0 +1,67 @@
+[
+ {
+  "id": "bounce",
+  "sheet_label": "S16 bounce (#164)",
+  "style": {
+   "font": 22,
+   "alpha": 120
+  },
+  "segments": [
+   {
+    "runs": [
+     "rp_bounce"
+    ],
+    "cam": "side",
+    "select": {
+     "why": [
+      "action"
+     ],
+     "key": "action",
+     "from": 132,
+     "to": 145
+    },
+    "bottom": "Dropped into the bin, the bottle flies back out, higher than it was let go"
+   },
+   {
+    "runs": [
+     "rp_bounce"
+    ],
+    "cam": "side",
+    "select": {
+     "why": [
+      "step"
+     ],
+     "key": "phys",
+     "from": 1451,
+     "to": 1649
+    },
+    "bottom": "Dropped into the bin, the bottle flies back out, higher than it was let go (slowed 5x)"
+   },
+   {
+    "runs": [
+     "rp_bounce"
+    ],
+    "cam": "side",
+    "select": {
+     "why": [
+      "action"
+     ],
+     "key": "action",
+     "from": 166,
+     "to": 212
+    },
+    "bottom": "Dropped into the bin, the bottle flies back out, higher than it was let go"
+   }
+  ],
+  "hold_last_s": 0.6,
+  "max_s": 8.0,
+  "webp": {
+   "width": 960,
+   "every": 2,
+   "quality": 70
+  },
+  "poster": {
+   "frame": 98
+  }
+ }
+]

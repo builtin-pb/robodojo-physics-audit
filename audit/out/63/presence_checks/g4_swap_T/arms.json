@@ -1,0 +1,29 @@
+{
+  "task": "swap_T",
+  "reference": "v2b",
+  "arms": {
+    "shipped": {
+      "what": "RoboDojo as released (script_swap_T_v2)",
+      "batches": [
+        "g4st2_sT_ship"
+      ]
+    },
+    "v2b": {
+      "what": "fully corrected, global equal-weight map v2b (script_swap_T_v2)",
+      "batches": [
+        "g4st2_sT_corr"
+      ]
+    },
+    "v2_presence": {
+      "what": "fully corrected, global presence-weighted map v2_presence (script_swap_T_v2)",
+      "batches": [
+        "pw_g4_sT_s2"
+      ]
+    }
+  },
+  "detail_arms": [
+    "shipped",
+    "v2b",
+    "v2_presence"
+  ]
+}

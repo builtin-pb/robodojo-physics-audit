@@ -1,0 +1,30 @@
+test_a_new_ledger_carries_nothing (audit.tools.test_bottles_lift_v2.LedgerTests.test_a_new_ledger_carries_nothing) ... ok
+test_bottles_and_envs_are_independent (audit.tools.test_bottles_lift_v2.LedgerTests.test_bottles_and_envs_are_independent) ... ok
+test_entry_is_judged_at_entry_not_at_the_end (audit.tools.test_bottles_lift_v2.LedgerTests.test_entry_is_judged_at_entry_not_at_the_end) ... ok
+test_hold_without_lift_is_not_a_pickup (audit.tools.test_bottles_lift_v2.LedgerTests.test_hold_without_lift_is_not_a_pickup) ... ok
+test_leaving_and_reentering_after_a_real_pickup_counts (audit.tools.test_bottles_lift_v2.LedgerTests.test_leaving_and_reentering_after_a_real_pickup_counts) ... ok
+test_lift_must_strictly_exceed_clearance (audit.tools.test_bottles_lift_v2.LedgerTests.test_lift_must_strictly_exceed_clearance) ... ok
+test_lift_without_hold_is_not_a_pickup (audit.tools.test_bottles_lift_v2.LedgerTests.test_lift_without_hold_is_not_a_pickup) ... ok
+test_unknown_bottle_is_not_credited (audit.tools.test_bottles_lift_v2.LedgerTests.test_unknown_bottle_is_not_credited) ... ok
+test_gap_from_finger_joints (audit.tools.test_bottles_lift_v2.PredicateTests.test_gap_from_finger_joints) ... ok
+test_lying_bottle_box_follows_orientation (audit.tools.test_bottles_lift_v2.PredicateTests.test_lying_bottle_box_follows_orientation) ... ok
+test_pad_centre_follows_link6_axis (audit.tools.test_bottles_lift_v2.PredicateTests.test_pad_centre_follows_link6_axis) ... ok
+test_pad_inside_box_and_gap_clampable (audit.tools.test_bottles_lift_v2.PredicateTests.test_pad_inside_box_and_gap_clampable) ... ok
+test_threshold_is_the_thickest_bottle_model (audit.tools.test_bottles_lift_v2.PredicateTests.test_threshold_is_the_thickest_bottle_model) ... ok
+test_bulldozed_in_counts_under_v1_not_v2 (audit.tools.test_bottles_lift_v2.TaskIntegrationTests.test_bulldozed_in_counts_under_v1_not_v2) ... ok
+test_bulldozing_with_closed_fingers_beside_the_bottle_still_fails (audit.tools.test_bottles_lift_v2.TaskIntegrationTests.test_bulldozing_with_closed_fingers_beside_the_bottle_still_fails) ... ok
+test_carried_and_dropped_counts_in_both (audit.tools.test_bottles_lift_v2.TaskIntegrationTests.test_carried_and_dropped_counts_in_both) ... ok
+test_gripper_with_open_jaws_beside_the_lifted_bottle_is_not_a_hold (audit.tools.test_bottles_lift_v2.TaskIntegrationTests.test_gripper_with_open_jaws_beside_the_lifted_bottle_is_not_a_hold) ... ok
+test_handover_counts (audit.tools.test_bottles_lift_v2.TaskIntegrationTests.test_handover_counts) ... ok
+test_in_place_reset_starts_a_clean_ledger (audit.tools.test_bottles_lift_v2.TaskIntegrationTests.test_in_place_reset_starts_a_clean_ledger) ... ok
+test_knocked_in_by_another_bottle_does_not_count (audit.tools.test_bottles_lift_v2.TaskIntegrationTests.test_knocked_in_by_another_bottle_does_not_count) ... ok
+test_lift_without_a_gripper_is_not_a_pickup (audit.tools.test_bottles_lift_v2.TaskIntegrationTests.test_lift_without_a_gripper_is_not_a_pickup) ... ok
+test_pickup_then_bulldoze_after_leaving_and_reentering (audit.tools.test_bottles_lift_v2.TaskIntegrationTests.test_pickup_then_bulldoze_after_leaving_and_reentering) ... ok
+test_score_ladder_v2_four_picked_bottles (audit.tools.test_bottles_lift_v2.TaskIntegrationTests.test_score_ladder_v2_four_picked_bottles) ... ok
+test_v1_lists_unchanged_and_no_tracker (audit.tools.test_bottles_lift_v2.TaskIntegrationTests.test_v1_lists_unchanged_and_no_tracker) ... ok
+test_v2_registers_tracker_query_and_picked_checks (audit.tools.test_bottles_lift_v2.TaskIntegrationTests.test_v2_registers_tracker_query_and_picked_checks) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 1.563s
+
+OK

@@ -1,0 +1,6 @@
+job 17467544 node della-l09g3 start 2026-11-13T10:45:10-05:00 commit 462853a
+name, driver_version, memory.total [MiB], memory.used [MiB], memory.free [MiB]
+NVIDIA A100-SXM4-80GB, 615.71.10, 81920 MiB, 0 MiB, 81182 MiB
+apptainer version 1.5.5-1.sdl9
+job end 2026-11-13T10:45:57-05:00
+fasten_screws	0	42.6	0	3911

@@ -1,0 +1,8 @@
+[
+  {"cell_name": "foff_0p001_dt1_it64", "layout": 5, "overrides": {"dt_s": 0.001, "pos_iters": 64, "friction_offset_threshold_m": 0.001, "target_label": "bottle3", "fast_settle": true}},
+  {"cell_name": "fcorr_0p001_dt1_it64", "layout": 5, "overrides": {"dt_s": 0.001, "pos_iters": 64, "friction_correlation_distance_m": 0.001, "target_label": "bottle3", "fast_settle": true}},
+  {"cell_name": "fcorr_0p100_dt1_it64", "layout": 5, "overrides": {"dt_s": 0.001, "pos_iters": 64, "friction_correlation_distance_m": 0.100, "target_label": "bottle3", "fast_settle": true}},
+  {"cell_name": "nostab_dt1_it64", "layout": 5, "overrides": {"dt_s": 0.001, "pos_iters": 64, "enable_stabilization": false, "target_label": "bottle3", "fast_settle": true}},
+  {"cell_name": "nostab_aabb_dt4_it64", "layout": 5, "overrides": {"dt_s": 0.004, "pos_iters": 64, "enable_stabilization": false, "query_aabb": true, "target_label": "bottle3", "fast_settle": true}},
+  {"cell_name": "vhacd_00060_dt4_it64", "layout": 1, "overrides": {"dt_s": 0.004, "pos_iters": 64, "query_aabb": true, "target_label": "bottle0", "fast_settle": true}}
+]

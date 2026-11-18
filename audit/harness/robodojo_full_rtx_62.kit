@@ -1,0 +1,102 @@
+# Full rendering Kit experience for Issue #40 Route 2 and #58 verification on Isaac Sim 6.2.0.1.
+# Inherits isaacsim.exp.base (the base app isaaclab.python.kit adapts from: omni.hydra.rtx,
+# omni.replicator.core, omni.syntheticdata, isaacsim.sensors.camera/rtx, isaacsim.replicator.behavior,
+# omni.kit.viewport.*, omni.isaac.ml_archive, etc.) plus omni.physx.bundle and Isaac Lab's settings.
+
+[package]
+title = "Isaac Lab Python Full Rendering (6.2.0.1)"
+description = "Full rendering kit matching isaaclab.python.kit on Isaac Sim 6.2.0.1"
+version = "6.2.0"
+keywords = ["experience", "app", "usd"]
+
+[dependencies]
+"isaacsim.exp.base" = {}
+"isaacsim.core.prims" = {}
+"omni.physx" = {}
+"omni.physx.bundle" = {}
+"omni.physx.tensors" = {}
+"omni.physics.stageupdate" = {}
+"omni.kit.viewport.rtx" = {}
+"omni.warp.core" = {}
+
+[settings]
+renderer.activeGpu = 1
+renderer.multiGpu.enabled = false
+renderer.multiGpu.maxGpuCount = 1
+exts."omni.kit.registry.nucleus".registries = []
+exts."omni.kit.material.library".ui_show_list = [
+    "OmniPBR",
+    "OmniGlass",
+    "OmniSurface",
+    "USD Preview Surface",
+]
+exts."omni.kit.renderer.core".present.enabled = false
+exts."omni.renderer.core".present.enabled = false
+exts."omni.usd".locking.onClose = false
+renderer.asyncInit = false
+renderer.gpuEnumeration.glInterop.enabled = false
+rendergraph.mgpu.backend = "copyQueue"
+rtx-transient.dlssg.enabled = false
+rtx.hydra.mdlMaterialWarmup = true
+rtx.spg.enabled = true
+omni.replicator.asyncRendering = false
+foundation.verifyOsVersion.enabled = false
+metricsAssembler.changeListenerEnabled = false
+isaac.startup.ros_bridge_extension = ""
+
+# Zero-delay camera settings (same as env/camera_manager/capture/render_sync.py)
+app.updateOrder.checkForHydraRenderComplete = 1000
+app.renderer.waitIdle = true
+app.hydraEngine.waitIdle = true
+app.audio.enabled = false
+
+physics.visualizationDisplayJoints = false
+physics.visualizationSimulationOutput = false
+physics.resetOnStop = true
+persistent.app.primCreation.DefaultXformOpOrder = "xformOp:translate, xformOp:orient, xformOp:scale"
+persistent.app.primCreation.DefaultXformOpType = "Scale, Orient, Translate"
+
+[settings.app]
+name = "Isaac-Sim"
+version = "6.2.0"
+content.emptyStageOnStart = true
+fastShutdown = true
+file.ignoreUnsavedOnExit = true
+gatherRenderResults = true
+hangDetector.enabled = false
+player.useFixedTimeStepping = true
+settings.fabricDefaultStageFrameHistoryCount = 3
+settings.persistent = false
+vulkan = true
+asyncRendering = false
+asyncRenderingLowLatency = false
+runLoops.main.rateLimitFrequency = 120
+
+[settings.app.exts.folders]
+"++" = ["/isaac-sim/apps", "/isaac-sim/exts", "/isaac-sim/extscache", "/isaac-sim/extsUser", "/isaac-sim/extsDeprecated", "/isaac-sim/extsPhysics"]
+
+[settings.app.python]
+interceptSysStdOutput = false
+logSysStdOutput = false
+
+[settings.app.renderer]
+resolution.height = 720
+resolution.width = 1280
+skipWhileMinimized = false
+sleepMsOnFocus = 0
+sleepMsOutOfFocus = 0
+
+[settings.physics]
+autoPopupSimulationOutputWindow = false
+updateToUsd = false
+updateVelocitiesToUsd = false
+updateParticlesToUsd = false
+updateForceSensorsToUsd = false
+outputVelocitiesLocalSpace = false
+useFastCache = false
+visualizationDisplayJoints = false
+fabricUpdateTransformations = true
+fabricUpdateVelocities = false
+fabricUpdateForceSensors = false
+fabricUpdateJointStates = false
+fabricUseGPUInterop = true

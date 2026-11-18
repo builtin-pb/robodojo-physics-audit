@@ -1,0 +1,36 @@
+{
+ "purpose": "A1: put_bottles_into_dustbin layout 0, zero policy (returns before acting), shipped evaluator; wide view",
+ "cameras": [
+  {
+   "name": "wide",
+   "eye": [
+    0.0,
+    0.95,
+    1.5
+   ],
+   "target": [
+    0.0,
+    -0.2,
+    0.78
+   ],
+   "focal_mm": 14,
+   "res": [
+    960,
+    540
+   ]
+  }
+ ],
+ "windows": [],
+ "mode_sweep": [
+  {
+   "name": "pt",
+   "carb": {
+    "/rtx/rendermode": "PathTracing",
+    "/rtx/pathtracing/spp": 16,
+    "/rtx/pathtracing/totalSpp": 64,
+    "/rtx/pathtracing/optixDenoiser/enabled": true
+   },
+   "warmup": 6
+  }
+ ]
+}

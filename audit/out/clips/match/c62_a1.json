@@ -1,0 +1,49 @@
+{
+ "check": "zero",
+ "result_62": "runs/c62_a1/result.json",
+ "reference_51": "runs/r51_zero/result.json",
+ "isaac_sim_62": [
+  "6.2.0",
+  "rc.15",
+  "6"
+ ],
+ "repo_head_62": "d61d8b392c88f5a9f8273d28c853ae39a5740fe2",
+ "repo_head_51": "3155bf6ec2f5d56e44a766173d1afae4a69808f0",
+ "outcome_62": {
+  "episode_score_pct": 100.0,
+  "success": true,
+  "take_action_cnt": 0,
+  "eval_result": {
+   "success_rate": 1.0,
+   "eval_time": 1,
+   "score": 100.0,
+   "details": {
+    "0": {
+     "layout_id": 0,
+     "success": true,
+     "score": 1.0
+    }
+   }
+  }
+ },
+ "outcome_51": {
+  "episode_score_pct": 100.0,
+  "success": true,
+  "take_action_cnt": 0,
+  "eval_result": {
+   "success_rate": 1.0,
+   "eval_time": 1,
+   "score": 100.0,
+   "details": {
+    "0": {
+     "layout_id": 0,
+     "success": true,
+     "score": 1.0
+    }
+   }
+  }
+ },
+ "settled_max_abs_diff_any_float": 0.0,
+ "n_floats": 28,
+ "match": true
+}

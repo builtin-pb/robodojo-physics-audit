@@ -1,0 +1,3 @@
+{"reference": "nominal", "arms": {
+ "nominal": {"fixes": "corrected default at v2_presence, evaluator v2 (#186; audit/out/63/presence_checks/raw/pw_g4_bt_*)", "tags": ["pw_g4_bt_s0_q00_vis2", "pw_g4_bt_s0_q01_vis2", "pw_g4_bt_s0_q02_vis2", "pw_g4_bt_s0_q03_vis2", "pw_g4_bt_s1_q00_vis2", "pw_g4_bt_s1_q01_vis2", "pw_g4_bt_s1_q02_vis2", "pw_g4_bt_s1_q03_vis2", "pw_g4_bt_s2_q00_vis2", "pw_g4_bt_s2_q01_vis2", "pw_g4_bt_s2_q02_vis2"]},
+ "corner": {"fixes": "corrected at the gripper's adverse corner (efficiency 0.7, armature 14.062 kg per finger; table 0a26327e), evaluator v2.2", "tags": ["gc_g4_s0", "gc_g4_s1", "gc_g4_s2"]}}}

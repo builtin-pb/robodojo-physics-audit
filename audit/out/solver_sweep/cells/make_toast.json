@@ -1,0 +1,47 @@
+[
+ {
+  "cell_name": "make_toast__shipped",
+  "layout": 0,
+  "overrides": {}
+ },
+ {
+  "cell_name": "make_toast__dt2",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.002
+  }
+ },
+ {
+  "cell_name": "make_toast__dt1",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.001
+  }
+ },
+ {
+  "cell_name": "make_toast__iters4x",
+  "layout": 0,
+  "overrides": {
+   "min_pos_iters": 128
+  }
+ },
+ {
+  "cell_name": "make_toast__stab_off",
+  "layout": 0,
+  "overrides": {
+   "enable_stabilization": false
+  }
+ },
+ {
+  "cell_name": "make_toast__cpu",
+  "layout": 0,
+  "overrides": {
+   "gpu_dynamics": false
+  }
+ },
+ {
+  "cell_name": "make_toast__shipped_repeat",
+  "layout": 0,
+  "overrides": {}
+ }
+]

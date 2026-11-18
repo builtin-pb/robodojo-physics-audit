@@ -1,0 +1,126 @@
+[
+ {
+  "cell_name": "stack_bowls__shipped",
+  "layout": 0,
+  "overrides": {
+   "slide_target": {
+    "label": "bowl0",
+    "inst": "bowl_10_1",
+    "labelled": true,
+    "stem": "bowl_10",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     1.0,
+     -2e-05
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "stack_bowls__dt2",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.002,
+   "slide_target": {
+    "label": "bowl0",
+    "inst": "bowl_10_1",
+    "labelled": true,
+    "stem": "bowl_10",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     1.0,
+     -2e-05
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "stack_bowls__dt1",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.001,
+   "slide_target": {
+    "label": "bowl0",
+    "inst": "bowl_10_1",
+    "labelled": true,
+    "stem": "bowl_10",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     1.0,
+     -2e-05
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "stack_bowls__iters4x",
+  "layout": 0,
+  "overrides": {
+   "min_pos_iters": 64,
+   "slide_target": {
+    "label": "bowl0",
+    "inst": "bowl_10_1",
+    "labelled": true,
+    "stem": "bowl_10",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     1.0,
+     -2e-05
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "stack_bowls__stab_off",
+  "layout": 0,
+  "overrides": {
+   "enable_stabilization": false,
+   "slide_target": {
+    "label": "bowl0",
+    "inst": "bowl_10_1",
+    "labelled": true,
+    "stem": "bowl_10",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     1.0,
+     -2e-05
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "stack_bowls__cpu",
+  "layout": 0,
+  "overrides": {
+   "gpu_dynamics": false,
+   "slide_target": {
+    "label": "bowl0",
+    "inst": "bowl_10_1",
+    "labelled": true,
+    "stem": "bowl_10",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     1.0,
+     -2e-05
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "stack_bowls__shipped_repeat",
+  "layout": 0,
+  "overrides": {
+   "slide_target": {
+    "label": "bowl0",
+    "inst": "bowl_10_1",
+    "labelled": true,
+    "stem": "bowl_10",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     1.0,
+     -2e-05
+    ]
+   }
+  }
+ }
+]

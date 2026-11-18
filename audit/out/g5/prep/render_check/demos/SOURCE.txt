@@ -1,0 +1,8 @@
+Frames as stored (JPEG bytes, unchanged) in RoboDojo's Hugging Face demonstrations at revision 1127bda94f172d757386945af3eb3a6754d1a4e6,
+data/RoboDojo/put_bottles_into_dustbin/arx_x5/data/episode_000000{0..4}.hdf5, vision/<cam>/colors at frame indices round(f*(n-1)) for f in 0, 0.25, 0.5.
+File name: demo<episode>_f<frame>_<cam>.jpg. SHA-256 of the HDF5 files:
+e110130f137a2006939c47707ceee2cac489658436823555cce560545d2086b0  episode_0000000.hdf5
+64623ad21b145c19da6b7657b08e1358bc9c088732b2eec7a13dd04e1cf14cf0  episode_0000001.hdf5
+8dded63372edca6a52fbb78951d4b42bc876d9ff265cdc9f5efa0e5ae86b5cb9  episode_0000002.hdf5
+8c89bf273d457c49dab920408acec9de53a08075e5fdf09957c8ae0126f7a7f6  episode_0000003.hdf5
+3c8ed407b5ad94f3d140347c1f667de05785c2c8f3732e35ad5009d9929e577f  episode_0000004.hdf5

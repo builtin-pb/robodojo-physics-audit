@@ -1,0 +1,88 @@
+test_coin_between_bottom_and_centre (audit.tools.test_predicates.BboxInBbox.test_coin_between_bottom_and_centre)
+deposit_coin: the coin's projected box inside the piggy bank's, between its `bottom` and `center` points. ... ok
+test_button_resting_below_095_never_counts (audit.tools.test_predicates.Counters.test_button_resting_below_095_never_counts)
+A button whose spring rests at ratio 0.93 is never armed: no press is ever counted. ... ok
+test_protocol_counts (audit.tools.test_predicates.Counters.test_protocol_counts)
+Control: cards 1 and 1, the check's protocol (red0, blue, red1, blue), full releases: success. ... ok
+test_quick_second_press_is_not_counted (audit.tools.test_predicates.Counters.test_quick_second_press_is_not_counted)
+Must pass: card 2 on red0, the button pressed twice, released to 0.92 between presses (a real spring ... ok
+test_mouth_down_over_cube (audit.tools.test_predicates.Cover.test_mouth_down_over_cube)
+Must pass: the cup mouth-down over the cube. ... ok
+test_on_bottom_window (audit.tools.test_predicates.Cover.test_on_bottom_window)
+is_A_on_B_bottom(bottle, dustbin, 0, 0.4) in put_bottles_into_dustbin: "on the bottom" admits the bottle's ... ok
+test_slack_is_three_centimetres (audit.tools.test_predicates.Cover.test_slack_is_three_centimetres)
+The rejection starts when the covered object is 30 mm tall: the cup resting on a 31 mm block fails. ... ok
+test_upright_cup_on_cube (audit.tools.test_predicates.Cover.test_upright_cup_on_cube)
+Must fail: an upright cup resting on the 25 mm cube (#52, verified in sim). Shipped: covered. ... ok
+test_alarm_on_drawer_anywhere (audit.tools.test_predicates.HeightOnly.test_alarm_on_drawer_anywhere)
+organize_table "place the alarm clock on the drawer": is_A_up_B(alarm, drawer, 0.225, 0.3) and no xy check. ... ok
+test_depth_has_no_xy (audit.tools.test_predicates.HeightOnly.test_depth_has_no_xy)
+is_A_depth_in_B(A, B, t): B's bbox top minus A's bbox bottom > t. A nut 1 m from its bolt passes. ... ok
+test_point_above_point_has_no_xy (audit.tools.test_predicates.HeightOnly.test_point_above_point_has_no_xy)
+is_A_point_above_B_point_by_z_range: z difference only (the xylophone, egg holder, toaster and checkerboard ... ok
+test_stacking_toy_depth_is_vacuous (audit.tools.test_predicates.HeightOnly.test_stacking_toy_depth_is_vacuous)
+play_stacking_toy: is_A_depth_in_B(block, stack_base, 0.005) with a 6.53 cm tall base: any piece whose bottom ... ok
+test_tube_standing_beside_the_rack (audit.tools.test_predicates.HeightOnly.test_tube_standing_beside_the_rack)
+insert_tubes: depth 4.5 cm against a 6 cm rack, and is_A_in_B for xy. A tube standing on the table passes ... ok
+test_N_A_in_B_counts_exactly (audit.tools.test_predicates.InB.test_N_A_in_B_counts_exactly)
+make_toast: exactly two slices left on the shelf (is_N_A_in_B N=2) using the same footprint test. ... ok
+test_all_and_none_are_vacuous_on_empty_lists (audit.tools.test_predicates.InB.test_all_and_none_are_vacuous_on_empty_lists)
+is_all_A_in_B, is_not_any_A_in_B, is_all_A_in_B_support_circle and is_all_pointA_in_B_functional_bbox ... ok
+test_inside_counts (audit.tools.test_predicates.InB.test_inside_counts)
+Must pass: a ball resting on the vase's floor at its axis. ... ok
+test_logged_balls_pass_by_centimetres_not_tenths (audit.tools.test_predicates.InB.test_logged_balls_pass_by_centimetres_not_tenths)
+The #123 run (x2_vase_L0_v1, last action): RoboDojo's floor is the tilted box's lowest corner, so the seven ... ok
+test_no_ceiling (audit.tools.test_predicates.InB.test_no_ceiling)
+Must fail: a ball 1 m (and 100 m) above the vase is not in it. Shipped: accepted at any height. ... ok
+test_not_in_B_mirror (audit.tools.test_predicates.InB.test_not_in_B_mirror)
+is_A_not_in_B is the exact complement: an object on the table under the vase's reach counts as in, so ... ok
+test_resting_on_top_of_a_basket_counts (audit.tools.test_predicates.InB.test_resting_on_top_of_a_basket_counts)
+Must fail: an object resting on top of another object that stands in the basket, its root 15 cm above the ... ok
+test_root_point_only (audit.tools.test_predicates.InB.test_root_point_only)
+Must fail: a 30 cm stick lying across the rim, 25 cm of it outside. Shipped: only the root is tested. ... ok
+test_table_outside_the_wall_with_the_logged_vase (audit.tools.test_predicates.InB.test_table_outside_the_wall_with_the_logged_vase)
+Must fail: a ball on the table outside the vase. Shipped: accepted anywhere in a 442 cm2 polygon reaching ... ok
+test_lift_reads_the_root_not_the_object (audit.tools.test_predicates.Motion.test_lift_reads_the_root_not_the_object)
+general_pickup ("Pick up the <target> by 10 cm"; its only check is is_lift 10 cm, with no gripper or home ... ok
+test_lift_transient_counts (audit.tools.test_predicates.Motion.test_lift_transient_counts)
+No dwell: a stage pops on the first sample. A target tossed 10.1 cm up for one 40 ms sample and dropped ... ok
+test_stillness_twice_in_one_step (audit.tools.test_predicates.Motion.test_stillness_twice_in_one_step)
+is_not_moved(update=True) means "moved less than t since this predicate was last called". Called twice in ... ok
+test_left_compares_x_only (audit.tools.test_predicates.Order.test_left_compares_x_only)
+is_A_on_B_left(A, B, t): B.x - A.x > t. sweep_blocks (dustpan left of broom by 10 cm) has no y term. ... ok
+test_stacked_has_no_ceiling_and_sorts_by_height (audit.tools.test_predicates.Order.test_stacked_has_no_ceiling_and_sorts_by_height)
+is_stacked (in_order False): sort by root height; consecutive roots within xy_threshold, at least 5 mm ... ok
+test_nesting_is_or_of_ands (audit.tools.test_predicates.Scores.test_nesting_is_or_of_ands)
+check_once: a list at stage level is OR, a list inside it AND, alternating (documented behaviour). ... ok
+test_paired_order_dependence (audit.tools.test_predicates.Scores.test_paired_order_dependence)
+store_laptop_and_headphones (paired [20, 80]): a failed episode with both sub-goals done is paid 20 or 80 ... ok
+test_top_tier_paid_to_failures (audit.tools.test_predicates.Scores.test_top_tier_paid_to_failures)
+fill_egg_holder [10, 25, 40, 90]: a failed episode at the top tier keeps 90 (#126). ... ok
+test_hang_mugs_pairs_reuse_the_reference (audit.tools.test_predicates.StillnessInTasks.test_hang_mugs_pairs_reuse_the_reference)
+hang_mugs' 40-point tier is an OR over mug pairs (0,1), (0,2), (1,2). With mug0 hung but swinging 6 mm per ... ok
+test_organize_table_mouse_scores_while_sliding (audit.tools.test_predicates.StillnessInTasks.test_organize_table_mouse_scores_while_sliding)
+Must not score: the mouse sliding across its mat at 25 cm/s (the stillness term exists to stop exactly ... ok
+test_axis_aligned_boxes_are_exact (audit.tools.test_predicates.TiltedBoxes.test_axis_aligned_boxes_are_exact)
+Control: an untilted box projects to its own rectangle. ... ok
+test_egg_holder_tilted_box (audit.tools.test_predicates.TiltedBoxes.test_egg_holder_tilted_box)
+Articulation/egg_holder/00000: oriented bbox tilted 40.5 degrees; projected footprint 1.47 x the aligned ... ok
+test_axis_up_default (audit.tools.test_predicates.Windows.test_axis_up_default) ... ok
+test_back_to_origin_box (audit.tools.test_predicates.Windows.test_back_to_origin_box)
+all_robot_back_to_origin (45 tasks): 0.15 m per axis and 20 degrees. An arm 14.9 cm off on all three axes ... ok
+test_functional_point_sphere (audit.tools.test_predicates.Windows.test_functional_point_sphere)
+is_A_functional_point_close_to_B_functional_point: a 5 cm (default) sphere around the slot point, with an ... ok
+test_in_line_needs_no_contact (audit.tools.test_predicates.Windows.test_in_line_needs_no_contact)
+align_blocks: is_in_line(threshold 8 mm, 8 degrees). Three cubes on one line 30 cm apart, never pushed ... ok
+test_qpos_close_has_no_symmetry (audit.tools.test_predicates.Windows.test_qpos_close_has_no_symmetry)
+is_qpos_close: full 3D angle under a threshold (swap_T 3, push_T 7). A T-block 3.1 degrees off in yaw with ... ok
+test_pack_box_has_no_height (audit.tools.test_predicates.XYOnly.test_pack_box_has_no_height)
+pack_objects_into_box: an item's root inside the box_bottom quad, at any height; no other term bounds it. ... ok
+test_stacking_toy_one_millimetre (audit.tools.test_predicates.XYOnly.test_stacking_toy_one_millimetre)
+Must pass: a ring threaded on its peg 1.5 mm off-centre (a 5 mm peg in a wider hole). Shipped: the chain and ... ok
+test_support_circle_and_xy_distance_have_no_height (audit.tools.test_predicates.XYOnly.test_support_circle_and_xy_distance_have_no_height) ... ok
+
+----------------------------------------------------------------------
+Ran 42 tests in 0.084s
+
+OK
+exit=0

@@ -1,0 +1,5 @@
+# Blog clips round 3, 6.2 production replays (blog_queue.sh, MPS=0), renderer and PhysX on GPU 0: the logged 5.1 states set
+# kinematically, no physics step; the harness only builds the scene (--policy zero).
+rp_fasten_frozen|62|fasten.json|--subframes 1 --warmup 6 --capture rep --replay <clips>/runs/b51_fasten_cap2475/frames/index.json|--task fasten_screws --seed 0 --layouts 0 --policy zero --evaluator v1|
+rp_fasten_free|62|fasten.json|--subframes 1 --warmup 6 --capture rep --replay <clips>/runs/b51_fasten_free/frames/index.json|--task fasten_screws --seed 0 --layouts 0 --policy zero --evaluator v1|
+rp_xylo|62|xylo_cam.json|--subframes 1 --warmup 6 --capture rep --replay <clips>/runs/b51_xylo/frames/index.json|--task play_Xylophone --layouts 0 --policy zero --evaluator v1|

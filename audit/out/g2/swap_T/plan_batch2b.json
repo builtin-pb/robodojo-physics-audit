@@ -1,0 +1,72 @@
+[
+  {
+    "name": "g2_b2_sT_it16_s0b",
+    "seed": 0,
+    "layouts": "0,2,6",
+    "procs": 3,
+    "args": "--task swap_T --policy script_swap_T_v2 --evaluator v2 --physics_preset corrected --physics_fixes=-solver --physics_params $W/wt-g2st/docs/params --physics_scenario_opt_in swap_T_primary --g2_invariants_only"
+  },
+  {
+    "name": "g2_b2_sT_it16_s1b",
+    "seed": 1,
+    "layouts": "4",
+    "procs": 1,
+    "args": "--task swap_T --policy script_swap_T_v2 --evaluator v2 --physics_preset corrected --physics_fixes=-solver --physics_params $W/wt-g2st/docs/params --physics_scenario_opt_in swap_T_primary --g2_invariants_only"
+  },
+  {
+    "name": "g2_b2_cb_off14_dt2",
+    "seed": 0,
+    "layouts": "0",
+    "procs": 1,
+    "args": "--task cover_blocks --policy script_cover_blocks_offset --cb_offset_mm 14,0 --evaluator v2 --physics_preset corrected --physics_params $W/wt-g2st/docs/params --physics_scenario_opt_in cover_blocks_primary --episode_dt 0.002 --g2_invariants_only"
+  },
+  {
+    "name": "g2_b2_cb_dt2_s0",
+    "seed": 0,
+    "layouts": "0,1,2,7",
+    "procs": 3,
+    "args": "--task cover_blocks --policy script_cover_blocks --evaluator v2 --physics_preset corrected --physics_params $W/wt-g2st/docs/params --physics_scenario_opt_in cover_blocks_primary --episode_dt 0.002 --g2_invariants_only"
+  },
+  {
+    "name": "g2_b2_cb_dt2_s1",
+    "seed": 1,
+    "layouts": "6,8",
+    "procs": 2,
+    "args": "--task cover_blocks --policy script_cover_blocks --evaluator v2 --physics_preset corrected --physics_params $W/wt-g2st/docs/params --physics_scenario_opt_in cover_blocks_primary --episode_dt 0.002 --g2_invariants_only"
+  },
+  {
+    "name": "g2_b2_cb_dt1_s0",
+    "seed": 0,
+    "layouts": "0,7",
+    "procs": 2,
+    "args": "--task cover_blocks --policy script_cover_blocks --evaluator v2 --physics_preset corrected --physics_params $W/wt-g2st/docs/params --physics_scenario_opt_in cover_blocks_primary --episode_dt 0.001 --g2_invariants_only"
+  },
+  {
+    "name": "g2_b2_cb_dt1_s1",
+    "seed": 1,
+    "layouts": "6,8",
+    "procs": 2,
+    "args": "--task cover_blocks --policy script_cover_blocks --evaluator v2 --physics_preset corrected --physics_params $W/wt-g2st/docs/params --physics_scenario_opt_in cover_blocks_primary --episode_dt 0.001 --g2_invariants_only"
+  },
+  {
+    "name": "g2_b2_cb_off14_dt1",
+    "seed": 0,
+    "layouts": "0",
+    "procs": 1,
+    "args": "--task cover_blocks --policy script_cover_blocks_offset --cb_offset_mm 14,0 --evaluator v2 --physics_preset corrected --physics_params $W/wt-g2st/docs/params --physics_scenario_opt_in cover_blocks_primary --episode_dt 0.001 --g2_invariants_only"
+  },
+  {
+    "name": "g2_b2_cb_it16_s0b",
+    "seed": 0,
+    "layouts": "0,7",
+    "procs": 2,
+    "args": "--task cover_blocks --policy script_cover_blocks --evaluator v2 --physics_preset corrected --physics_fixes=-solver --physics_params $W/wt-g2st/docs/params --physics_scenario_opt_in cover_blocks_primary --g2_invariants_only"
+  },
+  {
+    "name": "g2_b2_cb_it16_s1b",
+    "seed": 1,
+    "layouts": "6,8",
+    "procs": 2,
+    "args": "--task cover_blocks --policy script_cover_blocks --evaluator v2 --physics_preset corrected --physics_fixes=-solver --physics_params $W/wt-g2st/docs/params --physics_scenario_opt_in cover_blocks_primary --g2_invariants_only"
+  }
+]

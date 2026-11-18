@@ -1,0 +1,2559 @@
+{
+  "schema": "g1_t1_coverage_summary_v1",
+  "issues": [
+    "#18",
+    "#173",
+    "#175",
+    "#200",
+    "#210"
+  ],
+  "configs_covered": [
+    "arrange_largest_number",
+    "organize_table",
+    "solve_equation",
+    "stack_blocks",
+    "stack_blocks_by_language",
+    "sweep_blocks",
+    "sweep_blocks_random"
+  ],
+  "all_7_configs_100pct_models_delivered": true,
+  "total_distinct_config_model_memberships_verified": 136,
+  "total_assertion_failures": 0,
+  "organize_table_l0_settled_state_sha256_parity": {
+    "ref_175": "716046e5def13d4c17e714eed5a9e55c4af93b1e817cca563c49fd6ced9082a7",
+    "new_4ad3f8d": "716046e5def13d4c17e714eed5a9e55c4af93b1e817cca563c49fd6ced9082a7",
+    "exact_match": true
+  },
+  "per_config": {
+    "arrange_largest_number": {
+      "total_models_3_seeds": 32,
+      "models_verified_in_175": 6,
+      "models_verified_total": 32,
+      "all_models_verified": true,
+      "total_readback_episodes": 8,
+      "new_readback_episodes": 7,
+      "total_failures": 0,
+      "sum_scene_pairs_checked": 520,
+      "sum_link_static_pairs_checked": 210,
+      "sum_link_link_pairs_checked": 48,
+      "sum_resting_contacts_checked": 38,
+      "max_abs_pair_diff": 3e-06,
+      "prior_175_runs": [
+        {
+          "archive": "../raw/l3w_rb_t1_arrange_largest_number_q00_vis2.result.json.gz",
+          "batch": "l3w_175",
+          "repo_head": "840a886c82613646bf045af9471fa839a7b8715b",
+          "seed": 0,
+          "layout": 0,
+          "assertion_passed": true,
+          "failure_count": 0,
+          "rigid_bodies": 4,
+          "geometry_colliders": 5,
+          "zero_collider_markers": 0,
+          "scene_pairs_checked": 50,
+          "link_static_pairs_checked": 24,
+          "link_link_pairs_checked": 6,
+          "resting_contacts_checked": 4,
+          "max_abs_pair_diff": 3e-06,
+          "compensations_count": 4,
+          "sdf_trimesh_report_null_count": 4,
+          "canary_table_slide_mm": 57.09,
+          "canary_ground_slide_mm": 54.83,
+          "settled_state_sha256": "a7c4e67fc49b4262a8ff95dc9e8182caa1df3be35c13e83be33ec54f59f92c6b",
+          "unstable": null,
+          "models_verified": [
+            "Geometry/camera_stand/00000",
+            "Geometry/cube_cushion/00001",
+            "Rigid/number/00000",
+            "Rigid/number/00002",
+            "Rigid/number/00007",
+            "Rigid/number/00008"
+          ]
+        }
+      ],
+      "new_runs": [
+        {
+          "archive": "g1cov_rb_aln_s0_q00_vis2.result.json.gz",
+          "batch": "g1cov_rb_aln_s0",
+          "repo_head": "707580c56ca139c27ad05363ffe5cf7f03c6ad1c",
+          "seed": 0,
+          "layout": 2,
+          "assertion_passed": true,
+          "failure_count": 0,
+          "rigid_bodies": 5,
+          "geometry_colliders": 6,
+          "zero_collider_markers": 0,
+          "scene_pairs_checked": 70,
+          "link_static_pairs_checked": 27,
+          "link_link_pairs_checked": 6,
+          "resting_contacts_checked": 5,
+          "max_abs_pair_diff": 3e-06,
+          "compensations_count": 5,
+          "sdf_trimesh_report_null_count": 5,
+          "canary_table_slide_mm": 57.09,
+          "canary_ground_slide_mm": 54.83,
+          "settled_state_sha256": "ca948b8a3053b9fe5422bd22250df0eef6567d84e564eb75979e894b66d59f07",
+          "unstable": null,
+          "models_verified": [
+            "Geometry/camera_stand/00000",
+            "Geometry/cube_cushion/00001",
+            "Rigid/number/00020",
+            "Rigid/number/00021",
+            "Rigid/number/00023",
+            "Rigid/number/00025",
+            "Rigid/number/00028"
+          ],
+          "models_added": [
+            "Rigid/number/00020",
+            "Rigid/number/00021",
+            "Rigid/number/00023",
+            "Rigid/number/00025",
+            "Rigid/number/00028"
+          ]
+        },
+        {
+          "archive": "g1cov_rb_aln_s0_q01_vis2.result.json.gz",
+          "batch": "g1cov_rb_aln_s0",
+          "repo_head": "707580c56ca139c27ad05363ffe5cf7f03c6ad1c",
+          "seed": 0,
+          "layout": 4,
+          "assertion_passed": true,
+          "failure_count": 0,
+          "rigid_bodies": 5,
+          "geometry_colliders": 6,
+          "zero_collider_markers": 0,
+          "scene_pairs_checked": 70,
+          "link_static_pairs_checked": 27,
+          "link_link_pairs_checked": 6,
+          "resting_contacts_checked": 5,
+          "max_abs_pair_diff": 3e-06,
+          "compensations_count": 5,
+          "sdf_trimesh_report_null_count": 5,
+          "canary_table_slide_mm": 57.09,
+          "canary_ground_slide_mm": 54.83,
+          "settled_state_sha256": "885da5d4696e3e7bfcb6ab3797b2bee7b945ccbe4b379c0eefa8ec82f438a03c",
+          "unstable": null,
+          "models_verified": [
+            "Geometry/camera_stand/00000",
+            "Geometry/cube_cushion/00001",
+            "Rigid/number/00000",
+            "Rigid/number/00001",
+            "Rigid/number/00004",
+            "Rigid/number/00006",
+            "Rigid/number/00009"
+          ],
+          "models_added": [
+            "Rigid/number/00001",
+            "Rigid/number/00004",
+            "Rigid/number/00006",
+            "Rigid/number/00009"
+          ]
+        },
+        {
+          "archive": "g1cov_rb_aln_s0_q00_vis2.result.json.gz",
+          "batch": "g1cov_rb_aln_s0",
+          "repo_head": "707580c56ca139c27ad05363ffe5cf7f03c6ad1c",
+          "seed": 0,
+          "layout": 5,
+          "assertion_passed": true,
+          "failure_count": 0,
+          "rigid_bodies": 5,
+          "geometry_colliders": 6,
+          "zero_collider_markers": 0,
+          "scene_pairs_checked": 70,
+          "link_static_pairs_checked": 27,
+          "link_link_pairs_checked": 6,
+          "resting_contacts_checked": 5,
+          "max_abs_pair_diff": 3e-06,
+          "compensations_count": 5,
+          "sdf_trimesh_report_null_count": 5,
+          "canary_table_slide_mm": 57.09,
+          "canary_ground_slide_mm": 54.83,
+          "settled_state_sha256": "ce65e1e46cce98b4957763d6085eab2fd7f68ac95684906cfd05b507eacc1cd7",
+          "unstable": null,
+          "models_verified": [
+            "Geometry/camera_stand/00000",
+            "Geometry/cube_cushion/00001",
+            "Rigid/number/00001",
+            "Rigid/number/00003",
+            "Rigid/number/00004",
+            "Rigid/number/00005",
+            "Rigid/number/00007"
+          ],
+          "models_added": [
+            "Rigid/number/00003",
+            "Rigid/number/00005"
+          ]
+        },
+        {
+          "archive": "g1cov_rb_aln_s0_q01_vis2.result.json.gz",
+          "batch": "g1cov_rb_aln_s0",
+          "repo_head": "707580c56ca139c27ad05363ffe5cf7f03c6ad1c",
+          "seed": 0,
+          "layout": 7,
+          "assertion_passed": true,
+          "failure_count": 0,
+          "rigid_bodies": 5,
+          "geometry_colliders": 6,
+          "zero_collider_markers": 0,
+          "scene_pairs_checked": 70,
+          "link_static_pairs_checked": 27,
+          "link_link_pairs_checked": 6,
+          "resting_contacts_checked": 5,
+          "max_abs_pair_diff": 3e-06,
+          "compensations_count": 5,
+          "sdf_trimesh_report_null_count": 5,
+          "canary_table_slide_mm": 57.09,
+          "canary_ground_slide_mm": 54.83,
+          "settled_state_sha256": "78fb9334b4e03574c74d4c202e2e2df87ed4fadd68e380f34195cf3b76aa469b",
+          "unstable": null,
+          "models_verified": [
+            "Geometry/camera_stand/00000",
+            "Geometry/cube_cushion/00001",
+            "Rigid/number/00014",
+            "Rigid/number/00015",
+            "Rigid/number/00017",
+            "Rigid/number/00018",
+            "Rigid/number/00019"
+          ],
+          "models_added": [
+            "Rigid/number/00014",
+            "Rigid/number/00015",
+            "Rigid/number/00017",
+            "Rigid/number/00018",
+            "Rigid/number/00019"
+          ]
+        },
+        {
+          "archive": "g1cov_rb_aln_s0_q00_vis2.result.json.gz",
+          "batch": "g1cov_rb_aln_s0",
+          "repo_head": "707580c56ca139c27ad05363ffe5cf7f03c6ad1c",
+          "seed": 0,
+          "layout": 11,
+          "assertion_passed": true,
+          "failure_count": 0,
+          "rigid_bodies": 5,
+          "geometry_colliders": 6,
+          "zero_collider_markers": 0,
+          "scene_pairs_checked": 70,
+          "link_static_pairs_checked": 27,
+          "link_link_pairs_checked": 6,
+          "resting_contacts_checked": 5,
+          "max_abs_pair_diff": 3e-06,
+          "compensations_count": 5,
+          "sdf_trimesh_report_null_count": 5,
+          "canary_table_slide_mm": 57.09,
+          "canary_ground_slide_mm": 54.83,
+          "settled_state_sha256": "e3d3ca48744a035066ed2dab43642562650cff2b3dbd3a0229c8610112838ae9",
+          "unstable": null,
+          "models_verified": [
+            "Geometry/camera_stand/00000",
+            "Geometry/cube_cushion/00001",
+            "Rigid/number/00022",
+            "Rigid/number/00024",
+            "Rigid/number/00026",
+            "Rigid/number/00027",
+            "Rigid/number/00029"
+          ],
+          "models_added": [
+            "Rigid/number/00022",
+            "Rigid/number/00024",
+            "Rigid/number/00026",
+            "Rigid/number/00027",
+            "Rigid/number/00029"
+          ]
+        },
+        {
+          "archive": "g1cov_rb_aln_s0_q01_vis2.result.json.gz",
+          "batch": "g1cov_rb_aln_s0",
+          "repo_head": "707580c56ca139c27ad05363ffe5cf7f03c6ad1c",
+          "seed": 0,
+          "layout": 17,
+          "assertion_passed": true,
+          "failure_count": 0,
+          "rigid_bodies": 4,
+          "geometry_colliders": 5,
+          "zero_collider_markers": 0,
+          "scene_pairs_checked": 50,
+          "link_static_pairs_checked": 24,
+          "link_link_pairs_checked": 6,
+          "resting_contacts_checked": 4,
+          "max_abs_pair_diff": 3e-06,
+          "compensations_count": 4,
+          "sdf_trimesh_report_null_count": 4,
+          "canary_table_slide_mm": 57.09,
+          "canary_ground_slide_mm": 54.83,
+          "settled_state_sha256": "8614972475b407140902c080c6dd7c8990284a713dbe131be717b7ce16e72b39",
+          "unstable": null,
+          "models_verified": [
+            "Geometry/camera_stand/00000",
+            "Geometry/cube_cushion/00001",
+            "Rigid/number/00011",
+            "Rigid/number/00013",
+            "Rigid/number/00015",
+            "Rigid/number/00019"
+          ],
+          "models_added": [
+            "Rigid/number/00011",
+            "Rigid/number/00013"
+          ]
+        },
+        {
+          "archive": "g1cov_rb_aln_s2_q00_vis2.result.json.gz",
+          "batch": "g1cov_rb_aln_s2",
+          "repo_head": "707580c56ca139c27ad05363ffe5cf7f03c6ad1c",
+          "seed": 2,
+          "layout": 7,
+          "assertion_passed": true,
+          "failure_count": 0,
+          "rigid_bodies": 5,
+          "geometry_colliders": 6,
+          "zero_collider_markers": 0,
+          "scene_pairs_checked": 70,
+          "link_static_pairs_checked": 27,
+          "link_link_pairs_checked": 6,
+          "resting_contacts_checked": 5,
+          "max_abs_pair_diff": 3e-06,
+          "compensations_count": 5,
+          "sdf_trimesh_report_null_count": 5,
+          "canary_table_slide_mm": 57.09,
+          "canary_ground_slide_mm": 54.83,
+          "settled_state_sha256": "20b2c736039e704f367a67f3f7fec2e2b3fb736d5b32a988b5cb683e2268f458",
+          "unstable": null,
+          "models_verified": [
+            "Geometry/camera_stand/00000",
+            "Geometry/cube_cushion/00001",
+            "Rigid/number/00010",
+            "Rigid/number/00012",
+            "Rigid/number/00014",
+            "Rigid/number/00015",
+            "Rigid/number/00016"
+          ],
+          "models_added": [
+            "Rigid/number/00010",
+            "Rigid/number/00012",
+            "Rigid/number/00016"
+          ]
+        }
+      ]
+    },
+    "organize_table": {
+      "total_models_3_seeds": 19,
+      "models_verified_in_175": 10,
+      "models_verified_total": 19,
+      "all_models_verified": true,
+      "total_readback_episodes": 6,
+      "new_readback_episodes": 5,
+      "total_failures": 0,
+      "sum_scene_pairs_checked": 300,
+      "sum_link_static_pairs_checked": 144,
+      "sum_link_link_pairs_checked": 36,
+      "sum_resting_contacts_checked": 25,
+      "max_abs_pair_diff": 3e-06,
+      "prior_175_runs": [
+        {
+          "archive": "../raw/l3w_rb_t1_organize_table_q00_vis2.result.json.gz",
+          "batch": "l3w_175",
+          "repo_head": "840a886c82613646bf045af9471fa839a7b8715b",
+          "seed": 0,
+          "layout": 0,
+          "assertion_passed": true,
+          "failure_count": 0,
+          "rigid_bodies": 4,
+          "geometry_colliders": 6,
+          "zero_collider_markers": 1,
+          "scene_pairs_checked": 50,
+          "link_static_pairs_checked": 24,
+          "link_link_pairs_checked": 6,
+          "resting_contacts_checked": 4,
+          "max_abs_pair_diff": 3e-06,
+          "compensations_count": 4,
+          "sdf_trimesh_report_null_count": 0,
+          "canary_table_slide_mm": 57.09,
+          "canary_ground_slide_mm": 54.83,
+          "settled_state_sha256": "716046e5def13d4c17e714eed5a9e55c4af93b1e817cca563c49fd6ced9082a7",
+          "unstable": null,
+          "models_verified": [
+            "Geometry/camera_stand/00000",
+            "Geometry/cube_cushion/00002",
+            "Geometry/drawer/00000",
+            "Geometry/frame/00000",
+            "Geometry/monitor/00000",
+            "Geometry/mousemat/00000",
+            "Rigid/alarm/00000",
+            "Rigid/garage/00008",
+            "Rigid/keyboard/00000",
+            "Rigid/mouse/00004"
+          ]
+        }
+      ],
+      "new_runs": [
+        {
+          "archive": "g1cov_rb_ot_l0par_q00_vis2.result.json.gz",
+          "batch": "g1cov_rb_ot_l0par",
+          "repo_head": "4ad3f8d6a889094307c1b388447357636d9a3dfc",
+          "seed": 0,
+          "layout": 0,
+          "assertion_passed": true,
+          "failure_count": 0,
+          "rigid_bodies": 4,
+          "geometry_colliders": 6,
+          "zero_collider_markers": 1,
+          "scene_pairs_checked": 50,
+          "link_static_pairs_checked": 24,
+          "link_link_pairs_checked": 6,
+          "resting_contacts_checked": 4,
+          "max_abs_pair_diff": 3e-06,
+          "compensations_count": 4,
+          "sdf_trimesh_report_null_count": 0,
+          "canary_table_slide_mm": 57.09,
+          "canary_ground_slide_mm": 54.83,
+          "settled_state_sha256": "716046e5def13d4c17e714eed5a9e55c4af93b1e817cca563c49fd6ced9082a7",
+          "unstable": null,
+          "models_verified": [
+            "Geometry/camera_stand/00000",
+            "Geometry/cube_cushion/00002",
+            "Geometry/drawer/00000",
+            "Geometry/frame/00000",
+            "Geometry/monitor/00000",
+            "Geometry/mousemat/00000",
+            "Rigid/alarm/00000",
+            "Rigid/garage/00008",
+            "Rigid/keyboard/00000",
+            "Rigid/mouse/00004"
+          ],
+          "models_added": []
+        },
+        {
+          "archive": "g1cov_rb_ot_s0_q00_vis2.result.json.gz",
+          "batch": "g1cov_rb_ot_s0",
+          "repo_head": "4ad3f8d6a889094307c1b388447357636d9a3dfc",
+          "seed": 0,
+          "layout": 1,
+          "assertion_passed": true,
+          "failure_count": 0,
+          "rigid_bodies": 4,
+          "geometry_colliders": 6,
+          "zero_collider_markers": 1,
+          "scene_pairs_checked": 50,
+          "link_static_pairs_checked": 24,
+          "link_link_pairs_checked": 6,
+          "resting_contacts_checked": 4,
+          "max_abs_pair_diff": 3e-06,
+          "compensations_count": 2,
+          "sdf_trimesh_report_null_count": 0,
+          "canary_table_slide_mm": 57.09,
+          "canary_ground_slide_mm": 54.83,
+          "settled_state_sha256": "abcdab8051de2e51ee02771c4f6e30f73ceeae99a027927a1cc2973a62c540f6",
+          "unstable": null,
+          "models_verified": [
+            "Geometry/camera_stand/00000",
+            "Geometry/cube_cushion/00002",
+            "Geometry/drawer/00000",
+            "Geometry/frame/00000",
+            "Geometry/monitor/00001",
+            "Geometry/mousemat/00000",
+            "Rigid/alarm/00000",
+            "Rigid/garage/00006",
+            "Rigid/keyboard/00002",
+            "Rigid/mouse/00007"
+          ],
+          "models_added": [
+            "Geometry/monitor/00001",
+            "Rigid/garage/00006",
+            "Rigid/keyboard/00002",
+            "Rigid/mouse/00007"
+          ]
+        },
+        {
+          "archive": "g1cov_rb_ot_s0_q01_vis2.result.json.gz",
+          "batch": "g1cov_rb_ot_s0",
+          "repo_head": "4ad3f8d6a889094307c1b388447357636d9a3dfc",
+          "seed": 0,
+          "layout": 5,
+          "assertion_passed": true,
+          "failure_count": 0,
+          "rigid_bodies": 4,
+          "geometry_colliders": 6,
+          "zero_collider_markers": 1,
+          "scene_pairs_checked": 50,
+          "link_static_pairs_checked": 24,
+          "link_link_pairs_checked": 6,
+          "resting_contacts_checked": 5,
+          "max_abs_pair_diff": 3e-06,
+          "compensations_count": 4,
+          "sdf_trimesh_report_null_count": 0,
+          "canary_table_slide_mm": 57.09,
+          "canary_ground_slide_mm": 54.83,
+          "settled_state_sha256": "6d56cde8491c17c3ec36b6cbd6a562a7e2205e5028823c85aeff5456735be9db",
+          "unstable": null,
+          "models_verified": [
+            "Geometry/camera_stand/00000",
+            "Geometry/cube_cushion/00002",
+            "Geometry/drawer/00000",
+            "Geometry/frame/00000",
+            "Geometry/monitor/00000",
+            "Geometry/mousemat/00000",
+            "Rigid/alarm/00000",
+            "Rigid/garage/00007",
+            "Rigid/keyboard/00000",
+            "Rigid/mouse/00006"
+          ],
+          "models_added": [
+            "Rigid/garage/00007",
+            "Rigid/mouse/00006"
+          ]
+        },
+        {
+          "archive": "g1cov_rb_ot_s0_q00_vis2.result.json.gz",
+          "batch": "g1cov_rb_ot_s0",
+          "repo_head": "4ad3f8d6a889094307c1b388447357636d9a3dfc",
+          "seed": 0,
+          "layout": 8,
+          "assertion_passed": true,
+          "failure_count": 0,
+          "rigid_bodies": 4,
+          "geometry_colliders": 6,
+          "zero_collider_markers": 1,
+          "scene_pairs_checked": 50,
+          "link_static_pairs_checked": 24,
+          "link_link_pairs_checked": 6,
+          "resting_contacts_checked": 4,
+          "max_abs_pair_diff": 3e-06,
+          "compensations_count": 3,
+          "sdf_trimesh_report_null_count": 0,
+          "canary_table_slide_mm": 57.09,
+          "canary_ground_slide_mm": 54.83,
+          "settled_state_sha256": "d3ed7005f0ca6264d09ba12ced07038d99b15c38053e1ac63212d5168878b473",
+          "unstable": null,
+          "models_verified": [
+            "Geometry/camera_stand/00000",
+            "Geometry/cube_cushion/00002",
+            "Geometry/drawer/00000",
+            "Geometry/frame/00000",
+            "Geometry/monitor/00001",
+            "Geometry/mousemat/00000",
+            "Rigid/alarm/00000",
+            "Rigid/garage/00011",
+            "Rigid/keyboard/00000",
+            "Rigid/mouse/00007"
+          ],
+          "models_added": [
+            "Rigid/garage/00011"
+          ]
+        },
+        {
+          "archive": "g1cov_rb_ot_s0_q01_vis2.result.json.gz",
+          "batch": "g1cov_rb_ot_s0",
+          "repo_head": "4ad3f8d6a889094307c1b388447357636d9a3dfc",
+          "seed": 0,
+          "layout": 16,
+          "assertion_passed": true,
+          "failure_count": 0,
+          "rigid_bodies": 4,
+          "geometry_colliders": 6,
+          "zero_collider_markers": 1,
+          "scene_pairs_checked": 50,
+          "link_static_pairs_checked": 24,
+          "link_link_pairs_checked": 6,
+          "resting_contacts_checked": 4,
+          "max_abs_pair_diff": 3e-06,
+          "compensations_count": 2,
+          "sdf_trimesh_report_null_count": 0,
+          "canary_table_slide_mm": 57.09,
+          "canary_ground_slide_mm": 54.83,
+          "settled_state_sha256": null,
+          "unstable": "UnStableError('All scene Unstable Error!')",
+          "models_verified": [
+            "Geometry/camera_stand/00000",
+            "Geometry/cube_cushion/00002",
+            "Geometry/drawer/00000",
+            "Geometry/frame/00000",
+            "Geometry/monitor/00000",
+            "Geometry/mousemat/00000",
+            "Rigid/alarm/00000",
+            "Rigid/garage/00005",
+            "Rigid/keyboard/00001",
+            "Rigid/mouse/00007"
+          ],
+          "models_added": [
+            "Rigid/garage/00005",
+            "Rigid/keyboard/00001"
+          ]
+        },
+        {
+          "archive": "g1cov_rb_ot_l40_q00_vis2.result.json.gz",
+          "batch": "g1cov_rb_ot_l40",
+          "repo_head": "4ad3f8d6a889094307c1b388447357636d9a3dfc",
+          "seed": 0,
+          "layout": 40,
+          "assertion_passed": true,
+          "failure_count": 0,
+          "rigid_bodies": 4,
+          "geometry_colliders": 6,
+          "zero_collider_markers": 1,
+          "scene_pairs_checked": 50,
+          "link_static_pairs_checked": 24,
+          "link_link_pairs_checked": 6,
+          "resting_contacts_checked": 4,
+          "max_abs_pair_diff": 3e-06,
+          "compensations_count": 2,
+          "sdf_trimesh_report_null_count": 0,
+          "canary_table_slide_mm": 57.09,
+          "canary_ground_slide_mm": 54.83,
+          "settled_state_sha256": "e2dc7c6b052bfdb100cd03e1b65a664bfb7a99496efa2a412ba61a4e11c42a2f",
+          "unstable": null,
+          "models_verified": [
+            "Geometry/camera_stand/00000",
+            "Geometry/cube_cushion/00002",
+            "Geometry/drawer/00000",
+            "Geometry/frame/00000",
+            "Geometry/monitor/00000",
+            "Geometry/mousemat/00000",
+            "Rigid/alarm/00000",
+            "Rigid/garage/00005",
+            "Rigid/keyboard/00001",
+            "Rigid/mouse/00004"
+          ],
+          "models_added": []
+        }
+      ]
+    },
+    "solve_equation": {
+      "total_models_3_seeds": 37,
+      "models_verified_in_175": 19,
+      "models_verified_total": 37,
+      "all_models_verified": true,
+      "total_readback_episodes": 4,
+      "new_readback_episodes": 3,
+      "total_failures": 0,
+      "sum_scene_pairs_checked": 1574,
+      "sum_link_static_pairs_checked": 114,
+      "sum_link_link_pairs_checked": 24,
+      "sum_resting_contacts_checked": 74,
+      "max_abs_pair_diff": 3e-06,
+      "prior_175_runs": [
+        {
+          "archive": "../raw/l3w_rb_t1_solve_equation_q00_vis2.result.json.gz",
+          "batch": "l3w_175",
+          "repo_head": "840a886c82613646bf045af9471fa839a7b8715b",
+          "seed": 0,
+          "layout": 0,
+          "assertion_passed": true,
+          "failure_count": 0,
+          "rigid_bodies": 18,
+          "geometry_colliders": 6,
+          "zero_collider_markers": 0,
+          "scene_pairs_checked": 369,
+          "link_static_pairs_checked": 27,
+          "link_link_pairs_checked": 6,
+          "resting_contacts_checked": 18,
+          "max_abs_pair_diff": 3e-06,
+          "compensations_count": 5,
+          "sdf_trimesh_report_null_count": 10,
+          "canary_table_slide_mm": 57.09,
+          "canary_ground_slide_mm": 54.83,
+          "settled_state_sha256": "65bf045353fecfc3d065d87fb44c6023f7e2205ef0323723172841c10a3bda28",
+          "unstable": null,
+          "models_verified": [
+            "Geometry/camera_stand/00000",
+            "Geometry/cube_cushion/00001",
+            "Rigid/division/00000",
+            "Rigid/equal/00000",
+            "Rigid/minus/00000",
+            "Rigid/multiplication/00000",
+            "Rigid/number/00001",
+            "Rigid/number/00004",
+            "Rigid/number/00005",
+            "Rigid/number/00010",
+            "Rigid/number/00013",
+            "Rigid/number/00016",
+            "Rigid/number/00017",
+            "Rigid/number/00018",
+            "Rigid/number/00019",
+            "Rigid/number/00022",
+            "Rigid/number/00024",
+            "Rigid/number/00028",
+            "Rigid/plus/00000"
+          ]
+        }
+      ],
+      "new_runs": [
+        {
+          "archive": "g1cov_rb_se_s0_q01_vis2.result.json.gz",
+          "batch": "g1cov_rb_se_s0",
+          "repo_head": "707580c56ca139c27ad05363ffe5cf7f03c6ad1c",
+          "seed": 0,
+          "layout": 1,
+          "assertion_passed": true,
+          "failure_count": 0,
+          "rigid_bodies": 18,
+          "geometry_colliders": 6,
+          "zero_collider_markers": 0,
+          "scene_pairs_checked": 369,
+          "link_static_pairs_checked": 27,
+          "link_link_pairs_checked": 6,
+          "resting_contacts_checked": 18,
+          "max_abs_pair_diff": 3e-06,
+          "compensations_count": 5,
+          "sdf_trimesh_report_null_count": 10,
+          "canary_table_slide_mm": 57.09,
+          "canary_ground_slide_mm": 54.83,
+          "settled_state_sha256": "6b7a02d39c8e68b0b9b218e7422d548743db32e4a51f5258372fd3b630ecf47b",
+          "unstable": null,
+          "models_verified": [
+            "Geometry/camera_stand/00000",
+            "Geometry/cube_cushion/00001",
+            "Rigid/division/00000",
+            "Rigid/equal/00000",
+            "Rigid/minus/00000",
+            "Rigid/multiplication/00000",
+            "Rigid/number/00000",
+            "Rigid/number/00001",
+            "Rigid/number/00003",
+            "Rigid/number/00005",
+            "Rigid/number/00008",
+            "Rigid/number/00009",
+            "Rigid/number/00010",
+            "Rigid/number/00012",
+            "Rigid/number/00013",
+            "Rigid/number/00016",
+            "Rigid/number/00017",
+            "Rigid/number/00024",
+            "Rigid/plus/00000"
+          ],
+          "models_added": [
+            "Rigid/number/00000",
+            "Rigid/number/00003",
+            "Rigid/number/00008",
+            "Rigid/number/00009",
+            "Rigid/number/00012"
+          ]
+        },
+        {
+          "archive": "g1cov_rb_se_s0_q00_vis2.result.json.gz",
+          "batch": "g1cov_rb_se_s0",
+          "repo_head": "707580c56ca139c27ad05363ffe5cf7f03c6ad1c",
+          "seed": 0,
+          "layout": 27,
+          "assertion_passed": true,
+          "failure_count": 0,
+          "rigid_bodies": 19,
+          "geometry_colliders": 7,
+          "zero_collider_markers": 0,
+          "scene_pairs_checked": 418,
+          "link_static_pairs_checked": 30,
+          "link_link_pairs_checked": 6,
+          "resting_contacts_checked": 19,
+          "max_abs_pair_diff": 3e-06,
+          "compensations_count": 6,
+          "sdf_trimesh_report_null_count": 10,
+          "canary_table_slide_mm": 57.09,
+          "canary_ground_slide_mm": 54.83,
+          "settled_state_sha256": "37ea1d6cb412760522f0a9f67bfcee96e1b958093f6d65e0ae9f19c942c88dd4",
+          "unstable": null,
+          "models_verified": [
+            "Geometry/camera_stand/00000",
+            "Geometry/cube_cushion/00001",
+            "Rigid/division/00000",
+            "Rigid/equal/00000",
+            "Rigid/minus/00000",
+            "Rigid/multiplication/00000",
+            "Rigid/number/00002",
+            "Rigid/number/00006",
+            "Rigid/number/00007",
+            "Rigid/number/00008",
+            "Rigid/number/00009",
+            "Rigid/number/00010",
+            "Rigid/number/00014",
+            "Rigid/number/00015",
+            "Rigid/number/00019",
+            "Rigid/number/00021",
+            "Rigid/number/00023",
+            "Rigid/number/00027",
+            "Rigid/plus/00000"
+          ],
+          "models_added": [
+            "Rigid/number/00002",
+            "Rigid/number/00006",
+            "Rigid/number/00007",
+            "Rigid/number/00014",
+            "Rigid/number/00015",
+            "Rigid/number/00021",
+            "Rigid/number/00023",
+            "Rigid/number/00027"
+          ]
+        },
+        {
+          "archive": "g1cov_rb_se_s0_q01_vis2.result.json.gz",
+          "batch": "g1cov_rb_se_s0",
+          "repo_head": "707580c56ca139c27ad05363ffe5cf7f03c6ad1c",
+          "seed": 0,
+          "layout": 48,
+          "assertion_passed": true,
+          "failure_count": 0,
+          "rigid_bodies": 19,
+          "geometry_colliders": 7,
+          "zero_collider_markers": 0,
+          "scene_pairs_checked": 418,
+          "link_static_pairs_checked": 30,
+          "link_link_pairs_checked": 6,
+          "resting_contacts_checked": 19,
+          "max_abs_pair_diff": 3e-06,
+          "compensations_count": 6,
+          "sdf_trimesh_report_null_count": 10,
+          "canary_table_slide_mm": 57.09,
+          "canary_ground_slide_mm": 54.83,
+          "settled_state_sha256": "116e54a04fd3a98e0ef9729ba3d1c4708f43a60a0044837e2fe60a2555bec9a8",
+          "unstable": null,
+          "models_verified": [
+            "Geometry/camera_stand/00000",
+            "Geometry/cube_cushion/00001",
+            "Rigid/division/00000",
+            "Rigid/equal/00000",
+            "Rigid/minus/00000",
+            "Rigid/multiplication/00000",
+            "Rigid/number/00004",
+            "Rigid/number/00006",
+            "Rigid/number/00008",
+            "Rigid/number/00011",
+            "Rigid/number/00012",
+            "Rigid/number/00013",
+            "Rigid/number/00017",
+            "Rigid/number/00020",
+            "Rigid/number/00021",
+            "Rigid/number/00025",
+            "Rigid/number/00026",
+            "Rigid/number/00027",
+            "Rigid/number/00029",
+            "Rigid/plus/00000"
+          ],
+          "models_added": [
+            "Rigid/number/00011",
+            "Rigid/number/00020",
+            "Rigid/number/00025",
+            "Rigid/number/00026",
+            "Rigid/number/00029"
+          ]
+        }
+      ]
+    },
+    "stack_blocks": {
+      "total_models_3_seeds": 16,
+      "models_verified_in_175": 4,
+      "models_verified_total": 16,
+      "all_models_verified": true,
+      "total_readback_episodes": 6,
+      "new_readback_episodes": 5,
+      "total_failures": 0,
+      "sum_scene_pairs_checked": 144,
+      "sum_link_static_pairs_checked": 72,
+      "sum_link_link_pairs_checked": 36,
+      "sum_resting_contacts_checked": 18,
+      "max_abs_pair_diff": 5e-06,
+      "prior_175_runs": [
+        {
+          "archive": "../raw/l3w_rb_t1_stack_blocks_q00_vis2.result.json.gz",
+          "batch": "l3w_175",
+          "repo_head": "840a886c82613646bf045af9471fa839a7b8715b",
+          "seed": 0,
+          "layout": 0,
+          "assertion_passed": true,
+          "failure_count": 0,
+          "rigid_bodies": 3,
+          "geometry_colliders": 1,
+          "zero_collider_markers": 0,
+          "scene_pairs_checked": 24,
+          "link_static_pairs_checked": 12,
+          "link_link_pairs_checked": 6,
+          "resting_contacts_checked": 3,
+          "max_abs_pair_diff": 5e-06,
+          "compensations_count": 0,
+          "sdf_trimesh_report_null_count": 0,
+          "canary_table_slide_mm": 57.09,
+          "canary_ground_slide_mm": 54.83,
+          "settled_state_sha256": "013762f25700fc103694e3ece5693d76a935cd56a2b8f65acb50aa72943a321d",
+          "unstable": null,
+          "models_verified": [
+            "Geometry/camera_stand/00000",
+            "Rigid/block/00009",
+            "Rigid/block/00015",
+            "Rigid/block/00018"
+          ]
+        }
+      ],
+      "new_runs": [
+        {
+          "archive": "g1cov_rb_sb_s0_q01_vis2.result.json.gz",
+          "batch": "g1cov_rb_sb_s0",
+          "repo_head": "707580c56ca139c27ad05363ffe5cf7f03c6ad1c",
+          "seed": 0,
+          "layout": 2,
+          "assertion_passed": true,
+          "failure_count": 0,
+          "rigid_bodies": 3,
+          "geometry_colliders": 1,
+          "zero_collider_markers": 0,
+          "scene_pairs_checked": 24,
+          "link_static_pairs_checked": 12,
+          "link_link_pairs_checked": 6,
+          "resting_contacts_checked": 3,
+          "max_abs_pair_diff": 5e-06,
+          "compensations_count": 0,
+          "sdf_trimesh_report_null_count": 0,
+          "canary_table_slide_mm": 57.09,
+          "canary_ground_slide_mm": 54.83,
+          "settled_state_sha256": "c34b8dfb80ab0d57cb60d7266ea51034db957a73bc93588e03d2f3e068f44a83",
+          "unstable": null,
+          "models_verified": [
+            "Geometry/camera_stand/00000",
+            "Rigid/block/00008",
+            "Rigid/block/00011",
+            "Rigid/block/00017"
+          ],
+          "models_added": [
+            "Rigid/block/00008",
+            "Rigid/block/00011",
+            "Rigid/block/00017"
+          ]
+        },
+        {
+          "archive": "g1cov_rb_sb_s0_q00_vis2.result.json.gz",
+          "batch": "g1cov_rb_sb_s0",
+          "repo_head": "707580c56ca139c27ad05363ffe5cf7f03c6ad1c",
+          "seed": 0,
+          "layout": 4,
+          "assertion_passed": true,
+          "failure_count": 0,
+          "rigid_bodies": 3,
+          "geometry_colliders": 1,
+          "zero_collider_markers": 0,
+          "scene_pairs_checked": 24,
+          "link_static_pairs_checked": 12,
+          "link_link_pairs_checked": 6,
+          "resting_contacts_checked": 3,
+          "max_abs_pair_diff": 5e-06,
+          "compensations_count": 0,
+          "sdf_trimesh_report_null_count": 0,
+          "canary_table_slide_mm": 57.09,
+          "canary_ground_slide_mm": 54.83,
+          "settled_state_sha256": "94f30badd0182c082b5139fbac11917d9e4e1c5beef900e64d748c8206d635b6",
+          "unstable": null,
+          "models_verified": [
+            "Geometry/camera_stand/00000",
+            "Rigid/block/00006",
+            "Rigid/block/00009",
+            "Rigid/block/00012"
+          ],
+          "models_added": [
+            "Rigid/block/00006",
+            "Rigid/block/00012"
+          ]
+        },
+        {
+          "archive": "g1cov_rb_sb_s0_q01_vis2.result.json.gz",
+          "batch": "g1cov_rb_sb_s0",
+          "repo_head": "707580c56ca139c27ad05363ffe5cf7f03c6ad1c",
+          "seed": 0,
+          "layout": 8,
+          "assertion_passed": true,
+          "failure_count": 0,
+          "rigid_bodies": 3,
+          "geometry_colliders": 1,
+          "zero_collider_markers": 0,
+          "scene_pairs_checked": 24,
+          "link_static_pairs_checked": 12,
+          "link_link_pairs_checked": 6,
+          "resting_contacts_checked": 3,
+          "max_abs_pair_diff": 5e-06,
+          "compensations_count": 0,
+          "sdf_trimesh_report_null_count": 0,
+          "canary_table_slide_mm": 57.09,
+          "canary_ground_slide_mm": 54.83,
+          "settled_state_sha256": "c891a5371fcbf7c6476106642f72a008e74085d5fd10376ea21ee0a27a4d9c19",
+          "unstable": null,
+          "models_verified": [
+            "Geometry/camera_stand/00000",
+            "Rigid/block/00013",
+            "Rigid/block/00016",
+            "Rigid/block/00019"
+          ],
+          "models_added": [
+            "Rigid/block/00013",
+            "Rigid/block/00016",
+            "Rigid/block/00019"
+          ]
+        },
+        {
+          "archive": "g1cov_rb_sb_s0_q00_vis2.result.json.gz",
+          "batch": "g1cov_rb_sb_s0",
+          "repo_head": "707580c56ca139c27ad05363ffe5cf7f03c6ad1c",
+          "seed": 0,
+          "layout": 10,
+          "assertion_passed": true,
+          "failure_count": 0,
+          "rigid_bodies": 3,
+          "geometry_colliders": 1,
+          "zero_collider_markers": 0,
+          "scene_pairs_checked": 24,
+          "link_static_pairs_checked": 12,
+          "link_link_pairs_checked": 6,
+          "resting_contacts_checked": 3,
+          "max_abs_pair_diff": 5e-06,
+          "compensations_count": 0,
+          "sdf_trimesh_report_null_count": 0,
+          "canary_table_slide_mm": 57.09,
+          "canary_ground_slide_mm": 54.83,
+          "settled_state_sha256": "1cf3c2f22ad66663caf9f99b4cd90323836f02be5a94f621e238af472fc69dc6",
+          "unstable": null,
+          "models_verified": [
+            "Geometry/camera_stand/00000",
+            "Rigid/block/00005",
+            "Rigid/block/00008",
+            "Rigid/block/00014"
+          ],
+          "models_added": [
+            "Rigid/block/00005",
+            "Rigid/block/00014"
+          ]
+        },
+        {
+          "archive": "g1cov_rb_sb_s0_q01_vis2.result.json.gz",
+          "batch": "g1cov_rb_sb_s0",
+          "repo_head": "707580c56ca139c27ad05363ffe5cf7f03c6ad1c",
+          "seed": 0,
+          "layout": 24,
+          "assertion_passed": true,
+          "failure_count": 0,
+          "rigid_bodies": 3,
+          "geometry_colliders": 1,
+          "zero_collider_markers": 0,
+          "scene_pairs_checked": 24,
+          "link_static_pairs_checked": 12,
+          "link_link_pairs_checked": 6,
+          "resting_contacts_checked": 3,
+          "max_abs_pair_diff": 5e-06,
+          "compensations_count": 0,
+          "sdf_trimesh_report_null_count": 0,
+          "canary_table_slide_mm": 57.09,
+          "canary_ground_slide_mm": 54.83,
+          "settled_state_sha256": "9babb9424120346eba7739880f8adb6c58a04d4ddf4844f5e52e98c8a172a358",
+          "unstable": null,
+          "models_verified": [
+            "Geometry/camera_stand/00000",
+            "Rigid/block/00007",
+            "Rigid/block/00010",
+            "Rigid/block/00019"
+          ],
+          "models_added": [
+            "Rigid/block/00007",
+            "Rigid/block/00010"
+          ]
+        }
+      ]
+    },
+    "stack_blocks_by_language": {
+      "total_models_3_seeds": 7,
+      "models_verified_in_175": 4,
+      "models_verified_total": 7,
+      "all_models_verified": true,
+      "total_readback_episodes": 2,
+      "new_readback_episodes": 1,
+      "total_failures": 0,
+      "sum_scene_pairs_checked": 48,
+      "sum_link_static_pairs_checked": 24,
+      "sum_link_link_pairs_checked": 12,
+      "sum_resting_contacts_checked": 6,
+      "max_abs_pair_diff": 3e-06,
+      "prior_175_runs": [
+        {
+          "archive": "../raw/l3w_rb_t1_stack_blocks_by_language_q00_vis2.result.json.gz",
+          "batch": "l3w_175",
+          "repo_head": "840a886c82613646bf045af9471fa839a7b8715b",
+          "seed": 0,
+          "layout": 0,
+          "assertion_passed": true,
+          "failure_count": 0,
+          "rigid_bodies": 3,
+          "geometry_colliders": 1,
+          "zero_collider_markers": 0,
+          "scene_pairs_checked": 24,
+          "link_static_pairs_checked": 12,
+          "link_link_pairs_checked": 6,
+          "resting_contacts_checked": 3,
+          "max_abs_pair_diff": 3e-06,
+          "compensations_count": 0,
+          "sdf_trimesh_report_null_count": 0,
+          "canary_table_slide_mm": 57.09,
+          "canary_ground_slide_mm": 54.83,
+          "settled_state_sha256": "2a8cd106975c453705a37acf783111cca160fb5056f21c923d623e1b6a1a1827",
+          "unstable": null,
+          "models_verified": [
+            "Geometry/camera_stand/00000",
+            "Rigid/cube/00001",
+            "Rigid/cube/00007",
+            "Rigid/cube/00008"
+          ]
+        }
+      ],
+      "new_runs": [
+        {
+          "archive": "g1cov_rb_sbbl_s0_q00_vis2.result.json.gz",
+          "batch": "g1cov_rb_sbbl_s0",
+          "repo_head": "707580c56ca139c27ad05363ffe5cf7f03c6ad1c",
+          "seed": 0,
+          "layout": 17,
+          "assertion_passed": true,
+          "failure_count": 0,
+          "rigid_bodies": 3,
+          "geometry_colliders": 1,
+          "zero_collider_markers": 0,
+          "scene_pairs_checked": 24,
+          "link_static_pairs_checked": 12,
+          "link_link_pairs_checked": 6,
+          "resting_contacts_checked": 3,
+          "max_abs_pair_diff": 3e-06,
+          "compensations_count": 0,
+          "sdf_trimesh_report_null_count": 0,
+          "canary_table_slide_mm": 57.09,
+          "canary_ground_slide_mm": 54.83,
+          "settled_state_sha256": "8d75169445a059d59997bf382b968c64a22b7e9e153a9bc64d386ee0649d16d0",
+          "unstable": null,
+          "models_verified": [
+            "Geometry/camera_stand/00000",
+            "Rigid/cube/00002",
+            "Rigid/cube/00003",
+            "Rigid/cube/00009"
+          ],
+          "models_added": [
+            "Rigid/cube/00002",
+            "Rigid/cube/00003",
+            "Rigid/cube/00009"
+          ]
+        }
+      ]
+    },
+    "sweep_blocks": {
+      "total_models_3_seeds": 13,
+      "models_verified_in_175": 5,
+      "models_verified_total": 13,
+      "all_models_verified": true,
+      "total_readback_episodes": 3,
+      "new_readback_episodes": 2,
+      "total_failures": 0,
+      "sum_scene_pairs_checked": 185,
+      "sum_link_static_pairs_checked": 36,
+      "sum_link_link_pairs_checked": 18,
+      "sum_resting_contacts_checked": 19,
+      "max_abs_pair_diff": 3e-06,
+      "prior_175_runs": [
+        {
+          "archive": "../raw/l3w_rb_t1_sweep_blocks_q00_vis2.result.json.gz",
+          "batch": "l3w_175",
+          "repo_head": "840a886c82613646bf045af9471fa839a7b8715b",
+          "seed": 0,
+          "layout": 0,
+          "assertion_passed": true,
+          "failure_count": 0,
+          "rigid_bodies": 5,
+          "geometry_colliders": 1,
+          "zero_collider_markers": 0,
+          "scene_pairs_checked": 45,
+          "link_static_pairs_checked": 12,
+          "link_link_pairs_checked": 6,
+          "resting_contacts_checked": 5,
+          "max_abs_pair_diff": 3e-06,
+          "compensations_count": 1,
+          "sdf_trimesh_report_null_count": 0,
+          "canary_table_slide_mm": 57.09,
+          "canary_ground_slide_mm": 54.83,
+          "settled_state_sha256": "835ec063a1f8c5694af35799d579a0de4c3d848c00ebb3c1e7e6a0d98711807e",
+          "unstable": null,
+          "models_verified": [
+            "Geometry/camera_stand/00000",
+            "Rigid/broom/00000",
+            "Rigid/broom_shovel/00000",
+            "Rigid/small_cube/00007",
+            "Rigid/small_cube/00008"
+          ]
+        }
+      ],
+      "new_runs": [
+        {
+          "archive": "g1cov_rb_swp_s0_q00_vis2.result.json.gz",
+          "batch": "g1cov_rb_swp_s0",
+          "repo_head": "707580c56ca139c27ad05363ffe5cf7f03c6ad1c",
+          "seed": 0,
+          "layout": 1,
+          "assertion_passed": true,
+          "failure_count": 0,
+          "rigid_bodies": 7,
+          "geometry_colliders": 1,
+          "zero_collider_markers": 0,
+          "scene_pairs_checked": 70,
+          "link_static_pairs_checked": 12,
+          "link_link_pairs_checked": 6,
+          "resting_contacts_checked": 7,
+          "max_abs_pair_diff": 3e-06,
+          "compensations_count": 1,
+          "sdf_trimesh_report_null_count": 0,
+          "canary_table_slide_mm": 57.09,
+          "canary_ground_slide_mm": 54.83,
+          "settled_state_sha256": "dcae474a62c06f011d30add8e8920d5043f67fb0321910b7ca08c7c50dc519c8",
+          "unstable": null,
+          "models_verified": [
+            "Geometry/camera_stand/00000",
+            "Rigid/broom/00000",
+            "Rigid/broom_shovel/00000",
+            "Rigid/small_cube/00001",
+            "Rigid/small_cube/00002",
+            "Rigid/small_cube/00004",
+            "Rigid/small_cube/00005",
+            "Rigid/small_cube/00007"
+          ],
+          "models_added": [
+            "Rigid/small_cube/00001",
+            "Rigid/small_cube/00002",
+            "Rigid/small_cube/00004",
+            "Rigid/small_cube/00005"
+          ]
+        },
+        {
+          "archive": "g1cov_rb_swp_s0_q01_vis2.result.json.gz",
+          "batch": "g1cov_rb_swp_s0",
+          "repo_head": "707580c56ca139c27ad05363ffe5cf7f03c6ad1c",
+          "seed": 0,
+          "layout": 27,
+          "assertion_passed": true,
+          "failure_count": 0,
+          "rigid_bodies": 7,
+          "geometry_colliders": 1,
+          "zero_collider_markers": 0,
+          "scene_pairs_checked": 70,
+          "link_static_pairs_checked": 12,
+          "link_link_pairs_checked": 6,
+          "resting_contacts_checked": 7,
+          "max_abs_pair_diff": 3e-06,
+          "compensations_count": 1,
+          "sdf_trimesh_report_null_count": 0,
+          "canary_table_slide_mm": 57.09,
+          "canary_ground_slide_mm": 54.83,
+          "settled_state_sha256": "523aaec0343e09e4379e80c8c9e59015c3584bcb36c4bb7fef9b83746497a611",
+          "unstable": null,
+          "models_verified": [
+            "Geometry/camera_stand/00000",
+            "Rigid/broom/00000",
+            "Rigid/broom_shovel/00000",
+            "Rigid/small_cube/00000",
+            "Rigid/small_cube/00002",
+            "Rigid/small_cube/00003",
+            "Rigid/small_cube/00006",
+            "Rigid/small_cube/00009"
+          ],
+          "models_added": [
+            "Rigid/small_cube/00000",
+            "Rigid/small_cube/00003",
+            "Rigid/small_cube/00006",
+            "Rigid/small_cube/00009"
+          ]
+        }
+      ]
+    },
+    "sweep_blocks_random": {
+      "total_models_3_seeds": 12,
+      "models_verified_in_175": 10,
+      "models_verified_total": 12,
+      "all_models_verified": true,
+      "total_readback_episodes": 3,
+      "new_readback_episodes": 1,
+      "total_failures": 0,
+      "sum_scene_pairs_checked": 224,
+      "sum_link_static_pairs_checked": 36,
+      "sum_link_link_pairs_checked": 18,
+      "sum_resting_contacts_checked": 22,
+      "max_abs_pair_diff": 3e-06,
+      "prior_175_runs": [
+        {
+          "archive": "../raw/l3w_rb_t1_sweep_blocks_random_l5_q00_vis2.result.json.gz",
+          "batch": "l3w_175",
+          "repo_head": "e7279fcd1501da39642f9a62fa64ae435b69f7b8",
+          "seed": 0,
+          "layout": 5,
+          "assertion_passed": true,
+          "failure_count": 0,
+          "rigid_bodies": 7,
+          "geometry_colliders": 1,
+          "zero_collider_markers": 0,
+          "scene_pairs_checked": 70,
+          "link_static_pairs_checked": 12,
+          "link_link_pairs_checked": 6,
+          "resting_contacts_checked": 7,
+          "max_abs_pair_diff": 3e-06,
+          "compensations_count": 4,
+          "sdf_trimesh_report_null_count": 0,
+          "canary_table_slide_mm": 57.09,
+          "canary_ground_slide_mm": 54.83,
+          "settled_state_sha256": null,
+          "unstable": "UnStableError('All scene Unstable Error!')",
+          "models_verified": [
+            "Geometry/camera_stand/00000",
+            "Rigid/brick/00000",
+            "Rigid/broom/00000",
+            "Rigid/broom_shovel/00000",
+            "Rigid/earbuds/00001",
+            "Rigid/earbuds/00002",
+            "Rigid/paper_ball/00000",
+            "Rigid/paper_ball/00001"
+          ]
+        },
+        {
+          "archive": "../raw/l3w_rb_t1_sweep_blocks_random_q00_vis2.result.json.gz",
+          "batch": "l3w_175",
+          "repo_head": "e7279fcd1501da39642f9a62fa64ae435b69f7b8",
+          "seed": 0,
+          "layout": 0,
+          "assertion_passed": true,
+          "failure_count": 0,
+          "rigid_bodies": 7,
+          "geometry_colliders": 1,
+          "zero_collider_markers": 0,
+          "scene_pairs_checked": 70,
+          "link_static_pairs_checked": 12,
+          "link_link_pairs_checked": 6,
+          "resting_contacts_checked": 7,
+          "max_abs_pair_diff": 3e-06,
+          "compensations_count": 4,
+          "sdf_trimesh_report_null_count": 0,
+          "canary_table_slide_mm": 57.09,
+          "canary_ground_slide_mm": 54.83,
+          "settled_state_sha256": null,
+          "unstable": "UnStableError('All scene Unstable Error!')",
+          "models_verified": [
+            "Geometry/camera_stand/00000",
+            "Rigid/brick/00002",
+            "Rigid/broom/00000",
+            "Rigid/broom_shovel/00000",
+            "Rigid/earbuds/00001",
+            "Rigid/earbuds/00002",
+            "Rigid/paper_ball/00000",
+            "Rigid/paper_ball/00002"
+          ]
+        }
+      ],
+      "new_runs": [
+        {
+          "archive": "g1cov_rb_sbr_s0_q00_vis2.result.json.gz",
+          "batch": "g1cov_rb_sbr_s0",
+          "repo_head": "707580c56ca139c27ad05363ffe5cf7f03c6ad1c",
+          "seed": 0,
+          "layout": 1,
+          "assertion_passed": true,
+          "failure_count": 0,
+          "rigid_bodies": 8,
+          "geometry_colliders": 1,
+          "zero_collider_markers": 0,
+          "scene_pairs_checked": 84,
+          "link_static_pairs_checked": 12,
+          "link_link_pairs_checked": 6,
+          "resting_contacts_checked": 8,
+          "max_abs_pair_diff": 3e-06,
+          "compensations_count": 3,
+          "sdf_trimesh_report_null_count": 0,
+          "canary_table_slide_mm": 57.09,
+          "canary_ground_slide_mm": 54.83,
+          "settled_state_sha256": "5c703f46fcb67bd63d878d11932b0676164cb6b7c43de5ec7e681b105ca22aaf",
+          "unstable": null,
+          "models_verified": [
+            "Geometry/camera_stand/00000",
+            "Rigid/brick/00000",
+            "Rigid/brick/00001",
+            "Rigid/broom/00000",
+            "Rigid/broom_shovel/00000",
+            "Rigid/earbuds/00000",
+            "Rigid/earbuds/00002",
+            "Rigid/paper_ball/00001",
+            "Rigid/paper_ball/00002"
+          ],
+          "models_added": [
+            "Rigid/brick/00001",
+            "Rigid/earbuds/00000"
+          ]
+        }
+      ]
+    }
+  },
+  "sweep_blocks_random_earbuds_reset_probe_18_cells": {
+    "g1cov_probe_sbr_nominal": [
+      {
+        "cell_name": "l0_stab_off",
+        "layout": 0,
+        "enable_stabilization_readback": false,
+        "min_position_iterations_readback": 64,
+        "unstable": true,
+        "readback_assertion_passed": true,
+        "actors": {
+          "broom": {
+            "asset_id": "Rigid/broom/00000",
+            "engine_com_mm": [
+              -0.17,
+              -9.519,
+              36.889
+            ],
+            "rot_from_saved_deg": 4.672,
+            "dxy_from_saved_mm": 1.38,
+            "dz_from_saved_mm": -0.746,
+            "post_reset_down_local": [
+              -0.982,
+              0.1877,
+              0.0227
+            ]
+          },
+          "target_3_0": {
+            "asset_id": "Rigid/earbuds/00001",
+            "engine_com_mm": [
+              -1.986,
+              -1.31,
+              4.581
+            ],
+            "rot_from_saved_deg": 47.142,
+            "dxy_from_saved_mm": 10.568,
+            "dz_from_saved_mm": -6.187,
+            "post_reset_down_local": [
+              -0.1045,
+              0.918,
+              -0.3827
+            ]
+          },
+          "target_3_1": {
+            "asset_id": "Rigid/earbuds/00002",
+            "engine_com_mm": [
+              -0.017,
+              -0.892,
+              3.54
+            ],
+            "rot_from_saved_deg": 0.508,
+            "dxy_from_saved_mm": 0.087,
+            "dz_from_saved_mm": -0.073,
+            "post_reset_down_local": [
+              0.2395,
+              -0.9582,
+              -0.1564
+            ]
+          }
+        }
+      },
+      {
+        "cell_name": "l0_stab_on",
+        "layout": 0,
+        "enable_stabilization_readback": true,
+        "min_position_iterations_readback": 64,
+        "unstable": true,
+        "readback_assertion_passed": true,
+        "actors": {
+          "broom": {
+            "asset_id": "Rigid/broom/00000",
+            "engine_com_mm": [
+              -0.17,
+              -9.519,
+              36.889
+            ],
+            "rot_from_saved_deg": 4.671,
+            "dxy_from_saved_mm": 1.17,
+            "dz_from_saved_mm": -0.746,
+            "post_reset_down_local": [
+              -0.982,
+              0.1877,
+              0.0227
+            ]
+          },
+          "target_3_0": {
+            "asset_id": "Rigid/earbuds/00001",
+            "engine_com_mm": [
+              -1.986,
+              -1.31,
+              4.581
+            ],
+            "rot_from_saved_deg": 47.112,
+            "dxy_from_saved_mm": 10.347,
+            "dz_from_saved_mm": -6.187,
+            "post_reset_down_local": [
+              -0.1045,
+              0.918,
+              -0.3827
+            ]
+          },
+          "target_3_1": {
+            "asset_id": "Rigid/earbuds/00002",
+            "engine_com_mm": [
+              -0.017,
+              -0.892,
+              3.54
+            ],
+            "rot_from_saved_deg": 0.509,
+            "dxy_from_saved_mm": 0.086,
+            "dz_from_saved_mm": -0.073,
+            "post_reset_down_local": [
+              0.2395,
+              -0.9582,
+              -0.1564
+            ]
+          }
+        }
+      },
+      {
+        "cell_name": "l1_stab_off",
+        "layout": 1,
+        "enable_stabilization_readback": false,
+        "min_position_iterations_readback": 64,
+        "unstable": false,
+        "readback_assertion_passed": true,
+        "actors": {
+          "broom": {
+            "asset_id": "Rigid/broom/00000",
+            "engine_com_mm": [
+              -0.17,
+              -9.519,
+              36.889
+            ],
+            "rot_from_saved_deg": 4.672,
+            "dxy_from_saved_mm": 1.372,
+            "dz_from_saved_mm": -0.746,
+            "post_reset_down_local": [
+              -0.982,
+              0.1877,
+              0.0227
+            ]
+          },
+          "target_2_0": {
+            "asset_id": "Rigid/earbuds/00000",
+            "engine_com_mm": [
+              -0.034,
+              -2.451,
+              -1.456
+            ],
+            "rot_from_saved_deg": 7.428,
+            "dxy_from_saved_mm": 2.791,
+            "dz_from_saved_mm": -0.855,
+            "post_reset_down_local": [
+              0.0408,
+              0.1321,
+              -0.9904
+            ]
+          },
+          "target_2_1": {
+            "asset_id": "Rigid/earbuds/00002",
+            "engine_com_mm": [
+              -0.017,
+              -0.892,
+              3.54
+            ],
+            "rot_from_saved_deg": 0.508,
+            "dxy_from_saved_mm": 0.087,
+            "dz_from_saved_mm": -0.073,
+            "post_reset_down_local": [
+              0.2395,
+              -0.9582,
+              -0.1564
+            ]
+          }
+        }
+      },
+      {
+        "cell_name": "l1_stab_on",
+        "layout": 1,
+        "enable_stabilization_readback": true,
+        "min_position_iterations_readback": 64,
+        "unstable": false,
+        "readback_assertion_passed": true,
+        "actors": {
+          "broom": {
+            "asset_id": "Rigid/broom/00000",
+            "engine_com_mm": [
+              -0.17,
+              -9.519,
+              36.889
+            ],
+            "rot_from_saved_deg": 4.671,
+            "dxy_from_saved_mm": 1.17,
+            "dz_from_saved_mm": -0.746,
+            "post_reset_down_local": [
+              -0.982,
+              0.1877,
+              0.0227
+            ]
+          },
+          "target_2_0": {
+            "asset_id": "Rigid/earbuds/00000",
+            "engine_com_mm": [
+              -0.034,
+              -2.451,
+              -1.456
+            ],
+            "rot_from_saved_deg": 7.428,
+            "dxy_from_saved_mm": 2.767,
+            "dz_from_saved_mm": -0.855,
+            "post_reset_down_local": [
+              0.0408,
+              0.1321,
+              -0.9904
+            ]
+          },
+          "target_2_1": {
+            "asset_id": "Rigid/earbuds/00002",
+            "engine_com_mm": [
+              -0.017,
+              -0.892,
+              3.54
+            ],
+            "rot_from_saved_deg": 0.509,
+            "dxy_from_saved_mm": 0.086,
+            "dz_from_saved_mm": -0.073,
+            "post_reset_down_local": [
+              0.2395,
+              -0.9582,
+              -0.1564
+            ]
+          }
+        }
+      },
+      {
+        "cell_name": "l5_stab_off",
+        "layout": 5,
+        "enable_stabilization_readback": false,
+        "min_position_iterations_readback": 64,
+        "unstable": true,
+        "readback_assertion_passed": true,
+        "actors": {
+          "broom": {
+            "asset_id": "Rigid/broom/00000",
+            "engine_com_mm": [
+              -0.17,
+              -9.519,
+              36.889
+            ],
+            "rot_from_saved_deg": 4.672,
+            "dxy_from_saved_mm": 1.368,
+            "dz_from_saved_mm": -0.746,
+            "post_reset_down_local": [
+              -0.982,
+              0.1877,
+              0.0227
+            ]
+          },
+          "target_3_0": {
+            "asset_id": "Rigid/earbuds/00002",
+            "engine_com_mm": [
+              -0.017,
+              -0.892,
+              3.54
+            ],
+            "rot_from_saved_deg": 0.508,
+            "dxy_from_saved_mm": 0.086,
+            "dz_from_saved_mm": -0.073,
+            "post_reset_down_local": [
+              0.2395,
+              -0.9582,
+              -0.1564
+            ]
+          },
+          "target_3_1": {
+            "asset_id": "Rigid/earbuds/00001",
+            "engine_com_mm": [
+              -1.986,
+              -1.31,
+              4.581
+            ],
+            "rot_from_saved_deg": 47.149,
+            "dxy_from_saved_mm": 10.621,
+            "dz_from_saved_mm": -6.187,
+            "post_reset_down_local": [
+              -0.1045,
+              0.918,
+              -0.3827
+            ]
+          }
+        }
+      },
+      {
+        "cell_name": "l5_stab_on",
+        "layout": 5,
+        "enable_stabilization_readback": true,
+        "min_position_iterations_readback": 64,
+        "unstable": true,
+        "readback_assertion_passed": true,
+        "actors": {
+          "broom": {
+            "asset_id": "Rigid/broom/00000",
+            "engine_com_mm": [
+              -0.17,
+              -9.519,
+              36.889
+            ],
+            "rot_from_saved_deg": 4.671,
+            "dxy_from_saved_mm": 1.169,
+            "dz_from_saved_mm": -0.746,
+            "post_reset_down_local": [
+              -0.982,
+              0.1877,
+              0.0227
+            ]
+          },
+          "target_3_0": {
+            "asset_id": "Rigid/earbuds/00002",
+            "engine_com_mm": [
+              -0.017,
+              -0.892,
+              3.54
+            ],
+            "rot_from_saved_deg": 0.509,
+            "dxy_from_saved_mm": 0.086,
+            "dz_from_saved_mm": -0.073,
+            "post_reset_down_local": [
+              0.2395,
+              -0.9582,
+              -0.1564
+            ]
+          },
+          "target_3_1": {
+            "asset_id": "Rigid/earbuds/00001",
+            "engine_com_mm": [
+              -1.986,
+              -1.31,
+              4.581
+            ],
+            "rot_from_saved_deg": 47.082,
+            "dxy_from_saved_mm": 10.058,
+            "dz_from_saved_mm": -6.187,
+            "post_reset_down_local": [
+              -0.1045,
+              0.918,
+              -0.3827
+            ]
+          }
+        }
+      }
+    ],
+    "g1cov_probe_sbr_surf_shell": [
+      {
+        "cell_name": "l0_stab_off",
+        "layout": 0,
+        "enable_stabilization_readback": false,
+        "min_position_iterations_readback": 64,
+        "unstable": true,
+        "readback_assertion_passed": true,
+        "actors": {
+          "broom": {
+            "asset_id": "Rigid/broom/00000",
+            "engine_com_mm": [
+              -0.17,
+              -9.519,
+              36.889
+            ],
+            "rot_from_saved_deg": 4.672,
+            "dxy_from_saved_mm": 1.38,
+            "dz_from_saved_mm": -0.746,
+            "post_reset_down_local": [
+              -0.982,
+              0.1877,
+              0.0227
+            ]
+          },
+          "target_3_0": {
+            "asset_id": "Rigid/earbuds/00001",
+            "engine_com_mm": [
+              2.266,
+              -0.514,
+              7.834
+            ],
+            "rot_from_saved_deg": 47.155,
+            "dxy_from_saved_mm": 7.365,
+            "dz_from_saved_mm": -6.187,
+            "post_reset_down_local": [
+              -0.1045,
+              0.918,
+              -0.3827
+            ]
+          },
+          "target_3_1": {
+            "asset_id": "Rigid/earbuds/00002",
+            "engine_com_mm": [
+              -0.018,
+              -0.851,
+              4.962
+            ],
+            "rot_from_saved_deg": 0.508,
+            "dxy_from_saved_mm": 0.087,
+            "dz_from_saved_mm": -0.073,
+            "post_reset_down_local": [
+              0.2395,
+              -0.9582,
+              -0.1564
+            ]
+          }
+        }
+      },
+      {
+        "cell_name": "l0_stab_on",
+        "layout": 0,
+        "enable_stabilization_readback": true,
+        "min_position_iterations_readback": 64,
+        "unstable": true,
+        "readback_assertion_passed": true,
+        "actors": {
+          "broom": {
+            "asset_id": "Rigid/broom/00000",
+            "engine_com_mm": [
+              -0.17,
+              -9.519,
+              36.889
+            ],
+            "rot_from_saved_deg": 4.671,
+            "dxy_from_saved_mm": 1.17,
+            "dz_from_saved_mm": -0.746,
+            "post_reset_down_local": [
+              -0.982,
+              0.1877,
+              0.0227
+            ]
+          },
+          "target_3_0": {
+            "asset_id": "Rigid/earbuds/00001",
+            "engine_com_mm": [
+              2.266,
+              -0.514,
+              7.834
+            ],
+            "rot_from_saved_deg": 47.072,
+            "dxy_from_saved_mm": 7.968,
+            "dz_from_saved_mm": -6.187,
+            "post_reset_down_local": [
+              -0.1045,
+              0.918,
+              -0.3827
+            ]
+          },
+          "target_3_1": {
+            "asset_id": "Rigid/earbuds/00002",
+            "engine_com_mm": [
+              -0.018,
+              -0.851,
+              4.962
+            ],
+            "rot_from_saved_deg": 0.509,
+            "dxy_from_saved_mm": 0.085,
+            "dz_from_saved_mm": -0.073,
+            "post_reset_down_local": [
+              0.2395,
+              -0.9582,
+              -0.1564
+            ]
+          }
+        }
+      },
+      {
+        "cell_name": "l1_stab_off",
+        "layout": 1,
+        "enable_stabilization_readback": false,
+        "min_position_iterations_readback": 64,
+        "unstable": false,
+        "readback_assertion_passed": true,
+        "actors": {
+          "broom": {
+            "asset_id": "Rigid/broom/00000",
+            "engine_com_mm": [
+              -0.17,
+              -9.519,
+              36.889
+            ],
+            "rot_from_saved_deg": 4.672,
+            "dxy_from_saved_mm": 1.372,
+            "dz_from_saved_mm": -0.746,
+            "post_reset_down_local": [
+              -0.982,
+              0.1877,
+              0.0227
+            ]
+          },
+          "target_2_0": {
+            "asset_id": "Rigid/earbuds/00000",
+            "engine_com_mm": [
+              -0.033,
+              -2.655,
+              -1.912
+            ],
+            "rot_from_saved_deg": 0.22,
+            "dxy_from_saved_mm": 0.081,
+            "dz_from_saved_mm": -0.355,
+            "post_reset_down_local": [
+              0.0121,
+              0.0062,
+              -0.9999
+            ]
+          },
+          "target_2_1": {
+            "asset_id": "Rigid/earbuds/00002",
+            "engine_com_mm": [
+              -0.018,
+              -0.851,
+              4.962
+            ],
+            "rot_from_saved_deg": 0.508,
+            "dxy_from_saved_mm": 0.087,
+            "dz_from_saved_mm": -0.073,
+            "post_reset_down_local": [
+              0.2395,
+              -0.9582,
+              -0.1564
+            ]
+          }
+        }
+      },
+      {
+        "cell_name": "l1_stab_on",
+        "layout": 1,
+        "enable_stabilization_readback": true,
+        "min_position_iterations_readback": 64,
+        "unstable": false,
+        "readback_assertion_passed": true,
+        "actors": {
+          "broom": {
+            "asset_id": "Rigid/broom/00000",
+            "engine_com_mm": [
+              -0.17,
+              -9.519,
+              36.889
+            ],
+            "rot_from_saved_deg": 4.671,
+            "dxy_from_saved_mm": 1.17,
+            "dz_from_saved_mm": -0.746,
+            "post_reset_down_local": [
+              -0.982,
+              0.1877,
+              0.0227
+            ]
+          },
+          "target_2_0": {
+            "asset_id": "Rigid/earbuds/00000",
+            "engine_com_mm": [
+              -0.033,
+              -2.655,
+              -1.912
+            ],
+            "rot_from_saved_deg": 7.428,
+            "dxy_from_saved_mm": 2.743,
+            "dz_from_saved_mm": -0.855,
+            "post_reset_down_local": [
+              0.0408,
+              0.1321,
+              -0.9904
+            ]
+          },
+          "target_2_1": {
+            "asset_id": "Rigid/earbuds/00002",
+            "engine_com_mm": [
+              -0.018,
+              -0.851,
+              4.962
+            ],
+            "rot_from_saved_deg": 0.509,
+            "dxy_from_saved_mm": 0.085,
+            "dz_from_saved_mm": -0.073,
+            "post_reset_down_local": [
+              0.2395,
+              -0.9582,
+              -0.1564
+            ]
+          }
+        }
+      },
+      {
+        "cell_name": "l5_stab_off",
+        "layout": 5,
+        "enable_stabilization_readback": false,
+        "min_position_iterations_readback": 64,
+        "unstable": true,
+        "readback_assertion_passed": true,
+        "actors": {
+          "broom": {
+            "asset_id": "Rigid/broom/00000",
+            "engine_com_mm": [
+              -0.17,
+              -9.519,
+              36.889
+            ],
+            "rot_from_saved_deg": 4.672,
+            "dxy_from_saved_mm": 1.368,
+            "dz_from_saved_mm": -0.746,
+            "post_reset_down_local": [
+              -0.982,
+              0.1877,
+              0.0227
+            ]
+          },
+          "target_3_0": {
+            "asset_id": "Rigid/earbuds/00002",
+            "engine_com_mm": [
+              -0.018,
+              -0.851,
+              4.962
+            ],
+            "rot_from_saved_deg": 0.508,
+            "dxy_from_saved_mm": 0.087,
+            "dz_from_saved_mm": -0.073,
+            "post_reset_down_local": [
+              0.2395,
+              -0.9582,
+              -0.1564
+            ]
+          },
+          "target_3_1": {
+            "asset_id": "Rigid/earbuds/00001",
+            "engine_com_mm": [
+              2.266,
+              -0.514,
+              7.834
+            ],
+            "rot_from_saved_deg": 47.137,
+            "dxy_from_saved_mm": 7.481,
+            "dz_from_saved_mm": -6.187,
+            "post_reset_down_local": [
+              -0.1045,
+              0.918,
+              -0.3827
+            ]
+          }
+        }
+      },
+      {
+        "cell_name": "l5_stab_on",
+        "layout": 5,
+        "enable_stabilization_readback": true,
+        "min_position_iterations_readback": 64,
+        "unstable": true,
+        "readback_assertion_passed": true,
+        "actors": {
+          "broom": {
+            "asset_id": "Rigid/broom/00000",
+            "engine_com_mm": [
+              -0.17,
+              -9.519,
+              36.889
+            ],
+            "rot_from_saved_deg": 4.671,
+            "dxy_from_saved_mm": 1.169,
+            "dz_from_saved_mm": -0.746,
+            "post_reset_down_local": [
+              -0.982,
+              0.1877,
+              0.0227
+            ]
+          },
+          "target_3_0": {
+            "asset_id": "Rigid/earbuds/00002",
+            "engine_com_mm": [
+              -0.018,
+              -0.851,
+              4.962
+            ],
+            "rot_from_saved_deg": 0.509,
+            "dxy_from_saved_mm": 0.085,
+            "dz_from_saved_mm": -0.073,
+            "post_reset_down_local": [
+              0.2395,
+              -0.9582,
+              -0.1564
+            ]
+          },
+          "target_3_1": {
+            "asset_id": "Rigid/earbuds/00001",
+            "engine_com_mm": [
+              2.266,
+              -0.514,
+              7.834
+            ],
+            "rot_from_saved_deg": 47.09,
+            "dxy_from_saved_mm": 7.862,
+            "dz_from_saved_mm": -6.187,
+            "post_reset_down_local": [
+              -0.1045,
+              0.918,
+              -0.3827
+            ]
+          }
+        }
+      }
+    ],
+    "g1cov_probe_sbr_vhacd_solid": [
+      {
+        "cell_name": "l0_stab_off",
+        "layout": 0,
+        "enable_stabilization_readback": false,
+        "min_position_iterations_readback": 64,
+        "unstable": false,
+        "readback_assertion_passed": true,
+        "actors": {
+          "broom": {
+            "asset_id": "Rigid/broom/00000",
+            "engine_com_mm": [
+              -0.17,
+              -9.519,
+              36.889
+            ],
+            "rot_from_saved_deg": 4.671,
+            "dxy_from_saved_mm": 1.379,
+            "dz_from_saved_mm": -0.746,
+            "post_reset_down_local": [
+              -0.982,
+              0.1877,
+              0.0227
+            ]
+          },
+          "target_3_0": {
+            "asset_id": "Rigid/earbuds/00001",
+            "engine_com_mm": [
+              -2.275,
+              -1.031,
+              8.789
+            ],
+            "rot_from_saved_deg": 0.062,
+            "dxy_from_saved_mm": 0.014,
+            "dz_from_saved_mm": -0.204,
+            "post_reset_down_local": [
+              -0.7948,
+              0.5872,
+              -0.1535
+            ]
+          },
+          "target_3_1": {
+            "asset_id": "Rigid/earbuds/00002",
+            "engine_com_mm": [
+              0.137,
+              -0.79,
+              7.002
+            ],
+            "rot_from_saved_deg": 0.508,
+            "dxy_from_saved_mm": 0.086,
+            "dz_from_saved_mm": -0.073,
+            "post_reset_down_local": [
+              0.2395,
+              -0.9582,
+              -0.1564
+            ]
+          }
+        }
+      },
+      {
+        "cell_name": "l0_stab_on",
+        "layout": 0,
+        "enable_stabilization_readback": true,
+        "min_position_iterations_readback": 64,
+        "unstable": false,
+        "readback_assertion_passed": true,
+        "actors": {
+          "broom": {
+            "asset_id": "Rigid/broom/00000",
+            "engine_com_mm": [
+              -0.17,
+              -9.519,
+              36.889
+            ],
+            "rot_from_saved_deg": 4.671,
+            "dxy_from_saved_mm": 1.17,
+            "dz_from_saved_mm": -0.746,
+            "post_reset_down_local": [
+              -0.982,
+              0.1877,
+              0.0227
+            ]
+          },
+          "target_3_0": {
+            "asset_id": "Rigid/earbuds/00001",
+            "engine_com_mm": [
+              -2.275,
+              -1.031,
+              8.789
+            ],
+            "rot_from_saved_deg": 0.063,
+            "dxy_from_saved_mm": 0.016,
+            "dz_from_saved_mm": -0.204,
+            "post_reset_down_local": [
+              -0.7948,
+              0.5872,
+              -0.1535
+            ]
+          },
+          "target_3_1": {
+            "asset_id": "Rigid/earbuds/00002",
+            "engine_com_mm": [
+              0.137,
+              -0.79,
+              7.002
+            ],
+            "rot_from_saved_deg": 0.509,
+            "dxy_from_saved_mm": 0.086,
+            "dz_from_saved_mm": -0.073,
+            "post_reset_down_local": [
+              0.2395,
+              -0.9582,
+              -0.1564
+            ]
+          }
+        }
+      },
+      {
+        "cell_name": "l1_stab_off",
+        "layout": 1,
+        "enable_stabilization_readback": false,
+        "min_position_iterations_readback": 64,
+        "unstable": false,
+        "readback_assertion_passed": true,
+        "actors": {
+          "broom": {
+            "asset_id": "Rigid/broom/00000",
+            "engine_com_mm": [
+              -0.17,
+              -9.519,
+              36.889
+            ],
+            "rot_from_saved_deg": 4.672,
+            "dxy_from_saved_mm": 1.372,
+            "dz_from_saved_mm": -0.746,
+            "post_reset_down_local": [
+              -0.982,
+              0.1877,
+              0.0227
+            ]
+          },
+          "target_2_0": {
+            "asset_id": "Rigid/earbuds/00000",
+            "engine_com_mm": [
+              0.102,
+              -4.539,
+              -1.454
+            ],
+            "rot_from_saved_deg": 0.22,
+            "dxy_from_saved_mm": 0.081,
+            "dz_from_saved_mm": -0.355,
+            "post_reset_down_local": [
+              0.0121,
+              0.0062,
+              -0.9999
+            ]
+          },
+          "target_2_1": {
+            "asset_id": "Rigid/earbuds/00002",
+            "engine_com_mm": [
+              0.137,
+              -0.79,
+              7.002
+            ],
+            "rot_from_saved_deg": 0.508,
+            "dxy_from_saved_mm": 0.087,
+            "dz_from_saved_mm": -0.073,
+            "post_reset_down_local": [
+              0.2395,
+              -0.9582,
+              -0.1564
+            ]
+          }
+        }
+      },
+      {
+        "cell_name": "l1_stab_on",
+        "layout": 1,
+        "enable_stabilization_readback": true,
+        "min_position_iterations_readback": 64,
+        "unstable": false,
+        "readback_assertion_passed": true,
+        "actors": {
+          "broom": {
+            "asset_id": "Rigid/broom/00000",
+            "engine_com_mm": [
+              -0.17,
+              -9.519,
+              36.889
+            ],
+            "rot_from_saved_deg": 4.671,
+            "dxy_from_saved_mm": 1.17,
+            "dz_from_saved_mm": -0.746,
+            "post_reset_down_local": [
+              -0.982,
+              0.1877,
+              0.0227
+            ]
+          },
+          "target_2_0": {
+            "asset_id": "Rigid/earbuds/00000",
+            "engine_com_mm": [
+              0.102,
+              -4.539,
+              -1.454
+            ],
+            "rot_from_saved_deg": 0.22,
+            "dxy_from_saved_mm": 0.08,
+            "dz_from_saved_mm": -0.355,
+            "post_reset_down_local": [
+              0.0121,
+              0.0062,
+              -0.9999
+            ]
+          },
+          "target_2_1": {
+            "asset_id": "Rigid/earbuds/00002",
+            "engine_com_mm": [
+              0.137,
+              -0.79,
+              7.002
+            ],
+            "rot_from_saved_deg": 0.509,
+            "dxy_from_saved_mm": 0.086,
+            "dz_from_saved_mm": -0.073,
+            "post_reset_down_local": [
+              0.2395,
+              -0.9582,
+              -0.1564
+            ]
+          }
+        }
+      },
+      {
+        "cell_name": "l5_stab_off",
+        "layout": 5,
+        "enable_stabilization_readback": false,
+        "min_position_iterations_readback": 64,
+        "unstable": false,
+        "readback_assertion_passed": true,
+        "actors": {
+          "broom": {
+            "asset_id": "Rigid/broom/00000",
+            "engine_com_mm": [
+              -0.17,
+              -9.519,
+              36.889
+            ],
+            "rot_from_saved_deg": 4.671,
+            "dxy_from_saved_mm": 1.368,
+            "dz_from_saved_mm": -0.746,
+            "post_reset_down_local": [
+              -0.982,
+              0.1877,
+              0.0227
+            ]
+          },
+          "target_3_0": {
+            "asset_id": "Rigid/earbuds/00002",
+            "engine_com_mm": [
+              0.137,
+              -0.79,
+              7.002
+            ],
+            "rot_from_saved_deg": 0.508,
+            "dxy_from_saved_mm": 0.086,
+            "dz_from_saved_mm": -0.073,
+            "post_reset_down_local": [
+              0.2395,
+              -0.9582,
+              -0.1564
+            ]
+          },
+          "target_3_1": {
+            "asset_id": "Rigid/earbuds/00001",
+            "engine_com_mm": [
+              -2.275,
+              -1.031,
+              8.789
+            ],
+            "rot_from_saved_deg": 0.063,
+            "dxy_from_saved_mm": 0.014,
+            "dz_from_saved_mm": -0.204,
+            "post_reset_down_local": [
+              -0.7948,
+              0.5872,
+              -0.1535
+            ]
+          }
+        }
+      },
+      {
+        "cell_name": "l5_stab_on",
+        "layout": 5,
+        "enable_stabilization_readback": true,
+        "min_position_iterations_readback": 64,
+        "unstable": false,
+        "readback_assertion_passed": true,
+        "actors": {
+          "broom": {
+            "asset_id": "Rigid/broom/00000",
+            "engine_com_mm": [
+              -0.17,
+              -9.519,
+              36.889
+            ],
+            "rot_from_saved_deg": 4.671,
+            "dxy_from_saved_mm": 1.168,
+            "dz_from_saved_mm": -0.746,
+            "post_reset_down_local": [
+              -0.982,
+              0.1877,
+              0.0227
+            ]
+          },
+          "target_3_0": {
+            "asset_id": "Rigid/earbuds/00002",
+            "engine_com_mm": [
+              0.137,
+              -0.79,
+              7.002
+            ],
+            "rot_from_saved_deg": 0.509,
+            "dxy_from_saved_mm": 0.086,
+            "dz_from_saved_mm": -0.073,
+            "post_reset_down_local": [
+              0.2395,
+              -0.9582,
+              -0.1564
+            ]
+          },
+          "target_3_1": {
+            "asset_id": "Rigid/earbuds/00001",
+            "engine_com_mm": [
+              -2.275,
+              -1.031,
+              8.789
+            ],
+            "rot_from_saved_deg": 0.063,
+            "dxy_from_saved_mm": 0.015,
+            "dz_from_saved_mm": -0.204,
+            "post_reset_down_local": [
+              -0.7948,
+              0.5872,
+              -0.1535
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "archived_raw_files": {
+    "g1cov_rb_aln_s0.batch_summary.json.gz": {
+      "sha256": "1fb140ec9bf1dd50d3d4ce6234a10b797e044d62ab3dd9bb96765116c3fb0dd0",
+      "bytes": 2066
+    },
+    "g1cov_rb_aln_s0_q00_vis2.result.json.gz": {
+      "sha256": "1d4818a24996cc14ea41588c6f1da0e452ff91752b84b047e5efe0b49a296804",
+      "bytes": 203597
+    },
+    "g1cov_rb_aln_s0_q01_vis2.result.json.gz": {
+      "sha256": "df5613b89910c494bdc4ac6c5555ba3b75a55baa1d3710cef9a6eee5c5cd20bf",
+      "bytes": 202845
+    },
+    "g1cov_rb_aln_s2.batch_summary.json.gz": {
+      "sha256": "88a544325e4cdb7737b2780338856e42e90260dde592786e21c9edc469cb0863",
+      "bytes": 1247
+    },
+    "g1cov_rb_aln_s2_q00_vis2.result.json.gz": {
+      "sha256": "9a72c31cf94d738af2e7fd82c6558b29bcab3df18a051d829559077751e4820f",
+      "bytes": 68795
+    },
+    "g1cov_rb_ot_l0par.batch_summary.json.gz": {
+      "sha256": "3bd0349bf9aa6ef22e2dbfa7a763b67c780afe87c258ff07e2986d8f642efd51",
+      "bytes": 1287
+    },
+    "g1cov_rb_ot_l0par_q00_vis2.result.json.gz": {
+      "sha256": "7f3a364949ca185f1b91e4f544da5d4b73fca4903b1e557f98f126a9dab5663c",
+      "bytes": 69133
+    },
+    "g1cov_rb_ot_s0.batch_summary.json.gz": {
+      "sha256": "c7e5260eade515b82b953371f88d1f62c3173752b260593ef39a7a30594f00c6",
+      "bytes": 2165
+    },
+    "g1cov_rb_ot_s0_q00_vis2.result.json.gz": {
+      "sha256": "330a239e04d864fad7806dbc8bf400a1839c545c76ac37ac083207270731e5d9",
+      "bytes": 136572
+    },
+    "g1cov_rb_ot_s0_q01_vis2.result.json.gz": {
+      "sha256": "dfdf8112cef8c5337e43805c71de7d6f2dd8bab7324b7f1351916d64f9312aa9",
+      "bytes": 134896
+    },
+    "g1cov_rb_ot_l40.batch_summary.json.gz": {
+      "sha256": "a8f241372f4b4a61525c1841ec35d451c0808babccfd915199d162041ee66a31",
+      "bytes": 1294
+    },
+    "g1cov_rb_ot_l40_q00_vis2.result.json.gz": {
+      "sha256": "8224abbd2c5dd24fed0f957c378e549720903780745f7365ad27766923a5058a",
+      "bytes": 69106
+    },
+    "g1cov_rb_se_s0.batch_summary.json.gz": {
+      "sha256": "344c203f22ae929fb36ab6deb349a89b5c4aa42412cf63fb96ca9a3bc8215358",
+      "bytes": 1656
+    },
+    "g1cov_rb_se_s0_q00_vis2.result.json.gz": {
+      "sha256": "ecac28b76de4e79b7d7d87b820ff50786dc3769d067b80a39d8b8c6e2d62d310",
+      "bytes": 77814
+    },
+    "g1cov_rb_se_s0_q01_vis2.result.json.gz": {
+      "sha256": "059a5aba6df3557b53c21a095e40dcdff92d3bad472a07218aeeb223caa3539e",
+      "bytes": 153337
+    },
+    "g1cov_rb_sb_s0.batch_summary.json.gz": {
+      "sha256": "fe22f263c93fc7789cf84e6a92f613284a33dfd3516be876eeb8a211c26056c3",
+      "bytes": 2177
+    },
+    "g1cov_rb_sb_s0_q00_vis2.result.json.gz": {
+      "sha256": "8509eb1371ea7181eb2f312c557e477834962e8c93a93dcb56bb0d711bf7c31a",
+      "bytes": 125827
+    },
+    "g1cov_rb_sb_s0_q01_vis2.result.json.gz": {
+      "sha256": "07e52c5b260e4c064d56e28dacbf921b0588a5ce1e99e59a024d6e59b9bf296f",
+      "bytes": 187527
+    },
+    "g1cov_rb_sbbl_s0.batch_summary.json.gz": {
+      "sha256": "4fca314b36a342bb85431d6d0665a9de23e646cb8f4584008fa98c3244fcd5ad",
+      "bytes": 1518
+    },
+    "g1cov_rb_sbbl_s0_q00_vis2.result.json.gz": {
+      "sha256": "cefd82076a6124d0283371286ac65963e9faaa96711c68041fae57b349294f7a",
+      "bytes": 64430
+    },
+    "g1cov_rb_swp_s0.batch_summary.json.gz": {
+      "sha256": "6eb695f4c92b84ec7499ebd8fa8f9a750bea88f5a30e42d0f94e002b9c74959a",
+      "bytes": 2072
+    },
+    "g1cov_rb_swp_s0_q00_vis2.result.json.gz": {
+      "sha256": "a9851a5b30f6aa5c5f6dd7602fc5aec0e8f1eefdb3e3b6462ed075f192c12c5c",
+      "bytes": 68173
+    },
+    "g1cov_rb_swp_s0_q01_vis2.result.json.gz": {
+      "sha256": "57b78fb23925789848ec3f1b6ee72338c8c2f593aed9c3b5e8792a7514858069",
+      "bytes": 68205
+    },
+    "g1cov_rb_sbr_s0.batch_summary.json.gz": {
+      "sha256": "f5918f7e0546b9fd1a8915d355a1e6313eb1432493d12a44fa3116c0fb45cd79",
+      "bytes": 1543
+    },
+    "g1cov_rb_sbr_s0_q00_vis2.result.json.gz": {
+      "sha256": "04422043c6a8e70e96838e2b02693c2caa00dcfa28eab421e40bef077b407278",
+      "bytes": 71586
+    },
+    "g1cov_probe_sbr_nominal.result.json.gz": {
+      "sha256": "ee6490be138f357f1fa739cd6e394145eee8440ebd01d1247e4d859b5e1519cd",
+      "bytes": 482123
+    },
+    "g1cov_probe_sbr_surf_shell.result.json.gz": {
+      "sha256": "58e9c2bbe199d14065b853c550969d89cb4333a99a1e14b5bbc763d962156016",
+      "bytes": 482645
+    },
+    "g1cov_probe_sbr_vhacd_solid.result.json.gz": {
+      "sha256": "e2763840d2dd8d96f90fad53397c7ba3fb882d7bae2d5c25abdf8d0342bda38a",
+      "bytes": 481721
+    },
+    "g1cov_diag_ot16_shipped.result.json.gz": {
+      "sha256": "7be0acb0cc856adf43e0daa6525f4f6264b05fb3ec9d54e61edcb88ee0d4d942",
+      "bytes": 13040
+    },
+    "g1cov_diag_ot16_corr.result.json.gz": {
+      "sha256": "e0ff76486d7879b257d91d794228368151e9992a2ecc2d61a894f95f10f4f48e",
+      "bytes": 12903
+    }
+  }
+}

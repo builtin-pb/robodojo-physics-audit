@@ -1,0 +1,8 @@
+# RoboDojo dataset copy (ckpt/RoboDojo/InternW0_delta/RoboDojo-sim-arx_x5-joint-0/config/ at 1127bda) against XPolicyLab 5d0be14 policy/InternW0_delta/config/, shasum -a 256, November 13, 2026
+f12d8ab49a11ce0c2a7901a8f593e9ae9130925dc52fa1adc8d42e71f4493471  ds_artifacts.lock.json
+520202818f0c921cc281376343c2a4fe9285dd48cda1fced272cd89863dcce3d  ds_dataset_stats.json
+2771fc3c545044d769dfad81effa8257eeda58eb0ec761072270f00a30e9471a  ds_eval_model.yaml
+f12d8ab49a11ce0c2a7901a8f593e9ae9130925dc52fa1adc8d42e71f4493471  XPolicyLab/policy/InternW0_delta/config/artifacts.lock.json
+520202818f0c921cc281376343c2a4fe9285dd48cda1fced272cd89863dcce3d  XPolicyLab/policy/InternW0_delta/config/dataset_stats.json
+2771fc3c545044d769dfad81effa8257eeda58eb0ec761072270f00a30e9471a  XPolicyLab/policy/InternW0_delta/config/eval_model.yaml
+# artifacts.lock.json lists evaluation_config sha256 0ac9abf79fd725f80243522f8fcaad0b53f735d7f48e6b387066c4cb94df03e4 (stale; #147)

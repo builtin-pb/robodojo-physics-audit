@@ -1,0 +1,808 @@
+{
+ "_doc": "Highest gate reached per task config, with evidence. Gates (AGENTS.md): -1 not built, 0 built in the harness, 1 inputs delivered and plausible (exact sources not required; docs/METHOD.md), 3 scoring sound and solvable, 4 shipped vs corrected compared, 5 policy-level. `gate` is cumulative over G0, G1, G3, G4 and G5 and is never 2: G2 (dynamics stress-tested) is recorded per task as the engine's known limits and is not required for higher gates (Bo, November 16, #199). `g2` holds that record: `status` pass, fail or open (null: never run), `evidence` (repo paths; empty when null) and `note`. G3 and above hold under one evaluator version, named in `notes` (an evaluator change is a new benchmark version; v1 is the shipped evaluator). `delivered` concerns the corrected physics path: true when asserting engine readbacks pass for every model the config spawns, false if one failed, null if unchecked or checked on only some models (`notes` give the coverage); the shipped path's non-delivery (#58) is recorded in `notes`. Update by PR with the evidence path; `python3 audit/tools/gates_table.py` checks the schema (tests: `audit/tools/test_gates_ledger.py`) and prints the STATUS table. Wound down on November 18, 2026 (#59; final summary docs/SUMMARY.md): verified means gate 3 or higher; every other config is excluded, with its reason in `notes` (G3 not run unless they say otherwise).",
+ "updated": "2026-11-18",
+ "tasks": {
+  "align_blocks": {
+   "gate": 1,
+   "evidence": [
+    "audit/out/population_sweep/README.md",
+    "audit/out/63/population/README.md"
+   ],
+   "notes": "G0: built and reset in the population sweep (#64). Corrected path delivered: the asserting readback (seed 0 layout 0, 0 failures, #175) covers all 3 models the config spawns; shipped path not delivered (#58). G1 met: every value sourced, estimated or unsourced with a basis (docs/params, #173, #175); no outcome is known to hinge on a value (no scripted solution yet). G3 not run; the set square is never required (E3 #10, #54).",
+   "delivered": true,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "arrange_largest_number": {
+   "gate": 1,
+   "evidence": [
+    "audit/out/population_sweep/README.md",
+    "audit/out/63/population/README.md",
+    "audit/out/63/population/coverage_t1/README.md"
+   ],
+   "notes": "G0: built and reset in the population sweep (#64). Corrected path delivered: asserting readbacks across 8 episodes (seed 0 layouts 0, 2, 4, 5, 7, 11, 17 and seed 2 layout 7; 0 failures, 520 scene / 210 link-static / 48 link-link pairs checked; #175, audit/out/63/population/coverage_t1) cover all 32 of 32 models the config spawns across seeds 0 to 2; shipped path not delivered (#58). PhysX's contact report names the default material for the SDF number tiles on the table; a slide on a number tile shows the solver applies the bound one (#175). G1 met: every value sourced, estimated or unsourced with a basis (docs/params, #173, #175); no outcome is known to hinge on a value (no scripted solution yet). G3 not run.",
+   "delivered": true,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "arrange_largest_number_random": {
+   "gate": 0,
+   "evidence": [
+    "audit/out/population_sweep/README.md",
+    "audit/out/63/population/README.md",
+    "audit/out/63/population/coverage_t2/README.md"
+   ],
+   "notes": "G0: built and reset in the population sweep (#64). Corrected path delivered: asserting readbacks across 29 single-env episodes and 5 batched clutter runs (0 failures, 5,048 scene / 864 link-static / 204 link-link pairs checked; #175, #210, audit/out/63/population/coverage_t2) cover all 212 of 212 models the config spawns across seeds 0 to 2; shipped path not delivered (#58). PhysX's contact report names the default material for the SDF number tiles on the table; the tabletop canary slide confirms the solver applies the bound material (#175). At reset with stabilization off, seed 0 layout 9 raises upstream check_layout_stability (#18 UnStableError) while passing the asserting readback with 0 failures. Clutter/croissant/00000 is re-verified at its bakery-density mass (0.125949 kg from 260 [200, 400] kg/m^3) on seed 0 layout 2. G1 not met: Clutter/sandwich/00000 (668.3 g: 800 kg/m^3 over its closed 835.4 cm^3 mesh, which bridges the gaps between bread and filling) has no basis putting it in the range of real ones (#226 review); the value is left unchanged at wind-down (November 18, #59). G3 not run.",
+   "delivered": true,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "build_tower": {
+   "gate": 1,
+   "evidence": [
+    "audit/out/population_sweep/README.md",
+    "audit/out/63/population/README.md"
+   ],
+   "notes": "G0: built and reset in the population sweep (#64). Corrected path delivered: the asserting readback (seed 0 layout 0, 0 failures, #175) covers all 6 models the config spawns; shipped path not delivered (#58). G1 met: every value sourced, estimated or unsourced with a basis (docs/params, #173, #175); no outcome is known to hinge on a value (no scripted solution yet). G3 not run.",
+   "delivered": true,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "classify_objects": {
+   "gate": 1,
+   "evidence": [
+    "audit/out/population_sweep/README.md",
+    "audit/out/63/population/README.md",
+    "audit/out/63/population/coverage_t2/README.md"
+   ],
+   "notes": "G0: built and reset in the population sweep (#64). Corrected path delivered: asserting readbacks across 4 episodes (seed 0 layouts 0, 2, 4 and 18; 0 failures, 398 scene / 84 link-static / 24 link-link pairs checked; #175, #210, audit/out/63/population/coverage_t2) cover all 20 of 20 models the config spawns across seeds 0 to 2; shipped path not delivered (#58). G1 met: every value sourced, estimated or unsourced with a basis (docs/params, #59, #173, #175); no outcome is known to hinge on a value (no scripted solution yet). G3 not run.",
+   "delivered": true,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "classify_objects_by_language": {
+   "gate": 1,
+   "evidence": [
+    "audit/out/population_sweep/README.md",
+    "audit/out/63/population/README.md",
+    "audit/out/63/population/coverage_t2/README.md"
+   ],
+   "notes": "G0: built and reset in the population sweep (#64). Corrected path delivered: asserting readbacks across 5 episodes (seed 0 layouts 0, 1, 7 and 54 and seed 1 layout 39; 0 failures, 424 scene / 105 link-static / 30 link-link pairs checked; #175, #210, audit/out/63/population/coverage_t2) cover all 27 of 27 models the config spawns across seeds 0 to 2; shipped path not delivered (#58). PhysX's contact report names the default material on SDF-trimesh contacts; the tabletop canary slide confirms the solver applies the bound material (#175). G1 met: every value sourced, estimated or unsourced with a basis (docs/params, #59, #173, #175); no outcome is known to hinge on a value (no scripted solution yet). G3 not run.",
+   "delivered": true,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "cover_blocks": {
+   "gate": 4,
+   "evidence": [
+    "audit/out/case003/harness_cb_none.json",
+    "audit/out/population_sweep/README.md",
+    "audit/out/63/presence_checks/README.md",
+    "audit/out/63/population/README.md",
+    "audit/out/cover_blocks_e3/README.md",
+    "audit/out/scripts_cb_swapT/README.md",
+    "audit/out/g4/cover_blocks/README.md"
+   ],
+   "notes": "Corrected path delivered: asserting readbacks of every model it spawns (cup 00001, cubes 00004 to 00006, camera stand) pass (#175, #186); shipped path not delivered (#58). G1 met: values sourced, estimated or unsourced with a basis (#167, #175); no outcome is known to hinge on a value (G4: shipped, corrected and offsets up to 14 mm all 6/6). G3 met under evaluator v2 (#101): an upright cup resting on a cube and a cup held at cube height do not count as covering it (#52), lifting or tilting a cup to peek ends the episode as a failure (#51), early return fails (#56), and the frozen script-cover-blocks-v1 solves 6/6 at corrected (#176; 6/6 at v2_presence, #186). v1 fails (#52, #51, #56). The script proves solvability for the one arrangement all 165 layouts share, in 6 colour orders (#170). Open: the 8 mm seating tolerance still credits a cup lifted under about 6 mm or tilted 4 to 5° (#52). G4 met (#176). G5 not run.",
+   "delivered": true,
+   "g2": {
+    "status": "fail",
+    "evidence": [
+     "audit/out/g2/REPORT.md",
+     "audit/out/g2/cover_blocks/README.md"
+    ],
+    "note": "Fails on the frozen script's cells at map v2b (#179): 255 position iterations flip 2 of 6 colour orders (100 to 30) through the corrected finger's bounce on the 30 g cup (#180, S17), and true CPU against GPU dynamics differs by 2.635° against a predeclared 2° (post hoc: yaw of the round cup). dt 4, 2 and 1 ms converge on 4 orders and all 6 agree at 4 and 1 ms; no energy gain after release, penetration within contact offsets, no blow-up and batch size within band, each with a failing control."
+   }
+  },
+  "deposit_coin": {
+   "gate": 1,
+   "evidence": [
+    "audit/out/population_sweep/README.md",
+    "audit/out/63/population/README.md"
+   ],
+   "notes": "G0: built and reset in the population sweep (#64). Corrected path delivered: the asserting readback (seed 0 layout 0, 0 failures, #175) covers all 4 models the config spawns; shipped path not delivered (#58). G1 met: every value sourced, estimated or unsourced with a basis (docs/params, #173, #175); no outcome is known to hinge on a value (no scripted solution yet). G3 not run: a draft v2_deposit.1 rule exists on branch wc/g3-deposit-coin-rule without GPU results; parked at wind-down (November 18, #59).",
+   "delivered": true,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "fasten_screws": {
+   "gate": 1,
+   "evidence": [
+    "audit/out/population_sweep/README.md",
+    "audit/out/63/population/README.md",
+    "audit/out/63/population/coverage_t2/README.md"
+   ],
+   "notes": "G0: built and reset in the population sweep (#64). Corrected path delivered: asserting readbacks across 2 episodes (seed 0 layouts 0 and 2; 0 failures, 66 scene / 42 link-static / 12 link-link pairs checked; #175, #210, audit/out/63/population/coverage_t2) cover all 11 of 11 models the config spawns across seeds 0 to 2; shipped path not delivered (#58). All 5 factory_nut models (7 shapes: 1 SDF at sdfResolution 1024 plus 6 convexHull, 0.102 kg) build and read back cleanly in 1.88 GB PhysX GPU heap with 0 corruption or allocation errors (#114); bodyless ArticulationRootAPI on factory_nut/*/visual is uninstantiated in PhysX (nb_articulations = 2). G1 met: every value sourced, estimated or unsourced with a basis (docs/params, #59, #173, #175); no outcome is known to hinge on a value (no scripted solution yet). G3 not run.",
+   "delivered": true,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "fill_egg_holder": {
+   "gate": 0,
+   "evidence": [
+    "audit/out/population_sweep/README.md"
+   ],
+   "notes": "layout 0 built and reset in the population sweep (#64); shipped path not delivered: 4 of 4 rigid objects carry the engine default 0.5/0.5 instead of their bound material (#58)",
+   "delivered": null,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "fill_pen_holder": {
+   "gate": 1,
+   "evidence": [
+    "audit/out/population_sweep/README.md",
+    "audit/out/63/population/README.md",
+    "audit/out/63/population/coverage_t2/README.md"
+   ],
+   "notes": "G0: built and reset in the population sweep (#64). Corrected path delivered: asserting readbacks across 2 episodes (seed 0 layouts 0 and 2; 0 failures, 90 scene / 24 link-static / 12 link-link pairs checked; #175, #210, audit/out/63/population/coverage_t2) cover all 7 of 7 models the config spawns across seeds 0 to 2; shipped path not delivered (#58). G1 met: every value sourced, estimated or unsourced with a basis (docs/params, #59, #173, #175); no outcome is known to hinge on a value (no scripted solution yet). G3 not run.",
+   "delivered": true,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "fold_clothes": {
+   "gate": 0,
+   "evidence": [
+    "audit/out/population_sweep/README.md"
+   ],
+   "notes": "layout 0 built and reset in the population sweep (#64). Out of scope: cloth and liquid (AGENTS.md).",
+   "delivered": null,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "fold_clothes_random": {
+   "gate": 0,
+   "evidence": [
+    "audit/out/population_sweep/README.md"
+   ],
+   "notes": "layout 0 built and reset in the population sweep (#64). Out of scope: cloth and liquid (AGENTS.md).",
+   "delivered": null,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "general_pickup": {
+   "gate": 0,
+   "evidence": [
+    "audit/out/population_sweep/README.md",
+    "audit/out/63/population/README.md",
+    "audit/out/63/population/coverage_t2/README.md"
+   ],
+   "notes": "G0: built and reset in the population sweep (#64). Corrected path delivered: asserting readbacks across 74 single-env episodes and 6 batched clutter runs (0 failures, 1,435 scene / 960 link-static / 480 link-link pairs checked; #175, #210, audit/out/63/population/coverage_t2) cover all 238 of 238 models the config spawns across seeds 0 to 2; shipped path not delivered (#58). At reset with stabilization off, seed 0 layouts 2 and 29, seed 1 layouts 5 and 24 and seed 2 layouts 2 and 54 raise upstream check_layout_stability (#18 UnStableError) while passing the asserting readback with 0 failures. Clutter/croissant/00000 is re-verified at its bakery-density mass (0.125949 kg from 260 [200, 400] kg/m^3) on seed 2 layout 8. G1 not met: Clutter/sandwich/00000 (668.3 g: 800 kg/m^3 over its closed 835.4 cm^3 mesh, which bridges the gaps between bread and filling) and Rigid/donut/00000 (196.2 g: 800 kg/m^3 for an aerated dough) have no basis putting them in the range of real ones (#226 review); the values are left unchanged at wind-down (November 18, #59). G3 not run.",
+   "delivered": true,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "hang_mugs": {
+   "gate": 1,
+   "evidence": [
+    "audit/out/population_sweep/README.md",
+    "audit/out/63/population/README.md",
+    "audit/out/63/population/coverage_t2/README.md"
+   ],
+   "notes": "G0: built and reset in the population sweep (#64). Corrected path delivered: asserting readbacks across 4 episodes (seed 0 layouts 0, 2 and 13 and seed 1 layout 2; 0 failures, 108 scene / 60 link-static / 24 link-link pairs checked; #175, #210, audit/out/63/population/coverage_t2) cover all 12 of 12 models the config spawns across seeds 0 to 2; shipped path not delivered (#58). G1 met: every value sourced, estimated or unsourced with a basis (docs/params, #59, #173, #175); no outcome is known to hinge on a value (no scripted solution yet). G3 not run.",
+   "delivered": true,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "hang_mugs_random": {
+   "gate": 0,
+   "evidence": [
+    "audit/out/population_sweep/README.md",
+    "audit/out/63/population/README.md",
+    "audit/out/63/population/coverage_t2/README.md"
+   ],
+   "notes": "G0: built and reset in the population sweep (#64). Corrected path delivered: asserting readbacks across 33 single-env episodes and 6 batched clutter runs (0 failures, 3,893 scene / 585 link-static / 234 link-link pairs checked; #175, #210, audit/out/63/population/coverage_t2) cover all 196 of 196 models the config spawns across seeds 0 to 2; shipped path not delivered (#58). At reset with stabilization off, seed 0 layout 16, seed 1 layout 26 and seed 2 layout 3 raise upstream check_layout_stability (#18 UnStableError) while passing the asserting readback with 0 failures. Clutter/croissant/00000 is re-verified at its bakery-density mass (0.125949 kg from 260 [200, 400] kg/m^3) on seed 0 layout 11. G1 not met: Clutter/sandwich/00000 (668.3 g: 800 kg/m^3 over its closed 835.4 cm^3 mesh, which bridges the gaps between bread and filling) has no basis putting it in the range of real ones (#226 review); the value is left unchanged at wind-down (November 18, #59). G3 not run.",
+   "delivered": true,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "imitate_sorting_sequence": {
+   "gate": 0,
+   "evidence": [
+    "audit/out/population_sweep/README.md"
+   ],
+   "notes": "layout 0 built and reset in the population sweep (#64); shipped path not delivered: 10 of 10 rigid objects carry the engine default 0.5/0.5 instead of their bound material (#58)",
+   "delivered": null,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "insert_key": {
+   "gate": 1,
+   "evidence": [
+    "audit/out/population_sweep/README.md",
+    "audit/out/63/population/README.md"
+   ],
+   "notes": "G0: built and reset in the population sweep (#64). Corrected path delivered: the asserting readback (seed 0 layout 0, 0 failures, #175) covers all 3 models the config spawns; shipped path not delivered (#58). PhysX's contact report names the default material for the SDF key on the table; a slide on a number tile shows the solver applies the bound one (#175). G1 met: every value sourced, estimated or unsourced with a basis (docs/params, #173, #175); no outcome is known to hinge on a value (no scripted solution yet). G3 not run.",
+   "delivered": true,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "insert_tubes": {
+   "gate": 1,
+   "evidence": [
+    "audit/out/population_sweep/README.md",
+    "audit/out/63/population/README.md",
+    "audit/out/63/population/coverage_t2/README.md"
+   ],
+   "notes": "G0: built and reset in the population sweep (#64). Corrected path delivered: the asserting readback (seed 0 layout 0; 0 failures, 27 scene / 15 link-static / 6 link-link pairs checked; #175, #210, audit/out/63/population/coverage_t2) covers all 3 of 3 models the config spawns across seeds 0 to 2; shipped path not delivered (#58). G1 met: every value sourced, estimated or unsourced with a basis (docs/params, #59, #173, #175); no outcome is known to hinge on a value (no scripted solution yet). G3 not run.",
+   "delivered": true,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "make_kong": {
+   "gate": 0,
+   "evidence": [
+    "audit/out/population_sweep/README.md"
+   ],
+   "notes": "layout 0 built and reset in the population sweep (#64); shipped path not delivered: 22 of 22 rigid objects carry the engine default 0.5/0.5 instead of their bound material (#58); 22 declared masses differ in the engine (#5 cap or floor): mahjong0_0, mahjong0_1, mahjong0_2, mahjong1_0, mahjong1_1",
+   "delivered": null,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "make_toast": {
+   "gate": 0,
+   "evidence": [
+    "audit/out/population_sweep/README.md"
+   ],
+   "notes": "layout 0 built and reset in the population sweep (#64); shipped path not delivered: 4 of 4 rigid objects carry the engine default 0.5/0.5 instead of their bound material (#58)",
+   "delivered": null,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "make_toast_random": {
+   "gate": 0,
+   "evidence": [
+    "audit/out/population_sweep/README.md"
+   ],
+   "notes": "layout 0 built and reset in the population sweep (#64); shipped path not delivered: 4 of 4 rigid objects carry the engine default 0.5/0.5 instead of their bound material (#58)",
+   "delivered": null,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "match_and_pick_from_conveyor": {
+   "gate": 0,
+   "evidence": [
+    "audit/out/population_sweep/README.md"
+   ],
+   "notes": "layout 0 built and reset in the population sweep (#64); shipped path not delivered: 5 of 5 rigid objects carry the engine default 0.5/0.5 instead of their bound material (#58)",
+   "delivered": null,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "organize_table": {
+   "gate": 3,
+   "evidence": [
+    "audit/out/population_sweep/README.md",
+    "audit/out/63/population/README.md",
+    "audit/out/63/population/coverage_t1/README.md",
+    "audit/out/g3/organize_table/rule/README.md",
+    "audit/out/g3/organize_table/script/README.md"
+   ],
+   "notes": "G0: built and reset in the population sweep (#64). Corrected path delivered: asserting readbacks across 6 episodes (seed 0 layouts 0, 1, 5, 8, 16 and 40; 0 failures, 300 scene / 144 link-static / 36 link-link pairs checked; #175, audit/out/63/population/coverage_t1) cover all 19 of 19 models the config spawns across seeds 0 to 2 (18 colliders plus zero-collider Geometry/frame/00000); shipped path not delivered (#58). On seed 0 layout 16, garage 00005 spawns overlapping robot0's left end-effector (0.84 m/s, 15.3° kick at shipped; 3.20 to 4.50 m/s #152/#164 depenetration launch under the solver fix, knocking alarm off the table and raising #18 UnStableError; layout 40 spawns the same garage 00005 and keyboard 00001 clear of robot0 and settles cleanly). G1 met: every value sourced, estimated or unsourced with a basis (docs/params, #173, #175); no outcome hinges on a parameter value (layout 16's launch comes from the solver fix on a spawn overlap, not from docs/params). G3 met under evaluator v2_contact (v2_contact.1; #206, #214): each item counts only when no hand holds it with both pads and it is in contact with its target (mouse on mousemat, alarm on drawer top, figurine on cube_cushion, keyboard on table within the frame), read from contacts in every physics step (reporting on and off match: 10/10 settled states). Held alarms off or above the drawer, the mouse held 70.6 mm above its pad and an alarm clamped on the tray score 0 under v2_contact (25 to 100 under v1); released alarms keep their credit; a full-task control completes in 577 actions under all modes. The frozen script-organize-table-v1 solves 3/10 held-out seed-2 layouts at corrected under v2_contact (4/10 under v1; the difference is a garage resting only on the table beside its cushion, which v1 credits). Open: support means a qualifying target contact in the action window, not measured load share (accepted as this version's meaning). v1 fails G3. G4 not run.",
+   "delivered": true,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "pack_objects_into_box": {
+   "gate": 1,
+   "evidence": [
+    "audit/out/population_sweep/README.md",
+    "audit/out/63/population/README.md",
+    "audit/out/63/population/coverage_t2/README.md"
+   ],
+   "notes": "G0: built and reset in the population sweep (#64). Corrected path delivered: asserting readbacks across 8 episodes (seed 0 layouts 0, 4, 5, 6, 7, 22, 31 and 38; 0 failures, 360 scene / 96 link-static / 48 link-link pairs checked; #175, #210, audit/out/63/population/coverage_t2) cover all 22 of 22 models the config spawns across seeds 0 to 2; shipped path not delivered (#58, #5). G1 met: every value sourced, estimated or unsourced with a basis (docs/params, #59, #173, #175); no outcome is known to hinge on a value (no scripted solution yet). G3 not run.",
+   "delivered": true,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "pack_objects_into_box_random": {
+   "gate": 1,
+   "evidence": [
+    "audit/out/population_sweep/README.md",
+    "audit/out/63/population/README.md",
+    "audit/out/63/population/coverage_t2/README.md"
+   ],
+   "notes": "G0: built and reset in the population sweep (#64). Corrected path delivered: asserting readbacks across 10 episodes (seed 0 layouts 0, 1, 2, 3, 5, 6, 8, 11 and 13 and seed 1 layout 6; 0 failures, 450 scene / 120 link-static / 60 link-link pairs checked; #175, #210, audit/out/63/population/coverage_t2) cover all 22 of 22 models the config spawns across seeds 0 to 2; shipped path not delivered (#58). G1 met: every value sourced, estimated or unsourced with a basis (docs/params, #59, #173, #175); no outcome is known to hinge on a value (no scripted solution yet). G3 not run.",
+   "delivered": true,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "pick_from_conveyor_by_image": {
+   "gate": 0,
+   "evidence": [
+    "audit/out/population_sweep/README.md"
+   ],
+   "notes": "layout 0 built and reset in the population sweep (#64); shipped path not delivered: 5 of 5 rigid objects carry the engine default 0.5/0.5 instead of their bound material (#58)",
+   "delivered": null,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "play_Xylophone": {
+   "gate": 3,
+   "evidence": [
+    "audit/out/population_sweep/README.md",
+    "audit/out/63/population/README.md",
+    "audit/out/g3/play_Xylophone/rule/README.md",
+    "audit/out/g3/play_Xylophone/script/README.md"
+   ],
+   "notes": "G0: built and reset in the population sweep (#64). Corrected path delivered: the asserting readback (seed 0 layout 0, 0 failures, #175) covers all 4 models the config spawns; shipped path not delivered (#58). G1 met: every value sourced, estimated or unsourced with a basis (docs/params, #173, #175); no outcome is known to hinge on a value. G3 met under evaluator v2_contact (#205, #207): a strike counts only on force-bearing contact between the bars and the head of a mallet held by both fingers, read from contacts in every physics step (dynamics with reporting on match it off: 20/20 settled states). The hover, a rolled mallet, a sideways glide, a contact-free near-descent, side entry without a pause, an unclamped 13 mm grip and an unheld drop on key 7 score 100 under v1 and 0 under v2_contact; fast-rebound and edge strikes score 100. The frozen script-play-Xylophone-v1 solves 13/15 held-out seed-2 layouts at corrected under v2_contact (14/15 under v1; the difference is a mallet that slipped and fell onto key 7, which v1 credits). Open: a slow held press counts as a strike (no impact-velocity test; accepted as this version's meaning); the inherited >25 mm lift between keys rejects short honest taps. v1 fails G3. G4 not run.",
+   "delivered": true,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "play_stacking_toy": {
+   "gate": 1,
+   "evidence": [
+    "audit/out/population_sweep/README.md",
+    "audit/out/63/population/README.md",
+    "audit/out/63/population/coverage_t2/README.md"
+   ],
+   "notes": "G0: built and reset in the population sweep (#64). Corrected path delivered: the asserting readback (seed 0 layout 0; 0 failures, 125 scene / 15 link-static / 6 link-link pairs checked; #175, #210, audit/out/63/population/coverage_t2) covers all 6 of 6 models the config spawns across seeds 0 to 2; shipped path not delivered (#58, #5). PhysX's contact report names the default material for the SDF stacking blocks on the table; the tabletop canary slide confirms the solver applies the bound material (#175). G1 met: every value sourced, estimated or unsourced with a basis (docs/params, #59, #173, #175); no outcome is known to hinge on a value (no scripted solution yet). G3 not run.",
+   "delivered": true,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "play_tic_tac_toe": {
+   "gate": 0,
+   "evidence": [
+    "audit/out/population_sweep/README.md"
+   ],
+   "notes": "layout 0 built and reset in the population sweep (#64); shipped path not delivered: 9 of 9 rigid objects carry the engine default 0.5/0.5 instead of their bound material (#58)",
+   "delivered": null,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "plug_in_charger": {
+   "gate": 1,
+   "evidence": [
+    "audit/out/population_sweep/README.md",
+    "audit/out/63/population/README.md",
+    "audit/out/63/population/coverage_t2/README.md"
+   ],
+   "notes": "G0: built and reset in the population sweep (#64). Corrected path delivered: the asserting readback (seed 0 layout 0; 0 failures, 15 scene / 12 link-static / 6 link-link pairs checked; #175, #210, audit/out/63/population/coverage_t2) covers all 3 of 3 models the config spawns across seeds 0 to 2; shipped path not delivered (#58, #5). strongerThanDescendants overrides all 5 child bindings on charger 00000 (0.0267 kg) and all 3 dangling child bindings on socket 00000 (0.04941 kg) to abs_device_housing 0.3346/0.2893/0.40 in live PhysX (#58). G1 met: every value sourced, estimated or unsourced with a basis (docs/params, #59, #173, #175); no outcome is known to hinge on a value (no scripted solution yet). G3 not run.",
+   "delivered": true,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "pour_balls_into_vase": {
+   "gate": 1,
+   "evidence": [
+    "audit/out/population_sweep/README.md",
+    "audit/out/63/population/README.md",
+    "audit/out/63/population/coverage_t2/README.md"
+   ],
+   "notes": "G0: built and reset in the population sweep (#64). Corrected path delivered: asserting readbacks across 5 episodes (seed 0 layouts 0, 1, 2, 4 and 7; 0 failures, 460 scene / 75 link-static / 30 link-link pairs checked; #175, #210, audit/out/63/population/coverage_t2) cover all 8 of 8 models the config spawns across seeds 0 to 2; shipped path not delivered (#58). G1 met: every value sourced, estimated or unsourced with a basis (docs/params, #59, #173, #175); no outcome is known to hinge on a value (no scripted solution yet). G3 not run.",
+   "delivered": true,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "pour_by_language": {
+   "gate": 0,
+   "evidence": [
+    "audit/out/population_sweep/README.md"
+   ],
+   "notes": "layout 0 built and reset in the population sweep (#64); shipped path not delivered: 6 of 6 rigid objects carry the engine default 0.5/0.5 instead of their bound material (#58)",
+   "delivered": null,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "pour_liquid_into_cup": {
+   "gate": 0,
+   "evidence": [
+    "audit/out/population_sweep/README.md"
+   ],
+   "notes": "layout 0 built and reset in the population sweep (#64); shipped path not delivered: 2 of 2 rigid objects carry the engine default 0.5/0.5 instead of their bound material (#58). Out of scope: cloth and liquid (AGENTS.md).",
+   "delivered": null,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "pour_liquid_into_cup_random": {
+   "gate": 0,
+   "evidence": [
+    "audit/out/population_sweep/README.md"
+   ],
+   "notes": "layout 0 built and reset in the population sweep (#64); shipped path not delivered: 2 of 2 rigid objects carry the engine default 0.5/0.5 instead of their bound material (#58). Out of scope: cloth and liquid (AGENTS.md).",
+   "delivered": null,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "press_by_number": {
+   "gate": 0,
+   "evidence": [
+    "audit/out/population_sweep/README.md"
+   ],
+   "notes": "layout 0 built and reset in the population sweep (#64)",
+   "delivered": null,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "push_T": {
+   "gate": 1,
+   "evidence": [
+    "audit/out/population_sweep/README.md",
+    "audit/out/63/population/README.md"
+   ],
+   "notes": "G0: built and reset in the population sweep (#64). Corrected path delivered: the asserting readback (seed 0 layout 0, 0 failures, #175) covers all 3 models the config spawns; shipped path not delivered (#58). G1 met: every value sourced, estimated or unsourced with a basis (docs/params, #173, #175); no outcome is known to hinge on a value (no scripted solution yet). G3 not met: the frozen script solves 10/10 held-out seed-2 layouts under v1 and v2_push (#232), but the rule rejects an honest push with both fingers on one face and lets another object finish the transport, and whether \"push\" allows a two-pad clamped drag is open (#231); parked at wind-down (November 18, #59).",
+   "delivered": true,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "push_T_random": {
+   "gate": 0,
+   "evidence": [
+    "audit/out/population_sweep/README.md",
+    "audit/out/63/population/README.md",
+    "audit/out/63/population/coverage_t2/README.md"
+   ],
+   "notes": "G0: built and reset in the population sweep (#64). Corrected path delivered: asserting readbacks across 34 single-env episodes and 5 batched clutter runs (0 failures, 1,652 scene / 468 link-static / 234 link-link pairs checked; #175, #210, audit/out/63/population/coverage_t2) cover all 194 of 194 models the config spawns across seeds 0 to 2 (193 colliders plus zero-collider Geometry/t_cushion/00000); shipped path not delivered (#58). At reset with stabilization off, seed 1 layout 18 raises upstream check_layout_stability (#18 UnStableError) while passing the asserting readback with 0 failures. Clutter/croissant/00000 is re-verified at its bakery-density mass (0.125949 kg from 260 [200, 400] kg/m^3) on seed 0 layout 2. G1 not met: Clutter/sandwich/00000 (668.3 g: 800 kg/m^3 over its closed 835.4 cm^3 mesh, which bridges the gaps between bread and filling) has no basis putting it in the range of real ones (#226 review); the value is left unchanged at wind-down (November 18, #59). G3 not run.",
+   "delivered": true,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "put_bottles_into_dustbin": {
+   "gate": 4,
+   "evidence": [
+    "audit/out/harness/gate0_hold.json",
+    "audit/out/case003/harness_rb_none.json",
+    "audit/out/script_bottles/README.md",
+    "audit/out/population_sweep/README.md",
+    "audit/out/g4/put_bottles_into_dustbin/README.md",
+    "audit/out/63/presence_checks/README.md",
+    "audit/out/63/population/README.md",
+    "audit/out/fix_160/README.md",
+    "audit/out/bottles_g3/README.md",
+    "audit/out/eval_v22/README.md",
+    "audit/out/bottles_grip_corner/README.md",
+    "audit/out/g5/bottles/README.md"
+   ],
+   "notes": "Corrected path delivered: asserting readbacks of all 10 bottle models, the bin and the camera stand pass at v2_presence (#186, #175); shipped path not delivered (#58, #5). G1 met: every outcome-relevant value is sourced, estimated or unsourced with a basis, and pad-PET friction and the empty masses were swept (#153). The gripper was run at the adverse corner of its docs/params ranges: efficiency 0.7 puts trip, stiffness and damping at their low ends (finger_trip_n 141.55 N), with finger_armature_kg 14.062 kg. There #160's witness loses steel bottle 00022 in the swing (nominal holds it; the force alone decides), and the held-out score is 18/20 under v2.2 (nominal 20/20 under v2, #186, which v2.2 does not change, #192; 2 flips, within seed noise; the corner is an adverse bound, not one consistent gripper; audit/out/bottles_grip_corner). The pad friction and mass sweeps ran before #163's gripper and at map v2b; #173 counts them. G3 met under evaluator v2.2 (#192): the shove (#109), closed fists (#177) and bottles on or beside the rim (#190) score 0, early return fails (#56), and the frozen script-bottles-v2 solves at corrected under v2.2 (6 corrected episodes rescored offline without a verdict change, #192; 20/20 held-out under v2, #186). v1 fails: the shove scores 25 or 40 and early return 100. Open, unwitnessed: a bottle resting on a jaw opened 20 mm or more. G4 met (#153: shipped 20/20 against corrected 18/20, one change at a time; corrected 20/20 at v2_presence, #186); it carries to v2.2: the script lifts every scored bottle over 0.17 m (#153) and holds at jaws of 48 mm or more (#192), so v2.1 and v2.2 change no verdict. G5 not met under v2.2: InternW0-Δ compared shipped and corrected only under v1 at map v1 (39/40 and 38/40) and ran shipped under v2.1 (38/40, #181), at seed 0 layouts 0 to 39 (#146); the corrected arm's 38/40 replaced layouts 6 and 37, rejected at reset, with 40 and 41 (counting those two as failures gives 36/40 on layouts 0 to 39); parked (Bo, November 16).",
+   "delivered": true,
+   "g2": {
+    "status": "fail",
+    "evidence": [
+     "audit/out/g2/put_bottles_into_dustbin/README.md"
+    ],
+    "note": "Fails on main's map (#196): energy gain after release (#164, S16: open, low priority; 20/20 and no bin exits), penetration beyond contact offsets on free-fall impacts at 4 ms, release disagreement at 128 and 255 position iterations, a blow-up at 255 iterations (S17 jaw bounce), and CPU against GPU settling and batch-size release outside their predeclared bands; dt refinement open at 1 ms (a layout cannot reset, #152). Velocity 8 (#193) and CCD (#198) each trade one energy error for another."
+   }
+  },
+  "solve_equation": {
+   "gate": 1,
+   "evidence": [
+    "audit/out/population_sweep/README.md",
+    "audit/out/63/population/README.md",
+    "audit/out/63/population/coverage_t1/README.md"
+   ],
+   "notes": "G0: built and reset in the population sweep (#64). Corrected path delivered: asserting readbacks across 4 episodes (seed 0 layouts 0, 1, 27 and 48; 0 failures, 1,574 scene / 114 link-static / 24 link-link pairs checked; #175, audit/out/63/population/coverage_t1) cover all 37 of 37 models the config spawns across seeds 0 to 2; shipped path not delivered (#58). PhysX's contact report names the default material for the SDF number tiles on the table; a slide on a number tile shows the solver applies the bound one (#175). G1 met: every value sourced, estimated or unsourced with a basis (docs/params, #173, #175); no outcome is known to hinge on a value (no scripted solution yet). G3 not run.",
+   "delivered": true,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "sort_nesting_dolls_by_size": {
+   "gate": 1,
+   "evidence": [
+    "audit/out/population_sweep/README.md",
+    "audit/out/63/population/README.md",
+    "audit/out/63/population/coverage_t2/README.md"
+   ],
+   "notes": "G0: built and reset in the population sweep (#64). Corrected path delivered: asserting readbacks across 3 episodes (seed 0 layouts 0, 4 and 16; 0 failures, 135 scene / 36 link-static / 18 link-link pairs checked; #175, #210, audit/out/63/population/coverage_t2) cover all 16 of 16 models the config spawns across seeds 0 to 2; shipped path not delivered (#58). G1 met: every value sourced, estimated or unsourced with a basis (docs/params, #59, #173, #175); no outcome is known to hinge on a value (no scripted solution yet). G3 not run.",
+   "delivered": true,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "sort_nesting_dolls_by_size_random": {
+   "gate": 0,
+   "evidence": [
+    "audit/out/population_sweep/README.md",
+    "audit/out/63/population/README.md",
+    "audit/out/63/population/coverage_t2/README.md"
+   ],
+   "notes": "G0: built and reset in the population sweep (#64). Corrected path delivered: asserting readbacks across 35 single-env episodes and 5 batched clutter runs (0 failures, 3,904 scene / 480 link-static / 240 link-link pairs checked; #175, #210, audit/out/63/population/coverage_t2) cover all 200 of 200 models the config spawns across seeds 0 to 2; shipped path not delivered (#58). At reset with stabilization off, seed 0 layout 3 raises upstream check_layout_stability (#18 UnStableError) while passing the asserting readback with 0 failures. Clutter/croissant/00000 is re-verified at its bakery-density mass (0.125949 kg from 260 [200, 400] kg/m^3) on seed 0 layout 2. G1 not met: Clutter/sandwich/00000 (668.3 g: 800 kg/m^3 over its closed 835.4 cm^3 mesh, which bridges the gaps between bread and filling) has no basis putting it in the range of real ones (#226 review); the value is left unchanged at wind-down (November 18, #59). G3 not run.",
+   "delivered": true,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "stack_blocks": {
+   "gate": 1,
+   "evidence": [
+    "audit/out/population_sweep/README.md",
+    "audit/out/63/population/README.md",
+    "audit/out/63/population/coverage_t1/README.md"
+   ],
+   "notes": "G0: built and reset in the population sweep (#64). Corrected path delivered: asserting readbacks across 6 episodes (seed 0 layouts 0, 2, 4, 8, 10 and 24; 0 failures, 144 scene / 72 link-static / 36 link-link pairs checked; #175, audit/out/63/population/coverage_t1) cover all 16 of 16 models the config spawns across seeds 0 to 2; shipped path not delivered (#58). G1 met: every value sourced, estimated or unsourced with a basis (docs/params, #173, #175); no outcome is known to hinge on a value (no scripted solution yet). G3 not met: the frozen script solves 8/10 held-out seed-2 layouts under v1 and v2_contact.2 (#224), but the rule still credits a stack that was clean earlier in an action and is held up by a robot link at scoring time, and an overhanging stack while it tips; v2_contact.3 needed (#223); parked at wind-down (November 18, #59).",
+   "delivered": true,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "stack_blocks_by_language": {
+   "gate": 1,
+   "evidence": [
+    "audit/out/population_sweep/README.md",
+    "audit/out/63/population/README.md",
+    "audit/out/63/population/coverage_t1/README.md"
+   ],
+   "notes": "G0: built and reset in the population sweep (#64). Corrected path delivered: asserting readbacks across 2 episodes (seed 0 layouts 0 and 17; 0 failures, 48 scene / 24 link-static / 12 link-link pairs checked; #175, audit/out/63/population/coverage_t1) cover all 7 of 7 models the config spawns across seeds 0 to 2; shipped path not delivered (#58). G1 met: every value sourced, estimated or unsourced with a basis (docs/params, #173, #175); no outcome is known to hinge on a value (no scripted solution yet). G3 not met: the frozen script solves 10/10 held-out seed-2 layouts (#229), but it shares #223's rule and its scoring-time support problem (#228); parked at wind-down (November 18, #59).",
+   "delivered": true,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "stack_blocks_random": {
+   "gate": 0,
+   "evidence": [
+    "audit/out/population_sweep/README.md",
+    "audit/out/63/population/README.md",
+    "audit/out/63/population/coverage_t2/README.md"
+   ],
+   "notes": "G0: built and reset in the population sweep (#64). Corrected path delivered: asserting readbacks across 32 single-env episodes and 5 batched clutter runs (0 failures, 3,170 scene / 444 link-static / 222 link-link pairs checked; #175, #210, audit/out/63/population/coverage_t2) cover all 202 of 202 models the config spawns across seeds 0 to 2; shipped path not delivered (#58). At reset with stabilization off, seed 0 layout 25 raises upstream check_layout_stability (#18 UnStableError) while passing the asserting readback with 0 failures. Clutter/croissant/00000 is re-verified at its bakery-density mass (0.125949 kg from 260 [200, 400] kg/m^3) on seed 0 layout 3. G1 not met: Clutter/sandwich/00000 (668.3 g: 800 kg/m^3 over its closed 835.4 cm^3 mesh, which bridges the gaps between bread and filling) has no basis putting it in the range of real ones (#226 review); the value is left unchanged at wind-down (November 18, #59). G3 not run.",
+   "delivered": true,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "stack_bowls": {
+   "gate": 1,
+   "evidence": [
+    "audit/out/population_sweep/README.md",
+    "audit/out/63/population/README.md",
+    "audit/out/63/population/coverage_t2/README.md"
+   ],
+   "notes": "G0: built and reset in the population sweep (#64). Corrected path delivered: asserting readbacks across 8 episodes (seed 0 layouts 0, 1, 2, 3, 6, 8, 13 and 44; 0 failures, 192 scene / 96 link-static / 48 link-link pairs checked; #175, #210, audit/out/63/population/coverage_t2) cover all 9 of 9 models the config spawns across seeds 0 to 2; shipped path not delivered (#58). G1 met: every value sourced, estimated or unsourced with a basis (docs/params, #59, #173, #175); no outcome is known to hinge on a value (no scripted solution yet). G3 not run.",
+   "delivered": true,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "stack_bowls_random": {
+   "gate": 0,
+   "evidence": [
+    "audit/out/population_sweep/README.md",
+    "audit/out/63/population/README.md",
+    "audit/out/63/population/coverage_t2/README.md"
+   ],
+   "notes": "G0: built and reset in the population sweep (#64). Corrected path delivered: asserting readbacks across 33 single-env episodes and 6 batched clutter runs (0 failures, 3,111 scene / 468 link-static / 234 link-link pairs checked; #175, #210, audit/out/63/population/coverage_t2) cover all 194 of 194 models the config spawns across seeds 0 to 2; shipped path not delivered (#58). At reset with stabilization off, seed 0 layouts 7 and 15 raise upstream check_layout_stability (#18 UnStableError) while passing the asserting readback with 0 failures. Clutter/croissant/00000 is re-verified at its bakery-density mass (0.125949 kg from 260 [200, 400] kg/m^3) on seed 0 layout 2. G1 not met: Clutter/sandwich/00000 (668.3 g: 800 kg/m^3 over its closed 835.4 cm^3 mesh, which bridges the gaps between bread and filling) has no basis putting it in the range of real ones (#226 review); the value is left unchanged at wind-down (November 18, #59). G3 not run.",
+   "delivered": true,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "store_laptop_and_headphones": {
+   "gate": 0,
+   "evidence": [
+    "audit/out/population_sweep/README.md"
+   ],
+   "notes": "layout 0 built and reset in the population sweep (#64); shipped path not delivered: 1 of 1 rigid objects carry the engine default 0.5/0.5 instead of their bound material (#58)",
+   "delivered": null,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "store_laptop_and_headphones_random": {
+   "gate": 0,
+   "evidence": [
+    "audit/out/population_sweep/README.md"
+   ],
+   "notes": "layout 0 built and reset in the population sweep (#64); shipped path not delivered: 1 of 1 rigid objects carry the engine default 0.5/0.5 instead of their bound material (#58)",
+   "delivered": null,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "store_tools_in_toolbox": {
+   "gate": 1,
+   "evidence": [
+    "audit/out/population_sweep/README.md",
+    "audit/out/63/population/README.md"
+   ],
+   "notes": "G0: built and reset in the population sweep (#64). Corrected path delivered: the asserting readback (seed 0 layout 0, 0 failures, #175) covers all 6 models the config spawns; shipped path not delivered (#58). G1 met: every value sourced, estimated or unsourced with a basis (docs/params, #173, #175); no outcome is known to hinge on a value (no scripted solution yet). G3 not run.",
+   "delivered": true,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "swap_T": {
+   "gate": 4,
+   "evidence": [
+    "audit/out/swapT/harness_swapt_hold.json",
+    "audit/out/swapT/harness_swapt_rb_none.json",
+    "audit/out/swapT/harness_swapt_rb_order.json",
+    "audit/out/swapT/README.md",
+    "audit/out/population_sweep/README.md",
+    "audit/out/63/presence_checks/README.md",
+    "audit/out/63/population/README.md",
+    "audit/out/scripts_cb_swapT/README.md",
+    "audit/out/g4/swap_T/README.md",
+    "audit/out/g3/swap_T/rule/README.md",
+    "audit/out/g3/swap_T/script/README.md"
+   ],
+   "notes": "Corrected path delivered: asserting readbacks of both Ts pass (#186; #175's collision fix leaves one compound box per T, mass and inertia unchanged, seed 2 layouts 0 to 3 bit-identical); shipped path not delivered (#58; the 2.0/2.0 T material, #7). G1 met: values sourced, estimated or unsourced with a basis (#167); the outcome hinged on the sourced wrist-roll limit (robot_limits, #176), and script-swap-T-v2 solves 20/20 with and without it; pad-T, T-table and pad-table friction swept across their bands without change. G3 met under evaluator v2_lift (v2_lift.1; #201, #220, #221): each T counts only once held by both pads of one robot and lifted to a sustained support-relative clearance above 20 mm for at least 0.2 s (this version's meaning of \"pick up\", consistent with the bottles' rule), read from contacts in every physics step. Sliding, pushing, tipping onto an edge, a one-pad drag and a low 14-15 mm carry score 100 under v1 and 0 under v2_lift; honest pick-and-place controls score 100 under all modes. The frozen script-swap-T-v2 solves 20/20 held-out seed-2 layouts under v1 and v2_lift (margins: at least 60.9 mm clearance, 1.17 s). v1 fails G3. Open: the 3 degree tolerance may reject real placements (#54). G4 met (#176: script v1 20/20 shipped against 13/20 corrected, all from robot_limits; script v2 20/20 under both). G5 not run.",
+   "delivered": true,
+   "g2": {
+    "status": "pass",
+    "evidence": [
+     "audit/out/g2/REPORT.md",
+     "audit/out/g2/swap_T/README.md"
+    ],
+    "note": "Passes on the frozen script-swap-T-v2's cells at map v2b (#179): dt 2 and 1 ms and 255 position iterations agree within 0.12 mm and 0.124°; no blow-up, no energy gain after release, penetration within contact offsets (16 iterations, the failing control, exceeds them), true CPU dynamics and batch size within their bands. Those two comparisons do not detect a one-pair friction rise of up to +100% (#194)."
+   }
+  },
+  "swap_blocks": {
+   "gate": 0,
+   "evidence": [
+    "audit/out/population_sweep/README.md"
+   ],
+   "notes": "layout 0 built and reset in the population sweep (#64); shipped path not delivered: 2 of 2 rigid objects carry the engine default 0.5/0.5 instead of their bound material (#58)",
+   "delivered": null,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "sweep_blocks": {
+   "gate": 1,
+   "evidence": [
+    "audit/out/population_sweep/README.md",
+    "audit/out/63/population/README.md",
+    "audit/out/63/population/coverage_t1/README.md"
+   ],
+   "notes": "G0: built and reset in the population sweep (#64). Corrected path delivered: asserting readbacks across 3 episodes (seed 0 layouts 0, 1 and 27; 0 failures, 185 scene / 36 link-static / 18 link-link pairs checked; #175, audit/out/63/population/coverage_t1) cover all 13 of 13 models the config spawns across seeds 0 to 2; shipped path not delivered (#58). G1 met: every value sourced, estimated or unsourced with a basis (docs/params, #173, #175); no outcome is known to hinge on a value (no scripted solution yet). G3 not met: the v2_procedure rule (#222) is in review, and no scripted solution was found within the action cap (handover 8/8; the dustpan's 4.2 mm front lip stops full entry), so solvability is open (#227); parked at wind-down (November 18, #59).",
+   "delivered": true,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  },
+  "sweep_blocks_random": {
+   "gate": 1,
+   "evidence": [
+    "audit/out/population_sweep/README.md",
+    "audit/out/63/population/README.md",
+    "audit/out/63/population/coverage_t1/README.md"
+   ],
+   "notes": "G0: built and reset in the population sweep (#64). Corrected path delivered: asserting readbacks across 3 episodes (seed 0 layouts 0, 1 and 5; 0 failures, 224 scene / 36 link-static / 18 link-link pairs checked; #175, audit/out/63/population/coverage_t1) cover all 12 of 12 models the config spawns across seeds 0 to 2; shipped path not delivered (#58). G1 met: every value is sourced, estimated or unsourced with a basis (including paper_cardboard__paper_cardboard friction in docs/params/pairs.json; #173, #200), and the earbuds' COM and inertia were probed across 18 cells (outer-hull thin shell, USD concave-surface shell and 64-hull V-HACD solid, with stabilization off and on at 64 position iterations on seed 0 layouts 0, 1 and 5; audit/out/63/population/coverage_t1). Stabilization changes nothing (0/9 flips, <= 0.08°). Layout 1 (earbuds 00000 and 00002) settles in all 6 cells; layouts 0 and 5 spawn stem earbud 00001 (45/90 layouts across seeds 0 to 2), whose shipped-baked saved pose balances on a 2-point curved head-stem bridge (+0.86 to +1.00 mm V-HACD margin at uniform-solid COM: 0.06° settle, 0 UnStableError) 46.5° from its 295.5 mm^2 flat side face, so both hollow-shell COMs (-0.58 mm and -2.57 mm overhang) roll 47.1° onto the flat face and trip check_layout_stability (#18). G3 not met: the v2_procedure rule (#222) is in review, and no scripted solution was found within the action cap (handover 8/8; the dustpan's 4.2 mm front lip stops full entry), so solvability is open (#227); parked at wind-down (November 18, #59).",
+   "delivered": true,
+   "g2": {
+    "status": null,
+    "evidence": [],
+    "note": ""
+   }
+  }
+ }
+}

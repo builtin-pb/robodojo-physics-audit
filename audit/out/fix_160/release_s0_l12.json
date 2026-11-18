@@ -1,0 +1,1964 @@
+{
+ "tool": "audit/tools/fix160_release.py",
+ "log": "audit/out/fix_160/raw/f160_b6_release_l12/release_s0_l12.json.gz",
+ "dt": 0.004,
+ "errors": [],
+ "constants": {
+  "bottles": {
+   "bottle0": {
+    "prim": "/World/envs/env_0/rigid/bottle/bottle_55_1",
+    "mass_kg": [
+     0.095
+    ],
+    "com_local_xyz_qxyzw": [
+     -7e-06,
+     3.3e-05,
+     -0.009438,
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "inertia_local_kg_m2": [
+     0.000481483,
+     0.0,
+     0.0,
+     0.0,
+     0.000481528,
+     0.0,
+     0.0,
+     0.0,
+     0.000124323
+    ],
+    "material_static_dynamic_restitution": [
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25
+    ]
+   },
+   "bottle1": {
+    "prim": "/World/envs/env_0/rigid/bottle/bottle_22_2",
+    "mass_kg": [
+     0.22
+    ],
+    "com_local_xyz_qxyzw": [
+     -0.000136,
+     0.000126,
+     -0.015604,
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "inertia_local_kg_m2": [
+     0.00114484,
+     0.0,
+     0.0,
+     0.0,
+     0.001147256,
+     0.0,
+     0.0,
+     0.0,
+     0.000227553
+    ],
+    "material_static_dynamic_restitution": [
+     0.34,
+     0.28,
+     0.2
+    ]
+   },
+   "bottle2": {
+    "prim": "/World/envs/env_0/rigid/bottle/bottle_2_3",
+    "mass_kg": [
+     0.024
+    ],
+    "com_local_xyz_qxyzw": [
+     1e-06,
+     9e-06,
+     -0.01166,
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "inertia_local_kg_m2": [
+     0.000129157,
+     0.0,
+     0.0,
+     0.0,
+     0.000129154,
+     0.0,
+     0.0,
+     0.0,
+     1.9907e-05
+    ],
+    "material_static_dynamic_restitution": [
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25,
+     0.26744,
+     0.2217,
+     0.25
+    ]
+   },
+   "bottle3": {
+    "prim": "/World/envs/env_0/rigid/bottle/bottle_60_4",
+    "mass_kg": [
+     0.07
+    ],
+    "com_local_xyz_qxyzw": [
+     -0.0,
+     -0.0,
+     0.000257,
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ],
+    "inertia_local_kg_m2": [
+     0.00028086,
+     0.0,
+     0.0,
+     0.0,
+     0.00028096,
+     0.0,
+     0.0,
+     0.0,
+     4.9331e-05
+    ],
+    "material_static_dynamic_restitution": [
+     0.26744,
+     0.2217,
+     0.25
+    ]
+   }
+  },
+  "robots": [
+   {
+    "body_names": [
+     "base_link",
+     "link1",
+     "link2",
+     "link3",
+     "link4",
+     "link5",
+     "link6",
+     "camera_base",
+     "link7",
+     "link8",
+     "camera"
+    ],
+    "joint7_K_c_Fmax": [
+     52274.6015625,
+     2090.97998046875,
+     640.1799926757812
+    ],
+    "shape_materials": [
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.29583,
+     0.27757,
+     0.1,
+     0.29583,
+     0.27757,
+     0.1,
+     0.37004,
+     0.3103,
+     0.4
+    ],
+    "max_shapes": 42
+   },
+   {
+    "body_names": [
+     "base_link",
+     "link1",
+     "link2",
+     "link3",
+     "link4",
+     "link5",
+     "link6",
+     "camera_base",
+     "link7",
+     "link8",
+     "camera"
+    ],
+    "joint7_K_c_Fmax": [
+     52274.6015625,
+     2090.97998046875,
+     640.1799926757812
+    ],
+    "shape_materials": [
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.61004,
+     0.3701,
+     0.5,
+     0.29583,
+     0.27757,
+     0.1,
+     0.29583,
+     0.27757,
+     0.1,
+     0.37004,
+     0.3103,
+     0.4
+    ],
+    "max_shapes": 42
+   }
+  ],
+  "usd_authored": {
+   "bottles": {
+    "bottle0": {
+     "maxDepenetrationVelocity": 3.0,
+     "colliders": 2,
+     "contact_rest_offsets": [
+      [
+       null,
+       null
+      ]
+     ]
+    },
+    "bottle1": {
+     "maxDepenetrationVelocity": 3.0,
+     "colliders": 1,
+     "contact_rest_offsets": [
+      [
+       null,
+       null
+      ]
+     ]
+    },
+    "bottle2": {
+     "maxDepenetrationVelocity": 3.0,
+     "colliders": 1,
+     "contact_rest_offsets": [
+      [
+       null,
+       null
+      ]
+     ]
+    },
+    "bottle3": {
+     "maxDepenetrationVelocity": 3.0,
+     "colliders": 1,
+     "contact_rest_offsets": [
+      [
+       null,
+       null
+      ]
+     ]
+    }
+   },
+   "dustbin": {
+    "colliders": 1,
+    "materials": {
+     "/World/envs/env_0/geometry/dustbin/dustbin_0_5/physics_material": {
+      "physics:staticFriction": 0.13333000242710114,
+      "physics:dynamicFriction": 0.13006700575351715,
+      "physics:restitution": 0.25,
+      "physxMaterial:restitutionCombineMode": "average"
+     }
+    },
+    "contact_rest_offsets": [
+     [
+      null,
+      null
+     ]
+    ]
+   }
+  }
+ },
+ "windows": [
+  {
+   "label": "bottle2",
+   "actions": [
+    71,
+    84
+   ],
+   "steps": 140,
+   "release_z_m": 0.9206,
+   "peak_z_m": 0.9212,
+   "peak_z_action": 71,
+   "impact": {
+    "action": 80,
+    "substep": 1,
+    "z_m": 0.4117,
+    "speed_before_m_s": 3.143,
+    "vz_before_m_s": -3.143,
+    "partners": {
+     "dustbin": {
+      "normal_N": 23.85,
+      "min_sep_mm": -0.302,
+      "points": 24
+     }
+    },
+    "hand_min_dist_m": 0.655
+   },
+   "rebound": {
+    "action": 80,
+    "substep": 1,
+    "steps_after_impact": 0,
+    "vz_m_s": 0.793,
+    "speed_m_s": 0.797,
+    "z_m": 0.4117,
+    "hand_min_dist_m": 0.655
+   },
+   "contact_between": {
+    "dustbin": {
+     "steps": 1,
+     "max_normal_N": 23.85,
+     "min_sep_mm": -0.302
+    }
+   },
+   "energy_per_kg": {
+    "before_impact": 8.976,
+    "at_rebound": 4.357,
+    "at_release": 9.038,
+    "peak_after": 4.357
+   },
+   "speed_ratio_out_in": 0.254,
+   "angular_speed_rad_s": {
+    "before": 0.05,
+    "at_rebound": 0.68
+   },
+   "others_peak_speed_m_s": {
+    "bottle0": 0.0,
+    "bottle1": 0.004,
+    "bottle3": 0.001
+   },
+   "others_contacts_between": {
+    "bottle0": {
+     "Table": {
+      "steps": 1,
+      "max_normal_N": 0.93,
+      "min_sep_mm": 0.0
+     }
+    },
+    "bottle1": {
+     "Table": {
+      "steps": 1,
+      "max_normal_N": 2.14,
+      "min_sep_mm": -0.0
+     }
+    },
+    "bottle3": {
+     "Table": {
+      "steps": 1,
+      "max_normal_N": 0.69,
+      "min_sep_mm": 0.0
+     }
+    }
+   },
+   "trace": [
+    {
+     "a": 79,
+     "k": 8,
+     "z": 0.4365,
+     "vz": -3.064,
+     "speed": 3.064,
+     "partners": {},
+     "others": {
+      "bottle0": {
+       "z": 0.8021,
+       "speed": 0.0,
+       "partners": {
+        "Table": {
+         "normal_N": 0.93,
+         "min_sep_mm": -0.0,
+         "points": 12
+        }
+       }
+      },
+      "bottle1": {
+       "z": 0.8851,
+       "speed": 0.0,
+       "partners": {
+        "Table": {
+         "normal_N": 2.16,
+         "min_sep_mm": 0.0,
+         "points": 8
+        }
+       }
+      },
+      "bottle3": {
+       "z": 0.8597,
+       "speed": 0.0,
+       "partners": {
+        "Table": {
+         "normal_N": 0.69,
+         "min_sep_mm": 0.0,
+         "points": 6
+        }
+       }
+      }
+     }
+    },
+    {
+     "a": 79,
+     "k": 9,
+     "z": 0.4241,
+     "vz": -3.104,
+     "speed": 3.104,
+     "partners": {},
+     "others": {
+      "bottle0": {
+       "z": 0.8021,
+       "speed": 0.0,
+       "partners": {
+        "Table": {
+         "normal_N": 0.93,
+         "min_sep_mm": 0.0,
+         "points": 12
+        }
+       }
+      },
+      "bottle1": {
+       "z": 0.8851,
+       "speed": 0.0,
+       "partners": {
+        "Table": {
+         "normal_N": 2.16,
+         "min_sep_mm": -0.0,
+         "points": 8
+        }
+       }
+      },
+      "bottle3": {
+       "z": 0.8597,
+       "speed": 0.0,
+       "partners": {
+        "Table": {
+         "normal_N": 0.69,
+         "min_sep_mm": -0.0,
+         "points": 6
+        }
+       }
+      }
+     }
+    },
+    {
+     "a": 80,
+     "k": 0,
+     "z": 0.4115,
+     "vz": -3.143,
+     "speed": 3.143,
+     "partners": {},
+     "others": {
+      "bottle0": {
+       "z": 0.8021,
+       "speed": 0.0,
+       "partners": {
+        "Table": {
+         "normal_N": 0.93,
+         "min_sep_mm": -0.0,
+         "points": 12
+        }
+       }
+      },
+      "bottle1": {
+       "z": 0.8851,
+       "speed": 0.003,
+       "partners": {
+        "Table": {
+         "normal_N": 2.17,
+         "min_sep_mm": -0.0,
+         "points": 8
+        }
+       }
+      },
+      "bottle3": {
+       "z": 0.8597,
+       "speed": 0.001,
+       "partners": {
+        "Table": {
+         "normal_N": 0.69,
+         "min_sep_mm": 0.0,
+         "points": 6
+        }
+       }
+      }
+     }
+    },
+    {
+     "a": 80,
+     "k": 1,
+     "z": 0.4117,
+     "vz": 0.793,
+     "speed": 0.797,
+     "partners": {
+      "dustbin": {
+       "normal_N": 23.85,
+       "min_sep_mm": -0.302,
+       "points": 24
+      }
+     },
+     "others": {
+      "bottle0": {
+       "z": 0.8021,
+       "speed": 0.0,
+       "partners": {
+        "Table": {
+         "normal_N": 0.93,
+         "min_sep_mm": 0.0,
+         "points": 12
+        }
+       }
+      },
+      "bottle1": {
+       "z": 0.8851,
+       "speed": 0.004,
+       "partners": {
+        "Table": {
+         "normal_N": 2.14,
+         "min_sep_mm": -0.0,
+         "points": 8
+        }
+       }
+      },
+      "bottle3": {
+       "z": 0.8597,
+       "speed": 0.001,
+       "partners": {
+        "Table": {
+         "normal_N": 0.69,
+         "min_sep_mm": 0.0,
+         "points": 6
+        }
+       }
+      }
+     }
+    },
+    {
+     "a": 80,
+     "k": 2,
+     "z": 0.4147,
+     "vz": 0.754,
+     "speed": 0.758,
+     "partners": {
+      "dustbin": {
+       "normal_N": 0.0,
+       "min_sep_mm": -0.075,
+       "points": 25
+      }
+     },
+     "others": {
+      "bottle0": {
+       "z": 0.8021,
+       "speed": 0.0,
+       "partners": {
+        "Table": {
+         "normal_N": 0.93,
+         "min_sep_mm": -0.0,
+         "points": 12
+        }
+       }
+      },
+      "bottle1": {
+       "z": 0.8851,
+       "speed": 0.0,
+       "partners": {
+        "Table": {
+         "normal_N": 2.17,
+         "min_sep_mm": -0.0,
+         "points": 8
+        }
+       }
+      },
+      "bottle3": {
+       "z": 0.8597,
+       "speed": 0.001,
+       "partners": {
+        "Table": {
+         "normal_N": 0.69,
+         "min_sep_mm": -0.0,
+         "points": 6
+        }
+       }
+      }
+     }
+    },
+    {
+     "a": 80,
+     "k": 3,
+     "z": 0.4176,
+     "vz": 0.715,
+     "speed": 0.719,
+     "partners": {
+      "dustbin": {
+       "normal_N": 0.0,
+       "min_sep_mm": 2.952,
+       "points": 16
+      }
+     },
+     "others": {
+      "bottle0": {
+       "z": 0.8021,
+       "speed": 0.0,
+       "partners": {
+        "Table": {
+         "normal_N": 0.93,
+         "min_sep_mm": 0.0,
+         "points": 12
+        }
+       }
+      },
+      "bottle1": {
+       "z": 0.8851,
+       "speed": 0.003,
+       "partners": {
+        "Table": {
+         "normal_N": 2.17,
+         "min_sep_mm": 0.0,
+         "points": 8
+        }
+       }
+      },
+      "bottle3": {
+       "z": 0.8597,
+       "speed": 0.001,
+       "partners": {
+        "Table": {
+         "normal_N": 0.69,
+         "min_sep_mm": 0.0,
+         "points": 6
+        }
+       }
+      }
+     }
+    },
+    {
+     "a": 80,
+     "k": 4,
+     "z": 0.4203,
+     "vz": 0.676,
+     "speed": 0.68,
+     "partners": {
+      "dustbin": {
+       "normal_N": 0.0,
+       "min_sep_mm": 5.822,
+       "points": 11
+      }
+     },
+     "others": {
+      "bottle0": {
+       "z": 0.8021,
+       "speed": 0.0,
+       "partners": {
+        "Table": {
+         "normal_N": 0.93,
+         "min_sep_mm": -0.0,
+         "points": 12
+        }
+       }
+      },
+      "bottle1": {
+       "z": 0.8851,
+       "speed": 0.004,
+       "partners": {
+        "Table": {
+         "normal_N": 2.14,
+         "min_sep_mm": -0.0,
+         "points": 8
+        }
+       }
+      },
+      "bottle3": {
+       "z": 0.8597,
+       "speed": 0.001,
+       "partners": {
+        "Table": {
+         "normal_N": 0.69,
+         "min_sep_mm": -0.0,
+         "points": 6
+        }
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "label": "bottle1",
+   "actions": [
+    146,
+    159
+   ],
+   "steps": 140,
+   "release_z_m": 0.9201,
+   "peak_z_m": 0.9492,
+   "peak_z_action": 159,
+   "impact": {
+    "action": 154,
+    "substep": 7,
+    "z_m": 0.4636,
+    "speed_before_m_s": 2.986,
+    "vz_before_m_s": -2.986,
+    "partners": {
+     "bottle2": {
+      "normal_N": 376.0,
+      "min_sep_mm": -7.542,
+      "points": 19
+     }
+    },
+    "hand_min_dist_m": 0.6054
+   },
+   "rebound": {
+    "action": 154,
+    "substep": 7,
+    "steps_after_impact": 0,
+    "vz_m_s": 3.492,
+    "speed_m_s": 3.628,
+    "z_m": 0.4636,
+    "hand_min_dist_m": 0.6054
+   },
+   "contact_between": {
+    "bottle2": {
+     "steps": 1,
+     "max_normal_N": 376.0,
+     "min_sep_mm": -7.542
+    }
+   },
+   "energy_per_kg": {
+    "before_impact": 8.973,
+    "at_rebound": 11.129,
+    "at_release": 9.042,
+    "peak_after": 11.164
+   },
+   "speed_ratio_out_in": 1.215,
+   "angular_speed_rad_s": {
+    "before": 0.26,
+    "at_rebound": 14.51
+   },
+   "others_peak_speed_m_s": {
+    "bottle0": 0.0,
+    "bottle2": 1.432,
+    "bottle3": 0.0
+   },
+   "others_contacts_between": {
+    "bottle0": {
+     "Table": {
+      "steps": 1,
+      "max_normal_N": 0.93,
+      "min_sep_mm": 0.0
+     }
+    },
+    "bottle2": {
+     "bottle1": {
+      "steps": 1,
+      "max_normal_N": 376.0,
+      "min_sep_mm": -7.542
+     },
+     "dustbin": {
+      "steps": 1,
+      "max_normal_N": 1084.33,
+      "min_sep_mm": -0.0
+     }
+    },
+    "bottle3": {
+     "Table": {
+      "steps": 1,
+      "max_normal_N": 0.69,
+      "min_sep_mm": -0.0
+     }
+    }
+   },
+   "trace": [
+    {
+     "a": 154,
+     "k": 4,
+     "z": 0.484,
+     "vz": -2.907,
+     "speed": 2.907,
+     "partners": {},
+     "others": {
+      "bottle0": {
+       "z": 0.8021,
+       "speed": 0.0,
+       "partners": {
+        "Table": {
+         "normal_N": 0.93,
+         "min_sep_mm": -0.0,
+         "points": 12
+        }
+       }
+      },
+      "bottle2": {
+       "z": 0.3181,
+       "speed": 0.0,
+       "partners": {
+        "dustbin": {
+         "normal_N": 0.71,
+         "min_sep_mm": -0.0,
+         "points": 106
+        }
+       }
+      },
+      "bottle3": {
+       "z": 0.8597,
+       "speed": 0.001,
+       "partners": {
+        "Table": {
+         "normal_N": 0.69,
+         "min_sep_mm": -0.0,
+         "points": 6
+        }
+       }
+      }
+     }
+    },
+    {
+     "a": 154,
+     "k": 5,
+     "z": 0.4722,
+     "vz": -2.947,
+     "speed": 2.947,
+     "partners": {},
+     "others": {
+      "bottle0": {
+       "z": 0.8021,
+       "speed": 0.0,
+       "partners": {
+        "Table": {
+         "normal_N": 0.93,
+         "min_sep_mm": 0.0,
+         "points": 12
+        }
+       }
+      },
+      "bottle2": {
+       "z": 0.3181,
+       "speed": 0.001,
+       "partners": {
+        "dustbin": {
+         "normal_N": 0.71,
+         "min_sep_mm": -0.0,
+         "points": 106
+        }
+       }
+      },
+      "bottle3": {
+       "z": 0.8597,
+       "speed": 0.0,
+       "partners": {
+        "Table": {
+         "normal_N": 0.69,
+         "min_sep_mm": -0.0,
+         "points": 6
+        }
+       }
+      }
+     }
+    },
+    {
+     "a": 154,
+     "k": 6,
+     "z": 0.4602,
+     "vz": -2.986,
+     "speed": 2.986,
+     "partners": {},
+     "others": {
+      "bottle0": {
+       "z": 0.8021,
+       "speed": 0.0,
+       "partners": {
+        "Table": {
+         "normal_N": 0.93,
+         "min_sep_mm": -0.0,
+         "points": 12
+        }
+       }
+      },
+      "bottle2": {
+       "z": 0.3181,
+       "speed": 0.0,
+       "partners": {
+        "dustbin": {
+         "normal_N": 0.71,
+         "min_sep_mm": -0.0,
+         "points": 106
+        }
+       }
+      },
+      "bottle3": {
+       "z": 0.8597,
+       "speed": 0.001,
+       "partners": {
+        "Table": {
+         "normal_N": 0.69,
+         "min_sep_mm": 0.0,
+         "points": 6
+        }
+       }
+      }
+     }
+    },
+    {
+     "a": 154,
+     "k": 7,
+     "z": 0.4636,
+     "vz": 3.492,
+     "speed": 3.628,
+     "partners": {
+      "bottle2": {
+       "normal_N": 376.0,
+       "min_sep_mm": -7.542,
+       "points": 19
+      }
+     },
+     "others": {
+      "bottle0": {
+       "z": 0.8021,
+       "speed": 0.0,
+       "partners": {
+        "Table": {
+         "normal_N": 0.93,
+         "min_sep_mm": 0.0,
+         "points": 12
+        }
+       }
+      },
+      "bottle2": {
+       "z": 0.318,
+       "speed": 1.432,
+       "partners": {
+        "bottle1": {
+         "normal_N": 376.0,
+         "min_sep_mm": -7.542,
+         "points": 19
+        },
+        "dustbin": {
+         "normal_N": 1084.33,
+         "min_sep_mm": -0.0,
+         "points": 106
+        }
+       }
+      },
+      "bottle3": {
+       "z": 0.8597,
+       "speed": 0.0,
+       "partners": {
+        "Table": {
+         "normal_N": 0.69,
+         "min_sep_mm": -0.0,
+         "points": 6
+        }
+       }
+      }
+     }
+    },
+    {
+     "a": 154,
+     "k": 8,
+     "z": 0.4775,
+     "vz": 3.463,
+     "speed": 3.6,
+     "partners": {
+      "bottle2": {
+       "normal_N": 0.57,
+       "min_sep_mm": -1.766,
+       "points": 11
+      }
+     },
+     "others": {
+      "bottle0": {
+       "z": 0.8021,
+       "speed": 0.0,
+       "partners": {
+        "Table": {
+         "normal_N": 0.93,
+         "min_sep_mm": -0.0,
+         "points": 12
+        }
+       }
+      },
+      "bottle2": {
+       "z": 0.3219,
+       "speed": 2.164,
+       "partners": {
+        "bottle1": {
+         "normal_N": 0.57,
+         "min_sep_mm": -1.766,
+         "points": 11
+        },
+        "dustbin": {
+         "normal_N": 22.22,
+         "min_sep_mm": -2.246,
+         "points": 111
+        }
+       }
+      },
+      "bottle3": {
+       "z": 0.8597,
+       "speed": 0.001,
+       "partners": {
+        "Table": {
+         "normal_N": 0.69,
+         "min_sep_mm": 0.0,
+         "points": 6
+        }
+       }
+      }
+     }
+    },
+    {
+     "a": 154,
+     "k": 9,
+     "z": 0.4912,
+     "vz": 3.424,
+     "speed": 3.562,
+     "partners": {
+      "bottle2": {
+       "normal_N": 0.0,
+       "min_sep_mm": null,
+       "points": 0
+      }
+     },
+     "others": {
+      "bottle0": {
+       "z": 0.8021,
+       "speed": 0.0,
+       "partners": {
+        "Table": {
+         "normal_N": 0.93,
+         "min_sep_mm": 0.0,
+         "points": 12
+        }
+       }
+      },
+      "bottle2": {
+       "z": 0.3273,
+       "speed": 2.136,
+       "partners": {
+        "bottle1": {
+         "normal_N": 0.0,
+         "min_sep_mm": null,
+         "points": 0
+        },
+        "dustbin": {
+         "normal_N": 0.0,
+         "min_sep_mm": 1.472,
+         "points": 62
+        }
+       }
+      },
+      "bottle3": {
+       "z": 0.8597,
+       "speed": 0.001,
+       "partners": {
+        "Table": {
+         "normal_N": 0.69,
+         "min_sep_mm": 0.0,
+         "points": 6
+        }
+       }
+      }
+     }
+    },
+    {
+     "a": 155,
+     "k": 0,
+     "z": 0.5046,
+     "vz": 3.385,
+     "speed": 3.524,
+     "partners": {},
+     "others": {
+      "bottle0": {
+       "z": 0.8021,
+       "speed": 0.0,
+       "partners": {
+        "Table": {
+         "normal_N": 0.93,
+         "min_sep_mm": -0.0,
+         "points": 12
+        }
+       }
+      },
+      "bottle2": {
+       "z": 0.3326,
+       "speed": 2.108,
+       "partners": {
+        "dustbin": {
+         "normal_N": 0.0,
+         "min_sep_mm": 5.46,
+         "points": 21
+        }
+       }
+      },
+      "bottle3": {
+       "z": 0.8597,
+       "speed": 0.001,
+       "partners": {
+        "Table": {
+         "normal_N": 0.69,
+         "min_sep_mm": 0.0,
+         "points": 6
+        }
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "label": "bottle3",
+   "actions": [
+    268,
+    281
+   ],
+   "steps": 140,
+   "release_z_m": 0.9204,
+   "peak_z_m": 0.9212,
+   "peak_z_action": 268,
+   "impact": {
+    "action": 276,
+    "substep": 8,
+    "z_m": 0.4367,
+    "speed_before_m_s": 3.078,
+    "vz_before_m_s": -3.078,
+    "partners": {
+     "bottle2": {
+      "normal_N": 94.84,
+      "min_sep_mm": -6.934,
+      "points": 20
+     }
+    },
+    "hand_min_dist_m": 0.6295
+   },
+   "rebound": {
+    "action": 276,
+    "substep": 8,
+    "steps_after_impact": 0,
+    "vz_m_s": 0.541,
+    "speed_m_s": 0.797,
+    "z_m": 0.4367,
+    "hand_min_dist_m": 0.6295
+   },
+   "contact_between": {
+    "bottle2": {
+     "steps": 1,
+     "max_normal_N": 94.84,
+     "min_sep_mm": -6.934
+    }
+   },
+   "energy_per_kg": {
+    "before_impact": 8.977,
+    "at_rebound": 4.602,
+    "at_release": 9.042,
+    "peak_after": 4.605
+   },
+   "speed_ratio_out_in": 0.259,
+   "angular_speed_rad_s": {
+    "before": 0.05,
+    "at_rebound": 5.55
+   },
+   "others_peak_speed_m_s": {
+    "bottle0": 0.0,
+    "bottle1": 0.0,
+    "bottle2": 0.118
+   },
+   "others_contacts_between": {
+    "bottle0": {
+     "Table": {
+      "steps": 1,
+      "max_normal_N": 0.93,
+      "min_sep_mm": -0.0
+     }
+    },
+    "bottle1": {
+     "Ground_0_9": {
+      "steps": 1,
+      "max_normal_N": 2.16,
+      "min_sep_mm": -0.0
+     }
+    },
+    "bottle2": {
+     "dustbin": {
+      "steps": 1,
+      "max_normal_N": 127.6,
+      "min_sep_mm": 0.0
+     },
+     "bottle3": {
+      "steps": 1,
+      "max_normal_N": 94.84,
+      "min_sep_mm": -6.934
+     }
+    }
+   },
+   "trace": [
+    {
+     "a": 276,
+     "k": 5,
+     "z": 0.4566,
+     "vz": -3.0,
+     "speed": 3.0,
+     "partners": {},
+     "others": {
+      "bottle0": {
+       "z": 0.8021,
+       "speed": 0.0,
+       "partners": {
+        "Table": {
+         "normal_N": 0.93,
+         "min_sep_mm": 0.0,
+         "points": 12
+        }
+       }
+      },
+      "bottle1": {
+       "z": 0.0802,
+       "speed": 0.0,
+       "partners": {
+        "Ground_0_9": {
+         "normal_N": 2.16,
+         "min_sep_mm": -0.0,
+         "points": 5
+        }
+       }
+      },
+      "bottle2": {
+       "z": 0.3175,
+       "speed": 0.0,
+       "partners": {
+        "dustbin": {
+         "normal_N": 0.47,
+         "min_sep_mm": -0.0,
+         "points": 87
+        }
+       }
+      }
+     }
+    },
+    {
+     "a": 276,
+     "k": 6,
+     "z": 0.4444,
+     "vz": -3.039,
+     "speed": 3.039,
+     "partners": {},
+     "others": {
+      "bottle0": {
+       "z": 0.8021,
+       "speed": 0.0,
+       "partners": {
+        "Table": {
+         "normal_N": 0.93,
+         "min_sep_mm": -0.0,
+         "points": 12
+        }
+       }
+      },
+      "bottle1": {
+       "z": 0.0802,
+       "speed": 0.0,
+       "partners": {
+        "Ground_0_9": {
+         "normal_N": 2.16,
+         "min_sep_mm": 0.0,
+         "points": 5
+        }
+       }
+      },
+      "bottle2": {
+       "z": 0.3175,
+       "speed": 0.001,
+       "partners": {
+        "dustbin": {
+         "normal_N": 0.47,
+         "min_sep_mm": -0.0,
+         "points": 87
+        }
+       }
+      }
+     }
+    },
+    {
+     "a": 276,
+     "k": 7,
+     "z": 0.4321,
+     "vz": -3.078,
+     "speed": 3.078,
+     "partners": {},
+     "others": {
+      "bottle0": {
+       "z": 0.8021,
+       "speed": 0.0,
+       "partners": {
+        "Table": {
+         "normal_N": 0.93,
+         "min_sep_mm": 0.0,
+         "points": 12
+        }
+       }
+      },
+      "bottle1": {
+       "z": 0.0802,
+       "speed": 0.0,
+       "partners": {
+        "Ground_0_9": {
+         "normal_N": 2.16,
+         "min_sep_mm": -0.0,
+         "points": 5
+        }
+       }
+      },
+      "bottle2": {
+       "z": 0.3175,
+       "speed": 0.0,
+       "partners": {
+        "dustbin": {
+         "normal_N": 0.47,
+         "min_sep_mm": -0.0,
+         "points": 87
+        }
+       }
+      }
+     }
+    },
+    {
+     "a": 276,
+     "k": 8,
+     "z": 0.4367,
+     "vz": 0.541,
+     "speed": 0.797,
+     "partners": {
+      "bottle2": {
+       "normal_N": 94.84,
+       "min_sep_mm": -6.934,
+       "points": 20
+      }
+     },
+     "others": {
+      "bottle0": {
+       "z": 0.8021,
+       "speed": 0.0,
+       "partners": {
+        "Table": {
+         "normal_N": 0.93,
+         "min_sep_mm": -0.0,
+         "points": 12
+        }
+       }
+      },
+      "bottle1": {
+       "z": 0.0802,
+       "speed": 0.0,
+       "partners": {
+        "Ground_0_9": {
+         "normal_N": 2.16,
+         "min_sep_mm": -0.0,
+         "points": 5
+        }
+       }
+      },
+      "bottle2": {
+       "z": 0.3175,
+       "speed": 0.118,
+       "partners": {
+        "dustbin": {
+         "normal_N": 127.6,
+         "min_sep_mm": 0.0,
+         "points": 87
+        },
+        "bottle3": {
+         "normal_N": 94.84,
+         "min_sep_mm": -6.934,
+         "points": 20
+        }
+       }
+      }
+     }
+    },
+    {
+     "a": 276,
+     "k": 9,
+     "z": 0.4387,
+     "vz": 0.5,
+     "speed": 0.776,
+     "partners": {
+      "bottle2": {
+       "normal_N": 0.13,
+       "min_sep_mm": 0.128,
+       "points": 13
+      }
+     },
+     "others": {
+      "bottle0": {
+       "z": 0.8021,
+       "speed": 0.0,
+       "partners": {
+        "Table": {
+         "normal_N": 0.93,
+         "min_sep_mm": 0.0,
+         "points": 12
+        }
+       }
+      },
+      "bottle1": {
+       "z": 0.0802,
+       "speed": 0.0,
+       "partners": {
+        "Ground_0_9": {
+         "normal_N": 2.16,
+         "min_sep_mm": 0.0,
+         "points": 5
+        }
+       }
+      },
+      "bottle2": {
+       "z": 0.3177,
+       "speed": 0.13,
+       "partners": {
+        "dustbin": {
+         "normal_N": 1.77,
+         "min_sep_mm": 0.008,
+         "points": 75
+        },
+        "bottle3": {
+         "normal_N": 0.13,
+         "min_sep_mm": 0.128,
+         "points": 13
+        }
+       }
+      }
+     }
+    },
+    {
+     "a": 277,
+     "k": 0,
+     "z": 0.4406,
+     "vz": 0.461,
+     "speed": 0.751,
+     "partners": {
+      "bottle2": {
+       "normal_N": 0.0,
+       "min_sep_mm": 2.214,
+       "points": 2
+      }
+     },
+     "others": {
+      "bottle0": {
+       "z": 0.8021,
+       "speed": 0.0,
+       "partners": {
+        "Table": {
+         "normal_N": 0.93,
+         "min_sep_mm": -0.0,
+         "points": 12
+        }
+       }
+      },
+      "bottle1": {
+       "z": 0.0802,
+       "speed": 0.0,
+       "partners": {
+        "Ground_0_9": {
+         "normal_N": 2.16,
+         "min_sep_mm": 0.0,
+         "points": 5
+        }
+       }
+      },
+      "bottle2": {
+       "z": 0.3178,
+       "speed": 0.113,
+       "partners": {
+        "dustbin": {
+         "normal_N": 0.0,
+         "min_sep_mm": 0.071,
+         "points": 75
+        },
+        "bottle3": {
+         "normal_N": 0.0,
+         "min_sep_mm": 2.214,
+         "points": 2
+        }
+       }
+      }
+     }
+    },
+    {
+     "a": 277,
+     "k": 1,
+     "z": 0.4422,
+     "vz": 0.422,
+     "speed": 0.728,
+     "partners": {
+      "bottle2": {
+       "normal_N": 0.0,
+       "min_sep_mm": null,
+       "points": 0
+      }
+     },
+     "others": {
+      "bottle0": {
+       "z": 0.8021,
+       "speed": 0.0,
+       "partners": {
+        "Table": {
+         "normal_N": 0.93,
+         "min_sep_mm": 0.0,
+         "points": 12
+        }
+       }
+      },
+      "bottle1": {
+       "z": 0.0802,
+       "speed": 0.0,
+       "partners": {
+        "Ground_0_9": {
+         "normal_N": 2.16,
+         "min_sep_mm": -0.0,
+         "points": 5
+        }
+       }
+      },
+      "bottle2": {
+       "z": 0.3177,
+       "speed": 0.108,
+       "partners": {
+        "dustbin": {
+         "normal_N": 0.0,
+         "min_sep_mm": 0.133,
+         "points": 81
+        },
+        "bottle3": {
+         "normal_N": 0.0,
+         "min_sep_mm": null,
+         "points": 0
+        }
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "label": "bottle0",
+   "actions": [
+    399,
+    402
+   ],
+   "steps": 40,
+   "release_z_m": 0.8953,
+   "peak_z_m": 0.8959,
+   "peak_z_action": 399,
+   "impact": null
+  }
+ ]
+}

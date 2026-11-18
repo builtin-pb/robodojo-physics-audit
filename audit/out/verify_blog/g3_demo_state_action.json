@@ -1,0 +1,274 @@
+{
+ "frames": 1856102,
+ "episodes": 3500,
+ "tasks": 35,
+ "consecutive_pairs_within_episode": 1852602,
+ "state_t_eq_action_tminus1_all_dims_pairs": 1852602,
+ "state_t_eq_action_tminus1_per_dim_mismatches": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "max_abs_diff_state_t_vs_action_tminus1": 0.0,
+ "contrast_state_t_eq_action_t_all_dims_pairs": 2161,
+ "task_names": {
+  "0": "Arrange the numbers from left to right to form the largest possible number, and place them on the pad.",
+  "1": "Build a tower using the wooden blocks and wooden boards.",
+  "2": "Sort the objects by category into the three baskets.",
+  "3": "Cover the blocks from left to right, remember their colors, then uncover them in the order: red, green, and blue.",
+  "4": "Pick up the coin from the holder and insert it precisely into the coin bank.",
+  "5": "Arrange the letters to spell \"RoboDojo\" in a row.",
+  "6": "Insert and tighten each screw into the nut of the same color.",
+  "7": "Place the four eggs from the basket into the egg holder, then close the lid.",
+  "8": "Hold the pen holder with one hand, place all pens into it with the other hand, then put it back down.",
+  "9": "Fold the clothes neatly.",
+  "10": "Hang all the mugs on the mug rack.",
+  "11": "Observe the object placement order, remember it, then place the corresponding objects into the basket in the same order.",
+  "12": "Pick up the key, hand it over to the other hand, insert it into the keyhole, then turn it.",
+  "13": "Insert the three tubes into the rack one by one.",
+  "14": "Wait for the opponent to discard a tile, then declare a kong with the matching tiles.",
+  "15": "Pick up two slices of bread, place them into the toaster, and press the lever down.",
+  "16": "Remember the first object on the conveyor, then pick the matching object when it appears again.",
+  "17": "Place the alarm clock on the drawer, put the figurine on the stand, place the mouse on the mouse pad, and push the keyboard into the frame.",
+  "18": "Place all the objects into the box with their front sides facing left.",
+  "19": "Pick up the mallet and strike all xylophone keys from left to right.",
+  "20": "Place all stacking toy pieces onto the correct pegs.",
+  "21": "Play tic-tac-toe as the first player and fill the board with the opponent.",
+  "22": "Plug the charger into the power strip.",
+  "23": "Pour all the balls from the cup into the vase.",
+  "24": "Pour the liquid from the bottle into the cup.",
+  "25": "Press the two red buttons the required number of times according to the number cards, then press the blue button to confirm.",
+  "26": "Push the T-shaped block to align it precisely with the gray T-shaped pad.",
+  "27": "Pick up the bottles and throw them into the dustbin, using handover when needed.",
+  "28": "Arrange the five nesting dolls in a row from left to right, from smallest to largest.",
+  "29": "Stack the three blocks with different textures.",
+  "30": "Stack the three bowls together.",
+  "31": "Hang the headphones on the headphone stand, close the laptop, then place it into the vertical laptop stand.",
+  "32": "Pick up the two T-shaped blocks, swap their positions, and place them back with the correct orientations.",
+  "33": "Swap the two blocks using the empty mat, pressing the button after each move.",
+  "34": "Pick up the broom, hand it over to the right hand, then use the dustpan to sweep the blocks."
+ },
+ "closures_by_task": {
+  "Arrange the numbers from left to right to form the largest possible number, and place them on the pad.": {
+   "closures": 632,
+   "reach_exactly_0": 0,
+   "min_below_0.05": 17,
+   "median_min": 0.29601746797561646
+  },
+  "Build a tower using the wooden blocks and wooden boards.": {
+   "closures": 1000,
+   "reach_exactly_0": 0,
+   "min_below_0.05": 0,
+   "median_min": 0.42449547350406647
+  },
+  "Sort the objects by category into the three baskets.": {
+   "closures": 694,
+   "reach_exactly_0": 101,
+   "min_below_0.05": 124,
+   "median_min": 0.2989080846309662
+  },
+  "Cover the blocks from left to right, remember their colors, then uncover them in the order: red, green, and blue.": {
+   "closures": 600,
+   "reach_exactly_0": 0,
+   "min_below_0.05": 0,
+   "median_min": 0.5456031560897827
+  },
+  "Pick up the coin from the holder and insert it precisely into the coin bank.": {
+   "closures": 187,
+   "reach_exactly_0": 148,
+   "min_below_0.05": 187,
+   "median_min": 0.0
+  },
+  "Arrange the letters to spell \"RoboDojo\" in a row.": {
+   "closures": 800,
+   "reach_exactly_0": 0,
+   "min_below_0.05": 0,
+   "median_min": 0.4070679545402527
+  },
+  "Insert and tighten each screw into the nut of the same color.": {
+   "closures": 1897,
+   "reach_exactly_0": 0,
+   "min_below_0.05": 0,
+   "median_min": 0.3068569302558899
+  },
+  "Place the four eggs from the basket into the egg holder, then close the lid.": {
+   "closures": 529,
+   "reach_exactly_0": 101,
+   "min_below_0.05": 101,
+   "median_min": 0.39563649892807007
+  },
+  "Hold the pen holder with one hand, place all pens into it with the other hand, then put it back down.": {
+   "closures": 526,
+   "reach_exactly_0": 36,
+   "min_below_0.05": 59,
+   "median_min": 0.2262755036354065
+  },
+  "Fold the clothes neatly.": {
+   "closures": 400,
+   "reach_exactly_0": 367,
+   "min_below_0.05": 400,
+   "median_min": 0.0
+  },
+  "Hang all the mugs on the mug rack.": {
+   "closures": 308,
+   "reach_exactly_0": 77,
+   "min_below_0.05": 246,
+   "median_min": 0.023274178616702557
+  },
+  "Observe the object placement order, remember it, then place the corresponding objects into the basket in the same order.": {
+   "closures": 775,
+   "reach_exactly_0": 0,
+   "min_below_0.05": 3,
+   "median_min": 0.43350937962532043
+  },
+  "Pick up the key, hand it over to the other hand, insert it into the keyhole, then turn it.": {
+   "closures": 200,
+   "reach_exactly_0": 82,
+   "min_below_0.05": 100,
+   "median_min": 0.03503930475562811
+  },
+  "Insert the three tubes into the rack one by one.": {
+   "closures": 300,
+   "reach_exactly_0": 0,
+   "min_below_0.05": 0,
+   "median_min": 0.23796695470809937
+  },
+  "Wait for the opponent to discard a tile, then declare a kong with the matching tiles.": {
+   "closures": 318,
+   "reach_exactly_0": 115,
+   "min_below_0.05": 118,
+   "median_min": 0.2527051568031311
+  },
+  "Pick up two slices of bread, place them into the toaster, and press the lever down.": {
+   "closures": 504,
+   "reach_exactly_0": 136,
+   "min_below_0.05": 219,
+   "median_min": 0.05725712142884731
+  },
+  "Remember the first object on the conveyor, then pick the matching object when it appears again.": {
+   "closures": 100,
+   "reach_exactly_0": 1,
+   "min_below_0.05": 16,
+   "median_min": 0.3784930258989334
+  },
+  "Place the alarm clock on the drawer, put the figurine on the stand, place the mouse on the mouse pad, and push the keyboard into the frame.": {
+   "closures": 511,
+   "reach_exactly_0": 203,
+   "min_below_0.05": 203,
+   "median_min": 0.26548731327056885
+  },
+  "Place all the objects into the box with their front sides facing left.": {
+   "closures": 641,
+   "reach_exactly_0": 93,
+   "min_below_0.05": 155,
+   "median_min": 0.15276843309402466
+  },
+  "Pick up the mallet and strike all xylophone keys from left to right.": {
+   "closures": 200,
+   "reach_exactly_0": 0,
+   "min_below_0.05": 0,
+   "median_min": 0.10000000149011612
+  },
+  "Place all stacking toy pieces onto the correct pegs.": {
+   "closures": 537,
+   "reach_exactly_0": 0,
+   "min_below_0.05": 0,
+   "median_min": 0.3137986958026886
+  },
+  "Play tic-tac-toe as the first player and fill the board with the opponent.": {
+   "closures": 500,
+   "reach_exactly_0": 0,
+   "min_below_0.05": 0,
+   "median_min": 0.4343995302915573
+  },
+  "Plug the charger into the power strip.": {
+   "closures": 245,
+   "reach_exactly_0": 0,
+   "min_below_0.05": 0,
+   "median_min": 0.36182573437690735
+  },
+  "Pour all the balls from the cup into the vase.": {
+   "closures": 158,
+   "reach_exactly_0": 15,
+   "min_below_0.05": 43,
+   "median_min": 0.5112423598766327
+  },
+  "Pour the liquid from the bottle into the cup.": {
+   "closures": 100,
+   "reach_exactly_0": 0,
+   "min_below_0.05": 0,
+   "median_min": 0.6824346780776978
+  },
+  "Press the two red buttons the required number of times according to the number cards, then press the blue button to confirm.": {
+   "closures": 400,
+   "reach_exactly_0": 272,
+   "min_below_0.05": 400,
+   "median_min": 0.0
+  },
+  "Push the T-shaped block to align it precisely with the gray T-shaped pad.": {
+   "closures": 142,
+   "reach_exactly_0": 142,
+   "min_below_0.05": 142,
+   "median_min": 0.0
+  },
+  "Pick up the bottles and throw them into the dustbin, using handover when needed.": {
+   "closures": 567,
+   "reach_exactly_0": 1,
+   "min_below_0.05": 1,
+   "median_min": 0.4303065240383148
+  },
+  "Arrange the five nesting dolls in a row from left to right, from smallest to largest.": {
+   "closures": 643,
+   "reach_exactly_0": 0,
+   "min_below_0.05": 0,
+   "median_min": 0.4636014997959137
+  },
+  "Stack the three blocks with different textures.": {
+   "closures": 300,
+   "reach_exactly_0": 0,
+   "min_below_0.05": 0,
+   "median_min": 0.2991218715906143
+  },
+  "Stack the three bowls together.": {
+   "closures": 278,
+   "reach_exactly_0": 22,
+   "min_below_0.05": 172,
+   "median_min": 0.036875274032354355
+  },
+  "Hang the headphones on the headphone stand, close the laptop, then place it into the vertical laptop stand.": {
+   "closures": 419,
+   "reach_exactly_0": 150,
+   "min_below_0.05": 235,
+   "median_min": 0.037089504301548004
+  },
+  "Pick up the two T-shaped blocks, swap their positions, and place them back with the correct orientations.": {
+   "closures": 200,
+   "reach_exactly_0": 0,
+   "min_below_0.05": 0,
+   "median_min": 0.1602759137749672
+  },
+  "Swap the two blocks using the empty mat, pressing the button after each move.": {
+   "closures": 600,
+   "reach_exactly_0": 267,
+   "min_below_0.05": 300,
+   "median_min": 0.1487620621919632
+  },
+  "Pick up the broom, hand it over to the right hand, then use the dustpan to sweep the blocks.": {
+   "closures": 314,
+   "reach_exactly_0": 18,
+   "min_below_0.05": 33,
+   "median_min": 0.15033511072397232
+  }
+ }
+}

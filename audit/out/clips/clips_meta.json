@@ -1,0 +1,194 @@
+[
+ {
+  "id": "109_bulldoze",
+  "segments": [
+   {
+    "runs": [
+     "rp_bulldoze"
+    ],
+    "cam": "bin",
+    "n_samples": 117,
+    "repeat": 1,
+    "first_frame": [
+     2
+    ],
+    "last_frame": [
+     118
+    ]
+   }
+  ],
+  "n_frames": 167,
+  "seconds": 6.68,
+  "crf": 23,
+  "file": "109_bulldoze.mp4",
+  "bytes": 346589
+ },
+ {
+  "id": "111_button_counts_twice",
+  "segments": [
+   {
+    "runs": [
+     "rp_buttons"
+    ],
+    "cam": "btn",
+    "n_samples": 11,
+    "repeat": 2,
+    "first_frame": [
+     2
+    ],
+    "last_frame": [
+     12
+    ]
+   },
+   {
+    "runs": [
+     "rp_buttons"
+    ],
+    "cam": "btn",
+    "n_samples": 51,
+    "repeat": 1,
+    "first_frame": [
+     22
+    ],
+    "last_frame": [
+     72
+    ]
+   },
+   {
+    "runs": [
+     "rp_buttons"
+    ],
+    "cam": "btn",
+    "n_samples": 31,
+    "repeat": 1,
+    "first_frame": [
+     78
+    ],
+    "last_frame": [
+     108
+    ]
+   },
+   {
+    "runs": [
+     "rp_press40"
+    ],
+    "cam": "btn",
+    "n_samples": 51,
+    "repeat": 2,
+    "first_frame": [
+     6
+    ],
+    "last_frame": [
+     56
+    ]
+   }
+  ],
+  "n_frames": 266,
+  "seconds": 10.64,
+  "crf": 23,
+  "file": "111_button_counts_twice.mp4",
+  "bytes": 408369
+ },
+ {
+  "id": "51_peek_scores_100",
+  "segments": [
+   {
+    "runs": [
+     "rp_peek"
+    ],
+    "cam": "cb",
+    "n_samples": 28,
+    "repeat": 1,
+    "first_frame": [
+     2
+    ],
+    "last_frame": [
+     29
+    ]
+   },
+   {
+    "runs": [
+     "rp_peek"
+    ],
+    "cam": "cb",
+    "n_samples": 31,
+    "repeat": 2,
+    "first_frame": [
+     30
+    ],
+    "last_frame": [
+     60
+    ]
+   },
+   {
+    "runs": [
+     "rp_peek"
+    ],
+    "cam": "cb",
+    "n_samples": 28,
+    "repeat": 1,
+    "first_frame": [
+     61
+    ],
+    "last_frame": [
+     88
+    ]
+   }
+  ],
+  "n_frames": 163,
+  "seconds": 6.52,
+  "crf": 23,
+  "file": "51_peek_scores_100.mp4",
+  "bytes": 521624
+ },
+ {
+  "id": "d3_cube_hops",
+  "segments": [
+   {
+    "runs": [
+     "c62_d3_ship",
+     "c62_d3_order"
+    ],
+    "cam": "cube",
+    "n_samples": 61,
+    "repeat": 2,
+    "first_frame": [
+     4,
+     4
+    ],
+    "last_frame": [
+     64,
+     64
+    ]
+   }
+  ],
+  "n_frames": 197,
+  "seconds": 7.88,
+  "crf": 23,
+  "file": "d3_cube_hops.mp4",
+  "bytes": 183185
+ },
+ {
+  "id": "a1_quits_scores_100",
+  "segments": [
+   {
+    "runs": [
+     "c62_a1"
+    ],
+    "cam": "wide",
+    "n_samples": 1,
+    "repeat": 1,
+    "first_frame": [
+     2
+    ],
+    "last_frame": [
+     2
+    ]
+   }
+  ],
+  "n_frames": 1,
+  "seconds": 0.04,
+  "file": "a1_quits_scores_100.png",
+  "bytes": 459565
+ }
+]

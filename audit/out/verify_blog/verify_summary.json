@@ -1,0 +1,1466 @@
+{
+ "114_fasten_screws_frozen": {
+  "eval_result": {
+   "success_rate": 0.0,
+   "eval_time": 1,
+   "score": 0.0,
+   "details": {
+    "0": {
+     "layout_id": 0,
+     "success": false,
+     "score": 0.0
+    }
+   }
+  },
+  "unstable_nums": 0,
+  "take_action_cnt": 1900,
+  "repo_head": "50c5fd10f1b1978bfdfbfadf9c601c32ec2efa55",
+  "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+  "scene_corrupted_log_lines": 1352,
+  "gpu_alloc_failure_lines": 2,
+  "nut_min_dz_m_after_3cm_lift": {
+   "nut1": 0.03,
+   "nut0": 0.03,
+   "nut2": 0.03
+  },
+  "nut_max_speed_mps": {
+   "nut1": 0.0,
+   "nut0": 0.0,
+   "nut2": 0.0
+  },
+  "gripper_joints_start": {
+   "robot0": [
+    0.0,
+    0.0
+   ],
+   "robot1": [
+    0.0,
+    0.0
+   ]
+  },
+  "contacts_start_end": [
+   0,
+   0
+  ],
+  "contacts_after_drop": 0,
+  "do_nothing": {
+   "grip_command": {
+    "left": 0.3851851851851852,
+    "right": 0.3851851851851852
+   },
+   "grip_source": {
+    "left": "observed",
+    "right": "observed"
+   },
+   "after_one_action": {
+    "end_flag": false,
+    "success": true
+   },
+   "step_lim": 1900,
+   "end_flag": true,
+   "success": false
+  },
+  "control_push_T_gripper_joints_start": {
+   "robot0": [
+    0.044,
+    0.044
+   ],
+   "robot1": [
+    0.044,
+    0.044
+   ]
+  }
+ },
+ "113_inertia_ignores_mass": {
+  "push_T_t": {
+   "engine_mass_kg": 0.35,
+   "engine_diag_inertia_kg_m2": [
+    1.335e-05,
+    4.215e-05,
+    5.28e-05
+   ],
+   "engine_com_m": [
+    -0.01,
+    0.0,
+    0.0
+   ],
+   "engine_collider_aabb_mm": [
+    80.0,
+    60.0,
+    15.0
+   ],
+   "box_density_kg_m3": 4861.0,
+   "trace_I_over_m_vs_solid_box": 0.182,
+   "inertia_equals_solid_box_of_kg": 0.06355,
+   "engine_shape_materials_unique": [
+    [
+     0.5,
+     0.5,
+     0.0
+    ]
+   ]
+  },
+  "swap_T_t0": {
+   "engine_mass_kg": 0.1,
+   "engine_diag_inertia_kg_m2": [
+    1.335e-05,
+    4.215e-05,
+    5.28e-05
+   ],
+   "engine_com_m": [
+    -0.01,
+    0.0,
+    0.0
+   ],
+   "engine_collider_aabb_mm": [
+    80.0,
+    60.0,
+    15.0
+   ],
+   "box_density_kg_m3": 1389.0,
+   "trace_I_over_m_vs_solid_box": 0.636,
+   "inertia_equals_solid_box_of_kg": 0.06355,
+   "engine_shape_materials_unique": [
+    [
+     0.5,
+     0.5,
+     0.0
+    ]
+   ]
+  },
+  "swap_T_t1": {
+   "engine_mass_kg": 0.1,
+   "engine_diag_inertia_kg_m2": [
+    1.335e-05,
+    4.215e-05,
+    5.28e-05
+   ],
+   "engine_com_m": [
+    -0.01,
+    0.0,
+    0.0
+   ],
+   "engine_collider_aabb_mm": [
+    80.0,
+    60.0,
+    15.0
+   ],
+   "box_density_kg_m3": 1389.0,
+   "trace_I_over_m_vs_solid_box": 0.636,
+   "inertia_equals_solid_box_of_kg": 0.06355,
+   "engine_shape_materials_unique": [
+    [
+     0.5,
+     0.5,
+     0.0
+    ]
+   ]
+  },
+  "identical_inertia_push_T_t_vs_swap_T_t0": true,
+  "analytic_solid_T_72g_kg_m2": [
+   1.335e-05,
+   4.215e-05,
+   5.28e-05
+  ],
+  "pack_shoe": {
+   "engine_mass_kg": 0.01,
+   "engine_diag_inertia_kg_m2": [
+    0.000130197,
+    0.000547196,
+    0.000553353
+   ],
+   "engine_com_m": [
+    -0.000744,
+    0.000317,
+    -0.013022
+   ],
+   "engine_collider_aabb_mm": [
+    171.92,
+    67.9,
+    70.56
+   ],
+   "box_density_kg_m3": 12.0,
+   "trace_I_over_m_vs_solid_box": 18.864,
+   "inertia_equals_solid_box_of_kg": 0.18864,
+   "engine_shape_materials_unique": [
+    [
+     0.5,
+     0.5,
+     0.0
+    ]
+   ]
+  },
+  "cover_blocks_red_cube": {
+   "engine_mass_kg": 0.35,
+   "engine_diag_inertia_kg_m2": [
+    1.628e-06,
+    1.628e-06,
+    1.628e-06
+   ],
+   "engine_com_m": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "engine_collider_aabb_mm": [
+    25.0,
+    25.0,
+    25.0
+   ],
+   "box_density_kg_m3": 22398.0,
+   "trace_I_over_m_vs_solid_box": 0.045,
+   "inertia_equals_solid_box_of_kg": 0.01563,
+   "engine_shape_materials_unique": [
+    [
+     0.5,
+     0.5,
+     0.0
+    ]
+   ]
+  },
+  "bottles_bottle2_00025": {
+   "engine_mass_kg": 0.15,
+   "engine_diag_inertia_kg_m2": [
+    0.001949641,
+    0.001949615,
+    0.000335772
+   ],
+   "engine_com_m": [
+    -8.6e-05,
+    -9.3e-05,
+    -0.012485
+   ],
+   "engine_collider_aabb_mm": [
+    63.68,
+    63.55,
+    204.0
+   ],
+   "box_density_kg_m3": 182.0,
+   "trace_I_over_m_vs_solid_box": 3.408,
+   "inertia_equals_solid_box_of_kg": 0.51116,
+   "engine_shape_materials_unique": [
+    [
+     0.5,
+     0.5,
+     0.0
+    ]
+   ]
+  }
+ },
+ "V1_22kg_bottle": {
+  "bottle0": {
+   "prim": "/World/envs/env_0/rigid/bottle/bottle_41_1",
+   "engine_mass_kg": 0.15,
+   "engine_diag_inertia_kg_m2": [
+    0.000891321,
+    0.000891004,
+    0.000102835
+   ],
+   "engine_com_m": [
+    0.000219,
+    0.000142,
+    -0.006414
+   ],
+   "engine_collider_aabb_mm": [
+    52.99,
+    51.96,
+    185.0
+   ],
+   "box_density_kg_m3": 294.0,
+   "trace_I_over_m_vs_solid_box": 1.898,
+   "inertia_equals_solid_box_of_kg": 0.28468,
+   "engine_shape_materials_unique": [
+    [
+     0.5,
+     0.5,
+     0.0
+    ]
+   ]
+  },
+  "bottle1": {
+   "prim": "/World/envs/env_0/rigid/bottle/bottle_60_2",
+   "engine_mass_kg": 0.15,
+   "engine_diag_inertia_kg_m2": [
+    0.00125242,
+    0.001251566,
+    0.000138358
+   ],
+   "engine_com_m": [
+    -6.4e-05,
+    -0.0002,
+    -0.000381
+   ],
+   "engine_collider_aabb_mm": [
+    51.76,
+    52.43,
+    189.3
+   ],
+   "box_density_kg_m3": 292.0,
+   "trace_I_over_m_vs_solid_box": 2.562,
+   "inertia_equals_solid_box_of_kg": 0.38423,
+   "engine_shape_materials_unique": [
+    [
+     0.5,
+     0.5,
+     0.0
+    ]
+   ]
+  },
+  "bottle2": {
+   "prim": "/World/envs/env_0/rigid/bottle/bottle_25_3",
+   "engine_mass_kg": 0.15,
+   "engine_diag_inertia_kg_m2": [
+    0.001949641,
+    0.001949615,
+    0.000335772
+   ],
+   "engine_com_m": [
+    -8.6e-05,
+    -9.3e-05,
+    -0.012485
+   ],
+   "engine_collider_aabb_mm": [
+    63.68,
+    63.55,
+    204.0
+   ],
+   "box_density_kg_m3": 182.0,
+   "trace_I_over_m_vs_solid_box": 3.408,
+   "inertia_equals_solid_box_of_kg": 0.51116,
+   "engine_shape_materials_unique": [
+    [
+     0.5,
+     0.5,
+     0.0
+    ]
+   ]
+  },
+  "bottle3": {
+   "prim": "/World/envs/env_0/rigid/bottle/bottle_22_4",
+   "engine_mass_kg": 0.5,
+   "engine_diag_inertia_kg_m2": [
+    0.002528509,
+    0.002521089,
+    0.00034291
+   ],
+   "engine_com_m": [
+    -0.000458,
+    0.000278,
+    -0.018476
+   ],
+   "engine_collider_aabb_mm": [
+    69.98,
+    69.34,
+    240.0
+   ],
+   "box_density_kg_m3": 429.0,
+   "trace_I_over_m_vs_solid_box": 0.961,
+   "inertia_equals_solid_box_of_kg": 0.48072,
+   "engine_shape_materials_unique": [
+    [
+     0.5,
+     0.5,
+     0.0
+    ]
+   ]
+  },
+  "layout_count_static": {
+   "layouts": 165,
+   "layouts_with_mass_ge_10kg": 74,
+   "per_seed": {
+    "0": [
+     19,
+     55
+    ],
+    "1": [
+     27,
+     55
+    ],
+    "2": [
+     28,
+     55
+    ]
+   },
+   "mass_value_counts": {
+    "0.15": 458,
+    "0.2": 128,
+    "1.8": 165,
+    "22": 74
+   },
+   "script": "repro/count_mass22.py",
+   "layout_root": "Assets/Eval_Layout/RoboDojo/arx_x5/{0,1,2}/put_bottles_into_dustbin_*.json at HF revision 1127bda"
+  }
+ },
+ "V2_mass_drawer": {
+  "push_T_random_coin_1_15": {
+   "engine_mass_kg": 0.5,
+   "engine_diag_inertia_kg_m2": [
+    7.93e-07,
+    7.6e-07,
+    1.549e-06
+   ],
+   "engine_com_m": [
+    8.4e-05,
+    4.6e-05,
+    4.3e-05
+   ],
+   "engine_collider_aabb_mm": [
+    52.52,
+    52.26,
+    2.79
+   ],
+   "box_density_kg_m3": 65205.0,
+   "trace_I_over_m_vs_solid_box": 0.007,
+   "inertia_equals_solid_box_of_kg": 0.00339,
+   "engine_shape_materials_unique": [
+    [
+     0.5,
+     0.5,
+     0.0
+    ]
+   ]
+  },
+  "push_T_random_pen_0_14": {
+   "engine_mass_kg": 0.018,
+   "engine_diag_inertia_kg_m2": [
+    1.5528e-05,
+    1.68e-07,
+    1.5532e-05
+   ],
+   "engine_com_m": [
+    -0.002645,
+    0.007181,
+    0.005911
+   ],
+   "engine_collider_aabb_mm": [
+    13.43,
+    143.28,
+    11.25
+   ],
+   "box_density_kg_m3": 831.0,
+   "trace_I_over_m_vs_solid_box": 0.5,
+   "inertia_equals_solid_box_of_kg": 0.00899,
+   "engine_shape_materials_unique": [
+    [
+     0.5,
+     0.5,
+     0.0
+    ]
+   ]
+  },
+  "pack_hammer": {
+   "engine_mass_kg": 0.05,
+   "engine_diag_inertia_kg_m2": [
+    2.447e-06,
+    4.0637e-05,
+    4.2564e-05
+   ],
+   "engine_com_m": [
+    -0.026567,
+    -0.004089,
+    -0.000767
+   ],
+   "engine_collider_aabb_mm": [
+    142.07,
+    57.84,
+    14.9
+   ],
+   "box_density_kg_m3": 408.0,
+   "trace_I_over_m_vs_solid_box": 0.433,
+   "inertia_equals_solid_box_of_kg": 0.02163,
+   "engine_shape_materials_unique": [
+    [
+     0.5,
+     0.5,
+     0.0
+    ]
+   ]
+  }
+ },
+ "V3_osmium_cubes": {
+  "red": {
+   "engine_mass_kg": 0.35,
+   "engine_diag_inertia_kg_m2": [
+    1.628e-06,
+    1.628e-06,
+    1.628e-06
+   ],
+   "engine_com_m": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "engine_collider_aabb_mm": [
+    25.0,
+    25.0,
+    25.0
+   ],
+   "box_density_kg_m3": 22398.0,
+   "trace_I_over_m_vs_solid_box": 0.045,
+   "inertia_equals_solid_box_of_kg": 0.01563,
+   "engine_shape_materials_unique": [
+    [
+     0.5,
+     0.5,
+     0.0
+    ]
+   ]
+  },
+  "green": {
+   "engine_mass_kg": 0.35,
+   "engine_diag_inertia_kg_m2": [
+    1.628e-06,
+    1.628e-06,
+    1.628e-06
+   ],
+   "engine_com_m": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "engine_collider_aabb_mm": [
+    25.0,
+    25.0,
+    25.0
+   ],
+   "box_density_kg_m3": 22398.0,
+   "trace_I_over_m_vs_solid_box": 0.045,
+   "inertia_equals_solid_box_of_kg": 0.01563,
+   "engine_shape_materials_unique": [
+    [
+     0.5,
+     0.5,
+     0.0
+    ]
+   ]
+  },
+  "blue": {
+   "engine_mass_kg": 0.35,
+   "engine_diag_inertia_kg_m2": [
+    1.628e-06,
+    1.628e-06,
+    1.628e-06
+   ],
+   "engine_com_m": [
+    0.0,
+    -0.0,
+    0.0
+   ],
+   "engine_collider_aabb_mm": [
+    25.0,
+    25.0,
+    25.0
+   ],
+   "box_density_kg_m3": 22398.0,
+   "trace_I_over_m_vs_solid_box": 0.045,
+   "inertia_equals_solid_box_of_kg": 0.01563,
+   "engine_shape_materials_unique": [
+    [
+     0.5,
+     0.5,
+     0.0
+    ]
+   ]
+  }
+ },
+ "D3_order_variant_cube": {
+  "order_variant": "RigidObject binds its physics material before SingleRigidPrim.__init__",
+  "engine_materials_cubes": {
+   "red": [
+    0.6000000238418579,
+    1.5,
+    0.0
+   ],
+   "green": [
+    0.6000000238418579,
+    1.5,
+    0.0
+   ],
+   "blue": [
+    0.6000000238418579,
+    1.5,
+    0.0
+   ]
+  },
+  "label": "red",
+  "slide_x_mm": 7.32,
+  "max_slide_x_mm": 10.834,
+  "max_tilt_deg": 8.715,
+  "max_abs_pitch_deg": 5.911,
+  "max_com_dz_mm": 2.517,
+  "final_yaw_deg": 8.998,
+  "predicted_mm": {
+   "pair_0.5": 25.5,
+   "pair_1.0": 12.7
+  },
+  "vx_after_step1_m_s": 0.285,
+  "normal_N_steps_1_to_10": [
+   18.814,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.287,
+   32.801
+  ],
+  "zero_normal_impulse_steps_1based": [
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   11,
+   13,
+   14,
+   16
+  ],
+  "table_contact_points_steps_1_to_10": [
+   4,
+   4,
+   4,
+   2,
+   2,
+   1,
+   1,
+   3,
+   3,
+   4
+  ],
+  "dz_com_mm_steps_1_to_10": [
+   0.434,
+   0.98,
+   1.369,
+   1.602,
+   1.677,
+   1.595,
+   1.356,
+   0.961,
+   0.432,
+   0.604
+  ],
+  "cube_weight_N": 3.4335
+ },
+ "S1_stabilization_slide": {
+  "f_00000_dt4_it16_stab_on": {
+   "slide_exact_mm": 28.4439,
+   "slide_mm": null,
+   "label": "bottle3",
+   "overrides": {
+    "dt_s": 0.004,
+    "pos_iters": 16,
+    "enable_stabilization": true,
+    "target_label": "bottle3",
+    "fast_settle": false
+   },
+   "contacts_min_max": [
+    37,
+    38
+   ]
+  },
+  "f_00000_dt4_it16_stab_off": {
+   "slide_exact_mm": 24.4948,
+   "slide_mm": null,
+   "label": "bottle3",
+   "overrides": {
+    "dt_s": 0.004,
+    "pos_iters": 16,
+    "enable_stabilization": false,
+    "target_label": "bottle3",
+    "fast_settle": false
+   },
+   "contacts_min_max": [
+    37,
+    38
+   ]
+  },
+  "grid_dt2_it16_00000_lying": {
+   "slide_exact_mm": 34.2627,
+   "slide_mm": null,
+   "label": "bottle3",
+   "overrides": {
+    "dt_s": 0.002,
+    "pos_iters": 16,
+    "enable_stabilization": true,
+    "target_label": "bottle3",
+    "fast_settle": false
+   },
+   "contacts_min_max": [
+    36,
+    38
+   ]
+  },
+  "grid_dt1_it16_00000_lying": {
+   "slide_exact_mm": 37.4062,
+   "slide_mm": null,
+   "label": "bottle3",
+   "overrides": {
+    "dt_s": 0.001,
+    "pos_iters": 16,
+    "enable_stabilization": true,
+    "target_label": "bottle3",
+    "fast_settle": false
+   },
+   "contacts_min_max": [
+    37,
+    38
+   ]
+  },
+  "f_00041_dt4_it16_stab_on": {
+   "slide_exact_mm": 24.4947,
+   "slide_mm": null,
+   "label": "bottle2",
+   "overrides": {
+    "dt_s": 0.004,
+    "pos_iters": 16,
+    "enable_stabilization": true,
+    "target_label": "bottle2",
+    "fast_settle": false
+   },
+   "contacts_min_max": [
+    3,
+    4
+   ]
+  }
+ },
+ "109_bulldoze": {
+  "eval_result": {
+   "success_rate": 0.0,
+   "eval_time": 1,
+   "score": 40.0,
+   "details": {
+    "0": {
+     "layout_id": 1,
+     "success": false,
+     "score": 0.4
+    }
+   }
+  },
+  "unstable_nums": 0,
+  "take_action_cnt": 700,
+  "repo_head": "50c5fd10f1b1978bfdfbfadf9c601c32ec2efa55",
+  "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+  "grasps": 0,
+  "gripper_command_while_pushing": 0.4,
+  "final_dustbin_check": {
+   "env_idx": 0,
+   "dustbin_world_aabb": {
+    "min": [
+     -0.8651,
+     -0.3349,
+     0.075
+    ],
+    "max": [
+     -0.3948,
+     0.1355,
+     0.725
+    ]
+   },
+   "bottles": {
+    "bottle0": {
+     "inst": "bottle_60_1",
+     "final_pos": [
+      -0.68363,
+      -0.17465,
+      0.31403
+     ],
+     "final_ori": [
+      0.66738,
+      -0.35512,
+      -0.60135,
+      0.25859
+     ],
+     "aabb_min": [
+      -0.7837,
+      -0.2282,
+      0.2731
+     ],
+     "aabb_max": [
+      -0.5835,
+      -0.1211,
+      0.355
+     ],
+     "z_gap_m": 0.19807,
+     "xy_inside": true,
+     "z_below_rim": true,
+     "z_on_bottom": true,
+     "in_dustbin_geometric": true,
+     "task_is_A_on_B_bottom": true
+    },
+    "bottle1": {
+     "inst": "bottle_50_2",
+     "final_pos": [
+      -0.60901,
+      -0.12628,
+      0.31314
+     ],
+     "final_ori": [
+      -0.30693,
+      0.67713,
+      0.2377,
+      -0.62513
+     ],
+     "aabb_min": [
+      -0.7075,
+      -0.1752,
+      0.2724
+     ],
+     "aabb_max": [
+      -0.5105,
+      -0.0774,
+      0.3539
+     ],
+     "z_gap_m": 0.19741,
+     "xy_inside": true,
+     "z_below_rim": true,
+     "z_on_bottom": true,
+     "in_dustbin_geometric": true,
+     "task_is_A_on_B_bottom": true
+    },
+    "bottle2": {
+     "inst": "bottle_41_3",
+     "final_pos": [
+      -0.61521,
+      -0.06777,
+      0.31339
+     ],
+     "final_ori": [
+      0.09269,
+      0.71467,
+      -0.05605,
+      -0.69103
+     ],
+     "aabb_min": [
+      -0.7095,
+      -0.1016,
+      0.2823
+     ],
+     "aabb_max": [
+      -0.5207,
+      -0.034,
+      0.3448
+     ],
+     "z_gap_m": 0.20733,
+     "xy_inside": true,
+     "z_below_rim": true,
+     "z_on_bottom": true,
+     "in_dustbin_geometric": true,
+     "task_is_A_on_B_bottom": true
+    },
+    "bottle3": {
+     "inst": "bottle_59_4",
+     "final_pos": [
+      -0.30148,
+      -0.39351,
+      0.79105
+     ],
+     "final_ori": [
+      0.38794,
+      -0.49889,
+      -0.50318,
+      0.58942
+     ],
+     "aabb_min": [
+      -0.392,
+      -0.4455,
+      0.7554
+     ],
+     "aabb_max": [
+      -0.211,
+      -0.3415,
+      0.8267
+     ],
+     "z_gap_m": 0.68043,
+     "xy_inside": false,
+     "z_below_rim": false,
+     "z_on_bottom": false,
+     "in_dustbin_geometric": false,
+     "task_is_A_on_B_bottom": false
+    }
+   },
+   "in_dustbin_geometric_count": 3,
+   "task_predicate_count": 3,
+   "task_all_robot_back_to_origin": true,
+   "task_is_all_gripper_open_0.8": true
+  },
+  "policy_actions": 700,
+  "max_rise_above_settled_m": {
+   "bottle0": 0.0013,
+   "bottle1": 0.0031,
+   "bottle2": 0.0009,
+   "bottle3": 0.0039
+  },
+  "pose_rows": 700
+ },
+ "111_button_double_count": {
+  "eval_result": {
+   "success_rate": 0.0,
+   "eval_time": 1,
+   "score": 0.0,
+   "details": {
+    "0": {
+     "layout_id": 0,
+     "success": false,
+     "score": 0.0
+    }
+   }
+  },
+  "unstable_nums": 0,
+  "take_action_cnt": 236,
+  "repo_head": "50c5fd10f1b1978bfdfbfadf9c601c32ec2efa55",
+  "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+  "query_changes_[aim,count]_per_button": [
+   {
+    "case": "press_button1_10mm",
+    "action": 34,
+    "phase": "press",
+    "from": [
+     [
+      1,
+      0
+     ],
+     [
+      9,
+      0
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "to": [
+     [
+      1,
+      0
+     ],
+     [
+      9,
+      1
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "end": false,
+    "success": true
+   },
+   {
+    "case": "press_button1_30mm",
+    "action": 128,
+    "phase": "press",
+    "from": [
+     [
+      1,
+      0
+     ],
+     [
+      9,
+      1
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "to": [
+     [
+      1,
+      0
+     ],
+     [
+      9,
+      2
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "end": false,
+    "success": true
+   },
+   {
+    "case": "press_button1_30mm",
+    "action": 144,
+    "phase": "hold",
+    "from": [
+     [
+      1,
+      0
+     ],
+     [
+      9,
+      2
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "to": [
+     [
+      1,
+      0
+     ],
+     [
+      9,
+      3
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "end": false,
+    "success": true
+   },
+   {
+    "case": "press_button0_30mm",
+    "action": 222,
+    "phase": "press",
+    "from": [
+     [
+      1,
+      0
+     ],
+     [
+      9,
+      3
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "to": [
+     [
+      1,
+      1
+     ],
+     [
+      9,
+      3
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "end": false,
+    "success": true
+   },
+   {
+    "case": "press_button0_30mm",
+    "action": 236,
+    "phase": "hold",
+    "from": [
+     [
+      1,
+      1
+     ],
+     [
+      9,
+      3
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "to": [
+     [
+      1,
+      2
+     ],
+     [
+      9,
+      3
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "end": true,
+    "success": false
+   }
+  ]
+ },
+ "112_coin_in_wall": [
+  {
+   "case": "coin_side_0.5ms_ph0",
+   "speed_at_contact_mps": 0.5013,
+   "end_bank_local_mm": [
+    -71.9,
+    -12.8,
+    2.4
+   ],
+   "moved_after_0.48s_mm": 0.0,
+   "end_speed_readback_mps": 0.0004,
+   "min_sep_mm_bank": -0.12,
+   "deposit_check_max": 0.0
+  },
+  {
+   "case": "coin_side_0.5ms_ph1",
+   "speed_at_contact_mps": 0.5013,
+   "end_bank_local_mm": [
+    -83.9,
+    -18.4,
+    0.2
+   ],
+   "moved_after_0.48s_mm": 0.0,
+   "end_speed_readback_mps": 0.0005,
+   "min_sep_mm_bank": -0.05,
+   "deposit_check_max": 0.0
+  },
+  {
+   "case": "coin_side_0.5ms_ph2",
+   "speed_at_contact_mps": 0.5013,
+   "end_bank_local_mm": [
+    -87.2,
+    -10.9,
+    0.2
+   ],
+   "moved_after_0.48s_mm": 0.0,
+   "end_speed_readback_mps": 0.0001,
+   "min_sep_mm_bank": -0.02,
+   "deposit_check_max": 0.0
+  },
+  {
+   "case": "coin_side_0.5ms_ph3",
+   "speed_at_contact_mps": 0.5013,
+   "end_bank_local_mm": [
+    -95.4,
+    -3.4,
+    0.3
+   ],
+   "moved_after_0.48s_mm": 0.0,
+   "end_speed_readback_mps": 0.0,
+   "min_sep_mm_bank": -0.08,
+   "deposit_check_max": 0.0
+  },
+  {
+   "case": "coin_side_1ms_ph0",
+   "speed_at_contact_mps": 1.0005,
+   "end_bank_local_mm": [
+    -87.0,
+    -12.8,
+    0.2
+   ],
+   "moved_after_0.48s_mm": 0.0,
+   "end_speed_readback_mps": 0.0002,
+   "min_sep_mm_bank": -0.7,
+   "deposit_check_max": 0.0
+  },
+  {
+   "case": "coin_side_1ms_ph1",
+   "speed_at_contact_mps": 1.0005,
+   "end_bank_local_mm": [
+    -89.8,
+    -9.3,
+    0.3
+   ],
+   "moved_after_0.48s_mm": 0.0,
+   "end_speed_readback_mps": 0.0005,
+   "min_sep_mm_bank": -0.09,
+   "deposit_check_max": 0.0
+  },
+  {
+   "case": "coin_side_1ms_ph2",
+   "speed_at_contact_mps": 1.0005,
+   "end_bank_local_mm": [
+    -80.4,
+    -8.7,
+    0.2
+   ],
+   "moved_after_0.48s_mm": 0.0,
+   "end_speed_readback_mps": 0.0,
+   "min_sep_mm_bank": 0.01,
+   "deposit_check_max": 0.0
+  },
+  {
+   "case": "coin_side_1ms_ph3",
+   "speed_at_contact_mps": 1.0005,
+   "end_bank_local_mm": [
+    -91.0,
+    -13.0,
+    0.3
+   ],
+   "moved_after_0.48s_mm": 0.0,
+   "end_speed_readback_mps": 0.0001,
+   "min_sep_mm_bank": -0.16,
+   "deposit_check_max": 0.0
+  },
+  {
+   "case": "coin_side_2ms_ph0",
+   "speed_at_contact_mps": 2.0001,
+   "end_bank_local_mm": [
+    -69.0,
+    -8.9,
+    48.5
+   ],
+   "moved_after_0.48s_mm": 0.0,
+   "end_speed_readback_mps": 0.1089,
+   "min_sep_mm_bank": -2.19,
+   "deposit_check_max": 0.0
+  },
+  {
+   "case": "coin_side_2ms_ph1",
+   "speed_at_contact_mps": 2.0001,
+   "end_bank_local_mm": [
+    -64.7,
+    -4.9,
+    2.4
+   ],
+   "moved_after_0.48s_mm": 0.0,
+   "end_speed_readback_mps": 0.0006,
+   "min_sep_mm_bank": -1.36,
+   "deposit_check_max": 0.0
+  },
+  {
+   "case": "coin_side_2ms_ph2",
+   "speed_at_contact_mps": 2.0001,
+   "end_bank_local_mm": [
+    -92.8,
+    -10.7,
+    2.6
+   ],
+   "moved_after_0.48s_mm": 0.0,
+   "end_speed_readback_mps": 0.0,
+   "min_sep_mm_bank": -0.01,
+   "deposit_check_max": 0.0
+  },
+  {
+   "case": "coin_side_2ms_ph3",
+   "speed_at_contact_mps": 2.0001,
+   "end_bank_local_mm": [
+    -70.1,
+    -9.0,
+    47.2
+   ],
+   "moved_after_0.48s_mm": 0.0,
+   "end_speed_readback_mps": 0.1575,
+   "min_sep_mm_bank": -4.43,
+   "deposit_check_max": 0.0
+  },
+  {
+   "case": "coin_side_4ms_ph0",
+   "speed_at_contact_mps": 3.9999,
+   "end_bank_local_mm": [
+    -64.9,
+    -8.0,
+    53.5
+   ],
+   "moved_after_0.48s_mm": 0.0,
+   "end_speed_readback_mps": 0.1113,
+   "min_sep_mm_bank": -1.96,
+   "deposit_check_max": 0.0
+  },
+  {
+   "case": "coin_side_4ms_ph1",
+   "speed_at_contact_mps": 3.9999,
+   "end_bank_local_mm": [
+    -87.7,
+    -8.3,
+    0.2
+   ],
+   "moved_after_0.48s_mm": 0.0,
+   "end_speed_readback_mps": 0.0003,
+   "min_sep_mm_bank": -0.17,
+   "deposit_check_max": 0.0
+  },
+  {
+   "case": "coin_side_4ms_ph2",
+   "speed_at_contact_mps": 3.9999,
+   "end_bank_local_mm": [
+    62.6,
+    -8.6,
+    48.9
+   ],
+   "moved_after_0.48s_mm": 0.12,
+   "end_speed_readback_mps": 0.0531,
+   "min_sep_mm_bank": -2.29,
+   "deposit_check_max": 0.0
+  },
+  {
+   "case": "coin_side_4ms_ph3",
+   "speed_at_contact_mps": 3.9999,
+   "end_bank_local_mm": [
+    65.1,
+    -10.3,
+    40.9
+   ],
+   "moved_after_0.48s_mm": 0.0,
+   "end_speed_readback_mps": 0.0845,
+   "min_sep_mm_bank": -4.24,
+   "deposit_check_max": 0.0
+  },
+  {
+   "case": "control_coin_slot_slow_in",
+   "speed_at_contact_mps": 0.0892,
+   "end_bank_local_mm": [
+    7.7,
+    -1.8,
+    13.3
+   ],
+   "moved_after_0.48s_mm": 0.0,
+   "end_speed_readback_mps": 0.0016,
+   "min_sep_mm_bank": -0.26,
+   "deposit_check_max": 1.0
+  },
+  {
+   "case": "control_coin_on_table",
+   "speed_at_contact_mps": 0.0392,
+   "end_bank_local_mm": [
+    15.8,
+    304.4,
+    -1.0
+   ],
+   "moved_after_0.48s_mm": 0.0,
+   "end_speed_readback_mps": 0.0003,
+   "min_sep_mm_bank": null,
+   "deposit_check_max": 0.0
+  }
+ ],
+ "G2_hold_consequence": {
+  "shipped_u0": {
+   "u_hold": 0.0,
+   "F_star_N": null,
+   "bottle_mass_kg": 0.22,
+   "finger_plateau_N": [
+    24.805,
+    24.664
+   ],
+   "finger_mean10_N": [
+    22.93,
+    22.822
+   ],
+   "pad_materials_unique": [
+    [
+     0.4000000059604645,
+     0.3199999928474426,
+     0.05000000074505806
+    ],
+    [
+     0.5,
+     0.5,
+     0.0
+    ]
+   ],
+   "held": true,
+   "rotation_in_hand_deg": 4.59,
+   "lift_dz_mm": 144.87,
+   "grasp_point_slip_mm": 0.37,
+   "dropped": false
+  },
+  "shipped_lead10p8": {
+   "u_hold": 0.540325,
+   "F_star_N": null,
+   "bottle_mass_kg": 0.22,
+   "finger_plateau_N": [
+    24.626,
+    24.506
+   ],
+   "finger_mean10_N": [
+    14.984,
+    14.959
+   ],
+   "pad_materials_unique": [
+    [
+     0.4000000059604645,
+     0.3199999928474426,
+     0.05000000074505806
+    ],
+    [
+     0.5,
+     0.5,
+     0.0
+    ]
+   ],
+   "held": false,
+   "rotation_in_hand_deg": 81.88,
+   "lift_dz_mm": 69.92,
+   "grasp_point_slip_mm": 3.46,
+   "dropped": false
+  },
+  "ideal_20N": {
+   "u_hold": 0.0,
+   "F_star_N": 20.0,
+   "bottle_mass_kg": 0.22,
+   "finger_plateau_N": [
+    19.963,
+    19.96
+   ],
+   "finger_mean10_N": [
+    19.968,
+    19.968
+   ],
+   "pad_materials_unique": [
+    [
+     0.4000000059604645,
+     0.3199999928474426,
+     0.05000000074505806
+    ],
+    [
+     0.5,
+     0.5,
+     0.0
+    ]
+   ],
+   "held": true,
+   "rotation_in_hand_deg": 6.66,
+   "lift_dz_mm": 141.83,
+   "grasp_point_slip_mm": 1.08,
+   "dropped": false
+  }
+ },
+ "G3_demos_record_clamp": {
+  "frames": 1856102,
+  "episodes": 3500,
+  "tasks": 35,
+  "consecutive_pairs_within_episode": 1852602,
+  "state_t_eq_action_tminus1_all_dims_pairs": 1852602,
+  "state_t_eq_action_tminus1_per_dim_mismatches": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "max_abs_diff_state_t_vs_action_tminus1": 0.0,
+  "contrast_state_t_eq_action_t_all_dims_pairs": 2161,
+  "push_T_closures": {
+   "closures": 142,
+   "reach_exactly_0": 142,
+   "min_below_0.05": 142,
+   "median_min": 0.0
+  },
+  "bottle_task_closures": {
+   "closures": 567,
+   "reach_exactly_0": 1,
+   "min_below_0.05": 1,
+   "median_min": 0.4303065240383148
+  },
+  "source": "data/RoboDojo_lerobot_v30_video at HF revision 1127bda; repro/g3_state_action.py"
+ },
+ "gpu": {
+  "processes": 14,
+  "wall_s": 683,
+  "gpu_hours": 0.19,
+  "gpu": "della-vis2 GPU 0 (A40, shared; 2,475 MiB free at every launch)"
+ }
+}

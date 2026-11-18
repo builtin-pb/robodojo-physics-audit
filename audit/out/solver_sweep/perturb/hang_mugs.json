@@ -1,0 +1,23 @@
+[
+ {
+  "cell_name": "hang_mugs__perturb",
+  "layout": 0,
+  "overrides": {
+   "spawn_lift": {
+    "stems": "*",
+    "dz_m": 1e-06
+   },
+   "slide_target": {
+    "label": "mug1",
+    "inst": "mug_5_2",
+    "labelled": true,
+    "stem": "mug_5",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     -0.475408,
+     0.879765
+    ]
+   }
+  }
+ }
+]

@@ -1,0 +1,208 @@
+{
+ "pr84_commit": "753d7d7 (v4)",
+ "remaining_differences": [
+  {
+   "scope": "asset",
+   "key": "Rigid/bottle/00041",
+   "field": "class/confidence/alternatives",
+   "ours_v3": [
+    "pet_plastic",
+    "medium",
+    [
+     "polyolefin_plastic"
+    ]
+   ],
+   "pr84": [
+    "pet_plastic",
+    "medium",
+    []
+   ]
+  },
+  {
+   "scope": "asset",
+   "key": "Geometry/dustbin/00000",
+   "field": "class/confidence/alternatives",
+   "ours_v3": [
+    "polyolefin_plastic",
+    "low",
+    [
+     "abs_toy_plastic"
+    ]
+   ],
+   "pr84": [
+    "polyolefin_plastic",
+    "low",
+    []
+   ]
+  },
+  {
+   "scope": "class",
+   "key": "pet_plastic",
+   "field": "restitution",
+   "ours_v3": [
+    0.25,
+    [
+     0.15,
+     0.55
+    ],
+    "unsourced"
+   ],
+   "pr84": [
+    0.25,
+    [
+     0.15,
+     0.5
+    ],
+    "unsourced"
+   ]
+  },
+  {
+   "scope": "class",
+   "key": "polyolefin_plastic",
+   "field": "restitution",
+   "ours_v3": [
+    0.25,
+    [
+     0.15,
+     0.55
+    ],
+    "unsourced"
+   ],
+   "pr84": [
+    0.25,
+    [
+     0.15,
+     0.5
+    ],
+    "unsourced"
+   ]
+  },
+  {
+   "scope": "class",
+   "key": "steel",
+   "field": "density_kg_m3",
+   "ours_v3": [
+    7820,
+    [
+     7480,
+     8750
+    ],
+    "sourced"
+   ],
+   "pr84": [
+    7820,
+    [
+     7820,
+     7820
+    ],
+    "sourced"
+   ]
+  },
+  {
+   "scope": "class",
+   "key": "steel",
+   "field": "restitution",
+   "ours_v3": [
+    0.6,
+    [
+     0.3,
+     0.9
+    ],
+    "unsourced"
+   ],
+   "pr84": [
+    0.2,
+    [
+     0.1,
+     0.45
+    ],
+    "unsourced"
+   ]
+  },
+  {
+   "scope": "class",
+   "key": "pad_hard",
+   "field": "restitution",
+   "ours_v3": [
+    0.1,
+    [
+     0.0,
+     0.35
+    ],
+    "unsourced"
+   ],
+   "pr84": [
+    0.05,
+    [
+     0.0,
+     0.3
+    ],
+    "unsourced"
+   ]
+  },
+  {
+   "scope": "class",
+   "key": "pad_elastomer",
+   "field": "restitution",
+   "ours_v3": [
+    0.1,
+    [
+     0.0,
+     0.3
+    ],
+    "unsourced"
+   ],
+   "pr84": [
+    0.05,
+    [
+     0.0,
+     0.25
+    ],
+    "unsourced"
+   ]
+  },
+  {
+   "scope": "class",
+   "key": "table_laminate",
+   "field": "restitution",
+   "ours_v3": [
+    0.1,
+    [
+     0.05,
+     0.4
+    ],
+    "unsourced"
+   ],
+   "pr84": [
+    0.05,
+    [
+     0.05,
+     0.4
+    ],
+    "unsourced"
+   ]
+  },
+  {
+   "scope": "class",
+   "key": "table_wood",
+   "field": "restitution",
+   "ours_v3": [
+    0.1,
+    [
+     0.05,
+     0.4
+    ],
+    "unsourced"
+   ],
+   "pr84": [
+    0.05,
+    [
+     0.05,
+     0.4
+    ],
+    "unsourced"
+   ]
+  }
+ ],
+ "n_remaining": 10
+}

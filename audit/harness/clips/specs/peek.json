@@ -1,0 +1,58 @@
+{
+ "purpose": "#51 peek, cover_blocks L1, witness_cb peek_51, shipped evaluator; frames thinned to fit the GPU budget (path tracing costs about 0.4 s per frame after each physics change)",
+ "cameras": [
+  {
+   "name": "cb",
+   "eye": [
+    0.1,
+    0.45,
+    1.05
+   ],
+   "target": [
+    0.05,
+    -0.17,
+    0.8
+   ],
+   "focal_mm": 20,
+   "res": [
+    960,
+    540
+   ]
+  }
+ ],
+ "windows": [
+  {
+   "case": null,
+   "unit": "action",
+   "from": 1,
+   "to": 280,
+   "stride": 10
+  },
+  {
+   "case": null,
+   "unit": "action",
+   "from": 280,
+   "to": 340,
+   "stride": 2
+  },
+  {
+   "case": null,
+   "unit": "action",
+   "from": 340,
+   "to": 622,
+   "stride": 10
+  }
+ ],
+ "mode_sweep": [
+  {
+   "name": "pt8",
+   "carb": {
+    "/rtx/rendermode": "PathTracing",
+    "/rtx/pathtracing/spp": 8,
+    "/rtx/pathtracing/totalSpp": 8,
+    "/rtx/pathtracing/optixDenoiser/enabled": true
+   },
+   "warmup": 4
+  }
+ ]
+}

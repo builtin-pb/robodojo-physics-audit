@@ -1,0 +1,1266 @@
+{
+ "shipped": {
+  "batch": "g4st_cb_ship",
+  "layout": 0,
+  "objects": {
+   "red": {
+    "engine_mass_kg": 0.35,
+    "engine_material": [
+     0.5,
+     0.5,
+     0.0
+    ]
+   },
+   "green": {
+    "engine_mass_kg": 0.35,
+    "engine_material": [
+     0.5,
+     0.5,
+     0.0
+    ]
+   },
+   "blue": {
+    "engine_mass_kg": 0.35,
+    "engine_material": [
+     0.5,
+     0.5,
+     0.0
+    ]
+   },
+   "cup0": {
+    "engine_mass_kg": 0.15,
+    "engine_material": [
+     0.5,
+     0.5,
+     0.0
+    ]
+   },
+   "cup1": {
+    "engine_mass_kg": 0.15,
+    "engine_material": [
+     0.5,
+     0.5,
+     0.0
+    ]
+   },
+   "cup2": {
+    "engine_mass_kg": 0.15,
+    "engine_material": [
+     0.5,
+     0.5,
+     0.0
+    ]
+   }
+  },
+  "fixtures": {
+   "Table": "unbound (scene default 0.5/0.5)",
+   "Ground": {
+    "static": 1.0,
+    "dynamic": 1.0,
+    "restitution": 0.0,
+    "combine": "multiply"
+   }
+  },
+  "stabilization": false,
+  "min_position_iterations": 1.0,
+  "robot0": {
+   "stiffness": [
+    4400.0,
+    4400.0,
+    4400.0,
+    4400.0,
+    4400.0,
+    4400.0,
+    2300.0,
+    2300.0
+   ],
+   "damping": [
+    40.0,
+    40.0,
+    40.0,
+    40.0,
+    40.0,
+    40.0,
+    100.0,
+    100.0
+   ],
+   "effort_limits": [
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0
+   ],
+   "vel_limits": [
+    5.0,
+    5.0,
+    5.0,
+    5.0,
+    5.0,
+    5.0,
+    1000.0,
+    1000.0
+   ]
+  },
+  "class_friction_override": {},
+  "physics_fixes": null
+ },
+ "corrected": {
+  "batch": "g4st_cb_corr",
+  "layout": 0,
+  "objects": {
+   "red": {
+    "engine_mass_kg": 0.01125,
+    "engine_material": [
+     0.3716,
+     0.3022,
+     0.5
+    ]
+   },
+   "green": {
+    "engine_mass_kg": 0.01125,
+    "engine_material": [
+     0.3716,
+     0.3022,
+     0.5
+    ]
+   },
+   "blue": {
+    "engine_mass_kg": 0.01125,
+    "engine_material": [
+     0.3716,
+     0.3022,
+     0.5
+    ]
+   },
+   "cup0": {
+    "engine_mass_kg": 0.03,
+    "engine_material": [
+     0.1994,
+     0.1662,
+     0.25
+    ]
+   },
+   "cup1": {
+    "engine_mass_kg": 0.03,
+    "engine_material": [
+     0.1994,
+     0.1662,
+     0.25
+    ]
+   },
+   "cup2": {
+    "engine_mass_kg": 0.03,
+    "engine_material": [
+     0.1994,
+     0.1662,
+     0.25
+    ]
+   }
+  },
+  "fixtures": {
+   "Table": {
+    "static": 0.2454,
+    "dynamic": 0.2126,
+    "restitution": 0.1,
+    "combine": "average"
+   },
+   "Ground": {
+    "static": 0.2954,
+    "dynamic": 0.2488,
+    "restitution": 0.0,
+    "combine": "average"
+   }
+  },
+  "stabilization": false,
+  "min_position_iterations": 64.0,
+  "robot0": {
+   "stiffness": [
+    4400.0,
+    4400.0,
+    4400.0,
+    4400.0,
+    4400.0,
+    4400.0,
+    52274.6015625,
+    0.0
+   ],
+   "damping": [
+    40.0,
+    40.0,
+    40.0,
+    40.0,
+    40.0,
+    40.0,
+    2090.97998046875,
+    0.0
+   ],
+   "effort_limits": [
+    30.0,
+    40.0,
+    30.0,
+    15.0,
+    10.0,
+    10.0,
+    323.5400085449219,
+    100.0
+   ],
+   "vel_limits": [
+    5.0,
+    5.0,
+    5.5,
+    5.5,
+    5.0,
+    5.0,
+    1000.0,
+    1000.0
+   ]
+  },
+  "class_friction_override": {},
+  "physics_fixes": [
+   "collision",
+   "gripper",
+   "order",
+   "robot_limits",
+   "size",
+   "solver",
+   "values"
+  ]
+ },
+ "off3_shipped": {
+  "batch": "g4st_cb_off3_ship",
+  "layout": 0,
+  "objects": {
+   "red": {
+    "engine_mass_kg": 0.35,
+    "engine_material": [
+     0.5,
+     0.5,
+     0.0
+    ]
+   },
+   "green": {
+    "engine_mass_kg": 0.35,
+    "engine_material": [
+     0.5,
+     0.5,
+     0.0
+    ]
+   },
+   "blue": {
+    "engine_mass_kg": 0.35,
+    "engine_material": [
+     0.5,
+     0.5,
+     0.0
+    ]
+   },
+   "cup0": {
+    "engine_mass_kg": 0.15,
+    "engine_material": [
+     0.5,
+     0.5,
+     0.0
+    ]
+   },
+   "cup1": {
+    "engine_mass_kg": 0.15,
+    "engine_material": [
+     0.5,
+     0.5,
+     0.0
+    ]
+   },
+   "cup2": {
+    "engine_mass_kg": 0.15,
+    "engine_material": [
+     0.5,
+     0.5,
+     0.0
+    ]
+   }
+  },
+  "fixtures": {
+   "Table": "unbound (scene default 0.5/0.5)",
+   "Ground": {
+    "static": 1.0,
+    "dynamic": 1.0,
+    "restitution": 0.0,
+    "combine": "multiply"
+   }
+  },
+  "stabilization": false,
+  "min_position_iterations": 1.0,
+  "robot0": {
+   "stiffness": [
+    4400.0,
+    4400.0,
+    4400.0,
+    4400.0,
+    4400.0,
+    4400.0,
+    2300.0,
+    2300.0
+   ],
+   "damping": [
+    40.0,
+    40.0,
+    40.0,
+    40.0,
+    40.0,
+    40.0,
+    100.0,
+    100.0
+   ],
+   "effort_limits": [
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0
+   ],
+   "vel_limits": [
+    5.0,
+    5.0,
+    5.0,
+    5.0,
+    5.0,
+    5.0,
+    1000.0,
+    1000.0
+   ]
+  },
+  "class_friction_override": {},
+  "physics_fixes": null
+ },
+ "off3_corrected": {
+  "batch": "g4st_cb_off3_corr",
+  "layout": 1,
+  "objects": {
+   "red": {
+    "engine_mass_kg": 0.01125,
+    "engine_material": [
+     0.3716,
+     0.3022,
+     0.5
+    ]
+   },
+   "green": {
+    "engine_mass_kg": 0.01125,
+    "engine_material": [
+     0.3716,
+     0.3022,
+     0.5
+    ]
+   },
+   "blue": {
+    "engine_mass_kg": 0.01125,
+    "engine_material": [
+     0.3716,
+     0.3022,
+     0.5
+    ]
+   },
+   "cup0": {
+    "engine_mass_kg": 0.03,
+    "engine_material": [
+     0.1994,
+     0.1662,
+     0.25
+    ]
+   },
+   "cup1": {
+    "engine_mass_kg": 0.03,
+    "engine_material": [
+     0.1994,
+     0.1662,
+     0.25
+    ]
+   },
+   "cup2": {
+    "engine_mass_kg": 0.03,
+    "engine_material": [
+     0.1994,
+     0.1662,
+     0.25
+    ]
+   }
+  },
+  "fixtures": {
+   "Table": {
+    "static": 0.2454,
+    "dynamic": 0.2126,
+    "restitution": 0.1,
+    "combine": "average"
+   },
+   "Ground": {
+    "static": 0.2954,
+    "dynamic": 0.2488,
+    "restitution": 0.0,
+    "combine": "average"
+   }
+  },
+  "stabilization": false,
+  "min_position_iterations": 64.0,
+  "robot0": {
+   "stiffness": [
+    4400.0,
+    4400.0,
+    4400.0,
+    4400.0,
+    4400.0,
+    4400.0,
+    52274.6015625,
+    0.0
+   ],
+   "damping": [
+    40.0,
+    40.0,
+    40.0,
+    40.0,
+    40.0,
+    40.0,
+    2090.97998046875,
+    0.0
+   ],
+   "effort_limits": [
+    30.0,
+    40.0,
+    30.0,
+    15.0,
+    10.0,
+    10.0,
+    323.5400085449219,
+    100.0
+   ],
+   "vel_limits": [
+    5.0,
+    5.0,
+    5.5,
+    5.5,
+    5.0,
+    5.0,
+    1000.0,
+    1000.0
+   ]
+  },
+  "class_friction_override": {},
+  "physics_fixes": [
+   "collision",
+   "gripper",
+   "order",
+   "robot_limits",
+   "size",
+   "solver",
+   "values"
+  ]
+ },
+ "off10_shipped": {
+  "batch": "g4st_cb_off10_ship",
+  "layout": 0,
+  "objects": {
+   "red": {
+    "engine_mass_kg": 0.35,
+    "engine_material": [
+     0.5,
+     0.5,
+     0.0
+    ]
+   },
+   "green": {
+    "engine_mass_kg": 0.35,
+    "engine_material": [
+     0.5,
+     0.5,
+     0.0
+    ]
+   },
+   "blue": {
+    "engine_mass_kg": 0.35,
+    "engine_material": [
+     0.5,
+     0.5,
+     0.0
+    ]
+   },
+   "cup0": {
+    "engine_mass_kg": 0.15,
+    "engine_material": [
+     0.5,
+     0.5,
+     0.0
+    ]
+   },
+   "cup1": {
+    "engine_mass_kg": 0.15,
+    "engine_material": [
+     0.5,
+     0.5,
+     0.0
+    ]
+   },
+   "cup2": {
+    "engine_mass_kg": 0.15,
+    "engine_material": [
+     0.5,
+     0.5,
+     0.0
+    ]
+   }
+  },
+  "fixtures": {
+   "Table": "unbound (scene default 0.5/0.5)",
+   "Ground": {
+    "static": 1.0,
+    "dynamic": 1.0,
+    "restitution": 0.0,
+    "combine": "multiply"
+   }
+  },
+  "stabilization": false,
+  "min_position_iterations": 1.0,
+  "robot0": {
+   "stiffness": [
+    4400.0,
+    4400.0,
+    4400.0,
+    4400.0,
+    4400.0,
+    4400.0,
+    2300.0,
+    2300.0
+   ],
+   "damping": [
+    40.0,
+    40.0,
+    40.0,
+    40.0,
+    40.0,
+    40.0,
+    100.0,
+    100.0
+   ],
+   "effort_limits": [
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0
+   ],
+   "vel_limits": [
+    5.0,
+    5.0,
+    5.0,
+    5.0,
+    5.0,
+    5.0,
+    1000.0,
+    1000.0
+   ]
+  },
+  "class_friction_override": {},
+  "physics_fixes": null
+ },
+ "off10_corrected": {
+  "batch": "g4st_cb_off10_corr",
+  "layout": 1,
+  "objects": {
+   "red": {
+    "engine_mass_kg": 0.01125,
+    "engine_material": [
+     0.3716,
+     0.3022,
+     0.5
+    ]
+   },
+   "green": {
+    "engine_mass_kg": 0.01125,
+    "engine_material": [
+     0.3716,
+     0.3022,
+     0.5
+    ]
+   },
+   "blue": {
+    "engine_mass_kg": 0.01125,
+    "engine_material": [
+     0.3716,
+     0.3022,
+     0.5
+    ]
+   },
+   "cup0": {
+    "engine_mass_kg": 0.03,
+    "engine_material": [
+     0.1994,
+     0.1662,
+     0.25
+    ]
+   },
+   "cup1": {
+    "engine_mass_kg": 0.03,
+    "engine_material": [
+     0.1994,
+     0.1662,
+     0.25
+    ]
+   },
+   "cup2": {
+    "engine_mass_kg": 0.03,
+    "engine_material": [
+     0.1994,
+     0.1662,
+     0.25
+    ]
+   }
+  },
+  "fixtures": {
+   "Table": {
+    "static": 0.2454,
+    "dynamic": 0.2126,
+    "restitution": 0.1,
+    "combine": "average"
+   },
+   "Ground": {
+    "static": 0.2954,
+    "dynamic": 0.2488,
+    "restitution": 0.0,
+    "combine": "average"
+   }
+  },
+  "stabilization": false,
+  "min_position_iterations": 64.0,
+  "robot0": {
+   "stiffness": [
+    4400.0,
+    4400.0,
+    4400.0,
+    4400.0,
+    4400.0,
+    4400.0,
+    52274.6015625,
+    0.0
+   ],
+   "damping": [
+    40.0,
+    40.0,
+    40.0,
+    40.0,
+    40.0,
+    40.0,
+    2090.97998046875,
+    0.0
+   ],
+   "effort_limits": [
+    30.0,
+    40.0,
+    30.0,
+    15.0,
+    10.0,
+    10.0,
+    323.5400085449219,
+    100.0
+   ],
+   "vel_limits": [
+    5.0,
+    5.0,
+    5.5,
+    5.5,
+    5.0,
+    5.0,
+    1000.0,
+    1000.0
+   ]
+  },
+  "class_friction_override": {},
+  "physics_fixes": [
+   "collision",
+   "gripper",
+   "order",
+   "robot_limits",
+   "size",
+   "solver",
+   "values"
+  ]
+ },
+ "off14_shipped": {
+  "batch": "g4st_cb_off14_ship",
+  "layout": 0,
+  "objects": {
+   "red": {
+    "engine_mass_kg": 0.35,
+    "engine_material": [
+     0.5,
+     0.5,
+     0.0
+    ]
+   },
+   "green": {
+    "engine_mass_kg": 0.35,
+    "engine_material": [
+     0.5,
+     0.5,
+     0.0
+    ]
+   },
+   "blue": {
+    "engine_mass_kg": 0.35,
+    "engine_material": [
+     0.5,
+     0.5,
+     0.0
+    ]
+   },
+   "cup0": {
+    "engine_mass_kg": 0.15,
+    "engine_material": [
+     0.5,
+     0.5,
+     0.0
+    ]
+   },
+   "cup1": {
+    "engine_mass_kg": 0.15,
+    "engine_material": [
+     0.5,
+     0.5,
+     0.0
+    ]
+   },
+   "cup2": {
+    "engine_mass_kg": 0.15,
+    "engine_material": [
+     0.5,
+     0.5,
+     0.0
+    ]
+   }
+  },
+  "fixtures": {
+   "Table": "unbound (scene default 0.5/0.5)",
+   "Ground": {
+    "static": 1.0,
+    "dynamic": 1.0,
+    "restitution": 0.0,
+    "combine": "multiply"
+   }
+  },
+  "stabilization": false,
+  "min_position_iterations": 1.0,
+  "robot0": {
+   "stiffness": [
+    4400.0,
+    4400.0,
+    4400.0,
+    4400.0,
+    4400.0,
+    4400.0,
+    2300.0,
+    2300.0
+   ],
+   "damping": [
+    40.0,
+    40.0,
+    40.0,
+    40.0,
+    40.0,
+    40.0,
+    100.0,
+    100.0
+   ],
+   "effort_limits": [
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0
+   ],
+   "vel_limits": [
+    5.0,
+    5.0,
+    5.0,
+    5.0,
+    5.0,
+    5.0,
+    1000.0,
+    1000.0
+   ]
+  },
+  "class_friction_override": {},
+  "physics_fixes": null
+ },
+ "off14_corrected": {
+  "batch": "g4st_cb_off14_corr",
+  "layout": 1,
+  "objects": {
+   "red": {
+    "engine_mass_kg": 0.01125,
+    "engine_material": [
+     0.3716,
+     0.3022,
+     0.5
+    ]
+   },
+   "green": {
+    "engine_mass_kg": 0.01125,
+    "engine_material": [
+     0.3716,
+     0.3022,
+     0.5
+    ]
+   },
+   "blue": {
+    "engine_mass_kg": 0.01125,
+    "engine_material": [
+     0.3716,
+     0.3022,
+     0.5
+    ]
+   },
+   "cup0": {
+    "engine_mass_kg": 0.03,
+    "engine_material": [
+     0.1994,
+     0.1662,
+     0.25
+    ]
+   },
+   "cup1": {
+    "engine_mass_kg": 0.03,
+    "engine_material": [
+     0.1994,
+     0.1662,
+     0.25
+    ]
+   },
+   "cup2": {
+    "engine_mass_kg": 0.03,
+    "engine_material": [
+     0.1994,
+     0.1662,
+     0.25
+    ]
+   }
+  },
+  "fixtures": {
+   "Table": {
+    "static": 0.2454,
+    "dynamic": 0.2126,
+    "restitution": 0.1,
+    "combine": "average"
+   },
+   "Ground": {
+    "static": 0.2954,
+    "dynamic": 0.2488,
+    "restitution": 0.0,
+    "combine": "average"
+   }
+  },
+  "stabilization": false,
+  "min_position_iterations": 64.0,
+  "robot0": {
+   "stiffness": [
+    4400.0,
+    4400.0,
+    4400.0,
+    4400.0,
+    4400.0,
+    4400.0,
+    52274.6015625,
+    0.0
+   ],
+   "damping": [
+    40.0,
+    40.0,
+    40.0,
+    40.0,
+    40.0,
+    40.0,
+    2090.97998046875,
+    0.0
+   ],
+   "effort_limits": [
+    30.0,
+    40.0,
+    30.0,
+    15.0,
+    10.0,
+    10.0,
+    323.5400085449219,
+    100.0
+   ],
+   "vel_limits": [
+    5.0,
+    5.0,
+    5.5,
+    5.5,
+    5.0,
+    5.0,
+    1000.0,
+    1000.0
+   ]
+  },
+  "class_friction_override": {},
+  "physics_fixes": [
+   "collision",
+   "gripper",
+   "order",
+   "robot_limits",
+   "size",
+   "solver",
+   "values"
+  ]
+ },
+ "shipped_rep": {
+  "batch": "g4st_cb_ship_rep",
+  "layout": 0,
+  "objects": {
+   "red": {
+    "engine_mass_kg": 0.35,
+    "engine_material": [
+     0.5,
+     0.5,
+     0.0
+    ]
+   },
+   "green": {
+    "engine_mass_kg": 0.35,
+    "engine_material": [
+     0.5,
+     0.5,
+     0.0
+    ]
+   },
+   "blue": {
+    "engine_mass_kg": 0.35,
+    "engine_material": [
+     0.5,
+     0.5,
+     0.0
+    ]
+   },
+   "cup0": {
+    "engine_mass_kg": 0.15,
+    "engine_material": [
+     0.5,
+     0.5,
+     0.0
+    ]
+   },
+   "cup1": {
+    "engine_mass_kg": 0.15,
+    "engine_material": [
+     0.5,
+     0.5,
+     0.0
+    ]
+   },
+   "cup2": {
+    "engine_mass_kg": 0.15,
+    "engine_material": [
+     0.5,
+     0.5,
+     0.0
+    ]
+   }
+  },
+  "fixtures": {
+   "Table": "unbound (scene default 0.5/0.5)",
+   "Ground": {
+    "static": 1.0,
+    "dynamic": 1.0,
+    "restitution": 0.0,
+    "combine": "multiply"
+   }
+  },
+  "stabilization": false,
+  "min_position_iterations": 1.0,
+  "robot0": {
+   "stiffness": [
+    4400.0,
+    4400.0,
+    4400.0,
+    4400.0,
+    4400.0,
+    4400.0,
+    2300.0,
+    2300.0
+   ],
+   "damping": [
+    40.0,
+    40.0,
+    40.0,
+    40.0,
+    40.0,
+    40.0,
+    100.0,
+    100.0
+   ],
+   "effort_limits": [
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0
+   ],
+   "vel_limits": [
+    5.0,
+    5.0,
+    5.0,
+    5.0,
+    5.0,
+    5.0,
+    1000.0,
+    1000.0
+   ]
+  },
+  "class_friction_override": {},
+  "physics_fixes": null
+ },
+ "corrected_rep": {
+  "batch": "g4st_cb_corr_rep",
+  "layout": 0,
+  "objects": {
+   "red": {
+    "engine_mass_kg": 0.01125,
+    "engine_material": [
+     0.3716,
+     0.3022,
+     0.5
+    ]
+   },
+   "green": {
+    "engine_mass_kg": 0.01125,
+    "engine_material": [
+     0.3716,
+     0.3022,
+     0.5
+    ]
+   },
+   "blue": {
+    "engine_mass_kg": 0.01125,
+    "engine_material": [
+     0.3716,
+     0.3022,
+     0.5
+    ]
+   },
+   "cup0": {
+    "engine_mass_kg": 0.03,
+    "engine_material": [
+     0.1994,
+     0.1662,
+     0.25
+    ]
+   },
+   "cup1": {
+    "engine_mass_kg": 0.03,
+    "engine_material": [
+     0.1994,
+     0.1662,
+     0.25
+    ]
+   },
+   "cup2": {
+    "engine_mass_kg": 0.03,
+    "engine_material": [
+     0.1994,
+     0.1662,
+     0.25
+    ]
+   }
+  },
+  "fixtures": {
+   "Table": {
+    "static": 0.2454,
+    "dynamic": 0.2126,
+    "restitution": 0.1,
+    "combine": "average"
+   },
+   "Ground": {
+    "static": 0.2954,
+    "dynamic": 0.2488,
+    "restitution": 0.0,
+    "combine": "average"
+   }
+  },
+  "stabilization": false,
+  "min_position_iterations": 64.0,
+  "robot0": {
+   "stiffness": [
+    4400.0,
+    4400.0,
+    4400.0,
+    4400.0,
+    4400.0,
+    4400.0,
+    52274.6015625,
+    0.0
+   ],
+   "damping": [
+    40.0,
+    40.0,
+    40.0,
+    40.0,
+    40.0,
+    40.0,
+    2090.97998046875,
+    0.0
+   ],
+   "effort_limits": [
+    30.0,
+    40.0,
+    30.0,
+    15.0,
+    10.0,
+    10.0,
+    323.5400085449219,
+    100.0
+   ],
+   "vel_limits": [
+    5.0,
+    5.0,
+    5.5,
+    5.5,
+    5.0,
+    5.0,
+    1000.0,
+    1000.0
+   ]
+  },
+  "class_friction_override": {},
+  "physics_fixes": [
+   "collision",
+   "gripper",
+   "order",
+   "robot_limits",
+   "size",
+   "solver",
+   "values"
+  ]
+ },
+ "dev_shipped": {
+  "batch": "g4st_par_cb_ship",
+  "layout": 0,
+  "objects": {
+   "red": {
+    "engine_mass_kg": 0.35,
+    "engine_material": [
+     0.5,
+     0.5,
+     0.0
+    ]
+   },
+   "green": {
+    "engine_mass_kg": 0.35,
+    "engine_material": [
+     0.5,
+     0.5,
+     0.0
+    ]
+   },
+   "blue": {
+    "engine_mass_kg": 0.35,
+    "engine_material": [
+     0.5,
+     0.5,
+     0.0
+    ]
+   },
+   "cup0": {
+    "engine_mass_kg": 0.15,
+    "engine_material": [
+     0.5,
+     0.5,
+     0.0
+    ]
+   },
+   "cup1": {
+    "engine_mass_kg": 0.15,
+    "engine_material": [
+     0.5,
+     0.5,
+     0.0
+    ]
+   },
+   "cup2": {
+    "engine_mass_kg": 0.15,
+    "engine_material": [
+     0.5,
+     0.5,
+     0.0
+    ]
+   }
+  },
+  "fixtures": {
+   "Table": "unbound (scene default 0.5/0.5)",
+   "Ground": {
+    "static": 1.0,
+    "dynamic": 1.0,
+    "restitution": 0.0,
+    "combine": "multiply"
+   }
+  },
+  "stabilization": false,
+  "min_position_iterations": 1.0,
+  "robot0": {
+   "stiffness": [
+    4400.0,
+    4400.0,
+    4400.0,
+    4400.0,
+    4400.0,
+    4400.0,
+    2300.0,
+    2300.0
+   ],
+   "damping": [
+    40.0,
+    40.0,
+    40.0,
+    40.0,
+    40.0,
+    40.0,
+    100.0,
+    100.0
+   ],
+   "effort_limits": [
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0
+   ],
+   "vel_limits": [
+    5.0,
+    5.0,
+    5.0,
+    5.0,
+    5.0,
+    5.0,
+    1000.0,
+    1000.0
+   ]
+  },
+  "class_friction_override": {},
+  "physics_fixes": null
+ }
+}

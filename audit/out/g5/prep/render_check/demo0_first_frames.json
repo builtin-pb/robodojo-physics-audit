@@ -1,0 +1,50 @@
+{
+ "source": "/scratch/<user>/isaac/work/demoaudit/hf/data/RoboDojo/put_bottles_into_dustbin/arx_x5/data/episode_0000000.hdf5",
+ "instruction": "Pick up the bottles and throw them into the dustbin, using handover when needed.",
+ "frames": 362,
+ "cam_head": {
+  "shape": [
+   480,
+   640,
+   3
+  ],
+  "mean": 77.65,
+  "std": 53.59,
+  "channel_means": [
+   94.51,
+   73.77,
+   64.68
+  ],
+  "jpeg_bytes": 84139
+ },
+ "cam_left_wrist": {
+  "shape": [
+   480,
+   640,
+   3
+  ],
+  "mean": 67.75,
+  "std": 51.92,
+  "channel_means": [
+   72.11,
+   75.95,
+   55.19
+  ],
+  "jpeg_bytes": 74760
+ },
+ "cam_right_wrist": {
+  "shape": [
+   480,
+   640,
+   3
+  ],
+  "mean": 87.64,
+  "std": 44.63,
+  "channel_means": [
+   109.1,
+   82.73,
+   71.1
+  ],
+  "jpeg_bytes": 72109
+ }
+}

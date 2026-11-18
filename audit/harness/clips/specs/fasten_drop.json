@@ -1,0 +1,25 @@
+{
+ "purpose": "A13 #114 fasten_screws L0, --policy sweep --sweep_steps 250 --sweep_drop_m 0.03: state after every physics step of the drop test (case 'drop', step 0 = settled, before the lift); 5.1 log and 6.2 replay",
+ "cameras": [],
+ "windows": [
+  {
+   "case": "drop",
+   "unit": "step",
+   "from": 0,
+   "to": 250,
+   "stride": 1
+  }
+ ],
+ "mode_sweep": [
+  {
+   "name": "pt8",
+   "carb": {
+    "/rtx/rendermode": "PathTracing",
+    "/rtx/pathtracing/spp": 8,
+    "/rtx/pathtracing/totalSpp": 8,
+    "/rtx/pathtracing/optixDenoiser/enabled": true
+   },
+   "warmup": 4
+  }
+ ]
+}

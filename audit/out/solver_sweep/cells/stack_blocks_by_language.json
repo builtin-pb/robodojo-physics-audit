@@ -1,0 +1,91 @@
+[
+ {
+  "cell_name": "stack_blocks_by_language__shipped",
+  "layout": 0,
+  "overrides": {
+   "slide_target": {
+    "label": "block_0",
+    "inst": "cube_1_1",
+    "labelled": true,
+    "stem": "cube_1",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.911556,
+     -0.411175
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "stack_blocks_by_language__dt2",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.002,
+   "slide_target": {
+    "label": "block_0",
+    "inst": "cube_1_1",
+    "labelled": true,
+    "stem": "cube_1",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.911556,
+     -0.411175
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "stack_blocks_by_language__dt1",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.001,
+   "slide_target": {
+    "label": "block_0",
+    "inst": "cube_1_1",
+    "labelled": true,
+    "stem": "cube_1",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.911556,
+     -0.411175
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "stack_blocks_by_language__iters4x",
+  "layout": 0,
+  "overrides": {
+   "min_pos_iters": 64,
+   "slide_target": {
+    "label": "block_0",
+    "inst": "cube_1_1",
+    "labelled": true,
+    "stem": "cube_1",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.911556,
+     -0.411175
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "stack_blocks_by_language__cpu",
+  "layout": 0,
+  "overrides": {
+   "gpu_dynamics": false,
+   "slide_target": {
+    "label": "block_0",
+    "inst": "cube_1_1",
+    "labelled": true,
+    "stem": "cube_1",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.911556,
+     -0.411175
+    ]
+   }
+  }
+ }
+]

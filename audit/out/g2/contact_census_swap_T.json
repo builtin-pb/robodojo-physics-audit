@@ -1,0 +1,3310 @@
+{
+  "schema": "robodojo_g2_contact_census_v1",
+  "task": "swap_T",
+  "policy": "script_swap_T_v2",
+  "development_set": "seeds 0-1 x layouts 0-9 (20 distinct arrangements)",
+  "slip_velocity_method": "exact 3D SE(3) step-averaged material-point tangential velocity from 11-link X5A.urdf FK and RigidObject poses; primary threshold 1.0 mm/s (5 and 10 mm/s sensitivities included)",
+  "map_version": "v2_global",
+  "arms": {
+    "corrected": {
+      "episodes_count": 20,
+      "success_count": 20,
+      "episodes": [
+        {
+          "seed": 0,
+          "layout": 0,
+          "actions": 185,
+          "final_state_sha256": "d246dc05fda84efcecad536e51101ee49879719e961d11746138317bba7b4149"
+        },
+        {
+          "seed": 0,
+          "layout": 1,
+          "actions": 186,
+          "final_state_sha256": "e2cf3cb17a50781bc45ed38d60b230c3ec1dd2a4a85cc1308a7dc6df50281969"
+        },
+        {
+          "seed": 0,
+          "layout": 2,
+          "actions": 185,
+          "final_state_sha256": "6456a749f7a3cccc999608fe7954c96ddc4af4da309659370152b9d0dc199b0b"
+        },
+        {
+          "seed": 0,
+          "layout": 3,
+          "actions": 186,
+          "final_state_sha256": "c43076fc828df94c73b502d6d6f858bf3f6abedef2a9ca958672bedf70135b94"
+        },
+        {
+          "seed": 0,
+          "layout": 4,
+          "actions": 185,
+          "final_state_sha256": "da880c2ac545fa7260d973144645e60cc68be27db5499261625536527cabf914"
+        },
+        {
+          "seed": 0,
+          "layout": 5,
+          "actions": 185,
+          "final_state_sha256": "9205077cdb89cd89674435e214c049e4504286fc10ee7e7a70b551f0a9662bbd"
+        },
+        {
+          "seed": 0,
+          "layout": 6,
+          "actions": 186,
+          "final_state_sha256": "b761f0827ad020879ec69d8119e3cad55ed42013bf7693f1c21c8eeab58133b5"
+        },
+        {
+          "seed": 0,
+          "layout": 7,
+          "actions": 185,
+          "final_state_sha256": "ef0e42a6db1ca25e75cfd15863d5668ed18cf92f1e9dd760724c9979bb297f08"
+        },
+        {
+          "seed": 0,
+          "layout": 8,
+          "actions": 185,
+          "final_state_sha256": "8d47d184cd0a4a5dfdf9a6d8fc265a3211e5c8b83a279e162cdfc51d2f19e4cc"
+        },
+        {
+          "seed": 0,
+          "layout": 9,
+          "actions": 185,
+          "final_state_sha256": "af75688ca731739c8bc93a6a75b0509a038b3dea1ae7a7f745f93781c395e804"
+        },
+        {
+          "seed": 1,
+          "layout": 0,
+          "actions": 185,
+          "final_state_sha256": "4d690fff16ff233d7e006d9c9e0d6ed142cad044fe3a1b42d9e9d1d34a962e3f"
+        },
+        {
+          "seed": 1,
+          "layout": 1,
+          "actions": 185,
+          "final_state_sha256": "78edbde7237045143d9b96c32c3039084431e77dd447f23170d2d8f2c6a51e01"
+        },
+        {
+          "seed": 1,
+          "layout": 2,
+          "actions": 185,
+          "final_state_sha256": "29ca4a91dfba88b96efcd771c9327a5cf120aa157466f8f3a32c06db1e520dbf"
+        },
+        {
+          "seed": 1,
+          "layout": 3,
+          "actions": 185,
+          "final_state_sha256": "ab41cc657bac332834ff4663f51980c9f69291d6f518b86422dce8b8d111bfc9"
+        },
+        {
+          "seed": 1,
+          "layout": 4,
+          "actions": 185,
+          "final_state_sha256": "2f4cfedde3e088d9e0100b037b5f3645e590ba7af203c2cf3c4d1e0e2060b999"
+        },
+        {
+          "seed": 1,
+          "layout": 5,
+          "actions": 185,
+          "final_state_sha256": "a3a14a06e3f2e806d9ed1c4e7747a5158f524bde32d88783e0afea9a9bcd59a3"
+        },
+        {
+          "seed": 1,
+          "layout": 6,
+          "actions": 185,
+          "final_state_sha256": "02ae4e0468b81cab801356bc52a1b0bcfec9bf9f4128b37c4dc5d6bdabf998d5"
+        },
+        {
+          "seed": 1,
+          "layout": 7,
+          "actions": 185,
+          "final_state_sha256": "ea6cb428ae7c5301a100df678f78e0d9fd05f7187d34734bb45119a90a62b5a7"
+        },
+        {
+          "seed": 1,
+          "layout": 8,
+          "actions": 185,
+          "final_state_sha256": "fb9ab4f9bef171e9e6084c71702c33cc6103cee5c7c553a7120d96fae9d2c13d"
+        },
+        {
+          "seed": 1,
+          "layout": 9,
+          "actions": 185,
+          "final_state_sha256": "6d3ff6ee2024d06e393e6567e6ca4288dfd65cca2cc6623b9c0e370830e81002"
+        }
+      ],
+      "total_actions": 3703,
+      "total_physics_steps": 37030,
+      "phase_actions_total": {
+        "carry": 1320,
+        "grasp": 800,
+        "home": 383,
+        "set_down": 1200
+      },
+      "detail_phase_actions_total": {
+        "approach": 400,
+        "close": 160,
+        "descend": 240,
+        "hover_correct0": 160,
+        "hover_final": 80,
+        "hover_settle0": 120,
+        "left_home": 183,
+        "lift": 240,
+        "lower": 200,
+        "park": 200,
+        "release": 200,
+        "retreat": 200,
+        "right_home": 200,
+        "to_hover": 240,
+        "transit": 880
+      },
+      "total_normal_impulse_Ns": 48804.55343,
+      "formability_summary": {
+        "task_formable_primary_counted_pairs_count": 17,
+        "task_formable_primary_counted_pairs": [
+          "abs_device_housing__abs_device_housing",
+          "abs_device_housing__abs_toy_plastic",
+          "abs_device_housing__aluminium",
+          "abs_device_housing__ground",
+          "abs_device_housing__pad_hard",
+          "abs_device_housing__table_laminate",
+          "abs_toy_plastic__abs_toy_plastic",
+          "abs_toy_plastic__aluminium",
+          "abs_toy_plastic__ground",
+          "abs_toy_plastic__pad_hard",
+          "abs_toy_plastic__table_laminate",
+          "aluminium__aluminium",
+          "aluminium__ground",
+          "aluminium__pad_hard",
+          "aluminium__table_laminate",
+          "ground__pad_hard",
+          "pad_hard__table_laminate"
+        ],
+        "dropped_finger_self_pair": "pad_hard__pad_hard",
+        "dropped_finger_self_pair_occurred_force": false,
+        "active_load_bearing_pairs_count": 3,
+        "active_load_bearing_pairs": [
+          "abs_toy_plastic__pad_hard",
+          "abs_toy_plastic__table_laminate",
+          "aluminium__aluminium"
+        ],
+        "proximity_only_zero_force_pairs": [],
+        "formable_pairs_with_zero_force_count": 14,
+        "formable_pairs_with_zero_force": [
+          "abs_device_housing__abs_device_housing",
+          "abs_device_housing__abs_toy_plastic",
+          "abs_device_housing__aluminium",
+          "abs_device_housing__ground",
+          "abs_device_housing__pad_hard",
+          "abs_device_housing__table_laminate",
+          "abs_toy_plastic__abs_toy_plastic",
+          "abs_toy_plastic__aluminium",
+          "abs_toy_plastic__ground",
+          "aluminium__ground",
+          "aluminium__pad_hard",
+          "aluminium__table_laminate",
+          "ground__pad_hard",
+          "pad_hard__table_laminate"
+        ],
+        "formable_pairs_never_even_in_proximity": [
+          "abs_device_housing__abs_device_housing",
+          "abs_device_housing__abs_toy_plastic",
+          "abs_device_housing__aluminium",
+          "abs_device_housing__ground",
+          "abs_device_housing__pad_hard",
+          "abs_device_housing__table_laminate",
+          "abs_toy_plastic__abs_toy_plastic",
+          "abs_toy_plastic__aluminium",
+          "abs_toy_plastic__ground",
+          "aluminium__ground",
+          "aluminium__pad_hard",
+          "aluminium__table_laminate",
+          "ground__pad_hard",
+          "pad_hard__table_laminate"
+        ]
+      },
+      "class_pairs": {
+        "abs_toy_plastic__pad_hard": {
+          "pair": "abs_toy_plastic__pad_hard",
+          "docs_params_meta": {
+            "scenario_membership": "default",
+            "formable_in_task": true,
+            "counted_in_fit_objective": true,
+            "nominal_mu_static": null,
+            "nominal_mu_kinetic": null,
+            "realised_mu_static_v2b": null,
+            "realised_mu_kinetic_v2b": null
+          },
+          "episodes_with_force": 20,
+          "episodes_any_proximity": 20,
+          "episodes_total": 20,
+          "actions_force_total": 3021,
+          "actions_force_mean_per_ep": 151.05,
+          "actions_force_share_of_episode": 0.81583,
+          "actions_any_total": 3041,
+          "actions_any_mean_per_ep": 152.05,
+          "steps_force_total": 30168,
+          "steps_any_total": 30381,
+          "contact_points": {
+            "point_steps_force_total": 298764,
+            "point_steps_any_total": 328854,
+            "max_simultaneous_points_force": 16,
+            "max_simultaneous_points_any": 16,
+            "points_per_force_step": {
+              "mean": 9.9033,
+              "min": 1.0,
+              "p10_median": 7.0,
+              "p50_median": 8.0,
+              "p90_median": 15.0,
+              "p99_median": 15.0,
+              "max": 16.0
+            },
+            "headers_gt32_count": 0
+          },
+          "normal_force_N": {
+            "mean": 403.9121,
+            "min": 0.0013,
+            "p10_median": 299.9232,
+            "p50_median": 300.5812,
+            "p90_median": 601.0584,
+            "p99_median": 604.4698,
+            "max": 1298.034
+          },
+          "total_normal_impulse_Ns": 48740.87543,
+          "census_weight_impulse_share": 0.998695,
+          "census_weight_force_action_share": 0.528609,
+          "v_tan_mm_s": {
+            "mean": 0.2732,
+            "min": 0.0001,
+            "p10_median": 0.0293,
+            "p50_median": 0.0954,
+            "p90_median": 0.4712,
+            "p99_median": 2.7797,
+            "max": 233.2364
+          },
+          "sliding_vs_sticking": {
+            "1mm_s": {
+              "sliding_point_steps": 12762,
+              "sticking_point_steps": 286002,
+              "sliding_point_frac": 0.04272,
+              "sticking_point_frac": 0.95728,
+              "sliding_impulse_Ns": 2179.760681,
+              "sticking_impulse_Ns": 46561.114755,
+              "sliding_impulse_frac": 0.04472,
+              "sticking_impulse_frac": 0.95528
+            },
+            "5mm_s": {
+              "sliding_point_steps": 736,
+              "sticking_point_steps": 298028,
+              "sliding_point_frac": 0.00246,
+              "sticking_point_frac": 0.99754,
+              "sliding_impulse_Ns": 156.896194,
+              "sticking_impulse_Ns": 48583.979238,
+              "sliding_impulse_frac": 0.00322,
+              "sticking_impulse_frac": 0.99678
+            },
+            "10mm_s": {
+              "sliding_point_steps": 423,
+              "sticking_point_steps": 298341,
+              "sliding_point_frac": 0.00142,
+              "sticking_point_frac": 0.99858,
+              "sliding_impulse_Ns": 80.192243,
+              "sticking_impulse_Ns": 48660.683191,
+              "sliding_impulse_frac": 0.00165,
+              "sticking_impulse_frac": 0.99835
+            }
+          },
+          "min_separation_mm": -0.7974,
+          "max_separation_mm": 1.0459,
+          "by_phase": {
+            "carry": {
+              "actions_force_total": 1320,
+              "actions_force_per_ep": 66.0,
+              "actions_any_total": 1320,
+              "steps_force_total": 13200,
+              "point_steps_force_total": 137456,
+              "max_points_force": 16,
+              "total_normal_impulse_Ns": 22538.21475,
+              "normal_force_N": {
+                "mean": 426.8601,
+                "min": 273.7069,
+                "p10_median": 298.6417,
+                "p50_median": 301.2004,
+                "p90_median": 601.0673,
+                "p99_median": 604.2171,
+                "max": 629.6416
+              },
+              "v_tan_mm_s": {
+                "mean": 0.3536,
+                "min": 0.0001,
+                "p10_median": 0.0333,
+                "p50_median": 0.1221,
+                "p90_median": 0.7724,
+                "p99_median": 3.2285,
+                "max": 8.5997
+              },
+              "sliding_impulse_frac_1mm_s": 0.08027,
+              "sticking_impulse_frac_1mm_s": 0.91973
+            },
+            "grasp": {
+              "actions_force_total": 441,
+              "actions_force_per_ep": 22.05,
+              "actions_any_total": 441,
+              "steps_force_total": 4383,
+              "point_steps_force_total": 35232,
+              "max_points_force": 16,
+              "total_normal_impulse_Ns": 5811.83743,
+              "normal_force_N": {
+                "mean": 331.4988,
+                "min": 0.2538,
+                "p10_median": 300.3872,
+                "p50_median": 300.5075,
+                "p90_median": 343.8681,
+                "p99_median": 803.0942,
+                "max": 1298.034
+              },
+              "v_tan_mm_s": {
+                "mean": 0.4279,
+                "min": 0.0004,
+                "p10_median": 0.024,
+                "p50_median": 0.068,
+                "p90_median": 0.234,
+                "p99_median": 9.32,
+                "max": 233.2364
+              },
+              "sliding_impulse_frac_1mm_s": 0.05187,
+              "sticking_impulse_frac_1mm_s": 0.94813
+            },
+            "home": {
+              "actions_force_total": 200,
+              "actions_force_per_ep": 10.0,
+              "actions_any_total": 200,
+              "steps_force_total": 2000,
+              "point_steps_force_total": 14895,
+              "max_points_force": 8,
+              "total_normal_impulse_Ns": 2402.31661,
+              "normal_force_N": {
+                "mean": 300.2896,
+                "min": 295.8973,
+                "p10_median": 300.4155,
+                "p50_median": 300.4934,
+                "p90_median": 300.5972,
+                "p99_median": 300.6449,
+                "max": 303.5381
+              },
+              "v_tan_mm_s": {
+                "mean": 0.0795,
+                "min": 0.0006,
+                "p10_median": 0.022,
+                "p50_median": 0.0579,
+                "p90_median": 0.1093,
+                "p99_median": 0.1307,
+                "max": 0.9089
+              },
+              "sliding_impulse_frac_1mm_s": 0.0,
+              "sticking_impulse_frac_1mm_s": 1.0
+            },
+            "set_down": {
+              "actions_force_total": 1060,
+              "actions_force_per_ep": 53.0,
+              "actions_any_total": 1080,
+              "steps_force_total": 10585,
+              "point_steps_force_total": 111181,
+              "max_points_force": 16,
+              "total_normal_impulse_Ns": 17988.50664,
+              "normal_force_N": {
+                "mean": 424.8584,
+                "min": 0.0013,
+                "p10_median": 300.4163,
+                "p50_median": 300.5966,
+                "p90_median": 601.066,
+                "p99_median": 601.2558,
+                "max": 607.1978
+              },
+              "v_tan_mm_s": {
+                "mean": 0.1508,
+                "min": 0.0004,
+                "p10_median": 0.0292,
+                "p50_median": 0.0937,
+                "p90_median": 0.2904,
+                "p99_median": 0.6454,
+                "max": 39.7724
+              },
+              "sliding_impulse_frac_1mm_s": 0.00385,
+              "sticking_impulse_frac_1mm_s": 0.99615
+            }
+          },
+          "by_detail_phase": {
+            "approach": {
+              "actions_force_total": 200,
+              "actions_force_per_ep": 10.0,
+              "actions_any_total": 200,
+              "steps_force_total": 2000,
+              "point_steps_force_total": 14882,
+              "max_points_force": 8,
+              "total_normal_impulse_Ns": 2401.54918,
+              "normal_force_N": {
+                "mean": 300.1936,
+                "min": 275.2839,
+                "p10_median": 300.3901,
+                "p50_median": 300.4915,
+                "p90_median": 300.5992,
+                "p99_median": 300.7982,
+                "max": 323.6422
+              },
+              "v_tan_mm_s": {
+                "mean": 0.0843,
+                "min": 0.0004,
+                "p10_median": 0.022,
+                "p50_median": 0.0605,
+                "p90_median": 0.1174,
+                "p99_median": 0.2075,
+                "max": 1.2193
+              },
+              "sliding_impulse_frac_1mm_s": 0.00019,
+              "sticking_impulse_frac_1mm_s": 0.99981
+            },
+            "close": {
+              "actions_force_total": 121,
+              "actions_force_per_ep": 6.05,
+              "actions_any_total": 121,
+              "steps_force_total": 1183,
+              "point_steps_force_total": 11419,
+              "max_points_force": 16,
+              "total_normal_impulse_Ns": 1968.89572,
+              "normal_force_N": {
+                "mean": 416.0811,
+                "min": 0.2538,
+                "p10_median": 299.427,
+                "p50_median": 301.7617,
+                "p90_median": 629.1051,
+                "p99_median": 1041.9834,
+                "max": 1298.034
+              },
+              "v_tan_mm_s": {
+                "mean": 1.1485,
+                "min": 0.0007,
+                "p10_median": 0.0301,
+                "p50_median": 0.1024,
+                "p90_median": 1.1449,
+                "p99_median": 19.4884,
+                "max": 233.2364
+              },
+              "sliding_impulse_frac_1mm_s": 0.15288,
+              "sticking_impulse_frac_1mm_s": 0.84712
+            },
+            "descend": {
+              "actions_force_total": 120,
+              "actions_force_per_ep": 6.0,
+              "actions_any_total": 120,
+              "steps_force_total": 1200,
+              "point_steps_force_total": 8931,
+              "max_points_force": 8,
+              "total_normal_impulse_Ns": 1441.39253,
+              "normal_force_N": {
+                "mean": 300.2901,
+                "min": 295.8767,
+                "p10_median": 300.4078,
+                "p50_median": 300.4937,
+                "p90_median": 300.5994,
+                "p99_median": 300.6449,
+                "max": 303.5895
+              },
+              "v_tan_mm_s": {
+                "mean": 0.0789,
+                "min": 0.0005,
+                "p10_median": 0.0227,
+                "p50_median": 0.0609,
+                "p90_median": 0.1082,
+                "p99_median": 0.1362,
+                "max": 0.8996
+              },
+              "sliding_impulse_frac_1mm_s": 0.0,
+              "sticking_impulse_frac_1mm_s": 1.0
+            },
+            "hover_correct0": {
+              "actions_force_total": 160,
+              "actions_force_per_ep": 8.0,
+              "actions_any_total": 160,
+              "steps_force_total": 1600,
+              "point_steps_force_total": 17586,
+              "max_points_force": 16,
+              "total_normal_impulse_Ns": 2882.35716,
+              "normal_force_N": {
+                "mean": 450.3683,
+                "min": 295.2864,
+                "p10_median": 300.4526,
+                "p50_median": 450.7022,
+                "p90_median": 601.0473,
+                "p99_median": 601.1073,
+                "max": 604.0604
+              },
+              "v_tan_mm_s": {
+                "mean": 0.1766,
+                "min": 0.0012,
+                "p10_median": 0.0312,
+                "p50_median": 0.1222,
+                "p90_median": 0.3339,
+                "p99_median": 0.8569,
+                "max": 1.3218
+              },
+              "sliding_impulse_frac_1mm_s": 0.00785,
+              "sticking_impulse_frac_1mm_s": 0.99215
+            },
+            "hover_final": {
+              "actions_force_total": 80,
+              "actions_force_per_ep": 4.0,
+              "actions_any_total": 80,
+              "steps_force_total": 800,
+              "point_steps_force_total": 8797,
+              "max_points_force": 16,
+              "total_normal_impulse_Ns": 1441.17627,
+              "normal_force_N": {
+                "mean": 450.3676,
+                "min": 295.4978,
+                "p10_median": 300.4357,
+                "p50_median": 450.6962,
+                "p90_median": 601.0378,
+                "p99_median": 601.1078,
+                "max": 603.9749
+              },
+              "v_tan_mm_s": {
+                "mean": 0.1629,
+                "min": 0.0015,
+                "p10_median": 0.0332,
+                "p50_median": 0.1175,
+                "p90_median": 0.2773,
+                "p99_median": 0.5258,
+                "max": 0.9903
+              },
+              "sliding_impulse_frac_1mm_s": 0.0,
+              "sticking_impulse_frac_1mm_s": 1.0
+            },
+            "hover_settle0": {
+              "actions_force_total": 120,
+              "actions_force_per_ep": 6.0,
+              "actions_any_total": 120,
+              "steps_force_total": 1200,
+              "point_steps_force_total": 13190,
+              "max_points_force": 16,
+              "total_normal_impulse_Ns": 2161.7585,
+              "normal_force_N": {
+                "mean": 450.3664,
+                "min": 297.0856,
+                "p10_median": 300.4397,
+                "p50_median": 450.6465,
+                "p90_median": 601.0687,
+                "p99_median": 601.1756,
+                "max": 604.1076
+              },
+              "v_tan_mm_s": {
+                "mean": 0.1654,
+                "min": 0.0012,
+                "p10_median": 0.0322,
+                "p50_median": 0.096,
+                "p90_median": 0.3674,
+                "p99_median": 0.9157,
+                "max": 1.5385
+              },
+              "sliding_impulse_frac_1mm_s": 0.00747,
+              "sticking_impulse_frac_1mm_s": 0.99253
+            },
+            "lift": {
+              "actions_force_total": 240,
+              "actions_force_per_ep": 12.0,
+              "actions_any_total": 240,
+              "steps_force_total": 2400,
+              "point_steps_force_total": 26368,
+              "max_points_force": 16,
+              "total_normal_impulse_Ns": 4323.52825,
+              "normal_force_N": {
+                "mean": 450.3675,
+                "min": 294.4959,
+                "p10_median": 300.1543,
+                "p50_median": 450.4735,
+                "p90_median": 601.0973,
+                "p99_median": 602.0971,
+                "max": 610.7436
+              },
+              "v_tan_mm_s": {
+                "mean": 0.1345,
+                "min": 0.0005,
+                "p10_median": 0.03,
+                "p50_median": 0.0863,
+                "p90_median": 0.2349,
+                "p99_median": 0.6477,
+                "max": 2.4429
+              },
+              "sliding_impulse_frac_1mm_s": 0.00717,
+              "sticking_impulse_frac_1mm_s": 0.99283
+            },
+            "lower": {
+              "actions_force_total": 200,
+              "actions_force_per_ep": 10.0,
+              "actions_any_total": 200,
+              "steps_force_total": 2000,
+              "point_steps_force_total": 21942,
+              "max_points_force": 16,
+              "total_normal_impulse_Ns": 3602.9456,
+              "normal_force_N": {
+                "mean": 450.3682,
+                "min": 295.0472,
+                "p10_median": 300.4464,
+                "p50_median": 450.6905,
+                "p90_median": 601.0565,
+                "p99_median": 601.1406,
+                "max": 604.0824
+              },
+              "v_tan_mm_s": {
+                "mean": 0.1096,
+                "min": 0.0004,
+                "p10_median": 0.0245,
+                "p50_median": 0.0743,
+                "p90_median": 0.1933,
+                "p99_median": 0.535,
+                "max": 1.189
+              },
+              "sliding_impulse_frac_1mm_s": 0.00064,
+              "sticking_impulse_frac_1mm_s": 0.99936
+            },
+            "park": {
+              "actions_force_total": 200,
+              "actions_force_per_ep": 10.0,
+              "actions_any_total": 200,
+              "steps_force_total": 2000,
+              "point_steps_force_total": 15009,
+              "max_points_force": 8,
+              "total_normal_impulse_Ns": 2386.7077,
+              "normal_force_N": {
+                "mean": 298.3385,
+                "min": 273.7069,
+                "p10_median": 295.0232,
+                "p50_median": 299.6803,
+                "p90_median": 302.0928,
+                "p99_median": 306.6074,
+                "max": 332.1344
+              },
+              "v_tan_mm_s": {
+                "mean": 1.0168,
+                "min": 0.0029,
+                "p10_median": 0.0942,
+                "p50_median": 0.5809,
+                "p90_median": 2.7388,
+                "p99_median": 4.1823,
+                "max": 8.5997
+              },
+              "sliding_impulse_frac_1mm_s": 0.3272,
+              "sticking_impulse_frac_1mm_s": 0.6728
+            },
+            "release": {
+              "actions_force_total": 160,
+              "actions_force_per_ep": 8.0,
+              "actions_any_total": 180,
+              "steps_force_total": 1585,
+              "point_steps_force_total": 15858,
+              "max_points_force": 16,
+              "total_normal_impulse_Ns": 2375.59884,
+              "normal_force_N": {
+                "mean": 374.7001,
+                "min": 0.0013,
+                "p10_median": 273.0019,
+                "p50_median": 300.5402,
+                "p90_median": 601.0014,
+                "p99_median": 601.0854,
+                "max": 604.0513
+              },
+              "v_tan_mm_s": {
+                "mean": 0.2095,
+                "min": 0.0007,
+                "p10_median": 0.0308,
+                "p50_median": 0.1146,
+                "p90_median": 0.3974,
+                "p99_median": 0.7661,
+                "max": 39.7724
+              },
+              "sliding_impulse_frac_1mm_s": 0.00767,
+              "sticking_impulse_frac_1mm_s": 0.99233
+            },
+            "retreat": {
+              "actions_force_total": 100,
+              "actions_force_per_ep": 5.0,
+              "actions_any_total": 100,
+              "steps_force_total": 1000,
+              "point_steps_force_total": 7444,
+              "max_points_force": 8,
+              "total_normal_impulse_Ns": 1201.16056,
+              "normal_force_N": {
+                "mean": 300.2901,
+                "min": 295.9538,
+                "p10_median": 300.4021,
+                "p50_median": 300.4939,
+                "p90_median": 300.5947,
+                "p99_median": 300.645,
+                "max": 303.5091
+              },
+              "v_tan_mm_s": {
+                "mean": 0.0796,
+                "min": 0.0009,
+                "p10_median": 0.0231,
+                "p50_median": 0.0596,
+                "p90_median": 0.1075,
+                "p99_median": 0.1309,
+                "max": 0.9392
+              },
+              "sliding_impulse_frac_1mm_s": 0.0,
+              "sticking_impulse_frac_1mm_s": 1.0
+            },
+            "right_home": {
+              "actions_force_total": 200,
+              "actions_force_per_ep": 10.0,
+              "actions_any_total": 200,
+              "steps_force_total": 2000,
+              "point_steps_force_total": 14895,
+              "max_points_force": 8,
+              "total_normal_impulse_Ns": 2402.31661,
+              "normal_force_N": {
+                "mean": 300.2896,
+                "min": 295.8973,
+                "p10_median": 300.4155,
+                "p50_median": 300.4934,
+                "p90_median": 300.5972,
+                "p99_median": 300.6449,
+                "max": 303.5381
+              },
+              "v_tan_mm_s": {
+                "mean": 0.0795,
+                "min": 0.0006,
+                "p10_median": 0.022,
+                "p50_median": 0.0579,
+                "p90_median": 0.1093,
+                "p99_median": 0.1307,
+                "max": 0.9089
+              },
+              "sliding_impulse_frac_1mm_s": 0.0,
+              "sticking_impulse_frac_1mm_s": 1.0
+            },
+            "to_hover": {
+              "actions_force_total": 240,
+              "actions_force_per_ep": 12.0,
+              "actions_any_total": 240,
+              "steps_force_total": 2400,
+              "point_steps_force_total": 26364,
+              "max_points_force": 16,
+              "total_normal_impulse_Ns": 4323.50971,
+              "normal_force_N": {
+                "mean": 450.3656,
+                "min": 297.3361,
+                "p10_median": 300.2741,
+                "p50_median": 450.4276,
+                "p90_median": 601.1398,
+                "p99_median": 601.4448,
+                "max": 607.1978
+              },
+              "v_tan_mm_s": {
+                "mean": 0.1413,
+                "min": 0.0007,
+                "p10_median": 0.0325,
+                "p50_median": 0.0968,
+                "p90_median": 0.2838,
+                "p99_median": 0.598,
+                "max": 1.9632
+              },
+              "sliding_impulse_frac_1mm_s": 0.00229,
+              "sticking_impulse_frac_1mm_s": 0.99771
+            },
+            "transit": {
+              "actions_force_total": 880,
+              "actions_force_per_ep": 44.0,
+              "actions_any_total": 880,
+              "steps_force_total": 8800,
+              "point_steps_force_total": 96079,
+              "max_points_force": 16,
+              "total_normal_impulse_Ns": 15827.97881,
+              "normal_force_N": {
+                "mean": 449.6585,
+                "min": 284.2044,
+                "p10_median": 299.6076,
+                "p50_median": 448.519,
+                "p90_median": 601.0991,
+                "p99_median": 604.497,
+                "max": 629.6416
+              },
+              "v_tan_mm_s": {
+                "mean": 0.31,
+                "min": 0.0001,
+                "p10_median": 0.0324,
+                "p50_median": 0.1226,
+                "p90_median": 0.6134,
+                "p99_median": 2.7457,
+                "max": 5.3049
+              },
+              "sliding_impulse_frac_1mm_s": 0.063,
+              "sticking_impulse_frac_1mm_s": 0.937
+            }
+          }
+        },
+        "abs_toy_plastic__table_laminate": {
+          "pair": "abs_toy_plastic__table_laminate",
+          "docs_params_meta": {
+            "scenario_membership": "default",
+            "formable_in_task": true,
+            "counted_in_fit_objective": true,
+            "nominal_mu_static": null,
+            "nominal_mu_kinetic": null,
+            "realised_mu_static_v2b": null,
+            "realised_mu_kinetic_v2b": null
+          },
+          "episodes_with_force": 20,
+          "episodes_any_proximity": 20,
+          "episodes_total": 20,
+          "actions_force_total": 2686,
+          "actions_force_mean_per_ep": 134.3,
+          "actions_force_share_of_episode": 0.72536,
+          "actions_any_total": 2803,
+          "actions_any_mean_per_ep": 140.15,
+          "steps_force_total": 26763,
+          "steps_any_total": 27870,
+          "contact_points": {
+            "point_steps_force_total": 299273,
+            "point_steps_any_total": 415636,
+            "max_simultaneous_points_force": 24,
+            "max_simultaneous_points_any": 24,
+            "points_per_force_step": {
+              "mean": 11.1823,
+              "min": 1.0,
+              "p10_median": 7.0,
+              "p50_median": 10.0,
+              "p90_median": 18.5,
+              "p99_median": 21.5,
+              "max": 24.0
+            },
+            "headers_gt32_count": 0
+          },
+          "normal_force_N": {
+            "mean": 0.528,
+            "min": 0.0004,
+            "p10_median": 0.3743,
+            "p50_median": 0.3744,
+            "p90_median": 0.7488,
+            "p99_median": 2.2531,
+            "max": 38.8445
+          },
+          "total_normal_impulse_Ns": 56.5262,
+          "census_weight_impulse_share": 0.001158,
+          "census_weight_force_action_share": 0.469991,
+          "v_tan_mm_s": {
+            "mean": 0.1197,
+            "min": 0.0,
+            "p10_median": 0.0003,
+            "p50_median": 0.0016,
+            "p90_median": 0.007,
+            "p99_median": 0.019,
+            "max": 1164.5659
+          },
+          "sliding_vs_sticking": {
+            "1mm_s": {
+              "sliding_point_steps": 828,
+              "sticking_point_steps": 298445,
+              "sliding_point_frac": 0.00277,
+              "sticking_point_frac": 0.99723,
+              "sliding_impulse_Ns": 3.356525,
+              "sticking_impulse_Ns": 53.169678,
+              "sliding_impulse_frac": 0.05938,
+              "sticking_impulse_frac": 0.94062
+            },
+            "5mm_s": {
+              "sliding_point_steps": 489,
+              "sticking_point_steps": 298784,
+              "sliding_point_frac": 0.00163,
+              "sticking_point_frac": 0.99837,
+              "sliding_impulse_Ns": 2.405491,
+              "sticking_impulse_Ns": 54.12071,
+              "sliding_impulse_frac": 0.04256,
+              "sticking_impulse_frac": 0.95744
+            },
+            "10mm_s": {
+              "sliding_point_steps": 332,
+              "sticking_point_steps": 298941,
+              "sliding_point_frac": 0.00111,
+              "sticking_point_frac": 0.99889,
+              "sliding_impulse_Ns": 2.019161,
+              "sticking_impulse_Ns": 54.507035,
+              "sliding_impulse_frac": 0.03572,
+              "sticking_impulse_frac": 0.96428
+            }
+          },
+          "min_separation_mm": -0.0203,
+          "max_separation_mm": 1.3139,
+          "by_phase": {
+            "carry": {
+              "actions_force_total": 763,
+              "actions_force_per_ep": 38.15,
+              "actions_any_total": 780,
+              "steps_force_total": 7603,
+              "point_steps_force_total": 68897,
+              "max_points_force": 12,
+              "total_normal_impulse_Ns": 11.39163,
+              "normal_force_N": {
+                "mean": 0.3746,
+                "min": 0.3718,
+                "p10_median": 0.3743,
+                "p50_median": 0.3744,
+                "p90_median": 0.3744,
+                "p99_median": 0.3747,
+                "max": 1.1038
+              },
+              "v_tan_mm_s": {
+                "mean": 0.0038,
+                "min": 0.0,
+                "p10_median": 0.0003,
+                "p50_median": 0.0016,
+                "p90_median": 0.0065,
+                "p99_median": 0.0126,
+                "max": 19.4537
+              },
+              "sliding_impulse_frac_1mm_s": 0.001,
+              "sticking_impulse_frac_1mm_s": 0.999
+            },
+            "grasp": {
+              "actions_force_total": 800,
+              "actions_force_per_ep": 40.0,
+              "actions_any_total": 800,
+              "steps_force_total": 7940,
+              "point_steps_force_total": 101377,
+              "max_points_force": 24,
+              "total_normal_impulse_Ns": 23.42305,
+              "normal_force_N": {
+                "mean": 0.7375,
+                "min": 0.0004,
+                "p10_median": 0.3743,
+                "p50_median": 0.7482,
+                "p90_median": 0.7491,
+                "p99_median": 3.6969,
+                "max": 38.8445
+              },
+              "v_tan_mm_s": {
+                "mean": 0.3466,
+                "min": 0.0,
+                "p10_median": 0.0006,
+                "p50_median": 0.0031,
+                "p90_median": 0.0077,
+                "p99_median": 0.5185,
+                "max": 1164.5659
+              },
+              "sliding_impulse_frac_1mm_s": 0.14237,
+              "sticking_impulse_frac_1mm_s": 0.85763
+            },
+            "home": {
+              "actions_force_total": 383,
+              "actions_force_per_ep": 19.15,
+              "actions_any_total": 383,
+              "steps_force_total": 3830,
+              "point_steps_force_total": 50801,
+              "max_points_force": 24,
+              "total_normal_impulse_Ns": 8.47528,
+              "normal_force_N": {
+                "mean": 0.5532,
+                "min": 0.3731,
+                "p10_median": 0.3743,
+                "p50_median": 0.3746,
+                "p90_median": 0.7488,
+                "p99_median": 0.7489,
+                "max": 0.7502
+              },
+              "v_tan_mm_s": {
+                "mean": 0.0024,
+                "min": 0.0,
+                "p10_median": 0.0003,
+                "p50_median": 0.0012,
+                "p90_median": 0.0051,
+                "p99_median": 0.0095,
+                "max": 0.0533
+              },
+              "sliding_impulse_frac_1mm_s": 0.0,
+              "sticking_impulse_frac_1mm_s": 1.0
+            },
+            "set_down": {
+              "actions_force_total": 740,
+              "actions_force_per_ep": 37.0,
+              "actions_any_total": 840,
+              "steps_force_total": 7390,
+              "point_steps_force_total": 78198,
+              "max_points_force": 24,
+              "total_normal_impulse_Ns": 13.23624,
+              "normal_force_N": {
+                "mean": 0.4478,
+                "min": 0.0643,
+                "p10_median": 0.3743,
+                "p50_median": 0.3744,
+                "p90_median": 0.7487,
+                "p99_median": 0.7492,
+                "max": 1.5002
+              },
+              "v_tan_mm_s": {
+                "mean": 0.0037,
+                "min": 0.0,
+                "p10_median": 0.0003,
+                "p50_median": 0.0011,
+                "p90_median": 0.0051,
+                "p99_median": 0.0135,
+                "max": 5.9519
+              },
+              "sliding_impulse_frac_1mm_s": 0.00079,
+              "sticking_impulse_frac_1mm_s": 0.99921
+            }
+          },
+          "by_detail_phase": {
+            "approach": {
+              "actions_force_total": 400,
+              "actions_force_per_ep": 20.0,
+              "actions_any_total": 400,
+              "steps_force_total": 4000,
+              "point_steps_force_total": 53160,
+              "max_points_force": 24,
+              "total_normal_impulse_Ns": 8.98439,
+              "normal_force_N": {
+                "mean": 0.5615,
+                "min": 0.3717,
+                "p10_median": 0.3743,
+                "p50_median": 0.5614,
+                "p90_median": 0.7489,
+                "p99_median": 0.7494,
+                "max": 0.7507
+              },
+              "v_tan_mm_s": {
+                "mean": 0.0037,
+                "min": 0.0,
+                "p10_median": 0.0006,
+                "p50_median": 0.0034,
+                "p90_median": 0.0077,
+                "p99_median": 0.0153,
+                "max": 0.0536
+              },
+              "sliding_impulse_frac_1mm_s": 0.0,
+              "sticking_impulse_frac_1mm_s": 1.0
+            },
+            "close": {
+              "actions_force_total": 160,
+              "actions_force_per_ep": 8.0,
+              "actions_any_total": 160,
+              "steps_force_total": 1540,
+              "point_steps_force_total": 16299,
+              "max_points_force": 24,
+              "total_normal_impulse_Ns": 9.04804,
+              "normal_force_N": {
+                "mean": 1.4688,
+                "min": 0.0004,
+                "p10_median": 0.3743,
+                "p50_median": 0.7487,
+                "p90_median": 2.693,
+                "p99_median": 9.105,
+                "max": 38.8445
+              },
+              "v_tan_mm_s": {
+                "mean": 2.1368,
+                "min": 0.0,
+                "p10_median": 0.0007,
+                "p50_median": 0.0036,
+                "p90_median": 0.0202,
+                "p99_median": 14.4472,
+                "max": 1164.5659
+              },
+              "sliding_impulse_frac_1mm_s": 0.36855,
+              "sticking_impulse_frac_1mm_s": 0.63145
+            },
+            "descend": {
+              "actions_force_total": 240,
+              "actions_force_per_ep": 12.0,
+              "actions_any_total": 240,
+              "steps_force_total": 2400,
+              "point_steps_force_total": 31918,
+              "max_points_force": 24,
+              "total_normal_impulse_Ns": 5.39063,
+              "normal_force_N": {
+                "mean": 0.5615,
+                "min": 0.3722,
+                "p10_median": 0.3743,
+                "p50_median": 0.5614,
+                "p90_median": 0.7489,
+                "p99_median": 0.7492,
+                "max": 0.7499
+              },
+              "v_tan_mm_s": {
+                "mean": 0.0035,
+                "min": 0.0,
+                "p10_median": 0.0006,
+                "p50_median": 0.0027,
+                "p90_median": 0.0076,
+                "p99_median": 0.0159,
+                "max": 0.0705
+              },
+              "sliding_impulse_frac_1mm_s": 0.0,
+              "sticking_impulse_frac_1mm_s": 1.0
+            },
+            "hover_correct0": {
+              "actions_force_total": 80,
+              "actions_force_per_ep": 4.0,
+              "actions_any_total": 80,
+              "steps_force_total": 800,
+              "point_steps_force_total": 7078,
+              "max_points_force": 12,
+              "total_normal_impulse_Ns": 1.19792,
+              "normal_force_N": {
+                "mean": 0.3743,
+                "min": 0.3733,
+                "p10_median": 0.3743,
+                "p50_median": 0.3744,
+                "p90_median": 0.3744,
+                "p99_median": 0.3744,
+                "max": 0.3759
+              },
+              "v_tan_mm_s": {
+                "mean": 0.0022,
+                "min": 0.0,
+                "p10_median": 0.0004,
+                "p50_median": 0.001,
+                "p90_median": 0.0034,
+                "p99_median": 0.0054,
+                "max": 0.0405
+              },
+              "sliding_impulse_frac_1mm_s": 0.0,
+              "sticking_impulse_frac_1mm_s": 1.0
+            },
+            "hover_final": {
+              "actions_force_total": 40,
+              "actions_force_per_ep": 2.0,
+              "actions_any_total": 40,
+              "steps_force_total": 400,
+              "point_steps_force_total": 3566,
+              "max_points_force": 12,
+              "total_normal_impulse_Ns": 0.59896,
+              "normal_force_N": {
+                "mean": 0.3743,
+                "min": 0.3735,
+                "p10_median": 0.3743,
+                "p50_median": 0.3744,
+                "p90_median": 0.3744,
+                "p99_median": 0.3744,
+                "max": 0.3758
+              },
+              "v_tan_mm_s": {
+                "mean": 0.0023,
+                "min": 0.0,
+                "p10_median": 0.0004,
+                "p50_median": 0.0011,
+                "p90_median": 0.0026,
+                "p99_median": 0.0044,
+                "max": 0.0354
+              },
+              "sliding_impulse_frac_1mm_s": 0.0,
+              "sticking_impulse_frac_1mm_s": 1.0
+            },
+            "hover_settle0": {
+              "actions_force_total": 60,
+              "actions_force_per_ep": 3.0,
+              "actions_any_total": 60,
+              "steps_force_total": 600,
+              "point_steps_force_total": 5332,
+              "max_points_force": 12,
+              "total_normal_impulse_Ns": 0.89844,
+              "normal_force_N": {
+                "mean": 0.3744,
+                "min": 0.3736,
+                "p10_median": 0.3743,
+                "p50_median": 0.3744,
+                "p90_median": 0.3744,
+                "p99_median": 0.3744,
+                "max": 0.375
+              },
+              "v_tan_mm_s": {
+                "mean": 0.002,
+                "min": 0.0,
+                "p10_median": 0.0003,
+                "p50_median": 0.0009,
+                "p90_median": 0.0023,
+                "p99_median": 0.0041,
+                "max": 0.0474
+              },
+              "sliding_impulse_frac_1mm_s": 0.0,
+              "sticking_impulse_frac_1mm_s": 1.0
+            },
+            "left_home": {
+              "actions_force_total": 183,
+              "actions_force_per_ep": 9.15,
+              "actions_any_total": 183,
+              "steps_force_total": 1830,
+              "point_steps_force_total": 33036,
+              "max_points_force": 24,
+              "total_normal_impulse_Ns": 5.48049,
+              "normal_force_N": {
+                "mean": 0.7487,
+                "min": 0.7473,
+                "p10_median": 0.7486,
+                "p50_median": 0.7487,
+                "p90_median": 0.7488,
+                "p99_median": 0.749,
+                "max": 0.7502
+              },
+              "v_tan_mm_s": {
+                "mean": 0.0023,
+                "min": 0.0,
+                "p10_median": 0.0003,
+                "p50_median": 0.0012,
+                "p90_median": 0.0048,
+                "p99_median": 0.009,
+                "max": 0.0422
+              },
+              "sliding_impulse_frac_1mm_s": 0.0,
+              "sticking_impulse_frac_1mm_s": 1.0
+            },
+            "lift": {
+              "actions_force_total": 123,
+              "actions_force_per_ep": 6.15,
+              "actions_any_total": 140,
+              "steps_force_total": 1203,
+              "point_steps_force_total": 11092,
+              "max_points_force": 12,
+              "total_normal_impulse_Ns": 1.80827,
+              "normal_force_N": {
+                "mean": 0.3758,
+                "min": 0.3718,
+                "p10_median": 0.3743,
+                "p50_median": 0.3744,
+                "p90_median": 0.3744,
+                "p99_median": 0.3746,
+                "max": 1.1038
+              },
+              "v_tan_mm_s": {
+                "mean": 0.01,
+                "min": 0.0,
+                "p10_median": 0.0008,
+                "p50_median": 0.0029,
+                "p90_median": 0.0059,
+                "p99_median": 0.0085,
+                "max": 19.4537
+              },
+              "sliding_impulse_frac_1mm_s": 0.0063,
+              "sticking_impulse_frac_1mm_s": 0.9937
+            },
+            "lower": {
+              "actions_force_total": 100,
+              "actions_force_per_ep": 5.0,
+              "actions_any_total": 140,
+              "steps_force_total": 1000,
+              "point_steps_force_total": 8816,
+              "max_points_force": 12,
+              "total_normal_impulse_Ns": 1.4974,
+              "normal_force_N": {
+                "mean": 0.3743,
+                "min": 0.3737,
+                "p10_median": 0.3743,
+                "p50_median": 0.3744,
+                "p90_median": 0.3744,
+                "p99_median": 0.3744,
+                "max": 0.3751
+              },
+              "v_tan_mm_s": {
+                "mean": 0.0023,
+                "min": 0.0,
+                "p10_median": 0.0004,
+                "p50_median": 0.0011,
+                "p90_median": 0.0029,
+                "p99_median": 0.0046,
+                "max": 0.0513
+              },
+              "sliding_impulse_frac_1mm_s": 0.0,
+              "sticking_impulse_frac_1mm_s": 1.0
+            },
+            "park": {
+              "actions_force_total": 200,
+              "actions_force_per_ep": 10.0,
+              "actions_any_total": 200,
+              "steps_force_total": 2000,
+              "point_steps_force_total": 18513,
+              "max_points_force": 12,
+              "total_normal_impulse_Ns": 2.9948,
+              "normal_force_N": {
+                "mean": 0.3743,
+                "min": 0.3731,
+                "p10_median": 0.3743,
+                "p50_median": 0.3744,
+                "p90_median": 0.3744,
+                "p99_median": 0.3746,
+                "max": 0.3757
+              },
+              "v_tan_mm_s": {
+                "mean": 0.0033,
+                "min": 0.0,
+                "p10_median": 0.0006,
+                "p50_median": 0.003,
+                "p90_median": 0.0063,
+                "p99_median": 0.0095,
+                "max": 0.0479
+              },
+              "sliding_impulse_frac_1mm_s": 0.0,
+              "sticking_impulse_frac_1mm_s": 1.0
+            },
+            "release": {
+              "actions_force_total": 140,
+              "actions_force_per_ep": 7.0,
+              "actions_any_total": 200,
+              "steps_force_total": 1390,
+              "point_steps_force_total": 15670,
+              "max_points_force": 24,
+              "total_normal_impulse_Ns": 2.75446,
+              "normal_force_N": {
+                "mean": 0.4954,
+                "min": 0.0643,
+                "p10_median": 0.3743,
+                "p50_median": 0.3744,
+                "p90_median": 0.7488,
+                "p99_median": 1.1868,
+                "max": 1.5002
+              },
+              "v_tan_mm_s": {
+                "mean": 0.0089,
+                "min": 0.0,
+                "p10_median": 0.0004,
+                "p50_median": 0.0011,
+                "p90_median": 0.0077,
+                "p99_median": 0.0221,
+                "max": 5.9519
+              },
+              "sliding_impulse_frac_1mm_s": 0.00381,
+              "sticking_impulse_frac_1mm_s": 0.99619
+            },
+            "retreat": {
+              "actions_force_total": 200,
+              "actions_force_per_ep": 10.0,
+              "actions_any_total": 200,
+              "steps_force_total": 2000,
+              "point_steps_force_total": 27066,
+              "max_points_force": 24,
+              "total_normal_impulse_Ns": 4.49219,
+              "normal_force_N": {
+                "mean": 0.5615,
+                "min": 0.3733,
+                "p10_median": 0.3743,
+                "p50_median": 0.5614,
+                "p90_median": 0.7488,
+                "p99_median": 0.749,
+                "max": 0.7505
+              },
+              "v_tan_mm_s": {
+                "mean": 0.0026,
+                "min": 0.0,
+                "p10_median": 0.0003,
+                "p50_median": 0.0014,
+                "p90_median": 0.0052,
+                "p99_median": 0.0093,
+                "max": 0.0561
+              },
+              "sliding_impulse_frac_1mm_s": 0.0,
+              "sticking_impulse_frac_1mm_s": 1.0
+            },
+            "right_home": {
+              "actions_force_total": 200,
+              "actions_force_per_ep": 10.0,
+              "actions_any_total": 200,
+              "steps_force_total": 2000,
+              "point_steps_force_total": 17765,
+              "max_points_force": 12,
+              "total_normal_impulse_Ns": 2.9948,
+              "normal_force_N": {
+                "mean": 0.3743,
+                "min": 0.3731,
+                "p10_median": 0.3743,
+                "p50_median": 0.3744,
+                "p90_median": 0.3744,
+                "p99_median": 0.3745,
+                "max": 0.3759
+              },
+              "v_tan_mm_s": {
+                "mean": 0.0027,
+                "min": 0.0,
+                "p10_median": 0.0006,
+                "p50_median": 0.0021,
+                "p90_median": 0.005,
+                "p99_median": 0.0078,
+                "max": 0.0533
+              },
+              "sliding_impulse_frac_1mm_s": 0.0,
+              "sticking_impulse_frac_1mm_s": 1.0
+            },
+            "to_hover": {
+              "actions_force_total": 120,
+              "actions_force_per_ep": 6.0,
+              "actions_any_total": 120,
+              "steps_force_total": 1200,
+              "point_steps_force_total": 10670,
+              "max_points_force": 12,
+              "total_normal_impulse_Ns": 1.79688,
+              "normal_force_N": {
+                "mean": 0.3744,
+                "min": 0.373,
+                "p10_median": 0.3743,
+                "p50_median": 0.3744,
+                "p90_median": 0.3744,
+                "p99_median": 0.3744,
+                "max": 0.3753
+              },
+              "v_tan_mm_s": {
+                "mean": 0.0021,
+                "min": 0.0,
+                "p10_median": 0.0004,
+                "p50_median": 0.001,
+                "p90_median": 0.0023,
+                "p99_median": 0.0045,
+                "max": 0.0401
+              },
+              "sliding_impulse_frac_1mm_s": 0.0,
+              "sticking_impulse_frac_1mm_s": 1.0
+            },
+            "transit": {
+              "actions_force_total": 440,
+              "actions_force_per_ep": 22.0,
+              "actions_any_total": 440,
+              "steps_force_total": 4400,
+              "point_steps_force_total": 39292,
+              "max_points_force": 12,
+              "total_normal_impulse_Ns": 6.58856,
+              "normal_force_N": {
+                "mean": 0.3743,
+                "min": 0.3725,
+                "p10_median": 0.3743,
+                "p50_median": 0.3744,
+                "p90_median": 0.3744,
+                "p99_median": 0.3746,
+                "max": 0.3762
+              },
+              "v_tan_mm_s": {
+                "mean": 0.0023,
+                "min": 0.0,
+                "p10_median": 0.0004,
+                "p50_median": 0.0011,
+                "p90_median": 0.0044,
+                "p99_median": 0.0078,
+                "max": 0.0423
+              },
+              "sliding_impulse_frac_1mm_s": 0.0,
+              "sticking_impulse_frac_1mm_s": 1.0
+            }
+          }
+        },
+        "aluminium__aluminium": {
+          "pair": "aluminium__aluminium",
+          "docs_params_meta": {
+            "scenario_membership": "all",
+            "formable_in_task": true,
+            "counted_in_fit_objective": true,
+            "nominal_mu_static": null,
+            "nominal_mu_kinetic": null,
+            "realised_mu_static_v2b": null,
+            "realised_mu_kinetic_v2b": null
+          },
+          "episodes_with_force": 8,
+          "episodes_any_proximity": 10,
+          "episodes_total": 20,
+          "actions_force_total": 8,
+          "actions_force_mean_per_ep": 0.4,
+          "actions_force_share_of_episode": 0.00216,
+          "actions_any_total": 16,
+          "actions_any_mean_per_ep": 0.8,
+          "steps_force_total": 8,
+          "steps_any_total": 54,
+          "contact_points": {
+            "point_steps_force_total": 8,
+            "point_steps_any_total": 203,
+            "max_simultaneous_points_force": 1,
+            "max_simultaneous_points_any": 6,
+            "points_per_force_step": {
+              "mean": 1.0,
+              "min": 1.0,
+              "p10_median": 1.0,
+              "p50_median": 1.0,
+              "p90_median": 1.0,
+              "p99_median": 1.0,
+              "max": 1.0
+            },
+            "headers_gt32_count": 0
+          },
+          "normal_force_N": {
+            "mean": 223.4935,
+            "min": 85.5584,
+            "p10_median": 241.1468,
+            "p50_median": 241.1468,
+            "p90_median": 241.1468,
+            "p99_median": 241.1468,
+            "max": 333.3684
+          },
+          "total_normal_impulse_Ns": 7.15179,
+          "census_weight_impulse_share": 0.000147,
+          "census_weight_force_action_share": 0.0014,
+          "v_tan_mm_s": {
+            "mean": 152.5438,
+            "min": 94.2203,
+            "p10_median": 167.9667,
+            "p50_median": 167.9667,
+            "p90_median": 167.9667,
+            "p99_median": 167.9667,
+            "max": 186.6935
+          },
+          "sliding_vs_sticking": {
+            "1mm_s": {
+              "sliding_point_steps": 8,
+              "sticking_point_steps": 0,
+              "sliding_point_frac": 1.0,
+              "sticking_point_frac": 0.0,
+              "sliding_impulse_Ns": 7.151794,
+              "sticking_impulse_Ns": 0.0,
+              "sliding_impulse_frac": 1.0,
+              "sticking_impulse_frac": 0.0
+            },
+            "5mm_s": {
+              "sliding_point_steps": 8,
+              "sticking_point_steps": 0,
+              "sliding_point_frac": 1.0,
+              "sticking_point_frac": 0.0,
+              "sliding_impulse_Ns": 7.151794,
+              "sticking_impulse_Ns": 0.0,
+              "sliding_impulse_frac": 1.0,
+              "sticking_impulse_frac": 0.0
+            },
+            "10mm_s": {
+              "sliding_point_steps": 8,
+              "sticking_point_steps": 0,
+              "sliding_point_frac": 1.0,
+              "sticking_point_frac": 0.0,
+              "sliding_impulse_Ns": 7.151794,
+              "sticking_impulse_Ns": 0.0,
+              "sliding_impulse_frac": 1.0,
+              "sticking_impulse_frac": 0.0
+            }
+          },
+          "min_separation_mm": 0.0376,
+          "max_separation_mm": 2.6881,
+          "by_phase": {
+            "carry": {
+              "actions_force_total": 8,
+              "actions_force_per_ep": 0.4,
+              "actions_any_total": 16,
+              "steps_force_total": 8,
+              "point_steps_force_total": 8,
+              "max_points_force": 1,
+              "total_normal_impulse_Ns": 7.15179,
+              "normal_force_N": {
+                "mean": 223.4935,
+                "min": 85.5584,
+                "p10_median": 241.1468,
+                "p50_median": 241.1468,
+                "p90_median": 241.1468,
+                "p99_median": 241.1468,
+                "max": 333.3684
+              },
+              "v_tan_mm_s": {
+                "mean": 152.5438,
+                "min": 94.2203,
+                "p10_median": 167.9667,
+                "p50_median": 167.9667,
+                "p90_median": 167.9667,
+                "p99_median": 167.9667,
+                "max": 186.6935
+              },
+              "sliding_impulse_frac_1mm_s": 1.0,
+              "sticking_impulse_frac_1mm_s": 0.0
+            }
+          },
+          "by_detail_phase": {
+            "transit": {
+              "actions_force_total": 8,
+              "actions_force_per_ep": 0.4,
+              "actions_any_total": 16,
+              "steps_force_total": 8,
+              "point_steps_force_total": 8,
+              "max_points_force": 1,
+              "total_normal_impulse_Ns": 7.15179,
+              "normal_force_N": {
+                "mean": 223.4935,
+                "min": 85.5584,
+                "p10_median": 241.1468,
+                "p50_median": 241.1468,
+                "p90_median": 241.1468,
+                "p99_median": 241.1468,
+                "max": 333.3684
+              },
+              "v_tan_mm_s": {
+                "mean": 152.5438,
+                "min": 94.2203,
+                "p10_median": 167.9667,
+                "p50_median": 167.9667,
+                "p90_median": 167.9667,
+                "p99_median": 167.9667,
+                "max": 186.6935
+              },
+              "sliding_impulse_frac_1mm_s": 1.0,
+              "sticking_impulse_frac_1mm_s": 0.0
+            }
+          }
+        }
+      },
+      "body_pairs": {
+        "Table|t0": {
+          "class_pair": "abs_toy_plastic__table_laminate",
+          "episodes_with_force": 20,
+          "episodes_any": 20,
+          "actions_force_total": 723,
+          "actions_any_total": 843,
+          "max_points_force": 12,
+          "total_normal_impulse_Ns": 13.30069,
+          "min_separation_mm": -0.0098
+        },
+        "Table|t1": {
+          "class_pair": "abs_toy_plastic__table_laminate",
+          "episodes_with_force": 20,
+          "episodes_any": 20,
+          "actions_force_total": 2686,
+          "actions_any_total": 2803,
+          "max_points_force": 12,
+          "total_normal_impulse_Ns": 43.22551,
+          "min_separation_mm": -0.0203
+        },
+        "r0.link7|t0": {
+          "class_pair": "abs_toy_plastic__pad_hard",
+          "episodes_with_force": 20,
+          "episodes_any": 20,
+          "actions_force_total": 3021,
+          "actions_any_total": 3041,
+          "max_points_force": 4,
+          "total_normal_impulse_Ns": 18071.22661,
+          "min_separation_mm": -0.7974
+        },
+        "r0.link8|t0": {
+          "class_pair": "abs_toy_plastic__pad_hard",
+          "episodes_with_force": 20,
+          "episodes_any": 20,
+          "actions_force_total": 3021,
+          "actions_any_total": 3041,
+          "max_points_force": 4,
+          "total_normal_impulse_Ns": 18070.86201,
+          "min_separation_mm": -0.3795
+        },
+        "r1.link1|r1.link3": {
+          "class_pair": "aluminium__aluminium",
+          "episodes_with_force": 8,
+          "episodes_any": 10,
+          "actions_force_total": 8,
+          "actions_any_total": 16,
+          "max_points_force": 1,
+          "total_normal_impulse_Ns": 7.15179,
+          "min_separation_mm": 0.0376
+        },
+        "r1.link2|r1.link4": {
+          "class_pair": "aluminium__aluminium",
+          "episodes_with_force": 0,
+          "episodes_any": 5,
+          "actions_force_total": 0,
+          "actions_any_total": 6,
+          "max_points_force": 0,
+          "total_normal_impulse_Ns": 0.0,
+          "min_separation_mm": 1.2833
+        },
+        "r1.link7|t1": {
+          "class_pair": "abs_toy_plastic__pad_hard",
+          "episodes_with_force": 20,
+          "episodes_any": 20,
+          "actions_force_total": 1061,
+          "actions_any_total": 1081,
+          "max_points_force": 4,
+          "total_normal_impulse_Ns": 6298.57266,
+          "min_separation_mm": -0.3941
+        },
+        "r1.link8|t1": {
+          "class_pair": "abs_toy_plastic__pad_hard",
+          "episodes_with_force": 20,
+          "episodes_any": 20,
+          "actions_force_total": 1061,
+          "actions_any_total": 1081,
+          "max_points_force": 4,
+          "total_normal_impulse_Ns": 6300.21415,
+          "min_separation_mm": -0.3429
+        }
+      }
+    },
+    "shipped": {
+      "episodes_count": 20,
+      "success_count": 20,
+      "episodes": [
+        {
+          "seed": 0,
+          "layout": 0,
+          "actions": 186,
+          "final_state_sha256": "230628728fa9151b63ce559ef7c5842d6216073fb92bf887deebb6720ac1b956"
+        },
+        {
+          "seed": 0,
+          "layout": 1,
+          "actions": 185,
+          "final_state_sha256": "8279a6786d80612e8b6de67263a68d93cd32b38ffbf5943153e0032ad6dceb43"
+        },
+        {
+          "seed": 0,
+          "layout": 2,
+          "actions": 186,
+          "final_state_sha256": "5fcc1bd2c3a6935dd1ba619ede472111b6517d69aa9d9f0639e376f9370dafa1"
+        },
+        {
+          "seed": 0,
+          "layout": 3,
+          "actions": 186,
+          "final_state_sha256": "9b332c0493de4329c4e79ed1367034d755dce3dda6bbb888de049a6fd030948f"
+        },
+        {
+          "seed": 0,
+          "layout": 4,
+          "actions": 186,
+          "final_state_sha256": "de6f99a1e36f2a05450d18f011f78aae455900eb5199376299d56a407926a9b5"
+        },
+        {
+          "seed": 0,
+          "layout": 5,
+          "actions": 185,
+          "final_state_sha256": "ef0cbf5be37ecbadf7474220011c227a304680860076e0011cec13d8805f0284"
+        },
+        {
+          "seed": 0,
+          "layout": 6,
+          "actions": 188,
+          "final_state_sha256": "cde72e257c1b9d669b29baedb6f858dd0ccab8d7d370b8c55b899e6b182170df"
+        },
+        {
+          "seed": 0,
+          "layout": 7,
+          "actions": 187,
+          "final_state_sha256": "c4e256fce592d9d1899f81ef648b5d9df7ca48fc3bf3f6a593c2ebfa6fac2860"
+        },
+        {
+          "seed": 0,
+          "layout": 8,
+          "actions": 185,
+          "final_state_sha256": "6e970d5f4648be3445f2c6cdc79046e64a6a70a9ef86629c19d4b64efb7a44ff"
+        },
+        {
+          "seed": 0,
+          "layout": 9,
+          "actions": 185,
+          "final_state_sha256": "5b1174ade1894884d13bf3c2c7278a7f5299961da1c46feb33a42898fd1ff00e"
+        },
+        {
+          "seed": 1,
+          "layout": 0,
+          "actions": 185,
+          "final_state_sha256": "93af350a17c30c4873777c37ccaaf655947fdfaeefada4328039ce814b223d13"
+        },
+        {
+          "seed": 1,
+          "layout": 1,
+          "actions": 185,
+          "final_state_sha256": "36a4ad4649e3a94bd0fddc395494808812c823aa88ea6f56aee905c4e014b877"
+        },
+        {
+          "seed": 1,
+          "layout": 2,
+          "actions": 187,
+          "final_state_sha256": "50ae89bb7d82aa9162a01af21cc1a5e2214875025a2ed50011da04c0bb7caf4a"
+        },
+        {
+          "seed": 1,
+          "layout": 3,
+          "actions": 185,
+          "final_state_sha256": "5c3dfcc8bf71204903b285a10eac82f2101e98c72730dba72b3d68f81dbe0190"
+        },
+        {
+          "seed": 1,
+          "layout": 4,
+          "actions": 187,
+          "final_state_sha256": "4960cfea57a8dfe9b28859843cc84b1a9d622d22ca5546ede8bbfc0065779918"
+        },
+        {
+          "seed": 1,
+          "layout": 5,
+          "actions": 186,
+          "final_state_sha256": "5b4538aab1cfa74d94d558189357567ded3c05a6b69e9f5122b4d99aab80f56a"
+        },
+        {
+          "seed": 1,
+          "layout": 6,
+          "actions": 186,
+          "final_state_sha256": "f011baf73061069aa24891f8f476c6cf205f639f07c48035497d579e33c8c664"
+        },
+        {
+          "seed": 1,
+          "layout": 7,
+          "actions": 185,
+          "final_state_sha256": "511934100b1d72adb6de99aeff327ef21eebb2be59d42de070ce81a8a5c9596a"
+        },
+        {
+          "seed": 1,
+          "layout": 8,
+          "actions": 185,
+          "final_state_sha256": "7bea41babf0c39cbc408d0b85b19c7a7cfe61ee51240fc61825c714eb501c689"
+        },
+        {
+          "seed": 1,
+          "layout": 9,
+          "actions": 185,
+          "final_state_sha256": "a17f01deb89978b9bc68a8edf46a5e2dac1e7e12903290095fe832dac36ff7e4"
+        }
+      ],
+      "total_actions": 3715,
+      "total_physics_steps": 37150,
+      "phase_actions_total": {
+        "carry": 1320,
+        "grasp": 800,
+        "home": 395,
+        "set_down": 1200
+      },
+      "detail_phase_actions_total": {
+        "approach": 400,
+        "close": 160,
+        "descend": 240,
+        "home_settle": 5,
+        "hover_correct0": 160,
+        "hover_final": 80,
+        "hover_settle0": 120,
+        "left_home": 190,
+        "lift": 240,
+        "lower": 200,
+        "park": 200,
+        "release": 200,
+        "retreat": 200,
+        "right_home": 200,
+        "to_hover": 240,
+        "transit": 880
+      },
+      "total_normal_impulse_Ns": 6569.49778,
+      "formability_summary": {
+        "task_formable_primary_counted_pairs_count": 17,
+        "task_formable_primary_counted_pairs": [
+          "abs_device_housing__abs_device_housing",
+          "abs_device_housing__abs_toy_plastic",
+          "abs_device_housing__aluminium",
+          "abs_device_housing__ground",
+          "abs_device_housing__pad_hard",
+          "abs_device_housing__table_laminate",
+          "abs_toy_plastic__abs_toy_plastic",
+          "abs_toy_plastic__aluminium",
+          "abs_toy_plastic__ground",
+          "abs_toy_plastic__pad_hard",
+          "abs_toy_plastic__table_laminate",
+          "aluminium__aluminium",
+          "aluminium__ground",
+          "aluminium__pad_hard",
+          "aluminium__table_laminate",
+          "ground__pad_hard",
+          "pad_hard__table_laminate"
+        ],
+        "dropped_finger_self_pair": "pad_hard__pad_hard",
+        "dropped_finger_self_pair_occurred_force": false,
+        "active_load_bearing_pairs_count": 2,
+        "active_load_bearing_pairs": [
+          "abs_toy_plastic__pad_hard",
+          "abs_toy_plastic__table_laminate"
+        ],
+        "proximity_only_zero_force_pairs": [],
+        "formable_pairs_with_zero_force_count": 15,
+        "formable_pairs_with_zero_force": [
+          "abs_device_housing__abs_device_housing",
+          "abs_device_housing__abs_toy_plastic",
+          "abs_device_housing__aluminium",
+          "abs_device_housing__ground",
+          "abs_device_housing__pad_hard",
+          "abs_device_housing__table_laminate",
+          "abs_toy_plastic__abs_toy_plastic",
+          "abs_toy_plastic__aluminium",
+          "abs_toy_plastic__ground",
+          "aluminium__aluminium",
+          "aluminium__ground",
+          "aluminium__pad_hard",
+          "aluminium__table_laminate",
+          "ground__pad_hard",
+          "pad_hard__table_laminate"
+        ],
+        "formable_pairs_never_even_in_proximity": [
+          "abs_device_housing__abs_device_housing",
+          "abs_device_housing__abs_toy_plastic",
+          "abs_device_housing__aluminium",
+          "abs_device_housing__ground",
+          "abs_device_housing__pad_hard",
+          "abs_device_housing__table_laminate",
+          "abs_toy_plastic__abs_toy_plastic",
+          "abs_toy_plastic__aluminium",
+          "abs_toy_plastic__ground",
+          "aluminium__aluminium",
+          "aluminium__ground",
+          "aluminium__pad_hard",
+          "aluminium__table_laminate",
+          "ground__pad_hard",
+          "pad_hard__table_laminate"
+        ]
+      },
+      "class_pairs": {
+        "abs_toy_plastic__pad_hard": {
+          "pair": "abs_toy_plastic__pad_hard",
+          "docs_params_meta": {
+            "scenario_membership": "default",
+            "formable_in_task": true,
+            "counted_in_fit_objective": true,
+            "nominal_mu_static": null,
+            "nominal_mu_kinetic": null,
+            "realised_mu_static_v2b": null,
+            "realised_mu_kinetic_v2b": null
+          },
+          "episodes_with_force": 20,
+          "episodes_any_proximity": 20,
+          "episodes_total": 20,
+          "actions_force_total": 3040,
+          "actions_force_mean_per_ep": 152.0,
+          "actions_force_share_of_episode": 0.8183,
+          "actions_any_total": 3060,
+          "actions_any_mean_per_ep": 153.0,
+          "steps_force_total": 30192,
+          "steps_any_total": 30467,
+          "contact_points": {
+            "point_steps_force_total": 285248,
+            "point_steps_any_total": 330241,
+            "max_simultaneous_points_force": 16,
+            "max_simultaneous_points_any": 16,
+            "points_per_force_step": {
+              "mean": 9.4478,
+              "min": 1.0,
+              "p10_median": 6.0,
+              "p50_median": 8.0,
+              "p90_median": 14.5,
+              "p99_median": 15.5,
+              "max": 16.0
+            },
+            "headers_gt32_count": 0
+          },
+          "normal_force_N": {
+            "mean": 53.1563,
+            "min": 0.0089,
+            "p10_median": 19.7081,
+            "p50_median": 49.4372,
+            "p90_median": 99.0334,
+            "p99_median": 99.195,
+            "max": 99.4754
+          },
+          "total_normal_impulse_Ns": 6419.58297,
+          "census_weight_impulse_share": 0.97718,
+          "census_weight_force_action_share": 0.525861,
+          "v_tan_mm_s": {
+            "mean": 0.5771,
+            "min": 0.0003,
+            "p10_median": 0.0266,
+            "p50_median": 0.1087,
+            "p90_median": 0.8521,
+            "p99_median": 2.6778,
+            "max": 441.823
+          },
+          "sliding_vs_sticking": {
+            "1mm_s": {
+              "sliding_point_steps": 34846,
+              "sticking_point_steps": 250402,
+              "sliding_point_frac": 0.12216,
+              "sticking_point_frac": 0.87784,
+              "sliding_impulse_Ns": 586.863024,
+              "sticking_impulse_Ns": 5832.719946,
+              "sliding_impulse_frac": 0.09142,
+              "sticking_impulse_frac": 0.90858
+            },
+            "5mm_s": {
+              "sliding_point_steps": 3964,
+              "sticking_point_steps": 281284,
+              "sliding_point_frac": 0.0139,
+              "sticking_point_frac": 0.9861,
+              "sliding_impulse_Ns": 67.819614,
+              "sticking_impulse_Ns": 6351.763357,
+              "sliding_impulse_frac": 0.01056,
+              "sticking_impulse_frac": 0.98944
+            },
+            "10mm_s": {
+              "sliding_point_steps": 1739,
+              "sticking_point_steps": 283509,
+              "sliding_point_frac": 0.0061,
+              "sticking_point_frac": 0.9939,
+              "sliding_impulse_Ns": 27.188476,
+              "sticking_impulse_Ns": 6392.394497,
+              "sliding_impulse_frac": 0.00424,
+              "sticking_impulse_frac": 0.99576
+            }
+          },
+          "min_separation_mm": -0.2669,
+          "max_separation_mm": 1.0601,
+          "by_phase": {
+            "carry": {
+              "actions_force_total": 1320,
+              "actions_force_per_ep": 66.0,
+              "actions_any_total": 1320,
+              "steps_force_total": 13200,
+              "point_steps_force_total": 131298,
+              "max_points_force": 16,
+              "total_normal_impulse_Ns": 2983.43499,
+              "normal_force_N": {
+                "mean": 56.5045,
+                "min": 10.2744,
+                "p10_median": 19.852,
+                "p50_median": 49.2569,
+                "p90_median": 99.0348,
+                "p99_median": 99.2274,
+                "max": 99.4754
+              },
+              "v_tan_mm_s": {
+                "mean": 0.7757,
+                "min": 0.0004,
+                "p10_median": 0.0342,
+                "p50_median": 0.2134,
+                "p90_median": 1.3053,
+                "p99_median": 3.5966,
+                "max": 182.8608
+              },
+              "sliding_impulse_frac_1mm_s": 0.13167,
+              "sticking_impulse_frac_1mm_s": 0.86833
+            },
+            "grasp": {
+              "actions_force_total": 460,
+              "actions_force_per_ep": 23.0,
+              "actions_any_total": 460,
+              "steps_force_total": 4540,
+              "point_steps_force_total": 35339,
+              "max_points_force": 16,
+              "total_normal_impulse_Ns": 809.01665,
+              "normal_force_N": {
+                "mean": 44.5494,
+                "min": 0.0609,
+                "p10_median": 19.4996,
+                "p50_median": 49.2721,
+                "p90_median": 49.5734,
+                "p99_median": 98.8416,
+                "max": 98.9808
+              },
+              "v_tan_mm_s": {
+                "mean": 0.3684,
+                "min": 0.0004,
+                "p10_median": 0.0224,
+                "p50_median": 0.0692,
+                "p90_median": 0.5762,
+                "p99_median": 1.7286,
+                "max": 275.4494
+              },
+              "sliding_impulse_frac_1mm_s": 0.05217,
+              "sticking_impulse_frac_1mm_s": 0.94783
+            },
+            "home": {
+              "actions_force_total": 200,
+              "actions_force_per_ep": 10.0,
+              "actions_any_total": 200,
+              "steps_force_total": 2000,
+              "point_steps_force_total": 14017,
+              "max_points_force": 8,
+              "total_normal_impulse_Ns": 318.35671,
+              "normal_force_N": {
+                "mean": 39.7946,
+                "min": 12.9323,
+                "p10_median": 19.0421,
+                "p50_median": 49.195,
+                "p90_median": 49.5636,
+                "p99_median": 49.5732,
+                "max": 49.5918
+              },
+              "v_tan_mm_s": {
+                "mean": 0.211,
+                "min": 0.0008,
+                "p10_median": 0.0193,
+                "p50_median": 0.0558,
+                "p90_median": 0.3554,
+                "p99_median": 1.3255,
+                "max": 4.7831
+              },
+              "sliding_impulse_frac_1mm_s": 0.03462,
+              "sticking_impulse_frac_1mm_s": 0.96538
+            },
+            "set_down": {
+              "actions_force_total": 1060,
+              "actions_force_per_ep": 53.0,
+              "actions_any_total": 1080,
+              "steps_force_total": 10452,
+              "point_steps_force_total": 104594,
+              "max_points_force": 16,
+              "total_normal_impulse_Ns": 2308.77463,
+              "normal_force_N": {
+                "mean": 55.2233,
+                "min": 0.0089,
+                "p10_median": 19.7252,
+                "p50_median": 49.5284,
+                "p90_median": 99.0841,
+                "p99_median": 99.1442,
+                "max": 99.4024
+              },
+              "v_tan_mm_s": {
+                "mean": 0.4473,
+                "min": 0.0003,
+                "p10_median": 0.0246,
+                "p50_median": 0.0786,
+                "p90_median": 0.4277,
+                "p99_median": 1.6046,
+                "max": 441.823
+              },
+              "sliding_impulse_frac_1mm_s": 0.06098,
+              "sticking_impulse_frac_1mm_s": 0.93902
+            }
+          },
+          "by_detail_phase": {
+            "approach": {
+              "actions_force_total": 200,
+              "actions_force_per_ep": 10.0,
+              "actions_any_total": 200,
+              "steps_force_total": 2000,
+              "point_steps_force_total": 13985,
+              "max_points_force": 8,
+              "total_normal_impulse_Ns": 317.90136,
+              "normal_force_N": {
+                "mean": 39.7377,
+                "min": 11.2821,
+                "p10_median": 18.724,
+                "p50_median": 49.0151,
+                "p90_median": 49.5596,
+                "p99_median": 49.5727,
+                "max": 49.5992
+              },
+              "v_tan_mm_s": {
+                "mean": 0.2409,
+                "min": 0.0004,
+                "p10_median": 0.0197,
+                "p50_median": 0.0549,
+                "p90_median": 0.3659,
+                "p99_median": 1.3336,
+                "max": 15.2004
+              },
+              "sliding_impulse_frac_1mm_s": 0.03731,
+              "sticking_impulse_frac_1mm_s": 0.96269
+            },
+            "close": {
+              "actions_force_total": 140,
+              "actions_force_per_ep": 7.0,
+              "actions_any_total": 140,
+              "steps_force_total": 1340,
+              "point_steps_force_total": 12944,
+              "max_points_force": 16,
+              "total_normal_impulse_Ns": 300.10131,
+              "normal_force_N": {
+                "mean": 55.9891,
+                "min": 0.0609,
+                "p10_median": 19.6422,
+                "p50_median": 49.2927,
+                "p90_median": 98.8032,
+                "p99_median": 98.8524,
+                "max": 98.9808
+              },
+              "v_tan_mm_s": {
+                "mean": 0.608,
+                "min": 0.0004,
+                "p10_median": 0.0265,
+                "p50_median": 0.1289,
+                "p90_median": 0.9157,
+                "p99_median": 2.47,
+                "max": 275.4494
+              },
+              "sliding_impulse_frac_1mm_s": 0.07924,
+              "sticking_impulse_frac_1mm_s": 0.92076
+            },
+            "descend": {
+              "actions_force_total": 120,
+              "actions_force_per_ep": 6.0,
+              "actions_any_total": 120,
+              "steps_force_total": 1200,
+              "point_steps_force_total": 8410,
+              "max_points_force": 8,
+              "total_normal_impulse_Ns": 191.01398,
+              "normal_force_N": {
+                "mean": 39.7946,
+                "min": 12.9323,
+                "p10_median": 19.0418,
+                "p50_median": 49.1949,
+                "p90_median": 49.5636,
+                "p99_median": 49.5732,
+                "max": 49.5901
+              },
+              "v_tan_mm_s": {
+                "mean": 0.2115,
+                "min": 0.0006,
+                "p10_median": 0.0223,
+                "p50_median": 0.056,
+                "p90_median": 0.3544,
+                "p99_median": 1.3208,
+                "max": 4.7785
+              },
+              "sliding_impulse_frac_1mm_s": 0.03437,
+              "sticking_impulse_frac_1mm_s": 0.96563
+            },
+            "hover_correct0": {
+              "actions_force_total": 160,
+              "actions_force_per_ep": 8.0,
+              "actions_any_total": 160,
+              "steps_force_total": 1600,
+              "point_steps_force_total": 16929,
+              "max_points_force": 16,
+              "total_normal_impulse_Ns": 381.96777,
+              "normal_force_N": {
+                "mean": 59.6825,
+                "min": 12.7265,
+                "p10_median": 25.418,
+                "p50_median": 49.5372,
+                "p90_median": 99.0889,
+                "p99_median": 99.1323,
+                "max": 99.1478
+              },
+              "v_tan_mm_s": {
+                "mean": 0.2982,
+                "min": 0.0007,
+                "p10_median": 0.0227,
+                "p50_median": 0.074,
+                "p90_median": 0.3789,
+                "p99_median": 1.3752,
+                "max": 15.0329
+              },
+              "sliding_impulse_frac_1mm_s": 0.05851,
+              "sticking_impulse_frac_1mm_s": 0.94149
+            },
+            "hover_final": {
+              "actions_force_total": 80,
+              "actions_force_per_ep": 4.0,
+              "actions_any_total": 80,
+              "steps_force_total": 800,
+              "point_steps_force_total": 8473,
+              "max_points_force": 16,
+              "total_normal_impulse_Ns": 190.96474,
+              "normal_force_N": {
+                "mean": 59.6765,
+                "min": 12.6472,
+                "p10_median": 25.4177,
+                "p50_median": 49.5381,
+                "p90_median": 99.0885,
+                "p99_median": 99.1318,
+                "max": 99.1474
+              },
+              "v_tan_mm_s": {
+                "mean": 0.2543,
+                "min": 0.0004,
+                "p10_median": 0.0251,
+                "p50_median": 0.072,
+                "p90_median": 0.3887,
+                "p99_median": 1.4066,
+                "max": 12.6321
+              },
+              "sliding_impulse_frac_1mm_s": 0.04109,
+              "sticking_impulse_frac_1mm_s": 0.95891
+            },
+            "hover_settle0": {
+              "actions_force_total": 120,
+              "actions_force_per_ep": 6.0,
+              "actions_any_total": 120,
+              "steps_force_total": 1200,
+              "point_steps_force_total": 12722,
+              "max_points_force": 16,
+              "total_normal_impulse_Ns": 286.4821,
+              "normal_force_N": {
+                "mean": 59.6838,
+                "min": 12.9468,
+                "p10_median": 25.4122,
+                "p50_median": 49.5365,
+                "p90_median": 99.1018,
+                "p99_median": 99.1466,
+                "max": 99.1667
+              },
+              "v_tan_mm_s": {
+                "mean": 0.2904,
+                "min": 0.0009,
+                "p10_median": 0.0245,
+                "p50_median": 0.0751,
+                "p90_median": 0.3847,
+                "p99_median": 1.3655,
+                "max": 21.7904
+              },
+              "sliding_impulse_frac_1mm_s": 0.04697,
+              "sticking_impulse_frac_1mm_s": 0.95303
+            },
+            "lift": {
+              "actions_force_total": 240,
+              "actions_force_per_ep": 12.0,
+              "actions_any_total": 240,
+              "steps_force_total": 2400,
+              "point_steps_force_total": 25502,
+              "max_points_force": 16,
+              "total_normal_impulse_Ns": 572.34242,
+              "normal_force_N": {
+                "mean": 59.619,
+                "min": 12.402,
+                "p10_median": 25.1908,
+                "p50_median": 49.5295,
+                "p90_median": 99.0709,
+                "p99_median": 99.1532,
+                "max": 99.2913
+              },
+              "v_tan_mm_s": {
+                "mean": 0.4058,
+                "min": 0.0008,
+                "p10_median": 0.0307,
+                "p50_median": 0.146,
+                "p90_median": 0.8539,
+                "p99_median": 1.7354,
+                "max": 15.274
+              },
+              "sliding_impulse_frac_1mm_s": 0.07956,
+              "sticking_impulse_frac_1mm_s": 0.92044
+            },
+            "lower": {
+              "actions_force_total": 200,
+              "actions_force_per_ep": 10.0,
+              "actions_any_total": 200,
+              "steps_force_total": 2000,
+              "point_steps_force_total": 21192,
+              "max_points_force": 16,
+              "total_normal_impulse_Ns": 477.4283,
+              "normal_force_N": {
+                "mean": 59.6785,
+                "min": 12.4094,
+                "p10_median": 25.4102,
+                "p50_median": 49.5413,
+                "p90_median": 99.0955,
+                "p99_median": 99.142,
+                "max": 99.4024
+              },
+              "v_tan_mm_s": {
+                "mean": 0.5177,
+                "min": 0.0004,
+                "p10_median": 0.0254,
+                "p50_median": 0.0748,
+                "p90_median": 0.3927,
+                "p99_median": 2.1382,
+                "max": 24.562
+              },
+              "sliding_impulse_frac_1mm_s": 0.09157,
+              "sticking_impulse_frac_1mm_s": 0.90843
+            },
+            "park": {
+              "actions_force_total": 200,
+              "actions_force_per_ep": 10.0,
+              "actions_any_total": 200,
+              "steps_force_total": 2000,
+              "point_steps_force_total": 13470,
+              "max_points_force": 8,
+              "total_normal_impulse_Ns": 315.61454,
+              "normal_force_N": {
+                "mean": 39.4518,
+                "min": 11.6444,
+                "p10_median": 18.4199,
+                "p50_median": 48.8126,
+                "p90_median": 49.7419,
+                "p99_median": 49.9774,
+                "max": 51.5662
+              },
+              "v_tan_mm_s": {
+                "mean": 2.0613,
+                "min": 0.0011,
+                "p10_median": 0.1079,
+                "p50_median": 0.5834,
+                "p90_median": 2.219,
+                "p99_median": 23.0896,
+                "max": 182.8608
+              },
+              "sliding_impulse_frac_1mm_s": 0.32914,
+              "sticking_impulse_frac_1mm_s": 0.67086
+            },
+            "release": {
+              "actions_force_total": 160,
+              "actions_force_per_ep": 8.0,
+              "actions_any_total": 180,
+              "steps_force_total": 1452,
+              "point_steps_force_total": 12834,
+              "max_points_force": 16,
+              "total_normal_impulse_Ns": 239.77102,
+              "normal_force_N": {
+                "mean": 41.2829,
+                "min": 0.0089,
+                "p10_median": 12.9793,
+                "p50_median": 46.8421,
+                "p90_median": 76.5377,
+                "p99_median": 99.0535,
+                "max": 99.1865
+              },
+              "v_tan_mm_s": {
+                "mean": 0.8451,
+                "min": 0.0011,
+                "p10_median": 0.0273,
+                "p50_median": 0.093,
+                "p90_median": 0.5465,
+                "p99_median": 7.6651,
+                "max": 441.823
+              },
+              "sliding_impulse_frac_1mm_s": 0.03546,
+              "sticking_impulse_frac_1mm_s": 0.96454
+            },
+            "retreat": {
+              "actions_force_total": 100,
+              "actions_force_per_ep": 5.0,
+              "actions_any_total": 100,
+              "steps_force_total": 1000,
+              "point_steps_force_total": 7006,
+              "max_points_force": 8,
+              "total_normal_impulse_Ns": 159.17837,
+              "normal_force_N": {
+                "mean": 39.7946,
+                "min": 12.9324,
+                "p10_median": 19.0422,
+                "p50_median": 49.1952,
+                "p90_median": 49.5636,
+                "p99_median": 49.573,
+                "max": 49.5911
+              },
+              "v_tan_mm_s": {
+                "mean": 0.211,
+                "min": 0.0003,
+                "p10_median": 0.0208,
+                "p50_median": 0.0554,
+                "p90_median": 0.3545,
+                "p99_median": 1.327,
+                "max": 4.7829
+              },
+              "sliding_impulse_frac_1mm_s": 0.03592,
+              "sticking_impulse_frac_1mm_s": 0.96408
+            },
+            "right_home": {
+              "actions_force_total": 200,
+              "actions_force_per_ep": 10.0,
+              "actions_any_total": 200,
+              "steps_force_total": 2000,
+              "point_steps_force_total": 14017,
+              "max_points_force": 8,
+              "total_normal_impulse_Ns": 318.35671,
+              "normal_force_N": {
+                "mean": 39.7946,
+                "min": 12.9323,
+                "p10_median": 19.0421,
+                "p50_median": 49.195,
+                "p90_median": 49.5636,
+                "p99_median": 49.5732,
+                "max": 49.5918
+              },
+              "v_tan_mm_s": {
+                "mean": 0.211,
+                "min": 0.0008,
+                "p10_median": 0.0193,
+                "p50_median": 0.0558,
+                "p90_median": 0.3554,
+                "p99_median": 1.3255,
+                "max": 4.7831
+              },
+              "sliding_impulse_frac_1mm_s": 0.03462,
+              "sticking_impulse_frac_1mm_s": 0.96538
+            },
+            "to_hover": {
+              "actions_force_total": 240,
+              "actions_force_per_ep": 12.0,
+              "actions_any_total": 240,
+              "steps_force_total": 2400,
+              "point_steps_force_total": 25438,
+              "max_points_force": 16,
+              "total_normal_impulse_Ns": 572.98233,
+              "normal_force_N": {
+                "mean": 59.6857,
+                "min": 12.6834,
+                "p10_median": 25.41,
+                "p50_median": 49.5655,
+                "p90_median": 99.0932,
+                "p99_median": 99.1692,
+                "max": 99.3391
+              },
+              "v_tan_mm_s": {
+                "mean": 0.4952,
+                "min": 0.0005,
+                "p10_median": 0.0298,
+                "p50_median": 0.1066,
+                "p90_median": 0.5351,
+                "p99_median": 1.6339,
+                "max": 53.4459
+              },
+              "sliding_impulse_frac_1mm_s": 0.06843,
+              "sticking_impulse_frac_1mm_s": 0.93157
+            },
+            "transit": {
+              "actions_force_total": 880,
+              "actions_force_per_ep": 44.0,
+              "actions_any_total": 880,
+              "steps_force_total": 8800,
+              "point_steps_force_total": 92326,
+              "max_points_force": 16,
+              "total_normal_impulse_Ns": 2095.47803,
+              "normal_force_N": {
+                "mean": 59.5306,
+                "min": 10.2744,
+                "p10_median": 25.3381,
+                "p50_median": 49.3629,
+                "p90_median": 99.0541,
+                "p99_median": 99.2316,
+                "max": 99.4754
+              },
+              "v_tan_mm_s": {
+                "mean": 0.6904,
+                "min": 0.0004,
+                "p10_median": 0.0328,
+                "p50_median": 0.2117,
+                "p90_median": 1.1662,
+                "p99_median": 2.8815,
+                "max": 94.3725
+              },
+              "sliding_impulse_frac_1mm_s": 0.11617,
+              "sticking_impulse_frac_1mm_s": 0.88383
+            }
+          }
+        },
+        "abs_toy_plastic__table_laminate": {
+          "pair": "abs_toy_plastic__table_laminate",
+          "docs_params_meta": {
+            "scenario_membership": "default",
+            "formable_in_task": true,
+            "counted_in_fit_objective": true,
+            "nominal_mu_static": null,
+            "nominal_mu_kinetic": null,
+            "realised_mu_static_v2b": null,
+            "realised_mu_kinetic_v2b": null
+          },
+          "episodes_with_force": 20,
+          "episodes_any_proximity": 20,
+          "episodes_total": 20,
+          "actions_force_total": 2741,
+          "actions_force_mean_per_ep": 137.05,
+          "actions_force_share_of_episode": 0.73782,
+          "actions_any_total": 2816,
+          "actions_any_mean_per_ep": 140.8,
+          "steps_force_total": 27284,
+          "steps_any_total": 28024,
+          "contact_points": {
+            "point_steps_force_total": 268798,
+            "point_steps_any_total": 290022,
+            "max_simultaneous_points_force": 16,
+            "max_simultaneous_points_any": 16,
+            "points_per_force_step": {
+              "mean": 9.8519,
+              "min": 1.0,
+              "p10_median": 8.0,
+              "p50_median": 8.0,
+              "p90_median": 16.0,
+              "p99_median": 16.0,
+              "max": 16.0
+            },
+            "headers_gt32_count": 0
+          },
+          "normal_force_N": {
+            "mean": 1.3737,
+            "min": 0.004,
+            "p10_median": 0.981,
+            "p50_median": 0.981,
+            "p90_median": 1.9621,
+            "p99_median": 4.1051,
+            "max": 13.5256
+          },
+          "total_normal_impulse_Ns": 149.91481,
+          "census_weight_impulse_share": 0.02282,
+          "census_weight_force_action_share": 0.474139,
+          "v_tan_mm_s": {
+            "mean": 0.1202,
+            "min": 0.0,
+            "p10_median": 0.0003,
+            "p50_median": 0.0017,
+            "p90_median": 0.0045,
+            "p99_median": 0.1046,
+            "max": 856.7203
+          },
+          "sliding_vs_sticking": {
+            "1mm_s": {
+              "sliding_point_steps": 1515,
+              "sticking_point_steps": 267283,
+              "sliding_point_frac": 0.00564,
+              "sticking_point_frac": 0.99436,
+              "sliding_impulse_Ns": 5.532101,
+              "sticking_impulse_Ns": 144.382713,
+              "sliding_impulse_frac": 0.0369,
+              "sticking_impulse_frac": 0.9631
+            },
+            "5mm_s": {
+              "sliding_point_steps": 687,
+              "sticking_point_steps": 268111,
+              "sliding_point_frac": 0.00256,
+              "sticking_point_frac": 0.99744,
+              "sliding_impulse_Ns": 3.331004,
+              "sticking_impulse_Ns": 146.583804,
+              "sliding_impulse_frac": 0.02222,
+              "sticking_impulse_frac": 0.97778
+            },
+            "10mm_s": {
+              "sliding_point_steps": 482,
+              "sticking_point_steps": 268316,
+              "sliding_point_frac": 0.00179,
+              "sticking_point_frac": 0.99821,
+              "sliding_impulse_Ns": 2.542845,
+              "sticking_impulse_Ns": 147.371963,
+              "sliding_impulse_frac": 0.01696,
+              "sticking_impulse_frac": 0.98304
+            }
+          },
+          "min_separation_mm": -0.0286,
+          "max_separation_mm": 1.3134,
+          "by_phase": {
+            "carry": {
+              "actions_force_total": 765,
+              "actions_force_per_ep": 38.25,
+              "actions_any_total": 780,
+              "steps_force_total": 7606,
+              "point_steps_force_total": 59918,
+              "max_points_force": 9,
+              "total_normal_impulse_Ns": 29.83257,
+              "normal_force_N": {
+                "mean": 0.9806,
+                "min": 0.0063,
+                "p10_median": 0.981,
+                "p50_median": 0.981,
+                "p90_median": 0.981,
+                "p99_median": 0.9811,
+                "max": 1.7913
+              },
+              "v_tan_mm_s": {
+                "mean": 0.0042,
+                "min": 0.0,
+                "p10_median": 0.0004,
+                "p50_median": 0.0016,
+                "p90_median": 0.0041,
+                "p99_median": 0.0067,
+                "max": 32.9273
+              },
+              "sliding_impulse_frac_1mm_s": 0.00034,
+              "sticking_impulse_frac_1mm_s": 0.99966
+            },
+            "grasp": {
+              "actions_force_total": 800,
+              "actions_force_per_ep": 40.0,
+              "actions_any_total": 800,
+              "steps_force_total": 8000,
+              "point_steps_force_total": 90146,
+              "max_points_force": 16,
+              "total_normal_impulse_Ns": 54.96351,
+              "normal_force_N": {
+                "mean": 1.7176,
+                "min": 0.3861,
+                "p10_median": 0.981,
+                "p50_median": 1.9617,
+                "p90_median": 2.6308,
+                "p99_median": 4.8996,
+                "max": 7.1492
+              },
+              "v_tan_mm_s": {
+                "mean": 0.2225,
+                "min": 0.0,
+                "p10_median": 0.0003,
+                "p50_median": 0.0015,
+                "p90_median": 0.0049,
+                "p99_median": 0.4509,
+                "max": 856.7203
+              },
+              "sliding_impulse_frac_1mm_s": 0.02195,
+              "sticking_impulse_frac_1mm_s": 0.97805
+            },
+            "home": {
+              "actions_force_total": 395,
+              "actions_force_per_ep": 19.75,
+              "actions_any_total": 395,
+              "steps_force_total": 3950,
+              "point_steps_force_total": 46328,
+              "max_points_force": 16,
+              "total_normal_impulse_Ns": 23.15159,
+              "normal_force_N": {
+                "mean": 1.4653,
+                "min": 0.9795,
+                "p10_median": 0.981,
+                "p50_median": 1.2262,
+                "p90_median": 1.962,
+                "p99_median": 1.9621,
+                "max": 1.9632
+              },
+              "v_tan_mm_s": {
+                "mean": 0.0022,
+                "min": 0.0,
+                "p10_median": 0.0005,
+                "p50_median": 0.002,
+                "p90_median": 0.0043,
+                "p99_median": 0.0069,
+                "max": 0.0126
+              },
+              "sliding_impulse_frac_1mm_s": 0.0,
+              "sticking_impulse_frac_1mm_s": 1.0
+            },
+            "set_down": {
+              "actions_force_total": 781,
+              "actions_force_per_ep": 39.05,
+              "actions_any_total": 841,
+              "steps_force_total": 7728,
+              "point_steps_force_total": 72406,
+              "max_points_force": 16,
+              "total_normal_impulse_Ns": 41.96714,
+              "normal_force_N": {
+                "mean": 1.3576,
+                "min": 0.004,
+                "p10_median": 0.981,
+                "p50_median": 0.981,
+                "p90_median": 1.962,
+                "p99_median": 1.9626,
+                "max": 13.5256
+              },
+              "v_tan_mm_s": {
+                "mean": 0.1644,
+                "min": 0.0,
+                "p10_median": 0.0005,
+                "p50_median": 0.0022,
+                "p90_median": 0.0045,
+                "p99_median": 0.1068,
+                "max": 229.4257
+              },
+              "sliding_impulse_frac_1mm_s": 0.10283,
+              "sticking_impulse_frac_1mm_s": 0.89717
+            }
+          },
+          "by_detail_phase": {
+            "approach": {
+              "actions_force_total": 400,
+              "actions_force_per_ep": 20.0,
+              "actions_any_total": 400,
+              "steps_force_total": 4000,
+              "point_steps_force_total": 46481,
+              "max_points_force": 16,
+              "total_normal_impulse_Ns": 23.54401,
+              "normal_force_N": {
+                "mean": 1.4715,
+                "min": 0.9809,
+                "p10_median": 0.981,
+                "p50_median": 1.4711,
+                "p90_median": 1.9622,
+                "p99_median": 1.9624,
+                "max": 1.9631
+              },
+              "v_tan_mm_s": {
+                "mean": 0.0018,
+                "min": 0.0,
+                "p10_median": 0.0003,
+                "p50_median": 0.0014,
+                "p90_median": 0.0042,
+                "p99_median": 0.0066,
+                "max": 0.0221
+              },
+              "sliding_impulse_frac_1mm_s": 0.0,
+              "sticking_impulse_frac_1mm_s": 1.0
+            },
+            "close": {
+              "actions_force_total": 160,
+              "actions_force_per_ep": 8.0,
+              "actions_any_total": 160,
+              "steps_force_total": 1600,
+              "point_steps_force_total": 15768,
+              "max_points_force": 16,
+              "total_normal_impulse_Ns": 17.2931,
+              "normal_force_N": {
+                "mean": 2.702,
+                "min": 0.3861,
+                "p10_median": 0.981,
+                "p50_median": 2.6516,
+                "p90_median": 4.5188,
+                "p99_median": 5.0949,
+                "max": 7.1492
+              },
+              "v_tan_mm_s": {
+                "mean": 1.2637,
+                "min": 0.0,
+                "p10_median": 0.0004,
+                "p50_median": 0.002,
+                "p90_median": 0.1197,
+                "p99_median": 3.5501,
+                "max": 856.7203
+              },
+              "sliding_impulse_frac_1mm_s": 0.06977,
+              "sticking_impulse_frac_1mm_s": 0.93023
+            },
+            "descend": {
+              "actions_force_total": 240,
+              "actions_force_per_ep": 12.0,
+              "actions_any_total": 240,
+              "steps_force_total": 2400,
+              "point_steps_force_total": 27897,
+              "max_points_force": 16,
+              "total_normal_impulse_Ns": 14.1264,
+              "normal_force_N": {
+                "mean": 1.4715,
+                "min": 0.9809,
+                "p10_median": 0.981,
+                "p50_median": 1.4713,
+                "p90_median": 1.9622,
+                "p99_median": 1.9624,
+                "max": 1.9631
+              },
+              "v_tan_mm_s": {
+                "mean": 0.0018,
+                "min": 0.0,
+                "p10_median": 0.0003,
+                "p50_median": 0.0014,
+                "p90_median": 0.004,
+                "p99_median": 0.0067,
+                "max": 0.0183
+              },
+              "sliding_impulse_frac_1mm_s": 0.0,
+              "sticking_impulse_frac_1mm_s": 1.0
+            },
+            "home_settle": {
+              "actions_force_total": 5,
+              "actions_force_per_ep": 0.25,
+              "actions_any_total": 5,
+              "steps_force_total": 50,
+              "point_steps_force_total": 797,
+              "max_points_force": 16,
+              "total_normal_impulse_Ns": 0.3924,
+              "normal_force_N": {
+                "mean": 1.962,
+                "min": 1.9619,
+                "p10_median": 1.9619,
+                "p50_median": 1.962,
+                "p90_median": 1.9621,
+                "p99_median": 1.9621,
+                "max": 1.9621
+              },
+              "v_tan_mm_s": {
+                "mean": 0.0022,
+                "min": 0.0,
+                "p10_median": 0.0004,
+                "p50_median": 0.002,
+                "p90_median": 0.0048,
+                "p99_median": 0.0061,
+                "max": 0.0101
+              },
+              "sliding_impulse_frac_1mm_s": 0.0,
+              "sticking_impulse_frac_1mm_s": 1.0
+            },
+            "hover_correct0": {
+              "actions_force_total": 80,
+              "actions_force_per_ep": 4.0,
+              "actions_any_total": 80,
+              "steps_force_total": 800,
+              "point_steps_force_total": 6377,
+              "max_points_force": 10,
+              "total_normal_impulse_Ns": 3.83127,
+              "normal_force_N": {
+                "mean": 1.1973,
+                "min": 0.9804,
+                "p10_median": 0.981,
+                "p50_median": 0.981,
+                "p90_median": 0.981,
+                "p99_median": 0.981,
+                "max": 5.2403
+              },
+              "v_tan_mm_s": {
+                "mean": 0.0564,
+                "min": 0.0,
+                "p10_median": 0.0007,
+                "p50_median": 0.0022,
+                "p90_median": 0.0043,
+                "p99_median": 0.0063,
+                "max": 36.6417
+              },
+              "sliding_impulse_frac_1mm_s": 0.09088,
+              "sticking_impulse_frac_1mm_s": 0.90912
+            },
+            "hover_final": {
+              "actions_force_total": 40,
+              "actions_force_per_ep": 2.0,
+              "actions_any_total": 40,
+              "steps_force_total": 400,
+              "point_steps_force_total": 3164,
+              "max_points_force": 10,
+              "total_normal_impulse_Ns": 1.80673,
+              "normal_force_N": {
+                "mean": 1.1292,
+                "min": 0.9797,
+                "p10_median": 0.981,
+                "p50_median": 0.981,
+                "p90_median": 0.981,
+                "p99_median": 0.9811,
+                "max": 3.3011
+              },
+              "v_tan_mm_s": {
+                "mean": 0.0381,
+                "min": 0.0,
+                "p10_median": 0.0008,
+                "p50_median": 0.0023,
+                "p90_median": 0.0044,
+                "p99_median": 0.0058,
+                "max": 22.0955
+              },
+              "sliding_impulse_frac_1mm_s": 0.05519,
+              "sticking_impulse_frac_1mm_s": 0.94481
+            },
+            "hover_settle0": {
+              "actions_force_total": 60,
+              "actions_force_per_ep": 3.0,
+              "actions_any_total": 60,
+              "steps_force_total": 600,
+              "point_steps_force_total": 4781,
+              "max_points_force": 10,
+              "total_normal_impulse_Ns": 3.02814,
+              "normal_force_N": {
+                "mean": 1.2617,
+                "min": 0.9804,
+                "p10_median": 0.981,
+                "p50_median": 0.981,
+                "p90_median": 0.981,
+                "p99_median": 0.981,
+                "max": 5.4404
+              },
+              "v_tan_mm_s": {
+                "mean": 0.1172,
+                "min": 0.0,
+                "p10_median": 0.0007,
+                "p50_median": 0.0021,
+                "p90_median": 0.0044,
+                "p99_median": 0.0069,
+                "max": 72.5606
+              },
+              "sliding_impulse_frac_1mm_s": 0.15817,
+              "sticking_impulse_frac_1mm_s": 0.84183
+            },
+            "left_home": {
+              "actions_force_total": 190,
+              "actions_force_per_ep": 9.5,
+              "actions_any_total": 190,
+              "steps_force_total": 1900,
+              "point_steps_force_total": 29892,
+              "max_points_force": 16,
+              "total_normal_impulse_Ns": 14.91119,
+              "normal_force_N": {
+                "mean": 1.962,
+                "min": 1.9607,
+                "p10_median": 1.9619,
+                "p50_median": 1.962,
+                "p90_median": 1.9621,
+                "p99_median": 1.9621,
+                "max": 1.9632
+              },
+              "v_tan_mm_s": {
+                "mean": 0.0022,
+                "min": 0.0,
+                "p10_median": 0.0005,
+                "p50_median": 0.0018,
+                "p90_median": 0.0045,
+                "p99_median": 0.0068,
+                "max": 0.0126
+              },
+              "sliding_impulse_frac_1mm_s": 0.0,
+              "sticking_impulse_frac_1mm_s": 1.0
+            },
+            "lift": {
+              "actions_force_total": 125,
+              "actions_force_per_ep": 6.25,
+              "actions_any_total": 140,
+              "steps_force_total": 1206,
+              "point_steps_force_total": 9566,
+              "max_points_force": 9,
+              "total_normal_impulse_Ns": 4.71899,
+              "normal_force_N": {
+                "mean": 0.9782,
+                "min": 0.0063,
+                "p10_median": 0.981,
+                "p50_median": 0.981,
+                "p90_median": 0.981,
+                "p99_median": 0.9811,
+                "max": 1.7913
+              },
+              "v_tan_mm_s": {
+                "mean": 0.0164,
+                "min": 0.0,
+                "p10_median": 0.0003,
+                "p50_median": 0.0012,
+                "p90_median": 0.0032,
+                "p99_median": 0.0048,
+                "max": 32.9273
+              },
+              "sliding_impulse_frac_1mm_s": 0.00216,
+              "sticking_impulse_frac_1mm_s": 0.99784
+            },
+            "lower": {
+              "actions_force_total": 110,
+              "actions_force_per_ep": 5.5,
+              "actions_any_total": 141,
+              "steps_force_total": 1056,
+              "point_steps_force_total": 8207,
+              "max_points_force": 10,
+              "total_normal_impulse_Ns": 6.561,
+              "normal_force_N": {
+                "mean": 1.5533,
+                "min": 0.1357,
+                "p10_median": 0.981,
+                "p50_median": 0.981,
+                "p90_median": 0.9813,
+                "p99_median": 2.1266,
+                "max": 7.0636
+              },
+              "v_tan_mm_s": {
+                "mean": 0.4828,
+                "min": 0.0,
+                "p10_median": 0.0008,
+                "p50_median": 0.0023,
+                "p90_median": 0.0049,
+                "p99_median": 0.3601,
+                "max": 50.8453
+              },
+              "sliding_impulse_frac_1mm_s": 0.35432,
+              "sticking_impulse_frac_1mm_s": 0.64568
+            },
+            "park": {
+              "actions_force_total": 200,
+              "actions_force_per_ep": 10.0,
+              "actions_any_total": 200,
+              "steps_force_total": 2000,
+              "point_steps_force_total": 15927,
+              "max_points_force": 8,
+              "total_normal_impulse_Ns": 7.848,
+              "normal_force_N": {
+                "mean": 0.981,
+                "min": 0.9809,
+                "p10_median": 0.981,
+                "p50_median": 0.981,
+                "p90_median": 0.981,
+                "p99_median": 0.9811,
+                "max": 0.9811
+              },
+              "v_tan_mm_s": {
+                "mean": 0.0014,
+                "min": 0.0,
+                "p10_median": 0.0003,
+                "p50_median": 0.0013,
+                "p90_median": 0.0031,
+                "p99_median": 0.0046,
+                "max": 0.0095
+              },
+              "sliding_impulse_frac_1mm_s": 0.0,
+              "sticking_impulse_frac_1mm_s": 1.0
+            },
+            "release": {
+              "actions_force_total": 171,
+              "actions_force_per_ep": 8.55,
+              "actions_any_total": 200,
+              "steps_force_total": 1672,
+              "point_steps_force_total": 16854,
+              "max_points_force": 16,
+              "total_normal_impulse_Ns": 9.56319,
+              "normal_force_N": {
+                "mean": 1.4299,
+                "min": 0.004,
+                "p10_median": 0.9809,
+                "p50_median": 0.9812,
+                "p90_median": 1.9621,
+                "p99_median": 2.5081,
+                "max": 7.5445
+              },
+              "v_tan_mm_s": {
+                "mean": 0.2598,
+                "min": 0.0,
+                "p10_median": 0.0006,
+                "p50_median": 0.0023,
+                "p90_median": 0.0057,
+                "p99_median": 0.6492,
+                "max": 63.4394
+              },
+              "sliding_impulse_frac_1mm_s": 0.03846,
+              "sticking_impulse_frac_1mm_s": 0.96154
+            },
+            "retreat": {
+              "actions_force_total": 200,
+              "actions_force_per_ep": 10.0,
+              "actions_any_total": 200,
+              "steps_force_total": 2000,
+              "point_steps_force_total": 23595,
+              "max_points_force": 16,
+              "total_normal_impulse_Ns": 11.77199,
+              "normal_force_N": {
+                "mean": 1.4715,
+                "min": 0.9806,
+                "p10_median": 0.981,
+                "p50_median": 1.4715,
+                "p90_median": 1.962,
+                "p99_median": 1.9621,
+                "max": 1.9629
+              },
+              "v_tan_mm_s": {
+                "mean": 0.0022,
+                "min": 0.0,
+                "p10_median": 0.0004,
+                "p50_median": 0.002,
+                "p90_median": 0.0043,
+                "p99_median": 0.0069,
+                "max": 0.0123
+              },
+              "sliding_impulse_frac_1mm_s": 0.0,
+              "sticking_impulse_frac_1mm_s": 1.0
+            },
+            "right_home": {
+              "actions_force_total": 200,
+              "actions_force_per_ep": 10.0,
+              "actions_any_total": 200,
+              "steps_force_total": 2000,
+              "point_steps_force_total": 15639,
+              "max_points_force": 8,
+              "total_normal_impulse_Ns": 7.84799,
+              "normal_force_N": {
+                "mean": 0.981,
+                "min": 0.9795,
+                "p10_median": 0.981,
+                "p50_median": 0.981,
+                "p90_median": 0.981,
+                "p99_median": 0.9811,
+                "max": 0.9822
+              },
+              "v_tan_mm_s": {
+                "mean": 0.0022,
+                "min": 0.0,
+                "p10_median": 0.0008,
+                "p50_median": 0.0022,
+                "p90_median": 0.0042,
+                "p99_median": 0.0058,
+                "max": 0.0124
+              },
+              "sliding_impulse_frac_1mm_s": 0.0,
+              "sticking_impulse_frac_1mm_s": 1.0
+            },
+            "to_hover": {
+              "actions_force_total": 120,
+              "actions_force_per_ep": 6.0,
+              "actions_any_total": 120,
+              "steps_force_total": 1200,
+              "point_steps_force_total": 9428,
+              "max_points_force": 10,
+              "total_normal_impulse_Ns": 5.40481,
+              "normal_force_N": {
+                "mean": 1.126,
+                "min": 0.9795,
+                "p10_median": 0.981,
+                "p50_median": 0.981,
+                "p90_median": 0.981,
+                "p99_median": 0.9811,
+                "max": 13.5256
+              },
+              "v_tan_mm_s": {
+                "mean": 0.2619,
+                "min": 0.0,
+                "p10_median": 0.0008,
+                "p50_median": 0.0023,
+                "p90_median": 0.0045,
+                "p99_median": 0.0069,
+                "max": 229.4257
+              },
+              "sliding_impulse_frac_1mm_s": 0.12878,
+              "sticking_impulse_frac_1mm_s": 0.87122
+            },
+            "transit": {
+              "actions_force_total": 440,
+              "actions_force_per_ep": 22.0,
+              "actions_any_total": 440,
+              "steps_force_total": 4400,
+              "point_steps_force_total": 34425,
+              "max_points_force": 8,
+              "total_normal_impulse_Ns": 17.26559,
+              "normal_force_N": {
+                "mean": 0.981,
+                "min": 0.9796,
+                "p10_median": 0.981,
+                "p50_median": 0.981,
+                "p90_median": 0.981,
+                "p99_median": 0.9811,
+                "max": 0.9821
+              },
+              "v_tan_mm_s": {
+                "mean": 0.0021,
+                "min": 0.0,
+                "p10_median": 0.0007,
+                "p50_median": 0.0022,
+                "p90_median": 0.0041,
+                "p99_median": 0.0062,
+                "max": 0.0145
+              },
+              "sliding_impulse_frac_1mm_s": 0.0,
+              "sticking_impulse_frac_1mm_s": 1.0
+            }
+          }
+        }
+      },
+      "body_pairs": {
+        "Table|t0": {
+          "class_pair": "abs_toy_plastic__table_laminate",
+          "episodes_with_force": 20,
+          "episodes_any": 20,
+          "actions_force_total": 835,
+          "actions_any_total": 900,
+          "max_points_force": 8,
+          "total_normal_impulse_Ns": 38.84205,
+          "min_separation_mm": -0.0286
+        },
+        "Table|t1": {
+          "class_pair": "abs_toy_plastic__table_laminate",
+          "episodes_with_force": 20,
+          "episodes_any": 20,
+          "actions_force_total": 2741,
+          "actions_any_total": 2816,
+          "max_points_force": 8,
+          "total_normal_impulse_Ns": 111.07276,
+          "min_separation_mm": -0.0137
+        },
+        "r0.link7|t0": {
+          "class_pair": "abs_toy_plastic__pad_hard",
+          "episodes_with_force": 20,
+          "episodes_any": 20,
+          "actions_force_total": 3040,
+          "actions_any_total": 3060,
+          "max_points_force": 4,
+          "total_normal_impulse_Ns": 2384.55449,
+          "min_separation_mm": -0.2669
+        },
+        "r0.link8|t0": {
+          "class_pair": "abs_toy_plastic__pad_hard",
+          "episodes_with_force": 20,
+          "episodes_any": 20,
+          "actions_force_total": 3040,
+          "actions_any_total": 3060,
+          "max_points_force": 4,
+          "total_normal_impulse_Ns": 2382.8289,
+          "min_separation_mm": -0.1852
+        },
+        "r1.link7|t1": {
+          "class_pair": "abs_toy_plastic__pad_hard",
+          "episodes_with_force": 20,
+          "episodes_any": 20,
+          "actions_force_total": 1080,
+          "actions_any_total": 1100,
+          "max_points_force": 4,
+          "total_normal_impulse_Ns": 826.4172,
+          "min_separation_mm": -0.1333
+        },
+        "r1.link8|t1": {
+          "class_pair": "abs_toy_plastic__pad_hard",
+          "episodes_with_force": 20,
+          "episodes_any": 20,
+          "actions_force_total": 1080,
+          "actions_any_total": 1100,
+          "max_points_force": 4,
+          "total_normal_impulse_Ns": 825.78238,
+          "min_separation_mm": -0.0862
+        }
+      }
+    }
+  }
+}

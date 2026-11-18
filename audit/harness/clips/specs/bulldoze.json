@@ -1,0 +1,44 @@
+{
+ "purpose": "#109 bulldoze, put_bottles_into_dustbin L1, shove_bottles, shipped evaluator; frames thinned to fit the GPU budget (path tracing costs about 0.4 s per frame after each physics change)",
+ "cameras": [
+  {
+   "name": "bin",
+   "eye": [
+    -0.55,
+    0.45,
+    1.75
+   ],
+   "target": [
+    -0.46,
+    -0.12,
+    0.5
+   ],
+   "focal_mm": 14,
+   "res": [
+    960,
+    540
+   ]
+  }
+ ],
+ "windows": [
+  {
+   "case": null,
+   "unit": "action",
+   "from": 1,
+   "to": 700,
+   "stride": 6
+  }
+ ],
+ "mode_sweep": [
+  {
+   "name": "pt8",
+   "carb": {
+    "/rtx/rendermode": "PathTracing",
+    "/rtx/pathtracing/spp": 8,
+    "/rtx/pathtracing/totalSpp": 8,
+    "/rtx/pathtracing/optixDenoiser/enabled": true
+   },
+   "warmup": 4
+  }
+ ]
+}

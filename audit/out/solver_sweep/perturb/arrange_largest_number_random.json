@@ -1,0 +1,23 @@
+[
+ {
+  "cell_name": "arrange_largest_number_random__perturb",
+  "layout": 0,
+  "overrides": {
+   "spawn_lift": {
+    "stems": "*",
+    "dz_m": 1e-06
+   },
+   "slide_target": {
+    "label": "darts_board_0_14",
+    "inst": "darts_board_0_14",
+    "labelled": false,
+    "stem": "darts_board_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.981433,
+     -0.191803
+    ]
+   }
+  }
+ }
+]

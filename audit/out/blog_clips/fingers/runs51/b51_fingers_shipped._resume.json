@@ -1,0 +1,25 @@
+{
+  "run_id": "harness_2026-11-17_17-08-40",
+  "save_dir": "eval_result/RoboDojo/put_bottles_into_dustbin/harness/arx_x5/0_harness/harness_2026-11-17_17-08-40",
+  "task_name": "put_bottles_into_dustbin",
+  "policy_name": "harness",
+  "config_name": "arx_x5",
+  "eval_seed": 0,
+  "additional_info": "harness",
+  "success_nums": 1,
+  "fail_nums": 0,
+  "unstable_nums": 0,
+  "total_score": 1.0,
+  "completed_layout_ids": [
+    0
+  ],
+  "abandoned_layout_ids": [],
+  "details": {
+    "0": {
+      "layout_id": 0,
+      "success": true,
+      "score": 1.0
+    }
+  },
+  "restart_count": 0
+}

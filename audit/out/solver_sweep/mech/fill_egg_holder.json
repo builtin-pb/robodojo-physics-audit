@@ -1,0 +1,58 @@
+[
+ {
+  "cell_name": "fill_egg_holder__shipped",
+  "layout": 0,
+  "overrides": {}
+ },
+ {
+  "cell_name": "fill_egg_holder__lift",
+  "layout": 0,
+  "overrides": {
+   "spawn_lift": {
+    "stems": [
+     "egg_0"
+    ],
+    "dz_m": 0.008
+   }
+  }
+ },
+ {
+  "cell_name": "fill_egg_holder__dt2_lift",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.002,
+   "spawn_lift": {
+    "stems": [
+     "egg_0"
+    ],
+    "dz_m": 0.008
+   }
+  }
+ },
+ {
+  "cell_name": "fill_egg_holder__dt1_lift",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.001,
+   "spawn_lift": {
+    "stems": [
+     "egg_0"
+    ],
+    "dz_m": 0.008
+   }
+  }
+ },
+ {
+  "cell_name": "fill_egg_holder__cpu_lift",
+  "layout": 0,
+  "overrides": {
+   "gpu_dynamics": false,
+   "spawn_lift": {
+    "stems": [
+     "egg_0"
+    ],
+    "dz_m": 0.008
+   }
+  }
+ }
+]

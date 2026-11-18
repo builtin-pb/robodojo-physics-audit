@@ -1,0 +1,45 @@
+{
+  "description": "#11 ARX X5 arm limits: generator input for docs/params/robots.json robots.x5.arm_limits (audit/tools/build_docs_params.py). Values are copied from the cited files at the pinned commits; nothing is derived.",
+  "checked": "2026-11-13",
+  "joints": ["joint1", "joint2", "joint3", "joint4", "joint5", "joint6"],
+  "arx5_sdk": {
+    "repo": "https://github.com/real-stanford/arx5-sdk",
+    "commit": "c160db7834530a3d80fec524547c74e1d4fa8035",
+    "config_url": "https://raw.githubusercontent.com/real-stanford/arx5-sdk/c160db7834530a3d80fec524547c74e1d4fa8035/include/app/config.h",
+    "config_sha256": "cc2141639ca936c3d2d4fbbeb85161f3ed36ca96d58e45390296f76dce1ae265",
+    "controller_url": "https://raw.githubusercontent.com/real-stanford/arx5-sdk/c160db7834530a3d80fec524547c74e1d4fa8035/src/app/controller_base.cpp",
+    "controller_sha256": "38bff89a1ecca0f99aba5181e124f5d80b63803cf19546e70394a28cbbde46c8",
+    "joint_pos_min": ["-3.14", "-0.05", "-0.1", "-1.6", "-1.57", "-2"],
+    "joint_pos_max": ["2.618", "3.50", "3.20", "1.55", "1.57", "2"],
+    "joint_vel_max": ["5.0", "5.0", "5.5", "5.5", "5.0", "5.0"],
+    "joint_torque_max": ["30.0", "40.0", "30.0", "15.0", "10.0", "10.0"],
+    "range_quote": "config.h L99-100 (configurations[\"X5\"]): (VecDoF(6) << -3.14, -0.05, -0.1, -1.6, -1.57, -2).finished(), // joint_pos_min; (VecDoF(6) << 2.618, 3.50, 3.20, 1.55, 1.57, 2).finished(), // joint_pos_max",
+    "range_use_quote": "controller_base.cpp L486-499 (update_output_cmd_): if (output_joint_cmd_.pos[i] < robot_config_.joint_pos_min[i]) ... output_joint_cmd_.pos[i] = robot_config_.joint_pos_min[i]; (and the same for joint_pos_max): every command is clipped to the range",
+    "velocity_quote": "config.h L101: (VecDoF(6) << 5.0, 5.0, 5.5, 5.5, 5.0, 5.0).finished(), // joint_vel_max",
+    "velocity_use_quote": "controller_base.cpp L501-519: if (std::abs(delta_pos) > max_vel * dt) { double new_pos = prev_output_cmd.pos[i] + max_vel * dt * delta_pos / std::abs(delta_pos); ...: the command, not the measured joint, is slew-limited",
+    "torque_quote": "config.h L102: (VecDoF(6) << 30.0, 40.0, 30.0, 15.0, 10.0, 10.0).finished(), // joint_torque_max",
+    "torque_use_quote": "controller_base.cpp L368-398 (over_current_protection_): if (std::abs(joint_state_.torque[i]) > robot_config_.joint_torque_max[i]) over_current = true; ... if (over_current_cnt_ > controller_config_.over_current_cnt_max) enter_emergency_state_(); and L580-594 clip the feed-forward torque command to +-joint_torque_max",
+    "torque_units_note": "joint_state_.torque is the SDK's reading: current_actual_float * 1.4 * 1.4 for EC_A4310 (joints 1-3, controller_base.cpp L438-443, 'Why are there two torque_constant_EC_A4310?') and current_actual_float * 0.424 for DM_J4310 (joints 4-6, L444-448). Whether these equal output torque in N*m is unverified (#71 phase1.md A.3 on the 0.424 constant)",
+    "motor_quote": "config.h L109-111: std::vector<int>{1, 2, 4, 5, 6, 7}, // motor_id; MotorType::EC_A4310, MotorType::EC_A4310, MotorType::EC_A4310, MotorType::DM_J4310, MotorType::DM_J4310, MotorType::DM_J4310 // motor_type",
+    "gains_quote": "config.h L325-326 (joint_controller_6): (VecDoF(6) << 80.0, 70.0, 70.0, 30.0, 30.0, 20.0).finished(), // default_kp; (VecDoF(6) << 2.0, 2.0, 2.0, 1.0, 1.0, 0.7).finished(), // default_kd",
+    "frame_check": "arx5-sdk models/X5.urdf and RoboDojo's X5A.urdf have the same joint axes (z, y, y, y, z, x) and origins within 4 mm, so zero positions and signs agree and the ranges apply unchanged"
+  },
+  "dm_j4310_peak_torque_nm": {
+    "v1_1": "7",
+    "v1_2": "12.5",
+    "source": "audit/out/32/phase1.md A.2 (Damiao DM-J4310-2EC V1.1 manual p. 7: Rated Torque 3NM, Peak Torque 7NM; V1.2: 3.5NM / 12.5NM)"
+  },
+  "arx_official": {
+    "repo": "https://github.com/ARXroboticsX/ARX_X5",
+    "commit": "c78328785ea23a81d908e1dcc551eca992f2f1e9",
+    "urdf_quote": "ROS2/X5_ws/src/arx_x5_ros2/arx_x5_controller/x5.urdf: <limit lower=\"-10\" upper=\"10\" effort=\"100\" velocity=\"1000\"/> on joint1-joint6 (placeholders)",
+    "manual_note": "00-readme/组装&环境配置手册.pdf lists gripper parameters only (夹持范围 0-80mm, 最大夹持力 2N); no arm joint range, speed or torque is published; the controller library libarx_x5_src.so is closed source"
+  },
+  "robodojo_unloaded_layer": {
+    "quote": "Assets/Robots/x5/configuration/ARX_physics.usd authors joint1 +-180 deg, joints 2-3 0 to 180 deg, joints 4-5 +-90 deg; no loaded file references it (#11, G1 gaps comment of November 13)",
+    "use": "cross-check only"
+  },
+  "robodojo_shipped": {
+    "quote": "env/robot_manager/robot_config/x5.py: \"arm\": ImplicitActuatorCfg(joint_names_expr=[\"joint[1-6]\"], effort_limit_sim=100.0, velocity_limit_sim=5.0, stiffness=4400.0, damping=40.0, armature=0.01); ARX.usd joints 1-5 +-10 rad, joint 6 +-179.9 deg (engine readback, #11)"
+  }
+}

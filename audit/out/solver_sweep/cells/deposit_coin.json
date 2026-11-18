@@ -1,0 +1,35 @@
+[
+ {
+  "cell_name": "deposit_coin__shipped",
+  "layout": 0,
+  "overrides": {}
+ },
+ {
+  "cell_name": "deposit_coin__dt2",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.002
+  }
+ },
+ {
+  "cell_name": "deposit_coin__dt1",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.001
+  }
+ },
+ {
+  "cell_name": "deposit_coin__iters4x",
+  "layout": 0,
+  "overrides": {
+   "min_pos_iters": 64
+  }
+ },
+ {
+  "cell_name": "deposit_coin__cpu",
+  "layout": 0,
+  "overrides": {
+   "gpu_dynamics": false
+  }
+ }
+]

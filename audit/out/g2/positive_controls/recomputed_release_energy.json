@@ -1,0 +1,728 @@
+{
+  "files_checked": 4,
+  "total_windows_recomputed": 16,
+  "all_exact_match_to_1e_6_mJ": true,
+  "max_abs_diff_vs_inline_mJ": 0.0,
+  "results": [
+    {
+      "gz_file": "corrected_s0_l0.json.gz",
+      "task": "swap_T",
+      "seed": 0,
+      "layout": 0,
+      "windows_recomputed": 2,
+      "inline_comparison_mode": "unclosed_vs_inline",
+      "inline_comparison_complete": true,
+      "inline_comparisons_count": 14,
+      "max_abs_diff_vs_inline_mJ": 0.0,
+      "exact_match_to_1e_6_mJ": true,
+      "any_unexplained_energy_gain_gt_1mJ": false,
+      "any_super_restitution_rebound_gt_1mJ": false,
+      "any_release_energy_violation": false,
+      "windows": [
+        {
+          "tag": "t1",
+          "label": "t1",
+          "open_action": 105,
+          "free_steps_logged": 781,
+          "free_prefix_steps_without_robot": 781,
+          "recontact_robot_steps": 0,
+          "mass_kg": 0.03816,
+          "z_com_release_m": 0.772848,
+          "z_com_min_free_m": 0.7725,
+          "drop_mm": 0.3479,
+          "ke_at_release_mJ": 0.035743,
+          "ke_peak_free_mJ": 0.08859,
+          "available_gravity_work_mJ": 0.130244,
+          "excess_ke_over_gravity_mJ": 0.0,
+          "max_step_dke_on_passive_impact_mJ": 0.052847,
+          "max_step_demech_no_robot_mJ": 3e-06,
+          "max_step_demech_where": {
+            "action": 113,
+            "step": 1113
+          },
+          "excess_rebound_ke_over_restitution_mJ": 0.0,
+          "excess_rebound_where": null,
+          "unexplained_energy_gain_gt_1mJ": false,
+          "super_restitution_rebound_gt_1mJ": false,
+          "flagged_energy_violation": false,
+          "max_speed_after_release_m_s": 0.05865,
+          "pre_vcom_fix_rebound": {
+            "excess_rebound_ke_over_restitution_mJ": 0.0,
+            "super_restitution_rebound_gt_1mJ": false,
+            "excess_rebound_where": null
+          }
+        },
+        {
+          "tag": "t0",
+          "label": "t0",
+          "open_action": 167,
+          "free_steps_logged": 161,
+          "free_prefix_steps_without_robot": 161,
+          "recontact_robot_steps": 0,
+          "mass_kg": 0.03816,
+          "z_com_release_m": 0.772864,
+          "z_com_min_free_m": 0.7725,
+          "drop_mm": 0.3637,
+          "ke_at_release_mJ": 0.030094,
+          "ke_peak_free_mJ": 0.102305,
+          "available_gravity_work_mJ": 0.136161,
+          "excess_ke_over_gravity_mJ": 0.0,
+          "max_step_dke_on_passive_impact_mJ": 0.072211,
+          "max_step_demech_no_robot_mJ": 2.4e-05,
+          "max_step_demech_where": {
+            "action": 178,
+            "step": 1770
+          },
+          "excess_rebound_ke_over_restitution_mJ": 0.0,
+          "excess_rebound_where": null,
+          "unexplained_energy_gain_gt_1mJ": false,
+          "super_restitution_rebound_gt_1mJ": false,
+          "flagged_energy_violation": false,
+          "max_speed_after_release_m_s": 0.06832,
+          "pre_vcom_fix_rebound": {
+            "excess_rebound_ke_over_restitution_mJ": 0.0,
+            "super_restitution_rebound_gt_1mJ": false,
+            "excess_rebound_where": null
+          }
+        }
+      ],
+      "inline_summary_vcom_fix": {
+        "status": "corrected_from_substeps",
+        "preserved_runtime_fields": [
+          "pre_vcom_fix_inline_summary"
+        ],
+        "reason": "obj.get_linear_velocity() already returns PhysX COM velocity; pre-fix runtime inline_summary added w x r_com onto vz_com"
+      },
+      "pre_vcom_fix_unaffected_comparisons_count": 12,
+      "pre_vcom_fix_unaffected_max_abs_diff_mJ": 0.0,
+      "pre_vcom_fix_rebound_summary": {
+        "scope": "closed",
+        "super_restitution_rebound_gt_1mJ_windows_count": 0,
+        "any_super_restitution_rebound_gt_1mJ": false,
+        "max_excess_rebound_ke_over_restitution_mJ": 0.0
+      },
+      "repo_path": "audit/out/g2/swap_T/release_states/corrected_s0_l0.json.gz"
+    },
+    {
+      "gz_file": "corrected_s0_l0.json.gz",
+      "task": "cover_blocks",
+      "seed": 0,
+      "layout": 0,
+      "windows_recomputed": 6,
+      "inline_comparison_mode": "unclosed_vs_inline",
+      "inline_comparison_complete": true,
+      "inline_comparisons_count": 42,
+      "max_abs_diff_vs_inline_mJ": 0.0,
+      "exact_match_to_1e_6_mJ": true,
+      "any_unexplained_energy_gain_gt_1mJ": false,
+      "any_super_restitution_rebound_gt_1mJ": false,
+      "any_release_energy_violation": false,
+      "windows": [
+        {
+          "tag": "cover_left_red",
+          "label": "cup0",
+          "open_action": 67,
+          "free_steps_logged": 190,
+          "free_prefix_steps_without_robot": 190,
+          "recontact_robot_steps": 0,
+          "mass_kg": 0.03,
+          "z_com_release_m": 0.801137,
+          "z_com_min_free_m": 0.800274,
+          "drop_mm": 0.8622,
+          "ke_at_release_mJ": 0.024243,
+          "ke_peak_free_mJ": 0.21092,
+          "available_gravity_work_mJ": 0.253741,
+          "excess_ke_over_gravity_mJ": 0.0,
+          "max_step_dke_on_passive_impact_mJ": 3e-06,
+          "max_step_demech_no_robot_mJ": 1.8e-05,
+          "max_step_demech_where": {
+            "action": 72,
+            "step": 705
+          },
+          "excess_rebound_ke_over_restitution_mJ": 0.0,
+          "excess_rebound_where": null,
+          "unexplained_energy_gain_gt_1mJ": false,
+          "super_restitution_rebound_gt_1mJ": false,
+          "flagged_energy_violation": false,
+          "max_speed_after_release_m_s": 0.11854,
+          "pre_vcom_fix_rebound": {
+            "excess_rebound_ke_over_restitution_mJ": 0.0,
+            "super_restitution_rebound_gt_1mJ": false,
+            "excess_rebound_where": null
+          }
+        },
+        {
+          "tag": "cover_mid_blue",
+          "label": "cup1",
+          "open_action": 149,
+          "free_steps_logged": 250,
+          "free_prefix_steps_without_robot": 250,
+          "recontact_robot_steps": 0,
+          "mass_kg": 0.03,
+          "z_com_release_m": 0.801229,
+          "z_com_min_free_m": 0.800274,
+          "drop_mm": 0.955,
+          "ke_at_release_mJ": 0.021149,
+          "ke_peak_free_mJ": 0.20191,
+          "available_gravity_work_mJ": 0.281056,
+          "excess_ke_over_gravity_mJ": 0.0,
+          "max_step_dke_on_passive_impact_mJ": 0.0,
+          "max_step_demech_no_robot_mJ": 1.8e-05,
+          "max_step_demech_where": {
+            "action": 155,
+            "step": 1536
+          },
+          "excess_rebound_ke_over_restitution_mJ": 0.0,
+          "excess_rebound_where": null,
+          "unexplained_energy_gain_gt_1mJ": false,
+          "super_restitution_rebound_gt_1mJ": false,
+          "flagged_energy_violation": false,
+          "max_speed_after_release_m_s": 0.11602,
+          "pre_vcom_fix_rebound": {
+            "excess_rebound_ke_over_restitution_mJ": 0.0,
+            "super_restitution_rebound_gt_1mJ": false,
+            "excess_rebound_where": null
+          }
+        },
+        {
+          "tag": "cover_right_green",
+          "label": "cup2",
+          "open_action": 241,
+          "free_steps_logged": 250,
+          "free_prefix_steps_without_robot": 250,
+          "recontact_robot_steps": 0,
+          "mass_kg": 0.03,
+          "z_com_release_m": 0.801112,
+          "z_com_min_free_m": 0.800274,
+          "drop_mm": 0.8379,
+          "ke_at_release_mJ": 0.02268,
+          "ke_peak_free_mJ": 0.205463,
+          "available_gravity_work_mJ": 0.246592,
+          "excess_ke_over_gravity_mJ": 0.0,
+          "max_step_dke_on_passive_impact_mJ": 5e-06,
+          "max_step_demech_no_robot_mJ": 2.1e-05,
+          "max_step_demech_where": {
+            "action": 253,
+            "step": 2516
+          },
+          "excess_rebound_ke_over_restitution_mJ": 0.0,
+          "excess_rebound_where": null,
+          "unexplained_energy_gain_gt_1mJ": false,
+          "super_restitution_rebound_gt_1mJ": false,
+          "flagged_energy_violation": false,
+          "max_speed_after_release_m_s": 0.11688,
+          "pre_vcom_fix_rebound": {
+            "excess_rebound_ke_over_restitution_mJ": 0.0,
+            "super_restitution_rebound_gt_1mJ": false,
+            "excess_rebound_where": null
+          }
+        },
+        {
+          "tag": "uncover_red",
+          "label": "cup0",
+          "open_action": 333,
+          "free_steps_logged": 250,
+          "free_prefix_steps_without_robot": 250,
+          "recontact_robot_steps": 0,
+          "mass_kg": 0.03,
+          "z_com_release_m": 0.801132,
+          "z_com_min_free_m": 0.800274,
+          "drop_mm": 0.8575,
+          "ke_at_release_mJ": 0.024753,
+          "ke_peak_free_mJ": 0.212442,
+          "available_gravity_work_mJ": 0.252355,
+          "excess_ke_over_gravity_mJ": 0.0,
+          "max_step_dke_on_passive_impact_mJ": 6e-06,
+          "max_step_demech_no_robot_mJ": 2.3e-05,
+          "max_step_demech_where": {
+            "action": 344,
+            "step": 3423
+          },
+          "excess_rebound_ke_over_restitution_mJ": 0.0,
+          "excess_rebound_where": null,
+          "unexplained_energy_gain_gt_1mJ": false,
+          "super_restitution_rebound_gt_1mJ": false,
+          "flagged_energy_violation": false,
+          "max_speed_after_release_m_s": 0.11897,
+          "pre_vcom_fix_rebound": {
+            "excess_rebound_ke_over_restitution_mJ": 0.0,
+            "super_restitution_rebound_gt_1mJ": false,
+            "excess_rebound_where": null
+          }
+        },
+        {
+          "tag": "uncover_green",
+          "label": "cup2",
+          "open_action": 425,
+          "free_steps_logged": 250,
+          "free_prefix_steps_without_robot": 250,
+          "recontact_robot_steps": 0,
+          "mass_kg": 0.03,
+          "z_com_release_m": 0.801087,
+          "z_com_min_free_m": 0.800274,
+          "drop_mm": 0.8126,
+          "ke_at_release_mJ": 0.024404,
+          "ke_peak_free_mJ": 0.097461,
+          "available_gravity_work_mJ": 0.239139,
+          "excess_ke_over_gravity_mJ": 0.0,
+          "max_step_dke_on_passive_impact_mJ": 0.00266,
+          "max_step_demech_no_robot_mJ": 1.8e-05,
+          "max_step_demech_where": {
+            "action": 450,
+            "step": 4487
+          },
+          "excess_rebound_ke_over_restitution_mJ": 0.0,
+          "excess_rebound_where": null,
+          "unexplained_energy_gain_gt_1mJ": false,
+          "super_restitution_rebound_gt_1mJ": false,
+          "flagged_energy_violation": false,
+          "max_speed_after_release_m_s": 0.07943,
+          "pre_vcom_fix_rebound": {
+            "excess_rebound_ke_over_restitution_mJ": 0.0,
+            "super_restitution_rebound_gt_1mJ": false,
+            "excess_rebound_where": null
+          }
+        },
+        {
+          "tag": "uncover_blue",
+          "label": "cup1",
+          "open_action": 517,
+          "free_steps_logged": 260,
+          "free_prefix_steps_without_robot": 260,
+          "recontact_robot_steps": 0,
+          "mass_kg": 0.03,
+          "z_com_release_m": 0.801185,
+          "z_com_min_free_m": 0.800274,
+          "drop_mm": 0.9111,
+          "ke_at_release_mJ": 0.023234,
+          "ke_peak_free_mJ": 0.132612,
+          "available_gravity_work_mJ": 0.268147,
+          "excess_ke_over_gravity_mJ": 0.0,
+          "max_step_dke_on_passive_impact_mJ": 0.040119,
+          "max_step_demech_no_robot_mJ": 1.8e-05,
+          "max_step_demech_where": {
+            "action": 520,
+            "step": 5188
+          },
+          "excess_rebound_ke_over_restitution_mJ": 0.0,
+          "excess_rebound_where": null,
+          "unexplained_energy_gain_gt_1mJ": false,
+          "super_restitution_rebound_gt_1mJ": false,
+          "flagged_energy_violation": false,
+          "max_speed_after_release_m_s": 0.07846,
+          "pre_vcom_fix_rebound": {
+            "excess_rebound_ke_over_restitution_mJ": 0.0,
+            "super_restitution_rebound_gt_1mJ": false,
+            "excess_rebound_where": null
+          }
+        }
+      ],
+      "inline_summary_vcom_fix": {
+        "status": "corrected_from_substeps",
+        "preserved_runtime_fields": [
+          "pre_vcom_fix_inline_summary"
+        ],
+        "reason": "obj.get_linear_velocity() already returns PhysX COM velocity; pre-fix runtime inline_summary added w x r_com onto vz_com"
+      },
+      "pre_vcom_fix_unaffected_comparisons_count": 36,
+      "pre_vcom_fix_unaffected_max_abs_diff_mJ": 0.0,
+      "pre_vcom_fix_rebound_summary": {
+        "scope": "closed",
+        "super_restitution_rebound_gt_1mJ_windows_count": 0,
+        "any_super_restitution_rebound_gt_1mJ": false,
+        "max_excess_rebound_ke_over_restitution_mJ": 0.0
+      },
+      "repo_path": "audit/out/g2/cover_blocks/release_states/corrected_s0_l0.json.gz"
+    },
+    {
+      "gz_file": "release_states_bt_164_trip_s0_l12.json.gz",
+      "task": "put_bottles_into_dustbin",
+      "seed": 0,
+      "layout": 12,
+      "windows_recomputed": 4,
+      "inline_comparison_mode": "unclosed_vs_inline",
+      "inline_comparison_complete": true,
+      "inline_comparisons_count": 28,
+      "max_abs_diff_vs_inline_mJ": 0.0,
+      "exact_match_to_1e_6_mJ": true,
+      "any_unexplained_energy_gain_gt_1mJ": true,
+      "any_super_restitution_rebound_gt_1mJ": true,
+      "any_release_energy_violation": true,
+      "windows": [
+        {
+          "tag": "b0_bottle2",
+          "label": "bottle2",
+          "open_action": 71,
+          "free_steps_logged": 880,
+          "free_prefix_steps_without_robot": 5,
+          "recontact_robot_steps": 5,
+          "mass_kg": 0.024,
+          "z_com_release_m": 0.911152,
+          "z_com_min_free_m": 0.909137,
+          "drop_mm": 2.0144,
+          "ke_at_release_mJ": 0.037061,
+          "ke_peak_free_mJ": 0.437401,
+          "available_gravity_work_mJ": 0.474276,
+          "excess_ke_over_gravity_mJ": 0.0,
+          "max_step_dke_on_passive_impact_mJ": 45.584986,
+          "max_step_demech_no_robot_mJ": 45.602627,
+          "max_step_demech_where": {
+            "action": 155,
+            "step": 1538
+          },
+          "excess_rebound_ke_over_restitution_mJ": 5.293753,
+          "excess_rebound_where": {
+            "action": 155,
+            "step": 1539,
+            "vz_pre_m_s": -0.67485,
+            "vz_post_m_s": 0.82375,
+            "e_bound": 0.25
+          },
+          "unexplained_energy_gain_gt_1mJ": true,
+          "super_restitution_rebound_gt_1mJ": true,
+          "flagged_energy_violation": true,
+          "max_speed_after_release_m_s": 0.1877,
+          "pre_vcom_fix_rebound": {
+            "excess_rebound_ke_over_restitution_mJ": 6.706284,
+            "super_restitution_rebound_gt_1mJ": true,
+            "excess_rebound_where": {
+              "action": 155,
+              "step": 1539,
+              "vz_pre_m_s": -0.41204,
+              "vz_post_m_s": 0.89234,
+              "e_bound": 0.25
+            }
+          }
+        },
+        {
+          "tag": "b1_bottle1",
+          "label": "bottle1",
+          "open_action": 146,
+          "free_steps_logged": 970,
+          "free_prefix_steps_without_robot": 970,
+          "recontact_robot_steps": 0,
+          "mass_kg": 0.22,
+          "z_com_release_m": 0.905109,
+          "z_com_min_free_m": 0.081274,
+          "drop_mm": 823.8352,
+          "ke_at_release_mJ": 0.011614,
+          "ke_peak_free_mJ": 1297.549945,
+          "available_gravity_work_mJ": 1778.001263,
+          "excess_ke_over_gravity_mJ": 0.0,
+          "max_step_dke_on_passive_impact_mJ": 7.205286,
+          "max_step_demech_no_robot_mJ": 0.075769,
+          "max_step_demech_where": {
+            "action": 155,
+            "step": 1539
+          },
+          "excess_rebound_ke_over_restitution_mJ": 604.971387,
+          "excess_rebound_where": {
+            "action": 155,
+            "step": 1538,
+            "vz_pre_m_s": -2.989,
+            "vz_post_m_s": 2.46133,
+            "e_bound": 0.25
+          },
+          "unexplained_energy_gain_gt_1mJ": false,
+          "super_restitution_rebound_gt_1mJ": true,
+          "flagged_energy_violation": true,
+          "max_speed_after_release_m_s": 3.4245,
+          "pre_vcom_fix_rebound": {
+            "excess_rebound_ke_over_restitution_mJ": 607.165498,
+            "super_restitution_rebound_gt_1mJ": true,
+            "excess_rebound_where": {
+              "action": 155,
+              "step": 1538,
+              "vz_pre_m_s": -2.98898,
+              "vz_post_m_s": 2.46537,
+              "e_bound": 0.25
+            }
+          }
+        },
+        {
+          "tag": "b2_bottle3",
+          "label": "bottle3",
+          "open_action": 221,
+          "free_steps_logged": 4791,
+          "free_prefix_steps_without_robot": 4791,
+          "recontact_robot_steps": 0,
+          "mass_kg": 0.07,
+          "z_com_release_m": 0.921544,
+          "z_com_min_free_m": 0.314953,
+          "drop_mm": 606.5919,
+          "ke_at_release_mJ": 0.019809,
+          "ke_peak_free_mJ": 367.65846,
+          "available_gravity_work_mJ": 416.546686,
+          "excess_ke_over_gravity_mJ": 0.0,
+          "max_step_dke_on_passive_impact_mJ": 25.740248,
+          "max_step_demech_no_robot_mJ": 25.576377,
+          "max_step_demech_where": {
+            "action": 360,
+            "step": 3583
+          },
+          "excess_rebound_ke_over_restitution_mJ": 0.162133,
+          "excess_rebound_where": {
+            "action": 235,
+            "step": 2332,
+            "vz_pre_m_s": -0.68792,
+            "vz_post_m_s": 0.18763,
+            "e_bound": 0.25
+          },
+          "unexplained_energy_gain_gt_1mJ": true,
+          "super_restitution_rebound_gt_1mJ": false,
+          "flagged_energy_violation": true,
+          "max_speed_after_release_m_s": 3.24107,
+          "pre_vcom_fix_rebound": {
+            "excess_rebound_ke_over_restitution_mJ": 0.161954,
+            "super_restitution_rebound_gt_1mJ": false,
+            "excess_rebound_where": {
+              "action": 235,
+              "step": 2332,
+              "vz_pre_m_s": -0.68796,
+              "vz_post_m_s": 0.18762,
+              "e_bound": 0.25
+            }
+          }
+        },
+        {
+          "tag": "b3_bottle0",
+          "label": "bottle0",
+          "open_action": 352,
+          "free_steps_logged": 3481,
+          "free_prefix_steps_without_robot": 3481,
+          "recontact_robot_steps": 0,
+          "mass_kg": 0.095,
+          "z_com_release_m": 0.886272,
+          "z_com_min_free_m": 0.325336,
+          "drop_mm": 560.936,
+          "ke_at_release_mJ": 0.076071,
+          "ke_peak_free_mJ": 289.862803,
+          "available_gravity_work_mJ": 522.764275,
+          "excess_ke_over_gravity_mJ": 0.0,
+          "max_step_dke_on_passive_impact_mJ": 2.160354,
+          "max_step_demech_no_robot_mJ": 0.164643,
+          "max_step_demech_where": {
+            "action": 378,
+            "step": 3762
+          },
+          "excess_rebound_ke_over_restitution_mJ": 0.0,
+          "excess_rebound_where": null,
+          "unexplained_energy_gain_gt_1mJ": false,
+          "super_restitution_rebound_gt_1mJ": false,
+          "flagged_energy_violation": false,
+          "max_speed_after_release_m_s": 2.47028,
+          "pre_vcom_fix_rebound": {
+            "excess_rebound_ke_over_restitution_mJ": 0.0,
+            "super_restitution_rebound_gt_1mJ": false,
+            "excess_rebound_where": null
+          }
+        }
+      ],
+      "inline_summary_vcom_fix": {
+        "status": "corrected_from_substeps",
+        "preserved_runtime_fields": [
+          "pre_vcom_fix_inline_summary"
+        ],
+        "reason": "obj.get_linear_velocity() already returns PhysX COM velocity; pre-fix runtime inline_summary added w x r_com onto vz_com"
+      },
+      "pre_vcom_fix_unaffected_comparisons_count": 24,
+      "pre_vcom_fix_unaffected_max_abs_diff_mJ": 0.0,
+      "pre_vcom_fix_rebound_summary": {
+        "scope": "closed",
+        "super_restitution_rebound_gt_1mJ_windows_count": 2,
+        "any_super_restitution_rebound_gt_1mJ": true,
+        "max_excess_rebound_ke_over_restitution_mJ": 607.165498
+      },
+      "repo_path": "audit/out/g2/positive_controls/release_states_bt_164_trip_s0_l12.json.gz"
+    },
+    {
+      "gz_file": "release_states_bt_164_mpeak_s0_l12.json.gz",
+      "task": "put_bottles_into_dustbin",
+      "seed": 0,
+      "layout": 12,
+      "windows_recomputed": 4,
+      "inline_comparison_mode": "unclosed_vs_inline",
+      "inline_comparison_complete": true,
+      "inline_comparisons_count": 28,
+      "max_abs_diff_vs_inline_mJ": 0.0,
+      "exact_match_to_1e_6_mJ": true,
+      "any_unexplained_energy_gain_gt_1mJ": true,
+      "any_super_restitution_rebound_gt_1mJ": true,
+      "any_release_energy_violation": true,
+      "windows": [
+        {
+          "tag": "b0_bottle2",
+          "label": "bottle2",
+          "open_action": 71,
+          "free_steps_logged": 880,
+          "free_prefix_steps_without_robot": 5,
+          "recontact_robot_steps": 5,
+          "mass_kg": 0.024,
+          "z_com_release_m": 0.911131,
+          "z_com_min_free_m": 0.908902,
+          "drop_mm": 2.2295,
+          "ke_at_release_mJ": 0.020471,
+          "ke_peak_free_mJ": 0.471457,
+          "available_gravity_work_mJ": 0.524909,
+          "excess_ke_over_gravity_mJ": 0.0,
+          "max_step_dke_on_passive_impact_mJ": 46.207135,
+          "max_step_demech_no_robot_mJ": 46.353044,
+          "max_step_demech_where": {
+            "action": 155,
+            "step": 1538
+          },
+          "excess_rebound_ke_over_restitution_mJ": 0.503503,
+          "excess_rebound_where": {
+            "action": 159,
+            "step": 1574,
+            "vz_pre_m_s": -0.47907,
+            "vz_post_m_s": 0.43511,
+            "e_bound": 0.25
+          },
+          "unexplained_energy_gain_gt_1mJ": true,
+          "super_restitution_rebound_gt_1mJ": false,
+          "flagged_energy_violation": true,
+          "max_speed_after_release_m_s": 0.19821,
+          "pre_vcom_fix_rebound": {
+            "excess_rebound_ke_over_restitution_mJ": 0.564358,
+            "super_restitution_rebound_gt_1mJ": false,
+            "excess_rebound_where": {
+              "action": 159,
+              "step": 1574,
+              "vz_pre_m_s": -0.37761,
+              "vz_post_m_s": 0.4409,
+              "e_bound": 0.25
+            }
+          }
+        },
+        {
+          "tag": "b1_bottle1",
+          "label": "bottle1",
+          "open_action": 146,
+          "free_steps_logged": 970,
+          "free_prefix_steps_without_robot": 970,
+          "recontact_robot_steps": 0,
+          "mass_kg": 0.22,
+          "z_com_release_m": 0.905035,
+          "z_com_min_free_m": 0.319353,
+          "drop_mm": 585.6816,
+          "ke_at_release_mJ": 0.017216,
+          "ke_peak_free_mJ": 982.203308,
+          "available_gravity_work_mJ": 1264.018144,
+          "excess_ke_over_gravity_mJ": 0.0,
+          "max_step_dke_on_passive_impact_mJ": 10.620911,
+          "max_step_demech_no_robot_mJ": 2.374754,
+          "max_step_demech_where": {
+            "action": 170,
+            "step": 1684
+          },
+          "excess_rebound_ke_over_restitution_mJ": 289.683987,
+          "excess_rebound_where": {
+            "action": 155,
+            "step": 1538,
+            "vz_pre_m_s": -2.98814,
+            "vz_post_m_s": 1.78649,
+            "e_bound": 0.25
+          },
+          "unexplained_energy_gain_gt_1mJ": true,
+          "super_restitution_rebound_gt_1mJ": true,
+          "flagged_energy_violation": true,
+          "max_speed_after_release_m_s": 2.98815,
+          "pre_vcom_fix_rebound": {
+            "excess_rebound_ke_over_restitution_mJ": 288.443674,
+            "super_restitution_rebound_gt_1mJ": true,
+            "excess_rebound_where": {
+              "action": 155,
+              "step": 1538,
+              "vz_pre_m_s": -2.98807,
+              "vz_post_m_s": 1.78334,
+              "e_bound": 0.25
+            }
+          }
+        },
+        {
+          "tag": "b2_bottle3",
+          "label": "bottle3",
+          "open_action": 221,
+          "free_steps_logged": 1411,
+          "free_prefix_steps_without_robot": 1411,
+          "recontact_robot_steps": 0,
+          "mass_kg": 0.07,
+          "z_com_release_m": 0.921109,
+          "z_com_min_free_m": 0.313793,
+          "drop_mm": 607.316,
+          "ke_at_release_mJ": 0.019902,
+          "ke_peak_free_mJ": 358.7906,
+          "available_gravity_work_mJ": 417.043921,
+          "excess_ke_over_gravity_mJ": 0.0,
+          "max_step_dke_on_passive_impact_mJ": 1.450394,
+          "max_step_demech_no_robot_mJ": 0.000777,
+          "max_step_demech_where": {
+            "action": 363,
+            "step": 3619
+          },
+          "excess_rebound_ke_over_restitution_mJ": 0.0,
+          "excess_rebound_where": null,
+          "unexplained_energy_gain_gt_1mJ": false,
+          "super_restitution_rebound_gt_1mJ": false,
+          "flagged_energy_violation": false,
+          "max_speed_after_release_m_s": 3.20174,
+          "pre_vcom_fix_rebound": {
+            "excess_rebound_ke_over_restitution_mJ": 0.0,
+            "super_restitution_rebound_gt_1mJ": false,
+            "excess_rebound_where": null
+          }
+        },
+        {
+          "tag": "b3_bottle0",
+          "label": "bottle0",
+          "open_action": 352,
+          "free_steps_logged": 101,
+          "free_prefix_steps_without_robot": 101,
+          "recontact_robot_steps": 0,
+          "mass_kg": 0.095,
+          "z_com_release_m": 0.887121,
+          "z_com_min_free_m": 0.394395,
+          "drop_mm": 492.7264,
+          "ke_at_release_mJ": 0.070591,
+          "ke_peak_free_mJ": 410.532226,
+          "available_gravity_work_mJ": 459.196428,
+          "excess_ke_over_gravity_mJ": 0.0,
+          "max_step_dke_on_passive_impact_mJ": 0.0,
+          "max_step_demech_no_robot_mJ": 0.039565,
+          "max_step_demech_where": {
+            "action": 361,
+            "step": 3596
+          },
+          "excess_rebound_ke_over_restitution_mJ": 0.0,
+          "excess_rebound_where": null,
+          "unexplained_energy_gain_gt_1mJ": false,
+          "super_restitution_rebound_gt_1mJ": false,
+          "flagged_energy_violation": false,
+          "max_speed_after_release_m_s": 2.93984,
+          "pre_vcom_fix_rebound": {
+            "excess_rebound_ke_over_restitution_mJ": 0.0,
+            "super_restitution_rebound_gt_1mJ": false,
+            "excess_rebound_where": null
+          }
+        }
+      ],
+      "inline_summary_vcom_fix": {
+        "status": "corrected_from_substeps",
+        "preserved_runtime_fields": [
+          "pre_vcom_fix_inline_summary"
+        ],
+        "reason": "obj.get_linear_velocity() already returns PhysX COM velocity; pre-fix runtime inline_summary added w x r_com onto vz_com"
+      },
+      "pre_vcom_fix_unaffected_comparisons_count": 24,
+      "pre_vcom_fix_unaffected_max_abs_diff_mJ": 0.0,
+      "pre_vcom_fix_rebound_summary": {
+        "scope": "closed",
+        "super_restitution_rebound_gt_1mJ_windows_count": 1,
+        "any_super_restitution_rebound_gt_1mJ": true,
+        "max_excess_rebound_ke_over_restitution_mJ": 288.443674
+      },
+      "repo_path": "audit/out/g2/positive_controls/release_states_bt_164_mpeak_s0_l12.json.gz"
+    }
+  ]
+}

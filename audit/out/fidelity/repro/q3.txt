@@ -1,0 +1,3 @@
+# Harness fidelity, batch 3: where press_by_number's reset takes a varying number of physics steps (972, 984 and 986 in three runs of layout 0). Two identical main.py runs count the steps inside each ArticulationObject call that runs omni.kit.app's update() itself. della-vis2 GPU 0.
+fm_rb_press_a|fork|--mode readback --task press_by_number --evaluator v1 --eval_num 1 --log_poses --run_id fid_rb_press_a
+fm_rb_press_b|fork|--mode readback --task press_by_number --evaluator v1 --eval_num 1 --log_poses --run_id fid_rb_press_b

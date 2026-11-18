@@ -1,0 +1,1279 @@
+[
+ {
+  "path": "/scratch/<user>/isaac/robodojo/Assets/Robots/x5/ARX.usd",
+  "metersPerUnit": 1.0,
+  "upAxis": "Z",
+  "defaultPrim": "/X5A",
+  "layers": [
+   "anon:0x2b31d80:ARX-session.usda",
+   "ARX.usd"
+  ],
+  "prims": [
+   {
+    "path": "/X5A/base_link",
+    "type": "Xform",
+    "apis": [
+     "PhysicsRigidBodyAPI",
+     "PhysicsMassAPI",
+     "PhysicsArticulationRootAPI"
+    ],
+    "attrs": {
+     "physics:centerOfMass": {
+      "v": [
+       -3.0000999686308205e-05,
+       3.0588998924940825e-05,
+       0.027324000373482704
+      ],
+      "layer": "ARX.usd"
+     },
+     "physics:diagonalInertia": {
+      "v": [
+       0.00016999999934341758,
+       0.00016999999934341758,
+       0.00015999999595806003
+      ],
+      "layer": "ARX.usd"
+     },
+     "physics:mass": {
+      "v": 0.43994998931884766,
+      "layer": "ARX.usd"
+     },
+     "physics:principalAxes": {
+      "v": "(1, 0, 0, 0)",
+      "layer": "ARX.usd"
+     },
+     "physxArticulation:enabledSelfCollisions": {
+      "v": false,
+      "layer": "ARX.usd"
+     },
+     "physxArticulation:solverPositionIterationCount": {
+      "v": 32,
+      "layer": "ARX.usd"
+     },
+     "physxArticulation:solverVelocityIterationCount": {
+      "v": 1,
+      "layer": "ARX.usd"
+     }
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/X5A/link1",
+    "type": "Xform",
+    "apis": [
+     "PhysicsRigidBodyAPI",
+     "PhysicsMassAPI"
+    ],
+    "attrs": {
+     "physics:centerOfMass": {
+      "v": [
+       0.00542310019955039,
+       -0.008028900250792503,
+       0.017085999250411987
+      ],
+      "layer": "ARX.usd"
+     },
+     "physics:diagonalInertia": {
+      "v": [
+       6.999999459367245e-05,
+       2.9999999242136255e-05,
+       9.000000136438757e-05
+      ],
+      "layer": "ARX.usd"
+     },
+     "physics:mass": {
+      "v": 0.06698200106620789,
+      "layer": "ARX.usd"
+     },
+     "physics:principalAxes": {
+      "v": "(0.92387956, 0, 0.38268343, 0)",
+      "layer": "ARX.usd"
+     }
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0605
+    ]
+   },
+   {
+    "path": "/X5A/joints/joint1",
+    "type": "PhysicsRevoluteJoint",
+    "apis": [
+     "PhysicsDriveAPI:angular"
+    ],
+    "attrs": {
+     "drive:angular:physics:damping": {
+      "v": 0.01745329238474369,
+      "layer": "ARX.usd"
+     },
+     "drive:angular:physics:maxForce": {
+      "v": 100.0,
+      "layer": "ARX.usd"
+     },
+     "drive:angular:physics:stiffness": {
+      "v": 1.7453292608261108,
+      "layer": "ARX.usd"
+     },
+     "drive:angular:physics:targetPosition": {
+      "v": 0.0,
+      "layer": "ARX.usd"
+     },
+     "drive:angular:physics:type": {
+      "v": "force",
+      "layer": "ARX.usd"
+     },
+     "physics:axis": {
+      "v": "Z",
+      "layer": "ARX.usd"
+     },
+     "physics:breakForce": {
+      "v": 3.4028234663852886e+38,
+      "layer": "ARX.usd"
+     },
+     "physics:breakTorque": {
+      "v": 3.4028234663852886e+38,
+      "layer": "ARX.usd"
+     },
+     "physics:JointEquivalentInertia": {
+      "v": 0.000932966242544353,
+      "layer": "ARX.usd"
+     },
+     "physics:localPos0": {
+      "v": [
+       0.0,
+       0.0,
+       0.060499999672174454
+      ],
+      "layer": "ARX.usd"
+     },
+     "physics:localPos1": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "ARX.usd"
+     },
+     "physics:localRot0": {
+      "v": "(1, 0, 0, 0)",
+      "layer": "ARX.usd"
+     },
+     "physics:localRot1": {
+      "v": "(1, 0, 0, 0)",
+      "layer": "ARX.usd"
+     },
+     "physics:lowerLimit": {
+      "v": -572.957763671875,
+      "layer": "ARX.usd"
+     },
+     "physics:upperLimit": {
+      "v": 572.957763671875,
+      "layer": "ARX.usd"
+     },
+     "physxJoint:maxJointVelocity": {
+      "v": 57295.77734375,
+      "layer": "ARX.usd"
+     }
+    },
+    "body0": [
+     "/X5A/base_link"
+    ],
+    "body1": [
+     "/X5A/link1"
+    ]
+   },
+   {
+    "path": "/X5A/joints/joint2",
+    "type": "PhysicsRevoluteJoint",
+    "apis": [
+     "PhysicsDriveAPI:angular"
+    ],
+    "attrs": {
+     "drive:angular:physics:damping": {
+      "v": 0.01745329238474369,
+      "layer": "ARX.usd"
+     },
+     "drive:angular:physics:maxForce": {
+      "v": 100.0,
+      "layer": "ARX.usd"
+     },
+     "drive:angular:physics:stiffness": {
+      "v": 1.7453292608261108,
+      "layer": "ARX.usd"
+     },
+     "drive:angular:physics:targetPosition": {
+      "v": 0.0,
+      "layer": "ARX.usd"
+     },
+     "drive:angular:physics:type": {
+      "v": "force",
+      "layer": "ARX.usd"
+     },
+     "physics:axis": {
+      "v": "Y",
+      "layer": "ARX.usd"
+     },
+     "physics:breakForce": {
+      "v": 3.4028234663852886e+38,
+      "layer": "ARX.usd"
+     },
+     "physics:breakTorque": {
+      "v": 3.4028234663852886e+38,
+      "layer": "ARX.usd"
+     },
+     "physics:JointEquivalentInertia": {
+      "v": 0.0038189326878637075,
+      "layer": "ARX.usd"
+     },
+     "physics:localPos0": {
+      "v": [
+       0.019999999552965164,
+       0.0,
+       0.03999999910593033
+      ],
+      "layer": "ARX.usd"
+     },
+     "physics:localPos1": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "ARX.usd"
+     },
+     "physics:localRot0": {
+      "v": "(1, 0, 0, 0)",
+      "layer": "ARX.usd"
+     },
+     "physics:localRot1": {
+      "v": "(1, 0, 0, 0)",
+      "layer": "ARX.usd"
+     },
+     "physics:lowerLimit": {
+      "v": -572.957763671875,
+      "layer": "ARX.usd"
+     },
+     "physics:upperLimit": {
+      "v": 572.957763671875,
+      "layer": "ARX.usd"
+     },
+     "physxJoint:maxJointVelocity": {
+      "v": 57295.77734375,
+      "layer": "ARX.usd"
+     }
+    },
+    "body0": [
+     "/X5A/link1"
+    ],
+    "body1": [
+     "/X5A/link2"
+    ]
+   },
+   {
+    "path": "/X5A/joints/joint3",
+    "type": "PhysicsRevoluteJoint",
+    "apis": [
+     "PhysicsDriveAPI:angular"
+    ],
+    "attrs": {
+     "drive:angular:physics:damping": {
+      "v": 0.01745329238474369,
+      "layer": "ARX.usd"
+     },
+     "drive:angular:physics:maxForce": {
+      "v": 100.0,
+      "layer": "ARX.usd"
+     },
+     "drive:angular:physics:stiffness": {
+      "v": 1.7453292608261108,
+      "layer": "ARX.usd"
+     },
+     "drive:angular:physics:targetPosition": {
+      "v": 0.0,
+      "layer": "ARX.usd"
+     },
+     "drive:angular:physics:type": {
+      "v": "force",
+      "layer": "ARX.usd"
+     },
+     "physics:axis": {
+      "v": "Y",
+      "layer": "ARX.usd"
+     },
+     "physics:breakForce": {
+      "v": 3.4028234663852886e+38,
+      "layer": "ARX.usd"
+     },
+     "physics:breakTorque": {
+      "v": 3.4028234663852886e+38,
+      "layer": "ARX.usd"
+     },
+     "physics:JointEquivalentInertia": {
+      "v": 0.027670901268720627,
+      "layer": "ARX.usd"
+     },
+     "physics:localPos0": {
+      "v": [
+       -0.2639999985694885,
+       0.0,
+       0.0
+      ],
+      "layer": "ARX.usd"
+     },
+     "physics:localPos1": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "ARX.usd"
+     },
+     "physics:localRot0": {
+      "v": "(-0.0000036199901, 1, 0, 0)",
+      "layer": "ARX.usd"
+     },
+     "physics:localRot1": {
+      "v": "(1, 0, 0, 0)",
+      "layer": "ARX.usd"
+     },
+     "physics:lowerLimit": {
+      "v": -572.957763671875,
+      "layer": "ARX.usd"
+     },
+     "physics:upperLimit": {
+      "v": 572.957763671875,
+      "layer": "ARX.usd"
+     },
+     "physxJoint:maxJointVelocity": {
+      "v": 57295.77734375,
+      "layer": "ARX.usd"
+     }
+    },
+    "body0": [
+     "/X5A/link2"
+    ],
+    "body1": [
+     "/X5A/link3"
+    ]
+   },
+   {
+    "path": "/X5A/joints/joint4",
+    "type": "PhysicsRevoluteJoint",
+    "apis": [
+     "PhysicsDriveAPI:angular"
+    ],
+    "attrs": {
+     "drive:angular:physics:damping": {
+      "v": 0.01745329238474369,
+      "layer": "ARX.usd"
+     },
+     "drive:angular:physics:maxForce": {
+      "v": 100.0,
+      "layer": "ARX.usd"
+     },
+     "drive:angular:physics:stiffness": {
+      "v": 1.7453292608261108,
+      "layer": "ARX.usd"
+     },
+     "drive:angular:physics:targetPosition": {
+      "v": 0.0,
+      "layer": "ARX.usd"
+     },
+     "drive:angular:physics:type": {
+      "v": "force",
+      "layer": "ARX.usd"
+     },
+     "physics:axis": {
+      "v": "Y",
+      "layer": "ARX.usd"
+     },
+     "physics:breakForce": {
+      "v": 3.4028234663852886e+38,
+      "layer": "ARX.usd"
+     },
+     "physics:breakTorque": {
+      "v": 3.4028234663852886e+38,
+      "layer": "ARX.usd"
+     },
+     "physics:JointEquivalentInertia": {
+      "v": 0.05421372130513191,
+      "layer": "ARX.usd"
+     },
+     "physics:localPos0": {
+      "v": [
+       0.24500000476837158,
+       0.0,
+       -0.0560000017285347
+      ],
+      "layer": "ARX.usd"
+     },
+     "physics:localPos1": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "ARX.usd"
+     },
+     "physics:localRot0": {
+      "v": "(1, 0, 0, 0)",
+      "layer": "ARX.usd"
+     },
+     "physics:localRot1": {
+      "v": "(1, 0, 0, 0)",
+      "layer": "ARX.usd"
+     },
+     "physics:lowerLimit": {
+      "v": -572.957763671875,
+      "layer": "ARX.usd"
+     },
+     "physics:upperLimit": {
+      "v": 572.957763671875,
+      "layer": "ARX.usd"
+     },
+     "physxJoint:maxJointVelocity": {
+      "v": 57295.77734375,
+      "layer": "ARX.usd"
+     }
+    },
+    "body0": [
+     "/X5A/link3"
+    ],
+    "body1": [
+     "/X5A/link4"
+    ]
+   },
+   {
+    "path": "/X5A/joints/joint5",
+    "type": "PhysicsRevoluteJoint",
+    "apis": [
+     "PhysicsDriveAPI:angular"
+    ],
+    "attrs": {
+     "drive:angular:physics:damping": {
+      "v": 0.01745329238474369,
+      "layer": "ARX.usd"
+     },
+     "drive:angular:physics:maxForce": {
+      "v": 100.0,
+      "layer": "ARX.usd"
+     },
+     "drive:angular:physics:stiffness": {
+      "v": 1.7453292608261108,
+      "layer": "ARX.usd"
+     },
+     "drive:angular:physics:targetPosition": {
+      "v": 0.0,
+      "layer": "ARX.usd"
+     },
+     "drive:angular:physics:type": {
+      "v": "force",
+      "layer": "ARX.usd"
+     },
+     "physics:axis": {
+      "v": "Z",
+      "layer": "ARX.usd"
+     },
+     "physics:breakForce": {
+      "v": 3.4028234663852886e+38,
+      "layer": "ARX.usd"
+     },
+     "physics:breakTorque": {
+      "v": 3.4028234663852886e+38,
+      "layer": "ARX.usd"
+     },
+     "physics:JointEquivalentInertia": {
+      "v": 0.021463805809617043,
+      "layer": "ARX.usd"
+     },
+     "physics:localPos0": {
+      "v": [
+       0.0677499994635582,
+       0.0005000000237487257,
+       -0.08649999648332596
+      ],
+      "layer": "ARX.usd"
+     },
+     "physics:localPos1": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "ARX.usd"
+     },
+     "physics:localRot0": {
+      "v": "(1, 0, 0, 0)",
+      "layer": "ARX.usd"
+     },
+     "physics:localRot1": {
+      "v": "(1, 0, 0, 0)",
+      "layer": "ARX.usd"
+     },
+     "physics:lowerLimit": {
+      "v": -572.957763671875,
+      "layer": "ARX.usd"
+     },
+     "physics:upperLimit": {
+      "v": 572.957763671875,
+      "layer": "ARX.usd"
+     },
+     "physxJoint:maxJointVelocity": {
+      "v": 57295.77734375,
+      "layer": "ARX.usd"
+     }
+    },
+    "body0": [
+     "/X5A/link4"
+    ],
+    "body1": [
+     "/X5A/link5"
+    ]
+   },
+   {
+    "path": "/X5A/joints/joint6",
+    "type": "PhysicsRevoluteJoint",
+    "apis": [
+     "PhysicsDriveAPI:angular"
+    ],
+    "attrs": {
+     "drive:angular:physics:damping": {
+      "v": 0.01745329238474369,
+      "layer": "ARX.usd"
+     },
+     "drive:angular:physics:maxForce": {
+      "v": 100.0,
+      "layer": "ARX.usd"
+     },
+     "drive:angular:physics:stiffness": {
+      "v": 1.7453292608261108,
+      "layer": "ARX.usd"
+     },
+     "drive:angular:physics:targetPosition": {
+      "v": 0.0,
+      "layer": "ARX.usd"
+     },
+     "drive:angular:physics:type": {
+      "v": "force",
+      "layer": "ARX.usd"
+     },
+     "physics:axis": {
+      "v": "X",
+      "layer": "ARX.usd"
+     },
+     "physics:breakForce": {
+      "v": 3.4028234663852886e+38,
+      "layer": "ARX.usd"
+     },
+     "physics:breakTorque": {
+      "v": 3.4028234663852886e+38,
+      "layer": "ARX.usd"
+     },
+     "physics:JointEquivalentInertia": {
+      "v": 0.011667349375784397,
+      "layer": "ARX.usd"
+     },
+     "physics:localPos0": {
+      "v": [
+       0.028950000181794167,
+       0.0,
+       0.08649999648332596
+      ],
+      "layer": "ARX.usd"
+     },
+     "physics:localPos1": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "ARX.usd"
+     },
+     "physics:localRot0": {
+      "v": "(-0.0000036199901, -1, 0, 0)",
+      "layer": "ARX.usd"
+     },
+     "physics:localRot1": {
+      "v": "(1, 0, 0, 0)",
+      "layer": "ARX.usd"
+     },
+     "physics:lowerLimit": {
+      "v": -179.9087371826172,
+      "layer": "ARX.usd"
+     },
+     "physics:upperLimit": {
+      "v": 179.9087371826172,
+      "layer": "ARX.usd"
+     },
+     "physxJoint:maxJointVelocity": {
+      "v": 57295.77734375,
+      "layer": "ARX.usd"
+     }
+    },
+    "body0": [
+     "/X5A/link5"
+    ],
+    "body1": [
+     "/X5A/link6"
+    ]
+   },
+   {
+    "path": "/X5A/joints/hand_to_camera_mount",
+    "type": "PhysicsFixedJoint",
+    "apis": [],
+    "attrs": {
+     "physics:breakForce": {
+      "v": 3.4028234663852886e+38,
+      "layer": "ARX.usd"
+     },
+     "physics:breakTorque": {
+      "v": 3.4028234663852886e+38,
+      "layer": "ARX.usd"
+     },
+     "physics:JointEquivalentInertia": {
+      "v": 0.0,
+      "layer": "ARX.usd"
+     },
+     "physics:localPos0": {
+      "v": [
+       0.05700000002980232,
+       0.0,
+       0.0
+      ],
+      "layer": "ARX.usd"
+     },
+     "physics:localPos1": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "ARX.usd"
+     },
+     "physics:localRot0": {
+      "v": "(-0.0000036199901, 0, -0, -1)",
+      "layer": "ARX.usd"
+     },
+     "physics:localRot1": {
+      "v": "(1, 0, 0, 0)",
+      "layer": "ARX.usd"
+     }
+    },
+    "body0": [
+     "/X5A/link6"
+    ],
+    "body1": [
+     "/X5A/camera_base"
+    ]
+   },
+   {
+    "path": "/X5A/joints/camera_joint",
+    "type": "PhysicsFixedJoint",
+    "apis": [],
+    "attrs": {
+     "physics:breakForce": {
+      "v": 3.4028234663852886e+38,
+      "layer": "ARX.usd"
+     },
+     "physics:breakTorque": {
+      "v": 3.4028234663852886e+38,
+      "layer": "ARX.usd"
+     },
+     "physics:JointEquivalentInertia": {
+      "v": 0.0,
+      "layer": "ARX.usd"
+     },
+     "physics:localPos0": {
+      "v": [
+       -0.027499999850988388,
+       0.0,
+       0.05000000074505806
+      ],
+      "layer": "ARX.usd"
+     },
+     "physics:localPos1": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "ARX.usd"
+     },
+     "physics:localRot0": {
+      "v": "(-4.3047187e-8, -0.17366499, -7.5911375e-9, 0.9848048)",
+      "layer": "ARX.usd"
+     },
+     "physics:localRot1": {
+      "v": "(1, 0, 0, 0)",
+      "layer": "ARX.usd"
+     }
+    },
+    "body0": [
+     "/X5A/camera_base"
+    ],
+    "body1": [
+     "/X5A/camera"
+    ]
+   },
+   {
+    "path": "/X5A/joints/joint7",
+    "type": "PhysicsPrismaticJoint",
+    "apis": [
+     "PhysicsDriveAPI:linear"
+    ],
+    "attrs": {
+     "drive:linear:physics:damping": {
+      "v": 1.0,
+      "layer": "ARX.usd"
+     },
+     "drive:linear:physics:maxForce": {
+      "v": 100.0,
+      "layer": "ARX.usd"
+     },
+     "drive:linear:physics:stiffness": {
+      "v": 100.0,
+      "layer": "ARX.usd"
+     },
+     "drive:linear:physics:targetPosition": {
+      "v": 0.0,
+      "layer": "ARX.usd"
+     },
+     "drive:linear:physics:type": {
+      "v": "force",
+      "layer": "ARX.usd"
+     },
+     "physics:axis": {
+      "v": "Y",
+      "layer": "ARX.usd"
+     },
+     "physics:breakForce": {
+      "v": 3.4028234663852886e+38,
+      "layer": "ARX.usd"
+     },
+     "physics:breakTorque": {
+      "v": 3.4028234663852886e+38,
+      "layer": "ARX.usd"
+     },
+     "physics:JointEquivalentInertia": {
+      "v": 0.0007498681079596281,
+      "layer": "ARX.usd"
+     },
+     "physics:localPos0": {
+      "v": [
+       0.08657000213861465,
+       0.02489599958062172,
+       -0.00024360000679735094
+      ],
+      "layer": "ARX.usd"
+     },
+     "physics:localPos1": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "ARX.usd"
+     },
+     "physics:localRot0": {
+      "v": "(1, 0, 0, 0)",
+      "layer": "ARX.usd"
+     },
+     "physics:localRot1": {
+      "v": "(1, 0, 0, 0)",
+      "layer": "ARX.usd"
+     },
+     "physics:lowerLimit": {
+      "v": 0.0,
+      "layer": "ARX.usd"
+     },
+     "physics:upperLimit": {
+      "v": 0.04399999976158142,
+      "layer": "ARX.usd"
+     },
+     "physxJoint:maxJointVelocity": {
+      "v": 1000.0,
+      "layer": "ARX.usd"
+     }
+    },
+    "body0": [
+     "/X5A/link6"
+    ],
+    "body1": [
+     "/X5A/link7"
+    ]
+   },
+   {
+    "path": "/X5A/joints/joint8",
+    "type": "PhysicsPrismaticJoint",
+    "apis": [
+     "PhysicsDriveAPI:linear"
+    ],
+    "attrs": {
+     "drive:linear:physics:damping": {
+      "v": 1.0,
+      "layer": "ARX.usd"
+     },
+     "drive:linear:physics:maxForce": {
+      "v": 100.0,
+      "layer": "ARX.usd"
+     },
+     "drive:linear:physics:stiffness": {
+      "v": 100.0,
+      "layer": "ARX.usd"
+     },
+     "drive:linear:physics:targetPosition": {
+      "v": 0.0,
+      "layer": "ARX.usd"
+     },
+     "drive:linear:physics:type": {
+      "v": "force",
+      "layer": "ARX.usd"
+     },
+     "physics:axis": {
+      "v": "Y",
+      "layer": "ARX.usd"
+     },
+     "physics:breakForce": {
+      "v": 3.4028234663852886e+38,
+      "layer": "ARX.usd"
+     },
+     "physics:breakTorque": {
+      "v": 3.4028234663852886e+38,
+      "layer": "ARX.usd"
+     },
+     "physics:JointEquivalentInertia": {
+      "v": 0.0007493637967854738,
+      "layer": "ARX.usd"
+     },
+     "physics:localPos0": {
+      "v": [
+       0.08657000213861465,
+       -0.024900000542402267,
+       -0.0002436600043438375
+      ],
+      "layer": "ARX.usd"
+     },
+     "physics:localPos1": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "ARX.usd"
+     },
+     "physics:localRot0": {
+      "v": "(0, 1, 0, 0)",
+      "layer": "ARX.usd"
+     },
+     "physics:localRot1": {
+      "v": "(0, 1, 0, 0)",
+      "layer": "ARX.usd"
+     },
+     "physics:lowerLimit": {
+      "v": 0.0,
+      "layer": "ARX.usd"
+     },
+     "physics:upperLimit": {
+      "v": 0.04399999976158142,
+      "layer": "ARX.usd"
+     },
+     "physxJoint:maxJointVelocity": {
+      "v": 1000.0,
+      "layer": "ARX.usd"
+     }
+    },
+    "body0": [
+     "/X5A/link6"
+    ],
+    "body1": [
+     "/X5A/link8"
+    ]
+   },
+   {
+    "path": "/X5A/link2",
+    "type": "Xform",
+    "apis": [
+     "PhysicsRigidBodyAPI",
+     "PhysicsMassAPI"
+    ],
+    "attrs": {
+     "physics:centerOfMass": {
+      "v": [
+       -0.1323699951171875,
+       0.0020852000452578068,
+       0.00010548999853199348
+      ],
+      "layer": "ARX.usd"
+     },
+     "physics:diagonalInertia": {
+      "v": [
+       0.0005098905530758202,
+       0.015990005806088448,
+       0.016050104051828384
+      ],
+      "layer": "ARX.usd"
+     },
+     "physics:mass": {
+      "v": 1.0794999599456787,
+      "layer": "ARX.usd"
+     },
+     "physics:principalAxes": {
+      "v": "(0.9999991, 0.00021457612, -0.001287058, -0.00032271814)",
+      "layer": "ARX.usd"
+     }
+    },
+    "world_t": [
+     0.02,
+     0.0,
+     0.1005
+    ]
+   },
+   {
+    "path": "/X5A/link3",
+    "type": "Xform",
+    "apis": [
+     "PhysicsRigidBodyAPI",
+     "PhysicsMassAPI"
+    ],
+    "attrs": {
+     "physics:centerOfMass": {
+      "v": [
+       0.1853100061416626,
+       0.0006837599794380367,
+       -0.05163799971342087
+      ],
+      "layer": "ARX.usd"
+     },
+     "physics:diagonalInertia": {
+      "v": [
+       0.00032057808130048215,
+       0.004221001639962196,
+       0.004248420242220163
+      ],
+      "layer": "ARX.usd"
+     },
+     "physics:mass": {
+      "v": 0.5453400015830994,
+      "layer": "ARX.usd"
+     },
+     "physics:principalAxes": {
+      "v": "(0.95134264, -0.30401835, -0.04881411, -0.01172106)",
+      "layer": "ARX.usd"
+     }
+    },
+    "world_t": [
+     -0.244,
+     0.0,
+     0.1005
+    ]
+   },
+   {
+    "path": "/X5A/link4",
+    "type": "Xform",
+    "apis": [
+     "PhysicsRigidBodyAPI",
+     "PhysicsMassAPI"
+    ],
+    "attrs": {
+     "physics:centerOfMass": {
+      "v": [
+       0.04023100063204765,
+       0.004480700008571148,
+       -0.0353350006043911
+      ],
+      "layer": "ARX.usd"
+     },
+     "physics:diagonalInertia": {
+      "v": [
+       0.0002756425237748772,
+       0.00021285978436935693,
+       7.149771408876404e-05
+      ],
+      "layer": "ARX.usd"
+     },
+     "physics:mass": {
+      "v": 0.11714000254869461,
+      "layer": "ARX.usd"
+     },
+     "physics:principalAxes": {
+      "v": "(0.91128784, -0.0751532, 0.30868953, -0.2619492)",
+      "layer": "ARX.usd"
+     }
+    },
+    "world_t": [
+     0.001,
+     -0.0,
+     0.1565
+    ]
+   },
+   {
+    "path": "/X5A/link5",
+    "type": "Xform",
+    "apis": [
+     "PhysicsRigidBodyAPI",
+     "PhysicsMassAPI"
+    ],
+    "attrs": {
+     "physics:centerOfMass": {
+      "v": [
+       0.0036120000295341015,
+       -1.5454999811481684e-05,
+       0.05521399900317192
+      ],
+      "layer": "ARX.usd"
+     },
+     "physics:diagonalInertia": {
+      "v": [
+       0.0008384705288335681,
+       0.0008200000156648457,
+       0.0002515293890610337
+      ],
+      "layer": "ARX.usd"
+     },
+     "physics:mass": {
+      "v": 0.634880006313324,
+      "layer": "ARX.usd"
+     },
+     "physics:principalAxes": {
+      "v": "(0.99818784, 0, -0.060175247, 0)",
+      "layer": "ARX.usd"
+     }
+    },
+    "world_t": [
+     0.06875,
+     -0.000501,
+     0.243
+    ]
+   },
+   {
+    "path": "/X5A/link6",
+    "type": "Xform",
+    "apis": [
+     "PhysicsRigidBodyAPI",
+     "PhysicsMassAPI"
+    ],
+    "attrs": {
+     "physics:centerOfMass": {
+      "v": [
+       0.041696999222040176,
+       2.436800059513189e-05,
+       0.00014463999832514673
+      ],
+      "layer": "ARX.usd"
+     },
+     "physics:diagonalInertia": {
+      "v": [
+       0.0003800000122282654,
+       0.0002800000074785203,
+       0.0005000000237487257
+      ],
+      "layer": "ARX.usd"
+     },
+     "physics:mass": {
+      "v": 0.44089001417160034,
+      "layer": "ARX.usd"
+     },
+     "physics:principalAxes": {
+      "v": "(1, 0, 0, 0)",
+      "layer": "ARX.usd"
+     }
+    },
+    "world_t": [
+     0.0977,
+     -0.0005,
+     0.1565
+    ]
+   },
+   {
+    "path": "/X5A/camera_base",
+    "type": "Xform",
+    "apis": [
+     "PhysicsRigidBodyAPI",
+     "PhysicsMassAPI"
+    ],
+    "attrs": {
+     "physics:diagonalInertia": {
+      "v": [
+       9.999999747378752e-05,
+       9.999999747378752e-05,
+       9.999999747378752e-05
+      ],
+      "layer": "ARX.usd"
+     }
+    },
+    "world_t": [
+     0.1547,
+     -0.0005,
+     0.1565
+    ]
+   },
+   {
+    "path": "/X5A/camera_base/visuals/camera_base/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "MaterialBindingAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexHull",
+      "layer": "ARX.usd"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "ARX.usd"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/X5A/Looks/defaultmaterial"
+    },
+    "world_t": [
+     0.1547,
+     -0.0005,
+     0.1565
+    ]
+   },
+   {
+    "path": "/X5A/camera",
+    "type": "Xform",
+    "apis": [
+     "PhysicsRigidBodyAPI",
+     "PhysicsMassAPI"
+    ],
+    "attrs": {
+     "physics:diagonalInertia": {
+      "v": [
+       9.999999747378752e-05,
+       9.999999747378752e-05,
+       9.999999747378752e-05
+      ],
+      "layer": "ARX.usd"
+     }
+    },
+    "world_t": [
+     0.1822,
+     -0.000501,
+     0.2065
+    ]
+   },
+   {
+    "path": "/X5A/camera/visuals/camera/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "MaterialBindingAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexHull",
+      "layer": "ARX.usd"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "ARX.usd"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/OmniKit_Viewport_LightRig/Looks/Ground_Material"
+    },
+    "world_t": [
+     0.1822,
+     -0.000501,
+     0.2065
+    ]
+   },
+   {
+    "path": "/X5A/link7",
+    "type": "Xform",
+    "apis": [
+     "PhysicsRigidBodyAPI",
+     "PhysicsMassAPI"
+    ],
+    "attrs": {
+     "physics:centerOfMass": {
+      "v": [
+       -0.00035521999234333634,
+       -0.007826999761164188,
+       -0.0029883000534027815
+      ],
+      "layer": "ARX.usd"
+     },
+     "physics:diagonalInertia": {
+      "v": [
+       1.9999999494757503e-05,
+       2.9999999242136255e-05,
+       2.9999999242136255e-05
+      ],
+      "layer": "ARX.usd"
+     },
+     "physics:mass": {
+      "v": 0.06479799747467041,
+      "layer": "ARX.usd"
+     },
+     "physics:principalAxes": {
+      "v": "(1, 0, 0, 0)",
+      "layer": "ARX.usd"
+     }
+    },
+    "world_t": [
+     0.18427,
+     0.024396,
+     0.156256
+    ]
+   },
+   {
+    "path": "/X5A/link8",
+    "type": "Xform",
+    "apis": [
+     "PhysicsRigidBodyAPI",
+     "PhysicsMassAPI"
+    ],
+    "attrs": {
+     "physics:centerOfMass": {
+      "v": [
+       -0.00035521999234333634,
+       0.0078277001157403,
+       0.0024200999177992344
+      ],
+      "layer": "ARX.usd"
+     },
+     "physics:diagonalInertia": {
+      "v": [
+       1.9999999494757503e-05,
+       2.9999999242136255e-05,
+       2.9999999242136255e-05
+      ],
+      "layer": "ARX.usd"
+     },
+     "physics:mass": {
+      "v": 0.06479799747467041,
+      "layer": "ARX.usd"
+     },
+     "physics:principalAxes": {
+      "v": "(1, 0, 0, 0)",
+      "layer": "ARX.usd"
+     }
+    },
+    "world_t": [
+     0.18427,
+     -0.0254,
+     0.156256
+    ]
+   }
+  ],
+  "n_colliders": 11,
+  "collider_approximations": {
+   "convexHull": 10,
+   "convexDecomposition": 1
+  }
+ }
+]

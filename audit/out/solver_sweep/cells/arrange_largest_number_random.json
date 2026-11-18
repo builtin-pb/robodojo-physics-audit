@@ -1,0 +1,108 @@
+[
+ {
+  "cell_name": "arrange_largest_number_random__shipped",
+  "layout": 0,
+  "overrides": {
+   "slide_target": {
+    "label": "darts_board_0_14",
+    "inst": "darts_board_0_14",
+    "labelled": false,
+    "stem": "darts_board_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.981433,
+     -0.191803
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "arrange_largest_number_random__dt2",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.002,
+   "slide_target": {
+    "label": "darts_board_0_14",
+    "inst": "darts_board_0_14",
+    "labelled": false,
+    "stem": "darts_board_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.981433,
+     -0.191803
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "arrange_largest_number_random__dt1",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.001,
+   "slide_target": {
+    "label": "darts_board_0_14",
+    "inst": "darts_board_0_14",
+    "labelled": false,
+    "stem": "darts_board_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.981433,
+     -0.191803
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "arrange_largest_number_random__iters4x",
+  "layout": 0,
+  "overrides": {
+   "min_pos_iters": 64,
+   "slide_target": {
+    "label": "darts_board_0_14",
+    "inst": "darts_board_0_14",
+    "labelled": false,
+    "stem": "darts_board_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.981433,
+     -0.191803
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "arrange_largest_number_random__cpu",
+  "layout": 0,
+  "overrides": {
+   "gpu_dynamics": false,
+   "slide_target": {
+    "label": "darts_board_0_14",
+    "inst": "darts_board_0_14",
+    "labelled": false,
+    "stem": "darts_board_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.981433,
+     -0.191803
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "arrange_largest_number_random__shipped_repeat",
+  "layout": 0,
+  "overrides": {
+   "slide_target": {
+    "label": "darts_board_0_14",
+    "inst": "darts_board_0_14",
+    "labelled": false,
+    "stem": "darts_board_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.981433,
+     -0.191803
+    ]
+   }
+  }
+ }
+]

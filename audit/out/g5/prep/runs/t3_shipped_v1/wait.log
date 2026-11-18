@@ -1,0 +1,7 @@
+[34m[1m[CONNECTING][0m Policy server -> localhost:32951 (PID=121782, timeout=1200s)
+[34m[1m[CONNECTING][0m Policy server still waiting for localhost:32951 (30/1200s)
+[34m[1m[CONNECTING][0m Policy server still waiting for localhost:32951 (60/1200s)
+[34m[1m[CONNECTING][0m Policy server still waiting for localhost:32951 (90/1200s)
+[34m[1m[CONNECTING][0m Policy server still waiting for localhost:32951 (120/1200s)
+[34m[1m[CONNECTING][0m Policy server still waiting for localhost:32951 (150/1200s)
+[32m[1m[CONNECTED][0m Policy server ready on localhost:32951 (PID=121782)

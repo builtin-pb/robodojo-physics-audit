@@ -1,0 +1,25 @@
+# Predictions for the held-out G4 rerun on `swap_T` with frozen `script_swap_T_v2` (written and committed before launch)
+
+Branch: `wc/swapT-script-v2` (worktree `$W/wt-sT2`). Hardware: `della-vis2` GPU 1 (`HARNESS_GPU=1`). Evaluator: `v2`.
+Frozen policy: `audit/harness/script_swap_T_v2.py` (SHA-256 `5724f76d7a7fd5fd1c2335ec5ca83b2bf1180ea4fb0cb110f07b087791d2a337`).
+Held-out set: `seed 2 × layouts 0–19` (20 distinct arrangements, never run or read during development of `script_swap_T_v2`).
+
+## Pre-run predictions (written before running `seed 2`)
+
+Under `script_swap_T` (`v1`), `shipped` scored **20 / 20** (`100.0`) while `corrected` and `robot_limits`-only both dropped to **13 / 20** (`65.0`, failing layouts `3, 6, 7, 9, 11, 13, 18`; McNemar `p = 0.0156`), and `corr_nolimits` scored **20 / 20** (`audit/out/g4/swap_T/README.md`). Because `script_swap_T_v2` keeps its IK and route planning inside `robots.x5.arm_limits` (`docs/params/robots.json`), choosing among stem grasps (`±y_T`), 20 mm crossbar wing grasps (`±x_T`), and stepped-down pre-place heights `(60, 45, 35, 22) mm`:
+
+1. **`shipped` (`g4st2_sT_ship`, 20 held-out episodes):** **20 / 20** succeed (band **19 to 20**), mean v2 score `100.0`, `185–190` actions, worst final error `< 2.5 mm` and `< 1.0°`.
+2. **`corrected` (`g4st2_sT_corr`, 20 held-out episodes):** **20 / 20** succeed (band **19 to 20**), mean v2 score `100.0`, `185–190` actions, worst final error `< 1.0 mm` and `< 0.5°`. All seven layouts where `v1` failed (`3, 6, 7, 9, 11, 13, 18`) succeed, including layout 11 via stepped-down pre-place height (`≤ 35 mm`). Paired comparison `corrected` vs `shipped`: **0 flips** (band `0 to 1`), McNemar `p = 1.0`, not beyond noise — eliminating `v1`'s `13/20` drop and proving that `v1`'s drop was solely a property of its out-of-range wrist-roll route rather than unsolvability at corrected physics.
+3. **`robot_limits` (`g4st2_sT_limits`, 20 held-out episodes):** **20 / 20** succeed (band **19 to 20**), mean v2 score `100.0`, paired `0` flips vs `shipped` (whereas `v1` dropped to `13 / 20`). Because `script_swap_T_v2` already plans inside `arx5-sdk`'s joint ranges, `robot_limits` clips no set-down; trajectories on `ok=True` episodes remain close to `shipped` (differing only where `robot_limits`'s lower arm effort `[30, 40, 30, 15, 10, 10] N·m` vs `100 N·m` changes transient tracking).
+4. **In-hand pivot and contacts:** median in-hand pivot at the hover (`pivot.json`) drops from `~0.04°` at `shipped` to `≤ 0.01°` at `corrected` (`80 N` D3 grip vs `24.8 N` shipped clamp). Zero episodes report any finger–table (`link6–link8` vs `Table`) contact (`TIP_CLEAR = 3 mm` unchanged).
+5. **Determinism controls (`g4st2_sT_ship_rep`, `g4st2_sT_corr_rep`, `seed 2 layout 0`, `--repeats 2`):** all 3 runs of `shipped` share 1 final-state SHA-256, and all 3 runs of `corrected` share 1 final-state SHA-256.
+6. **Decision rule:** if `corrected` and `robot_limits` both reach `20 / 20` (or within 1 episode with no joint-limit failure), H1′'s corollary is confirmed end-to-end on the held-out set and G3 solvability + G4 invariance for `swap_T` at corrected physics are established. Cost: `~0.35–0.55` GPU-1 busy hours (`< 1.0` GPU-1 busy hours combined with development, inside the `2.5` GPU-hour budget).
+
+## Outcomes (ran 01:38:51 to 02:01:22 EST; 9 procs, 1.471 process-h, 0.375 GPU-1 busy h)
+
+1. **`shipped` (`g4st2_sT_ship`, 20 held-out episodes):** **20 / 20** succeed (mean v2 score `100.0`, `185–187` actions, worst final error `0.49 mm, 0.481°`; predicted 20/20, band 19–20, `< 2.5 mm, < 1.0°`: **met**).
+2. **`corrected` (`g4st2_sT_corr`, 20 held-out episodes):** **20 / 20** succeed (mean v2 score `100.0`, `185–186` actions, worst final error **`0.24 mm, 0.083°`**; predicted 20/20, band 19–20, `< 1.0 mm, < 0.5°`: **met**). All seven layouts where `script_swap_T` (`v1`) failed (`3, 6, 7, 9, 11, 13, 18`) succeed with `≤ 0.06 mm` and `≤ 0.082°` error; paired vs `shipped`: **0 / 0 flips**, mean score difference `0.0` (`0.0` to `0.0`), McNemar `p = 1.0`, `beyond_noise: false` (**met**).
+3. **`robot_limits` (`g4st2_sT_limits`, 20 held-out episodes):** **20 / 20** succeed (mean v2 score `100.0`, `185–186` actions, worst final error `0.37 mm, 0.123°`), **0 / 0 flips** vs `shipped`, McNemar `p = 1.0` (**met**).
+4. **In-hand pivot and contacts:** median / max in-hand pivot at the hover (`pivot.json`) drops from `0.448° / 15.738°` at `shipped` (`24.8 N` clamp on `23 mm`-offset crossbar wing grasps) to **`0.001° / 0.008°`** at `corrected` (`80 N` D3 grip, `≤ 0.01°` median predicted: **met**). Finger–table contacts: **0 / 64** episodes (**met**).
+5. **Determinism controls:** `shipped_rep s2 l0` gives 1 SHA-256 across all 3 runs (`e5e76831b2bc…`), and `corrected_rep s2 l0` gives 1 SHA-256 across all 3 runs (`d9ee8ad4bf67…`) (**met**).
+6. **Cost:** `0.375` GPU-1 busy hours (`1.471` process-hours; inside the `0.35–0.55` GPU-1 busy-hour band; combined session total `0.844` GPU-1 busy hours `< 2.5` budget: **met**).

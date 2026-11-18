@@ -1,0 +1,126 @@
+[
+ {
+  "cell_name": "store_laptop_and_headphones_random__shipped",
+  "layout": 0,
+  "overrides": {
+   "slide_target": {
+    "label": "cereal_0_8",
+    "inst": "cereal_0_8",
+    "labelled": false,
+    "stem": "cereal_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.887179,
+     -0.461425
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "store_laptop_and_headphones_random__dt2",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.002,
+   "slide_target": {
+    "label": "cereal_0_8",
+    "inst": "cereal_0_8",
+    "labelled": false,
+    "stem": "cereal_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.887179,
+     -0.461425
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "store_laptop_and_headphones_random__dt1",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.001,
+   "slide_target": {
+    "label": "cereal_0_8",
+    "inst": "cereal_0_8",
+    "labelled": false,
+    "stem": "cereal_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.887179,
+     -0.461425
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "store_laptop_and_headphones_random__iters4x",
+  "layout": 0,
+  "overrides": {
+   "min_pos_iters": 128,
+   "slide_target": {
+    "label": "cereal_0_8",
+    "inst": "cereal_0_8",
+    "labelled": false,
+    "stem": "cereal_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.887179,
+     -0.461425
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "store_laptop_and_headphones_random__stab_off",
+  "layout": 0,
+  "overrides": {
+   "enable_stabilization": false,
+   "slide_target": {
+    "label": "cereal_0_8",
+    "inst": "cereal_0_8",
+    "labelled": false,
+    "stem": "cereal_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.887179,
+     -0.461425
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "store_laptop_and_headphones_random__cpu",
+  "layout": 0,
+  "overrides": {
+   "gpu_dynamics": false,
+   "slide_target": {
+    "label": "cereal_0_8",
+    "inst": "cereal_0_8",
+    "labelled": false,
+    "stem": "cereal_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.887179,
+     -0.461425
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "store_laptop_and_headphones_random__shipped_repeat",
+  "layout": 0,
+  "overrides": {
+   "slide_target": {
+    "label": "cereal_0_8",
+    "inst": "cereal_0_8",
+    "labelled": false,
+    "stem": "cereal_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.887179,
+     -0.461425
+    ]
+   }
+  }
+ }
+]

@@ -1,0 +1,246 @@
+{
+  "hardware": "della-vis2 GPU 1 (NVIDIA A40, HARNESS_GPU=1)",
+  "budget_gpu_hours": 1.5,
+  "final_batches_at_840a886": {
+    "batch_count": 19,
+    "process_count": 20,
+    "gpu_busy_seconds": 619.79,
+    "gpu_busy_hours": 0.1722,
+    "process_seconds": 1021.4,
+    "process_hours": 0.2837,
+    "processes": [
+      {
+        "batch": "l3w_rb_bottles",
+        "tag": "l3w_rb_bottles_q00_vis2",
+        "host": "della-vis2",
+        "gpu": 1,
+        "rc": 0,
+        "wall_s": 30.92
+      },
+      {
+        "batch": "l3w_rb_cb",
+        "tag": "l3w_rb_cb_q00_vis2",
+        "host": "della-vis2",
+        "gpu": 1,
+        "rc": 0,
+        "wall_s": 31.43
+      },
+      {
+        "batch": "l3w_rb_sT",
+        "tag": "l3w_rb_sT_q00_vis2",
+        "host": "della-vis2",
+        "gpu": 1,
+        "rc": 0,
+        "wall_s": 29.04
+      },
+      {
+        "batch": "l3w_rb_t1_align_blocks",
+        "tag": "l3w_rb_t1_align_blocks_q00_vis2",
+        "host": "della-vis2",
+        "gpu": 1,
+        "rc": 0,
+        "wall_s": 34.85
+      },
+      {
+        "batch": "l3w_rb_t1_arrange_largest_number",
+        "tag": "l3w_rb_t1_arrange_largest_number_q00_vis2",
+        "host": "della-vis2",
+        "gpu": 1,
+        "rc": 0,
+        "wall_s": 36.29
+      },
+      {
+        "batch": "l3w_rb_t1_build_tower",
+        "tag": "l3w_rb_t1_build_tower_q00_vis2",
+        "host": "della-vis2",
+        "gpu": 1,
+        "rc": 0,
+        "wall_s": 36.6
+      },
+      {
+        "batch": "l3w_rb_t1_deposit_coin",
+        "tag": "l3w_rb_t1_deposit_coin_q00_vis2",
+        "host": "della-vis2",
+        "gpu": 1,
+        "rc": 0,
+        "wall_s": 39.99
+      },
+      {
+        "batch": "l3w_rb_t1_insert_key",
+        "tag": "l3w_rb_t1_insert_key_q00_vis2",
+        "host": "della-vis2",
+        "gpu": 1,
+        "rc": 0,
+        "wall_s": 41.53
+      },
+      {
+        "batch": "l3w_rb_t1_organize_table",
+        "tag": "l3w_rb_t1_organize_table_q00_vis2",
+        "host": "della-vis2",
+        "gpu": 1,
+        "rc": 0,
+        "wall_s": 47.72
+      },
+      {
+        "batch": "l3w_rb_t1_play_Xylophone",
+        "tag": "l3w_rb_t1_play_Xylophone_q00_vis2",
+        "host": "della-vis2",
+        "gpu": 1,
+        "rc": 0,
+        "wall_s": 41.41
+      },
+      {
+        "batch": "l3w_rb_t1_push_T",
+        "tag": "l3w_rb_t1_push_T_q00_vis2",
+        "host": "della-vis2",
+        "gpu": 1,
+        "rc": 0,
+        "wall_s": 36.04
+      },
+      {
+        "batch": "l3w_rb_t1_solve_equation",
+        "tag": "l3w_rb_t1_solve_equation_q00_vis2",
+        "host": "della-vis2",
+        "gpu": 1,
+        "rc": 0,
+        "wall_s": 43.07
+      },
+      {
+        "batch": "l3w_rb_t1_stack_blocks",
+        "tag": "l3w_rb_t1_stack_blocks_q00_vis2",
+        "host": "della-vis2",
+        "gpu": 1,
+        "rc": 0,
+        "wall_s": 35.57
+      },
+      {
+        "batch": "l3w_rb_t1_stack_blocks_by_language",
+        "tag": "l3w_rb_t1_stack_blocks_by_language_q00_vis2",
+        "host": "della-vis2",
+        "gpu": 1,
+        "rc": 0,
+        "wall_s": 34.9
+      },
+      {
+        "batch": "l3w_rb_t1_store_tools_in_toolbox",
+        "tag": "l3w_rb_t1_store_tools_in_toolbox_q00_vis2",
+        "host": "della-vis2",
+        "gpu": 1,
+        "rc": 0,
+        "wall_s": 38.35
+      },
+      {
+        "batch": "l3w_rb_t1_sweep_blocks",
+        "tag": "l3w_rb_t1_sweep_blocks_q00_vis2",
+        "host": "della-vis2",
+        "gpu": 1,
+        "rc": 0,
+        "wall_s": 44.98
+      },
+      {
+        "batch": "l3w_rb_t1_sweep_blocks_random",
+        "tag": "l3w_rb_t1_sweep_blocks_random_q00_vis2",
+        "host": "della-vis2",
+        "gpu": 1,
+        "rc": 0,
+        "wall_s": 58.49
+      },
+      {
+        "batch": "l3w_rb_t1_sweep_blocks_random_l5",
+        "tag": "l3w_rb_t1_sweep_blocks_random_l5_q00_vis2",
+        "host": "della-vis2",
+        "gpu": 1,
+        "rc": 0,
+        "wall_s": 37.3
+      },
+      {
+        "batch": "l3w_g4_sT_s2",
+        "tag": "l3w_g4_sT_s2_q00_vis2",
+        "host": "della-vis2",
+        "gpu": 1,
+        "rc": 0,
+        "wall_s": 147.22
+      },
+      {
+        "batch": "l3w_g4_sT_s2",
+        "tag": "l3w_g4_sT_s2_q01_vis2",
+        "host": "della-vis2",
+        "gpu": 1,
+        "rc": 0,
+        "wall_s": 175.7
+      }
+    ]
+  },
+  "diagnostic_slide_separating_runs": {
+    "run_count": 2,
+    "gpu_busy_seconds": 25.8,
+    "gpu_busy_hours": 0.0072,
+    "runs": [
+      {
+        "tag": "l3w_diag_aln_slide",
+        "host": "della-vis2",
+        "gpu": 1,
+        "wall_s": 15.0
+      },
+      {
+        "tag": "l3w_diag_aln_slide_tab05",
+        "host": "della-vis2",
+        "gpu": 1,
+        "wall_s": 10.8
+      }
+    ]
+  },
+  "superseded_pre_840a886_runs": {
+    "note": "Initial pass at 51e2008 before adding is_sdf_trimesh_face_index_report_null for NpShape.cpp:566; re-ran cleanly at 840a886 so all archived runs share one commit SHA.",
+    "gpu_busy_seconds": 128.8,
+    "gpu_busy_hours": 0.0358,
+    "process_seconds": 165.6
+  },
+  "review_175_followup_at_e7279fc": {
+    "budget_gpu_hours": 0.2,
+    "archived_readbacks": {
+      "batch_count": 3,
+      "gpu_busy_seconds": 134.7,
+      "gpu_busy_hours": 0.0374,
+      "runs": [
+        {
+          "batch": "l3w_rb_t1_insert_key",
+          "tag": "l3w_rb_t1_insert_key_q00_vis2",
+          "host": "della-vis2",
+          "gpu": 1,
+          "rc": 0,
+          "wall_s": 41.1
+        },
+        {
+          "batch": "l3w_rb_t1_sweep_blocks_random",
+          "tag": "l3w_rb_t1_sweep_blocks_random_q00_vis2",
+          "host": "della-vis2",
+          "gpu": 1,
+          "rc": 0,
+          "wall_s": 37.2
+        },
+        {
+          "batch": "l3w_rb_t1_sweep_blocks_random_l5",
+          "tag": "l3w_rb_t1_sweep_blocks_random_l5_q00_vis2",
+          "host": "della-vis2",
+          "gpu": 1,
+          "rc": 0,
+          "wall_s": 56.4
+        }
+      ]
+    },
+    "layout_room_mdl_probe_runs": {
+      "note": "Checked whether any additional sweep_blocks_random layout had local Room/Table .mdl placeholders (s0 l1: 95.6 s, s0 l17 x2: 26.0 s + 24.4 s; only s0 l0 and s0 l5 have local placeholders).",
+      "gpu_busy_seconds": 146.0,
+      "gpu_busy_hours": 0.0406
+    },
+    "followup_total_gpu_busy_seconds": 280.7,
+    "followup_total_gpu_busy_hours": 0.078
+  },
+  "total_all_session_gpu_runs": {
+    "gpu_busy_seconds": 1055.09,
+    "gpu_busy_hours": 0.2931,
+    "process_seconds": 1493.5,
+    "process_hours": 0.4149
+  }
+}

@@ -1,0 +1,4 @@
+# Blog clips v2: the 6.2 production replay of b51_fingers_main (blog_queue.sh), renderer and PhysX on GPU 0, exactly as #216's
+# rp_fingers_* (queue_fingers62.txt): episode steps 810-1360 every 5th, set with no physics step, in RoboDojo's own scene
+# construction with --policy zero and no physics flags, from #216's camera ax10z.
+rp_fingers_main|62|fingers_cam.json|--subframes 1 --warmup 6 --capture rep --replay <clips>/runs/b51_fingers_main/frames/index.json|--task put_bottles_into_dustbin --seed 0 --layouts 0 --policy zero|

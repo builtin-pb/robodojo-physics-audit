@@ -1,0 +1,17 @@
+[
+ {
+  "name": "press_button0_40mm_hold3s",
+  "kind": "robot_press",
+  "target": "button0",
+  "point_offset": [
+   0,
+   0,
+   0.036
+  ],
+  "depth": 0.04,
+  "restore": false,
+  "n_hold": 75,
+  "log_eval": true,
+  "log_root": true
+ }
+]

@@ -1,0 +1,23 @@
+[
+ {
+  "cell_name": "arrange_largest_number__perturb",
+  "layout": 0,
+  "overrides": {
+   "spawn_lift": {
+    "stems": "*",
+    "dz_m": 1e-06
+   },
+   "slide_target": {
+    "label": "digit_0",
+    "inst": "number_2_1",
+    "labelled": true,
+    "stem": "number_2",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.587077,
+     0.809531
+    ]
+   }
+  }
+ }
+]

@@ -1,0 +1,722 @@
+{
+ "fasten_frozen": {
+  "run": "b51_fasten_cap2475",
+  "ref": "audit/out/population_sweep/runs/drop/fasten_screws.json",
+  "drop_trace_equal": true,
+  "final_poses_equal": true,
+  "contacts_after_equal": true,
+  "eval_equal": true,
+  "this": {
+   "dz_trace_m": {
+    "nut1": [
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03
+    ],
+    "nut0": [
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03
+    ],
+    "nut2": [
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03,
+     0.03
+    ]
+   },
+   "back_within_2mm_at_s": {
+    "nut1": null,
+    "nut0": null,
+    "nut2": null
+   },
+   "contacts_after": [],
+   "final_poses": {
+    "nut0": [
+     0.09672,
+     -0.21632,
+     0.8036,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "nut1": [
+     -0.38375,
+     -0.21011,
+     0.8036,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "nut2": [
+     0.30598,
+     -0.09304,
+     0.8036,
+     1.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "eval_result": {
+    "success_rate": 0.0,
+    "eval_time": 1,
+    "score": 0.0,
+    "details": {
+     "0": {
+      "layout_id": 0,
+      "success": false,
+      "score": 0.0
+     }
+    }
+   },
+   "unstable_nums": 0,
+   "grip_command": {
+    "left": 0.3851851851851852,
+    "right": 0.3851851851851852
+   }
+  },
+  "ref_values": {
+   "eval_result": {
+    "success_rate": 0.0,
+    "eval_time": 1,
+    "score": 0.0,
+    "details": {
+     "0": {
+      "layout_id": 0,
+      "success": false,
+      "score": 0.0
+     }
+    }
+   },
+   "contacts_after": []
+  },
+  "log": {
+   "drop_frames": 251,
+   "case_start": 1,
+   "steps": 250,
+   "case_phys_first_last": [
+    1,
+    250
+   ],
+   "case_phys_events_last": 250,
+   "drop_sim_steps": 250,
+   "nut_dz_mm_min_max": {
+    "nut0": [
+     30.0,
+     30.0
+    ],
+    "nut1": [
+     30.0,
+     30.0
+    ],
+    "nut2": [
+     30.0,
+     30.0
+    ]
+   },
+   "nut_dz_mm_at_steps_5_10_15_20": {
+    "nut0": [
+     30.0,
+     30.0,
+     30.0,
+     30.0
+    ],
+    "nut1": [
+     30.0,
+     30.0,
+     30.0,
+     30.0
+    ],
+    "nut2": [
+     30.0,
+     30.0,
+     30.0,
+     30.0
+    ]
+   },
+   "gripper_joints_seen": [
+    [
+     0.0,
+     0.0
+    ]
+   ],
+   "errors": []
+  },
+  "log_vs_drop_trace_max_abs_mm": 0.0
+ },
+ "fasten_healthy": {
+  "run": "b51_fasten_free",
+  "ref": "audit/out/population_sweep/runs_slurm/control/fasten_screws.json",
+  "drop_trace_equal": true,
+  "final_poses_equal": true,
+  "contacts_after_equal": true,
+  "eval_equal": true,
+  "this": {
+   "dz_trace_m": {
+    "nut1": [
+     0.02765,
+     0.02137,
+     0.01116,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "nut0": [
+     0.02765,
+     0.02137,
+     0.01116,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "nut2": [
+     0.02765,
+     0.02137,
+     0.01116,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "back_within_2mm_at_s": {
+    "nut1": 0.08,
+    "nut0": 0.08,
+    "nut2": 0.08
+   },
+   "contacts_after": [
+    [
+     "material_0122_0_9",
+     "factory_nut_2_1",
+     29
+    ],
+    [
+     "material_0122_0_9",
+     "factory_nut_1_2",
+     30
+    ],
+    [
+     "material_0122_0_9",
+     "factory_nut_4_3",
+     30
+    ]
+   ],
+   "final_poses": {
+    "nut0": [
+     0.09672,
+     -0.21632,
+     0.77364,
+     1.0,
+     -0.0,
+     0.0,
+     -0.0
+    ],
+    "nut1": [
+     -0.38375,
+     -0.21011,
+     0.77364,
+     1.0,
+     0.0,
+     0.0,
+     -0.0
+    ],
+    "nut2": [
+     0.30598,
+     -0.09304,
+     0.77364,
+     1.0,
+     -0.0,
+     -0.0,
+     -0.0
+    ]
+   },
+   "eval_result": {
+    "success_rate": 0.0,
+    "eval_time": 1,
+    "score": 0.0,
+    "details": {
+     "0": {
+      "layout_id": 0,
+      "success": false,
+      "score": 0.0
+     }
+    }
+   },
+   "unstable_nums": 0,
+   "grip_command": {
+    "left": 1.0,
+    "right": 1.0
+   }
+  },
+  "ref_values": {
+   "eval_result": {
+    "success_rate": 0.0,
+    "eval_time": 1,
+    "score": 0.0,
+    "details": {
+     "0": {
+      "layout_id": 0,
+      "success": false,
+      "score": 0.0
+     }
+    }
+   },
+   "contacts_after": [
+    [
+     "material_0122_0_9",
+     "factory_nut_2_1",
+     29
+    ],
+    [
+     "material_0122_0_9",
+     "factory_nut_1_2",
+     30
+    ],
+    [
+     "material_0122_0_9",
+     "factory_nut_4_3",
+     30
+    ]
+   ]
+  },
+  "log": {
+   "drop_frames": 251,
+   "case_start": 1,
+   "steps": 250,
+   "case_phys_first_last": [
+    1,
+    250
+   ],
+   "case_phys_events_last": 250,
+   "drop_sim_steps": 250,
+   "nut_dz_mm_min_max": {
+    "nut0": [
+     0.0,
+     29.843
+    ],
+    "nut1": [
+     0.0,
+     29.843
+    ],
+    "nut2": [
+     0.0,
+     29.843
+    ]
+   },
+   "nut_dz_mm_at_steps_5_10_15_20": {
+    "nut0": [
+     27.645,
+     21.367,
+     11.165,
+     0.0
+    ],
+    "nut1": [
+     27.645,
+     21.367,
+     11.165,
+     0.0
+    ],
+    "nut2": [
+     27.645,
+     21.367,
+     11.165,
+     0.0
+    ]
+   },
+   "gripper_joints_seen": [
+    [
+     0.044,
+     0.044
+    ]
+   ],
+   "errors": []
+  },
+  "log_vs_drop_trace_max_abs_mm": 0.005000000000002558
+ },
+ "xylo": {
+  "run": "b51_xylo",
+  "actions_logged": 269,
+  "actions_ref": 269,
+  "compared": 269,
+  "max_abs_pos_diff_m": 5.000000000032756e-06,
+  "max_abs_joint_diff_rad": 5.000000000254801e-06,
+  "stage_counter_mismatches": 0,
+  "eval_result": {
+   "success_rate": 1.0,
+   "eval_time": 1,
+   "score": 100.0,
+   "details": {
+    "0": {
+     "layout_id": 0,
+     "success": true,
+     "score": 1.0
+    }
+   }
+  },
+  "take_action_cnt": 269,
+  "stage_drops_at_actions": [
+   114,
+   122,
+   137,
+   143,
+   159,
+   165,
+   180,
+   188,
+   203,
+   209,
+   225,
+   231,
+   247,
+   253,
+   269
+  ],
+  "stage_drops_at_actions_ref": [
+   114,
+   122,
+   137,
+   143,
+   159,
+   165,
+   180,
+   188,
+   203,
+   209,
+   225,
+   231,
+   247,
+   253,
+   269
+  ],
+  "keys": [
+   {
+    "k": 0,
+    "struck": true,
+    "struck_at_action": 114,
+    "min_head_bottom_above_xylophone_top_mm": 15.4
+   },
+   {
+    "k": 1,
+    "struck": true,
+    "struck_at_action": 137,
+    "min_head_bottom_above_xylophone_top_mm": 16.5
+   },
+   {
+    "k": 2,
+    "struck": true,
+    "struck_at_action": 159,
+    "min_head_bottom_above_xylophone_top_mm": 16.4
+   },
+   {
+    "k": 3,
+    "struck": true,
+    "struck_at_action": 180,
+    "min_head_bottom_above_xylophone_top_mm": 16.4
+   },
+   {
+    "k": 4,
+    "struck": true,
+    "struck_at_action": 203,
+    "min_head_bottom_above_xylophone_top_mm": 16.8
+   },
+   {
+    "k": 5,
+    "struck": true,
+    "struck_at_action": 225,
+    "min_head_bottom_above_xylophone_top_mm": 17.5
+   },
+   {
+    "k": 6,
+    "struck": true,
+    "struck_at_action": 247,
+    "min_head_bottom_above_xylophone_top_mm": 17.5
+   },
+   {
+    "k": 7,
+    "struck": true,
+    "struck_at_action": 269,
+    "min_head_bottom_above_xylophone_top_mm": 18.7
+   }
+  ],
+  "xylophone_contact_pairs_in_witness_log": 0,
+  "xylophone_contact_points_sep_le0": 0,
+  "witness_xylophone_contact_points_touching": 0,
+  "min_head_bottom_above_xylophone_top_mm_while_over_keys": -23.4,
+  "xylophone_top_z": 0.788,
+  "errors": []
+ }
+}

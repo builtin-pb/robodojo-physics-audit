@@ -1,0 +1,306 @@
+{
+ "tool": "audit/tools/g4_pair_cells.py",
+ "params_dir": "docs/params",
+ "lane3_fit": {
+  "path": "audit/out/lane3_dryrun/out/fit_population.json.gz (main, commit 8dd1a6c)",
+  "sha256": "790b1cd26707e019c75c8e9aa855dd09415bc6beb686fe64815f6ac28a1a9d3a",
+  "u_static": {
+   "pad_hard": 0.381229,
+   "table_laminate": 0.282553,
+   "abs_toy_plastic": 0.371879
+  },
+  "u_kinetic": {
+   "pad_hard": 0.326088,
+   "table_laminate": 0.24218,
+   "abs_toy_plastic": 0.307531
+  }
+ },
+ "nominal_unary": {
+  "s": {
+   "pad_hard": 0.334024,
+   "table_laminate": 0.245366,
+   "abs_toy_plastic": 0.421061
+  },
+  "k": {
+   "pad_hard": 0.286157,
+   "table_laminate": 0.212584,
+   "abs_toy_plastic": 0.348709
+  }
+ },
+ "map_realised": {
+  "s": {
+   "pad_hard__table_laminate": 0.289695,
+   "abs_toy_plastic__pad_hard": 0.377543,
+   "abs_toy_plastic__table_laminate": 0.333213
+  },
+  "k": {
+   "pad_hard__table_laminate": 0.24937,
+   "abs_toy_plastic__pad_hard": 0.317433,
+   "abs_toy_plastic__table_laminate": 0.280647
+  }
+ },
+ "bands": {
+  "pad_hard__table_laminate": {
+   "s": [
+    0.15,
+    0.5
+   ],
+   "k": [
+    0.12,
+    0.4
+   ],
+   "status_s": "unsourced",
+   "status_k": "unsourced"
+  },
+  "abs_toy_plastic__pad_hard": {
+   "s": [
+    0.3,
+    0.7
+   ],
+   "k": [
+    0.2,
+    0.55
+   ],
+   "status_s": "estimated",
+   "status_k": "estimated"
+  },
+  "abs_toy_plastic__table_laminate": {
+   "s": [
+    0.15,
+    0.5
+   ],
+   "k": [
+    0.12,
+    0.4
+   ],
+   "status_s": "unsourced",
+   "status_k": "unsourced"
+  }
+ },
+ "cells": [
+  {
+   "cell": "PL_lo",
+   "pair": "pad_hard__table_laminate",
+   "end": "lo",
+   "mode": "exact",
+   "note": "moved pair at both band ends; the other two pairs held at the map's realised values",
+   "unary_static": {
+    "pad_hard": 0.194329,
+    "table_laminate": 0.105671,
+    "abs_toy_plastic": 0.560756
+   },
+   "unary_kinetic": {
+    "pad_hard": 0.156786,
+    "table_laminate": 0.083214,
+    "abs_toy_plastic": 0.478079
+   },
+   "realised_static": {
+    "pad_hard__table_laminate": 0.15,
+    "abs_toy_plastic__pad_hard": 0.377543,
+    "abs_toy_plastic__table_laminate": 0.333213
+   },
+   "realised_kinetic": {
+    "pad_hard__table_laminate": 0.12,
+    "abs_toy_plastic__pad_hard": 0.317433,
+    "abs_toy_plastic__table_laminate": 0.280646
+   },
+   "class_friction": "pad_hard=0.194329,0.156786;table_laminate=0.105671,0.083214;abs_toy_plastic=0.560756,0.478079"
+  },
+  {
+   "cell": "PL_hi",
+   "pair": "pad_hard__table_laminate",
+   "end": "hi",
+   "mode": "exact",
+   "note": "moved pair at both band ends; the other two pairs held at the map's realised values",
+   "unary_static": {
+    "pad_hard": 0.544329,
+    "table_laminate": 0.455671,
+    "abs_toy_plastic": 0.210756
+   },
+   "unary_kinetic": {
+    "pad_hard": 0.436786,
+    "table_laminate": 0.363214,
+    "abs_toy_plastic": 0.198079
+   },
+   "realised_static": {
+    "pad_hard__table_laminate": 0.5,
+    "abs_toy_plastic__pad_hard": 0.377543,
+    "abs_toy_plastic__table_laminate": 0.333213
+   },
+   "realised_kinetic": {
+    "pad_hard__table_laminate": 0.4,
+    "abs_toy_plastic__pad_hard": 0.317433,
+    "abs_toy_plastic__table_laminate": 0.280647
+   },
+   "class_friction": "pad_hard=0.544329,0.436786;table_laminate=0.455671,0.363214;abs_toy_plastic=0.210756,0.198079"
+  },
+  {
+   "cell": "PA_lo",
+   "pair": "abs_toy_plastic__pad_hard",
+   "end": "lo",
+   "mode": "kinetic_floor",
+   "note": "exact cell infeasible at the kinetic band end 0.2 (a class would need kinetic > static); kinetic set to 0.207123, the nearest value that keeps kinetic <= static per class; the other two pairs held at the map's realised values",
+   "unary_static": {
+    "pad_hard": 0.256481,
+    "table_laminate": 0.322908,
+    "abs_toy_plastic": 0.343519
+   },
+   "unary_kinetic": {
+    "pad_hard": 0.175847,
+    "table_laminate": 0.322894,
+    "abs_toy_plastic": 0.238399
+   },
+   "realised_static": {
+    "pad_hard__table_laminate": 0.289694,
+    "abs_toy_plastic__pad_hard": 0.3,
+    "abs_toy_plastic__table_laminate": 0.333213
+   },
+   "realised_kinetic": {
+    "pad_hard__table_laminate": 0.24937,
+    "abs_toy_plastic__pad_hard": 0.207123,
+    "abs_toy_plastic__table_laminate": 0.280647
+   },
+   "class_friction": "pad_hard=0.256481,0.175847;table_laminate=0.322908,0.322894;abs_toy_plastic=0.343519,0.238399"
+  },
+  {
+   "cell": "PA_hi",
+   "pair": "abs_toy_plastic__pad_hard",
+   "end": "hi",
+   "mode": "pad_only",
+   "note": "exact cell infeasible (holding pad-table and T-table needs a negative or inverted table unary); only the pad unary moves, so pad-table moves with pad-T (dormant only if the pads never touch the table)",
+   "unary_static": {
+    "pad_hard": 0.978939,
+    "table_laminate": 0.245366,
+    "abs_toy_plastic": 0.421061
+   },
+   "unary_kinetic": {
+    "pad_hard": 0.751291,
+    "table_laminate": 0.212584,
+    "abs_toy_plastic": 0.348709
+   },
+   "realised_static": {
+    "pad_hard__table_laminate": 0.612152,
+    "abs_toy_plastic__pad_hard": 0.7,
+    "abs_toy_plastic__table_laminate": 0.333213
+   },
+   "realised_kinetic": {
+    "pad_hard__table_laminate": 0.481938,
+    "abs_toy_plastic__pad_hard": 0.55,
+    "abs_toy_plastic__table_laminate": 0.280647
+   },
+   "class_friction": "pad_hard=0.978939,0.751291"
+  },
+  {
+   "cell": "AL_lo",
+   "pair": "abs_toy_plastic__table_laminate",
+   "end": "lo",
+   "mode": "exact",
+   "note": "moved pair at both band ends; the other two pairs held at the map's realised values",
+   "unary_static": {
+    "pad_hard": 0.517237,
+    "table_laminate": 0.062152,
+    "abs_toy_plastic": 0.237848
+   },
+   "unary_kinetic": {
+    "pad_hard": 0.446804,
+    "table_laminate": 0.051938,
+    "abs_toy_plastic": 0.188062
+   },
+   "realised_static": {
+    "pad_hard__table_laminate": 0.289694,
+    "abs_toy_plastic__pad_hard": 0.377543,
+    "abs_toy_plastic__table_laminate": 0.15
+   },
+   "realised_kinetic": {
+    "pad_hard__table_laminate": 0.249371,
+    "abs_toy_plastic__pad_hard": 0.317433,
+    "abs_toy_plastic__table_laminate": 0.12
+   },
+   "class_friction": "pad_hard=0.517237,0.446804;table_laminate=0.062152,0.051938;abs_toy_plastic=0.237848,0.188062"
+  },
+  {
+   "cell": "AL_hi",
+   "pair": "abs_toy_plastic__table_laminate",
+   "end": "hi",
+   "mode": "exact",
+   "note": "moved pair at both band ends; the other two pairs held at the map's realised values",
+   "unary_static": {
+    "pad_hard": 0.167237,
+    "table_laminate": 0.412153,
+    "abs_toy_plastic": 0.587848
+   },
+   "unary_kinetic": {
+    "pad_hard": 0.166803,
+    "table_laminate": 0.331938,
+    "abs_toy_plastic": 0.468062
+   },
+   "realised_static": {
+    "pad_hard__table_laminate": 0.289695,
+    "abs_toy_plastic__pad_hard": 0.377543,
+    "abs_toy_plastic__table_laminate": 0.500001
+   },
+   "realised_kinetic": {
+    "pad_hard__table_laminate": 0.24937,
+    "abs_toy_plastic__pad_hard": 0.317433,
+    "abs_toy_plastic__table_laminate": 0.4
+   },
+   "class_friction": "pad_hard=0.167237,0.166803;table_laminate=0.412153,0.331938;abs_toy_plastic=0.587848,0.468062"
+  },
+  {
+   "cell": "PL_v3",
+   "pair": "pad_hard__table_laminate",
+   "end": "v3",
+   "mode": "exact",
+   "note": "pad-table at the population joint fit's realised value (#59 lane 3); the other two pairs held at v2b",
+   "unary_static": {
+    "pad_hard": 0.37622,
+    "table_laminate": 0.287562,
+    "abs_toy_plastic": 0.378865
+   },
+   "unary_kinetic": {
+    "pad_hard": 0.32092,
+    "table_laminate": 0.247348,
+    "abs_toy_plastic": 0.313945
+   },
+   "realised_static": {
+    "pad_hard__table_laminate": 0.331891,
+    "abs_toy_plastic__pad_hard": 0.377543,
+    "abs_toy_plastic__table_laminate": 0.333213
+   },
+   "realised_kinetic": {
+    "pad_hard__table_laminate": 0.284134,
+    "abs_toy_plastic__pad_hard": 0.317433,
+    "abs_toy_plastic__table_laminate": 0.280647
+   },
+   "class_friction": "pad_hard=0.376220,0.320920;table_laminate=0.287562,0.247348;abs_toy_plastic=0.378865,0.313945"
+  },
+  {
+   "cell": "MAP_v3",
+   "pair": "all three",
+   "end": "v3",
+   "mode": "map",
+   "note": "pad, table and T unaries of the population joint fit (#59 lane 3): every pair at that map's value",
+   "unary_static": {
+    "pad_hard": 0.381229,
+    "table_laminate": 0.282553,
+    "abs_toy_plastic": 0.371879
+   },
+   "unary_kinetic": {
+    "pad_hard": 0.326088,
+    "table_laminate": 0.24218,
+    "abs_toy_plastic": 0.307531
+   },
+   "realised_static": {
+    "pad_hard__table_laminate": 0.331891,
+    "abs_toy_plastic__pad_hard": 0.376554,
+    "abs_toy_plastic__table_laminate": 0.327216
+   },
+   "realised_kinetic": {
+    "pad_hard__table_laminate": 0.284134,
+    "abs_toy_plastic__pad_hard": 0.316809,
+    "abs_toy_plastic__table_laminate": 0.274856
+   },
+   "class_friction": "pad_hard=0.381229,0.326088;table_laminate=0.282553,0.242180;abs_toy_plastic=0.371879,0.307531"
+  }
+ ]
+}

@@ -1,0 +1,6085 @@
+{
+ "Articulation/egg_holder/00000": {
+  "asset": "Articulation/egg_holder/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.0452,
+    -0.046,
+    -0.0
+   ],
+   "max": [
+    0.0452,
+    0.0749,
+    0.1256
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0603,
+    -0.0614,
+    -0.0
+   ],
+   "max": [
+    0.0603,
+    0.0999,
+    0.1665
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0603,
+    -0.0614,
+    -0.0
+   ],
+   "max": [
+    0.0603,
+    0.0999,
+    0.1665
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    -15.1,
+    -15.4,
+    0.0
+   ],
+   "max": [
+    15.1,
+    25.0,
+    40.9
+   ]
+  }
+ },
+ "Articulation/laptop/00000": {
+  "asset": "Articulation/laptop/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.0896,
+    -0.0782,
+    0.0
+   ],
+   "max": [
+    0.0897,
+    0.0902,
+    0.1208
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0896,
+    -0.0782,
+    0.0
+   ],
+   "max": [
+    0.0897,
+    0.0902,
+    0.1208
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0896,
+    -0.0782,
+    0.0
+   ],
+   "max": [
+    0.0897,
+    0.0902,
+    0.1208
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Articulation/toaster/00001": {
+  "asset": "Articulation/toaster/00001",
+  "metadata_aligned": {
+   "min": [
+    -0.1108,
+    -0.0706,
+    -0.0759
+   ],
+   "max": [
+    0.1384,
+    0.0691,
+    0.0751
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.1108,
+    -0.0706,
+    -0.0759
+   ],
+   "max": [
+    0.1384,
+    0.0691,
+    0.0751
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.1108,
+    -0.0706,
+    -0.0759
+   ],
+   "max": [
+    0.1384,
+    0.0691,
+    0.0751
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Geometry/basket/00002": {
+  "asset": "Geometry/basket/00002",
+  "metadata_aligned": {
+   "min": [
+    -0.126,
+    -0.084,
+    -0.0386
+   ],
+   "max": [
+    0.126,
+    0.084,
+    0.0384
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.126,
+    -0.084,
+    -0.0386
+   ],
+   "max": [
+    0.126,
+    0.084,
+    0.0384
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.126,
+    -0.084,
+    -0.0386
+   ],
+   "max": [
+    0.126,
+    0.084,
+    0.0384
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Geometry/basket/00003": {
+  "asset": "Geometry/basket/00003",
+  "metadata_aligned": {
+   "min": [
+    -0.126,
+    -0.084,
+    -0.0386
+   ],
+   "max": [
+    0.126,
+    0.084,
+    0.0384
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.126,
+    -0.084,
+    -0.0386
+   ],
+   "max": [
+    0.126,
+    0.084,
+    0.0384
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.126,
+    -0.084,
+    -0.0386
+   ],
+   "max": [
+    0.126,
+    0.084,
+    0.0384
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Geometry/basket/00004": {
+  "asset": "Geometry/basket/00004",
+  "metadata_aligned": {
+   "min": [
+    -0.126,
+    -0.084,
+    -0.0386
+   ],
+   "max": [
+    0.126,
+    0.084,
+    0.0384
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.126,
+    -0.084,
+    -0.0386
+   ],
+   "max": [
+    0.126,
+    0.084,
+    0.0384
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.126,
+    -0.084,
+    -0.0386
+   ],
+   "max": [
+    0.126,
+    0.084,
+    0.0384
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Geometry/basket/00005": {
+  "asset": "Geometry/basket/00005",
+  "metadata_aligned": {
+   "min": [
+    -0.1512,
+    -0.1008,
+    -0.0386
+   ],
+   "max": [
+    0.1512,
+    0.1008,
+    0.0384
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.1512,
+    -0.1008,
+    -0.0386
+   ],
+   "max": [
+    0.1512,
+    0.1008,
+    0.0384
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.1512,
+    -0.1008,
+    -0.0386
+   ],
+   "max": [
+    0.1512,
+    0.1008,
+    0.0384
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Geometry/bread_shelf/00000": {
+  "asset": "Geometry/bread_shelf/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.0792,
+    -0.0417,
+    -0.0381
+   ],
+   "max": [
+    0.0791,
+    0.0419,
+    0.0381
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0792,
+    -0.0417,
+    -0.0381
+   ],
+   "max": [
+    0.0791,
+    0.0419,
+    0.0381
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0792,
+    -0.0417,
+    -0.0381
+   ],
+   "max": [
+    0.0791,
+    0.0419,
+    0.0381
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Geometry/cube_cushion/00002": {
+  "asset": "Geometry/cube_cushion/00002",
+  "metadata_aligned": {
+   "min": [
+    -0.025,
+    -0.025,
+    0.0
+   ],
+   "max": [
+    0.025,
+    0.025,
+    0.0
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.25,
+    1.25,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.02,
+    -0.02,
+    -0.0
+   ],
+   "max": [
+    0.02,
+    0.02,
+    0.0
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.02,
+    -0.02,
+    -0.0
+   ],
+   "max": [
+    0.02,
+    0.02,
+    0.0
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    5.0,
+    5.0,
+    -0.0
+   ],
+   "max": [
+    -5.0,
+    -5.0,
+    0.0
+   ]
+  }
+ },
+ "Geometry/cup_holder/00000": {
+  "asset": "Geometry/cup_holder/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.0904,
+    -0.0904,
+    -0.1744
+   ],
+   "max": [
+    0.0904,
+    0.0904,
+    0.1744
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/World",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0904,
+    -0.0904,
+    -0.1744
+   ],
+   "max": [
+    0.0904,
+    0.0904,
+    0.1744
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0904,
+    -0.0904,
+    -0.1744
+   ],
+   "max": [
+    0.0904,
+    0.0904,
+    0.1744
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Geometry/drawer/00000": {
+  "asset": "Geometry/drawer/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.0799,
+    -0.1872,
+    0.0
+   ],
+   "max": [
+    0.1875,
+    0.1638,
+    0.2271
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0799,
+    -0.1872,
+    0.0
+   ],
+   "max": [
+    0.1875,
+    0.1638,
+    0.2271
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0799,
+    -0.1872,
+    0.0
+   ],
+   "max": [
+    0.1875,
+    0.1638,
+    0.2271
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Geometry/dustbin/00000": {
+  "asset": "Geometry/dustbin/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.235,
+    -0.2347,
+    -0.325
+   ],
+   "max": [
+    0.235,
+    0.2353,
+    0.325
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/World",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.235,
+    -0.2347,
+    -0.325
+   ],
+   "max": [
+    0.235,
+    0.2353,
+    0.325
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.235,
+    -0.2347,
+    -0.325
+   ],
+   "max": [
+    0.235,
+    0.2353,
+    0.325
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Geometry/factory_bolt/00002": {
+  "asset": "Geometry/factory_bolt/00002",
+  "metadata_aligned": {
+   "min": [
+    -0.018,
+    -0.0208,
+    0.0
+   ],
+   "max": [
+    0.018,
+    0.0208,
+    0.0525
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    -0.0263
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.018,
+    -0.0208,
+    0.0
+   ],
+   "max": [
+    0.018,
+    0.0208,
+    0.0525
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.018,
+    -0.0208,
+    0.0
+   ],
+   "max": [
+    0.018,
+    0.0208,
+    0.0525
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Geometry/frame/00000": {
+  "asset": "Geometry/frame/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.12,
+    -0.05,
+    0.0
+   ],
+   "max": [
+    0.12,
+    0.05,
+    0.0003
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/World",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.12,
+    -0.05,
+    0.0
+   ],
+   "max": [
+    0.12,
+    0.05,
+    0.0003
+   ]
+  },
+  "collider_box_default_prim_frame": null
+ },
+ "Geometry/headset_stand/00000": {
+  "asset": "Geometry/headset_stand/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.0893,
+    -0.052,
+    -0.1375
+   ],
+   "max": [
+    0.089,
+    0.0523,
+    0.1375
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0893,
+    -0.052,
+    -0.1375
+   ],
+   "max": [
+    0.089,
+    0.0523,
+    0.1375
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0893,
+    -0.052,
+    -0.1375
+   ],
+   "max": [
+    0.089,
+    0.0523,
+    0.1375
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Geometry/key_slot/00000": {
+  "asset": "Geometry/key_slot/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.05,
+    -0.05,
+    0.0
+   ],
+   "max": [
+    0.05,
+    0.05,
+    0.055
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/KeySlot",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.05,
+    -0.05,
+    0.0
+   ],
+   "max": [
+    0.05,
+    0.05,
+    0.055
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.05,
+    -0.05,
+    0.0
+   ],
+   "max": [
+    0.05,
+    0.05,
+    0.055
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Geometry/mousemat/00000": {
+  "asset": "Geometry/mousemat/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.1201,
+    -0.096,
+    -0.0036
+   ],
+   "max": [
+    0.1201,
+    0.096,
+    0.0036
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/World",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.1201,
+    -0.096,
+    -0.0036
+   ],
+   "max": [
+    0.1201,
+    0.096,
+    0.0036
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.1201,
+    -0.096,
+    -0.0036
+   ],
+   "max": [
+    0.1201,
+    0.096,
+    0.0036
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Geometry/piggy_bank/00000": {
+  "asset": "Geometry/piggy_bank/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.0742,
+    -0.1142,
+    -0.0
+   ],
+   "max": [
+    0.0742,
+    0.0953,
+    0.115
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/World",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0742,
+    -0.1142,
+    -0.0
+   ],
+   "max": [
+    0.0742,
+    0.0953,
+    0.115
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0742,
+    -0.1142,
+    -0.0
+   ],
+   "max": [
+    0.0742,
+    0.0953,
+    0.115
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Geometry/stack_base/00000": {
+  "asset": "Geometry/stack_base/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.1285,
+    -0.0324,
+    0.0
+   ],
+   "max": [
+    0.1307,
+    0.0324,
+    0.0653
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/World",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.1285,
+    -0.0324,
+    0.0
+   ],
+   "max": [
+    0.1307,
+    0.0324,
+    0.0653
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.1285,
+    -0.0324,
+    0.0
+   ],
+   "max": [
+    0.1307,
+    0.0324,
+    0.0653
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Geometry/test_tube_slot/00000": {
+  "asset": "Geometry/test_tube_slot/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.1025,
+    -0.048,
+    -0.03
+   ],
+   "max": [
+    0.1025,
+    0.048,
+    0.03
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    -0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.1025,
+    -0.048,
+    -0.03
+   ],
+   "max": [
+    0.1025,
+    0.048,
+    0.03
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.1025,
+    -0.048,
+    -0.03
+   ],
+   "max": [
+    0.1025,
+    0.048,
+    0.03
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Geometry/toolbox/00000": {
+  "asset": "Geometry/toolbox/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.1372,
+    -0.1389,
+    -0.0251
+   ],
+   "max": [
+    0.1372,
+    0.1385,
+    0.0249
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.1372,
+    -0.1389,
+    -0.0251
+   ],
+   "max": [
+    0.1372,
+    0.1385,
+    0.0249
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.1372,
+    -0.1389,
+    -0.0251
+   ],
+   "max": [
+    0.1372,
+    0.1385,
+    0.0249
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Geometry/vase/00000": {
+  "asset": "Geometry/vase/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.0592,
+    -0.0591,
+    -0.0711
+   ],
+   "max": [
+    0.0591,
+    0.0592,
+    0.0709
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0592,
+    -0.0591,
+    -0.0711
+   ],
+   "max": [
+    0.0591,
+    0.0592,
+    0.0709
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0592,
+    -0.0591,
+    -0.0711
+   ],
+   "max": [
+    0.0591,
+    0.0592,
+    0.0709
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Geometry/vase/00001": {
+  "asset": "Geometry/vase/00001",
+  "metadata_aligned": {
+   "min": [
+    -0.0499,
+    -0.0386,
+    -0.074
+   ],
+   "max": [
+    0.0498,
+    0.0386,
+    0.0739
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0499,
+    -0.0386,
+    -0.074
+   ],
+   "max": [
+    0.0498,
+    0.0386,
+    0.0739
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0499,
+    -0.0386,
+    -0.074
+   ],
+   "max": [
+    0.0498,
+    0.0386,
+    0.0739
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Geometry/vase/00002": {
+  "asset": "Geometry/vase/00002",
+  "metadata_aligned": {
+   "min": [
+    -0.0901,
+    -0.0899,
+    -0.0741
+   ],
+   "max": [
+    0.0899,
+    0.0901,
+    0.0739
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0901,
+    -0.0899,
+    -0.0741
+   ],
+   "max": [
+    0.0899,
+    0.0901,
+    0.0739
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0901,
+    -0.0899,
+    -0.0741
+   ],
+   "max": [
+    0.0899,
+    0.0901,
+    0.0739
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Geometry/vase/00003": {
+  "asset": "Geometry/vase/00003",
+  "metadata_aligned": {
+   "min": [
+    -0.0399,
+    -0.0398,
+    -0.0755
+   ],
+   "max": [
+    0.0398,
+    0.0399,
+    0.0755
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0399,
+    -0.0398,
+    -0.0755
+   ],
+   "max": [
+    0.0398,
+    0.0399,
+    0.0755
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0399,
+    -0.0398,
+    -0.0755
+   ],
+   "max": [
+    0.0398,
+    0.0399,
+    0.0755
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Geometry/vase/00004": {
+  "asset": "Geometry/vase/00004",
+  "metadata_aligned": {
+   "min": [
+    -0.0559,
+    -0.0557,
+    -0.0745
+   ],
+   "max": [
+    0.0557,
+    0.0559,
+    0.0743
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0559,
+    -0.0557,
+    -0.0745
+   ],
+   "max": [
+    0.0557,
+    0.0559,
+    0.0743
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0559,
+    -0.0557,
+    -0.0745
+   ],
+   "max": [
+    0.0557,
+    0.0559,
+    0.0743
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Geometry/vertical_laptop_storage_rack/00000": {
+  "asset": "Geometry/vertical_laptop_storage_rack/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.0685,
+    -0.0265,
+    -0.0244
+   ],
+   "max": [
+    0.0684,
+    0.0266,
+    0.0243
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0685,
+    -0.0265,
+    -0.0244
+   ],
+   "max": [
+    0.0684,
+    0.0266,
+    0.0243
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0685,
+    -0.0265,
+    -0.0244
+   ],
+   "max": [
+    0.0684,
+    0.0266,
+    0.0243
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/action_camera/00001": {
+  "asset": "Rigid/action_camera/00001",
+  "metadata_aligned": {
+   "min": [
+    -0.0318,
+    -0.0167,
+    -0.0012
+   ],
+   "max": [
+    0.0328,
+    0.0153,
+    0.0463
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0318,
+    -0.0167,
+    -0.0012
+   ],
+   "max": [
+    0.0328,
+    0.0153,
+    0.0463
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0318,
+    -0.0167,
+    -0.0012
+   ],
+   "max": [
+    0.0328,
+    0.0153,
+    0.0463
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/alarm/00000": {
+  "asset": "Rigid/alarm/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.04,
+    -0.0249,
+    -0.0401
+   ],
+   "max": [
+    0.04,
+    0.0251,
+    0.0399
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.04,
+    -0.0249,
+    -0.0401
+   ],
+   "max": [
+    0.04,
+    0.0251,
+    0.0399
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.04,
+    -0.0249,
+    -0.0401
+   ],
+   "max": [
+    0.04,
+    0.0251,
+    0.0399
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/basket_grasp/00002": {
+  "asset": "Rigid/basket_grasp/00002",
+  "metadata_aligned": {
+   "min": [
+    -0.1803,
+    -0.1207,
+    -0.1095
+   ],
+   "max": [
+    0.1799,
+    0.1211,
+    0.1091
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.1803,
+    -0.1207,
+    -0.1095
+   ],
+   "max": [
+    0.1799,
+    0.1211,
+    0.1091
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.1803,
+    -0.1207,
+    -0.1095
+   ],
+   "max": [
+    0.1799,
+    0.1211,
+    0.1091
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/block/00000": {
+  "asset": "Rigid/block/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.1874,
+    -0.0327,
+    -0.01
+   ],
+   "max": [
+    0.1874,
+    0.0327,
+    0.01
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/World",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.1874,
+    -0.0327,
+    -0.01
+   ],
+   "max": [
+    0.1874,
+    0.0327,
+    0.01
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.1874,
+    -0.0327,
+    -0.01
+   ],
+   "max": [
+    0.1874,
+    0.0327,
+    0.01
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/block/00002": {
+  "asset": "Rigid/block/00002",
+  "metadata_aligned": {
+   "min": [
+    -0.019,
+    -0.0309,
+    -0.0189
+   ],
+   "max": [
+    0.019,
+    0.0309,
+    0.0189
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/World",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.019,
+    -0.0309,
+    -0.0189
+   ],
+   "max": [
+    0.019,
+    0.0309,
+    0.0189
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.019,
+    -0.0309,
+    -0.0189
+   ],
+   "max": [
+    0.019,
+    0.0309,
+    0.0189
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/block/00004": {
+  "asset": "Rigid/block/00004",
+  "metadata_aligned": {
+   "min": [
+    -0.1218,
+    -0.0327,
+    -0.01
+   ],
+   "max": [
+    0.1218,
+    0.0327,
+    0.01
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/World",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.1218,
+    -0.0327,
+    -0.01
+   ],
+   "max": [
+    0.1218,
+    0.0327,
+    0.01
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.1218,
+    -0.0327,
+    -0.01
+   ],
+   "max": [
+    0.1218,
+    0.0327,
+    0.01
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/bottle/00022": {
+  "asset": "Rigid/bottle/00022",
+  "metadata_aligned": {
+   "min": [
+    -0.0351,
+    -0.0349,
+    -0.1201
+   ],
+   "max": [
+    0.0349,
+    0.0351,
+    0.1199
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0351,
+    -0.0349,
+    -0.1201
+   ],
+   "max": [
+    0.0349,
+    0.0351,
+    0.1199
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0351,
+    -0.0349,
+    -0.1201
+   ],
+   "max": [
+    0.0349,
+    0.0351,
+    0.1199
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/bottle/00025": {
+  "asset": "Rigid/bottle/00025",
+  "metadata_aligned": {
+   "min": [
+    -0.0321,
+    -0.0319,
+    -0.1021
+   ],
+   "max": [
+    0.0319,
+    0.0321,
+    0.1019
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0321,
+    -0.0319,
+    -0.1021
+   ],
+   "max": [
+    0.0319,
+    0.0321,
+    0.1019
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0321,
+    -0.0319,
+    -0.1021
+   ],
+   "max": [
+    0.0319,
+    0.0321,
+    0.1019
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/bottle/00041": {
+  "asset": "Rigid/bottle/00041",
+  "metadata_aligned": {
+   "min": [
+    -0.0266,
+    -0.0264,
+    -0.0926
+   ],
+   "max": [
+    0.0264,
+    0.0266,
+    0.0924
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0266,
+    -0.0264,
+    -0.0926
+   ],
+   "max": [
+    0.0264,
+    0.0266,
+    0.0924
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0266,
+    -0.0264,
+    -0.0926
+   ],
+   "max": [
+    0.0264,
+    0.0266,
+    0.0924
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/bottle/00060": {
+  "asset": "Rigid/bottle/00060",
+  "metadata_aligned": {
+   "min": [
+    -0.0275,
+    -0.0275,
+    -0.095
+   ],
+   "max": [
+    0.0275,
+    0.0275,
+    0.095
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/World",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0275,
+    -0.0275,
+    -0.095
+   ],
+   "max": [
+    0.0275,
+    0.0275,
+    0.095
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0275,
+    -0.0275,
+    -0.095
+   ],
+   "max": [
+    0.0275,
+    0.0275,
+    0.095
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/bowl/00010": {
+  "asset": "Rigid/bowl/00010",
+  "metadata_aligned": {
+   "min": [
+    -0.0601,
+    -0.0599,
+    -0.025
+   ],
+   "max": [
+    0.0599,
+    0.0601,
+    0.025
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0601,
+    -0.0599,
+    -0.025
+   ],
+   "max": [
+    0.0599,
+    0.0601,
+    0.025
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0601,
+    -0.0599,
+    -0.025
+   ],
+   "max": [
+    0.0599,
+    0.0601,
+    0.025
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/box/00000": {
+  "asset": "Rigid/box/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.084,
+    -0.1506,
+    -0.0
+   ],
+   "max": [
+    0.086,
+    0.1406,
+    0.1818
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.084,
+    -0.1506,
+    -0.0
+   ],
+   "max": [
+    0.086,
+    0.1406,
+    0.1818
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.084,
+    -0.1506,
+    -0.0
+   ],
+   "max": [
+    0.086,
+    0.1406,
+    0.1818
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/bread/00000": {
+  "asset": "Rigid/bread/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.0584,
+    -0.0583,
+    -0.0003
+   ],
+   "max": [
+    0.0586,
+    0.0578,
+    0.0115
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/World",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0584,
+    -0.0583,
+    -0.0003
+   ],
+   "max": [
+    0.0586,
+    0.0578,
+    0.0115
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0584,
+    -0.0583,
+    -0.0003
+   ],
+   "max": [
+    0.0586,
+    0.0578,
+    0.0115
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/broom_shovel/00000": {
+  "asset": "Rigid/broom_shovel/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.0921,
+    -0.1399,
+    -0.0243
+   ],
+   "max": [
+    0.0919,
+    0.1401,
+    0.0237
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0921,
+    -0.1399,
+    -0.0243
+   ],
+   "max": [
+    0.0919,
+    0.1401,
+    0.0237
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0921,
+    -0.1399,
+    -0.0243
+   ],
+   "max": [
+    0.0919,
+    0.1401,
+    0.0237
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/can/00000": {
+  "asset": "Rigid/can/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.0247,
+    -0.0247,
+    0.0005
+   ],
+   "max": [
+    0.0247,
+    0.0247,
+    0.1385
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/World",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0247,
+    -0.0247,
+    0.0005
+   ],
+   "max": [
+    0.0247,
+    0.0247,
+    0.1385
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0247,
+    -0.0247,
+    0.0005
+   ],
+   "max": [
+    0.0247,
+    0.0247,
+    0.1385
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/car/00007": {
+  "asset": "Rigid/car/00007",
+  "metadata_aligned": {
+   "min": [
+    -0.0645,
+    -0.0289,
+    -0.018
+   ],
+   "max": [
+    0.0645,
+    0.0289,
+    0.018
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0645,
+    -0.0289,
+    -0.018
+   ],
+   "max": [
+    0.0645,
+    0.0289,
+    0.018
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0645,
+    -0.0289,
+    -0.018
+   ],
+   "max": [
+    0.0645,
+    0.0289,
+    0.018
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/car/00014": {
+  "asset": "Rigid/car/00014",
+  "metadata_aligned": {
+   "min": [
+    -0.0379,
+    -0.0245,
+    -0.0234
+   ],
+   "max": [
+    0.0378,
+    0.0245,
+    0.0234
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0379,
+    -0.0245,
+    -0.0234
+   ],
+   "max": [
+    0.0378,
+    0.0245,
+    0.0234
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0379,
+    -0.0245,
+    -0.0234
+   ],
+   "max": [
+    0.0378,
+    0.0245,
+    0.0234
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/charger/00000": {
+  "asset": "Rigid/charger/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.0233,
+    -0.0169,
+    -0.015
+   ],
+   "max": [
+    0.0233,
+    0.0531,
+    0.015
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.021,
+    -0.0152,
+    -0.0135
+   ],
+   "max": [
+    0.021,
+    0.0479,
+    0.0135
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.021,
+    -0.0152,
+    -0.0135
+   ],
+   "max": [
+    0.021,
+    0.0479,
+    0.0135
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    2.3,
+    1.7,
+    1.5
+   ],
+   "max": [
+    -2.3,
+    -5.2,
+    -1.5
+   ]
+  }
+ },
+ "Rigid/coin/00000": {
+  "asset": "Rigid/coin/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.0142,
+    -0.0142,
+    0.0
+   ],
+   "max": [
+    0.0142,
+    0.0142,
+    0.0019
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/World",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0143,
+    -0.0143,
+    0.0
+   ],
+   "max": [
+    0.0143,
+    0.0143,
+    0.0019
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0143,
+    -0.0143,
+    0.0
+   ],
+   "max": [
+    0.0143,
+    0.0143,
+    0.0019
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    -0.1,
+    -0.1,
+    0.0
+   ],
+   "max": [
+    0.1,
+    0.1,
+    0.0
+   ]
+  }
+ },
+ "Rigid/corkscrew/00000": {
+  "asset": "Rigid/corkscrew/00000",
+  "metadata_aligned": {
+   "min": [
+    0.1027,
+    0.123,
+    0.1998
+   ],
+   "max": [
+    0.221,
+    0.139,
+    0.271
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/World",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.008,
+    -0.0356,
+    -0.008
+   ],
+   "max": [
+    0.1104,
+    0.0356,
+    0.008
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.008,
+    -0.0356,
+    -0.008
+   ],
+   "max": [
+    0.1104,
+    0.0356,
+    0.008
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    -110.7,
+    -158.6,
+    -207.8
+   ],
+   "max": [
+    -110.6,
+    -103.4,
+    -263.0
+   ]
+  }
+ },
+ "Rigid/cup/00006": {
+  "asset": "Rigid/cup/00006",
+  "metadata_aligned": {
+   "min": [
+    -0.036,
+    -0.0362,
+    -0.038
+   ],
+   "max": [
+    0.036,
+    0.0358,
+    0.034
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.036,
+    -0.036,
+    -0.0359
+   ],
+   "max": [
+    0.036,
+    0.036,
+    0.0361
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.036,
+    -0.036,
+    -0.0359
+   ],
+   "max": [
+    0.036,
+    0.036,
+    0.0361
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.2,
+    2.1
+   ],
+   "max": [
+    0.0,
+    0.2,
+    2.1
+   ]
+  }
+ },
+ "Rigid/egg/00000": {
+  "asset": "Rigid/egg/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.0206,
+    -0.0211,
+    -0.03
+   ],
+   "max": [
+    0.0206,
+    0.0211,
+    0.0276
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/World",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0206,
+    -0.0211,
+    -0.03
+   ],
+   "max": [
+    0.0206,
+    0.0211,
+    0.0278
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0206,
+    -0.0211,
+    -0.0298
+   ],
+   "max": [
+    0.0206,
+    0.0211,
+    0.0278
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.2
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.2
+   ]
+  }
+ },
+ "Rigid/electric_toothbrush/00002": {
+  "asset": "Rigid/electric_toothbrush/00002",
+  "metadata_aligned": {
+   "min": [
+    -0.014,
+    -0.0162,
+    -0.0875
+   ],
+   "max": [
+    0.014,
+    0.0162,
+    0.0875
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.014,
+    -0.0162,
+    -0.0875
+   ],
+   "max": [
+    0.014,
+    0.0162,
+    0.0875
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.014,
+    -0.0162,
+    -0.0875
+   ],
+   "max": [
+    0.014,
+    0.0162,
+    0.0875
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/factory_nut/00002": {
+  "asset": "Rigid/factory_nut/00002",
+  "metadata_aligned": {
+   "min": [
+    -0.0179,
+    -0.0203,
+    -0.0086
+   ],
+   "max": [
+    0.0173,
+    0.0203,
+    0.0105
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0179,
+    -0.0203,
+    -0.0086
+   ],
+   "max": [
+    0.0173,
+    0.0203,
+    0.0105
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0179,
+    -0.0203,
+    -0.0086
+   ],
+   "max": [
+    0.0173,
+    0.0203,
+    0.0105
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/game_machine/00000": {
+  "asset": "Rigid/game_machine/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.0301,
+    -0.0115,
+    -0.0324
+   ],
+   "max": [
+    0.03,
+    0.0115,
+    0.0323
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0301,
+    -0.0115,
+    -0.0324
+   ],
+   "max": [
+    0.03,
+    0.0115,
+    0.0323
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0301,
+    -0.0115,
+    -0.0324
+   ],
+   "max": [
+    0.03,
+    0.0115,
+    0.0323
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/garage/00008": {
+  "asset": "Rigid/garage/00008",
+  "metadata_aligned": {
+   "min": [
+    -0.0416,
+    -0.0371,
+    -0.0907
+   ],
+   "max": [
+    0.0416,
+    0.0371,
+    0.0907
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0416,
+    -0.0371,
+    -0.0907
+   ],
+   "max": [
+    0.0416,
+    0.0371,
+    0.0907
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0416,
+    -0.0371,
+    -0.0907
+   ],
+   "max": [
+    0.0416,
+    0.0371,
+    0.0907
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/garage/00015": {
+  "asset": "Rigid/garage/00015",
+  "metadata_aligned": {
+   "min": [
+    -0.0319,
+    -0.0297,
+    -0.061
+   ],
+   "max": [
+    0.0317,
+    0.0299,
+    0.061
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0319,
+    -0.0297,
+    -0.061
+   ],
+   "max": [
+    0.0317,
+    0.0299,
+    0.061
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0319,
+    -0.0297,
+    -0.061
+   ],
+   "max": [
+    0.0317,
+    0.0299,
+    0.061
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/hammer/00003": {
+  "asset": "Rigid/hammer/00003",
+  "metadata_aligned": {
+   "min": [
+    -0.0716,
+    -0.029,
+    -0.0075
+   ],
+   "max": [
+    0.0716,
+    0.029,
+    0.0075
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/World",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0716,
+    -0.029,
+    -0.0075
+   ],
+   "max": [
+    0.0716,
+    0.029,
+    0.0075
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0716,
+    -0.029,
+    -0.0075
+   ],
+   "max": [
+    0.0716,
+    0.029,
+    0.0075
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/hammer/00005": {
+  "asset": "Rigid/hammer/00005",
+  "metadata_aligned": {
+   "min": [
+    -0.1142,
+    -0.0127,
+    -0.0381
+   ],
+   "max": [
+    0.114,
+    0.0129,
+    0.0381
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.1142,
+    -0.0127,
+    -0.0381
+   ],
+   "max": [
+    0.114,
+    0.0129,
+    0.0381
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.1142,
+    -0.0127,
+    -0.0381
+   ],
+   "max": [
+    0.114,
+    0.0129,
+    0.0381
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/headset/00006": {
+  "asset": "Rigid/headset/00006",
+  "metadata_aligned": {
+   "min": [
+    -0.0923,
+    -0.0467,
+    -0.099
+   ],
+   "max": [
+    0.0921,
+    0.0469,
+    0.099
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0923,
+    -0.0467,
+    -0.099
+   ],
+   "max": [
+    0.0921,
+    0.0469,
+    0.099
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0923,
+    -0.0467,
+    -0.099
+   ],
+   "max": [
+    0.0921,
+    0.0469,
+    0.099
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/key/00000": {
+  "asset": "Rigid/key/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.01,
+    -0.005,
+    -0.0528
+   ],
+   "max": [
+    0.0127,
+    0.005,
+    0.01
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/Key",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.01,
+    -0.005,
+    -0.0528
+   ],
+   "max": [
+    0.0127,
+    0.005,
+    0.01
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.01,
+    -0.005,
+    -0.0528
+   ],
+   "max": [
+    0.0127,
+    0.005,
+    0.01
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/keyboard/00000": {
+  "asset": "Rigid/keyboard/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.1599,
+    -0.0764,
+    -0.0133
+   ],
+   "max": [
+    0.1599,
+    0.0764,
+    0.0133
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/World",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.1599,
+    -0.0764,
+    -0.0133
+   ],
+   "max": [
+    0.1599,
+    0.0764,
+    0.0133
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.1599,
+    -0.0764,
+    -0.0133
+   ],
+   "max": [
+    0.1599,
+    0.0764,
+    0.0133
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/mouse/00004": {
+  "asset": "Rigid/mouse/00004",
+  "metadata_aligned": {
+   "min": [
+    -0.0559,
+    -0.0366,
+    -0.0183
+   ],
+   "max": [
+    0.0558,
+    0.0368,
+    0.0183
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0559,
+    -0.0366,
+    -0.0183
+   ],
+   "max": [
+    0.0558,
+    0.0368,
+    0.0183
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0559,
+    -0.0366,
+    -0.0183
+   ],
+   "max": [
+    0.0558,
+    0.0368,
+    0.0183
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/mug/00008": {
+  "asset": "Rigid/mug/00008",
+  "metadata_aligned": {
+   "min": [
+    -0.0603,
+    -0.0464,
+    -0.0343
+   ],
+   "max": [
+    0.0602,
+    0.0465,
+    0.0343
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0603,
+    -0.0464,
+    -0.0343
+   ],
+   "max": [
+    0.0602,
+    0.0465,
+    0.0343
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0603,
+    -0.0464,
+    -0.0343
+   ],
+   "max": [
+    0.0602,
+    0.0465,
+    0.0343
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/noodles/00000": {
+  "asset": "Rigid/noodles/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.0384,
+    -0.044,
+    -0.0007
+   ],
+   "max": [
+    0.0504,
+    0.0477,
+    0.1
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/World",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0384,
+    -0.044,
+    -0.0007
+   ],
+   "max": [
+    0.0504,
+    0.0477,
+    0.1
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0384,
+    -0.044,
+    -0.0007
+   ],
+   "max": [
+    0.0504,
+    0.0477,
+    0.1
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/pen/00004": {
+  "asset": "Rigid/pen/00004",
+  "metadata_aligned": {
+   "min": [
+    -0.0907,
+    -0.0101,
+    -0.0009
+   ],
+   "max": [
+    0.0944,
+    0.0085,
+    0.0204
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/World",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0907,
+    -0.0101,
+    -0.0009
+   ],
+   "max": [
+    0.0944,
+    0.0085,
+    0.0204
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0907,
+    -0.0101,
+    -0.0009
+   ],
+   "max": [
+    0.0944,
+    0.0085,
+    0.0204
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/pen/00011": {
+  "asset": "Rigid/pen/00011",
+  "metadata_aligned": {
+   "min": [
+    -0.0119,
+    -0.0112,
+    -0.0081
+   ],
+   "max": [
+    0.1257,
+    0.0084,
+    0.0082
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/World",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0119,
+    -0.0112,
+    -0.0081
+   ],
+   "max": [
+    0.1257,
+    0.0084,
+    0.0082
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0119,
+    -0.0112,
+    -0.0081
+   ],
+   "max": [
+    0.1257,
+    0.0084,
+    0.0082
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/pen_holder/00000": {
+  "asset": "Rigid/pen_holder/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.0401,
+    -0.0357,
+    0.0
+   ],
+   "max": [
+    0.0399,
+    0.0336,
+    0.12
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/World",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0401,
+    -0.0357,
+    0.0
+   ],
+   "max": [
+    0.0399,
+    0.0336,
+    0.12
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0401,
+    -0.0357,
+    0.0
+   ],
+   "max": [
+    0.0399,
+    0.0336,
+    0.12
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/phone/00000": {
+  "asset": "Rigid/phone/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.024,
+    -0.013,
+    0.0
+   ],
+   "max": [
+    0.0242,
+    0.0094,
+    0.1147
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/World",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.024,
+    -0.013,
+    0.0
+   ],
+   "max": [
+    0.0242,
+    0.0094,
+    0.1147
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.024,
+    -0.013,
+    0.0
+   ],
+   "max": [
+    0.0242,
+    0.0094,
+    0.1147
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/pliers/00000": {
+  "asset": "Rigid/pliers/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.0773,
+    -0.0121,
+    -0.0305
+   ],
+   "max": [
+    0.0772,
+    0.0122,
+    0.0305
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0773,
+    -0.0121,
+    -0.0305
+   ],
+   "max": [
+    0.0772,
+    0.0122,
+    0.0305
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0773,
+    -0.0121,
+    -0.0305
+   ],
+   "max": [
+    0.0772,
+    0.0122,
+    0.0305
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/remote/00000": {
+  "asset": "Rigid/remote/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.0171,
+    -0.1006,
+    -0.0
+   ],
+   "max": [
+    0.0171,
+    0.0587,
+    0.0235
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/World",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0171,
+    -0.1006,
+    -0.0
+   ],
+   "max": [
+    0.0171,
+    0.0587,
+    0.0235
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0171,
+    -0.1006,
+    -0.0
+   ],
+   "max": [
+    0.0171,
+    0.0587,
+    0.0235
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/scissor/00000": {
+  "asset": "Rigid/scissor/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.0398,
+    -0.007,
+    -0.1159
+   ],
+   "max": [
+    0.0396,
+    0.0072,
+    0.1156
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0398,
+    -0.007,
+    -0.1159
+   ],
+   "max": [
+    0.0396,
+    0.0072,
+    0.1156
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0398,
+    -0.007,
+    -0.1159
+   ],
+   "max": [
+    0.0396,
+    0.0072,
+    0.1156
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/shoe/00003": {
+  "asset": "Rigid/shoe/00003",
+  "metadata_aligned": {
+   "min": [
+    -0.0876,
+    -0.0351,
+    -0.0362
+   ],
+   "max": [
+    0.0874,
+    0.0349,
+    0.0358
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0876,
+    -0.0351,
+    -0.0362
+   ],
+   "max": [
+    0.0874,
+    0.0349,
+    0.0358
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0876,
+    -0.0351,
+    -0.0362
+   ],
+   "max": [
+    0.0874,
+    0.0349,
+    0.0358
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/shovel/00001": {
+  "asset": "Rigid/shovel/00001",
+  "metadata_aligned": {
+   "min": [
+    -0.1303,
+    -0.0545,
+    -0.007
+   ],
+   "max": [
+    0.1301,
+    0.0548,
+    0.0067
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.1303,
+    -0.0545,
+    -0.007
+   ],
+   "max": [
+    0.1301,
+    0.0548,
+    0.0067
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.1303,
+    -0.0545,
+    -0.007
+   ],
+   "max": [
+    0.1301,
+    0.0548,
+    0.0067
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/small_cube/00008": {
+  "asset": "Rigid/small_cube/00008",
+  "metadata_aligned": {
+   "min": [
+    -0.0096,
+    -0.0096,
+    -0.0096
+   ],
+   "max": [
+    0.0096,
+    0.0096,
+    0.0096
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/World",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0096,
+    -0.0096,
+    -0.0096
+   ],
+   "max": [
+    0.0096,
+    0.0096,
+    0.0096
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0096,
+    -0.0096,
+    -0.0096
+   ],
+   "max": [
+    0.0096,
+    0.0096,
+    0.0096
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/socket/00000": {
+  "asset": "Rigid/socket/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.0786,
+    -0.0182,
+    0.0008
+   ],
+   "max": [
+    0.0786,
+    0.0182,
+    0.0216
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0786,
+    -0.0182,
+    0.0008
+   ],
+   "max": [
+    0.0786,
+    0.0182,
+    0.0216
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0786,
+    -0.0182,
+    0.0008
+   ],
+   "max": [
+    0.0786,
+    0.0182,
+    0.0216
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/sphere/00000": {
+  "asset": "Rigid/sphere/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.005,
+    -0.005,
+    0.0
+   ],
+   "max": [
+    0.005,
+    0.005,
+    0.01
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0104,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.005,
+    -0.005,
+    0.0
+   ],
+   "max": [
+    0.005,
+    0.005,
+    0.01
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.005,
+    -0.005,
+    0.0
+   ],
+   "max": [
+    0.005,
+    0.005,
+    0.01
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/stackingblocks/00000": {
+  "asset": "Rigid/stackingblocks/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.0294,
+    -0.025,
+    0.0
+   ],
+   "max": [
+    0.0294,
+    0.0309,
+    0.0129
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/World",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0294,
+    -0.025,
+    0.0
+   ],
+   "max": [
+    0.0294,
+    0.0309,
+    0.0129
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0294,
+    -0.025,
+    0.0
+   ],
+   "max": [
+    0.0294,
+    0.0309,
+    0.0129
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/stackingblocks/00003": {
+  "asset": "Rigid/stackingblocks/00003",
+  "metadata_aligned": {
+   "min": [
+    -0.0277,
+    -0.0277,
+    -0.0065
+   ],
+   "max": [
+    0.0277,
+    0.0277,
+    0.0065
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/World",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0277,
+    -0.0277,
+    -0.0065
+   ],
+   "max": [
+    0.0277,
+    0.0277,
+    0.0065
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0277,
+    -0.0277,
+    -0.0065
+   ],
+   "max": [
+    0.0277,
+    0.0277,
+    0.0065
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/tape_measure/00000": {
+  "asset": "Rigid/tape_measure/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.0308,
+    -0.0153,
+    -0.0305
+   ],
+   "max": [
+    0.0307,
+    0.0154,
+    0.0305
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0308,
+    -0.0153,
+    -0.0305
+   ],
+   "max": [
+    0.0307,
+    0.0154,
+    0.0305
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0308,
+    -0.0153,
+    -0.0305
+   ],
+   "max": [
+    0.0307,
+    0.0154,
+    0.0305
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/test_tube/00002": {
+  "asset": "Rigid/test_tube/00002",
+  "metadata_aligned": {
+   "min": [
+    -0.0167,
+    0.0,
+    -0.0167
+   ],
+   "max": [
+    0.0167,
+    0.1404,
+    0.0167
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    -0.0585,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0175,
+    0.0,
+    -0.0175
+   ],
+   "max": [
+    0.0175,
+    0.117,
+    0.0175
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0175,
+    0.0,
+    -0.0175
+   ],
+   "max": [
+    0.0175,
+    0.117,
+    0.0175
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    -0.8,
+    0.0,
+    -0.8
+   ],
+   "max": [
+    0.8,
+    -23.4,
+    0.8
+   ]
+  }
+ },
+ "Rigid/toy/00001": {
+  "asset": "Rigid/toy/00001",
+  "metadata_aligned": {
+   "min": [
+    -0.0492,
+    -0.0449,
+    -0.0551
+   ],
+   "max": [
+    0.0491,
+    0.045,
+    0.0549
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0497,
+    -0.0453,
+    -0.0556
+   ],
+   "max": [
+    0.0496,
+    0.0455,
+    0.0555
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0497,
+    -0.0453,
+    -0.0556
+   ],
+   "max": [
+    0.0496,
+    0.0455,
+    0.0555
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    -0.5,
+    -0.4,
+    -0.5
+   ],
+   "max": [
+    0.5,
+    0.5,
+    0.6
+   ]
+  }
+ },
+ "Rigid/toy_car/00000": {
+  "asset": "Rigid/toy_car/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.0376,
+    -0.0228,
+    -0.0213
+   ],
+   "max": [
+    0.0375,
+    0.0229,
+    0.0213
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0376,
+    -0.0228,
+    -0.0213
+   ],
+   "max": [
+    0.0375,
+    0.0229,
+    0.0213
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0376,
+    -0.0228,
+    -0.0213
+   ],
+   "max": [
+    0.0375,
+    0.0229,
+    0.0213
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/watch/00001": {
+  "asset": "Rigid/watch/00001",
+  "metadata_aligned": {
+   "min": [
+    -0.0282,
+    -0.025,
+    -0.0184
+   ],
+   "max": [
+    0.0281,
+    0.0315,
+    0.016
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.016,
+    -0.0281,
+    -0.025
+   ],
+   "max": [
+    0.0184,
+    0.0282,
+    0.0315
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.016,
+    -0.0281,
+    -0.025
+   ],
+   "max": [
+    0.0184,
+    0.0282,
+    0.0315
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    12.2,
+    -3.1,
+    -6.6
+   ],
+   "max": [
+    -9.7,
+    -3.3,
+    15.5
+   ]
+  }
+ },
+ "Rigid/watch/00002": {
+  "asset": "Rigid/watch/00002",
+  "metadata_aligned": {
+   "min": [
+    -0.0166,
+    -0.0235,
+    -0.0268
+   ],
+   "max": [
+    0.0165,
+    0.0235,
+    0.0268
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0166,
+    -0.0235,
+    -0.0268
+   ],
+   "max": [
+    0.0165,
+    0.0235,
+    0.0268
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0166,
+    -0.0235,
+    -0.0268
+   ],
+   "max": [
+    0.0165,
+    0.0235,
+    0.0268
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/watch/00004": {
+  "asset": "Rigid/watch/00004",
+  "metadata_aligned": {
+   "min": [
+    -0.0137,
+    -0.0209,
+    -0.0229
+   ],
+   "max": [
+    0.0136,
+    0.021,
+    0.0229
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0137,
+    -0.0209,
+    -0.0229
+   ],
+   "max": [
+    0.0136,
+    0.021,
+    0.0229
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0137,
+    -0.0209,
+    -0.0229
+   ],
+   "max": [
+    0.0136,
+    0.021,
+    0.0229
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/whisk/00000": {
+  "asset": "Rigid/whisk/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.1249,
+    -0.0334,
+    -0.1303
+   ],
+   "max": [
+    0.1246,
+    0.0337,
+    0.1301
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.1249,
+    -0.0334,
+    -0.1303
+   ],
+   "max": [
+    0.1246,
+    0.0337,
+    0.1301
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.1249,
+    -0.0334,
+    -0.1303
+   ],
+   "max": [
+    0.1246,
+    0.0337,
+    0.1301
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/wooden_toy/00001": {
+  "asset": "Rigid/wooden_toy/00001",
+  "metadata_aligned": {
+   "min": [
+    -0.0248,
+    -0.027,
+    -0.032
+   ],
+   "max": [
+    0.0247,
+    0.027,
+    0.032
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0248,
+    -0.027,
+    -0.032
+   ],
+   "max": [
+    0.0247,
+    0.027,
+    0.032
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0248,
+    -0.027,
+    -0.032
+   ],
+   "max": [
+    0.0247,
+    0.027,
+    0.032
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "Rigid/wrench/00000": {
+  "asset": "Rigid/wrench/00000",
+  "metadata_aligned": {
+   "min": [
+    -0.0835,
+    -0.0081,
+    -0.0206
+   ],
+   "max": [
+    0.0833,
+    0.0083,
+    0.0206
+   ]
+  },
+  "meters_per_unit": 1.0,
+  "default_prim": "/root",
+  "default_prim_transform": {
+   "translation_m": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "rotation_quat_wxyz": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  "mesh_box_default_prim_frame": {
+   "min": [
+    -0.0835,
+    -0.0081,
+    -0.0206
+   ],
+   "max": [
+    0.0833,
+    0.0083,
+    0.0206
+   ]
+  },
+  "collider_box_default_prim_frame": {
+   "min": [
+    -0.0835,
+    -0.0081,
+    -0.0206
+   ],
+   "max": [
+    0.0833,
+    0.0083,
+    0.0206
+   ]
+  },
+  "collider_minus_metadata_mm": {
+   "min": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ }
+}

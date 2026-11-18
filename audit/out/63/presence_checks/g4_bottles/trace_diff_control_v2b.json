@@ -1,0 +1,317 @@
+{
+ "arm_tags": [
+  "pw_ctl_v2b_s0_q00_vis2",
+  "pw_ctl_v2b_s2_q00_vis2"
+ ],
+ "episodes": [
+  {
+   "actions": [
+    700,
+    700
+   ],
+   "arm_tag": "pw_ctl_v2b_s0_q00_vis2",
+   "attempt_routes_outcomes_identical": true,
+   "attempts": {
+    "arm": [
+     [
+      1,
+      "bottle2",
+      "left_direct",
+      "in_bin_after_release"
+     ],
+     [
+      85,
+      "bottle1",
+      "left_direct",
+      "in_bin_after_release"
+     ],
+     [
+      160,
+      "bottle3",
+      "left_direct",
+      "in_bin_after_release"
+     ],
+     [
+      235,
+      "bottle0",
+      "right_to_left_handover",
+      "in_bin_after_release"
+     ]
+    ],
+    "ref": [
+     [
+      1,
+      "bottle2",
+      "left_direct",
+      "in_bin_after_release"
+     ],
+     [
+      85,
+      "bottle1",
+      "left_direct",
+      "in_bin_after_release"
+     ],
+     [
+      160,
+      "bottle3",
+      "left_direct",
+      "in_bin_after_release"
+     ],
+     [
+      235,
+      "bottle0",
+      "right_to_left_handover",
+      "in_bin_after_release"
+     ]
+    ]
+   },
+   "bottles": {
+    "bottle0": {
+     "final_diff_mm": 0.0,
+     "held_rows_compared": 80,
+     "max_held_diff_mm": 0.0,
+     "release_diff_mm": 0.0,
+     "release_step": [
+      352,
+      352
+     ]
+    },
+    "bottle1": {
+     "final_diff_mm": 0.0,
+     "held_rows_compared": 34,
+     "max_held_diff_mm": 0.0,
+     "release_diff_mm": 0.0,
+     "release_step": [
+      146,
+      146
+     ]
+    },
+    "bottle2": {
+     "final_diff_mm": 0.0,
+     "held_rows_compared": 34,
+     "max_held_diff_mm": 0.0,
+     "release_diff_mm": 0.0,
+     "release_step": [
+      71,
+      71
+     ]
+    },
+    "bottle3": {
+     "final_diff_mm": 0.0,
+     "held_rows_compared": 34,
+     "max_held_diff_mm": 0.0,
+     "release_diff_mm": 0.0,
+     "release_step": [
+      221,
+      221
+     ]
+    }
+   },
+   "final_poses_identical": true,
+   "first_action_any_bottle_differs_over_1mm": null,
+   "layout": 12,
+   "ref_tag": "v2b_g4_s0_q00_vis1",
+   "score": [
+    40.0,
+    40.0
+   ],
+   "seed": 0,
+   "settled_poses_identical": true,
+   "success": [
+    false,
+    false
+   ],
+   "trace_rows": [
+    700,
+    700
+   ],
+   "traces_identical": true
+  },
+  {
+   "actions": [
+    362,
+    362
+   ],
+   "arm_tag": "pw_ctl_v2b_s2_q00_vis2",
+   "attempt_routes_outcomes_identical": true,
+   "attempts": {
+    "arm": [
+     [
+      1,
+      "bottle2",
+      "left_direct",
+      "in_bin_after_release"
+     ],
+     [
+      85,
+      "bottle0",
+      "left_direct",
+      "in_bin_after_release"
+     ],
+     [
+      160,
+      "bottle1",
+      "left_direct",
+      "in_bin_after_release"
+     ],
+     [
+      235,
+      "bottle3",
+      "right_to_left_handover",
+      "in_bin_after_release"
+     ]
+    ],
+    "ref": [
+     [
+      1,
+      "bottle2",
+      "left_direct",
+      "in_bin_after_release"
+     ],
+     [
+      85,
+      "bottle0",
+      "left_direct",
+      "in_bin_after_release"
+     ],
+     [
+      160,
+      "bottle1",
+      "left_direct",
+      "in_bin_after_release"
+     ],
+     [
+      235,
+      "bottle3",
+      "right_to_left_handover",
+      "in_bin_after_release"
+     ]
+    ]
+   },
+   "bottles": {
+    "bottle0": {
+     "final_diff_mm": 0.0,
+     "held_rows_compared": 34,
+     "max_held_diff_mm": 0.0,
+     "release_diff_mm": 0.0,
+     "release_step": [
+      146,
+      146
+     ]
+    },
+    "bottle1": {
+     "final_diff_mm": 0.0,
+     "held_rows_compared": 34,
+     "max_held_diff_mm": 0.0,
+     "release_diff_mm": 0.0,
+     "release_step": [
+      221,
+      221
+     ]
+    },
+    "bottle2": {
+     "final_diff_mm": 0.0,
+     "held_rows_compared": 34,
+     "max_held_diff_mm": 0.0,
+     "release_diff_mm": 0.0,
+     "release_step": [
+      71,
+      71
+     ]
+    },
+    "bottle3": {
+     "final_diff_mm": 0.0,
+     "held_rows_compared": 80,
+     "max_held_diff_mm": 0.0,
+     "release_diff_mm": 0.0,
+     "release_step": [
+      352,
+      352
+     ]
+    }
+   },
+   "final_poses_identical": true,
+   "first_action_any_bottle_differs_over_1mm": null,
+   "layout": 11,
+   "ref_tag": "v2b_g4_s2_q00_vis1",
+   "score": [
+    100.0,
+    100.0
+   ],
+   "seed": 2,
+   "settled_poses_identical": true,
+   "success": [
+    true,
+    true
+   ],
+   "trace_rows": [
+    362,
+    362
+   ],
+   "traces_identical": true
+  }
+ ],
+ "handover_attempts": {
+  "arm": {
+   "attempts": 2,
+   "in_bin_after_release": 2,
+   "other_outcomes": []
+  },
+  "ref": {
+   "attempts": 2,
+   "in_bin_after_release": 2,
+   "other_outcomes": []
+  }
+ },
+ "missing_in_arm": [
+  [
+   0,
+   10
+  ],
+  [
+   0,
+   11
+  ],
+  [
+   0,
+   13
+  ],
+  [
+   0,
+   14
+  ],
+  [
+   0,
+   15
+  ],
+  [
+   0,
+   16
+  ],
+  [
+   2,
+   10
+  ],
+  [
+   2,
+   12
+  ],
+  [
+   2,
+   13
+  ],
+  [
+   2,
+   14
+  ],
+  [
+   2,
+   15
+  ]
+ ],
+ "missing_in_ref": [],
+ "ref_tags": [
+  "v2b_g4_s0_q00_vis1",
+  "v2b_g4_s2_q00_vis1"
+ ]
+}

@@ -1,0 +1,91 @@
+[
+ {
+  "cell_name": "stack_blocks_random__shipped",
+  "layout": 0,
+  "overrides": {
+   "slide_target": {
+    "label": "office_mail_1_14",
+    "inst": "office_mail_1_14",
+    "labelled": false,
+    "stem": "office_mail_1",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.992802,
+     -0.119764
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "stack_blocks_random__dt2",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.002,
+   "slide_target": {
+    "label": "office_mail_1_14",
+    "inst": "office_mail_1_14",
+    "labelled": false,
+    "stem": "office_mail_1",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.992802,
+     -0.119764
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "stack_blocks_random__dt1",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.001,
+   "slide_target": {
+    "label": "office_mail_1_14",
+    "inst": "office_mail_1_14",
+    "labelled": false,
+    "stem": "office_mail_1",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.992802,
+     -0.119764
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "stack_blocks_random__iters4x",
+  "layout": 0,
+  "overrides": {
+   "min_pos_iters": 64,
+   "slide_target": {
+    "label": "office_mail_1_14",
+    "inst": "office_mail_1_14",
+    "labelled": false,
+    "stem": "office_mail_1",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.992802,
+     -0.119764
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "stack_blocks_random__cpu",
+  "layout": 0,
+  "overrides": {
+   "gpu_dynamics": false,
+   "slide_target": {
+    "label": "office_mail_1_14",
+    "inst": "office_mail_1_14",
+    "labelled": false,
+    "stem": "office_mail_1",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.992802,
+     -0.119764
+    ]
+   }
+  }
+ }
+]

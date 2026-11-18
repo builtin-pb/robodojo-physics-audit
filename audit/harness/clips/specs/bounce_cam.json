@@ -1,0 +1,58 @@
+{
+ "purpose": "S16 bounce production replay: smoke 3's l140 eye (x = -2.15 m, 1.40 m up; the peak is seen beyond the table's far edge, against the wall) with a 16 mm lens aimed 4 cm higher (23 degrees down) so the carried bottle stays in frame, at 1280x720; actions 132-145 (real time), episode steps 1451-1649 every second step (5x slow, from the release at step 1451 through the reversal at step 1538 to past the peak at step 1631), actions 166-212 (real time: the fall to the floor at step 1735 and the roll to rest). Earlier renders: runs/rp_bounce_e40 (smoke 2's e40), runs/rp_bounce_l140f18 (l140 as smoked)",
+ "cameras": [
+  {
+   "name": "side",
+   "eye": [
+    -2.15,
+    0.33,
+    1.4
+   ],
+   "target": [
+    -0.5,
+    0.33,
+    0.7
+   ],
+   "focal_mm": 16,
+   "res": [
+    1280,
+    720
+   ]
+  }
+ ],
+ "windows": [
+  {
+   "case": null,
+   "unit": "action",
+   "from": 132,
+   "to": 145,
+   "stride": 1
+  },
+  {
+   "case": null,
+   "unit": "step",
+   "from": 1451,
+   "to": 1649,
+   "stride": 2
+  },
+  {
+   "case": null,
+   "unit": "action",
+   "from": 166,
+   "to": 212,
+   "stride": 1
+  }
+ ],
+ "mode_sweep": [
+  {
+   "name": "pt8",
+   "carb": {
+    "/rtx/rendermode": "PathTracing",
+    "/rtx/pathtracing/spp": 8,
+    "/rtx/pathtracing/totalSpp": 8,
+    "/rtx/pathtracing/optixDenoiser/enabled": true
+   },
+   "warmup": 4
+  }
+ ]
+}

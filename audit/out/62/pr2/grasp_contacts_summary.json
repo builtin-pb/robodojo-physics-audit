@@ -1,0 +1,1271 @@
+{
+  "full_archive_sha256": "69012d2ad61bccd08e5be28d84f4b1d86fe26b6169011641728d9927f260ceb8",
+  "full_archive_bytes": 553776,
+  "versions": {
+    "repo_head": "7f950f53790a1b229a3c35d1be1610c2c42a01d4",
+    "repo_diff_sha1": "c3e571253b3b4e72d56d4777fe24c9c89585c81b",
+    "isaaclab": "afca7b09d60d8beb9c1cb28b43066499940b969b",
+    "container": "isaac-sim_5.1.0.sif",
+    "isaac_sim": [
+      "5.1.0",
+      "rc.19",
+      "5"
+    ]
+  },
+  "layout": 0,
+  "steps_through_reset": 844,
+  "episode_steps": 7103,
+  "eval_result": {
+    "success_rate": 0.0,
+    "eval_time": 1,
+    "score": 0.0,
+    "details": {
+      "0": {
+        "layout_id": 0,
+        "success": false,
+        "score": 0.0
+      }
+    },
+    "physics": {
+      "preset": "corrected",
+      "fixes": [
+        "collision",
+        "order",
+        "size",
+        "values"
+      ],
+      "device": "cpu",
+      "dormant_values_active": false,
+      "values_delivered": true,
+      "table_sha256": "7240c82f6d5a0ddcf78590f174983455bec2056679844112effa18981b0f0501",
+      "admitted_statuses": [
+        "estimated",
+        "sourced"
+      ],
+      "scenario_opt_in": "bottles_primary_empty",
+      "scenario": {
+        "finger_pad": "pad_hard",
+        "table": "table_laminate",
+        "ground_combine": "average",
+        "fill": "empty"
+      },
+      "status_counts": {
+        "estimated": 72,
+        "unsourced": 85,
+        "sourced": 30
+      },
+      "below_g1_unsourced_opt_in": true,
+      "unsourced_keys_used": [
+        "assets.Rigid/bottle/00000.mass_by_fill.empty",
+        "assets.Rigid/bottle/00002.mass_by_fill.empty",
+        "assets.Rigid/bottle/00005.mass_by_fill.empty",
+        "assets.Rigid/bottle/00022.material_override.restitution_by_fill.empty",
+        "assets.Rigid/bottle/00025.mass_by_fill.empty",
+        "assets.Rigid/bottle/00041.mass_by_fill.empty",
+        "assets.Rigid/bottle/00050.mass_by_fill.empty",
+        "assets.Rigid/bottle/00055.mass_by_fill.empty",
+        "assets.Rigid/bottle/00059.mass_by_fill.empty",
+        "assets.Rigid/bottle/00060.mass_by_fill.empty",
+        "classes.abs_device_housing.restitution",
+        "classes.aluminium.restitution",
+        "classes.ground.restitution",
+        "classes.pad_elastomer.restitution",
+        "classes.pad_hard.restitution",
+        "classes.pet_plastic.restitution",
+        "classes.polyolefin_plastic.restitution",
+        "classes.steel.restitution",
+        "classes.table_laminate.restitution",
+        "classes.table_wood.restitution",
+        "pairs.abs_device_housing__ground.mu_kinetic",
+        "pairs.abs_device_housing__ground.mu_static",
+        "pairs.abs_device_housing__pad_elastomer.mu_kinetic",
+        "pairs.abs_device_housing__pad_elastomer.mu_static",
+        "pairs.abs_device_housing__table_laminate.mu_kinetic",
+        "pairs.abs_device_housing__table_laminate.mu_static",
+        "pairs.abs_device_housing__table_wood.mu_kinetic",
+        "pairs.abs_device_housing__table_wood.mu_static",
+        "pairs.aluminium__ground.mu_kinetic",
+        "pairs.aluminium__ground.mu_static",
+        "pairs.aluminium__table_laminate.mu_kinetic",
+        "pairs.aluminium__table_laminate.mu_static",
+        "pairs.ground__pet_plastic.mu_kinetic",
+        "pairs.ground__pet_plastic.mu_static",
+        "pairs.ground__pet_plastic.restitution",
+        "pairs.ground__polyolefin_plastic.mu_kinetic",
+        "pairs.ground__polyolefin_plastic.mu_static",
+        "pairs.ground__polyolefin_plastic.restitution",
+        "pairs.ground__steel.mu_kinetic",
+        "pairs.ground__steel.mu_static",
+        "pairs.ground__steel.restitution",
+        "pairs.pad_elastomer__pet_plastic.mu_kinetic",
+        "pairs.pad_elastomer__pet_plastic.mu_static",
+        "pairs.pad_elastomer__polyolefin_plastic.mu_kinetic",
+        "pairs.pad_elastomer__polyolefin_plastic.mu_static",
+        "pairs.pet_plastic__pet_plastic.restitution",
+        "pairs.pet_plastic__polyolefin_plastic.restitution",
+        "pairs.pet_plastic__steel.restitution",
+        "pairs.pet_plastic__table_laminate.mu_kinetic",
+        "pairs.pet_plastic__table_laminate.mu_static",
+        "pairs.pet_plastic__table_laminate.restitution",
+        "pairs.pet_plastic__table_wood.mu_kinetic",
+        "pairs.pet_plastic__table_wood.mu_static",
+        "pairs.pet_plastic__table_wood.restitution",
+        "pairs.polyolefin_plastic__polyolefin_plastic.restitution",
+        "pairs.polyolefin_plastic__steel.restitution",
+        "pairs.polyolefin_plastic__table_laminate.mu_kinetic",
+        "pairs.polyolefin_plastic__table_laminate.mu_static",
+        "pairs.polyolefin_plastic__table_laminate.restitution",
+        "pairs.polyolefin_plastic__table_wood.mu_kinetic",
+        "pairs.polyolefin_plastic__table_wood.mu_static",
+        "pairs.polyolefin_plastic__table_wood.restitution",
+        "pairs.steel__table_laminate.mu_kinetic",
+        "pairs.steel__table_laminate.mu_static",
+        "pairs.steel__table_laminate.restitution",
+        "pairs.steel__table_wood.restitution",
+        "robots.x5.non_pad_link_material_classes.base_link",
+        "robots.x5.non_pad_link_material_classes.camera",
+        "robots.x5.non_pad_link_material_classes.camera_base",
+        "robots.x5.non_pad_link_material_classes.link1",
+        "robots.x5.non_pad_link_material_classes.link2",
+        "robots.x5.non_pad_link_material_classes.link3",
+        "robots.x5.non_pad_link_material_classes.link4",
+        "robots.x5.non_pad_link_material_classes.link5",
+        "robots.x5.non_pad_link_material_classes.link6",
+        "robots.x5.sanitize_camera_inertials",
+        "unary_values.abs_device_housing",
+        "unary_values.aluminium",
+        "unary_values.ground",
+        "unary_values.pad_elastomer",
+        "unary_values.pet_plastic",
+        "unary_values.polyolefin_plastic",
+        "unary_values.steel",
+        "unary_values.table_laminate",
+        "unary_values.table_wood"
+      ],
+      "profile_unsourced_keys_used": [
+        "assets.Rigid/bottle/00000.mass_by_fill.empty",
+        "assets.Rigid/bottle/00002.mass_by_fill.empty",
+        "assets.Rigid/bottle/00005.mass_by_fill.empty",
+        "assets.Rigid/bottle/00022.material_override.restitution_by_fill.empty",
+        "assets.Rigid/bottle/00025.mass_by_fill.empty",
+        "assets.Rigid/bottle/00041.mass_by_fill.empty",
+        "assets.Rigid/bottle/00050.mass_by_fill.empty",
+        "assets.Rigid/bottle/00055.mass_by_fill.empty",
+        "assets.Rigid/bottle/00059.mass_by_fill.empty",
+        "assets.Rigid/bottle/00060.mass_by_fill.empty",
+        "classes.abs_device_housing.restitution",
+        "classes.aluminium.restitution",
+        "classes.ground.restitution",
+        "classes.pad_elastomer.restitution",
+        "classes.pad_hard.restitution",
+        "classes.pet_plastic.restitution",
+        "classes.polyolefin_plastic.restitution",
+        "classes.steel.restitution",
+        "classes.table_laminate.restitution",
+        "classes.table_wood.restitution",
+        "pairs.abs_device_housing__ground.mu_kinetic",
+        "pairs.abs_device_housing__ground.mu_static",
+        "pairs.abs_device_housing__pad_elastomer.mu_kinetic",
+        "pairs.abs_device_housing__pad_elastomer.mu_static",
+        "pairs.abs_device_housing__table_laminate.mu_kinetic",
+        "pairs.abs_device_housing__table_laminate.mu_static",
+        "pairs.abs_device_housing__table_wood.mu_kinetic",
+        "pairs.abs_device_housing__table_wood.mu_static",
+        "pairs.aluminium__ground.mu_kinetic",
+        "pairs.aluminium__ground.mu_static",
+        "pairs.aluminium__table_laminate.mu_kinetic",
+        "pairs.aluminium__table_laminate.mu_static",
+        "pairs.ground__pet_plastic.mu_kinetic",
+        "pairs.ground__pet_plastic.mu_static",
+        "pairs.ground__pet_plastic.restitution",
+        "pairs.ground__polyolefin_plastic.mu_kinetic",
+        "pairs.ground__polyolefin_plastic.mu_static",
+        "pairs.ground__polyolefin_plastic.restitution",
+        "pairs.ground__steel.mu_kinetic",
+        "pairs.ground__steel.mu_static",
+        "pairs.ground__steel.restitution",
+        "pairs.pad_elastomer__pet_plastic.mu_kinetic",
+        "pairs.pad_elastomer__pet_plastic.mu_static",
+        "pairs.pad_elastomer__polyolefin_plastic.mu_kinetic",
+        "pairs.pad_elastomer__polyolefin_plastic.mu_static",
+        "pairs.pet_plastic__pet_plastic.restitution",
+        "pairs.pet_plastic__polyolefin_plastic.restitution",
+        "pairs.pet_plastic__steel.restitution",
+        "pairs.pet_plastic__table_laminate.mu_kinetic",
+        "pairs.pet_plastic__table_laminate.mu_static",
+        "pairs.pet_plastic__table_laminate.restitution",
+        "pairs.pet_plastic__table_wood.mu_kinetic",
+        "pairs.pet_plastic__table_wood.mu_static",
+        "pairs.pet_plastic__table_wood.restitution",
+        "pairs.polyolefin_plastic__polyolefin_plastic.restitution",
+        "pairs.polyolefin_plastic__steel.restitution",
+        "pairs.polyolefin_plastic__table_laminate.mu_kinetic",
+        "pairs.polyolefin_plastic__table_laminate.mu_static",
+        "pairs.polyolefin_plastic__table_laminate.restitution",
+        "pairs.polyolefin_plastic__table_wood.mu_kinetic",
+        "pairs.polyolefin_plastic__table_wood.mu_static",
+        "pairs.polyolefin_plastic__table_wood.restitution",
+        "pairs.steel__table_laminate.mu_kinetic",
+        "pairs.steel__table_laminate.mu_static",
+        "pairs.steel__table_laminate.restitution",
+        "pairs.steel__table_wood.restitution",
+        "robots.x5.non_pad_link_material_classes.base_link",
+        "robots.x5.non_pad_link_material_classes.camera",
+        "robots.x5.non_pad_link_material_classes.camera_base",
+        "robots.x5.non_pad_link_material_classes.link1",
+        "robots.x5.non_pad_link_material_classes.link2",
+        "robots.x5.non_pad_link_material_classes.link3",
+        "robots.x5.non_pad_link_material_classes.link4",
+        "robots.x5.non_pad_link_material_classes.link5",
+        "robots.x5.non_pad_link_material_classes.link6",
+        "robots.x5.sanitize_camera_inertials",
+        "unary_values.abs_device_housing",
+        "unary_values.aluminium",
+        "unary_values.ground",
+        "unary_values.pad_elastomer",
+        "unary_values.pet_plastic",
+        "unary_values.polyolefin_plastic",
+        "unary_values.steel",
+        "unary_values.table_laminate",
+        "unary_values.table_wood"
+      ]
+    }
+  },
+  "assertion_passed": true,
+  "failures": [],
+  "trace_steps_omitted": 1350,
+  "policy_log_without_trace": {
+    "materials": {
+      "usd": {
+        "bottle0": [
+          {
+            "collider": "/World/envs/env_0/rigid/bottle/bottle_41_1/collision/model",
+            "approx": "convexHull",
+            "resolved": [
+              "physics-purpose",
+              {
+                "path": "/World/envs/env_0/rigid/bottle/bottle_41_1/physics_material",
+                "has_physics_material_api": true,
+                "staticFriction": 0.25808998942375183,
+                "dynamicFriction": 0.21779300272464752,
+                "restitution": 0.25,
+                "frictionCombineMode": "average",
+                "restitutionCombineMode": "average"
+              }
+            ]
+          }
+        ],
+        "bottle1": [
+          {
+            "collider": "/World/envs/env_0/rigid/bottle/bottle_60_2/collision",
+            "approx": "convexDecomposition",
+            "resolved": [
+              "physics-purpose",
+              {
+                "path": "/World/envs/env_0/rigid/bottle/bottle_60_2/physics_material",
+                "has_physics_material_api": true,
+                "staticFriction": 0.25808998942375183,
+                "dynamicFriction": 0.21779300272464752,
+                "restitution": 0.25,
+                "frictionCombineMode": "average",
+                "restitutionCombineMode": "average"
+              }
+            ]
+          }
+        ],
+        "bottle2": [
+          {
+            "collider": "/World/envs/env_0/rigid/bottle/bottle_25_3/collision/model",
+            "approx": "convexHull",
+            "resolved": [
+              "physics-purpose",
+              {
+                "path": "/World/envs/env_0/rigid/bottle/bottle_25_3/physics_material",
+                "has_physics_material_api": true,
+                "staticFriction": 0.25808998942375183,
+                "dynamicFriction": 0.21779300272464752,
+                "restitution": 0.25,
+                "frictionCombineMode": "average",
+                "restitutionCombineMode": "average"
+              }
+            ]
+          }
+        ],
+        "bottle3": [
+          {
+            "collider": "/World/envs/env_0/rigid/bottle/bottle_22_4/collision/model",
+            "approx": "convexHull",
+            "resolved": [
+              "physics-purpose",
+              {
+                "path": "/World/envs/env_0/rigid/bottle/bottle_22_4/physics_material",
+                "has_physics_material_api": true,
+                "staticFriction": 0.3400000035762787,
+                "dynamicFriction": 0.2800000011920929,
+                "restitution": 0.20000000298023224,
+                "frictionCombineMode": "average",
+                "restitutionCombineMode": "average"
+              }
+            ]
+          }
+        ],
+        "robot0/link7": [
+          {
+            "collider": "/World/envs/env_0/robot0/link7/collisions/link7/node_STL_BINARY_",
+            "approx": "convexHull",
+            "resolved": [
+              "physics-purpose",
+              {
+                "path": "/World/envs/env_0/robot0/link7/pad_physics_material",
+                "has_physics_material_api": true,
+                "staticFriction": 0.25644800066947937,
+                "dynamicFriction": 0.24896599352359772,
+                "restitution": 0.10000000149011612,
+                "frictionCombineMode": "average",
+                "restitutionCombineMode": "average"
+              }
+            ]
+          }
+        ],
+        "robot0/link8": [
+          {
+            "collider": "/World/envs/env_0/robot0/link8/collisions/link8/node_STL_BINARY_",
+            "approx": "convexHull",
+            "resolved": [
+              "physics-purpose",
+              {
+                "path": "/World/envs/env_0/robot0/link8/pad_physics_material",
+                "has_physics_material_api": true,
+                "staticFriction": 0.25644800066947937,
+                "dynamicFriction": 0.24896599352359772,
+                "restitution": 0.10000000149011612,
+                "frictionCombineMode": "average",
+                "restitutionCombineMode": "average"
+              }
+            ]
+          }
+        ],
+        "robot1/link7": [
+          {
+            "collider": "/World/envs/env_0/robot1/link7/collisions/link7/node_STL_BINARY_",
+            "approx": "convexHull",
+            "resolved": [
+              "physics-purpose",
+              {
+                "path": "/World/envs/env_0/robot1/link7/pad_physics_material",
+                "has_physics_material_api": true,
+                "staticFriction": 0.25644800066947937,
+                "dynamicFriction": 0.24896599352359772,
+                "restitution": 0.10000000149011612,
+                "frictionCombineMode": "average",
+                "restitutionCombineMode": "average"
+              }
+            ]
+          }
+        ],
+        "robot1/link8": [
+          {
+            "collider": "/World/envs/env_0/robot1/link8/collisions/link8/node_STL_BINARY_",
+            "approx": "convexHull",
+            "resolved": [
+              "physics-purpose",
+              {
+                "path": "/World/envs/env_0/robot1/link8/pad_physics_material",
+                "has_physics_material_api": true,
+                "staticFriction": 0.25644800066947937,
+                "dynamicFriction": 0.24896599352359772,
+                "restitution": 0.10000000149011612,
+                "frictionCombineMode": "average",
+                "restitutionCombineMode": "average"
+              }
+            ]
+          }
+        ],
+        "table": [
+          {
+            "collider": "/World/envs/env_0/Table/material_0122/material_0122_0_8",
+            "approx": "none",
+            "resolved": [
+              "physics-purpose",
+              {
+                "path": "/World/envs/env_0/Table/material_0122/material_0122_0_8/physics_material",
+                "has_physics_material_api": true,
+                "staticFriction": 0.19644799828529358,
+                "dynamicFriction": 0.18896600604057312,
+                "restitution": 0.10000000149011612,
+                "frictionCombineMode": "average",
+                "restitutionCombineMode": "average"
+              }
+            ]
+          }
+        ],
+        "ground": [
+          {
+            "collider": "/World/envs/env_0/Ground/Ground/Ground_0_9",
+            "approx": "none",
+            "resolved": [
+              "physics-purpose",
+              {
+                "path": "/World/envs/env_0/Ground/Ground/Ground_0_9/physics_material",
+                "has_physics_material_api": true,
+                "staticFriction": 0.24644799530506134,
+                "dynamicFriction": 0.21896600723266602,
+                "restitution": 0.0,
+                "frictionCombineMode": "average",
+                "restitutionCombineMode": "average"
+              }
+            ]
+          }
+        ]
+      },
+      "engine_objects": {
+        "bottle0": [
+          [
+            0.2581000030040741,
+            0.21780000627040863,
+            0.25
+          ]
+        ],
+        "bottle1": [
+          [
+            0.2581000030040741,
+            0.21780000627040863,
+            0.25
+          ]
+        ],
+        "bottle2": [
+          [
+            0.2581000030040741,
+            0.21780000627040863,
+            0.25
+          ]
+        ],
+        "bottle3": [
+          [
+            0.3400000035762787,
+            0.2800000011920929,
+            0.20000000298023224
+          ]
+        ]
+      },
+      "engine_robots": {
+        "robot0": {
+          "max_shapes": 42,
+          "links": [
+            "base_link",
+            "link1",
+            "link2",
+            "link3",
+            "link4",
+            "link5",
+            "link6",
+            "camera_base",
+            "link7",
+            "link8",
+            "camera"
+          ],
+          "shape_materials": [
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.2563999891281128,
+              0.24899999797344208,
+              0.10000000149011612
+            ],
+            [
+              0.2563999891281128,
+              0.24899999797344208,
+              0.10000000149011612
+            ],
+            [
+              0.36070001125335693,
+              0.30640000104904175,
+              0.4000000059604645
+            ]
+          ]
+        },
+        "robot1": {
+          "max_shapes": 42,
+          "links": [
+            "base_link",
+            "link1",
+            "link2",
+            "link3",
+            "link4",
+            "link5",
+            "link6",
+            "camera_base",
+            "link7",
+            "link8",
+            "camera"
+          ],
+          "shape_materials": [
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.6007000207901001,
+              0.3662000000476837,
+              0.5
+            ],
+            [
+              0.2563999891281128,
+              0.24899999797344208,
+              0.10000000149011612
+            ],
+            [
+              0.2563999891281128,
+              0.24899999797344208,
+              0.10000000149011612
+            ],
+            [
+              0.36070001125335693,
+              0.30640000104904175,
+              0.4000000059604645
+            ]
+          ]
+        }
+      }
+    },
+    "contacts_resting": [
+      {
+        "collider0": "/World/envs/env_0/rigid/bottle/bottle_22_4/collision/model",
+        "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_8",
+        "n": 6,
+        "materials": [
+          [
+            "/World/envs/env_0/rigid/bottle/bottle_22_4/physics_material",
+            "/World/envs/env_0/Table/material_0122/material_0122_0_8/physics_material"
+          ]
+        ]
+      },
+      {
+        "collider0": "/World/envs/env_0/rigid/bottle/bottle_25_3/collision/model",
+        "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_8",
+        "n": 12,
+        "materials": [
+          [
+            "/World/envs/env_0/rigid/bottle/bottle_25_3/physics_material",
+            "/World/envs/env_0/Table/material_0122/material_0122_0_8/physics_material"
+          ]
+        ]
+      },
+      {
+        "collider0": "/World/envs/env_0/rigid/bottle/bottle_41_1/collision/model",
+        "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_8",
+        "n": 6,
+        "materials": [
+          [
+            "/World/envs/env_0/rigid/bottle/bottle_41_1/physics_material",
+            "/World/envs/env_0/Table/material_0122/material_0122_0_8/physics_material"
+          ]
+        ]
+      },
+      {
+        "collider0": "/World/envs/env_0/rigid/bottle/bottle_60_2/collision",
+        "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_8",
+        "n": 6,
+        "materials": [
+          [
+            "/World/envs/env_0/rigid/bottle/bottle_60_2/physics_material",
+            "/World/envs/env_0/Table/material_0122/material_0122_0_8/physics_material"
+          ]
+        ]
+      }
+    ],
+    "slide_witness": {
+      "label": "bottle2",
+      "axis_tilt_deg": 0.9,
+      "slide_along_axis_mm": 61.46,
+      "slide_x_mm": 61.46,
+      "lateral_mm": 2.82,
+      "vertical_mm": 0.08,
+      "rotation_deg": 5.602,
+      "max_tilt_deg": 6.031,
+      "final_tilt_deg": 5.602,
+      "final_yaw_deg": 5.431,
+      "other_rigid_contact_points": 0,
+      "predicted_mm": {
+        "pair_0.5": 25.5,
+        "pair_5000": "about 2 (one step)"
+      },
+      "resolved_pair": {
+        "eff_mu_kinetic": 0.20338,
+        "combine_mode": "average",
+        "coulomb_mm": 62.65,
+        "discrete_250hz_mm": 61.65,
+        "pair_key": "pet_plastic__table_laminate",
+        "nominal_mu_kinetic": 0.2,
+        "realised_mu_kinetic": 0.20338
+      }
+    },
+    "contacts_after_slide": [
+      {
+        "collider0": "/World/envs/env_0/rigid/bottle/bottle_22_4/collision/model",
+        "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_8",
+        "n": 6,
+        "materials": [
+          [
+            "/World/envs/env_0/rigid/bottle/bottle_22_4/physics_material",
+            "/World/envs/env_0/Table/material_0122/material_0122_0_8/physics_material"
+          ]
+        ]
+      },
+      {
+        "collider0": "/World/envs/env_0/rigid/bottle/bottle_25_3/collision/model",
+        "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_8",
+        "n": 6,
+        "materials": [
+          [
+            "/World/envs/env_0/rigid/bottle/bottle_25_3/physics_material",
+            "/World/envs/env_0/Table/material_0122/material_0122_0_8/physics_material"
+          ]
+        ]
+      },
+      {
+        "collider0": "/World/envs/env_0/rigid/bottle/bottle_41_1/collision/model",
+        "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_8",
+        "n": 6,
+        "materials": [
+          [
+            "/World/envs/env_0/rigid/bottle/bottle_41_1/physics_material",
+            "/World/envs/env_0/Table/material_0122/material_0122_0_8/physics_material"
+          ]
+        ]
+      },
+      {
+        "collider0": "/World/envs/env_0/rigid/bottle/bottle_60_2/collision",
+        "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_8",
+        "n": 6,
+        "materials": [
+          [
+            "/World/envs/env_0/rigid/bottle/bottle_60_2/physics_material",
+            "/World/envs/env_0/Table/material_0122/material_0122_0_8/physics_material"
+          ]
+        ]
+      }
+    ],
+    "phase": "hold_lifted",
+    "target": {
+      "label": "bottle2",
+      "inst": "bottle_25_3",
+      "pos": [
+        0.4313,
+        -0.1543,
+        0.7964
+      ],
+      "axis": [
+        0.994,
+        -0.105,
+        0.012
+      ]
+    },
+    "ik_err_mm_deg": {
+      "pre": [
+        0.0,
+        0.0
+      ],
+      "grasp": [
+        0.0,
+        0.0
+      ],
+      "lift": [
+        0.0,
+        0.0
+      ]
+    },
+    "contacts_in_hand": [
+      {
+        "collider0": "/World/envs/env_0/rigid/bottle/bottle_22_4/collision/model",
+        "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_8",
+        "n": 6,
+        "materials": [
+          [
+            "/World/envs/env_0/rigid/bottle/bottle_22_4/physics_material",
+            "/World/envs/env_0/Table/material_0122/material_0122_0_8/physics_material"
+          ]
+        ]
+      },
+      {
+        "collider0": "/World/envs/env_0/rigid/bottle/bottle_25_3/collision/model",
+        "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_8",
+        "n": 6,
+        "materials": [
+          [
+            "/World/envs/env_0/rigid/bottle/bottle_25_3/physics_material",
+            "/World/envs/env_0/Table/material_0122/material_0122_0_8/physics_material"
+          ]
+        ]
+      },
+      {
+        "collider0": "/World/envs/env_0/rigid/bottle/bottle_41_1/collision/model",
+        "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_8",
+        "n": 6,
+        "materials": [
+          [
+            "/World/envs/env_0/rigid/bottle/bottle_41_1/physics_material",
+            "/World/envs/env_0/Table/material_0122/material_0122_0_8/physics_material"
+          ]
+        ]
+      },
+      {
+        "collider0": "/World/envs/env_0/rigid/bottle/bottle_60_2/collision",
+        "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_8",
+        "n": 6,
+        "materials": [
+          [
+            "/World/envs/env_0/rigid/bottle/bottle_60_2/physics_material",
+            "/World/envs/env_0/Table/material_0122/material_0122_0_8/physics_material"
+          ]
+        ]
+      },
+      {
+        "collider0": "/World/envs/env_0/robot1/link4/collisions/link4/node_STL_BINARY_",
+        "collider1": "/World/envs/env_0/rigid/bottle/bottle_60_2/collision",
+        "n": 1,
+        "materials": [
+          [
+            "/World/envs/env_0/robot1/link4/link_physics_material",
+            "/World/envs/env_0/rigid/bottle/bottle_60_2/physics_material"
+          ]
+        ]
+      },
+      {
+        "collider0": "/World/envs/env_0/robot1/link6/collisions/link6/node_STL_BINARY_",
+        "collider1": "/World/envs/env_0/rigid/bottle/bottle_60_2/collision",
+        "n": 2,
+        "materials": [
+          [
+            "/World/envs/env_0/robot1/link6/link_physics_material",
+            "/World/envs/env_0/rigid/bottle/bottle_60_2/physics_material"
+          ]
+        ]
+      },
+      {
+        "collider0": "/World/envs/env_0/robot1/link7/collisions/link7/node_STL_BINARY_",
+        "collider1": "/World/envs/env_0/rigid/bottle/bottle_25_3/collision/model",
+        "n": 4,
+        "materials": [
+          [
+            "/World/envs/env_0/robot1/link7/pad_physics_material",
+            "/World/envs/env_0/rigid/bottle/bottle_25_3/physics_material"
+          ]
+        ]
+      },
+      {
+        "collider0": "/World/envs/env_0/robot1/link8/collisions/link8/node_STL_BINARY_",
+        "collider1": "/World/envs/env_0/rigid/bottle/bottle_25_3/collision/model",
+        "n": 4,
+        "materials": [
+          [
+            "/World/envs/env_0/robot1/link8/pad_physics_material",
+            "/World/envs/env_0/rigid/bottle/bottle_25_3/physics_material"
+          ]
+        ]
+      }
+    ],
+    "hold_median": {
+      "q7_mm": 30.07,
+      "target7_mm": 19.27,
+      "drive_est_N": 24.8,
+      "contact_N": {
+        "link7": 24.7,
+        "link8": 24.8
+      }
+    },
+    "hold_substep_pattern": [
+      [
+        25.62,
+        10.4,
+        {
+          "link7": 12.2,
+          "link8": 12.3
+        }
+      ],
+      [
+        21.16,
+        20.5,
+        {
+          "link7": 19.3,
+          "link8": 19.4
+        }
+      ],
+      [
+        19.3,
+        24.8,
+        {
+          "link7": 24.1,
+          "link8": 24.2
+        }
+      ],
+      [
+        19.28,
+        24.8,
+        {
+          "link7": 24.7,
+          "link8": 24.8
+        }
+      ],
+      [
+        19.27,
+        24.8,
+        {
+          "link7": 24.7,
+          "link8": 24.8
+        }
+      ],
+      [
+        19.27,
+        24.8,
+        {
+          "link7": 24.7,
+          "link8": 24.8
+        }
+      ],
+      [
+        19.27,
+        24.8,
+        {
+          "link7": 24.7,
+          "link8": 24.8
+        }
+      ],
+      [
+        19.27,
+        24.8,
+        {
+          "link7": 24.7,
+          "link8": 24.8
+        }
+      ],
+      [
+        19.27,
+        24.8,
+        {
+          "link7": 24.7,
+          "link8": 24.8
+        }
+      ],
+      [
+        19.27,
+        24.8,
+        {
+          "link7": 24.7,
+          "link8": 24.8
+        }
+      ]
+    ],
+    "bottle_z_before_after_lift_mm": [
+      796.4,
+      946.4
+    ],
+    "clamp_metrics": {
+      "held_lifted": true,
+      "held_at_700": true,
+      "lift_dz_mm": 150.0,
+      "end_dz_mm": 149.99,
+      "tilt_lifted_deg": 0.015,
+      "tilt_at_700_deg": 0.016,
+      "axis_tilt_lifted_deg": 0.014,
+      "axis_tilt_at_700_deg": 0.013,
+      "lifted_pose": [
+        0.4307,
+        -0.15442,
+        0.94638,
+        0.71064,
+        0.02869,
+        0.70156,
+        -0.04453
+      ],
+      "final_pose": [
+        0.4307,
+        -0.15442,
+        0.94637,
+        0.71063,
+        0.02869,
+        0.70157,
+        -0.04456
+      ]
+    }
+  }
+}

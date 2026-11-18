@@ -1,0 +1,2457 @@
+{
+  "full_archive_sha256": "0c9cf719b5f5a1e8a552ee5892ff930efd5e7a59361abbca834a84d347ec2a85",
+  "full_archive_bytes": 32754888,
+  "versions": {
+    "repo_head": "00bb70335ffbe54f04c4d3c214a856b3036ea127",
+    "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+    "isaaclab": "afca7b09d60d8beb9c1cb28b43066499940b969b",
+    "container": "isaac-sim_5.1.0.sif",
+    "isaac_sim": [
+      "5.1.0",
+      "rc.19",
+      "5"
+    ]
+  },
+  "seed": 0,
+  "total_layouts": 55,
+  "passed_count": 55,
+  "failed_count": 0,
+  "unstable_layouts_still_readback_verified": [
+    48
+  ],
+  "compensation_kind_counts": {
+    "vhacd_voxelization_erosion_allowance": 115,
+    "convex_hull_vertex_limit_allowance": 24
+  },
+  "per_bottle_model_census": {
+    "Rigid/bottle/00000": {
+      "instances": 20,
+      "layouts": [
+        5,
+        9,
+        11,
+        13,
+        14,
+        18,
+        19,
+        21,
+        23,
+        24,
+        25,
+        27,
+        29,
+        31,
+        36,
+        37,
+        45,
+        46,
+        48,
+        52
+      ],
+      "approximations": [
+        "convexDecomposition"
+      ],
+      "max_narrowing_min_m": 0.001759,
+      "max_narrowing_max_m": 0.001762,
+      "min_axis_narrowing_m": 0.001212,
+      "rel_err_min": 0.02792,
+      "rel_err_max": 0.02797,
+      "compensation_kinds": [
+        "vhacd_voxelization_erosion_allowance"
+      ]
+    },
+    "Rigid/bottle/00002": {
+      "instances": 26,
+      "layouts": [
+        2,
+        4,
+        6,
+        7,
+        10,
+        11,
+        12,
+        13,
+        15,
+        20,
+        22,
+        23,
+        24,
+        26,
+        29,
+        32,
+        33,
+        40,
+        41,
+        43,
+        45,
+        46,
+        47,
+        52,
+        53,
+        54
+      ],
+      "approximations": [
+        "convexDecomposition"
+      ],
+      "max_narrowing_min_m": 0.001555,
+      "max_narrowing_max_m": 0.001557,
+      "min_axis_narrowing_m": 0.000749,
+      "rel_err_min": 0.02468,
+      "rel_err_max": 0.02471,
+      "compensation_kinds": [
+        "vhacd_voxelization_erosion_allowance"
+      ]
+    },
+    "Rigid/bottle/00005": {
+      "instances": 24,
+      "layouts": [
+        2,
+        3,
+        4,
+        6,
+        9,
+        10,
+        14,
+        15,
+        16,
+        17,
+        21,
+        22,
+        26,
+        28,
+        32,
+        33,
+        36,
+        42,
+        43,
+        47,
+        49,
+        50,
+        51,
+        53
+      ],
+      "approximations": [
+        "convexHull"
+      ],
+      "max_narrowing_min_m": 0.002947,
+      "max_narrowing_max_m": 0.002949,
+      "min_axis_narrowing_m": -1e-06,
+      "rel_err_min": 0.04715,
+      "rel_err_max": 0.04718,
+      "compensation_kinds": [
+        "convex_hull_vertex_limit_allowance"
+      ]
+    },
+    "Rigid/bottle/00022": {
+      "instances": 19,
+      "layouts": [
+        0,
+        3,
+        5,
+        6,
+        7,
+        8,
+        12,
+        13,
+        19,
+        23,
+        30,
+        33,
+        37,
+        39,
+        40,
+        41,
+        48,
+        49,
+        53
+      ],
+      "approximations": [
+        "convexHull"
+      ],
+      "max_narrowing_min_m": 0.000659,
+      "max_narrowing_max_m": 0.00066,
+      "min_axis_narrowing_m": -1e-06,
+      "rel_err_min": 0.00941,
+      "rel_err_max": 0.00943,
+      "compensation_kinds": [
+        "None"
+      ]
+    },
+    "Rigid/bottle/00025": {
+      "instances": 27,
+      "layouts": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        8,
+        9,
+        16,
+        17,
+        19,
+        20,
+        25,
+        27,
+        28,
+        29,
+        31,
+        34,
+        36,
+        38,
+        39,
+        40,
+        42,
+        43,
+        48,
+        51,
+        52,
+        54
+      ],
+      "approximations": [
+        "convexHull"
+      ],
+      "max_narrowing_min_m": 0.000443,
+      "max_narrowing_max_m": 0.000445,
+      "min_axis_narrowing_m": -1e-06,
+      "rel_err_min": 0.00692,
+      "rel_err_max": 0.00695,
+      "compensation_kinds": [
+        "None"
+      ]
+    },
+    "Rigid/bottle/00041": {
+      "instances": 16,
+      "layouts": [
+        0,
+        1,
+        8,
+        10,
+        15,
+        17,
+        28,
+        30,
+        34,
+        35,
+        39,
+        41,
+        44,
+        45,
+        50,
+        53
+      ],
+      "approximations": [
+        "convexHull"
+      ],
+      "max_narrowing_min_m": 0.001041,
+      "max_narrowing_max_m": 0.001043,
+      "min_axis_narrowing_m": -1e-06,
+      "rel_err_min": 0.01964,
+      "rel_err_max": 0.01968,
+      "compensation_kinds": [
+        "None"
+      ]
+    },
+    "Rigid/bottle/00050": {
+      "instances": 25,
+      "layouts": [
+        1,
+        2,
+        3,
+        5,
+        14,
+        15,
+        16,
+        17,
+        18,
+        21,
+        25,
+        26,
+        28,
+        29,
+        31,
+        33,
+        35,
+        37,
+        40,
+        43,
+        44,
+        47,
+        48,
+        49,
+        50
+      ],
+      "approximations": [
+        "convexDecomposition"
+      ],
+      "max_narrowing_min_m": 0.002441,
+      "max_narrowing_max_m": 0.002443,
+      "min_axis_narrowing_m": 0.000486,
+      "rel_err_min": 0.04438,
+      "rel_err_max": 0.04442,
+      "compensation_kinds": [
+        "vhacd_voxelization_erosion_allowance"
+      ]
+    },
+    "Rigid/bottle/00055": {
+      "instances": 19,
+      "layouts": [
+        4,
+        7,
+        9,
+        12,
+        16,
+        18,
+        20,
+        22,
+        24,
+        30,
+        31,
+        32,
+        34,
+        36,
+        38,
+        41,
+        45,
+        51,
+        54
+      ],
+      "approximations": [
+        "convexHull"
+      ],
+      "max_narrowing_min_m": 0.001006,
+      "max_narrowing_max_m": 0.001007,
+      "min_axis_narrowing_m": -1e-06,
+      "rel_err_min": 0.01258,
+      "rel_err_max": 0.01259,
+      "compensation_kinds": [
+        "None"
+      ]
+    },
+    "Rigid/bottle/00059": {
+      "instances": 21,
+      "layouts": [
+        1,
+        6,
+        10,
+        11,
+        13,
+        19,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        32,
+        35,
+        38,
+        39,
+        42,
+        44,
+        46,
+        47,
+        50
+      ],
+      "approximations": [
+        "convexDecomposition"
+      ],
+      "max_narrowing_min_m": 0.002272,
+      "max_narrowing_max_m": 0.002307,
+      "min_axis_narrowing_m": 0.000784,
+      "rel_err_min": 0.04131,
+      "rel_err_max": 0.04135,
+      "compensation_kinds": [
+        "vhacd_voxelization_erosion_allowance"
+      ]
+    },
+    "Rigid/bottle/00060": {
+      "instances": 23,
+      "layouts": [
+        0,
+        1,
+        7,
+        8,
+        11,
+        12,
+        14,
+        18,
+        20,
+        21,
+        27,
+        30,
+        34,
+        35,
+        37,
+        38,
+        42,
+        44,
+        46,
+        49,
+        51,
+        52,
+        54
+      ],
+      "approximations": [
+        "convexDecomposition"
+      ],
+      "max_narrowing_min_m": 0.003241,
+      "max_narrowing_max_m": 0.003244,
+      "min_axis_narrowing_m": 0.000697,
+      "rel_err_min": 0.05893,
+      "rel_err_max": 0.05898,
+      "compensation_kinds": [
+        "vhacd_voxelization_erosion_allowance"
+      ]
+    }
+  },
+  "layouts": [
+    {
+      "layout": 0,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00041",
+        "Rigid/bottle/00060",
+        "Rigid/bottle/00025",
+        "Rigid/bottle/00022"
+      ],
+      "compensation_count": 1,
+      "compensations": [
+        {
+          "label": "bottle1",
+          "asset_id": "Rigid/bottle/00060",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.003243,
+          "rel_err": 0.05896
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 1,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00060",
+        "Rigid/bottle/00050",
+        "Rigid/bottle/00041",
+        "Rigid/bottle/00059"
+      ],
+      "compensation_count": 3,
+      "compensations": [
+        {
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00060",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.003241,
+          "rel_err": 0.05893
+        },
+        {
+          "label": "bottle1",
+          "asset_id": "Rigid/bottle/00050",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002442,
+          "rel_err": 0.0444
+        },
+        {
+          "label": "bottle3",
+          "asset_id": "Rigid/bottle/00059",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002306,
+          "rel_err": 0.04135
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 2,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00050",
+        "Rigid/bottle/00025",
+        "Rigid/bottle/00002",
+        "Rigid/bottle/00005"
+      ],
+      "compensation_count": 3,
+      "compensations": [
+        {
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00050",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002442,
+          "rel_err": 0.0444
+        },
+        {
+          "label": "bottle2",
+          "asset_id": "Rigid/bottle/00002",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001555,
+          "rel_err": 0.02468
+        },
+        {
+          "label": "bottle3",
+          "asset_id": "Rigid/bottle/00005",
+          "kind": "convex_hull_vertex_limit_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002949,
+          "rel_err": 0.04718
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 3,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00005",
+        "Rigid/bottle/00022",
+        "Rigid/bottle/00050",
+        "Rigid/bottle/00025"
+      ],
+      "compensation_count": 2,
+      "compensations": [
+        {
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00005",
+          "kind": "convex_hull_vertex_limit_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002948,
+          "rel_err": 0.04717
+        },
+        {
+          "label": "bottle2",
+          "asset_id": "Rigid/bottle/00050",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002441,
+          "rel_err": 0.04438
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 4,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00002",
+        "Rigid/bottle/00055",
+        "Rigid/bottle/00005",
+        "Rigid/bottle/00025"
+      ],
+      "compensation_count": 2,
+      "compensations": [
+        {
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00002",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001556,
+          "rel_err": 0.0247
+        },
+        {
+          "label": "bottle2",
+          "asset_id": "Rigid/bottle/00005",
+          "kind": "convex_hull_vertex_limit_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002948,
+          "rel_err": 0.04717
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 5,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00050",
+        "Rigid/bottle/00025",
+        "Rigid/bottle/00022",
+        "Rigid/bottle/00000"
+      ],
+      "compensation_count": 2,
+      "compensations": [
+        {
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00050",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002442,
+          "rel_err": 0.0444
+        },
+        {
+          "label": "bottle3",
+          "asset_id": "Rigid/bottle/00000",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001761,
+          "rel_err": 0.02795
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 6,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00005",
+        "Rigid/bottle/00059",
+        "Rigid/bottle/00002",
+        "Rigid/bottle/00022"
+      ],
+      "compensation_count": 3,
+      "compensations": [
+        {
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00005",
+          "kind": "convex_hull_vertex_limit_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002948,
+          "rel_err": 0.04717
+        },
+        {
+          "label": "bottle1",
+          "asset_id": "Rigid/bottle/00059",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002273,
+          "rel_err": 0.04133
+        },
+        {
+          "label": "bottle2",
+          "asset_id": "Rigid/bottle/00002",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001556,
+          "rel_err": 0.0247
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 7,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00060",
+        "Rigid/bottle/00022",
+        "Rigid/bottle/00055",
+        "Rigid/bottle/00002"
+      ],
+      "compensation_count": 2,
+      "compensations": [
+        {
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00060",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.003242,
+          "rel_err": 0.05895
+        },
+        {
+          "label": "bottle3",
+          "asset_id": "Rigid/bottle/00002",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001557,
+          "rel_err": 0.02471
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 8,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00060",
+        "Rigid/bottle/00025",
+        "Rigid/bottle/00022",
+        "Rigid/bottle/00041"
+      ],
+      "compensation_count": 1,
+      "compensations": [
+        {
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00060",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.003243,
+          "rel_err": 0.05896
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 9,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00025",
+        "Rigid/bottle/00005",
+        "Rigid/bottle/00055",
+        "Rigid/bottle/00000"
+      ],
+      "compensation_count": 2,
+      "compensations": [
+        {
+          "label": "bottle1",
+          "asset_id": "Rigid/bottle/00005",
+          "kind": "convex_hull_vertex_limit_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002948,
+          "rel_err": 0.04717
+        },
+        {
+          "label": "bottle3",
+          "asset_id": "Rigid/bottle/00000",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001761,
+          "rel_err": 0.02795
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 10,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00002",
+        "Rigid/bottle/00005",
+        "Rigid/bottle/00059",
+        "Rigid/bottle/00041"
+      ],
+      "compensation_count": 3,
+      "compensations": [
+        {
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00002",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001557,
+          "rel_err": 0.02471
+        },
+        {
+          "label": "bottle1",
+          "asset_id": "Rigid/bottle/00005",
+          "kind": "convex_hull_vertex_limit_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002948,
+          "rel_err": 0.04717
+        },
+        {
+          "label": "bottle2",
+          "asset_id": "Rigid/bottle/00059",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002274,
+          "rel_err": 0.04135
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 11,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00059",
+        "Rigid/bottle/00002",
+        "Rigid/bottle/00000",
+        "Rigid/bottle/00060"
+      ],
+      "compensation_count": 4,
+      "compensations": [
+        {
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00059",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002307,
+          "rel_err": 0.04135
+        },
+        {
+          "label": "bottle1",
+          "asset_id": "Rigid/bottle/00002",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001555,
+          "rel_err": 0.02468
+        },
+        {
+          "label": "bottle2",
+          "asset_id": "Rigid/bottle/00000",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.00176,
+          "rel_err": 0.02794
+        },
+        {
+          "label": "bottle3",
+          "asset_id": "Rigid/bottle/00060",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.003243,
+          "rel_err": 0.05896
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 12,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00055",
+        "Rigid/bottle/00022",
+        "Rigid/bottle/00002",
+        "Rigid/bottle/00060"
+      ],
+      "compensation_count": 2,
+      "compensations": [
+        {
+          "label": "bottle2",
+          "asset_id": "Rigid/bottle/00002",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001556,
+          "rel_err": 0.0247
+        },
+        {
+          "label": "bottle3",
+          "asset_id": "Rigid/bottle/00060",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.003244,
+          "rel_err": 0.05898
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 13,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00002",
+        "Rigid/bottle/00059",
+        "Rigid/bottle/00000",
+        "Rigid/bottle/00022"
+      ],
+      "compensation_count": 3,
+      "compensations": [
+        {
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00002",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001556,
+          "rel_err": 0.0247
+        },
+        {
+          "label": "bottle1",
+          "asset_id": "Rigid/bottle/00059",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002273,
+          "rel_err": 0.04133
+        },
+        {
+          "label": "bottle2",
+          "asset_id": "Rigid/bottle/00000",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001761,
+          "rel_err": 0.02795
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 14,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00000",
+        "Rigid/bottle/00005",
+        "Rigid/bottle/00060",
+        "Rigid/bottle/00050"
+      ],
+      "compensation_count": 4,
+      "compensations": [
+        {
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00000",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.00176,
+          "rel_err": 0.02794
+        },
+        {
+          "label": "bottle1",
+          "asset_id": "Rigid/bottle/00005",
+          "kind": "convex_hull_vertex_limit_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002949,
+          "rel_err": 0.04718
+        },
+        {
+          "label": "bottle2",
+          "asset_id": "Rigid/bottle/00060",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.003244,
+          "rel_err": 0.05898
+        },
+        {
+          "label": "bottle3",
+          "asset_id": "Rigid/bottle/00050",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002442,
+          "rel_err": 0.0444
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 15,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00050",
+        "Rigid/bottle/00002",
+        "Rigid/bottle/00041",
+        "Rigid/bottle/00005"
+      ],
+      "compensation_count": 3,
+      "compensations": [
+        {
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00050",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002443,
+          "rel_err": 0.04442
+        },
+        {
+          "label": "bottle1",
+          "asset_id": "Rigid/bottle/00002",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001555,
+          "rel_err": 0.02468
+        },
+        {
+          "label": "bottle3",
+          "asset_id": "Rigid/bottle/00005",
+          "kind": "convex_hull_vertex_limit_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002948,
+          "rel_err": 0.04717
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 16,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00005",
+        "Rigid/bottle/00025",
+        "Rigid/bottle/00050",
+        "Rigid/bottle/00055"
+      ],
+      "compensation_count": 2,
+      "compensations": [
+        {
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00005",
+          "kind": "convex_hull_vertex_limit_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002948,
+          "rel_err": 0.04717
+        },
+        {
+          "label": "bottle2",
+          "asset_id": "Rigid/bottle/00050",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002443,
+          "rel_err": 0.04442
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 17,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00041",
+        "Rigid/bottle/00005",
+        "Rigid/bottle/00025",
+        "Rigid/bottle/00050"
+      ],
+      "compensation_count": 2,
+      "compensations": [
+        {
+          "label": "bottle1",
+          "asset_id": "Rigid/bottle/00005",
+          "kind": "convex_hull_vertex_limit_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002948,
+          "rel_err": 0.04717
+        },
+        {
+          "label": "bottle3",
+          "asset_id": "Rigid/bottle/00050",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002443,
+          "rel_err": 0.04442
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 18,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00060",
+        "Rigid/bottle/00055",
+        "Rigid/bottle/00050",
+        "Rigid/bottle/00000"
+      ],
+      "compensation_count": 3,
+      "compensations": [
+        {
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00060",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.003242,
+          "rel_err": 0.05895
+        },
+        {
+          "label": "bottle2",
+          "asset_id": "Rigid/bottle/00050",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002442,
+          "rel_err": 0.0444
+        },
+        {
+          "label": "bottle3",
+          "asset_id": "Rigid/bottle/00000",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001761,
+          "rel_err": 0.02795
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 19,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00059",
+        "Rigid/bottle/00000",
+        "Rigid/bottle/00022",
+        "Rigid/bottle/00025"
+      ],
+      "compensation_count": 2,
+      "compensations": [
+        {
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00059",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002273,
+          "rel_err": 0.04133
+        },
+        {
+          "label": "bottle1",
+          "asset_id": "Rigid/bottle/00000",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.00176,
+          "rel_err": 0.02794
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 20,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00060",
+        "Rigid/bottle/00055",
+        "Rigid/bottle/00025",
+        "Rigid/bottle/00002"
+      ],
+      "compensation_count": 2,
+      "compensations": [
+        {
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00060",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.003243,
+          "rel_err": 0.05896
+        },
+        {
+          "label": "bottle3",
+          "asset_id": "Rigid/bottle/00002",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001556,
+          "rel_err": 0.0247
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 21,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00000",
+        "Rigid/bottle/00060",
+        "Rigid/bottle/00005",
+        "Rigid/bottle/00050"
+      ],
+      "compensation_count": 4,
+      "compensations": [
+        {
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00000",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001761,
+          "rel_err": 0.02795
+        },
+        {
+          "label": "bottle1",
+          "asset_id": "Rigid/bottle/00060",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.003242,
+          "rel_err": 0.05895
+        },
+        {
+          "label": "bottle2",
+          "asset_id": "Rigid/bottle/00005",
+          "kind": "convex_hull_vertex_limit_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002948,
+          "rel_err": 0.04717
+        },
+        {
+          "label": "bottle3",
+          "asset_id": "Rigid/bottle/00050",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002443,
+          "rel_err": 0.04442
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 22,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00055",
+        "Rigid/bottle/00059",
+        "Rigid/bottle/00005",
+        "Rigid/bottle/00002"
+      ],
+      "compensation_count": 3,
+      "compensations": [
+        {
+          "label": "bottle1",
+          "asset_id": "Rigid/bottle/00059",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002306,
+          "rel_err": 0.04133
+        },
+        {
+          "label": "bottle2",
+          "asset_id": "Rigid/bottle/00005",
+          "kind": "convex_hull_vertex_limit_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002948,
+          "rel_err": 0.04717
+        },
+        {
+          "label": "bottle3",
+          "asset_id": "Rigid/bottle/00002",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001556,
+          "rel_err": 0.0247
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 23,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00022",
+        "Rigid/bottle/00059",
+        "Rigid/bottle/00002",
+        "Rigid/bottle/00000"
+      ],
+      "compensation_count": 3,
+      "compensations": [
+        {
+          "label": "bottle1",
+          "asset_id": "Rigid/bottle/00059",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002272,
+          "rel_err": 0.04131
+        },
+        {
+          "label": "bottle2",
+          "asset_id": "Rigid/bottle/00002",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001556,
+          "rel_err": 0.0247
+        },
+        {
+          "label": "bottle3",
+          "asset_id": "Rigid/bottle/00000",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.00176,
+          "rel_err": 0.02794
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 24,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00055",
+        "Rigid/bottle/00002",
+        "Rigid/bottle/00059",
+        "Rigid/bottle/00000"
+      ],
+      "compensation_count": 3,
+      "compensations": [
+        {
+          "label": "bottle1",
+          "asset_id": "Rigid/bottle/00002",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001556,
+          "rel_err": 0.0247
+        },
+        {
+          "label": "bottle2",
+          "asset_id": "Rigid/bottle/00059",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002306,
+          "rel_err": 0.04133
+        },
+        {
+          "label": "bottle3",
+          "asset_id": "Rigid/bottle/00000",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001761,
+          "rel_err": 0.02795
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 25,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00000",
+        "Rigid/bottle/00050",
+        "Rigid/bottle/00025",
+        "Rigid/bottle/00059"
+      ],
+      "compensation_count": 3,
+      "compensations": [
+        {
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00000",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001762,
+          "rel_err": 0.02797
+        },
+        {
+          "label": "bottle1",
+          "asset_id": "Rigid/bottle/00050",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002442,
+          "rel_err": 0.0444
+        },
+        {
+          "label": "bottle3",
+          "asset_id": "Rigid/bottle/00059",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002273,
+          "rel_err": 0.04133
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 26,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00005",
+        "Rigid/bottle/00050",
+        "Rigid/bottle/00002",
+        "Rigid/bottle/00059"
+      ],
+      "compensation_count": 4,
+      "compensations": [
+        {
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00005",
+          "kind": "convex_hull_vertex_limit_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002948,
+          "rel_err": 0.04717
+        },
+        {
+          "label": "bottle1",
+          "asset_id": "Rigid/bottle/00050",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002442,
+          "rel_err": 0.0444
+        },
+        {
+          "label": "bottle2",
+          "asset_id": "Rigid/bottle/00002",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001556,
+          "rel_err": 0.0247
+        },
+        {
+          "label": "bottle3",
+          "asset_id": "Rigid/bottle/00059",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002307,
+          "rel_err": 0.04135
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 27,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00060",
+        "Rigid/bottle/00000",
+        "Rigid/bottle/00059",
+        "Rigid/bottle/00025"
+      ],
+      "compensation_count": 3,
+      "compensations": [
+        {
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00060",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.003244,
+          "rel_err": 0.05898
+        },
+        {
+          "label": "bottle1",
+          "asset_id": "Rigid/bottle/00000",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.00176,
+          "rel_err": 0.02794
+        },
+        {
+          "label": "bottle2",
+          "asset_id": "Rigid/bottle/00059",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002306,
+          "rel_err": 0.04133
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 28,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00025",
+        "Rigid/bottle/00005",
+        "Rigid/bottle/00041",
+        "Rigid/bottle/00050"
+      ],
+      "compensation_count": 2,
+      "compensations": [
+        {
+          "label": "bottle1",
+          "asset_id": "Rigid/bottle/00005",
+          "kind": "convex_hull_vertex_limit_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002948,
+          "rel_err": 0.04717
+        },
+        {
+          "label": "bottle3",
+          "asset_id": "Rigid/bottle/00050",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002442,
+          "rel_err": 0.0444
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 29,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00050",
+        "Rigid/bottle/00002",
+        "Rigid/bottle/00000",
+        "Rigid/bottle/00025"
+      ],
+      "compensation_count": 3,
+      "compensations": [
+        {
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00050",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002442,
+          "rel_err": 0.0444
+        },
+        {
+          "label": "bottle1",
+          "asset_id": "Rigid/bottle/00002",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001556,
+          "rel_err": 0.0247
+        },
+        {
+          "label": "bottle2",
+          "asset_id": "Rigid/bottle/00000",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001761,
+          "rel_err": 0.02795
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 30,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00041",
+        "Rigid/bottle/00055",
+        "Rigid/bottle/00022",
+        "Rigid/bottle/00060"
+      ],
+      "compensation_count": 1,
+      "compensations": [
+        {
+          "label": "bottle3",
+          "asset_id": "Rigid/bottle/00060",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.003243,
+          "rel_err": 0.05896
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 31,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00000",
+        "Rigid/bottle/00055",
+        "Rigid/bottle/00050",
+        "Rigid/bottle/00025"
+      ],
+      "compensation_count": 2,
+      "compensations": [
+        {
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00000",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001761,
+          "rel_err": 0.02795
+        },
+        {
+          "label": "bottle2",
+          "asset_id": "Rigid/bottle/00050",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002443,
+          "rel_err": 0.04442
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 32,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00055",
+        "Rigid/bottle/00005",
+        "Rigid/bottle/00002",
+        "Rigid/bottle/00059"
+      ],
+      "compensation_count": 3,
+      "compensations": [
+        {
+          "label": "bottle1",
+          "asset_id": "Rigid/bottle/00005",
+          "kind": "convex_hull_vertex_limit_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002948,
+          "rel_err": 0.04717
+        },
+        {
+          "label": "bottle2",
+          "asset_id": "Rigid/bottle/00002",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001556,
+          "rel_err": 0.0247
+        },
+        {
+          "label": "bottle3",
+          "asset_id": "Rigid/bottle/00059",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002306,
+          "rel_err": 0.04133
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 33,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00002",
+        "Rigid/bottle/00050",
+        "Rigid/bottle/00005",
+        "Rigid/bottle/00022"
+      ],
+      "compensation_count": 3,
+      "compensations": [
+        {
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00002",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001556,
+          "rel_err": 0.0247
+        },
+        {
+          "label": "bottle1",
+          "asset_id": "Rigid/bottle/00050",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002442,
+          "rel_err": 0.0444
+        },
+        {
+          "label": "bottle2",
+          "asset_id": "Rigid/bottle/00005",
+          "kind": "convex_hull_vertex_limit_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002948,
+          "rel_err": 0.04717
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 34,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00025",
+        "Rigid/bottle/00055",
+        "Rigid/bottle/00060",
+        "Rigid/bottle/00041"
+      ],
+      "compensation_count": 1,
+      "compensations": [
+        {
+          "label": "bottle2",
+          "asset_id": "Rigid/bottle/00060",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.003244,
+          "rel_err": 0.05898
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 35,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00060",
+        "Rigid/bottle/00041",
+        "Rigid/bottle/00050",
+        "Rigid/bottle/00059"
+      ],
+      "compensation_count": 3,
+      "compensations": [
+        {
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00060",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.003243,
+          "rel_err": 0.05896
+        },
+        {
+          "label": "bottle2",
+          "asset_id": "Rigid/bottle/00050",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002442,
+          "rel_err": 0.0444
+        },
+        {
+          "label": "bottle3",
+          "asset_id": "Rigid/bottle/00059",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002273,
+          "rel_err": 0.04133
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 36,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00005",
+        "Rigid/bottle/00055",
+        "Rigid/bottle/00000",
+        "Rigid/bottle/00025"
+      ],
+      "compensation_count": 2,
+      "compensations": [
+        {
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00005",
+          "kind": "convex_hull_vertex_limit_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002947,
+          "rel_err": 0.04715
+        },
+        {
+          "label": "bottle2",
+          "asset_id": "Rigid/bottle/00000",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001761,
+          "rel_err": 0.02795
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 37,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00050",
+        "Rigid/bottle/00022",
+        "Rigid/bottle/00060",
+        "Rigid/bottle/00000"
+      ],
+      "compensation_count": 3,
+      "compensations": [
+        {
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00050",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002442,
+          "rel_err": 0.0444
+        },
+        {
+          "label": "bottle2",
+          "asset_id": "Rigid/bottle/00060",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.003243,
+          "rel_err": 0.05896
+        },
+        {
+          "label": "bottle3",
+          "asset_id": "Rigid/bottle/00000",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001761,
+          "rel_err": 0.02795
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 38,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00059",
+        "Rigid/bottle/00055",
+        "Rigid/bottle/00025",
+        "Rigid/bottle/00060"
+      ],
+      "compensation_count": 2,
+      "compensations": [
+        {
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00059",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002306,
+          "rel_err": 0.04131
+        },
+        {
+          "label": "bottle3",
+          "asset_id": "Rigid/bottle/00060",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.003243,
+          "rel_err": 0.05896
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 39,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00059",
+        "Rigid/bottle/00041",
+        "Rigid/bottle/00022",
+        "Rigid/bottle/00025"
+      ],
+      "compensation_count": 1,
+      "compensations": [
+        {
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00059",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002274,
+          "rel_err": 0.04135
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 40,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00022",
+        "Rigid/bottle/00025",
+        "Rigid/bottle/00050",
+        "Rigid/bottle/00002"
+      ],
+      "compensation_count": 2,
+      "compensations": [
+        {
+          "label": "bottle2",
+          "asset_id": "Rigid/bottle/00050",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002442,
+          "rel_err": 0.0444
+        },
+        {
+          "label": "bottle3",
+          "asset_id": "Rigid/bottle/00002",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001556,
+          "rel_err": 0.0247
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 41,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00002",
+        "Rigid/bottle/00022",
+        "Rigid/bottle/00055",
+        "Rigid/bottle/00041"
+      ],
+      "compensation_count": 1,
+      "compensations": [
+        {
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00002",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001557,
+          "rel_err": 0.02471
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 42,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00025",
+        "Rigid/bottle/00005",
+        "Rigid/bottle/00060",
+        "Rigid/bottle/00059"
+      ],
+      "compensation_count": 3,
+      "compensations": [
+        {
+          "label": "bottle1",
+          "asset_id": "Rigid/bottle/00005",
+          "kind": "convex_hull_vertex_limit_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002948,
+          "rel_err": 0.04717
+        },
+        {
+          "label": "bottle2",
+          "asset_id": "Rigid/bottle/00060",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.003243,
+          "rel_err": 0.05896
+        },
+        {
+          "label": "bottle3",
+          "asset_id": "Rigid/bottle/00059",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002306,
+          "rel_err": 0.04133
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 43,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00002",
+        "Rigid/bottle/00025",
+        "Rigid/bottle/00005",
+        "Rigid/bottle/00050"
+      ],
+      "compensation_count": 3,
+      "compensations": [
+        {
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00002",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001556,
+          "rel_err": 0.0247
+        },
+        {
+          "label": "bottle2",
+          "asset_id": "Rigid/bottle/00005",
+          "kind": "convex_hull_vertex_limit_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002948,
+          "rel_err": 0.04717
+        },
+        {
+          "label": "bottle3",
+          "asset_id": "Rigid/bottle/00050",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002442,
+          "rel_err": 0.0444
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 44,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00041",
+        "Rigid/bottle/00060",
+        "Rigid/bottle/00050",
+        "Rigid/bottle/00059"
+      ],
+      "compensation_count": 3,
+      "compensations": [
+        {
+          "label": "bottle1",
+          "asset_id": "Rigid/bottle/00060",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.003242,
+          "rel_err": 0.05895
+        },
+        {
+          "label": "bottle2",
+          "asset_id": "Rigid/bottle/00050",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002442,
+          "rel_err": 0.0444
+        },
+        {
+          "label": "bottle3",
+          "asset_id": "Rigid/bottle/00059",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002306,
+          "rel_err": 0.04133
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 45,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00002",
+        "Rigid/bottle/00055",
+        "Rigid/bottle/00000",
+        "Rigid/bottle/00041"
+      ],
+      "compensation_count": 2,
+      "compensations": [
+        {
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00002",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001556,
+          "rel_err": 0.0247
+        },
+        {
+          "label": "bottle2",
+          "asset_id": "Rigid/bottle/00000",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001759,
+          "rel_err": 0.02792
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 46,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00000",
+        "Rigid/bottle/00060",
+        "Rigid/bottle/00059",
+        "Rigid/bottle/00002"
+      ],
+      "compensation_count": 4,
+      "compensations": [
+        {
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00000",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001761,
+          "rel_err": 0.02795
+        },
+        {
+          "label": "bottle1",
+          "asset_id": "Rigid/bottle/00060",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.003243,
+          "rel_err": 0.05896
+        },
+        {
+          "label": "bottle2",
+          "asset_id": "Rigid/bottle/00059",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002306,
+          "rel_err": 0.04133
+        },
+        {
+          "label": "bottle3",
+          "asset_id": "Rigid/bottle/00002",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001556,
+          "rel_err": 0.0247
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 47,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00005",
+        "Rigid/bottle/00002",
+        "Rigid/bottle/00050",
+        "Rigid/bottle/00059"
+      ],
+      "compensation_count": 4,
+      "compensations": [
+        {
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00005",
+          "kind": "convex_hull_vertex_limit_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002948,
+          "rel_err": 0.04717
+        },
+        {
+          "label": "bottle1",
+          "asset_id": "Rigid/bottle/00002",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001555,
+          "rel_err": 0.02468
+        },
+        {
+          "label": "bottle2",
+          "asset_id": "Rigid/bottle/00050",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002442,
+          "rel_err": 0.0444
+        },
+        {
+          "label": "bottle3",
+          "asset_id": "Rigid/bottle/00059",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002306,
+          "rel_err": 0.04133
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 48,
+      "unstable_reset": true,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00050",
+        "Rigid/bottle/00000",
+        "Rigid/bottle/00025",
+        "Rigid/bottle/00022"
+      ],
+      "compensation_count": 2,
+      "compensations": [
+        {
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00050",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002441,
+          "rel_err": 0.04438
+        },
+        {
+          "label": "bottle1",
+          "asset_id": "Rigid/bottle/00000",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001761,
+          "rel_err": 0.02795
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 49,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00050",
+        "Rigid/bottle/00060",
+        "Rigid/bottle/00005",
+        "Rigid/bottle/00022"
+      ],
+      "compensation_count": 3,
+      "compensations": [
+        {
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00050",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002442,
+          "rel_err": 0.0444
+        },
+        {
+          "label": "bottle1",
+          "asset_id": "Rigid/bottle/00060",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.003243,
+          "rel_err": 0.05896
+        },
+        {
+          "label": "bottle2",
+          "asset_id": "Rigid/bottle/00005",
+          "kind": "convex_hull_vertex_limit_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002948,
+          "rel_err": 0.04717
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 50,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00050",
+        "Rigid/bottle/00041",
+        "Rigid/bottle/00059",
+        "Rigid/bottle/00005"
+      ],
+      "compensation_count": 3,
+      "compensations": [
+        {
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00050",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002443,
+          "rel_err": 0.04442
+        },
+        {
+          "label": "bottle2",
+          "asset_id": "Rigid/bottle/00059",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002306,
+          "rel_err": 0.04133
+        },
+        {
+          "label": "bottle3",
+          "asset_id": "Rigid/bottle/00005",
+          "kind": "convex_hull_vertex_limit_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002948,
+          "rel_err": 0.04717
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 51,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00055",
+        "Rigid/bottle/00060",
+        "Rigid/bottle/00025",
+        "Rigid/bottle/00005"
+      ],
+      "compensation_count": 2,
+      "compensations": [
+        {
+          "label": "bottle1",
+          "asset_id": "Rigid/bottle/00060",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.003243,
+          "rel_err": 0.05896
+        },
+        {
+          "label": "bottle3",
+          "asset_id": "Rigid/bottle/00005",
+          "kind": "convex_hull_vertex_limit_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002948,
+          "rel_err": 0.04717
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 52,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00002",
+        "Rigid/bottle/00060",
+        "Rigid/bottle/00025",
+        "Rigid/bottle/00000"
+      ],
+      "compensation_count": 3,
+      "compensations": [
+        {
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00002",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001556,
+          "rel_err": 0.0247
+        },
+        {
+          "label": "bottle1",
+          "asset_id": "Rigid/bottle/00060",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.003243,
+          "rel_err": 0.05896
+        },
+        {
+          "label": "bottle3",
+          "asset_id": "Rigid/bottle/00000",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001761,
+          "rel_err": 0.02795
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 53,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00002",
+        "Rigid/bottle/00005",
+        "Rigid/bottle/00022",
+        "Rigid/bottle/00041"
+      ],
+      "compensation_count": 2,
+      "compensations": [
+        {
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00002",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001556,
+          "rel_err": 0.0247
+        },
+        {
+          "label": "bottle1",
+          "asset_id": "Rigid/bottle/00005",
+          "kind": "convex_hull_vertex_limit_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.002947,
+          "rel_err": 0.04715
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    },
+    {
+      "layout": 54,
+      "unstable_reset": false,
+      "assertion_passed": true,
+      "failures": [],
+      "bottles": [
+        "Rigid/bottle/00055",
+        "Rigid/bottle/00025",
+        "Rigid/bottle/00060",
+        "Rigid/bottle/00002"
+      ],
+      "compensation_count": 2,
+      "compensations": [
+        {
+          "label": "bottle2",
+          "asset_id": "Rigid/bottle/00060",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.003242,
+          "rel_err": 0.05895
+        },
+        {
+          "label": "bottle3",
+          "asset_id": "Rigid/bottle/00002",
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "max_narrowing_m": 0.001556,
+          "rel_err": 0.0247
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38
+    }
+  ]
+}

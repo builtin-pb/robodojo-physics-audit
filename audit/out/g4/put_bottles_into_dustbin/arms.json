@@ -1,0 +1,35 @@
+{
+ "reference": "shipped",
+ "arms": {
+  "shipped": {"fixes": "none (PR #153's runs; identical at this head, g4c_ship_s0_l10)", "tags": ["g4_shipped_s0_l10to16", "g4_shipped_s1_l10to16", "g4_shipped_s2_l10to15"]},
+  "corrected": {"fixes": "all seven: order, values, size, collision, gripper, robot_limits, solver", "tags": ["g4_corr7_s0_l10to16", "g4_corr7_s1_l10to16", "g4_corr7_s2_l10to15"]},
+  "corrected_v153": {"fixes": "order, values, size, collision (PR #153's corrected)", "tags": ["g4_corrected_s0_l10to16", "g4_corrected_s1_l10to16", "g4_corrected_s2_l10to15"]},
+  "ordval": {"fixes": "order, values (order with sourced values)", "tags": ["g4_ordval_s2_l10to15"]},
+  "materials": {"fixes": "order, materials", "tags": ["g4_materials_s2_l10to15"]},
+  "masses": {"fixes": "masses", "tags": ["g4_masses_s2_l10to15"]},
+  "geom": {"fixes": "size, collision", "tags": ["g4_geom_s2_l10to15"]},
+  "gripper": {"fixes": "gripper", "tags": ["g4_gripper_s2_l10to15"]},
+  "limits": {"fixes": "robot_limits", "tags": ["g4_limits_s2_l10to15"]},
+  "solver": {"fixes": "solver", "tags": ["g4_solver_s2_l10to15"]}
+ },
+ "sweep": {
+  "pad020": {"pair_pet": [0.2, 0.15], "tags": ["g4_pad020_s2_l10to15"]},
+  "pmin015": {"pair_pet": [0.15, 0.1125], "tags": ["g4_pmin015_s2_l10to15"]},
+  "pmin010": {"pair_pet": [0.1, 0.075], "tags": ["g4_pmin010_s2_l10to15"]},
+  "pmin005": {"pair_pet": [0.05, 0.0375], "tags": ["g4_pmin005_s2_l10to15"]},
+  "pad074": {"pair_pet": [0.742, 0.63], "tags": ["g4_pad074_s2_l10to15"]}
+ },
+ "levels": {
+  "light": {"what": "corrected, every bottle at the low end of its empty mass range", "tags": ["g4_light_s2_l10to15"]},
+  "heavy": {"what": "corrected, every bottle at the high end of its empty mass range", "tags": ["g4_heavy_s2_l10to15"]},
+  "corr_nolimits": {"what": "corrected without robot_limits (leave-one-out)", "tags": ["g4_corr_nolimits_s2_l14to15"]},
+  "corr_nogripper": {"what": "corrected without gripper (leave-one-out)", "tags": ["g4_corr_nogripper_s2_l14to15"]},
+  "corr_nosolver": {"what": "corrected without solver (leave-one-out)", "tags": ["g4_corr_nosolver_s2_l14to15"]},
+  "corr_nomat": {"what": "corrected without its frictions (-order,-values,+masses)", "tags": ["g4_corr_nomat_s2_l14to15"]},
+  "corr_monitor": {"what": "corrected with --arm_torque_monitor (instrumentation)", "tags": ["g4_corr7mon_s2_l15"]},
+  "v1_shipped": {"what": "shipped under evaluator v1", "tags": ["g4_shipped_v1_s0_l16"]},
+  "v1_corrected": {"what": "corrected under evaluator v1", "tags": ["g4_corrected_v1_s0_l16_c7"]}
+ },
+ "refinement": {"what": "corrected at dt 2 ms against corrected's 4 ms (25 Hz actions, reset topped up to 3.376 s)", "fine_tags": ["g4_dt2_s2_l10to13"]},
+ "settle_pairs": {"solver_vs_shipped": ["solver", "shipped"], "corrected_vs_corrected_v153": ["corrected", "corrected_v153"], "corrected_v153_vs_shipped": ["corrected_v153", "shipped"]}
+}

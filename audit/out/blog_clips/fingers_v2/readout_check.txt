@@ -1,0 +1,15 @@
+fingers3  as shipped                         step 1010 t=0.40s  rot_deg  30.3000 -> shown  30.3 deg | f_avg   4.383.. 24.707 N -> shown    4–25 N  ok
+fingers3  as shipped                         step 1110 t=0.80s  rot_deg  77.5000 -> shown  77.5 deg | f_avg   4.312.. 24.692 N -> shown    4–25 N  ok
+fingers3  as shipped                         step 1360 t=1.80s  rot_deg  77.8000 -> shown  77.8 deg | f_avg   4.332.. 24.673 N -> shown    4–25 N  ok
+fingers3  real controller, light fingers     step 1010 t=0.40s  rot_deg  11.1100 -> shown  11.1 deg | f_avg  62.545.. 80.592 N -> shown   63–81 N  ok
+fingers3  real controller, light fingers     step 1110 t=0.80s  rot_deg  24.7200 -> shown  24.7 deg | f_avg  60.109.. 80.275 N -> shown   60–80 N  ok
+fingers3  real controller, light fingers     step 1360 t=1.80s  rot_deg  56.9600 -> shown  57.0 deg | f_avg  59.437.. 80.060 N -> shown   59–80 N  ok
+fingers3  real controller, motor’s weight    step 1010 t=0.40s  rot_deg   0.0800 -> shown  0.08 deg | f_avg  77.354.. 82.707 N -> shown   77–83 N  ok
+fingers3  real controller, motor’s weight    step 1110 t=0.80s  rot_deg   0.4800 -> shown  0.48 deg | f_avg  79.111.. 80.874 N -> shown      80 N  ok
+fingers3  real controller, motor’s weight    step 1360 t=1.80s  rot_deg   0.4700 -> shown  0.47 deg | f_avg  79.957.. 80.115 N -> shown      80 N  ok
+hero      as shipped                         step 1010 t=0.40s  rot_deg  30.3000 -> shown  30.3 deg | f_avg   4.383.. 24.707 N -> shown    4–25 N  ok
+hero      as shipped                         step 1110 t=0.80s  rot_deg  77.5000 -> shown  77.5 deg | f_avg   4.312.. 24.692 N -> shown    4–25 N  ok
+hero      as shipped                         step 1360 t=1.80s  rot_deg  77.8000 -> shown  77.8 deg | f_avg   4.332.. 24.673 N -> shown    4–25 N  ok
+hero      after our fix                      step 1010 t=0.40s  rot_deg   0.0200 -> shown  0.02 deg | f_avg 158.879..164.868 N -> shown 159–165 N  ok
+hero      after our fix                      step 1110 t=0.80s  rot_deg   0.0400 -> shown  0.04 deg | f_avg 160.968..162.417 N -> shown     162 N  ok
+hero      after our fix                      step 1360 t=1.80s  rot_deg   0.0400 -> shown  0.04 deg | f_avg 161.693..161.837 N -> shown     162 N  ok

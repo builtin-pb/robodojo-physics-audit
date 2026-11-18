@@ -1,0 +1,14 @@
+# Blog verification pass, batch 1 (della-vis2 GPU 0, checkout of main 50c5fd1). #114 first: it depends on the GPU memory free now.
+vb_fasten_drop|harness|--task fasten_screws --seed 0 --layouts 0 --policy sweep --sweep_steps 250 --sweep_drop_m 0.03
+vb_sweep_pushT|harness|--task push_T --seed 0 --layouts 0 --policy sweep
+vb_sweep_swapT|harness|--task swap_T --seed 0 --layouts 0 --policy sweep
+vb_sweep_pack|harness|--task pack_objects_into_box --seed 0 --layouts 0 --policy sweep
+vb_sweep_pushTr|harness|--task push_T_random --seed 0 --layouts 0 --policy sweep
+vb_sweep_cb|harness|--task cover_blocks --seed 0 --layouts 0 --policy sweep
+vb_sweep_bottles|harness|--task put_bottles_into_dustbin --seed 0 --layouts 0 --policy sweep
+vb_cb_order|harness|--task cover_blocks --layouts 0 --policy readback --order_variant
+vb_main_zero_v1|main|--mode zero --task put_bottles_into_dustbin --evaluator v1 --eval_num 5 --run_id vb_zero_v1
+vb_shv_buttons_eval|harness|--task press_by_number --layouts 0 --policy stress_hv --stress_cases /scratch/<user>/isaac/work/verify/robodojo-physics/audit/harness/stress_hv/cases/press_buttons_eval.json
+vb_shv_coinspeed|harness|--task deposit_coin --layouts 0 --policy stress_hv --stress_cases /scratch/<user>/isaac/work/verify/robodojo-physics/audit/harness/stress_hv/cases/coin_side_speeds.json
+vb_s1_slide|harness|--task put_bottles_into_dustbin --layouts 0 --policy slide --slide_sweep_json /scratch/<user>/isaac/work/verify/cells_s1.json
+vb_shove_L1_v1|harness|--task put_bottles_into_dustbin --layouts 1 --policy exploit --exploit_mode shove_bottles --log_poses --evaluator v1

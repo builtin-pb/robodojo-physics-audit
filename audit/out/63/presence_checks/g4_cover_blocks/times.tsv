@@ -1,0 +1,9 @@
+batch	process	host	gpu	t_start	t_end	wall_s
+g4st_cb_ship	g4st_cb_ship_q00_vis2	della-vis2	1	1794708981.5	1794709553.8	572.3
+g4st_cb_ship	g4st_cb_ship_q02_vis2	della-vis2	1	1794708992.4	1794709574.1	581.7
+g4st_cb_ship	g4st_cb_ship_q01_vis2	della-vis2	1	1794709003.3	1794709598.6	595.3
+g4st_cb_corr	g4st_cb_corr_q00_vis2	della-vis2	1	1794710101.6	1794711310.4	1208.8
+g4st_cb_corr	g4st_cb_corr_q01_vis2	della-vis2	1	1794710112.5	1794711328.8	1216.3
+pw_g4_cb_s2	pw_g4_cb_s2_q00_vis2	della-vis2	1	1794756097.3	1794756878.9	781.6
+pw_g4_cb_s2	pw_g4_cb_s2_q02_vis2	della-vis2	1	1794756107.4	1794756893.5	786.2
+pw_g4_cb_s2	pw_g4_cb_s2_q01_vis2	della-vis2	1	1794756117.5	1794756935.8	818.3

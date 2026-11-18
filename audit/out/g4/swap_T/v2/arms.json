@@ -1,0 +1,45 @@
+{
+ "task": "swap_T",
+ "reference": "shipped",
+ "arms": {
+  "shipped": {
+   "what": "RoboDojo as released (script_swap_T_v2)",
+   "batches": [
+    "g4st2_sT_ship"
+   ]
+  },
+  "corrected": {
+   "what": "fully corrected (all seven fixes, v2b map; script_swap_T_v2)",
+   "batches": [
+    "g4st2_sT_corr"
+   ]
+  },
+  "robot_limits": {
+   "what": "shipped + robot_limits (script_swap_T_v2)",
+   "batches": [
+    "g4st2_sT_limits"
+   ]
+  },
+  "shipped_rep": {
+   "what": "shipped, seed 2 layout 0 twice in one process",
+   "batches": [
+    "g4st2_sT_ship_rep"
+   ],
+   "control": true,
+   "same_as": "shipped"
+  },
+  "corrected_rep": {
+   "what": "corrected, seed 2 layout 0 twice in one process",
+   "batches": [
+    "g4st2_sT_corr_rep"
+   ],
+   "control": true,
+   "same_as": "corrected"
+  }
+ },
+ "detail_arms": [
+  "shipped",
+  "corrected",
+  "robot_limits"
+ ]
+}

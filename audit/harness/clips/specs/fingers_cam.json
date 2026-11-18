@@ -1,0 +1,12 @@
+{
+ "purpose": "Blog clip, three finger versions, production replay: smoke 2's ax10 eye and target (from +y on the -x side, 44 degrees off the closing axis, so bottle1 stays off every line of sight to the held bottle's neck in all five smoked states) with a 48 mm lens instead of 40 mm, a 1.2x zoom about the image centre that keeps every smoked state at least 60 px inside the frame (checked by cropping the smoke frames to their central 534x600 px), at 640x720; each 5.1 state log's episode steps 810-1360 every 5th step: 0.4 s on the table, the lift (steps 911-1110) and the hold (1111-1360). Smoke 1 views fy110, fy130, fy125w lose the neck behind bottle1 in some state; smoke 2's dx75 draws the level bottle's cap on bottle1's top, as if resting on it",
+ "cameras": [
+  {"name": "ax10z", "eye": [-0.10, 0.60, 1.05], "target": [0.37, -0.14, 0.90], "focal_mm": 48, "res": [640, 720]}
+ ],
+ "windows": [
+  {"case": null, "unit": "step", "from": 810, "to": 1360, "stride": 5}
+ ],
+ "mode_sweep": [
+  {"name": "pt8", "carb": {"/rtx/rendermode": "PathTracing", "/rtx/pathtracing/spp": 8, "/rtx/pathtracing/totalSpp": 8, "/rtx/pathtracing/optixDenoiser/enabled": true}, "warmup": 4}
+ ]
+}

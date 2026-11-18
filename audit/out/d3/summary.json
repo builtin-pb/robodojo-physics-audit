@@ -1,0 +1,3299 @@
+{
+ "d3_w2_corr_readback": {
+  "assertion_passed": true,
+  "failures": [],
+  "engine_drives": {
+   "robot0": {
+    "dof_stiffnesses": [
+     52274.6016,
+     0.0
+    ],
+    "dof_dampings": [
+     2090.98,
+     0.0
+    ],
+    "dof_max_forces": [
+     160.0,
+     100.0
+    ],
+    "dof_max_velocities": [
+     1000.0,
+     1000.0
+    ]
+   },
+   "robot1": {
+    "dof_stiffnesses": [
+     52274.6016,
+     0.0
+    ],
+    "dof_dampings": [
+     2090.98,
+     0.0
+    ],
+    "dof_max_forces": [
+     160.0,
+     100.0
+    ],
+    "dof_max_velocities": [
+     1000.0,
+     1000.0
+    ]
+   }
+  },
+  "mimic_usd": {
+   "robot0": {
+    "applied_schemas": [
+     "PhysxMimicJointAPI:rotX",
+     "PhysicsJointStateAPI:linear",
+     "PhysxJointAPI",
+     "PhysicsDriveAPI:linear"
+    ],
+    "reference_joint": [
+     "/World/envs/env_0/robot0/joints/joint7"
+    ],
+    "gearing": -1.0,
+    "offset": 0.0,
+    "reference_joint_axis": "rotX"
+   },
+   "robot1": {
+    "applied_schemas": [
+     "PhysxMimicJointAPI:rotX",
+     "PhysicsJointStateAPI:linear",
+     "PhysxJointAPI",
+     "PhysicsDriveAPI:linear"
+    ],
+    "reference_joint": [
+     "/World/envs/env_0/robot1/joints/joint7"
+    ],
+    "gearing": -1.0,
+    "offset": 0.0,
+    "reference_joint_axis": "rotX"
+   }
+  },
+  "status_counts": {
+   "estimated": 78,
+   "unsourced": 85,
+   "sourced": 30
+  },
+  "gripper_manifest": {
+   "x5": {
+    "robot_name": "x5",
+    "driven_joint": "joint7",
+    "mimic_joint": "joint8",
+    "finger_stiffness_n_m": 26137.3,
+    "finger_damping_n_s_m": 1045.49,
+    "finger_effort_n": 80.0,
+    "effort_case": "nominal",
+    "slew_m_s": 0.15,
+    "mimic_gearing": -1.0,
+    "mimic_offset": 0.0,
+    "mimic_axis": "rotX",
+    "provenance": "/scratch/<user>/isaac/work/gripper-d3/head/docs/params:robots.x5.gripper",
+    "engine": {
+     "joint7": {
+      "stiffness": 52274.6,
+      "damping": 2090.98,
+      "max_force": 160.0
+     },
+     "joint8": {
+      "stiffness": 0.0,
+      "damping": 0.0
+     }
+    }
+   }
+  },
+  "device": "cpu",
+  "lying_bottle_grasp_u0": {
+   "hold_steps": 150,
+   "link7_mean_N": 79.5,
+   "link8_mean_N": 79.9,
+   "link7_std_pct": 1.35,
+   "link8_std_pct": 1.71,
+   "q8_minus_q7_max_mm": 0.01,
+   "target7_end_mm": -10.0,
+   "clamp_metrics": {
+    "held_lifted": true,
+    "held_at_700": true,
+    "lift_dz_mm": 150.0,
+    "end_dz_mm": 150.0,
+    "tilt_lifted_deg": 0.136,
+    "tilt_at_700_deg": 0.194,
+    "axis_tilt_lifted_deg": 0.13,
+    "axis_tilt_at_700_deg": 0.149
+   }
+  }
+ },
+ "d3_w3_gripper": {
+  "slew_mimic": {
+   "steps": 240,
+   "target_start_mm": 44.0,
+   "target_min_mm": -10.0,
+   "target_final_mm": 44.0,
+   "slew_max_m_s": 0.150001,
+   "slew_moving_mean_m_s": 0.15,
+   "moving_steps": 180,
+   "steps_to_reach_full_close": 90,
+   "max_target_formula_err_um": 0.0027,
+   "tgt8_minus_tgt7_max_um": 0.0,
+   "q8_minus_q7_max_um": 0.9951,
+   "q8_range_mm": [
+    0.0,
+    43.9437
+   ],
+   "q7_range_mm": [
+    0.0,
+    43.9438
+   ],
+   "lag_q7_minus_tgt7_max_mm_closing": 10.0,
+   "free_close_time_s_q7_below_1mm": 0.328,
+   "closed_rest_q7_std_um": 0.0,
+   "open_rest_q7_std_um": 483.6894,
+   "free_motion_lag_max_mm": 5.721,
+   "note": "lag_q7_minus_tgt7_max_mm_closing includes the joint-limit phase (target -10 mm, q7 stopped at 0); open_rest_q7_std_um is the finger still converging (tau = c/K = 40 ms), not jitter"
+  },
+  "force_curve": [
+   {
+    "link7_mean_N": 80.0,
+    "link8_mean_N": 80.0,
+    "finger_avg_mean_N": 80.0,
+    "finger_sum_mean_N": 160.0,
+    "finger_avg_over_cap": 1.0,
+    "finger_avg_min_N": 79.987,
+    "finger_avg_max_N": 80.003,
+    "finger_avg_std_pct": 0.0055,
+    "per_action_profile10_N": [
+     79.987,
+     80.001,
+     80.001,
+     80.003,
+     80.003,
+     80.002,
+     80.002,
+     80.001,
+     80.001,
+     79.999
+    ],
+    "sawtooth_p2p_pct": 0.02,
+    "q7_mean_mm": 9.5877,
+    "q8_mean_mm": 9.5765,
+    "q7_std_um": 0.0944,
+    "q8_minus_q7_max_um": 11.8231,
+    "tgt7_last_mm": -10.0,
+    "max_penetration_mm": 0.0577,
+    "cell": "W20_u0",
+    "width_mm": 20,
+    "first_bilateral_contact_step": 15,
+    "saturation_95pct_step": 17,
+    "steps_contact_to_95pct": 2,
+    "target_lead_at_95pct_mm": 5.7344,
+    "contact_q7_mm": 9.6129
+   },
+   {
+    "link7_mean_N": 80.0,
+    "link8_mean_N": 80.0,
+    "finger_avg_mean_N": 80.0,
+    "finger_sum_mean_N": 160.0,
+    "finger_avg_over_cap": 1.0,
+    "finger_avg_min_N": 79.991,
+    "finger_avg_max_N": 80.003,
+    "finger_avg_std_pct": 0.0042,
+    "per_action_profile10_N": [
+     79.991,
+     79.998,
+     80.001,
+     80.003,
+     80.003,
+     80.002,
+     80.001,
+     80.001,
+     80.0,
+     79.999
+    ],
+    "sawtooth_p2p_pct": 0.0152,
+    "q7_mean_mm": 19.5932,
+    "q8_mean_mm": 19.5795,
+    "q7_std_um": 0.1171,
+    "q8_minus_q7_max_um": 14.3591,
+    "tgt7_last_mm": -10.0,
+    "max_penetration_mm": 0.0329,
+    "cell": "W40_u0",
+    "width_mm": 40,
+    "first_bilateral_contact_step": 15,
+    "saturation_95pct_step": 17,
+    "steps_contact_to_95pct": 2,
+    "target_lead_at_95pct_mm": 5.7621,
+    "contact_q7_mm": 19.5636
+   },
+   {
+    "link7_mean_N": 80.0,
+    "link8_mean_N": 80.0,
+    "finger_avg_mean_N": 80.0,
+    "finger_sum_mean_N": 160.0,
+    "finger_avg_over_cap": 1.0,
+    "finger_avg_min_N": 79.993,
+    "finger_avg_max_N": 80.002,
+    "finger_avg_std_pct": 0.0037,
+    "per_action_profile10_N": [
+     79.994,
+     79.995,
+     80.002,
+     80.002,
+     80.002,
+     80.002,
+     80.001,
+     80.001,
+     80.0,
+     79.999
+    ],
+    "sawtooth_p2p_pct": 0.0111,
+    "q7_mean_mm": 29.5934,
+    "q8_mean_mm": 29.5793,
+    "q7_std_um": 0.088,
+    "q8_minus_q7_max_um": 14.7466,
+    "tgt7_last_mm": -10.0,
+    "max_penetration_mm": 0.0297,
+    "cell": "W60_u0",
+    "width_mm": 60,
+    "first_bilateral_contact_step": 15,
+    "saturation_95pct_step": 17,
+    "steps_contact_to_95pct": 2,
+    "target_lead_at_95pct_mm": 5.7837,
+    "contact_q7_mm": 29.5634
+   },
+   {
+    "link7_mean_N": 80.0,
+    "link8_mean_N": 80.0,
+    "finger_avg_mean_N": 80.0,
+    "finger_sum_mean_N": 159.999,
+    "finger_avg_over_cap": 1.0,
+    "finger_avg_min_N": 79.994,
+    "finger_avg_max_N": 80.002,
+    "finger_avg_std_pct": 0.0034,
+    "per_action_profile10_N": [
+     79.994,
+     79.996,
+     80.002,
+     80.0,
+     80.002,
+     80.002,
+     80.001,
+     80.0,
+     80.0,
+     79.999
+    ],
+    "sawtooth_p2p_pct": 0.0105,
+    "q7_mean_mm": 39.596,
+    "q8_mean_mm": 39.5842,
+    "q7_std_um": 0.072,
+    "q8_minus_q7_max_um": 12.4499,
+    "tgt7_last_mm": -10.0,
+    "max_penetration_mm": 0.0206,
+    "cell": "W80_u0",
+    "width_mm": 80,
+    "first_bilateral_contact_step": 14,
+    "saturation_95pct_step": 16,
+    "steps_contact_to_95pct": 2,
+    "target_lead_at_95pct_mm": 5.7874,
+    "contact_q7_mm": 39.4728
+   }
+  ],
+  "lead_sweep": null,
+  "one_sided": {
+   "link7_mean_N": 100.006,
+   "link8_mean_N": 60.044,
+   "finger_avg_mean_N": 80.025,
+   "finger_sum_mean_N": 160.051,
+   "finger_avg_over_cap": 1.00032,
+   "finger_avg_min_N": 79.966,
+   "finger_avg_max_N": 80.079,
+   "finger_avg_std_pct": 0.0413,
+   "per_action_profile10_N": [
+    80.079,
+    80.071,
+    80.043,
+    80.038,
+    80.033,
+    80.028,
+    79.994,
+    79.974,
+    79.997,
+    79.997
+   ],
+   "sawtooth_p2p_pct": 0.1312,
+   "q7_mean_mm": 19.6015,
+   "q8_mean_mm": 19.7242,
+   "q7_std_um": 18.4124,
+   "q8_minus_q7_max_um": 215.2342,
+   "tgt7_last_mm": -10.0,
+   "max_penetration_mm": 0.0042,
+   "cell": "W40_kinematic_offset_+2mm_toward_link7_u0",
+   "drive_effort_limit_N": 160.0
+  },
+  "one_sided_toward_link8": null,
+  "drive_readback_at_reset": {
+   "K_eng": [
+    52274.6015625,
+    0.0
+   ],
+   "c_eng": [
+    2090.97998046875,
+    0.0
+   ],
+   "Fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "vmax_eng": [
+    1000.0,
+    1000.0
+   ],
+   "armature_eng": [
+    0.0,
+    0.0
+   ],
+   "tgt_eng_m": [
+    0.04399999976158142,
+    0.04399999976158142
+   ],
+   "pos_eng_m": [
+    0.04399970918893814,
+    0.04399970918893814
+   ],
+   "vel_eng_mps": [
+    6.63347555018845e-06,
+    6.63347555018845e-06
+   ]
+  },
+  "actions_used": 207
+ },
+ "d3_w2b_corr_readback": {
+  "assertion_passed": true,
+  "failures": [],
+  "engine_drives": {
+   "robot0": {
+    "dof_stiffnesses": [
+     52274.6016,
+     0.0
+    ],
+    "dof_dampings": [
+     2090.98,
+     0.0
+    ],
+    "dof_max_forces": [
+     160.0,
+     100.0
+    ],
+    "dof_max_velocities": [
+     1000.0,
+     1000.0
+    ]
+   },
+   "robot1": {
+    "dof_stiffnesses": [
+     52274.6016,
+     0.0
+    ],
+    "dof_dampings": [
+     2090.98,
+     0.0
+    ],
+    "dof_max_forces": [
+     160.0,
+     100.0
+    ],
+    "dof_max_velocities": [
+     1000.0,
+     1000.0
+    ]
+   }
+  },
+  "mimic_usd": {
+   "robot0": {
+    "applied_schemas": [
+     "PhysxMimicJointAPI:rotX",
+     "PhysicsJointStateAPI:linear",
+     "PhysxJointAPI",
+     "PhysicsDriveAPI:linear"
+    ],
+    "reference_joint": [
+     "/World/envs/env_0/robot0/joints/joint7"
+    ],
+    "gearing": -1.0,
+    "offset": 0.0,
+    "reference_joint_axis": "rotX",
+    "engine_q7_q8_m": [
+     0.04399970918893814,
+     0.04399970918893814
+    ]
+   },
+   "robot1": {
+    "applied_schemas": [
+     "PhysxMimicJointAPI:rotX",
+     "PhysicsJointStateAPI:linear",
+     "PhysxJointAPI",
+     "PhysicsDriveAPI:linear"
+    ],
+    "reference_joint": [
+     "/World/envs/env_0/robot1/joints/joint7"
+    ],
+    "gearing": -1.0,
+    "offset": 0.0,
+    "reference_joint_axis": "rotX",
+    "engine_q7_q8_m": [
+     0.04399970918893814,
+     0.04399970918893814
+    ]
+   }
+  },
+  "status_counts": {
+   "estimated": 78,
+   "unsourced": 85,
+   "sourced": 30
+  },
+  "gripper_manifest": {
+   "x5": {
+    "robot_name": "x5",
+    "driven_joint": "joint7",
+    "mimic_joint": "joint8",
+    "finger_stiffness_n_m": 26137.3,
+    "finger_damping_n_s_m": 1045.49,
+    "finger_effort_n": 80.0,
+    "effort_case": "nominal",
+    "slew_m_s": 0.15,
+    "mimic_gearing": -1.0,
+    "mimic_offset": 0.0,
+    "mimic_axis": "rotX",
+    "provenance": "/scratch/<user>/isaac/work/gripper-d3/head2/docs/params:robots.x5.gripper",
+    "engine": {
+     "joint7": {
+      "stiffness": 52274.6,
+      "damping": 2090.98,
+      "max_force": 160.0
+     },
+     "joint8": {
+      "stiffness": 0.0,
+      "damping": 0.0
+     }
+    },
+    "observation_note": "The observed gripper state is the last target (RoboDojo records prev_control). Under this fix a held close command reads the command itself (u = 0) whatever the object width; shipped read measured - 10.8 mm."
+   }
+  },
+  "device": "cpu",
+  "lying_bottle_grasp_u0": {
+   "hold_steps": 150,
+   "link7_mean_N": 79.5,
+   "link8_mean_N": 79.9,
+   "link7_std_pct": 1.35,
+   "link8_std_pct": 1.71,
+   "q8_minus_q7_max_mm": 0.01,
+   "target7_end_mm": -10.0,
+   "clamp_metrics": {
+    "held_lifted": true,
+    "held_at_700": true,
+    "lift_dz_mm": 150.0,
+    "end_dz_mm": 150.0,
+    "tilt_lifted_deg": 0.136,
+    "tilt_at_700_deg": 0.194,
+    "axis_tilt_lifted_deg": 0.13,
+    "axis_tilt_at_700_deg": 0.149
+   }
+  }
+ },
+ "d3_w3b_gripper": {
+  "slew_mimic": {
+   "steps": 240,
+   "target_start_mm": 44.0,
+   "target_min_mm": -10.0,
+   "target_final_mm": 44.0,
+   "slew_max_m_s": 0.150001,
+   "slew_moving_mean_m_s": 0.15,
+   "moving_steps": 180,
+   "steps_to_reach_full_close": 90,
+   "max_target_formula_err_um": 0.0027,
+   "tgt8_minus_tgt7_max_um": 0.0,
+   "q8_minus_q7_max_um": 0.9951,
+   "q8_range_mm": [
+    0.0,
+    43.9437
+   ],
+   "q7_range_mm": [
+    0.0,
+    43.9438
+   ],
+   "lag_q7_minus_tgt7_max_mm_closing": 10.0,
+   "free_close_time_s_q7_below_1mm": 0.328,
+   "closed_rest_q7_std_um": 0.0,
+   "open_rest_q7_std_um": 483.6894,
+   "free_motion_lag_max_mm": 5.721,
+   "note": "lag_q7_minus_tgt7_max_mm_closing includes the joint-limit phase (target -10 mm, q7 stopped at 0); open_rest_q7_std_um is the finger still converging (tau = c/K = 40 ms), not jitter"
+  },
+  "force_curve": [
+   {
+    "link7_mean_N": 80.0,
+    "link8_mean_N": 80.0,
+    "finger_avg_mean_N": 80.0,
+    "finger_sum_mean_N": 160.0,
+    "finger_avg_over_cap": 1.0,
+    "finger_avg_min_N": 79.987,
+    "finger_avg_max_N": 80.003,
+    "finger_avg_std_pct": 0.0055,
+    "per_action_profile10_N": [
+     79.987,
+     80.001,
+     80.001,
+     80.003,
+     80.003,
+     80.002,
+     80.002,
+     80.001,
+     80.001,
+     79.999
+    ],
+    "sawtooth_p2p_pct": 0.02,
+    "q7_mean_mm": 9.5877,
+    "q8_mean_mm": 9.5765,
+    "q7_std_um": 0.0944,
+    "q8_minus_q7_max_um": 11.8231,
+    "tgt7_last_mm": -10.0,
+    "max_penetration_mm": 0.0577,
+    "cell": "W20_u0",
+    "width_mm": 20,
+    "first_bilateral_contact_step": 15,
+    "saturation_95pct_step": 17,
+    "steps_contact_to_95pct": 2,
+    "target_lead_at_95pct_mm": 5.7344,
+    "contact_q7_mm": 9.6129,
+    "release": {
+     "target_at_open_command_mm": -10.0,
+     "steps_until_below_95pct_cap": 24,
+     "steps_until_contact_below_1N": 34,
+     "seconds_until_contact_below_1N": 0.136
+    }
+   },
+   {
+    "link7_mean_N": 80.0,
+    "link8_mean_N": 80.0,
+    "finger_avg_mean_N": 80.0,
+    "finger_sum_mean_N": 159.999,
+    "finger_avg_over_cap": 1.0,
+    "finger_avg_min_N": 79.99,
+    "finger_avg_max_N": 80.003,
+    "finger_avg_std_pct": 0.0042,
+    "per_action_profile10_N": [
+     79.991,
+     79.998,
+     80.0,
+     80.003,
+     80.003,
+     80.002,
+     80.001,
+     80.001,
+     80.0,
+     79.999
+    ],
+    "sawtooth_p2p_pct": 0.0152,
+    "q7_mean_mm": 19.5932,
+    "q8_mean_mm": 19.5795,
+    "q7_std_um": 0.1184,
+    "q8_minus_q7_max_um": 14.3591,
+    "tgt7_last_mm": -10.0,
+    "max_penetration_mm": 0.0329,
+    "cell": "W40_u0",
+    "width_mm": 40,
+    "first_bilateral_contact_step": 15,
+    "saturation_95pct_step": 17,
+    "steps_contact_to_95pct": 2,
+    "target_lead_at_95pct_mm": 5.7526,
+    "contact_q7_mm": 19.5636,
+    "release": {
+     "target_at_open_command_mm": -10.0,
+     "steps_until_below_95pct_cap": 38,
+     "steps_until_contact_below_1N": 51,
+     "seconds_until_contact_below_1N": 0.204
+    }
+   },
+   {
+    "link7_mean_N": 80.0,
+    "link8_mean_N": 80.0,
+    "finger_avg_mean_N": 80.0,
+    "finger_sum_mean_N": 160.0,
+    "finger_avg_over_cap": 1.0,
+    "finger_avg_min_N": 79.993,
+    "finger_avg_max_N": 80.002,
+    "finger_avg_std_pct": 0.0037,
+    "per_action_profile10_N": [
+     79.994,
+     79.995,
+     80.002,
+     80.002,
+     80.002,
+     80.002,
+     80.001,
+     80.001,
+     80.0,
+     79.999
+    ],
+    "sawtooth_p2p_pct": 0.0111,
+    "q7_mean_mm": 29.5934,
+    "q8_mean_mm": 29.5793,
+    "q7_std_um": 0.0888,
+    "q8_minus_q7_max_um": 14.7466,
+    "tgt7_last_mm": -10.0,
+    "max_penetration_mm": 0.0297,
+    "cell": "W60_u0",
+    "width_mm": 60,
+    "first_bilateral_contact_step": 15,
+    "saturation_95pct_step": 17,
+    "steps_contact_to_95pct": 2,
+    "target_lead_at_95pct_mm": 5.7836,
+    "contact_q7_mm": 29.5635,
+    "release": {
+     "target_at_open_command_mm": -10.0,
+     "steps_until_below_95pct_cap": 57,
+     "steps_until_contact_below_1N": 67,
+     "seconds_until_contact_below_1N": 0.268
+    }
+   },
+   {
+    "link7_mean_N": 80.0,
+    "link8_mean_N": 80.0,
+    "finger_avg_mean_N": 80.0,
+    "finger_sum_mean_N": 159.999,
+    "finger_avg_over_cap": 1.0,
+    "finger_avg_min_N": 79.994,
+    "finger_avg_max_N": 80.003,
+    "finger_avg_std_pct": 0.0036,
+    "per_action_profile10_N": [
+     79.994,
+     79.995,
+     80.001,
+     80.002,
+     80.003,
+     80.002,
+     80.001,
+     80.001,
+     80.0,
+     79.999
+    ],
+    "sawtooth_p2p_pct": 0.0113,
+    "q7_mean_mm": 39.5968,
+    "q8_mean_mm": 39.5872,
+    "q7_std_um": 0.1041,
+    "q8_minus_q7_max_um": 10.1887,
+    "tgt7_last_mm": -10.0,
+    "max_penetration_mm": 0.0153,
+    "cell": "W80_u0",
+    "width_mm": 80,
+    "first_bilateral_contact_step": 14,
+    "saturation_95pct_step": 16,
+    "steps_contact_to_95pct": 2,
+    "target_lead_at_95pct_mm": 5.7716,
+    "contact_q7_mm": 39.477,
+    "release": {
+     "target_at_open_command_mm": -10.0,
+     "steps_until_below_95pct_cap": 71,
+     "steps_until_contact_below_1N": 84,
+     "seconds_until_contact_below_1N": 0.336
+    }
+   }
+  ],
+  "lead_sweep": [
+   {
+    "link7_mean_N": 11.83,
+    "link8_mean_N": 11.83,
+    "finger_avg_mean_N": 11.83,
+    "finger_sum_mean_N": 23.66,
+    "finger_avg_over_cap": 0.14787,
+    "finger_avg_min_N": 11.784,
+    "finger_avg_max_N": 11.866,
+    "finger_avg_std_pct": 0.1619,
+    "per_action_profile10_N": [
+     11.786,
+     11.865,
+     11.849,
+     11.836,
+     11.83,
+     11.828,
+     11.826,
+     11.828,
+     11.829,
+     11.822
+    ],
+    "sawtooth_p2p_pct": 0.6719,
+    "q7_mean_mm": 19.5458,
+    "q8_mean_mm": 19.5988,
+    "q7_std_um": 0.0614,
+    "q8_minus_q7_max_um": 53.2102,
+    "tgt7_last_mm": 19.0932,
+    "max_penetration_mm": 0.0292,
+    "cell": "W40_lead_0.5mm",
+    "commanded_lead_mm": 0.5,
+    "q7_minus_target_mm": 0.4526,
+    "per_finger_stiffness_eff_N_m": 26137.6,
+    "joint7_stiffness_eff_N_m": 52275.2
+   },
+   {
+    "link7_mean_N": 23.549,
+    "link8_mean_N": 23.549,
+    "finger_avg_mean_N": 23.549,
+    "finger_sum_mean_N": 47.099,
+    "finger_avg_over_cap": 0.29437,
+    "finger_avg_min_N": 23.463,
+    "finger_avg_max_N": 23.619,
+    "finger_avg_std_pct": 0.1561,
+    "per_action_profile10_N": [
+     23.464,
+     23.617,
+     23.585,
+     23.562,
+     23.549,
+     23.543,
+     23.544,
+     23.546,
+     23.547,
+     23.536
+    ],
+    "sawtooth_p2p_pct": 0.6481,
+    "q7_mean_mm": 19.4942,
+    "q8_mean_mm": 19.5997,
+    "q7_std_um": 0.1183,
+    "q8_minus_q7_max_um": 105.9268,
+    "tgt7_last_mm": 18.5932,
+    "max_penetration_mm": 0.0578,
+    "cell": "W40_lead_1mm",
+    "commanded_lead_mm": 1.0,
+    "q7_minus_target_mm": 0.901,
+    "per_finger_stiffness_eff_N_m": 26137.8,
+    "joint7_stiffness_eff_N_m": 52275.6
+   },
+   {
+    "link7_mean_N": 46.983,
+    "link8_mean_N": 46.983,
+    "finger_avg_mean_N": 46.983,
+    "finger_sum_mean_N": 93.966,
+    "finger_avg_over_cap": 0.58729,
+    "finger_avg_min_N": 46.818,
+    "finger_avg_max_N": 47.108,
+    "finger_avg_std_pct": 0.1491,
+    "per_action_profile10_N": [
+     46.82,
+     47.106,
+     47.058,
+     47.01,
+     46.983,
+     46.972,
+     46.971,
+     46.975,
+     46.977,
+     46.96
+    ],
+    "sawtooth_p2p_pct": 0.6098,
+    "q7_mean_mm": 19.3907,
+    "q8_mean_mm": 19.6013,
+    "q7_std_um": 0.2324,
+    "q8_minus_q7_max_um": 211.3618,
+    "tgt7_last_mm": 17.5932,
+    "max_penetration_mm": 0.1159,
+    "cell": "W40_lead_2mm",
+    "commanded_lead_mm": 2.0,
+    "q7_minus_target_mm": 1.7975,
+    "per_finger_stiffness_eff_N_m": 26137.6,
+    "joint7_stiffness_eff_N_m": 52275.1
+   }
+  ],
+  "one_sided": {
+   "link7_mean_N": 100.002,
+   "link8_mean_N": 60.049,
+   "finger_avg_mean_N": 80.025,
+   "finger_sum_mean_N": 160.05,
+   "finger_avg_over_cap": 1.00031,
+   "finger_avg_min_N": 79.966,
+   "finger_avg_max_N": 80.079,
+   "finger_avg_std_pct": 0.0417,
+   "per_action_profile10_N": [
+    80.079,
+    80.071,
+    80.043,
+    80.038,
+    80.033,
+    80.027,
+    80.002,
+    79.966,
+    79.996,
+    79.997
+   ],
+   "sawtooth_p2p_pct": 0.141,
+   "q7_mean_mm": 19.6016,
+   "q8_mean_mm": 19.7242,
+   "q7_std_um": 18.4408,
+   "q8_minus_q7_max_um": 215.197,
+   "tgt7_last_mm": -10.0,
+   "max_penetration_mm": 0.0041,
+   "cell": "W40_kinematic_offset_2mm_toward_link7_u0",
+   "drive_effort_limit_N": 160.0
+  },
+  "one_sided_toward_link8": {
+   "link7_mean_N": 41.429,
+   "link8_mean_N": 118.551,
+   "finger_avg_mean_N": 79.99,
+   "finger_sum_mean_N": 159.981,
+   "finger_avg_over_cap": 0.99988,
+   "finger_avg_min_N": 79.979,
+   "finger_avg_max_N": 80.003,
+   "finger_avg_std_pct": 0.0078,
+   "per_action_profile10_N": [
+    79.989,
+    80.001,
+    79.979,
+    79.983,
+    79.988,
+    79.989,
+    79.99,
+    79.995,
+    79.993,
+    79.997
+   ],
+   "sawtooth_p2p_pct": 0.0267,
+   "q7_mean_mm": 19.5016,
+   "q8_mean_mm": 19.8048,
+   "q7_std_um": 27.1701,
+   "q8_minus_q7_max_um": 371.2438,
+   "tgt7_last_mm": -10.0,
+   "max_penetration_mm": 0.0031,
+   "cell": "W40_kinematic_offset_2mm_toward_link8_u0",
+   "drive_effort_limit_N": 160.0
+  },
+  "drive_readback_at_reset": {
+   "K_eng": [
+    52274.6015625,
+    0.0
+   ],
+   "c_eng": [
+    2090.97998046875,
+    0.0
+   ],
+   "Fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "vmax_eng": [
+    1000.0,
+    1000.0
+   ],
+   "armature_eng": [
+    0.0,
+    0.0
+   ],
+   "tgt_eng_m": [
+    0.04399999976158142,
+    0.04399999976158142
+   ],
+   "pos_eng_m": [
+    0.04399970918893814,
+    0.04399970918893814
+   ],
+   "vel_eng_mps": [
+    6.63347555018845e-06,
+    6.63347555018845e-06
+   ]
+  },
+  "actions_used": 347
+ },
+ "d3_w4_hold": {
+  "d3_w4_bracket_80N": [
+   {
+    "column": "real_path",
+    "mode": "real_path",
+    "effort_case": "nominal",
+    "finger_effort_n": 80.0,
+    "bottle_mass_kg_engine": [
+     0.8
+    ],
+    "drive_readback": {
+     "K_eng": [
+      52274.6,
+      0.0
+     ],
+     "c_eng": [
+      2090.98,
+      0.0
+     ],
+     "Fmax_eng": [
+      160.0,
+      100.0
+     ],
+     "vmax_eng": [
+      1000.0,
+      1000.0
+     ],
+     "armature_eng": [
+      0.0,
+      0.0
+     ],
+     "use_mimic": false,
+     "use_slew": true
+    },
+    "in_hand_force_N": {
+     "q7_mean_mm": 30.159,
+     "q8_mean_mm": 30.152,
+     "on_table_pad_lateral_shift_mm": 0.004,
+     "link7_plateau_N": 80.325,
+     "link8_plateau_N": 79.542,
+     "link7_mean10_N": 79.867,
+     "link8_mean10_N": 79.961,
+     "link7_substep0_N": 77.551,
+     "link8_substep0_N": 82.325,
+     "finger_avg_plateau_N": 79.933,
+     "finger_avg_mean10_N": 79.914,
+     "finger_avg_substep0_N": 79.938,
+     "max_penetration_mm": 0.1306
+    },
+    "after_lift_15cm_hold_1s": {
+     "bottle_z_mm": 908.3,
+     "lift_dz_mm": 111.75,
+     "rotation_in_hand_deg": 33.23,
+     "axial_pivot_deg": 33.19,
+     "grasp_point_slip_mm": 4.14,
+     "slip_in_hand_com_mm": 38.05,
+     "slip_engine_com_mm": 31.11,
+     "dropped": false,
+     "held": false,
+     "held_strict_com10mm": false,
+     "held_d3_engine_com10mm": false
+    },
+    "after_carry_shake": {
+     "bottle_z_mm": 881.06,
+     "lift_dz_mm": 84.51,
+     "rotation_in_hand_deg": 62.22,
+     "axial_pivot_deg": 62.22,
+     "grasp_point_slip_mm": 7.23,
+     "slip_in_hand_com_mm": 68.81,
+     "slip_engine_com_mm": 56.26,
+     "dropped": false,
+     "held": false,
+     "held_strict_com10mm": false,
+     "held_d3_engine_com10mm": false
+    }
+   },
+   {
+    "column": "real_path",
+    "mode": "real_path",
+    "effort_case": "nominal",
+    "finger_effort_n": 80.0,
+    "bottle_mass_kg_engine": [
+     0.95
+    ],
+    "drive_readback": {
+     "K_eng": [
+      52274.6,
+      0.0
+     ],
+     "c_eng": [
+      2090.98,
+      0.0
+     ],
+     "Fmax_eng": [
+      160.0,
+      100.0
+     ],
+     "vmax_eng": [
+      1000.0,
+      1000.0
+     ],
+     "armature_eng": [
+      0.0,
+      0.0
+     ],
+     "use_mimic": false,
+     "use_slew": true
+    },
+    "in_hand_force_N": {
+     "q7_mean_mm": 30.17,
+     "q8_mean_mm": 30.161,
+     "on_table_pad_lateral_shift_mm": 0.004,
+     "link7_plateau_N": 80.233,
+     "link8_plateau_N": 79.475,
+     "link7_mean10_N": 79.88,
+     "link8_mean10_N": 79.852,
+     "link7_substep0_N": 75.388,
+     "link8_substep0_N": 84.544,
+     "finger_avg_plateau_N": 79.854,
+     "finger_avg_mean10_N": 79.866,
+     "finger_avg_substep0_N": 79.966,
+     "max_penetration_mm": 0.1452
+    },
+    "after_lift_15cm_hold_1s": {
+     "bottle_z_mm": 869.36,
+     "lift_dz_mm": 73.01,
+     "rotation_in_hand_deg": 78.93,
+     "axial_pivot_deg": 78.93,
+     "grasp_point_slip_mm": 1.87,
+     "slip_in_hand_com_mm": 82.7,
+     "slip_engine_com_mm": 67.65,
+     "dropped": false,
+     "held": false,
+     "held_strict_com10mm": false,
+     "held_d3_engine_com10mm": false
+    },
+    "after_carry_shake": {
+     "bottle_z_mm": 866.22,
+     "lift_dz_mm": 69.87,
+     "rotation_in_hand_deg": 99.11,
+     "axial_pivot_deg": 80.89,
+     "grasp_point_slip_mm": 4.66,
+     "slip_in_hand_com_mm": 94.69,
+     "slip_engine_com_mm": 76.71,
+     "dropped": false,
+     "held": false,
+     "held_strict_com10mm": false,
+     "held_d3_engine_com10mm": false
+    }
+   }
+  ],
+  "d3_w4_hold_35N": [
+   {
+    "column": "real_path",
+    "mode": "real_path",
+    "effort_case": "low",
+    "finger_effort_n": 35.0,
+    "bottle_mass_kg_engine": [
+     0.5
+    ],
+    "drive_readback": {
+     "K_eng": [
+      52274.6,
+      0.0
+     ],
+     "c_eng": [
+      2090.98,
+      0.0
+     ],
+     "Fmax_eng": [
+      70.0,
+      100.0
+     ],
+     "vmax_eng": [
+      1000.0,
+      1000.0
+     ],
+     "armature_eng": [
+      0.0,
+      0.0
+     ],
+     "use_mimic": false,
+     "use_slew": true
+    },
+    "in_hand_force_N": {
+     "q7_mean_mm": 30.179,
+     "q8_mean_mm": 30.176,
+     "on_table_pad_lateral_shift_mm": 0.001,
+     "link7_plateau_N": 35.24,
+     "link8_plateau_N": 34.621,
+     "link7_mean10_N": 34.898,
+     "link8_mean10_N": 34.966,
+     "link7_substep0_N": 33.721,
+     "link8_substep0_N": 36.411,
+     "finger_avg_plateau_N": 34.931,
+     "finger_avg_mean10_N": 34.932,
+     "finger_avg_substep0_N": 35.066,
+     "max_penetration_mm": 0.0729
+    },
+    "after_lift_15cm_hold_1s": {
+     "bottle_z_mm": 866.34,
+     "lift_dz_mm": 70.03,
+     "rotation_in_hand_deg": 84.59,
+     "axial_pivot_deg": 84.59,
+     "grasp_point_slip_mm": 1.76,
+     "slip_in_hand_com_mm": 88.06,
+     "slip_engine_com_mm": 72.15,
+     "dropped": false,
+     "held": false,
+     "held_strict_com10mm": false,
+     "held_d3_engine_com10mm": false
+    },
+    "after_carry_shake": {
+     "bottle_z_mm": 866.22,
+     "lift_dz_mm": 69.91,
+     "rotation_in_hand_deg": 99.04,
+     "axial_pivot_deg": 80.96,
+     "grasp_point_slip_mm": 4.78,
+     "slip_in_hand_com_mm": 93.95,
+     "slip_engine_com_mm": 76.04,
+     "dropped": false,
+     "held": false,
+     "held_strict_com10mm": false,
+     "held_d3_engine_com10mm": false
+    }
+   }
+  ],
+  "d3_w4_hold_80N": [
+   {
+    "column": "real_path",
+    "mode": "real_path",
+    "effort_case": "nominal",
+    "finger_effort_n": 80.0,
+    "bottle_mass_kg_engine": [
+     0.5
+    ],
+    "drive_readback": {
+     "K_eng": [
+      52274.6,
+      0.0
+     ],
+     "c_eng": [
+      2090.98,
+      0.0
+     ],
+     "Fmax_eng": [
+      160.0,
+      100.0
+     ],
+     "vmax_eng": [
+      1000.0,
+      1000.0
+     ],
+     "armature_eng": [
+      0.0,
+      0.0
+     ],
+     "use_mimic": false,
+     "use_slew": true
+    },
+    "in_hand_force_N": {
+     "q7_mean_mm": 30.156,
+     "q8_mean_mm": 30.149,
+     "on_table_pad_lateral_shift_mm": 0.004,
+     "link7_plateau_N": 79.56,
+     "link8_plateau_N": 80.222,
+     "link7_mean10_N": 79.799,
+     "link8_mean10_N": 79.956,
+     "link7_substep0_N": 77.912,
+     "link8_substep0_N": 81.66,
+     "finger_avg_plateau_N": 79.891,
+     "finger_avg_mean10_N": 79.877,
+     "finger_avg_substep0_N": 79.786,
+     "max_penetration_mm": 0.1604
+    },
+    "after_lift_15cm_hold_1s": {
+     "bottle_z_mm": 940.94,
+     "lift_dz_mm": 144.37,
+     "rotation_in_hand_deg": 5.03,
+     "axial_pivot_deg": 5.03,
+     "grasp_point_slip_mm": 0.23,
+     "slip_in_hand_com_mm": 5.62,
+     "slip_engine_com_mm": 4.59,
+     "dropped": false,
+     "held": true,
+     "held_strict_com10mm": true,
+     "held_d3_engine_com10mm": true
+    },
+    "after_carry_shake": {
+     "bottle_z_mm": 936.67,
+     "lift_dz_mm": 140.1,
+     "rotation_in_hand_deg": 8.93,
+     "axial_pivot_deg": 8.93,
+     "grasp_point_slip_mm": 0.31,
+     "slip_in_hand_com_mm": 10.12,
+     "slip_engine_com_mm": 8.3,
+     "dropped": false,
+     "held": true,
+     "held_strict_com10mm": false,
+     "held_d3_engine_com10mm": true
+    }
+   }
+  ],
+  "d3_w4c_ideal80N_080kg": [
+   {
+    "column": "ideal_80N",
+    "mode": "ideal_force",
+    "effort_case": null,
+    "finger_effort_n": null,
+    "bottle_mass_kg_engine": [
+     0.8
+    ],
+    "drive_readback": {
+     "K_eng": [
+      16000.0,
+      16000.0
+     ],
+     "c_eng": [
+      190.12,
+      190.12
+     ],
+     "Fmax_eng": [
+      80.0,
+      80.0
+     ],
+     "vmax_eng": [
+      1000.0,
+      1000.0
+     ],
+     "armature_eng": [
+      0.5,
+      0.5
+     ],
+     "use_mimic": true,
+     "use_slew": true
+    },
+    "in_hand_force_N": {
+     "q7_mean_mm": 30.178,
+     "q8_mean_mm": 30.178,
+     "on_table_pad_lateral_shift_mm": 0.0,
+     "link7_plateau_N": 79.938,
+     "link8_plateau_N": 79.842,
+     "link7_mean10_N": 79.907,
+     "link8_mean10_N": 79.882,
+     "link7_substep0_N": 79.848,
+     "link8_substep0_N": 79.891,
+     "finger_avg_plateau_N": 79.89,
+     "finger_avg_mean10_N": 79.894,
+     "finger_avg_substep0_N": 79.87,
+     "max_penetration_mm": 0.0024
+    },
+    "after_lift_15cm_hold_1s": {
+     "bottle_z_mm": 933.7,
+     "lift_dz_mm": 137.4,
+     "rotation_in_hand_deg": 10.52,
+     "axial_pivot_deg": 10.5,
+     "grasp_point_slip_mm": 1.14,
+     "slip_in_hand_com_mm": 12.35,
+     "slip_engine_com_mm": 10.14,
+     "dropped": false,
+     "held": true,
+     "held_strict_com10mm": false,
+     "held_d3_engine_com10mm": false
+    },
+    "after_carry_shake": {
+     "bottle_z_mm": 932.22,
+     "lift_dz_mm": 135.92,
+     "rotation_in_hand_deg": 11.92,
+     "axial_pivot_deg": 11.9,
+     "grasp_point_slip_mm": 1.2,
+     "slip_in_hand_com_mm": 13.95,
+     "slip_engine_com_mm": 11.45,
+     "dropped": false,
+     "held": true,
+     "held_strict_com10mm": false,
+     "held_d3_engine_com10mm": false
+    }
+   }
+  ],
+  "d3_w4d_real80N_065kg": [
+   {
+    "column": "real_path",
+    "mode": "real_path",
+    "effort_case": "nominal",
+    "finger_effort_n": 80.0,
+    "bottle_mass_kg_engine": [
+     0.65
+    ],
+    "drive_readback": {
+     "K_eng": [
+      52274.6,
+      0.0
+     ],
+     "c_eng": [
+      2090.98,
+      0.0
+     ],
+     "Fmax_eng": [
+      160.0,
+      100.0
+     ],
+     "vmax_eng": [
+      1000.0,
+      1000.0
+     ],
+     "armature_eng": [
+      0.0,
+      0.0
+     ],
+     "use_mimic": false,
+     "use_slew": true
+    },
+    "in_hand_force_N": {
+     "q7_mean_mm": 30.15,
+     "q8_mean_mm": 30.141,
+     "on_table_pad_lateral_shift_mm": 0.004,
+     "link7_plateau_N": 80.173,
+     "link8_plateau_N": 79.741,
+     "link7_mean10_N": 79.911,
+     "link8_mean10_N": 79.894,
+     "link7_substep0_N": 77.183,
+     "link8_substep0_N": 82.568,
+     "finger_avg_plateau_N": 79.957,
+     "finger_avg_mean10_N": 79.902,
+     "finger_avg_substep0_N": 79.876,
+     "max_penetration_mm": 0.1556
+    },
+    "after_lift_15cm_hold_1s": {
+     "bottle_z_mm": 930.23,
+     "lift_dz_mm": 133.65,
+     "rotation_in_hand_deg": 14.29,
+     "axial_pivot_deg": 14.29,
+     "grasp_point_slip_mm": 0.99,
+     "slip_in_hand_com_mm": 16.23,
+     "slip_engine_com_mm": 13.25,
+     "dropped": false,
+     "held": true,
+     "held_strict_com10mm": false,
+     "held_d3_engine_com10mm": false
+    },
+    "after_carry_shake": {
+     "bottle_z_mm": 923.96,
+     "lift_dz_mm": 127.38,
+     "rotation_in_hand_deg": 20.0,
+     "axial_pivot_deg": 19.99,
+     "grasp_point_slip_mm": 0.69,
+     "slip_in_hand_com_mm": 22.61,
+     "slip_engine_com_mm": 18.5,
+     "dropped": false,
+     "held": false,
+     "held_strict_com10mm": false,
+     "held_d3_engine_com10mm": false
+    }
+   }
+  ]
+ },
+ "d3_w5_script": {
+  "d3_w5_script_l0": {
+   "success": false,
+   "episode_score_pct": 10.0,
+   "releases": [
+    {
+     "phase": "b0_bottle3:left_release",
+     "open_command_step": 71,
+     "last_step_with_finger_contact_over_1N": 77,
+     "actions_holding_after_open_command": 7,
+     "release_actions_before_retreat": 4,
+     "bottle_z_after_retreat_m": 0.8696
+    },
+    {
+     "phase": "b2_bottle3:left_release",
+     "open_command_step": 193,
+     "last_step_with_finger_contact_over_1N": 199,
+     "actions_holding_after_open_command": 7,
+     "release_actions_before_retreat": 4,
+     "bottle_z_after_retreat_m": 0.8848
+    },
+    {
+     "phase": "b4_bottle3:left_release",
+     "open_command_step": 315,
+     "last_step_with_finger_contact_over_1N": 321,
+     "actions_holding_after_open_command": 7,
+     "release_actions_before_retreat": 4,
+     "bottle_z_after_retreat_m": null
+    }
+   ],
+   "take_action_cnt": 700,
+   "eval_result": {
+    "evaluator_version": "evaluator v2",
+    "task_name": "put_bottles_into_dustbin",
+    "config_name": "arx_x5",
+    "policy_name": "harness",
+    "seed": 0,
+    "native_eval_num": 50,
+    "scheduled_count": 1,
+    "scheduled_layout_ids": [
+     0
+    ],
+    "unresolved_layout_ids": [],
+    "resolved_count": 1,
+    "complete": true,
+    "valid": true,
+    "eval_time": 1,
+    "success_rate": 0.0,
+    "score": 10.0,
+    "category_counts": {
+     "success": 0,
+     "failure": 0,
+     "timeout": 1,
+     "policy_error": 0,
+     "simulator_break": 0,
+     "evaluator_error": 0,
+     "unstable_layout": 0,
+     "excluded": 0
+    },
+    "drops": {
+     "total": 0,
+     "policy_error": 0,
+     "simulator_break": 0,
+     "evaluator_error": 0,
+     "unstable_layout": 0,
+     "excluded": 0
+    },
+    "aggregation": {
+     "evaluator_version": "evaluator v2",
+     "denominator_rule": "all_scheduled",
+     "excluded_categories": [],
+     "scheduled_count": 1,
+     "resolved_count": 1,
+     "denominator": 1,
+     "complete": true,
+     "valid": true,
+     "success_count": 0,
+     "success_rate": 0.0,
+     "success_rate_pct": 0.0,
+     "score": 10.0
+    },
+    "ledger": [
+     {
+      "layout_id": 0,
+      "seed": 0,
+      "category": "timeout",
+      "success": false,
+      "score": 0.1,
+      "steps": 700,
+      "reason": "step_lim_reached (700/700)"
+     }
+    ],
+    "details": {
+     "0": {
+      "layout_id": 0,
+      "seed": 0,
+      "category": "timeout",
+      "success": false,
+      "score": 0.1,
+      "steps": 700,
+      "reason": "step_lim_reached (700/700)"
+     }
+    },
+    "physics": {
+     "preset": "corrected",
+     "fixes": [
+      "collision",
+      "gripper",
+      "order",
+      "size",
+      "values"
+     ],
+     "device": "cpu",
+     "dormant_values_active": false,
+     "values_delivered": true,
+     "table_sha256": "f9d456228d1d0bbcfa55db7fd60d51a976f1cc0704a5dee3d1a3bbc1d9304a98",
+     "admitted_statuses": [
+      "estimated",
+      "sourced"
+     ],
+     "scenario_opt_in": "bottles_primary_empty",
+     "scenario": {
+      "finger_pad": "pad_hard",
+      "table": "table_laminate",
+      "ground_combine": "average",
+      "fill": "empty"
+     },
+     "status_counts": {
+      "estimated": 78,
+      "unsourced": 85,
+      "sourced": 30
+     },
+     "below_g1_unsourced_opt_in": true,
+     "unsourced_keys_used": [
+      "assets.Rigid/bottle/00000.mass_by_fill.empty",
+      "assets.Rigid/bottle/00002.mass_by_fill.empty",
+      "assets.Rigid/bottle/00005.mass_by_fill.empty",
+      "assets.Rigid/bottle/00022.material_override.restitution_by_fill.empty",
+      "assets.Rigid/bottle/00025.mass_by_fill.empty",
+      "assets.Rigid/bottle/00041.mass_by_fill.empty",
+      "assets.Rigid/bottle/00050.mass_by_fill.empty",
+      "assets.Rigid/bottle/00055.mass_by_fill.empty",
+      "assets.Rigid/bottle/00059.mass_by_fill.empty",
+      "assets.Rigid/bottle/00060.mass_by_fill.empty",
+      "classes.abs_device_housing.restitution",
+      "classes.aluminium.restitution",
+      "classes.ground.restitution",
+      "classes.pad_elastomer.restitution",
+      "classes.pad_hard.restitution",
+      "classes.pet_plastic.restitution",
+      "classes.polyolefin_plastic.restitution",
+      "classes.steel.restitution",
+      "classes.table_laminate.restitution",
+      "classes.table_wood.restitution",
+      "pairs.abs_device_housing__ground.mu_kinetic",
+      "pairs.abs_device_housing__ground.mu_static",
+      "pairs.abs_device_housing__pad_elastomer.mu_kinetic",
+      "pairs.abs_device_housing__pad_elastomer.mu_static",
+      "pairs.abs_device_housing__table_laminate.mu_kinetic",
+      "pairs.abs_device_housing__table_laminate.mu_static",
+      "pairs.abs_device_housing__table_wood.mu_kinetic",
+      "pairs.abs_device_housing__table_wood.mu_static",
+      "pairs.aluminium__ground.mu_kinetic",
+      "pairs.aluminium__ground.mu_static",
+      "pairs.aluminium__table_laminate.mu_kinetic",
+      "pairs.aluminium__table_laminate.mu_static",
+      "pairs.ground__pet_plastic.mu_kinetic",
+      "pairs.ground__pet_plastic.mu_static",
+      "pairs.ground__pet_plastic.restitution",
+      "pairs.ground__polyolefin_plastic.mu_kinetic",
+      "pairs.ground__polyolefin_plastic.mu_static",
+      "pairs.ground__polyolefin_plastic.restitution",
+      "pairs.ground__steel.mu_kinetic",
+      "pairs.ground__steel.mu_static",
+      "pairs.ground__steel.restitution",
+      "pairs.pad_elastomer__pet_plastic.mu_kinetic",
+      "pairs.pad_elastomer__pet_plastic.mu_static",
+      "pairs.pad_elastomer__polyolefin_plastic.mu_kinetic",
+      "pairs.pad_elastomer__polyolefin_plastic.mu_static",
+      "pairs.pet_plastic__pet_plastic.restitution",
+      "pairs.pet_plastic__polyolefin_plastic.restitution",
+      "pairs.pet_plastic__steel.restitution",
+      "pairs.pet_plastic__table_laminate.mu_kinetic",
+      "pairs.pet_plastic__table_laminate.mu_static",
+      "pairs.pet_plastic__table_laminate.restitution",
+      "pairs.pet_plastic__table_wood.mu_kinetic",
+      "pairs.pet_plastic__table_wood.mu_static",
+      "pairs.pet_plastic__table_wood.restitution",
+      "pairs.polyolefin_plastic__polyolefin_plastic.restitution",
+      "pairs.polyolefin_plastic__steel.restitution",
+      "pairs.polyolefin_plastic__table_laminate.mu_kinetic",
+      "pairs.polyolefin_plastic__table_laminate.mu_static",
+      "pairs.polyolefin_plastic__table_laminate.restitution",
+      "pairs.polyolefin_plastic__table_wood.mu_kinetic",
+      "pairs.polyolefin_plastic__table_wood.mu_static",
+      "pairs.polyolefin_plastic__table_wood.restitution",
+      "pairs.steel__table_laminate.mu_kinetic",
+      "pairs.steel__table_laminate.mu_static",
+      "pairs.steel__table_laminate.restitution",
+      "pairs.steel__table_wood.restitution",
+      "robots.x5.non_pad_link_material_classes.base_link",
+      "robots.x5.non_pad_link_material_classes.camera",
+      "robots.x5.non_pad_link_material_classes.camera_base",
+      "robots.x5.non_pad_link_material_classes.link1",
+      "robots.x5.non_pad_link_material_classes.link2",
+      "robots.x5.non_pad_link_material_classes.link3",
+      "robots.x5.non_pad_link_material_classes.link4",
+      "robots.x5.non_pad_link_material_classes.link5",
+      "robots.x5.non_pad_link_material_classes.link6",
+      "robots.x5.sanitize_camera_inertials",
+      "unary_values.abs_device_housing",
+      "unary_values.aluminium",
+      "unary_values.ground",
+      "unary_values.pad_elastomer",
+      "unary_values.pet_plastic",
+      "unary_values.polyolefin_plastic",
+      "unary_values.steel",
+      "unary_values.table_laminate",
+      "unary_values.table_wood"
+     ],
+     "profile_unsourced_keys_used": [
+      "assets.Rigid/bottle/00000.mass_by_fill.empty",
+      "assets.Rigid/bottle/00002.mass_by_fill.empty",
+      "assets.Rigid/bottle/00005.mass_by_fill.empty",
+      "assets.Rigid/bottle/00022.material_override.restitution_by_fill.empty",
+      "assets.Rigid/bottle/00025.mass_by_fill.empty",
+      "assets.Rigid/bottle/00041.mass_by_fill.empty",
+      "assets.Rigid/bottle/00050.mass_by_fill.empty",
+      "assets.Rigid/bottle/00055.mass_by_fill.empty",
+      "assets.Rigid/bottle/00059.mass_by_fill.empty",
+      "assets.Rigid/bottle/00060.mass_by_fill.empty",
+      "classes.abs_device_housing.restitution",
+      "classes.aluminium.restitution",
+      "classes.ground.restitution",
+      "classes.pad_elastomer.restitution",
+      "classes.pad_hard.restitution",
+      "classes.pet_plastic.restitution",
+      "classes.polyolefin_plastic.restitution",
+      "classes.steel.restitution",
+      "classes.table_laminate.restitution",
+      "classes.table_wood.restitution",
+      "pairs.abs_device_housing__ground.mu_kinetic",
+      "pairs.abs_device_housing__ground.mu_static",
+      "pairs.abs_device_housing__pad_elastomer.mu_kinetic",
+      "pairs.abs_device_housing__pad_elastomer.mu_static",
+      "pairs.abs_device_housing__table_laminate.mu_kinetic",
+      "pairs.abs_device_housing__table_laminate.mu_static",
+      "pairs.abs_device_housing__table_wood.mu_kinetic",
+      "pairs.abs_device_housing__table_wood.mu_static",
+      "pairs.aluminium__ground.mu_kinetic",
+      "pairs.aluminium__ground.mu_static",
+      "pairs.aluminium__table_laminate.mu_kinetic",
+      "pairs.aluminium__table_laminate.mu_static",
+      "pairs.ground__pet_plastic.mu_kinetic",
+      "pairs.ground__pet_plastic.mu_static",
+      "pairs.ground__pet_plastic.restitution",
+      "pairs.ground__polyolefin_plastic.mu_kinetic",
+      "pairs.ground__polyolefin_plastic.mu_static",
+      "pairs.ground__polyolefin_plastic.restitution",
+      "pairs.ground__steel.mu_kinetic",
+      "pairs.ground__steel.mu_static",
+      "pairs.ground__steel.restitution",
+      "pairs.pad_elastomer__pet_plastic.mu_kinetic",
+      "pairs.pad_elastomer__pet_plastic.mu_static",
+      "pairs.pad_elastomer__polyolefin_plastic.mu_kinetic",
+      "pairs.pad_elastomer__polyolefin_plastic.mu_static",
+      "pairs.pet_plastic__pet_plastic.restitution",
+      "pairs.pet_plastic__polyolefin_plastic.restitution",
+      "pairs.pet_plastic__steel.restitution",
+      "pairs.pet_plastic__table_laminate.mu_kinetic",
+      "pairs.pet_plastic__table_laminate.mu_static",
+      "pairs.pet_plastic__table_laminate.restitution",
+      "pairs.pet_plastic__table_wood.mu_kinetic",
+      "pairs.pet_plastic__table_wood.mu_static",
+      "pairs.pet_plastic__table_wood.restitution",
+      "pairs.polyolefin_plastic__polyolefin_plastic.restitution",
+      "pairs.polyolefin_plastic__steel.restitution",
+      "pairs.polyolefin_plastic__table_laminate.mu_kinetic",
+      "pairs.polyolefin_plastic__table_laminate.mu_static",
+      "pairs.polyolefin_plastic__table_laminate.restitution",
+      "pairs.polyolefin_plastic__table_wood.mu_kinetic",
+      "pairs.polyolefin_plastic__table_wood.mu_static",
+      "pairs.polyolefin_plastic__table_wood.restitution",
+      "pairs.steel__table_laminate.mu_kinetic",
+      "pairs.steel__table_laminate.mu_static",
+      "pairs.steel__table_laminate.restitution",
+      "pairs.steel__table_wood.restitution",
+      "robots.x5.non_pad_link_material_classes.base_link",
+      "robots.x5.non_pad_link_material_classes.camera",
+      "robots.x5.non_pad_link_material_classes.camera_base",
+      "robots.x5.non_pad_link_material_classes.link1",
+      "robots.x5.non_pad_link_material_classes.link2",
+      "robots.x5.non_pad_link_material_classes.link3",
+      "robots.x5.non_pad_link_material_classes.link4",
+      "robots.x5.non_pad_link_material_classes.link5",
+      "robots.x5.non_pad_link_material_classes.link6",
+      "robots.x5.sanitize_camera_inertials",
+      "unary_values.abs_device_housing",
+      "unary_values.aluminium",
+      "unary_values.ground",
+      "unary_values.pad_elastomer",
+      "unary_values.pet_plastic",
+      "unary_values.polyolefin_plastic",
+      "unary_values.steel",
+      "unary_values.table_laminate",
+      "unary_values.table_wood"
+     ],
+     "gripper": {
+      "x5": {
+       "effort_case": "nominal",
+       "finger_effort_n": 80.0,
+       "finger_stiffness_n_m": 26137.3,
+       "finger_damping_n_s_m": 1045.49,
+       "slew_m_s": 0.15
+      }
+     }
+    }
+   },
+   "geometric_check": {
+    "env_idx": 0,
+    "dustbin_world_aabb": {
+     "min": [
+      -0.8651,
+      -0.3349,
+      0.075
+     ],
+     "max": [
+      -0.3948,
+      0.1355,
+      0.725
+     ]
+    },
+    "bottles": {
+     "bottle0": {
+      "inst": "bottle_41_1",
+      "final_pos": [
+       0.11593,
+       -0.24349,
+       0.8576
+      ],
+      "final_ori": [
+       0.96681,
+       -0.0,
+       0.0,
+       -0.2555
+      ],
+      "aabb_min": [
+       0.0785,
+       -0.2808,
+       0.765
+      ],
+      "aabb_max": [
+       0.1533,
+       -0.206,
+       0.95
+      ],
+      "z_gap_m": 0.69,
+      "xy_inside": false,
+      "z_below_rim": false,
+      "z_on_bottom": false,
+      "in_dustbin_geometric": false,
+      "task_is_A_on_B_bottom": false
+     },
+     "bottle1": {
+      "inst": "bottle_60_2",
+      "final_pos": [
+       0.43502,
+       -0.04053,
+       0.85977
+      ],
+      "final_ori": [
+       0.8639,
+       -0.00407,
+       0.00031,
+       0.50364
+      ],
+      "aabb_min": [
+       0.396,
+       -0.0799,
+       0.7645
+      ],
+      "aabb_max": [
+       0.4741,
+       -0.0011,
+       0.9551
+      ],
+      "z_gap_m": 0.68948,
+      "xy_inside": false,
+      "z_below_rim": false,
+      "z_on_bottom": false,
+      "in_dustbin_geometric": false,
+      "task_is_A_on_B_bottom": false
+     },
+     "bottle2": {
+      "inst": "bottle_25_3",
+      "final_pos": [
+       0.37052,
+       -0.14482,
+       0.7963
+      ],
+      "final_ori": [
+       0.70818,
+       0.06205,
+       0.6988,
+       -0.07937
+      ],
+      "aabb_min": [
+       0.2638,
+       -0.1972,
+       0.7621
+      ],
+      "aabb_max": [
+       0.4771,
+       -0.0923,
+       0.8307
+      ],
+      "z_gap_m": 0.68708,
+      "xy_inside": false,
+      "z_below_rim": false,
+      "z_on_bottom": false,
+      "in_dustbin_geometric": false,
+      "task_is_A_on_B_bottom": false
+     },
+     "bottle3": {
+      "inst": "bottle_22_4",
+      "final_pos": [
+       -0.67877,
+       -0.1838,
+       0.32161
+      ],
+      "final_ori": [
+       0.62862,
+       0.61132,
+       0.36935,
+       0.30776
+      ],
+      "aabb_min": [
+       -0.8018,
+       -0.2818,
+       0.2797
+      ],
+      "aabb_max": [
+       -0.5561,
+       -0.0859,
+       0.3638
+      ],
+      "z_gap_m": 0.20474,
+      "xy_inside": true,
+      "z_below_rim": true,
+      "z_on_bottom": true,
+      "in_dustbin_geometric": true,
+      "task_is_A_on_B_bottom": true
+     }
+    },
+    "in_dustbin_geometric_count": 1,
+    "task_predicate_count": 1,
+    "task_all_robot_back_to_origin": true,
+    "task_is_all_gripper_open_0.8": true
+   },
+   "run_eval_error": null,
+   "assertion_passed": true,
+   "phases": [
+    {
+     "phase": "b0_bottle3:left_transit_high",
+     "from_step": 1,
+     "to_step": 9
+    },
+    {
+     "phase": "b0_bottle3:left_pre_grasp",
+     "from_step": 10,
+     "to_step": 21
+    },
+    {
+     "phase": "b0_bottle3:left_approach_grasp",
+     "from_step": 22,
+     "to_step": 31
+    },
+    {
+     "phase": "b0_bottle3:left_close",
+     "from_step": 32,
+     "to_step": 36
+    },
+    {
+     "phase": "b0_bottle3:left_lift",
+     "from_step": 37,
+     "to_step": 46
+    },
+    {
+     "phase": "b0_bottle3:left_carry_high",
+     "from_step": 47,
+     "to_step": 57
+    },
+    {
+     "phase": "b0_bottle3:left_to_dustbin",
+     "from_step": 58,
+     "to_step": 70
+    },
+    {
+     "phase": "b0_bottle3:left_release",
+     "from_step": 71,
+     "to_step": 74
+    },
+    {
+     "phase": "b0_bottle3:left_retreat_bin",
+     "from_step": 75,
+     "to_step": 84
+    },
+    {
+     "phase": "b1_bottle3:left_pre_grasp",
+     "from_step": 85,
+     "to_step": 96
+    },
+    {
+     "phase": "b1_bottle3:left_approach_grasp",
+     "from_step": 97,
+     "to_step": 106
+    },
+    {
+     "phase": "b1_bottle3:left_close",
+     "from_step": 107,
+     "to_step": 111
+    },
+    {
+     "phase": "b1_bottle3:left_lift",
+     "from_step": 112,
+     "to_step": 121
+    },
+    {
+     "phase": "b1_bottle3:abort_retreat",
+     "from_step": 122,
+     "to_step": 131
+    },
+    {
+     "phase": "b2_bottle3:left_pre_grasp",
+     "from_step": 132,
+     "to_step": 143
+    },
+    {
+     "phase": "b2_bottle3:left_approach_grasp",
+     "from_step": 144,
+     "to_step": 153
+    },
+    {
+     "phase": "b2_bottle3:left_close",
+     "from_step": 154,
+     "to_step": 158
+    },
+    {
+     "phase": "b2_bottle3:left_lift",
+     "from_step": 159,
+     "to_step": 168
+    },
+    {
+     "phase": "b2_bottle3:left_carry_high",
+     "from_step": 169,
+     "to_step": 179
+    },
+    {
+     "phase": "b2_bottle3:left_to_dustbin",
+     "from_step": 180,
+     "to_step": 192
+    },
+    {
+     "phase": "b2_bottle3:left_release",
+     "from_step": 193,
+     "to_step": 196
+    },
+    {
+     "phase": "b2_bottle3:left_retreat_bin",
+     "from_step": 197,
+     "to_step": 206
+    },
+    {
+     "phase": "b3_bottle3:left_pre_grasp",
+     "from_step": 207,
+     "to_step": 218
+    },
+    {
+     "phase": "b3_bottle3:left_approach_grasp",
+     "from_step": 219,
+     "to_step": 228
+    },
+    {
+     "phase": "b3_bottle3:left_close",
+     "from_step": 229,
+     "to_step": 233
+    },
+    {
+     "phase": "b3_bottle3:left_lift",
+     "from_step": 234,
+     "to_step": 243
+    },
+    {
+     "phase": "b3_bottle3:abort_retreat",
+     "from_step": 244,
+     "to_step": 253
+    },
+    {
+     "phase": "b4_bottle3:left_pre_grasp",
+     "from_step": 254,
+     "to_step": 265
+    },
+    {
+     "phase": "b4_bottle3:left_approach_grasp",
+     "from_step": 266,
+     "to_step": 275
+    },
+    {
+     "phase": "b4_bottle3:left_close",
+     "from_step": 276,
+     "to_step": 280
+    },
+    {
+     "phase": "b4_bottle3:left_lift",
+     "from_step": 281,
+     "to_step": 290
+    },
+    {
+     "phase": "b4_bottle3:left_carry_high",
+     "from_step": 291,
+     "to_step": 301
+    },
+    {
+     "phase": "b4_bottle3:left_to_dustbin",
+     "from_step": 302,
+     "to_step": 314
+    },
+    {
+     "phase": "b4_bottle3:left_release",
+     "from_step": 315,
+     "to_step": 318
+    },
+    {
+     "phase": "return_to_origin",
+     "from_step": 319,
+     "to_step": 332
+    },
+    {
+     "phase": "hold_origin_until_end",
+     "from_step": 333,
+     "to_step": 700
+    }
+   ]
+  },
+  "d3_w5_script_l1": {
+   "success": false,
+   "episode_score_pct": 10.0,
+   "releases": [
+    {
+     "phase": "b0_bottle3:left_release",
+     "open_command_step": 71,
+     "last_step_with_finger_contact_over_1N": 76,
+     "actions_holding_after_open_command": 6,
+     "release_actions_before_retreat": 4,
+     "bottle_z_after_retreat_m": 0.698
+    },
+    {
+     "phase": "b1_bottle1:left_release",
+     "open_command_step": 146,
+     "last_step_with_finger_contact_over_1N": 151,
+     "actions_holding_after_open_command": 6,
+     "release_actions_before_retreat": 4,
+     "bottle_z_after_retreat_m": 0.83
+    },
+    {
+     "phase": "b3_bottle2:left_release",
+     "open_command_step": 268,
+     "last_step_with_finger_contact_over_1N": 272,
+     "actions_holding_after_open_command": 5,
+     "release_actions_before_retreat": 4,
+     "bottle_z_after_retreat_m": 0.857
+    }
+   ],
+   "take_action_cnt": 700,
+   "eval_result": {
+    "evaluator_version": "evaluator v2",
+    "task_name": "put_bottles_into_dustbin",
+    "config_name": "arx_x5",
+    "policy_name": "harness",
+    "seed": 0,
+    "native_eval_num": 50,
+    "scheduled_count": 1,
+    "scheduled_layout_ids": [
+     1
+    ],
+    "unresolved_layout_ids": [],
+    "resolved_count": 1,
+    "complete": true,
+    "valid": true,
+    "eval_time": 1,
+    "success_rate": 0.0,
+    "score": 10.0,
+    "category_counts": {
+     "success": 0,
+     "failure": 0,
+     "timeout": 1,
+     "policy_error": 0,
+     "simulator_break": 0,
+     "evaluator_error": 0,
+     "unstable_layout": 0,
+     "excluded": 0
+    },
+    "drops": {
+     "total": 0,
+     "policy_error": 0,
+     "simulator_break": 0,
+     "evaluator_error": 0,
+     "unstable_layout": 0,
+     "excluded": 0
+    },
+    "aggregation": {
+     "evaluator_version": "evaluator v2",
+     "denominator_rule": "all_scheduled",
+     "excluded_categories": [],
+     "scheduled_count": 1,
+     "resolved_count": 1,
+     "denominator": 1,
+     "complete": true,
+     "valid": true,
+     "success_count": 0,
+     "success_rate": 0.0,
+     "success_rate_pct": 0.0,
+     "score": 10.0
+    },
+    "ledger": [
+     {
+      "layout_id": 1,
+      "seed": 0,
+      "category": "timeout",
+      "success": false,
+      "score": 0.1,
+      "steps": 700,
+      "reason": "step_lim_reached (700/700)"
+     }
+    ],
+    "details": {
+     "0": {
+      "layout_id": 1,
+      "seed": 0,
+      "category": "timeout",
+      "success": false,
+      "score": 0.1,
+      "steps": 700,
+      "reason": "step_lim_reached (700/700)"
+     }
+    },
+    "physics": {
+     "preset": "corrected",
+     "fixes": [
+      "collision",
+      "gripper",
+      "order",
+      "size",
+      "values"
+     ],
+     "device": "cpu",
+     "dormant_values_active": false,
+     "values_delivered": true,
+     "table_sha256": "f9d456228d1d0bbcfa55db7fd60d51a976f1cc0704a5dee3d1a3bbc1d9304a98",
+     "admitted_statuses": [
+      "estimated",
+      "sourced"
+     ],
+     "scenario_opt_in": "bottles_primary_empty",
+     "scenario": {
+      "finger_pad": "pad_hard",
+      "table": "table_laminate",
+      "ground_combine": "average",
+      "fill": "empty"
+     },
+     "status_counts": {
+      "estimated": 78,
+      "unsourced": 85,
+      "sourced": 30
+     },
+     "below_g1_unsourced_opt_in": true,
+     "unsourced_keys_used": [
+      "assets.Rigid/bottle/00000.mass_by_fill.empty",
+      "assets.Rigid/bottle/00002.mass_by_fill.empty",
+      "assets.Rigid/bottle/00005.mass_by_fill.empty",
+      "assets.Rigid/bottle/00022.material_override.restitution_by_fill.empty",
+      "assets.Rigid/bottle/00025.mass_by_fill.empty",
+      "assets.Rigid/bottle/00041.mass_by_fill.empty",
+      "assets.Rigid/bottle/00050.mass_by_fill.empty",
+      "assets.Rigid/bottle/00055.mass_by_fill.empty",
+      "assets.Rigid/bottle/00059.mass_by_fill.empty",
+      "assets.Rigid/bottle/00060.mass_by_fill.empty",
+      "classes.abs_device_housing.restitution",
+      "classes.aluminium.restitution",
+      "classes.ground.restitution",
+      "classes.pad_elastomer.restitution",
+      "classes.pad_hard.restitution",
+      "classes.pet_plastic.restitution",
+      "classes.polyolefin_plastic.restitution",
+      "classes.steel.restitution",
+      "classes.table_laminate.restitution",
+      "classes.table_wood.restitution",
+      "pairs.abs_device_housing__ground.mu_kinetic",
+      "pairs.abs_device_housing__ground.mu_static",
+      "pairs.abs_device_housing__pad_elastomer.mu_kinetic",
+      "pairs.abs_device_housing__pad_elastomer.mu_static",
+      "pairs.abs_device_housing__table_laminate.mu_kinetic",
+      "pairs.abs_device_housing__table_laminate.mu_static",
+      "pairs.abs_device_housing__table_wood.mu_kinetic",
+      "pairs.abs_device_housing__table_wood.mu_static",
+      "pairs.aluminium__ground.mu_kinetic",
+      "pairs.aluminium__ground.mu_static",
+      "pairs.aluminium__table_laminate.mu_kinetic",
+      "pairs.aluminium__table_laminate.mu_static",
+      "pairs.ground__pet_plastic.mu_kinetic",
+      "pairs.ground__pet_plastic.mu_static",
+      "pairs.ground__pet_plastic.restitution",
+      "pairs.ground__polyolefin_plastic.mu_kinetic",
+      "pairs.ground__polyolefin_plastic.mu_static",
+      "pairs.ground__polyolefin_plastic.restitution",
+      "pairs.ground__steel.mu_kinetic",
+      "pairs.ground__steel.mu_static",
+      "pairs.ground__steel.restitution",
+      "pairs.pad_elastomer__pet_plastic.mu_kinetic",
+      "pairs.pad_elastomer__pet_plastic.mu_static",
+      "pairs.pad_elastomer__polyolefin_plastic.mu_kinetic",
+      "pairs.pad_elastomer__polyolefin_plastic.mu_static",
+      "pairs.pet_plastic__pet_plastic.restitution",
+      "pairs.pet_plastic__polyolefin_plastic.restitution",
+      "pairs.pet_plastic__steel.restitution",
+      "pairs.pet_plastic__table_laminate.mu_kinetic",
+      "pairs.pet_plastic__table_laminate.mu_static",
+      "pairs.pet_plastic__table_laminate.restitution",
+      "pairs.pet_plastic__table_wood.mu_kinetic",
+      "pairs.pet_plastic__table_wood.mu_static",
+      "pairs.pet_plastic__table_wood.restitution",
+      "pairs.polyolefin_plastic__polyolefin_plastic.restitution",
+      "pairs.polyolefin_plastic__steel.restitution",
+      "pairs.polyolefin_plastic__table_laminate.mu_kinetic",
+      "pairs.polyolefin_plastic__table_laminate.mu_static",
+      "pairs.polyolefin_plastic__table_laminate.restitution",
+      "pairs.polyolefin_plastic__table_wood.mu_kinetic",
+      "pairs.polyolefin_plastic__table_wood.mu_static",
+      "pairs.polyolefin_plastic__table_wood.restitution",
+      "pairs.steel__table_laminate.mu_kinetic",
+      "pairs.steel__table_laminate.mu_static",
+      "pairs.steel__table_laminate.restitution",
+      "pairs.steel__table_wood.restitution",
+      "robots.x5.non_pad_link_material_classes.base_link",
+      "robots.x5.non_pad_link_material_classes.camera",
+      "robots.x5.non_pad_link_material_classes.camera_base",
+      "robots.x5.non_pad_link_material_classes.link1",
+      "robots.x5.non_pad_link_material_classes.link2",
+      "robots.x5.non_pad_link_material_classes.link3",
+      "robots.x5.non_pad_link_material_classes.link4",
+      "robots.x5.non_pad_link_material_classes.link5",
+      "robots.x5.non_pad_link_material_classes.link6",
+      "robots.x5.sanitize_camera_inertials",
+      "unary_values.abs_device_housing",
+      "unary_values.aluminium",
+      "unary_values.ground",
+      "unary_values.pad_elastomer",
+      "unary_values.pet_plastic",
+      "unary_values.polyolefin_plastic",
+      "unary_values.steel",
+      "unary_values.table_laminate",
+      "unary_values.table_wood"
+     ],
+     "profile_unsourced_keys_used": [
+      "assets.Rigid/bottle/00000.mass_by_fill.empty",
+      "assets.Rigid/bottle/00002.mass_by_fill.empty",
+      "assets.Rigid/bottle/00005.mass_by_fill.empty",
+      "assets.Rigid/bottle/00022.material_override.restitution_by_fill.empty",
+      "assets.Rigid/bottle/00025.mass_by_fill.empty",
+      "assets.Rigid/bottle/00041.mass_by_fill.empty",
+      "assets.Rigid/bottle/00050.mass_by_fill.empty",
+      "assets.Rigid/bottle/00055.mass_by_fill.empty",
+      "assets.Rigid/bottle/00059.mass_by_fill.empty",
+      "assets.Rigid/bottle/00060.mass_by_fill.empty",
+      "classes.abs_device_housing.restitution",
+      "classes.aluminium.restitution",
+      "classes.ground.restitution",
+      "classes.pad_elastomer.restitution",
+      "classes.pad_hard.restitution",
+      "classes.pet_plastic.restitution",
+      "classes.polyolefin_plastic.restitution",
+      "classes.steel.restitution",
+      "classes.table_laminate.restitution",
+      "classes.table_wood.restitution",
+      "pairs.abs_device_housing__ground.mu_kinetic",
+      "pairs.abs_device_housing__ground.mu_static",
+      "pairs.abs_device_housing__pad_elastomer.mu_kinetic",
+      "pairs.abs_device_housing__pad_elastomer.mu_static",
+      "pairs.abs_device_housing__table_laminate.mu_kinetic",
+      "pairs.abs_device_housing__table_laminate.mu_static",
+      "pairs.abs_device_housing__table_wood.mu_kinetic",
+      "pairs.abs_device_housing__table_wood.mu_static",
+      "pairs.aluminium__ground.mu_kinetic",
+      "pairs.aluminium__ground.mu_static",
+      "pairs.aluminium__table_laminate.mu_kinetic",
+      "pairs.aluminium__table_laminate.mu_static",
+      "pairs.ground__pet_plastic.mu_kinetic",
+      "pairs.ground__pet_plastic.mu_static",
+      "pairs.ground__pet_plastic.restitution",
+      "pairs.ground__polyolefin_plastic.mu_kinetic",
+      "pairs.ground__polyolefin_plastic.mu_static",
+      "pairs.ground__polyolefin_plastic.restitution",
+      "pairs.ground__steel.mu_kinetic",
+      "pairs.ground__steel.mu_static",
+      "pairs.ground__steel.restitution",
+      "pairs.pad_elastomer__pet_plastic.mu_kinetic",
+      "pairs.pad_elastomer__pet_plastic.mu_static",
+      "pairs.pad_elastomer__polyolefin_plastic.mu_kinetic",
+      "pairs.pad_elastomer__polyolefin_plastic.mu_static",
+      "pairs.pet_plastic__pet_plastic.restitution",
+      "pairs.pet_plastic__polyolefin_plastic.restitution",
+      "pairs.pet_plastic__steel.restitution",
+      "pairs.pet_plastic__table_laminate.mu_kinetic",
+      "pairs.pet_plastic__table_laminate.mu_static",
+      "pairs.pet_plastic__table_laminate.restitution",
+      "pairs.pet_plastic__table_wood.mu_kinetic",
+      "pairs.pet_plastic__table_wood.mu_static",
+      "pairs.pet_plastic__table_wood.restitution",
+      "pairs.polyolefin_plastic__polyolefin_plastic.restitution",
+      "pairs.polyolefin_plastic__steel.restitution",
+      "pairs.polyolefin_plastic__table_laminate.mu_kinetic",
+      "pairs.polyolefin_plastic__table_laminate.mu_static",
+      "pairs.polyolefin_plastic__table_laminate.restitution",
+      "pairs.polyolefin_plastic__table_wood.mu_kinetic",
+      "pairs.polyolefin_plastic__table_wood.mu_static",
+      "pairs.polyolefin_plastic__table_wood.restitution",
+      "pairs.steel__table_laminate.mu_kinetic",
+      "pairs.steel__table_laminate.mu_static",
+      "pairs.steel__table_laminate.restitution",
+      "pairs.steel__table_wood.restitution",
+      "robots.x5.non_pad_link_material_classes.base_link",
+      "robots.x5.non_pad_link_material_classes.camera",
+      "robots.x5.non_pad_link_material_classes.camera_base",
+      "robots.x5.non_pad_link_material_classes.link1",
+      "robots.x5.non_pad_link_material_classes.link2",
+      "robots.x5.non_pad_link_material_classes.link3",
+      "robots.x5.non_pad_link_material_classes.link4",
+      "robots.x5.non_pad_link_material_classes.link5",
+      "robots.x5.non_pad_link_material_classes.link6",
+      "robots.x5.sanitize_camera_inertials",
+      "unary_values.abs_device_housing",
+      "unary_values.aluminium",
+      "unary_values.ground",
+      "unary_values.pad_elastomer",
+      "unary_values.pet_plastic",
+      "unary_values.polyolefin_plastic",
+      "unary_values.steel",
+      "unary_values.table_laminate",
+      "unary_values.table_wood"
+     ],
+     "gripper": {
+      "x5": {
+       "effort_case": "nominal",
+       "finger_effort_n": 80.0,
+       "finger_stiffness_n_m": 26137.3,
+       "finger_damping_n_s_m": 1045.49,
+       "slew_m_s": 0.15
+      }
+     }
+    }
+   },
+   "geometric_check": {
+    "env_idx": 0,
+    "dustbin_world_aabb": {
+     "min": [
+      -0.8651,
+      -0.3349,
+      0.075
+     ],
+     "max": [
+      -0.3948,
+      0.1355,
+      0.725
+     ]
+    },
+    "bottles": {
+     "bottle0": {
+      "inst": "bottle_60_1",
+      "final_pos": [
+       -0.0549,
+       -0.07085,
+       0.79063
+      ],
+      "final_ori": [
+       0.59165,
+       -0.53339,
+       0.45901,
+       -0.39339
+      ],
+      "aabb_min": [
+       -0.1546,
+       -0.1251,
+       0.7601
+      ],
+      "aabb_max": [
+       0.0448,
+       -0.0166,
+       0.8212
+      ],
+      "z_gap_m": 0.68509,
+      "xy_inside": false,
+      "z_below_rim": false,
+      "z_on_bottom": false,
+      "in_dustbin_geometric": false,
+      "task_is_A_on_B_bottom": false
+     },
+     "bottle1": {
+      "inst": "bottle_50_2",
+      "final_pos": [
+       -0.38589,
+       0.13726,
+       0.78968
+      ],
+      "final_ori": [
+       0.66525,
+       0.25139,
+       0.66057,
+       0.2406
+      ],
+      "aabb_min": [
+       -0.4815,
+       0.0985,
+       0.7524
+      ],
+      "aabb_max": [
+       -0.2903,
+       0.1761,
+       0.827
+      ],
+      "z_gap_m": 0.67736,
+      "xy_inside": false,
+      "z_below_rim": false,
+      "z_on_bottom": false,
+      "in_dustbin_geometric": false,
+      "task_is_A_on_B_bottom": false
+     },
+     "bottle2": {
+      "inst": "bottle_41_3",
+      "final_pos": [
+       -0.3455,
+       0.02563,
+       0.7894
+      ],
+      "final_ori": [
+       0.70601,
+       0.23331,
+       -0.66686,
+       -0.04907
+      ],
+      "aabb_min": [
+       -0.4445,
+       -0.0346,
+       0.7519
+      ],
+      "aabb_max": [
+       -0.2464,
+       0.0861,
+       0.8267
+      ],
+      "z_gap_m": 0.67695,
+      "xy_inside": false,
+      "z_below_rim": false,
+      "z_on_bottom": false,
+      "in_dustbin_geometric": false,
+      "task_is_A_on_B_bottom": false
+     },
+     "bottle3": {
+      "inst": "bottle_59_4",
+      "final_pos": [
+       -0.60806,
+       -0.07271,
+       0.31289
+      ],
+      "final_ori": [
+       -0.50735,
+       0.68647,
+       -0.19453,
+       -0.48323
+      ],
+      "aabb_min": [
+       -0.6782,
+       -0.1637,
+       0.277
+      ],
+      "aabb_max": [
+       -0.5379,
+       0.0182,
+       0.3488
+      ],
+      "z_gap_m": 0.20198,
+      "xy_inside": true,
+      "z_below_rim": true,
+      "z_on_bottom": true,
+      "in_dustbin_geometric": true,
+      "task_is_A_on_B_bottom": true
+     }
+    },
+    "in_dustbin_geometric_count": 1,
+    "task_predicate_count": 1,
+    "task_all_robot_back_to_origin": true,
+    "task_is_all_gripper_open_0.8": true
+   },
+   "run_eval_error": null,
+   "assertion_passed": true,
+   "phases": [
+    {
+     "phase": "b0_bottle3:left_transit_high",
+     "from_step": 1,
+     "to_step": 9
+    },
+    {
+     "phase": "b0_bottle3:left_pre_grasp",
+     "from_step": 10,
+     "to_step": 21
+    },
+    {
+     "phase": "b0_bottle3:left_approach_grasp",
+     "from_step": 22,
+     "to_step": 31
+    },
+    {
+     "phase": "b0_bottle3:left_close",
+     "from_step": 32,
+     "to_step": 36
+    },
+    {
+     "phase": "b0_bottle3:left_lift",
+     "from_step": 37,
+     "to_step": 46
+    },
+    {
+     "phase": "b0_bottle3:left_carry_high",
+     "from_step": 47,
+     "to_step": 57
+    },
+    {
+     "phase": "b0_bottle3:left_to_dustbin",
+     "from_step": 58,
+     "to_step": 70
+    },
+    {
+     "phase": "b0_bottle3:left_release",
+     "from_step": 71,
+     "to_step": 74
+    },
+    {
+     "phase": "b0_bottle3:left_retreat_bin",
+     "from_step": 75,
+     "to_step": 84
+    },
+    {
+     "phase": "b1_bottle1:left_pre_grasp",
+     "from_step": 85,
+     "to_step": 96
+    },
+    {
+     "phase": "b1_bottle1:left_approach_grasp",
+     "from_step": 97,
+     "to_step": 106
+    },
+    {
+     "phase": "b1_bottle1:left_close",
+     "from_step": 107,
+     "to_step": 111
+    },
+    {
+     "phase": "b1_bottle1:left_lift",
+     "from_step": 112,
+     "to_step": 121
+    },
+    {
+     "phase": "b1_bottle1:left_carry_high",
+     "from_step": 122,
+     "to_step": 132
+    },
+    {
+     "phase": "b1_bottle1:left_to_dustbin",
+     "from_step": 133,
+     "to_step": 145
+    },
+    {
+     "phase": "b1_bottle1:left_release",
+     "from_step": 146,
+     "to_step": 149
+    },
+    {
+     "phase": "b1_bottle1:left_retreat_bin",
+     "from_step": 150,
+     "to_step": 159
+    },
+    {
+     "phase": "b2_bottle1:left_pre_grasp",
+     "from_step": 160,
+     "to_step": 171
+    },
+    {
+     "phase": "b2_bottle1:left_approach_grasp",
+     "from_step": 172,
+     "to_step": 181
+    },
+    {
+     "phase": "b2_bottle1:left_close",
+     "from_step": 182,
+     "to_step": 186
+    },
+    {
+     "phase": "b2_bottle1:left_lift",
+     "from_step": 187,
+     "to_step": 196
+    },
+    {
+     "phase": "b2_bottle1:abort_retreat",
+     "from_step": 197,
+     "to_step": 206
+    },
+    {
+     "phase": "b3_bottle2:left_pre_grasp",
+     "from_step": 207,
+     "to_step": 218
+    },
+    {
+     "phase": "b3_bottle2:left_approach_grasp",
+     "from_step": 219,
+     "to_step": 228
+    },
+    {
+     "phase": "b3_bottle2:left_close",
+     "from_step": 229,
+     "to_step": 233
+    },
+    {
+     "phase": "b3_bottle2:left_lift",
+     "from_step": 234,
+     "to_step": 243
+    },
+    {
+     "phase": "b3_bottle2:left_carry_high",
+     "from_step": 244,
+     "to_step": 254
+    },
+    {
+     "phase": "b3_bottle2:left_to_dustbin",
+     "from_step": 255,
+     "to_step": 267
+    },
+    {
+     "phase": "b3_bottle2:left_release",
+     "from_step": 268,
+     "to_step": 271
+    },
+    {
+     "phase": "b3_bottle2:left_retreat_bin",
+     "from_step": 272,
+     "to_step": 281
+    },
+    {
+     "phase": "b4_bottle2:left_pre_grasp",
+     "from_step": 282,
+     "to_step": 293
+    },
+    {
+     "phase": "b4_bottle2:left_approach_grasp",
+     "from_step": 294,
+     "to_step": 303
+    },
+    {
+     "phase": "b4_bottle2:left_close",
+     "from_step": 304,
+     "to_step": 308
+    },
+    {
+     "phase": "b4_bottle2:left_lift",
+     "from_step": 309,
+     "to_step": 318
+    },
+    {
+     "phase": "b4_bottle2:abort_retreat",
+     "from_step": 319,
+     "to_step": 328
+    },
+    {
+     "phase": "return_to_origin",
+     "from_step": 329,
+     "to_step": 342
+    },
+    {
+     "phase": "hold_origin_until_end",
+     "from_step": 343,
+     "to_step": 700
+    }
+   ]
+  },
+  "d3_w5_script_l2": {
+   "success": false,
+   "episode_score_pct": 10.0,
+   "releases": [
+    {
+     "phase": "b0_bottle0:left_release",
+     "open_command_step": 71,
+     "last_step_with_finger_contact_over_1N": 76,
+     "actions_holding_after_open_command": 6,
+     "release_actions_before_retreat": 4,
+     "bottle_z_after_retreat_m": 0.6917
+    },
+    {
+     "phase": "b1_bottle3:left_release",
+     "open_command_step": 146,
+     "last_step_with_finger_contact_over_1N": 151,
+     "actions_holding_after_open_command": 6,
+     "release_actions_before_retreat": 4,
+     "bottle_z_after_retreat_m": 0.8667
+    },
+    {
+     "phase": "b3_bottle3:left_release",
+     "open_command_step": 268,
+     "last_step_with_finger_contact_over_1N": 273,
+     "actions_holding_after_open_command": 6,
+     "release_actions_before_retreat": 4,
+     "bottle_z_after_retreat_m": 0.8876
+    }
+   ],
+   "take_action_cnt": 700,
+   "eval_result": {
+    "evaluator_version": "evaluator v2",
+    "task_name": "put_bottles_into_dustbin",
+    "config_name": "arx_x5",
+    "policy_name": "harness",
+    "seed": 0,
+    "native_eval_num": 50,
+    "scheduled_count": 1,
+    "scheduled_layout_ids": [
+     2
+    ],
+    "unresolved_layout_ids": [],
+    "resolved_count": 1,
+    "complete": true,
+    "valid": true,
+    "eval_time": 1,
+    "success_rate": 0.0,
+    "score": 10.0,
+    "category_counts": {
+     "success": 0,
+     "failure": 0,
+     "timeout": 1,
+     "policy_error": 0,
+     "simulator_break": 0,
+     "evaluator_error": 0,
+     "unstable_layout": 0,
+     "excluded": 0
+    },
+    "drops": {
+     "total": 0,
+     "policy_error": 0,
+     "simulator_break": 0,
+     "evaluator_error": 0,
+     "unstable_layout": 0,
+     "excluded": 0
+    },
+    "aggregation": {
+     "evaluator_version": "evaluator v2",
+     "denominator_rule": "all_scheduled",
+     "excluded_categories": [],
+     "scheduled_count": 1,
+     "resolved_count": 1,
+     "denominator": 1,
+     "complete": true,
+     "valid": true,
+     "success_count": 0,
+     "success_rate": 0.0,
+     "success_rate_pct": 0.0,
+     "score": 10.0
+    },
+    "ledger": [
+     {
+      "layout_id": 2,
+      "seed": 0,
+      "category": "timeout",
+      "success": false,
+      "score": 0.1,
+      "steps": 700,
+      "reason": "step_lim_reached (700/700)"
+     }
+    ],
+    "details": {
+     "0": {
+      "layout_id": 2,
+      "seed": 0,
+      "category": "timeout",
+      "success": false,
+      "score": 0.1,
+      "steps": 700,
+      "reason": "step_lim_reached (700/700)"
+     }
+    },
+    "physics": {
+     "preset": "corrected",
+     "fixes": [
+      "collision",
+      "gripper",
+      "order",
+      "size",
+      "values"
+     ],
+     "device": "cpu",
+     "dormant_values_active": false,
+     "values_delivered": true,
+     "table_sha256": "f9d456228d1d0bbcfa55db7fd60d51a976f1cc0704a5dee3d1a3bbc1d9304a98",
+     "admitted_statuses": [
+      "estimated",
+      "sourced"
+     ],
+     "scenario_opt_in": "bottles_primary_empty",
+     "scenario": {
+      "finger_pad": "pad_hard",
+      "table": "table_laminate",
+      "ground_combine": "average",
+      "fill": "empty"
+     },
+     "status_counts": {
+      "estimated": 78,
+      "unsourced": 85,
+      "sourced": 30
+     },
+     "below_g1_unsourced_opt_in": true,
+     "unsourced_keys_used": [
+      "assets.Rigid/bottle/00000.mass_by_fill.empty",
+      "assets.Rigid/bottle/00002.mass_by_fill.empty",
+      "assets.Rigid/bottle/00005.mass_by_fill.empty",
+      "assets.Rigid/bottle/00022.material_override.restitution_by_fill.empty",
+      "assets.Rigid/bottle/00025.mass_by_fill.empty",
+      "assets.Rigid/bottle/00041.mass_by_fill.empty",
+      "assets.Rigid/bottle/00050.mass_by_fill.empty",
+      "assets.Rigid/bottle/00055.mass_by_fill.empty",
+      "assets.Rigid/bottle/00059.mass_by_fill.empty",
+      "assets.Rigid/bottle/00060.mass_by_fill.empty",
+      "classes.abs_device_housing.restitution",
+      "classes.aluminium.restitution",
+      "classes.ground.restitution",
+      "classes.pad_elastomer.restitution",
+      "classes.pad_hard.restitution",
+      "classes.pet_plastic.restitution",
+      "classes.polyolefin_plastic.restitution",
+      "classes.steel.restitution",
+      "classes.table_laminate.restitution",
+      "classes.table_wood.restitution",
+      "pairs.abs_device_housing__ground.mu_kinetic",
+      "pairs.abs_device_housing__ground.mu_static",
+      "pairs.abs_device_housing__pad_elastomer.mu_kinetic",
+      "pairs.abs_device_housing__pad_elastomer.mu_static",
+      "pairs.abs_device_housing__table_laminate.mu_kinetic",
+      "pairs.abs_device_housing__table_laminate.mu_static",
+      "pairs.abs_device_housing__table_wood.mu_kinetic",
+      "pairs.abs_device_housing__table_wood.mu_static",
+      "pairs.aluminium__ground.mu_kinetic",
+      "pairs.aluminium__ground.mu_static",
+      "pairs.aluminium__table_laminate.mu_kinetic",
+      "pairs.aluminium__table_laminate.mu_static",
+      "pairs.ground__pet_plastic.mu_kinetic",
+      "pairs.ground__pet_plastic.mu_static",
+      "pairs.ground__pet_plastic.restitution",
+      "pairs.ground__polyolefin_plastic.mu_kinetic",
+      "pairs.ground__polyolefin_plastic.mu_static",
+      "pairs.ground__polyolefin_plastic.restitution",
+      "pairs.ground__steel.mu_kinetic",
+      "pairs.ground__steel.mu_static",
+      "pairs.ground__steel.restitution",
+      "pairs.pad_elastomer__pet_plastic.mu_kinetic",
+      "pairs.pad_elastomer__pet_plastic.mu_static",
+      "pairs.pad_elastomer__polyolefin_plastic.mu_kinetic",
+      "pairs.pad_elastomer__polyolefin_plastic.mu_static",
+      "pairs.pet_plastic__pet_plastic.restitution",
+      "pairs.pet_plastic__polyolefin_plastic.restitution",
+      "pairs.pet_plastic__steel.restitution",
+      "pairs.pet_plastic__table_laminate.mu_kinetic",
+      "pairs.pet_plastic__table_laminate.mu_static",
+      "pairs.pet_plastic__table_laminate.restitution",
+      "pairs.pet_plastic__table_wood.mu_kinetic",
+      "pairs.pet_plastic__table_wood.mu_static",
+      "pairs.pet_plastic__table_wood.restitution",
+      "pairs.polyolefin_plastic__polyolefin_plastic.restitution",
+      "pairs.polyolefin_plastic__steel.restitution",
+      "pairs.polyolefin_plastic__table_laminate.mu_kinetic",
+      "pairs.polyolefin_plastic__table_laminate.mu_static",
+      "pairs.polyolefin_plastic__table_laminate.restitution",
+      "pairs.polyolefin_plastic__table_wood.mu_kinetic",
+      "pairs.polyolefin_plastic__table_wood.mu_static",
+      "pairs.polyolefin_plastic__table_wood.restitution",
+      "pairs.steel__table_laminate.mu_kinetic",
+      "pairs.steel__table_laminate.mu_static",
+      "pairs.steel__table_laminate.restitution",
+      "pairs.steel__table_wood.restitution",
+      "robots.x5.non_pad_link_material_classes.base_link",
+      "robots.x5.non_pad_link_material_classes.camera",
+      "robots.x5.non_pad_link_material_classes.camera_base",
+      "robots.x5.non_pad_link_material_classes.link1",
+      "robots.x5.non_pad_link_material_classes.link2",
+      "robots.x5.non_pad_link_material_classes.link3",
+      "robots.x5.non_pad_link_material_classes.link4",
+      "robots.x5.non_pad_link_material_classes.link5",
+      "robots.x5.non_pad_link_material_classes.link6",
+      "robots.x5.sanitize_camera_inertials",
+      "unary_values.abs_device_housing",
+      "unary_values.aluminium",
+      "unary_values.ground",
+      "unary_values.pad_elastomer",
+      "unary_values.pet_plastic",
+      "unary_values.polyolefin_plastic",
+      "unary_values.steel",
+      "unary_values.table_laminate",
+      "unary_values.table_wood"
+     ],
+     "profile_unsourced_keys_used": [
+      "assets.Rigid/bottle/00000.mass_by_fill.empty",
+      "assets.Rigid/bottle/00002.mass_by_fill.empty",
+      "assets.Rigid/bottle/00005.mass_by_fill.empty",
+      "assets.Rigid/bottle/00022.material_override.restitution_by_fill.empty",
+      "assets.Rigid/bottle/00025.mass_by_fill.empty",
+      "assets.Rigid/bottle/00041.mass_by_fill.empty",
+      "assets.Rigid/bottle/00050.mass_by_fill.empty",
+      "assets.Rigid/bottle/00055.mass_by_fill.empty",
+      "assets.Rigid/bottle/00059.mass_by_fill.empty",
+      "assets.Rigid/bottle/00060.mass_by_fill.empty",
+      "classes.abs_device_housing.restitution",
+      "classes.aluminium.restitution",
+      "classes.ground.restitution",
+      "classes.pad_elastomer.restitution",
+      "classes.pad_hard.restitution",
+      "classes.pet_plastic.restitution",
+      "classes.polyolefin_plastic.restitution",
+      "classes.steel.restitution",
+      "classes.table_laminate.restitution",
+      "classes.table_wood.restitution",
+      "pairs.abs_device_housing__ground.mu_kinetic",
+      "pairs.abs_device_housing__ground.mu_static",
+      "pairs.abs_device_housing__pad_elastomer.mu_kinetic",
+      "pairs.abs_device_housing__pad_elastomer.mu_static",
+      "pairs.abs_device_housing__table_laminate.mu_kinetic",
+      "pairs.abs_device_housing__table_laminate.mu_static",
+      "pairs.abs_device_housing__table_wood.mu_kinetic",
+      "pairs.abs_device_housing__table_wood.mu_static",
+      "pairs.aluminium__ground.mu_kinetic",
+      "pairs.aluminium__ground.mu_static",
+      "pairs.aluminium__table_laminate.mu_kinetic",
+      "pairs.aluminium__table_laminate.mu_static",
+      "pairs.ground__pet_plastic.mu_kinetic",
+      "pairs.ground__pet_plastic.mu_static",
+      "pairs.ground__pet_plastic.restitution",
+      "pairs.ground__polyolefin_plastic.mu_kinetic",
+      "pairs.ground__polyolefin_plastic.mu_static",
+      "pairs.ground__polyolefin_plastic.restitution",
+      "pairs.ground__steel.mu_kinetic",
+      "pairs.ground__steel.mu_static",
+      "pairs.ground__steel.restitution",
+      "pairs.pad_elastomer__pet_plastic.mu_kinetic",
+      "pairs.pad_elastomer__pet_plastic.mu_static",
+      "pairs.pad_elastomer__polyolefin_plastic.mu_kinetic",
+      "pairs.pad_elastomer__polyolefin_plastic.mu_static",
+      "pairs.pet_plastic__pet_plastic.restitution",
+      "pairs.pet_plastic__polyolefin_plastic.restitution",
+      "pairs.pet_plastic__steel.restitution",
+      "pairs.pet_plastic__table_laminate.mu_kinetic",
+      "pairs.pet_plastic__table_laminate.mu_static",
+      "pairs.pet_plastic__table_laminate.restitution",
+      "pairs.pet_plastic__table_wood.mu_kinetic",
+      "pairs.pet_plastic__table_wood.mu_static",
+      "pairs.pet_plastic__table_wood.restitution",
+      "pairs.polyolefin_plastic__polyolefin_plastic.restitution",
+      "pairs.polyolefin_plastic__steel.restitution",
+      "pairs.polyolefin_plastic__table_laminate.mu_kinetic",
+      "pairs.polyolefin_plastic__table_laminate.mu_static",
+      "pairs.polyolefin_plastic__table_laminate.restitution",
+      "pairs.polyolefin_plastic__table_wood.mu_kinetic",
+      "pairs.polyolefin_plastic__table_wood.mu_static",
+      "pairs.polyolefin_plastic__table_wood.restitution",
+      "pairs.steel__table_laminate.mu_kinetic",
+      "pairs.steel__table_laminate.mu_static",
+      "pairs.steel__table_laminate.restitution",
+      "pairs.steel__table_wood.restitution",
+      "robots.x5.non_pad_link_material_classes.base_link",
+      "robots.x5.non_pad_link_material_classes.camera",
+      "robots.x5.non_pad_link_material_classes.camera_base",
+      "robots.x5.non_pad_link_material_classes.link1",
+      "robots.x5.non_pad_link_material_classes.link2",
+      "robots.x5.non_pad_link_material_classes.link3",
+      "robots.x5.non_pad_link_material_classes.link4",
+      "robots.x5.non_pad_link_material_classes.link5",
+      "robots.x5.non_pad_link_material_classes.link6",
+      "robots.x5.sanitize_camera_inertials",
+      "unary_values.abs_device_housing",
+      "unary_values.aluminium",
+      "unary_values.ground",
+      "unary_values.pad_elastomer",
+      "unary_values.pet_plastic",
+      "unary_values.polyolefin_plastic",
+      "unary_values.steel",
+      "unary_values.table_laminate",
+      "unary_values.table_wood"
+     ],
+     "gripper": {
+      "x5": {
+       "effort_case": "nominal",
+       "finger_effort_n": 80.0,
+       "finger_stiffness_n_m": 26137.3,
+       "finger_damping_n_s_m": 1045.49,
+       "slew_m_s": 0.15
+      }
+     }
+    }
+   },
+   "geometric_check": {
+    "env_idx": 0,
+    "dustbin_world_aabb": {
+     "min": [
+      -0.8651,
+      -0.3349,
+      0.075
+     ],
+     "max": [
+      -0.3948,
+      0.1355,
+      0.725
+     ]
+    },
+    "bottles": {
+     "bottle0": {
+      "inst": "bottle_50_1",
+      "final_pos": [
+       -0.66638,
+       -0.14835,
+       0.31173
+      ],
+      "final_ori": [
+       0.41497,
+       0.45693,
+       0.553,
+       0.55965
+      ],
+      "aabb_min": [
+       -0.7655,
+       -0.202,
+       0.2773
+      ],
+      "aabb_max": [
+       -0.5672,
+       -0.0947,
+       0.3461
+      ],
+      "z_gap_m": 0.20231,
+      "xy_inside": true,
+      "z_below_rim": true,
+      "z_on_bottom": true,
+      "in_dustbin_geometric": true,
+      "task_is_A_on_B_bottom": true
+     },
+     "bottle1": {
+      "inst": "bottle_25_2",
+      "final_pos": [
+       0.29267,
+       -0.08844,
+       0.7963
+      ],
+      "final_ori": [
+       0.53634,
+       -0.47397,
+       0.51723,
+       0.46921
+      ],
+      "aabb_min": [
+       0.2488,
+       -0.1938,
+       0.7621
+      ],
+      "aabb_max": [
+       0.3364,
+       0.0168,
+       0.8307
+      ],
+      "z_gap_m": 0.68708,
+      "xy_inside": false,
+      "z_below_rim": false,
+      "z_on_bottom": false,
+      "in_dustbin_geometric": false,
+      "task_is_A_on_B_bottom": false
+     },
+     "bottle2": {
+      "inst": "bottle_2_3",
+      "final_pos": [
+       0.43111,
+       -0.15693,
+       0.8875
+      ],
+      "final_ori": [
+       0.72992,
+       0.00052,
+       0.00027,
+       0.68353
+      ],
+      "aabb_min": [
+       0.3868,
+       -0.2011,
+       0.7649
+      ],
+      "aabb_max": [
+       0.4754,
+       -0.1127,
+       1.01
+      ],
+      "z_gap_m": 0.68995,
+      "xy_inside": false,
+      "z_below_rim": false,
+      "z_on_bottom": false,
+      "in_dustbin_geometric": false,
+      "task_is_A_on_B_bottom": false
+     },
+     "bottle3": {
+      "inst": "bottle_5_4",
+      "final_pos": [
+       -0.18737,
+       0.06838,
+       0.79331
+      ],
+      "final_ori": [
+       0.29549,
+       0.17028,
+       0.6893,
+       0.63919
+      ],
+      "aabb_min": [
+       -0.2688,
+       -0.0208,
+       0.7582
+      ],
+      "aabb_max": [
+       -0.1059,
+       0.1576,
+       0.8285
+      ],
+      "z_gap_m": 0.68322,
+      "xy_inside": false,
+      "z_below_rim": false,
+      "z_on_bottom": false,
+      "in_dustbin_geometric": false,
+      "task_is_A_on_B_bottom": false
+     }
+    },
+    "in_dustbin_geometric_count": 1,
+    "task_predicate_count": 1,
+    "task_all_robot_back_to_origin": true,
+    "task_is_all_gripper_open_0.8": true
+   },
+   "run_eval_error": null,
+   "assertion_passed": true,
+   "phases": [
+    {
+     "phase": "b0_bottle0:left_transit_high",
+     "from_step": 1,
+     "to_step": 9
+    },
+    {
+     "phase": "b0_bottle0:left_pre_grasp",
+     "from_step": 10,
+     "to_step": 21
+    },
+    {
+     "phase": "b0_bottle0:left_approach_grasp",
+     "from_step": 22,
+     "to_step": 31
+    },
+    {
+     "phase": "b0_bottle0:left_close",
+     "from_step": 32,
+     "to_step": 36
+    },
+    {
+     "phase": "b0_bottle0:left_lift",
+     "from_step": 37,
+     "to_step": 46
+    },
+    {
+     "phase": "b0_bottle0:left_carry_high",
+     "from_step": 47,
+     "to_step": 57
+    },
+    {
+     "phase": "b0_bottle0:left_to_dustbin",
+     "from_step": 58,
+     "to_step": 70
+    },
+    {
+     "phase": "b0_bottle0:left_release",
+     "from_step": 71,
+     "to_step": 74
+    },
+    {
+     "phase": "b0_bottle0:left_retreat_bin",
+     "from_step": 75,
+     "to_step": 84
+    },
+    {
+     "phase": "b1_bottle3:left_pre_grasp",
+     "from_step": 85,
+     "to_step": 96
+    },
+    {
+     "phase": "b1_bottle3:left_approach_grasp",
+     "from_step": 97,
+     "to_step": 106
+    },
+    {
+     "phase": "b1_bottle3:left_close",
+     "from_step": 107,
+     "to_step": 111
+    },
+    {
+     "phase": "b1_bottle3:left_lift",
+     "from_step": 112,
+     "to_step": 121
+    },
+    {
+     "phase": "b1_bottle3:left_carry_high",
+     "from_step": 122,
+     "to_step": 132
+    },
+    {
+     "phase": "b1_bottle3:left_to_dustbin",
+     "from_step": 133,
+     "to_step": 145
+    },
+    {
+     "phase": "b1_bottle3:left_release",
+     "from_step": 146,
+     "to_step": 149
+    },
+    {
+     "phase": "b1_bottle3:left_retreat_bin",
+     "from_step": 150,
+     "to_step": 159
+    },
+    {
+     "phase": "b2_bottle3:left_pre_grasp",
+     "from_step": 160,
+     "to_step": 171
+    },
+    {
+     "phase": "b2_bottle3:left_approach_grasp",
+     "from_step": 172,
+     "to_step": 181
+    },
+    {
+     "phase": "b2_bottle3:left_close",
+     "from_step": 182,
+     "to_step": 186
+    },
+    {
+     "phase": "b2_bottle3:left_lift",
+     "from_step": 187,
+     "to_step": 196
+    },
+    {
+     "phase": "b2_bottle3:abort_retreat",
+     "from_step": 197,
+     "to_step": 206
+    },
+    {
+     "phase": "b3_bottle3:left_pre_grasp",
+     "from_step": 207,
+     "to_step": 218
+    },
+    {
+     "phase": "b3_bottle3:left_approach_grasp",
+     "from_step": 219,
+     "to_step": 228
+    },
+    {
+     "phase": "b3_bottle3:left_close",
+     "from_step": 229,
+     "to_step": 233
+    },
+    {
+     "phase": "b3_bottle3:left_lift",
+     "from_step": 234,
+     "to_step": 243
+    },
+    {
+     "phase": "b3_bottle3:left_carry_high",
+     "from_step": 244,
+     "to_step": 254
+    },
+    {
+     "phase": "b3_bottle3:left_to_dustbin",
+     "from_step": 255,
+     "to_step": 267
+    },
+    {
+     "phase": "b3_bottle3:left_release",
+     "from_step": 268,
+     "to_step": 271
+    },
+    {
+     "phase": "b3_bottle3:left_retreat_bin",
+     "from_step": 272,
+     "to_step": 281
+    },
+    {
+     "phase": "b4_bottle3:left_pre_grasp",
+     "from_step": 282,
+     "to_step": 293
+    },
+    {
+     "phase": "b4_bottle3:left_approach_grasp",
+     "from_step": 294,
+     "to_step": 303
+    },
+    {
+     "phase": "b4_bottle3:left_close",
+     "from_step": 304,
+     "to_step": 308
+    },
+    {
+     "phase": "b4_bottle3:left_lift",
+     "from_step": 309,
+     "to_step": 318
+    },
+    {
+     "phase": "b4_bottle3:abort_retreat",
+     "from_step": 319,
+     "to_step": 328
+    },
+    {
+     "phase": "return_to_origin",
+     "from_step": 329,
+     "to_step": 342
+    },
+    {
+     "phase": "hold_origin_until_end",
+     "from_step": 343,
+     "to_step": 700
+    }
+   ]
+  }
+ }
+}

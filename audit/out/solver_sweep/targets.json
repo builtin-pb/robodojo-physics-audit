@@ -1,0 +1,2616 @@
+{
+ "align_blocks": {
+  "n_candidates": 4,
+  "rejected": {},
+  "runner_up": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 2,
+   "com_height_m": 0.0175,
+   "dir_world_xy": [
+    0.99894,
+    0.046028
+   ],
+   "extents_m": [
+    0.035,
+    0.035,
+    0.035
+   ],
+   "inst": "cube_0_3",
+   "label": "cube1",
+   "labelled": true,
+   "local_axis": 0,
+   "mass_kg": 0.1,
+   "model": "Rigid/cube/00000",
+   "n_table_contacts": 8,
+   "prim": "/World/envs/env_0/rigid/cube/cube_0_3",
+   "stem": "cube_0",
+   "stem_rank": 1,
+   "tip_ratio": 1.0
+  },
+  "source": "runs/settle/align_blocks.json",
+  "target": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 2,
+   "com_height_m": 0.0175,
+   "dir_world_xy": [
+    0.854792,
+    0.51897
+   ],
+   "extents_m": [
+    0.035,
+    0.035,
+    0.035
+   ],
+   "inst": "cube_0_2",
+   "label": "cube0",
+   "labelled": true,
+   "local_axis": 0,
+   "mass_kg": 0.1,
+   "model": "Rigid/cube/00000",
+   "n_table_contacts": 8,
+   "prim": "/World/envs/env_0/rigid/cube/cube_0_2",
+   "stem": "cube_0",
+   "stem_rank": 0,
+   "tip_ratio": 1.0
+  }
+ },
+ "arrange_largest_number": {
+  "n_candidates": 4,
+  "rejected": {},
+  "runner_up": {
+   "approximations": [
+    "sdf"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0074,
+   "dir_world_xy": [
+    0.170616,
+    0.985338
+   ],
+   "extents_m": [
+    0.039,
+    0.0533,
+    0.0149
+   ],
+   "inst": "number_8_2",
+   "label": "digit_1",
+   "labelled": true,
+   "local_axis": 1,
+   "mass_kg": 0.1,
+   "model": "Rigid/number/00008",
+   "n_table_contacts": 6,
+   "prim": "/World/envs/env_0/rigid/number/number_8_2",
+   "stem": "number_8",
+   "stem_rank": 0,
+   "tip_ratio": 3.593
+  },
+  "source": "runs/settle/arrange_largest_number.json",
+  "target": {
+   "approximations": [
+    "sdf"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0077,
+   "dir_world_xy": [
+    0.587077,
+    0.809531
+   ],
+   "extents_m": [
+    0.0355,
+    0.0491,
+    0.0153
+   ],
+   "inst": "number_2_1",
+   "label": "digit_0",
+   "labelled": true,
+   "local_axis": 1,
+   "mass_kg": 0.1,
+   "model": "Rigid/number/00002",
+   "n_table_contacts": 6,
+   "prim": "/World/envs/env_0/rigid/number/number_2_1",
+   "stem": "number_2",
+   "stem_rank": 0,
+   "tip_ratio": 3.207
+  }
+ },
+ "arrange_largest_number_random": {
+  "n_candidates": 23,
+  "rejected": {
+   "sculpture_0_16": "would tip (half-length/COM height 0.52 < 0.6)"
+  },
+  "runner_up": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0019,
+   "dir_world_xy": [
+    0.909869,
+    -0.414895
+   ],
+   "extents_m": [
+    0.2024,
+    0.0626,
+    0.0078
+   ],
+   "inst": "racket_0_24",
+   "label": "racket_0_24",
+   "labelled": false,
+   "local_axis": 0,
+   "mass_kg": 0.5,
+   "model": "Clutter/racket/00000",
+   "n_table_contacts": 221,
+   "prim": "/World/envs/env_0/rigid/racket/racket_0_24",
+   "stem": "racket_0",
+   "stem_rank": 0,
+   "tip_ratio": 53.887
+  },
+  "source": "runs/settle/arrange_largest_number_random.json",
+  "target": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0033,
+   "dir_world_xy": [
+    0.981433,
+    -0.191803
+   ],
+   "extents_m": [
+    0.1804,
+    0.1804,
+    0.0078
+   ],
+   "inst": "darts_board_0_14",
+   "label": "darts_board_0_14",
+   "labelled": false,
+   "local_axis": 0,
+   "mass_kg": 0.5,
+   "model": "Clutter/darts_board/00000",
+   "n_table_contacts": 250,
+   "prim": "/World/envs/env_0/rigid/darts_board/darts_board_0_14",
+   "stem": "darts_board_0",
+   "stem_rank": 0,
+   "tip_ratio": 27.507
+  }
+ },
+ "build_tower": {
+  "n_candidates": 8,
+  "rejected": {},
+  "runner_up": {
+   "approximations": [
+    "None"
+   ],
+   "colliders": 2,
+   "com_height_m": 0.01,
+   "dir_world_xy": [
+    1.0,
+    0.0
+   ],
+   "extents_m": [
+    0.3749,
+    0.0654,
+    0.0199
+   ],
+   "inst": "block_0_1",
+   "label": "block0",
+   "labelled": true,
+   "local_axis": 0,
+   "mass_kg": 0.2,
+   "model": "Rigid/block/00000",
+   "n_table_contacts": 4,
+   "prim": "/World/envs/env_0/rigid/block/block_0_1",
+   "stem": "block_0",
+   "stem_rank": 0,
+   "tip_ratio": 18.78
+  },
+  "source": "runs/settle/build_tower.json",
+  "target": {
+   "approximations": [
+    "None",
+    "convexHull"
+   ],
+   "colliders": 2,
+   "com_height_m": 0.0119,
+   "dir_world_xy": [
+    0.987355,
+    -0.158525
+   ],
+   "extents_m": [
+    0.0606,
+    0.0375,
+    0.046
+   ],
+   "inst": "block_3_5",
+   "label": "block4",
+   "labelled": true,
+   "local_axis": 0,
+   "mass_kg": 0.2,
+   "model": "Rigid/block/00003",
+   "n_table_contacts": 8,
+   "prim": "/World/envs/env_0/rigid/block/block_3_5",
+   "stem": "block_3",
+   "stem_rank": 0,
+   "tip_ratio": 2.547
+  }
+ },
+ "classify_objects": {
+  "n_candidates": 7,
+  "rejected": {},
+  "runner_up": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0069,
+   "dir_world_xy": [
+    0.851648,
+    -0.524114
+   ],
+   "extents_m": [
+    0.0138,
+    0.0128,
+    0.145
+   ],
+   "inst": "pen_1_2",
+   "label": "cat0_1",
+   "labelled": true,
+   "local_axis": 2,
+   "mass_kg": 0.008,
+   "model": "Rigid/pen/00001",
+   "n_table_contacts": 53,
+   "prim": "/World/envs/env_0/rigid/pen/pen_1_2",
+   "stem": "pen_1",
+   "stem_rank": 0,
+   "tip_ratio": 10.488
+  },
+  "source": "runs/settle/classify_objects.json",
+  "target": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.01,
+   "dir_world_xy": [
+    0.990832,
+    -0.135101
+   ],
+   "extents_m": [
+    0.1851,
+    0.0186,
+    0.0213
+   ],
+   "inst": "pen_4_1",
+   "label": "cat0_0",
+   "labelled": true,
+   "local_axis": 0,
+   "mass_kg": 0.03,
+   "model": "Rigid/pen/00004",
+   "n_table_contacts": 81,
+   "prim": "/World/envs/env_0/rigid/pen/pen_4_1",
+   "stem": "pen_4",
+   "stem_rank": 0,
+   "tip_ratio": 9.231
+  }
+ },
+ "classify_objects_by_language": {
+  "n_candidates": 6,
+  "rejected": {},
+  "runner_up": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0265,
+   "dir_world_xy": [
+    -0.392889,
+    0.919586
+   ],
+   "extents_m": [
+    0.0495,
+    0.054,
+    0.064
+   ],
+   "inst": "wooden_toy_1_6",
+   "label": "cat2_1",
+   "labelled": true,
+   "local_axis": 1,
+   "mass_kg": 0.06,
+   "model": "Rigid/wooden_toy/00001",
+   "n_table_contacts": 41,
+   "prim": "/World/envs/env_0/rigid/wooden_toy/wooden_toy_1_6",
+   "stem": "wooden_toy_1",
+   "stem_rank": 1,
+   "tip_ratio": 1.02
+  },
+  "source": "runs/settle/classify_objects_by_language.json",
+  "target": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0265,
+   "dir_world_xy": [
+    0.803293,
+    0.595584
+   ],
+   "extents_m": [
+    0.0495,
+    0.054,
+    0.064
+   ],
+   "inst": "wooden_toy_1_5",
+   "label": "cat2_0",
+   "labelled": true,
+   "local_axis": 1,
+   "mass_kg": 0.06,
+   "model": "Rigid/wooden_toy/00001",
+   "n_table_contacts": 41,
+   "prim": "/World/envs/env_0/rigid/wooden_toy/wooden_toy_1_5",
+   "stem": "wooden_toy_1",
+   "stem_rank": 0,
+   "tip_ratio": 1.02
+  }
+ },
+ "cover_blocks": {
+  "n_candidates": 6,
+  "rejected": {},
+  "runner_up": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0437,
+   "dir_world_xy": [
+    1.0,
+    0.0
+   ],
+   "extents_m": [
+    0.072,
+    0.072,
+    0.072
+   ],
+   "inst": "cup_1_5",
+   "label": "cup1",
+   "labelled": true,
+   "local_axis": 0,
+   "mass_kg": 0.15,
+   "model": "Rigid/cup/00001",
+   "n_table_contacts": 25,
+   "prim": "/World/envs/env_0/rigid/cup/cup_1_5",
+   "stem": "cup_1",
+   "stem_rank": 1,
+   "tip_ratio": 0.824
+  },
+  "source": "runs/settle/cover_blocks.json",
+  "target": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0437,
+   "dir_world_xy": [
+    1.0,
+    0.0
+   ],
+   "extents_m": [
+    0.072,
+    0.072,
+    0.072
+   ],
+   "inst": "cup_1_4",
+   "label": "cup0",
+   "labelled": true,
+   "local_axis": 0,
+   "mass_kg": 0.15,
+   "model": "Rigid/cup/00001",
+   "n_table_contacts": 25,
+   "prim": "/World/envs/env_0/rigid/cup/cup_1_4",
+   "stem": "cup_1",
+   "stem_rank": 0,
+   "tip_ratio": 0.824
+  }
+ },
+ "deposit_coin": {
+  "reason": "no free, non-tipping, non-rolling object on the table",
+  "rejected": {
+   "coin0": "touches ['material_0122/material_0122_0_6', 'vertical_coin_stand/vertical_coin_stand_0_2']"
+  },
+  "source": "runs/settle/deposit_coin.json",
+  "target": null
+ },
+ "fasten_screws": {
+  "n_candidates": 3,
+  "rejected": {},
+  "runner_up": {
+   "approximations": [
+    "convexHull",
+    "sdf"
+   ],
+   "colliders": 7,
+   "com_height_m": 0.0096,
+   "dir_world_xy": [
+    0.0,
+    1.0
+   ],
+   "extents_m": [
+    0.0353,
+    0.0407,
+    0.0191
+   ],
+   "inst": "factory_nut_1_2",
+   "label": "nut1",
+   "labelled": true,
+   "local_axis": 1,
+   "mass_kg": 0.03,
+   "model": "Rigid/factory_nut/00001",
+   "n_table_contacts": 30,
+   "prim": "/World/envs/env_0/rigid/factory_nut/factory_nut_1_2",
+   "stem": "factory_nut_1",
+   "stem_rank": 0,
+   "tip_ratio": 2.125
+  },
+  "source": "runs_slurm/settle/fasten_screws.json",
+  "target": {
+   "approximations": [
+    "convexHull",
+    "sdf"
+   ],
+   "colliders": 7,
+   "com_height_m": 0.0096,
+   "dir_world_xy": [
+    0.0,
+    1.0
+   ],
+   "extents_m": [
+    0.0353,
+    0.0407,
+    0.0191
+   ],
+   "inst": "factory_nut_2_1",
+   "label": "nut0",
+   "labelled": true,
+   "local_axis": 1,
+   "mass_kg": 0.03,
+   "model": "Rigid/factory_nut/00002",
+   "n_table_contacts": 30,
+   "prim": "/World/envs/env_0/rigid/factory_nut/factory_nut_2_1",
+   "stem": "factory_nut_2",
+   "stem_rank": 0,
+   "tip_ratio": 2.125
+  }
+ },
+ "fill_egg_holder": {
+  "reason": "no free, non-tipping, non-rolling object on the table",
+  "rejected": {
+   "target0": "touches ['egg_basket/egg_basket_0_5']",
+   "target1": "touches ['egg_basket/egg_basket_0_5']",
+   "target2": "touches ['egg_basket/egg_basket_0_5']",
+   "target3": "touches ['egg_basket/egg_basket_0_5']"
+  },
+  "source": "runs/settle/fill_egg_holder.json",
+  "target": null
+ },
+ "fill_pen_holder": {
+  "n_candidates": 5,
+  "rejected": {},
+  "runner_up": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.01,
+   "dir_world_xy": [
+    -0.998859,
+    -0.047754
+   ],
+   "extents_m": [
+    0.1851,
+    0.0186,
+    0.0213
+   ],
+   "inst": "pen_4_1",
+   "label": "target0",
+   "labelled": true,
+   "local_axis": 0,
+   "mass_kg": 0.03,
+   "model": "Rigid/pen/00004",
+   "n_table_contacts": 81,
+   "prim": "/World/envs/env_0/rigid/pen/pen_4_1",
+   "stem": "pen_4",
+   "stem_rank": 0,
+   "tip_ratio": 9.231
+  },
+  "source": "runs/settle/fill_pen_holder.json",
+  "target": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0056,
+   "dir_world_xy": [
+    0.126908,
+    0.991914
+   ],
+   "extents_m": [
+    0.0138,
+    0.0128,
+    0.145
+   ],
+   "inst": "pen_1_2",
+   "label": "target1",
+   "labelled": true,
+   "local_axis": 2,
+   "mass_kg": 0.008,
+   "model": "Rigid/pen/00001",
+   "n_table_contacts": 100,
+   "prim": "/World/envs/env_0/rigid/pen/pen_1_2",
+   "stem": "pen_1",
+   "stem_rank": 0,
+   "tip_ratio": 12.951
+  }
+ },
+ "fold_clothes": {
+  "reason": "no free, non-tipping, non-rolling object on the table",
+  "rejected": {},
+  "source": "runs_slurm/settle/fold_clothes.json",
+  "target": null
+ },
+ "fold_clothes_random": {
+  "n_candidates": 19,
+  "rejected": {},
+  "runner_up": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.009,
+   "dir_world_xy": [
+    0.01358,
+    0.999908
+   ],
+   "extents_m": [
+    0.07,
+    0.1667,
+    0.0178
+   ],
+   "inst": "power_bank_0_14",
+   "label": "power_bank_0_14",
+   "labelled": false,
+   "local_axis": 1,
+   "mass_kg": 0.22,
+   "model": "Clutter/power_bank/00000",
+   "n_table_contacts": 131,
+   "prim": "/World/envs/env_0/rigid/power_bank/power_bank_0_14",
+   "stem": "power_bank_0",
+   "stem_rank": 0,
+   "tip_ratio": 9.274
+  },
+  "source": "runs_slurm/settle/fold_clothes_random.json",
+  "target": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0036,
+   "dir_world_xy": [
+    0.880262,
+    0.474487
+   ],
+   "extents_m": [
+    0.0758,
+    0.0742,
+    0.0089
+   ],
+   "inst": "audio_2_16",
+   "label": "audio_2_16",
+   "labelled": false,
+   "local_axis": 0,
+   "mass_kg": 0.5,
+   "model": "Clutter/audio/00002",
+   "n_table_contacts": 156,
+   "prim": "/World/envs/env_0/rigid/audio/audio_2_16",
+   "stem": "audio_2",
+   "stem_rank": 0,
+   "tip_ratio": 10.565
+  }
+ },
+ "general_pickup": {
+  "n_candidates": 9,
+  "rejected": {},
+  "runner_up": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0055,
+   "dir_world_xy": [
+    -0.15097,
+    -0.988538
+   ],
+   "extents_m": [
+    0.0795,
+    0.0142,
+    0.2315
+   ],
+   "inst": "scissor_0_1",
+   "label": "target",
+   "labelled": true,
+   "local_axis": 2,
+   "mass_kg": 0.05,
+   "model": "Rigid/scissor/00000",
+   "n_table_contacts": 111,
+   "prim": "/World/envs/env_0/rigid/scissor/scissor_0_1",
+   "stem": "scissor_0",
+   "stem_rank": 0,
+   "tip_ratio": 20.971
+  },
+  "source": "runs/settle/general_pickup.json",
+  "target": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0076,
+   "dir_world_xy": [
+    -0.039852,
+    0.999206
+   ],
+   "extents_m": [
+    0.067,
+    0.2135,
+    0.0189
+   ],
+   "inst": "cutter_0_4",
+   "label": "cutter_0_4",
+   "labelled": false,
+   "local_axis": 1,
+   "mass_kg": 0.5,
+   "model": "Clutter/cutter/00000",
+   "n_table_contacts": 161,
+   "prim": "/World/envs/env_0/rigid/cutter/cutter_0_4",
+   "stem": "cutter_0",
+   "stem_rank": 0,
+   "tip_ratio": 13.964
+  }
+ },
+ "hang_mugs": {
+  "n_candidates": 3,
+  "rejected": {},
+  "runner_up": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0233,
+   "dir_world_xy": [
+    -0.221075,
+    0.975257
+   ],
+   "extents_m": [
+    0.115,
+    0.0722,
+    0.0686
+   ],
+   "inst": "mug_7_3",
+   "label": "mug2",
+   "labelled": true,
+   "local_axis": 0,
+   "mass_kg": 0.25,
+   "model": "Rigid/mug/00007",
+   "n_table_contacts": 65,
+   "prim": "/World/envs/env_0/rigid/mug/mug_7_3",
+   "stem": "mug_7",
+   "stem_rank": 0,
+   "tip_ratio": 2.473
+  },
+  "source": "runs/settle/hang_mugs.json",
+  "target": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0303,
+   "dir_world_xy": [
+    -0.475408,
+    0.879765
+   ],
+   "extents_m": [
+    0.0985,
+    0.0748,
+    0.0686
+   ],
+   "inst": "mug_5_2",
+   "label": "mug1",
+   "labelled": true,
+   "local_axis": 0,
+   "mass_kg": 0.25,
+   "model": "Rigid/mug/00005",
+   "n_table_contacts": 100,
+   "prim": "/World/envs/env_0/rigid/mug/mug_5_2",
+   "stem": "mug_5",
+   "stem_rank": 0,
+   "tip_ratio": 1.623
+  }
+ },
+ "hang_mugs_random": {
+  "n_candidates": 21,
+  "rejected": {
+   "garage_2_7": "would tip (half-length/COM height 0.58 < 0.6)",
+   "sculpture_0_21": "would tip (half-length/COM height 0.52 < 0.6)"
+  },
+  "runner_up": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0045,
+   "dir_world_xy": [
+    0.957815,
+    0.287386
+   ],
+   "extents_m": [
+    0.075,
+    0.0092,
+    0.075
+   ],
+   "inst": "coin_0_22",
+   "label": "coin_0_22",
+   "labelled": false,
+   "local_axis": 0,
+   "mass_kg": 0.005,
+   "model": "Clutter/coin/00000",
+   "n_table_contacts": 155,
+   "prim": "/World/envs/env_0/rigid/coin/coin_0_22",
+   "stem": "coin_0",
+   "stem_rank": 0,
+   "tip_ratio": 8.362
+  },
+  "source": "runs/settle/hang_mugs_random.json",
+  "target": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0036,
+   "dir_world_xy": [
+    0.994452,
+    0.105194
+   ],
+   "extents_m": [
+    0.0758,
+    0.0742,
+    0.0089
+   ],
+   "inst": "audio_2_14",
+   "label": "audio_2_14",
+   "labelled": false,
+   "local_axis": 0,
+   "mass_kg": 0.5,
+   "model": "Clutter/audio/00002",
+   "n_table_contacts": 156,
+   "prim": "/World/envs/env_0/rigid/audio/audio_2_14",
+   "stem": "audio_2",
+   "stem_rank": 0,
+   "tip_ratio": 10.606
+  }
+ },
+ "imitate_sorting_sequence": {
+  "n_candidates": 10,
+  "rejected": {},
+  "runner_up": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0107,
+   "dir_world_xy": [
+    0.147172,
+    -0.989111
+   ],
+   "extents_m": [
+    0.0482,
+    0.0224,
+    0.1147
+   ],
+   "inst": "phone_0_7",
+   "label": "t3",
+   "labelled": true,
+   "local_axis": 2,
+   "mass_kg": 0.5,
+   "model": "Rigid/phone/00000",
+   "n_table_contacts": 93,
+   "prim": "/World/envs/env_0/rigid/phone/phone_0_7",
+   "stem": "phone_0",
+   "stem_rank": 0,
+   "tip_ratio": 5.365
+  },
+  "source": "runs/settle/imitate_sorting_sequence.json",
+  "target": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0107,
+   "dir_world_xy": [
+    0.787132,
+    0.616785
+   ],
+   "extents_m": [
+    0.0482,
+    0.0224,
+    0.1147
+   ],
+   "inst": "phone_0_8",
+   "label": "aim3",
+   "labelled": true,
+   "local_axis": 2,
+   "mass_kg": 0.5,
+   "model": "Rigid/phone/00000",
+   "n_table_contacts": 93,
+   "prim": "/World/envs/env_0/rigid/phone/phone_0_8",
+   "stem": "phone_0",
+   "stem_rank": 1,
+   "tip_ratio": 5.369
+  }
+ },
+ "insert_key": {
+  "n_candidates": 1,
+  "rejected": {},
+  "runner_up": null,
+  "source": "runs/settle/insert_key.json",
+  "target": {
+   "approximations": [
+    "None",
+    "convexHull",
+    "sdf"
+   ],
+   "colliders": 5,
+   "com_height_m": 0.0049,
+   "dir_world_xy": [
+    -0.103287,
+    -0.994652
+   ],
+   "extents_m": [
+    0.0227,
+    0.01,
+    0.0628
+   ],
+   "inst": "key_0_1",
+   "label": "key",
+   "labelled": true,
+   "local_axis": 2,
+   "mass_kg": 0.2,
+   "model": "Rigid/key/00000",
+   "n_table_contacts": 20,
+   "prim": "/World/envs/env_0/rigid/key/key_0_1",
+   "stem": "key_0",
+   "stem_rank": 0,
+   "tip_ratio": 6.381
+  }
+ },
+ "insert_tubes": {
+  "n_candidates": 3,
+  "rejected": {},
+  "runner_up": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0156,
+   "dir_world_xy": [
+    0.329012,
+    0.944326
+   ],
+   "extents_m": [
+    0.0351,
+    0.117,
+    0.0351
+   ],
+   "inst": "test_tube_2_2",
+   "label": "tube1",
+   "labelled": true,
+   "local_axis": 1,
+   "mass_kg": 0.06,
+   "model": "Rigid/test_tube/00002",
+   "n_table_contacts": 18,
+   "prim": "/World/envs/env_0/rigid/test_tube/test_tube_2_2",
+   "stem": "test_tube_2",
+   "stem_rank": 1,
+   "tip_ratio": 3.761
+  },
+  "source": "runs/settle/insert_tubes.json",
+  "target": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0156,
+   "dir_world_xy": [
+    -0.552069,
+    0.833798
+   ],
+   "extents_m": [
+    0.0351,
+    0.117,
+    0.0351
+   ],
+   "inst": "test_tube_2_1",
+   "label": "tube0",
+   "labelled": true,
+   "local_axis": 1,
+   "mass_kg": 0.06,
+   "model": "Rigid/test_tube/00002",
+   "n_table_contacts": 18,
+   "prim": "/World/envs/env_0/rigid/test_tube/test_tube_2_1",
+   "stem": "test_tube_2",
+   "stem_rank": 0,
+   "tip_ratio": 3.761
+  }
+ },
+ "make_kong": {
+  "n_candidates": 18,
+  "rejected": {
+   "mahjong9_0": "touches ['mahjong/mahjong_40_15']",
+   "other0": "touches ['mahjong/mahjong_20_22', 'material_0122/material_0122_0_25']",
+   "other1": "touches ['mahjong/mahjong_24_17', 'material_0122/material_0122_0_25']",
+   "other2": "touches ['mahjong/mahjong_9_16']"
+  },
+  "runner_up": {
+   "approximations": [
+    "convexHull"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0325,
+   "dir_world_xy": [
+    1.0,
+    0.0
+   ],
+   "extents_m": [
+    0.0449,
+    0.0647,
+    0.0328
+   ],
+   "inst": "mahjong_35_2",
+   "label": "mahjong0_1",
+   "labelled": true,
+   "local_axis": 0,
+   "mass_kg": 0.05,
+   "model": "Rigid/mahjong/00035",
+   "n_table_contacts": 4,
+   "prim": "/World/envs/env_0/rigid/mahjong/mahjong_35_2",
+   "stem": "mahjong_35",
+   "stem_rank": 1,
+   "tip_ratio": 0.691
+  },
+  "source": "runs/settle/make_kong.json",
+  "target": {
+   "approximations": [
+    "convexHull"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0325,
+   "dir_world_xy": [
+    1.0,
+    0.0
+   ],
+   "extents_m": [
+    0.0449,
+    0.0647,
+    0.0328
+   ],
+   "inst": "mahjong_35_1",
+   "label": "mahjong0_0",
+   "labelled": true,
+   "local_axis": 0,
+   "mass_kg": 0.05,
+   "model": "Rigid/mahjong/00035",
+   "n_table_contacts": 4,
+   "prim": "/World/envs/env_0/rigid/mahjong/mahjong_35_1",
+   "stem": "mahjong_35",
+   "stem_rank": 0,
+   "tip_ratio": 0.691
+  }
+ },
+ "make_toast": {
+  "reason": "no free, non-tipping, non-rolling object on the table",
+  "rejected": {
+   "bread_0": "touches ['bread_shelf/bread_shelf_0_5']",
+   "bread_1": "touches ['bread_shelf/bread_shelf_0_5']",
+   "bread_2": "touches ['bread_shelf/bread_shelf_0_5']",
+   "bread_3": "touches ['bread_shelf/bread_shelf_0_5']"
+  },
+  "source": "runs/settle/make_toast.json",
+  "target": null
+ },
+ "make_toast_random": {
+  "n_candidates": 7,
+  "rejected": {
+   "bread_0": "touches ['bread_shelf/bread_shelf_0_13']",
+   "bread_1": "touches ['bread_shelf/bread_shelf_0_13']",
+   "bread_2": "touches ['bread_shelf/bread_shelf_0_13']",
+   "bread_3": "touches ['bread_shelf/bread_shelf_0_13']",
+   "sculpture_2_12": "would tip (half-length/COM height 0.47 < 0.6)"
+  },
+  "runner_up": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0391,
+   "dir_world_xy": [
+    0.936255,
+    0.351322
+   ],
+   "extents_m": [
+    0.0966,
+    0.0757,
+    0.1142
+   ],
+   "inst": "box_3_9",
+   "label": "box_3_9",
+   "labelled": false,
+   "local_axis": 0,
+   "mass_kg": 0.5,
+   "model": "Clutter/box/00003",
+   "n_table_contacts": 83,
+   "prim": "/World/envs/env_0/rigid/box/box_3_9",
+   "stem": "box_3",
+   "stem_rank": 0,
+   "tip_ratio": 1.237
+  },
+  "source": "runs/settle/make_toast_random.json",
+  "target": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0186,
+   "dir_world_xy": [
+    0.995851,
+    -0.091004
+   ],
+   "extents_m": [
+    0.2531,
+    0.1054,
+    0.0414
+   ],
+   "inst": "graphics_card_1_11",
+   "label": "graphics_card_1_11",
+   "labelled": false,
+   "local_axis": 0,
+   "mass_kg": 0.5,
+   "model": "Clutter/graphics_card/00001",
+   "n_table_contacts": 101,
+   "prim": "/World/envs/env_0/rigid/graphics_card/graphics_card_1_11",
+   "stem": "graphics_card_1",
+   "stem_rank": 0,
+   "tip_ratio": 6.816
+  }
+ },
+ "match_and_pick_from_conveyor": {
+  "reason": "no free, non-tipping, non-rolling object on the table",
+  "rejected": {
+   "other0": "touches ['ConveyorTrack/Belt']",
+   "other1": "touches ['ConveyorTrack/Belt']",
+   "other2": "touches ['ConveyorTrack/Belt']",
+   "target0": "touches ['ConveyorTrack/Belt']",
+   "target1": "touches ['ConveyorTrack/Belt']"
+  },
+  "source": "runs/settle/match_and_pick_from_conveyor.json",
+  "target": null
+ },
+ "organize_table": {
+  "n_candidates": 4,
+  "rejected": {},
+  "runner_up": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0383,
+   "dir_world_xy": [
+    1.0,
+    -0.0
+   ],
+   "extents_m": [
+    0.08,
+    0.05,
+    0.08
+   ],
+   "inst": "alarm_0_2",
+   "label": "alarm",
+   "labelled": true,
+   "local_axis": 0,
+   "mass_kg": 0.35,
+   "model": "Rigid/alarm/00000",
+   "n_table_contacts": 54,
+   "prim": "/World/envs/env_0/rigid/alarm/alarm_0_2",
+   "stem": "alarm_0",
+   "stem_rank": 0,
+   "tip_ratio": 1.045
+  },
+  "source": "runs/settle/organize_table.json",
+  "target": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0154,
+   "dir_world_xy": [
+    -0.005168,
+    -0.999987
+   ],
+   "extents_m": [
+    0.1117,
+    0.0734,
+    0.0366
+   ],
+   "inst": "mouse_4_1",
+   "label": "mouse",
+   "labelled": true,
+   "local_axis": 0,
+   "mass_kg": 0.09,
+   "model": "Rigid/mouse/00004",
+   "n_table_contacts": 84,
+   "prim": "/World/envs/env_0/rigid/mouse/mouse_4_1",
+   "stem": "mouse_4",
+   "stem_rank": 0,
+   "tip_ratio": 3.635
+  }
+ },
+ "pack_objects_into_box": {
+  "n_candidates": 5,
+  "rejected": {},
+  "runner_up": {
+   "approximations": [
+    "convexDecomposition",
+    "convexHull"
+   ],
+   "colliders": 5,
+   "com_height_m": 0.0546,
+   "dir_world_xy": [
+    -0.99995,
+    -0.009998
+   ],
+   "extents_m": [
+    0.17,
+    0.2913,
+    0.1818
+   ],
+   "inst": "box_0_5",
+   "label": "box",
+   "labelled": true,
+   "local_axis": 1,
+   "mass_kg": 0.2,
+   "model": "Rigid/box/00000",
+   "n_table_contacts": 74,
+   "prim": "/World/envs/env_0/rigid/box/box_0_5",
+   "stem": "box_0",
+   "stem_rank": 0,
+   "tip_ratio": 2.668
+  },
+  "source": "runs/settle/pack_objects_into_box.json",
+  "target": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0066,
+   "dir_world_xy": [
+    -0.994594,
+    0.103837
+   ],
+   "extents_m": [
+    0.1431,
+    0.0581,
+    0.015
+   ],
+   "inst": "hammer_3_3",
+   "label": "hammer",
+   "labelled": true,
+   "local_axis": 0,
+   "mass_kg": 0.05,
+   "model": "Rigid/hammer/00003",
+   "n_table_contacts": 111,
+   "prim": "/World/envs/env_0/rigid/hammer/hammer_3_3",
+   "stem": "hammer_3",
+   "stem_rank": 0,
+   "tip_ratio": 10.836
+  }
+ },
+ "pack_objects_into_box_random": {
+  "n_candidates": 5,
+  "rejected": {},
+  "runner_up": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0257,
+   "dir_world_xy": [
+    -0.834641,
+    -0.550794
+   ],
+   "extents_m": [
+    0.184,
+    0.07,
+    0.076
+   ],
+   "inst": "shoe_15_4",
+   "label": "shoe",
+   "labelled": true,
+   "local_axis": 0,
+   "mass_kg": 0.35,
+   "model": "Rigid/shoe/00015",
+   "n_table_contacts": 63,
+   "prim": "/World/envs/env_0/rigid/shoe/shoe_15_4",
+   "stem": "shoe_15",
+   "stem_rank": 0,
+   "tip_ratio": 3.578
+  },
+  "source": "runs/settle/pack_objects_into_box_random.json",
+  "target": {
+   "approximations": [
+    "convexDecomposition",
+    "convexHull"
+   ],
+   "colliders": 5,
+   "com_height_m": 0.0546,
+   "dir_world_xy": [
+    -0.95699,
+    -0.290122
+   ],
+   "extents_m": [
+    0.17,
+    0.2913,
+    0.1818
+   ],
+   "inst": "box_0_5",
+   "label": "box",
+   "labelled": true,
+   "local_axis": 1,
+   "mass_kg": 0.2,
+   "model": "Rigid/box/00000",
+   "n_table_contacts": 74,
+   "prim": "/World/envs/env_0/rigid/box/box_0_5",
+   "stem": "box_0",
+   "stem_rank": 0,
+   "tip_ratio": 2.668
+  }
+ },
+ "pick_from_conveyor_by_image": {
+  "reason": "no free, non-tipping, non-rolling object on the table",
+  "rejected": {
+   "basket": "touches ['ConveyorTrack/Belt']",
+   "object1": "touches ['ConveyorTrack/Belt']",
+   "object2": "touches ['ConveyorTrack/Belt']",
+   "object3": "touches ['ConveyorTrack/Belt']",
+   "target": "touches ['ConveyorTrack/Belt']"
+  },
+  "source": "runs/settle/pick_from_conveyor_by_image.json",
+  "target": null
+ },
+ "play_Xylophone": {
+  "reason": "no free, non-tipping, non-rolling object on the table",
+  "rejected": {
+   "mallet": "touches ['mallet_stand/mallet_stand_0_1', 'material_0122/material_0122_0_6']",
+   "mallet_stand": "touches ['mallet/mallet_0_2', 'material_0122/material_0122_0_6']"
+  },
+  "source": "runs/settle/play_Xylophone.json",
+  "target": null
+ },
+ "play_stacking_toy": {
+  "n_candidates": 10,
+  "rejected": {},
+  "runner_up": {
+   "approximations": [
+    "sdf"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0065,
+   "dir_world_xy": [
+    0.956665,
+    0.291192
+   ],
+   "extents_m": [
+    0.0587,
+    0.0559,
+    0.0129
+   ],
+   "inst": "stackingblocks_0_2",
+   "label": "block1",
+   "labelled": true,
+   "local_axis": 0,
+   "mass_kg": 0.05,
+   "model": "Rigid/stackingblocks/00000",
+   "n_table_contacts": 6,
+   "prim": "/World/envs/env_0/rigid/stackingblocks/stackingblocks_0_2",
+   "stem": "stackingblocks_0",
+   "stem_rank": 1,
+   "tip_ratio": 4.539
+  },
+  "source": "runs/settle/play_stacking_toy.json",
+  "target": {
+   "approximations": [
+    "sdf"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0065,
+   "dir_world_xy": [
+    0.733942,
+    -0.679212
+   ],
+   "extents_m": [
+    0.0587,
+    0.0559,
+    0.0129
+   ],
+   "inst": "stackingblocks_0_1",
+   "label": "block0",
+   "labelled": true,
+   "local_axis": 0,
+   "mass_kg": 0.05,
+   "model": "Rigid/stackingblocks/00000",
+   "n_table_contacts": 6,
+   "prim": "/World/envs/env_0/rigid/stackingblocks/stackingblocks_0_1",
+   "stem": "stackingblocks_0",
+   "stem_rank": 0,
+   "tip_ratio": 4.539
+  }
+ },
+ "play_tic_tac_toe": {
+  "n_candidates": 9,
+  "rejected": {},
+  "runner_up": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.005,
+   "dir_world_xy": [
+    1.0,
+    0.0
+   ],
+   "extents_m": [
+    0.05,
+    0.05,
+    0.01
+   ],
+   "inst": "chessman_1_7",
+   "label": "opponent_piece1",
+   "labelled": true,
+   "local_axis": 0,
+   "mass_kg": 0.1,
+   "model": "Rigid/chessman/00001",
+   "n_table_contacts": 191,
+   "prim": "/World/envs/env_0/rigid/chessman/chessman_1_7",
+   "stem": "chessman_1",
+   "stem_rank": 1,
+   "tip_ratio": 4.996
+  },
+  "source": "runs/settle/play_tic_tac_toe.json",
+  "target": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.005,
+   "dir_world_xy": [
+    1.0,
+    0.0
+   ],
+   "extents_m": [
+    0.05,
+    0.05,
+    0.01
+   ],
+   "inst": "chessman_1_6",
+   "label": "opponent_piece0",
+   "labelled": true,
+   "local_axis": 0,
+   "mass_kg": 0.1,
+   "model": "Rigid/chessman/00001",
+   "n_table_contacts": 191,
+   "prim": "/World/envs/env_0/rigid/chessman/chessman_1_6",
+   "stem": "chessman_1",
+   "stem_rank": 0,
+   "tip_ratio": 4.996
+  }
+ },
+ "plug_in_charger": {
+  "n_candidates": 2,
+  "rejected": {},
+  "runner_up": {
+   "approximations": [
+    "sdf"
+   ],
+   "colliders": 3,
+   "com_height_m": 0.0098,
+   "dir_world_xy": [
+    0.938294,
+    -0.345839
+   ],
+   "extents_m": [
+    0.1572,
+    0.0363,
+    0.0208
+   ],
+   "inst": "socket_0_2",
+   "label": "socket",
+   "labelled": true,
+   "local_axis": 0,
+   "mass_kg": 0.05,
+   "model": "Rigid/socket/00000",
+   "n_table_contacts": 6,
+   "prim": "/World/envs/env_0/rigid/socket/socket_0_2",
+   "stem": "socket_0",
+   "stem_rank": 0,
+   "tip_ratio": 8.027
+  },
+  "source": "runs/settle/plug_in_charger.json",
+  "target": {
+   "approximations": [
+    "sdf"
+   ],
+   "colliders": 5,
+   "com_height_m": 0.0135,
+   "dir_world_xy": [
+    0.0782,
+    0.996938
+   ],
+   "extents_m": [
+    0.042,
+    0.0631,
+    0.027
+   ],
+   "inst": "charger_0_1",
+   "label": "charger",
+   "labelled": true,
+   "local_axis": 1,
+   "mass_kg": 0.03,
+   "model": "Rigid/charger/00000",
+   "n_table_contacts": 6,
+   "prim": "/World/envs/env_0/rigid/charger/charger_0_1",
+   "stem": "charger_0",
+   "stem_rank": 0,
+   "tip_ratio": 2.337
+  }
+ },
+ "pour_balls_into_vase": {
+  "reason": "no free, non-tipping, non-rolling object on the table",
+  "rejected": {
+   "cup": "touches ['material_0122/material_0122_0_12', 'sphere/sphere_0_2', 'sphere/sphere_0_3', 'sphere/sphere_0_4', 'sphere/sphere_0_5', 'sphere/sphere_0_6', 'sphere/sphere_0_7', 'sphere/sphere_0_8']",
+   "sphere_0": "touches ['cup/cup_6_1', 'sphere/sphere_0_4', 'sphere/sphere_0_7', 'sphere/sphere_0_8']",
+   "sphere_1": "touches ['cup/cup_6_1', 'sphere/sphere_0_7', 'sphere/sphere_0_8']",
+   "sphere_2": "touches ['cup/cup_6_1', 'sphere/sphere_0_2', 'sphere/sphere_0_5', 'sphere/sphere_0_8']",
+   "sphere_3": "touches ['cup/cup_6_1', 'sphere/sphere_0_4', 'sphere/sphere_0_6', 'sphere/sphere_0_8']",
+   "sphere_4": "touches ['cup/cup_6_1', 'sphere/sphere_0_5']",
+   "sphere_5": "touches ['cup/cup_6_1', 'sphere/sphere_0_2', 'sphere/sphere_0_3']",
+   "sphere_6": "touches ['cup/cup_6_1', 'sphere/sphere_0_2', 'sphere/sphere_0_3', 'sphere/sphere_0_4', 'sphere/sphere_0_5']"
+  },
+  "source": "runs/settle/pour_balls_into_vase.json",
+  "target": null
+ },
+ "pour_by_language": {
+  "n_candidates": 3,
+  "rejected": {
+   "bottle_0": "would tip (half-length/COM height 0.53 < 0.6)",
+   "bottle_1": "would tip (half-length/COM height 0.53 < 0.6)",
+   "bottle_2": "would tip (half-length/COM height 0.53 < 0.6)"
+  },
+  "runner_up": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0155,
+   "dir_world_xy": [
+    0.999998,
+    0.001796
+   ],
+   "extents_m": [
+    0.11,
+    0.11,
+    0.04
+   ],
+   "inst": "wine_bowl_1_5",
+   "label": "bowl_1",
+   "labelled": true,
+   "local_axis": 0,
+   "mass_kg": 0.22,
+   "model": "Rigid/wine_bowl/00001",
+   "n_table_contacts": 49,
+   "prim": "/World/envs/env_0/rigid/wine_bowl/wine_bowl_1_5",
+   "stem": "wine_bowl_1",
+   "stem_rank": 0,
+   "tip_ratio": 3.539
+  },
+  "source": "runs_slurm/settle/pour_by_language.json",
+  "target": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0191,
+   "dir_world_xy": [
+    0.999997,
+    -0.0024
+   ],
+   "extents_m": [
+    0.11,
+    0.11,
+    0.04
+   ],
+   "inst": "wine_bowl_0_4",
+   "label": "bowl_0",
+   "labelled": true,
+   "local_axis": 0,
+   "mass_kg": 0.25,
+   "model": "Rigid/wine_bowl/00000",
+   "n_table_contacts": 49,
+   "prim": "/World/envs/env_0/rigid/wine_bowl/wine_bowl_0_4",
+   "stem": "wine_bowl_0",
+   "stem_rank": 0,
+   "tip_ratio": 2.873
+  }
+ },
+ "pour_liquid_into_cup": {
+  "n_candidates": 1,
+  "rejected": {
+   "bottle": "would tip (half-length/COM height 0.53 < 0.6)"
+  },
+  "runner_up": null,
+  "source": "runs_slurm/settle/pour_liquid_into_cup.json",
+  "target": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0248,
+   "dir_world_xy": [
+    1.0,
+    -0.0
+   ],
+   "extents_m": [
+    0.1026,
+    0.0688,
+    0.0762
+   ],
+   "inst": "mug_16_2",
+   "label": "cup",
+   "labelled": true,
+   "local_axis": 0,
+   "mass_kg": 0.5,
+   "model": "Rigid/mug/00016",
+   "n_table_contacts": 61,
+   "prim": "/World/envs/env_0/rigid/mug/mug_16_2",
+   "stem": "mug_16",
+   "stem_rank": 0,
+   "tip_ratio": 2.069
+  }
+ },
+ "pour_liquid_into_cup_random": {
+  "n_candidates": 10,
+  "rejected": {
+   "bottle": "would tip (half-length/COM height 0.53 < 0.6)"
+  },
+  "runner_up": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0541,
+   "dir_world_xy": [
+    0.070782,
+    -0.997492
+   ],
+   "extents_m": [
+    0.0977,
+    0.1524,
+    0.0977
+   ],
+   "inst": "phone_stand_1_7",
+   "label": "phone_stand_1_7",
+   "labelled": false,
+   "local_axis": 2,
+   "mass_kg": 0.5,
+   "model": "Clutter/phone_stand/00001",
+   "n_table_contacts": 68,
+   "prim": "/World/envs/env_0/rigid/phone_stand/phone_stand_1_7",
+   "stem": "phone_stand_1",
+   "stem_rank": 0,
+   "tip_ratio": 0.903
+  },
+  "source": "runs_slurm/settle/pour_liquid_into_cup_random.json",
+  "target": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.1087,
+   "dir_world_xy": [
+    0.996321,
+    -0.085701
+   ],
+   "extents_m": [
+    0.1412,
+    0.1029,
+    0.2171
+   ],
+   "inst": "cereal_0_10",
+   "label": "cereal_0_10",
+   "labelled": false,
+   "local_axis": 0,
+   "mass_kg": 0.5,
+   "model": "Clutter/cereal/00000",
+   "n_table_contacts": 101,
+   "prim": "/World/envs/env_0/rigid/cereal/cereal_0_10",
+   "stem": "cereal_0",
+   "stem_rank": 0,
+   "tip_ratio": 0.65
+  }
+ },
+ "press_by_number": {
+  "reason": "no free, non-tipping, non-rolling object on the table",
+  "rejected": {},
+  "source": "runs/settle/press_by_number.json",
+  "target": null
+ },
+ "push_T": {
+  "n_candidates": 1,
+  "rejected": {},
+  "runner_up": null,
+  "source": "runs/settle/push_T.json",
+  "target": {
+   "approximations": [
+    "None"
+   ],
+   "colliders": 3,
+   "com_height_m": 0.0075,
+   "dir_world_xy": [
+    0.957904,
+    0.28709
+   ],
+   "extents_m": [
+    0.08,
+    0.06,
+    0.015
+   ],
+   "inst": "t_0_1",
+   "label": "t",
+   "labelled": true,
+   "local_axis": 0,
+   "mass_kg": 0.35,
+   "model": "Rigid/t/00000",
+   "n_table_contacts": 8,
+   "prim": "/World/envs/env_0/rigid/t/t_0_1",
+   "stem": "t_0",
+   "stem_rank": 0,
+   "tip_ratio": 5.333
+  }
+ },
+ "push_T_random": {
+  "n_candidates": 15,
+  "rejected": {},
+  "runner_up": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0076,
+   "dir_world_xy": [
+    -0.488779,
+    0.872408
+   ],
+   "extents_m": [
+    0.067,
+    0.2135,
+    0.0189
+   ],
+   "inst": "cutter_0_13",
+   "label": "cutter_0_13",
+   "labelled": false,
+   "local_axis": 1,
+   "mass_kg": 0.5,
+   "model": "Clutter/cutter/00000",
+   "n_table_contacts": 161,
+   "prim": "/World/envs/env_0/rigid/cutter/cutter_0_13",
+   "stem": "cutter_0",
+   "stem_rank": 0,
+   "tip_ratio": 13.963
+  },
+  "source": "runs/settle/push_T_random.json",
+  "target": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0013,
+   "dir_world_xy": [
+    0.900551,
+    0.434751
+   ],
+   "extents_m": [
+    0.0528,
+    0.0528,
+    0.0028
+   ],
+   "inst": "coin_1_15",
+   "label": "coin_1_15",
+   "labelled": false,
+   "local_axis": 0,
+   "mass_kg": 0.5,
+   "model": "Clutter/coin/00001",
+   "n_table_contacts": 246,
+   "prim": "/World/envs/env_0/rigid/coin/coin_1_15",
+   "stem": "coin_1",
+   "stem_rank": 0,
+   "tip_ratio": 20.58
+  }
+ },
+ "put_bottles_into_dustbin": {
+  "n_candidates": 1,
+  "rejected": {
+   "bottle0": "would tip (half-length/COM height 0.31 < 0.6)",
+   "bottle1": "would tip (half-length/COM height 0.29 < 0.6)",
+   "bottle3": "would tip (half-length/COM height 0.34 < 0.6)"
+  },
+  "runner_up": null,
+  "source": "runs/settle/put_bottles_into_dustbin.json",
+  "target": {
+   "approximations": [
+    "convexHull"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0312,
+   "dir_world_xy": [
+    0.980066,
+    -0.198671
+   ],
+   "extents_m": [
+    0.064,
+    0.064,
+    0.204
+   ],
+   "inst": "bottle_25_3",
+   "label": "bottle2",
+   "labelled": true,
+   "local_axis": 2,
+   "mass_kg": 0.15,
+   "model": "Rigid/bottle/00025",
+   "n_table_contacts": 3,
+   "prim": "/World/envs/env_0/rigid/bottle/bottle_25_3",
+   "stem": "bottle_25",
+   "stem_rank": 0,
+   "tip_ratio": 3.27
+  }
+ },
+ "solve_equation": {
+  "n_candidates": 14,
+  "rejected": {
+   "t0": "touches ['cube_cushion/cube_cushion_1_19']",
+   "t2": "touches ['cube_cushion/cube_cushion_1_21']",
+   "t3": "touches ['cube_cushion/cube_cushion_1_22']",
+   "t4": "touches ['cube_cushion/cube_cushion_1_23']"
+  },
+  "runner_up": {
+   "approximations": [
+    "sdf"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0075,
+   "dir_world_xy": [
+    0.265174,
+    0.9642
+   ],
+   "extents_m": [
+    0.0218,
+    0.0497,
+    0.0151
+   ],
+   "inst": "number_1_2",
+   "label": "num_1",
+   "labelled": true,
+   "local_axis": 1,
+   "mass_kg": 0.1,
+   "model": "Rigid/number/00001",
+   "n_table_contacts": 6,
+   "prim": "/World/envs/env_0/rigid/number/number_1_2",
+   "stem": "number_1",
+   "stem_rank": 0,
+   "tip_ratio": 3.3
+  },
+  "source": "runs/settle/solve_equation.json",
+  "target": {
+   "approximations": [
+    "sdf"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0078,
+   "dir_world_xy": [
+    -0.135685,
+    0.990752
+   ],
+   "extents_m": [
+    0.0338,
+    0.0493,
+    0.0157
+   ],
+   "inst": "number_5_1",
+   "label": "num_0",
+   "labelled": true,
+   "local_axis": 1,
+   "mass_kg": 0.1,
+   "model": "Rigid/number/00005",
+   "n_table_contacts": 6,
+   "prim": "/World/envs/env_0/rigid/number/number_5_1",
+   "stem": "number_5",
+   "stem_rank": 0,
+   "tip_ratio": 3.149
+  }
+ },
+ "sort_nesting_dolls_by_size": {
+  "n_candidates": 5,
+  "rejected": {},
+  "runner_up": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0211,
+   "dir_world_xy": [
+    -0.0002,
+    1.0
+   ],
+   "extents_m": [
+    0.0368,
+    0.0478,
+    0.0501
+   ],
+   "inst": "matryoshka_dolls_14_1",
+   "label": "doll0",
+   "labelled": true,
+   "local_axis": 1,
+   "mass_kg": 0.05,
+   "model": "Rigid/matryoshka_dolls/00014",
+   "n_table_contacts": 45,
+   "prim": "/World/envs/env_0/rigid/matryoshka_dolls/matryoshka_dolls_14_1",
+   "stem": "matryoshka_dolls_14",
+   "stem_rank": 0,
+   "tip_ratio": 1.134
+  },
+  "source": "runs/settle/sort_nesting_dolls_by_size.json",
+  "target": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0466,
+   "dir_world_xy": [
+    1e-06,
+    1.0
+   ],
+   "extents_m": [
+    0.0811,
+    0.1052,
+    0.1103
+   ],
+   "inst": "matryoshka_dolls_11_3",
+   "label": "doll2",
+   "labelled": true,
+   "local_axis": 1,
+   "mass_kg": 0.05,
+   "model": "Rigid/matryoshka_dolls/00011",
+   "n_table_contacts": 47,
+   "prim": "/World/envs/env_0/rigid/matryoshka_dolls/matryoshka_dolls_11_3",
+   "stem": "matryoshka_dolls_11",
+   "stem_rank": 0,
+   "tip_ratio": 1.129
+  }
+ },
+ "sort_nesting_dolls_by_size_random": {
+  "n_candidates": 21,
+  "rejected": {
+   "sculpture_2_8": "would tip (half-length/COM height 0.47 < 0.6)"
+  },
+  "runner_up": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0029,
+   "dir_world_xy": [
+    0.36211,
+    0.932135
+   ],
+   "extents_m": [
+    0.0967,
+    0.2199,
+    0.0095
+   ],
+   "inst": "racket_3_10",
+   "label": "racket_3_10",
+   "labelled": false,
+   "local_axis": 1,
+   "mass_kg": 0.5,
+   "model": "Clutter/racket/00003",
+   "n_table_contacts": 103,
+   "prim": "/World/envs/env_0/rigid/racket/racket_3_10",
+   "stem": "racket_3",
+   "stem_rank": 0,
+   "tip_ratio": 37.304
+  },
+  "source": "runs/settle/sort_nesting_dolls_by_size_random.json",
+  "target": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.005,
+   "dir_world_xy": [
+    0.943206,
+    -0.332208
+   ],
+   "extents_m": [
+    0.0403,
+    0.0103,
+    0.0914
+   ],
+   "inst": "key_0_9",
+   "label": "key_0_9",
+   "labelled": false,
+   "local_axis": 2,
+   "mass_kg": 0.2,
+   "model": "Clutter/key/00000",
+   "n_table_contacts": 155,
+   "prim": "/World/envs/env_0/rigid/key/key_0_9",
+   "stem": "key_0",
+   "stem_rank": 0,
+   "tip_ratio": 9.068
+  }
+ },
+ "stack_blocks": {
+  "n_candidates": 3,
+  "rejected": {},
+  "runner_up": {
+   "approximations": [
+    "boundingCube"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0175,
+   "dir_world_xy": [
+    1.0,
+    0.0
+   ],
+   "extents_m": [
+    0.035,
+    0.035,
+    0.035
+   ],
+   "inst": "block_18_2",
+   "label": "block_1",
+   "labelled": true,
+   "local_axis": 0,
+   "mass_kg": 0.25,
+   "model": "Rigid/block/00018",
+   "n_table_contacts": 4,
+   "prim": "/World/envs/env_0/rigid/block/block_18_2",
+   "stem": "block_18",
+   "stem_rank": 0,
+   "tip_ratio": 1.0
+  },
+  "source": "runs/settle/stack_blocks.json",
+  "target": {
+   "approximations": [
+    "boundingCube"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0175,
+   "dir_world_xy": [
+    1.0,
+    0.0
+   ],
+   "extents_m": [
+    0.035,
+    0.035,
+    0.035
+   ],
+   "inst": "block_9_1",
+   "label": "block_0",
+   "labelled": true,
+   "local_axis": 0,
+   "mass_kg": 0.25,
+   "model": "Rigid/block/00009",
+   "n_table_contacts": 4,
+   "prim": "/World/envs/env_0/rigid/block/block_9_1",
+   "stem": "block_9",
+   "stem_rank": 0,
+   "tip_ratio": 1.0
+  }
+ },
+ "stack_blocks_by_language": {
+  "n_candidates": 3,
+  "rejected": {},
+  "runner_up": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 2,
+   "com_height_m": 0.0175,
+   "dir_world_xy": [
+    0.956594,
+    0.291425
+   ],
+   "extents_m": [
+    0.035,
+    0.035,
+    0.035
+   ],
+   "inst": "cube_7_2",
+   "label": "block_1",
+   "labelled": true,
+   "local_axis": 0,
+   "mass_kg": 0.1,
+   "model": "Rigid/cube/00007",
+   "n_table_contacts": 8,
+   "prim": "/World/envs/env_0/rigid/cube/cube_7_2",
+   "stem": "cube_7",
+   "stem_rank": 0,
+   "tip_ratio": 1.0
+  },
+  "source": "runs/settle/stack_blocks_by_language.json",
+  "target": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 2,
+   "com_height_m": 0.0175,
+   "dir_world_xy": [
+    0.911556,
+    -0.411175
+   ],
+   "extents_m": [
+    0.035,
+    0.035,
+    0.035
+   ],
+   "inst": "cube_1_1",
+   "label": "block_0",
+   "labelled": true,
+   "local_axis": 0,
+   "mass_kg": 0.1,
+   "model": "Rigid/cube/00001",
+   "n_table_contacts": 8,
+   "prim": "/World/envs/env_0/rigid/cube/cube_1_1",
+   "stem": "cube_1",
+   "stem_rank": 0,
+   "tip_ratio": 1.0
+  }
+ },
+ "stack_blocks_random": {
+  "n_candidates": 20,
+  "rejected": {
+   "book_shelf_0_12": "would tip (half-length/COM height 0.54 < 0.6)",
+   "bottle_0_19": "would tip (half-length/COM height 0.45 < 0.6)"
+  },
+  "runner_up": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.005,
+   "dir_world_xy": [
+    0.832016,
+    -0.554751
+   ],
+   "extents_m": [
+    0.0403,
+    0.0103,
+    0.0914
+   ],
+   "inst": "key_0_22",
+   "label": "key_0_22",
+   "labelled": false,
+   "local_axis": 2,
+   "mass_kg": 0.2,
+   "model": "Clutter/key/00000",
+   "n_table_contacts": 155,
+   "prim": "/World/envs/env_0/rigid/key/key_0_22",
+   "stem": "key_0",
+   "stem_rank": 0,
+   "tip_ratio": 9.092
+  },
+  "source": "runs/settle/stack_blocks_random.json",
+  "target": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0027,
+   "dir_world_xy": [
+    0.992802,
+    -0.119764
+   ],
+   "extents_m": [
+    0.1768,
+    0.1172,
+    0.0508
+   ],
+   "inst": "office_mail_1_14",
+   "label": "office_mail_1_14",
+   "labelled": false,
+   "local_axis": 0,
+   "mass_kg": 0.5,
+   "model": "Clutter/office_mail/00001",
+   "n_table_contacts": 180,
+   "prim": "/World/envs/env_0/rigid/office_mail/office_mail_1_14",
+   "stem": "office_mail_1",
+   "stem_rank": 0,
+   "tip_ratio": 32.945
+  }
+ },
+ "stack_bowls": {
+  "n_candidates": 3,
+  "rejected": {},
+  "runner_up": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0203,
+   "dir_world_xy": [
+    1.0,
+    0.0
+   ],
+   "extents_m": [
+    0.12,
+    0.12,
+    0.05
+   ],
+   "inst": "bowl_10_2",
+   "label": "bowl1",
+   "labelled": true,
+   "local_axis": 0,
+   "mass_kg": 0.22,
+   "model": "Rigid/bowl/00010",
+   "n_table_contacts": 41,
+   "prim": "/World/envs/env_0/rigid/bowl/bowl_10_2",
+   "stem": "bowl_10",
+   "stem_rank": 1,
+   "tip_ratio": 2.952
+  },
+  "source": "runs/settle/stack_bowls.json",
+  "target": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0203,
+   "dir_world_xy": [
+    1.0,
+    -2e-05
+   ],
+   "extents_m": [
+    0.12,
+    0.12,
+    0.05
+   ],
+   "inst": "bowl_10_1",
+   "label": "bowl0",
+   "labelled": true,
+   "local_axis": 0,
+   "mass_kg": 0.22,
+   "model": "Rigid/bowl/00010",
+   "n_table_contacts": 41,
+   "prim": "/World/envs/env_0/rigid/bowl/bowl_10_1",
+   "stem": "bowl_10",
+   "stem_rank": 0,
+   "tip_ratio": 2.952
+  }
+ },
+ "stack_bowls_random": {
+  "n_candidates": 19,
+  "rejected": {
+   "book_shelf_0_14": "would tip (half-length/COM height 0.54 < 0.6)",
+   "sculpture_0_12": "would tip (half-length/COM height 0.52 < 0.6)"
+  },
+  "runner_up": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0075,
+   "dir_world_xy": [
+    0.066676,
+    0.997775
+   ],
+   "extents_m": [
+    0.0206,
+    0.0143,
+    0.0422
+   ],
+   "inst": "eraser_0_21",
+   "label": "eraser_0_21",
+   "labelled": false,
+   "local_axis": 2,
+   "mass_kg": 0.5,
+   "model": "Clutter/eraser/00000",
+   "n_table_contacts": 95,
+   "prim": "/World/envs/env_0/rigid/eraser/eraser_0_21",
+   "stem": "eraser_0",
+   "stem_rank": 0,
+   "tip_ratio": 2.825
+  },
+  "source": "runs/settle/stack_bowls_random.json",
+  "target": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.005,
+   "dir_world_xy": [
+    0.740826,
+    -0.671697
+   ],
+   "extents_m": [
+    0.0403,
+    0.0103,
+    0.0914
+   ],
+   "inst": "key_0_19",
+   "label": "key_0_19",
+   "labelled": false,
+   "local_axis": 2,
+   "mass_kg": 0.2,
+   "model": "Clutter/key/00000",
+   "n_table_contacts": 155,
+   "prim": "/World/envs/env_0/rigid/key/key_0_19",
+   "stem": "key_0",
+   "stem_rank": 0,
+   "tip_ratio": 9.092
+  }
+ },
+ "store_laptop_and_headphones": {
+  "n_candidates": 1,
+  "rejected": {},
+  "runner_up": null,
+  "source": "runs/settle/store_laptop_and_headphones.json",
+  "target": {
+   "approximations": [
+    "convexDecomposition",
+    "convexHull"
+   ],
+   "colliders": 3,
+   "com_height_m": 0.0417,
+   "dir_world_xy": [
+    0.086328,
+    0.996267
+   ],
+   "extents_m": [
+    0.1843,
+    0.0936,
+    0.198
+   ],
+   "inst": "headset_6_1",
+   "label": "headset",
+   "labelled": true,
+   "local_axis": 2,
+   "mass_kg": 0.25,
+   "model": "Rigid/headset/00006",
+   "n_table_contacts": 23,
+   "prim": "/World/envs/env_0/rigid/headset/headset_6_1",
+   "stem": "headset_6",
+   "stem_rank": 0,
+   "tip_ratio": 2.377
+  }
+ },
+ "store_laptop_and_headphones_random": {
+  "n_candidates": 9,
+  "rejected": {},
+  "runner_up": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0541,
+   "dir_world_xy": [
+    -0.00499,
+    -0.999988
+   ],
+   "extents_m": [
+    0.0977,
+    0.1524,
+    0.0977
+   ],
+   "inst": "phone_stand_1_5",
+   "label": "phone_stand_1_5",
+   "labelled": false,
+   "local_axis": 2,
+   "mass_kg": 0.5,
+   "model": "Clutter/phone_stand/00001",
+   "n_table_contacts": 68,
+   "prim": "/World/envs/env_0/rigid/phone_stand/phone_stand_1_5",
+   "stem": "phone_stand_1",
+   "stem_rank": 0,
+   "tip_ratio": 0.903
+  },
+  "source": "runs/settle/store_laptop_and_headphones_random.json",
+  "target": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.1087,
+   "dir_world_xy": [
+    0.887179,
+    -0.461425
+   ],
+   "extents_m": [
+    0.1412,
+    0.1029,
+    0.2171
+   ],
+   "inst": "cereal_0_8",
+   "label": "cereal_0_8",
+   "labelled": false,
+   "local_axis": 0,
+   "mass_kg": 0.5,
+   "model": "Clutter/cereal/00000",
+   "n_table_contacts": 101,
+   "prim": "/World/envs/env_0/rigid/cereal/cereal_0_8",
+   "stem": "cereal_0",
+   "stem_rank": 0,
+   "tip_ratio": 0.65
+  }
+ },
+ "store_tools_in_toolbox": {
+  "n_candidates": 4,
+  "rejected": {},
+  "runner_up": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0156,
+   "dir_world_xy": [
+    0.000537,
+    -1.0
+   ],
+   "extents_m": [
+    0.0615,
+    0.0307,
+    0.061
+   ],
+   "inst": "tape_measure_0_3",
+   "label": "tape_measure",
+   "labelled": true,
+   "local_axis": 0,
+   "mass_kg": 0.5,
+   "model": "Rigid/tape_measure/00000",
+   "n_table_contacts": 82,
+   "prim": "/World/envs/env_0/rigid/tape_measure/tape_measure_0_3",
+   "stem": "tape_measure_0",
+   "stem_rank": 0,
+   "tip_ratio": 1.97
+  },
+  "source": "runs/settle/store_tools_in_toolbox.json",
+  "target": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0073,
+   "dir_world_xy": [
+    0.012814,
+    -0.999918
+   ],
+   "extents_m": [
+    0.1668,
+    0.0164,
+    0.0411
+   ],
+   "inst": "wrench_0_4",
+   "label": "wrench",
+   "labelled": true,
+   "local_axis": 0,
+   "mass_kg": 0.35,
+   "model": "Rigid/wrench/00000",
+   "n_table_contacts": 88,
+   "prim": "/World/envs/env_0/rigid/wrench/wrench_0_4",
+   "stem": "wrench_0",
+   "stem_rank": 0,
+   "tip_ratio": 11.388
+  }
+ },
+ "swap_T": {
+  "n_candidates": 2,
+  "rejected": {},
+  "runner_up": {
+   "approximations": [
+    "None"
+   ],
+   "colliders": 3,
+   "com_height_m": 0.0075,
+   "dir_world_xy": [
+    0.641127,
+    -0.767435
+   ],
+   "extents_m": [
+    0.08,
+    0.06,
+    0.015
+   ],
+   "inst": "t_1_2",
+   "label": "t1",
+   "labelled": true,
+   "local_axis": 0,
+   "mass_kg": 0.1,
+   "model": "Rigid/t/00001",
+   "n_table_contacts": 8,
+   "prim": "/World/envs/env_0/rigid/t/t_1_2",
+   "stem": "t_1",
+   "stem_rank": 0,
+   "tip_ratio": 5.333
+  },
+  "source": "runs/settle/swap_T.json",
+  "target": {
+   "approximations": [
+    "None"
+   ],
+   "colliders": 3,
+   "com_height_m": 0.0075,
+   "dir_world_xy": [
+    -0.998883,
+    -0.047247
+   ],
+   "extents_m": [
+    0.08,
+    0.06,
+    0.015
+   ],
+   "inst": "t_0_1",
+   "label": "t0",
+   "labelled": true,
+   "local_axis": 0,
+   "mass_kg": 0.1,
+   "model": "Rigid/t/00000",
+   "n_table_contacts": 8,
+   "prim": "/World/envs/env_0/rigid/t/t_0_1",
+   "stem": "t_0",
+   "stem_rank": 0,
+   "tip_ratio": 5.333
+  }
+ },
+ "swap_blocks": {
+  "reason": "no free, non-tipping, non-rolling object on the table",
+  "rejected": {
+   "target0": "touches ['cube_cushion/cube_cushion_1_3']",
+   "target1": "touches ['cube_cushion/cube_cushion_1_5']"
+  },
+  "source": "runs/settle/swap_blocks.json",
+  "target": null
+ },
+ "sweep_blocks": {
+  "n_candidates": 5,
+  "rejected": {},
+  "runner_up": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0142,
+   "dir_world_xy": [
+    0.778069,
+    0.628179
+   ],
+   "extents_m": [
+    0.0374,
+    0.0828,
+    0.25
+   ],
+   "inst": "broom_0_2",
+   "label": "broom",
+   "labelled": true,
+   "local_axis": 2,
+   "mass_kg": 0.04,
+   "model": "Rigid/broom/00000",
+   "n_table_contacts": 34,
+   "prim": "/World/envs/env_0/rigid/broom/broom_0_2",
+   "stem": "broom_0",
+   "stem_rank": 0,
+   "tip_ratio": 8.801
+  },
+  "source": "runs/settle/sweep_blocks.json",
+  "target": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0141,
+   "dir_world_xy": [
+    -0.910438,
+    -0.413646
+   ],
+   "extents_m": [
+    0.184,
+    0.28,
+    0.048
+   ],
+   "inst": "broom_shovel_0_1",
+   "label": "broom_shovel",
+   "labelled": true,
+   "local_axis": 1,
+   "mass_kg": 0.15,
+   "model": "Rigid/broom_shovel/00000",
+   "n_table_contacts": 107,
+   "prim": "/World/envs/env_0/rigid/broom_shovel/broom_shovel_0_1",
+   "stem": "broom_shovel_0",
+   "stem_rank": 0,
+   "tip_ratio": 9.929
+  }
+ },
+ "sweep_blocks_random": {
+  "n_candidates": 7,
+  "rejected": {},
+  "runner_up": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0156,
+   "dir_world_xy": [
+    0.779711,
+    0.62614
+   ],
+   "extents_m": [
+    0.0401,
+    0.0401,
+    0.0366
+   ],
+   "inst": "brick_2_5",
+   "label": "target_2_0",
+   "labelled": true,
+   "local_axis": 0,
+   "mass_kg": 0.015,
+   "model": "Rigid/brick/00002",
+   "n_table_contacts": 48,
+   "prim": "/World/envs/env_0/rigid/brick/brick_2_5",
+   "stem": "brick_2",
+   "stem_rank": 0,
+   "tip_ratio": 1.286
+  },
+  "source": "runs/settle/sweep_blocks_random.json",
+  "target": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "colliders": 1,
+   "com_height_m": 0.0141,
+   "dir_world_xy": [
+    -0.900731,
+    -0.434378
+   ],
+   "extents_m": [
+    0.184,
+    0.28,
+    0.048
+   ],
+   "inst": "broom_shovel_0_1",
+   "label": "broom_shovel",
+   "labelled": true,
+   "local_axis": 1,
+   "mass_kg": 0.15,
+   "model": "Rigid/broom_shovel/00000",
+   "n_table_contacts": 107,
+   "prim": "/World/envs/env_0/rigid/broom_shovel/broom_shovel_0_1",
+   "stem": "broom_shovel_0",
+   "stem_rank": 0,
+   "tip_ratio": 9.929
+  }
+ }
+}

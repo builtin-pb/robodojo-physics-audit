@@ -1,0 +1,180 @@
+{
+  "task": "organize_table",
+  "layout": 0,
+  "seed": 0,
+  "policy": "hold",
+  "v1_eval_result_identical_to_main": true,
+  "v1_end_poses_exact_equal_to_main": true,
+  "max_end_pos_diff_branch_v1_vs_main_m": 0.0,
+  "max_end_pos_diff_branch_v2_vs_main_m": 0.0,
+  "v2_stillness_rule_recorded": "previous_action_snapshot",
+  "runs": {
+    "f130_main_v1": {
+      "versions": {
+        "repo_head": "d4e0ec0fc0e69e2ac07c91b7e9f8061cba03fd45",
+        "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "isaaclab": "afca7b09d60d8beb9c1cb28b43066499940b969b",
+        "container": "isaac-sim_5.1.0.sif",
+        "isaac_sim": [
+          "5.1.0",
+          "rc.19",
+          "5"
+        ]
+      },
+      "evaluator": "v1",
+      "layout": 0,
+      "seed": 0,
+      "actions": 1000,
+      "steps_per_action": [
+        10
+      ],
+      "wall_seconds_episode": 92.7,
+      "eval_result": {
+        "success_rate": 0.0,
+        "eval_time": 1,
+        "score": 0.0,
+        "details": {
+          "0": {
+            "layout_id": 0,
+            "success": false,
+            "score": 0.0
+          }
+        }
+      },
+      "poses_after_reset": null,
+      "poses_at_end": null
+    },
+    "f130_wt130_v1": {
+      "versions": {
+        "repo_head": "ab59d299e6c55a70d6a1dcf68087706132cfc2c8",
+        "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "isaaclab": "afca7b09d60d8beb9c1cb28b43066499940b969b",
+        "container": "isaac-sim_5.1.0.sif",
+        "isaac_sim": [
+          "5.1.0",
+          "rc.19",
+          "5"
+        ]
+      },
+      "evaluator": "v1",
+      "layout": 0,
+      "seed": 0,
+      "actions": 1000,
+      "steps_per_action": [
+        10
+      ],
+      "wall_seconds_episode": 77.1,
+      "eval_result": {
+        "success_rate": 0.0,
+        "eval_time": 1,
+        "score": 0.0,
+        "details": {
+          "0": {
+            "layout_id": 0,
+            "success": false,
+            "score": 0.0
+          }
+        }
+      },
+      "poses_after_reset": null,
+      "poses_at_end": null
+    },
+    "f130_wt130_v2": {
+      "versions": {
+        "repo_head": "ab59d299e6c55a70d6a1dcf68087706132cfc2c8",
+        "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "isaaclab": "afca7b09d60d8beb9c1cb28b43066499940b969b",
+        "container": "isaac-sim_5.1.0.sif",
+        "isaac_sim": [
+          "5.1.0",
+          "rc.19",
+          "5"
+        ]
+      },
+      "evaluator": "v2",
+      "layout": 0,
+      "seed": 0,
+      "actions": 1000,
+      "steps_per_action": [
+        10
+      ],
+      "wall_seconds_episode": 62.4,
+      "eval_result": {
+        "evaluator_version": "evaluator v2",
+        "stillness_rule": "previous_action_snapshot",
+        "task_name": "organize_table",
+        "config_name": "arx_x5",
+        "policy_name": "harness",
+        "seed": 0,
+        "native_eval_num": 50,
+        "scheduled_count": 1,
+        "scheduled_layout_ids": [
+          0
+        ],
+        "unresolved_layout_ids": [],
+        "resolved_count": 1,
+        "complete": true,
+        "valid": true,
+        "eval_time": 1,
+        "success_rate": 0.0,
+        "score": 0.0,
+        "category_counts": {
+          "success": 0,
+          "failure": 0,
+          "timeout": 1,
+          "policy_error": 0,
+          "simulator_break": 0,
+          "evaluator_error": 0,
+          "unstable_layout": 0,
+          "excluded": 0
+        },
+        "drops": {
+          "total": 0,
+          "policy_error": 0,
+          "simulator_break": 0,
+          "evaluator_error": 0,
+          "unstable_layout": 0,
+          "excluded": 0
+        },
+        "aggregation": {
+          "evaluator_version": "evaluator v2",
+          "denominator_rule": "all_scheduled",
+          "excluded_categories": [],
+          "scheduled_count": 1,
+          "resolved_count": 1,
+          "denominator": 1,
+          "complete": true,
+          "valid": true,
+          "success_count": 0,
+          "success_rate": 0.0,
+          "success_rate_pct": 0.0,
+          "score": 0.0
+        },
+        "ledger": [
+          {
+            "layout_id": 0,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.0,
+            "steps": 1000,
+            "reason": "step_lim_reached (1000/1000)"
+          }
+        ],
+        "details": {
+          "0": {
+            "layout_id": 0,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.0,
+            "steps": 1000,
+            "reason": "step_lim_reached (1000/1000)"
+          }
+        }
+      },
+      "poses_after_reset": null,
+      "poses_at_end": null
+    }
+  }
+}

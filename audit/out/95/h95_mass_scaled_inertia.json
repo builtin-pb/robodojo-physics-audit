@@ -1,0 +1,6 @@
+[
+  {"cell_name": "f_00000_m0p03_scaledI_dt4_it16_stab_on", "layout": 5, "overrides": {"dt_s": 0.004, "pos_iters": 16, "enable_stabilization": true, "mass_kg": 0.03, "scale_inertia": true, "target_label": "bottle3", "fast_settle": false}},
+  {"cell_name": "f_00000_m0p03_scaledI_dt4_it16_stab_off", "layout": 5, "overrides": {"dt_s": 0.004, "pos_iters": 16, "enable_stabilization": false, "mass_kg": 0.03, "scale_inertia": true, "target_label": "bottle3", "fast_settle": false}},
+  {"cell_name": "f_00000_m1p50_scaledI_dt4_it16_stab_on", "layout": 5, "overrides": {"dt_s": 0.004, "pos_iters": 16, "enable_stabilization": true, "mass_kg": 1.5, "scale_inertia": true, "target_label": "bottle3", "fast_settle": false}},
+  {"cell_name": "f_00000_m1p50_scaledI_dt4_it16_stab_off", "layout": 5, "overrides": {"dt_s": 0.004, "pos_iters": 16, "enable_stabilization": false, "mass_kg": 1.5, "scale_inertia": true, "target_label": "bottle3", "fast_settle": false}}
+]

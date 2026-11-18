@@ -1,0 +1,281 @@
+{
+  "schema": "v3",
+  "schema_version": "pr1-sentinel-test-only",
+  "description": "Tiny sentinel test table for #62 PR 1 plumbing verification ONLY. Contains NO real-world bottle or benchmark physics values (those belong to PR 2 / #63). Every class carries a distinct non-default sentinel (mu_s, mu_d, restitution) with mu_s > mu_d and average combine so engine readback and contact reports unambiguously distinguish authored values from PhysX's 0.5/0.5 default and RoboDojo's 0.6/1.5, 0.8/0.8, 1.0/1.0, and 0/0/0.5 defaults.",
+  "status_vocabulary": ["sourced", "estimated", "unsourced", "test_only"],
+  "scenarios": {
+    "default": {
+      "finger_pad": "sentinel_pad",
+      "table": "sentinel_table",
+      "fill": "empty"
+    }
+  },
+  "reviewed_tasks": {
+    "put_bottles_into_dustbin": "pr1-sentinel-test",
+    "cover_blocks": "pr1-sentinel-test",
+    "swap_T": "pr1-sentinel-test"
+  },
+  "classes": {
+    "sentinel_rigid": {
+      "density_kg_m3": {"value": 1200.0, "range": [100.0, 25000.0], "unit": "kg/m^3", "status": "test_only"},
+      "unary_material": {
+        "static_friction": 0.333,
+        "dynamic_friction": 0.222,
+        "restitution": 0.05,
+        "friction_combine_mode": "average",
+        "restitution_combine_mode": "average",
+        "status": "test_only"
+      }
+    },
+    "sentinel_geometry": {
+      "unary_material": {
+        "static_friction": 0.444,
+        "dynamic_friction": 0.333,
+        "restitution": 0.04,
+        "friction_combine_mode": "average",
+        "restitution_combine_mode": "average",
+        "status": "test_only"
+      }
+    },
+    "sentinel_table": {
+      "unary_material": {
+        "static_friction": 0.555,
+        "dynamic_friction": 0.444,
+        "restitution": 0.03,
+        "friction_combine_mode": "average",
+        "restitution_combine_mode": "average",
+        "status": "test_only"
+      }
+    },
+    "sentinel_ground": {
+      "unary_material": {
+        "static_friction": 0.2,
+        "dynamic_friction": 0.14,
+        "restitution": 0.02,
+        "friction_combine_mode": "average",
+        "restitution_combine_mode": "average",
+        "status": "test_only"
+      }
+    },
+    "sentinel_pad": {
+      "unary_material": {
+        "static_friction": 0.777,
+        "dynamic_friction": 0.666,
+        "restitution": 0.01,
+        "friction_combine_mode": "average",
+        "restitution_combine_mode": "average",
+        "status": "test_only"
+      }
+    },
+    "sentinel_arm": {
+      "unary_material": {
+        "static_friction": 0.314,
+        "dynamic_friction": 0.214,
+        "restitution": 0.09,
+        "friction_combine_mode": "average",
+        "restitution_combine_mode": "average",
+        "status": "test_only"
+      }
+    },
+    "sentinel_articulation": {
+      "unary_material": {
+        "static_friction": 0.888,
+        "dynamic_friction": 0.777,
+        "restitution": 0.06,
+        "friction_combine_mode": "average",
+        "restitution_combine_mode": "average",
+        "status": "test_only"
+      }
+    },
+    "sentinel_dynamic": {
+      "unary_material": {
+        "static_friction": 0.999,
+        "dynamic_friction": 0.888,
+        "restitution": 0.07,
+        "friction_combine_mode": "average",
+        "restitution_combine_mode": "average",
+        "status": "test_only"
+      }
+    },
+    "sentinel_room": {
+      "unary_material": {
+        "static_friction": 0.246,
+        "dynamic_friction": 0.135,
+        "restitution": 0.08,
+        "friction_combine_mode": "average",
+        "restitution_combine_mode": "average",
+        "status": "test_only"
+      }
+    }
+  },
+  "pairs": {
+    "sentinel_rigid__sentinel_rigid": {
+      "a": "sentinel_rigid",
+      "b": "sentinel_rigid",
+      "mu_static": {"value": 0.333, "range": [0.2, 0.5], "status": "test_only"},
+      "mu_kinetic": {"value": 0.222, "range": [0.1, 0.4], "status": "test_only"}
+    },
+    "sentinel_geometry__sentinel_rigid": {
+      "a": "sentinel_geometry",
+      "b": "sentinel_rigid",
+      "mu_static": {"value": 0.3885, "range": [0.25, 0.55], "status": "test_only"},
+      "mu_kinetic": {"value": 0.2775, "range": [0.15, 0.45], "status": "test_only"}
+    },
+    "sentinel_rigid__sentinel_table": {
+      "a": "sentinel_rigid",
+      "b": "sentinel_table",
+      "mu_static": {"value": 0.444, "range": [0.3, 0.6], "status": "test_only"},
+      "mu_kinetic": {"value": 0.333, "range": [0.2, 0.5], "status": "test_only"}
+    },
+    "sentinel_ground__sentinel_rigid": {
+      "a": "sentinel_ground",
+      "b": "sentinel_rigid",
+      "mu_static": {"value": 0.2665, "range": [0.15, 0.4], "status": "test_only"},
+      "mu_kinetic": {"value": 0.181, "range": [0.1, 0.3], "status": "test_only"}
+    },
+    "sentinel_arm__sentinel_rigid": {
+      "a": "sentinel_arm",
+      "b": "sentinel_rigid",
+      "mu_static": {"value": 0.3235, "range": [0.2, 0.5], "status": "test_only"},
+      "mu_kinetic": {"value": 0.218, "range": [0.1, 0.4], "status": "test_only"}
+    },
+    "sentinel_pad__sentinel_rigid": {
+      "a": "sentinel_pad",
+      "b": "sentinel_rigid",
+      "mu_static": {"value": 0.555, "range": [0.4, 0.7], "status": "test_only"},
+      "mu_kinetic": {"value": 0.444, "range": [0.3, 0.6], "status": "test_only"}
+    },
+    "sentinel_articulation__sentinel_rigid": {
+      "a": "sentinel_articulation",
+      "b": "sentinel_rigid",
+      "mu_static": {"value": 0.6105, "range": [0.45, 0.75], "status": "test_only"},
+      "mu_kinetic": {"value": 0.4995, "range": [0.35, 0.65], "status": "test_only"}
+    },
+    "sentinel_dynamic__sentinel_rigid": {
+      "a": "sentinel_dynamic",
+      "b": "sentinel_rigid",
+      "mu_static": {"value": 0.666, "range": [0.5, 0.8], "status": "test_only"},
+      "mu_kinetic": {"value": 0.555, "range": [0.4, 0.7], "status": "test_only"}
+    },
+    "sentinel_rigid__sentinel_room": {
+      "a": "sentinel_rigid",
+      "b": "sentinel_room",
+      "mu_static": {"value": 0.2895, "range": [0.15, 0.45], "status": "test_only"},
+      "mu_kinetic": {"value": 0.1785, "range": [0.05, 0.35], "status": "test_only"}
+    }
+  },
+  "assets": {
+    "Rigid/bottle/00022": {
+      "material_class": "sentinel_rigid",
+      "flags": ["hollow_contents_dependent"],
+      "size_m": {"value": [0.07, 0.07, 0.24], "unit": "m", "status": "test_only"},
+      "mass_kg": {"value": 0.623, "range": [0.5, 0.8], "unit": "kg", "status": "test_only"}
+    },
+    "Rigid/bottle/00025": {
+      "material_class": "sentinel_rigid",
+      "flags": ["hollow_contents_dependent"],
+      "size_m": {"value": [0.064, 0.064, 0.204], "unit": "m", "status": "test_only"},
+      "mass_kg": {"value": 0.151, "range": [0.1, 0.2], "unit": "kg", "status": "test_only"}
+    },
+    "Rigid/bottle/00041": {
+      "material_class": "sentinel_rigid",
+      "flags": ["hollow_contents_dependent"],
+      "size_m": {"value": [0.053, 0.053, 0.185], "unit": "m", "status": "test_only"},
+      "mass_kg": {"value": 0.152, "range": [0.1, 0.2], "unit": "kg", "status": "test_only"}
+    },
+    "Rigid/bottle/00060": {
+      "material_class": "sentinel_rigid",
+      "flags": ["hollow_contents_dependent"],
+      "size_m": {"value": [0.055, 0.055, 0.19], "unit": "m", "status": "test_only"},
+      "mass_kg": {"value": 0.153, "range": [0.1, 0.2], "unit": "kg", "status": "test_only"}
+    },
+    "Rigid/cube/00004": {
+      "material_class": "sentinel_rigid",
+      "size_m": {"value": [0.025, 0.025, 0.025], "unit": "m", "status": "test_only"},
+      "mass_kg": {"value": 0.02, "range": [0.01, 0.05], "unit": "kg", "status": "test_only"}
+    },
+    "Rigid/cube/00005": {
+      "material_class": "sentinel_rigid",
+      "size_m": {"value": [0.025, 0.025, 0.025], "unit": "m", "status": "test_only"},
+      "mass_kg": {"value": 0.02, "range": [0.01, 0.05], "unit": "kg", "status": "test_only"}
+    },
+    "Rigid/cube/00006": {
+      "material_class": "sentinel_rigid",
+      "size_m": {"value": [0.025, 0.025, 0.025], "unit": "m", "status": "test_only"},
+      "mass_kg": {"value": 0.02, "range": [0.01, 0.05], "unit": "kg", "status": "test_only"}
+    },
+    "Rigid/cup/00001": {
+      "material_class": "sentinel_rigid",
+      "flags": ["hollow_contents_dependent"],
+      "size_m": {"value": [0.072, 0.072, 0.072], "unit": "m", "status": "test_only"},
+      "mass_kg": {"value": 0.111, "range": [0.05, 0.2], "unit": "kg", "status": "test_only"}
+    },
+    "Rigid/t/00000": {
+      "material_class": "sentinel_rigid",
+      "size_m": {"value": [0.08, 0.06, 0.015], "unit": "m", "status": "test_only"},
+      "mass_kg": {"value": 0.085, "range": [0.05, 0.15], "unit": "kg", "status": "test_only"}
+    },
+    "Rigid/t/00001": {
+      "material_class": "sentinel_rigid",
+      "size_m": {"value": [0.08, 0.06, 0.015], "unit": "m", "status": "test_only"},
+      "mass_kg": {"value": 0.085, "range": [0.05, 0.15], "unit": "kg", "status": "test_only"}
+    },
+    "Geometry/dustbin/00000": {
+      "material_class": "sentinel_geometry",
+      "size_m": {"value": [0.47, 0.47, 0.65], "unit": "m", "status": "test_only"}
+    },
+    "Geometry/camera_stand/00000": {
+      "material_class": "sentinel_geometry",
+      "size_m": {"value": [0.3, 0.5875, 0.1097], "unit": "m", "status": "test_only"}
+    },
+    "Scene/Table": {
+      "type": "static",
+      "material_class": "sentinel_table",
+      "collision": {"enabled": true, "approximation": "none", "status": "test_only"}
+    },
+    "Scene/Ground": {
+      "type": "static",
+      "material_class": "sentinel_ground"
+    },
+    "Scene/Room": {
+      "type": "static",
+      "material_class": "sentinel_room"
+    },
+    "Articulation/sentinel_hinge/00000": {
+      "material_class": "sentinel_articulation",
+      "fixed_base": {"value": true, "status": "test_only"},
+      "reset_drive": {"value": false, "status": "test_only"},
+      "link_masses_kg": {
+        "base_link": {"value": 0.321, "range": [0.2, 0.5], "unit": "kg", "status": "test_only"},
+        "lid_link": {"value": 0.123, "range": [0.05, 0.3], "unit": "kg", "status": "test_only"}
+      },
+      "joint_drives": {
+        "hinge_joint": {"stiffness": 50.0, "damping": 5.0, "max_force": 25.0, "drive_type": "angular", "status": "test_only"}
+      }
+    },
+    "Dynamic/sentinel_belt/00000": {
+      "material_class": "sentinel_dynamic",
+      "size_m": {"value": [0.3, 0.2, 0.04], "unit": "m", "status": "test_only"},
+      "belt_velocity_m_s": {"value": [0.15, 0.0, 0.0], "unit": "m/s", "status": "test_only"}
+    }
+  },
+  "robots": {
+    "x5": {
+      "pad_material_class": "sentinel_pad",
+      "non_pad_link_material_classes": {
+        "base_link": {"value": "sentinel_arm", "status": "test_only"},
+        "link1": {"value": "sentinel_arm", "status": "test_only"},
+        "link2": {"value": "sentinel_arm", "status": "test_only"},
+        "link3": {"value": "sentinel_arm", "status": "test_only"},
+        "link4": {"value": "sentinel_arm", "status": "test_only"},
+        "link5": {"value": "sentinel_arm", "status": "test_only"},
+        "link6": {"value": "sentinel_arm", "status": "test_only"},
+        "camera_base": {"value": "sentinel_arm", "status": "test_only"},
+        "camera": {"value": "sentinel_arm", "status": "test_only"}
+      },
+      "pad_torsional_radius_m": {"value": 0.005, "unit": "m", "status": "test_only"},
+      "pad_min_torsional_radius_m": {"value": 0.002, "unit": "m", "status": "test_only"},
+      "sanitize_camera_inertials": {"value": true, "status": "test_only"}
+    }
+  }
+}

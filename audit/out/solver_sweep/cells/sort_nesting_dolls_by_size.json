@@ -1,0 +1,91 @@
+[
+ {
+  "cell_name": "sort_nesting_dolls_by_size__shipped",
+  "layout": 0,
+  "overrides": {
+   "slide_target": {
+    "label": "doll2",
+    "inst": "matryoshka_dolls_11_3",
+    "labelled": true,
+    "stem": "matryoshka_dolls_11",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     1e-06,
+     1.0
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "sort_nesting_dolls_by_size__dt2",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.002,
+   "slide_target": {
+    "label": "doll2",
+    "inst": "matryoshka_dolls_11_3",
+    "labelled": true,
+    "stem": "matryoshka_dolls_11",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     1e-06,
+     1.0
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "sort_nesting_dolls_by_size__dt1",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.001,
+   "slide_target": {
+    "label": "doll2",
+    "inst": "matryoshka_dolls_11_3",
+    "labelled": true,
+    "stem": "matryoshka_dolls_11",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     1e-06,
+     1.0
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "sort_nesting_dolls_by_size__iters4x",
+  "layout": 0,
+  "overrides": {
+   "min_pos_iters": 64,
+   "slide_target": {
+    "label": "doll2",
+    "inst": "matryoshka_dolls_11_3",
+    "labelled": true,
+    "stem": "matryoshka_dolls_11",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     1e-06,
+     1.0
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "sort_nesting_dolls_by_size__cpu",
+  "layout": 0,
+  "overrides": {
+   "gpu_dynamics": false,
+   "slide_target": {
+    "label": "doll2",
+    "inst": "matryoshka_dolls_11_3",
+    "labelled": true,
+    "stem": "matryoshka_dolls_11",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     1e-06,
+     1.0
+    ]
+   }
+  }
+ }
+]

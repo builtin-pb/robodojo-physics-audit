@@ -1,0 +1,5696 @@
+{
+ "Geometry/basket/00002": {
+  "usd": "Geometry/basket/00002/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/root",
+  "world_extent_units": [
+   0.252,
+   0.168,
+   0.077
+  ],
+  "rigid_bodies": [
+   "/root"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/root/collision/model",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "sdf",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 152.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 47831,
+    "faces": 47829,
+    "world_extent_units": [
+     0.252,
+     0.168,
+     0.077
+    ]
+   }
+  ],
+  "n_colliders": 1,
+  "approximation_counts": {
+   "sdf": 1
+  }
+ },
+ "Geometry/basket/00003": {
+  "usd": "Geometry/basket/00003/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/root",
+  "world_extent_units": [
+   0.252,
+   0.168,
+   0.077
+  ],
+  "rigid_bodies": [
+   "/root"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/root/collision/model",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "sdf",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 47831,
+    "faces": 47829,
+    "world_extent_units": [
+     0.252,
+     0.168,
+     0.077
+    ]
+   }
+  ],
+  "n_colliders": 1,
+  "approximation_counts": {
+   "sdf": 1
+  }
+ },
+ "Geometry/basket/00004": {
+  "usd": "Geometry/basket/00004/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/root",
+  "world_extent_units": [
+   0.252,
+   0.168,
+   0.077
+  ],
+  "rigid_bodies": [
+   "/root"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/root/collision/model",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "sdf",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 47831,
+    "faces": 47829,
+    "world_extent_units": [
+     0.252,
+     0.168,
+     0.077
+    ]
+   }
+  ],
+  "n_colliders": 1,
+  "approximation_counts": {
+   "sdf": 1
+  }
+ },
+ "Geometry/basket/00005": {
+  "usd": "Geometry/basket/00005/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/root",
+  "world_extent_units": [
+   0.3024,
+   0.2016,
+   0.077
+  ],
+  "rigid_bodies": [
+   "/root"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/root/collision/model",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "sdf",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 47831,
+    "faces": 47829,
+    "world_extent_units": [
+     0.3024,
+     0.2016,
+     0.077
+    ]
+   }
+  ],
+  "n_colliders": 1,
+  "approximation_counts": {
+   "sdf": 1
+  }
+ },
+ "Geometry/bread_shelf/00000": {
+  "usd": "Geometry/bread_shelf/00000/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/root",
+  "world_extent_units": [
+   0.15829,
+   0.08355,
+   0.0762
+  ],
+  "rigid_bodies": [
+   "/root"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/root/collision/model",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.20000000298023224,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 107443,
+    "faces": 172600,
+    "world_extent_units": [
+     0.15829,
+     0.08355,
+     0.0762
+    ]
+   }
+  ],
+  "n_colliders": 1,
+  "approximation_counts": {
+   "convexDecomposition": 1
+  }
+ },
+ "Geometry/camera_stand/00000": {
+  "error": "ErrorException(Error in 'pxrInternal_v0_24__pxrReserved__::UsdStage::Open' at line 1059 in file /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp : 'Failed to open layer @/scratch/<user>/isaac/robodojo/Assets/Object/RoboDojo/Geometry/camera_stand/00000/object.usdz@')"
+ },
+ "Geometry/checkerboard/00000": {
+  "usd": "Geometry/checkerboard/00000/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/root",
+  "world_extent_units": [
+   0.22336,
+   0.22336,
+   0.016
+  ],
+  "rigid_bodies": [
+   "/root"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/root/collision/model",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 194,
+    "faces": 192,
+    "world_extent_units": [
+     0.22336,
+     0.22336,
+     0.016
+    ]
+   }
+  ],
+  "n_colliders": 1,
+  "approximation_counts": {
+   "convexDecomposition": 1
+  }
+ },
+ "Geometry/cube_cushion/00001": {
+  "usd": "Geometry/cube_cushion/00001/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/root",
+  "world_extent_units": [
+   0.08,
+   0.08,
+   0.005
+  ],
+  "rigid_bodies": [
+   "/root"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/root/collision/model",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 64,
+    "faces": 34,
+    "world_extent_units": [
+     0.08,
+     0.08,
+     0.005
+    ]
+   }
+  ],
+  "n_colliders": 1,
+  "approximation_counts": {
+   "convexDecomposition": 1
+  }
+ },
+ "Geometry/cube_cushion/00002": {
+  "usd": "Geometry/cube_cushion/00002/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/root",
+  "world_extent_units": [
+   0.05,
+   0.05,
+   0.0001
+  ],
+  "rigid_bodies": [
+   "/root"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/root/collision/model",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 8,
+    "faces": 6,
+    "world_extent_units": [
+     0.05,
+     0.05,
+     0.0001
+    ]
+   }
+  ],
+  "n_colliders": 1,
+  "approximation_counts": {
+   "convexDecomposition": 1
+  }
+ },
+ "Geometry/cup_holder/00000": {
+  "usd": "Geometry/cup_holder/00000/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/World",
+  "world_extent_units": [
+   0.18084,
+   0.18084,
+   0.34889
+  ],
+  "rigid_bodies": [
+   "/World"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/World/collision",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": "invisible",
+    "points": 6636,
+    "faces": 2212,
+    "world_extent_units": [
+     0.18084,
+     0.18084,
+     0.34889
+    ]
+   }
+  ],
+  "n_colliders": 1,
+  "approximation_counts": {
+   "convexDecomposition": 1
+  }
+ },
+ "Geometry/cup_holder/00001": {
+  "usd": "Geometry/cup_holder/00001/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/World",
+  "world_extent_units": [
+   0.1405,
+   0.1405,
+   0.30545
+  ],
+  "rigid_bodies": [
+   "/World"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/World/collision",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": "invisible",
+    "points": 6816,
+    "faces": 2272,
+    "world_extent_units": [
+     0.1405,
+     0.1405,
+     0.30545
+    ]
+   }
+  ],
+  "n_colliders": 1,
+  "approximation_counts": {
+   "convexDecomposition": 1
+  }
+ },
+ "Geometry/drawer/00000": {
+  "usd": "Geometry/drawer/00000/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/root",
+  "world_extent_units": [
+   0.26741,
+   0.35104,
+   0.22711
+  ],
+  "rigid_bodies": [
+   "/root"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/root/collision/model",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 70566,
+    "faces": 23518,
+    "world_extent_units": [
+     0.26741,
+     0.35104,
+     0.22711
+    ]
+   }
+  ],
+  "n_colliders": 1,
+  "approximation_counts": {
+   "convexDecomposition": 1
+  }
+ },
+ "Geometry/dustbin/00000": {
+  "usd": "Geometry/dustbin/00000/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/World",
+  "world_extent_units": [
+   0.47,
+   0.47,
+   0.65
+  ],
+  "rigid_bodies": [
+   "/World"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/World/collision/model",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 295494,
+    "faces": 98498,
+    "world_extent_units": [
+     0.47,
+     0.47,
+     0.65
+    ]
+   }
+  ],
+  "n_colliders": 1,
+  "approximation_counts": {
+   "convexDecomposition": 1
+  }
+ },
+ "Geometry/egg_basket/00000": {
+  "usd": "Geometry/egg_basket/00000/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/root",
+  "world_extent_units": [
+   0.21942,
+   0.21942,
+   0.08745
+  ],
+  "rigid_bodies": [
+   "/root"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/root/visual/model",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "meshSimplification",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "points": 1812431,
+    "faces": 3014770,
+    "world_extent_units": [
+     0.21942,
+     0.21942,
+     0.08745
+    ]
+   }
+  ],
+  "n_colliders": 1,
+  "approximation_counts": {
+   "meshSimplification": 1
+  }
+ },
+ "Geometry/factory_bolt/00001": {
+  "usd": "Geometry/factory_bolt/00001/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/root",
+  "world_extent_units": [
+   0.036,
+   0.04155,
+   0.0525
+  ],
+  "rigid_bodies": [
+   "/root"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/root/collision/model",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "meshSimplification",
+    "contact_offset": 0.009999999776482582,
+    "rest_offset": 0.0,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 78366,
+    "faces": 26122,
+    "world_extent_units": [
+     0.036,
+     0.04155,
+     0.0525
+    ]
+   }
+  ],
+  "n_colliders": 1,
+  "approximation_counts": {
+   "meshSimplification": 1
+  }
+ },
+ "Geometry/factory_bolt/00002": {
+  "usd": "Geometry/factory_bolt/00002/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/root",
+  "world_extent_units": [
+   0.036,
+   0.04155,
+   0.0525
+  ],
+  "rigid_bodies": [
+   "/root"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/root/collision/model",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "meshSimplification",
+    "contact_offset": 0.009999999776482582,
+    "rest_offset": 0.0,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 78366,
+    "faces": 26122,
+    "world_extent_units": [
+     0.036,
+     0.04155,
+     0.0525
+    ]
+   }
+  ],
+  "n_colliders": 1,
+  "approximation_counts": {
+   "meshSimplification": 1
+  }
+ },
+ "Geometry/factory_bolt/00004": {
+  "usd": "Geometry/factory_bolt/00004/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/root",
+  "world_extent_units": [
+   0.036,
+   0.04155,
+   0.0525
+  ],
+  "rigid_bodies": [
+   "/root"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/root/collision/model",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "meshSimplification",
+    "contact_offset": 0.009999999776482582,
+    "rest_offset": 0.0,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 78366,
+    "faces": 26122,
+    "world_extent_units": [
+     0.036,
+     0.04155,
+     0.0525
+    ]
+   }
+  ],
+  "n_colliders": 1,
+  "approximation_counts": {
+   "meshSimplification": 1
+  }
+ },
+ "Geometry/frame/00000": {
+  "usd": "Geometry/frame/00000/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/World",
+  "world_extent_units": [
+   0.24,
+   0.1,
+   0.0003
+  ],
+  "rigid_bodies": [
+   "/World"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [],
+  "n_colliders": 0,
+  "approximation_counts": {}
+ },
+ "Geometry/headset_stand/00000": {
+  "usd": "Geometry/headset_stand/00000/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/root",
+  "world_extent_units": [
+   0.17836,
+   0.1043,
+   0.275
+  ],
+  "rigid_bodies": [
+   "/root"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/root/collision/model",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 102973,
+    "faces": 106046,
+    "world_extent_units": [
+     0.17836,
+     0.1043,
+     0.275
+    ]
+   }
+  ],
+  "n_colliders": 1,
+  "approximation_counts": {
+   "convexDecomposition": 1
+  }
+ },
+ "Geometry/key_slot/00000": {
+  "usd": "Geometry/key_slot/00000/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/KeySlot",
+  "world_extent_units": [
+   0.1,
+   0.1,
+   0.055
+  ],
+  "rigid_bodies": [
+   "/KeySlot"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/KeySlot/collision/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "sdf",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "points": 3188,
+    "faces": 47836,
+    "world_extent_units": [
+     0.1,
+     0.1,
+     0.055
+    ]
+   }
+  ],
+  "n_colliders": 1,
+  "approximation_counts": {
+   "sdf": 1
+  }
+ },
+ "Geometry/laptop_stand/00001": {
+  "usd": "Geometry/laptop_stand/00001/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/root",
+  "world_extent_units": [
+   0.3072,
+   0.1229,
+   0.0781
+  ],
+  "rigid_bodies": [
+   "/root"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/root/collision/model",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 75819,
+    "faces": 126669,
+    "world_extent_units": [
+     0.3072,
+     0.1229,
+     0.0781
+    ]
+   }
+  ],
+  "n_colliders": 1,
+  "approximation_counts": {
+   "convexDecomposition": 1
+  }
+ },
+ "Geometry/monitor/00000": {
+  "usd": "Geometry/monitor/00000/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/World",
+  "world_extent_units": [
+   0.51744,
+   0.18446,
+   0.44539
+  ],
+  "rigid_bodies": [
+   "/World"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/World/collision",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": "invisible",
+    "points": 31458,
+    "faces": 10486,
+    "world_extent_units": [
+     0.51744,
+     0.18446,
+     0.44539
+    ]
+   }
+  ],
+  "n_colliders": 1,
+  "approximation_counts": {
+   "convexDecomposition": 1
+  }
+ },
+ "Geometry/mousemat/00000": {
+  "usd": "Geometry/mousemat/00000/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/World",
+  "world_extent_units": [
+   0.2401,
+   0.19202,
+   0.00727
+  ],
+  "rigid_bodies": [
+   "/World"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/World/collision",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": "invisible",
+    "points": 8364,
+    "faces": 2788,
+    "world_extent_units": [
+     0.2401,
+     0.19202,
+     0.00727
+    ]
+   }
+  ],
+  "n_colliders": 1,
+  "approximation_counts": {
+   "convexDecomposition": 1
+  }
+ },
+ "Geometry/number_card/00001": {
+  "usd": "Geometry/number_card/00001/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/root",
+  "world_extent_units": [
+   0.1,
+   0.1,
+   0.005
+  ],
+  "rigid_bodies": [],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [],
+  "n_colliders": 0,
+  "approximation_counts": {}
+ },
+ "Geometry/number_card/00009": {
+  "usd": "Geometry/number_card/00009/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/root",
+  "world_extent_units": [
+   0.1,
+   0.1,
+   0.005
+  ],
+  "rigid_bodies": [],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [],
+  "n_colliders": 0,
+  "approximation_counts": {}
+ },
+ "Geometry/photo/00015": {
+  "error": "ErrorException(Error in 'pxrInternal_v0_24__pxrReserved__::UsdStage::Open' at line 1059 in file /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp : 'Failed to open layer @/scratch/<user>/isaac/robodojo/Assets/Object/RoboDojo/Geometry/photo/00015/object.usdz@')"
+ },
+ "Geometry/piggy_bank/00000": {
+  "usd": "Geometry/piggy_bank/00000/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/World",
+  "world_extent_units": [
+   0.1484,
+   0.20948,
+   0.11503
+  ],
+  "rigid_bodies": [
+   "/World"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/World/collision",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.30000001192092896,
+    "max_hulls": 512.0,
+    "purpose": null,
+    "visibility": "invisible",
+    "points": 17169,
+    "faces": 32160,
+    "world_extent_units": [
+     0.1484,
+     0.20948,
+     0.11503
+    ]
+   }
+  ],
+  "n_colliders": 1,
+  "approximation_counts": {
+   "convexDecomposition": 1
+  }
+ },
+ "Geometry/stack_base/00000": {
+  "usd": "Geometry/stack_base/00000/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/World",
+  "world_extent_units": [
+   0.25918,
+   0.06478,
+   0.06533
+  ],
+  "rigid_bodies": [
+   "/World"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/World/collision",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "sdf",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": "invisible",
+    "points": 22549,
+    "faces": 40128,
+    "world_extent_units": [
+     0.25918,
+     0.06478,
+     0.06533
+    ]
+   }
+  ],
+  "n_colliders": 1,
+  "approximation_counts": {
+   "sdf": 1
+  }
+ },
+ "Geometry/t_cushion/00000": {
+  "usd": "Geometry/t_cushion/00000/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/World",
+  "world_extent_units": [
+   0.084,
+   0.068,
+   0.0001
+  ],
+  "rigid_bodies": [
+   "/World"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [],
+  "n_colliders": 0,
+  "approximation_counts": {}
+ },
+ "Geometry/test_tube_slot/00000": {
+  "usd": "Geometry/test_tube_slot/00000/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/root",
+  "world_extent_units": [
+   20500.0,
+   9600.00098,
+   6000.00122
+  ],
+  "rigid_bodies": [
+   "/root"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/root/collision/model",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "sdf",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": 256.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 10696,
+    "faces": 6800,
+    "world_extent_units": [
+     20500.0,
+     9600.00098,
+     6000.00122
+    ]
+   }
+  ],
+  "n_colliders": 1,
+  "approximation_counts": {
+   "sdf": 1
+  }
+ },
+ "Geometry/toolbox/00000": {
+  "usd": "Geometry/toolbox/00000/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/root",
+  "world_extent_units": [
+   0.27432,
+   0.27732,
+   0.05001
+  ],
+  "rigid_bodies": [
+   "/root"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/root/collision/model",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "sdf",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 397915,
+    "faces": 427530,
+    "world_extent_units": [
+     0.27432,
+     0.27732,
+     0.05001
+    ]
+   }
+  ],
+  "n_colliders": 1,
+  "approximation_counts": {
+   "sdf": 1
+  }
+ },
+ "Geometry/vase/00002": {
+  "usd": "Geometry/vase/00002/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/root",
+  "world_extent_units": [
+   0.18,
+   0.18,
+   0.148
+  ],
+  "rigid_bodies": [
+   "/root"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/root/collision/model/model/model",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 278315,
+    "faces": 504910,
+    "world_extent_units": [
+     0.18,
+     0.18,
+     0.148
+    ]
+   }
+  ],
+  "n_colliders": 1,
+  "approximation_counts": {
+   "convexDecomposition": 1
+  }
+ },
+ "Geometry/vertical_coin_stand/00000": {
+  "usd": "Geometry/vertical_coin_stand/00000/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/root",
+  "world_extent_units": [
+   0.0321,
+   0.01111,
+   0.0171
+  ],
+  "rigid_bodies": [
+   "/root"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/root/collision/model",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "meshSimplification",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 102975,
+    "faces": 176298,
+    "world_extent_units": [
+     0.0321,
+     0.01111,
+     0.0171
+    ]
+   },
+   {
+    "path": "/root/collision/cube_0",
+    "type": "Mesh",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "points": 8,
+    "faces": 6,
+    "world_extent_units": [
+     0.002,
+     0.002,
+     0.00525
+    ]
+   },
+   {
+    "path": "/root/collision/cube_1",
+    "type": "Mesh",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "points": 8,
+    "faces": 6,
+    "world_extent_units": [
+     0.002,
+     0.002,
+     0.00525
+    ]
+   }
+  ],
+  "n_colliders": 3,
+  "approximation_counts": {
+   "meshSimplification": 1,
+   "convexHull": 2
+  }
+ },
+ "Geometry/vertical_laptop_storage_rack/00000": {
+  "usd": "Geometry/vertical_laptop_storage_rack/00000/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/root",
+  "world_extent_units": [
+   0.13696,
+   0.05312,
+   0.04864
+  ],
+  "rigid_bodies": [
+   "/root"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/root/collision/model",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 102975,
+    "faces": 176298,
+    "world_extent_units": [
+     0.13696,
+     0.05312,
+     0.04864
+    ]
+   }
+  ],
+  "n_colliders": 1,
+  "approximation_counts": {
+   "convexDecomposition": 1
+  }
+ },
+ "Geometry/xylophone/00000": {
+  "usd": "Geometry/xylophone/00000/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/World",
+  "world_extent_units": [
+   0.42,
+   0.212,
+   0.023
+  ],
+  "rigid_bodies": [
+   "/World"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/World/collision",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": "invisible",
+    "points": 15318,
+    "faces": 23832,
+    "world_extent_units": [
+     0.42,
+     0.212,
+     0.023
+    ]
+   }
+  ],
+  "n_colliders": 1,
+  "approximation_counts": {
+   "convexDecomposition": 1
+  }
+ },
+ "Articulation/egg_holder/00000": {
+  "usd": "Articulation/egg_holder/00000/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/root",
+  "world_extent_units": [
+   0.12053,
+   0.16136,
+   0.16663
+  ],
+  "rigid_bodies": [
+   "/root/E_lid_25",
+   "/root/E_body_5"
+  ],
+  "articulation_roots": [
+   "/root"
+  ],
+  "joints": [
+   {
+    "path": "/root/E_lid_25/RevoluteJoint_4compartmenteggcartons_up",
+    "type": "PhysicsRevoluteJoint",
+    "physics:lowerLimit": -90.0,
+    "physics:upperLimit": 0.0,
+    "physics:axis": "X",
+    "drive:angular:physics:stiffness": 0.0,
+    "drive:angular:physics:damping": 0.0,
+    "drive:angular:physics:targetPosition": -90.0
+   },
+   {
+    "path": "/root/E_body_5/FixedJoint",
+    "type": "PhysicsFixedJoint"
+   }
+  ],
+  "colliders": [
+   {
+    "path": "/root/E_lid_25/P_381f7661a30adc5",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "points": 18433,
+    "faces": 36426,
+    "world_extent_units": [
+     0.12052,
+     0.04083,
+     0.1208
+    ]
+   },
+   {
+    "path": "/root/E_body_5/P_966ad814d7ae68ac",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "points": 28052,
+    "faces": 55930,
+    "world_extent_units": [
+     0.12053,
+     0.12133,
+     0.048
+    ]
+   },
+   {
+    "path": "/root/E_body_5/E_part_01_39/P_6ae187f8ffadf82",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "points": 2616,
+    "faces": 5020,
+    "world_extent_units": [
+     0.11704,
+     0.11756,
+     0.0024
+    ]
+   }
+  ],
+  "n_colliders": 3,
+  "approximation_counts": {
+   "convexDecomposition": 3
+  }
+ },
+ "Articulation/laptop/00000": {
+  "usd": "Articulation/laptop/00000/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/root",
+  "world_extent_units": [
+   0.17935,
+   0.17062,
+   0.12121
+  ],
+  "rigid_bodies": [
+   "/root/E_body_1",
+   "/root/E_displayer_5"
+  ],
+  "articulation_roots": [
+   "/root/E_body_1"
+  ],
+  "joints": [
+   {
+    "path": "/root/E_displayer_5/RevoluteJoint_computer_9_up",
+    "type": "PhysicsRevoluteJoint",
+    "physics:lowerLimit": -110.0,
+    "physics:upperLimit": 0.0,
+    "physics:axis": "X",
+    "drive:angular:physics:stiffness": 0.0,
+    "drive:angular:physics:damping": 3.0,
+    "drive:angular:physics:maxForce": 1.0,
+    "drive:angular:physics:targetPosition": -110.0
+   }
+  ],
+  "colliders": [
+   {
+    "path": "/root/E_body_1/E_Group_2/P_1e5d57b88817687f",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "points": 4409,
+    "faces": 4031,
+    "world_extent_units": [
+     0.17933,
+     0.12588,
+     0.00362
+    ]
+   },
+   {
+    "path": "/root/E_body_1/E_Group_2/P_14642a3a360c107f",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "points": 1026,
+    "faces": 518,
+    "world_extent_units": [
+     0.17933,
+     0.12588,
+     0.00568
+    ]
+   },
+   {
+    "path": "/root/E_body_1/E_Group_2/P_5ed99b1c4c47687f",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "points": 798,
+    "faces": 494,
+    "world_extent_units": [
+     0.17933,
+     0.01856,
+     0.00228
+    ]
+   },
+   {
+    "path": "/root/E_body_1/E_Group_2/touch_pad/touch_pad",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "sdf",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "points": 8,
+    "faces": 6,
+    "world_extent_units": [
+     0.07121,
+     0.0438,
+     0.0011
+    ]
+   },
+   {
+    "path": "/root/E_body_1/E_keyboard_3/P_8dde13f8c6c4547f",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "points": 13860,
+    "faces": 8162,
+    "world_extent_units": [
+     0.17518,
+     0.06406,
+     0.00178
+    ]
+   },
+   {
+    "path": "/root/E_body_1/E_keyboard_3/P_7a7cc6daf657687f",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "points": 2772,
+    "faces": 2618,
+    "world_extent_units": [
+     0.17518,
+     0.06406,
+     0.00117
+    ]
+   },
+   {
+    "path": "/root/E_body_1/E_keyboard_3/P_32dc8237d0f0687f",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "points": 4,
+    "faces": 2,
+    "world_extent_units": [
+     0.13748,
+     0.00586,
+     0.00011
+    ]
+   },
+   {
+    "path": "/root/E_body_1/E_foot_mat_4/P_c97dfd96654f687f",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "points": 2132,
+    "faces": 1156,
+    "world_extent_units": [
+     0.14802,
+     0.09451,
+     0.0015
+    ]
+   },
+   {
+    "path": "/root/E_displayer_5/screen/P_eeb48f6c1dbce87f",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": "inherited",
+    "points": 4,
+    "faces": 2,
+    "world_extent_units": [
+     0.16523,
+     0.03372,
+     0.09786
+    ]
+   },
+   {
+    "path": "/root/E_displayer_5/lid/P_74e9628836e5b87f",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "boundingCube",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": "inherited",
+    "points": 1477,
+    "faces": 935,
+    "world_extent_units": [
+     0.17807,
+     0.0406,
+     0.11702
+    ]
+   },
+   {
+    "path": "/root/E_displayer_5/lid/P_1b5d16155170687f",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "boundingCube",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "points": 1117,
+    "faces": 737,
+    "world_extent_units": [
+     0.17933,
+     0.04438,
+     0.1202
+    ]
+   },
+   {
+    "path": "/root/E_displayer_5/lid/P_a3edd5af057687f",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "boundingCube",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "points": 300,
+    "faces": 280,
+    "world_extent_units": [
+     0.17807,
+     0.04029,
+     0.11691
+    ]
+   },
+   {
+    "path": "/root/E_displayer_5/lid/P_d0d77947399b37bf",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "points": 332,
+    "faces": 292,
+    "world_extent_units": [
+     0.17742,
+     0.04775,
+     0.12054
+    ]
+   }
+  ],
+  "n_colliders": 13,
+  "approximation_counts": {
+   "convexHull": 8,
+   "sdf": 1,
+   "boundingCube": 3,
+   "convexDecomposition": 1
+  }
+ },
+ "Articulation/laptop/00001": {
+  "usd": "Articulation/laptop/00001/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/root",
+  "world_extent_units": [
+   0.17935,
+   0.17062,
+   0.12121
+  ],
+  "rigid_bodies": [
+   "/root/E_body_1",
+   "/root/E_displayer_5"
+  ],
+  "articulation_roots": [
+   "/root/E_body_1"
+  ],
+  "joints": [
+   {
+    "path": "/root/E_displayer_5/RevoluteJoint_computer_9_up",
+    "type": "PhysicsRevoluteJoint",
+    "physics:lowerLimit": -110.0,
+    "physics:upperLimit": 0.0,
+    "physics:axis": "X",
+    "drive:angular:physics:stiffness": 0.0,
+    "drive:angular:physics:damping": 3.0,
+    "drive:angular:physics:maxForce": 1.0,
+    "drive:angular:physics:targetPosition": -110.0
+   }
+  ],
+  "colliders": [
+   {
+    "path": "/root/E_body_1/E_Group_2/P_1e5d57b88817687f",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "points": 4409,
+    "faces": 4031,
+    "world_extent_units": [
+     0.17933,
+     0.12588,
+     0.00362
+    ]
+   },
+   {
+    "path": "/root/E_body_1/E_Group_2/P_14642a3a360c107f",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "points": 1026,
+    "faces": 518,
+    "world_extent_units": [
+     0.17933,
+     0.12588,
+     0.00568
+    ]
+   },
+   {
+    "path": "/root/E_body_1/E_Group_2/P_5ed99b1c4c47687f",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "points": 798,
+    "faces": 494,
+    "world_extent_units": [
+     0.17933,
+     0.01856,
+     0.00228
+    ]
+   },
+   {
+    "path": "/root/E_body_1/E_Group_2/touch_pad/touch_pad",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "sdf",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "points": 8,
+    "faces": 6,
+    "world_extent_units": [
+     0.07121,
+     0.0438,
+     0.0011
+    ]
+   },
+   {
+    "path": "/root/E_body_1/E_keyboard_3/P_8dde13f8c6c4547f",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "points": 13860,
+    "faces": 8162,
+    "world_extent_units": [
+     0.17518,
+     0.06406,
+     0.00178
+    ]
+   },
+   {
+    "path": "/root/E_body_1/E_keyboard_3/P_7a7cc6daf657687f",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "points": 2772,
+    "faces": 2618,
+    "world_extent_units": [
+     0.17518,
+     0.06406,
+     0.00117
+    ]
+   },
+   {
+    "path": "/root/E_body_1/E_keyboard_3/P_32dc8237d0f0687f",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "points": 4,
+    "faces": 2,
+    "world_extent_units": [
+     0.13748,
+     0.00586,
+     0.00011
+    ]
+   },
+   {
+    "path": "/root/E_body_1/E_foot_mat_4/P_c97dfd96654f687f",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "points": 2132,
+    "faces": 1156,
+    "world_extent_units": [
+     0.14802,
+     0.09451,
+     0.0015
+    ]
+   },
+   {
+    "path": "/root/E_displayer_5/screen/P_eeb48f6c1dbce87f",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": "inherited",
+    "points": 4,
+    "faces": 2,
+    "world_extent_units": [
+     0.16523,
+     0.03372,
+     0.09786
+    ]
+   },
+   {
+    "path": "/root/E_displayer_5/lid/P_74e9628836e5b87f",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "boundingCube",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": "inherited",
+    "points": 1477,
+    "faces": 935,
+    "world_extent_units": [
+     0.17807,
+     0.0406,
+     0.11702
+    ]
+   },
+   {
+    "path": "/root/E_displayer_5/lid/P_1b5d16155170687f",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "boundingCube",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "points": 1117,
+    "faces": 737,
+    "world_extent_units": [
+     0.17933,
+     0.04438,
+     0.1202
+    ]
+   },
+   {
+    "path": "/root/E_displayer_5/lid/P_a3edd5af057687f",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "boundingCube",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "points": 300,
+    "faces": 280,
+    "world_extent_units": [
+     0.17807,
+     0.04029,
+     0.11691
+    ]
+   },
+   {
+    "path": "/root/E_displayer_5/lid/P_d0d77947399b37bf",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "points": 332,
+    "faces": 292,
+    "world_extent_units": [
+     0.17742,
+     0.04775,
+     0.12054
+    ]
+   }
+  ],
+  "n_colliders": 13,
+  "approximation_counts": {
+   "convexHull": 8,
+   "sdf": 1,
+   "boundingCube": 3,
+   "convexDecomposition": 1
+  }
+ },
+ "Articulation/SpringButton/00002": {
+  "usd": "Articulation/SpringButton/00002/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/root",
+  "world_extent_units": [
+   0.06055,
+   0.06055,
+   0.03591
+  ],
+  "rigid_bodies": [
+   "/root/E_body_16",
+   "/root/E_button_01_13"
+  ],
+  "articulation_roots": [
+   "/root"
+  ],
+  "joints": [
+   {
+    "path": "/root/E_body_16/FixedJoint",
+    "type": "PhysicsFixedJoint"
+   },
+   {
+    "path": "/root/E_button_01_13/PrismaticJoint_orangeswitch_up",
+    "type": "PhysicsPrismaticJoint",
+    "physics:lowerLimit": -0.005040000192821026,
+    "physics:upperLimit": 0.004999999888241291,
+    "physics:axis": "Z",
+    "drive:linear:physics:stiffness": 1500.0,
+    "drive:linear:physics:damping": 100.0,
+    "drive:linear:physics:targetPosition": 0.006000000052154064
+   }
+  ],
+  "colliders": [
+   {
+    "path": "/root/E_body_16/E_part11_11/P_a59083fb12b9305",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "points": 744,
+    "faces": 744,
+    "world_extent_units": [
+     0.05349,
+     0.05349,
+     0.01658
+    ]
+   },
+   {
+    "path": "/root/E_body_16/E_part3_12/P_68fc7d4d4d0199d0",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "points": 6696,
+    "faces": 2232,
+    "world_extent_units": [
+     0.05349,
+     0.05349,
+     0.00893
+    ]
+   },
+   {
+    "path": "/root/E_body_16/E_part5_9/P_d56a0a22d56d6048",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "points": 992,
+    "faces": 992,
+    "world_extent_units": [
+     0.05036,
+     0.05036,
+     0.00025
+    ]
+   },
+   {
+    "path": "/root/E_button_01_13/P_457ecac1bfb05df0",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.10000000149011612,
+    "max_hulls": 52.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 13600,
+    "faces": 27118,
+    "world_extent_units": [
+     0.06055,
+     0.06055,
+     0.02301
+    ]
+   },
+   {
+    "path": "/root/E_button_01_13/Cylinder",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": "invisible",
+    "points": 642,
+    "faces": 672,
+    "world_extent_units": [
+     0.05,
+     0.05,
+     0.003
+    ]
+   }
+  ],
+  "n_colliders": 5,
+  "approximation_counts": {
+   "convexDecomposition": 4,
+   "convexHull": 1
+  }
+ },
+ "Articulation/SpringButton/00003": {
+  "usd": "Articulation/SpringButton/00003/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/root",
+  "world_extent_units": [
+   0.06055,
+   0.06055,
+   0.03591
+  ],
+  "rigid_bodies": [
+   "/root/E_body_16",
+   "/root/E_button_01_13"
+  ],
+  "articulation_roots": [
+   "/root"
+  ],
+  "joints": [
+   {
+    "path": "/root/E_body_16/FixedJoint",
+    "type": "PhysicsFixedJoint"
+   },
+   {
+    "path": "/root/E_button_01_13/PrismaticJoint_orangeswitch_up",
+    "type": "PhysicsPrismaticJoint",
+    "physics:lowerLimit": -0.005040000192821026,
+    "physics:upperLimit": 0.004999999888241291,
+    "physics:axis": "Z",
+    "drive:linear:physics:stiffness": 1500.0,
+    "drive:linear:physics:damping": 100.0,
+    "drive:linear:physics:targetPosition": 0.006000000052154064
+   }
+  ],
+  "colliders": [
+   {
+    "path": "/root/E_body_16/E_part11_11/P_a59083fb12b9305",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "points": 744,
+    "faces": 744,
+    "world_extent_units": [
+     0.05349,
+     0.05349,
+     0.01658
+    ]
+   },
+   {
+    "path": "/root/E_body_16/E_part3_12/P_68fc7d4d4d0199d0",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "points": 6696,
+    "faces": 2232,
+    "world_extent_units": [
+     0.05349,
+     0.05349,
+     0.00893
+    ]
+   },
+   {
+    "path": "/root/E_body_16/E_part5_9/P_d56a0a22d56d6048",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "points": 992,
+    "faces": 992,
+    "world_extent_units": [
+     0.05036,
+     0.05036,
+     0.00025
+    ]
+   },
+   {
+    "path": "/root/E_button_01_13/P_457ecac1bfb05df0",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.10000000149011612,
+    "max_hulls": 70.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 13600,
+    "faces": 27118,
+    "world_extent_units": [
+     0.06055,
+     0.06055,
+     0.02301
+    ]
+   },
+   {
+    "path": "/root/E_button_01_13/Cylinder",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": "invisible",
+    "points": 642,
+    "faces": 672,
+    "world_extent_units": [
+     0.05,
+     0.05,
+     0.003
+    ]
+   }
+  ],
+  "n_colliders": 5,
+  "approximation_counts": {
+   "convexDecomposition": 4,
+   "convexHull": 1
+  }
+ },
+ "Articulation/toaster/00001": {
+  "usd": "Articulation/toaster/00001/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/root",
+  "world_extent_units": [
+   0.24914,
+   0.13967,
+   0.151
+  ],
+  "rigid_bodies": [
+   "/root/base",
+   "/root/link_0",
+   "/root/link_1"
+  ],
+  "articulation_roots": [
+   "/root"
+  ],
+  "joints": [
+   {
+    "path": "/root/base/FixedJoint",
+    "type": "PhysicsFixedJoint"
+   },
+   {
+    "path": "/root/joints/joint_0",
+    "type": "PhysicsRevoluteJoint",
+    "physics:lowerLimit": -Infinity,
+    "physics:upperLimit": Infinity,
+    "physics:axis": "Z",
+    "drive:angular:physics:stiffness": 5.0,
+    "drive:angular:physics:damping": 20.0,
+    "drive:angular:physics:maxForce": 3.4028234663852886e+38,
+    "drive:angular:physics:targetPosition": 0.0,
+    "physxJoint:maxJointVelocity": Infinity
+   },
+   {
+    "path": "/root/joints/joint_1",
+    "type": "PhysicsPrismaticJoint",
+    "physics:lowerLimit": -0.023400001227855682,
+    "physics:upperLimit": 0.051600001752376556,
+    "physics:axis": "Y",
+    "drive:linear:physics:stiffness": 0.0,
+    "drive:linear:physics:damping": 100.0,
+    "drive:linear:physics:maxForce": 3.4028234663852886e+38,
+    "drive:linear:physics:targetPosition": 0.0,
+    "physxJoint:maxJointVelocity": 3.4028234663852886e+38
+   },
+   {
+    "path": "/root/root_joint",
+    "type": "PhysicsFixedJoint"
+   }
+  ],
+  "colliders": [
+   {
+    "path": "/Flattened_Prototype_2/original_11/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_5/original_16/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_6/original_21/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_6/original_22/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_6/original_4/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_6/original_3/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_6/original_2/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_6/original_8/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_6/original_13/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_6/original_9/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_6/original_5/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_6/original_6/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_6/original_15/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_6/original_23/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_6/original_18/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_6/original_12/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_6/original_7/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_6/original_10/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_6/original_14/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_6/original_19/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_21/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 656,
+    "faces": 624,
+    "world_extent_units": [
+     0.22649,
+     0.01887,
+     0.151
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_22/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 240,
+    "faces": 208,
+    "world_extent_units": [
+     0.21894,
+     0.01887,
+     0.14345
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_4/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 52,
+    "faces": 48,
+    "world_extent_units": [
+     0.00604,
+     0.00604,
+     0.09437
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_3/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 136,
+    "faces": 116,
+    "world_extent_units": [
+     0.1208,
+     0.09437,
+     0.09437
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_2/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 812,
+    "faces": 788,
+    "world_extent_units": [
+     0.22649,
+     0.10192,
+     0.151
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_8/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 172,
+    "faces": 152,
+    "world_extent_units": [
+     0.0302,
+     0.00302,
+     0.07852
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_13/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 112,
+    "faces": 200,
+    "world_extent_units": [
+     0.00075,
+     0.01208,
+     0.00453
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_9/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 344,
+    "faces": 308,
+    "world_extent_units": [
+     0.21894,
+     0.01887,
+     0.14345
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_5/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 52,
+    "faces": 48,
+    "world_extent_units": [
+     0.00604,
+     0.00604,
+     0.09437
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_6/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 52,
+    "faces": 48,
+    "world_extent_units": [
+     0.00604,
+     0.00604,
+     0.09437
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_15/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 112,
+    "faces": 200,
+    "world_extent_units": [
+     0.00075,
+     0.01208,
+     0.00453
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_23/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 224,
+    "faces": 408,
+    "world_extent_units": [
+     0.1208,
+     0.02718,
+     0.08305
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_18/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 656,
+    "faces": 624,
+    "world_extent_units": [
+     0.22649,
+     0.01887,
+     0.151
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_12/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 112,
+    "faces": 200,
+    "world_extent_units": [
+     0.00075,
+     0.01208,
+     0.00453
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_7/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 52,
+    "faces": 48,
+    "world_extent_units": [
+     0.00604,
+     0.00604,
+     0.09437
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_10/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 344,
+    "faces": 308,
+    "world_extent_units": [
+     0.21894,
+     0.01887,
+     0.14345
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_14/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 112,
+    "faces": 200,
+    "world_extent_units": [
+     0.00075,
+     0.01208,
+     0.00453
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_19/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 240,
+    "faces": 208,
+    "world_extent_units": [
+     0.21894,
+     0.01887,
+     0.14345
+    ]
+   },
+   {
+    "path": "/root/link_0/collisions/original_16/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 96,
+    "faces": 184,
+    "world_extent_units": [
+     0.00755,
+     0.0151,
+     0.0151
+    ]
+   },
+   {
+    "path": "/root/link_1/collisions/original_11/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 504,
+    "faces": 440,
+    "world_extent_units": [
+     0.05285,
+     0.02567,
+     0.00604
+    ]
+   }
+  ],
+  "n_colliders": 40,
+  "approximation_counts": {
+   "convexHull": 21,
+   "convexDecomposition": 19
+  }
+ },
+ "Articulation/toaster/00004": {
+  "usd": "Articulation/toaster/00004/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/root",
+  "world_extent_units": [
+   0.24671,
+   0.12493,
+   0.16554
+  ],
+  "rigid_bodies": [
+   "/root/base",
+   "/root/link_0",
+   "/root/link_1",
+   "/root/link_2"
+  ],
+  "articulation_roots": [
+   "/root/root_joint"
+  ],
+  "joints": [
+   {
+    "path": "/root/joints/joint_0",
+    "type": "PhysicsPrismaticJoint",
+    "physics:lowerLimit": 0.0,
+    "physics:upperLimit": 0.04319999739527702,
+    "physics:axis": "Y",
+    "drive:linear:physics:stiffness": 5.0,
+    "drive:linear:physics:damping": 2000.0,
+    "drive:linear:physics:maxForce": 3.4028234663852886e+38,
+    "drive:linear:physics:targetPosition": 0.0,
+    "physxJoint:maxJointVelocity": 3.4028234663852886e+38
+   },
+   {
+    "path": "/root/joints/joint_1",
+    "type": "PhysicsPrismaticJoint",
+    "physics:lowerLimit": 0.0,
+    "physics:upperLimit": 0.10859999805688858,
+    "physics:axis": "Y",
+    "drive:linear:physics:stiffness": 5.0,
+    "drive:linear:physics:damping": 20.0,
+    "drive:linear:physics:maxForce": 3.4028234663852886e+38,
+    "drive:linear:physics:targetPosition": 0.0,
+    "physxJoint:maxJointVelocity": 3.4028234663852886e+38
+   },
+   {
+    "path": "/root/joints/joint_2",
+    "type": "PhysicsPrismaticJoint",
+    "physics:lowerLimit": 0.0,
+    "physics:upperLimit": 0.10859999805688858,
+    "physics:axis": "Y",
+    "drive:linear:physics:stiffness": 5.0,
+    "drive:linear:physics:damping": 20.0,
+    "drive:linear:physics:maxForce": 3.4028234663852886e+38,
+    "drive:linear:physics:targetPosition": 0.0,
+    "physxJoint:maxJointVelocity": 3.4028234663852886e+38
+   },
+   {
+    "path": "/root/root_joint",
+    "type": "PhysicsFixedJoint"
+   }
+  ],
+  "colliders": [
+   {
+    "path": "/Flattened_Prototype_1/original_49/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_1/original_47/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_1/original_48/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_2/original_5/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_2/original_3/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_2/original_12/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_2/original_13/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_2/original_15/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_2/original_16/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_2/original_11/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_2/original_7/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_2/original_8/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_2/original_6/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_2/original_9/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_2/original_2/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_2/original_4/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_2/original_14/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_2/original_10/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_2/original_17/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_4/original_21/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_4/original_31/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_4/original_23/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_4/original_26/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_4/original_34/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_4/original_27/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_4/original_19/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_4/original_20/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_4/original_22/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_4/original_29/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_4/original_30/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_4/original_32/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_4/original_33/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_4/original_25/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_4/original_28/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_4/original_24/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_5/original_36/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_5/original_41/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_5/original_43/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_5/original_52/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_5/original_44/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_5/original_45/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_5/original_61/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_5/original_39/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_5/original_54/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_5/original_51/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_5/original_55/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_5/original_37/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_5/original_58/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_5/original_38/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_5/original_42/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_5/original_60/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_5/original_40/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/Flattened_Prototype_5/original_57/World",
+    "type": "Xform",
+    "enabled": null,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": null,
+    "world_extent_units": [
+     -6.805646932770577e+38,
+     -6.805646932770577e+38,
+     -6.805646932770577e+38
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_36/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 304,
+    "faces": 526,
+    "world_extent_units": [
+     0.22674,
+     0.12493,
+     0.15305
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_41/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 96,
+    "faces": 96,
+    "world_extent_units": [
+     0.22391,
+     0.1221,
+     0.00142
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_43/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 16,
+    "faces": 8,
+    "world_extent_units": [
+     0.05102,
+     0.00283,
+     0.06714
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_52/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 56,
+    "faces": 40,
+    "world_extent_units": [
+     0.01701,
+     0.01701,
+     0.01134
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_44/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 72,
+    "faces": 70,
+    "world_extent_units": [
+     0.22107,
+     0.11927,
+     0.00142
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_45/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 24,
+    "faces": 22,
+    "world_extent_units": [
+     0.22107,
+     0.11927,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_61/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 56,
+    "faces": 40,
+    "world_extent_units": [
+     0.01701,
+     0.01701,
+     0.01134
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_39/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 24,
+    "faces": 16,
+    "world_extent_units": [
+     0.1268,
+     0.02193,
+     0.00142
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_54/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 42,
+    "faces": 40,
+    "world_extent_units": [
+     0.00563,
+     0.00563,
+     0.00142
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_51/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 42,
+    "faces": 40,
+    "world_extent_units": [
+     0.00563,
+     0.00563,
+     0.00142
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_55/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 56,
+    "faces": 40,
+    "world_extent_units": [
+     0.01701,
+     0.01701,
+     0.01134
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_37/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 26,
+    "faces": 16,
+    "world_extent_units": [
+     0.12471,
+     0.01984,
+     0.11195
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_58/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 56,
+    "faces": 40,
+    "world_extent_units": [
+     0.01701,
+     0.01701,
+     0.01134
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_38/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 26,
+    "faces": 16,
+    "world_extent_units": [
+     0.12471,
+     0.01984,
+     0.11195
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_42/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 16,
+    "faces": 8,
+    "world_extent_units": [
+     0.05102,
+     0.00283,
+     0.06714
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_60/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 42,
+    "faces": 40,
+    "world_extent_units": [
+     0.00563,
+     0.00563,
+     0.00142
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_40/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 24,
+    "faces": 16,
+    "world_extent_units": [
+     0.1268,
+     0.02193,
+     0.00142
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_57/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 42,
+    "faces": 40,
+    "world_extent_units": [
+     0.00563,
+     0.00563,
+     0.00142
+    ]
+   },
+   {
+    "path": "/root/link_0/collisions/original_49/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 80,
+    "faces": 68,
+    "world_extent_units": [
+     0.01559,
+     0.06868,
+     0.01564
+    ]
+   },
+   {
+    "path": "/root/link_0/collisions/original_47/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 36,
+    "faces": 20,
+    "world_extent_units": [
+     0.05953,
+     0.00283,
+     0.04938
+    ]
+   },
+   {
+    "path": "/root/link_0/collisions/original_48/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 36,
+    "faces": 20,
+    "world_extent_units": [
+     0.05953,
+     0.00283,
+     0.04938
+    ]
+   },
+   {
+    "path": "/root/link_1/collisions/original_5/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 176,
+    "faces": 308,
+    "world_extent_units": [
+     0.00119,
+     0.01936,
+     0.10635
+    ]
+   },
+   {
+    "path": "/root/link_1/collisions/original_3/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 176,
+    "faces": 308,
+    "world_extent_units": [
+     0.00119,
+     0.01936,
+     0.10635
+    ]
+   },
+   {
+    "path": "/root/link_1/collisions/original_12/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 176,
+    "faces": 308,
+    "world_extent_units": [
+     0.00119,
+     0.01936,
+     0.10635
+    ]
+   },
+   {
+    "path": "/root/link_1/collisions/original_13/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 176,
+    "faces": 308,
+    "world_extent_units": [
+     0.00119,
+     0.01936,
+     0.10635
+    ]
+   },
+   {
+    "path": "/root/link_1/collisions/original_15/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 176,
+    "faces": 308,
+    "world_extent_units": [
+     0.00119,
+     0.01936,
+     0.10635
+    ]
+   },
+   {
+    "path": "/root/link_1/collisions/original_16/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 176,
+    "faces": 308,
+    "world_extent_units": [
+     0.00119,
+     0.01936,
+     0.10635
+    ]
+   },
+   {
+    "path": "/root/link_1/collisions/original_11/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 176,
+    "faces": 308,
+    "world_extent_units": [
+     0.00119,
+     0.01936,
+     0.10635
+    ]
+   },
+   {
+    "path": "/root/link_1/collisions/original_7/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 176,
+    "faces": 308,
+    "world_extent_units": [
+     0.00119,
+     0.01936,
+     0.10635
+    ]
+   },
+   {
+    "path": "/root/link_1/collisions/original_8/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 180,
+    "faces": 312,
+    "world_extent_units": [
+     0.12325,
+     0.00119,
+     0.10762
+    ]
+   },
+   {
+    "path": "/root/link_1/collisions/original_6/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 176,
+    "faces": 308,
+    "world_extent_units": [
+     0.12325,
+     0.00119,
+     0.10762
+    ]
+   },
+   {
+    "path": "/root/link_1/collisions/original_9/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 180,
+    "faces": 312,
+    "world_extent_units": [
+     0.12325,
+     0.00119,
+     0.10762
+    ]
+   },
+   {
+    "path": "/root/link_1/collisions/original_2/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 176,
+    "faces": 308,
+    "world_extent_units": [
+     0.00119,
+     0.01936,
+     0.10635
+    ]
+   },
+   {
+    "path": "/root/link_1/collisions/original_4/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 176,
+    "faces": 308,
+    "world_extent_units": [
+     0.00119,
+     0.01936,
+     0.10635
+    ]
+   },
+   {
+    "path": "/root/link_1/collisions/original_14/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 176,
+    "faces": 308,
+    "world_extent_units": [
+     0.00119,
+     0.01936,
+     0.10635
+    ]
+   },
+   {
+    "path": "/root/link_1/collisions/original_10/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 358,
+    "faces": 612,
+    "world_extent_units": [
+     0.12325,
+     0.01936,
+     0.00119
+    ]
+   },
+   {
+    "path": "/root/link_1/collisions/original_17/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 260,
+    "faces": 416,
+    "world_extent_units": [
+     0.12161,
+     0.01773,
+     0.00119
+    ]
+   },
+   {
+    "path": "/root/link_2/collisions/original_21/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 176,
+    "faces": 308,
+    "world_extent_units": [
+     0.00119,
+     0.01936,
+     0.10635
+    ]
+   },
+   {
+    "path": "/root/link_2/collisions/original_31/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 176,
+    "faces": 308,
+    "world_extent_units": [
+     0.00119,
+     0.01936,
+     0.10635
+    ]
+   },
+   {
+    "path": "/root/link_2/collisions/original_23/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 176,
+    "faces": 308,
+    "world_extent_units": [
+     0.12325,
+     0.00119,
+     0.10762
+    ]
+   },
+   {
+    "path": "/root/link_2/collisions/original_26/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 180,
+    "faces": 312,
+    "world_extent_units": [
+     0.12325,
+     0.00119,
+     0.10762
+    ]
+   },
+   {
+    "path": "/root/link_2/collisions/original_34/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 260,
+    "faces": 416,
+    "world_extent_units": [
+     0.12161,
+     0.01773,
+     0.00119
+    ]
+   },
+   {
+    "path": "/root/link_2/collisions/original_27/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 358,
+    "faces": 612,
+    "world_extent_units": [
+     0.12325,
+     0.01936,
+     0.00119
+    ]
+   },
+   {
+    "path": "/root/link_2/collisions/original_19/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 176,
+    "faces": 308,
+    "world_extent_units": [
+     0.00119,
+     0.01936,
+     0.10635
+    ]
+   },
+   {
+    "path": "/root/link_2/collisions/original_20/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 176,
+    "faces": 308,
+    "world_extent_units": [
+     0.00119,
+     0.01936,
+     0.10635
+    ]
+   },
+   {
+    "path": "/root/link_2/collisions/original_22/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 176,
+    "faces": 308,
+    "world_extent_units": [
+     0.00119,
+     0.01936,
+     0.10635
+    ]
+   },
+   {
+    "path": "/root/link_2/collisions/original_29/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 176,
+    "faces": 308,
+    "world_extent_units": [
+     0.00119,
+     0.01936,
+     0.10635
+    ]
+   },
+   {
+    "path": "/root/link_2/collisions/original_30/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 176,
+    "faces": 308,
+    "world_extent_units": [
+     0.00119,
+     0.01936,
+     0.10635
+    ]
+   },
+   {
+    "path": "/root/link_2/collisions/original_32/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 176,
+    "faces": 308,
+    "world_extent_units": [
+     0.00119,
+     0.01936,
+     0.10635
+    ]
+   },
+   {
+    "path": "/root/link_2/collisions/original_33/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 176,
+    "faces": 308,
+    "world_extent_units": [
+     0.00119,
+     0.01936,
+     0.10635
+    ]
+   },
+   {
+    "path": "/root/link_2/collisions/original_25/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 180,
+    "faces": 312,
+    "world_extent_units": [
+     0.12325,
+     0.00119,
+     0.10762
+    ]
+   },
+   {
+    "path": "/root/link_2/collisions/original_28/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 176,
+    "faces": 308,
+    "world_extent_units": [
+     0.00119,
+     0.01936,
+     0.10635
+    ]
+   },
+   {
+    "path": "/root/link_2/collisions/original_24/World/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 176,
+    "faces": 308,
+    "world_extent_units": [
+     0.00119,
+     0.01936,
+     0.10635
+    ]
+   }
+  ],
+  "n_colliders": 106,
+  "approximation_counts": {
+   "convexHull": 54,
+   "convexDecomposition": 52
+  }
+ },
+ "Rigid/coin/00000": {
+  "usd": "Rigid/coin/00000/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/World",
+  "world_extent_units": [
+   0.0285,
+   0.0285,
+   0.00194
+  ],
+  "rigid_bodies": [
+   "/World"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/World/collision/model",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": 16.0,
+    "purpose": null,
+    "visibility": "invisible",
+    "points": 1578,
+    "faces": 2684,
+    "world_extent_units": [
+     0.0285,
+     0.0285,
+     0.00194
+    ]
+   },
+   {
+    "path": "/World/collision/Cylinder",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": "invisible",
+    "points": 66,
+    "faces": 96,
+    "world_extent_units": [
+     0.0285,
+     0.0285,
+     0.0015
+    ]
+   }
+  ],
+  "n_colliders": 2,
+  "approximation_counts": {
+   "convexDecomposition": 1,
+   "convexHull": 1
+  }
+ },
+ "Rigid/sphere/00000": {
+  "usd": "Rigid/sphere/00000/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/root",
+  "world_extent_units": [
+   0.01,
+   0.01,
+   0.01
+  ],
+  "rigid_bodies": [
+   "/root",
+   "/root/visual",
+   "/root/collision"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/root/visual/model",
+    "type": "Mesh",
+    "enabled": null,
+    "approximation": "boundingSphere",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": 177.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 482,
+    "faces": 512,
+    "world_extent_units": [
+     0.01,
+     0.01,
+     0.01
+    ]
+   },
+   {
+    "path": "/root/collision/model",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.0010000000474974513,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 482,
+    "faces": 512,
+    "world_extent_units": [
+     0.01,
+     0.01,
+     0.01
+    ]
+   }
+  ],
+  "n_colliders": 2,
+  "approximation_counts": {
+   "boundingSphere": 1,
+   "convexHull": 1
+  }
+ },
+ "Rigid/bread/00000": {
+  "usd": "Rigid/bread/00000/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/World",
+  "world_extent_units": [
+   0.11695,
+   0.11606,
+   0.0118
+  ],
+  "rigid_bodies": [
+   "/World"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/World/collision",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 32.0,
+    "purpose": null,
+    "visibility": "invisible",
+    "points": 46487,
+    "faces": 86016,
+    "world_extent_units": [
+     0.11695,
+     0.11606,
+     0.0118
+    ]
+   }
+  ],
+  "n_colliders": 1,
+  "approximation_counts": {
+   "convexHull": 1
+  }
+ },
+ "Rigid/mallet/00000": {
+  "usd": "Rigid/mallet/00000/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/World",
+  "world_extent_units": [
+   0.026,
+   0.21364,
+   0.026
+  ],
+  "rigid_bodies": [
+   "/World"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/World/collision",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": "invisible",
+    "points": 1341,
+    "faces": 2042,
+    "world_extent_units": [
+     0.026,
+     0.21364,
+     0.026
+    ]
+   },
+   {
+    "path": "/World/Cylinder",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": "invisible",
+    "points": 66,
+    "faces": 96,
+    "world_extent_units": [
+     0.0075,
+     0.1867,
+     0.0075
+    ]
+   },
+   {
+    "path": "/World/Sphere",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": "invisible",
+    "points": 482,
+    "faces": 512,
+    "world_extent_units": [
+     0.0255,
+     0.0255,
+     0.0255
+    ]
+   }
+  ],
+  "n_colliders": 3,
+  "approximation_counts": {
+   "convexDecomposition": 1,
+   "convexHull": 2
+  }
+ },
+ "Rigid/pen/00001": {
+  "usd": "Rigid/pen/00001/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/root",
+  "world_extent_units": [
+   0.0138,
+   0.0128,
+   0.145
+  ],
+  "rigid_bodies": [
+   "/root"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/root/collision/model",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": 0.0020000000949949026,
+    "rest_offset": 0.0010000000474974513,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 43164,
+    "faces": 43171,
+    "world_extent_units": [
+     0.0138,
+     0.0128,
+     0.145
+    ]
+   }
+  ],
+  "n_colliders": 1,
+  "approximation_counts": {
+   "convexDecomposition": 1
+  }
+ },
+ "Rigid/egg/00000": {
+  "usd": "Rigid/egg/00000/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/World",
+  "world_extent_units": [
+   0.04114,
+   0.04216,
+   0.05761
+  ],
+  "rigid_bodies": [
+   "/World"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/World/collision",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 32.0,
+    "purpose": null,
+    "visibility": "invisible",
+    "points": 47616,
+    "faces": 15872,
+    "world_extent_units": [
+     0.04114,
+     0.04216,
+     0.05761
+    ]
+   }
+  ],
+  "n_colliders": 1,
+  "approximation_counts": {
+   "convexHull": 1
+  }
+ },
+ "Rigid/bottle/00025": {
+  "usd": "Rigid/bottle/00025/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/root",
+  "world_extent_units": [
+   0.064,
+   0.064,
+   0.204
+  ],
+  "rigid_bodies": [
+   "/root"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/root/collision/model",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 83915,
+    "faces": 145107,
+    "world_extent_units": [
+     0.064,
+     0.064,
+     0.204
+    ]
+   }
+  ],
+  "n_colliders": 1,
+  "approximation_counts": {
+   "convexHull": 1
+  }
+ },
+ "Rigid/bottle/00000": {
+  "usd": "Rigid/bottle/00000/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/root",
+  "world_extent_units": [
+   0.063,
+   0.063,
+   0.245
+  ],
+  "rigid_bodies": [
+   "/root"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/root/collision/model",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 117342,
+    "faces": 207170,
+    "world_extent_units": [
+     0.063,
+     0.063,
+     0.245
+    ]
+   }
+  ],
+  "n_colliders": 1,
+  "approximation_counts": {
+   "convexDecomposition": 1
+  }
+ },
+ "Rigid/cube/00004": {
+  "usd": "Rigid/cube/00004/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/root",
+  "world_extent_units": [
+   0.025,
+   0.025,
+   0.025
+  ],
+  "rigid_bodies": [
+   "/root"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/root/collision/model",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 10.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 8,
+    "faces": 6,
+    "world_extent_units": [
+     0.025,
+     0.025,
+     0.025
+    ]
+   }
+  ],
+  "n_colliders": 1,
+  "approximation_counts": {
+   "convexDecomposition": 1
+  }
+ },
+ "Rigid/cup/00001": {
+  "usd": "Rigid/cup/00001/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/root",
+  "world_extent_units": [
+   0.072,
+   0.072,
+   0.072
+  ],
+  "rigid_bodies": [
+   "/root"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/root/collision/model",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 10.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 41964,
+    "faces": 41962,
+    "world_extent_units": [
+     0.072,
+     0.072,
+     0.072
+    ]
+   }
+  ],
+  "n_colliders": 1,
+  "approximation_counts": {
+   "convexDecomposition": 1
+  }
+ },
+ "Rigid/mahjong/00004": {
+  "usd": "Rigid/mahjong/00004/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/World",
+  "world_extent_units": [
+   0.04488,
+   0.06474,
+   0.0328
+  ],
+  "rigid_bodies": [
+   "/World"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/World/collision",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexHull",
+    "contact_offset": 0.00019999999494757503,
+    "rest_offset": 9.999999747378752e-05,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": "invisible",
+    "points": 273,
+    "faces": 432,
+    "world_extent_units": [
+     0.04488,
+     0.06474,
+     0.0328
+    ]
+   }
+  ],
+  "n_colliders": 1,
+  "approximation_counts": {
+   "convexHull": 1
+  }
+ },
+ "Rigid/key/00000": {
+  "usd": "Rigid/key/00000/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/Key",
+  "world_extent_units": [
+   0.02271,
+   0.01,
+   0.06285
+  ],
+  "rigid_bodies": [
+   "/Key"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/Key/mesh",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "sdf",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": "inherited",
+    "points": 474,
+    "faces": 316,
+    "world_extent_units": [
+     0.02271,
+     0.01,
+     0.06285
+    ]
+   },
+   {
+    "path": "/Key/Scope/Cube",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": "invisible",
+    "points": 8,
+    "faces": 6,
+    "world_extent_units": [
+     0.00496,
+     0.00482,
+     0.04291
+    ]
+   },
+   {
+    "path": "/Key/Scope/Cube_01",
+    "type": "Cube",
+    "enabled": true,
+    "approximation": null,
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": "invisible",
+    "world_extent_units": [
+     0.01,
+     0.00448,
+     0.00343
+    ]
+   },
+   {
+    "path": "/Key/Scope/Cube_02",
+    "type": "Cube",
+    "enabled": true,
+    "approximation": null,
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": "invisible",
+    "world_extent_units": [
+     0.01,
+     0.00448,
+     0.00343
+    ]
+   },
+   {
+    "path": "/Key/Scope/Cylinder",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexHull",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": null,
+    "max_hulls": null,
+    "purpose": null,
+    "visibility": "invisible",
+    "points": 66,
+    "faces": 96,
+    "world_extent_units": [
+     0.0194,
+     0.00948,
+     0.01869
+    ]
+   }
+  ],
+  "n_colliders": 5,
+  "approximation_counts": {
+   "sdf": 1,
+   "convexHull": 2,
+   "None": 2
+  }
+ },
+ "Rigid/paper_ball/00000": {
+  "usd": "Rigid/paper_ball/00000/object.usdz",
+  "meters_per_unit": 1.0,
+  "up_axis": "Z",
+  "default_prim": "/root",
+  "world_extent_units": [
+   0.06079,
+   0.04215,
+   0.04267
+  ],
+  "rigid_bodies": [
+   "/root"
+  ],
+  "articulation_roots": [],
+  "joints": [],
+  "colliders": [
+   {
+    "path": "/root/collision/model",
+    "type": "Mesh",
+    "enabled": true,
+    "approximation": "convexDecomposition",
+    "contact_offset": null,
+    "rest_offset": null,
+    "min_thickness": 0.019999999552965164,
+    "max_hulls": 64.0,
+    "purpose": null,
+    "visibility": null,
+    "points": 459137,
+    "faces": 807368,
+    "world_extent_units": [
+     0.06079,
+     0.04215,
+     0.04267
+    ]
+   }
+  ],
+  "n_colliders": 1,
+  "approximation_counts": {
+   "convexDecomposition": 1
+  }
+ }
+}

@@ -1,0 +1,29 @@
+{
+  "reference": "v2b",
+  "arms": {
+    "v2b": {
+      "fixes": "all seven, global equal-weight map v2b (3642b4b)",
+      "tags": [
+        "v2b_g4_s0_q00_vis1",
+        "v2b_g4_s1_q00_vis1",
+        "v2b_g4_s2_q00_vis1"
+      ]
+    },
+    "v2_presence": {
+      "fixes": "all seven, global presence-weighted map v2_presence (5b9aa3c)",
+      "tags": [
+        "pw_g4_bt_s0_q00_vis2",
+        "pw_g4_bt_s0_q01_vis2",
+        "pw_g4_bt_s0_q02_vis2",
+        "pw_g4_bt_s0_q03_vis2",
+        "pw_g4_bt_s1_q00_vis2",
+        "pw_g4_bt_s1_q01_vis2",
+        "pw_g4_bt_s1_q02_vis2",
+        "pw_g4_bt_s1_q03_vis2",
+        "pw_g4_bt_s2_q00_vis2",
+        "pw_g4_bt_s2_q01_vis2",
+        "pw_g4_bt_s2_q02_vis2"
+      ]
+    }
+  }
+}

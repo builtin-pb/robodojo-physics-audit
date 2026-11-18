@@ -1,0 +1,3 @@
+{"reference": "v1_trip", "arms": {
+ "v1_trip": {"fixes": "all seven, #160's fix as decided (drive limited at the SDK's trip), map v1 (audit/out/fix_160 batch 6, f160_b6_g4_s*; della-vis2 GPU 0 A40, head 472f858)", "tags": ["f160_b6_g4_s0", "f160_b6_g4_s1", "f160_b6_g4_s2"]},
+ "v2b": {"fixes": "the same seven fixes and gripper limit, map v2b (docs/params at 3642b4b; della-vis1 A100, head dd32149, --fast_ik)", "tags": ["v2b_g4_s0_q00_vis1", "v2b_g4_s1_q00_vis1", "v2b_g4_s2_q00_vis1"]}}}

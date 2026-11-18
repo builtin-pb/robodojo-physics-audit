@@ -1,0 +1,126 @@
+[
+ {
+  "cell_name": "put_bottles_into_dustbin__shipped",
+  "layout": 0,
+  "overrides": {
+   "slide_target": {
+    "label": "bottle2",
+    "inst": "bottle_25_3",
+    "labelled": true,
+    "stem": "bottle_25",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.980066,
+     -0.198671
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "put_bottles_into_dustbin__dt2",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.002,
+   "slide_target": {
+    "label": "bottle2",
+    "inst": "bottle_25_3",
+    "labelled": true,
+    "stem": "bottle_25",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.980066,
+     -0.198671
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "put_bottles_into_dustbin__dt1",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.001,
+   "slide_target": {
+    "label": "bottle2",
+    "inst": "bottle_25_3",
+    "labelled": true,
+    "stem": "bottle_25",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.980066,
+     -0.198671
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "put_bottles_into_dustbin__iters4x",
+  "layout": 0,
+  "overrides": {
+   "min_pos_iters": 64,
+   "slide_target": {
+    "label": "bottle2",
+    "inst": "bottle_25_3",
+    "labelled": true,
+    "stem": "bottle_25",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.980066,
+     -0.198671
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "put_bottles_into_dustbin__stab_off",
+  "layout": 0,
+  "overrides": {
+   "enable_stabilization": false,
+   "slide_target": {
+    "label": "bottle2",
+    "inst": "bottle_25_3",
+    "labelled": true,
+    "stem": "bottle_25",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.980066,
+     -0.198671
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "put_bottles_into_dustbin__cpu",
+  "layout": 0,
+  "overrides": {
+   "gpu_dynamics": false,
+   "slide_target": {
+    "label": "bottle2",
+    "inst": "bottle_25_3",
+    "labelled": true,
+    "stem": "bottle_25",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.980066,
+     -0.198671
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "put_bottles_into_dustbin__shipped_repeat",
+  "layout": 0,
+  "overrides": {
+   "slide_target": {
+    "label": "bottle2",
+    "inst": "bottle_25_3",
+    "labelled": true,
+    "stem": "bottle_25",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.980066,
+     -0.198671
+    ]
+   }
+  }
+ }
+]

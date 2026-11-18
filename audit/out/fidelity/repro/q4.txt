@@ -1,0 +1,2 @@
+# Harness fidelity, batch 4: V2's coin through main.py. The layout manager does not label push_T_random's coin (coin_1_15), so fm_rb_pushTr did not read it; the reader now also walks every rigid body under /World/envs/env_0/rigid. Prediction (from vb_sweep_pushTr): coin 0.5 kg, inertia diagonal 7.93e-7, 7.6e-7, 1.549e-6 kg m^2, engine materials 0.5/0.5/0. della-vis2 GPU 0.
+fm_rb_pushTr2|fork|--mode readback --task push_T_random --evaluator v1 --eval_num 1 --run_id fid_rb_pushTr2

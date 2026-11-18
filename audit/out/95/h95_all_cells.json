@@ -1,0 +1,905 @@
+[
+  {
+    "cell_name": "grid_dt4_it16_00041_lying",
+    "layout": 1,
+    "overrides": {
+      "dt_s": 0.004,
+      "pos_iters": 16,
+      "enable_stabilization": true,
+      "target_label": "bottle2",
+      "fast_settle": false
+    }
+  },
+  {
+    "cell_name": "grid_dt4_it16_00041_upright",
+    "layout": 17,
+    "overrides": {
+      "dt_s": 0.004,
+      "pos_iters": 16,
+      "enable_stabilization": true,
+      "target_label": "bottle0",
+      "fast_settle": false
+    }
+  },
+  {
+    "cell_name": "grid_dt4_it16_00000_lying",
+    "layout": 5,
+    "overrides": {
+      "dt_s": 0.004,
+      "pos_iters": 16,
+      "enable_stabilization": true,
+      "target_label": "bottle3",
+      "fast_settle": false
+    }
+  },
+  {
+    "cell_name": "grid_dt4_it16_00000_upright",
+    "layout": 11,
+    "overrides": {
+      "dt_s": 0.004,
+      "pos_iters": 16,
+      "enable_stabilization": true,
+      "target_label": "bottle2",
+      "fast_settle": false
+    }
+  },
+  {
+    "cell_name": "grid_dt4_it32_00041_lying",
+    "layout": 1,
+    "overrides": {
+      "dt_s": 0.004,
+      "pos_iters": 32,
+      "enable_stabilization": true,
+      "target_label": "bottle2",
+      "fast_settle": false
+    }
+  },
+  {
+    "cell_name": "grid_dt4_it32_00041_upright",
+    "layout": 17,
+    "overrides": {
+      "dt_s": 0.004,
+      "pos_iters": 32,
+      "enable_stabilization": true,
+      "target_label": "bottle0",
+      "fast_settle": false
+    }
+  },
+  {
+    "cell_name": "grid_dt4_it32_00000_lying",
+    "layout": 5,
+    "overrides": {
+      "dt_s": 0.004,
+      "pos_iters": 32,
+      "enable_stabilization": true,
+      "target_label": "bottle3",
+      "fast_settle": false
+    }
+  },
+  {
+    "cell_name": "grid_dt4_it32_00000_upright",
+    "layout": 11,
+    "overrides": {
+      "dt_s": 0.004,
+      "pos_iters": 32,
+      "enable_stabilization": true,
+      "target_label": "bottle2",
+      "fast_settle": false
+    }
+  },
+  {
+    "cell_name": "grid_dt4_it64_00041_lying",
+    "layout": 1,
+    "overrides": {
+      "dt_s": 0.004,
+      "pos_iters": 64,
+      "enable_stabilization": true,
+      "target_label": "bottle2",
+      "fast_settle": false
+    }
+  },
+  {
+    "cell_name": "grid_dt4_it64_00041_upright",
+    "layout": 17,
+    "overrides": {
+      "dt_s": 0.004,
+      "pos_iters": 64,
+      "enable_stabilization": true,
+      "target_label": "bottle0",
+      "fast_settle": false
+    }
+  },
+  {
+    "cell_name": "grid_dt4_it64_00000_lying",
+    "layout": 5,
+    "overrides": {
+      "dt_s": 0.004,
+      "pos_iters": 64,
+      "enable_stabilization": true,
+      "target_label": "bottle3",
+      "fast_settle": false
+    }
+  },
+  {
+    "cell_name": "grid_dt4_it64_00000_upright",
+    "layout": 11,
+    "overrides": {
+      "dt_s": 0.004,
+      "pos_iters": 64,
+      "enable_stabilization": true,
+      "target_label": "bottle2",
+      "fast_settle": false
+    }
+  },
+  {
+    "cell_name": "grid_dt2_it16_00041_lying",
+    "layout": 1,
+    "overrides": {
+      "dt_s": 0.002,
+      "pos_iters": 16,
+      "enable_stabilization": true,
+      "target_label": "bottle2",
+      "fast_settle": false
+    }
+  },
+  {
+    "cell_name": "grid_dt2_it16_00041_upright",
+    "layout": 17,
+    "overrides": {
+      "dt_s": 0.002,
+      "pos_iters": 16,
+      "enable_stabilization": true,
+      "target_label": "bottle0",
+      "fast_settle": false
+    }
+  },
+  {
+    "cell_name": "grid_dt2_it16_00000_lying",
+    "layout": 5,
+    "overrides": {
+      "dt_s": 0.002,
+      "pos_iters": 16,
+      "enable_stabilization": true,
+      "target_label": "bottle3",
+      "fast_settle": false
+    }
+  },
+  {
+    "cell_name": "grid_dt2_it16_00000_upright",
+    "layout": 11,
+    "overrides": {
+      "dt_s": 0.002,
+      "pos_iters": 16,
+      "enable_stabilization": true,
+      "target_label": "bottle2",
+      "fast_settle": false
+    }
+  },
+  {
+    "cell_name": "grid_dt2_it32_00041_lying",
+    "layout": 1,
+    "overrides": {
+      "dt_s": 0.002,
+      "pos_iters": 32,
+      "enable_stabilization": true,
+      "target_label": "bottle2",
+      "fast_settle": false
+    }
+  },
+  {
+    "cell_name": "grid_dt2_it32_00041_upright",
+    "layout": 17,
+    "overrides": {
+      "dt_s": 0.002,
+      "pos_iters": 32,
+      "enable_stabilization": true,
+      "target_label": "bottle0",
+      "fast_settle": false
+    }
+  },
+  {
+    "cell_name": "grid_dt2_it32_00000_lying",
+    "layout": 5,
+    "overrides": {
+      "dt_s": 0.002,
+      "pos_iters": 32,
+      "enable_stabilization": true,
+      "target_label": "bottle3",
+      "fast_settle": false
+    }
+  },
+  {
+    "cell_name": "grid_dt2_it32_00000_upright",
+    "layout": 11,
+    "overrides": {
+      "dt_s": 0.002,
+      "pos_iters": 32,
+      "enable_stabilization": true,
+      "target_label": "bottle2",
+      "fast_settle": false
+    }
+  },
+  {
+    "cell_name": "grid_dt2_it64_00041_lying",
+    "layout": 1,
+    "overrides": {
+      "dt_s": 0.002,
+      "pos_iters": 64,
+      "enable_stabilization": true,
+      "target_label": "bottle2",
+      "fast_settle": false
+    }
+  },
+  {
+    "cell_name": "grid_dt2_it64_00041_upright",
+    "layout": 17,
+    "overrides": {
+      "dt_s": 0.002,
+      "pos_iters": 64,
+      "enable_stabilization": true,
+      "target_label": "bottle0",
+      "fast_settle": false
+    }
+  },
+  {
+    "cell_name": "grid_dt2_it64_00000_lying",
+    "layout": 5,
+    "overrides": {
+      "dt_s": 0.002,
+      "pos_iters": 64,
+      "enable_stabilization": true,
+      "target_label": "bottle3",
+      "fast_settle": false
+    }
+  },
+  {
+    "cell_name": "grid_dt2_it64_00000_upright",
+    "layout": 11,
+    "overrides": {
+      "dt_s": 0.002,
+      "pos_iters": 64,
+      "enable_stabilization": true,
+      "target_label": "bottle2",
+      "fast_settle": false
+    }
+  },
+  {
+    "cell_name": "grid_dt1_it16_00041_lying",
+    "layout": 1,
+    "overrides": {
+      "dt_s": 0.001,
+      "pos_iters": 16,
+      "enable_stabilization": true,
+      "target_label": "bottle2",
+      "fast_settle": false
+    }
+  },
+  {
+    "cell_name": "grid_dt1_it16_00041_upright",
+    "layout": 17,
+    "overrides": {
+      "dt_s": 0.001,
+      "pos_iters": 16,
+      "enable_stabilization": true,
+      "target_label": "bottle0",
+      "fast_settle": false
+    }
+  },
+  {
+    "cell_name": "grid_dt1_it16_00000_lying",
+    "layout": 5,
+    "overrides": {
+      "dt_s": 0.001,
+      "pos_iters": 16,
+      "enable_stabilization": true,
+      "target_label": "bottle3",
+      "fast_settle": false
+    }
+  },
+  {
+    "cell_name": "grid_dt1_it16_00000_upright",
+    "layout": 11,
+    "overrides": {
+      "dt_s": 0.001,
+      "pos_iters": 16,
+      "enable_stabilization": true,
+      "target_label": "bottle2",
+      "fast_settle": false
+    }
+  },
+  {
+    "cell_name": "grid_dt1_it32_00041_lying",
+    "layout": 1,
+    "overrides": {
+      "dt_s": 0.001,
+      "pos_iters": 32,
+      "enable_stabilization": true,
+      "target_label": "bottle2",
+      "fast_settle": false
+    }
+  },
+  {
+    "cell_name": "grid_dt1_it32_00041_upright",
+    "layout": 17,
+    "overrides": {
+      "dt_s": 0.001,
+      "pos_iters": 32,
+      "enable_stabilization": true,
+      "target_label": "bottle0",
+      "fast_settle": false
+    }
+  },
+  {
+    "cell_name": "grid_dt1_it32_00000_lying",
+    "layout": 5,
+    "overrides": {
+      "dt_s": 0.001,
+      "pos_iters": 32,
+      "enable_stabilization": true,
+      "target_label": "bottle3",
+      "fast_settle": false
+    }
+  },
+  {
+    "cell_name": "grid_dt1_it32_00000_upright",
+    "layout": 11,
+    "overrides": {
+      "dt_s": 0.001,
+      "pos_iters": 32,
+      "enable_stabilization": true,
+      "target_label": "bottle2",
+      "fast_settle": false
+    }
+  },
+  {
+    "cell_name": "grid_dt1_it64_00041_lying",
+    "layout": 1,
+    "overrides": {
+      "dt_s": 0.001,
+      "pos_iters": 64,
+      "enable_stabilization": true,
+      "target_label": "bottle2",
+      "fast_settle": false
+    }
+  },
+  {
+    "cell_name": "grid_dt1_it64_00041_upright",
+    "layout": 17,
+    "overrides": {
+      "dt_s": 0.001,
+      "pos_iters": 64,
+      "enable_stabilization": true,
+      "target_label": "bottle0",
+      "fast_settle": false
+    }
+  },
+  {
+    "cell_name": "grid_dt1_it64_00000_lying",
+    "layout": 5,
+    "overrides": {
+      "dt_s": 0.001,
+      "pos_iters": 64,
+      "enable_stabilization": true,
+      "target_label": "bottle3",
+      "fast_settle": false
+    }
+  },
+  {
+    "cell_name": "grid_dt1_it64_00000_upright",
+    "layout": 11,
+    "overrides": {
+      "dt_s": 0.001,
+      "pos_iters": 64,
+      "enable_stabilization": true,
+      "target_label": "bottle2",
+      "fast_settle": false
+    }
+  },
+  {
+    "cell_name": "det_on_dt1_it64",
+    "layout": 1,
+    "overrides": {
+      "dt_s": 0.001,
+      "pos_iters": 64,
+      "enable_enhanced_determinism": true,
+      "target_label": "bottle2",
+      "fast_settle": true
+    },
+    "sweep_file": "h95_toggles_sweep.json",
+    "sweep_index": 0
+  },
+  {
+    "cell_name": "det_on_dt1_it64",
+    "layout": 5,
+    "overrides": {
+      "dt_s": 0.001,
+      "pos_iters": 64,
+      "enable_enhanced_determinism": true,
+      "target_label": "bottle3",
+      "fast_settle": true
+    },
+    "sweep_file": "h95_toggles_sweep.json",
+    "sweep_index": 1
+  },
+  {
+    "cell_name": "foff_0p001_dt1_it64",
+    "layout": 1,
+    "overrides": {
+      "dt_s": 0.001,
+      "pos_iters": 64,
+      "friction_offset_threshold_m": 0.001,
+      "target_label": "bottle2",
+      "fast_settle": true
+    },
+    "sweep_file": "h95_toggles_sweep.json",
+    "sweep_index": 2
+  },
+  {
+    "cell_name": "foff_0p001_dt1_it64",
+    "layout": 5,
+    "overrides": {
+      "dt_s": 0.001,
+      "pos_iters": 64,
+      "friction_offset_threshold_m": 0.001,
+      "target_label": "bottle3",
+      "fast_settle": true
+    },
+    "sweep_file": "h95_toggles_sweep.json",
+    "sweep_index": 3
+  },
+  {
+    "cell_name": "fcorr_0p001_dt1_it64",
+    "layout": 1,
+    "overrides": {
+      "dt_s": 0.001,
+      "pos_iters": 64,
+      "friction_correlation_distance_m": 0.001,
+      "target_label": "bottle2",
+      "fast_settle": true
+    },
+    "sweep_file": "h95_toggles_sweep.json",
+    "sweep_index": 4
+  },
+  {
+    "cell_name": "fcorr_0p001_dt1_it64",
+    "layout": 5,
+    "overrides": {
+      "dt_s": 0.001,
+      "pos_iters": 64,
+      "friction_correlation_distance_m": 0.001,
+      "target_label": "bottle3",
+      "fast_settle": true
+    },
+    "sweep_file": "h95_toggles_sweep.json",
+    "sweep_index": 5
+  },
+  {
+    "cell_name": "fcorr_0p100_dt1_it64",
+    "layout": 5,
+    "overrides": {
+      "dt_s": 0.001,
+      "pos_iters": 64,
+      "friction_correlation_distance_m": 0.1,
+      "target_label": "bottle3",
+      "fast_settle": true
+    },
+    "sweep_file": "h95_toggles_sweep.json",
+    "sweep_index": 6
+  },
+  {
+    "cell_name": "nostab_dt1_it64",
+    "layout": 1,
+    "overrides": {
+      "dt_s": 0.001,
+      "pos_iters": 64,
+      "enable_stabilization": false,
+      "target_label": "bottle2",
+      "fast_settle": true
+    },
+    "sweep_file": "h95_toggles_sweep.json",
+    "sweep_index": 7
+  },
+  {
+    "cell_name": "nostab_dt1_it64",
+    "layout": 5,
+    "overrides": {
+      "dt_s": 0.001,
+      "pos_iters": 64,
+      "enable_stabilization": false,
+      "target_label": "bottle3",
+      "fast_settle": true
+    },
+    "sweep_file": "h95_toggles_sweep.json",
+    "sweep_index": 8
+  },
+  {
+    "cell_name": "nostab_dt4_it16",
+    "layout": 5,
+    "overrides": {
+      "dt_s": 0.004,
+      "pos_iters": 16,
+      "enable_stabilization": false,
+      "target_label": "bottle3",
+      "fast_settle": true
+    },
+    "sweep_file": "h95_toggles_sweep.json",
+    "sweep_index": 9
+  },
+  {
+    "cell_name": "vhacd_aabb_dt4_it16",
+    "layout": 1,
+    "overrides": {
+      "dt_s": 0.004,
+      "pos_iters": 16,
+      "query_aabb": true,
+      "target_label": "bottle0",
+      "fast_settle": true
+    },
+    "sweep_file": "h95_toggles_sweep.json",
+    "sweep_index": 10
+  },
+  {
+    "cell_name": "vhacd_aabb_dt4_it16",
+    "layout": 10,
+    "overrides": {
+      "dt_s": 0.004,
+      "pos_iters": 16,
+      "query_aabb": true,
+      "target_label": "bottle0",
+      "fast_settle": true
+    },
+    "sweep_file": "h95_toggles_sweep.json",
+    "sweep_index": 11
+  },
+  {
+    "cell_name": "vhacd_aabb_dt4_it16",
+    "layout": 5,
+    "overrides": {
+      "dt_s": 0.004,
+      "pos_iters": 16,
+      "query_aabb": true,
+      "target_label": "bottle3",
+      "fast_settle": true
+    },
+    "sweep_file": "h95_toggles_sweep.json",
+    "sweep_index": 12
+  },
+  {
+    "cell_name": "extf_on_dt1_it64",
+    "layout": 5,
+    "overrides": {
+      "dt_s": 0.001,
+      "pos_iters": 64,
+      "enable_external_forces_every_iteration": true,
+      "target_label": "bottle3",
+      "fast_settle": true
+    },
+    "sweep_file": "h95_toggles_sweep.json",
+    "sweep_index": 13
+  },
+  {
+    "cell_name": "pgs_dt4_it64",
+    "layout": 5,
+    "overrides": {
+      "dt_s": 0.004,
+      "pos_iters": 64,
+      "solver_type": 0,
+      "target_label": "bottle3",
+      "fast_settle": true
+    },
+    "sweep_file": "h95_toggles_sweep.json",
+    "sweep_index": 14
+  },
+  {
+    "cell_name": "foff_0p001_dt1_it64",
+    "layout": 5,
+    "overrides": {
+      "dt_s": 0.001,
+      "pos_iters": 64,
+      "friction_offset_threshold_m": 0.001,
+      "target_label": "bottle3",
+      "fast_settle": true
+    },
+    "sweep_file": "h95_toggles_sweep2.json",
+    "sweep_index": 0
+  },
+  {
+    "cell_name": "fcorr_0p001_dt1_it64",
+    "layout": 5,
+    "overrides": {
+      "dt_s": 0.001,
+      "pos_iters": 64,
+      "friction_correlation_distance_m": 0.001,
+      "target_label": "bottle3",
+      "fast_settle": true
+    },
+    "sweep_file": "h95_toggles_sweep2.json",
+    "sweep_index": 1
+  },
+  {
+    "cell_name": "fcorr_0p100_dt1_it64",
+    "layout": 5,
+    "overrides": {
+      "dt_s": 0.001,
+      "pos_iters": 64,
+      "friction_correlation_distance_m": 0.1,
+      "target_label": "bottle3",
+      "fast_settle": true
+    },
+    "sweep_file": "h95_toggles_sweep2.json",
+    "sweep_index": 2
+  },
+  {
+    "cell_name": "nostab_dt1_it64",
+    "layout": 5,
+    "overrides": {
+      "dt_s": 0.001,
+      "pos_iters": 64,
+      "enable_stabilization": false,
+      "target_label": "bottle3",
+      "fast_settle": true
+    },
+    "sweep_file": "h95_toggles_sweep2.json",
+    "sweep_index": 3
+  },
+  {
+    "cell_name": "nostab_aabb_dt4_it64",
+    "layout": 5,
+    "overrides": {
+      "dt_s": 0.004,
+      "pos_iters": 64,
+      "enable_stabilization": false,
+      "query_aabb": true,
+      "target_label": "bottle3",
+      "fast_settle": true
+    },
+    "sweep_file": "h95_toggles_sweep2.json",
+    "sweep_index": 4
+  },
+  {
+    "cell_name": "vhacd_00060_dt4_it64",
+    "layout": 1,
+    "overrides": {
+      "dt_s": 0.004,
+      "pos_iters": 64,
+      "query_aabb": true,
+      "target_label": "bottle0",
+      "fast_settle": true
+    },
+    "sweep_file": "h95_toggles_sweep2.json",
+    "sweep_index": 5
+  },
+  {
+    "cell_name": "f_00041_dt4_it16_stab_on",
+    "layout": 1,
+    "overrides": {
+      "dt_s": 0.004,
+      "pos_iters": 16,
+      "enable_stabilization": true,
+      "target_label": "bottle2",
+      "fast_settle": false
+    },
+    "sweep_file": "h95_rev97_followups.json",
+    "sweep_index": 0
+  },
+  {
+    "cell_name": "f_00041_dt4_it16_stab_off",
+    "layout": 1,
+    "overrides": {
+      "dt_s": 0.004,
+      "pos_iters": 16,
+      "enable_stabilization": false,
+      "target_label": "bottle2",
+      "fast_settle": false
+    },
+    "sweep_file": "h95_rev97_followups.json",
+    "sweep_index": 1
+  },
+  {
+    "cell_name": "f_00041_dt1_it16_stab_on",
+    "layout": 1,
+    "overrides": {
+      "dt_s": 0.001,
+      "pos_iters": 16,
+      "enable_stabilization": true,
+      "target_label": "bottle2",
+      "fast_settle": false
+    },
+    "sweep_file": "h95_rev97_followups.json",
+    "sweep_index": 2
+  },
+  {
+    "cell_name": "f_00041_dt1_it16_stab_off",
+    "layout": 1,
+    "overrides": {
+      "dt_s": 0.001,
+      "pos_iters": 16,
+      "enable_stabilization": false,
+      "target_label": "bottle2",
+      "fast_settle": false
+    },
+    "sweep_file": "h95_rev97_followups.json",
+    "sweep_index": 3
+  },
+  {
+    "cell_name": "f_00000_dt4_it16_stab_on",
+    "layout": 5,
+    "overrides": {
+      "dt_s": 0.004,
+      "pos_iters": 16,
+      "enable_stabilization": true,
+      "target_label": "bottle3",
+      "fast_settle": false
+    },
+    "sweep_file": "h95_rev97_followups.json",
+    "sweep_index": 4
+  },
+  {
+    "cell_name": "f_00000_dt4_it16_stab_off",
+    "layout": 5,
+    "overrides": {
+      "dt_s": 0.004,
+      "pos_iters": 16,
+      "enable_stabilization": false,
+      "target_label": "bottle3",
+      "fast_settle": false
+    },
+    "sweep_file": "h95_rev97_followups.json",
+    "sweep_index": 5
+  },
+  {
+    "cell_name": "f_00000_dt1_it16_stab_on",
+    "layout": 5,
+    "overrides": {
+      "dt_s": 0.001,
+      "pos_iters": 16,
+      "enable_stabilization": true,
+      "target_label": "bottle3",
+      "fast_settle": false
+    },
+    "sweep_file": "h95_rev97_followups.json",
+    "sweep_index": 6
+  },
+  {
+    "cell_name": "f_00000_dt1_it16_stab_off",
+    "layout": 5,
+    "overrides": {
+      "dt_s": 0.001,
+      "pos_iters": 16,
+      "enable_stabilization": false,
+      "target_label": "bottle3",
+      "fast_settle": false
+    },
+    "sweep_file": "h95_rev97_followups.json",
+    "sweep_index": 7
+  },
+  {
+    "cell_name": "f_00000_dt1_it64_stab_off",
+    "layout": 5,
+    "overrides": {
+      "dt_s": 0.001,
+      "pos_iters": 64,
+      "enable_stabilization": false,
+      "target_label": "bottle3",
+      "fast_settle": false
+    },
+    "sweep_file": "h95_rev97_followups.json",
+    "sweep_index": 8
+  },
+  {
+    "cell_name": "f_00000_m0p03_dt4_it16_stab_on",
+    "layout": 5,
+    "overrides": {
+      "dt_s": 0.004,
+      "pos_iters": 16,
+      "enable_stabilization": true,
+      "mass_kg": 0.03,
+      "target_label": "bottle3",
+      "fast_settle": false
+    },
+    "sweep_file": "h95_rev97_followups.json",
+    "sweep_index": 9
+  },
+  {
+    "cell_name": "f_00000_m0p03_dt4_it16_stab_off",
+    "layout": 5,
+    "overrides": {
+      "dt_s": 0.004,
+      "pos_iters": 16,
+      "enable_stabilization": false,
+      "mass_kg": 0.03,
+      "target_label": "bottle3",
+      "fast_settle": false
+    },
+    "sweep_file": "h95_rev97_followups.json",
+    "sweep_index": 10
+  },
+  {
+    "cell_name": "f_00000_m1p50_dt4_it16_stab_on",
+    "layout": 5,
+    "overrides": {
+      "dt_s": 0.004,
+      "pos_iters": 16,
+      "enable_stabilization": true,
+      "mass_kg": 1.5,
+      "target_label": "bottle3",
+      "fast_settle": false
+    },
+    "sweep_file": "h95_rev97_followups.json",
+    "sweep_index": 11
+  },
+  {
+    "cell_name": "f_00000_m1p50_dt4_it16_stab_off",
+    "layout": 5,
+    "overrides": {
+      "dt_s": 0.004,
+      "pos_iters": 16,
+      "enable_stabilization": false,
+      "mass_kg": 1.5,
+      "target_label": "bottle3",
+      "fast_settle": false
+    },
+    "sweep_file": "h95_rev97_followups.json",
+    "sweep_index": 12
+  },
+  {
+    "cell_name": "f_00000_m0p03_scaledI_dt4_it16_stab_on",
+    "layout": 5,
+    "overrides": {
+      "dt_s": 0.004,
+      "pos_iters": 16,
+      "enable_stabilization": true,
+      "mass_kg": 0.03,
+      "scale_inertia": true,
+      "target_label": "bottle3",
+      "fast_settle": false
+    },
+    "sweep_file": "h95_mass_scaled_inertia.json",
+    "sweep_index": 0
+  },
+  {
+    "cell_name": "f_00000_m0p03_scaledI_dt4_it16_stab_off",
+    "layout": 5,
+    "overrides": {
+      "dt_s": 0.004,
+      "pos_iters": 16,
+      "enable_stabilization": false,
+      "mass_kg": 0.03,
+      "scale_inertia": true,
+      "target_label": "bottle3",
+      "fast_settle": false
+    },
+    "sweep_file": "h95_mass_scaled_inertia.json",
+    "sweep_index": 1
+  },
+  {
+    "cell_name": "f_00000_m1p50_scaledI_dt4_it16_stab_on",
+    "layout": 5,
+    "overrides": {
+      "dt_s": 0.004,
+      "pos_iters": 16,
+      "enable_stabilization": true,
+      "mass_kg": 1.5,
+      "scale_inertia": true,
+      "target_label": "bottle3",
+      "fast_settle": false
+    },
+    "sweep_file": "h95_mass_scaled_inertia.json",
+    "sweep_index": 2
+  },
+  {
+    "cell_name": "f_00000_m1p50_scaledI_dt4_it16_stab_off",
+    "layout": 5,
+    "overrides": {
+      "dt_s": 0.004,
+      "pos_iters": 16,
+      "enable_stabilization": false,
+      "mass_kg": 1.5,
+      "scale_inertia": true,
+      "target_label": "bottle3",
+      "fast_settle": false
+    },
+    "sweep_file": "h95_mass_scaled_inertia.json",
+    "sweep_index": 3
+  }
+]

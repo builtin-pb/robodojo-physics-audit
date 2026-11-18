@@ -1,0 +1,8252 @@
+{
+ "schema": "population_sweep/1",
+ "thresholds": {
+  "T_SETTLE_MOVE": 0.005,
+  "T_FAST": 1.0,
+  "T_BELOW_TABLE": 0.05,
+  "T_SPAWN_XY": 0.02,
+  "T_SPAWN_DZ": 0.02,
+  "T_SPAWN_ROT": 10.0,
+  "T_PEN": -0.005,
+  "T_FORCE_RATIO": 3.0,
+  "T_SIZE": [
+   0.8,
+   1.25
+  ],
+  "T_DENSE": 8000.0,
+  "T_INERTIA_MAX": 3.05,
+  "T_INERTIA_MIN": 0.2,
+  "T_JOINT_FRAC": 0.05,
+  "T_ROBOT_DRIFT": 0.01,
+  "T_DROP_NOFALL": 0.005,
+  "T_DROP_THROUGH": 0.02,
+  "T_DROP_XY": 0.02,
+  "T_DROP_ROT": 20.0
+ },
+ "counts": {
+  "configs": 54,
+  "by_status": {
+   "not_run": 48,
+   "built_and_reset": 6
+  },
+  "anomalies_by_code": {
+   "GARMENT_FROZEN": 2,
+   "DENSER_THAN_STEEL": 1,
+   "INERTIA_TINY": 8,
+   "CONTACT_FORCE_HIGH": 5,
+   "INERTIA_IMPOSSIBLE": 1
+  },
+  "configs_by_code": {
+   "CONTACT_FORCE_HIGH": [
+    "fold_clothes_random",
+    "pour_by_language"
+   ],
+   "DENSER_THAN_STEEL": [
+    "fold_clothes_random"
+   ],
+   "GARMENT_FROZEN": [
+    "fold_clothes",
+    "fold_clothes_random"
+   ],
+   "INERTIA_IMPOSSIBLE": [
+    "fold_clothes_random"
+   ],
+   "INERTIA_TINY": [
+    "fold_clothes_random",
+    "pour_by_language",
+    "pour_liquid_into_cup",
+    "pour_liquid_into_cup_random"
+   ]
+  }
+ },
+ "anomalies": [
+  {
+   "task": "fold_clothes",
+   "code": "GARMENT_FROZEN",
+   "label": "target",
+   "detail": "garment points did not move at all in 4 s (read through RoboDojo's own accessor)"
+  },
+  {
+   "task": "fold_clothes_random",
+   "code": "DENSER_THAN_STEEL",
+   "label": "audio_2_16",
+   "detail": "Clutter/audio/00002: 0.5 kg in a [75.8, 74.1, 8.9] mm collider box: at least 9,963 kg/m3",
+   "density": 9962.7
+  },
+  {
+   "task": "fold_clothes_random",
+   "code": "INERTIA_TINY",
+   "label": "audio_2_16",
+   "detail": "Clutter/audio/00002: trace(I)/m is 0.062 x a solid box of its collider extents",
+   "ratio": 0.062
+  },
+  {
+   "task": "fold_clothes_random",
+   "code": "CONTACT_FORCE_HIGH",
+   "label": "audio_2_16",
+   "detail": "Clutter/audio/00002: reported contact force 15.89 N against weight 4.91 N at rest (156 contact points)",
+   "ratio": 3.24,
+   "contact_points": 156
+  },
+  {
+   "task": "fold_clothes_random",
+   "code": "INERTIA_TINY",
+   "label": "ball_0_9",
+   "detail": "Clutter/ball/00000: trace(I)/m is 0.028 x a solid box of its collider extents",
+   "ratio": 0.028
+  },
+  {
+   "task": "fold_clothes_random",
+   "code": "INERTIA_TINY",
+   "label": "card_1_12",
+   "detail": "Clutter/card/00001: trace(I)/m is 0.023 x a solid box of its collider extents",
+   "ratio": 0.023
+  },
+  {
+   "task": "fold_clothes_random",
+   "code": "CONTACT_FORCE_HIGH",
+   "label": "power_bank_0_14",
+   "detail": "Clutter/power_bank/00000: reported contact force 6.47 N against weight 2.16 N at rest (131 contact points)",
+   "ratio": 3.0,
+   "contact_points": 131
+  },
+  {
+   "task": "fold_clothes_random",
+   "code": "INERTIA_TINY",
+   "label": "tape_measure_0_15",
+   "detail": "Clutter/tape_measure/00000: trace(I)/m is 0.044 x a solid box of its collider extents",
+   "ratio": 0.044
+  },
+  {
+   "task": "fold_clothes_random",
+   "code": "GARMENT_FROZEN",
+   "label": "target",
+   "detail": "garment points did not move at all in 4 s (read through RoboDojo's own accessor)"
+  },
+  {
+   "task": "fold_clothes_random",
+   "code": "INERTIA_IMPOSSIBLE",
+   "label": "toy_car_1_10",
+   "detail": "Clutter/toy_car/00001: trace(I)/m is 4.30 x a solid box of its collider extents (above 3 needs mass outside the box)",
+   "ratio": 4.297
+  },
+  {
+   "task": "pour_by_language",
+   "code": "CONTACT_FORCE_HIGH",
+   "label": "bottle_0",
+   "detail": "Rigid/wine_bottle/00002: reported contact force 6.07 N against weight 1.47 N at rest (72 contact points)",
+   "ratio": 4.13,
+   "contact_points": 72
+  },
+  {
+   "task": "pour_by_language",
+   "code": "CONTACT_FORCE_HIGH",
+   "label": "bottle_1",
+   "detail": "Rigid/wine_bottle/00000: reported contact force 6.09 N against weight 1.47 N at rest (72 contact points)",
+   "ratio": 4.14,
+   "contact_points": 72
+  },
+  {
+   "task": "pour_by_language",
+   "code": "CONTACT_FORCE_HIGH",
+   "label": "bottle_2",
+   "detail": "Rigid/wine_bottle/00001: reported contact force 6.03 N against weight 1.47 N at rest (72 contact points)",
+   "ratio": 4.1,
+   "contact_points": 72
+  },
+  {
+   "task": "pour_by_language",
+   "code": "INERTIA_TINY",
+   "label": "bowl_1",
+   "detail": "Rigid/wine_bowl/00001: trace(I)/m is 0.155 x a solid box of its collider extents",
+   "ratio": 0.155
+  },
+  {
+   "task": "pour_liquid_into_cup",
+   "code": "INERTIA_TINY",
+   "label": "cup",
+   "detail": "Rigid/mug/00016: trace(I)/m is 0.130 x a solid box of its collider extents",
+   "ratio": 0.13
+  },
+  {
+   "task": "pour_liquid_into_cup_random",
+   "code": "INERTIA_TINY",
+   "label": "ball_0_11",
+   "detail": "Clutter/ball/00000: trace(I)/m is 0.028 x a solid box of its collider extents",
+   "ratio": 0.028
+  },
+  {
+   "task": "pour_liquid_into_cup_random",
+   "code": "INERTIA_TINY",
+   "label": "cup",
+   "detail": "Rigid/mug/00017: trace(I)/m is 0.191 x a solid box of its collider extents",
+   "ratio": 0.191
+  }
+ ],
+ "configs": {
+  "align_blocks": {
+   "task": "align_blocks",
+   "data_source": "datagen",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 200,
+   "status": "not_run",
+   "error": null
+  },
+  "arrange_largest_number": {
+   "task": "arrange_largest_number",
+   "data_source": "datagen",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 1050,
+   "status": "not_run",
+   "error": null
+  },
+  "arrange_largest_number_random": {
+   "task": "arrange_largest_number_random",
+   "data_source": "datagen",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 1050,
+   "status": "not_run",
+   "error": null
+  },
+  "build_tower": {
+   "task": "build_tower",
+   "data_source": "datagen",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 1050,
+   "status": "not_run",
+   "error": null
+  },
+  "classify_objects": {
+   "task": "classify_objects",
+   "data_source": "teleop",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 1100,
+   "status": "not_run",
+   "error": null
+  },
+  "classify_objects_by_language": {
+   "task": "classify_objects_by_language",
+   "data_source": "datagen",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 1100,
+   "status": "not_run",
+   "error": null
+  },
+  "cover_blocks": {
+   "task": "cover_blocks",
+   "data_source": "datagen",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 800,
+   "status": "not_run",
+   "error": null
+  },
+  "deposit_coin": {
+   "task": "deposit_coin",
+   "data_source": "datagen",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 300,
+   "status": "not_run",
+   "error": null
+  },
+  "fasten_screws": {
+   "task": "fasten_screws",
+   "data_source": "datagen",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 1900,
+   "rc": 0,
+   "wall_s": 27.9,
+   "gpu_used_before_mib": 0,
+   "gpu_peak_mib": 2545,
+   "gpu_own_peak_mib": 2545,
+   "status": "built_and_reset",
+   "do_nothing": {
+    "grip_command": {
+     "left": 1.0,
+     "right": 1.0
+    },
+    "grip_source": {
+     "left": "observed",
+     "right": "observed"
+    },
+    "after_one_action": {
+     "end_flag": false,
+     "success": true
+    },
+    "step_lim": 1900,
+    "end_flag": true,
+    "success": false
+   },
+   "episode_score_pct": 0.0,
+   "counts": {
+    "geometry": 4,
+    "rigid": 3
+   },
+   "robot_drift": {
+    "robot0": 0.0,
+    "robot1": 0.0
+   },
+   "robot_limits": {
+    "robot0": [
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -3.14,
+      3.14
+     ],
+     [
+      0.0,
+      0.044
+     ],
+     [
+      0.0,
+      0.044
+     ]
+    ],
+    "robot1": [
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -3.14,
+      3.14
+     ],
+     [
+      0.0,
+      0.044
+     ],
+     [
+      0.0,
+      0.044
+     ]
+    ]
+   },
+   "delivery": {
+    "checked": true,
+    "delivered": false,
+    "reason": "3 of 3 rigid objects carry the engine default 0.5/0.5 instead of their bound material (#58)"
+   },
+   "clutter_instances": 0,
+   "objects": {
+    "bolt0": {
+     "type": "geometry",
+     "model": "Geometry/factory_bolt/00002",
+     "inst": "factory_bolt_2_5",
+     "clutter": false,
+     "readback_source": "readback_spec",
+     "declared": {
+      "layout_mass": 0.05,
+      "meta_mass": 0.05,
+      "layout_size": [
+       0.036,
+       0.0415,
+       0.0525
+      ],
+      "meta_size": [
+       0.036,
+       0.0415,
+       0.0525
+      ],
+      "meta_bbox": [
+       0.036,
+       0.0415,
+       0.0525
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {
+       "friction": 0.25
+      }
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "meshSimplification"
+      ],
+      "collider_aabb_extents_m": [
+       0.036,
+       0.04155,
+       0.0525
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.036,
+       0.04155,
+       0.0525
+      ],
+      "engine_mass_kg": null,
+      "engine_com_m": null,
+      "engine_diag_inertia_kg_m2": null,
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": []
+     },
+     "size_ratio_vs_meta_bbox": [
+      1.0,
+      1.001,
+      1.0
+     ],
+     "size_ratio_vs_layout_size": [
+      1.0,
+      1.001,
+      1.0
+     ],
+     "size_ratio_vs_meta_size": [
+      1.0,
+      1.001,
+      1.0
+     ],
+     "settle": {
+      "spawn_to_reset_xy_m": 0.0,
+      "spawn_to_reset_dz_m": -0.0,
+      "spawn_to_reset_rot_deg": 0.002,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.0,
+      "final_rot_deg": 0.0,
+      "min_z_m": 0.765,
+      "max_z_m": 0.765,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": null,
+      "final_ang_vel_radps": null,
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       -0.18588,
+       -0.16458,
+       0.765,
+       1.0,
+       0.0,
+       0.0,
+       -0.00158
+      ],
+      "declared_spawn": [
+       -0.18588,
+       -0.16458,
+       0.765,
+       1.0,
+       0.0,
+       0.0,
+       -0.0016
+      ]
+     }
+    },
+    "bolt1": {
+     "type": "geometry",
+     "model": "Geometry/factory_bolt/00001",
+     "inst": "factory_bolt_1_6",
+     "clutter": false,
+     "readback_source": "readback_spec",
+     "declared": {
+      "layout_mass": 0.05,
+      "meta_mass": 0.05,
+      "layout_size": [
+       0.036,
+       0.0415,
+       0.0525
+      ],
+      "meta_size": [
+       0.036,
+       0.0415,
+       0.0525
+      ],
+      "meta_bbox": [
+       0.036,
+       0.0415,
+       0.0525
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {
+       "friction": 0.25
+      }
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "meshSimplification"
+      ],
+      "collider_aabb_extents_m": [
+       0.036,
+       0.04155,
+       0.0525
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.036,
+       0.04155,
+       0.0525
+      ],
+      "engine_mass_kg": null,
+      "engine_com_m": null,
+      "engine_diag_inertia_kg_m2": null,
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": []
+     },
+     "size_ratio_vs_meta_bbox": [
+      1.0,
+      1.001,
+      1.0
+     ],
+     "size_ratio_vs_layout_size": [
+      1.0,
+      1.001,
+      1.0
+     ],
+     "size_ratio_vs_meta_size": [
+      1.0,
+      1.001,
+      1.0
+     ],
+     "settle": {
+      "spawn_to_reset_xy_m": 0.0,
+      "spawn_to_reset_dz_m": -0.0,
+      "spawn_to_reset_rot_deg": 0.002,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.0,
+      "final_rot_deg": 0.0,
+      "min_z_m": 0.765,
+      "max_z_m": 0.765,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": null,
+      "final_ang_vel_radps": null,
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       -0.29654,
+       -0.17517,
+       0.765,
+       1.0,
+       0.0,
+       0.0,
+       -0.00158
+      ],
+      "declared_spawn": [
+       -0.29654,
+       -0.17517,
+       0.765,
+       1.0,
+       0.0,
+       0.0,
+       -0.0016
+      ]
+     }
+    },
+    "bolt2": {
+     "type": "geometry",
+     "model": "Geometry/factory_bolt/00004",
+     "inst": "factory_bolt_4_7",
+     "clutter": false,
+     "readback_source": "readback_spec",
+     "declared": {
+      "layout_mass": 0.05,
+      "meta_mass": 0.05,
+      "layout_size": [
+       0.036,
+       0.0415,
+       0.0525
+      ],
+      "meta_size": [
+       0.036,
+       0.0415,
+       0.0525
+      ],
+      "meta_bbox": [
+       0.036,
+       0.0415,
+       0.0525
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {
+       "friction": 0.25
+      }
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "meshSimplification"
+      ],
+      "collider_aabb_extents_m": [
+       0.036,
+       0.04155,
+       0.0525
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.036,
+       0.04155,
+       0.0525
+      ],
+      "engine_mass_kg": null,
+      "engine_com_m": null,
+      "engine_diag_inertia_kg_m2": null,
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": []
+     },
+     "size_ratio_vs_meta_bbox": [
+      1.0,
+      1.001,
+      1.0
+     ],
+     "size_ratio_vs_layout_size": [
+      1.0,
+      1.001,
+      1.0
+     ],
+     "size_ratio_vs_meta_size": [
+      1.0,
+      1.001,
+      1.0
+     ],
+     "settle": {
+      "spawn_to_reset_xy_m": 0.0,
+      "spawn_to_reset_dz_m": -0.0,
+      "spawn_to_reset_rot_deg": 0.002,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.0,
+      "final_rot_deg": 0.0,
+      "min_z_m": 0.765,
+      "max_z_m": 0.765,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": null,
+      "final_ang_vel_radps": null,
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       0.28134,
+       -0.1947,
+       0.765,
+       1.0,
+       0.0,
+       0.0,
+       -0.00158
+      ],
+      "declared_spawn": [
+       0.28134,
+       -0.1947,
+       0.765,
+       1.0,
+       0.0,
+       0.0,
+       -0.0016
+      ]
+     }
+    },
+    "camera_stand": {
+     "type": "geometry",
+     "model": "Geometry/camera_stand/00000",
+     "inst": "camera_stand_0_4",
+     "clutter": false,
+     "readback_source": "readback_spec",
+     "declared": {
+      "layout_mass": null,
+      "meta_mass": null,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.3,
+       0.5875,
+       0.1097
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {}
+     },
+     "engine": {
+      "colliders": 12,
+      "colliders_enabled": 12,
+      "approximations": [
+       "none"
+      ],
+      "collider_aabb_extents_m": [
+       0.3,
+       0.58751,
+       0.109666
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.3,
+       0.58751,
+       0.109666
+      ],
+      "engine_mass_kg": null,
+      "engine_com_m": null,
+      "engine_diag_inertia_kg_m2": null,
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": []
+     },
+     "size_ratio_vs_meta_bbox": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "settle": {
+      "spawn_to_reset_xy_m": 0.0,
+      "spawn_to_reset_dz_m": -0.0,
+      "spawn_to_reset_rot_deg": 0.017,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.0,
+      "final_rot_deg": 0.0,
+      "min_z_m": 0.765,
+      "max_z_m": 0.765,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": null,
+      "final_ang_vel_radps": null,
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       0.0,
+       -0.47,
+       0.765,
+       -0.707,
+       0.70721,
+       0.0,
+       0.0
+      ],
+      "declared_spawn": [
+       0.0,
+       -0.47,
+       0.765,
+       0.707,
+       -0.707,
+       0.0,
+       0.0
+      ]
+     }
+    },
+    "nut0": {
+     "type": "rigid",
+     "model": "Rigid/factory_nut/00002",
+     "inst": "factory_nut_2_1",
+     "clutter": false,
+     "readback_source": "readback_spec",
+     "declared": {
+      "layout_mass": 0.03,
+      "meta_mass": 0.03,
+      "layout_size": [
+       0.0351,
+       0.0405,
+       0.019
+      ],
+      "meta_size": [
+       0.0351,
+       0.0405,
+       0.019
+      ],
+      "meta_bbox": [
+       0.0353,
+       0.0407,
+       0.0191
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {
+       "friction": 0.25
+      }
+     },
+     "engine": {
+      "colliders": 7,
+      "colliders_enabled": 7,
+      "approximations": [
+       "convexHull",
+       "sdf"
+      ],
+      "collider_aabb_extents_m": [
+       0.035281,
+       0.040697,
+       0.019111
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.035308,
+       0.040712,
+       0.019111
+      ],
+      "engine_mass_kg": [
+       0.03
+      ],
+      "engine_com_m": [
+       [
+        -0.000294,
+        -5e-06,
+        0.000935
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        3.93e-06,
+        3.94e-06,
+        6.34e-06
+       ]
+      ],
+      "engine_shape_count": 7,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      1.001,
+      1.0,
+      1.0
+     ],
+     "size_ratio_vs_layout_size": [
+      1.006,
+      1.006,
+      1.005
+     ],
+     "size_ratio_vs_meta_size": [
+      1.006,
+      1.006,
+      1.005
+     ],
+     "expected_shipped_mass": 0.03,
+     "density_lower_bound_kg_m3": 1092.0,
+     "inertia_trace_ratio_vs_solid_box": 0.869,
+     "inertia_implied_box_density_kg_m3": 949.3,
+     "start_contact_force_over_weight": 1.0,
+     "start_contact_points": 30,
+     "settle": {
+      "spawn_to_reset_xy_m": 0.0,
+      "spawn_to_reset_dz_m": 4e-05,
+      "spawn_to_reset_rot_deg": 0.0,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.0,
+      "final_rot_deg": 0.0,
+      "min_z_m": 0.77364,
+      "max_z_m": 0.77364,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       0.0,
+       -0.0,
+       -0.0
+      ],
+      "final_ang_vel_radps": [
+       -4e-05,
+       0.0,
+       0.00013
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       0.09672,
+       -0.21632,
+       0.77364,
+       1.0,
+       -0.0,
+       -0.0,
+       -0.0
+      ],
+      "declared_spawn": [
+       0.09672,
+       -0.21632,
+       0.7736,
+       1.0,
+       0.0,
+       0.0,
+       0.0
+      ]
+     }
+    },
+    "nut1": {
+     "type": "rigid",
+     "model": "Rigid/factory_nut/00001",
+     "inst": "factory_nut_1_2",
+     "clutter": false,
+     "readback_source": "readback_spec",
+     "declared": {
+      "layout_mass": 0.03,
+      "meta_mass": 0.03,
+      "layout_size": [
+       0.0351,
+       0.0405,
+       0.019
+      ],
+      "meta_size": [
+       0.0351,
+       0.0405,
+       0.019
+      ],
+      "meta_bbox": [
+       0.0353,
+       0.0407,
+       0.0191
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {
+       "friction": 0.25
+      }
+     },
+     "engine": {
+      "colliders": 7,
+      "colliders_enabled": 7,
+      "approximations": [
+       "convexHull",
+       "sdf"
+      ],
+      "collider_aabb_extents_m": [
+       0.035281,
+       0.040697,
+       0.019111
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.035308,
+       0.040712,
+       0.019111
+      ],
+      "engine_mass_kg": [
+       0.03
+      ],
+      "engine_com_m": [
+       [
+        -0.000294,
+        -5e-06,
+        0.000935
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        3.93e-06,
+        3.94e-06,
+        6.34e-06
+       ]
+      ],
+      "engine_shape_count": 7,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      1.001,
+      1.0,
+      1.0
+     ],
+     "size_ratio_vs_layout_size": [
+      1.006,
+      1.006,
+      1.005
+     ],
+     "size_ratio_vs_meta_size": [
+      1.006,
+      1.006,
+      1.005
+     ],
+     "expected_shipped_mass": 0.03,
+     "density_lower_bound_kg_m3": 1092.0,
+     "inertia_trace_ratio_vs_solid_box": 0.869,
+     "inertia_implied_box_density_kg_m3": 949.3,
+     "start_contact_force_over_weight": 1.0,
+     "start_contact_points": 30,
+     "settle": {
+      "spawn_to_reset_xy_m": 0.0,
+      "spawn_to_reset_dz_m": 4e-05,
+      "spawn_to_reset_rot_deg": 0.0,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.0,
+      "final_rot_deg": 0.0,
+      "min_z_m": 0.77364,
+      "max_z_m": 0.77364,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "final_ang_vel_radps": [
+       0.00018,
+       -0.00017,
+       0.00017
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       -0.38375,
+       -0.21011,
+       0.77364,
+       1.0,
+       -0.0,
+       0.0,
+       -0.0
+      ],
+      "declared_spawn": [
+       -0.38375,
+       -0.21011,
+       0.7736,
+       1.0,
+       0.0,
+       0.0,
+       0.0
+      ]
+     }
+    },
+    "nut2": {
+     "type": "rigid",
+     "model": "Rigid/factory_nut/00004",
+     "inst": "factory_nut_4_3",
+     "clutter": false,
+     "readback_source": "readback_spec",
+     "declared": {
+      "layout_mass": 0.03,
+      "meta_mass": 0.03,
+      "layout_size": [
+       0.0351,
+       0.0405,
+       0.019
+      ],
+      "meta_size": [
+       0.0351,
+       0.0405,
+       0.019
+      ],
+      "meta_bbox": [
+       0.0353,
+       0.0407,
+       0.0191
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {
+       "friction": 0.25
+      }
+     },
+     "engine": {
+      "colliders": 7,
+      "colliders_enabled": 7,
+      "approximations": [
+       "convexHull",
+       "sdf"
+      ],
+      "collider_aabb_extents_m": [
+       0.035281,
+       0.040697,
+       0.019111
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.035308,
+       0.040712,
+       0.019111
+      ],
+      "engine_mass_kg": [
+       0.03
+      ],
+      "engine_com_m": [
+       [
+        -0.000294,
+        -5e-06,
+        0.000935
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        3.93e-06,
+        3.94e-06,
+        6.34e-06
+       ]
+      ],
+      "engine_shape_count": 7,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      1.001,
+      1.0,
+      1.0
+     ],
+     "size_ratio_vs_layout_size": [
+      1.006,
+      1.006,
+      1.005
+     ],
+     "size_ratio_vs_meta_size": [
+      1.006,
+      1.006,
+      1.005
+     ],
+     "expected_shipped_mass": 0.03,
+     "density_lower_bound_kg_m3": 1092.0,
+     "inertia_trace_ratio_vs_solid_box": 0.869,
+     "inertia_implied_box_density_kg_m3": 949.3,
+     "start_contact_force_over_weight": 1.0,
+     "start_contact_points": 30,
+     "settle": {
+      "spawn_to_reset_xy_m": 0.0,
+      "spawn_to_reset_dz_m": 4e-05,
+      "spawn_to_reset_rot_deg": 0.0,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.0,
+      "final_rot_deg": 0.0,
+      "min_z_m": 0.77364,
+      "max_z_m": 0.77364,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       0.0,
+       0.0,
+       -0.0
+      ],
+      "final_ang_vel_radps": [
+       -8e-05,
+       0.00016,
+       0.00011
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       0.30598,
+       -0.09304,
+       0.77364,
+       1.0,
+       -0.0,
+       0.0,
+       -0.0
+      ],
+      "declared_spawn": [
+       0.30598,
+       -0.09304,
+       0.7736,
+       1.0,
+       0.0,
+       0.0,
+       0.0
+      ]
+     }
+    }
+   },
+   "sweep_settle_seconds": 4.5,
+   "harness_wall_seconds": 10.7
+  },
+  "fill_egg_holder": {
+   "task": "fill_egg_holder",
+   "data_source": "teleop",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 700,
+   "status": "not_run",
+   "error": null
+  },
+  "fill_pen_holder": {
+   "task": "fill_pen_holder",
+   "data_source": "teleop",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 1100,
+   "status": "not_run",
+   "error": null
+  },
+  "fold_clothes": {
+   "task": "fold_clothes",
+   "data_source": "datagen",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 500,
+   "rc": 0,
+   "wall_s": 48.6,
+   "gpu_used_before_mib": 0,
+   "gpu_peak_mib": 3117,
+   "gpu_own_peak_mib": 3117,
+   "status": "built_and_reset",
+   "do_nothing": {
+    "grip_command": {
+     "left": 1.0,
+     "right": 1.0
+    },
+    "grip_source": {
+     "left": "observed",
+     "right": "observed"
+    },
+    "after_one_action": {
+     "end_flag": false,
+     "success": true
+    },
+    "step_lim": 500,
+    "end_flag": true,
+    "success": false
+   },
+   "episode_score_pct": 0.0,
+   "readback_failures": [
+    "env_0.target: enabled Gprim colliders=0 < 1"
+   ],
+   "counts": {
+    "geometry": 1,
+    "garment": 1
+   },
+   "robot_drift": {
+    "robot0": 0.0,
+    "robot1": 0.0
+   },
+   "robot_limits": {
+    "robot0": [
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -3.14,
+      3.14
+     ],
+     [
+      0.0,
+      0.044
+     ],
+     [
+      0.0,
+      0.044
+     ]
+    ],
+    "robot1": [
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -3.14,
+      3.14
+     ],
+     [
+      0.0,
+      0.044
+     ],
+     [
+      0.0,
+      0.044
+     ]
+    ]
+   },
+   "delivery": {
+    "checked": false,
+    "delivered": false,
+    "reason": null
+   },
+   "clutter_instances": 0,
+   "objects": {
+    "camera_stand": {
+     "type": "geometry",
+     "model": "Geometry/camera_stand/00000",
+     "inst": "camera_stand_0_1",
+     "clutter": false,
+     "readback_source": "readback_spec",
+     "declared": {
+      "layout_mass": null,
+      "meta_mass": null,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.3,
+       0.5875,
+       0.1097
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {}
+     },
+     "engine": {
+      "colliders": 12,
+      "colliders_enabled": 12,
+      "approximations": [
+       "none"
+      ],
+      "collider_aabb_extents_m": [
+       0.3,
+       0.58751,
+       0.109666
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.3,
+       0.58751,
+       0.109666
+      ],
+      "engine_mass_kg": null,
+      "engine_com_m": null,
+      "engine_diag_inertia_kg_m2": null,
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": []
+     },
+     "size_ratio_vs_meta_bbox": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "settle": {
+      "spawn_to_reset_xy_m": 0.0,
+      "spawn_to_reset_dz_m": -0.0,
+      "spawn_to_reset_rot_deg": 0.017,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.0,
+      "final_rot_deg": 0.0,
+      "min_z_m": 0.765,
+      "max_z_m": 0.765,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": null,
+      "final_ang_vel_radps": null,
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       0.0,
+       -0.47,
+       0.765,
+       -0.707,
+       0.70721,
+       0.0,
+       0.0
+      ],
+      "declared_spawn": [
+       0.0,
+       -0.47,
+       0.765,
+       0.707,
+       -0.707,
+       0.0,
+       0.0
+      ]
+     }
+    },
+    "target": {
+     "type": "garment",
+     "model": "Garment/Top_Long/00009",
+     "inst": "Top_Long_9_2",
+     "clutter": false,
+     "readback_source": "readback_spec",
+     "declared": {
+      "layout_mass": null,
+      "meta_mass": null,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.6142,
+       0.3193,
+       0.1883
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {}
+     },
+     "engine": {
+      "colliders": 0,
+      "colliders_enabled": 0,
+      "approximations": [],
+      "collider_aabb_extents_m": null,
+      "engine_collider_aabb_extents_m": null,
+      "engine_mass_kg": null,
+      "engine_com_m": null,
+      "engine_diag_inertia_kg_m2": null,
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": []
+     },
+     "settle": {
+      "spawn_to_reset_xy_m": null,
+      "spawn_to_reset_dz_m": null,
+      "spawn_to_reset_rot_deg": null,
+      "max_disp_m": null,
+      "final_disp_m": null,
+      "max_speed_mps": null,
+      "max_rot_deg": null,
+      "final_rot_deg": null,
+      "min_z_m": null,
+      "max_z_m": null,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": null,
+      "final_ang_vel_radps": null,
+      "points_after_reset": {
+       "n": 9665,
+       "finite_frac": 1.0,
+       "centroid": [
+        0.0028,
+        -0.1299,
+        0.842
+       ],
+       "min": [
+        -0.2703,
+        -0.3231,
+        0.7658
+       ],
+       "max": [
+        0.3261,
+        0.0355,
+        0.9448
+       ],
+       "frac_below_table_minus_5cm": 0.0
+      },
+      "points_end": {
+       "n": 9665,
+       "finite_frac": 1.0,
+       "centroid": [
+        0.0028,
+        -0.1299,
+        0.842
+       ],
+       "min": [
+        -0.2703,
+        -0.3231,
+        0.7658
+       ],
+       "max": [
+        0.3261,
+        0.0355,
+        0.9448
+       ],
+       "frac_below_table_minus_5cm": 0.0
+      },
+      "max_centroid_disp_m": 0.0,
+      "max_point_disp_m": 0.0,
+      "pose_after_reset": null,
+      "declared_spawn": null
+     }
+    }
+   },
+   "sweep_settle_seconds": 21.7,
+   "harness_wall_seconds": 31.4
+  },
+  "fold_clothes_random": {
+   "task": "fold_clothes_random",
+   "data_source": "datagen",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 500,
+   "rc": 0,
+   "wall_s": 56.8,
+   "gpu_used_before_mib": 0,
+   "gpu_peak_mib": 3117,
+   "gpu_own_peak_mib": 3117,
+   "status": "built_and_reset",
+   "do_nothing": {
+    "grip_command": {
+     "left": 1.0,
+     "right": 1.0
+    },
+    "grip_source": {
+     "left": "observed",
+     "right": "observed"
+    },
+    "after_one_action": {
+     "end_flag": false,
+     "success": true
+    },
+    "step_lim": 500,
+    "end_flag": true,
+    "success": false
+   },
+   "episode_score_pct": 0.0,
+   "readback_failures": [
+    "env_0.target: enabled Gprim colliders=0 < 1"
+   ],
+   "counts": {
+    "rigid": 19,
+    "geometry": 1,
+    "garment": 1
+   },
+   "robot_drift": {
+    "robot0": 0.0,
+    "robot1": 0.0
+   },
+   "robot_limits": {
+    "robot0": [
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -3.14,
+      3.14
+     ],
+     [
+      0.0,
+      0.044
+     ],
+     [
+      0.0,
+      0.044
+     ]
+    ],
+    "robot1": [
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -3.14,
+      3.14
+     ],
+     [
+      0.0,
+      0.044
+     ],
+     [
+      0.0,
+      0.044
+     ]
+    ]
+   },
+   "delivery": {
+    "checked": false,
+    "delivered": false,
+    "reason": null
+   },
+   "clutter_instances": 19,
+   "objects": {
+    "audio_2_16": {
+     "type": "rigid",
+     "model": "Clutter/audio/00002",
+     "inst": "audio_2_16",
+     "clutter": true,
+     "readback_source": "settle_engine",
+     "declared": {
+      "layout_mass": null,
+      "meta_mass": null,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.0758,
+       0.0742,
+       0.0089
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {}
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "collider_aabb_extents_m": [
+       0.07576,
+       0.074209,
+       0.008942
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.075762,
+       0.074089,
+       0.008941
+      ],
+      "engine_mass_kg": [
+       0.5
+      ],
+      "engine_com_m": [
+       [
+        0.009029,
+        0.017645,
+        -0.003462
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        1.3728e-05,
+        1.5707e-05,
+        2.9157e-05
+       ]
+      ],
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      1.005,
+      0.999,
+      0.999
+     ],
+     "expected_shipped_mass": 0.5,
+     "density_lower_bound_kg_m3": 9962.7,
+     "inertia_trace_ratio_vs_solid_box": 0.062,
+     "inertia_implied_box_density_kg_m3": 619.4,
+     "start_contact_force_over_weight": 3.24,
+     "start_contact_points": 156,
+     "settle": {
+      "spawn_to_reset_xy_m": 5e-05,
+      "spawn_to_reset_dz_m": -5e-05,
+      "spawn_to_reset_rot_deg": 0.156,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.0,
+      "final_rot_deg": 0.0,
+      "min_z_m": 0.77199,
+      "max_z_m": 0.77199,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       -0.00356,
+       -0.0005,
+       -0.01035
+      ],
+      "final_ang_vel_radps": [
+       -0.08747,
+       -0.18416,
+       -0.03497
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       -0.55857,
+       -0.25269,
+       0.77199,
+       0.9696,
+       0.00161,
+       0.00056,
+       0.24468
+      ],
+      "declared_spawn": [
+       -0.55863,
+       -0.25269,
+       0.77204,
+       0.96965,
+       0.00121,
+       -0.00073,
+       0.24449
+      ]
+     }
+    },
+    "ball_0_9": {
+     "type": "rigid",
+     "model": "Clutter/ball/00000",
+     "inst": "ball_0_9",
+     "clutter": true,
+     "readback_source": "settle_engine",
+     "declared": {
+      "layout_mass": null,
+      "meta_mass": null,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.0857,
+       0.061,
+       0.0595
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {}
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "collider_aabb_extents_m": [
+       0.085718,
+       0.060957,
+       0.059472
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.084275,
+       0.060735,
+       0.059279
+      ],
+      "engine_mass_kg": [
+       0.5
+      ],
+      "engine_com_m": [
+       [
+        -0.003797,
+        -0.000239,
+        0.020094
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        6.624e-06,
+        1.3701e-05,
+        1.3197e-05
+       ]
+      ],
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      0.996,
+      0.996,
+      0.983
+     ],
+     "expected_shipped_mass": 0.5,
+     "density_lower_bound_kg_m3": 1647.9,
+     "inertia_trace_ratio_vs_solid_box": 0.028,
+     "inertia_implied_box_density_kg_m3": 46.3,
+     "start_contact_force_over_weight": 1.11,
+     "start_contact_points": 21,
+     "settle": {
+      "spawn_to_reset_xy_m": 4e-05,
+      "spawn_to_reset_dz_m": -0.00029,
+      "spawn_to_reset_rot_deg": 0.746,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.013,
+      "final_rot_deg": 0.013,
+      "min_z_m": 0.76449,
+      "max_z_m": 0.76449,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       -0.00432,
+       -0.00085,
+       -0.0084
+      ],
+      "final_ang_vel_radps": [
+       0.01046,
+       -0.40398,
+       0.07368
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       -0.381,
+       0.06231,
+       0.76449,
+       0.97314,
+       0.00593,
+       -0.00533,
+       -0.23008
+      ],
+      "declared_spawn": [
+       -0.38104,
+       0.06231,
+       0.76478,
+       0.97315,
+       -0.00032,
+       -0.00352,
+       -0.23013
+      ]
+     }
+    },
+    "book_4_13": {
+     "type": "rigid",
+     "model": "Clutter/book/00004",
+     "inst": "book_4_13",
+     "clutter": true,
+     "readback_source": "settle_engine",
+     "declared": {
+      "layout_mass": 0.35,
+      "meta_mass": 0.35,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.0861,
+       0.0138,
+       0.1143
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {
+       "friction": 0.45
+      }
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "collider_aabb_extents_m": [
+       0.086055,
+       0.013772,
+       0.1143
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.085939,
+       0.013613,
+       0.114261
+      ],
+      "engine_mass_kg": [
+       0.35
+      ],
+      "engine_com_m": [
+       [
+        -0.000405,
+        7.7e-05,
+        -0.000297
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        0.000137701,
+        0.000211406,
+        7.7686e-05
+       ]
+      ],
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      0.986,
+      0.998,
+      1.0
+     ],
+     "expected_shipped_mass": 0.35,
+     "density_lower_bound_kg_m3": 2618.3,
+     "inertia_trace_ratio_vs_solid_box": 0.355,
+     "inertia_implied_box_density_kg_m3": 928.8,
+     "start_contact_force_over_weight": 2.0,
+     "start_contact_points": 84,
+     "settle": {
+      "spawn_to_reset_xy_m": 0.0,
+      "spawn_to_reset_dz_m": -4e-05,
+      "spawn_to_reset_rot_deg": 0.0,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.0,
+      "final_rot_deg": 0.0,
+      "min_z_m": 0.77186,
+      "max_z_m": 0.77186,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       -2e-05,
+       -1e-05,
+       -0.00017
+      ],
+      "final_ang_vel_radps": [
+       0.00321,
+       -0.00254,
+       0.00019
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       -0.40812,
+       -0.18586,
+       0.77186,
+       -0.70458,
+       0.70458,
+       -0.05974,
+       0.05974
+      ],
+      "declared_spawn": [
+       -0.40813,
+       -0.18586,
+       0.7719,
+       -0.70458,
+       0.70458,
+       -0.05974,
+       0.05974
+      ]
+     }
+    },
+    "camera_stand": {
+     "type": "geometry",
+     "model": "Geometry/camera_stand/00000",
+     "inst": "camera_stand_0_20",
+     "clutter": false,
+     "readback_source": "readback_spec",
+     "declared": {
+      "layout_mass": null,
+      "meta_mass": null,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.3,
+       0.5875,
+       0.1097
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {}
+     },
+     "engine": {
+      "colliders": 12,
+      "colliders_enabled": 12,
+      "approximations": [
+       "none"
+      ],
+      "collider_aabb_extents_m": [
+       0.3,
+       0.58751,
+       0.109666
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.3,
+       0.58751,
+       0.109666
+      ],
+      "engine_mass_kg": null,
+      "engine_com_m": null,
+      "engine_diag_inertia_kg_m2": null,
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": []
+     },
+     "size_ratio_vs_meta_bbox": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "settle": {
+      "spawn_to_reset_xy_m": 0.0,
+      "spawn_to_reset_dz_m": -0.0,
+      "spawn_to_reset_rot_deg": 0.017,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.0,
+      "final_rot_deg": 0.0,
+      "min_z_m": 0.765,
+      "max_z_m": 0.765,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": null,
+      "final_ang_vel_radps": null,
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       0.0,
+       -0.47,
+       0.765,
+       -0.707,
+       0.70721,
+       0.0,
+       0.0
+      ],
+      "declared_spawn": [
+       0.0,
+       -0.47,
+       0.765,
+       0.707,
+       -0.707,
+       0.0,
+       0.0
+      ]
+     }
+    },
+    "card_1_12": {
+     "type": "rigid",
+     "model": "Clutter/card/00001",
+     "inst": "card_1_12",
+     "clutter": true,
+     "readback_source": "settle_engine",
+     "declared": {
+      "layout_mass": null,
+      "meta_mass": null,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.0666,
+       0.0919,
+       0.0148
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {}
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "collider_aabb_extents_m": [
+       0.066626,
+       0.091939,
+       0.01479
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.0666,
+       0.092308,
+       0.016681
+      ],
+      "engine_mass_kg": [
+       0.5
+      ],
+      "engine_com_m": [
+       [
+        -0.002958,
+        0.004878,
+        0.005553
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        8.476e-06,
+        4.733e-06,
+        1.2677e-05
+       ]
+      ],
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      1.127,
+      1.0,
+      1.004
+     ],
+     "expected_shipped_mass": 0.5,
+     "density_lower_bound_kg_m3": 4875.7,
+     "inertia_trace_ratio_vs_solid_box": 0.023,
+     "inertia_implied_box_density_kg_m3": 114.4,
+     "start_contact_force_over_weight": 1.18,
+     "start_contact_points": 60,
+     "settle": {
+      "spawn_to_reset_xy_m": 0.00259,
+      "spawn_to_reset_dz_m": 0.00059,
+      "spawn_to_reset_rot_deg": 2.773,
+      "max_disp_m": 0.00307,
+      "final_disp_m": 0.00307,
+      "max_speed_mps": 0.0012,
+      "max_rot_deg": 4.025,
+      "final_rot_deg": 4.025,
+      "min_z_m": 0.76589,
+      "max_z_m": 0.76589,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       0.00229,
+       -0.00218,
+       -0.00638
+      ],
+      "final_ang_vel_radps": [
+       0.60526,
+       -0.22579,
+       0.21532
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       -0.54402,
+       0.03978,
+       0.76589,
+       0.98328,
+       0.00082,
+       -0.0042,
+       0.18202
+      ],
+      "declared_spawn": [
+       -0.54198,
+       0.04137,
+       0.7653,
+       0.9786,
+       0.00201,
+       -0.00469,
+       0.20573
+      ]
+     }
+    },
+    "cereal_0_8": {
+     "type": "rigid",
+     "model": "Clutter/cereal/00000",
+     "inst": "cereal_0_8",
+     "clutter": true,
+     "readback_source": "settle_engine",
+     "declared": {
+      "layout_mass": null,
+      "meta_mass": null,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.1412,
+       0.103,
+       0.2171
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {}
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "collider_aabb_extents_m": [
+       0.14124,
+       0.102945,
+       0.217079
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.140712,
+       0.102604,
+       0.217079
+      ],
+      "engine_mass_kg": [
+       0.5
+      ],
+      "engine_com_m": [
+       [
+        -0.005939,
+        -0.002283,
+        0.109215
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        0.00540172,
+        0.006387768,
+        0.00214827
+       ]
+      ],
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      0.996,
+      0.997,
+      1.0
+     ],
+     "expected_shipped_mass": 0.5,
+     "density_lower_bound_kg_m3": 159.5,
+     "inertia_trace_ratio_vs_solid_box": 2.159,
+     "inertia_implied_box_density_kg_m3": 344.5,
+     "start_contact_force_over_weight": 2.0,
+     "start_contact_points": 101,
+     "settle": {
+      "spawn_to_reset_xy_m": 2e-05,
+      "spawn_to_reset_dz_m": -3e-05,
+      "spawn_to_reset_rot_deg": 0.002,
+      "max_disp_m": 5e-05,
+      "final_disp_m": 5e-05,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.004,
+      "final_rot_deg": 0.004,
+      "min_z_m": 0.76447,
+      "max_z_m": 0.76447,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       -9e-05,
+       0.00078,
+       -8e-05
+      ],
+      "final_ang_vel_radps": [
+       -0.00729,
+       -0.00107,
+       0.00078
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       0.13179,
+       0.15167,
+       0.76447,
+       0.98728,
+       0.0,
+       -0.0,
+       -0.159
+      ],
+      "declared_spawn": [
+       0.13178,
+       0.1517,
+       0.7645,
+       0.98728,
+       0.0,
+       0.0,
+       -0.15898
+      ]
+     }
+    },
+    "garage_17_17": {
+     "type": "rigid",
+     "model": "Clutter/garage/00017",
+     "inst": "garage_17_17",
+     "clutter": true,
+     "readback_source": "settle_engine",
+     "declared": {
+      "layout_mass": 0.08,
+      "meta_mass": 0.012,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.0686,
+       0.0401,
+       0.1143
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {
+       "friction": 0.45
+      }
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "collider_aabb_extents_m": [
+       0.068588,
+       0.040073,
+       0.1143
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.067053,
+       0.037932,
+       0.113279
+      ],
+      "engine_mass_kg": [
+       0.08
+      ],
+      "engine_com_m": [
+       [
+        -0.000303,
+        0.002722,
+        -0.000962
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        6.3319e-05,
+        7.2826e-05,
+        1.5244e-05
+       ]
+      ],
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      0.946,
+      0.977,
+      0.991
+     ],
+     "expected_shipped_mass": 0.08,
+     "density_lower_bound_kg_m3": 277.7,
+     "inertia_trace_ratio_vs_solid_box": 0.605,
+     "inertia_implied_box_density_kg_m3": 168.0,
+     "start_contact_force_over_weight": 0.99,
+     "start_contact_points": 33,
+     "settle": {
+      "spawn_to_reset_xy_m": 3e-05,
+      "spawn_to_reset_dz_m": -0.00018,
+      "spawn_to_reset_rot_deg": 0.028,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0001,
+      "max_rot_deg": 0.004,
+      "final_rot_deg": 0.002,
+      "min_z_m": 0.82201,
+      "max_z_m": 0.82201,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       -0.00052,
+       8e-05,
+       7e-05
+      ],
+      "final_ang_vel_radps": [
+       -0.00028,
+       -0.00657,
+       -0.00179
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       -0.38994,
+       0.28781,
+       0.82201,
+       1.0,
+       -0.00168,
+       -0.00094,
+       0.00103
+      ],
+      "declared_spawn": [
+       -0.38992,
+       0.2878,
+       0.82219,
+       1.0,
+       -0.0016,
+       -0.00071,
+       0.00103
+      ]
+     }
+    },
+    "headphones_0_3": {
+     "type": "rigid",
+     "model": "Clutter/headphones/00000",
+     "inst": "headphones_0_3",
+     "clutter": true,
+     "readback_source": "settle_engine",
+     "declared": {
+      "layout_mass": null,
+      "meta_mass": null,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.1933,
+       0.0869,
+       0.2055
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {}
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "collider_aabb_extents_m": [
+       0.193297,
+       0.086881,
+       0.205509
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.192437,
+       0.086392,
+       0.203626
+      ],
+      "engine_mass_kg": [
+       0.5
+      ],
+      "engine_com_m": [
+       [
+        -0.001176,
+        -0.000333,
+        0.070318
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        0.001925811,
+        0.004515386,
+        0.003181847
+       ]
+      ],
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      0.994,
+      0.996,
+      0.991
+     ],
+     "expected_shipped_mass": 0.5,
+     "density_lower_bound_kg_m3": 147.7,
+     "inertia_trace_ratio_vs_solid_box": 1.343,
+     "inertia_implied_box_density_kg_m3": 198.4,
+     "start_contact_force_over_weight": 1.0,
+     "start_contact_points": 30,
+     "settle": {
+      "spawn_to_reset_xy_m": 0.0,
+      "spawn_to_reset_dz_m": -0.00136,
+      "spawn_to_reset_rot_deg": 0.004,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.0,
+      "final_rot_deg": 0.0,
+      "min_z_m": 0.81936,
+      "max_z_m": 0.81936,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       -0.0,
+       -0.0,
+       -0.0
+      ],
+      "final_ang_vel_radps": [
+       0.0,
+       -0.0,
+       0.0
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       -0.15814,
+       0.05607,
+       0.81936,
+       -0.63582,
+       0.77175,
+       -0.01023,
+       0.00598
+      ],
+      "declared_spawn": [
+       -0.15814,
+       0.05608,
+       0.82072,
+       -0.63579,
+       0.77177,
+       -0.01023,
+       0.00598
+      ]
+     }
+    },
+    "house_1_11": {
+     "type": "rigid",
+     "model": "Clutter/house/00001",
+     "inst": "house_1_11",
+     "clutter": true,
+     "readback_source": "settle_engine",
+     "declared": {
+      "layout_mass": 1200.0,
+      "meta_mass": 1200.0,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.0897,
+       0.1146,
+       0.1143
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {
+       "friction": 0.65
+      }
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "collider_aabb_extents_m": [
+       0.089732,
+       0.114628,
+       0.1143
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.089685,
+       0.11434,
+       0.114081
+      ],
+      "engine_mass_kg": [
+       0.5
+      ],
+      "engine_com_m": [
+       [
+        -0.001029,
+        0.00093,
+        -0.014793
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        0.000738755,
+        0.000648685,
+        0.000650176
+       ]
+      ],
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      1.0,
+      0.998,
+      0.998
+     ],
+     "expected_shipped_mass": 0.5,
+     "density_lower_bound_kg_m3": 427.4,
+     "inertia_trace_ratio_vs_solid_box": 0.716,
+     "inertia_implied_box_density_kg_m3": 306.2,
+     "start_contact_force_over_weight": 1.0,
+     "start_contact_points": 37,
+     "settle": {
+      "spawn_to_reset_xy_m": 1e-05,
+      "spawn_to_reset_dz_m": -6e-05,
+      "spawn_to_reset_rot_deg": 0.012,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.0,
+      "final_rot_deg": 0.0,
+      "min_z_m": 0.82204,
+      "max_z_m": 0.82204,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       -0.0,
+       -1e-05,
+       -0.0
+      ],
+      "final_ang_vel_radps": [
+       0.00013,
+       -0.0,
+       2e-05
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       -0.54273,
+       0.36033,
+       0.82204,
+       0.99137,
+       -0.00021,
+       -0.00094,
+       0.13113
+      ],
+      "declared_spawn": [
+       -0.54271,
+       0.36033,
+       0.8221,
+       0.99136,
+       -0.00019,
+       -0.00083,
+       0.13113
+      ]
+     }
+    },
+    "jeans_0_18": {
+     "type": "rigid",
+     "model": "Clutter/jeans/00000",
+     "inst": "jeans_0_18",
+     "clutter": true,
+     "readback_source": "settle_engine",
+     "declared": {
+      "layout_mass": null,
+      "meta_mass": null,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.2034,
+       0.1944,
+       0.0329
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {}
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "collider_aabb_extents_m": [
+       0.203412,
+       0.194448,
+       0.03294
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.201426,
+       0.193058,
+       0.031705
+      ],
+      "engine_mass_kg": [
+       0.5
+      ],
+      "engine_com_m": [
+       [
+        -0.008614,
+        0.000201,
+        0.016379
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        0.00067964,
+        0.000935763,
+        0.001593705
+       ]
+      ],
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      0.964,
+      0.993,
+      0.99
+     ],
+     "expected_shipped_mass": 0.5,
+     "density_lower_bound_kg_m3": 405.5,
+     "inertia_trace_ratio_vs_solid_box": 0.488,
+     "inertia_implied_box_density_kg_m3": 198.1,
+     "start_contact_force_over_weight": 1.0,
+     "start_contact_points": 38,
+     "settle": {
+      "spawn_to_reset_xy_m": 0.0,
+      "spawn_to_reset_dz_m": -9e-05,
+      "spawn_to_reset_rot_deg": 0.035,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.0,
+      "final_rot_deg": 0.0,
+      "min_z_m": 0.76501,
+      "max_z_m": 0.76501,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       0.0,
+       0.0,
+       -6e-05
+      ],
+      "final_ang_vel_radps": [
+       -9e-05,
+       0.00069,
+       5e-05
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       0.49727,
+       -0.15044,
+       0.76501,
+       0.99381,
+       -0.0,
+       -1e-05,
+       0.11113
+      ],
+      "declared_spawn": [
+       0.49727,
+       -0.15044,
+       0.7651,
+       0.99381,
+       0.0003,
+       3e-05,
+       0.11112
+      ]
+     }
+    },
+    "minecraft_blocks_1_1": {
+     "type": "rigid",
+     "model": "Clutter/minecraft_blocks/00001",
+     "inst": "minecraft_blocks_1_1",
+     "clutter": true,
+     "readback_source": "settle_engine",
+     "declared": {
+      "layout_mass": null,
+      "meta_mass": null,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.08,
+       0.08,
+       0.08
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {}
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "collider_aabb_extents_m": [
+       0.08,
+       0.08,
+       0.08
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.080001,
+       0.080001,
+       0.08
+      ],
+      "engine_mass_kg": [
+       0.5
+      ],
+      "engine_com_m": [
+       [
+        -0.0,
+        -0.0,
+        -0.0
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        0.00054613,
+        0.00054613,
+        0.000546133
+       ]
+      ],
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "expected_shipped_mass": 0.5,
+     "density_lower_bound_kg_m3": 976.5,
+     "inertia_trace_ratio_vs_solid_box": 1.024,
+     "inertia_implied_box_density_kg_m3": 1000.0,
+     "start_contact_force_over_weight": 1.0,
+     "start_contact_points": 8,
+     "settle": {
+      "spawn_to_reset_xy_m": 4e-05,
+      "spawn_to_reset_dz_m": 0.0,
+      "spawn_to_reset_rot_deg": 0.058,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.0,
+      "final_rot_deg": 0.0,
+      "min_z_m": 0.805,
+      "max_z_m": 0.805,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       -0.0,
+       -0.0,
+       -1e-05
+      ],
+      "final_ang_vel_radps": [
+       6e-05,
+       -7e-05,
+       3e-05
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       0.40093,
+       0.32528,
+       0.805,
+       0.97788,
+       -0.0,
+       -0.0,
+       0.20919
+      ],
+      "declared_spawn": [
+       0.40092,
+       0.32532,
+       0.805,
+       0.97788,
+       -0.00051,
+       -1e-05,
+       0.20919
+      ]
+     }
+    },
+    "pen_0_19": {
+     "type": "rigid",
+     "model": "Clutter/pen/00000",
+     "inst": "pen_0_19",
+     "clutter": true,
+     "readback_source": "settle_engine",
+     "declared": {
+      "layout_mass": 0.018,
+      "meta_mass": null,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.0135,
+       0.1436,
+       0.0114
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {}
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "collider_aabb_extents_m": [
+       0.013472,
+       0.143639,
+       0.011382
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.013432,
+       0.143277,
+       0.011249
+      ],
+      "engine_mass_kg": [
+       0.018
+      ],
+      "engine_com_m": [
+       [
+        -0.002645,
+        0.007181,
+        0.005911
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        1.5528e-05,
+        1.68e-07,
+        1.5532e-05
+       ]
+      ],
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      0.987,
+      0.995,
+      0.998
+     ],
+     "expected_shipped_mass": 0.018,
+     "density_lower_bound_kg_m3": 831.5,
+     "inertia_trace_ratio_vs_solid_box": 0.5,
+     "inertia_implied_box_density_kg_m3": 415.4,
+     "start_contact_force_over_weight": 2.0,
+     "start_contact_points": 76,
+     "settle": {
+      "spawn_to_reset_xy_m": 0.0,
+      "spawn_to_reset_dz_m": -0.00033,
+      "spawn_to_reset_rot_deg": 0.313,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.001,
+      "final_rot_deg": 0.0,
+      "min_z_m": 0.76467,
+      "max_z_m": 0.76467,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       -0.0,
+       0.0,
+       -0.0
+      ],
+      "final_ang_vel_radps": [
+       0.00031,
+       -0.00078,
+       -6e-05
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       -0.58815,
+       -0.06149,
+       0.76467,
+       0.98938,
+       -0.00262,
+       0.01794,
+       0.14423
+      ],
+      "declared_spawn": [
+       -0.58815,
+       -0.06149,
+       0.765,
+       0.98942,
+       -0.00232,
+       0.01522,
+       0.14424
+      ]
+     }
+    },
+    "phone_stand_1_5": {
+     "type": "rigid",
+     "model": "Clutter/phone_stand/00001",
+     "inst": "phone_stand_1_5",
+     "clutter": true,
+     "readback_source": "settle_engine",
+     "declared": {
+      "layout_mass": null,
+      "meta_mass": null,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.0977,
+       0.1524,
+       0.0977
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {}
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "collider_aabb_extents_m": [
+       0.097729,
+       0.1524,
+       0.097733
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.096634,
+       0.152267,
+       0.096352
+      ],
+      "engine_mass_kg": [
+       0.5
+      ],
+      "engine_com_m": [
+       [
+        0.000494,
+        -0.022048,
+        -0.009668
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        0.000388988,
+        0.000117793,
+        0.000383817
+       ]
+      ],
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      0.986,
+      0.989,
+      0.999
+     ],
+     "expected_shipped_mass": 0.5,
+     "density_lower_bound_kg_m3": 352.7,
+     "inertia_trace_ratio_vs_solid_box": 0.256,
+     "inertia_implied_box_density_kg_m3": 90.2,
+     "start_contact_force_over_weight": 2.0,
+     "start_contact_points": 68,
+     "settle": {
+      "spawn_to_reset_xy_m": 0.0,
+      "spawn_to_reset_dz_m": -0.00015,
+      "spawn_to_reset_rot_deg": 0.002,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.001,
+      "final_rot_deg": 0.0,
+      "min_z_m": 0.84115,
+      "max_z_m": 0.84115,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       -0.00037,
+       -0.00044,
+       -5e-05
+      ],
+      "final_ang_vel_radps": [
+       0.00881,
+       -0.00536,
+       -0.00107
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       -0.50665,
+       0.20023,
+       0.84115,
+       0.70266,
+       0.70458,
+       0.06959,
+       0.07063
+      ],
+      "declared_spawn": [
+       -0.50665,
+       0.20023,
+       0.8413,
+       0.70267,
+       0.70457,
+       0.06959,
+       0.07062
+      ]
+     }
+    },
+    "pokeball_1_6": {
+     "type": "rigid",
+     "model": "Clutter/pokeball/00001",
+     "inst": "pokeball_1_6",
+     "clutter": true,
+     "readback_source": "settle_engine",
+     "declared": {
+      "layout_mass": null,
+      "meta_mass": null,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.0794,
+       0.0807,
+       0.0832
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {}
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "collider_aabb_extents_m": [
+       0.079437,
+       0.080674,
+       0.083203
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.078789,
+       0.080266,
+       0.081787
+      ],
+      "engine_mass_kg": [
+       0.5
+      ],
+      "engine_com_m": [
+       [
+        0.00056,
+        0.000111,
+        0.000776
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        0.000142926,
+        0.000139279,
+        0.000140653
+       ]
+      ],
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      0.992,
+      0.995,
+      0.983
+     ],
+     "expected_shipped_mass": 0.5,
+     "density_lower_bound_kg_m3": 966.7,
+     "inertia_trace_ratio_vs_solid_box": 0.262,
+     "inertia_implied_box_density_kg_m3": 253.6,
+     "start_contact_force_over_weight": 1.0,
+     "start_contact_points": 13,
+     "settle": {
+      "spawn_to_reset_xy_m": 4e-05,
+      "spawn_to_reset_dz_m": -0.00169,
+      "spawn_to_reset_rot_deg": 0.06,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.001,
+      "final_rot_deg": 0.001,
+      "min_z_m": 0.8031,
+      "max_z_m": 0.8031,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       -0.00032,
+       -7e-05,
+       -0.00026
+      ],
+      "final_ang_vel_radps": [
+       -0.00087,
+       -0.00798,
+       0.01098
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       0.22663,
+       0.31769,
+       0.8031,
+       0.99156,
+       0.03297,
+       0.10941,
+       -0.06124
+      ],
+      "declared_spawn": [
+       0.22667,
+       0.31771,
+       0.80479,
+       0.99152,
+       0.03272,
+       0.10987,
+       -0.06129
+      ]
+     }
+    },
+    "power_bank_0_14": {
+     "type": "rigid",
+     "model": "Clutter/power_bank/00000",
+     "inst": "power_bank_0_14",
+     "clutter": true,
+     "readback_source": "settle_engine",
+     "declared": {
+      "layout_mass": 0.22,
+      "meta_mass": null,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.07,
+       0.1667,
+       0.0178
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {}
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "collider_aabb_extents_m": [
+       0.07,
+       0.166735,
+       0.017829
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.07,
+       0.166735,
+       0.017838
+      ],
+      "engine_mass_kg": [
+       0.22
+      ],
+      "engine_com_m": [
+       [
+        0.004216,
+        0.006454,
+        6.9e-05
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        0.00045027,
+        8.1661e-05,
+        0.000521728
+       ]
+      ],
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      1.002,
+      1.0,
+      1.0
+     ],
+     "expected_shipped_mass": 0.22,
+     "density_lower_bound_kg_m3": 1056.7,
+     "inertia_trace_ratio_vs_solid_box": 0.87,
+     "inertia_implied_box_density_kg_m3": 919.6,
+     "start_contact_force_over_weight": 3.0,
+     "start_contact_points": 131,
+     "settle": {
+      "spawn_to_reset_xy_m": 0.0,
+      "spawn_to_reset_dz_m": 2e-05,
+      "spawn_to_reset_rot_deg": 0.004,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.0,
+      "final_rot_deg": 0.0,
+      "min_z_m": 0.77392,
+      "max_z_m": 0.77392,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       3e-05,
+       -0.0,
+       -1e-05
+      ],
+      "final_ang_vel_radps": [
+       8e-05,
+       0.00047,
+       -0.00016
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       -0.42623,
+       -0.44611,
+       0.77392,
+       0.99998,
+       3e-05,
+       0.0,
+       -0.00679
+      ],
+      "declared_spawn": [
+       -0.42623,
+       -0.4461,
+       0.7739,
+       0.99998,
+       0.0,
+       0.0,
+       -0.00679
+      ]
+     }
+    },
+    "stapler_2_4": {
+     "type": "rigid",
+     "model": "Clutter/stapler/00002",
+     "inst": "stapler_2_4",
+     "clutter": true,
+     "readback_source": "settle_engine",
+     "declared": {
+      "layout_mass": 0.12,
+      "meta_mass": 0.12,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.14,
+       0.0277,
+       0.0653
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {
+       "friction": 0.3
+      }
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "collider_aabb_extents_m": [
+       0.14,
+       0.027702,
+       0.06533
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.139108,
+       0.027697,
+       0.064719
+      ],
+      "engine_mass_kg": [
+       0.12
+      ],
+      "engine_com_m": [
+       [
+        0.005925,
+        3.4e-05,
+        -0.004091
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        3.1578e-05,
+        0.00014852,
+        0.000128452
+       ]
+      ],
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      1.0,
+      0.991,
+      0.994
+     ],
+     "expected_shipped_mass": 0.12,
+     "density_lower_bound_kg_m3": 481.2,
+     "inertia_trace_ratio_vs_solid_box": 0.635,
+     "inertia_implied_box_density_kg_m3": 305.4,
+     "start_contact_force_over_weight": 1.0,
+     "start_contact_points": 32,
+     "settle": {
+      "spawn_to_reset_xy_m": 0.0001,
+      "spawn_to_reset_dz_m": -9e-05,
+      "spawn_to_reset_rot_deg": 0.176,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.0,
+      "final_rot_deg": 0.0,
+      "min_z_m": 0.79761,
+      "max_z_m": 0.79761,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       0.00013,
+       -0.00041,
+       4e-05
+      ],
+      "final_ang_vel_radps": [
+       0.01354,
+       0.0044,
+       0.00036
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       -0.27273,
+       0.39872,
+       0.79761,
+       0.99458,
+       0.00046,
+       0.00068,
+       0.10393
+      ],
+      "declared_spawn": [
+       -0.27276,
+       0.39881,
+       0.7977,
+       0.99458,
+       -0.00105,
+       0.00039,
+       0.10393
+      ]
+     }
+    },
+    "tape_measure_0_15": {
+     "type": "rigid",
+     "model": "Clutter/tape_measure/00000",
+     "inst": "tape_measure_0_15",
+     "clutter": true,
+     "readback_source": "settle_engine",
+     "declared": {
+      "layout_mass": null,
+      "meta_mass": null,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.0384,
+       0.097,
+       0.0711
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {}
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "collider_aabb_extents_m": [
+       0.038447,
+       0.096969,
+       0.07109
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.038139,
+       0.096552,
+       0.070617
+      ],
+      "engine_mass_kg": [
+       0.5
+      ],
+      "engine_com_m": [
+       [
+        -0.001832,
+        0.006395,
+        -0.006891
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        2.5509e-05,
+        1.5559e-05,
+        1.7367e-05
+       ]
+      ],
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      0.993,
+      0.993,
+      0.995
+     ],
+     "expected_shipped_mass": 0.5,
+     "density_lower_bound_kg_m3": 1922.8,
+     "inertia_trace_ratio_vs_solid_box": 0.044,
+     "inertia_implied_box_density_kg_m3": 85.5,
+     "start_contact_force_over_weight": 1.0,
+     "start_contact_points": 18,
+     "settle": {
+      "spawn_to_reset_xy_m": 2e-05,
+      "spawn_to_reset_dz_m": -0.00034,
+      "spawn_to_reset_rot_deg": 0.055,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.0,
+      "final_rot_deg": 0.0,
+      "min_z_m": 0.78624,
+      "max_z_m": 0.78624,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       9e-05,
+       8e-05,
+       -0.00048
+      ],
+      "final_ang_vel_radps": [
+       0.05838,
+       0.00723,
+       -0.02972
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       0.34173,
+       0.16521,
+       0.78624,
+       0.73466,
+       -0.1526,
+       -0.65881,
+       -0.05428
+      ],
+      "declared_spawn": [
+       0.34174,
+       0.16523,
+       0.78658,
+       0.7347,
+       -0.15294,
+       -0.65872,
+       -0.05396
+      ]
+     }
+    },
+    "target": {
+     "type": "garment",
+     "model": "Garment/Top_Long/00006",
+     "inst": "Top_Long_6_21",
+     "clutter": false,
+     "readback_source": "readback_spec",
+     "declared": {
+      "layout_mass": null,
+      "meta_mass": null,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.5023,
+       0.2876,
+       0.1728
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {}
+     },
+     "engine": {
+      "colliders": 0,
+      "colliders_enabled": 0,
+      "approximations": [],
+      "collider_aabb_extents_m": null,
+      "engine_collider_aabb_extents_m": null,
+      "engine_mass_kg": null,
+      "engine_com_m": null,
+      "engine_diag_inertia_kg_m2": null,
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": []
+     },
+     "settle": {
+      "spawn_to_reset_xy_m": null,
+      "spawn_to_reset_dz_m": null,
+      "spawn_to_reset_rot_deg": null,
+      "max_disp_m": null,
+      "final_disp_m": null,
+      "max_speed_mps": null,
+      "max_rot_deg": null,
+      "final_rot_deg": null,
+      "min_z_m": null,
+      "max_z_m": null,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": null,
+      "final_ang_vel_radps": null,
+      "points_after_reset": {
+       "n": 8613,
+       "finite_frac": 1.0,
+       "centroid": [
+        -0.0017,
+        -0.1579,
+        0.8334
+       ],
+       "min": [
+        -0.2489,
+        -0.2998,
+        0.7653
+       ],
+       "max": [
+        0.2522,
+        -0.0108,
+        0.9269
+       ],
+       "frac_below_table_minus_5cm": 0.0
+      },
+      "points_end": {
+       "n": 8613,
+       "finite_frac": 1.0,
+       "centroid": [
+        -0.0017,
+        -0.1579,
+        0.8334
+       ],
+       "min": [
+        -0.2489,
+        -0.2998,
+        0.7653
+       ],
+       "max": [
+        0.2522,
+        -0.0108,
+        0.9269
+       ],
+       "frac_below_table_minus_5cm": 0.0
+      },
+      "max_centroid_disp_m": 0.0,
+      "max_point_disp_m": 0.0,
+      "pose_after_reset": null,
+      "declared_spawn": null
+     }
+    },
+    "toy_car_1_10": {
+     "type": "rigid",
+     "model": "Clutter/toy_car/00001",
+     "inst": "toy_car_1_10",
+     "clutter": true,
+     "readback_source": "settle_engine",
+     "declared": {
+      "layout_mass": 0.045,
+      "meta_mass": 0.32,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.1154,
+       0.053,
+       0.0594
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {
+       "friction": 0.45
+      }
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "collider_aabb_extents_m": [
+       0.11543,
+       0.053007,
+       0.059436
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.114396,
+       0.052262,
+       0.058477
+      ],
+      "engine_mass_kg": [
+       0.045
+      ],
+      "engine_com_m": [
+       [
+        0.003383,
+        0.000106,
+        1.1e-05
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        9.2443e-05,
+        0.000265297,
+        0.000262268
+       ]
+      ],
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      0.986,
+      0.984,
+      0.991
+     ],
+     "expected_shipped_mass": 0.045,
+     "density_lower_bound_kg_m3": 128.7,
+     "inertia_trace_ratio_vs_solid_box": 4.297,
+     "inertia_implied_box_density_kg_m3": 553.1,
+     "start_contact_force_over_weight": 1.0,
+     "start_contact_points": 13,
+     "settle": {
+      "spawn_to_reset_xy_m": 1e-05,
+      "spawn_to_reset_dz_m": -0.00103,
+      "spawn_to_reset_rot_deg": 0.014,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.003,
+      "final_rot_deg": 0.0,
+      "min_z_m": 0.79377,
+      "max_z_m": 0.79377,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       -3e-05,
+       8e-05,
+       -3e-05
+      ],
+      "final_ang_vel_radps": [
+       -0.00264,
+       -0.00114,
+       -0.00112
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       0.04293,
+       0.36221,
+       0.79377,
+       0.99928,
+       0.00185,
+       0.00015,
+       0.03788
+      ],
+      "declared_spawn": [
+       0.04293,
+       0.3622,
+       0.7948,
+       0.99928,
+       0.00189,
+       0.00026,
+       0.03788
+      ]
+     }
+    },
+    "toy_plane_2_2": {
+     "type": "rigid",
+     "model": "Clutter/toy_plane/00002",
+     "inst": "toy_plane_2_2",
+     "clutter": true,
+     "readback_source": "settle_engine",
+     "declared": {
+      "layout_mass": 0.45,
+      "meta_mass": 0.45,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.1569,
+       0.1591,
+       0.0914
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {
+       "friction": 0.32
+      }
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "collider_aabb_extents_m": [
+       0.156909,
+       0.159094,
+       0.09144
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.153318,
+       0.157711,
+       0.090466
+      ],
+      "engine_mass_kg": [
+       0.45
+      ],
+      "engine_com_m": [
+       [
+        0.000206,
+        -0.002289,
+        0.005604
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        0.000443461,
+        0.000242082,
+        0.000444537
+       ]
+      ],
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      0.99,
+      0.977,
+      0.991
+     ],
+     "expected_shipped_mass": 0.45,
+     "density_lower_bound_kg_m3": 205.7,
+     "inertia_trace_ratio_vs_solid_box": 0.266,
+     "inertia_implied_box_density_kg_m3": 54.8,
+     "start_contact_force_over_weight": 1.0,
+     "start_contact_points": 9,
+     "settle": {
+      "spawn_to_reset_xy_m": 8e-05,
+      "spawn_to_reset_dz_m": -0.00151,
+      "spawn_to_reset_rot_deg": 0.161,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.0,
+      "final_rot_deg": 0.0,
+      "min_z_m": 0.80956,
+      "max_z_m": 0.80956,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       -1e-05,
+       -4e-05,
+       -1e-05
+      ],
+      "final_ang_vel_radps": [
+       0.00037,
+       -0.00055,
+       -0.00026
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       0.51615,
+       0.09491,
+       0.80956,
+       0.98738,
+       0.00488,
+       0.00579,
+       -0.15822
+      ],
+      "declared_spawn": [
+       0.51611,
+       0.09498,
+       0.81107,
+       0.98716,
+       0.00495,
+       0.00558,
+       -0.15959
+      ]
+     }
+    },
+    "walkie_talkie_0_7": {
+     "type": "rigid",
+     "model": "Clutter/walkie_talkie/00000",
+     "inst": "walkie_talkie_0_7",
+     "clutter": true,
+     "readback_source": "settle_engine",
+     "declared": {
+      "layout_mass": null,
+      "meta_mass": null,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.0741,
+       0.0386,
+       0.1611
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {}
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "collider_aabb_extents_m": [
+       0.074113,
+       0.038555,
+       0.161112
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.073093,
+       0.037834,
+       0.15964
+      ],
+      "engine_mass_kg": [
+       0.5
+      ],
+      "engine_com_m": [
+       [
+        0.000879,
+        0.002206,
+        0.069472
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        0.000278464,
+        0.000333355,
+        8.964e-05
+       ]
+      ],
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      0.98,
+      0.986,
+      0.991
+     ],
+     "expected_shipped_mass": 0.5,
+     "density_lower_bound_kg_m3": 1132.6,
+     "inertia_trace_ratio_vs_solid_box": 0.261,
+     "inertia_implied_box_density_kg_m3": 295.5,
+     "start_contact_force_over_weight": 1.0,
+     "start_contact_points": 26,
+     "settle": {
+      "spawn_to_reset_xy_m": 0.0,
+      "spawn_to_reset_dz_m": 5e-05,
+      "spawn_to_reset_rot_deg": 0.002,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.0,
+      "final_rot_deg": 0.0,
+      "min_z_m": 0.78809,
+      "max_z_m": 0.78809,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       -1e-05,
+       -1e-05,
+       -1e-05
+      ],
+      "final_ang_vel_radps": [
+       0.00015,
+       -0.00022,
+       0.00058
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       0.48171,
+       -0.46578,
+       0.78809,
+       0.70778,
+       -0.7064,
+       0.00498,
+       -0.00499
+      ],
+      "declared_spawn": [
+       0.48171,
+       -0.46578,
+       0.78804,
+       0.70779,
+       -0.70639,
+       0.00498,
+       -0.005
+      ]
+     }
+    }
+   },
+   "sweep_settle_seconds": 25.0,
+   "harness_wall_seconds": 39.6
+  },
+  "general_pickup": {
+   "task": "general_pickup",
+   "data_source": "datagen",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 200,
+   "status": "not_run",
+   "error": null
+  },
+  "hang_mugs": {
+   "task": "hang_mugs",
+   "data_source": "teleop",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 800,
+   "status": "not_run",
+   "error": null
+  },
+  "hang_mugs_random": {
+   "task": "hang_mugs_random",
+   "data_source": "teleop",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 800,
+   "status": "not_run",
+   "error": null
+  },
+  "imitate_sorting_sequence": {
+   "task": "imitate_sorting_sequence",
+   "data_source": "datagen",
+   "scene": "default",
+   "robot_config": "dual_x5_and_franka_competition",
+   "step_lim": 1600,
+   "status": "not_run",
+   "error": null
+  },
+  "insert_key": {
+   "task": "insert_key",
+   "data_source": "datagen",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 300,
+   "status": "not_run",
+   "error": null
+  },
+  "insert_tubes": {
+   "task": "insert_tubes",
+   "data_source": "datagen",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 500,
+   "status": "not_run",
+   "error": null
+  },
+  "make_kong": {
+   "task": "make_kong",
+   "data_source": "datagen",
+   "scene": "default",
+   "robot_config": "dual_x5_and_franka_competition",
+   "step_lim": 600,
+   "status": "not_run",
+   "error": null
+  },
+  "make_toast": {
+   "task": "make_toast",
+   "data_source": "teleop",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 1400,
+   "status": "not_run",
+   "error": null
+  },
+  "make_toast_random": {
+   "task": "make_toast_random",
+   "data_source": "teleop",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 1400,
+   "status": "not_run",
+   "error": null
+  },
+  "match_and_pick_from_conveyor": {
+   "task": "match_and_pick_from_conveyor",
+   "data_source": "teleop",
+   "scene": "conveyor",
+   "robot_config": "dual_x5",
+   "step_lim": 700,
+   "status": "not_run",
+   "error": null
+  },
+  "organize_table": {
+   "task": "organize_table",
+   "data_source": "teleop",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 1000,
+   "status": "not_run",
+   "error": null
+  },
+  "pack_objects_into_box": {
+   "task": "pack_objects_into_box",
+   "data_source": "teleop",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 1300,
+   "status": "not_run",
+   "error": null
+  },
+  "pack_objects_into_box_random": {
+   "task": "pack_objects_into_box_random",
+   "data_source": "teleop",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 1300,
+   "status": "not_run",
+   "error": null
+  },
+  "pick_from_conveyor_by_image": {
+   "task": "pick_from_conveyor_by_image",
+   "data_source": "datagen",
+   "scene": "conveyor",
+   "robot_config": "dual_x5",
+   "step_lim": 700,
+   "status": "not_run",
+   "error": null
+  },
+  "play_Xylophone": {
+   "task": "play_Xylophone",
+   "data_source": "datagen",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 500,
+   "status": "not_run",
+   "error": null
+  },
+  "play_stacking_toy": {
+   "task": "play_stacking_toy",
+   "data_source": "datagen",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 1200,
+   "status": "not_run",
+   "error": null
+  },
+  "play_tic_tac_toe": {
+   "task": "play_tic_tac_toe",
+   "data_source": "datagen",
+   "scene": "default",
+   "robot_config": "dual_x5_and_franka_competition",
+   "step_lim": 1100,
+   "status": "not_run",
+   "error": null
+  },
+  "plug_in_charger": {
+   "task": "plug_in_charger",
+   "data_source": "datagen",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 400,
+   "status": "not_run",
+   "error": null
+  },
+  "pour_balls_into_vase": {
+   "task": "pour_balls_into_vase",
+   "data_source": "teleop",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 600,
+   "status": "not_run",
+   "error": null
+  },
+  "pour_by_language": {
+   "task": "pour_by_language",
+   "data_source": "datagen",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 800,
+   "rc": 0,
+   "wall_s": 65.0,
+   "gpu_used_before_mib": 0,
+   "gpu_peak_mib": 3681,
+   "gpu_own_peak_mib": 3681,
+   "status": "built_and_reset",
+   "do_nothing": {
+    "grip_command": {
+     "left": 1.0,
+     "right": 1.0
+    },
+    "grip_source": {
+     "left": "observed",
+     "right": "observed"
+    },
+    "after_one_action": {
+     "end_flag": false,
+     "success": true
+    },
+    "step_lim": 800,
+    "end_flag": true,
+    "success": false
+   },
+   "episode_score_pct": 0.0,
+   "readback_failures": [
+    "env_0.wine_0: enabled Gprim colliders=0 < 1",
+    "env_0.wine_1: enabled Gprim colliders=0 < 1",
+    "env_0.wine_2: enabled Gprim colliders=0 < 1"
+   ],
+   "counts": {
+    "rigid": 6,
+    "geometry": 1,
+    "fluid": 3
+   },
+   "robot_drift": {
+    "robot0": 0.0,
+    "robot1": 0.0
+   },
+   "robot_limits": {
+    "robot0": [
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -3.14,
+      3.14
+     ],
+     [
+      0.0,
+      0.044
+     ],
+     [
+      0.0,
+      0.044
+     ]
+    ],
+    "robot1": [
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -3.14,
+      3.14
+     ],
+     [
+      0.0,
+      0.044
+     ],
+     [
+      0.0,
+      0.044
+     ]
+    ]
+   },
+   "delivery": {
+    "checked": true,
+    "delivered": false,
+    "reason": "6 of 6 rigid objects carry the engine default 0.5/0.5 instead of their bound material (#58)"
+   },
+   "clutter_instances": 0,
+   "objects": {
+    "bottle_0": {
+     "type": "rigid",
+     "model": "Rigid/wine_bottle/00002",
+     "inst": "wine_bottle_2_1",
+     "clutter": false,
+     "readback_source": "readback_spec",
+     "declared": {
+      "layout_mass": 0.15,
+      "meta_mass": 0.15,
+      "layout_size": [
+       0.0823,
+       0.0821,
+       0.218
+      ],
+      "meta_size": [
+       0.0823,
+       0.0821,
+       0.218
+      ],
+      "meta_bbox": [
+       0.0824,
+       0.0821,
+       0.2181
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {
+       "friction": 0.0
+      }
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "collider_aabb_extents_m": [
+       0.082361,
+       0.082131,
+       0.218071
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.080287,
+       0.079981,
+       0.218628
+      ],
+      "engine_mass_kg": [
+       0.15
+      ],
+      "engine_com_m": [
+       [
+        0.000769,
+        -0.000191,
+        0.01734
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        0.00063982,
+        0.00063861,
+        0.00021097
+       ]
+      ],
+      "engine_shape_count": 112,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      0.974,
+      0.974,
+      1.002
+     ],
+     "size_ratio_vs_layout_size": [
+      0.974,
+      0.976,
+      1.003
+     ],
+     "size_ratio_vs_meta_size": [
+      0.974,
+      0.976,
+      1.003
+     ],
+     "expected_shipped_mass": 0.15,
+     "density_lower_bound_kg_m3": 106.8,
+     "inertia_trace_ratio_vs_solid_box": 0.982,
+     "inertia_implied_box_density_kg_m3": 105.0,
+     "start_contact_force_over_weight": 4.13,
+     "start_contact_points": 72,
+     "settle": {
+      "spawn_to_reset_xy_m": 1e-05,
+      "spawn_to_reset_dz_m": -3e-05,
+      "spawn_to_reset_rot_deg": 0.01,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.001,
+      "final_rot_deg": 0.001,
+      "min_z_m": 0.82497,
+      "max_z_m": 0.82497,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       -0.0,
+       -0.00092,
+       -0.00071
+      ],
+      "final_ang_vel_radps": [
+       0.01149,
+       0.0002,
+       -0.00084
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       -0.19975,
+       0.00036,
+       0.82497,
+       0.99999,
+       0.00203,
+       -0.00295,
+       0.0001
+      ],
+      "declared_spawn": [
+       -0.19975,
+       0.00035,
+       0.825,
+       0.99999,
+       0.0021,
+       -0.0029,
+       0.0001
+      ]
+     }
+    },
+    "bottle_1": {
+     "type": "rigid",
+     "model": "Rigid/wine_bottle/00000",
+     "inst": "wine_bottle_0_2",
+     "clutter": false,
+     "readback_source": "readback_spec",
+     "declared": {
+      "layout_mass": 0.15,
+      "meta_mass": 0.15,
+      "layout_size": [
+       0.0823,
+       0.0821,
+       0.218
+      ],
+      "meta_size": [
+       0.0823,
+       0.0821,
+       0.218
+      ],
+      "meta_bbox": [
+       0.0824,
+       0.0821,
+       0.2181
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {
+       "friction": 0.0
+      }
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "collider_aabb_extents_m": [
+       0.082361,
+       0.082131,
+       0.218071
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.080288,
+       0.079981,
+       0.218628
+      ],
+      "engine_mass_kg": [
+       0.15
+      ],
+      "engine_com_m": [
+       [
+        0.000769,
+        -0.000191,
+        0.01734
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        0.00063982,
+        0.00063861,
+        0.00021097
+       ]
+      ],
+      "engine_shape_count": 112,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      0.974,
+      0.974,
+      1.002
+     ],
+     "size_ratio_vs_layout_size": [
+      0.974,
+      0.976,
+      1.003
+     ],
+     "size_ratio_vs_meta_size": [
+      0.974,
+      0.976,
+      1.003
+     ],
+     "expected_shipped_mass": 0.15,
+     "density_lower_bound_kg_m3": 106.8,
+     "inertia_trace_ratio_vs_solid_box": 0.982,
+     "inertia_implied_box_density_kg_m3": 105.0,
+     "start_contact_force_over_weight": 4.14,
+     "start_contact_points": 72,
+     "settle": {
+      "spawn_to_reset_xy_m": 1e-05,
+      "spawn_to_reset_dz_m": -3e-05,
+      "spawn_to_reset_rot_deg": 0.008,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0001,
+      "max_rot_deg": 0.001,
+      "final_rot_deg": 0.001,
+      "min_z_m": 0.82497,
+      "max_z_m": 0.82497,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       0.00015,
+       -0.00077,
+       -0.00064
+      ],
+      "final_ang_vel_radps": [
+       0.00974,
+       0.00211,
+       8e-05
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       0.00025,
+       0.00036,
+       0.82497,
+       0.99999,
+       0.00204,
+       -0.00294,
+       0.0001
+      ],
+      "declared_spawn": [
+       0.00025,
+       0.00035,
+       0.825,
+       0.99999,
+       0.0021,
+       -0.0029,
+       0.0001
+      ]
+     }
+    },
+    "bottle_2": {
+     "type": "rigid",
+     "model": "Rigid/wine_bottle/00001",
+     "inst": "wine_bottle_1_3",
+     "clutter": false,
+     "readback_source": "readback_spec",
+     "declared": {
+      "layout_mass": 0.15,
+      "meta_mass": 0.15,
+      "layout_size": [
+       0.0823,
+       0.0821,
+       0.218
+      ],
+      "meta_size": [
+       0.0823,
+       0.0821,
+       0.218
+      ],
+      "meta_bbox": [
+       0.0824,
+       0.0821,
+       0.2181
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {
+       "friction": 0.0
+      }
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "collider_aabb_extents_m": [
+       0.082361,
+       0.082131,
+       0.218071
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.080287,
+       0.079981,
+       0.218627
+      ],
+      "engine_mass_kg": [
+       0.15
+      ],
+      "engine_com_m": [
+       [
+        0.000769,
+        -0.000191,
+        0.01734
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        0.00063982,
+        0.00063861,
+        0.00021097
+       ]
+      ],
+      "engine_shape_count": 112,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      0.974,
+      0.974,
+      1.002
+     ],
+     "size_ratio_vs_layout_size": [
+      0.974,
+      0.976,
+      1.003
+     ],
+     "size_ratio_vs_meta_size": [
+      0.974,
+      0.976,
+      1.003
+     ],
+     "expected_shipped_mass": 0.15,
+     "density_lower_bound_kg_m3": 106.8,
+     "inertia_trace_ratio_vs_solid_box": 0.982,
+     "inertia_implied_box_density_kg_m3": 105.0,
+     "start_contact_force_over_weight": 4.1,
+     "start_contact_points": 72,
+     "settle": {
+      "spawn_to_reset_xy_m": 0.0,
+      "spawn_to_reset_dz_m": -3e-05,
+      "spawn_to_reset_rot_deg": 0.002,
+      "max_disp_m": 2e-05,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0003,
+      "max_rot_deg": 0.017,
+      "final_rot_deg": 0.0,
+      "min_z_m": 0.82497,
+      "max_z_m": 0.82497,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       0.00084,
+       0.0002,
+       -0.00138
+      ],
+      "final_ang_vel_radps": [
+       -0.0041,
+       0.01482,
+       0.00166
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       0.20025,
+       0.00035,
+       0.82497,
+       0.99999,
+       0.00209,
+       -0.0029,
+       0.0001
+      ],
+      "declared_spawn": [
+       0.20025,
+       0.00035,
+       0.825,
+       0.99999,
+       0.0021,
+       -0.0029,
+       0.0001
+      ]
+     }
+    },
+    "bowl_0": {
+     "type": "rigid",
+     "model": "Rigid/wine_bowl/00000",
+     "inst": "wine_bowl_0_4",
+     "clutter": false,
+     "readback_source": "readback_spec",
+     "declared": {
+      "layout_mass": 0.25,
+      "meta_mass": 0.25,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.11,
+       0.11,
+       0.04
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {
+       "friction": 0.3
+      }
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "collider_aabb_extents_m": [
+       0.11,
+       0.11,
+       0.04
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.109198,
+       0.108905,
+       0.039973
+      ],
+      "engine_mass_kg": [
+       0.25
+      ],
+      "engine_com_m": [
+       [
+        -0.000231,
+        3.4e-05,
+        -0.000986
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        9.173e-05,
+        8.938e-05,
+        0.00015788
+       ]
+      ],
+      "engine_shape_count": 64,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      0.999,
+      0.99,
+      0.993
+     ],
+     "expected_shipped_mass": 0.25,
+     "density_lower_bound_kg_m3": 525.9,
+     "inertia_trace_ratio_vs_solid_box": 0.321,
+     "inertia_implied_box_density_kg_m3": 168.6,
+     "start_contact_force_over_weight": 0.99,
+     "start_contact_points": 49,
+     "settle": {
+      "spawn_to_reset_xy_m": 1e-05,
+      "spawn_to_reset_dz_m": 3e-05,
+      "spawn_to_reset_rot_deg": 0.024,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0001,
+      "max_rot_deg": 0.006,
+      "final_rot_deg": 0.003,
+      "min_z_m": 0.78513,
+      "max_z_m": 0.78513,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       0.00035,
+       -0.00047,
+       1e-05
+      ],
+      "final_ang_vel_radps": [
+       0.02391,
+       0.01692,
+       -0.00048
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       0.1499,
+       -0.15,
+       0.78513,
+       1.0,
+       -3e-05,
+       -1e-05,
+       -0.0012
+      ],
+      "declared_spawn": [
+       0.14991,
+       -0.15,
+       0.7851,
+       1.0,
+       0.0,
+       0.0002,
+       -0.0012
+      ]
+     }
+    },
+    "bowl_1": {
+     "type": "rigid",
+     "model": "Rigid/wine_bowl/00001",
+     "inst": "wine_bowl_1_5",
+     "clutter": false,
+     "readback_source": "readback_spec",
+     "declared": {
+      "layout_mass": 0.22,
+      "meta_mass": 0.22,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.11,
+       0.11,
+       0.04
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {
+       "friction": 0.25
+      }
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "collider_aabb_extents_m": [
+       0.11,
+       0.11,
+       0.04
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.108902,
+       0.109054,
+       0.039764
+      ],
+      "engine_mass_kg": [
+       0.22
+      ],
+      "engine_com_m": [
+       [
+        7.9e-05,
+        -0.000152,
+        -0.004238
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        3.913e-05,
+        3.842e-05,
+        6.616e-05
+       ]
+      ],
+      "engine_shape_count": 64,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      0.994,
+      0.99,
+      0.991
+     ],
+     "expected_shipped_mass": 0.22,
+     "density_lower_bound_kg_m3": 465.9,
+     "inertia_trace_ratio_vs_solid_box": 0.155,
+     "inertia_implied_box_density_kg_m3": 72.1,
+     "start_contact_force_over_weight": 1.0,
+     "start_contact_points": 49,
+     "settle": {
+      "spawn_to_reset_xy_m": 1e-05,
+      "spawn_to_reset_dz_m": -0.00042,
+      "spawn_to_reset_rot_deg": 0.026,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.0,
+      "final_rot_deg": 0.0,
+      "min_z_m": 0.78478,
+      "max_z_m": 0.78478,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       -6e-05,
+       -0.00018,
+       -0.00018
+      ],
+      "final_ang_vel_radps": [
+       0.00783,
+       0.00652,
+       0.00242
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       -0.14998,
+       -0.15024,
+       0.78478,
+       0.99999,
+       -0.00406,
+       0.00048,
+       0.0009
+      ],
+      "declared_spawn": [
+       -0.14999,
+       -0.15023,
+       0.7852,
+       0.99999,
+       -0.0042,
+       0.0003,
+       0.0009
+      ]
+     }
+    },
+    "bowl_2": {
+     "type": "rigid",
+     "model": "Rigid/wine_bowl/00002",
+     "inst": "wine_bowl_2_6",
+     "clutter": false,
+     "readback_source": "readback_spec",
+     "declared": {
+      "layout_mass": 0.25,
+      "meta_mass": 0.25,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.11,
+       0.11,
+       0.04
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {
+       "friction": 0.3
+      }
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "collider_aabb_extents_m": [
+       0.11,
+       0.11,
+       0.04
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.108925,
+       0.108979,
+       0.039928
+      ],
+      "engine_mass_kg": [
+       0.25
+      ],
+      "engine_com_m": [
+       [
+        4.8e-05,
+        -6.2e-05,
+        -0.000623
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        8.004e-05,
+        7.66e-05,
+        0.00013727
+       ]
+      ],
+      "engine_shape_count": 64,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      0.998,
+      0.99,
+      0.991
+     ],
+     "expected_shipped_mass": 0.25,
+     "density_lower_bound_kg_m3": 527.5,
+     "inertia_trace_ratio_vs_solid_box": 0.278,
+     "inertia_implied_box_density_kg_m3": 146.9,
+     "start_contact_force_over_weight": 1.0,
+     "start_contact_points": 36,
+     "settle": {
+      "spawn_to_reset_xy_m": 0.0,
+      "spawn_to_reset_dz_m": -0.0001,
+      "spawn_to_reset_rot_deg": 0.007,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.0,
+      "final_rot_deg": 0.0,
+      "min_z_m": 0.7849,
+      "max_z_m": 0.7849,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       0.00084,
+       -0.00098,
+       -0.00012
+      ],
+      "final_ang_vel_radps": [
+       0.04648,
+       0.04886,
+       -0.00056
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       7e-05,
+       -0.14992,
+       0.7849,
+       1.0,
+       0.00054,
+       -0.00081,
+       0.0
+      ],
+      "declared_spawn": [
+       7e-05,
+       -0.14992,
+       0.785,
+       1.0,
+       0.0006,
+       -0.0008,
+       0.0
+      ]
+     }
+    },
+    "camera_stand": {
+     "type": "geometry",
+     "model": "Geometry/camera_stand/00000",
+     "inst": "camera_stand_0_7",
+     "clutter": false,
+     "readback_source": "readback_spec",
+     "declared": {
+      "layout_mass": null,
+      "meta_mass": null,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.3,
+       0.5875,
+       0.1097
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {}
+     },
+     "engine": {
+      "colliders": 12,
+      "colliders_enabled": 12,
+      "approximations": [
+       "none"
+      ],
+      "collider_aabb_extents_m": [
+       0.3,
+       0.58751,
+       0.109666
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.3,
+       0.58751,
+       0.109666
+      ],
+      "engine_mass_kg": null,
+      "engine_com_m": null,
+      "engine_diag_inertia_kg_m2": null,
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": []
+     },
+     "size_ratio_vs_meta_bbox": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "settle": {
+      "spawn_to_reset_xy_m": 0.0,
+      "spawn_to_reset_dz_m": -0.0,
+      "spawn_to_reset_rot_deg": 0.017,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.0,
+      "final_rot_deg": 0.0,
+      "min_z_m": 0.765,
+      "max_z_m": 0.765,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": null,
+      "final_ang_vel_radps": null,
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       0.0,
+       -0.47,
+       0.765,
+       -0.707,
+       0.70721,
+       0.0,
+       0.0
+      ],
+      "declared_spawn": [
+       0.0,
+       -0.47,
+       0.765,
+       0.707,
+       -0.707,
+       0.0,
+       0.0
+      ]
+     }
+    },
+    "wine_0": {
+     "type": "fluid",
+     "model": "Fluid/wuliangye/00001",
+     "inst": "wuliangye_1_8",
+     "clutter": false,
+     "readback_source": "readback_spec",
+     "declared": {
+      "layout_mass": null,
+      "meta_mass": null,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.036,
+       0.036,
+       0.049
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {}
+     },
+     "engine": {
+      "colliders": 0,
+      "colliders_enabled": 0,
+      "approximations": [],
+      "collider_aabb_extents_m": null,
+      "engine_collider_aabb_extents_m": null,
+      "engine_mass_kg": null,
+      "engine_com_m": null,
+      "engine_diag_inertia_kg_m2": null,
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": []
+     },
+     "settle": {
+      "spawn_to_reset_xy_m": null,
+      "spawn_to_reset_dz_m": null,
+      "spawn_to_reset_rot_deg": null,
+      "max_disp_m": null,
+      "final_disp_m": null,
+      "max_speed_mps": null,
+      "max_rot_deg": null,
+      "final_rot_deg": null,
+      "min_z_m": null,
+      "max_z_m": null,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": null,
+      "final_ang_vel_radps": null,
+      "points_after_reset": {
+       "n": 1921,
+       "finite_frac": 1.0,
+       "centroid": [
+        0.0006,
+        0.0003,
+        -0.0511
+       ],
+       "min": [
+        -0.0296,
+        -0.03,
+        -0.0567
+       ],
+       "max": [
+        0.0309,
+        0.0308,
+        -0.0444
+       ],
+       "frac_below_table_minus_5cm": 1.0
+      },
+      "points_end": {
+       "n": 1921,
+       "finite_frac": 1.0,
+       "centroid": [
+        0.0006,
+        0.0003,
+        -0.0511
+       ],
+       "min": [
+        -0.0296,
+        -0.0302,
+        -0.0567
+       ],
+       "max": [
+        0.0308,
+        0.0308,
+        -0.0445
+       ],
+       "frac_below_table_minus_5cm": 1.0
+      },
+      "max_centroid_disp_m": 7e-05,
+      "max_point_disp_m": 0.01283,
+      "pose_after_reset": null,
+      "declared_spawn": null
+     }
+    },
+    "wine_1": {
+     "type": "fluid",
+     "model": "Fluid/wuliangye/00002",
+     "inst": "wuliangye_2_9",
+     "clutter": false,
+     "readback_source": "readback_spec",
+     "declared": {
+      "layout_mass": null,
+      "meta_mass": null,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.036,
+       0.036,
+       0.049
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {}
+     },
+     "engine": {
+      "colliders": 0,
+      "colliders_enabled": 0,
+      "approximations": [],
+      "collider_aabb_extents_m": null,
+      "engine_collider_aabb_extents_m": null,
+      "engine_mass_kg": null,
+      "engine_com_m": null,
+      "engine_diag_inertia_kg_m2": null,
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": []
+     },
+     "settle": {
+      "spawn_to_reset_xy_m": null,
+      "spawn_to_reset_dz_m": null,
+      "spawn_to_reset_rot_deg": null,
+      "max_disp_m": null,
+      "final_disp_m": null,
+      "max_speed_mps": null,
+      "max_rot_deg": null,
+      "final_rot_deg": null,
+      "min_z_m": null,
+      "max_z_m": null,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": null,
+      "final_ang_vel_radps": null,
+      "points_after_reset": {
+       "n": 1921,
+       "finite_frac": 1.0,
+       "centroid": [
+        0.0007,
+        0.0002,
+        -0.0511
+       ],
+       "min": [
+        -0.0296,
+        -0.0301,
+        -0.0567
+       ],
+       "max": [
+        0.0309,
+        0.0308,
+        -0.0447
+       ],
+       "frac_below_table_minus_5cm": 1.0
+      },
+      "points_end": {
+       "n": 1921,
+       "finite_frac": 1.0,
+       "centroid": [
+        0.0007,
+        0.0002,
+        -0.0511
+       ],
+       "min": [
+        -0.0296,
+        -0.0301,
+        -0.0567
+       ],
+       "max": [
+        0.0309,
+        0.0307,
+        -0.0448
+       ],
+       "frac_below_table_minus_5cm": 1.0
+      },
+      "max_centroid_disp_m": 5e-05,
+      "max_point_disp_m": 0.01089,
+      "pose_after_reset": null,
+      "declared_spawn": null
+     }
+    },
+    "wine_2": {
+     "type": "fluid",
+     "model": "Fluid/wuliangye/00003",
+     "inst": "wuliangye_3_10",
+     "clutter": false,
+     "readback_source": "readback_spec",
+     "declared": {
+      "layout_mass": null,
+      "meta_mass": null,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.036,
+       0.036,
+       0.049
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {}
+     },
+     "engine": {
+      "colliders": 0,
+      "colliders_enabled": 0,
+      "approximations": [],
+      "collider_aabb_extents_m": null,
+      "engine_collider_aabb_extents_m": null,
+      "engine_mass_kg": null,
+      "engine_com_m": null,
+      "engine_diag_inertia_kg_m2": null,
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": []
+     },
+     "settle": {
+      "spawn_to_reset_xy_m": null,
+      "spawn_to_reset_dz_m": null,
+      "spawn_to_reset_rot_deg": null,
+      "max_disp_m": null,
+      "final_disp_m": null,
+      "max_speed_mps": null,
+      "max_rot_deg": null,
+      "final_rot_deg": null,
+      "min_z_m": null,
+      "max_z_m": null,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": null,
+      "final_ang_vel_radps": null,
+      "points_after_reset": {
+       "n": 1921,
+       "finite_frac": 1.0,
+       "centroid": [
+        0.0007,
+        0.0003,
+        -0.0511
+       ],
+       "min": [
+        -0.0295,
+        -0.0301,
+        -0.0567
+       ],
+       "max": [
+        0.0309,
+        0.0308,
+        -0.0444
+       ],
+       "frac_below_table_minus_5cm": 1.0
+      },
+      "points_end": {
+       "n": 1921,
+       "finite_frac": 1.0,
+       "centroid": [
+        0.0006,
+        0.0003,
+        -0.0511
+       ],
+       "min": [
+        -0.0296,
+        -0.0302,
+        -0.0567
+       ],
+       "max": [
+        0.0309,
+        0.0308,
+        -0.0449
+       ],
+       "frac_below_table_minus_5cm": 1.0
+      },
+      "max_centroid_disp_m": 5e-05,
+      "max_point_disp_m": 0.0141,
+      "pose_after_reset": null,
+      "declared_spawn": null
+     }
+    }
+   },
+   "sweep_settle_seconds": 23.0,
+   "harness_wall_seconds": 46.5
+  },
+  "pour_liquid_into_cup": {
+   "task": "pour_liquid_into_cup",
+   "data_source": "teleop",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 400,
+   "rc": 0,
+   "wall_s": 43.8,
+   "gpu_used_before_mib": 0,
+   "gpu_peak_mib": 3279,
+   "gpu_own_peak_mib": 3279,
+   "status": "built_and_reset",
+   "do_nothing": {
+    "grip_command": {
+     "left": 1.0,
+     "right": 1.0
+    },
+    "grip_source": {
+     "left": "observed",
+     "right": "observed"
+    },
+    "after_one_action": {
+     "end_flag": false,
+     "success": true
+    },
+    "step_lim": 400,
+    "end_flag": true,
+    "success": false
+   },
+   "episode_score_pct": 0.0,
+   "readback_failures": [
+    "env_0.wine: enabled Gprim colliders=0 < 1"
+   ],
+   "counts": {
+    "rigid": 2,
+    "geometry": 1,
+    "fluid": 1
+   },
+   "robot_drift": {
+    "robot0": 0.0,
+    "robot1": 0.0
+   },
+   "robot_limits": {
+    "robot0": [
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -3.14,
+      3.14
+     ],
+     [
+      0.0,
+      0.044
+     ],
+     [
+      0.0,
+      0.044
+     ]
+    ],
+    "robot1": [
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -3.14,
+      3.14
+     ],
+     [
+      0.0,
+      0.044
+     ],
+     [
+      0.0,
+      0.044
+     ]
+    ]
+   },
+   "delivery": {
+    "checked": true,
+    "delivered": false,
+    "reason": "2 of 2 rigid objects carry the engine default 0.5/0.5 instead of their bound material (#58)"
+   },
+   "clutter_instances": 0,
+   "objects": {
+    "bottle": {
+     "type": "rigid",
+     "model": "Rigid/wuliangye/00000",
+     "inst": "wuliangye_0_1",
+     "clutter": false,
+     "readback_source": "readback_spec",
+     "declared": {
+      "layout_mass": 0.15,
+      "meta_mass": 0.15,
+      "layout_size": [
+       0.0823343002463697,
+       0.08210405953736234,
+       0.218
+      ],
+      "meta_size": [
+       0.0823,
+       0.0821,
+       0.218
+      ],
+      "meta_bbox": [
+       0.0824,
+       0.0821,
+       0.2181
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {
+       "friction": 0.0
+      }
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "collider_aabb_extents_m": [
+       0.082361,
+       0.082131,
+       0.218071
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.080288,
+       0.079982,
+       0.218628
+      ],
+      "engine_mass_kg": [
+       0.15
+      ],
+      "engine_com_m": [
+       [
+        0.000769,
+        -0.000191,
+        0.01734
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        0.00063982,
+        0.00063861,
+        0.00021097
+       ]
+      ],
+      "engine_shape_count": 112,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      0.974,
+      0.974,
+      1.002
+     ],
+     "size_ratio_vs_layout_size": [
+      0.974,
+      0.975,
+      1.003
+     ],
+     "size_ratio_vs_meta_size": [
+      0.974,
+      0.976,
+      1.003
+     ],
+     "expected_shipped_mass": 0.15,
+     "density_lower_bound_kg_m3": 106.8,
+     "inertia_trace_ratio_vs_solid_box": 0.982,
+     "inertia_implied_box_density_kg_m3": 105.0,
+     "start_contact_force_over_weight": 1.04,
+     "start_contact_points": 72,
+     "settle": {
+      "spawn_to_reset_xy_m": 0.00348,
+      "spawn_to_reset_dz_m": 0.00018,
+      "spawn_to_reset_rot_deg": 1.254,
+      "max_disp_m": 0.00068,
+      "final_disp_m": 0.00016,
+      "max_speed_mps": 0.0189,
+      "max_rot_deg": 0.616,
+      "final_rot_deg": 0.163,
+      "min_z_m": 0.82498,
+      "max_z_m": 0.82548,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       -0.00108,
+       0.00218,
+       0.00027
+      ],
+      "final_ang_vel_radps": [
+       -0.02756,
+       -0.00998,
+       -0.00121
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       -0.10287,
+       -0.18799,
+       0.82519,
+       0.99996,
+       -0.00454,
+       -0.00471,
+       -0.00661
+      ],
+      "declared_spawn": [
+       -0.09974,
+       -0.18645,
+       0.82501,
+       0.99999,
+       0.0002,
+       0.0045,
+       -0.0031
+      ]
+     }
+    },
+    "camera_stand": {
+     "type": "geometry",
+     "model": "Geometry/camera_stand/00000",
+     "inst": "camera_stand_0_3",
+     "clutter": false,
+     "readback_source": "readback_spec",
+     "declared": {
+      "layout_mass": null,
+      "meta_mass": null,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.3,
+       0.5875,
+       0.1097
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {}
+     },
+     "engine": {
+      "colliders": 12,
+      "colliders_enabled": 12,
+      "approximations": [
+       "none"
+      ],
+      "collider_aabb_extents_m": [
+       0.3,
+       0.58751,
+       0.109666
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.3,
+       0.58751,
+       0.109666
+      ],
+      "engine_mass_kg": null,
+      "engine_com_m": null,
+      "engine_diag_inertia_kg_m2": null,
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": []
+     },
+     "size_ratio_vs_meta_bbox": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "settle": {
+      "spawn_to_reset_xy_m": 0.0,
+      "spawn_to_reset_dz_m": -0.0,
+      "spawn_to_reset_rot_deg": 0.017,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.0,
+      "final_rot_deg": 0.0,
+      "min_z_m": 0.765,
+      "max_z_m": 0.765,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": null,
+      "final_ang_vel_radps": null,
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       0.0,
+       -0.47,
+       0.765,
+       -0.707,
+       0.70721,
+       0.0,
+       0.0
+      ],
+      "declared_spawn": [
+       0.0,
+       -0.47,
+       0.765,
+       0.707,
+       -0.707,
+       0.0,
+       0.0
+      ]
+     }
+    },
+    "cup": {
+     "type": "rigid",
+     "model": "Rigid/mug/00016",
+     "inst": "mug_16_2",
+     "clutter": false,
+     "readback_source": "readback_spec",
+     "declared": {
+      "layout_mass": 0.5,
+      "meta_mass": 0.5,
+      "layout_size": [
+       0.10236728127277431,
+       0.06863090091260328,
+       0.076
+      ],
+      "meta_size": [
+       0.10236728127277431,
+       0.06863090091260328,
+       0.076
+      ],
+      "meta_bbox": [
+       0.1026,
+       0.0688,
+       0.0762
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {
+       "friction": 0.25
+      }
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "collider_aabb_extents_m": [
+       0.102637,
+       0.068812,
+       0.0762
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.101386,
+       0.067754,
+       0.076069
+      ],
+      "engine_mass_kg": [
+       0.5
+      ],
+      "engine_com_m": [
+       [
+        -0.010965,
+        0.000101,
+        -0.013302
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        6.437e-05,
+        8.456e-05,
+        7.554e-05
+       ]
+      ],
+      "engine_shape_count": 64,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      0.985,
+      0.998,
+      0.988
+     ],
+     "size_ratio_vs_layout_size": [
+      0.987,
+      1.001,
+      0.99
+     ],
+     "size_ratio_vs_meta_size": [
+      0.987,
+      1.001,
+      0.99
+     ],
+     "expected_shipped_mass": 0.5,
+     "density_lower_bound_kg_m3": 956.9,
+     "inertia_trace_ratio_vs_solid_box": 0.13,
+     "inertia_implied_box_density_kg_m3": 124.8,
+     "start_contact_force_over_weight": 0.22,
+     "start_contact_points": 61,
+     "settle": {
+      "spawn_to_reset_xy_m": 0.0,
+      "spawn_to_reset_dz_m": 0.0,
+      "spawn_to_reset_rot_deg": 0.003,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.0,
+      "final_rot_deg": 0.0,
+      "min_z_m": 0.8031,
+      "max_z_m": 0.8031,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       -2e-05,
+       6e-05,
+       0.0
+      ],
+      "final_ang_vel_radps": [
+       -0.00248,
+       -0.00047,
+       0.00024
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       -0.01379,
+       -0.00824,
+       0.8031,
+       1.0,
+       -0.0,
+       2e-05,
+       -0.0
+      ],
+      "declared_spawn": [
+       -0.01379,
+       -0.00824,
+       0.8031,
+       1.0,
+       0.0,
+       0.0,
+       0.0
+      ]
+     }
+    },
+    "wine": {
+     "type": "fluid",
+     "model": "Fluid/wuliangye/00000",
+     "inst": "wuliangye_0_4",
+     "clutter": false,
+     "readback_source": "readback_spec",
+     "declared": {
+      "layout_mass": null,
+      "meta_mass": null,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.06,
+       0.06,
+       0.07
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {}
+     },
+     "engine": {
+      "colliders": 0,
+      "colliders_enabled": 0,
+      "approximations": [],
+      "collider_aabb_extents_m": null,
+      "engine_collider_aabb_extents_m": null,
+      "engine_mass_kg": null,
+      "engine_com_m": null,
+      "engine_diag_inertia_kg_m2": null,
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": []
+     },
+     "settle": {
+      "spawn_to_reset_xy_m": null,
+      "spawn_to_reset_dz_m": null,
+      "spawn_to_reset_rot_deg": null,
+      "max_disp_m": null,
+      "final_disp_m": null,
+      "max_speed_mps": null,
+      "max_rot_deg": null,
+      "final_rot_deg": null,
+      "min_z_m": null,
+      "max_z_m": null,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": null,
+      "final_ang_vel_radps": null,
+      "points_after_reset": {
+       "n": 6072,
+       "finite_frac": 1.0,
+       "centroid": [
+        -0.0026,
+        -0.0017,
+        -0.0663
+       ],
+       "min": [
+        -0.3841,
+        -0.4441,
+        -0.8013
+       ],
+       "max": [
+        0.5128,
+        0.5725,
+        0.0366
+       ],
+       "frac_below_table_minus_5cm": 1.0
+      },
+      "points_end": {
+       "n": 6072,
+       "finite_frac": 1.0,
+       "centroid": [
+        -0.0026,
+        -0.0016,
+        -0.0663
+       ],
+       "min": [
+        -0.3841,
+        -0.4441,
+        -0.8013
+       ],
+       "max": [
+        0.5128,
+        0.5725,
+        0.0394
+       ],
+       "frac_below_table_minus_5cm": 1.0
+      },
+      "max_centroid_disp_m": 0.00033,
+      "max_point_disp_m": 0.13807,
+      "pose_after_reset": null,
+      "declared_spawn": null
+     }
+    }
+   },
+   "sweep_settle_seconds": 13.1,
+   "harness_wall_seconds": 26.4
+  },
+  "pour_liquid_into_cup_random": {
+   "task": "pour_liquid_into_cup_random",
+   "data_source": "teleop",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 400,
+   "rc": 0,
+   "wall_s": 46.0,
+   "gpu_used_before_mib": 0,
+   "gpu_peak_mib": 3279,
+   "gpu_own_peak_mib": 3279,
+   "status": "built_and_reset",
+   "do_nothing": {
+    "grip_command": {
+     "left": 1.0,
+     "right": 1.0
+    },
+    "grip_source": {
+     "left": "observed",
+     "right": "observed"
+    },
+    "after_one_action": {
+     "end_flag": false,
+     "success": true
+    },
+    "step_lim": 400,
+    "end_flag": true,
+    "success": false
+   },
+   "episode_score_pct": 0.0,
+   "readback_failures": [
+    "env_0.wine: enabled Gprim colliders=0 < 1"
+   ],
+   "counts": {
+    "rigid": 11,
+    "geometry": 1,
+    "fluid": 1
+   },
+   "robot_drift": {
+    "robot0": 0.0,
+    "robot1": 0.0
+   },
+   "robot_limits": {
+    "robot0": [
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -3.14,
+      3.14
+     ],
+     [
+      0.0,
+      0.044
+     ],
+     [
+      0.0,
+      0.044
+     ]
+    ],
+    "robot1": [
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -10.0,
+      10.0
+     ],
+     [
+      -3.14,
+      3.14
+     ],
+     [
+      0.0,
+      0.044
+     ],
+     [
+      0.0,
+      0.044
+     ]
+    ]
+   },
+   "delivery": {
+    "checked": true,
+    "delivered": false,
+    "reason": "2 of 2 rigid objects carry the engine default 0.5/0.5 instead of their bound material (#58)"
+   },
+   "clutter_instances": 9,
+   "objects": {
+    "ball_0_11": {
+     "type": "rigid",
+     "model": "Clutter/ball/00000",
+     "inst": "ball_0_11",
+     "clutter": true,
+     "readback_source": "settle_engine",
+     "declared": {
+      "layout_mass": null,
+      "meta_mass": null,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.0857,
+       0.061,
+       0.0595
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {}
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "collider_aabb_extents_m": [
+       0.085718,
+       0.060957,
+       0.059472
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.084277,
+       0.060738,
+       0.059281
+      ],
+      "engine_mass_kg": [
+       0.5
+      ],
+      "engine_com_m": [
+       [
+        -0.003797,
+        -0.000239,
+        0.020094
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        6.624e-06,
+        1.3701e-05,
+        1.3197e-05
+       ]
+      ],
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      0.996,
+      0.996,
+      0.983
+     ],
+     "expected_shipped_mass": 0.5,
+     "density_lower_bound_kg_m3": 1647.7,
+     "inertia_trace_ratio_vs_solid_box": 0.028,
+     "inertia_implied_box_density_kg_m3": 46.3,
+     "start_contact_force_over_weight": 0.11,
+     "start_contact_points": 27,
+     "settle": {
+      "spawn_to_reset_xy_m": 0.00012,
+      "spawn_to_reset_dz_m": -0.00028,
+      "spawn_to_reset_rot_deg": 4.252,
+      "max_disp_m": 2e-05,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0004,
+      "max_rot_deg": 0.624,
+      "final_rot_deg": 0.3,
+      "min_z_m": 0.7645,
+      "max_z_m": 0.76452,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       0.00549,
+       0.01165,
+       0.00015
+      ],
+      "final_ang_vel_radps": [
+       -0.63182,
+       0.30151,
+       0.01172
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       0.52676,
+       0.01319,
+       0.7645,
+       0.98286,
+       -0.03596,
+       0.00601,
+       -0.18073
+      ],
+      "declared_spawn": [
+       0.52681,
+       0.0133,
+       0.76478,
+       0.98317,
+       -0.00015,
+       -0.00353,
+       -0.18265
+      ]
+     }
+    },
+    "bottle": {
+     "type": "rigid",
+     "model": "Rigid/wuliangye/00002",
+     "inst": "wuliangye_2_1",
+     "clutter": false,
+     "readback_source": "readback_spec",
+     "declared": {
+      "layout_mass": 0.15,
+      "meta_mass": 0.15,
+      "layout_size": [
+       0.0823343002463697,
+       0.08210405953736234,
+       0.218
+      ],
+      "meta_size": [
+       0.0823,
+       0.0821,
+       0.218
+      ],
+      "meta_bbox": [
+       0.0824,
+       0.0821,
+       0.2181
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {
+       "friction": 0.0
+      }
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "collider_aabb_extents_m": [
+       0.082361,
+       0.082131,
+       0.218071
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.080287,
+       0.07998,
+       0.218627
+      ],
+      "engine_mass_kg": [
+       0.15
+      ],
+      "engine_com_m": [
+       [
+        0.000769,
+        -0.000191,
+        0.01734
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        0.00063982,
+        0.00063861,
+        0.00021097
+       ]
+      ],
+      "engine_shape_count": 112,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      0.974,
+      0.974,
+      1.002
+     ],
+     "size_ratio_vs_layout_size": [
+      0.974,
+      0.975,
+      1.003
+     ],
+     "size_ratio_vs_meta_size": [
+      0.974,
+      0.976,
+      1.003
+     ],
+     "expected_shipped_mass": 0.15,
+     "density_lower_bound_kg_m3": 106.8,
+     "inertia_trace_ratio_vs_solid_box": 0.982,
+     "inertia_implied_box_density_kg_m3": 105.0,
+     "start_contact_force_over_weight": 2.64,
+     "start_contact_points": 72,
+     "settle": {
+      "spawn_to_reset_xy_m": 0.00054,
+      "spawn_to_reset_dz_m": -2e-05,
+      "spawn_to_reset_rot_deg": 1.03,
+      "max_disp_m": 0.00023,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0029,
+      "max_rot_deg": 0.221,
+      "final_rot_deg": 0.0,
+      "min_z_m": 0.82498,
+      "max_z_m": 0.82499,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       -5e-05,
+       0.00132,
+       -0.00104
+      ],
+      "final_ang_vel_radps": [
+       -0.01394,
+       -0.00145,
+       0.00502
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       0.15589,
+       -0.08256,
+       0.82499,
+       0.99998,
+       0.00036,
+       -0.00409,
+       -0.00571
+      ],
+      "declared_spawn": [
+       0.15555,
+       -0.08214,
+       0.82501,
+       0.99999,
+       0.0002,
+       0.0045,
+       -0.0031
+      ]
+     }
+    },
+    "camera_stand": {
+     "type": "geometry",
+     "model": "Geometry/camera_stand/00000",
+     "inst": "camera_stand_0_12",
+     "clutter": false,
+     "readback_source": "readback_spec",
+     "declared": {
+      "layout_mass": null,
+      "meta_mass": null,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.3,
+       0.5875,
+       0.1097
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {}
+     },
+     "engine": {
+      "colliders": 12,
+      "colliders_enabled": 12,
+      "approximations": [
+       "none"
+      ],
+      "collider_aabb_extents_m": [
+       0.3,
+       0.58751,
+       0.109666
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.3,
+       0.58751,
+       0.109666
+      ],
+      "engine_mass_kg": null,
+      "engine_com_m": null,
+      "engine_diag_inertia_kg_m2": null,
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": []
+     },
+     "size_ratio_vs_meta_bbox": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "settle": {
+      "spawn_to_reset_xy_m": 0.0,
+      "spawn_to_reset_dz_m": -0.0,
+      "spawn_to_reset_rot_deg": 0.017,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.0,
+      "final_rot_deg": 0.0,
+      "min_z_m": 0.765,
+      "max_z_m": 0.765,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": null,
+      "final_ang_vel_radps": null,
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       0.0,
+       -0.47,
+       0.765,
+       -0.707,
+       0.70721,
+       0.0,
+       0.0
+      ],
+      "declared_spawn": [
+       0.0,
+       -0.47,
+       0.765,
+       0.707,
+       -0.707,
+       0.0,
+       0.0
+      ]
+     }
+    },
+    "cereal_0_10": {
+     "type": "rigid",
+     "model": "Clutter/cereal/00000",
+     "inst": "cereal_0_10",
+     "clutter": true,
+     "readback_source": "settle_engine",
+     "declared": {
+      "layout_mass": null,
+      "meta_mass": null,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.1412,
+       0.103,
+       0.2171
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {}
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "collider_aabb_extents_m": [
+       0.14124,
+       0.102945,
+       0.217079
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.140711,
+       0.102603,
+       0.217078
+      ],
+      "engine_mass_kg": [
+       0.5
+      ],
+      "engine_com_m": [
+       [
+        -0.005939,
+        -0.002283,
+        0.109215
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        0.00540172,
+        0.006387768,
+        0.00214827
+       ]
+      ],
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      0.996,
+      0.997,
+      1.0
+     ],
+     "expected_shipped_mass": 0.5,
+     "density_lower_bound_kg_m3": 159.5,
+     "inertia_trace_ratio_vs_solid_box": 2.16,
+     "inertia_implied_box_density_kg_m3": 344.5,
+     "start_contact_force_over_weight": 0.22,
+     "start_contact_points": 101,
+     "settle": {
+      "spawn_to_reset_xy_m": 3e-05,
+      "spawn_to_reset_dz_m": -3e-05,
+      "spawn_to_reset_rot_deg": 0.001,
+      "max_disp_m": 2e-05,
+      "final_disp_m": 2e-05,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.002,
+      "final_rot_deg": 0.002,
+      "min_z_m": 0.76447,
+      "max_z_m": 0.76447,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       2e-05,
+       -0.00014,
+       -3e-05
+      ],
+      "final_ang_vel_radps": [
+       0.00123,
+       0.00031,
+       -0.00013
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       -0.24567,
+       0.36237,
+       0.76447,
+       0.99908,
+       0.0,
+       -0.0,
+       -0.04289
+      ],
+      "declared_spawn": [
+       -0.24569,
+       0.36239,
+       0.7645,
+       0.99908,
+       0.0,
+       0.0,
+       -0.04289
+      ]
+     }
+    },
+    "cup": {
+     "type": "rigid",
+     "model": "Rigid/mug/00017",
+     "inst": "mug_17_2",
+     "clutter": false,
+     "readback_source": "readback_spec",
+     "declared": {
+      "layout_mass": 0.5,
+      "meta_mass": 0.5,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.1051,
+       0.0746,
+       0.0823
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {
+       "friction": 0.32
+      }
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "collider_aabb_extents_m": [
+       0.105065,
+       0.074615,
+       0.082296
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.104495,
+       0.074535,
+       0.08221
+      ],
+      "engine_mass_kg": [
+       0.5
+      ],
+      "engine_com_m": [
+       [
+        -0.011819,
+        7.8e-05,
+        -0.011559
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        0.00011481,
+        0.00013363,
+        0.00012045
+       ]
+      ],
+      "engine_shape_count": 64,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      0.999,
+      0.999,
+      0.994
+     ],
+     "expected_shipped_mass": 0.5,
+     "density_lower_bound_kg_m3": 780.9,
+     "inertia_trace_ratio_vs_solid_box": 0.191,
+     "inertia_implied_box_density_kg_m3": 148.8,
+     "start_contact_force_over_weight": 0.11,
+     "start_contact_points": 51,
+     "settle": {
+      "spawn_to_reset_xy_m": 4e-05,
+      "spawn_to_reset_dz_m": 5e-05,
+      "spawn_to_reset_rot_deg": 0.05,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.0,
+      "final_rot_deg": 0.0,
+      "min_z_m": 0.80615,
+      "max_z_m": 0.80615,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       0.0,
+       -2e-05,
+       -1e-05
+      ],
+      "final_ang_vel_radps": [
+       0.0007,
+       0.00028,
+       -2e-05
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       -0.04631,
+       -0.03702,
+       0.80615,
+       1.0,
+       -2e-05,
+       0.0,
+       -0.0004
+      ],
+      "declared_spawn": [
+       -0.04628,
+       -0.037,
+       0.8061,
+       1.0,
+       -0.0002,
+       0.0004,
+       -0.0004
+      ]
+     }
+    },
+    "headphones_0_5": {
+     "type": "rigid",
+     "model": "Clutter/headphones/00000",
+     "inst": "headphones_0_5",
+     "clutter": true,
+     "readback_source": "settle_engine",
+     "declared": {
+      "layout_mass": null,
+      "meta_mass": null,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.1933,
+       0.0869,
+       0.2055
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {}
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "collider_aabb_extents_m": [
+       0.193297,
+       0.086881,
+       0.205509
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.192438,
+       0.086393,
+       0.203627
+      ],
+      "engine_mass_kg": [
+       0.5
+      ],
+      "engine_com_m": [
+       [
+        -0.001176,
+        -0.000333,
+        0.070318
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        0.001925811,
+        0.004515386,
+        0.003181847
+       ]
+      ],
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      0.994,
+      0.996,
+      0.991
+     ],
+     "expected_shipped_mass": 0.5,
+     "density_lower_bound_kg_m3": 147.7,
+     "inertia_trace_ratio_vs_solid_box": 1.343,
+     "inertia_implied_box_density_kg_m3": 198.4,
+     "start_contact_force_over_weight": 0.11,
+     "start_contact_points": 29,
+     "settle": {
+      "spawn_to_reset_xy_m": 2e-05,
+      "spawn_to_reset_dz_m": -0.00136,
+      "spawn_to_reset_rot_deg": 0.005,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.0,
+      "final_rot_deg": 0.0,
+      "min_z_m": 0.81936,
+      "max_z_m": 0.81936,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       -0.0,
+       -0.0,
+       -0.0
+      ],
+      "final_ang_vel_radps": [
+       1e-05,
+       1e-05,
+       -0.0
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       0.19454,
+       0.18198,
+       0.81936,
+       -0.62596,
+       0.76033,
+       0.13263,
+       -0.11168
+      ],
+      "declared_spawn": [
+       0.19455,
+       0.18197,
+       0.82072,
+       -0.62593,
+       0.76035,
+       0.13266,
+       -0.11169
+      ]
+     }
+    },
+    "minecraft_blocks_1_3": {
+     "type": "rigid",
+     "model": "Clutter/minecraft_blocks/00001",
+     "inst": "minecraft_blocks_1_3",
+     "clutter": true,
+     "readback_source": "settle_engine",
+     "declared": {
+      "layout_mass": null,
+      "meta_mass": null,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.08,
+       0.08,
+       0.08
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {}
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "collider_aabb_extents_m": [
+       0.08,
+       0.08,
+       0.08
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.08,
+       0.08,
+       0.08
+      ],
+      "engine_mass_kg": [
+       0.5
+      ],
+      "engine_com_m": [
+       [
+        -0.0,
+        -0.0,
+        -0.0
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        0.00054613,
+        0.00054613,
+        0.000546133
+       ]
+      ],
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "expected_shipped_mass": 0.5,
+     "density_lower_bound_kg_m3": 976.6,
+     "inertia_trace_ratio_vs_solid_box": 1.024,
+     "inertia_implied_box_density_kg_m3": 1000.0,
+     "start_contact_force_over_weight": 0.11,
+     "start_contact_points": 8,
+     "settle": {
+      "spawn_to_reset_xy_m": 4e-05,
+      "spawn_to_reset_dz_m": -0.0,
+      "spawn_to_reset_rot_deg": 0.058,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.0,
+      "final_rot_deg": 0.0,
+      "min_z_m": 0.805,
+      "max_z_m": 0.805,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       0.0,
+       -0.0,
+       -0.0
+      ],
+      "final_ang_vel_radps": [
+       5e-05,
+       6e-05,
+       -2e-05
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       0.40093,
+       0.32528,
+       0.805,
+       0.97788,
+       -0.0,
+       0.0,
+       0.20919
+      ],
+      "declared_spawn": [
+       0.40092,
+       0.32532,
+       0.805,
+       0.97788,
+       -0.00051,
+       -1e-05,
+       0.20919
+      ]
+     }
+    },
+    "phone_stand_1_7": {
+     "type": "rigid",
+     "model": "Clutter/phone_stand/00001",
+     "inst": "phone_stand_1_7",
+     "clutter": true,
+     "readback_source": "settle_engine",
+     "declared": {
+      "layout_mass": null,
+      "meta_mass": null,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.0977,
+       0.1524,
+       0.0977
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {}
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "collider_aabb_extents_m": [
+       0.097729,
+       0.1524,
+       0.097733
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.096635,
+       0.152267,
+       0.096352
+      ],
+      "engine_mass_kg": [
+       0.5
+      ],
+      "engine_com_m": [
+       [
+        0.000494,
+        -0.022048,
+        -0.009668
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        0.000388988,
+        0.000117793,
+        0.000383817
+       ]
+      ],
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      0.986,
+      0.989,
+      0.999
+     ],
+     "expected_shipped_mass": 0.5,
+     "density_lower_bound_kg_m3": 352.7,
+     "inertia_trace_ratio_vs_solid_box": 0.256,
+     "inertia_implied_box_density_kg_m3": 90.2,
+     "start_contact_force_over_weight": 0.23,
+     "start_contact_points": 68,
+     "settle": {
+      "spawn_to_reset_xy_m": 0.0,
+      "spawn_to_reset_dz_m": -0.00015,
+      "spawn_to_reset_rot_deg": 0.002,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.0,
+      "final_rot_deg": 0.0,
+      "min_z_m": 0.84115,
+      "max_z_m": 0.84115,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       2e-05,
+       -0.00017,
+       -5e-05
+      ],
+      "final_ang_vel_radps": [
+       0.00279,
+       -0.00051,
+       0.00041
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       -0.13805,
+       0.24222,
+       0.84115,
+       0.70574,
+       0.70758,
+       0.02446,
+       0.02562
+      ],
+      "declared_spawn": [
+       -0.13805,
+       0.24223,
+       0.8413,
+       0.70575,
+       0.70758,
+       0.02447,
+       0.02562
+      ]
+     }
+    },
+    "pokeball_1_8": {
+     "type": "rigid",
+     "model": "Clutter/pokeball/00001",
+     "inst": "pokeball_1_8",
+     "clutter": true,
+     "readback_source": "settle_engine",
+     "declared": {
+      "layout_mass": null,
+      "meta_mass": null,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.0794,
+       0.0807,
+       0.0832
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {}
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "collider_aabb_extents_m": [
+       0.079437,
+       0.080674,
+       0.083203
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.07879,
+       0.080229,
+       0.081788
+      ],
+      "engine_mass_kg": [
+       0.5
+      ],
+      "engine_com_m": [
+       [
+        0.00056,
+        0.000111,
+        0.000776
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        0.000142926,
+        0.000139279,
+        0.000140653
+       ]
+      ],
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      0.992,
+      0.994,
+      0.983
+     ],
+     "expected_shipped_mass": 0.5,
+     "density_lower_bound_kg_m3": 967.1,
+     "inertia_trace_ratio_vs_solid_box": 0.262,
+     "inertia_implied_box_density_kg_m3": 253.8,
+     "start_contact_force_over_weight": 0.11,
+     "start_contact_points": 13,
+     "settle": {
+      "spawn_to_reset_xy_m": 6e-05,
+      "spawn_to_reset_dz_m": -0.00169,
+      "spawn_to_reset_rot_deg": 0.075,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.0,
+      "final_rot_deg": 0.0,
+      "min_z_m": 0.8031,
+      "max_z_m": 0.8031,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       -2e-05,
+       0.00015,
+       -5e-05
+      ],
+      "final_ang_vel_radps": [
+       -0.00411,
+       -0.00152,
+       0.00029
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       -0.48004,
+       0.11592,
+       0.8031,
+       0.97573,
+       0.00479,
+       0.11417,
+       0.18681
+      ],
+      "declared_spawn": [
+       -0.48002,
+       0.11597,
+       0.80479,
+       0.97577,
+       0.00447,
+       0.11455,
+       0.18638
+      ]
+     }
+    },
+    "stapler_2_6": {
+     "type": "rigid",
+     "model": "Clutter/stapler/00002",
+     "inst": "stapler_2_6",
+     "clutter": true,
+     "readback_source": "settle_engine",
+     "declared": {
+      "layout_mass": 0.12,
+      "meta_mass": 0.12,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.14,
+       0.0277,
+       0.0653
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {
+       "friction": 0.3
+      }
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "collider_aabb_extents_m": [
+       0.14,
+       0.027702,
+       0.06533
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.139107,
+       0.027697,
+       0.064718
+      ],
+      "engine_mass_kg": [
+       0.12
+      ],
+      "engine_com_m": [
+       [
+        0.005925,
+        3.4e-05,
+        -0.004091
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        3.1578e-05,
+        0.00014852,
+        0.000128452
+       ]
+      ],
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      1.0,
+      0.991,
+      0.994
+     ],
+     "expected_shipped_mass": 0.12,
+     "density_lower_bound_kg_m3": 481.3,
+     "inertia_trace_ratio_vs_solid_box": 0.635,
+     "inertia_implied_box_density_kg_m3": 305.5,
+     "start_contact_force_over_weight": 0.11,
+     "start_contact_points": 32,
+     "settle": {
+      "spawn_to_reset_xy_m": 0.0001,
+      "spawn_to_reset_dz_m": -9e-05,
+      "spawn_to_reset_rot_deg": 0.175,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.0,
+      "final_rot_deg": 0.0,
+      "min_z_m": 0.79761,
+      "max_z_m": 0.79761,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       -2e-05,
+       5e-05,
+       -1e-05
+      ],
+      "final_ang_vel_radps": [
+       -0.00149,
+       -0.00018,
+       -0.00024
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       -0.26328,
+       0.10186,
+       0.79761,
+       0.99986,
+       0.00051,
+       0.00064,
+       0.01697
+      ],
+      "declared_spawn": [
+       -0.26329,
+       0.10196,
+       0.7977,
+       0.99985,
+       -0.00101,
+       0.00048,
+       0.01699
+      ]
+     }
+    },
+    "toy_plane_2_4": {
+     "type": "rigid",
+     "model": "Clutter/toy_plane/00002",
+     "inst": "toy_plane_2_4",
+     "clutter": true,
+     "readback_source": "settle_engine",
+     "declared": {
+      "layout_mass": 0.45,
+      "meta_mass": 0.45,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.1569,
+       0.1591,
+       0.0914
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {
+       "friction": 0.32
+      }
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "collider_aabb_extents_m": [
+       0.156909,
+       0.159094,
+       0.09144
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.153318,
+       0.157712,
+       0.090466
+      ],
+      "engine_mass_kg": [
+       0.45
+      ],
+      "engine_com_m": [
+       [
+        0.000206,
+        -0.002289,
+        0.005604
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        0.000443461,
+        0.000242082,
+        0.000444537
+       ]
+      ],
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      0.99,
+      0.977,
+      0.991
+     ],
+     "expected_shipped_mass": 0.45,
+     "density_lower_bound_kg_m3": 205.7,
+     "inertia_trace_ratio_vs_solid_box": 0.266,
+     "inertia_implied_box_density_kg_m3": 54.8,
+     "start_contact_force_over_weight": 0.11,
+     "start_contact_points": 9,
+     "settle": {
+      "spawn_to_reset_xy_m": 2e-05,
+      "spawn_to_reset_dz_m": -0.00151,
+      "spawn_to_reset_rot_deg": 0.024,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.0,
+      "final_rot_deg": 0.0,
+      "min_z_m": 0.80956,
+      "max_z_m": 0.80956,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       -8e-05,
+       2e-05,
+       -1e-05
+      ],
+      "final_ang_vel_radps": [
+       -0.00025,
+       -0.00113,
+       -2e-05
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       0.34251,
+       -0.01011,
+       0.80956,
+       0.99956,
+       0.00372,
+       0.0066,
+       0.02852
+      ],
+      "declared_spawn": [
+       0.34249,
+       -0.01012,
+       0.81107,
+       0.99956,
+       0.00382,
+       0.00641,
+       0.02853
+      ]
+     }
+    },
+    "walkie_talkie_0_9": {
+     "type": "rigid",
+     "model": "Clutter/walkie_talkie/00000",
+     "inst": "walkie_talkie_0_9",
+     "clutter": true,
+     "readback_source": "settle_engine",
+     "declared": {
+      "layout_mass": null,
+      "meta_mass": null,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.0741,
+       0.0386,
+       0.1611
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {}
+     },
+     "engine": {
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "collider_aabb_extents_m": [
+       0.074113,
+       0.038555,
+       0.161112
+      ],
+      "engine_collider_aabb_extents_m": [
+       0.073093,
+       0.037834,
+       0.15964
+      ],
+      "engine_mass_kg": [
+       0.5
+      ],
+      "engine_com_m": [
+       [
+        0.000879,
+        0.002206,
+        0.069472
+       ]
+      ],
+      "engine_diag_inertia_kg_m2": [
+       [
+        0.000278464,
+        0.000333355,
+        8.964e-05
+       ]
+      ],
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": [
+       [
+        0.5,
+        0.5,
+        0.0
+       ]
+      ]
+     },
+     "size_ratio_vs_meta_bbox": [
+      0.98,
+      0.986,
+      0.991
+     ],
+     "expected_shipped_mass": 0.5,
+     "density_lower_bound_kg_m3": 1132.6,
+     "inertia_trace_ratio_vs_solid_box": 0.261,
+     "inertia_implied_box_density_kg_m3": 295.5,
+     "start_contact_force_over_weight": 0.11,
+     "start_contact_points": 26,
+     "settle": {
+      "spawn_to_reset_xy_m": 0.0,
+      "spawn_to_reset_dz_m": 5e-05,
+      "spawn_to_reset_rot_deg": 0.002,
+      "max_disp_m": 0.0,
+      "final_disp_m": 0.0,
+      "max_speed_mps": 0.0,
+      "max_rot_deg": 0.0,
+      "final_rot_deg": 0.0,
+      "min_z_m": 0.78809,
+      "max_z_m": 0.78809,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": [
+       2e-05,
+       -0.0,
+       -1e-05
+      ],
+      "final_ang_vel_radps": [
+       0.00011,
+       0.00095,
+       -0.00033
+      ],
+      "points_after_reset": null,
+      "points_end": null,
+      "max_centroid_disp_m": null,
+      "max_point_disp_m": null,
+      "pose_after_reset": [
+       -0.38321,
+       -0.24267,
+       0.78809,
+       0.70256,
+       -0.70119,
+       -0.08576,
+       0.08593
+      ],
+      "declared_spawn": [
+       -0.38321,
+       -0.24267,
+       0.78804,
+       0.70257,
+       -0.70118,
+       -0.08576,
+       0.08593
+      ]
+     }
+    },
+    "wine": {
+     "type": "fluid",
+     "model": "Fluid/wuliangye/00000",
+     "inst": "wuliangye_0_13",
+     "clutter": false,
+     "readback_source": "readback_spec",
+     "declared": {
+      "layout_mass": null,
+      "meta_mass": null,
+      "layout_size": null,
+      "meta_size": null,
+      "meta_bbox": [
+       0.06,
+       0.06,
+       0.07
+      ],
+      "scale": [
+       1.0,
+       1.0,
+       1.0
+      ],
+      "layout_friction_keys": {}
+     },
+     "engine": {
+      "colliders": 0,
+      "colliders_enabled": 0,
+      "approximations": [],
+      "collider_aabb_extents_m": null,
+      "engine_collider_aabb_extents_m": null,
+      "engine_mass_kg": null,
+      "engine_com_m": null,
+      "engine_diag_inertia_kg_m2": null,
+      "engine_shape_count": null,
+      "engine_link_masses_kg": null,
+      "engine_dof_stiffnesses": null,
+      "engine_dof_dampings": null,
+      "unique_shape_materials": []
+     },
+     "settle": {
+      "spawn_to_reset_xy_m": null,
+      "spawn_to_reset_dz_m": null,
+      "spawn_to_reset_rot_deg": null,
+      "max_disp_m": null,
+      "final_disp_m": null,
+      "max_speed_mps": null,
+      "max_rot_deg": null,
+      "final_rot_deg": null,
+      "min_z_m": null,
+      "max_z_m": null,
+      "nonfinite_at_step": null,
+      "final_lin_vel_mps": null,
+      "final_ang_vel_radps": null,
+      "points_after_reset": {
+       "n": 6072,
+       "finite_frac": 1.0,
+       "centroid": [
+        0.0006,
+        -0.0002,
+        -0.0663
+       ],
+       "min": [
+        -0.4448,
+        -0.3051,
+        -0.0858
+       ],
+       "max": [
+        0.513,
+        0.5719,
+        0.0363
+       ],
+       "frac_below_table_minus_5cm": 1.0
+      },
+      "points_end": {
+       "n": 6072,
+       "finite_frac": 1.0,
+       "centroid": [
+        0.0006,
+        -0.0002,
+        -0.0665
+       ],
+       "min": [
+        -0.4448,
+        -0.3051,
+        -0.0858
+       ],
+       "max": [
+        0.513,
+        0.5719,
+        0.037
+       ],
+       "frac_below_table_minus_5cm": 1.0
+      },
+      "max_centroid_disp_m": 0.00017,
+      "max_point_disp_m": 0.13938,
+      "pose_after_reset": null,
+      "declared_spawn": null
+     }
+    }
+   },
+   "sweep_settle_seconds": 13.9,
+   "harness_wall_seconds": 28.9
+  },
+  "press_by_number": {
+   "task": "press_by_number",
+   "data_source": "datagen",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 700,
+   "status": "not_run",
+   "error": null
+  },
+  "push_T": {
+   "task": "push_T",
+   "data_source": "teleop",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 600,
+   "status": "not_run",
+   "error": null
+  },
+  "push_T_random": {
+   "task": "push_T_random",
+   "data_source": "teleop",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 600,
+   "status": "not_run",
+   "error": null
+  },
+  "put_bottles_into_dustbin": {
+   "task": "put_bottles_into_dustbin",
+   "data_source": "teleop",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 700,
+   "status": "not_run",
+   "error": null
+  },
+  "solve_equation": {
+   "task": "solve_equation",
+   "data_source": "datagen",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 300,
+   "status": "not_run",
+   "error": null
+  },
+  "sort_nesting_dolls_by_size": {
+   "task": "sort_nesting_dolls_by_size",
+   "data_source": "datagen",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 1050,
+   "status": "not_run",
+   "error": null
+  },
+  "sort_nesting_dolls_by_size_random": {
+   "task": "sort_nesting_dolls_by_size_random",
+   "data_source": "datagen",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 1050,
+   "status": "not_run",
+   "error": null
+  },
+  "stack_blocks": {
+   "task": "stack_blocks",
+   "data_source": "datagen",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 550,
+   "status": "not_run",
+   "error": null
+  },
+  "stack_blocks_by_language": {
+   "task": "stack_blocks_by_language",
+   "data_source": "datagen",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 400,
+   "status": "not_run",
+   "error": null
+  },
+  "stack_blocks_random": {
+   "task": "stack_blocks_random",
+   "data_source": "datagen",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 550,
+   "status": "not_run",
+   "error": null
+  },
+  "stack_bowls": {
+   "task": "stack_bowls",
+   "data_source": "teleop",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 800,
+   "status": "not_run",
+   "error": null
+  },
+  "stack_bowls_random": {
+   "task": "stack_bowls_random",
+   "data_source": "teleop",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 800,
+   "status": "not_run",
+   "error": null
+  },
+  "store_laptop_and_headphones": {
+   "task": "store_laptop_and_headphones",
+   "data_source": "teleop",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 800,
+   "status": "not_run",
+   "error": null
+  },
+  "store_laptop_and_headphones_random": {
+   "task": "store_laptop_and_headphones_random",
+   "data_source": "teleop",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 800,
+   "status": "not_run",
+   "error": null
+  },
+  "store_tools_in_toolbox": {
+   "task": "store_tools_in_toolbox",
+   "data_source": "datagen",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 900,
+   "status": "not_run",
+   "error": null
+  },
+  "swap_T": {
+   "task": "swap_T",
+   "data_source": "datagen",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 400,
+   "status": "not_run",
+   "error": null
+  },
+  "swap_blocks": {
+   "task": "swap_blocks",
+   "data_source": "datagen",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 700,
+   "status": "not_run",
+   "error": null
+  },
+  "sweep_blocks": {
+   "task": "sweep_blocks",
+   "data_source": "teleop",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 1000,
+   "status": "not_run",
+   "error": null
+  },
+  "sweep_blocks_random": {
+   "task": "sweep_blocks_random",
+   "data_source": "teleop",
+   "scene": "default",
+   "robot_config": "dual_x5",
+   "step_lim": 1000,
+   "status": "not_run",
+   "error": null
+  }
+ }
+}

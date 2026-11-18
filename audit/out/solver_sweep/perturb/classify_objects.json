@@ -1,0 +1,23 @@
+[
+ {
+  "cell_name": "classify_objects__perturb",
+  "layout": 0,
+  "overrides": {
+   "spawn_lift": {
+    "stems": "*",
+    "dz_m": 1e-06
+   },
+   "slide_target": {
+    "label": "cat0_0",
+    "inst": "pen_4_1",
+    "labelled": true,
+    "stem": "pen_4",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.990832,
+     -0.135101
+    ]
+   }
+  }
+ }
+]

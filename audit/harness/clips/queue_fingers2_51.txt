@@ -1,0 +1,6 @@
+# Blog clips v2 (audit/out/blog_clips/fingers_v2/PREDICTIONS.md): 5.1 state logs on della-vis2 GPU 0 (blog_queue.sh), one
+# witness trial per process, at one commit. b51_fingers_main = the gripper as corrected on main (arx5-sdk's force law, drive
+# limited at the trip, 323.54 N on joint7, motor's inertia on joint7), otherwise shipped physics: #216's b51_fingers_motor
+# without --witness_real_variant. Control S1: #216's shipped panel at this commit.
+b51_fingers_main|51|fingers51.json||--task put_bottles_into_dustbin --layouts 0 --policy ideal_witness --witness_scenarios pad_hard_nom --witness_masses 0.50 --witness_columns real_path --witness_skip_bench --witness_pose_trace --physics_preset shipped --physics_fixes gripper --physics_params <repo>/docs/params --physics_scenario_opt_in bottles_primary_empty|
+b51_fingers_shipped_r|51|fingers51.json||--task put_bottles_into_dustbin --layouts 0 --policy ideal_witness --witness_scenarios pad_hard_nom --witness_masses 0.50 --witness_columns shipped_lead10p8 --witness_skip_bench --witness_pose_trace|

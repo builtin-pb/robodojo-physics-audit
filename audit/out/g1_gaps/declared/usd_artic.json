@@ -1,0 +1,6151 @@
+[
+ {
+  "path": "/scratch/<user>/isaac/robodojo/Assets/Object/RoboDojo/Articulation/toaster/00001/object.usdz",
+  "metersPerUnit": 1.0,
+  "upAxis": "Z",
+  "defaultPrim": "/root",
+  "layers": [
+   "anon:0x19cb450:object-session.usda",
+   "object.usdz"
+  ],
+  "prims": [
+   {
+    "path": "/root",
+    "type": "Xform",
+    "apis": [
+     "PhysicsArticulationRootAPI"
+    ],
+    "attrs": {},
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/base",
+    "type": "Xform",
+    "apis": [
+     "PhysicsMassAPI",
+     "PhysicsRigidBodyAPI"
+    ],
+    "attrs": {
+     "physics:mass": {
+      "v": 0.0,
+      "layer": "object.usdz"
+     },
+     "physics:rigidBodyEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physics:startsAsleep": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_21/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_22/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_4/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_3/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_2/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_8/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_13/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/base/collisions/original_13/World/Looks/material_0_2"
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_9/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_5/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_6/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_15/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/base/collisions/original_15/World/Looks/material_0_2"
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_23/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/base/collisions/original_23/World/Looks/material_0_2"
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_18/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_12/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/base/collisions/original_12/World/Looks/material_0_2"
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_7/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_10/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_14/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/base/collisions/original_14/World/Looks/material_0_2"
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_19/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/base/FixedJoint",
+    "type": "PhysicsFixedJoint",
+    "apis": [],
+    "attrs": {
+     "physics:breakForce": {
+      "v": 3.4028234663852886e+38,
+      "layer": "object.usdz"
+     },
+     "physics:breakTorque": {
+      "v": 3.4028234663852886e+38,
+      "layer": "object.usdz"
+     },
+     "physics:localPos0": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:localPos1": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:localRot0": {
+      "v": "(1, 0, 0, 0)",
+      "layer": "object.usdz"
+     },
+     "physics:localRot1": {
+      "v": "(1, 0, 0, 0)",
+      "layer": "object.usdz"
+     }
+    },
+    "body0": [],
+    "body1": [
+     "/root/base"
+    ]
+   },
+   {
+    "path": "/root/link_0",
+    "type": "Xform",
+    "apis": [
+     "PhysicsMassAPI",
+     "PhysicsRigidBodyAPI"
+    ],
+    "attrs": {
+     "physics:rigidBodyEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physics:startsAsleep": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "world_t": [
+     0.0,
+     0.059664,
+     -0.053208
+    ]
+   },
+   {
+    "path": "/root/link_0/collisions/original_16/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/link_0/collisions/original_16/World/Looks/material_0_2"
+    },
+    "world_t": [
+     0.0,
+     -0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/joints/joint_0",
+    "type": "PhysicsRevoluteJoint",
+    "apis": [
+     "PhysicsDriveAPI:angular"
+    ],
+    "attrs": {
+     "drive:angular:physics:damping": {
+      "v": 20.0,
+      "layer": "object.usdz"
+     },
+     "drive:angular:physics:maxForce": {
+      "v": 3.4028234663852886e+38,
+      "layer": "object.usdz"
+     },
+     "drive:angular:physics:stiffness": {
+      "v": 5.0,
+      "layer": "object.usdz"
+     },
+     "drive:angular:physics:targetPosition": {
+      "v": 0.0,
+      "layer": "object.usdz"
+     },
+     "drive:angular:physics:type": {
+      "v": "acceleration",
+      "layer": "object.usdz"
+     },
+     "physics:axis": {
+      "v": "Z",
+      "layer": "object.usdz"
+     },
+     "physics:breakForce": {
+      "v": 3.4028234663852886e+38,
+      "layer": "object.usdz"
+     },
+     "physics:breakTorque": {
+      "v": 3.4028234663852886e+38,
+      "layer": "object.usdz"
+     },
+     "physics:JointEquivalentInertia": {
+      "v": 0.0,
+      "layer": "object.usdz"
+     },
+     "physics:localPos0": {
+      "v": [
+       9.22009313342187e-09,
+       0.05966399610042572,
+       -0.05320829153060913
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:localPos1": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:localRot0": {
+      "v": "(0.49999997, 0.49999997, 0.49999997, 0.49999997)",
+      "layer": "object.usdz"
+     },
+     "physics:localRot1": {
+      "v": "(0, 0, 1, 0)",
+      "layer": "object.usdz"
+     },
+     "physics:lowerLimit": {
+      "v": -Infinity,
+      "layer": "object.usdz"
+     },
+     "physics:upperLimit": {
+      "v": Infinity,
+      "layer": "object.usdz"
+     },
+     "physxJoint:maxJointVelocity": {
+      "v": Infinity,
+      "layer": "object.usdz"
+     }
+    },
+    "body0": [
+     "/root/base"
+    ],
+    "body1": [
+     "/root/link_0"
+    ]
+   },
+   {
+    "path": "/root/joints/joint_1",
+    "type": "PhysicsPrismaticJoint",
+    "apis": [
+     "PhysicsDriveAPI:linear"
+    ],
+    "attrs": {
+     "drive:linear:physics:damping": {
+      "v": 100.0,
+      "layer": "object.usdz"
+     },
+     "drive:linear:physics:maxForce": {
+      "v": 3.4028234663852886e+38,
+      "layer": "object.usdz"
+     },
+     "drive:linear:physics:stiffness": {
+      "v": 0.0,
+      "layer": "object.usdz"
+     },
+     "drive:linear:physics:targetPosition": {
+      "v": 0.0,
+      "layer": "object.usdz"
+     },
+     "drive:linear:physics:type": {
+      "v": "acceleration",
+      "layer": "object.usdz"
+     },
+     "physics:axis": {
+      "v": "Y",
+      "layer": "object.usdz"
+     },
+     "physics:breakForce": {
+      "v": 3.4028234663852886e+38,
+      "layer": "object.usdz"
+     },
+     "physics:breakTorque": {
+      "v": 3.4028234663852886e+38,
+      "layer": "object.usdz"
+     },
+     "physics:JointEquivalentInertia": {
+      "v": 0.0,
+      "layer": "object.usdz"
+     },
+     "physics:localPos0": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:localPos1": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:localRot0": {
+      "v": "(-0.49999997, 0.49999997, -0.49999997, 0.49999997)",
+      "layer": "object.usdz"
+     },
+     "physics:localRot1": {
+      "v": "(0, 1, 0, 0)",
+      "layer": "object.usdz"
+     },
+     "physics:lowerLimit": {
+      "v": -0.023400001227855682,
+      "layer": "object.usdz"
+     },
+     "physics:upperLimit": {
+      "v": 0.051600001752376556,
+      "layer": "object.usdz"
+     },
+     "physxJoint:maxJointVelocity": {
+      "v": 3.4028234663852886e+38,
+      "layer": "object.usdz"
+     }
+    },
+    "body0": [
+     "/root/base"
+    ],
+    "body1": [
+     "/root/link_1"
+    ]
+   },
+   {
+    "path": "/root/link_1",
+    "type": "Xform",
+    "apis": [
+     "PhysicsMassAPI",
+     "PhysicsRigidBodyAPI"
+    ],
+    "attrs": {
+     "physics:rigidBodyEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physics:startsAsleep": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxRigidBody:disableGravity": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/link_1/collisions/original_11/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexHull",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/root_joint",
+    "type": "PhysicsFixedJoint",
+    "apis": [],
+    "attrs": {
+     "physics:localPos1": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     }
+    },
+    "body0": [],
+    "body1": [
+     "/root/base"
+    ]
+   }
+  ],
+  "n_colliders": 20,
+  "collider_approximations": {
+   "convexDecomposition": 19,
+   "convexHull": 1
+  }
+ },
+ {
+  "path": "/scratch/<user>/isaac/robodojo/Assets/Object/RoboDojo/Articulation/toaster/00004/object.usdz",
+  "metersPerUnit": 1.0,
+  "upAxis": "Z",
+  "defaultPrim": "/root",
+  "layers": [
+   "anon:0x1d5b500:object-session.usda",
+   "object.usdz"
+  ],
+  "prims": [
+   {
+    "path": "/root/base",
+    "type": "Xform",
+    "apis": [
+     "PhysicsMassAPI",
+     "PhysicsRigidBodyAPI"
+    ],
+    "attrs": {
+     "physics:angularVelocity": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:mass": {
+      "v": 0.0,
+      "layer": "object.usdz"
+     },
+     "physics:rigidBodyEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physics:velocity": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     }
+    },
+    "world_t": [
+     0.0,
+     -0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_36/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/base/collisions/original_36/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     -0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_41/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/base/collisions/original_41/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     -0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_43/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/base/collisions/original_43/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     -0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_52/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/base/collisions/original_52/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     -0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_44/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/base/collisions/original_44/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     -0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_45/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/base/collisions/original_45/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     -0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_61/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/base/collisions/original_61/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     -0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_39/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/base/collisions/original_39/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     -0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_54/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/base/collisions/original_54/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     -0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_51/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/base/collisions/original_51/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     -0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_55/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/base/collisions/original_55/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     -0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_37/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/base/collisions/original_37/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     -0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_58/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/base/collisions/original_58/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     -0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_38/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/base/collisions/original_38/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     -0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_42/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/base/collisions/original_42/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     -0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_60/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/base/collisions/original_60/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     -0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_40/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/base/collisions/original_40/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     -0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/base/collisions/original_57/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/base/collisions/original_57/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     -0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/link_0",
+    "type": "Xform",
+    "apis": [
+     "PhysicsMassAPI",
+     "PhysicsRigidBodyAPI"
+    ],
+    "attrs": {
+     "physics:angularVelocity": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:mass": {
+      "v": 0.5,
+      "layer": "object.usdz"
+     },
+     "physics:rigidBodyEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physics:velocity": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physxRigidBody:disableGravity": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "world_t": [
+     0.0,
+     -0.0,
+     -0.002842
+    ]
+   },
+   {
+    "path": "/root/link_0/collisions/original_49/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexHull",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/link_0/collisions/original_49/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     -0.0,
+     -0.002842
+    ]
+   },
+   {
+    "path": "/root/link_0/collisions/original_47/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/link_0/collisions/original_47/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     -0.0,
+     -0.002842
+    ]
+   },
+   {
+    "path": "/root/link_0/collisions/original_48/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/link_0/collisions/original_48/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     -0.0,
+     -0.002842
+    ]
+   },
+   {
+    "path": "/root/joints/joint_0",
+    "type": "PhysicsPrismaticJoint",
+    "apis": [
+     "PhysicsDriveAPI:linear"
+    ],
+    "attrs": {
+     "drive:linear:physics:damping": {
+      "v": 2000.0,
+      "layer": "object.usdz"
+     },
+     "drive:linear:physics:maxForce": {
+      "v": 3.4028234663852886e+38,
+      "layer": "object.usdz"
+     },
+     "drive:linear:physics:stiffness": {
+      "v": 5.0,
+      "layer": "object.usdz"
+     },
+     "drive:linear:physics:targetPosition": {
+      "v": 0.0,
+      "layer": "object.usdz"
+     },
+     "drive:linear:physics:type": {
+      "v": "acceleration",
+      "layer": "object.usdz"
+     },
+     "physics:axis": {
+      "v": "Y",
+      "layer": "object.usdz"
+     },
+     "physics:breakForce": {
+      "v": 3.4028234663852886e+38,
+      "layer": "object.usdz"
+     },
+     "physics:breakTorque": {
+      "v": 3.4028234663852886e+38,
+      "layer": "object.usdz"
+     },
+     "physics:JointEquivalentInertia": {
+      "v": 0.0,
+      "layer": "object.usdz"
+     },
+     "physics:localPos0": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:localPos1": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:localRot0": {
+      "v": "(-0.49999997, 0.49999997, -0.49999997, 0.49999997)",
+      "layer": "object.usdz"
+     },
+     "physics:localRot1": {
+      "v": "(0, 1, 0, 0)",
+      "layer": "object.usdz"
+     },
+     "physics:lowerLimit": {
+      "v": 0.0,
+      "layer": "object.usdz"
+     },
+     "physics:upperLimit": {
+      "v": 0.04319999739527702,
+      "layer": "object.usdz"
+     },
+     "physxJoint:maxJointVelocity": {
+      "v": 3.4028234663852886e+38,
+      "layer": "object.usdz"
+     }
+    },
+    "body0": [
+     "/root/base"
+    ],
+    "body1": [
+     "/root/link_0"
+    ]
+   },
+   {
+    "path": "/root/joints/joint_1",
+    "type": "PhysicsPrismaticJoint",
+    "apis": [
+     "PhysicsDriveAPI:linear"
+    ],
+    "attrs": {
+     "drive:linear:physics:damping": {
+      "v": 20.0,
+      "layer": "object.usdz"
+     },
+     "drive:linear:physics:maxForce": {
+      "v": 3.4028234663852886e+38,
+      "layer": "object.usdz"
+     },
+     "drive:linear:physics:stiffness": {
+      "v": 5.0,
+      "layer": "object.usdz"
+     },
+     "drive:linear:physics:targetPosition": {
+      "v": 0.0,
+      "layer": "object.usdz"
+     },
+     "drive:linear:physics:type": {
+      "v": "acceleration",
+      "layer": "object.usdz"
+     },
+     "physics:axis": {
+      "v": "Y",
+      "layer": "object.usdz"
+     },
+     "physics:breakForce": {
+      "v": 3.4028234663852886e+38,
+      "layer": "object.usdz"
+     },
+     "physics:breakTorque": {
+      "v": 3.4028234663852886e+38,
+      "layer": "object.usdz"
+     },
+     "physics:JointEquivalentInertia": {
+      "v": 0.0,
+      "layer": "object.usdz"
+     },
+     "physics:localPos0": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:localPos1": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:localRot0": {
+      "v": "(0.49999997, 0.49999997, -0.49999997, -0.49999997)",
+      "layer": "object.usdz"
+     },
+     "physics:localRot1": {
+      "v": "(1, 0, 0, 0)",
+      "layer": "object.usdz"
+     },
+     "physics:lowerLimit": {
+      "v": 0.0,
+      "layer": "object.usdz"
+     },
+     "physics:upperLimit": {
+      "v": 0.10859999805688858,
+      "layer": "object.usdz"
+     },
+     "physxJoint:maxJointVelocity": {
+      "v": 3.4028234663852886e+38,
+      "layer": "object.usdz"
+     }
+    },
+    "body0": [
+     "/root/base"
+    ],
+    "body1": [
+     "/root/link_1"
+    ]
+   },
+   {
+    "path": "/root/joints/joint_2",
+    "type": "PhysicsPrismaticJoint",
+    "apis": [
+     "PhysicsDriveAPI:linear"
+    ],
+    "attrs": {
+     "drive:linear:physics:damping": {
+      "v": 20.0,
+      "layer": "object.usdz"
+     },
+     "drive:linear:physics:maxForce": {
+      "v": 3.4028234663852886e+38,
+      "layer": "object.usdz"
+     },
+     "drive:linear:physics:stiffness": {
+      "v": 5.0,
+      "layer": "object.usdz"
+     },
+     "drive:linear:physics:targetPosition": {
+      "v": 0.0,
+      "layer": "object.usdz"
+     },
+     "drive:linear:physics:type": {
+      "v": "acceleration",
+      "layer": "object.usdz"
+     },
+     "physics:axis": {
+      "v": "Y",
+      "layer": "object.usdz"
+     },
+     "physics:breakForce": {
+      "v": 3.4028234663852886e+38,
+      "layer": "object.usdz"
+     },
+     "physics:breakTorque": {
+      "v": 3.4028234663852886e+38,
+      "layer": "object.usdz"
+     },
+     "physics:JointEquivalentInertia": {
+      "v": 0.0,
+      "layer": "object.usdz"
+     },
+     "physics:localPos0": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:localPos1": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:localRot0": {
+      "v": "(0.49999997, 0.49999997, -0.49999997, -0.49999997)",
+      "layer": "object.usdz"
+     },
+     "physics:localRot1": {
+      "v": "(1, 0, 0, 0)",
+      "layer": "object.usdz"
+     },
+     "physics:lowerLimit": {
+      "v": 0.0,
+      "layer": "object.usdz"
+     },
+     "physics:upperLimit": {
+      "v": 0.10859999805688858,
+      "layer": "object.usdz"
+     },
+     "physxJoint:maxJointVelocity": {
+      "v": 3.4028234663852886e+38,
+      "layer": "object.usdz"
+     }
+    },
+    "body0": [
+     "/root/base"
+    ],
+    "body1": [
+     "/root/link_2"
+    ]
+   },
+   {
+    "path": "/root/link_1",
+    "type": "Xform",
+    "apis": [
+     "PhysicsMassAPI",
+     "PhysicsRigidBodyAPI"
+    ],
+    "attrs": {
+     "physics:angularVelocity": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:rigidBodyEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physics:velocity": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     }
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.002395
+    ]
+   },
+   {
+    "path": "/root/link_1/collisions/original_5/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/link_1/collisions/original_5/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.002395
+    ]
+   },
+   {
+    "path": "/root/link_1/collisions/original_3/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/link_1/collisions/original_3/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.002395
+    ]
+   },
+   {
+    "path": "/root/link_1/collisions/original_12/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/link_1/collisions/original_12/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.002395
+    ]
+   },
+   {
+    "path": "/root/link_1/collisions/original_13/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/link_1/collisions/original_13/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.002395
+    ]
+   },
+   {
+    "path": "/root/link_1/collisions/original_15/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/link_1/collisions/original_15/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.002395
+    ]
+   },
+   {
+    "path": "/root/link_1/collisions/original_16/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/link_1/collisions/original_16/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.002395
+    ]
+   },
+   {
+    "path": "/root/link_1/collisions/original_11/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/link_1/collisions/original_11/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.002395
+    ]
+   },
+   {
+    "path": "/root/link_1/collisions/original_7/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/link_1/collisions/original_7/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.002395
+    ]
+   },
+   {
+    "path": "/root/link_1/collisions/original_8/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/link_1/collisions/original_8/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.002395
+    ]
+   },
+   {
+    "path": "/root/link_1/collisions/original_6/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/link_1/collisions/original_6/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.002395
+    ]
+   },
+   {
+    "path": "/root/link_1/collisions/original_9/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/link_1/collisions/original_9/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.002395
+    ]
+   },
+   {
+    "path": "/root/link_1/collisions/original_2/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/link_1/collisions/original_2/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.002395
+    ]
+   },
+   {
+    "path": "/root/link_1/collisions/original_4/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/link_1/collisions/original_4/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.002395
+    ]
+   },
+   {
+    "path": "/root/link_1/collisions/original_14/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/link_1/collisions/original_14/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.002395
+    ]
+   },
+   {
+    "path": "/root/link_1/collisions/original_10/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/link_1/collisions/original_10/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.002395
+    ]
+   },
+   {
+    "path": "/root/link_1/collisions/original_17/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/link_1/collisions/original_17/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.002395
+    ]
+   },
+   {
+    "path": "/root/link_2",
+    "type": "Xform",
+    "apis": [
+     "PhysicsMassAPI",
+     "PhysicsRigidBodyAPI"
+    ],
+    "attrs": {
+     "physics:angularVelocity": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:rigidBodyEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physics:velocity": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     }
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/link_2/collisions/original_21/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/link_2/collisions/original_21/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/link_2/collisions/original_31/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/link_2/collisions/original_31/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/link_2/collisions/original_23/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/link_2/collisions/original_23/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/link_2/collisions/original_26/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/link_2/collisions/original_26/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/link_2/collisions/original_34/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/link_2/collisions/original_34/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/link_2/collisions/original_27/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/link_2/collisions/original_27/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/link_2/collisions/original_19/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/link_2/collisions/original_19/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/link_2/collisions/original_20/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/link_2/collisions/original_20/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/link_2/collisions/original_22/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/link_2/collisions/original_22/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/link_2/collisions/original_29/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/link_2/collisions/original_29/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/link_2/collisions/original_30/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/link_2/collisions/original_30/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/link_2/collisions/original_32/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/link_2/collisions/original_32/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/link_2/collisions/original_33/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/link_2/collisions/original_33/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/link_2/collisions/original_25/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/link_2/collisions/original_25/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/link_2/collisions/original_28/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/link_2/collisions/original_28/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/link_2/collisions/original_24/World/mesh",
+    "type": "Mesh",
+    "apis": [
+     "VisibilityAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:errorPercentage": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:hullVertexLimit": {
+      "v": 16,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 64,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.019999999552965164,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "all",
+     "material": "/root/link_2/collisions/original_24/World/Looks/material_0_0"
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/root_joint",
+    "type": "PhysicsFixedJoint",
+    "apis": [
+     "PhysicsArticulationRootAPI"
+    ],
+    "attrs": {
+     "physics:localPos1": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physxArticulation:enabledSelfCollisions": {
+      "v": false,
+      "layer": "object.usdz"
+     },
+     "physxArticulation:solverPositionIterationCount": {
+      "v": 32,
+      "layer": "object.usdz"
+     },
+     "physxArticulation:solverVelocityIterationCount": {
+      "v": 1,
+      "layer": "object.usdz"
+     }
+    },
+    "body0": [],
+    "body1": [
+     "/root/base"
+    ]
+   }
+  ],
+  "n_colliders": 53,
+  "collider_approximations": {
+   "convexDecomposition": 52,
+   "convexHull": 1
+  }
+ },
+ {
+  "path": "/scratch/<user>/isaac/robodojo/Assets/Object/RoboDojo/Articulation/SpringButton/00002/object.usdz",
+  "metersPerUnit": 1.0,
+  "upAxis": "Z",
+  "defaultPrim": "/root",
+  "layers": [
+   "anon:0x1d5b500:object-session.usda",
+   "object.usdz"
+  ],
+  "prims": [
+   {
+    "path": "/root",
+    "type": "Xform",
+    "apis": [
+     "PhysicsArticulationRootAPI"
+    ],
+    "attrs": {
+     "physxArticulation:enabledSelfCollisions": {
+      "v": false,
+      "layer": "object.usdz"
+     }
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/E_body_16",
+    "type": "Xform",
+    "apis": [
+     "PhysicsRigidBodyAPI"
+    ],
+    "attrs": {
+     "physics:angularVelocity": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:kinematicEnabled": {
+      "v": false,
+      "layer": "object.usdz"
+     },
+     "physics:rigidBodyEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physics:velocity": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     }
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     -0.0
+    ]
+   },
+   {
+    "path": "/root/E_body_16/E_part11_11/P_a59083fb12b9305",
+    "type": "Mesh",
+    "apis": [
+     "PhysicsMeshCollisionAPI",
+     "PhysicsCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "physics",
+     "material": "/root/PhysicsMaterial"
+    },
+    "world_t": [
+     -0.0,
+     1e-06,
+     0.008312
+    ]
+   },
+   {
+    "path": "/root/E_body_16/E_part3_12/P_68fc7d4d4d0199d0",
+    "type": "Mesh",
+    "apis": [
+     "PhysicsMeshCollisionAPI",
+     "PhysicsCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "physics",
+     "material": "/root/PhysicsMaterial"
+    },
+    "world_t": [
+     -0.0,
+     1e-06,
+     0.01214
+    ]
+   },
+   {
+    "path": "/root/E_body_16/E_part5_9/P_d56a0a22d56d6048",
+    "type": "Mesh",
+    "apis": [
+     "PhysicsMeshCollisionAPI",
+     "PhysicsCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "physics",
+     "material": "/root/PhysicsMaterial"
+    },
+    "world_t": [
+     0.000344,
+     6.8e-05,
+     -0.000104
+    ]
+   },
+   {
+    "path": "/root/E_body_16/FixedJoint",
+    "type": "PhysicsFixedJoint",
+    "apis": [],
+    "attrs": {
+     "physics:breakForce": {
+      "v": 3.4028234663852886e+38,
+      "layer": "object.usdz"
+     },
+     "physics:breakTorque": {
+      "v": 3.4028234663852886e+38,
+      "layer": "object.usdz"
+     },
+     "physics:localPos0": {
+      "v": [
+       0.0,
+       1.3642420526593924e-12,
+       -2.7939677238464355e-09
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:localPos1": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:localRot0": {
+      "v": "(1, 0, 0, 0)",
+      "layer": "object.usdz"
+     },
+     "physics:localRot1": {
+      "v": "(1, 0, 0, 0)",
+      "layer": "object.usdz"
+     }
+    },
+    "body0": [],
+    "body1": [
+     "/root/E_body_16"
+    ]
+   },
+   {
+    "path": "/root/E_button_01_13",
+    "type": "Xform",
+    "apis": [
+     "PhysicsRigidBodyAPI"
+    ],
+    "attrs": {
+     "physics:angularVelocity": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:kinematicEnabled": {
+      "v": false,
+      "layer": "object.usdz"
+     },
+     "physics:rigidBodyEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physics:velocity": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physxRigidBody:disableGravity": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "world_t": [
+     -0.0,
+     1e-06,
+     0.03567
+    ]
+   },
+   {
+    "path": "/root/E_button_01_13/PrismaticJoint_orangeswitch_up",
+    "type": "PhysicsPrismaticJoint",
+    "apis": [
+     "PhysicsDriveAPI:linear"
+    ],
+    "attrs": {
+     "drive:linear:physics:damping": {
+      "v": 100.0,
+      "layer": "object.usdz"
+     },
+     "drive:linear:physics:stiffness": {
+      "v": 1500.0,
+      "layer": "object.usdz"
+     },
+     "drive:linear:physics:targetPosition": {
+      "v": 0.006000000052154064,
+      "layer": "object.usdz"
+     },
+     "drive:linear:physics:type": {
+      "v": "acceleration",
+      "layer": "object.usdz"
+     },
+     "physics:axis": {
+      "v": "Z",
+      "layer": "object.usdz"
+     },
+     "physics:breakForce": {
+      "v": Infinity,
+      "layer": "object.usdz"
+     },
+     "physics:breakTorque": {
+      "v": Infinity,
+      "layer": "object.usdz"
+     },
+     "physics:localPos0": {
+      "v": [
+       -2.879999954075174e-07,
+       5.759999908150348e-07,
+       0.030671998858451843
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:localPos1": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:localRot0": {
+      "v": "(1, 0, 0, 0)",
+      "layer": "object.usdz"
+     },
+     "physics:localRot1": {
+      "v": "(1, 0, 0, 0)",
+      "layer": "object.usdz"
+     },
+     "physics:lowerLimit": {
+      "v": -0.005040000192821026,
+      "layer": "object.usdz"
+     },
+     "physics:upperLimit": {
+      "v": 0.004999999888241291,
+      "layer": "object.usdz"
+     }
+    },
+    "body0": [
+     "/root/E_body_16"
+    ],
+    "body1": [
+     "/root/E_button_01_13"
+    ]
+   },
+   {
+    "path": "/root/E_button_01_13/P_457ecac1bfb05df0",
+    "type": "Mesh",
+    "apis": [
+     "PhysicsMeshCollisionAPI",
+     "PhysicsCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 52,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.10000000149011612,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": false,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "physics",
+     "material": "/root/PhysicsMaterial"
+    },
+    "world_t": [
+     -0.0,
+     1e-06,
+     0.03567
+    ]
+   },
+   {
+    "path": "/root/PhysicsMaterial",
+    "type": "Material",
+    "apis": [
+     "PhysicsMaterialAPI"
+    ],
+    "attrs": {
+     "physics:density": {
+      "v": 1050.0,
+      "layer": "object.usdz"
+     },
+     "physics:dynamicFriction": {
+      "v": 0.25,
+      "layer": "object.usdz"
+     },
+     "physics:restitution": {
+      "v": 0.30000001192092896,
+      "layer": "object.usdz"
+     },
+     "physics:staticFriction": {
+      "v": 0.30000001192092896,
+      "layer": "object.usdz"
+     }
+    }
+   }
+  ],
+  "n_colliders": 5,
+  "collider_approximations": {
+   "convexDecomposition": 4,
+   "convexHull": 1
+  }
+ },
+ {
+  "path": "/scratch/<user>/isaac/robodojo/Assets/Object/RoboDojo/Articulation/SpringButton/00003/object.usdz",
+  "metersPerUnit": 1.0,
+  "upAxis": "Z",
+  "defaultPrim": "/root",
+  "layers": [
+   "anon:0x19fa090:object-session.usda",
+   "object.usdz"
+  ],
+  "prims": [
+   {
+    "path": "/root",
+    "type": "Xform",
+    "apis": [
+     "PhysicsArticulationRootAPI"
+    ],
+    "attrs": {},
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/E_body_16",
+    "type": "Xform",
+    "apis": [
+     "PhysicsRigidBodyAPI"
+    ],
+    "attrs": {
+     "physics:angularVelocity": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:kinematicEnabled": {
+      "v": false,
+      "layer": "object.usdz"
+     },
+     "physics:rigidBodyEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physics:velocity": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     }
+    },
+    "world_t": [
+     -0.0,
+     0.0,
+     -0.0
+    ]
+   },
+   {
+    "path": "/root/E_body_16/E_part11_11/P_a59083fb12b9305",
+    "type": "Mesh",
+    "apis": [
+     "PhysicsMeshCollisionAPI",
+     "PhysicsCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "physics",
+     "material": "/root/PhysicsMaterial"
+    },
+    "world_t": [
+     -0.0,
+     1e-06,
+     0.008312
+    ]
+   },
+   {
+    "path": "/root/E_body_16/E_part3_12/P_68fc7d4d4d0199d0",
+    "type": "Mesh",
+    "apis": [
+     "PhysicsMeshCollisionAPI",
+     "PhysicsCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "physics",
+     "material": "/root/PhysicsMaterial"
+    },
+    "world_t": [
+     -0.0,
+     1e-06,
+     0.01214
+    ]
+   },
+   {
+    "path": "/root/E_body_16/E_part5_9/P_d56a0a22d56d6048",
+    "type": "Mesh",
+    "apis": [
+     "PhysicsMeshCollisionAPI",
+     "PhysicsCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "physics",
+     "material": "/root/PhysicsMaterial"
+    },
+    "world_t": [
+     0.000344,
+     6.8e-05,
+     -0.000104
+    ]
+   },
+   {
+    "path": "/root/E_body_16/FixedJoint",
+    "type": "PhysicsFixedJoint",
+    "apis": [],
+    "attrs": {
+     "physics:breakForce": {
+      "v": 3.4028234663852886e+38,
+      "layer": "object.usdz"
+     },
+     "physics:breakTorque": {
+      "v": 3.4028234663852886e+38,
+      "layer": "object.usdz"
+     },
+     "physics:localPos0": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:localPos1": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:localRot0": {
+      "v": "(1, 0, 0, 0)",
+      "layer": "object.usdz"
+     },
+     "physics:localRot1": {
+      "v": "(1, 0, 0, 0)",
+      "layer": "object.usdz"
+     }
+    },
+    "body0": [],
+    "body1": [
+     "/root/E_body_16"
+    ]
+   },
+   {
+    "path": "/root/E_button_01_13",
+    "type": "Xform",
+    "apis": [
+     "PhysicsRigidBodyAPI"
+    ],
+    "attrs": {
+     "physics:angularVelocity": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:kinematicEnabled": {
+      "v": false,
+      "layer": "object.usdz"
+     },
+     "physics:rigidBodyEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physics:velocity": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physxRigidBody:disableGravity": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "world_t": [
+     -0.0,
+     1e-06,
+     0.035672
+    ]
+   },
+   {
+    "path": "/root/E_button_01_13/PrismaticJoint_orangeswitch_up",
+    "type": "PhysicsPrismaticJoint",
+    "apis": [
+     "PhysicsDriveAPI:linear"
+    ],
+    "attrs": {
+     "drive:linear:physics:damping": {
+      "v": 100.0,
+      "layer": "object.usdz"
+     },
+     "drive:linear:physics:stiffness": {
+      "v": 1500.0,
+      "layer": "object.usdz"
+     },
+     "drive:linear:physics:targetPosition": {
+      "v": 0.006000000052154064,
+      "layer": "object.usdz"
+     },
+     "drive:linear:physics:type": {
+      "v": "acceleration",
+      "layer": "object.usdz"
+     },
+     "physics:axis": {
+      "v": "Z",
+      "layer": "object.usdz"
+     },
+     "physics:breakForce": {
+      "v": Infinity,
+      "layer": "object.usdz"
+     },
+     "physics:breakTorque": {
+      "v": Infinity,
+      "layer": "object.usdz"
+     },
+     "physics:localPos0": {
+      "v": [
+       -2.879999954075174e-07,
+       5.759999908150348e-07,
+       0.030671998858451843
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:localPos1": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:localRot0": {
+      "v": "(1, 0, 0, 0)",
+      "layer": "object.usdz"
+     },
+     "physics:localRot1": {
+      "v": "(1, 0, 0, 0)",
+      "layer": "object.usdz"
+     },
+     "physics:lowerLimit": {
+      "v": -0.005040000192821026,
+      "layer": "object.usdz"
+     },
+     "physics:upperLimit": {
+      "v": 0.004999999888241291,
+      "layer": "object.usdz"
+     }
+    },
+    "body0": [
+     "/root/E_body_16"
+    ],
+    "body1": [
+     "/root/E_button_01_13"
+    ]
+   },
+   {
+    "path": "/root/E_button_01_13/P_457ecac1bfb05df0",
+    "type": "Mesh",
+    "apis": [
+     "PhysicsMeshCollisionAPI",
+     "PhysicsCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:maxConvexHulls": {
+      "v": 70,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:minThickness": {
+      "v": 0.10000000149011612,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "physics",
+     "material": "/root/PhysicsMaterial"
+    },
+    "world_t": [
+     -0.0,
+     1e-06,
+     0.035672
+    ]
+   },
+   {
+    "path": "/root/PhysicsMaterial",
+    "type": "Material",
+    "apis": [
+     "PhysicsMaterialAPI"
+    ],
+    "attrs": {
+     "physics:density": {
+      "v": 1050.0,
+      "layer": "object.usdz"
+     },
+     "physics:dynamicFriction": {
+      "v": 0.25,
+      "layer": "object.usdz"
+     },
+     "physics:restitution": {
+      "v": 0.30000001192092896,
+      "layer": "object.usdz"
+     },
+     "physics:staticFriction": {
+      "v": 0.30000001192092896,
+      "layer": "object.usdz"
+     }
+    }
+   }
+  ],
+  "n_colliders": 5,
+  "collider_approximations": {
+   "convexDecomposition": 4,
+   "convexHull": 1
+  }
+ },
+ {
+  "path": "/scratch/<user>/isaac/robodojo/Assets/Object/RoboDojo/Articulation/laptop/00000/object.usdz",
+  "metersPerUnit": 1.0,
+  "upAxis": "Z",
+  "defaultPrim": "/root",
+  "layers": [
+   "anon:0x19fa2c0:object-session.usda",
+   "object.usdz"
+  ],
+  "prims": [
+   {
+    "path": "/root/E_body_1",
+    "type": "Xform",
+    "apis": [
+     "PhysicsRigidBodyAPI",
+     "PhysicsArticulationRootAPI"
+    ],
+    "attrs": {
+     "physics:angularVelocity": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:kinematicEnabled": {
+      "v": false,
+      "layer": "object.usdz"
+     },
+     "physics:rigidBodyEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physics:startsAsleep": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physics:velocity": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physxArticulation:enabledSelfCollisions": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxRigidBody:disableGravity": {
+      "v": false,
+      "layer": "object.usdz"
+     },
+     "physxRigidBody:enableSpeculativeCCD": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "world_t": [
+     3.1e-05,
+     -0.077112,
+     0.003522
+    ]
+   },
+   {
+    "path": "/root/E_displayer_5",
+    "type": "Xform",
+    "apis": [
+     "PhysicsRigidBodyAPI"
+    ],
+    "attrs": {
+     "physics:angularVelocity": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:kinematicEnabled": {
+      "v": false,
+      "layer": "object.usdz"
+     },
+     "physics:rigidBodyEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physics:startsAsleep": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physics:velocity": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physxRigidBody:disableGravity": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "world_t": [
+     -0.069013,
+     0.046445,
+     0.003731
+    ]
+   },
+   {
+    "path": "/root/E_displayer_5/RevoluteJoint_computer_9_up",
+    "type": "PhysicsRevoluteJoint",
+    "apis": [
+     "PhysicsDriveAPI:angular"
+    ],
+    "attrs": {
+     "drive:angular:physics:damping": {
+      "v": 3.0,
+      "layer": "object.usdz"
+     },
+     "drive:angular:physics:maxForce": {
+      "v": 1.0,
+      "layer": "object.usdz"
+     },
+     "drive:angular:physics:stiffness": {
+      "v": 0.0,
+      "layer": "object.usdz"
+     },
+     "drive:angular:physics:targetPosition": {
+      "v": -110.0,
+      "layer": "object.usdz"
+     },
+     "drive:angular:physics:type": {
+      "v": "acceleration",
+      "layer": "object.usdz"
+     },
+     "physics:axis": {
+      "v": "X",
+      "layer": "object.usdz"
+     },
+     "physics:breakForce": {
+      "v": Infinity,
+      "layer": "object.usdz"
+     },
+     "physics:breakTorque": {
+      "v": Infinity,
+      "layer": "object.usdz"
+     },
+     "physics:localPos0": {
+      "v": [
+       -0.06904366612434387,
+       0.12355618178844452,
+       0.00020947596931364387
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:localPos1": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:localRot0": {
+      "v": "(0.70090926, 0.71325046, 0, 0)",
+      "layer": "object.usdz"
+     },
+     "physics:localRot1": {
+      "v": "(1, 0, 0, 0)",
+      "layer": "object.usdz"
+     },
+     "physics:lowerLimit": {
+      "v": -110.0,
+      "layer": "object.usdz"
+     },
+     "physics:upperLimit": {
+      "v": 0.0,
+      "layer": "object.usdz"
+     }
+    },
+    "body0": [
+     "/root/E_body_1"
+    ],
+    "body1": [
+     "/root/E_displayer_5"
+    ]
+   },
+   {
+    "path": "/root/PhysicsMaterial",
+    "type": "Material",
+    "apis": [
+     "PhysicsMaterialAPI"
+    ],
+    "attrs": {
+     "physics:density": {
+      "v": 1615.412353515625,
+      "layer": "object.usdz"
+     },
+     "physics:dynamicFriction": {
+      "v": 0.3499999940395355,
+      "layer": "object.usdz"
+     },
+     "physics:restitution": {
+      "v": 0.3499999940395355,
+      "layer": "object.usdz"
+     },
+     "physics:staticFriction": {
+      "v": 0.20000000298023224,
+      "layer": "object.usdz"
+     }
+    }
+   },
+   {
+    "path": "/root/PhysicsMaterial_01",
+    "type": "Material",
+    "apis": [
+     "PhysicsMaterialAPI"
+    ],
+    "attrs": {
+     "physics:density": {
+      "v": 1615.412353515625,
+      "layer": "object.usdz"
+     },
+     "physics:dynamicFriction": {
+      "v": 0.10000000149011612,
+      "layer": "object.usdz"
+     },
+     "physics:restitution": {
+      "v": 0.4000000059604645,
+      "layer": "object.usdz"
+     },
+     "physics:staticFriction": {
+      "v": 0.20000000298023224,
+      "layer": "object.usdz"
+     }
+    }
+   },
+   {
+    "path": "/root/PhysicsMaterial_02",
+    "type": "Material",
+    "apis": [
+     "PhysicsMaterialAPI"
+    ],
+    "attrs": {
+     "physics:density": {
+      "v": 1615.412353515625,
+      "layer": "object.usdz"
+     },
+     "physics:dynamicFriction": {
+      "v": 0.4000000059604645,
+      "layer": "object.usdz"
+     },
+     "physics:restitution": {
+      "v": 0.4000000059604645,
+      "layer": "object.usdz"
+     },
+     "physics:staticFriction": {
+      "v": 0.6000000238418579,
+      "layer": "object.usdz"
+     }
+    }
+   }
+  ],
+  "n_colliders": 13,
+  "collider_approximations": {
+   "convexHull": 8,
+   "sdf": 1,
+   "boundingCube": 3,
+   "convexDecomposition": 1
+  }
+ },
+ {
+  "path": "/scratch/<user>/isaac/robodojo/Assets/Object/RoboDojo/Articulation/laptop/00001/object.usdz",
+  "metersPerUnit": 1.0,
+  "upAxis": "Z",
+  "defaultPrim": "/root",
+  "layers": [
+   "anon:0x1da4700:object-session.usda",
+   "object.usdz"
+  ],
+  "prims": [
+   {
+    "path": "/root/E_body_1",
+    "type": "Xform",
+    "apis": [
+     "PhysicsRigidBodyAPI",
+     "PhysicsArticulationRootAPI"
+    ],
+    "attrs": {
+     "physics:angularVelocity": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:kinematicEnabled": {
+      "v": false,
+      "layer": "object.usdz"
+     },
+     "physics:rigidBodyEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physics:startsAsleep": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physics:velocity": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physxArticulation:enabledSelfCollisions": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxRigidBody:disableGravity": {
+      "v": false,
+      "layer": "object.usdz"
+     },
+     "physxRigidBody:enableSpeculativeCCD": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "world_t": [
+     3.1e-05,
+     -0.077112,
+     0.003522
+    ]
+   },
+   {
+    "path": "/root/E_body_1/E_Group_2/P_1e5d57b88817687f",
+    "type": "Mesh",
+    "apis": [
+     "PhysicsMeshCollisionAPI",
+     "PhysicsCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexHull",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "physics",
+     "material": "/root/PhysicsMaterial_02"
+    },
+    "world_t": [
+     3.1e-05,
+     -0.077112,
+     0.003522
+    ]
+   },
+   {
+    "path": "/root/E_body_1/E_Group_2/P_14642a3a360c107f",
+    "type": "Mesh",
+    "apis": [
+     "PhysicsMeshCollisionAPI",
+     "PhysicsCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexHull",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "physics",
+     "material": "/root/PhysicsMaterial_02"
+    },
+    "world_t": [
+     3.1e-05,
+     -0.077112,
+     0.003522
+    ]
+   },
+   {
+    "path": "/root/E_body_1/E_Group_2/touch_pad/touch_pad",
+    "type": "Mesh",
+    "apis": [
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "sdf",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "physics",
+     "material": "/root/PhysicsMaterial_02"
+    },
+    "world_t": [
+     3.1e-05,
+     -0.077112,
+     0.003522
+    ]
+   },
+   {
+    "path": "/root/E_displayer_5",
+    "type": "Xform",
+    "apis": [
+     "PhysicsRigidBodyAPI"
+    ],
+    "attrs": {
+     "physics:angularVelocity": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:kinematicEnabled": {
+      "v": false,
+      "layer": "object.usdz"
+     },
+     "physics:rigidBodyEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physics:startsAsleep": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physics:velocity": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physxRigidBody:disableGravity": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "world_t": [
+     -0.069013,
+     0.046445,
+     0.003731
+    ]
+   },
+   {
+    "path": "/root/E_displayer_5/RevoluteJoint_computer_9_up",
+    "type": "PhysicsRevoluteJoint",
+    "apis": [
+     "PhysicsDriveAPI:angular"
+    ],
+    "attrs": {
+     "drive:angular:physics:damping": {
+      "v": 3.0,
+      "layer": "object.usdz"
+     },
+     "drive:angular:physics:maxForce": {
+      "v": 1.0,
+      "layer": "object.usdz"
+     },
+     "drive:angular:physics:stiffness": {
+      "v": 0.0,
+      "layer": "object.usdz"
+     },
+     "drive:angular:physics:targetPosition": {
+      "v": -110.0,
+      "layer": "object.usdz"
+     },
+     "drive:angular:physics:type": {
+      "v": "acceleration",
+      "layer": "object.usdz"
+     },
+     "physics:axis": {
+      "v": "X",
+      "layer": "object.usdz"
+     },
+     "physics:breakForce": {
+      "v": Infinity,
+      "layer": "object.usdz"
+     },
+     "physics:breakTorque": {
+      "v": Infinity,
+      "layer": "object.usdz"
+     },
+     "physics:localPos0": {
+      "v": [
+       -0.06904366612434387,
+       0.12355618178844452,
+       0.00020947596931364387
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:localPos1": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:localRot0": {
+      "v": "(0.70090926, 0.71325046, 0, 0)",
+      "layer": "object.usdz"
+     },
+     "physics:localRot1": {
+      "v": "(1, 0, 0, 0)",
+      "layer": "object.usdz"
+     },
+     "physics:lowerLimit": {
+      "v": -110.0,
+      "layer": "object.usdz"
+     },
+     "physics:upperLimit": {
+      "v": 0.0,
+      "layer": "object.usdz"
+     }
+    },
+    "body0": [
+     "/root/E_body_1"
+    ],
+    "body1": [
+     "/root/E_displayer_5"
+    ]
+   },
+   {
+    "path": "/root/E_displayer_5/lid/P_74e9628836e5b87f",
+    "type": "Mesh",
+    "apis": [
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "boundingCube",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "physics",
+     "material": "/root/PhysicsMaterial_02"
+    },
+    "world_t": [
+     -0.069013,
+     0.046445,
+     0.003731
+    ]
+   },
+   {
+    "path": "/root/E_displayer_5/lid/P_1b5d16155170687f",
+    "type": "Mesh",
+    "apis": [
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "boundingCube",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "physics",
+     "material": "/root/PhysicsMaterial_02"
+    },
+    "world_t": [
+     -0.069013,
+     0.046445,
+     0.003731
+    ]
+   },
+   {
+    "path": "/root/PhysicsMaterial",
+    "type": "Material",
+    "apis": [
+     "PhysicsMaterialAPI"
+    ],
+    "attrs": {
+     "physics:density": {
+      "v": 1615.412353515625,
+      "layer": "object.usdz"
+     },
+     "physics:dynamicFriction": {
+      "v": 0.3499999940395355,
+      "layer": "object.usdz"
+     },
+     "physics:restitution": {
+      "v": 0.3499999940395355,
+      "layer": "object.usdz"
+     },
+     "physics:staticFriction": {
+      "v": 0.20000000298023224,
+      "layer": "object.usdz"
+     }
+    }
+   },
+   {
+    "path": "/root/PhysicsMaterial_01",
+    "type": "Material",
+    "apis": [
+     "PhysicsMaterialAPI"
+    ],
+    "attrs": {
+     "physics:density": {
+      "v": 1615.412353515625,
+      "layer": "object.usdz"
+     },
+     "physics:dynamicFriction": {
+      "v": 0.10000000149011612,
+      "layer": "object.usdz"
+     },
+     "physics:restitution": {
+      "v": 0.4000000059604645,
+      "layer": "object.usdz"
+     },
+     "physics:staticFriction": {
+      "v": 0.20000000298023224,
+      "layer": "object.usdz"
+     }
+    }
+   },
+   {
+    "path": "/root/PhysicsMaterial_02",
+    "type": "Material",
+    "apis": [
+     "PhysicsMaterialAPI"
+    ],
+    "attrs": {
+     "physics:density": {
+      "v": 1615.412353515625,
+      "layer": "object.usdz"
+     },
+     "physics:dynamicFriction": {
+      "v": 0.4000000059604645,
+      "layer": "object.usdz"
+     },
+     "physics:restitution": {
+      "v": 0.4000000059604645,
+      "layer": "object.usdz"
+     },
+     "physics:staticFriction": {
+      "v": 0.6000000238418579,
+      "layer": "object.usdz"
+     }
+    }
+   }
+  ],
+  "n_colliders": 13,
+  "collider_approximations": {
+   "convexHull": 8,
+   "sdf": 1,
+   "boundingCube": 3,
+   "convexDecomposition": 1
+  }
+ },
+ {
+  "path": "/scratch/<user>/isaac/robodojo/Assets/Object/RoboDojo/Articulation/egg_holder/00000/object.usdz",
+  "metersPerUnit": 1.0,
+  "upAxis": "Z",
+  "defaultPrim": "/root",
+  "layers": [
+   "anon:0x19e2580:object-session.usda",
+   "object.usdz",
+   "material.usd",
+   "link_0_0.usd",
+   "material.usd"
+  ],
+  "prims": [
+   {
+    "path": "/root",
+    "type": "Xform",
+    "apis": [
+     "PhysicsArticulationRootAPI"
+    ],
+    "attrs": {},
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/root/E_lid_25",
+    "type": "Xform",
+    "apis": [
+     "PhysicsRigidBodyAPI"
+    ],
+    "attrs": {
+     "physics:angularVelocity": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:kinematicEnabled": {
+      "v": false,
+      "layer": "object.usdz"
+     },
+     "physics:rigidBodyEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physics:velocity": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physxRigidBody:disableGravity": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "world_t": [
+     -4e-06,
+     0.060014,
+     0.046337
+    ]
+   },
+   {
+    "path": "/root/E_lid_25/P_381f7661a30adc5",
+    "type": "Mesh",
+    "apis": [
+     "PhysicsMeshCollisionAPI",
+     "PhysicsCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "link_0_0.usd"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "physics",
+     "material": "/root/PhysicsMaterial"
+    },
+    "world_t": [
+     -4e-06,
+     0.060014,
+     0.046337
+    ]
+   },
+   {
+    "path": "/root/E_lid_25/RevoluteJoint_4compartmenteggcartons_up",
+    "type": "PhysicsRevoluteJoint",
+    "apis": [],
+    "attrs": {
+     "drive:angular:physics:damping": {
+      "v": 0.0,
+      "layer": "object.usdz"
+     },
+     "drive:angular:physics:stiffness": {
+      "v": 0.0,
+      "layer": "object.usdz"
+     },
+     "drive:angular:physics:targetPosition": {
+      "v": -90.0,
+      "layer": "object.usdz"
+     },
+     "drive:angular:physics:type": {
+      "v": "force",
+      "layer": "object.usdz"
+     },
+     "physics:axis": {
+      "v": "X",
+      "layer": "object.usdz"
+     },
+     "physics:breakForce": {
+      "v": Infinity,
+      "layer": "object.usdz"
+     },
+     "physics:breakTorque": {
+      "v": Infinity,
+      "layer": "object.usdz"
+     },
+     "physics:localPos0": {
+      "v": [
+       0.0,
+       0.06011652201414108,
+       0.046341001987457275
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:localPos1": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:localRot0": {
+      "v": "(1, 5e-8, 0, 0)",
+      "layer": "object.usdz"
+     },
+     "physics:localRot1": {
+      "v": "(1, 0, 0, 0)",
+      "layer": "object.usdz"
+     },
+     "physics:lowerLimit": {
+      "v": -90.0,
+      "layer": "object.usdz"
+     },
+     "physics:upperLimit": {
+      "v": 0.0,
+      "layer": "object.usdz"
+     }
+    },
+    "body0": [
+     "/root/E_body_5"
+    ],
+    "body1": [
+     "/root/E_lid_25"
+    ]
+   },
+   {
+    "path": "/root/E_body_5",
+    "type": "Xform",
+    "apis": [
+     "PhysicsRigidBodyAPI"
+    ],
+    "attrs": {
+     "physics:angularVelocity": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:kinematicEnabled": {
+      "v": false,
+      "layer": "object.usdz"
+     },
+     "physics:rigidBodyEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physics:velocity": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     }
+    },
+    "world_t": [
+     -4e-06,
+     -0.000102,
+     -4e-06
+    ]
+   },
+   {
+    "path": "/root/E_body_5/P_966ad814d7ae68ac",
+    "type": "Mesh",
+    "apis": [
+     "PhysicsMeshCollisionAPI",
+     "PhysicsCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "link_0_0.usd"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "physics",
+     "material": "/root/PhysicsMaterial"
+    },
+    "world_t": [
+     -4e-06,
+     -0.000102,
+     -4e-06
+    ]
+   },
+   {
+    "path": "/root/E_body_5/E_part_01_39/P_6ae187f8ffadf82",
+    "type": "Mesh",
+    "apis": [
+     "PhysicsMeshCollisionAPI",
+     "PhysicsCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexDecomposition",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "link_0_0.usd"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "physics",
+     "material": "/root/PhysicsMaterial"
+    },
+    "world_t": [
+     4e-06,
+     -0.000135,
+     0.039805
+    ]
+   },
+   {
+    "path": "/root/E_body_5/FixedJoint",
+    "type": "PhysicsFixedJoint",
+    "apis": [],
+    "attrs": {
+     "physics:breakForce": {
+      "v": 3.4028234663852886e+38,
+      "layer": "object.usdz"
+     },
+     "physics:breakTorque": {
+      "v": 3.4028234663852886e+38,
+      "layer": "object.usdz"
+     },
+     "physics:localPos0": {
+      "v": [
+       -3.7774775591969956e-06,
+       -0.00010240911069558933,
+       -3.775209279410774e-06
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:localPos1": {
+      "v": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physics:localRot0": {
+      "v": "(1, 0, 0, 0)",
+      "layer": "object.usdz"
+     },
+     "physics:localRot1": {
+      "v": "(1, 0, 0, 0)",
+      "layer": "object.usdz"
+     }
+    },
+    "body0": [],
+    "body1": [
+     "/root/E_body_5"
+    ]
+   },
+   {
+    "path": "/root/PhysicsMaterial",
+    "type": "Material",
+    "apis": [
+     "PhysicsMaterialAPI"
+    ],
+    "attrs": {
+     "physics:density": {
+      "v": 1050.0,
+      "layer": "object.usdz"
+     },
+     "physics:dynamicFriction": {
+      "v": 0.25,
+      "layer": "object.usdz"
+     },
+     "physics:restitution": {
+      "v": 0.30000001192092896,
+      "layer": "object.usdz"
+     },
+     "physics:staticFriction": {
+      "v": 0.30000001192092896,
+      "layer": "object.usdz"
+     }
+    }
+   }
+  ],
+  "n_colliders": 3,
+  "collider_approximations": {
+   "convexDecomposition": 3
+  }
+ }
+]

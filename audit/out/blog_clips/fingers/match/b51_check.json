@@ -1,0 +1,1052 @@
+{
+ "versions": {
+  "shipped": {
+   "repo_head": "0cd864e82c8c4baecf3c58b2b922e0d96474399c",
+   "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+   "isaac_sim": [
+    "5.1.0",
+    "rc.19",
+    "5"
+   ],
+   "column": "shipped_lead10p8",
+   "after_lift_15cm_hold_1s": {
+    "bottle_z_mm": 866.58,
+    "lift_dz_mm": 70.29,
+    "rotation_in_hand_deg": 77.8,
+    "axial_pivot_deg": 77.8,
+    "grasp_point_slip_mm": 7.77,
+    "slip_in_hand_com_mm": 87.21,
+    "slip_engine_com_mm": 72.13,
+    "dropped": false,
+    "held": false,
+    "held_strict_com10mm": false,
+    "held_d3_engine_com10mm": false
+   },
+   "after_carry_shake": {
+    "bottle_z_mm": 866.35,
+    "lift_dz_mm": 70.05,
+    "rotation_in_hand_deg": 100.54,
+    "axial_pivot_deg": 79.46,
+    "grasp_point_slip_mm": 6.12,
+    "slip_in_hand_com_mm": 93.7,
+    "slip_engine_com_mm": 75.71,
+    "dropped": false,
+    "held": false,
+    "held_strict_com10mm": false,
+    "held_d3_engine_com10mm": false
+   },
+   "drive_readback": {
+    "K_eng": [
+     2300.0,
+     2300.0
+    ],
+    "c_eng": [
+     100.0,
+     100.0
+    ],
+    "Fmax_eng": [
+     100.0,
+     100.0
+    ],
+    "vmax_eng": [
+     1000.0,
+     1000.0
+    ],
+    "armature_eng": [
+     0.0,
+     0.0
+    ],
+    "use_mimic": false,
+    "use_slew": true
+   },
+   "in_hand_force_N": {
+    "q7_mean_mm": 30.049,
+    "q8_mean_mm": 30.24,
+    "on_table_pad_lateral_shift_mm": 0.096,
+    "link7_plateau_N": 24.649,
+    "link8_plateau_N": 24.48,
+    "link7_mean10_N": 14.97,
+    "link8_mean10_N": 14.929,
+    "link7_substep0_N": 4.189,
+    "link8_substep0_N": 4.185,
+    "finger_avg_plateau_N": 24.565,
+    "finger_avg_mean10_N": 14.95,
+    "finger_avg_substep0_N": 4.187,
+    "max_penetration_mm": 0.0641
+   },
+   "real_variant": null,
+   "fields_compared": [
+    "F_star_N",
+    "actions_used",
+    "after_carry_shake",
+    "after_lift_15cm_hold_1s",
+    "bottle_mass_kg",
+    "column",
+    "contacts_in_hand",
+    "drive_readback",
+    "gripper_spec",
+    "ideal_armature_kg",
+    "ik_err_mm_deg",
+    "in_hand_force_N",
+    "mode",
+    "pad_torsional_patch_radius_usd",
+    "pad_usd_resolved",
+    "pose_trace",
+    "real_variant",
+    "robot_shape_materials_unique",
+    "target_bottle",
+    "u_hold"
+   ],
+   "fields_only_new": [],
+   "fields_only_ref": [],
+   "n_differences": 8,
+   "differences_first_40": [
+    [
+     ".contacts_in_hand[0].collider0",
+     "'/World/envs/env_0/rigid/bottle/bottle_25_3/collision/model' vs '/World/envs/env_0/rigid/bottle/bottle_25_12/collision/model'"
+    ],
+    [
+     ".contacts_in_hand[0].collider1",
+     "'/World/envs/env_0/Table/material_0122/material_0122_0_8' vs '/World/envs/env_0/Table/material_0122/material_0122_0_17'"
+    ],
+    [
+     ".contacts_in_hand[0].materials[0][0]",
+     "'/World/envs/env_0/rigid/bottle/bottle_25_3/physics_material' vs '/World/envs/env_0/rigid/bottle/bottle_25_12/physics_material'"
+    ],
+    [
+     ".contacts_in_hand[0].materials[0][1]",
+     "'/World/envs/env_0/Table/material_0122/material_0122_0_8/witness_table_material' vs '/World/envs/env_0/Table/material_0122/material_0122_0_17/witness_table_material'"
+    ],
+    [
+     ".contacts_in_hand[1].collider1",
+     "'/World/envs/env_0/rigid/bottle/bottle_25_3/collision/model' vs '/World/envs/env_0/rigid/bottle/bottle_25_12/collision/model'"
+    ],
+    [
+     ".contacts_in_hand[1].materials[0][1]",
+     "'/World/envs/env_0/rigid/bottle/bottle_25_3/physics_material' vs '/World/envs/env_0/rigid/bottle/bottle_25_12/physics_material'"
+    ],
+    [
+     ".contacts_in_hand[2].collider1",
+     "'/World/envs/env_0/rigid/bottle/bottle_25_3/collision/model' vs '/World/envs/env_0/rigid/bottle/bottle_25_12/collision/model'"
+    ],
+    [
+     ".contacts_in_hand[2].materials[0][1]",
+     "'/World/envs/env_0/rigid/bottle/bottle_25_3/physics_material' vs '/World/envs/env_0/rigid/bottle/bottle_25_12/physics_material'"
+    ]
+   ],
+   "pose_trace_rows": 450,
+   "episode_steps": 2010,
+   "actions_used": 200,
+   "episode_differences": [],
+   "state_log": {
+    "frames": 1602,
+    "step_frames": 1400,
+    "physics_steps_in_episode": 2010,
+    "errors": [],
+    "dz_vs_pose_trace_max_abs_mm": 0.005,
+    "dz_rows_compared": 450
+   },
+   "neck_series_every_25": [
+    {
+     "step": 910,
+     "k": -1,
+     "z_mm": 796.3,
+     "neck_above_table_mm": 32.89,
+     "axis_tilt_from_horizontal_deg": 0.9
+    },
+    {
+     "step": 935,
+     "k": 24,
+     "z_mm": 799.83,
+     "neck_above_table_mm": 34.42,
+     "axis_tilt_from_horizontal_deg": -0.23
+    },
+    {
+     "step": 960,
+     "k": 49,
+     "z_mm": 802.98,
+     "neck_above_table_mm": 19.09,
+     "axis_tilt_from_horizontal_deg": -10.69
+    },
+    {
+     "step": 985,
+     "k": 74,
+     "z_mm": 815.71,
+     "neck_above_table_mm": 18.02,
+     "axis_tilt_from_horizontal_deg": -18.71
+    },
+    {
+     "step": 1010,
+     "k": 99,
+     "z_mm": 830.99,
+     "neck_above_table_mm": 16.07,
+     "axis_tilt_from_horizontal_deg": -29.34
+    },
+    {
+     "step": 1035,
+     "k": 124,
+     "z_mm": 845.22,
+     "neck_above_table_mm": 13.28,
+     "axis_tilt_from_horizontal_deg": -41.07
+    },
+    {
+     "step": 1060,
+     "k": 149,
+     "z_mm": 857.45,
+     "neck_above_table_mm": 9.39,
+     "axis_tilt_from_horizontal_deg": -54.59
+    },
+    {
+     "step": 1085,
+     "k": 174,
+     "z_mm": 864.36,
+     "neck_above_table_mm": 5.18,
+     "axis_tilt_from_horizontal_deg": -67.56
+    },
+    {
+     "step": 1110,
+     "k": 199,
+     "z_mm": 866.4,
+     "neck_above_table_mm": 2.28,
+     "axis_tilt_from_horizontal_deg": -76.59
+    },
+    {
+     "step": 1135,
+     "k": 224,
+     "z_mm": 866.58,
+     "neck_above_table_mm": 2.33,
+     "axis_tilt_from_horizontal_deg": -76.9
+    },
+    {
+     "step": 1160,
+     "k": 249,
+     "z_mm": 866.59,
+     "neck_above_table_mm": 2.34,
+     "axis_tilt_from_horizontal_deg": -76.9
+    },
+    {
+     "step": 1185,
+     "k": 274,
+     "z_mm": 866.58,
+     "neck_above_table_mm": 2.33,
+     "axis_tilt_from_horizontal_deg": -76.9
+    },
+    {
+     "step": 1210,
+     "k": 299,
+     "z_mm": 866.59,
+     "neck_above_table_mm": 2.34,
+     "axis_tilt_from_horizontal_deg": -76.9
+    },
+    {
+     "step": 1235,
+     "k": 324,
+     "z_mm": 866.58,
+     "neck_above_table_mm": 2.33,
+     "axis_tilt_from_horizontal_deg": -76.9
+    },
+    {
+     "step": 1260,
+     "k": 349,
+     "z_mm": 866.59,
+     "neck_above_table_mm": 2.34,
+     "axis_tilt_from_horizontal_deg": -76.9
+    },
+    {
+     "step": 1285,
+     "k": 374,
+     "z_mm": 866.58,
+     "neck_above_table_mm": 2.33,
+     "axis_tilt_from_horizontal_deg": -76.9
+    },
+    {
+     "step": 1310,
+     "k": 399,
+     "z_mm": 866.59,
+     "neck_above_table_mm": 2.34,
+     "axis_tilt_from_horizontal_deg": -76.9
+    },
+    {
+     "step": 1335,
+     "k": 424,
+     "z_mm": 866.58,
+     "neck_above_table_mm": 2.33,
+     "axis_tilt_from_horizontal_deg": -76.9
+    },
+    {
+     "step": 1360,
+     "k": 449,
+     "z_mm": 866.59,
+     "neck_above_table_mm": 2.34,
+     "axis_tilt_from_horizontal_deg": -76.9
+    }
+   ],
+   "neck_first_within_2mm": null,
+   "neck_min_above_table_mm": 2.18
+  },
+  "light": {
+   "repo_head": "0cd864e82c8c4baecf3c58b2b922e0d96474399c",
+   "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+   "isaac_sim": [
+    "5.1.0",
+    "rc.19",
+    "5"
+   ],
+   "column": "real_path",
+   "after_lift_15cm_hold_1s": {
+    "bottle_z_mm": 885.75,
+    "lift_dz_mm": 85.73,
+    "rotation_in_hand_deg": 56.96,
+    "axial_pivot_deg": 56.84,
+    "grasp_point_slip_mm": 2.78,
+    "slip_in_hand_com_mm": 64.37,
+    "slip_engine_com_mm": 53.46,
+    "dropped": false,
+    "held": false,
+    "held_strict_com10mm": false,
+    "held_d3_engine_com10mm": false
+   },
+   "after_carry_shake": {
+    "bottle_z_mm": 796.3,
+    "lift_dz_mm": -3.72,
+    "rotation_in_hand_deg": 156.57,
+    "axial_pivot_deg": 23.6,
+    "grasp_point_slip_mm": 276.82,
+    "slip_in_hand_com_mm": 194.77,
+    "slip_engine_com_mm": 207.08,
+    "dropped": true,
+    "held": false,
+    "held_strict_com10mm": false,
+    "held_d3_engine_com10mm": false
+   },
+   "drive_readback": {
+    "K_eng": [
+     52274.6,
+     0.0
+    ],
+    "c_eng": [
+     2090.98,
+     0.0
+    ],
+    "Fmax_eng": [
+     160.0,
+     100.0
+    ],
+    "vmax_eng": [
+     1000.0,
+     1000.0
+    ],
+    "armature_eng": [
+     0.0,
+     0.0
+    ],
+    "use_mimic": false,
+    "use_slew": true
+   },
+   "in_hand_force_N": {
+    "q7_mean_mm": 29.837,
+    "q8_mean_mm": 30.07,
+    "on_table_pad_lateral_shift_mm": 0.117,
+    "link7_plateau_N": 73.941,
+    "link8_plateau_N": 74.464,
+    "link7_mean10_N": 73.087,
+    "link8_mean10_N": 73.318,
+    "link7_substep0_N": 76.079,
+    "link8_substep0_N": 60.491,
+    "finger_avg_plateau_N": 74.202,
+    "finger_avg_mean10_N": 73.202,
+    "finger_avg_substep0_N": 68.285,
+    "max_penetration_mm": 0.2997
+   },
+   "real_variant": {
+    "joint7_effort_limit_n": 160
+   },
+   "fields_compared": [
+    "F_star_N",
+    "actions_used",
+    "after_carry_shake",
+    "after_lift_15cm_hold_1s",
+    "bottle_mass_kg",
+    "column",
+    "contacts_in_hand",
+    "drive_readback",
+    "gripper_spec",
+    "ideal_armature_kg",
+    "ik_err_mm_deg",
+    "in_hand_force_N",
+    "mode",
+    "pad_torsional_patch_radius_usd",
+    "pad_usd_resolved",
+    "pose_trace",
+    "real_variant",
+    "robot_shape_materials_unique",
+    "target_bottle",
+    "u_hold"
+   ],
+   "fields_only_new": [],
+   "fields_only_ref": [],
+   "n_differences": 3,
+   "differences_first_40": [
+    [
+     ".gripper_spec.command_law",
+     "\"Per control step (arx5-sdk c160db7 controller_base.cpp L528-578): slew from the previous target, clip to [0, open], keep the previous target while joint7's drive force exceeds the freeze threshold (2 x the per-finger effort) in the direction of motion. The engine limits the drive at the force arx5-sdk's over-current trip maps to (L380-392; drive_limit_case trip) or at the motor's peak (motor_peak), #160; the trip's emergency path is not modelled.\" vs \"Per control step (arx5-sdk c160db7 controller_base.cpp L528-578): slew from the previous target, clip to [0, open], keep the previous target while joint7's drive force exceeds its effort limit in the direction of motion.\""
+    ],
+    [
+     ".gripper_spec.engine.joint7.max_force",
+     163.54000000000002
+    ],
+    [
+     ".gripper_spec.observation_note",
+     "'The observed gripper state is the last target (RoboDojo records prev_control). Under this fix a held close reads where the target froze at the freeze threshold (about the free-closing lag inside the contact point, never below 0), and a full close in air reads 0; shipped read measured - 10.8 mm.' vs 'The observed gripper state is the last target (RoboDojo records prev_control). Under this fix a held close reads where the target froze at the effort limit (about the free-closing lag inside the contact point, never below 0), and a full close in air reads 0; shipped read measured - 10.8 mm.'"
+    ]
+   ],
+   "pose_trace_rows": 450,
+   "episode_steps": 2010,
+   "actions_used": 200,
+   "episode_differences": [],
+   "state_log": {
+    "frames": 1602,
+    "step_frames": 1400,
+    "physics_steps_in_episode": 2010,
+    "errors": [],
+    "dz_vs_pose_trace_max_abs_mm": 0.005,
+    "dz_rows_compared": 450
+   },
+   "neck_series_every_25": [
+    {
+     "step": 910,
+     "k": -1,
+     "z_mm": 800.02,
+     "neck_above_table_mm": 38.92,
+     "axis_tilt_from_horizontal_deg": 2.19
+    },
+    {
+     "step": 935,
+     "k": 24,
+     "z_mm": 804.16,
+     "neck_above_table_mm": 41.29,
+     "axis_tilt_from_horizontal_deg": 1.2
+    },
+    {
+     "step": 960,
+     "k": 49,
+     "z_mm": 818.23,
+     "neck_above_table_mm": 51.89,
+     "axis_tilt_from_horizontal_deg": -0.75
+    },
+    {
+     "step": 985,
+     "k": 74,
+     "z_mm": 838.01,
+     "neck_above_table_mm": 67.13,
+     "axis_tilt_from_horizontal_deg": -3.31
+    },
+    {
+     "step": 1010,
+     "k": 99,
+     "z_mm": 859.96,
+     "neck_above_table_mm": 79.27,
+     "axis_tilt_from_horizontal_deg": -8.86
+    },
+    {
+     "step": 1035,
+     "k": 124,
+     "z_mm": 881.84,
+     "neck_above_table_mm": 93.28,
+     "axis_tilt_from_horizontal_deg": -13.37
+    },
+    {
+     "step": 1060,
+     "k": 149,
+     "z_mm": 902.7,
+     "neck_above_table_mm": 107.4,
+     "axis_tilt_from_horizontal_deg": -17.3
+    },
+    {
+     "step": 1085,
+     "k": 174,
+     "z_mm": 916.82,
+     "neck_above_table_mm": 117.22,
+     "axis_tilt_from_horizontal_deg": -19.85
+    },
+    {
+     "step": 1110,
+     "k": 199,
+     "z_mm": 921.27,
+     "neck_above_table_mm": 117.36,
+     "axis_tilt_from_horizontal_deg": -22.45
+    },
+    {
+     "step": 1135,
+     "k": 224,
+     "z_mm": 917.13,
+     "neck_above_table_mm": 107.49,
+     "axis_tilt_from_horizontal_deg": -25.98
+    },
+    {
+     "step": 1160,
+     "k": 249,
+     "z_mm": 907.53,
+     "neck_above_table_mm": 85.47,
+     "axis_tilt_from_horizontal_deg": -34.06
+    },
+    {
+     "step": 1185,
+     "k": 274,
+     "z_mm": 902.12,
+     "neck_above_table_mm": 73.29,
+     "axis_tilt_from_horizontal_deg": -38.79
+    },
+    {
+     "step": 1210,
+     "k": 299,
+     "z_mm": 897.88,
+     "neck_above_table_mm": 63.62,
+     "axis_tilt_from_horizontal_deg": -42.82
+    },
+    {
+     "step": 1235,
+     "k": 324,
+     "z_mm": 895.11,
+     "neck_above_table_mm": 57.54,
+     "axis_tilt_from_horizontal_deg": -45.41
+    },
+    {
+     "step": 1260,
+     "k": 349,
+     "z_mm": 894.35,
+     "neck_above_table_mm": 55.87,
+     "axis_tilt_from_horizontal_deg": -46.14
+    },
+    {
+     "step": 1285,
+     "k": 374,
+     "z_mm": 892.06,
+     "neck_above_table_mm": 50.98,
+     "axis_tilt_from_horizontal_deg": -48.3
+    },
+    {
+     "step": 1310,
+     "k": 399,
+     "z_mm": 889.63,
+     "neck_above_table_mm": 45.84,
+     "axis_tilt_from_horizontal_deg": -50.65
+    },
+    {
+     "step": 1335,
+     "k": 424,
+     "z_mm": 887.59,
+     "neck_above_table_mm": 41.64,
+     "axis_tilt_from_horizontal_deg": -52.61
+    },
+    {
+     "step": 1360,
+     "k": 449,
+     "z_mm": 885.75,
+     "neck_above_table_mm": 37.75,
+     "axis_tilt_from_horizontal_deg": -54.54
+    }
+   ],
+   "neck_first_within_2mm": null,
+   "neck_min_above_table_mm": 37.75
+  },
+  "motor": {
+   "repo_head": "0cd864e82c8c4baecf3c58b2b922e0d96474399c",
+   "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+   "isaac_sim": [
+    "5.1.0",
+    "rc.19",
+    "5"
+   ],
+   "column": "real_path",
+   "after_lift_15cm_hold_1s": {
+    "bottle_z_mm": 947.24,
+    "lift_dz_mm": 150.44,
+    "rotation_in_hand_deg": 0.47,
+    "axial_pivot_deg": 0.46,
+    "grasp_point_slip_mm": 0.18,
+    "slip_in_hand_com_mm": 0.65,
+    "slip_engine_com_mm": 0.55,
+    "dropped": false,
+    "held": true,
+    "held_strict_com10mm": true,
+    "held_d3_engine_com10mm": true
+   },
+   "after_carry_shake": {
+    "bottle_z_mm": 946.74,
+    "lift_dz_mm": 149.94,
+    "rotation_in_hand_deg": 0.18,
+    "axial_pivot_deg": 0.14,
+    "grasp_point_slip_mm": 0.24,
+    "slip_in_hand_com_mm": 0.17,
+    "slip_engine_com_mm": 0.18,
+    "dropped": false,
+    "held": true,
+    "held_strict_com10mm": true,
+    "held_d3_engine_com10mm": true
+   },
+   "drive_readback": {
+    "K_eng": [
+     52274.6,
+     0.0
+    ],
+    "c_eng": [
+     2090.98,
+     0.0
+    ],
+    "Fmax_eng": [
+     160.0,
+     100.0
+    ],
+    "vmax_eng": [
+     1000.0,
+     1000.0
+    ],
+    "armature_eng": [
+     23.524,
+     0.0
+    ],
+    "use_mimic": false,
+    "use_slew": true
+   },
+   "in_hand_force_N": {
+    "q7_mean_mm": 30.056,
+    "q8_mean_mm": 30.056,
+    "on_table_pad_lateral_shift_mm": 0.0,
+    "link7_plateau_N": 79.874,
+    "link8_plateau_N": 79.959,
+    "link7_mean10_N": 79.878,
+    "link8_mean10_N": 79.952,
+    "link7_substep0_N": 79.852,
+    "link8_substep0_N": 79.963,
+    "finger_avg_plateau_N": 79.917,
+    "finger_avg_mean10_N": 79.915,
+    "finger_avg_substep0_N": 79.907,
+    "max_penetration_mm": 0.184
+   },
+   "real_variant": {
+    "joint7_effort_limit_n": 160
+   },
+   "fields_compared": [
+    "F_star_N",
+    "actions_used",
+    "after_carry_shake",
+    "after_lift_15cm_hold_1s",
+    "bottle_mass_kg",
+    "column",
+    "contacts_in_hand",
+    "drive_readback",
+    "gripper_spec",
+    "ideal_armature_kg",
+    "ik_err_mm_deg",
+    "in_hand_force_N",
+    "mode",
+    "pad_torsional_patch_radius_usd",
+    "pad_usd_resolved",
+    "pose_trace",
+    "real_variant",
+    "robot_shape_materials_unique",
+    "target_bottle",
+    "u_hold"
+   ],
+   "fields_only_new": [],
+   "fields_only_ref": [],
+   "n_differences": 3,
+   "differences_first_40": [
+    [
+     ".gripper_spec.command_law",
+     "\"Per control step (arx5-sdk c160db7 controller_base.cpp L528-578): slew from the previous target, clip to [0, open], keep the previous target while joint7's drive force exceeds the freeze threshold (2 x the per-finger effort) in the direction of motion. The engine limits the drive at the force arx5-sdk's over-current trip maps to (L380-392; drive_limit_case trip) or at the motor's peak (motor_peak), #160; the trip's emergency path is not modelled.\" vs \"Per control step (arx5-sdk c160db7 controller_base.cpp L528-578): slew from the previous target, clip to [0, open], keep the previous target while joint7's drive force exceeds its effort limit in the direction of motion.\""
+    ],
+    [
+     ".gripper_spec.engine.joint7.max_force",
+     163.54000000000002
+    ],
+    [
+     ".gripper_spec.observation_note",
+     "'The observed gripper state is the last target (RoboDojo records prev_control). Under this fix a held close reads where the target froze at the freeze threshold (about the free-closing lag inside the contact point, never below 0), and a full close in air reads 0; shipped read measured - 10.8 mm.' vs 'The observed gripper state is the last target (RoboDojo records prev_control). Under this fix a held close reads where the target froze at the effort limit (about the free-closing lag inside the contact point, never below 0), and a full close in air reads 0; shipped read measured - 10.8 mm.'"
+    ]
+   ],
+   "pose_trace_rows": 450,
+   "episode_steps": 2010,
+   "actions_used": 200,
+   "episode_differences": [],
+   "state_log": {
+    "frames": 1602,
+    "step_frames": 1400,
+    "physics_steps_in_episode": 2010,
+    "errors": [],
+    "dz_vs_pose_trace_max_abs_mm": 0.005,
+    "dz_rows_compared": 450
+   },
+   "neck_series_every_25": [
+    {
+     "step": 910,
+     "k": -1,
+     "z_mm": 796.8,
+     "neck_above_table_mm": 33.81,
+     "axis_tilt_from_horizontal_deg": 1.13
+    },
+    {
+     "step": 935,
+     "k": 24,
+     "z_mm": 801.89,
+     "neck_above_table_mm": 38.88,
+     "axis_tilt_from_horizontal_deg": 1.12
+    },
+    {
+     "step": 960,
+     "k": 49,
+     "z_mm": 817.96,
+     "neck_above_table_mm": 54.97,
+     "axis_tilt_from_horizontal_deg": 1.13
+    },
+    {
+     "step": 985,
+     "k": 74,
+     "z_mm": 840.41,
+     "neck_above_table_mm": 77.28,
+     "axis_tilt_from_horizontal_deg": 1.05
+    },
+    {
+     "step": 1010,
+     "k": 99,
+     "z_mm": 868.91,
+     "neck_above_table_mm": 106.08,
+     "axis_tilt_from_horizontal_deg": 1.22
+    },
+    {
+     "step": 1035,
+     "k": 124,
+     "z_mm": 896.41,
+     "neck_above_table_mm": 133.88,
+     "axis_tilt_from_horizontal_deg": 1.39
+    },
+    {
+     "step": 1060,
+     "k": 149,
+     "z_mm": 922.14,
+     "neck_above_table_mm": 159.97,
+     "axis_tilt_from_horizontal_deg": 1.59
+    },
+    {
+     "step": 1085,
+     "k": 174,
+     "z_mm": 939.44,
+     "neck_above_table_mm": 177.32,
+     "axis_tilt_from_horizontal_deg": 1.63
+    },
+    {
+     "step": 1110,
+     "k": 199,
+     "z_mm": 947.0,
+     "neck_above_table_mm": 184.85,
+     "axis_tilt_from_horizontal_deg": 1.6
+    },
+    {
+     "step": 1135,
+     "k": 224,
+     "z_mm": 947.19,
+     "neck_above_table_mm": 185.03,
+     "axis_tilt_from_horizontal_deg": 1.6
+    },
+    {
+     "step": 1160,
+     "k": 249,
+     "z_mm": 947.24,
+     "neck_above_table_mm": 185.08,
+     "axis_tilt_from_horizontal_deg": 1.6
+    },
+    {
+     "step": 1185,
+     "k": 274,
+     "z_mm": 947.19,
+     "neck_above_table_mm": 185.03,
+     "axis_tilt_from_horizontal_deg": 1.6
+    },
+    {
+     "step": 1210,
+     "k": 299,
+     "z_mm": 947.24,
+     "neck_above_table_mm": 185.08,
+     "axis_tilt_from_horizontal_deg": 1.6
+    },
+    {
+     "step": 1235,
+     "k": 324,
+     "z_mm": 947.19,
+     "neck_above_table_mm": 185.03,
+     "axis_tilt_from_horizontal_deg": 1.6
+    },
+    {
+     "step": 1260,
+     "k": 349,
+     "z_mm": 947.24,
+     "neck_above_table_mm": 185.08,
+     "axis_tilt_from_horizontal_deg": 1.6
+    },
+    {
+     "step": 1285,
+     "k": 374,
+     "z_mm": 947.19,
+     "neck_above_table_mm": 185.03,
+     "axis_tilt_from_horizontal_deg": 1.6
+    },
+    {
+     "step": 1310,
+     "k": 399,
+     "z_mm": 947.24,
+     "neck_above_table_mm": 185.08,
+     "axis_tilt_from_horizontal_deg": 1.6
+    },
+    {
+     "step": 1335,
+     "k": 424,
+     "z_mm": 947.19,
+     "neck_above_table_mm": 185.03,
+     "axis_tilt_from_horizontal_deg": 1.6
+    },
+    {
+     "step": 1360,
+     "k": 449,
+     "z_mm": 947.24,
+     "neck_above_table_mm": 185.08,
+     "axis_tilt_from_horizontal_deg": 1.6
+    }
+   ],
+   "neck_first_within_2mm": null,
+   "neck_min_above_table_mm": 33.81
+  }
+ },
+ "decision": {
+  "end_angle_deg": {
+   "shipped": 77.8,
+   "light": 56.96,
+   "motor": 0.47
+  },
+  "gap_shipped_minus_light": 20.84,
+  "gap_light_minus_motor": 56.49,
+  "dropped": {
+   "shipped": false,
+   "light": false,
+   "motor": false
+  },
+  "render": true
+ },
+ "replays": {
+  "rp_fingers_shipped": {
+   "frames": 111,
+   "max_pos_m": 0.0,
+   "max_quat_component": 2.000000000002e-06,
+   "max_joint": 0.0,
+   "replay_physics_steps": 0,
+   "warmup_physics_steps": 0,
+   "errors": [],
+   "isaac_sim": [
+    "6.2.0",
+    "rc.15",
+    "6"
+   ],
+   "carb": {
+    "/rtx/rendermode": "RealTimePathTracing",
+    "/rtx/post/aa/op": 1,
+    "/rtx/pathtracing/spp": 64,
+    "/rtx/pathtracing/totalSpp": 64,
+    "/rtx/pathtracing/optixDenoiser/enabled": true
+   }
+  },
+  "rp_fingers_light": {
+   "frames": 111,
+   "max_pos_m": 0.0,
+   "max_quat_component": 2.000000000002e-06,
+   "max_joint": 0.0,
+   "replay_physics_steps": 0,
+   "warmup_physics_steps": 0,
+   "errors": [],
+   "isaac_sim": [
+    "6.2.0",
+    "rc.15",
+    "6"
+   ],
+   "carb": {
+    "/rtx/rendermode": "RealTimePathTracing",
+    "/rtx/post/aa/op": 1,
+    "/rtx/pathtracing/spp": 64,
+    "/rtx/pathtracing/totalSpp": 64,
+    "/rtx/pathtracing/optixDenoiser/enabled": true
+   }
+  },
+  "rp_fingers_motor": {
+   "frames": 111,
+   "max_pos_m": 0.0,
+   "max_quat_component": 2.000000000002e-06,
+   "max_joint": 0.0,
+   "replay_physics_steps": 0,
+   "warmup_physics_steps": 0,
+   "errors": [],
+   "isaac_sim": [
+    "6.2.0",
+    "rc.15",
+    "6"
+   ],
+   "carb": {
+    "/rtx/rendermode": "RealTimePathTracing",
+    "/rtx/post/aa/op": 1,
+    "/rtx/pathtracing/spp": 64,
+    "/rtx/pathtracing/totalSpp": 64,
+    "/rtx/pathtracing/optixDenoiser/enabled": true
+   }
+  }
+ },
+ "context": {
+  "b51_ctx_light_main": {
+   "repo_head": "0cd864e82c8c4baecf3c58b2b922e0d96474399c",
+   "after_lift_15cm_hold_1s": {
+    "bottle_z_mm": 946.72,
+    "lift_dz_mm": 150.3,
+    "rotation_in_hand_deg": 0.53,
+    "axial_pivot_deg": 0.48,
+    "grasp_point_slip_mm": 0.2,
+    "slip_in_hand_com_mm": 0.65,
+    "slip_engine_com_mm": 0.55,
+    "dropped": false,
+    "held": true,
+    "held_strict_com10mm": true,
+    "held_d3_engine_com10mm": true
+   },
+   "after_carry_shake": {
+    "bottle_z_mm": 946.78,
+    "lift_dz_mm": 150.36,
+    "rotation_in_hand_deg": 0.52,
+    "axial_pivot_deg": 0.46,
+    "grasp_point_slip_mm": 0.21,
+    "slip_in_hand_com_mm": 0.64,
+    "slip_engine_com_mm": 0.54,
+    "dropped": false,
+    "held": true,
+    "held_strict_com10mm": true,
+    "held_d3_engine_com10mm": true
+   },
+   "in_hand_force_N": {
+    "q7_mean_mm": 29.556,
+    "q8_mean_mm": 30.185,
+    "on_table_pad_lateral_shift_mm": 0.315,
+    "link7_plateau_N": 139.559,
+    "link8_plateau_N": 140.045,
+    "link7_mean10_N": 139.379,
+    "link8_mean10_N": 140.234,
+    "link7_substep0_N": 133.816,
+    "link8_substep0_N": 144.425,
+    "finger_avg_plateau_N": 139.802,
+    "finger_avg_mean10_N": 139.807,
+    "finger_avg_substep0_N": 139.121,
+    "max_penetration_mm": 0.3609
+   },
+   "drive_readback": {
+    "K_eng": [
+     52274.6,
+     0.0
+    ],
+    "c_eng": [
+     2090.98,
+     0.0
+    ],
+    "Fmax_eng": [
+     323.54,
+     100.0
+    ],
+    "vmax_eng": [
+     1000.0,
+     1000.0
+    ],
+    "armature_eng": [
+     0.0,
+     0.0
+    ],
+    "use_mimic": false,
+    "use_slew": true
+   },
+   "real_variant": {},
+   "rot_deg_at_lift_end": 0.52,
+   "hold_force_range_N": [
+    138.855,
+    140.459
+   ]
+  },
+  "b51_ctx_light_solver": {
+   "repo_head": "0cd864e82c8c4baecf3c58b2b922e0d96474399c",
+   "after_lift_15cm_hold_1s": {
+    "bottle_z_mm": 946.1,
+    "lift_dz_mm": 149.8,
+    "rotation_in_hand_deg": 0.03,
+    "axial_pivot_deg": 0.03,
+    "grasp_point_slip_mm": 0.01,
+    "slip_in_hand_com_mm": 0.03,
+    "slip_engine_com_mm": 0.03,
+    "dropped": false,
+    "held": true,
+    "held_strict_com10mm": true,
+    "held_d3_engine_com10mm": true
+   },
+   "after_carry_shake": {
+    "bottle_z_mm": 946.17,
+    "lift_dz_mm": 149.87,
+    "rotation_in_hand_deg": 0.03,
+    "axial_pivot_deg": 0.03,
+    "grasp_point_slip_mm": 0.01,
+    "slip_in_hand_com_mm": 0.03,
+    "slip_engine_com_mm": 0.03,
+    "dropped": false,
+    "held": true,
+    "held_strict_com10mm": true,
+    "held_d3_engine_com10mm": true
+   },
+   "in_hand_force_N": {
+    "q7_mean_mm": 30.177,
+    "q8_mean_mm": 30.176,
+    "on_table_pad_lateral_shift_mm": 0.0,
+    "link7_plateau_N": 80.563,
+    "link8_plateau_N": 79.263,
+    "link7_mean10_N": 79.923,
+    "link8_mean10_N": 79.871,
+    "link7_substep0_N": 78.648,
+    "link8_substep0_N": 81.021,
+    "finger_avg_plateau_N": 79.913,
+    "finger_avg_mean10_N": 79.897,
+    "finger_avg_substep0_N": 79.835,
+    "max_penetration_mm": 0.0024
+   },
+   "drive_readback": {
+    "K_eng": [
+     52274.6,
+     0.0
+    ],
+    "c_eng": [
+     2090.98,
+     0.0
+    ],
+    "Fmax_eng": [
+     160.0,
+     100.0
+    ],
+    "vmax_eng": [
+     1000.0,
+     1000.0
+    ],
+    "armature_eng": [
+     0.0,
+     0.0
+    ],
+    "use_mimic": false,
+    "use_slew": true
+   },
+   "real_variant": {
+    "joint7_effort_limit_n": 160
+   },
+   "rot_deg_at_lift_end": 0.03,
+   "hold_force_range_N": [
+    79.623,
+    80.299
+   ]
+  }
+ }
+}

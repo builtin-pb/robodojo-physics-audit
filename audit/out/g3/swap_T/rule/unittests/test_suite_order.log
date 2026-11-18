@@ -1,0 +1,8 @@
+test_preserve_repo_modules_restores_eval_client_pkg_attr (audit.tools.test_suite_order.SuiteOrderIsolationTests.test_preserve_repo_modules_restores_eval_client_pkg_attr) ... ok
+test_preserve_repo_modules_restores_seed_manager_and_pkg_attr (audit.tools.test_suite_order.SuiteOrderIsolationTests.test_preserve_repo_modules_restores_seed_manager_and_pkg_attr) ... ok
+test_suites_pass_in_both_orders (audit.tools.test_suite_order.SuiteOrderIsolationTests.test_suites_pass_in_both_orders) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 59.401s
+
+OK

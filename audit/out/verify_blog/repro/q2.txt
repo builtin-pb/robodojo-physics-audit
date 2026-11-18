@@ -1,0 +1,2 @@
+# Blog verification pass, batch 2 (della-vis2 GPU 0, checkout of main 50c5fd1)
+vb_g2_hold|harness|--task put_bottles_into_dustbin --layouts 0 --policy ideal_witness --witness_scenarios pad_hard_nom --witness_masses 0.22 --witness_columns shipped_u0,shipped_lead10p8,ideal_20N --witness_skip_bench

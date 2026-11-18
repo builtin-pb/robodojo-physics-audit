@@ -1,0 +1,92 @@
+{
+ "rp_fasten_frozen": {
+  "frames_replayed": 126,
+  "source_frames": 253,
+  "replay_physics_steps": 0,
+  "physics_steps_in_episode": 0,
+  "warmup_physics_steps": 0,
+  "readback_max_pos_m": 0.0,
+  "readback_max_quat_or_joint": 0.0,
+  "errors": [],
+  "render_s_total": 13.3,
+  "render_s_max": 0.833,
+  "carb_readback": {
+   "/rtx/rendermode": "PathTracing",
+   "/rtx/pathtracing/spp": 8,
+   "/rtx/pathtracing/totalSpp": 8,
+   "/rtx/pathtracing/optixDenoiser/enabled": true
+  },
+  "isaac_sim": [
+   "6.2.0",
+   "rc.15",
+   "6"
+  ],
+  "gpus": {
+   "active_gpu": 0,
+   "physics_gpu": 0,
+   "CUDA_VISIBLE_DEVICES": "0",
+   "/physics/cudaDevice": 0,
+   "/renderer/activeGpu": 0
+  }
+ },
+ "rp_fasten_free": {
+  "frames_replayed": 126,
+  "source_frames": 253,
+  "replay_physics_steps": 0,
+  "physics_steps_in_episode": 0,
+  "warmup_physics_steps": 0,
+  "readback_max_pos_m": 0.0,
+  "readback_max_quat_or_joint": 1e-06,
+  "errors": [],
+  "render_s_total": 20.1,
+  "render_s_max": 0.844,
+  "carb_readback": {
+   "/rtx/rendermode": "PathTracing",
+   "/rtx/pathtracing/spp": 8,
+   "/rtx/pathtracing/totalSpp": 8,
+   "/rtx/pathtracing/optixDenoiser/enabled": true
+  },
+  "isaac_sim": [
+   "6.2.0",
+   "rc.15",
+   "6"
+  ],
+  "gpus": {
+   "active_gpu": 0,
+   "physics_gpu": 0,
+   "CUDA_VISIBLE_DEVICES": "0",
+   "/physics/cudaDevice": 0,
+   "/renderer/activeGpu": 0
+  }
+ },
+ "rp_xylo": {
+  "frames_replayed": 182,
+  "source_frames": 271,
+  "replay_physics_steps": 0,
+  "physics_steps_in_episode": 0,
+  "warmup_physics_steps": 0,
+  "readback_max_pos_m": 0.0,
+  "readback_max_quat_or_joint": 1.0000000000287557e-06,
+  "errors": [],
+  "render_s_total": 298.5,
+  "render_s_max": 1.771,
+  "carb_readback": {
+   "/rtx/rendermode": "PathTracing",
+   "/rtx/pathtracing/spp": 8,
+   "/rtx/pathtracing/totalSpp": 8,
+   "/rtx/pathtracing/optixDenoiser/enabled": true
+  },
+  "isaac_sim": [
+   "6.2.0",
+   "rc.15",
+   "6"
+  ],
+  "gpus": {
+   "active_gpu": 0,
+   "physics_gpu": 0,
+   "CUDA_VISIBLE_DEVICES": "0",
+   "/physics/cudaDevice": 0,
+   "/renderer/activeGpu": 0
+  }
+ }
+}

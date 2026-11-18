@@ -1,0 +1,977 @@
+{
+ "tool": "audit/harness/clips/bounce_check.py",
+ "run": "<tmp>",
+ "ref": "audit/out/fix_160/raw/f160_b6_release_l12",
+ "decisive": {
+  "configuration_equal": true,
+  "bottle_trace_identical": true,
+  "release_log_identical": true,
+  "result_equal": true,
+  "state_log_aligned": true
+ },
+ "match": true,
+ "configuration": {
+  "table_sha256": {
+   "equal": true,
+   "value": "193646c304ca579a81512c95bf1ed7e4240c9c5e9b428cff47e7d6b502bde2d8"
+  },
+  "preset_fixes": {
+   "equal": true,
+   "value": [
+    "corrected",
+    [
+     "collision",
+     "gripper",
+     "order",
+     "robot_limits",
+     "size",
+     "solver",
+     "values"
+    ]
+   ]
+  },
+  "scenario": {
+   "equal": true,
+   "value": {
+    "finger_pad": "pad_hard",
+    "table": "table_laminate",
+    "ground_combine": "average",
+    "fill": "empty",
+    "gripper_drive_limit": "motor_peak"
+   }
+  },
+  "joint7_engine": {
+   "equal": true,
+   "value": {
+    "stiffness": 52274.6,
+    "damping": 2090.98,
+    "max_force": 640.18,
+    "armature": 23.524,
+    "freeze_threshold": 160.0
+   }
+  },
+  "robot_drives": {
+   "equal": true
+  },
+  "sim_cfg_physx": {
+   "equal": true
+  },
+  "physics_scenes": {
+   "equal": true
+  },
+  "objects": {
+   "equal": true
+  },
+  "repo_head": {
+   "new": "7fb6f70e2cebed829076704089f419a080627b77",
+   "ref": "c4ca002e4d39d9ab1177dce07d978c527a79ef2a",
+   "new_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "container": [
+   "isaac-sim_5.1.0.sif",
+   "isaac-sim_5.1.0.sif"
+  ]
+ },
+ "episode": {
+  "seed": {
+   "equal": true,
+   "value": 0
+  },
+  "layout": {
+   "equal": true,
+   "value": 12
+  },
+  "policy": {
+   "equal": true,
+   "value": "script_bottles"
+  },
+  "evaluator": {
+   "equal": true,
+   "value": "v2"
+  },
+  "episode_steps": {
+   "equal": true,
+   "value": 7000
+  },
+  "take_action_cnt": {
+   "equal": true,
+   "value": 700
+  },
+  "per_env_score_pct": {
+   "equal": true,
+   "value": [
+    40.0
+   ]
+  },
+  "success": {
+   "equal": true,
+   "value": false
+  },
+  "unstable_nums": {
+   "equal": true,
+   "value": 0
+  },
+  "settled_poses": {
+   "equal": true,
+   "value": {
+    "bottle0": [
+     0.26961,
+     0.01465,
+     0.80212,
+     -0.28336,
+     0.65338,
+     0.28517,
+     -0.64146
+    ],
+    "bottle1": [
+     -0.12977,
+     0.01192,
+     0.88515,
+     0.98,
+     -0.0,
+     -0.0,
+     -0.19901
+    ],
+    "bottle2": [
+     -0.0438,
+     -0.20598,
+     0.88749,
+     0.94189,
+     0.00026,
+     -0.00061,
+     -0.33591
+    ],
+    "bottle3": [
+     0.06441,
+     0.00329,
+     0.85974,
+     0.73627,
+     -0.00304,
+     -0.00082,
+     0.67668
+    ]
+   }
+  },
+  "final_poses": {
+   "equal": true,
+   "value": {
+    "bottle0": [
+     -0.60536,
+     -0.16636,
+     0.3995,
+     0.85387,
+     0.00402,
+     -0.00394,
+     -0.52045
+    ],
+    "bottle1": [
+     -0.19298,
+     0.9754,
+     0.08025,
+     -0.22726,
+     -0.09184,
+     0.70384,
+     0.66673
+    ],
+    "bottle2": [
+     -0.67572,
+     -0.1308,
+     0.32015,
+     0.32581,
+     -0.12862,
+     0.71314,
+     0.60724
+    ],
+    "bottle3": [
+     -0.56555,
+     -0.02388,
+     0.3155,
+     0.39916,
+     -0.31624,
+     0.61608,
+     -0.60093
+    ]
+   }
+  },
+  "bottles_in_bin_shipped_check": {
+   "equal": true,
+   "value": [
+    "bottle0",
+    "bottle2",
+    "bottle3"
+   ]
+  },
+  "pickup_ledger_v2": {
+   "equal": true,
+   "value": null
+  },
+  "eval_result": {
+   "equal": true,
+   "score": 40.0,
+   "differing_keys": []
+  },
+  "bottle_trace": {
+   "rows": [
+    700,
+    700
+   ],
+   "rows_differing": 0,
+   "first_differing_action": null,
+   "max_abs_diff": 0.0
+  }
+ },
+ "release_log": {
+  "windows": [
+   [
+    "bottle2",
+    71,
+    84,
+    140
+   ],
+   [
+    "bottle1",
+    146,
+    159,
+    140
+   ],
+   [
+    "bottle3",
+    268,
+    281,
+    140
+   ],
+   [
+    "bottle0",
+    399,
+    402,
+    40
+   ]
+  ],
+  "windows_ref": [
+   [
+    "bottle2",
+    71,
+    84,
+    140
+   ],
+   [
+    "bottle1",
+    146,
+    159,
+    140
+   ],
+   [
+    "bottle3",
+    268,
+    281,
+    140
+   ],
+   [
+    "bottle0",
+    399,
+    402,
+    40
+   ]
+  ],
+  "steps_identical": true,
+  "constants_identical": true,
+  "analysis_00022": {
+   "release_z_m": 0.9201,
+   "impact": {
+    "action": 154,
+    "substep": 7,
+    "z_m": 0.4636,
+    "speed_before_m_s": 2.986,
+    "vz_before_m_s": -2.986,
+    "partners": {
+     "bottle2": {
+      "normal_N": 376.0,
+      "min_sep_mm": -7.542,
+      "points": 19
+     }
+    },
+    "hand_min_dist_m": 0.6054
+   },
+   "rebound": {
+    "action": 154,
+    "substep": 7,
+    "steps_after_impact": 0,
+    "vz_m_s": 3.492,
+    "speed_m_s": 3.628,
+    "z_m": 0.4636,
+    "hand_min_dist_m": 0.6054
+   },
+   "energy_per_kg": {
+    "before_impact": 8.973,
+    "at_rebound": 11.129,
+    "at_release": 9.042,
+    "peak_after": 11.164
+   },
+   "speed_ratio_out_in": 1.215,
+   "angular_speed_rad_s": {
+    "before": 0.26,
+    "at_rebound": 14.51
+   },
+   "contact_between": {
+    "bottle2": {
+     "steps": 1,
+     "max_normal_N": 376.0,
+     "min_sep_mm": -7.542
+    }
+   }
+  },
+  "analysis_00022_equal_to_ref": {
+   "release_z_m": true,
+   "impact": true,
+   "rebound": true,
+   "energy_per_kg": true,
+   "speed_ratio_out_in": true,
+   "angular_speed_rad_s": true,
+   "contact_between": true
+  }
+ },
+ "state_log": {
+  "frames": 1652,
+  "step_frames": 950,
+  "action_frames": 700,
+  "step_range": [
+   1201,
+   2150
+  ],
+  "physics_steps_in_episode": 7000,
+  "harness_episode_steps": 7000,
+  "errors": [],
+  "harness_args": [
+   "--kit",
+   "/scratch/<user>/isaac/work/bounce/rp51/audit/harness/robodojo_physics_only.kit",
+   "--repo",
+   "/scratch/<user>/isaac/work/bounce/rp51",
+   "--workdir",
+   "/scratch/<user>/isaac/work/bounce/runs/b51_bounce",
+   "--out",
+   "/scratch/<user>/isaac/work/bounce/runs/b51_bounce/result.json",
+   "--task",
+   "put_bottles_into_dustbin",
+   "--policy",
+   "script_bottles",
+   "--evaluator",
+   "v2",
+   "--fast_log",
+   "--bottle_trace",
+   "--release_log",
+   "--seed",
+   "0",
+   "--layouts",
+   "12",
+   "--physics_preset",
+   "corrected",
+   "--physics_params",
+   "/scratch/<user>/isaac/work/bounce/rp51/docs/params",
+   "--physics_scenario_opt_in",
+   "bottles_primary_empty",
+   "--physics_scenario",
+   "{\"gripper_drive_limit\":\"motor_peak\"}"
+  ],
+  "aligned_with_release_log": {
+   "steps_compared": 140,
+   "max_abs_diff_m": 0.0
+  }
+ },
+ "launch_from_state_log": {
+  "release": {
+   "step": 1451,
+   "action_substep": [
+    146,
+    0
+   ],
+   "z_m": 0.920065,
+   "xy_m": [
+    -0.638923,
+    -0.069993
+   ]
+  },
+  "turnaround": {
+   "lowest_step": 1537,
+   "action_substep": [
+    154,
+    6
+   ],
+   "z_m": 0.460229,
+   "steps": [
+    {
+     "step": 1534,
+     "action_substep": [
+      154,
+      3
+     ],
+     "z_m": 0.495592,
+     "dz_mm_since_previous_step": -11.47,
+     "mean_vz_m_s_over_step": -2.869
+    },
+    {
+     "step": 1535,
+     "action_substep": [
+      154,
+      4
+     ],
+     "z_m": 0.483961,
+     "dz_mm_since_previous_step": -11.63,
+     "mean_vz_m_s_over_step": -2.908
+    },
+    {
+     "step": 1536,
+     "action_substep": [
+      154,
+      5
+     ],
+     "z_m": 0.472174,
+     "dz_mm_since_previous_step": -11.79,
+     "mean_vz_m_s_over_step": -2.947
+    },
+    {
+     "step": 1537,
+     "action_substep": [
+      154,
+      6
+     ],
+     "z_m": 0.460229,
+     "dz_mm_since_previous_step": -11.94,
+     "mean_vz_m_s_over_step": -2.986
+    },
+    {
+     "step": 1538,
+     "action_substep": [
+      154,
+      7
+     ],
+     "z_m": 0.463589,
+     "dz_mm_since_previous_step": 3.36,
+     "mean_vz_m_s_over_step": 0.84
+    },
+    {
+     "step": 1539,
+     "action_substep": [
+      154,
+      8
+     ],
+     "z_m": 0.477522,
+     "dz_mm_since_previous_step": 13.93,
+     "mean_vz_m_s_over_step": 3.483
+    },
+    {
+     "step": 1540,
+     "action_substep": [
+      154,
+      9
+     ],
+     "z_m": 0.491176,
+     "dz_mm_since_previous_step": 13.65,
+     "mean_vz_m_s_over_step": 3.413
+    },
+    {
+     "step": 1541,
+     "action_substep": [
+      155,
+      0
+     ],
+     "z_m": 0.504641,
+     "dz_mm_since_previous_step": 13.47,
+     "mean_vz_m_s_over_step": 3.366
+    }
+   ]
+  },
+  "peak": {
+   "step": 1631,
+   "action_substep": [
+    164,
+    0
+   ],
+   "z_m": 1.058421,
+   "xy_m": [
+    -0.557964,
+    0.281636
+   ],
+   "above_release_m": 0.1384,
+   "per_action_peak": [
+    163,
+    1.058387
+   ]
+  },
+  "first_step_below_0.10_m": {
+   "step": 1774,
+   "action_substep": [
+    178,
+    3
+   ],
+   "z_m": 0.099549,
+   "xy_m": [
+    -0.370259,
+    0.807161
+   ],
+   "from_release_xy_m": 0.917,
+   "from_bin_centre_m": 0.944
+  },
+  "rest": {
+   "action": 700,
+   "pose": [
+    -0.19298,
+    0.9754,
+    0.080247,
+    -0.227256,
+    -0.091837,
+    0.703842,
+    0.666728
+   ],
+   "from_release_xy_m": 1.137,
+   "from_bin_centre_m": 1.161
+  },
+  "last_action_moving_more_than_1mm": 212
+ },
+ "replay": {
+  "rp_bounce": {
+   "source": "b51_bounce",
+   "frames_replayed": 161,
+   "selected": 161,
+   "replay_physics_steps": 0,
+   "warmup_physics_steps": 0,
+   "max_abs_pos_m": 0.0,
+   "max_abs_quat": 5.999999999992123e-06,
+   "max_rotation_rad": 1.1971856647464385e-05,
+   "max_abs_joint": 0.0,
+   "errors": [],
+   "isaac_sim": [
+    "6.2.0",
+    "rc.15",
+    "6"
+   ],
+   "carb": {
+    "/rtx/rendermode": "RealTimePathTracing",
+    "/rtx/post/aa/op": 1,
+    "/rtx/pathtracing/spp": 64,
+    "/rtx/pathtracing/totalSpp": 64,
+    "/rtx/pathtracing/optixDenoiser/enabled": true
+   },
+   "cameras": [
+    {
+     "name": "side",
+     "prim": "/World/ClipCams/side",
+     "eye_world": [
+      -2.15,
+      0.33,
+      1.4
+     ],
+     "target_world": [
+      -0.5,
+      0.33,
+      0.7
+     ],
+     "focal_mm": 16.0,
+     "res": [
+      1280,
+      720
+     ]
+    }
+   ],
+   "gpus": {
+    "active_gpu": 0,
+    "physics_gpu": 0,
+    "CUDA_VISIBLE_DEVICES": "0",
+    "/physics/cudaDevice": 0,
+    "/renderer/activeGpu": 0
+   }
+  },
+  "rp_bounce_l140f18": {
+   "source": "b51_bounce",
+   "frames_replayed": 147,
+   "selected": 147,
+   "replay_physics_steps": 0,
+   "warmup_physics_steps": 0,
+   "max_abs_pos_m": 0.0,
+   "max_abs_quat": 8.000000000001062e-06,
+   "max_rotation_rad": 1.598543901241391e-05,
+   "max_abs_joint": 0.0,
+   "errors": [],
+   "isaac_sim": [
+    "6.2.0",
+    "rc.15",
+    "6"
+   ],
+   "carb": {
+    "/rtx/rendermode": "RealTimePathTracing",
+    "/rtx/post/aa/op": 1,
+    "/rtx/pathtracing/spp": 64,
+    "/rtx/pathtracing/totalSpp": 64,
+    "/rtx/pathtracing/optixDenoiser/enabled": true
+   },
+   "cameras": [
+    {
+     "name": "side",
+     "prim": "/World/ClipCams/side",
+     "eye_world": [
+      -2.15,
+      0.33,
+      1.4
+     ],
+     "target_world": [
+      -0.5,
+      0.33,
+      0.66
+     ],
+     "focal_mm": 18.0,
+     "res": [
+      1280,
+      720
+     ]
+    }
+   ],
+   "gpus": {
+    "active_gpu": 0,
+    "physics_gpu": 0,
+    "CUDA_VISIBLE_DEVICES": "0",
+    "/physics/cudaDevice": 0,
+    "/renderer/activeGpu": 0
+   }
+  },
+  "rp_bounce_e40": {
+   "source": "b51_bounce",
+   "frames_replayed": 147,
+   "selected": 147,
+   "replay_physics_steps": 0,
+   "warmup_physics_steps": 0,
+   "max_abs_pos_m": 0.0,
+   "max_abs_quat": 8.000000000001062e-06,
+   "max_rotation_rad": 1.598543901241391e-05,
+   "max_abs_joint": 0.0,
+   "errors": [],
+   "isaac_sim": [
+    "6.2.0",
+    "rc.15",
+    "6"
+   ],
+   "carb": {
+    "/rtx/rendermode": "RealTimePathTracing",
+    "/rtx/post/aa/op": 1,
+    "/rtx/pathtracing/spp": 64,
+    "/rtx/pathtracing/totalSpp": 64,
+    "/rtx/pathtracing/optixDenoiser/enabled": true
+   },
+   "cameras": [
+    {
+     "name": "side",
+     "prim": "/World/ClipCams/side",
+     "eye_world": [
+      -2.185,
+      0.33,
+      2.034
+     ],
+     "target_world": [
+      -0.5,
+      0.33,
+      0.62
+     ],
+     "focal_mm": 22.0,
+     "res": [
+      1280,
+      720
+     ]
+    }
+   ],
+   "gpus": {
+    "active_gpu": 0,
+    "physics_gpu": 0,
+    "CUDA_VISIBLE_DEVICES": "0",
+    "/physics/cudaDevice": 0,
+    "/renderer/activeGpu": 0
+   }
+  },
+  "s62_bounce": {
+   "source": "b51_bounce",
+   "frames_replayed": 8,
+   "selected": 8,
+   "replay_physics_steps": 0,
+   "warmup_physics_steps": 0,
+   "max_abs_pos_m": 0.0,
+   "max_abs_quat": 1.0000000000287557e-06,
+   "max_rotation_rad": 1.935545549527425e-06,
+   "max_abs_joint": 0.0,
+   "errors": [],
+   "isaac_sim": [
+    "6.2.0",
+    "rc.15",
+    "6"
+   ],
+   "carb": {
+    "/rtx/rendermode": "RealTimePathTracing",
+    "/rtx/post/aa/op": 1,
+    "/rtx/pathtracing/spp": 64,
+    "/rtx/pathtracing/totalSpp": 64,
+    "/rtx/pathtracing/optixDenoiser/enabled": true
+   },
+   "cameras": [
+    {
+     "name": "a50",
+     "prim": "/World/ClipCams/a50",
+     "eye_world": [
+      -1.9,
+      0.32,
+      2.2
+     ],
+     "target_world": [
+      -0.5,
+      0.32,
+      0.48
+     ],
+     "focal_mm": 20.0,
+     "res": [
+      960,
+      540
+     ]
+    },
+    {
+     "name": "a55",
+     "prim": "/World/ClipCams/a55",
+     "eye_world": [
+      -1.75,
+      0.32,
+      2.35
+     ],
+     "target_world": [
+      -0.5,
+      0.32,
+      0.47
+     ],
+     "focal_mm": 19.0,
+     "res": [
+      960,
+      540
+     ]
+    },
+    {
+     "name": "a62",
+     "prim": "/World/ClipCams/a62",
+     "eye_world": [
+      -1.55,
+      0.32,
+      2.5
+     ],
+     "target_world": [
+      -0.5,
+      0.32,
+      0.45
+     ],
+     "focal_mm": 17.0,
+     "res": [
+      960,
+      540
+     ]
+    },
+    {
+     "name": "dfl",
+     "prim": "/World/ClipCams/dfl",
+     "eye_world": [
+      -1.95,
+      1.75,
+      1.85
+     ],
+     "target_world": [
+      -0.5,
+      0.35,
+      0.5
+     ],
+     "focal_mm": 15.0,
+     "res": [
+      960,
+      540
+     ]
+    }
+   ],
+   "gpus": {
+    "active_gpu": 0,
+    "physics_gpu": 0,
+    "CUDA_VISIBLE_DEVICES": "0",
+    "/physics/cudaDevice": 0,
+    "/renderer/activeGpu": 0
+   }
+  },
+  "s62_bounce2": {
+   "source": "b51_bounce",
+   "frames_replayed": 8,
+   "selected": 8,
+   "replay_physics_steps": 0,
+   "warmup_physics_steps": 0,
+   "max_abs_pos_m": 0.0,
+   "max_abs_quat": 1.0000000000287557e-06,
+   "max_rotation_rad": 1.935545549527425e-06,
+   "max_abs_joint": 0.0,
+   "errors": [],
+   "isaac_sim": [
+    "6.2.0",
+    "rc.15",
+    "6"
+   ],
+   "carb": {
+    "/rtx/rendermode": "RealTimePathTracing",
+    "/rtx/post/aa/op": 1,
+    "/rtx/pathtracing/spp": 64,
+    "/rtx/pathtracing/totalSpp": 64,
+    "/rtx/pathtracing/optixDenoiser/enabled": true
+   },
+   "cameras": [
+    {
+     "name": "e36",
+     "prim": "/World/ClipCams/e36",
+     "eye_world": [
+      -2.239,
+      0.33,
+      1.904
+     ],
+     "target_world": [
+      -0.5,
+      0.33,
+      0.64
+     ],
+     "focal_mm": 22.0,
+     "res": [
+      960,
+      540
+     ]
+    },
+    {
+     "name": "e40",
+     "prim": "/World/ClipCams/e40",
+     "eye_world": [
+      -2.185,
+      0.33,
+      2.034
+     ],
+     "target_world": [
+      -0.5,
+      0.33,
+      0.62
+     ],
+     "focal_mm": 22.0,
+     "res": [
+      960,
+      540
+     ]
+    },
+    {
+     "name": "e44",
+     "prim": "/World/ClipCams/e44",
+     "eye_world": [
+      -2.083,
+      0.33,
+      2.128
+     ],
+     "target_world": [
+      -0.5,
+      0.33,
+      0.6
+     ],
+     "focal_mm": 22.0,
+     "res": [
+      960,
+      540
+     ]
+    }
+   ],
+   "gpus": {
+    "active_gpu": 0,
+    "physics_gpu": 0,
+    "CUDA_VISIBLE_DEVICES": "0",
+    "/physics/cudaDevice": 0,
+    "/renderer/activeGpu": 0
+   }
+  },
+  "s62_bounce3": {
+   "source": "b51_bounce",
+   "frames_replayed": 8,
+   "selected": 8,
+   "replay_physics_steps": 0,
+   "warmup_physics_steps": 0,
+   "max_abs_pos_m": 0.0,
+   "max_abs_quat": 1.0000000000287557e-06,
+   "max_rotation_rad": 1.935545549527425e-06,
+   "max_abs_joint": 0.0,
+   "errors": [],
+   "isaac_sim": [
+    "6.2.0",
+    "rc.15",
+    "6"
+   ],
+   "carb": {
+    "/rtx/rendermode": "RealTimePathTracing",
+    "/rtx/post/aa/op": 1,
+    "/rtx/pathtracing/spp": 64,
+    "/rtx/pathtracing/totalSpp": 64,
+    "/rtx/pathtracing/optixDenoiser/enabled": true
+   },
+   "cameras": [
+    {
+     "name": "l135",
+     "prim": "/World/ClipCams/l135",
+     "eye_world": [
+      -2.15,
+      0.33,
+      1.35
+     ],
+     "target_world": [
+      -0.5,
+      0.33,
+      0.66
+     ],
+     "focal_mm": 18.0,
+     "res": [
+      960,
+      540
+     ]
+    },
+    {
+     "name": "l140",
+     "prim": "/World/ClipCams/l140",
+     "eye_world": [
+      -2.15,
+      0.33,
+      1.4
+     ],
+     "target_world": [
+      -0.5,
+      0.33,
+      0.66
+     ],
+     "focal_mm": 18.0,
+     "res": [
+      960,
+      540
+     ]
+    },
+    {
+     "name": "l145",
+     "prim": "/World/ClipCams/l145",
+     "eye_world": [
+      -2.15,
+      0.33,
+      1.45
+     ],
+     "target_world": [
+      -0.5,
+      0.33,
+      0.64
+     ],
+     "focal_mm": 18.0,
+     "res": [
+      960,
+      540
+     ]
+    }
+   ],
+   "gpus": {
+    "active_gpu": 0,
+    "physics_gpu": 0,
+    "CUDA_VISIBLE_DEVICES": "0",
+    "/physics/cudaDevice": 0,
+    "/renderer/activeGpu": 0
+   }
+  }
+ }
+}

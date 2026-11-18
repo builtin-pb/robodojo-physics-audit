@@ -1,0 +1,7 @@
+# Kinematic replays in 6.2 (VER=62, SPLIT=1) of the 5.1 states logged at this commit (queue_r51.txt), frames per the thinned spec windows.
+# The harness only builds the task's scene (--policy zero); clip_run.py replaces the policy with the replay and steps no physics.
+rp_bulldoze|bulldoze.json|--subframes 1 --warmup 6 --capture rep --replay <clips>/runs/r51_bulldoze/frames/index.json|--task put_bottles_into_dustbin --layouts 1 --policy zero --evaluator v1
+rp_buttons|buttons.json|--subframes 1 --warmup 6 --capture rep --replay <clips>/runs/r51_buttons/frames/index.json|--task press_by_number --layouts 0 --policy zero --evaluator v1
+rp_peek|peek.json|--subframes 1 --warmup 6 --capture rep --replay <clips>/runs/r51_peek/frames/index.json|--task cover_blocks --layouts 1 --policy zero --evaluator v1
+rp_coin|coin.json|--subframes 1 --warmup 6 --capture rep --replay <clips>/runs/r51_coin/frames/index.json|--task deposit_coin --layouts 0 --policy zero --evaluator v1
+rp_press40|press40.json|--subframes 1 --warmup 6 --capture rep --replay <clips>/runs/r51_press40/frames/index.json|--task press_by_number --layouts 0 --policy zero --evaluator v1

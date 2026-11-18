@@ -1,0 +1,444 @@
+{
+ "source": "upstream f57e163 files",
+ "torch": "torch 2.7.0+cu128",
+ "numpy": "1.26.0",
+ "shapely": "2.0.7",
+ "records": [
+  {
+   "predicate": "is_A_bbox_in_B_bbox",
+   "case": "coin lying inside the bank's lower half",
+   "intended": true,
+   "shipped": true,
+   "verdict": "agree"
+  },
+  {
+   "predicate": "is_A_bbox_in_B_bbox",
+   "case": "coin lying on the bank's back",
+   "intended": false,
+   "shipped": false,
+   "verdict": "agree"
+  },
+  {
+   "predicate": "is_joint_position_ratio_change_from_above_to_below",
+   "case": "button resting at ratio 0.93",
+   "intended": true,
+   "shipped": false,
+   "verdict": "false_negative",
+   "counted": [
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "predicate": "is_joint_position_ratio_change_from_above_to_below",
+   "case": "two presses of red0 with a 0.92 release between",
+   "intended": true,
+   "shipped": false,
+   "verdict": "false_negative",
+   "stages_left": 0,
+   "counted": 1,
+   "card": 2
+  },
+  {
+   "predicate": "is_A_cover_B",
+   "case": "cup mouth-down over the cube",
+   "intended": true,
+   "shipped": true,
+   "verdict": "agree"
+  },
+  {
+   "predicate": "is_A_on_B_bottom",
+   "case": "bottle bottom 39 cm above the bin's bbox bottom",
+   "intended": true,
+   "shipped": true,
+   "verdict": "agree",
+   "note": "inside the bin; the name says bottom"
+  },
+  {
+   "predicate": "is_A_cover_B",
+   "case": "upright cup resting on a 31 mm block",
+   "intended": false,
+   "shipped": false,
+   "verdict": "agree"
+  },
+  {
+   "predicate": "is_A_cover_B",
+   "case": "upright cup resting on a 25 mm cube (#52)",
+   "intended": false,
+   "shipped": true,
+   "verdict": "false_positive"
+  },
+  {
+   "predicate": "is_A_up_B",
+   "case": "alarm 63 cm from the drawer at drawer-top height",
+   "intended": false,
+   "shipped": true,
+   "verdict": "false_positive",
+   "task": "organize_table"
+  },
+  {
+   "predicate": "is_A_up_B",
+   "case": "alarm resting on the drawer",
+   "intended": true,
+   "shipped": true,
+   "verdict": "agree"
+  },
+  {
+   "predicate": "is_A_depth_in_B",
+   "case": "nut on the table 1 m from the bolt",
+   "intended": false,
+   "shipped": true,
+   "verdict": "false_positive",
+   "note": "fasten_screws pairs it with a 1 mm xy test"
+  },
+  {
+   "predicate": "is_A_point_above_B_point_by_z_range",
+   "case": "piece 1.4 m from the board at board height",
+   "intended": false,
+   "shipped": true,
+   "verdict": "false_positive"
+  },
+  {
+   "predicate": "is_A_depth_in_B",
+   "case": "stacking piece on the table 45 cm from the base",
+   "intended": false,
+   "shipped": true,
+   "verdict": "false_positive",
+   "base_height_m": 0.0653
+  },
+  {
+   "predicate": "is_A_depth_in_B",
+   "case": "tube standing on the table 30 cm from the rack",
+   "intended": false,
+   "shipped": true,
+   "verdict": "false_positive"
+  },
+  {
+   "predicate": "is_A_in_B",
+   "case": "tube fully inserted, bottom on the table (through hole)",
+   "intended": true,
+   "shipped": false,
+   "verdict": "false_negative",
+   "margin_mm": 0.0
+  },
+  {
+   "predicate": "is_A_in_B",
+   "case": "same tube 0.5 mm higher",
+   "intended": true,
+   "shipped": true,
+   "verdict": "agree"
+  },
+  {
+   "predicate": "is_all_A_in_B",
+   "case": "empty category",
+   "intended": false,
+   "shipped": true,
+   "verdict": "false_positive",
+   "note": "vacuous truth; latent"
+  },
+  {
+   "predicate": "is_A_in_B",
+   "case": "ball on the vase floor, on its axis",
+   "intended": true,
+   "shipped": true,
+   "verdict": "agree"
+  },
+  {
+   "predicate": "is_A_in_B",
+   "case": "#123 sphere_0 at the deciding sample",
+   "intended": false,
+   "shipped": true,
+   "verdict": "false_positive",
+   "above_robodojo_floor_mm": 90.86,
+   "above_aabb_floor_mm": 5.66,
+   "would_pass_with_aabb": false
+  },
+  {
+   "predicate": "is_A_in_B",
+   "case": "#123 sphere_1 at the deciding sample",
+   "intended": false,
+   "shipped": true,
+   "verdict": "false_positive",
+   "above_robodojo_floor_mm": 85.22,
+   "above_aabb_floor_mm": 0.02,
+   "would_pass_with_aabb": true
+  },
+  {
+   "predicate": "is_A_in_B",
+   "case": "#123 sphere_5 at the deciding sample",
+   "intended": false,
+   "shipped": true,
+   "verdict": "false_positive",
+   "above_robodojo_floor_mm": 85.16,
+   "above_aabb_floor_mm": -0.04,
+   "would_pass_with_aabb": false
+  },
+  {
+   "predicate": "is_A_in_B",
+   "case": "ball 0.3 m above the vase",
+   "intended": false,
+   "shipped": true,
+   "verdict": "false_positive",
+   "height_m": 0.3
+  },
+  {
+   "predicate": "is_A_in_B",
+   "case": "ball 1.0 m above the vase",
+   "intended": false,
+   "shipped": true,
+   "verdict": "false_positive",
+   "height_m": 1.0
+  },
+  {
+   "predicate": "is_A_in_B",
+   "case": "ball 100.0 m above the vase",
+   "intended": false,
+   "shipped": true,
+   "verdict": "false_positive",
+   "height_m": 100.0
+  },
+  {
+   "predicate": "is_A_not_in_B",
+   "case": "ball on the table 110 mm from the vase axis",
+   "intended": true,
+   "shipped": true,
+   "verdict": "agree"
+  },
+  {
+   "predicate": "is_A_in_B",
+   "case": "toy 15 cm above the basket rim",
+   "intended": false,
+   "shipped": true,
+   "verdict": "false_positive",
+   "task": "imitate_sorting_sequence"
+  },
+  {
+   "predicate": "is_all_A_z_lower_than_B_bbox_zmax",
+   "case": "same toy, classify_*'s 1 cm ceiling",
+   "intended": false,
+   "shipped": false,
+   "verdict": "agree"
+  },
+  {
+   "predicate": "is_A_in_B",
+   "case": "30 cm stick across the basket rim, root inside, 86% of it outside",
+   "intended": false,
+   "shipped": true,
+   "verdict": "false_positive"
+  },
+  {
+   "predicate": "is_A_in_B",
+   "case": "body inside the basket, origin 9 mm outside its footprint",
+   "intended": true,
+   "shipped": false,
+   "verdict": "false_negative"
+  },
+  {
+   "predicate": "is_A_in_B",
+   "case": "ball on the table 120 mm from the vase axis (30 mm outside the widest wall)",
+   "intended": false,
+   "shipped": true,
+   "verdict": "false_positive",
+   "footprint_cm2": 442.3,
+   "aabb_footprint_cm2": 324.0,
+   "widest_silhouette_cm2": 254.5,
+   "foot_cm2": 55.4,
+   "reach_from_axis_mm": 149.3,
+   "floor_below_table_mm": 85.2,
+   "aabb_floor_below_table_mm": 0.0
+  },
+  {
+   "predicate": "is_lift",
+   "case": "scissors held upright on a tip, never lifted (general_pickup layout 0)",
+   "intended": false,
+   "shipped": true,
+   "verdict": "false_positive",
+   "root_rise_mm": 110.2,
+   "lowest_point_above_table_mm": 0.0
+  },
+  {
+   "predicate": "is_lift",
+   "case": "target up 10.1 cm for one sample, then back on the table",
+   "intended": false,
+   "shipped": true,
+   "verdict": "false_positive"
+  },
+  {
+   "predicate": "is_not_moved",
+   "case": "second call in the same step, object moving 1 cm per action",
+   "intended": false,
+   "shipped": true,
+   "verdict": "false_positive"
+  },
+  {
+   "predicate": "is_A_on_B_left",
+   "case": "dustpan 15 cm left and 80 cm in front of the broom",
+   "intended": true,
+   "shipped": true,
+   "verdict": "agree"
+  },
+  {
+   "predicate": "is_stacked",
+   "case": "block 1 m above another",
+   "intended": false,
+   "shipped": true,
+   "verdict": "false_positive"
+  },
+  {
+   "predicate": "score(paired)",
+   "case": "same final state, two orders, failed episode",
+   "intended": false,
+   "shipped": true,
+   "verdict": "false_positive",
+   "scores": [
+    20.0,
+    80.0
+   ]
+  },
+  {
+   "predicate": "score(transition)",
+   "case": "failed episode at fill_egg_holder's top tier",
+   "intended": false,
+   "shipped": true,
+   "verdict": "false_positive",
+   "score": 90.0
+  },
+  {
+   "predicate": "is_functional_point_not_moved",
+   "case": "hang_mugs pair tier: mug0 swinging 6 mm per action, mug1 on the table",
+   "intended": false,
+   "shipped": true,
+   "verdict": "false_positive",
+   "tiers": [
+    1,
+    2
+   ],
+   "task": "hang_mugs"
+  },
+  {
+   "predicate": "is_not_moved",
+   "case": "organize_table: mouse sliding 1 cm per action over its mat, score tier",
+   "intended": false,
+   "shipped": true,
+   "verdict": "false_positive",
+   "tiers_shipped": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "tiers_get_score_only": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "task": "organize_table"
+  },
+  {
+   "predicate": "calc_polygon",
+   "case": "egg holder footprint and floor",
+   "intended": false,
+   "shipped": true,
+   "verdict": "false_positive",
+   "footprint_cm2": 160.4,
+   "aabb_footprint_cm2": 109.3,
+   "ratio": 1.47,
+   "floor_below_base_mm": 43.8,
+   "top_above_aabb_mm": 16.2
+  },
+  {
+   "predicate": "all_robot_back_to_origin",
+   "case": "arm 25.8 cm and 19.9 degrees from home",
+   "intended": false,
+   "shipped": true,
+   "verdict": "false_positive",
+   "distance_m": 0.258
+  },
+  {
+   "predicate": "is_A_functional_point_close_to_B_functional_point",
+   "case": "tool 4.9 cm under its slot point",
+   "intended": false,
+   "shipped": true,
+   "verdict": "false_positive"
+  },
+  {
+   "predicate": "is_A_functional_point_close_to_B_functional_point",
+   "case": "symmetric tool in its slot, flipped 180 degrees",
+   "intended": true,
+   "shipped": false,
+   "verdict": "false_negative",
+   "task": "store_tools_in_toolbox"
+  },
+  {
+   "predicate": "is_A_functional_point_close_to_B_functional_point",
+   "case": "tool in its slot, 10.5 degrees of yaw",
+   "intended": true,
+   "shipped": false,
+   "verdict": "false_negative"
+  },
+  {
+   "predicate": "is_in_line",
+   "case": "three cubes 30 cm apart on one line",
+   "intended": true,
+   "shipped": true,
+   "verdict": "agree",
+   "note": "a row; the tool is not measured"
+  },
+  {
+   "predicate": "is_qpos_close",
+   "case": "T-block 3.1 degrees off (swap_T)",
+   "intended": true,
+   "shipped": false,
+   "verdict": "false_negative"
+  },
+  {
+   "predicate": "is_pointA_in_B_functional_bbox",
+   "case": "toothbrush lying across the rims, 18 cm up",
+   "intended": false,
+   "shipped": true,
+   "verdict": "false_positive",
+   "task": "pack_objects_into_box"
+  },
+  {
+   "predicate": "is_pointA_in_B_functional_bbox",
+   "case": "toothbrush 1 m above the box",
+   "intended": false,
+   "shipped": true,
+   "verdict": "false_positive",
+   "task": "pack_objects_into_box"
+  },
+  {
+   "predicate": "is_A_xy_close_to_B_support_point",
+   "case": "ring 1.5 mm off its peg's axis",
+   "intended": true,
+   "shipped": false,
+   "verdict": "false_negative"
+  },
+  {
+   "predicate": "is_A_xy_close_to_B_support_point",
+   "case": "ring 50 cm above its peg",
+   "intended": false,
+   "shipped": true,
+   "verdict": "false_positive",
+   "task": "play_stacking_toy"
+  },
+  {
+   "predicate": "is_AB_xy_distance_within_threshold",
+   "case": "two rings 1 m apart vertically",
+   "intended": false,
+   "shipped": true,
+   "verdict": "false_positive",
+   "task": "play_stacking_toy"
+  }
+ ]
+}

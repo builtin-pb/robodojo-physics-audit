@@ -1,0 +1,1746 @@
+{
+ "creep": {
+  "g4c_creep_solver": {
+   "store_tools_in_toolbox__shipped": {
+    "largest_object_disp_mm": 0.0,
+    "wrench_max_disp_mm": 0.0
+   }
+  }
+ },
+ "hold": {
+  "g4c_hold_grip": [
+   {
+    "after_carry_shake": {
+     "dropped": false,
+     "rotation_in_hand_deg": 0.18,
+     "slip_engine_com_mm": 0.18
+    },
+    "after_lift_15cm_hold_1s": {
+     "dropped": false,
+     "rotation_in_hand_deg": 0.47,
+     "slip_engine_com_mm": 0.55
+    },
+    "column": "real_path",
+    "mass_kg_engine": [
+     0.5
+    ]
+   },
+   {
+    "after_carry_shake": {
+     "dropped": false,
+     "rotation_in_hand_deg": 4.62,
+     "slip_engine_com_mm": 3.98
+    },
+    "after_lift_15cm_hold_1s": {
+     "dropped": false,
+     "rotation_in_hand_deg": 3.1,
+     "slip_engine_com_mm": 2.69
+    },
+    "column": "real_path",
+    "mass_kg_engine": [
+     0.65
+    ]
+   },
+   {
+    "after_carry_shake": {
+     "dropped": false,
+     "rotation_in_hand_deg": 13.95,
+     "slip_engine_com_mm": 13.04
+    },
+    "after_lift_15cm_hold_1s": {
+     "dropped": false,
+     "rotation_in_hand_deg": 12.84,
+     "slip_engine_com_mm": 12.14
+    },
+    "column": "real_path",
+    "mass_kg_engine": [
+     0.8
+    ]
+   }
+  ],
+  "g4c_hold_gripsol": [
+   {
+    "after_carry_shake": {
+     "dropped": false,
+     "rotation_in_hand_deg": 0.34,
+     "slip_engine_com_mm": 0.28
+    },
+    "after_lift_15cm_hold_1s": {
+     "dropped": false,
+     "rotation_in_hand_deg": 0.01,
+     "slip_engine_com_mm": 0.01
+    },
+    "column": "real_path",
+    "mass_kg_engine": [
+     0.5
+    ]
+   },
+   {
+    "after_carry_shake": {
+     "dropped": false,
+     "rotation_in_hand_deg": 2.64,
+     "slip_engine_com_mm": 2.46
+    },
+    "after_lift_15cm_hold_1s": {
+     "dropped": false,
+     "rotation_in_hand_deg": 1.55,
+     "slip_engine_com_mm": 1.5
+    },
+    "column": "real_path",
+    "mass_kg_engine": [
+     0.65
+    ]
+   },
+   {
+    "after_carry_shake": {
+     "dropped": false,
+     "rotation_in_hand_deg": 14.78,
+     "slip_engine_com_mm": 14.76
+    },
+    "after_lift_15cm_hold_1s": {
+     "dropped": false,
+     "rotation_in_hand_deg": 12.32,
+     "slip_engine_com_mm": 12.51
+    },
+    "column": "real_path",
+    "mass_kg_engine": [
+     0.8
+    ]
+   }
+  ]
+ },
+ "identity": {
+  "actions": [
+   362,
+   362
+  ],
+  "final_pose_max_deg": 0.0,
+  "final_pose_max_mm": 0.0,
+  "scores": [
+   100.0,
+   100.0
+  ],
+  "steps_per_second": [
+   18.3,
+   19.0
+  ],
+  "trace_identical": true,
+  "trace_max_diff_mm": 0.0,
+  "trace_rows": [
+   362,
+   362
+  ],
+  "wall_seconds": [
+   202.7,
+   195.7
+  ]
+ },
+ "rest": {
+  "g4c_rest_corr": [
+   {
+    "bottles": {
+     "bottle0": {
+      "deg": 0.0,
+      "mm": 0.0
+     },
+     "bottle1": {
+      "deg": 0.0,
+      "mm": 0.0
+     },
+     "bottle2": {
+      "deg": 0.0,
+      "mm": 0.0
+     },
+     "bottle3": {
+      "deg": 0.008,
+      "mm": 0.03
+     }
+    },
+    "episode_steps": 7000,
+    "layout": 10,
+    "others": {},
+    "seed": 2,
+    "unstable": null
+   },
+   {
+    "bottles": {
+     "bottle0": {
+      "deg": 0.0017,
+      "mm": 0.01
+     },
+     "bottle1": {
+      "deg": 0.0016,
+      "mm": 0.0
+     },
+     "bottle2": {
+      "deg": 0.0,
+      "mm": 0.0
+     },
+     "bottle3": {
+      "deg": 0.0011,
+      "mm": 0.01
+     }
+    },
+    "episode_steps": 7000,
+    "layout": 11,
+    "others": {},
+    "seed": 2,
+    "unstable": null
+   }
+  ],
+  "g4c_rest_corrns": [
+   {
+    "bottles": {
+     "bottle0": {
+      "deg": 0.0,
+      "mm": 0.0
+     },
+     "bottle1": {
+      "deg": 0.0,
+      "mm": 0.0
+     },
+     "bottle2": {
+      "deg": 0.0,
+      "mm": 0.0
+     },
+     "bottle3": {
+      "deg": 0.0,
+      "mm": 0.0
+     }
+    },
+    "episode_steps": 7000,
+    "layout": 10,
+    "others": {},
+    "seed": 2,
+    "unstable": null
+   },
+   {
+    "bottles": {
+     "bottle0": {
+      "deg": 0.6009,
+      "mm": 0.3245
+     },
+     "bottle1": {
+      "deg": 0.0,
+      "mm": 0.0
+     },
+     "bottle2": {
+      "deg": 0.0,
+      "mm": 0.0
+     },
+     "bottle3": {
+      "deg": 0.0,
+      "mm": 0.0
+     }
+    },
+    "episode_steps": 7000,
+    "layout": 11,
+    "others": {},
+    "seed": 2,
+    "unstable": null
+   }
+  ]
+ },
+ "scene": {
+  "g4c_creep_solver": [
+   {
+    "cell": "store_tools_in_toolbox__shipped",
+    "effective": 64,
+    "factor": 4.0,
+    "failures": [],
+    "max_authored": 16,
+    "min_pos_iters": 64.0,
+    "stabilization": false
+   }
+  ],
+  "g4c_hold_grip": [
+   {
+    "cell": null,
+    "error": null
+   },
+   {
+    "cell": null,
+    "error": null
+   },
+   {
+    "cell": null,
+    "error": null
+   }
+  ],
+  "g4c_hold_gripsol": [
+   {
+    "cell": null,
+    "error": null
+   },
+   {
+    "cell": null,
+    "error": null
+   },
+   {
+    "cell": null,
+    "error": null
+   }
+  ],
+  "g4c_rest_corr": [
+   {
+    "cell": null,
+    "effective": 64,
+    "factor": 4.0,
+    "failures": [],
+    "max_authored": 16,
+    "min_pos_iters": 64.0,
+    "stabilization": false
+   },
+   {
+    "cell": null,
+    "effective": 64,
+    "factor": 4.0,
+    "failures": [],
+    "max_authored": 16,
+    "min_pos_iters": 64.0,
+    "stabilization": false
+   }
+  ],
+  "g4c_rest_corrns": [
+   {
+    "cell": null,
+    "effective": 16,
+    "factor": 1.0,
+    "failures": [],
+    "max_authored": 16,
+    "min_pos_iters": 1.0,
+    "stabilization": true
+   },
+   {
+    "cell": null,
+    "effective": 16,
+    "factor": 1.0,
+    "failures": [],
+    "max_authored": 16,
+    "min_pos_iters": 1.0,
+    "stabilization": true
+   }
+  ],
+  "g4c_ship_s0_l10": [
+   {
+    "cell": null,
+    "effective": 16,
+    "factor": 1.0,
+    "failures": [],
+    "max_authored": 16,
+    "min_pos_iters": 1.0,
+    "stabilization": true
+   }
+  ],
+  "g4c_slide_corr": [
+   {
+    "cell": "put_bottles_into_dustbin__shipped",
+    "effective": 64,
+    "factor": 4.0,
+    "failures": [],
+    "max_authored": 16,
+    "min_pos_iters": 64.0,
+    "stabilization": false
+   },
+   {
+    "cell": "put_bottles_into_dustbin__bottle_decomp",
+    "effective": 64,
+    "factor": 4.0,
+    "failures": [],
+    "max_authored": 16,
+    "min_pos_iters": 64.0,
+    "stabilization": false
+   }
+  ],
+  "g4c_slide_corrns": [
+   {
+    "cell": "put_bottles_into_dustbin__shipped",
+    "effective": 16,
+    "factor": 1.0,
+    "failures": [],
+    "max_authored": 16,
+    "min_pos_iters": 1.0,
+    "stabilization": true
+   },
+   {
+    "cell": "put_bottles_into_dustbin__bottle_decomp",
+    "effective": 16,
+    "factor": 1.0,
+    "failures": [],
+    "max_authored": 16,
+    "min_pos_iters": 1.0,
+    "stabilization": true
+   }
+  ],
+  "g4c_slide_solver": [
+   {
+    "cell": "put_bottles_into_dustbin__shipped",
+    "effective": 64,
+    "factor": 4.0,
+    "failures": [],
+    "max_authored": 16,
+    "min_pos_iters": 64.0,
+    "stabilization": false
+   },
+   {
+    "cell": "put_bottles_into_dustbin__bottle_decomp",
+    "effective": 64,
+    "factor": 4.0,
+    "failures": [],
+    "max_authored": 16,
+    "min_pos_iters": 64.0,
+    "stabilization": false
+   }
+  ],
+  "g4rb2_corrected": [
+   {
+    "cell": null,
+    "effective": 64,
+    "factor": 4.0,
+    "failures": [],
+    "max_authored": 16,
+    "min_pos_iters": 64.0,
+    "stabilization": false
+   }
+  ],
+  "g4rb2_geom": [
+   {
+    "cell": null,
+    "effective": 16,
+    "factor": 1.0,
+    "failures": [],
+    "max_authored": 16,
+    "min_pos_iters": 1.0,
+    "stabilization": true
+   }
+  ],
+  "g4rb2_gripper": [
+   {
+    "cell": null,
+    "effective": 16,
+    "factor": 1.0,
+    "failures": [],
+    "max_authored": 16,
+    "min_pos_iters": 1.0,
+    "stabilization": true
+   }
+  ],
+  "g4rb2_heavy": [
+   {
+    "cell": null,
+    "effective": 64,
+    "factor": 4.0,
+    "failures": [],
+    "max_authored": 16,
+    "min_pos_iters": 64.0,
+    "stabilization": false
+   }
+  ],
+  "g4rb2_limits": [
+   {
+    "cell": null,
+    "effective": 16,
+    "factor": 1.0,
+    "failures": [],
+    "max_authored": 16,
+    "min_pos_iters": 1.0,
+    "stabilization": true
+   }
+  ],
+  "g4rb2_masses": [
+   {
+    "cell": null,
+    "effective": 16,
+    "factor": 1.0,
+    "failures": [],
+    "max_authored": 16,
+    "min_pos_iters": 1.0,
+    "stabilization": true
+   }
+  ],
+  "g4rb2_materials": [
+   {
+    "cell": null,
+    "effective": 16,
+    "factor": 1.0,
+    "failures": [],
+    "max_authored": 16,
+    "min_pos_iters": 1.0,
+    "stabilization": true
+   }
+  ],
+  "g4rb2_ordval": [
+   {
+    "cell": null,
+    "effective": 16,
+    "factor": 1.0,
+    "failures": [],
+    "max_authored": 16,
+    "min_pos_iters": 1.0,
+    "stabilization": true
+   }
+  ],
+  "g4rb2_pmin005": [
+   {
+    "cell": null,
+    "effective": 64,
+    "factor": 4.0,
+    "failures": [],
+    "max_authored": 16,
+    "min_pos_iters": 64.0,
+    "stabilization": false
+   }
+  ],
+  "g4rb2_solver": [
+   {
+    "cell": null,
+    "effective": 64,
+    "factor": 4.0,
+    "failures": [],
+    "max_authored": 16,
+    "min_pos_iters": 64.0,
+    "stabilization": false
+   }
+  ]
+ },
+ "slides": {
+  "g4c_slide_corr": {
+   "cells": {
+    "put_bottles_into_dustbin__bottle_decomp": {
+     "approximations": [
+      "convexDecomposition"
+     ],
+     "colliders": 1,
+     "com_slide_along_mm": 55.617,
+     "engine_material": [
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ]
+     ],
+     "final_tilt_deg": 3.6034,
+     "final_yaw_deg": -0.1396,
+     "inst": "bottle_25_12",
+     "lateral_mm": -1.0038,
+     "other_body_contact_points": 0,
+     "slide_along_mm": 55.5889,
+     "stop_time_s": 0.248
+    },
+    "put_bottles_into_dustbin__shipped": {
+     "approximations": [
+      "convexHull"
+     ],
+     "colliders": 1,
+     "com_slide_along_mm": 55.6464,
+     "engine_material": [
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ]
+     ],
+     "final_tilt_deg": 4.7045,
+     "final_yaw_deg": 0.0779,
+     "inst": "bottle_25_3",
+     "lateral_mm": 1.4691,
+     "other_body_contact_points": 0,
+     "slide_along_mm": 55.6104,
+     "stop_time_s": 0.236
+    }
+   },
+   "decomp_minus_hull_mm": -0.0294
+  },
+  "g4c_slide_corrns": {
+   "cells": {
+    "put_bottles_into_dustbin__bottle_decomp": {
+     "approximations": [
+      "convexDecomposition"
+     ],
+     "colliders": 1,
+     "com_slide_along_mm": 67.3056,
+     "engine_material": [
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ],
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ]
+     ],
+     "final_tilt_deg": 5.1036,
+     "final_yaw_deg": 0.2846,
+     "inst": "bottle_25_12",
+     "lateral_mm": -1.5977,
+     "other_body_contact_points": 0,
+     "slide_along_mm": 67.2477,
+     "stop_time_s": null
+    },
+    "put_bottles_into_dustbin__shipped": {
+     "approximations": [
+      "convexHull"
+     ],
+     "colliders": 1,
+     "com_slide_along_mm": 55.6401,
+     "engine_material": [
+      [
+       0.26739999651908875,
+       0.22169999778270721,
+       0.25
+      ]
+     ],
+     "final_tilt_deg": 4.6368,
+     "final_yaw_deg": 0.0779,
+     "inst": "bottle_25_3",
+     "lateral_mm": 1.4455,
+     "other_body_contact_points": 0,
+     "slide_along_mm": 55.6051,
+     "stop_time_s": 0.24
+    }
+   },
+   "decomp_minus_hull_mm": 11.6655
+  },
+  "g4c_slide_solver": {
+   "cells": {
+    "put_bottles_into_dustbin__bottle_decomp": {
+     "approximations": [
+      "convexDecomposition"
+     ],
+     "colliders": 1,
+     "com_slide_along_mm": 24.5785,
+     "engine_material": [
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ],
+      [
+       0.5,
+       0.5,
+       0.0
+      ]
+     ],
+     "final_tilt_deg": 1.3675,
+     "final_yaw_deg": 0.0091,
+     "inst": "bottle_25_12",
+     "lateral_mm": -0.5558,
+     "other_body_contact_points": 0,
+     "slide_along_mm": 24.5621,
+     "stop_time_s": 0.128
+    },
+    "put_bottles_into_dustbin__shipped": {
+     "approximations": [
+      "convexHull"
+     ],
+     "colliders": 1,
+     "com_slide_along_mm": 24.5523,
+     "engine_material": [
+      [
+       0.5,
+       0.5,
+       0.0
+      ]
+     ],
+     "final_tilt_deg": 0.9216,
+     "final_yaw_deg": 0.0146,
+     "inst": "bottle_25_3",
+     "lateral_mm": 0.3457,
+     "other_body_contact_points": 0,
+     "slide_along_mm": 24.5492,
+     "stop_time_s": 0.112
+    }
+   },
+   "decomp_minus_hull_mm": 0.0262
+  }
+ },
+ "speed": {
+  "g4c_creep_solver": [
+   {
+    "steps_per_second": 0.0,
+    "wall_seconds": 28.1
+   }
+  ],
+  "g4c_hold_grip": [
+   {
+    "steps_per_second": null,
+    "wall_seconds": 43.59
+   },
+   {
+    "steps_per_second": null,
+    "wall_seconds": 45.4
+   },
+   {
+    "steps_per_second": null,
+    "wall_seconds": 43.59
+   }
+  ],
+  "g4c_hold_gripsol": [
+   {
+    "steps_per_second": null,
+    "wall_seconds": 57.43
+   },
+   {
+    "steps_per_second": null,
+    "wall_seconds": 55.51
+   },
+   {
+    "steps_per_second": null,
+    "wall_seconds": 55.63
+   }
+  ],
+  "g4c_rest_corr": [
+   {
+    "steps_per_second": 76.1,
+    "wall_seconds": 101.8
+   },
+   {
+    "steps_per_second": 83.8,
+    "wall_seconds": 92.7
+   }
+  ],
+  "g4c_rest_corrns": [
+   {
+    "steps_per_second": 156.6,
+    "wall_seconds": 50.1
+   },
+   {
+    "steps_per_second": 202.3,
+    "wall_seconds": 39.5
+   }
+  ],
+  "g4c_ship_s0_l10": [
+   {
+    "steps_per_second": 18.3,
+    "wall_seconds": 202.7
+   }
+  ],
+  "g4c_slide_corr": [
+   {
+    "steps_per_second": 0.0,
+    "wall_seconds": 19.8
+   },
+   {
+    "steps_per_second": 0.0,
+    "wall_seconds": 27.0
+   }
+  ],
+  "g4c_slide_corrns": [
+   {
+    "steps_per_second": 0.0,
+    "wall_seconds": 18.4
+   },
+   {
+    "steps_per_second": 0.0,
+    "wall_seconds": 10.3
+   }
+  ],
+  "g4c_slide_solver": [
+   {
+    "steps_per_second": 0.0,
+    "wall_seconds": 16.1
+   },
+   {
+    "steps_per_second": 0.0,
+    "wall_seconds": 17.4
+   }
+  ],
+  "g4rb2_corrected": [
+   {
+    "steps_per_second": 24.5,
+    "wall_seconds": 13.5
+   }
+  ],
+  "g4rb2_geom": [
+   {
+    "steps_per_second": 15.1,
+    "wall_seconds": 12.1
+   }
+  ],
+  "g4rb2_gripper": [
+   {
+    "steps_per_second": 257.5,
+    "wall_seconds": 6.0
+   }
+  ],
+  "g4rb2_heavy": [
+   {
+    "steps_per_second": 114.4,
+    "wall_seconds": 10.1
+   }
+  ],
+  "g4rb2_limits": [
+   {
+    "steps_per_second": 11.6,
+    "wall_seconds": 14.2
+   }
+  ],
+  "g4rb2_masses": [
+   {
+    "steps_per_second": 257.5,
+    "wall_seconds": 5.5
+   }
+  ],
+  "g4rb2_materials": [
+   {
+    "steps_per_second": 257.5,
+    "wall_seconds": 5.5
+   }
+  ],
+  "g4rb2_ordval": [
+   {
+    "steps_per_second": 12.7,
+    "wall_seconds": 13.4
+   }
+  ],
+  "g4rb2_pmin005": [
+   {
+    "steps_per_second": 114.4,
+    "wall_seconds": 10.6
+   }
+  ],
+  "g4rb2_solver": [
+   {
+    "steps_per_second": 42.9,
+    "wall_seconds": 10.4
+   }
+  ]
+ }
+}

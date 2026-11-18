@@ -1,0 +1,60 @@
+[
+ {
+  "cell_name": "store_tools_in_toolbox__shipped",
+  "layout": 0,
+  "overrides": {
+   "slide_target": {
+    "label": "wrench",
+    "inst": "wrench_0_4",
+    "labelled": true,
+    "stem": "wrench_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.012814,
+     -0.999918
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "store_tools_in_toolbox__perturb",
+  "layout": 0,
+  "overrides": {
+   "spawn_lift": {
+    "stems": "*",
+    "dz_m": 1e-06
+   },
+   "slide_target": {
+    "label": "wrench",
+    "inst": "wrench_0_4",
+    "labelled": true,
+    "stem": "wrench_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.012814,
+     -0.999918
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "store_tools_in_toolbox__wrench_hull",
+  "layout": 0,
+  "overrides": {
+   "approx_override": {
+    "wrench_0": "convexHull"
+   },
+   "slide_target": {
+    "label": "wrench",
+    "inst": "wrench_0_4",
+    "labelled": true,
+    "stem": "wrench_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.012814,
+     -0.999918
+    ]
+   }
+  }
+ }
+]

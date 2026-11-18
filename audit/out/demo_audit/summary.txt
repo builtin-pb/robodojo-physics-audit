@@ -1,0 +1,69 @@
+episodes 3500 frames 1856102
+len min/med/max 104 458 1536 | >700: 814 | <50: 0
+duplicate digests []
+episodes with limit violation 1699 speed>cap 29 jump>1rad 0 grip out 164
+frames: viol 84281 speed 38 jump 0
+episodes per violating joint [('L2', 136), ('L3', 1), ('L4', 843), ('L5', 12), ('L6', 326), ('R2', 82), ('R3', 3), ('R4', 935), ('R5', 10), ('R6', 344)]
+task    n  len med/max  >700  viol%ep  viol%fr  spd%ep  jump ep
+   0  100   561/913       19      8.0     0.12     0.0        0  Arrange the numbers from left to right to form the
+   1  100   726/737      100     88.0     4.05     0.0        0  Build a tower using the wooden blocks and wooden b
+   2  100   689/1152      47     67.0     5.52     0.0        0  Sort the objects by category into the three basket
+   3  100   542/558        0    100.0     5.36     0.0        0  Cover the blocks from left to right, remember thei
+   4  100   194/204        0     38.0     5.89     0.0        0  Pick up the coin from the holder and insert it pre
+   5  100   655/672        0      0.0     0.00     0.0        0  Arrange the letters to spell "RoboDojo" in a row.
+   6  100  1399/1536     100      1.0     0.00    27.0        0  Insert and tighten each screw into the nut of the 
+   7  100   391/735        1      9.0     0.38     1.0        0  Place the four eggs from the basket into the egg h
+   8  100   691/1116      46     60.0     3.45     0.0        0  Hold the pen holder with one hand, place all pens 
+   9  100   302/313        0      3.0     0.04     0.0        0  Fold the clothes neatly.
+  10  100   512/913        7     15.0     0.42     0.0        0  Hang all the mugs on the mug rack.
+  11  100  1202/1373     100     90.0     2.78     0.0        0  Observe the object placement order, remember it, t
+  12  100   177/198        0     99.0    50.08     0.0        0  Pick up the key, hand it over to the other hand, i
+  13  100   321/329        0      0.0     0.00     0.0        0  Insert the three tubes into the rack one by one.
+  14  100   371/394        0    100.0    17.44     0.0        0  Wait for the opponent to discard a tile, then decl
+  15  100   588/1264      33     91.0     7.78     1.0        0  Pick up two slices of bread, place them into the t
+  16  100   444/597        0     19.0     0.34     0.0        0  Remember the first object on the conveyor, then pi
+  17  100   571/922       35     44.0     1.21     0.0        0  Place the alarm clock on the drawer, put the figur
+  18  100   827/1322      75     97.0    13.73     0.0        0  Place all the objects into the box with their fron
+  19  100   309/318        0    100.0     4.41     0.0        0  Pick up the mallet and strike all xylophone keys f
+  20  100   925/981      100     56.0     1.72     0.0        0  Place all stacking toy pieces onto the correct peg
+  21  100   879/927      100      0.0     0.00     0.0        0  Play tic-tac-toe as the first player and fill the 
+  22  100   203/280        0     50.0     1.14     0.0        0  Plug the charger into the power strip.
+  23  100   322/662        0     62.0     6.55     0.0        0  Pour all the balls from the cup into the vase.
+  24  100   224/491        0    100.0    49.30     0.0        0  Pour the liquid from the bottle into the cup.
+  25  100   386/506        0      0.0     0.00     0.0        0  Press the two red buttons the required number of t
+  26  100   315/772        1      0.0     0.00     0.0        0  Push the T-shaped block to align it precisely with
+  27  100   420/585        0     67.0     2.32     0.0        0  Pick up the bottles and throw them into the dustbi
+  28  100   624/755       11      0.0     0.00     0.0        0  Arrange the five nesting dolls in a row from left 
+  29  100   265/281        0     19.0     0.25     0.0        0  Stack the three blocks with different textures.
+  30  100   444/779        6     40.0     2.11     0.0        0  Stack the three bowls together.
+  31  100   499/866        5     71.0     5.88     0.0        0  Hang the headphones on the headphone stand, close 
+  32  100   275/299        0     46.0     7.32     0.0        0  Pick up the two T-shaped blocks, swap their positi
+  33  100   436/445        0     86.0     0.92     0.0        0  Swap the two blocks using the empty mat, pressing 
+  34  100   596/1063      28     73.0    15.55     0.0        0  Pick up the broom, hand it over to the right hand,
+top jumps
+1572 Pick up two slices of bread, place them  0.2 [332, 1, 1] 444
+3304 Swap the two blocks using the empty mat, 0.2 [14, 1, 2] 440
+660 Insert and tighten each screw into the n 0.2 [119, 0, 5] 1415
+671 Insert and tighten each screw into the n 0.2 [1130, 1, 5] 1449
+639 Insert and tighten each screw into the n 0.2 [214, 0, 5] 1523
+602 Insert and tighten each screw into the n 0.2 [235, 0, 5] 1345
+684 Insert and tighten each screw into the n 0.2 [1154, 1, 5] 1350
+609 Insert and tighten each screw into the n 0.2 [1033, 1, 5] 1351
+top speed ratio
+1572 Pick up two slices of bread, place them  1.0 1
+660 Insert and tighten each screw into the n 1.0 2
+671 Insert and tighten each screw into the n 1.0 1
+639 Insert and tighten each screw into the n 1.0 2
+602 Insert and tighten each screw into the n 1.0 1
+684 Insert and tighten each screw into the n 1.0 2
+609 Insert and tighten each screw into the n 1.0 2
+681 Insert and tighten each screw into the n 1.0 1
+top violation depth
+2030 Place all stacking toy pieces onto the c {'L4': [20, 0.15922858715057364], 'R4': [122, 0.9787232398986816], 'R5': [135, 1.5740579891204833], 'R6': [48, 0.6037204265594482]}
+3166 Hang the headphones on the headphone sta {'R4': [64, 0.9314059734344482], 'R5': [74, 1.4963280487060546], 'R6': [68, 0.9045472145080566]}
+3159 Hang the headphones on the headphone sta {'R4': [76, 0.8372389793395996], 'R5': [87, 1.4787523078918456], 'R6': [82, 0.8554620742797852]}
+3179 Hang the headphones on the headphone sta {'L6': [6, 0.040975332260131836], 'R4': [84, 0.8693723201751709], 'R5': [93, 1.4614366817474365], 'R6': [87, 0.9326043128967285]}
+2498 Pour the liquid from the bottle into the {'L6': [207, 1.1366536617279053]}
+1296 Pick up the key, hand it over to the oth {'L4': [5, 0.051738405227661044], 'L5': [14, 0.007985286712646422], 'L6': [39, 1.1111667156219482], 'R4': [82, 0.0715385913848876], 'R6': [93, 0.5844004154205322]}
+2495 Pour the liquid from the bottle into the {'L4': [30, 0.10331959724426265], 'L6': [111, 1.0994234085083008]}
+2430 Pour the liquid from the bottle into the {'L6': [241, 1.0939280986785889]}

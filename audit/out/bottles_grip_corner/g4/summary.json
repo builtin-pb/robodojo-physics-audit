@@ -1,0 +1,202 @@
+{
+ "arms": {
+  "corner": {
+   "accidental_bottles": 0,
+   "bottles_in_bin": 78,
+   "bottles_total": 80,
+   "episodes_with_impossible_motion": 0,
+   "episodes_with_recovered_failures": 3,
+   "first_failure_phases": {
+    "bin": 1,
+    "none": 18,
+    "transport": 1
+   },
+   "fixes": "corrected at the gripper's adverse corner (efficiency 0.7, armature 14.062 kg per finger; table 0a26327e), evaluator v2.2",
+   "max_bottle_speed_m_s": 4.06,
+   "mean_actions": 426.0,
+   "mean_steps_per_second": 48.88,
+   "mean_wall_seconds": 97.3,
+   "n": 20,
+   "seed_mean_range": 20.0,
+   "seed_mean_scores": {
+    "0": 100.0,
+    "1": 100.0,
+    "2": 80.0
+   },
+   "solver_readback_failures": 0,
+   "solver_scene": [
+    "{\"effective\": 64, \"factor\": 4.0, \"min_pos_iters\": 64.0, \"stabilization\": false}"
+   ],
+   "success_rate": 0.9,
+   "success_rate_ci95": [
+    0.699,
+    0.972
+   ],
+   "successes": 18,
+   "transport_losses": {
+    "by_model": {
+     "bottle_0": 1,
+     "bottle_22": 2
+    },
+    "by_phase": {
+     "handover": 1,
+     "left_carry_high": 1,
+     "left_to_dustbin": 1
+    },
+    "by_place": {
+     "table": 3
+    },
+    "episodes": 3,
+    "rows": [
+     [
+      2,
+      10,
+      "bottle3",
+      "bottle_0",
+      "handover",
+      158,
+      true,
+      "table",
+      -0.032
+     ],
+     [
+      2,
+      11,
+      "bottle3",
+      "bottle_22",
+      "left_to_dustbin",
+      342,
+      true,
+      "table",
+      -0.344
+     ],
+     [
+      2,
+      15,
+      "bottle1",
+      "bottle_22",
+      "left_carry_high",
+      382,
+      false,
+      "table",
+      -0.176
+     ]
+    ]
+   },
+   "v1_counted": 20,
+   "v1_mean_score": 94.0,
+   "v1_successes": 18,
+   "v2_mean_score": 94.0
+  },
+  "nominal": {
+   "accidental_bottles": 1,
+   "bottles_in_bin": 80,
+   "bottles_total": 80,
+   "episodes_with_impossible_motion": 0,
+   "episodes_with_recovered_failures": 2,
+   "first_failure_phases": {
+    "none": 20
+   },
+   "fixes": "corrected default at v2_presence, evaluator v2 (#186; audit/out/63/presence_checks/raw/pw_g4_bt_*)",
+   "max_bottle_speed_m_s": 3.16,
+   "mean_actions": 390.3,
+   "mean_steps_per_second": 19.35,
+   "mean_wall_seconds": 236.1,
+   "n": 20,
+   "seed_mean_range": 0.0,
+   "seed_mean_scores": {
+    "0": 100.0,
+    "1": 100.0,
+    "2": 100.0
+   },
+   "solver_readback_failures": 0,
+   "solver_scene": [
+    "{\"effective\": 64, \"factor\": 4.0, \"min_pos_iters\": 64.0, \"stabilization\": false}",
+    "{\"effective\": null, \"factor\": null, \"min_pos_iters\": null, \"stabilization\": null}"
+   ],
+   "success_rate": 1.0,
+   "success_rate_ci95": [
+    0.839,
+    1.0
+   ],
+   "successes": 20,
+   "transport_losses": {
+    "by_model": {
+     "bottle_22": 1
+    },
+    "by_phase": {
+     "left_to_dustbin": 1
+    },
+    "by_place": {
+     "bin side": 1
+    },
+    "episodes": 1,
+    "rows": [
+     [
+      2,
+      11,
+      "bottle3",
+      "bottle_22",
+      "left_to_dustbin",
+      350,
+      true,
+      "bin side",
+      -0.62
+     ]
+    ]
+   },
+   "v1_counted": 20,
+   "v1_mean_score": 100.0,
+   "v1_successes": 20,
+   "v2_mean_score": 100.0
+  }
+ },
+ "paired_vs_corrected": {},
+ "paired_vs_reference": {
+  "corner": {
+   "arm_only_successes": 0,
+   "beyond_noise": false,
+   "changed_episodes": [
+    {
+     "arm": 40.0,
+     "arm_phase": "bin",
+     "layout": 11,
+     "ref": 100.0,
+     "ref_phase": null,
+     "seed": 2
+    },
+    {
+     "arm": 40.0,
+     "arm_phase": "transport",
+     "layout": 15,
+     "ref": 100.0,
+     "ref_phase": null,
+     "seed": 2
+    }
+   ],
+   "mcnemar_p": 0.5,
+   "mean_score_diff": -6.0,
+   "pairs": 20,
+   "ref_only_successes": 2,
+   "rule": "beyond noise: at least 2 layout flips, all in one direction (#94 matched-episode rule), and a paired bootstrap 95% CI of the mean score difference that excludes 0 (layout and seed spread)",
+   "same_sign_all_seeds": false,
+   "score_diff_ci95_bootstrap": [
+    -15.0,
+    0.0
+   ],
+   "seed_mean_diffs": {
+    "0": 0.0,
+    "1": 0.0,
+    "2": -20.0
+   },
+   "transport_loss_episodes": {
+    "arm_only": 2,
+    "both": 1,
+    "mcnemar_p": 0.5,
+    "ref_only": 0
+   }
+  }
+ },
+ "reference": "nominal",
+ "settle": {}
+}

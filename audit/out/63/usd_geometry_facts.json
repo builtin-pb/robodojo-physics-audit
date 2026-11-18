@@ -1,0 +1,949 @@
+{
+  "schema": "usd_geometry_facts_v1",
+  "hf_dataset": "RoboDojo-Benchmark/RoboDojo",
+  "hf_dataset_revision": "1127bda94f172d757386945af3eb3a6754d1a4e6",
+  "generator": "audit/tools/extract_usd_geometry_facts.py",
+  "bottles": {
+    "Rigid/bottle/00000": {
+      "usd_relpath": "Assets/Object/RoboDojo/Rigid/bottle/00000/object.usdz",
+      "usd_sha256": "3a2ea65ba9d44eaab2f1916b8ddf599d9d4a8a62181bc28ed3036062073aac57",
+      "metadata_sha256": "97aa47eadb3d1251bb5841c0eb0c467be48d9ac287bdbb58fbbcdbd0948f584c",
+      "metadata_aligned_bbox_extents_m": [
+        0.063,
+        0.063,
+        0.245
+      ],
+      "collider_aabb": {
+        "enabled_gprim_collider_count": 1,
+        "collider_union_extents_m": [
+          0.063,
+          0.063,
+          0.245
+        ],
+        "approximations": [
+          "convexDecomposition"
+        ]
+      },
+      "hull_vertex_count": 4964,
+      "hull_face_count": 9924,
+      "outer_hull_volume_m3": 0.000632117,
+      "outer_hull_area_m2": 0.04660511,
+      "solid_com_offset_m": [
+        2e-06,
+        5e-06,
+        -0.012022
+      ],
+      "solid_inertia_over_mass_m2": [
+        0.00415318,
+        0.00415311,
+        0.00044186
+      ],
+      "solid_offdiag_max_rel": 3.9e-05,
+      "shell_com_offset_m": [
+        2e-06,
+        6e-06,
+        -0.010338
+      ],
+      "shell_inertia_over_mass_m2": [
+        0.00541441,
+        0.0054143,
+        0.0008227
+      ],
+      "shell_offdiag_max_rel": 6.8e-05,
+      "shell_over_solid_ratio": [
+        1.3037,
+        1.3037,
+        1.8619
+      ]
+    },
+    "Rigid/bottle/00002": {
+      "usd_relpath": "Assets/Object/RoboDojo/Rigid/bottle/00002/object.usdz",
+      "usd_sha256": "f826b43ecd2035b86af53181711f73cf5a08d7d8c8339e466d0a7d47edc2241e",
+      "metadata_sha256": "4330cd08f46bdf328c3bffa94e217a3185a57506664358787613515c69f7c9cc",
+      "metadata_aligned_bbox_extents_m": [
+        0.063,
+        0.063,
+        0.245
+      ],
+      "collider_aabb": {
+        "enabled_gprim_collider_count": 1,
+        "collider_union_extents_m": [
+          0.063,
+          0.063,
+          0.245
+        ],
+        "approximations": [
+          "convexDecomposition"
+        ]
+      },
+      "hull_vertex_count": 3500,
+      "hull_face_count": 6996,
+      "outer_hull_volume_m3": 0.000633355,
+      "outer_hull_area_m2": 0.04659763,
+      "solid_com_offset_m": [
+        1e-06,
+        7e-06,
+        -0.013574
+      ],
+      "solid_inertia_over_mass_m2": [
+        0.00412546,
+        0.00412536,
+        0.00044615
+      ],
+      "solid_offdiag_max_rel": 0.000111,
+      "shell_com_offset_m": [
+        1e-06,
+        9e-06,
+        -0.01166
+      ],
+      "shell_inertia_over_mass_m2": [
+        0.00538153,
+        0.0053814,
+        0.00082946
+      ],
+      "shell_offdiag_max_rel": 0.00014,
+      "shell_over_solid_ratio": [
+        1.3045,
+        1.3045,
+        1.8592
+      ]
+    },
+    "Rigid/bottle/00005": {
+      "usd_relpath": "Assets/Object/RoboDojo/Rigid/bottle/00005/object.usdz",
+      "usd_sha256": "063da52c617716a1a27010e462e4e7aa29abd8fb2d931465c61f7b0c97874e58",
+      "metadata_sha256": "04add3df2e5f5359b034ddaf27098ab974dcab577657fd220fe74b9923b5e6e0",
+      "metadata_aligned_bbox_extents_m": [
+        0.0625,
+        0.0625,
+        0.174
+      ],
+      "collider_aabb": {
+        "enabled_gprim_collider_count": 1,
+        "collider_union_extents_m": [
+          0.0625,
+          0.0625,
+          0.174
+        ],
+        "approximations": [
+          "convexHull"
+        ]
+      },
+      "hull_vertex_count": 11933,
+      "hull_face_count": 23862,
+      "outer_hull_volume_m3": 0.000517143,
+      "outer_hull_area_m2": 0.03825448,
+      "solid_com_offset_m": [
+        1.2e-05,
+        4.7e-05,
+        -0.001459
+      ],
+      "solid_inertia_over_mass_m2": [
+        0.00266562,
+        0.00266606,
+        0.00047601
+      ],
+      "solid_offdiag_max_rel": 8.8e-05,
+      "shell_com_offset_m": [
+        1.3e-05,
+        4.9e-05,
+        -0.001541
+      ],
+      "shell_inertia_over_mass_m2": [
+        0.00351793,
+        0.00351858,
+        0.00088174
+      ],
+      "shell_offdiag_max_rel": 0.000104,
+      "shell_over_solid_ratio": [
+        1.3197,
+        1.3198,
+        1.8524
+      ]
+    },
+    "Rigid/bottle/00022": {
+      "usd_relpath": "Assets/Object/RoboDojo/Rigid/bottle/00022/object.usdz",
+      "usd_sha256": "f353f09b4ff29b86385eaa09a32f2ccfe37d32c08dc3a3836efc1ed4107b1eb4",
+      "metadata_sha256": "421aba4cfe465eec17c9fa6064d9b099afa841b6a10f5fab9f6c10a777b496ef",
+      "metadata_aligned_bbox_extents_m": [
+        0.07,
+        0.07,
+        0.24
+      ],
+      "collider_aabb": {
+        "enabled_gprim_collider_count": 1,
+        "collider_union_extents_m": [
+          0.07,
+          0.07,
+          0.24
+        ],
+        "approximations": [
+          "convexHull"
+        ]
+      },
+      "hull_vertex_count": 10605,
+      "hull_face_count": 21206,
+      "outer_hull_volume_m3": 0.000761604,
+      "outer_hull_area_m2": 0.05070076,
+      "solid_com_offset_m": [
+        -0.000136,
+        0.000127,
+        -0.018676
+      ],
+      "solid_inertia_over_mass_m2": [
+        0.00389823,
+        0.00390347,
+        0.00056212
+      ],
+      "solid_offdiag_max_rel": 1.6e-05,
+      "shell_com_offset_m": [
+        -0.000136,
+        0.000126,
+        -0.015604
+      ],
+      "shell_inertia_over_mass_m2": [
+        0.00520382,
+        0.0052148,
+        0.00103433
+      ],
+      "shell_offdiag_max_rel": 5e-06,
+      "shell_over_solid_ratio": [
+        1.3349,
+        1.3359,
+        1.8401
+      ]
+    },
+    "Rigid/bottle/00025": {
+      "usd_relpath": "Assets/Object/RoboDojo/Rigid/bottle/00025/object.usdz",
+      "usd_sha256": "3a85f2de30fc3dc68684d03520abb8efc220225c9f271dfd32d79e9be5adf9d5",
+      "metadata_sha256": "7a9ab0555f8f30caba6e97d147540e6cf0f48027b934724f996e1bcffe0173dd",
+      "metadata_aligned_bbox_extents_m": [
+        0.064,
+        0.064,
+        0.204
+      ],
+      "collider_aabb": {
+        "enabled_gprim_collider_count": 1,
+        "collider_union_extents_m": [
+          0.064,
+          0.064,
+          0.204
+        ],
+        "approximations": [
+          "convexHull"
+        ]
+      },
+      "hull_vertex_count": 6990,
+      "hull_face_count": 13976,
+      "outer_hull_volume_m3": 0.000661031,
+      "outer_hull_area_m2": 0.04687522,
+      "solid_com_offset_m": [
+        -0.00011,
+        4.4e-05,
+        -0.012356
+      ],
+      "solid_inertia_over_mass_m2": [
+        0.00315909,
+        0.00315992,
+        0.00055861
+      ],
+      "solid_offdiag_max_rel": 4.2e-05,
+      "shell_com_offset_m": [
+        -0.000111,
+        3.8e-05,
+        -0.01173
+      ],
+      "shell_inertia_over_mass_m2": [
+        0.0042787,
+        0.00428002,
+        0.00102246
+      ],
+      "shell_offdiag_max_rel": 3.4e-05,
+      "shell_over_solid_ratio": [
+        1.3544,
+        1.3545,
+        1.8304
+      ]
+    },
+    "Rigid/bottle/00041": {
+      "usd_relpath": "Assets/Object/RoboDojo/Rigid/bottle/00041/object.usdz",
+      "usd_sha256": "94cb6ca014712f65d9e2a98a29f709e85eedf4c3d5251a1d94e3606817ee07bd",
+      "metadata_sha256": "9ad91a5a25c7e8ce0746e68f1e1849cbb656a819bee06f2c20e7c1e08ff40972",
+      "metadata_aligned_bbox_extents_m": [
+        0.053,
+        0.053,
+        0.185
+      ],
+      "collider_aabb": {
+        "enabled_gprim_collider_count": 1,
+        "collider_union_extents_m": [
+          0.053,
+          0.053,
+          0.185
+        ],
+        "approximations": [
+          "convexHull"
+        ]
+      },
+      "hull_vertex_count": 5841,
+      "hull_face_count": 11678,
+      "outer_hull_volume_m3": 0.000369235,
+      "outer_hull_area_m2": 0.03196794,
+      "solid_com_offset_m": [
+        -9.6e-05,
+        8.8e-05,
+        -0.006657
+      ],
+      "solid_inertia_over_mass_m2": [
+        0.00269081,
+        0.00269068,
+        0.00032708
+      ],
+      "solid_offdiag_max_rel": 0.000321,
+      "shell_com_offset_m": [
+        -9.6e-05,
+        9.5e-05,
+        -0.005569
+      ],
+      "shell_inertia_over_mass_m2": [
+        0.00346643,
+        0.00346638,
+        0.0006112
+      ],
+      "shell_offdiag_max_rel": 0.000298,
+      "shell_over_solid_ratio": [
+        1.2882,
+        1.2883,
+        1.8687
+      ]
+    },
+    "Rigid/bottle/00050": {
+      "usd_relpath": "Assets/Object/RoboDojo/Rigid/bottle/00050/object.usdz",
+      "usd_sha256": "bc8b7897b7aebee90498b3cfdd632f908c1b087aaf65ab1b0ca33942544e60d9",
+      "metadata_sha256": "9e9144fa52a31c225770da306cf76a1a196cccb3469ce5a79a336d54c0f5dd2e",
+      "metadata_aligned_bbox_extents_m": [
+        0.055,
+        0.055,
+        0.19
+      ],
+      "collider_aabb": {
+        "enabled_gprim_collider_count": 1,
+        "collider_union_extents_m": [
+          0.055,
+          0.055,
+          0.19
+        ],
+        "approximations": [
+          "convexDecomposition"
+        ]
+      },
+      "hull_vertex_count": 1428,
+      "hull_face_count": 2852,
+      "outer_hull_volume_m3": 0.000407605,
+      "outer_hull_area_m2": 0.03489091,
+      "solid_com_offset_m": [
+        0.0,
+        0.0,
+        -0.003432
+      ],
+      "solid_inertia_over_mass_m2": [
+        0.00312474,
+        0.00312474,
+        0.00034308
+      ],
+      "solid_offdiag_max_rel": 0.0,
+      "shell_com_offset_m": [
+        0.0,
+        0.0,
+        -0.002511
+      ],
+      "shell_inertia_over_mass_m2": [
+        0.00393959,
+        0.00393959,
+        0.00064363
+      ],
+      "shell_offdiag_max_rel": 0.0,
+      "shell_over_solid_ratio": [
+        1.2608,
+        1.2608,
+        1.876
+      ]
+    },
+    "Rigid/bottle/00055": {
+      "usd_relpath": "Assets/Object/RoboDojo/Rigid/bottle/00055/object.usdz",
+      "usd_sha256": "5c2f62fa09c548723ccd5a0b2ce8ec2d367fb2872f824a03c79da8bacd3779b9",
+      "metadata_sha256": "1d5b08cc40ea1c05eabae98924c0dde061ea183a89379a31fb631746e4984135",
+      "metadata_aligned_bbox_extents_m": [
+        0.08,
+        0.08,
+        0.225
+      ],
+      "collider_aabb": {
+        "enabled_gprim_collider_count": 2,
+        "collider_union_extents_m": [
+          0.08,
+          0.08,
+          0.225
+        ],
+        "approximations": [
+          "convexHull"
+        ]
+      },
+      "hull_vertex_count": 368,
+      "hull_face_count": 732,
+      "outer_hull_volume_m3": 0.000940239,
+      "outer_hull_area_m2": 0.05624593,
+      "solid_com_offset_m": [
+        -5e-06,
+        3.3e-05,
+        -0.009938
+      ],
+      "solid_inertia_over_mass_m2": [
+        0.00375853,
+        0.00375888,
+        0.00071029
+      ],
+      "solid_offdiag_max_rel": 0.000141,
+      "shell_com_offset_m": [
+        -7e-06,
+        3.3e-05,
+        -0.009438
+      ],
+      "shell_inertia_over_mass_m2": [
+        0.00506824,
+        0.00506872,
+        0.00130866
+      ],
+      "shell_offdiag_max_rel": 0.000117,
+      "shell_over_solid_ratio": [
+        1.3485,
+        1.3485,
+        1.8424
+      ]
+    },
+    "Rigid/bottle/00059": {
+      "usd_relpath": "Assets/Object/RoboDojo/Rigid/bottle/00059/object.usdz",
+      "usd_sha256": "71e140fabf0726768b51e1e828dc0da396ffc12148e23c667192e2a302100689",
+      "metadata_sha256": "eb0df723799dd005896e6522af6006fa37b9f25a8fc08d18bcffbf59f970b8e0",
+      "metadata_aligned_bbox_extents_m": [
+        0.055,
+        0.055,
+        0.17
+      ],
+      "collider_aabb": {
+        "enabled_gprim_collider_count": 1,
+        "collider_union_extents_m": [
+          0.055,
+          0.055,
+          0.17
+        ],
+        "approximations": [
+          "convexDecomposition"
+        ]
+      },
+      "hull_vertex_count": 192,
+      "hull_face_count": 380,
+      "outer_hull_volume_m3": 0.00035236,
+      "outer_hull_area_m2": 0.0308383,
+      "solid_com_offset_m": [
+        -1.7e-05,
+        -0.0,
+        -0.006579
+      ],
+      "solid_inertia_over_mass_m2": [
+        0.00234774,
+        0.00234805,
+        0.00033917
+      ],
+      "solid_offdiag_max_rel": 0.000179,
+      "shell_com_offset_m": [
+        -1.6e-05,
+        -0.0,
+        -0.00679
+      ],
+      "shell_inertia_over_mass_m2": [
+        0.00309421,
+        0.00309464,
+        0.00063146
+      ],
+      "shell_offdiag_max_rel": 0.000165,
+      "shell_over_solid_ratio": [
+        1.318,
+        1.318,
+        1.8617
+      ]
+    },
+    "Rigid/bottle/00060": {
+      "usd_relpath": "Assets/Object/RoboDojo/Rigid/bottle/00060/object.usdz",
+      "usd_sha256": "08b47c2f2f708e04cc87abf11ffdf14042b4ec1f6faea5b30d2070dc967b9fc0",
+      "metadata_sha256": "d3a59a806e9aff26327ec96f73013cce13b21f116fda23a265d38f16af0d7fd5",
+      "metadata_aligned_bbox_extents_m": [
+        0.055,
+        0.055,
+        0.19
+      ],
+      "collider_aabb": {
+        "enabled_gprim_collider_count": 1,
+        "collider_union_extents_m": [
+          0.055,
+          0.055,
+          0.19
+        ],
+        "approximations": [
+          "convexDecomposition"
+        ]
+      },
+      "hull_vertex_count": 433,
+      "hull_face_count": 862,
+      "outer_hull_volume_m3": 0.000448586,
+      "outer_hull_area_m2": 0.03688879,
+      "solid_com_offset_m": [
+        -0.0,
+        -0.0,
+        0.000374
+      ],
+      "solid_inertia_over_mass_m2": [
+        0.00315862,
+        0.00315959,
+        0.00037603
+      ],
+      "solid_offdiag_max_rel": 0.000137,
+      "shell_com_offset_m": [
+        -0.0,
+        -0.0,
+        0.000257
+      ],
+      "shell_inertia_over_mass_m2": [
+        0.00401229,
+        0.00401372,
+        0.00070473
+      ],
+      "shell_offdiag_max_rel": 0.000153,
+      "shell_over_solid_ratio": [
+        1.2703,
+        1.2703,
+        1.8741
+      ]
+    }
+  },
+  "geometry_objects": {
+    "Geometry/dustbin/00000": {
+      "usd_relpath": "Assets/Object/RoboDojo/Geometry/dustbin/00000/object.usdz",
+      "usd_sha256": "74810fdf0cf1f000732cbcdc304676b7294ac606cad364880426430eb2abd0b2",
+      "metadata_sha256": "41295bf8b6fc831e21f10aac32697c5009dd317ed10fa4629b854c0765de0a5e",
+      "metadata_aligned_bbox_extents_m": [
+        0.47,
+        0.47,
+        0.65
+      ],
+      "collider_union_min_m": [
+        -0.234951,
+        -0.234684,
+        -0.325022
+      ],
+      "collider_union_max_m": [
+        0.235049,
+        0.235316,
+        0.324978
+      ],
+      "collider_union_extents_m": [
+        0.47,
+        0.47,
+        0.65
+      ],
+      "bbox_cache_rotated_obb_extents_m": [
+        0.47,
+        0.47,
+        0.65
+      ],
+      "collider_vs_metadata_rel_diff": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "enabled_gprim_collider_count": 1,
+      "colliders": [
+        {
+          "prim_path": "/World/collision/model",
+          "approximation": "convexDecomposition",
+          "local_min_m": [
+            -0.234951,
+            -0.234684,
+            -0.325022
+          ],
+          "local_max_m": [
+            0.235049,
+            0.235316,
+            0.324978
+          ],
+          "extents_m": [
+            0.47,
+            0.47,
+            0.65
+          ]
+        }
+      ]
+    },
+    "Geometry/camera_stand/00000": {
+      "usd_relpath": "Assets/Object/RoboDojo/Geometry/camera_stand/00000/object.usd",
+      "usd_sha256": "6c4b9ec4cd325f6e47d862b87e7dddbe9adc5e9a5aa0f04224c47d0f16a600a8",
+      "metadata_sha256": "981392df89e5a45a28c0240ef0cb289b778550ec7ad49e98419a813865bb3d30",
+      "metadata_aligned_bbox_extents_m": [
+        0.3,
+        0.5875,
+        0.1097
+      ],
+      "collider_union_min_m": [
+        -0.15,
+        -0.58751,
+        -0.045
+      ],
+      "collider_union_max_m": [
+        0.15,
+        0.0,
+        0.064666
+      ],
+      "collider_union_extents_m": [
+        0.3,
+        0.58751,
+        0.109666
+      ],
+      "bbox_cache_rotated_obb_extents_m": [
+        0.3,
+        0.613153,
+        0.112434
+      ],
+      "collider_vs_metadata_rel_diff": [
+        0.0,
+        1.7e-05,
+        0.00031
+      ],
+      "enabled_gprim_collider_count": 12,
+      "colliders": [
+        {
+          "prim_path": "/root/base_br/Camera_stand/base/Mesh_1",
+          "approximation": "none",
+          "local_min_m": [
+            -0.15,
+            -0.009998,
+            -0.045
+          ],
+          "local_max_m": [
+            0.15,
+            0.0,
+            0.044984
+          ],
+          "extents_m": [
+            0.3,
+            0.009998,
+            0.089984
+          ]
+        },
+        {
+          "prim_path": "/root/base_br/Camera_stand/Fixed_Mounting_Base/Mesh_0",
+          "approximation": "none",
+          "local_min_m": [
+            -0.03305,
+            -0.052999,
+            -0.03305
+          ],
+          "local_max_m": [
+            0.03305,
+            -0.008,
+            0.03305
+          ],
+          "extents_m": [
+            0.0661,
+            0.044999,
+            0.0661
+          ]
+        },
+        {
+          "prim_path": "/root/base_br/Camera_stand/\u7b2c\u4e00\u89c6\u89d2\u94dd\u65b9\u7ba1_1/Mesh_2",
+          "approximation": "none",
+          "local_min_m": [
+            -0.015,
+            -0.58751,
+            -0.015
+          ],
+          "local_max_m": [
+            0.014988,
+            -0.002,
+            0.014988
+          ],
+          "extents_m": [
+            0.029988,
+            0.58551,
+            0.029988
+          ]
+        },
+        {
+          "prim_path": "/root/base_br/camera_base/camera_base",
+          "approximation": "none",
+          "local_min_m": [
+            -0.041,
+            -0.587319,
+            -0.020053
+          ],
+          "local_max_m": [
+            0.089,
+            -0.533277,
+            0.047771
+          ],
+          "extents_m": [
+            0.13,
+            0.054042,
+            0.067824
+          ]
+        },
+        {
+          "prim_path": "/root/base_br/rsd455/RSD455/Visual/Case_front",
+          "approximation": "none",
+          "local_min_m": [
+            -0.03937,
+            -0.566161,
+            0.038564
+          ],
+          "local_max_m": [
+            0.084386,
+            -0.540526,
+            0.064666
+          ],
+          "extents_m": [
+            0.123756,
+            0.025635,
+            0.026102
+          ]
+        },
+        {
+          "prim_path": "/root/base_br/rsd455/RSD455/Visual/Glass",
+          "approximation": "none",
+          "local_min_m": [
+            -0.034165,
+            -0.554599,
+            0.049902
+          ],
+          "local_max_m": [
+            0.079181,
+            -0.541563,
+            0.063495
+          ],
+          "extents_m": [
+            0.113345,
+            0.013036,
+            0.013594
+          ]
+        },
+        {
+          "prim_path": "/root/base_br/rsd455/RSD455/Visual/Case_back",
+          "approximation": "none",
+          "local_min_m": [
+            -0.03937,
+            -0.574055,
+            0.029889
+          ],
+          "local_max_m": [
+            0.084386,
+            -0.546202,
+            0.059379
+          ],
+          "extents_m": [
+            0.123756,
+            0.027853,
+            0.029491
+          ]
+        },
+        {
+          "prim_path": "/root/base_br/rsd455/RSD455/Visual/USB_C",
+          "approximation": "none",
+          "local_min_m": [
+            0.055148,
+            -0.559452,
+            0.032354
+          ],
+          "local_max_m": [
+            0.063888,
+            -0.551582,
+            0.04051
+          ],
+          "extents_m": [
+            0.00874,
+            0.007871,
+            0.008156
+          ]
+        },
+        {
+          "prim_path": "/root/base_br/rsd455/RSD455/Visual/Mount",
+          "approximation": "none",
+          "local_min_m": [
+            -0.037401,
+            -0.569713,
+            0.032692
+          ],
+          "local_max_m": [
+            0.082577,
+            -0.546202,
+            0.057776
+          ],
+          "extents_m": [
+            0.119977,
+            0.023511,
+            0.025084
+          ]
+        },
+        {
+          "prim_path": "/root/base_br/rsd455/RSD455/Visual/Camera_module",
+          "approximation": "none",
+          "local_min_m": [
+            -0.037242,
+            -0.562437,
+            0.042431
+          ],
+          "local_max_m": [
+            0.082258,
+            -0.543682,
+            0.061425
+          ],
+          "extents_m": [
+            0.1195,
+            0.018755,
+            0.018994
+          ]
+        },
+        {
+          "prim_path": "/root/base_br/rsd455/RSD455/Visual/Front_mask",
+          "approximation": "none",
+          "local_min_m": [
+            -0.033932,
+            -0.554572,
+            0.049942
+          ],
+          "local_max_m": [
+            0.078948,
+            -0.542117,
+            0.06295
+          ],
+          "extents_m": [
+            0.11288,
+            0.012456,
+            0.013008
+          ]
+        },
+        {
+          "prim_path": "/root/base_br/rsd455/RSD455/Visual/camera_mask",
+          "approximation": "none",
+          "local_min_m": [
+            -0.031842,
+            -0.555242,
+            0.049346
+          ],
+          "local_max_m": [
+            0.076858,
+            -0.543813,
+            0.061282
+          ],
+          "extents_m": [
+            0.1087,
+            0.011429,
+            0.011935
+          ]
+        }
+      ]
+    }
+  },
+  "robots": {
+    "x5": {
+      "usd_relpath": "Assets/Robots/x5/ARX.usd",
+      "usd_sha256": "5723a835bf5627a935a8dabb3a44447725bd1465243ce791e221b3e990121d63",
+      "links": [
+        {
+          "link": "base_link",
+          "prim_path": "/X5A/base_link",
+          "collision_api_count": 1,
+          "approximations": [
+            "convexHull"
+          ]
+        },
+        {
+          "link": "link1",
+          "prim_path": "/X5A/link1",
+          "collision_api_count": 1,
+          "approximations": [
+            "convexHull"
+          ]
+        },
+        {
+          "link": "link2",
+          "prim_path": "/X5A/link2",
+          "collision_api_count": 1,
+          "approximations": [
+            "convexHull"
+          ]
+        },
+        {
+          "link": "link3",
+          "prim_path": "/X5A/link3",
+          "collision_api_count": 1,
+          "approximations": [
+            "convexDecomposition"
+          ]
+        },
+        {
+          "link": "link4",
+          "prim_path": "/X5A/link4",
+          "collision_api_count": 1,
+          "approximations": [
+            "convexHull"
+          ]
+        },
+        {
+          "link": "link5",
+          "prim_path": "/X5A/link5",
+          "collision_api_count": 1,
+          "approximations": [
+            "convexHull"
+          ]
+        },
+        {
+          "link": "link6",
+          "prim_path": "/X5A/link6",
+          "collision_api_count": 1,
+          "approximations": [
+            "convexHull"
+          ]
+        },
+        {
+          "link": "camera_base",
+          "prim_path": "/X5A/camera_base",
+          "collision_api_count": 1,
+          "approximations": [
+            "convexHull"
+          ]
+        },
+        {
+          "link": "camera",
+          "prim_path": "/X5A/camera",
+          "collision_api_count": 1,
+          "approximations": [
+            "convexHull"
+          ]
+        },
+        {
+          "link": "link7",
+          "prim_path": "/X5A/link7",
+          "collision_api_count": 1,
+          "approximations": [
+            "convexHull"
+          ]
+        },
+        {
+          "link": "link8",
+          "prim_path": "/X5A/link8",
+          "collision_api_count": 1,
+          "approximations": [
+            "convexHull"
+          ]
+        }
+      ]
+    }
+  }
+}

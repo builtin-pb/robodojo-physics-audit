@@ -1,0 +1,256 @@
+test_a_4cm_carry_counts_under_v21_not_v2 (audit.tools.test_evaluator_v2.BottlesPickupRuleTaskTests.test_a_4cm_carry_counts_under_v21_not_v2) ... ok
+test_a_4cm_carry_with_a_real_grasp_counts_under_v22 (audit.tools.test_evaluator_v2.BottlesPickupRuleTaskTests.test_a_4cm_carry_with_a_real_grasp_counts_under_v22) ... ok
+test_a_4cm_lift_held_five_actions_is_not_a_pick (audit.tools.test_evaluator_v2.BottlesPickupRuleTaskTests.test_a_4cm_lift_held_five_actions_is_not_a_pick) ... ok
+test_bulldozer_jaw_on_the_table_does_not_count (audit.tools.test_evaluator_v2.BottlesPickupRuleTaskTests.test_bulldozer_jaw_on_the_table_does_not_count) ... ok
+test_closed_fist_carry_counts_under_v21_not_v22 (audit.tools.test_evaluator_v2.BottlesPickupRuleTaskTests.test_closed_fist_carry_counts_under_v21_not_v22) ... ok
+test_held_bottle_shoved_onto_another_does_not_count (audit.tools.test_evaluator_v2.BottlesPickupRuleTaskTests.test_held_bottle_shoved_onto_another_does_not_count) ... ok
+test_in_place_reset_keeps_the_rule_and_starts_clean (audit.tools.test_evaluator_v2.BottlesPickupRuleTaskTests.test_in_place_reset_keeps_the_rule_and_starts_clean) ... ok
+test_tracker_samples_time_and_table (audit.tools.test_evaluator_v2.BottlesPickupRuleTaskTests.test_tracker_samples_time_and_table) ... ok
+test_zero_action_period_fails_loudly (audit.tools.test_evaluator_v2.BottlesPickupRuleTaskTests.test_zero_action_period_fails_loudly) ... ok
+test_a_bottle_beside_the_lifted_one_does_not_count_as_support (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_a_bottle_beside_the_lifted_one_does_not_count_as_support) ... ok
+test_aggregation_refuses_mixed_pickup_rules (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_aggregation_refuses_mixed_pickup_rules) ... ok
+test_beneath_a_taller_overlapping_bottle_is_not_clear (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_beneath_a_taller_overlapping_bottle_is_not_clear) ... ok
+test_bottle_on_the_table_under_a_narrow_jaw_is_not_picked (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_bottle_on_the_table_under_a_narrow_jaw_is_not_picked) ... ok
+test_clearance_must_strictly_exceed_2cm (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_clearance_must_strictly_exceed_2cm) ... ok
+test_entry_before_the_pick_is_not_credited (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_entry_before_the_pick_is_not_credited) ... ok
+test_envs_are_independent_under_v21 (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_envs_are_independent_under_v21) ... ok
+test_footprint_overlap (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_footprint_overlap) ... ok
+test_held_3cm_clear_for_01s_is_not_picked (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_held_3cm_clear_for_01s_is_not_picked) ... ok
+test_held_3cm_clear_for_02s_is_picked (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_held_3cm_clear_for_02s_is_picked) ... ok
+test_held_bottle_pushed_onto_another_bottle_is_not_picked (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_held_bottle_pushed_onto_another_bottle_is_not_picked) ... ok
+test_held_on_another_bottle_beyond_v2s_bar_is_v2_picked_not_v21 (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_held_on_another_bottle_beyond_v2s_bar_is_v2_picked_not_v21) ... ok
+test_hold_time_uses_simulated_time_not_sample_count (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_hold_time_uses_simulated_time_not_sample_count) ... ok
+test_incomplete_sample_breaks_continuity (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_incomplete_sample_breaks_continuity) ... ok
+test_known_limit_of_v21_bottle_on_closed_fingers_counts_as_held (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_known_limit_of_v21_bottle_on_closed_fingers_counts_as_held) ... ok
+test_lifted_clear_above_another_bottle_counts (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_lifted_clear_above_another_bottle_counts) ... ok
+test_one_unheld_sample_restarts_the_clock (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_one_unheld_sample_restarts_the_clock) ... ok
+test_result_files_record_the_rule (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_result_files_record_the_rule) ... ok
+test_resume_keeps_the_rule_it_started_with (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_resume_keeps_the_rule_it_started_with) ... ok
+test_rule_selection_and_params (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_rule_selection_and_params) ... ok
+test_stillness_rule_resume_and_mixed_aggregation_guard (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_stillness_rule_resume_and_mixed_aggregation_guard) ... ok
+test_unobserved_samples_do_not_bridge_continuity (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_unobserved_samples_do_not_bridge_continuity) ... ok
+test_v21_needs_time_and_table (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_v21_needs_time_and_table) ... ok
+test_v2_rule_is_bit_identical_to_v2_before_177 (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_v2_rule_is_bit_identical_to_v2_before_177) ... ok
+test_v2_rule_reproduces_v2s_existing_test_file (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_v2_rule_reproduces_v2s_existing_test_file) ... ok
+test_xylophone_strike_rule_resume_and_mixed_aggregation_guard (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_xylophone_strike_rule_resume_and_mixed_aggregation_guard) ... ok
+test_20mm_boundary (audit.tools.test_evaluator_v2.BottlesPickupRuleV22Tests.test_20mm_boundary) ... ok
+test_closed_fists_pressing_3cm_clear_for_02s_count_under_v21_not_v22 (audit.tools.test_evaluator_v2.BottlesPickupRuleV22Tests.test_closed_fists_pressing_3cm_clear_for_02s_count_under_v21_not_v22) ... ok
+test_one_closed_gripper_does_not_veto_a_real_grasp (audit.tools.test_evaluator_v2.BottlesPickupRuleV22Tests.test_one_closed_gripper_does_not_veto_a_real_grasp) ... ok
+test_real_grasp_at_48mm_is_picked_under_both (audit.tools.test_evaluator_v2.BottlesPickupRuleV22Tests.test_real_grasp_at_48mm_is_picked_under_both) ... ok
+test_v22_needs_time_and_table (audit.tools.test_evaluator_v2.BottlesPickupRuleV22Tests.test_v22_needs_time_and_table) ... ok
+test_v2_and_v21_are_bit_identical_to_before_v22 (audit.tools.test_evaluator_v2.BottlesPickupRuleV22Tests.test_v2_and_v21_are_bit_identical_to_before_v22) ... ok
+test_benchmark_aggregation_and_macro_vs_equal_weighting (audit.tools.test_evaluator_v2.EvaluatorV2UnitTests.test_benchmark_aggregation_and_macro_vs_equal_weighting) ... ok
+test_episode_starts_as_failure_and_disqualification_split (audit.tools.test_evaluator_v2.EvaluatorV2UnitTests.test_episode_starts_as_failure_and_disqualification_split) ... ok
+test_ledger_completeness_drops_first_drop_stands_and_denominator (audit.tools.test_evaluator_v2.EvaluatorV2UnitTests.test_ledger_completeness_drops_first_drop_stands_and_denominator) ... ok
+test_make_ledger_entry_zeroes_drop_scores (audit.tools.test_evaluator_v2.EvaluatorV2UnitTests.test_make_ledger_entry_zeroes_drop_scores) ... ok
+test_physics_block_carried_through_v2_ledger_result_and_loader (audit.tools.test_evaluator_v2.EvaluatorV2UnitTests.test_physics_block_carried_through_v2_ledger_result_and_loader) ... ok
+test_seed_manager_freezes_scheduled_pool_and_resume (audit.tools.test_evaluator_v2.EvaluatorV2UnitTests.test_seed_manager_freezes_scheduled_pool_and_resume) ... ok
+test_v1_v2_isolation_both_directions (audit.tools.test_evaluator_v2.EvaluatorV2UnitTests.test_v1_v2_isolation_both_directions)
+Required #1: shipped summarize_result.py never picks up a v2 run, and a later v1 run never makes v2 INCOMPLETE. ... ok
+test_version_roots_and_categories (audit.tools.test_evaluator_v2.EvaluatorV2UnitTests.test_version_roots_and_categories) ... ok
+test_all_subtasks_and_review_boundaries_under_v1_and_v2_contact (audit.tools.test_evaluator_v2.OrganizeTableRuleTaskTests.test_all_subtasks_and_review_boundaries_under_v1_and_v2_contact) ... ok
+test_rule_is_fixed_per_run_and_invalid_rule_fails_at_init (audit.tools.test_evaluator_v2.OrganizeTableRuleTaskTests.test_rule_is_fixed_per_run_and_invalid_rule_fails_at_init) ... ok
+test_shared_helper_decimation_assert_and_contact_processing_restore (audit.tools.test_evaluator_v2.OrganizeTableRuleTaskTests.test_shared_helper_decimation_assert_and_contact_processing_restore) ... ok
+test_v1_and_default_v2_are_bit_identical_to_b3b0001_and_v2_contact_flips_off_drawer (audit.tools.test_evaluator_v2.OrganizeTableRuleTaskTests.test_v1_and_default_v2_are_bit_identical_to_b3b0001_and_v2_contact_flips_off_drawer) ... ok
+test_contact_support_and_hold_boundaries_for_all_four_subtasks (audit.tools.test_evaluator_v2.OrganizeTableRuleUnitTests.test_contact_support_and_hold_boundaries_for_all_four_subtasks) ... ok
+test_drawer_top_footprint_and_5mm_margin_boundaries (audit.tools.test_evaluator_v2.OrganizeTableRuleUnitTests.test_drawer_top_footprint_and_5mm_margin_boundaries) ... ok
+test_result_stamp_loader_resume_and_mixed_rule_aggregation (audit.tools.test_evaluator_v2.OrganizeTableRuleUnitTests.test_result_stamp_loader_resume_and_mixed_rule_aggregation) ... ok
+test_rule_default_is_unchanged_v1_and_retired_v2_xy_rejected (audit.tools.test_evaluator_v2.OrganizeTableRuleUnitTests.test_rule_default_is_unchanged_v1_and_retired_v2_xy_rejected) ... ok
+test_tilted_alarm_uses_bottom_support_point_and_nan_fails (audit.tools.test_evaluator_v2.OrganizeTableRuleUnitTests.test_tilted_alarm_uses_bottom_support_point_and_nan_fails) ... ok
+test_held_by_both_pads_simultaneity_and_fail_closed_not_held (audit.tools.test_evaluator_v2.SharedContactHelperV2Tests.test_held_by_both_pads_simultaneity_and_fail_closed_not_held) ... ok
+test_impulse_between_and_prim_prefix_queries (audit.tools.test_evaluator_v2.SharedContactHelperV2Tests.test_impulse_between_and_prim_prefix_queries) ... ok
+test_bar_contact_attribution_exact_boundaries_and_edge_strike (audit.tools.test_xylophone_strike_v2.XylophoneContactBoundaryTests.test_bar_contact_attribution_exact_boundaries_and_edge_strike) ... ok
+test_ledger_rejects_blockers_and_accepts_fast_rebound_and_edge_strike (audit.tools.test_xylophone_strike_v2.XylophoneContactBoundaryTests.test_ledger_rejects_blockers_and_accepts_fast_rebound_and_edge_strike) ... ok
+test_mallet_head_and_shaft_exact_boundaries (audit.tools.test_xylophone_strike_v2.XylophoneContactBoundaryTests.test_mallet_head_and_shaft_exact_boundaries) ... ok
+test_point_in_quad_xy_and_bar_clearance (audit.tools.test_xylophone_strike_v2.XylophoneContactBoundaryTests.test_point_in_quad_xy_and_bar_clearance) ... ok
+test_robot_holds_mallet_shaft_substep_exact_boundaries (audit.tools.test_xylophone_strike_v2.XylophoneContactBoundaryTests.test_robot_holds_mallet_shaft_substep_exact_boundaries) ... ok
+test_default_and_env_selection (audit.tools.test_xylophone_strike_v2.XylophoneRuleConfigTests.test_default_and_env_selection) ... ok
+test_mixed_rule_aggregation_invalidates_task_and_dimension (audit.tools.test_xylophone_strike_v2.XylophoneRuleConfigTests.test_mixed_rule_aggregation_invalidates_task_and_dimension) ... ok
+test_params_stamped_in_result_and_legacy_loader (audit.tools.test_xylophone_strike_v2.XylophoneRuleConfigTests.test_params_stamped_in_result_and_legacy_loader) ... ok
+test_resume_guard_refuses_rule_change (audit.tools.test_xylophone_strike_v2.XylophoneRuleConfigTests.test_resume_guard_refuses_rule_change) ... ok
+test_unknown_and_replaced_v2_strike_rejected (audit.tools.test_xylophone_strike_v2.XylophoneRuleConfigTests.test_unknown_and_replaced_v2_strike_rejected) ... ok
+test_hover_and_near_descent_pass_v1_but_fail_v2_contact (audit.tools.test_xylophone_strike_v2.XylophoneTaskIntegrationTests.test_hover_and_near_descent_pass_v1_but_fail_v2_contact) ... ok
+test_missing_assets_skips_cleanly (audit.tools.test_xylophone_strike_v2.XylophoneTaskIntegrationTests.test_missing_assets_skips_cleanly) ... ok
+test_real_strikes_fast_rebound_and_edge_pass_v2_contact_while_drop_and_13mm_fail (audit.tools.test_xylophone_strike_v2.XylophoneTaskIntegrationTests.test_real_strikes_fast_rebound_and_edge_pass_v2_contact_while_drop_and_13mm_fail) ... ok
+test_reset_restores_contact_processing_when_leaving_v2_contact (audit.tools.test_xylophone_strike_v2.XylophoneTaskIntegrationTests.test_reset_restores_contact_processing_when_leaving_v2_contact) ... ok
+test_v1_rule_bit_identical_digest_on_150_random_episodes (audit.tools.test_xylophone_strike_v2.XylophoneTaskIntegrationTests.test_v1_rule_bit_identical_digest_on_150_random_episodes) ... ok
+test_v2_contact_asserts_decimation_equals_1 (audit.tools.test_xylophone_strike_v2.XylophoneTaskIntegrationTests.test_v2_contact_asserts_decimation_equals_1) ... ok
+test_zero_action_period_raises (audit.tools.test_xylophone_strike_v2.XylophoneTaskIntegrationTests.test_zero_action_period_raises) ... ok
+test_aggregation_refuses_mixed_stillness_rules (audit.tools.test_stillness_v2.StillnessV2StdlibTests.test_aggregation_refuses_mixed_stillness_rules) ... ok
+test_ledger_records_stillness_rule (audit.tools.test_stillness_v2.StillnessV2StdlibTests.test_ledger_records_stillness_rule) ... ok
+test_points_moved_beyond_v2 (audit.tools.test_stillness_v2.StillnessV2StdlibTests.test_points_moved_beyond_v2) ... ok
+test_resume_stillness_rule_check (audit.tools.test_stillness_v2.StillnessV2StdlibTests.test_resume_stillness_rule_check) ... ok
+test_snapshot_multi_env_isolation_stdlib (audit.tools.test_stillness_v2.StillnessV2StdlibTests.test_snapshot_multi_env_isolation_stdlib) ... ok
+test_stillness_snapshot_lifecycle_and_action_one_rule (audit.tools.test_stillness_v2.StillnessV2StdlibTests.test_stillness_snapshot_lifecycle_and_action_one_rule) ... ok
+test_build_tower_single_eval_unchanged_v1_vs_v2 (audit.tools.test_stillness_v2.StillnessV2TaskTests.test_build_tower_single_eval_unchanged_v1_vs_v2) ... ok
+test_cold_10mm_displacement_update_false_matches_v1 (audit.tools.test_stillness_v2.StillnessV2TaskTests.test_cold_10mm_displacement_update_false_matches_v1) ... ok
+test_eval_env_resume_manifest_union_with_181 (audit.tools.test_stillness_v2.StillnessV2TaskTests.test_eval_env_resume_manifest_union_with_181) ... ok
+test_first_action_boundary_v2 (audit.tools.test_stillness_v2.StillnessV2TaskTests.test_first_action_boundary_v2) ... ok
+test_hang_mugs_all_six_cases_and_random (audit.tools.test_stillness_v2.StillnessV2TaskTests.test_hang_mugs_all_six_cases_and_random) ... ok
+test_hang_mugs_rotational_swing_rejected_v2 (audit.tools.test_stillness_v2.StillnessV2TaskTests.test_hang_mugs_rotational_swing_rejected_v2) ... ok
+test_imitate_sorting_sequence_single_eval_unchanged_v1_vs_v2 (audit.tools.test_stillness_v2.StillnessV2TaskTests.test_imitate_sorting_sequence_single_eval_unchanged_v1_vs_v2) ... ok
+test_is_moved_update_false_and_reset_preserved (audit.tools.test_stillness_v2.StillnessV2TaskTests.test_is_moved_update_false_and_reset_preserved) ... ok
+test_multi_env_isolation_func_parser_and_reward_manager (audit.tools.test_stillness_v2.StillnessV2TaskTests.test_multi_env_isolation_func_parser_and_reward_manager) ... ok
+test_organize_table_sliding_vs_resting_mouse (audit.tools.test_stillness_v2.StillnessV2TaskTests.test_organize_table_sliding_vs_resting_mouse) ... ok
+test_predicate_twice_in_one_step_v1_vs_v2 (audit.tools.test_stillness_v2.StillnessV2TaskTests.test_predicate_twice_in_one_step_v1_vs_v2) ... ok
+test_a_new_ledger_carries_nothing (audit.tools.test_bottles_lift_v2.LedgerTests.test_a_new_ledger_carries_nothing) ... ok
+test_bottles_and_envs_are_independent (audit.tools.test_bottles_lift_v2.LedgerTests.test_bottles_and_envs_are_independent) ... ok
+test_entry_is_judged_at_entry_not_at_the_end (audit.tools.test_bottles_lift_v2.LedgerTests.test_entry_is_judged_at_entry_not_at_the_end) ... ok
+test_hold_without_lift_is_not_a_pickup (audit.tools.test_bottles_lift_v2.LedgerTests.test_hold_without_lift_is_not_a_pickup) ... ok
+test_leaving_and_reentering_after_a_real_pickup_counts (audit.tools.test_bottles_lift_v2.LedgerTests.test_leaving_and_reentering_after_a_real_pickup_counts) ... ok
+test_lift_must_strictly_exceed_clearance (audit.tools.test_bottles_lift_v2.LedgerTests.test_lift_must_strictly_exceed_clearance) ... ok
+test_lift_without_hold_is_not_a_pickup (audit.tools.test_bottles_lift_v2.LedgerTests.test_lift_without_hold_is_not_a_pickup) ... ok
+test_unknown_bottle_is_not_credited (audit.tools.test_bottles_lift_v2.LedgerTests.test_unknown_bottle_is_not_credited) ... ok
+test_gap_from_finger_joints (audit.tools.test_bottles_lift_v2.PredicateTests.test_gap_from_finger_joints) ... ok
+test_lying_bottle_box_follows_orientation (audit.tools.test_bottles_lift_v2.PredicateTests.test_lying_bottle_box_follows_orientation) ... ok
+test_pad_centre_follows_link6_axis (audit.tools.test_bottles_lift_v2.PredicateTests.test_pad_centre_follows_link6_axis) ... ok
+test_pad_inside_box_and_gap_clampable (audit.tools.test_bottles_lift_v2.PredicateTests.test_pad_inside_box_and_gap_clampable) ... ok
+test_threshold_is_the_thickest_bottle_model (audit.tools.test_bottles_lift_v2.PredicateTests.test_threshold_is_the_thickest_bottle_model) ... ok
+test_bulldozed_in_counts_under_v1_not_v2 (audit.tools.test_bottles_lift_v2.TaskIntegrationTests.test_bulldozed_in_counts_under_v1_not_v2) ... ok
+test_bulldozing_with_closed_fingers_beside_the_bottle_still_fails (audit.tools.test_bottles_lift_v2.TaskIntegrationTests.test_bulldozing_with_closed_fingers_beside_the_bottle_still_fails) ... ok
+test_carried_and_dropped_counts_in_both (audit.tools.test_bottles_lift_v2.TaskIntegrationTests.test_carried_and_dropped_counts_in_both) ... ok
+test_gripper_with_open_jaws_beside_the_lifted_bottle_is_not_a_hold (audit.tools.test_bottles_lift_v2.TaskIntegrationTests.test_gripper_with_open_jaws_beside_the_lifted_bottle_is_not_a_hold) ... ok
+test_handover_counts (audit.tools.test_bottles_lift_v2.TaskIntegrationTests.test_handover_counts) ... ok
+test_in_place_reset_starts_a_clean_ledger (audit.tools.test_bottles_lift_v2.TaskIntegrationTests.test_in_place_reset_starts_a_clean_ledger) ... ok
+test_knocked_in_by_another_bottle_does_not_count (audit.tools.test_bottles_lift_v2.TaskIntegrationTests.test_knocked_in_by_another_bottle_does_not_count) ... ok
+test_lift_without_a_gripper_is_not_a_pickup (audit.tools.test_bottles_lift_v2.TaskIntegrationTests.test_lift_without_a_gripper_is_not_a_pickup) ... ok
+test_pickup_then_bulldoze_after_leaving_and_reentering (audit.tools.test_bottles_lift_v2.TaskIntegrationTests.test_pickup_then_bulldoze_after_leaving_and_reentering) ... ok
+test_score_ladder_v2_four_picked_bottles (audit.tools.test_bottles_lift_v2.TaskIntegrationTests.test_score_ladder_v2_four_picked_bottles) ... ok
+test_v1_lists_unchanged_and_no_tracker (audit.tools.test_bottles_lift_v2.TaskIntegrationTests.test_v1_lists_unchanged_and_no_tracker) ... ok
+test_v2_registers_tracker_query_and_picked_checks (audit.tools.test_bottles_lift_v2.TaskIntegrationTests.test_v2_registers_tracker_query_and_picked_checks) ... ok
+test_coin_between_bottom_and_centre (audit.tools.test_predicates.BboxInBbox.test_coin_between_bottom_and_centre)
+deposit_coin: the coin's projected box inside the piggy bank's, between its `bottom` and `center` points. ... ok
+test_button_resting_below_095_never_counts (audit.tools.test_predicates.Counters.test_button_resting_below_095_never_counts)
+A button whose spring rests at ratio 0.93 is never armed: no press is ever counted. ... ok
+test_protocol_counts (audit.tools.test_predicates.Counters.test_protocol_counts)
+Control: cards 1 and 1, the check's protocol (red0, blue, red1, blue), full releases: success. ... ok
+test_quick_second_press_is_not_counted (audit.tools.test_predicates.Counters.test_quick_second_press_is_not_counted)
+Must pass: card 2 on red0, the button pressed twice, released to 0.92 between presses (a real spring ... ok
+test_mouth_down_over_cube (audit.tools.test_predicates.Cover.test_mouth_down_over_cube)
+Must pass: the cup mouth-down over the cube. ... ok
+test_on_bottom_window (audit.tools.test_predicates.Cover.test_on_bottom_window)
+is_A_on_B_bottom(bottle, dustbin, 0, 0.4) in put_bottles_into_dustbin: "on the bottom" admits the bottle's ... ok
+test_slack_is_three_centimetres (audit.tools.test_predicates.Cover.test_slack_is_three_centimetres)
+The rejection starts when the covered object is 30 mm tall: the cup resting on a 31 mm block fails. ... ok
+test_upright_cup_on_cube (audit.tools.test_predicates.Cover.test_upright_cup_on_cube)
+Must fail: an upright cup resting on the 25 mm cube (#52, verified in sim). Shipped: covered. ... ok
+test_alarm_on_drawer_anywhere (audit.tools.test_predicates.HeightOnly.test_alarm_on_drawer_anywhere)
+organize_table "place the alarm clock on the drawer": is_A_up_B(alarm, drawer, 0.225, 0.3) and no xy check. ... ok
+test_depth_has_no_xy (audit.tools.test_predicates.HeightOnly.test_depth_has_no_xy)
+is_A_depth_in_B(A, B, t): B's bbox top minus A's bbox bottom > t. A nut 1 m from its bolt passes. ... ok
+test_point_above_point_has_no_xy (audit.tools.test_predicates.HeightOnly.test_point_above_point_has_no_xy)
+is_A_point_above_B_point_by_z_range: z difference only (the xylophone, egg holder, toaster and checkerboard ... ok
+test_stacking_toy_depth_is_vacuous (audit.tools.test_predicates.HeightOnly.test_stacking_toy_depth_is_vacuous)
+play_stacking_toy: is_A_depth_in_B(block, stack_base, 0.005) with a 6.53 cm tall base: any piece whose bottom ... ok
+test_tube_standing_beside_the_rack (audit.tools.test_predicates.HeightOnly.test_tube_standing_beside_the_rack)
+insert_tubes: depth 4.5 cm against a 6 cm rack, and is_A_in_B for xy. A tube standing on the table passes ... ok
+test_N_A_in_B_counts_exactly (audit.tools.test_predicates.InB.test_N_A_in_B_counts_exactly)
+make_toast: exactly two slices left on the shelf (is_N_A_in_B N=2) using the same footprint test. ... ok
+test_all_and_none_are_vacuous_on_empty_lists (audit.tools.test_predicates.InB.test_all_and_none_are_vacuous_on_empty_lists)
+is_all_A_in_B, is_not_any_A_in_B, is_all_A_in_B_support_circle and is_all_pointA_in_B_functional_bbox ... ok
+test_inside_counts (audit.tools.test_predicates.InB.test_inside_counts)
+Must pass: a ball resting on the vase's floor at its axis. ... ok
+test_logged_balls_pass_by_centimetres_not_tenths (audit.tools.test_predicates.InB.test_logged_balls_pass_by_centimetres_not_tenths)
+The #123 run (x2_vase_L0_v1, last action): RoboDojo's floor is the tilted box's lowest corner, so the seven ... ok
+test_no_ceiling (audit.tools.test_predicates.InB.test_no_ceiling)
+Must fail: a ball 1 m (and 100 m) above the vase is not in it. Shipped: accepted at any height. ... ok
+test_not_in_B_mirror (audit.tools.test_predicates.InB.test_not_in_B_mirror)
+is_A_not_in_B is the exact complement: an object on the table under the vase's reach counts as in, so ... ok
+test_resting_on_top_of_a_basket_counts (audit.tools.test_predicates.InB.test_resting_on_top_of_a_basket_counts)
+Must fail: an object resting on top of another object that stands in the basket, its root 15 cm above the ... ok
+test_root_point_only (audit.tools.test_predicates.InB.test_root_point_only)
+Must fail: a 30 cm stick lying across the rim, 25 cm of it outside. Shipped: only the root is tested. ... ok
+test_table_outside_the_wall_with_the_logged_vase (audit.tools.test_predicates.InB.test_table_outside_the_wall_with_the_logged_vase)
+Must fail: a ball on the table outside the vase. Shipped: accepted anywhere in a 442 cm2 polygon reaching ... ok
+test_lift_reads_the_root_not_the_object (audit.tools.test_predicates.Motion.test_lift_reads_the_root_not_the_object)
+general_pickup ("Pick up the <target> by 10 cm"; its only check is is_lift 10 cm, with no gripper or home ... ok
+test_lift_transient_counts (audit.tools.test_predicates.Motion.test_lift_transient_counts)
+No dwell: a stage pops on the first sample. A target tossed 10.1 cm up for one 40 ms sample and dropped ... ok
+test_stillness_twice_in_one_step (audit.tools.test_predicates.Motion.test_stillness_twice_in_one_step)
+is_not_moved(update=True) means "moved less than t since this predicate was last called". Called twice in ... ok
+test_left_compares_x_only (audit.tools.test_predicates.Order.test_left_compares_x_only)
+is_A_on_B_left(A, B, t): B.x - A.x > t. sweep_blocks (dustpan left of broom by 10 cm) has no y term. ... ok
+test_stacked_has_no_ceiling_and_sorts_by_height (audit.tools.test_predicates.Order.test_stacked_has_no_ceiling_and_sorts_by_height)
+is_stacked (in_order False): sort by root height; consecutive roots within xy_threshold, at least 5 mm ... ok
+test_nesting_is_or_of_ands (audit.tools.test_predicates.Scores.test_nesting_is_or_of_ands)
+check_once: a list at stage level is OR, a list inside it AND, alternating (documented behaviour). ... ok
+test_paired_order_dependence (audit.tools.test_predicates.Scores.test_paired_order_dependence)
+store_laptop_and_headphones (paired [20, 80]): a failed episode with both sub-goals done is paid 20 or 80 ... ok
+test_top_tier_paid_to_failures (audit.tools.test_predicates.Scores.test_top_tier_paid_to_failures)
+fill_egg_holder [10, 25, 40, 90]: a failed episode at the top tier keeps 90 (#126). ... ok
+test_hang_mugs_pairs_reuse_the_reference (audit.tools.test_predicates.StillnessInTasks.test_hang_mugs_pairs_reuse_the_reference)
+hang_mugs' 40-point tier is an OR over mug pairs (0,1), (0,2), (1,2). With mug0 hung but swinging 6 mm per ... ok
+test_organize_table_mouse_scores_while_sliding (audit.tools.test_predicates.StillnessInTasks.test_organize_table_mouse_scores_while_sliding)
+Must not score: the mouse sliding across its mat at 25 cm/s (the stillness term exists to stop exactly ... ok
+test_axis_aligned_boxes_are_exact (audit.tools.test_predicates.TiltedBoxes.test_axis_aligned_boxes_are_exact)
+Control: an untilted box projects to its own rectangle. ... ok
+test_egg_holder_tilted_box (audit.tools.test_predicates.TiltedBoxes.test_egg_holder_tilted_box)
+Articulation/egg_holder/00000: oriented bbox tilted 40.5 degrees; projected footprint 1.47 x the aligned ... ok
+test_axis_up_default (audit.tools.test_predicates.Windows.test_axis_up_default) ... ok
+test_back_to_origin_box (audit.tools.test_predicates.Windows.test_back_to_origin_box)
+all_robot_back_to_origin (45 tasks): 0.15 m per axis and 20 degrees. An arm 14.9 cm off on all three axes ... ok
+test_functional_point_sphere (audit.tools.test_predicates.Windows.test_functional_point_sphere)
+is_A_functional_point_close_to_B_functional_point: a 5 cm (default) sphere around the slot point, with an ... ok
+test_in_line_needs_no_contact (audit.tools.test_predicates.Windows.test_in_line_needs_no_contact)
+align_blocks: is_in_line(threshold 8 mm, 8 degrees). Three cubes on one line 30 cm apart, never pushed ... ok
+test_qpos_close_has_no_symmetry (audit.tools.test_predicates.Windows.test_qpos_close_has_no_symmetry)
+is_qpos_close: full 3D angle under a threshold (swap_T 3, push_T 7). A T-block 3.1 degrees off in yaw with ... ok
+test_pack_box_has_no_height (audit.tools.test_predicates.XYOnly.test_pack_box_has_no_height)
+pack_objects_into_box: an item's root inside the box_bottom quad, at any height; no other term bounds it. ... ok
+test_stacking_toy_one_millimetre (audit.tools.test_predicates.XYOnly.test_stacking_toy_one_millimetre)
+Must pass: a ring threaded on its peg 1.5 mm off-centre (a 5 mm peg in a wider hole). Shipped: the chain and ... ok
+test_support_circle_and_xy_distance_have_no_height (audit.tools.test_predicates.XYOnly.test_support_circle_and_xy_distance_have_no_height) ... ok
+test_all_8070_pinned_population_layouts_validate_cleanly (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_all_8070_pinned_population_layouts_validate_cleanly) ... ok
+test_author_usd_collision_gated_behind_collision_fix_and_mock_stage (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_author_usd_collision_gated_behind_collision_fix_and_mock_stage) ... ok
+test_b4_collider_narrowing_allowance_one_sided_and_scoped (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_b4_collider_narrowing_allowance_one_sided_and_scoped) ... ok
+test_census_records_validate_cleanly (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_census_records_validate_cleanly) ... ok
+test_combine_priority_and_pair_band_violation_raise (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_combine_priority_and_pair_band_violation_raise) ... ok
+test_derived_unary_status_uses_only_checked_bands_and_wood_note3 (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_derived_unary_status_uses_only_checked_bands_and_wood_note3) ... ok
+test_docs_params_cover_blocks_and_swap_T_load_with_global_map (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_docs_params_cover_blocks_and_swap_T_load_with_global_map)
+#167: cover_blocks and swap_T load from the global docs/params with their own opt-in profiles. ... ok
+test_docs_params_gate_opt_in_fill_scope_cor_guard_and_byte_identity (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_docs_params_gate_opt_in_fill_scope_cor_guard_and_byte_identity) ... [SKIP] test_docs_params byte-identity git:753d7d7 check skipped: 'git' executable not found in PATH
+ok
+test_dormant_values_quarantined_and_default_collision_enabled_is_none (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_dormant_values_quarantined_and_default_collision_enabled_is_none) ... ok
+test_duplicate_collider_classification_generic_rules (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_duplicate_collider_classification_generic_rules) ... ok
+test_friction_ladder_summary_uses_matched_episodes_and_unknown_thresholds (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_friction_ladder_summary_uses_matched_episodes_and_unknown_thresholds)
+Review problem 6: the nominal arm's extra episodes stay out of the ladder; a missing level leaves the threshold unknown. ... ok
+test_from_config_reads_only_physics_keys_and_ignores_env_params_when_shipped (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_from_config_reads_only_physics_keys_and_ignores_env_params_when_shipped) ... ok
+test_gripper_command_step_follows_arx5_sdk (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_gripper_command_step_follows_arx5_sdk) ... ok
+test_gripper_fix_d3_table_resolver_and_actuator_split (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_gripper_fix_d3_table_resolver_and_actuator_split) ... ok
+test_load_real_73_class_table_audit_out_63 (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_load_real_73_class_table_audit_out_63) ... ok
+test_missing_asset_tasks_stays_conservative_never_skips_flag_validation (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_missing_asset_tasks_stays_conservative_never_skips_flag_validation)
+#175 re-review gap 2: removing one asset's tasks list never disables can_form_in_task validation globally. ... ok
+test_nan_and_inf_in_declaration_raise (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_nan_and_inf_in_declaration_raise) ... ok
+test_nan_in_param_table_dict_and_json_raise (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_nan_in_param_table_dict_and_json_raise) ... ok
+test_pxr_real_t1_duplicate_collider_assets_when_available (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_pxr_real_t1_duplicate_collider_assets_when_available) ... skipped 'pxr not installed in host Python; run inside container to verify real USDZ stages'
+test_readback_robot_link_pairs_formed_and_banded (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_readback_robot_link_pairs_formed_and_banded)
+#167: the realised-pair readback pairs each robot link with each static collider (the pads on the table in ... ok
+test_restitution_cooccurrence_rejects_false_flag_and_skips_disjoint_tasks (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_restitution_cooccurrence_rejects_false_flag_and_skips_disjoint_tasks)
+#175 review item 3: false can_form_in_task on a pair that meets is rejected; non-co-occurring pairs stay skipped. ... ok
+test_restitution_witness_includes_robot_link_carriers (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_restitution_witness_includes_robot_link_carriers)
+#175 re-review gap 1: task-scoped ABS assets must never suppress the robot's ABS camera link carrier. ... ok
+test_robot_limits_fix_table_resolver_and_actuators (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_robot_limits_fix_table_resolver_and_actuators) ... ok
+test_solid_upper_and_lower_density_and_hollow_shell_band_and_static_mass_raise (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_solid_upper_and_lower_density_and_hollow_shell_band_and_static_mass_raise) ... ok
+test_solver_fix_scene_settings_and_readback_check (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_solver_fix_scene_settings_and_readback_check)
+#62 `solver`: stabilization off and 4x position iterations on the scene; nothing under shipped; no table needed. ... ok
+test_static_lt_dynamic_raises_everywhere (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_static_lt_dynamic_raises_everywhere) ... ok
+test_status_defaults_to_unsourced_on_every_leaf (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_status_defaults_to_unsourced_on_every_leaf) ... ok
+test_t1_population_wiring_exact_done_invariance_and_allowances (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_t1_population_wiring_exact_done_invariance_and_allowances) ... ok
+test_t1_review175_masses_and_estimated_basis_gates (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_t1_review175_masses_and_estimated_basis_gates)
+#175 review items 1 & 2: geometry-independent brick/key masses, zero range contradictions, and estimated basis gate. ... ok
+test_unauthored_robot_keys_and_invalid_specs_rejected_with_physics_spec_error (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_unauthored_robot_keys_and_invalid_specs_rejected_with_physics_spec_error) ... ok
+test_unknown_key_in_declaration_raises (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_unknown_key_in_declaration_raises) ... ok
+test_unknown_key_in_param_table_file_and_directory_modes_raises (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_unknown_key_in_param_table_file_and_directory_modes_raises) ... ok
+test_unknown_preset_and_fix_and_cli_dormant_gate_raise (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_unknown_preset_and_fix_and_cli_dormant_gate_raise) ... ok
+test_unsourced_and_missing_table_and_per_key_opt_in (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_unsourced_and_missing_table_and_per_key_opt_in) ... ok
+test_values_split_into_materials_and_masses_for_g4 (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_values_split_into_materials_and_masses_for_g4)
+#62 review position 4: ``materials`` and ``masses`` each move one factor; together they equal ``values``. ... ok
+test_values_without_order_labelled_not_delivered_on_cpu (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_values_without_order_labelled_not_delivered_on_cpu) ... ok
+
+----------------------------------------------------------------------
+Ran 197 tests in 57.843s
+
+OK (skipped=1)
+[SeedManager] init_eval resume filter: excluded=2 remaining=3/5
+[EvalEnv][v2 resume] save_dir=eval_result_v2/RoboDojo/put_bottles_into_dustbin/p/arx_x5/0_/2026-11-15_12-00-00 resolved=1/2
+[EvalEnv][v2 resume] save_dir=eval_result_v2/RoboDojo/put_bottles_into_dustbin/p/arx_x5/0_/2026-11-15_12-30-00 resolved=1/2

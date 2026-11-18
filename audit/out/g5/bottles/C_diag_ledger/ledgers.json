@@ -1,0 +1,254 @@
+[
+ {
+  "episode": 0,
+  "layout": {
+   "0": 0
+  },
+  "actions": [
+   700
+  ],
+  "success": [
+   false
+  ],
+  "bottle_ledger": {
+   "bottle0": {
+    "rest_z_min": 0.7650002706191862,
+    "picked": true,
+    "in_bin": true,
+    "credited": true,
+    "max_rise": 0.13650036302530755
+   },
+   "bottle1": {
+    "rest_z_min": 0.7645210652989982,
+    "picked": true,
+    "in_bin": true,
+    "credited": true,
+    "max_rise": 0.12888381071588717
+   },
+   "bottle2": {
+    "rest_z_min": 0.7620748278446591,
+    "picked": true,
+    "in_bin": true,
+    "credited": true,
+    "max_rise": 0.09463311796999352
+   },
+   "bottle3": {
+    "rest_z_min": 0.7650455160450537,
+    "picked": false,
+    "in_bin": true,
+    "credited": false,
+    "max_rise": 0.0420523866508179
+   }
+  }
+ },
+ {
+  "episode": 1,
+  "layout": {
+   "0": 1
+  },
+  "actions": [
+   700
+  ],
+  "success": [
+   false
+  ],
+  "bottle_ledger": {
+   "bottle0": {
+    "rest_z_min": 0.7600865001778342,
+    "picked": true,
+    "in_bin": true,
+    "credited": true,
+    "max_rise": 0.13835239694105184
+   },
+   "bottle1": {
+    "rest_z_min": 0.7647516048603876,
+    "picked": false,
+    "in_bin": true,
+    "credited": false,
+    "max_rise": 0.06864824476206766
+   },
+   "bottle2": {
+    "rest_z_min": 0.7585164002165183,
+    "picked": true,
+    "in_bin": true,
+    "credited": true,
+    "max_rise": 0.18169785426498763
+   },
+   "bottle3": {
+    "rest_z_min": 0.7649991864080249,
+    "picked": false,
+    "in_bin": true,
+    "credited": false,
+    "max_rise": 0.07067593279858098
+   }
+  }
+ },
+ {
+  "episode": 2,
+  "layout": {
+   "0": 2
+  },
+  "actions": [
+   700
+  ],
+  "success": [
+   false
+  ],
+  "bottle_ledger": {
+   "bottle0": {
+    "rest_z_min": 0.7647511522015026,
+    "picked": false,
+    "in_bin": true,
+    "credited": false,
+    "max_rise": 0.07195444485831326
+   },
+   "bottle1": {
+    "rest_z_min": 0.7620748509031503,
+    "picked": true,
+    "in_bin": true,
+    "credited": true,
+    "max_rise": 0.18860973019381655
+   },
+   "bottle2": {
+    "rest_z_min": 0.7649521147634452,
+    "picked": true,
+    "in_bin": true,
+    "credited": true,
+    "max_rise": 0.13152038265149635
+   },
+   "bottle3": {
+    "rest_z_min": 0.757005699219834,
+    "picked": true,
+    "in_bin": true,
+    "credited": true,
+    "max_rise": 0.13470368916082764
+   }
+  }
+ },
+ {
+  "episode": 3,
+  "layout": {
+   "0": 3
+  },
+  "actions": [
+   700
+  ],
+  "success": [
+   false
+  ],
+  "bottle_ledger": {
+   "bottle0": {
+    "rest_z_min": 0.7570057319462005,
+    "picked": true,
+    "in_bin": true,
+    "credited": true,
+    "max_rise": 0.13673640547430177
+   },
+   "bottle1": {
+    "rest_z_min": 0.765045579605217,
+    "picked": false,
+    "in_bin": true,
+    "credited": false,
+    "max_rise": 0.03775287616411893
+   },
+   "bottle2": {
+    "rest_z_min": 0.764751778262707,
+    "picked": true,
+    "in_bin": true,
+    "credited": true,
+    "max_rise": 0.13374317163084604
+   },
+   "bottle3": {
+    "rest_z_min": 0.762666921530035,
+    "picked": true,
+    "in_bin": true,
+    "credited": true,
+    "max_rise": 0.1158126002814327
+   }
+  }
+ },
+ {
+  "episode": 4,
+  "layout": {
+   "0": 4
+  },
+  "actions": [
+   700
+  ],
+  "success": [
+   false
+  ],
+  "bottle_ledger": {
+   "bottle0": {
+    "rest_z_min": 0.7649519450090934,
+    "picked": false,
+    "in_bin": true,
+    "credited": false,
+    "max_rise": 0.052281595562253314
+   },
+   "bottle1": {
+    "rest_z_min": 0.7649991432679513,
+    "picked": true,
+    "in_bin": true,
+    "credited": true,
+    "max_rise": 0.11520301307448544
+   },
+   "bottle2": {
+    "rest_z_min": 0.7570057088903233,
+    "picked": true,
+    "in_bin": true,
+    "credited": true,
+    "max_rise": 0.12933219417650643
+   },
+   "bottle3": {
+    "rest_z_min": 0.7620749223879187,
+    "picked": true,
+    "in_bin": true,
+    "credited": true,
+    "max_rise": 0.17820823870682168
+   }
+  }
+ },
+ {
+  "episode": 5,
+  "layout": {
+   "0": 5
+  },
+  "actions": [
+   484
+  ],
+  "success": [
+   true
+  ],
+  "bottle_ledger": {
+   "bottle0": {
+    "rest_z_min": 0.7647511038465374,
+    "picked": true,
+    "in_bin": true,
+    "credited": true,
+    "max_rise": 0.12944984034114337
+   },
+   "bottle1": {
+    "rest_z_min": 0.7626669601144382,
+    "picked": true,
+    "in_bin": true,
+    "credited": true,
+    "max_rise": 0.19397165940518968
+   },
+   "bottle2": {
+    "rest_z_min": 0.7650455280776529,
+    "picked": true,
+    "in_bin": true,
+    "credited": true,
+    "max_rise": 0.1352271735470134
+   },
+   "bottle3": {
+    "rest_z_min": 0.7600261803667888,
+    "picked": true,
+    "in_bin": true,
+    "credited": true,
+    "max_rise": 0.11129759758324054
+   }
+  }
+ }
+]

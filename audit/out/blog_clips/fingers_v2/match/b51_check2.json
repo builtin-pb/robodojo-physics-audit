@@ -1,0 +1,338 @@
+{
+ "runs": {
+  "b51_fingers_main": {
+   "repo_head": "4133fe15e0ff12f297468cf0c4694834d5ca9343",
+   "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+   "isaac_sim": [
+    "5.1.0",
+    "rc.19",
+    "5"
+   ],
+   "column": "real_path",
+   "after_lift_15cm_hold_1s": {
+    "bottle_z_mm": 946.11,
+    "lift_dz_mm": 149.74,
+    "rotation_in_hand_deg": 0.04,
+    "axial_pivot_deg": 0.04,
+    "grasp_point_slip_mm": 0.01,
+    "slip_in_hand_com_mm": 0.05,
+    "slip_engine_com_mm": 0.04,
+    "dropped": false,
+    "held": true,
+    "held_strict_com10mm": true,
+    "held_d3_engine_com10mm": true
+   },
+   "after_carry_shake": {
+    "bottle_z_mm": 946.19,
+    "lift_dz_mm": 149.82,
+    "rotation_in_hand_deg": 0.04,
+    "axial_pivot_deg": 0.04,
+    "grasp_point_slip_mm": 0.01,
+    "slip_in_hand_com_mm": 0.05,
+    "slip_engine_com_mm": 0.04,
+    "dropped": false,
+    "held": true,
+    "held_strict_com10mm": true,
+    "held_d3_engine_com10mm": true
+   },
+   "drive_readback": {
+    "K_eng": [
+     52274.6,
+     0.0
+    ],
+    "c_eng": [
+     2090.98,
+     0.0
+    ],
+    "Fmax_eng": [
+     323.54,
+     100.0
+    ],
+    "vmax_eng": [
+     1000.0,
+     1000.0
+    ],
+    "armature_eng": [
+     23.524,
+     0.0
+    ],
+    "use_mimic": false,
+    "use_slew": true
+   },
+   "real_variant": {},
+   "in_hand_force_N": {
+    "q7_mean_mm": 29.965,
+    "q8_mean_mm": 29.967,
+    "on_table_pad_lateral_shift_mm": 0.001,
+    "link7_plateau_N": 161.477,
+    "link8_plateau_N": 161.891,
+    "link7_mean10_N": 161.45,
+    "link8_mean10_N": 161.865,
+    "link7_substep0_N": 161.451,
+    "link8_substep0_N": 161.87,
+    "finger_avg_plateau_N": 161.684,
+    "finger_avg_mean10_N": 161.658,
+    "finger_avg_substep0_N": 161.661,
+    "max_penetration_mm": 0.3048
+   },
+   "pose_trace_rows": 450,
+   "rot_deg_at_lift_end": 0.04,
+   "hold_f_avg_N_range": [
+    161.501,
+    161.95
+   ],
+   "hold_c7_c8_N_range": [
+    160.95,
+    162.142
+   ],
+   "hold_max_step_change_f_avg_N": 0.3739999999999952,
+   "settled_poses": {
+    "bottle0": [
+     0.11593,
+     -0.24349,
+     0.8576,
+     0.96681,
+     -1e-05,
+     -0.0,
+     -0.25551
+    ],
+    "bottle1": [
+     0.43501,
+     -0.04072,
+     0.85973,
+     0.86391,
+     -0.00322,
+     -0.00022,
+     0.50364
+    ],
+    "bottle2": [
+     0.37056,
+     -0.14477,
+     0.7963,
+     0.70818,
+     0.06203,
+     0.69881,
+     -0.07935
+    ],
+    "bottle3": [
+     -0.22222,
+     -0.0696,
+     0.88515,
+     0.97682,
+     0.0,
+     0.0,
+     -0.21408
+    ]
+   },
+   "steps_through_reset": 844,
+   "episode_steps": 2010,
+   "deviations_head": "- Kit experience audit/harness/robodojo_physics_only.kit instead of isaaclab.python.kit (no RTX, replicator, camera or\n  viewport extensions); AppLauncher is bypassed and its carb settings are set as evaluation sets them, except that\n  cameras and the offscreen flag are off (offscreen needs the viewport extension); evaluation's PARTIAL_RENDERING\n  render() (forward, then app.update with playSimula",
+   "state_log": {
+    "frames": 1602,
+    "step_frames": 1400,
+    "physics_steps_in_episode": 2010,
+    "errors": [],
+    "dz_vs_pose_trace_max_abs_mm": 0.005,
+    "dz_rows_compared": 450,
+    "neck_above_table_mm_end": 182.69,
+    "neck_above_table_mm_min": 33.01
+   }
+  },
+  "b51_fingers_shipped_r": {
+   "repo_head": "4133fe15e0ff12f297468cf0c4694834d5ca9343",
+   "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+   "isaac_sim": [
+    "5.1.0",
+    "rc.19",
+    "5"
+   ],
+   "column": "shipped_lead10p8",
+   "after_lift_15cm_hold_1s": {
+    "bottle_z_mm": 866.58,
+    "lift_dz_mm": 70.29,
+    "rotation_in_hand_deg": 77.8,
+    "axial_pivot_deg": 77.8,
+    "grasp_point_slip_mm": 7.77,
+    "slip_in_hand_com_mm": 87.21,
+    "slip_engine_com_mm": 72.13,
+    "dropped": false,
+    "held": false,
+    "held_strict_com10mm": false,
+    "held_d3_engine_com10mm": false
+   },
+   "after_carry_shake": {
+    "bottle_z_mm": 866.35,
+    "lift_dz_mm": 70.05,
+    "rotation_in_hand_deg": 100.54,
+    "axial_pivot_deg": 79.46,
+    "grasp_point_slip_mm": 6.12,
+    "slip_in_hand_com_mm": 93.7,
+    "slip_engine_com_mm": 75.71,
+    "dropped": false,
+    "held": false,
+    "held_strict_com10mm": false,
+    "held_d3_engine_com10mm": false
+   },
+   "drive_readback": {
+    "K_eng": [
+     2300.0,
+     2300.0
+    ],
+    "c_eng": [
+     100.0,
+     100.0
+    ],
+    "Fmax_eng": [
+     100.0,
+     100.0
+    ],
+    "vmax_eng": [
+     1000.0,
+     1000.0
+    ],
+    "armature_eng": [
+     0.0,
+     0.0
+    ],
+    "use_mimic": false,
+    "use_slew": true
+   },
+   "real_variant": null,
+   "in_hand_force_N": {
+    "q7_mean_mm": 30.049,
+    "q8_mean_mm": 30.24,
+    "on_table_pad_lateral_shift_mm": 0.096,
+    "link7_plateau_N": 24.649,
+    "link8_plateau_N": 24.48,
+    "link7_mean10_N": 14.97,
+    "link8_mean10_N": 14.929,
+    "link7_substep0_N": 4.189,
+    "link8_substep0_N": 4.185,
+    "finger_avg_plateau_N": 24.565,
+    "finger_avg_mean10_N": 14.95,
+    "finger_avg_substep0_N": 4.187,
+    "max_penetration_mm": 0.0641
+   },
+   "pose_trace_rows": 450,
+   "rot_deg_at_lift_end": 77.5,
+   "hold_f_avg_N_range": [
+    4.332,
+    24.72
+   ],
+   "hold_c7_c8_N_range": [
+    3.817,
+    24.767
+   ],
+   "hold_max_step_change_f_avg_N": 20.348999999999997,
+   "settled_poses": {
+    "bottle0": [
+     0.11593,
+     -0.24349,
+     0.8576,
+     0.96681,
+     -1e-05,
+     -0.0,
+     -0.25551
+    ],
+    "bottle1": [
+     0.43501,
+     -0.04072,
+     0.85973,
+     0.86391,
+     -0.00322,
+     -0.00022,
+     0.50364
+    ],
+    "bottle2": [
+     0.37056,
+     -0.14477,
+     0.7963,
+     0.70818,
+     0.06203,
+     0.69881,
+     -0.07935
+    ],
+    "bottle3": [
+     -0.22222,
+     -0.0696,
+     0.88515,
+     0.97682,
+     0.0,
+     0.0,
+     -0.21408
+    ]
+   },
+   "steps_through_reset": 844,
+   "episode_steps": 2010,
+   "deviations_head": "- Kit experience audit/harness/robodojo_physics_only.kit instead of isaaclab.python.kit (no RTX, replicator, camera or\n  viewport extensions); AppLauncher is bypassed and its carb settings are set as evaluation sets them, except that\n  cameras and the offscreen flag are off (offscreen needs the viewport extension); evaluation's PARTIAL_RENDERING\n  render() (forward, then app.update with playSimula",
+   "state_log": {
+    "frames": 1602,
+    "step_frames": 1400,
+    "physics_steps_in_episode": 2010,
+    "errors": [],
+    "dz_vs_pose_trace_max_abs_mm": 0.005,
+    "dz_rows_compared": 450,
+    "neck_above_table_mm_end": 2.34,
+    "neck_above_table_mm_min": 2.18
+   }
+  }
+ },
+ "control_S1": {
+  "fields_compared": [
+   "F_star_N",
+   "actions_used",
+   "after_carry_shake",
+   "after_lift_15cm_hold_1s",
+   "bottle_mass_kg",
+   "column",
+   "contacts_in_hand",
+   "drive_readback",
+   "gripper_spec",
+   "ideal_armature_kg",
+   "ik_err_mm_deg",
+   "in_hand_force_N",
+   "mode",
+   "pad_torsional_patch_radius_usd",
+   "pad_usd_resolved",
+   "pose_trace",
+   "real_variant",
+   "robot_shape_materials_unique",
+   "target_bottle",
+   "u_hold"
+  ],
+  "n_differences": 0,
+  "n_numeric_differences": 0,
+  "numeric_differences_first_40": [],
+  "string_differences_first_40": [],
+  "episode_differences": []
+ },
+ "decision": {
+  "end_angle_deg": 0.04,
+  "checks": {
+   "held_not_dropped_under_5deg": true,
+   "readback_trip_and_armature": true,
+   "state_log_aligned_complete": true
+  },
+  "control_S1_equal": true,
+  "same_commit": true,
+  "hold_grip_spread_N": 0.449,
+  "hold_grip_steady_under_5N": true,
+  "render": true
+ },
+ "replays": {
+  "rp_fingers_main": {
+   "frames": 111,
+   "max_pos_m": 0.0,
+   "max_quat_component": 2.000000000002e-06,
+   "max_joint": 0.0,
+   "replay_physics_steps": 0,
+   "warmup_physics_steps": 0,
+   "errors": [],
+   "isaac_sim": [
+    "6.2.0",
+    "rc.15",
+    "6"
+   ]
+  }
+ }
+}

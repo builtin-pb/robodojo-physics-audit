@@ -1,0 +1,57 @@
+[
+ {
+  "cell_name": "f_00000_dt4_it16_stab_on",
+  "layout": 5,
+  "overrides": {
+   "dt_s": 0.004,
+   "pos_iters": 16,
+   "enable_stabilization": true,
+   "target_label": "bottle3",
+   "fast_settle": false
+  }
+ },
+ {
+  "cell_name": "f_00000_dt4_it16_stab_off",
+  "layout": 5,
+  "overrides": {
+   "dt_s": 0.004,
+   "pos_iters": 16,
+   "enable_stabilization": false,
+   "target_label": "bottle3",
+   "fast_settle": false
+  }
+ },
+ {
+  "cell_name": "grid_dt2_it16_00000_lying",
+  "layout": 5,
+  "overrides": {
+   "dt_s": 0.002,
+   "pos_iters": 16,
+   "enable_stabilization": true,
+   "target_label": "bottle3",
+   "fast_settle": false
+  }
+ },
+ {
+  "cell_name": "grid_dt1_it16_00000_lying",
+  "layout": 5,
+  "overrides": {
+   "dt_s": 0.001,
+   "pos_iters": 16,
+   "enable_stabilization": true,
+   "target_label": "bottle3",
+   "fast_settle": false
+  }
+ },
+ {
+  "cell_name": "f_00041_dt4_it16_stab_on",
+  "layout": 1,
+  "overrides": {
+   "dt_s": 0.004,
+   "pos_iters": 16,
+   "enable_stabilization": true,
+   "target_label": "bottle2",
+   "fast_settle": false
+  }
+ }
+]

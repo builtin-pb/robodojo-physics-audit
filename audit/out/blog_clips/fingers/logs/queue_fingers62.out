@@ -1,0 +1,32 @@
+lock held 2026-11-17T22:35:26Z
+== rp_fingers_shipped ver=62 cap=none free=29216 MiB 2026-11-17T22:35:41Z
+exit=0 wall=664s
+RESULT {"seed": 0, "layout": 0, "seed_batch": [0], "num_envs": 1, "device": "cpu", "repeat": 0, "policy": "zero", "evaluator": "v1", "layout_files": ["Eval_Layout/RoboDojo/arx_x5/0/put_bottles_into_dustbin_0.json"], "steps_through_reset": 844, "renders_through_reset": 52, "camera_reset_steps": 1, "settled_poses": {"bottle0": [0.11593, -0.24349, 0.8576, 0.96681, -1e-05, -0.0, -0.25551], "bottle1": [0.43501, -0.04072, 0.85973, 0.86391, -0.00322, -0.00022, 0.50364], "bottle2": [0.37058, -0.14476, 0.7963, 0.70819, 0.06199, 0.69881, -0.07931], "bottle3": [-0.22222, -0.0696, 0.88515, 0.97682, 0.0, 0
+HARNESS done
+2026-11-17T22:36:14Z [12,500ms] [Warning] [carb.omniclient.plugin]  4193552: OmniHub: ThreadId(03) Hub encountered error. Trying to reconnect to Hub. retry_reason="Hub failed to launch: Io(\"child exited with exit status: 1 without writing file \\\"/tmp/hub-<netid>-CDD29785.config.json\\\"\")"
+2026-11-17T22:36:39Z [37,315ms] [Error] [omni.rtx] Could not get NGX parameters block because NGX isn't enabled.
+2026-11-17T22:36:39Z [37,316ms] [Error] [omni.rtx] Failed to create NGX context.
+2026-11-17T22:37:02Z [60,613ms] [Error] [omni.physx.tensors.plugin] Pattern '/World/envs/env_0/geometry/dustbin/dustbin_0_5' did not match any rigid bodies
+2026-11-17T22:37:02Z [60,613ms] [Error] [omni.physx.tensors.plugin] Provided pattern list did not match any rigid bodies
+2026-11-17T22:37:02Z [60,614ms] [Error] [omni.physx.tensors.plugin] Provided pattern list did not match any rigid bodies
+== rp_fingers_light ver=62 cap=none free=29096 MiB 2026-11-17T22:46:52Z
+exit=0 wall=356s
+RESULT {"seed": 0, "layout": 0, "seed_batch": [0], "num_envs": 1, "device": "cpu", "repeat": 0, "policy": "zero", "evaluator": "v1", "layout_files": ["Eval_Layout/RoboDojo/arx_x5/0/put_bottles_into_dustbin_0.json"], "steps_through_reset": 844, "renders_through_reset": 52, "camera_reset_steps": 1, "settled_poses": {"bottle0": [0.11593, -0.24349, 0.8576, 0.96681, -1e-05, -0.0, -0.25551], "bottle1": [0.43501, -0.04072, 0.85973, 0.86391, -0.00322, -0.00022, 0.50364], "bottle2": [0.37058, -0.14476, 0.7963, 0.70819, 0.06199, 0.69881, -0.07931], "bottle3": [-0.22222, -0.0696, 0.88515, 0.97682, 0.0, 0
+HARNESS done
+2026-11-17T22:47:34Z [12,591ms] [Warning] [carb.omniclient.plugin]  84567: OmniHub: ThreadId(03) Hub encountered error. Trying to reconnect to Hub. retry_reason="Hub failed to launch: Io(\"child exited with exit status: 1 without writing file \\\"/tmp/hub-<netid>-F3FBFDB9.config.json\\\"\")"
+2026-11-17T22:48:03Z [42,195ms] [Error] [omni.rtx] Could not get NGX parameters block because NGX isn't enabled.
+2026-11-17T22:48:03Z [42,195ms] [Error] [omni.rtx] Failed to create NGX context.
+2026-11-17T22:48:24Z [62,876ms] [Error] [omni.physx.tensors.plugin] Pattern '/World/envs/env_0/geometry/dustbin/dustbin_0_5' did not match any rigid bodies
+2026-11-17T22:48:24Z [62,876ms] [Error] [omni.physx.tensors.plugin] Provided pattern list did not match any rigid bodies
+2026-11-17T22:48:24Z [62,876ms] [Error] [omni.physx.tensors.plugin] Provided pattern list did not match any rigid bodies
+== rp_fingers_motor ver=62 cap=none free=29086 MiB 2026-11-17T22:52:54Z
+exit=0 wall=255s
+RESULT {"seed": 0, "layout": 0, "seed_batch": [0], "num_envs": 1, "device": "cpu", "repeat": 0, "policy": "zero", "evaluator": "v1", "layout_files": ["Eval_Layout/RoboDojo/arx_x5/0/put_bottles_into_dustbin_0.json"], "steps_through_reset": 844, "renders_through_reset": 52, "camera_reset_steps": 1, "settled_poses": {"bottle0": [0.11593, -0.24349, 0.8576, 0.96681, -1e-05, -0.0, -0.25551], "bottle1": [0.43501, -0.04072, 0.85973, 0.86391, -0.00322, -0.00022, 0.50364], "bottle2": [0.37058, -0.14476, 0.7963, 0.70819, 0.06199, 0.69881, -0.07931], "bottle3": [-0.22222, -0.0696, 0.88515, 0.97682, 0.0, 0
+HARNESS done
+2026-11-17T22:53:24Z [12,324ms] [Warning] [carb.omniclient.plugin]  125833: OmniHub: ThreadId(03) Hub encountered error. Trying to reconnect to Hub. retry_reason="Hub failed to launch: Io(\"child exited with exit status: 1 without writing file \\\"/tmp/hub-<netid>-7220BE2F.config.json\\\"\")"
+2026-11-17T22:53:45Z [33,727ms] [Error] [omni.rtx] Could not get NGX parameters block because NGX isn't enabled.
+2026-11-17T22:53:45Z [33,727ms] [Error] [omni.rtx] Failed to create NGX context.
+2026-11-17T22:53:59Z [48,177ms] [Error] [omni.physx.tensors.plugin] Pattern '/World/envs/env_0/geometry/dustbin/dustbin_0_5' did not match any rigid bodies
+2026-11-17T22:53:59Z [48,178ms] [Error] [omni.physx.tensors.plugin] Provided pattern list did not match any rigid bodies
+2026-11-17T22:53:59Z [48,178ms] [Error] [omni.physx.tensors.plugin] Provided pattern list did not match any rigid bodies
+QUEUE_DONE 2026-11-17T22:57:16Z

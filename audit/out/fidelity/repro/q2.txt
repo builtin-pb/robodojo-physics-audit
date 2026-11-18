@@ -1,0 +1,22 @@
+# Harness fidelity, batch 2: blog findings through main.py (fork, and upstream f57e163 where the fork changed the code involved). della-vis2 GPU 0.
+# fm_rb_bottles ran first as the smoke test of the readback mode (commit 70186ec).
+fm_vase|fork|--mode exploit --exploit_mode vase_pour_beside --task pour_balls_into_vase --evaluator v1 --eval_num 1 --log_poses --run_id fid_vase
+fm_xylo|fork|--mode exploit --exploit_mode xylophone_hover --task play_Xylophone --evaluator v1 --eval_num 1 --log_poses --run_id fid_xylo
+# conditional/dropped: fm_xylo_c|fork|--mode exploit --exploit_mode xylophone_hover --task play_Xylophone --evaluator v1 --eval_num 1 --log_poses --exploit_contacts --run_id fid_xylo_c
+fm_presspro|fork|--mode exploit --exploit_mode press_by_number --exploit_args '{"order":"protocol"}' --task press_by_number --evaluator v1 --eval_num 1 --run_id fid_presspro
+fm_buttons|fork|--mode stress_hv --stress_cases @REPO@/audit/harness/stress_hv/cases/press_buttons_eval.json --task press_by_number --evaluator v1 --eval_num 1 --log_poses --run_id fid_buttons
+fu_rb_bottles|up|--mode readback --slide --task put_bottles_into_dustbin --eval_num 1 --upstream --run_id fid_rb_bottles_up
+fm_rb_cb|fork|--mode readback --slide --task cover_blocks --evaluator v1 --eval_num 1 --run_id fid_rb_cb
+fu_rb_cb|up|--mode readback --slide --task cover_blocks --eval_num 1 --upstream --run_id fid_rb_cb_up
+fm_rb_swapT|fork|--mode readback --task swap_T --evaluator v1 --eval_num 1 --run_id fid_rb_swapT
+fm_rb_pushT|fork|--mode readback --task push_T --evaluator v1 --eval_num 1 --run_id fid_rb_pushT
+fm_rb_pushTr|fork|--mode readback --task push_T_random --evaluator v1 --eval_num 1 --run_id fid_rb_pushTr
+fm_rb_pack|fork|--mode readback --task pack_objects_into_box --evaluator v1 --eval_num 1 --run_id fid_rb_pack
+fu_rb_pack|up|--mode readback --task pack_objects_into_box --eval_num 1 --upstream --run_id fid_rb_pack_up
+fm_cb52_up|fork|--mode witness_cb --cb_mode cup_on_cube_upright_52 --task cover_blocks --evaluator v1 --eval_num 1 --log_poses --run_id fid_cb52_up
+fm_cb52_down|fork|--mode witness_cb --cb_mode cup_on_cube_52 --task cover_blocks --evaluator v1 --eval_num 1 --log_poses --run_id fid_cb52_down
+fh_fasten_drop|fork|--task fasten_screws --seed 0 --layouts 0 --policy sweep --sweep_steps 250 --sweep_drop_m 0.03
+# conditional/dropped: fm_hold_screws|fork|--mode hold --task fasten_screws --evaluator v1 --eval_num 1 --log_poses --run_id fid_hold_screws
+# conditional/dropped: fm_presslit_nolog|fork|--mode exploit --exploit_mode press_by_number --exploit_args '{"order":"literal"}' --task press_by_number --evaluator v1 --eval_num 1 --run_id fid_presslit_nolog
+# Dropped for budget after batch 1 used about 0.9 GPU-hours: fu_rb_swapT, fu_rb_pushT, fu_rb_pushTr (upstream readbacks of the T-block and coin tasks; the upstream leg is kept for bottles, cover_blocks and pack_objects_into_box).
+# Second trim (batch 1 ended near 1.07 GPU-hours): fm_presspro runs without --log_poses and is the logging-perturbation test (its final poses against the committed harness run with logging), replacing fm_presslit_nolog; fm_buttons carries --log_poses for the step windows; fm_xylo_c runs only if fm_xylo differs from the committed harness run (peek already compared contact reports on and off); fm_hold_screws is dropped (fh_fasten_drop is the direct positive control of #114).

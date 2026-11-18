@@ -1,0 +1,67 @@
+test_a_4cm_carry_counts_under_v21_not_v2 (__main__.BottlesPickupRuleTaskTests) ... skipped 'Requires numpy, shapely, torch, transforms3d (container CPU Python)'
+test_a_4cm_carry_with_a_real_grasp_counts_under_v22 (__main__.BottlesPickupRuleTaskTests) ... skipped 'Requires numpy, shapely, torch, transforms3d (container CPU Python)'
+test_a_4cm_lift_held_five_actions_is_not_a_pick (__main__.BottlesPickupRuleTaskTests) ... skipped 'Requires numpy, shapely, torch, transforms3d (container CPU Python)'
+test_bulldozer_jaw_on_the_table_does_not_count (__main__.BottlesPickupRuleTaskTests) ... skipped 'Requires numpy, shapely, torch, transforms3d (container CPU Python)'
+test_closed_fist_carry_counts_under_v21_not_v22 (__main__.BottlesPickupRuleTaskTests) ... skipped 'Requires numpy, shapely, torch, transforms3d (container CPU Python)'
+test_held_bottle_shoved_onto_another_does_not_count (__main__.BottlesPickupRuleTaskTests) ... skipped 'Requires numpy, shapely, torch, transforms3d (container CPU Python)'
+test_in_place_reset_keeps_the_rule_and_starts_clean (__main__.BottlesPickupRuleTaskTests) ... skipped 'Requires numpy, shapely, torch, transforms3d (container CPU Python)'
+test_tracker_samples_time_and_table (__main__.BottlesPickupRuleTaskTests) ... skipped 'Requires numpy, shapely, torch, transforms3d (container CPU Python)'
+test_zero_action_period_fails_loudly (__main__.BottlesPickupRuleTaskTests) ... skipped 'Requires numpy, shapely, torch, transforms3d (container CPU Python)'
+test_a_bottle_beside_the_lifted_one_does_not_count_as_support (__main__.BottlesPickupRuleTests) ... ok
+test_aggregation_refuses_mixed_pickup_rules (__main__.BottlesPickupRuleTests) ... ok
+test_beneath_a_taller_overlapping_bottle_is_not_clear (__main__.BottlesPickupRuleTests) ... ok
+test_bottle_on_the_table_under_a_narrow_jaw_is_not_picked (__main__.BottlesPickupRuleTests) ... ok
+test_clearance_must_strictly_exceed_2cm (__main__.BottlesPickupRuleTests) ... ok
+test_entry_before_the_pick_is_not_credited (__main__.BottlesPickupRuleTests) ... ok
+test_envs_are_independent_under_v21 (__main__.BottlesPickupRuleTests) ... ok
+test_footprint_overlap (__main__.BottlesPickupRuleTests) ... ok
+test_held_3cm_clear_for_01s_is_not_picked (__main__.BottlesPickupRuleTests) ... ok
+test_held_3cm_clear_for_02s_is_picked (__main__.BottlesPickupRuleTests) ... ok
+test_held_bottle_pushed_onto_another_bottle_is_not_picked (__main__.BottlesPickupRuleTests) ... ok
+test_held_on_another_bottle_beyond_v2s_bar_is_v2_picked_not_v21 (__main__.BottlesPickupRuleTests) ... ok
+test_hold_time_uses_simulated_time_not_sample_count (__main__.BottlesPickupRuleTests) ... ok
+test_incomplete_sample_breaks_continuity (__main__.BottlesPickupRuleTests) ... ok
+test_known_limit_of_v21_bottle_on_closed_fingers_counts_as_held (__main__.BottlesPickupRuleTests) ... ok
+test_lifted_clear_above_another_bottle_counts (__main__.BottlesPickupRuleTests) ... ok
+test_one_unheld_sample_restarts_the_clock (__main__.BottlesPickupRuleTests) ... ok
+test_result_files_record_the_rule (__main__.BottlesPickupRuleTests) ... ok
+test_resume_keeps_the_rule_it_started_with (__main__.BottlesPickupRuleTests) ... ok
+test_rule_selection_and_params (__main__.BottlesPickupRuleTests) ... ok
+test_stillness_rule_resume_and_mixed_aggregation_guard (__main__.BottlesPickupRuleTests) ... ok
+test_unobserved_samples_do_not_bridge_continuity (__main__.BottlesPickupRuleTests) ... ok
+test_v21_needs_time_and_table (__main__.BottlesPickupRuleTests) ... ok
+test_v2_rule_is_bit_identical_to_v2_before_177 (__main__.BottlesPickupRuleTests) ... ok
+test_v2_rule_reproduces_v2s_existing_test_file (__main__.BottlesPickupRuleTests) ... ok
+test_xylophone_strike_rule_resume_and_mixed_aggregation_guard (__main__.BottlesPickupRuleTests) ... ok
+test_20mm_boundary (__main__.BottlesPickupRuleV22Tests) ... ok
+test_closed_fists_pressing_3cm_clear_for_02s_count_under_v21_not_v22 (__main__.BottlesPickupRuleV22Tests) ... ok
+test_one_closed_gripper_does_not_veto_a_real_grasp (__main__.BottlesPickupRuleV22Tests) ... ok
+test_real_grasp_at_48mm_is_picked_under_both (__main__.BottlesPickupRuleV22Tests) ... ok
+test_v22_needs_time_and_table (__main__.BottlesPickupRuleV22Tests) ... ok
+test_v2_and_v21_are_bit_identical_to_before_v22 (__main__.BottlesPickupRuleV22Tests) ... ok
+test_benchmark_aggregation_and_macro_vs_equal_weighting (__main__.EvaluatorV2UnitTests) ... ok
+test_episode_starts_as_failure_and_disqualification_split (__main__.EvaluatorV2UnitTests) ... ok
+test_ledger_completeness_drops_first_drop_stands_and_denominator (__main__.EvaluatorV2UnitTests) ... ok
+test_make_ledger_entry_zeroes_drop_scores (__main__.EvaluatorV2UnitTests) ... ok
+test_physics_block_carried_through_v2_ledger_result_and_loader (__main__.EvaluatorV2UnitTests) ... ok
+test_seed_manager_freezes_scheduled_pool_and_resume (__main__.EvaluatorV2UnitTests) ... ok
+test_v1_v2_isolation_both_directions (__main__.EvaluatorV2UnitTests)
+Required #1: shipped summarize_result.py never picks up a v2 run, and a later v1 run never makes v2 INCOMPLETE. ... ok
+test_version_roots_and_categories (__main__.EvaluatorV2UnitTests) ... ok
+test_all_subtasks_and_review_boundaries_under_v1_and_v2_contact (__main__.OrganizeTableRuleTaskTests) ... skipped 'Requires numpy, shapely, torch, transforms3d (container CPU Python)'
+test_rule_is_fixed_per_run_and_invalid_rule_fails_at_init (__main__.OrganizeTableRuleTaskTests) ... skipped 'Requires numpy, shapely, torch, transforms3d (container CPU Python)'
+test_shared_helper_decimation_assert_and_contact_processing_restore (__main__.OrganizeTableRuleTaskTests) ... skipped 'Requires numpy, shapely, torch, transforms3d (container CPU Python)'
+test_v1_and_default_v2_are_bit_identical_to_b3b0001_and_v2_contact_flips_off_drawer (__main__.OrganizeTableRuleTaskTests) ... skipped 'Requires numpy, shapely, torch, transforms3d (container CPU Python)'
+test_contact_support_and_hold_boundaries_for_all_four_subtasks (__main__.OrganizeTableRuleUnitTests) ... ok
+test_drawer_top_footprint_and_5mm_margin_boundaries (__main__.OrganizeTableRuleUnitTests) ... ok
+test_result_stamp_loader_resume_and_mixed_rule_aggregation (__main__.OrganizeTableRuleUnitTests) ... ok
+test_rule_default_is_unchanged_v1_and_retired_v2_xy_rejected (__main__.OrganizeTableRuleUnitTests) ... ok
+test_tilted_alarm_uses_bottom_support_point_and_nan_fails (__main__.OrganizeTableRuleUnitTests) ... ok
+test_held_by_both_pads_simultaneity_and_fail_closed_not_held (__main__.SharedContactHelperV2Tests) ... ok
+test_impulse_between_and_prim_prefix_queries (__main__.SharedContactHelperV2Tests) ... ok
+
+----------------------------------------------------------------------
+Ran 60 tests in 5.073s
+
+OK (skipped=13)
+[SeedManager] init_eval resume filter: excluded=2 remaining=3/5

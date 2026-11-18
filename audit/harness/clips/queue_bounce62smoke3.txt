@@ -1,0 +1,3 @@
+# Blog clip S16 bounce, 6.2 camera smoke 3 (blog_queue.sh, MPS=0), renderer and PhysX on GPU 0: logged 5.1 states set
+# kinematically, no physics step; the scene is built with the 5.1 run's physics flags and --policy zero.
+s62_bounce3|62|bounce_smoke3.json|--subframes 1 --warmup 6 --capture rep --replay <clips>/runs/b51_bounce/frames/index.json|--task put_bottles_into_dustbin --seed 0 --layouts 12 --policy zero --evaluator v2 --physics_preset corrected --physics_params <repo>/docs/params --physics_scenario_opt_in bottles_primary_empty --physics_scenario {"gripper_drive_limit":"motor_peak"}|

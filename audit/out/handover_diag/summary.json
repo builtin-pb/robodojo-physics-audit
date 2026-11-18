@@ -1,0 +1,1733 @@
+{
+ "base": [
+  {
+   "layout": 11,
+   "score": 100.0,
+   "actions": 437,
+   "dt": 0.004,
+   "physics_fixes": [
+    "collision",
+    "gripper",
+    "order",
+    "robot_limits",
+    "size",
+    "solver",
+    "values"
+   ],
+   "waits": {},
+   "cap_lead_steps": {
+    "b3_bottle3": 24
+   },
+   "slew_after": [
+    0.15,
+    0.15
+   ],
+   "left_free_close_speed_m_s": {
+    "b3_bottle3": 0.1451
+   },
+   "steel": [
+    {
+     "tag": "b3_bottle3",
+     "loss": {
+      "i": 410,
+      "action": 323,
+      "substep": 0,
+      "phase": "right_retreat_handover",
+      "bottle_xyz": [
+       0.0018,
+       -0.2202,
+       1.0271
+      ],
+      "before_left_release_cmd": true
+     },
+     "quiet_hold": {
+      "steps": 10,
+      "N_total_median": 0.78,
+      "N_total_p5_p95": [
+       0.0,
+       888.97
+      ],
+      "N_total_min_max": [
+       0.0,
+       976.22
+      ],
+      "cv": 1.759,
+      "steps_below_20pct_of_160N": 7,
+      "frac_below_20pct": 0.7,
+      "step_to_step_abs_change_median_N": 1.87
+     },
+     "carry": null,
+     "first_below_32N_after_release": {
+      "action": 321,
+      "substep": 4,
+      "phase": "right_release_handover"
+     },
+     "slip_vs_grip": {
+      "steps": 39,
+      "low_grip_steps": 13,
+      "rotation_deg_summed_low_grip_steps": 0.868,
+      "rotation_deg_summed_other_steps": 0.51
+     },
+     "at_steady_grip": {
+      "steps": 12,
+      "N_pad_median": [
+       77.6322,
+       78.934
+      ],
+      "spread_mm_median": [
+       0.1466,
+       0.0
+      ],
+      "C_line_Nm": 0.0018,
+      "C_patch_Nm": 0.0019,
+      "C_f_N": 49.7881,
+      "lever_mm": 35.7247,
+      "weight_N": 2.1582,
+      "static_torque_mgd_Nm": 0.0771,
+      "static_margin_torsion": 0.02,
+      "tangential_margin_Cf_over_weight": 23.1,
+      "swing_tau_rigid_max_Nm": null
+     }
+    }
+   ]
+  },
+  {
+   "layout": 12,
+   "score": 40.0,
+   "actions": 700,
+   "dt": 0.004,
+   "physics_fixes": [
+    "collision",
+    "gripper",
+    "order",
+    "robot_limits",
+    "size",
+    "solver",
+    "values"
+   ],
+   "waits": {},
+   "cap_lead_steps": {
+    "b3_bottle3": 11,
+    "b4_bottle2": null
+   },
+   "slew_after": [
+    0.15,
+    0.15
+   ],
+   "left_free_close_speed_m_s": {
+    "b2_bottle3": null,
+    "b3_bottle3": 0.1494,
+    "b4_bottle2": 0.1496
+   },
+   "steel": []
+  },
+  {
+   "layout": 14,
+   "score": 100.0,
+   "actions": 484,
+   "dt": 0.004,
+   "physics_fixes": [
+    "collision",
+    "gripper",
+    "order",
+    "robot_limits",
+    "size",
+    "solver",
+    "values"
+   ],
+   "waits": {},
+   "cap_lead_steps": {
+    "b2_bottle3": 31,
+    "b3_bottle0": 22
+   },
+   "slew_after": [
+    0.15,
+    0.15
+   ],
+   "left_free_close_speed_m_s": {
+    "b2_bottle3": 0.1328,
+    "b3_bottle0": 0.1466
+   },
+   "steel": [
+    {
+     "tag": "b3_bottle0",
+     "loss": {
+      "i": 553,
+      "action": 384,
+      "substep": 3,
+      "phase": "left_carry_high",
+      "bottle_xyz": [
+       -0.3037,
+       -0.1403,
+       1.0827
+      ],
+      "before_left_release_cmd": true
+     },
+     "quiet_hold": {
+      "steps": 60,
+      "N_total_median": 157.91,
+      "N_total_p5_p95": [
+       157.65,
+       158.18
+      ],
+      "N_total_min_max": [
+       157.57,
+       158.2
+      ],
+      "cv": 0.001,
+      "steps_below_20pct_of_160N": 0,
+      "frac_below_20pct": 0.0,
+      "step_to_step_abs_change_median_N": 0.22
+     },
+     "carry": {
+      "steps": 93,
+      "N_total_median": 83.2,
+      "N_total_p5_p95": [
+       0.77,
+       440.64
+      ],
+      "N_total_min_max": [
+       0.0,
+       1563.53
+      ],
+      "cv": 1.706,
+      "steps_below_20pct_of_160N": 40,
+      "frac_below_20pct": 0.43,
+      "step_to_step_abs_change_median_N": 13.2
+     },
+     "first_below_32N_after_release": {
+      "action": 377,
+      "substep": 9,
+      "phase": "left_carry_high"
+     },
+     "slip_vs_grip": {
+      "steps": 182,
+      "low_grip_steps": 54,
+      "rotation_deg_summed_low_grip_steps": 92.022,
+      "rotation_deg_summed_other_steps": 8.099
+     },
+     "at_steady_grip": {
+      "steps": 115,
+      "N_pad_median": [
+       78.8463,
+       79.0524
+      ],
+      "spread_mm_median": [
+       17.1799,
+       12.5849
+      ],
+      "C_line_Nm": 0.3211,
+      "C_patch_Nm": 0.3737,
+      "C_f_N": 50.2135,
+      "lever_mm": 33.7582,
+      "weight_N": 2.1582,
+      "static_torque_mgd_Nm": 0.0729,
+      "static_margin_torsion": 4.41,
+      "tangential_margin_Cf_over_weight": 23.3,
+      "swing_tau_rigid_max_Nm": 0.2401,
+      "swing_peak_over_C_line": 0.748
+     }
+    }
+   ]
+  },
+  {
+   "layout": 15,
+   "score": 40.0,
+   "actions": 700,
+   "dt": 0.004,
+   "physics_fixes": [
+    "collision",
+    "gripper",
+    "order",
+    "robot_limits",
+    "size",
+    "solver",
+    "values"
+   ],
+   "waits": {},
+   "cap_lead_steps": {
+    "b2_bottle3": 11,
+    "b3_bottle1": 22
+   },
+   "slew_after": [
+    0.15,
+    0.15
+   ],
+   "left_free_close_speed_m_s": {
+    "b2_bottle3": 0.1494,
+    "b3_bottle1": 0.1466
+   },
+   "steel": [
+    {
+     "tag": "b3_bottle1",
+     "loss": {
+      "i": 505,
+      "action": 379,
+      "substep": 5,
+      "phase": "left_carry_high",
+      "bottle_xyz": [
+       -0.0862,
+       -0.1309,
+       1.0552
+      ],
+      "before_left_release_cmd": true
+     },
+     "quiet_hold": {
+      "steps": 60,
+      "N_total_median": 157.96,
+      "N_total_p5_p95": [
+       157.71,
+       158.21
+      ],
+      "N_total_min_max": [
+       157.61,
+       158.3
+      ],
+      "cv": 0.001,
+      "steps_below_20pct_of_160N": 0,
+      "frac_below_20pct": 0.0,
+      "step_to_step_abs_change_median_N": 0.26
+     },
+     "carry": {
+      "steps": 45,
+      "N_total_median": 153.76,
+      "N_total_p5_p95": [
+       0.98,
+       177.12
+      ],
+      "N_total_min_max": [
+       0.0,
+       849.1
+      ],
+      "cv": 1.065,
+      "steps_below_20pct_of_160N": 15,
+      "frac_below_20pct": 0.333,
+      "step_to_step_abs_change_median_N": 5.85
+     },
+     "first_below_32N_after_release": {
+      "action": 377,
+      "substep": 9,
+      "phase": "left_carry_high"
+     },
+     "slip_vs_grip": {
+      "steps": 135,
+      "low_grip_steps": 16,
+      "rotation_deg_summed_low_grip_steps": 21.686,
+      "rotation_deg_summed_other_steps": 0.479
+     },
+     "at_steady_grip": {
+      "steps": 116,
+      "N_pad_median": [
+       78.8801,
+       79.0955
+      ],
+      "spread_mm_median": [
+       15.1844,
+       12.8654
+      ],
+      "C_line_Nm": 0.306,
+      "C_patch_Nm": 0.3523,
+      "C_f_N": 50.2331,
+      "lever_mm": 33.6891,
+      "weight_N": 2.1582,
+      "static_torque_mgd_Nm": 0.0727,
+      "static_margin_torsion": 4.21,
+      "tangential_margin_Cf_over_weight": 23.3,
+      "swing_tau_rigid_max_Nm": 0.2533,
+      "swing_peak_over_C_line": 0.828
+     }
+    }
+   ]
+  }
+ ],
+ "waitcap": [
+  {
+   "layout": 11,
+   "score": 100.0,
+   "actions": 437,
+   "dt": 0.004,
+   "physics_fixes": [
+    "collision",
+    "gripper",
+    "order",
+    "robot_limits",
+    "size",
+    "solver",
+    "values"
+   ],
+   "waits": {
+    "b3_bottle3": 0
+   },
+   "cap_lead_steps": {
+    "b3_bottle3": 24
+   },
+   "slew_after": [
+    0.15,
+    0.15
+   ],
+   "left_free_close_speed_m_s": {
+    "b3_bottle3": 0.1451
+   },
+   "steel": [
+    {
+     "tag": "b3_bottle3",
+     "loss": {
+      "i": 410,
+      "action": 323,
+      "substep": 0,
+      "phase": "right_retreat_handover",
+      "bottle_xyz": [
+       0.0018,
+       -0.2202,
+       1.0271
+      ],
+      "before_left_release_cmd": true
+     },
+     "quiet_hold": {
+      "steps": 10,
+      "N_total_median": 0.78,
+      "N_total_p5_p95": [
+       0.0,
+       888.97
+      ],
+      "N_total_min_max": [
+       0.0,
+       976.22
+      ],
+      "cv": 1.759,
+      "steps_below_20pct_of_160N": 7,
+      "frac_below_20pct": 0.7,
+      "step_to_step_abs_change_median_N": 1.87
+     },
+     "carry": null,
+     "first_below_32N_after_release": {
+      "action": 321,
+      "substep": 4,
+      "phase": "right_release_handover"
+     },
+     "slip_vs_grip": {
+      "steps": 39,
+      "low_grip_steps": 13,
+      "rotation_deg_summed_low_grip_steps": 0.868,
+      "rotation_deg_summed_other_steps": 0.51
+     },
+     "at_steady_grip": {
+      "steps": 12,
+      "N_pad_median": [
+       77.6322,
+       78.934
+      ],
+      "spread_mm_median": [
+       0.1466,
+       0.0
+      ],
+      "C_line_Nm": 0.0018,
+      "C_patch_Nm": 0.0019,
+      "C_f_N": 49.7881,
+      "lever_mm": 35.7247,
+      "weight_N": 2.1582,
+      "static_torque_mgd_Nm": 0.0771,
+      "static_margin_torsion": 0.02,
+      "tangential_margin_Cf_over_weight": 23.1,
+      "swing_tau_rigid_max_Nm": null
+     }
+    }
+   ],
+   "trace_rows_differing_from_base": 0
+  },
+  {
+   "layout": 15,
+   "score": 40.0,
+   "actions": 700,
+   "dt": 0.004,
+   "physics_fixes": [
+    "collision",
+    "gripper",
+    "order",
+    "robot_limits",
+    "size",
+    "solver",
+    "values"
+   ],
+   "waits": {
+    "b2_bottle3": 0,
+    "b3_bottle1": 0
+   },
+   "cap_lead_steps": {
+    "b2_bottle3": 11,
+    "b3_bottle1": 22
+   },
+   "slew_after": [
+    0.15,
+    0.15
+   ],
+   "left_free_close_speed_m_s": {
+    "b2_bottle3": 0.1494,
+    "b3_bottle1": 0.1466
+   },
+   "steel": [
+    {
+     "tag": "b3_bottle1",
+     "loss": {
+      "i": 505,
+      "action": 379,
+      "substep": 5,
+      "phase": "left_carry_high",
+      "bottle_xyz": [
+       -0.0862,
+       -0.1309,
+       1.0552
+      ],
+      "before_left_release_cmd": true
+     },
+     "quiet_hold": {
+      "steps": 60,
+      "N_total_median": 157.96,
+      "N_total_p5_p95": [
+       157.71,
+       158.21
+      ],
+      "N_total_min_max": [
+       157.61,
+       158.3
+      ],
+      "cv": 0.001,
+      "steps_below_20pct_of_160N": 0,
+      "frac_below_20pct": 0.0,
+      "step_to_step_abs_change_median_N": 0.26
+     },
+     "carry": {
+      "steps": 45,
+      "N_total_median": 153.76,
+      "N_total_p5_p95": [
+       0.98,
+       177.12
+      ],
+      "N_total_min_max": [
+       0.0,
+       849.1
+      ],
+      "cv": 1.065,
+      "steps_below_20pct_of_160N": 15,
+      "frac_below_20pct": 0.333,
+      "step_to_step_abs_change_median_N": 5.85
+     },
+     "first_below_32N_after_release": {
+      "action": 377,
+      "substep": 9,
+      "phase": "left_carry_high"
+     },
+     "slip_vs_grip": {
+      "steps": 135,
+      "low_grip_steps": 16,
+      "rotation_deg_summed_low_grip_steps": 21.686,
+      "rotation_deg_summed_other_steps": 0.479
+     },
+     "at_steady_grip": {
+      "steps": 116,
+      "N_pad_median": [
+       78.8801,
+       79.0955
+      ],
+      "spread_mm_median": [
+       15.1844,
+       12.8654
+      ],
+      "C_line_Nm": 0.306,
+      "C_patch_Nm": 0.3523,
+      "C_f_N": 50.2331,
+      "lever_mm": 33.6891,
+      "weight_N": 2.1582,
+      "static_torque_mgd_Nm": 0.0727,
+      "static_margin_torsion": 4.21,
+      "tangential_margin_Cf_over_weight": 23.3,
+      "swing_tau_rigid_max_Nm": 0.2533,
+      "swing_peak_over_C_line": 0.828
+     }
+    }
+   ],
+   "trace_rows_differing_from_base": 0
+  }
+ ],
+ "slew": [
+  {
+   "layout": 11,
+   "score": 100.0,
+   "actions": 362,
+   "dt": 0.004,
+   "physics_fixes": [
+    "collision",
+    "gripper",
+    "order",
+    "robot_limits",
+    "size",
+    "solver",
+    "values"
+   ],
+   "waits": {},
+   "cap_lead_steps": {
+    "b3_bottle3": 31
+   },
+   "slew_after": [
+    0.2375,
+    0.2375
+   ],
+   "left_free_close_speed_m_s": {
+    "b3_bottle3": 0.2121
+   },
+   "steel": [
+    {
+     "tag": "b3_bottle3",
+     "loss": {
+      "i": 651,
+      "action": 347,
+      "substep": 1,
+      "phase": "left_to_dustbin",
+      "bottle_xyz": [
+       -0.5206,
+       -0.0817,
+       0.9149
+      ],
+      "before_left_release_cmd": true
+     },
+     "quiet_hold": {
+      "steps": 60,
+      "N_total_median": 159.19,
+      "N_total_p5_p95": [
+       149.89,
+       167.87
+      ],
+      "N_total_min_max": [
+       124.92,
+       192.51
+      ],
+      "cv": 0.05,
+      "steps_below_20pct_of_160N": 0,
+      "frac_below_20pct": 0.0,
+      "step_to_step_abs_change_median_N": 5.12
+     },
+     "carry": {
+      "steps": 191,
+      "N_total_median": 126.85,
+      "N_total_p5_p95": [
+       0.0,
+       680.4
+      ],
+      "N_total_min_max": [
+       0.0,
+       2050.56
+      ],
+      "cv": 1.787,
+      "steps_below_20pct_of_160N": 78,
+      "frac_below_20pct": 0.408,
+      "step_to_step_abs_change_median_N": 17.44
+     },
+     "first_below_32N_after_release": {
+      "action": 335,
+      "substep": 9,
+      "phase": "left_carry_high"
+     },
+     "slip_vs_grip": {
+      "steps": 280,
+      "low_grip_steps": 99,
+      "rotation_deg_summed_low_grip_steps": 69.579,
+      "rotation_deg_summed_other_steps": 25.406
+     },
+     "at_steady_grip": {
+      "steps": 138,
+      "N_pad_median": [
+       79.2128,
+       80.0139
+      ],
+      "spread_mm_median": [
+       4.364,
+       1.1574
+      ],
+      "C_line_Nm": 0.0746,
+      "C_patch_Nm": 0.0698,
+      "C_f_N": 50.6129,
+      "lever_mm": 32.5016,
+      "weight_N": 2.1582,
+      "static_torque_mgd_Nm": 0.0701,
+      "static_margin_torsion": 1.06,
+      "tangential_margin_Cf_over_weight": 23.5,
+      "swing_tau_rigid_max_Nm": null
+     }
+    }
+   ],
+   "trace_rows_differing_from_base": 404
+  },
+  {
+   "layout": 14,
+   "score": 100.0,
+   "actions": 409,
+   "dt": 0.004,
+   "physics_fixes": [
+    "collision",
+    "gripper",
+    "order",
+    "robot_limits",
+    "size",
+    "solver",
+    "values"
+   ],
+   "waits": {},
+   "cap_lead_steps": {
+    "b2_bottle3": 36,
+    "b3_bottle0": 29
+   },
+   "slew_after": [
+    0.2375,
+    0.2375
+   ],
+   "left_free_close_speed_m_s": {
+    "b2_bottle3": 0.1853,
+    "b3_bottle0": 0.2182
+   },
+   "steel": [
+    {
+     "tag": "b3_bottle0",
+     "loss": {
+      "i": 621,
+      "action": 391,
+      "substep": 1,
+      "phase": "left_to_dustbin",
+      "bottle_xyz": [
+       -0.439,
+       -0.0719,
+       1.039
+      ],
+      "before_left_release_cmd": true
+     },
+     "quiet_hold": {
+      "steps": 60,
+      "N_total_median": 158.03,
+      "N_total_p5_p95": [
+       151.63,
+       165.49
+      ],
+      "N_total_min_max": [
+       146.11,
+       170.51
+      ],
+      "cv": 0.026,
+      "steps_below_20pct_of_160N": 0,
+      "frac_below_20pct": 0.0,
+      "step_to_step_abs_change_median_N": 0.93
+     },
+     "carry": {
+      "steps": 161,
+      "N_total_median": 149.22,
+      "N_total_p5_p95": [
+       0.62,
+       441.15
+      ],
+      "N_total_min_max": [
+       0.0,
+       2021.79
+      ],
+      "cv": 1.33,
+      "steps_below_20pct_of_160N": 43,
+      "frac_below_20pct": 0.267,
+      "step_to_step_abs_change_median_N": 41.3
+     },
+     "first_below_32N_after_release": {
+      "action": 381,
+      "substep": 0,
+      "phase": "left_carry_high"
+     },
+     "slip_vs_grip": {
+      "steps": 251,
+      "low_grip_steps": 62,
+      "rotation_deg_summed_low_grip_steps": 45.231,
+      "rotation_deg_summed_other_steps": 21.375
+     },
+     "at_steady_grip": {
+      "steps": 137,
+      "N_pad_median": [
+       79.0,
+       79.133
+      ],
+      "spread_mm_median": [
+       4.9568,
+       13.6445
+      ],
+      "C_line_Nm": 0.2168,
+      "C_patch_Nm": 0.2341,
+      "C_f_N": 50.2955,
+      "lever_mm": 35.5006,
+      "weight_N": 2.1582,
+      "static_torque_mgd_Nm": 0.0766,
+      "static_margin_torsion": 2.83,
+      "tangential_margin_Cf_over_weight": 23.3,
+      "swing_tau_rigid_max_Nm": 0.2656,
+      "swing_peak_over_C_line": 1.225
+     }
+    }
+   ],
+   "trace_rows_differing_from_base": 451
+  },
+  {
+   "layout": 15,
+   "score": 40.0,
+   "actions": 700,
+   "dt": 0.004,
+   "physics_fixes": [
+    "collision",
+    "gripper",
+    "order",
+    "robot_limits",
+    "size",
+    "solver",
+    "values"
+   ],
+   "waits": {},
+   "cap_lead_steps": {
+    "b2_bottle3": 23,
+    "b3_bottle1": 29
+   },
+   "slew_after": [
+    0.2375,
+    0.2375
+   ],
+   "left_free_close_speed_m_s": {
+    "b2_bottle3": 0.2321,
+    "b3_bottle1": 0.2182
+   },
+   "steel": [
+    {
+     "tag": "b3_bottle1",
+     "loss": {
+      "i": 516,
+      "action": 380,
+      "substep": 6,
+      "phase": "left_carry_high",
+      "bottle_xyz": [
+       -0.1494,
+       -0.1157,
+       1.0731
+      ],
+      "before_left_release_cmd": true
+     },
+     "quiet_hold": {
+      "steps": 60,
+      "N_total_median": 157.82,
+      "N_total_p5_p95": [
+       157.42,
+       158.23
+      ],
+      "N_total_min_max": [
+       156.99,
+       158.6
+      ],
+      "cv": 0.002,
+      "steps_below_20pct_of_160N": 0,
+      "frac_below_20pct": 0.0,
+      "step_to_step_abs_change_median_N": 0.2
+     },
+     "carry": {
+      "steps": 56,
+      "N_total_median": 153.31,
+      "N_total_p5_p95": [
+       1.04,
+       227.1
+      ],
+      "N_total_min_max": [
+       0.0,
+       795.99
+      ],
+      "cv": 0.825,
+      "steps_below_20pct_of_160N": 11,
+      "frac_below_20pct": 0.196,
+      "step_to_step_abs_change_median_N": 14.43
+     },
+     "first_below_32N_after_release": {
+      "action": 378,
+      "substep": 9,
+      "phase": "left_carry_high"
+     },
+     "slip_vs_grip": {
+      "steps": 145,
+      "low_grip_steps": 13,
+      "rotation_deg_summed_low_grip_steps": 15.849,
+      "rotation_deg_summed_other_steps": 7.646
+     },
+     "at_steady_grip": {
+      "steps": 102,
+      "N_pad_median": [
+       78.8716,
+       78.974
+      ],
+      "spread_mm_median": [
+       18.4771,
+       12.6269
+      ],
+      "C_line_Nm": 0.3246,
+      "C_patch_Nm": 0.3903,
+      "C_f_N": 50.1931,
+      "lever_mm": 33.5264,
+      "weight_N": 2.1582,
+      "static_torque_mgd_Nm": 0.0724,
+      "static_margin_torsion": 4.49,
+      "tangential_margin_Cf_over_weight": 23.3,
+      "swing_tau_rigid_max_Nm": 0.2946,
+      "swing_peak_over_C_line": 0.908
+     }
+    }
+   ],
+   "trace_rows_differing_from_base": 667
+  }
+ ],
+ "nosolver": [
+  {
+   "layout": 11,
+   "score": 100.0,
+   "actions": 484,
+   "dt": 0.004,
+   "physics_fixes": [
+    "collision",
+    "gripper",
+    "order",
+    "robot_limits",
+    "size",
+    "values"
+   ],
+   "waits": {},
+   "cap_lead_steps": {
+    "b3_bottle3": 24,
+    "b4_bottle3": 22
+   },
+   "slew_after": [
+    0.15,
+    0.15
+   ],
+   "left_free_close_speed_m_s": {
+    "b3_bottle3": 0.145,
+    "b4_bottle3": 0.1458
+   },
+   "steel": [
+    {
+     "tag": "b3_bottle3",
+     "loss": {
+      "i": 463,
+      "action": 328,
+      "substep": 3,
+      "phase": "left_carry_high",
+      "bottle_xyz": [
+       0.0042,
+       -0.2188,
+       0.9975
+      ],
+      "before_left_release_cmd": true
+     },
+     "quiet_hold": {
+      "steps": 60,
+      "N_total_median": 133.31,
+      "N_total_p5_p95": [
+       0.41,
+       437.92
+      ],
+      "N_total_min_max": [
+       0.0,
+       544.23
+      ],
+      "cv": 1.008,
+      "steps_below_20pct_of_160N": 24,
+      "frac_below_20pct": 0.4,
+      "step_to_step_abs_change_median_N": 98.65
+     },
+     "carry": {
+      "steps": 3,
+      "N_total_median": 3.01,
+      "N_total_p5_p95": [
+       1.5,
+       7.17
+      ],
+      "N_total_min_max": [
+       1.33,
+       7.63
+      ],
+      "cv": 0.668,
+      "steps_below_20pct_of_160N": 3,
+      "frac_below_20pct": 1.0,
+      "step_to_step_abs_change_median_N": 3.15
+     },
+     "first_below_32N_after_release": {
+      "action": 321,
+      "substep": 0,
+      "phase": "right_release_handover"
+     },
+     "slip_vs_grip": {
+      "steps": 91,
+      "low_grip_steps": 42,
+      "rotation_deg_summed_low_grip_steps": 51.269,
+      "rotation_deg_summed_other_steps": 36.249
+     },
+     "at_steady_grip": {
+      "steps": 3,
+      "N_pad_median": [
+       79.9193,
+       77.2922
+      ],
+      "spread_mm_median": [
+       16.4212,
+       18.0618
+      ],
+      "C_line_Nm": 0.2979,
+      "C_patch_Nm": 0.3648,
+      "C_f_N": 50.0252,
+      "lever_mm": 54.8836,
+      "weight_N": 2.1582,
+      "static_torque_mgd_Nm": 0.1184,
+      "static_margin_torsion": 2.51,
+      "tangential_margin_Cf_over_weight": 23.2,
+      "swing_tau_rigid_max_Nm": null
+     }
+    },
+    {
+     "tag": "b4_bottle3",
+     "loss": {
+      "i": 709,
+      "action": 473,
+      "substep": 9,
+      "phase": "left_release",
+      "bottle_xyz": [
+       -0.6006,
+       -0.1289,
+       0.8928
+      ],
+      "before_left_release_cmd": false
+     },
+     "quiet_hold": {
+      "steps": 60,
+      "N_total_median": 158.17,
+      "N_total_p5_p95": [
+       149.56,
+       163.39
+      ],
+      "N_total_min_max": [
+       143.58,
+       169.03
+      ],
+      "cv": 0.027,
+      "steps_below_20pct_of_160N": 0,
+      "frac_below_20pct": 0.0,
+      "step_to_step_abs_change_median_N": 1.4
+     },
+     "carry": {
+      "steps": 240,
+      "N_total_median": 158.12,
+      "N_total_p5_p95": [
+       124.32,
+       199.29
+      ],
+      "N_total_min_max": [
+       91.61,
+       231.06
+      ],
+      "cv": 0.131,
+      "steps_below_20pct_of_160N": 0,
+      "frac_below_20pct": 0.0,
+      "step_to_step_abs_change_median_N": 10.88
+     },
+     "first_below_32N_after_release": null,
+     "slip_vs_grip": {
+      "steps": 336,
+      "low_grip_steps": 0,
+      "rotation_deg_summed_low_grip_steps": 0.0,
+      "rotation_deg_summed_other_steps": 50.268
+     },
+     "at_steady_grip": {
+      "steps": 233,
+      "N_pad_median": [
+       78.7344,
+       79.4661
+      ],
+      "spread_mm_median": [
+       15.4736,
+       1.2018
+      ],
+      "C_line_Nm": 0.1089,
+      "C_patch_Nm": 0.2067,
+      "C_f_N": 50.3572,
+      "lever_mm": 32.0734,
+      "weight_N": 2.1582,
+      "static_torque_mgd_Nm": 0.0692,
+      "static_margin_torsion": 1.57,
+      "tangential_margin_Cf_over_weight": 23.3,
+      "swing_tau_rigid_max_Nm": null
+     }
+    }
+   ],
+   "trace_rows_differing_from_base": 481
+  },
+  {
+   "layout": 14,
+   "score": 100.0,
+   "actions": 409,
+   "dt": 0.004,
+   "physics_fixes": [
+    "collision",
+    "gripper",
+    "order",
+    "robot_limits",
+    "size",
+    "values"
+   ],
+   "waits": {},
+   "cap_lead_steps": {
+    "b2_bottle3": 31,
+    "b3_bottle0": 22
+   },
+   "slew_after": [
+    0.15,
+    0.15
+   ],
+   "left_free_close_speed_m_s": {
+    "b2_bottle3": 0.1294,
+    "b3_bottle0": 0.1458
+   },
+   "steel": [
+    {
+     "tag": "b3_bottle0",
+     "loss": {
+      "i": 710,
+      "action": 400,
+      "substep": 0,
+      "phase": "left_release",
+      "bottle_xyz": [
+       -0.6084,
+       -0.0631,
+       0.8896
+      ],
+      "before_left_release_cmd": false
+     },
+     "quiet_hold": {
+      "steps": 60,
+      "N_total_median": 157.95,
+      "N_total_p5_p95": [
+       150.67,
+       164.72
+      ],
+      "N_total_min_max": [
+       144.25,
+       169.78
+      ],
+      "cv": 0.026,
+      "steps_below_20pct_of_160N": 0,
+      "frac_below_20pct": 0.0,
+      "step_to_step_abs_change_median_N": 1.26
+     },
+     "carry": {
+      "steps": 240,
+      "N_total_median": 157.78,
+      "N_total_p5_p95": [
+       39.61,
+       225.85
+      ],
+      "N_total_min_max": [
+       0.0,
+       636.6
+      ],
+      "cv": 0.419,
+      "steps_below_20pct_of_160N": 10,
+      "frac_below_20pct": 0.042,
+      "step_to_step_abs_change_median_N": 18.37
+     },
+     "first_below_32N_after_release": {
+      "action": 383,
+      "substep": 6,
+      "phase": "left_carry_high"
+     },
+     "slip_vs_grip": {
+      "steps": 339,
+      "low_grip_steps": 16,
+      "rotation_deg_summed_low_grip_steps": 9.69,
+      "rotation_deg_summed_other_steps": 37.306
+     },
+     "at_steady_grip": {
+      "steps": 189,
+      "N_pad_median": [
+       78.8338,
+       79.0152
+      ],
+      "spread_mm_median": [
+       18.5196,
+       12.924
+      ],
+      "C_line_Nm": 0.3293,
+      "C_patch_Nm": 0.3907,
+      "C_f_N": 50.3015,
+      "lever_mm": 30.1867,
+      "weight_N": 2.1582,
+      "static_torque_mgd_Nm": 0.0651,
+      "static_margin_torsion": 5.05,
+      "tangential_margin_Cf_over_weight": 23.3,
+      "swing_tau_rigid_max_Nm": 0.2606,
+      "swing_peak_over_C_line": 0.791
+     }
+    }
+   ],
+   "trace_rows_differing_from_base": 484
+  },
+  {
+   "layout": 15,
+   "score": 100.0,
+   "actions": 409,
+   "dt": 0.004,
+   "physics_fixes": [
+    "collision",
+    "gripper",
+    "order",
+    "robot_limits",
+    "size",
+    "values"
+   ],
+   "waits": {},
+   "cap_lead_steps": {
+    "b2_bottle3": 10,
+    "b3_bottle1": 21
+   },
+   "slew_after": [
+    0.15,
+    0.15
+   ],
+   "left_free_close_speed_m_s": {
+    "b2_bottle3": 0.1494,
+    "b3_bottle1": 0.1464
+   },
+   "steel": [
+    {
+     "tag": "b3_bottle1",
+     "loss": {
+      "i": 535,
+      "action": 382,
+      "substep": 5,
+      "phase": "left_carry_high",
+      "bottle_xyz": [
+       -0.2523,
+       -0.1124,
+       1.0888
+      ],
+      "before_left_release_cmd": true
+     },
+     "quiet_hold": {
+      "steps": 60,
+      "N_total_median": 158.1,
+      "N_total_p5_p95": [
+       151.05,
+       165.27
+      ],
+      "N_total_min_max": [
+       143.88,
+       170.78
+      ],
+      "cv": 0.029,
+      "steps_below_20pct_of_160N": 0,
+      "frac_below_20pct": 0.0,
+      "step_to_step_abs_change_median_N": 1.33
+     },
+     "carry": {
+      "steps": 75,
+      "N_total_median": 152.58,
+      "N_total_p5_p95": [
+       0.79,
+       418.64
+      ],
+      "N_total_min_max": [
+       0.0,
+       679.62
+      ],
+      "cv": 0.915,
+      "steps_below_20pct_of_160N": 18,
+      "frac_below_20pct": 0.24,
+      "step_to_step_abs_change_median_N": 7.26
+     },
+     "first_below_32N_after_release": {
+      "action": 379,
+      "substep": 5,
+      "phase": "left_carry_high"
+     },
+     "slip_vs_grip": {
+      "steps": 163,
+      "low_grip_steps": 21,
+      "rotation_deg_summed_low_grip_steps": 22.086,
+      "rotation_deg_summed_other_steps": 10.329
+     },
+     "at_steady_grip": {
+      "steps": 95,
+      "N_pad_median": [
+       78.5498,
+       79.6021
+      ],
+      "spread_mm_median": [
+       18.7731,
+       12.1481
+      ],
+      "C_line_Nm": 0.3586,
+      "C_patch_Nm": 0.3885,
+      "C_f_N": 50.309,
+      "lever_mm": 30.4016,
+      "weight_N": 2.1582,
+      "static_torque_mgd_Nm": 0.0656,
+      "static_margin_torsion": 5.47,
+      "tangential_margin_Cf_over_weight": 23.3,
+      "swing_tau_rigid_max_Nm": 0.2663,
+      "swing_peak_over_C_line": 0.743
+     }
+    }
+   ],
+   "trace_rows_differing_from_base": 700
+  }
+ ],
+ "dt2": [
+  {
+   "layout": 11,
+   "score": 40.0,
+   "actions": 700,
+   "dt": 0.002,
+   "physics_fixes": [
+    "collision",
+    "gripper",
+    "order",
+    "robot_limits",
+    "size",
+    "solver",
+    "values"
+   ],
+   "waits": {},
+   "cap_lead_steps": {
+    "b3_bottle3": 49
+   },
+   "slew_after": [
+    0.15,
+    0.15
+   ],
+   "left_free_close_speed_m_s": {
+    "b3_bottle3": 0.1456
+   },
+   "steel": [
+    {
+     "tag": "b3_bottle3",
+     "loss": {
+      "i": 1149,
+      "action": 339,
+      "substep": 9,
+      "phase": "left_to_dustbin",
+      "bottle_xyz": [
+       -0.3515,
+       -0.1831,
+       1.107
+      ],
+      "before_left_release_cmd": true
+     },
+     "quiet_hold": {
+      "steps": 120,
+      "N_total_median": 158.75,
+      "N_total_p5_p95": [
+       139.17,
+       177.94
+      ],
+      "N_total_min_max": [
+       72.04,
+       276.33
+      ],
+      "cv": 0.123,
+      "steps_below_20pct_of_160N": 0,
+      "frac_below_20pct": 0.0,
+      "step_to_step_abs_change_median_N": 8.9
+     },
+     "carry": {
+      "steps": 229,
+      "N_total_median": 152.23,
+      "N_total_p5_p95": [
+       0.85,
+       503.35
+      ],
+      "N_total_min_max": [
+       0.0,
+       2739.31
+      ],
+      "cv": 1.52,
+      "steps_below_20pct_of_160N": 62,
+      "frac_below_20pct": 0.271,
+      "step_to_step_abs_change_median_N": 21.04
+     },
+     "first_below_32N_after_release": {
+      "action": 332,
+      "substep": 19,
+      "phase": "left_carry_high"
+     },
+     "slip_vs_grip": {
+      "steps": 410,
+      "low_grip_steps": 84,
+      "rotation_deg_summed_low_grip_steps": 32.369,
+      "rotation_deg_summed_other_steps": 25.065
+     },
+     "at_steady_grip": {
+      "steps": 238,
+      "N_pad_median": [
+       78.8891,
+       80.2357
+      ],
+      "spread_mm_median": [
+       1.8978,
+       1.2364
+      ],
+      "C_line_Nm": 0.0396,
+      "C_patch_Nm": 0.0394,
+      "C_f_N": 50.6027,
+      "lever_mm": 33.0099,
+      "weight_N": 2.1582,
+      "static_torque_mgd_Nm": 0.0712,
+      "static_margin_torsion": 0.56,
+      "tangential_margin_Cf_over_weight": 23.4,
+      "swing_tau_rigid_max_Nm": null
+     }
+    }
+   ],
+   "trace_rows_differing_from_base": 690
+  },
+  {
+   "layout": 14,
+   "score": 100.0,
+   "actions": 409,
+   "dt": 0.002,
+   "physics_fixes": [
+    "collision",
+    "gripper",
+    "order",
+    "robot_limits",
+    "size",
+    "solver",
+    "values"
+   ],
+   "waits": {},
+   "cap_lead_steps": {
+    "b2_bottle3": 62,
+    "b3_bottle0": 43
+   },
+   "slew_after": [
+    0.15,
+    0.15
+   ],
+   "left_free_close_speed_m_s": {
+    "b2_bottle3": 0.134,
+    "b3_bottle0": 0.1468
+   },
+   "steel": [
+    {
+     "tag": "b3_bottle0",
+     "loss": {
+      "i": 1302,
+      "action": 394,
+      "substep": 2,
+      "phase": "left_to_dustbin",
+      "bottle_xyz": [
+       -0.5082,
+       -0.0631,
+       0.9062
+      ],
+      "before_left_release_cmd": true
+     },
+     "quiet_hold": {
+      "steps": 120,
+      "N_total_median": 157.95,
+      "N_total_p5_p95": [
+       157.24,
+       158.58
+      ],
+      "N_total_min_max": [
+       156.77,
+       159.09
+      ],
+      "cv": 0.003,
+      "steps_below_20pct_of_160N": 0,
+      "frac_below_20pct": 0.0,
+      "step_to_step_abs_change_median_N": 0.73
+     },
+     "carry": {
+      "steps": 382,
+      "N_total_median": 66.68,
+      "N_total_p5_p95": [
+       0.0,
+       573.08
+      ],
+      "N_total_min_max": [
+       0.0,
+       2581.65
+      ],
+      "cv": 1.723,
+      "steps_below_20pct_of_160N": 172,
+      "frac_below_20pct": 0.45,
+      "step_to_step_abs_change_median_N": 36.51
+     },
+     "first_below_32N_after_release": {
+      "action": 378,
+      "substep": 0,
+      "phase": "left_carry_high"
+     },
+     "slip_vs_grip": {
+      "steps": 561,
+      "low_grip_steps": 223,
+      "rotation_deg_summed_low_grip_steps": 73.836,
+      "rotation_deg_summed_other_steps": 14.505
+     },
+     "at_steady_grip": {
+      "steps": 240,
+      "N_pad_median": [
+       78.7888,
+       79.1984
+      ],
+      "spread_mm_median": [
+       18.506,
+       12.6153
+      ],
+      "C_line_Nm": 0.3411,
+      "C_patch_Nm": 0.3907,
+      "C_f_N": 50.2449,
+      "lever_mm": 32.4105,
+      "weight_N": 2.1582,
+      "static_torque_mgd_Nm": 0.0699,
+      "static_margin_torsion": 4.88,
+      "tangential_margin_Cf_over_weight": 23.3,
+      "swing_tau_rigid_max_Nm": 0.3474,
+      "swing_peak_over_C_line": 1.018
+     }
+    }
+   ],
+   "trace_rows_differing_from_base": 484
+  },
+  {
+   "layout": 15,
+   "score": 100.0,
+   "actions": 409,
+   "dt": 0.002,
+   "physics_fixes": [
+    "collision",
+    "gripper",
+    "order",
+    "robot_limits",
+    "size",
+    "solver",
+    "values"
+   ],
+   "waits": {},
+   "cap_lead_steps": {
+    "b2_bottle3": 22,
+    "b3_bottle1": 43
+   },
+   "slew_after": [
+    0.15,
+    0.15
+   ],
+   "left_free_close_speed_m_s": {
+    "b2_bottle3": 0.1497,
+    "b3_bottle1": 0.1471
+   },
+   "steel": [
+    {
+     "tag": "b3_bottle1",
+     "loss": {
+      "i": 1302,
+      "action": 394,
+      "substep": 2,
+      "phase": "left_to_dustbin",
+      "bottle_xyz": [
+       -0.533,
+       -0.0559,
+       0.9064
+      ],
+      "before_left_release_cmd": true
+     },
+     "quiet_hold": {
+      "steps": 120,
+      "N_total_median": 157.98,
+      "N_total_p5_p95": [
+       157.01,
+       158.94
+      ],
+      "N_total_min_max": [
+       156.41,
+       159.45
+      ],
+      "cv": 0.004,
+      "steps_below_20pct_of_160N": 0,
+      "frac_below_20pct": 0.0,
+      "step_to_step_abs_change_median_N": 0.89
+     },
+     "carry": {
+      "steps": 382,
+      "N_total_median": 142.62,
+      "N_total_p5_p95": [
+       0.0,
+       350.38
+      ],
+      "N_total_min_max": [
+       0.0,
+       3416.54
+      ],
+      "cv": 1.785,
+      "steps_below_20pct_of_160N": 120,
+      "frac_below_20pct": 0.314,
+      "step_to_step_abs_change_median_N": 20.22
+     },
+     "first_below_32N_after_release": {
+      "action": 378,
+      "substep": 0,
+      "phase": "left_carry_high"
+     },
+     "slip_vs_grip": {
+      "steps": 561,
+      "low_grip_steps": 148,
+      "rotation_deg_summed_low_grip_steps": 53.393,
+      "rotation_deg_summed_other_steps": 18.306
+     },
+     "at_steady_grip": {
+      "steps": 293,
+      "N_pad_median": [
+       78.8321,
+       79.2314
+      ],
+      "spread_mm_median": [
+       16.7424,
+       12.9383
+      ],
+      "C_line_Nm": 0.3227,
+      "C_patch_Nm": 0.3727,
+      "C_f_N": 50.2657,
+      "lever_mm": 33.311,
+      "weight_N": 2.1582,
+      "static_torque_mgd_Nm": 0.0719,
+      "static_margin_torsion": 4.49,
+      "tangential_margin_Cf_over_weight": 23.3,
+      "swing_tau_rigid_max_Nm": 0.3728,
+      "swing_peak_over_C_line": 1.155
+     }
+    }
+   ],
+   "trace_rows_differing_from_base": 700
+  }
+ ],
+ "nogripper": [
+  {
+   "layout": 15,
+   "score": 100.0,
+   "actions": 409,
+   "dt": 0.004,
+   "physics_fixes": [
+    "collision",
+    "order",
+    "robot_limits",
+    "size",
+    "solver",
+    "values"
+   ],
+   "waits": {},
+   "cap_lead_steps": {
+    "b2_bottle3": null,
+    "b3_bottle1": null
+   },
+   "slew_after": [
+    null,
+    null
+   ],
+   "left_free_close_speed_m_s": {
+    "b2_bottle3": 0.2319,
+    "b3_bottle1": 0.232
+   },
+   "steel": [
+    {
+     "tag": "b3_bottle1",
+     "loss": {
+      "i": 700,
+      "action": 399,
+      "substep": 0,
+      "phase": "left_release",
+      "bottle_xyz": [
+       -0.5988,
+       -0.0885,
+       0.814
+      ],
+      "before_left_release_cmd": false
+     },
+     "quiet_hold": {
+      "steps": 60,
+      "N_total_median": 48.69,
+      "N_total_p5_p95": [
+       21.47,
+       48.81
+      ],
+      "N_total_min_max": [
+       21.29,
+       48.86
+      ],
+      "cv": 0.18,
+      "steps_below_20pct_of_160N": 6,
+      "frac_below_20pct": 0.1,
+      "step_to_step_abs_change_median_N": 0.16
+     },
+     "carry": {
+      "steps": 240,
+      "N_total_median": 46.6,
+      "N_total_p5_p95": [
+       18.25,
+       50.72
+      ],
+      "N_total_min_max": [
+       9.88,
+       51.72
+      ],
+      "cv": 0.249,
+      "steps_below_20pct_of_160N": 41,
+      "frac_below_20pct": 0.171,
+      "step_to_step_abs_change_median_N": 1.22
+     },
+     "first_below_32N_after_release": {
+      "action": 365,
+      "substep": 0,
+      "phase": "right_release_handover"
+     },
+     "slip_vs_grip": {
+      "steps": 339,
+      "low_grip_steps": 86,
+      "rotation_deg_summed_low_grip_steps": 45.826,
+      "rotation_deg_summed_other_steps": 68.557
+     },
+     "at_steady_grip": null
+    }
+   ],
+   "trace_rows_differing_from_base": 668
+  }
+ ],
+ "smoke": [
+  {
+   "layout": 15,
+   "score": 40.0,
+   "actions": 300,
+   "dt": 0.004,
+   "physics_fixes": [
+    "collision",
+    "gripper",
+    "order",
+    "robot_limits",
+    "size",
+    "solver",
+    "values"
+   ],
+   "waits": {},
+   "cap_lead_steps": {
+    "b2_bottle3": 11
+   },
+   "slew_after": [
+    0.15,
+    0.15
+   ],
+   "left_free_close_speed_m_s": {
+    "b2_bottle3": 0.1494
+   },
+   "steel": [],
+   "trace_rows_differing_from_base": 400
+  }
+ ]
+}

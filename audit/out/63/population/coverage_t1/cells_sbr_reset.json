@@ -1,0 +1,56 @@
+[
+  {
+    "cell_name": "l0_stab_off",
+    "layout": 0,
+    "overrides": {
+      "enable_stabilization": false,
+      "min_pos_iters": 64,
+      "no_top_up": true
+    }
+  },
+  {
+    "cell_name": "l0_stab_on",
+    "layout": 0,
+    "overrides": {
+      "enable_stabilization": true,
+      "min_pos_iters": 64,
+      "no_top_up": true
+    }
+  },
+  {
+    "cell_name": "l1_stab_off",
+    "layout": 1,
+    "overrides": {
+      "enable_stabilization": false,
+      "min_pos_iters": 64,
+      "no_top_up": true
+    }
+  },
+  {
+    "cell_name": "l1_stab_on",
+    "layout": 1,
+    "overrides": {
+      "enable_stabilization": true,
+      "min_pos_iters": 64,
+      "no_top_up": true
+    }
+  },
+  {
+    "cell_name": "l5_stab_off",
+    "layout": 5,
+    "overrides": {
+      "enable_stabilization": false,
+      "min_pos_iters": 64,
+      "no_top_up": true
+    }
+  },
+  {
+    "cell_name": "l5_stab_on",
+    "layout": 5,
+    "overrides": {
+      "enable_stabilization": true,
+      "min_pos_iters": 64,
+      "no_top_up": true
+    }
+  }
+]

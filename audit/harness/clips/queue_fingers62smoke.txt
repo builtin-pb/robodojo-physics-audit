@@ -1,0 +1,4 @@
+# Blog clip, three finger versions: 6.2 camera smoke (blog_queue.sh, MPS=0), renderer and PhysX on GPU 0. Five logged 5.1
+# states merged by merge_states.py into runs/smoke_src/index.json, set kinematically with no physics step; the scene is
+# RoboDojo's own construction with --policy zero and no physics flags (the replay sets every pose and joint).
+s62_fingers|62|fingers_smoke.json|--subframes 1 --warmup 6 --capture rep --replay <clips>/runs/smoke_src/index.json|--task put_bottles_into_dustbin --seed 0 --layouts 0 --policy zero|

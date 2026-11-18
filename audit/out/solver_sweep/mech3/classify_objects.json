@@ -1,0 +1,81 @@
+[
+ {
+  "cell_name": "classify_objects__shipped",
+  "layout": 0,
+  "overrides": {
+   "slide_target": {
+    "label": "cat0_0",
+    "inst": "pen_4_1",
+    "labelled": true,
+    "stem": "pen_4",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.990832,
+     -0.135101
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "classify_objects__pen_hull",
+  "layout": 0,
+  "overrides": {
+   "approx_override": {
+    "pen_4": "convexHull"
+   },
+   "slide_target": {
+    "label": "cat0_0",
+    "inst": "pen_4_1",
+    "labelled": true,
+    "stem": "pen_4",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.990832,
+     -0.135101
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "classify_objects__pen_hull_cpu",
+  "layout": 0,
+  "overrides": {
+   "approx_override": {
+    "pen_4": "convexHull"
+   },
+   "gpu_dynamics": false,
+   "slide_target": {
+    "label": "cat0_0",
+    "inst": "pen_4_1",
+    "labelled": true,
+    "stem": "pen_4",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.990832,
+     -0.135101
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "classify_objects__pen_hull_dt1",
+  "layout": 0,
+  "overrides": {
+   "approx_override": {
+    "pen_4": "convexHull"
+   },
+   "dt_s": 0.001,
+   "slide_target": {
+    "label": "cat0_0",
+    "inst": "pen_4_1",
+    "labelled": true,
+    "stem": "pen_4",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.990832,
+     -0.135101
+    ]
+   }
+  }
+ }
+]

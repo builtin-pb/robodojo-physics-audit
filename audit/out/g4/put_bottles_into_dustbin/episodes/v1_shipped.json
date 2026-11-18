@@ -1,0 +1,241 @@
+[
+ {
+  "accidental_bottles": [],
+  "arm": "v1_shipped",
+  "back_to_origin": true,
+  "bottle_mass_override": null,
+  "bottles": {
+   "bottle0": {
+    "accidental": false,
+    "attempts": [
+     {
+      "attempt": 0,
+      "end_step": 84,
+      "outcome": "in_bin_after_release",
+      "route": "left_direct",
+      "start_step": 1,
+      "step": 71
+     }
+    ],
+    "geometric_in_bin": true,
+    "knocked": [],
+    "outcome": "scored",
+    "recovered_failures": [],
+    "scored": true
+   },
+   "bottle1": {
+    "accidental": false,
+    "attempts": [
+     {
+      "attempt": 1,
+      "end_step": 159,
+      "outcome": "in_bin_after_release",
+      "route": "left_direct",
+      "start_step": 85,
+      "step": 146
+     }
+    ],
+    "geometric_in_bin": true,
+    "knocked": [],
+    "outcome": "scored",
+    "recovered_failures": [],
+    "scored": true
+   },
+   "bottle2": {
+    "accidental": false,
+    "attempts": [
+     {
+      "attempt": 2,
+      "end_step": 234,
+      "outcome": "in_bin_after_release",
+      "route": "left_direct",
+      "start_step": 160,
+      "step": 221
+     }
+    ],
+    "geometric_in_bin": true,
+    "knocked": [],
+    "outcome": "scored",
+    "recovered_failures": [],
+    "scored": true
+   },
+   "bottle3": {
+    "accidental": false,
+    "attempts": [
+     {
+      "attempt": 3,
+      "end_step": 355,
+      "outcome": "in_bin_after_release",
+      "route": "right_to_left_handover",
+      "start_step": 235,
+      "step": 352
+     }
+    ],
+    "geometric_in_bin": true,
+    "knocked": [],
+    "outcome": "scored",
+    "recovered_failures": [],
+    "scored": true
+   }
+  },
+  "bottles_in_bin": 4,
+  "bottles_in_bin_geometric": 4,
+  "engine_masses": {
+   "bottle0": 0.2,
+   "bottle1": 0.15,
+   "bottle2": 0.15,
+   "bottle3": 0.15
+  },
+  "episode_dt_s": null,
+  "episode_dt_top_up_steps": null,
+  "episode_seconds": 153.4,
+  "episode_steps": 3620,
+  "evaluator_run": "v1",
+  "final_poses": {
+   "bottle0": [
+    -0.63182,
+    -0.02361,
+    0.31736,
+    0.33495,
+    -0.62171,
+    0.33346,
+    0.62457
+   ],
+   "bottle1": [
+    -0.72468,
+    -0.17206,
+    0.36082,
+    0.79889,
+    0.48966,
+    -0.16619,
+    -0.30722
+   ],
+   "bottle2": [
+    -0.53904,
+    -0.20851,
+    0.36735,
+    0.21925,
+    0.41625,
+    -0.05455,
+    0.88073
+   ],
+   "bottle3": [
+    -0.58752,
+    -0.05028,
+    0.46129,
+    0.81449,
+    0.01151,
+    0.12319,
+    -0.56683
+   ]
+  },
+  "first_failure": null,
+  "grippers_open": true,
+  "instances": {
+   "bottle0": "bottle_5_1",
+   "bottle1": "bottle_25_2",
+   "bottle2": "bottle_50_3",
+   "bottle3": "bottle_55_4"
+  },
+  "layout": 16,
+  "max_bottle_speed_m_s": 2.93,
+  "pad_friction_override": null,
+  "physics": null,
+  "plans": [
+   {
+    "handover_aborted_dropped_z": null,
+    "idx": 0,
+    "label": "bottle0",
+    "left_aborted_dropped_z": null,
+    "route": "left_direct",
+    "upright": true
+   },
+   {
+    "handover_aborted_dropped_z": null,
+    "idx": 1,
+    "label": "bottle1",
+    "left_aborted_dropped_z": null,
+    "route": "left_direct",
+    "upright": false
+   },
+   {
+    "handover_aborted_dropped_z": null,
+    "idx": 2,
+    "label": "bottle2",
+    "left_aborted_dropped_z": null,
+    "route": "left_direct",
+    "upright": true
+   },
+   {
+    "handover_aborted_dropped_z": null,
+    "idx": 3,
+    "label": "bottle3",
+    "left_aborted_dropped_z": null,
+    "route": "right_to_left_handover",
+    "upright": true
+   }
+  ],
+  "recovered_failures": [],
+  "reset_rejected": false,
+  "seed": 0,
+  "settled_poses": {
+   "bottle0": [
+    -0.03378,
+    -0.14233,
+    0.85199,
+    0.99714,
+    0.0,
+    1e-05,
+    -0.07558
+   ],
+   "bottle1": [
+    -0.04258,
+    0.0116,
+    0.79662,
+    -0.52474,
+    0.53977,
+    -0.45345,
+    0.47716
+   ],
+   "bottle2": [
+    0.12756,
+    -0.12831,
+    0.85986,
+    0.72247,
+    -0.00157,
+    -0.00025,
+    0.6914
+   ],
+   "bottle3": [
+    0.43905,
+    -0.17431,
+    0.8775,
+    0.87936,
+    -1e-05,
+    -0.0,
+    0.47616
+   ]
+  },
+  "solver_scene": {
+   "effective": 16,
+   "factor": 1.0,
+   "failures": [],
+   "max_authored": 16,
+   "min_pos_iters": 1.0,
+   "stabilization": true
+  },
+  "steps_per_second": 23.6,
+  "success": true,
+  "tag": "g4_shipped_v1_s0_l16",
+  "take_action_cnt": 362,
+  "unstable_nums": 0,
+  "v1": {
+   "counted": true,
+   "score": 100.0,
+   "success": true
+  },
+  "v2": null,
+  "visibly_impossible": [],
+  "wall_seconds": 165.2
+ }
+]

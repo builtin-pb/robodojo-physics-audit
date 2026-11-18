@@ -1,0 +1,694 @@
+{
+ "align_blocks": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "cpu",
+   "shipped_repeat"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": "cube0",
+  "stabilization_shipped": false
+ },
+ "arrange_largest_number": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "cpu",
+   "shipped_repeat"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": "digit_0",
+  "stabilization_shipped": false
+ },
+ "arrange_largest_number_random": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "cpu",
+   "shipped_repeat"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": "darts_board_0_14",
+  "stabilization_shipped": false
+ },
+ "build_tower": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "cpu",
+   "shipped_repeat"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": "block4",
+  "stabilization_shipped": false
+ },
+ "classify_objects": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "stab_off",
+   "cpu",
+   "shipped_repeat"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": "cat0_0",
+  "stabilization_shipped": true
+ },
+ "classify_objects_by_language": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "cpu",
+   "shipped_repeat"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": "cat2_0",
+  "stabilization_shipped": false
+ },
+ "cover_blocks": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "cpu"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": "cup0",
+  "stabilization_shipped": false
+ },
+ "deposit_coin": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "cpu"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": null,
+  "stabilization_shipped": false
+ },
+ "fasten_screws": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "cpu"
+  ],
+  "max_authored_pos_iters": 32,
+  "slide_target": "nut0",
+  "stabilization_shipped": false
+ },
+ "fill_egg_holder": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "stab_off",
+   "cpu",
+   "shipped_repeat"
+  ],
+  "max_authored_pos_iters": 32,
+  "slide_target": null,
+  "stabilization_shipped": true
+ },
+ "fill_pen_holder": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "stab_off",
+   "cpu",
+   "shipped_repeat"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": "target1",
+  "stabilization_shipped": true
+ },
+ "fold_clothes": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x"
+  ],
+  "max_authored_pos_iters": 8,
+  "slide_target": null,
+  "stabilization_shipped": false
+ },
+ "fold_clothes_random": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": "audio_2_16",
+  "stabilization_shipped": false
+ },
+ "general_pickup": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "cpu"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": "cutter_0_4",
+  "stabilization_shipped": false
+ },
+ "hang_mugs": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "stab_off",
+   "cpu",
+   "shipped_repeat"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": "mug1",
+  "stabilization_shipped": true
+ },
+ "hang_mugs_random": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "stab_off",
+   "cpu",
+   "shipped_repeat"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": "audio_2_14",
+  "stabilization_shipped": true
+ },
+ "imitate_sorting_sequence": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "cpu"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": "aim3",
+  "stabilization_shipped": false
+ },
+ "insert_key": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "cpu"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": "key",
+  "stabilization_shipped": false
+ },
+ "insert_tubes": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "cpu"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": "tube0",
+  "stabilization_shipped": false
+ },
+ "make_kong": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "cpu"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": "mahjong0_0",
+  "stabilization_shipped": false
+ },
+ "make_toast": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "stab_off",
+   "cpu",
+   "shipped_repeat"
+  ],
+  "max_authored_pos_iters": 32,
+  "slide_target": null,
+  "stabilization_shipped": true
+ },
+ "make_toast_random": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "stab_off",
+   "cpu",
+   "shipped_repeat"
+  ],
+  "max_authored_pos_iters": 32,
+  "slide_target": "graphics_card_1_11",
+  "stabilization_shipped": true
+ },
+ "match_and_pick_from_conveyor": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "stab_off",
+   "cpu",
+   "shipped_repeat"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": null,
+  "stabilization_shipped": true
+ },
+ "organize_table": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "stab_off",
+   "cpu",
+   "shipped_repeat"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": "mouse",
+  "stabilization_shipped": true
+ },
+ "pack_objects_into_box": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "stab_off",
+   "cpu",
+   "shipped_repeat"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": "hammer",
+  "stabilization_shipped": true
+ },
+ "pack_objects_into_box_random": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "stab_off",
+   "cpu",
+   "shipped_repeat"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": "box",
+  "stabilization_shipped": true
+ },
+ "pick_from_conveyor_by_image": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "cpu"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": null,
+  "stabilization_shipped": false
+ },
+ "play_Xylophone": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "cpu"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": null,
+  "stabilization_shipped": false
+ },
+ "play_stacking_toy": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "cpu"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": "block0",
+  "stabilization_shipped": false
+ },
+ "play_tic_tac_toe": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "cpu"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": "opponent_piece0",
+  "stabilization_shipped": false
+ },
+ "plug_in_charger": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "cpu"
+  ],
+  "max_authored_pos_iters": 32,
+  "slide_target": "charger",
+  "stabilization_shipped": false
+ },
+ "pour_balls_into_vase": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "stab_off",
+   "cpu",
+   "shipped_repeat"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": null,
+  "stabilization_shipped": true
+ },
+ "pour_by_language": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": "bowl_0",
+  "stabilization_shipped": false
+ },
+ "pour_liquid_into_cup": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "stab_off"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": "cup",
+  "stabilization_shipped": true
+ },
+ "pour_liquid_into_cup_random": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "stab_off"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": "cereal_0_10",
+  "stabilization_shipped": true
+ },
+ "press_by_number": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "cpu"
+  ],
+  "max_authored_pos_iters": 32,
+  "slide_target": null,
+  "stabilization_shipped": false
+ },
+ "push_T": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "stab_off",
+   "cpu",
+   "shipped_repeat"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": "t",
+  "stabilization_shipped": true
+ },
+ "push_T_random": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "stab_off",
+   "cpu",
+   "shipped_repeat"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": "coin_1_15",
+  "stabilization_shipped": true
+ },
+ "put_bottles_into_dustbin": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "stab_off",
+   "cpu",
+   "shipped_repeat"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": "bottle2",
+  "stabilization_shipped": true
+ },
+ "solve_equation": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "cpu"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": "num_0",
+  "stabilization_shipped": false
+ },
+ "sort_nesting_dolls_by_size": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "cpu"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": "doll2",
+  "stabilization_shipped": false
+ },
+ "sort_nesting_dolls_by_size_random": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "cpu"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": "key_0_9",
+  "stabilization_shipped": false
+ },
+ "stack_blocks": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "cpu"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": "block_0",
+  "stabilization_shipped": false
+ },
+ "stack_blocks_by_language": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "cpu"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": "block_0",
+  "stabilization_shipped": false
+ },
+ "stack_blocks_random": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "cpu"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": "office_mail_1_14",
+  "stabilization_shipped": false
+ },
+ "stack_bowls": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "stab_off",
+   "cpu",
+   "shipped_repeat"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": "bowl0",
+  "stabilization_shipped": true
+ },
+ "stack_bowls_random": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "stab_off",
+   "cpu",
+   "shipped_repeat"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": "key_0_19",
+  "stabilization_shipped": true
+ },
+ "store_laptop_and_headphones": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "stab_off",
+   "cpu",
+   "shipped_repeat"
+  ],
+  "max_authored_pos_iters": 32,
+  "slide_target": "headset",
+  "stabilization_shipped": true
+ },
+ "store_laptop_and_headphones_random": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "stab_off",
+   "cpu",
+   "shipped_repeat"
+  ],
+  "max_authored_pos_iters": 32,
+  "slide_target": "cereal_0_8",
+  "stabilization_shipped": true
+ },
+ "store_tools_in_toolbox": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "cpu"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": "wrench",
+  "stabilization_shipped": false
+ },
+ "swap_T": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "cpu"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": "t0",
+  "stabilization_shipped": false
+ },
+ "swap_blocks": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "cpu"
+  ],
+  "max_authored_pos_iters": 32,
+  "slide_target": null,
+  "stabilization_shipped": false
+ },
+ "sweep_blocks": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "stab_off",
+   "cpu",
+   "shipped_repeat"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": "broom_shovel",
+  "stabilization_shipped": true
+ },
+ "sweep_blocks_random": {
+  "cells": [
+   "shipped",
+   "dt2",
+   "dt1",
+   "iters4x",
+   "stab_off",
+   "cpu",
+   "shipped_repeat"
+  ],
+  "max_authored_pos_iters": 16,
+  "slide_target": "broom_shovel",
+  "stabilization_shipped": true
+ }
+}

@@ -1,0 +1,11 @@
+# Captured November 13, 2026, ~15:10 EST on della-vis1, in $G5/conda/internw0 after build_policy_env.sh as of commit 4935217
+# (causal-conv1d installed with pip's default build isolation, as install.sh does), before the rebuild:
+# $G5/conda/internw0/bin/python -I -c "import torch, numpy, transformers, fla, causal_conv1d; ...; import causal_conv1d_cuda"
+  File "/scratch/<user>/isaac/work/g5/conda/internw0/lib/python3.11/site-packages/causal_conv1d/cpp_functions.py", line 5, in <module>
+    import causal_conv1d_cuda
+ImportError: /scratch/<user>/isaac/work/g5/conda/internw0/lib/python3.11/site-packages/causal_conv1d_cuda.cpython-311-x86_64-linux-gnu.so: undefined symbol: _ZN3c104cuda19CUDAErrorLogCaptureC1Ev
+# transformers 5.13.0 in the same env:
+# models/qwen3_5/modeling_qwen3_5.py:68  if is_causal_conv1d_available():
+# models/qwen3_5/modeling_qwen3_5.py:69      from causal_conv1d import causal_conv1d_fn, causal_conv1d_update
+# utils/import_utils.py:867-868  def is_causal_conv1d_available(): return is_torch_cuda_available() and _is_package_available("causal_conv1d")[0]
+# Kernels in the rebuilt extension (cuobjdump --list-elf, CUDA 12.8): sm_75, sm_80, sm_87, sm_90, sm_100, sm_120 (3 each)

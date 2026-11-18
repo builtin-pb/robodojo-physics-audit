@@ -1,0 +1,701 @@
+{
+  "held_out": {
+    "comparison": {
+      "all_40_ts_picked": true,
+      "discordant_episodes": 0,
+      "final_state_sha256_matches": 20,
+      "held_gap_mm_max": 22.88,
+      "held_gap_mm_min": 19.66,
+      "logged_precision_trajectory_matches": 20,
+      "longest_clear_s_max": 5.108,
+      "longest_clear_s_min": 1.172,
+      "mcnemar_exact_p": 1.0,
+      "score_diff_pct": 0.0,
+      "settled_state_sha256_matches": 20,
+      "sustained_clearance_mm_max": 97.54,
+      "sustained_clearance_mm_min": 60.93,
+      "worst_final_rot_deg": 0.277,
+      "worst_final_xy_mm": 0.5
+    },
+    "episodes": [
+      {
+        "action_log_logged_precision_equal": true,
+        "final_sha256_equal": true,
+        "final_state_sha256": "ce6ad004bec39f103fd61426df2bdd4f8beaade4393543c27f701a8f111fb58e",
+        "layout": 0,
+        "seed": 2,
+        "settled_sha256_equal": true,
+        "settled_state_sha256": "0166a961cffb1b93720cb8449b17e975ddfcafa83cda8bac9ce82ef4f22c87bb",
+        "t0_final_err": {
+          "rot_deg": 0.053,
+          "xy_mm": 0.03,
+          "yaw_deg": -0.053,
+          "z_mm": -0.0
+        },
+        "t0_longest_clear_s": 5.108,
+        "t0_sustained_clearance_mm": 90.25,
+        "t1_final_err": {
+          "rot_deg": 0.051,
+          "xy_mm": 0.03,
+          "yaw_deg": -0.051,
+          "z_mm": 0.0
+        },
+        "t1_longest_clear_s": 1.188,
+        "t1_sustained_clearance_mm": 63.58,
+        "v1_actions": 185,
+        "v1_score": 100.0,
+        "v1_success": true,
+        "v2_lift_actions": 185,
+        "v2_lift_score": 100.0,
+        "v2_lift_success": true
+      },
+      {
+        "action_log_logged_precision_equal": true,
+        "final_sha256_equal": true,
+        "final_state_sha256": "19df7a35fa6b0420cfb8b5f6cdb7e2dcc837cdae33a26bf71aaa99c0a2823d0b",
+        "layout": 1,
+        "seed": 2,
+        "settled_sha256_equal": true,
+        "settled_state_sha256": "461ed3e86e107bd9ff7b5ebd29fb4467d7b5922b725a5555f967fa83ffe036a1",
+        "t0_final_err": {
+          "rot_deg": 0.052,
+          "xy_mm": 0.03,
+          "yaw_deg": -0.052,
+          "z_mm": 0.0
+        },
+        "t0_longest_clear_s": 5.092,
+        "t0_sustained_clearance_mm": 91.94,
+        "t1_final_err": {
+          "rot_deg": 0.031,
+          "xy_mm": 0.06,
+          "yaw_deg": 0.031,
+          "z_mm": 0.0
+        },
+        "t1_longest_clear_s": 1.188,
+        "t1_sustained_clearance_mm": 62.19,
+        "v1_actions": 185,
+        "v1_score": 100.0,
+        "v1_success": true,
+        "v2_lift_actions": 185,
+        "v2_lift_score": 100.0,
+        "v2_lift_success": true
+      },
+      {
+        "action_log_logged_precision_equal": true,
+        "final_sha256_equal": true,
+        "final_state_sha256": "9991095a5c0c5979371a2d1a2777d975116c17a8a87cc859cf3d0b7bcc99a2c1",
+        "layout": 2,
+        "seed": 2,
+        "settled_sha256_equal": true,
+        "settled_state_sha256": "32984b1339e417bfc48d59e920e9f006b96cf85b103a38f1b58764aaeb5c0993",
+        "t0_final_err": {
+          "rot_deg": 0.054,
+          "xy_mm": 0.03,
+          "yaw_deg": -0.054,
+          "z_mm": 0.0
+        },
+        "t0_longest_clear_s": 5.108,
+        "t0_sustained_clearance_mm": 89.37,
+        "t1_final_err": {
+          "rot_deg": 0.039,
+          "xy_mm": 0.06,
+          "yaw_deg": 0.039,
+          "z_mm": 0.0
+        },
+        "t1_longest_clear_s": 1.188,
+        "t1_sustained_clearance_mm": 62.46,
+        "v1_actions": 185,
+        "v1_score": 100.0,
+        "v1_success": true,
+        "v2_lift_actions": 185,
+        "v2_lift_score": 100.0,
+        "v2_lift_success": true
+      },
+      {
+        "action_log_logged_precision_equal": true,
+        "final_sha256_equal": true,
+        "final_state_sha256": "4058cc3b22360da3a604ea942bc69ea6308ce4d08de8d7bdcf1a48d026ffb322",
+        "layout": 3,
+        "seed": 2,
+        "settled_sha256_equal": true,
+        "settled_state_sha256": "18462a7751a67ed9d90521b1ae58fa4c3dc26ac808268c55656915bfa5be0533",
+        "t0_final_err": {
+          "rot_deg": 0.061,
+          "xy_mm": 0.06,
+          "yaw_deg": 0.061,
+          "z_mm": 0.0
+        },
+        "t0_longest_clear_s": 5.108,
+        "t0_sustained_clearance_mm": 95.46,
+        "t1_final_err": {
+          "rot_deg": 0.061,
+          "xy_mm": 0.02,
+          "yaw_deg": 0.061,
+          "z_mm": 0.0
+        },
+        "t1_longest_clear_s": 1.188,
+        "t1_sustained_clearance_mm": 64.17,
+        "v1_actions": 185,
+        "v1_score": 100.0,
+        "v1_success": true,
+        "v2_lift_actions": 185,
+        "v2_lift_score": 100.0,
+        "v2_lift_success": true
+      },
+      {
+        "action_log_logged_precision_equal": true,
+        "final_sha256_equal": true,
+        "final_state_sha256": "096112219541b69f5f534d3e53c288e66268c867f6078b3434bf54b9c4a19686",
+        "layout": 4,
+        "seed": 2,
+        "settled_sha256_equal": true,
+        "settled_state_sha256": "2f023f896d778be75018568deeb1c09f27e6f284233d8ba17132a5dc67091d3b",
+        "t0_final_err": {
+          "rot_deg": 0.008,
+          "xy_mm": 0.03,
+          "yaw_deg": -0.008,
+          "z_mm": 0.0
+        },
+        "t0_longest_clear_s": 5.108,
+        "t0_sustained_clearance_mm": 94.96,
+        "t1_final_err": {
+          "rot_deg": 0.006,
+          "xy_mm": 0.05,
+          "yaw_deg": -0.006,
+          "z_mm": 0.0
+        },
+        "t1_longest_clear_s": 1.188,
+        "t1_sustained_clearance_mm": 65.7,
+        "v1_actions": 185,
+        "v1_score": 100.0,
+        "v1_success": true,
+        "v2_lift_actions": 185,
+        "v2_lift_score": 100.0,
+        "v2_lift_success": true
+      },
+      {
+        "action_log_logged_precision_equal": true,
+        "final_sha256_equal": true,
+        "final_state_sha256": "808bdb6153f66de23d62123c6ff4139628cc2911177c673a454098d3404ec5ec",
+        "layout": 5,
+        "seed": 2,
+        "settled_sha256_equal": true,
+        "settled_state_sha256": "94cdece050112713f5c6797f650bf8dfa3da8ea4d386d5dbefa5ddfbd21aaa8e",
+        "t0_final_err": {
+          "rot_deg": 0.051,
+          "xy_mm": 0.03,
+          "yaw_deg": -0.051,
+          "z_mm": 0.0
+        },
+        "t0_longest_clear_s": 5.108,
+        "t0_sustained_clearance_mm": 83.11,
+        "t1_final_err": {
+          "rot_deg": 0.044,
+          "xy_mm": 0.03,
+          "yaw_deg": -0.044,
+          "z_mm": 0.0
+        },
+        "t1_longest_clear_s": 1.188,
+        "t1_sustained_clearance_mm": 64.4,
+        "v1_actions": 185,
+        "v1_score": 100.0,
+        "v1_success": true,
+        "v2_lift_actions": 185,
+        "v2_lift_score": 100.0,
+        "v2_lift_success": true
+      },
+      {
+        "action_log_logged_precision_equal": true,
+        "final_sha256_equal": true,
+        "final_state_sha256": "8aa07abe4b808dffcc480ae40db127032229152bf8069c4a6466452c3aacc84f",
+        "layout": 6,
+        "seed": 2,
+        "settled_sha256_equal": true,
+        "settled_state_sha256": "6fad99fccdc3bda25dcde2964e2ab92bb44b22fe080fcb61f8b30425b5a0d913",
+        "t0_final_err": {
+          "rot_deg": 0.054,
+          "xy_mm": 0.03,
+          "yaw_deg": -0.054,
+          "z_mm": 0.0
+        },
+        "t0_longest_clear_s": 5.108,
+        "t0_sustained_clearance_mm": 80.49,
+        "t1_final_err": {
+          "rot_deg": 0.277,
+          "xy_mm": 0.5,
+          "yaw_deg": -0.277,
+          "z_mm": 0.0
+        },
+        "t1_longest_clear_s": 1.188,
+        "t1_sustained_clearance_mm": 60.93,
+        "v1_actions": 185,
+        "v1_score": 100.0,
+        "v1_success": true,
+        "v2_lift_actions": 185,
+        "v2_lift_score": 100.0,
+        "v2_lift_success": true
+      },
+      {
+        "action_log_logged_precision_equal": true,
+        "final_sha256_equal": true,
+        "final_state_sha256": "5bcd0784b603409d0a48f6c24c838064146b7a3dc9f1631668514147fb36b535",
+        "layout": 7,
+        "seed": 2,
+        "settled_sha256_equal": true,
+        "settled_state_sha256": "12457c20c12235b55306243a27140edc03015a4d378ecf0615dd15d69ba3a5fa",
+        "t0_final_err": {
+          "rot_deg": 0.035,
+          "xy_mm": 0.05,
+          "yaw_deg": 0.035,
+          "z_mm": 0.0
+        },
+        "t0_longest_clear_s": 5.108,
+        "t0_sustained_clearance_mm": 97.54,
+        "t1_final_err": {
+          "rot_deg": 0.081,
+          "xy_mm": 0.02,
+          "yaw_deg": 0.081,
+          "z_mm": 0.0
+        },
+        "t1_longest_clear_s": 1.188,
+        "t1_sustained_clearance_mm": 66.42,
+        "v1_actions": 186,
+        "v1_score": 100.0,
+        "v1_success": true,
+        "v2_lift_actions": 186,
+        "v2_lift_score": 100.0,
+        "v2_lift_success": true
+      },
+      {
+        "action_log_logged_precision_equal": true,
+        "final_sha256_equal": true,
+        "final_state_sha256": "2c80d033f73306625fd0ebdbec93e1af06cdf21dacdd09197bf1ee018730de5d",
+        "layout": 8,
+        "seed": 2,
+        "settled_sha256_equal": true,
+        "settled_state_sha256": "55750b7ff92fb67cb3d6159cb40524b057b668abaa3140df1386f13bb6029159",
+        "t0_final_err": {
+          "rot_deg": 0.007,
+          "xy_mm": 0.02,
+          "yaw_deg": -0.007,
+          "z_mm": 0.0
+        },
+        "t0_longest_clear_s": 5.108,
+        "t0_sustained_clearance_mm": 90.85,
+        "t1_final_err": {
+          "rot_deg": 0.03,
+          "xy_mm": 0.22,
+          "yaw_deg": 0.03,
+          "z_mm": 0.0
+        },
+        "t1_longest_clear_s": 1.188,
+        "t1_sustained_clearance_mm": 65.96,
+        "v1_actions": 185,
+        "v1_score": 100.0,
+        "v1_success": true,
+        "v2_lift_actions": 185,
+        "v2_lift_score": 100.0,
+        "v2_lift_success": true
+      },
+      {
+        "action_log_logged_precision_equal": true,
+        "final_sha256_equal": true,
+        "final_state_sha256": "3b4962f3f7cd4daed78a3e7f6281c2bc27577b2ea701adad0c234d017f4e4bfe",
+        "layout": 9,
+        "seed": 2,
+        "settled_sha256_equal": true,
+        "settled_state_sha256": "ad5110ae35ec1bc3b8545673959b4e18ca8921f73f9354e4be5b746d2ea18ad9",
+        "t0_final_err": {
+          "rot_deg": 0.099,
+          "xy_mm": 0.12,
+          "yaw_deg": -0.099,
+          "z_mm": 0.0
+        },
+        "t0_longest_clear_s": 5.108,
+        "t0_sustained_clearance_mm": 85.51,
+        "t1_final_err": {
+          "rot_deg": 0.052,
+          "xy_mm": 0.03,
+          "yaw_deg": -0.052,
+          "z_mm": 0.0
+        },
+        "t1_longest_clear_s": 1.188,
+        "t1_sustained_clearance_mm": 64.2,
+        "v1_actions": 185,
+        "v1_score": 100.0,
+        "v1_success": true,
+        "v2_lift_actions": 185,
+        "v2_lift_score": 100.0,
+        "v2_lift_success": true
+      },
+      {
+        "action_log_logged_precision_equal": true,
+        "final_sha256_equal": true,
+        "final_state_sha256": "393a2ed68badbee33f0792c5e49b1c0df41d5d0be41bd9485359b1ad047d6d25",
+        "layout": 10,
+        "seed": 2,
+        "settled_sha256_equal": true,
+        "settled_state_sha256": "48577075c640f72907d71e14c0e64e0eef6e7717897b9657debe27ea2b8c8f60",
+        "t0_final_err": {
+          "rot_deg": 0.052,
+          "xy_mm": 0.03,
+          "yaw_deg": -0.052,
+          "z_mm": 0.0
+        },
+        "t0_longest_clear_s": 5.108,
+        "t0_sustained_clearance_mm": 82.73,
+        "t1_final_err": {
+          "rot_deg": 0.033,
+          "xy_mm": 0.06,
+          "yaw_deg": 0.033,
+          "z_mm": 0.0
+        },
+        "t1_longest_clear_s": 1.188,
+        "t1_sustained_clearance_mm": 62.71,
+        "v1_actions": 185,
+        "v1_score": 100.0,
+        "v1_success": true,
+        "v2_lift_actions": 185,
+        "v2_lift_score": 100.0,
+        "v2_lift_success": true
+      },
+      {
+        "action_log_logged_precision_equal": true,
+        "final_sha256_equal": true,
+        "final_state_sha256": "a306876d980a21f69f913d91759544a6f5610c81937aa8c24a5e8c2a6734bef5",
+        "layout": 11,
+        "seed": 2,
+        "settled_sha256_equal": true,
+        "settled_state_sha256": "2971987d5926d3c47f7d18b5c603132976c9003414f0a2bdd35d069c22bba40c",
+        "t0_final_err": {
+          "rot_deg": 0.036,
+          "xy_mm": 0.06,
+          "yaw_deg": -0.036,
+          "z_mm": 0.0
+        },
+        "t0_longest_clear_s": 4.984,
+        "t0_sustained_clearance_mm": 92.62,
+        "t1_final_err": {
+          "rot_deg": 0.017,
+          "xy_mm": 0.05,
+          "yaw_deg": -0.017,
+          "z_mm": 0.0
+        },
+        "t1_longest_clear_s": 1.188,
+        "t1_sustained_clearance_mm": 64.11,
+        "v1_actions": 186,
+        "v1_score": 100.0,
+        "v1_success": true,
+        "v2_lift_actions": 186,
+        "v2_lift_score": 100.0,
+        "v2_lift_success": true
+      },
+      {
+        "action_log_logged_precision_equal": true,
+        "final_sha256_equal": true,
+        "final_state_sha256": "6707746de13c2b965ff53bff991116082ea0ba90eebf13866a045c6c3fd5bc0b",
+        "layout": 12,
+        "seed": 2,
+        "settled_sha256_equal": true,
+        "settled_state_sha256": "7d703140ee20e00a7cb3aa1400a9ddb5d37bf1a380f54fd1f925cc5f23b284e7",
+        "t0_final_err": {
+          "rot_deg": 0.051,
+          "xy_mm": 0.03,
+          "yaw_deg": -0.051,
+          "z_mm": 0.0
+        },
+        "t0_longest_clear_s": 5.108,
+        "t0_sustained_clearance_mm": 93.4,
+        "t1_final_err": {
+          "rot_deg": 0.032,
+          "xy_mm": 0.05,
+          "yaw_deg": 0.032,
+          "z_mm": 0.0
+        },
+        "t1_longest_clear_s": 1.188,
+        "t1_sustained_clearance_mm": 64.11,
+        "v1_actions": 185,
+        "v1_score": 100.0,
+        "v1_success": true,
+        "v2_lift_actions": 185,
+        "v2_lift_score": 100.0,
+        "v2_lift_success": true
+      },
+      {
+        "action_log_logged_precision_equal": true,
+        "final_sha256_equal": true,
+        "final_state_sha256": "a8cb6420bd441aa10a577a475a74d693a228991445322f0c866efa2fd5a797cf",
+        "layout": 13,
+        "seed": 2,
+        "settled_sha256_equal": true,
+        "settled_state_sha256": "b0936c405738edf694e9c27a53ba3bbb670530172a965def0e1ab76a0856672f",
+        "t0_final_err": {
+          "rot_deg": 0.033,
+          "xy_mm": 0.06,
+          "yaw_deg": 0.033,
+          "z_mm": 0.0
+        },
+        "t0_longest_clear_s": 5.108,
+        "t0_sustained_clearance_mm": 92.67,
+        "t1_final_err": {
+          "rot_deg": 0.013,
+          "xy_mm": 0.02,
+          "yaw_deg": -0.013,
+          "z_mm": 0.0
+        },
+        "t1_longest_clear_s": 1.188,
+        "t1_sustained_clearance_mm": 68.47,
+        "v1_actions": 185,
+        "v1_score": 100.0,
+        "v1_success": true,
+        "v2_lift_actions": 185,
+        "v2_lift_score": 100.0,
+        "v2_lift_success": true
+      },
+      {
+        "action_log_logged_precision_equal": true,
+        "final_sha256_equal": true,
+        "final_state_sha256": "1c2be3c9a0aca3d2f6fcda5dd1eeddfe62a4ea9ffc488aa89b70c72f3db30b12",
+        "layout": 14,
+        "seed": 2,
+        "settled_sha256_equal": true,
+        "settled_state_sha256": "02d43269727b954800b138207d9c8870b0d0e339befba9b9f6d2acc676976b8c",
+        "t0_final_err": {
+          "rot_deg": 0.033,
+          "xy_mm": 0.06,
+          "yaw_deg": 0.033,
+          "z_mm": 0.0
+        },
+        "t0_longest_clear_s": 5.072,
+        "t0_sustained_clearance_mm": 90.93,
+        "t1_final_err": {
+          "rot_deg": 0.031,
+          "xy_mm": 0.03,
+          "yaw_deg": 0.031,
+          "z_mm": 0.0
+        },
+        "t1_longest_clear_s": 1.188,
+        "t1_sustained_clearance_mm": 62.93,
+        "v1_actions": 186,
+        "v1_score": 100.0,
+        "v1_success": true,
+        "v2_lift_actions": 186,
+        "v2_lift_score": 100.0,
+        "v2_lift_success": true
+      },
+      {
+        "action_log_logged_precision_equal": true,
+        "final_sha256_equal": true,
+        "final_state_sha256": "0770ae3066e6c00845a613c1391747ebb9200217389216986fdad4601ed2e4be",
+        "layout": 15,
+        "seed": 2,
+        "settled_sha256_equal": true,
+        "settled_state_sha256": "6f47207676d9b30096fe259b9b4b4ccb903071fa91754c6ef6f262ed601d4de1",
+        "t0_final_err": {
+          "rot_deg": 0.051,
+          "xy_mm": 0.03,
+          "yaw_deg": -0.051,
+          "z_mm": -0.0
+        },
+        "t0_longest_clear_s": 5.108,
+        "t0_sustained_clearance_mm": 89.88,
+        "t1_final_err": {
+          "rot_deg": 0.005,
+          "xy_mm": 0.03,
+          "yaw_deg": -0.005,
+          "z_mm": 0.0
+        },
+        "t1_longest_clear_s": 1.188,
+        "t1_sustained_clearance_mm": 64.38,
+        "v1_actions": 186,
+        "v1_score": 100.0,
+        "v1_success": true,
+        "v2_lift_actions": 186,
+        "v2_lift_score": 100.0,
+        "v2_lift_success": true
+      },
+      {
+        "action_log_logged_precision_equal": true,
+        "final_sha256_equal": true,
+        "final_state_sha256": "d372665132d619db2a6cca7e601e9300883664f466a748b94a037f446e630d1c",
+        "layout": 16,
+        "seed": 2,
+        "settled_sha256_equal": true,
+        "settled_state_sha256": "6ce5cc8ed8ea297c8c264294d589837dfabb0ef18c43be1ded8afa7c2b59c55e",
+        "t0_final_err": {
+          "rot_deg": 0.113,
+          "xy_mm": 0.19,
+          "yaw_deg": -0.113,
+          "z_mm": 0.0
+        },
+        "t0_longest_clear_s": 5.092,
+        "t0_sustained_clearance_mm": 91.33,
+        "t1_final_err": {
+          "rot_deg": 0.048,
+          "xy_mm": 0.03,
+          "yaw_deg": -0.048,
+          "z_mm": 0.0
+        },
+        "t1_longest_clear_s": 1.172,
+        "t1_sustained_clearance_mm": 62.4,
+        "v1_actions": 186,
+        "v1_score": 100.0,
+        "v1_success": true,
+        "v2_lift_actions": 186,
+        "v2_lift_score": 100.0,
+        "v2_lift_success": true
+      },
+      {
+        "action_log_logged_precision_equal": true,
+        "final_sha256_equal": true,
+        "final_state_sha256": "b838b99ef85f96dcbf1d6615b7abc0fe1d5c205c37ca1c17ffb8004c36801c98",
+        "layout": 17,
+        "seed": 2,
+        "settled_sha256_equal": true,
+        "settled_state_sha256": "502cf22b3f97aac8fd47b22e008a5698ec2cfa12bc7f388d63b107b654620155",
+        "t0_final_err": {
+          "rot_deg": 0.008,
+          "xy_mm": 0.03,
+          "yaw_deg": -0.008,
+          "z_mm": 0.0
+        },
+        "t0_longest_clear_s": 5.108,
+        "t0_sustained_clearance_mm": 94.57,
+        "t1_final_err": {
+          "rot_deg": 0.009,
+          "xy_mm": 0.02,
+          "yaw_deg": -0.009,
+          "z_mm": 0.0
+        },
+        "t1_longest_clear_s": 1.188,
+        "t1_sustained_clearance_mm": 62.81,
+        "v1_actions": 185,
+        "v1_score": 100.0,
+        "v1_success": true,
+        "v2_lift_actions": 185,
+        "v2_lift_score": 100.0,
+        "v2_lift_success": true
+      },
+      {
+        "action_log_logged_precision_equal": true,
+        "final_sha256_equal": true,
+        "final_state_sha256": "4991b277e81a5c6af3c5f8636c05c4ff1d7d79e06a472e56744bd667410ca40c",
+        "layout": 18,
+        "seed": 2,
+        "settled_sha256_equal": true,
+        "settled_state_sha256": "13bf4d8fe43bb4a3d97d4046c86b8b6d9d0b5ac90dde5064a35da2da3d5941ed",
+        "t0_final_err": {
+          "rot_deg": 0.013,
+          "xy_mm": 0.07,
+          "yaw_deg": 0.013,
+          "z_mm": 0.0
+        },
+        "t0_longest_clear_s": 5.108,
+        "t0_sustained_clearance_mm": 83.34,
+        "t1_final_err": {
+          "rot_deg": 0.021,
+          "xy_mm": 0.05,
+          "yaw_deg": 0.021,
+          "z_mm": 0.0
+        },
+        "t1_longest_clear_s": 1.188,
+        "t1_sustained_clearance_mm": 62.64,
+        "v1_actions": 185,
+        "v1_score": 100.0,
+        "v1_success": true,
+        "v2_lift_actions": 185,
+        "v2_lift_score": 100.0,
+        "v2_lift_success": true
+      },
+      {
+        "action_log_logged_precision_equal": true,
+        "final_sha256_equal": true,
+        "final_state_sha256": "a6ee64edc3db8679360e7f396a8028fb64d5dd7944baf550af69320d4a07b261",
+        "layout": 19,
+        "seed": 2,
+        "settled_sha256_equal": true,
+        "settled_state_sha256": "88c078dfc485200b4bbd7776940ecac085f5941bbd18b36bdaba6c1d5f085459",
+        "t0_final_err": {
+          "rot_deg": 0.031,
+          "xy_mm": 0.06,
+          "yaw_deg": 0.031,
+          "z_mm": -0.0
+        },
+        "t0_longest_clear_s": 5.108,
+        "t0_sustained_clearance_mm": 79.79,
+        "t1_final_err": {
+          "rot_deg": 0.007,
+          "xy_mm": 0.03,
+          "yaw_deg": -0.007,
+          "z_mm": -0.0
+        },
+        "t1_longest_clear_s": 1.188,
+        "t1_sustained_clearance_mm": 66.31,
+        "v1_actions": 185,
+        "v1_score": 100.0,
+        "v1_success": true,
+        "v2_lift_actions": 185,
+        "v2_lift_score": 100.0,
+        "v2_lift_success": true
+      }
+    ],
+    "episodes_per_arm": 20,
+    "layouts": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "seed": 2,
+    "total_a40_gpu_hours": 0.365,
+    "v1": {
+      "a40_gpu_hours": 0.1786,
+      "batch_summary_gz_sha256": "74f2ade4a80f6368a82d5b6f7b28d191cc16e3bb2f0f19330adda532b15c3bb9",
+      "batch_wall_s": 643.1,
+      "mean_score_pct": 100.0,
+      "proc_wall_s": 1269.5,
+      "successes": 20
+    },
+    "v2_lift": {
+      "a40_gpu_hours": 0.1864,
+      "batch_summary_gz_sha256": "6257577567c1f9dc8302deaf0419017b54c4da7c4f5b25f7ae21e8b488173a1c",
+      "batch_wall_s": 671.0,
+      "mean_score_pct": 100.0,
+      "proc_wall_s": 1326.5,
+      "rule": "v2_lift",
+      "rule_version": "v2_lift.1",
+      "successes": 20
+    }
+  },
+  "host": {
+    "gpu": "NVIDIA A40 (HARNESS_GPU=1)",
+    "node": "della-vis2",
+    "same_host_type_across_arms": true,
+    "slots_per_batch": 2
+  },
+  "issue": "#201",
+  "script": {
+    "frozen_commit": "ed6e85a36e866187c00be682128448ce72876872",
+    "path": "audit/harness/script_swap_T_v2.py",
+    "policy": "script_swap_T_v2",
+    "sha256_current_main": "becb445b2e55c4bb4263a6806ab1128d72b3e49d64a548ecd5196b237acf22cc",
+    "tag": "script-swap-T-v2"
+  },
+  "task": "swap_T"
+}

@@ -1,0 +1,109 @@
+{
+ "batches": {
+  "st2_d1_ship": {
+   "episodes": 4,
+   "procs": 2,
+   "wall_s": 211.7,
+   "proc_wall_s": 394.1
+  },
+  "st2_d1_corr": {
+   "episodes": 4,
+   "procs": 2,
+   "wall_s": 249.8,
+   "proc_wall_s": 463.3
+  },
+  "st2_d2_ship_s0": {
+   "episodes": 4,
+   "procs": 2,
+   "wall_s": 185.1,
+   "proc_wall_s": 340.8
+  },
+  "st2_d2_ship_s1": {
+   "episodes": 1,
+   "procs": 1,
+   "wall_s": 223.6,
+   "proc_wall_s": 223.6
+  },
+  "st2_d2_corr_s0": {
+   "episodes": 4,
+   "procs": 2,
+   "wall_s": 243.9,
+   "proc_wall_s": 457.2
+  },
+  "st2_d2_corr_s1": {
+   "episodes": 1,
+   "procs": 1,
+   "wall_s": 178.1,
+   "proc_wall_s": 178.1
+  },
+  "st2_d3_ship_s0": {
+   "episodes": 1,
+   "procs": 1,
+   "wall_s": 83.3,
+   "proc_wall_s": 83.2
+  },
+  "st2_d3_ship_s1": {
+   "episodes": 1,
+   "procs": 1,
+   "wall_s": 126.8,
+   "proc_wall_s": 126.8
+  },
+  "st2_d3_corr_s0": {
+   "episodes": 1,
+   "procs": 1,
+   "wall_s": 102.1,
+   "proc_wall_s": 102.1
+  },
+  "st2_d3_corr_s1": {
+   "episodes": 1,
+   "procs": 1,
+   "wall_s": 143.7,
+   "proc_wall_s": 143.7
+  },
+  "st2_dev_ship_s0": {
+   "episodes": 10,
+   "procs": 2,
+   "wall_s": 453.5,
+   "proc_wall_s": 892.8
+  },
+  "st2_dev_ship_s1": {
+   "episodes": 10,
+   "procs": 2,
+   "wall_s": 446.3,
+   "proc_wall_s": 829.4
+  },
+  "st2_dev_corr_s0": {
+   "episodes": 10,
+   "procs": 3,
+   "wall_s": 450.3,
+   "proc_wall_s": 1213.9
+  },
+  "st2_dev_corr_s1": {
+   "episodes": 10,
+   "procs": 3,
+   "wall_s": 418.7,
+   "proc_wall_s": 1117.4
+  }
+ },
+ "cost": {
+  "processes": 24,
+  "process_hours": 1.824,
+  "gpu_busy_hours": {
+   "della-vis2:1": 0.469
+  }
+ },
+ "dev_shipped": {
+  "episodes": 20,
+  "successes": 20,
+  "mean_score": 100.0,
+  "max_xy_mm": 1.91,
+  "max_rot_deg": 0.591
+ },
+ "dev_corrected": {
+  "episodes": 20,
+  "successes": 20,
+  "mean_score": 100.0,
+  "max_xy_mm": 0.09,
+  "max_rot_deg": 0.148
+ }
+}

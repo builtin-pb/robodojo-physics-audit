@@ -1,0 +1,55 @@
+{
+ "check": "pose_log",
+ "result": "/tmp/clipsref/r51_peek/result.json",
+ "reference": "audit/out/exploits/poses_ex_peek_cb_L1_v1_L1.json.gz",
+ "isaac_sim_62": [
+  "5.1.0",
+  "rc.19",
+  "5"
+ ],
+ "repo_head_62": "3155bf6ec2f5d56e44a766173d1afae4a69808f0",
+ "rows_62": 622,
+ "rows_51": 622,
+ "per_object": {
+  "red": {
+   "max_mm": 0.0,
+   "max_deg": 0.0
+  },
+  "green": {
+   "max_mm": 0.0,
+   "max_deg": 0.0
+  },
+  "blue": {
+   "max_mm": 0.0,
+   "max_deg": 0.0
+  },
+  "cup0": {
+   "max_mm": 0.0,
+   "max_deg": 0.0
+  },
+  "cup1": {
+   "max_mm": 0.0,
+   "max_deg": 0.0
+  },
+  "cup2": {
+   "max_mm": 0.0,
+   "max_deg": 0.0
+  }
+ },
+ "first_over_tolerance": null,
+ "max_joint_diff_rad": 0.0,
+ "progress_sequence_equal": true,
+ "first_progress_difference": null,
+ "outcome_62": {
+  "episode_score_pct": 100.0,
+  "success": true,
+  "take_action_cnt": 622
+ },
+ "outcome_51": {
+  "episode_score_pct": 100.0,
+  "success": true,
+  "take_action_cnt": 622
+ },
+ "settled_max_mm": 0.0,
+ "match": true
+}

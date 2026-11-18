@@ -1,0 +1,814 @@
+{
+    "evaluator_version": "evaluator v2",
+    "task_name": "put_bottles_into_dustbin",
+    "config_name": "arx_x5",
+    "policy_name": "InternW0_delta",
+    "seed": 0,
+    "native_eval_num": 50,
+    "scheduled_count": 40,
+    "scheduled_layout_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+    ],
+    "unresolved_layout_ids": [],
+    "resolved_count": 40,
+    "complete": true,
+    "valid": true,
+    "eval_time": 40,
+    "success_rate": 0.175,
+    "score": 46.00000000000001,
+    "category_counts": {
+        "success": 7,
+        "failure": 0,
+        "timeout": 33,
+        "policy_error": 0,
+        "simulator_break": 0,
+        "evaluator_error": 0,
+        "unstable_layout": 0,
+        "excluded": 0
+    },
+    "drops": {
+        "total": 0,
+        "policy_error": 0,
+        "simulator_break": 0,
+        "evaluator_error": 0,
+        "unstable_layout": 0,
+        "excluded": 0
+    },
+    "aggregation": {
+        "evaluator_version": "evaluator v2",
+        "denominator_rule": "all_scheduled",
+        "excluded_categories": [],
+        "scheduled_count": 40,
+        "resolved_count": 40,
+        "denominator": 40,
+        "complete": true,
+        "valid": true,
+        "success_count": 7,
+        "success_rate": 0.175,
+        "success_rate_pct": 17.5,
+        "score": 46.00000000000001
+    },
+    "ledger": [
+        {
+            "layout_id": 0,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        {
+            "layout_id": 1,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.25,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        {
+            "layout_id": 2,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        {
+            "layout_id": 3,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        {
+            "layout_id": 4,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        {
+            "layout_id": 5,
+            "seed": 0,
+            "category": "success",
+            "success": true,
+            "score": 1.0,
+            "steps": 626,
+            "reason": "reward_check_passed"
+        },
+        {
+            "layout_id": 6,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        {
+            "layout_id": 7,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.25,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        {
+            "layout_id": 8,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        {
+            "layout_id": 9,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.25,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        {
+            "layout_id": 10,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        {
+            "layout_id": 11,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        {
+            "layout_id": 12,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.25,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        {
+            "layout_id": 13,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        {
+            "layout_id": 14,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        {
+            "layout_id": 15,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        {
+            "layout_id": 16,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        {
+            "layout_id": 17,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        {
+            "layout_id": 18,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.25,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        {
+            "layout_id": 19,
+            "seed": 0,
+            "category": "success",
+            "success": true,
+            "score": 1.0,
+            "steps": 469,
+            "reason": "reward_check_passed"
+        },
+        {
+            "layout_id": 20,
+            "seed": 0,
+            "category": "success",
+            "success": true,
+            "score": 1.0,
+            "steps": 503,
+            "reason": "reward_check_passed"
+        },
+        {
+            "layout_id": 21,
+            "seed": 0,
+            "category": "success",
+            "success": true,
+            "score": 1.0,
+            "steps": 329,
+            "reason": "reward_check_passed"
+        },
+        {
+            "layout_id": 22,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.25,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        {
+            "layout_id": 23,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        {
+            "layout_id": 24,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.25,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        {
+            "layout_id": 25,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        {
+            "layout_id": 26,
+            "seed": 0,
+            "category": "success",
+            "success": true,
+            "score": 1.0,
+            "steps": 495,
+            "reason": "reward_check_passed"
+        },
+        {
+            "layout_id": 27,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        {
+            "layout_id": 28,
+            "seed": 0,
+            "category": "success",
+            "success": true,
+            "score": 1.0,
+            "steps": 429,
+            "reason": "reward_check_passed"
+        },
+        {
+            "layout_id": 29,
+            "seed": 0,
+            "category": "success",
+            "success": true,
+            "score": 1.0,
+            "steps": 429,
+            "reason": "reward_check_passed"
+        },
+        {
+            "layout_id": 30,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.1,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        {
+            "layout_id": 31,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        {
+            "layout_id": 32,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.25,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        {
+            "layout_id": 33,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.25,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        {
+            "layout_id": 34,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        {
+            "layout_id": 35,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        {
+            "layout_id": 36,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        {
+            "layout_id": 37,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.25,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        {
+            "layout_id": 38,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        {
+            "layout_id": 39,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        }
+    ],
+    "details": {
+        "0": {
+            "layout_id": 0,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        "1": {
+            "layout_id": 1,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.25,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        "2": {
+            "layout_id": 2,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        "3": {
+            "layout_id": 3,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        "4": {
+            "layout_id": 4,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        "5": {
+            "layout_id": 5,
+            "seed": 0,
+            "category": "success",
+            "success": true,
+            "score": 1.0,
+            "steps": 626,
+            "reason": "reward_check_passed"
+        },
+        "6": {
+            "layout_id": 6,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        "7": {
+            "layout_id": 7,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.25,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        "8": {
+            "layout_id": 8,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        "9": {
+            "layout_id": 9,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.25,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        "10": {
+            "layout_id": 10,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        "11": {
+            "layout_id": 11,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        "12": {
+            "layout_id": 12,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.25,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        "13": {
+            "layout_id": 13,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        "14": {
+            "layout_id": 14,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        "15": {
+            "layout_id": 15,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        "16": {
+            "layout_id": 16,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        "17": {
+            "layout_id": 17,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        "18": {
+            "layout_id": 18,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.25,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        "19": {
+            "layout_id": 19,
+            "seed": 0,
+            "category": "success",
+            "success": true,
+            "score": 1.0,
+            "steps": 469,
+            "reason": "reward_check_passed"
+        },
+        "20": {
+            "layout_id": 20,
+            "seed": 0,
+            "category": "success",
+            "success": true,
+            "score": 1.0,
+            "steps": 503,
+            "reason": "reward_check_passed"
+        },
+        "21": {
+            "layout_id": 21,
+            "seed": 0,
+            "category": "success",
+            "success": true,
+            "score": 1.0,
+            "steps": 329,
+            "reason": "reward_check_passed"
+        },
+        "22": {
+            "layout_id": 22,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.25,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        "23": {
+            "layout_id": 23,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        "24": {
+            "layout_id": 24,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.25,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        "25": {
+            "layout_id": 25,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        "26": {
+            "layout_id": 26,
+            "seed": 0,
+            "category": "success",
+            "success": true,
+            "score": 1.0,
+            "steps": 495,
+            "reason": "reward_check_passed"
+        },
+        "27": {
+            "layout_id": 27,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        "28": {
+            "layout_id": 28,
+            "seed": 0,
+            "category": "success",
+            "success": true,
+            "score": 1.0,
+            "steps": 429,
+            "reason": "reward_check_passed"
+        },
+        "29": {
+            "layout_id": 29,
+            "seed": 0,
+            "category": "success",
+            "success": true,
+            "score": 1.0,
+            "steps": 429,
+            "reason": "reward_check_passed"
+        },
+        "30": {
+            "layout_id": 30,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.1,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        "31": {
+            "layout_id": 31,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        "32": {
+            "layout_id": 32,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.25,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        "33": {
+            "layout_id": 33,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.25,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        "34": {
+            "layout_id": 34,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        "35": {
+            "layout_id": 35,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        "36": {
+            "layout_id": 36,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        "37": {
+            "layout_id": 37,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.25,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        "38": {
+            "layout_id": 38,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        },
+        "39": {
+            "layout_id": 39,
+            "seed": 0,
+            "category": "timeout",
+            "success": false,
+            "score": 0.4,
+            "steps": 700,
+            "reason": "step_lim_reached (700/700)"
+        }
+    }
+}

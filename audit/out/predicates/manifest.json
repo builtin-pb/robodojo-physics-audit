@@ -1,0 +1,77 @@
+{
+ "audit": "Scoring predicates: systematic acceptance audit (#106 item 3)",
+ "agent": "Bo's side, Claude Opus 5.5",
+ "robodojo_code": {
+  "fork": "main 462853a (scoring files identical to upstream on the v1 path, see deviations)",
+  "upstream": "RoboDojo f57e163 env/reward_manager/{func_parser,reward_manager}.py, sha256 eb928a05...a504 and bc56efd3...a233"
+ },
+ "gpu_hours": 0.0,
+ "runs": [
+  {
+   "tag": "tests_fork",
+   "what": "audit/tools/test_predicates.py on this fork's scoring files",
+   "commit": "cc6f5b2",
+   "host": "della-vis2",
+   "device": "CPU (no --nv, CUDA_VISIBLE_DEVICES empty)",
+   "python": "Isaac Sim 5.1 container /isaac-sim/python.sh 3.11.13; numpy 1.26.0, shapely 2.0.7 (harness pylib), torch 2.7.0, transforms3d 0.4.2, scipy 1.15.3",
+   "start": "2026-11-13T16:15:49Z",
+   "end": "2026-11-13T16:15:56Z",
+   "result": "42 tests OK, 51 acceptance records (acceptance_fork.json)",
+   "log": "runs/tests_log_fork.txt"
+  },
+  {
+   "tag": "tests_upstream",
+   "what": "the same tests with PREDICATES_UPSTREAM_DIR pointing at upstream f57e163's func_parser.py and reward_manager.py",
+   "commit": "cc6f5b2",
+   "host": "della-vis2",
+   "device": "CPU",
+   "start": "2026-11-13T16:15:56Z",
+   "end": "2026-11-13T16:16:03Z",
+   "result": "42 tests OK, 51 records equal to the fork run's",
+   "log": "runs/tests_log_upstream.txt"
+  },
+  {
+   "tag": "tests_local",
+   "what": "same tests on the laptop (numpy 2.5.4, shapely 2.2.0, torch stub) during development",
+   "result": "51 records equal to the container runs field for field (not committed; the container runs are the evidence)"
+  },
+  {
+   "tag": "geom_probe",
+   "what": "audit/harness/exploits2_geom.py (main 462853a, unchanged) on 75 layout-0 assets read by bbox or lift predicates, 5 mm top-view height maps",
+   "host": "della-vis2",
+   "device": "CPU",
+   "start": "2026-11-13T16:00:57Z",
+   "end": "2026-11-13T16:05:56Z",
+   "result": "exit 0; runs/geom_layout0.json.gz",
+   "attempt_1": "exit 1 before any asset (numpy not on the kit python path); runs/geom_log_attempt1_numpy_missing.txt",
+   "note": "boxes are in the asset's stage frame (includes the default prim's own transform, which RoboDojo replaces at spawn); used only for silhouettes where its box equals the metadata box within 1 mm"
+  },
+  {
+   "tag": "frame_probe",
+   "what": "audit/harness/predicate_frames.py: per asset the default prim's authored transform and the mesh and collider boxes in the default prim's frame (the simulator's body frame)",
+   "commit": "d1ea6c2",
+   "host": "della-vis2",
+   "device": "CPU",
+   "start": "2026-11-13T16:18:40Z",
+   "end": "2026-11-13T16:24:18Z",
+   "result": "exit 0; 87 assets; runs/frames.json"
+  }
+ ],
+ "assets_fetched": {
+  "what": "9 asset folders at the pinned HF revision 1127bda (hf_fetch.py) into this audit's own scratch /scratch/<user>/isaac/work/predicates/assets",
+  "list": "runs/times_and_fetch.txt",
+  "size_mb": 102.5
+ },
+ "static_inputs": {
+  "task_checks": "audit/tools/predicate_table.py over task/RoboDojo/tasks/*.py at 462853a",
+  "layouts": "all 8,070 evaluation layout files (54 configs, seeds 0-2, scored and spare) mirrored at the pinned revision by audit/tools/fetch_eval_layouts.py (earlier params-v31 pass, a local copy)",
+  "metadata": "Assets/Object/RoboDojo/*/metadata.json at the pinned revision (audit/data/objects plus the layout-0 assets on Della)"
+ },
+ "deviations": [
+  "No physics and no Isaac Sim in the unit tests: the scene (LayoutManager accessors), robot manager and env flags are stubs in audit/tools/test_predicates.py.",
+  "RoboDojo's LayoutManager.get_functional_points, get_support_points and to_transformation_matrix are compiled from env/scene_manager/layout_manager.py source (its module imports Isaac Sim); they are identical in the fork and upstream f57e163 (AST hash checked).",
+  "Task witnesses (organize_table, hang_mugs, press_by_number) subclass the task's Common class with an __init__ that only sets num_envs and a RewardManager bound to the stub env; run_reward, get_score and RewardManager.step are RoboDojo's.",
+  "The fork's func_parser.py and reward_manager.py differ from upstream only in evaluator v2 branches (is_v2 False here) and fail-reason bookkeeping; the upstream run shows identical verdicts.",
+  "Tests assert the shipped behaviour; each record's 'intended' field is this audit's reading of the predicate's meaning from its name, its uses and the task instructions."
+ ]
+}

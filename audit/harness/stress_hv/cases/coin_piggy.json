@@ -1,0 +1,412 @@
+[
+ {
+  "name": "rays_piggy",
+  "kind": "rays",
+  "label": "piggy_bank",
+  "heights": [
+   0.02,
+   0.05,
+   0.08,
+   0.1
+  ],
+  "n_az": 12,
+  "far": 0.4,
+  "top": 0.25,
+  "below": -0.03,
+  "rim": 0.115,
+  "extra_rays": [
+   {
+    "name": "slot_down_c",
+    "origin": [
+     0.0,
+     -0.004,
+     0.25
+    ],
+    "dir": [
+     0,
+     0,
+     -1
+    ],
+    "dist": 0.3
+   },
+   {
+    "name": "slot_down_x+5mm",
+    "origin": [
+     0.005,
+     -0.004,
+     0.25
+    ],
+    "dir": [
+     0,
+     0,
+     -1
+    ],
+    "dist": 0.3
+   },
+   {
+    "name": "slot_down_y+5mm",
+    "origin": [
+     0.0,
+     0.001,
+     0.25
+    ],
+    "dir": [
+     0,
+     0,
+     -1
+    ],
+    "dist": 0.3
+   },
+   {
+    "name": "slot_down_y-10mm",
+    "origin": [
+     0.0,
+     -0.014,
+     0.25
+    ],
+    "dir": [
+     0,
+     0,
+     -1
+    ],
+    "dist": 0.3
+   },
+   {
+    "name": "body_x_through",
+    "origin": [
+     -0.3,
+     -0.009,
+     0.057
+    ],
+    "dir": [
+     1,
+     0,
+     0
+    ],
+    "dist": 0.6
+   },
+   {
+    "name": "body_y_through",
+    "origin": [
+     0.0,
+     -0.4,
+     0.057
+    ],
+    "dir": [
+     0,
+     1,
+     0
+    ],
+    "dist": 0.8
+   },
+   {
+    "name": "up_from_bottom_tag",
+    "origin": [
+     0.0,
+     -0.009,
+     0.008
+    ],
+    "dir": [
+     0,
+     0,
+     1
+    ],
+    "dist": 0.3
+   }
+  ]
+ },
+ {
+  "name": "coin_flat_drop_8cm",
+  "kind": "launch",
+  "target": "coin0",
+  "pos_frame": "abs",
+  "pos": [
+   0.0,
+   -0.1,
+   0.8462
+  ],
+  "orient": "flat",
+  "vel": [
+   0,
+   0,
+   0
+  ],
+  "steps": 150
+ },
+ {
+  "name": "coin_flat_drop_20cm",
+  "kind": "launch",
+  "target": "coin0",
+  "pos_frame": "abs",
+  "pos": [
+   0.0,
+   -0.1,
+   0.9662
+  ],
+  "orient": "flat",
+  "vel": [
+   0,
+   0,
+   0
+  ],
+  "steps": 200
+ },
+ {
+  "name": "coin_flat_throw_down_3",
+  "kind": "launch",
+  "target": "coin0",
+  "pos_frame": "abs",
+  "pos": [
+   0.0,
+   -0.1,
+   0.8
+  ],
+  "orient": "flat",
+  "vel": [
+   0,
+   0,
+   -3
+  ],
+  "steps": 150
+ },
+ {
+  "name": "coin_slot_drop_nx",
+  "kind": "launch",
+  "target": "coin0",
+  "ref": "piggy_bank",
+  "pos": [
+   0.0,
+   -0.004,
+   0.16
+  ],
+  "orient": [
+   0.7071068,
+   0.0,
+   0.7071068,
+   0.0
+  ],
+  "frame_orient_ref": true,
+  "vel": [
+   0,
+   0,
+   0
+  ],
+  "steps": 200
+ },
+ {
+  "name": "coin_slot_drop_ny",
+  "kind": "launch",
+  "target": "coin0",
+  "ref": "piggy_bank",
+  "pos": [
+   0.0,
+   -0.004,
+   0.16
+  ],
+  "orient": [
+   0.7071068,
+   0.7071068,
+   0.0,
+   0.0
+  ],
+  "frame_orient_ref": true,
+  "vel": [
+   0,
+   0,
+   0
+  ],
+  "steps": 200
+ },
+ {
+  "name": "coin_flat_throw_side_2_ph0",
+  "kind": "launch",
+  "target": "coin0",
+  "ref": "piggy_bank",
+  "pos": [
+   -0.15,
+   -0.009,
+   0.057
+  ],
+  "orient": [
+   0.7071068,
+   0.0,
+   0.7071068,
+   0.0
+  ],
+  "frame_orient_ref": true,
+  "vel_local": [
+   2,
+   0,
+   0
+  ],
+  "steps": 120
+ },
+ {
+  "name": "coin_flat_throw_side_2_ph1",
+  "kind": "launch",
+  "target": "coin0",
+  "ref": "piggy_bank",
+  "pos": [
+   -0.152,
+   -0.009,
+   0.057
+  ],
+  "orient": [
+   0.7071068,
+   0.0,
+   0.7071068,
+   0.0
+  ],
+  "frame_orient_ref": true,
+  "vel_local": [
+   2,
+   0,
+   0
+  ],
+  "steps": 120
+ },
+ {
+  "name": "coin_flat_throw_side_2_ph2",
+  "kind": "launch",
+  "target": "coin0",
+  "ref": "piggy_bank",
+  "pos": [
+   -0.154,
+   -0.009,
+   0.057
+  ],
+  "orient": [
+   0.7071068,
+   0.0,
+   0.7071068,
+   0.0
+  ],
+  "frame_orient_ref": true,
+  "vel_local": [
+   2,
+   0,
+   0
+  ],
+  "steps": 120
+ },
+ {
+  "name": "coin_flat_throw_side_2_ph3",
+  "kind": "launch",
+  "target": "coin0",
+  "ref": "piggy_bank",
+  "pos": [
+   -0.156,
+   -0.009,
+   0.057
+  ],
+  "orient": [
+   0.7071068,
+   0.0,
+   0.7071068,
+   0.0
+  ],
+  "frame_orient_ref": true,
+  "vel_local": [
+   2,
+   0,
+   0
+  ],
+  "steps": 120
+ },
+ {
+  "name": "coin_flat_throw_side_4_ph0",
+  "kind": "launch",
+  "target": "coin0",
+  "ref": "piggy_bank",
+  "pos": [
+   -0.15,
+   -0.009,
+   0.057
+  ],
+  "orient": [
+   0.7071068,
+   0.0,
+   0.7071068,
+   0.0
+  ],
+  "frame_orient_ref": true,
+  "vel_local": [
+   4,
+   0,
+   0
+  ],
+  "steps": 120
+ },
+ {
+  "name": "coin_flat_throw_side_4_ph1",
+  "kind": "launch",
+  "target": "coin0",
+  "ref": "piggy_bank",
+  "pos": [
+   -0.154,
+   -0.009,
+   0.057
+  ],
+  "orient": [
+   0.7071068,
+   0.0,
+   0.7071068,
+   0.0
+  ],
+  "frame_orient_ref": true,
+  "vel_local": [
+   4,
+   0,
+   0
+  ],
+  "steps": 120
+ },
+ {
+  "name": "coin_flat_throw_side_4_ph2",
+  "kind": "launch",
+  "target": "coin0",
+  "ref": "piggy_bank",
+  "pos": [
+   -0.158,
+   -0.009,
+   0.057
+  ],
+  "orient": [
+   0.7071068,
+   0.0,
+   0.7071068,
+   0.0
+  ],
+  "frame_orient_ref": true,
+  "vel_local": [
+   4,
+   0,
+   0
+  ],
+  "steps": 120
+ },
+ {
+  "name": "coin_flat_throw_side_4_ph3",
+  "kind": "launch",
+  "target": "coin0",
+  "ref": "piggy_bank",
+  "pos": [
+   -0.162,
+   -0.009,
+   0.057
+  ],
+  "orient": [
+   0.7071068,
+   0.0,
+   0.7071068,
+   0.0
+  ],
+  "frame_orient_ref": true,
+  "vel_local": [
+   4,
+   0,
+   0
+  ],
+  "steps": 120
+ }
+]

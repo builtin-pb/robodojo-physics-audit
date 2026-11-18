@@ -1,0 +1,28 @@
+{
+ "purpose": "S16 bounce camera smoke (6.2 replay of b51_bounce): four candidate views of the bin, the release, the peak and the landing; eight states: actions 140 and 146 (carry, release), steps 1530, 1538 and 1546 (around the reversal), actions 163 (peak), 174 (landing) and 200 (rest)",
+ "cameras": [
+  {"name": "a50", "eye": [-1.90, 0.32, 2.20], "target": [-0.50, 0.32, 0.48], "focal_mm": 20, "res": [960, 540]},
+  {"name": "a55", "eye": [-1.75, 0.32, 2.35], "target": [-0.50, 0.32, 0.47], "focal_mm": 19, "res": [960, 540]},
+  {"name": "a62", "eye": [-1.55, 0.32, 2.50], "target": [-0.50, 0.32, 0.45], "focal_mm": 17, "res": [960, 540]},
+  {"name": "dfl", "eye": [-1.95, 1.75, 1.85], "target": [-0.50, 0.35, 0.50], "focal_mm": 15, "res": [960, 540]}
+ ],
+ "windows": [
+  {"case": null, "unit": "action", "from": 140, "to": 146, "stride": 6},
+  {"case": null, "unit": "step", "from": 1530, "to": 1546, "stride": 8},
+  {"case": null, "unit": "action", "from": 163, "to": 163, "stride": 1},
+  {"case": null, "unit": "action", "from": 174, "to": 174, "stride": 1},
+  {"case": null, "unit": "action", "from": 200, "to": 200, "stride": 1}
+ ],
+ "mode_sweep": [
+  {
+   "name": "pt8",
+   "carb": {
+    "/rtx/rendermode": "PathTracing",
+    "/rtx/pathtracing/spp": 8,
+    "/rtx/pathtracing/totalSpp": 8,
+    "/rtx/pathtracing/optixDenoiser/enabled": true
+   },
+   "warmup": 4
+  }
+ ]
+}

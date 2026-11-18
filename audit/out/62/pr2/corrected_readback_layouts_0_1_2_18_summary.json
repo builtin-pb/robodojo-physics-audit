@@ -1,0 +1,2514 @@
+{
+  "full_archive_sha256": "6a7cf57f4d961521c091ceb894645c56a7a68fcea6aa2ace976d18b01ea56210",
+  "full_archive_bytes": 1355563,
+  "versions": {
+    "repo_head": "57c472411e6c159c766b55b637bc7d5c004b6f94",
+    "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+    "isaaclab": "afca7b09d60d8beb9c1cb28b43066499940b969b",
+    "container": "isaac-sim_5.1.0.sif",
+    "isaac_sim": [
+      "5.1.0",
+      "rc.19",
+      "5"
+    ]
+  },
+  "layouts_tested": [
+    0,
+    1,
+    2,
+    18
+  ],
+  "unique_bottle_models_covered": 10,
+  "all_assertions_passed": true,
+  "per_bottle_model": {
+    "Rigid/bottle/00000": {
+      "asset_id": "Rigid/bottle/00000",
+      "layouts_tested": [
+        18
+      ],
+      "approximations": [
+        "convexDecomposition"
+      ],
+      "usd_collider_aabb_extents_m": [
+        0.063,
+        0.063,
+        0.245
+      ],
+      "engine_collider_aabb_extents_m": [
+        0.06124,
+        0.061564,
+        0.243787
+      ],
+      "engine_vs_usd_narrowing_m": [
+        0.00176,
+        0.001436,
+        0.001213
+      ],
+      "engine_aabb_max_rel_err": 0.02794,
+      "compensation_kind": "vhacd_voxelization_erosion_allowance",
+      "masks": "#95"
+    },
+    "Rigid/bottle/00002": {
+      "asset_id": "Rigid/bottle/00002",
+      "layouts_tested": [
+        2
+      ],
+      "approximations": [
+        "convexDecomposition"
+      ],
+      "usd_collider_aabb_extents_m": [
+        0.063,
+        0.063,
+        0.245
+      ],
+      "engine_collider_aabb_extents_m": [
+        0.061473,
+        0.061445,
+        0.24425
+      ],
+      "engine_vs_usd_narrowing_m": [
+        0.001527,
+        0.001555,
+        0.00075
+      ],
+      "engine_aabb_max_rel_err": 0.02468,
+      "compensation_kind": "vhacd_voxelization_erosion_allowance",
+      "masks": "#95"
+    },
+    "Rigid/bottle/00005": {
+      "asset_id": "Rigid/bottle/00005",
+      "layouts_tested": [
+        2
+      ],
+      "approximations": [
+        "convexHull"
+      ],
+      "usd_collider_aabb_extents_m": [
+        0.0625,
+        0.0625,
+        0.174
+      ],
+      "engine_collider_aabb_extents_m": [
+        0.061522,
+        0.059551,
+        0.173999
+      ],
+      "engine_vs_usd_narrowing_m": [
+        0.000978,
+        0.002949,
+        1e-06
+      ],
+      "engine_aabb_max_rel_err": 0.04718,
+      "compensation_kind": "convex_hull_vertex_limit_allowance",
+      "masks": "#95"
+    },
+    "Rigid/bottle/00022": {
+      "asset_id": "Rigid/bottle/00022",
+      "layouts_tested": [
+        0
+      ],
+      "approximations": [
+        "convexHull"
+      ],
+      "usd_collider_aabb_extents_m": [
+        0.07,
+        0.07,
+        0.24
+      ],
+      "engine_collider_aabb_extents_m": [
+        0.069983,
+        0.06934,
+        0.24
+      ],
+      "engine_vs_usd_narrowing_m": [
+        1.7e-05,
+        0.00066,
+        0.0
+      ],
+      "engine_aabb_max_rel_err": 0.00943,
+      "compensation_kind": null,
+      "masks": null
+    },
+    "Rigid/bottle/00025": {
+      "asset_id": "Rigid/bottle/00025",
+      "layouts_tested": [
+        0,
+        2
+      ],
+      "approximations": [
+        "convexHull"
+      ],
+      "usd_collider_aabb_extents_m": [
+        0.064,
+        0.064,
+        0.204
+      ],
+      "engine_collider_aabb_extents_m": [
+        0.063682,
+        0.063555,
+        0.204
+      ],
+      "engine_vs_usd_narrowing_m": [
+        0.000318,
+        0.000445,
+        0.0
+      ],
+      "engine_aabb_max_rel_err": 0.00695,
+      "compensation_kind": null,
+      "masks": null
+    },
+    "Rigid/bottle/00041": {
+      "asset_id": "Rigid/bottle/00041",
+      "layouts_tested": [
+        0,
+        1
+      ],
+      "approximations": [
+        "convexHull"
+      ],
+      "usd_collider_aabb_extents_m": [
+        0.053,
+        0.053,
+        0.185
+      ],
+      "engine_collider_aabb_extents_m": [
+        0.052991,
+        0.051957,
+        0.184999
+      ],
+      "engine_vs_usd_narrowing_m": [
+        9e-06,
+        0.001043,
+        1e-06
+      ],
+      "engine_aabb_max_rel_err": 0.01968,
+      "compensation_kind": null,
+      "masks": null
+    },
+    "Rigid/bottle/00050": {
+      "asset_id": "Rigid/bottle/00050",
+      "layouts_tested": [
+        1,
+        2,
+        18
+      ],
+      "approximations": [
+        "convexDecomposition"
+      ],
+      "usd_collider_aabb_extents_m": [
+        0.055,
+        0.055,
+        0.19
+      ],
+      "engine_collider_aabb_extents_m": [
+        0.052558,
+        0.052851,
+        0.187911
+      ],
+      "engine_vs_usd_narrowing_m": [
+        0.002442,
+        0.002149,
+        0.002089
+      ],
+      "engine_aabb_max_rel_err": 0.0444,
+      "compensation_kind": "vhacd_voxelization_erosion_allowance",
+      "masks": "#95"
+    },
+    "Rigid/bottle/00055": {
+      "asset_id": "Rigid/bottle/00055",
+      "layouts_tested": [
+        18
+      ],
+      "approximations": [
+        "convexHull"
+      ],
+      "usd_collider_aabb_extents_m": [
+        0.08,
+        0.08,
+        0.225
+      ],
+      "engine_collider_aabb_extents_m": [
+        0.078994,
+        0.08,
+        0.225001
+      ],
+      "engine_vs_usd_narrowing_m": [
+        0.001006,
+        0.0,
+        -1e-06
+      ],
+      "engine_aabb_max_rel_err": 0.01258,
+      "compensation_kind": null,
+      "masks": null
+    },
+    "Rigid/bottle/00059": {
+      "asset_id": "Rigid/bottle/00059",
+      "layouts_tested": [
+        1
+      ],
+      "approximations": [
+        "convexDecomposition"
+      ],
+      "usd_collider_aabb_extents_m": [
+        0.055,
+        0.055,
+        0.17
+      ],
+      "engine_collider_aabb_extents_m": [
+        0.052726,
+        0.052735,
+        0.167694
+      ],
+      "engine_vs_usd_narrowing_m": [
+        0.002274,
+        0.002265,
+        0.002306
+      ],
+      "engine_aabb_max_rel_err": 0.04135,
+      "compensation_kind": "vhacd_voxelization_erosion_allowance",
+      "masks": "#95"
+    },
+    "Rigid/bottle/00060": {
+      "asset_id": "Rigid/bottle/00060",
+      "layouts_tested": [
+        0,
+        1,
+        18
+      ],
+      "approximations": [
+        "convexDecomposition"
+      ],
+      "usd_collider_aabb_extents_m": [
+        0.055,
+        0.055,
+        0.19
+      ],
+      "engine_collider_aabb_extents_m": [
+        0.051757,
+        0.052428,
+        0.189301
+      ],
+      "engine_vs_usd_narrowing_m": [
+        0.003243,
+        0.002572,
+        0.000699
+      ],
+      "engine_aabb_max_rel_err": 0.05896,
+      "compensation_kind": "vhacd_voxelization_erosion_allowance",
+      "masks": "#95"
+    }
+  },
+  "layouts": [
+    {
+      "layout": 0,
+      "assertion_passed": true,
+      "failures": [],
+      "compensations_used": [
+        {
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "env": "env_0",
+          "label": "bottle1",
+          "asset_id": "Rigid/bottle/00060",
+          "approximations": [
+            "convexDecomposition"
+          ],
+          "usd_collider_aabb_extents_m": [
+            0.055,
+            0.055,
+            0.19
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.051757,
+            0.052428,
+            0.189301
+          ],
+          "engine_vs_usd_narrowing_m": [
+            0.003243,
+            0.002572,
+            0.000699
+          ],
+          "engine_max_narrowing_vs_usd_m": 0.003243,
+          "engine_aabb_max_rel_err": 0.05896,
+          "engine_aabb_max_abs_err_m": 0.003243,
+          "allowance_m": 0.004,
+          "one_sided": "engine_narrower_than_usd_only"
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38,
+      "realised_resting_contacts_matched": 4,
+      "realised_resting_contacts_total": 4,
+      "slide_along_axis_mm": 55.6,
+      "canary_table_slide_mm": 55.58,
+      "canary_ground_slide_mm": 52.52,
+      "objects_env0": {
+        "bottle0": {
+          "inst": "bottle_41_1",
+          "type": "rigid",
+          "approximations": [
+            "convexHull"
+          ],
+          "collider_aabb_extents_m": [
+            0.053,
+            0.053,
+            0.185
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.052991,
+            0.051957,
+            0.184999
+          ],
+          "engine_vs_usd_narrowing_m": [
+            9e-06,
+            0.001043,
+            1e-06
+          ],
+          "expected_extents_m": [
+            0.053,
+            0.053,
+            0.185
+          ],
+          "aabb_max_rel_err": 0.0,
+          "engine_aabb_max_rel_err": 0.01968,
+          "engine_aabb_max_abs_err_m": 0.001043,
+          "engine_mass_kg": [
+            0.02
+          ],
+          "engine_shape_materials": [
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ]
+          ],
+          "collider_width_compensation": null
+        },
+        "bottle1": {
+          "inst": "bottle_60_2",
+          "type": "rigid",
+          "approximations": [
+            "convexDecomposition"
+          ],
+          "collider_aabb_extents_m": [
+            0.055,
+            0.055,
+            0.19
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.051757,
+            0.052428,
+            0.189301
+          ],
+          "engine_vs_usd_narrowing_m": [
+            0.003243,
+            0.002572,
+            0.000699
+          ],
+          "expected_extents_m": [
+            0.055,
+            0.055,
+            0.19
+          ],
+          "aabb_max_rel_err": 0.0,
+          "engine_aabb_max_rel_err": 0.05896,
+          "engine_aabb_max_abs_err_m": 0.003243,
+          "engine_mass_kg": [
+            0.07
+          ],
+          "engine_shape_materials": [
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ]
+          ],
+          "collider_width_compensation": {
+            "kind": "vhacd_voxelization_erosion_allowance",
+            "masks": "#95",
+            "env": "env_0",
+            "label": "bottle1",
+            "asset_id": "Rigid/bottle/00060",
+            "approximations": [
+              "convexDecomposition"
+            ],
+            "usd_collider_aabb_extents_m": [
+              0.055,
+              0.055,
+              0.19
+            ],
+            "engine_collider_aabb_extents_m": [
+              0.051757,
+              0.052428,
+              0.189301
+            ],
+            "engine_vs_usd_narrowing_m": [
+              0.003243,
+              0.002572,
+              0.000699
+            ],
+            "engine_max_narrowing_vs_usd_m": 0.003243,
+            "engine_aabb_max_rel_err": 0.05896,
+            "engine_aabb_max_abs_err_m": 0.003243,
+            "allowance_m": 0.004,
+            "one_sided": "engine_narrower_than_usd_only"
+          }
+        },
+        "bottle2": {
+          "inst": "bottle_25_3",
+          "type": "rigid",
+          "approximations": [
+            "convexHull"
+          ],
+          "collider_aabb_extents_m": [
+            0.064,
+            0.064,
+            0.204
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.063682,
+            0.063555,
+            0.204
+          ],
+          "engine_vs_usd_narrowing_m": [
+            0.000318,
+            0.000445,
+            0.0
+          ],
+          "expected_extents_m": [
+            0.064,
+            0.064,
+            0.204
+          ],
+          "aabb_max_rel_err": 0.0,
+          "engine_aabb_max_rel_err": 0.00695,
+          "engine_aabb_max_abs_err_m": 0.000445,
+          "engine_mass_kg": [
+            0.024
+          ],
+          "engine_shape_materials": [
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ]
+          ],
+          "collider_width_compensation": null
+        },
+        "bottle3": {
+          "inst": "bottle_22_4",
+          "type": "rigid",
+          "approximations": [
+            "convexHull"
+          ],
+          "collider_aabb_extents_m": [
+            0.07,
+            0.07,
+            0.24
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.069983,
+            0.06934,
+            0.24
+          ],
+          "engine_vs_usd_narrowing_m": [
+            1.7e-05,
+            0.00066,
+            0.0
+          ],
+          "expected_extents_m": [
+            0.07,
+            0.07,
+            0.24
+          ],
+          "aabb_max_rel_err": 0.0,
+          "engine_aabb_max_rel_err": 0.00943,
+          "engine_aabb_max_abs_err_m": 0.00066,
+          "engine_mass_kg": [
+            0.22
+          ],
+          "engine_shape_materials": [
+            [
+              0.34,
+              0.28,
+              0.2
+            ]
+          ],
+          "collider_width_compensation": null
+        },
+        "camera_stand": {
+          "inst": "camera_stand_0_6",
+          "type": "geometry",
+          "approximations": [
+            "none"
+          ],
+          "collider_aabb_extents_m": [
+            0.3,
+            0.58751,
+            0.109666
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.3,
+            0.58751,
+            0.109666
+          ],
+          "engine_vs_usd_narrowing_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expected_extents_m": [
+            0.3,
+            0.5875,
+            0.1097
+          ],
+          "aabb_max_rel_err": 0.00031,
+          "engine_aabb_max_rel_err": 0.00031,
+          "engine_aabb_max_abs_err_m": 3.4e-05,
+          "engine_mass_kg": null,
+          "engine_shape_materials": null,
+          "collider_width_compensation": null
+        },
+        "dustbin": {
+          "inst": "dustbin_0_5",
+          "type": "geometry",
+          "approximations": [
+            "convexDecomposition"
+          ],
+          "collider_aabb_extents_m": [
+            0.47,
+            0.47,
+            0.65
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.466243,
+            0.467695,
+            0.649756
+          ],
+          "engine_vs_usd_narrowing_m": [
+            0.003757,
+            0.002305,
+            0.000244
+          ],
+          "expected_extents_m": [
+            0.47,
+            0.47,
+            0.65
+          ],
+          "aabb_max_rel_err": 0.0,
+          "engine_aabb_max_rel_err": 0.00799,
+          "engine_aabb_max_abs_err_m": 0.003757,
+          "engine_mass_kg": null,
+          "engine_shape_materials": null,
+          "collider_width_compensation": null
+        }
+      }
+    },
+    {
+      "layout": 1,
+      "assertion_passed": true,
+      "failures": [],
+      "compensations_used": [
+        {
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "env": "env_0",
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00060",
+          "approximations": [
+            "convexDecomposition"
+          ],
+          "usd_collider_aabb_extents_m": [
+            0.055,
+            0.055,
+            0.19
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.051759,
+            0.052429,
+            0.189303
+          ],
+          "engine_vs_usd_narrowing_m": [
+            0.003241,
+            0.002571,
+            0.000697
+          ],
+          "engine_max_narrowing_vs_usd_m": 0.003241,
+          "engine_aabb_max_rel_err": 0.05893,
+          "engine_aabb_max_abs_err_m": 0.003241,
+          "allowance_m": 0.004,
+          "one_sided": "engine_narrower_than_usd_only"
+        },
+        {
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "env": "env_0",
+          "label": "bottle1",
+          "asset_id": "Rigid/bottle/00050",
+          "approximations": [
+            "convexDecomposition"
+          ],
+          "usd_collider_aabb_extents_m": [
+            0.055,
+            0.055,
+            0.19
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.052558,
+            0.052851,
+            0.187911
+          ],
+          "engine_vs_usd_narrowing_m": [
+            0.002442,
+            0.002149,
+            0.002089
+          ],
+          "engine_max_narrowing_vs_usd_m": 0.002442,
+          "engine_aabb_max_rel_err": 0.0444,
+          "engine_aabb_max_abs_err_m": 0.002442,
+          "allowance_m": 0.004,
+          "one_sided": "engine_narrower_than_usd_only"
+        },
+        {
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "env": "env_0",
+          "label": "bottle3",
+          "asset_id": "Rigid/bottle/00059",
+          "approximations": [
+            "convexDecomposition"
+          ],
+          "usd_collider_aabb_extents_m": [
+            0.055,
+            0.055,
+            0.17
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.052726,
+            0.052735,
+            0.167694
+          ],
+          "engine_vs_usd_narrowing_m": [
+            0.002274,
+            0.002265,
+            0.002306
+          ],
+          "engine_max_narrowing_vs_usd_m": 0.002306,
+          "engine_aabb_max_rel_err": 0.04135,
+          "engine_aabb_max_abs_err_m": 0.002306,
+          "allowance_m": 0.004,
+          "one_sided": "engine_narrower_than_usd_only"
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38,
+      "realised_resting_contacts_matched": 4,
+      "realised_resting_contacts_total": 4,
+      "slide_along_axis_mm": 55.58,
+      "canary_table_slide_mm": 55.58,
+      "canary_ground_slide_mm": 52.52,
+      "objects_env0": {
+        "bottle0": {
+          "inst": "bottle_60_10",
+          "type": "rigid",
+          "approximations": [
+            "convexDecomposition"
+          ],
+          "collider_aabb_extents_m": [
+            0.055,
+            0.055,
+            0.19
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.051759,
+            0.052429,
+            0.189303
+          ],
+          "engine_vs_usd_narrowing_m": [
+            0.003241,
+            0.002571,
+            0.000697
+          ],
+          "expected_extents_m": [
+            0.055,
+            0.055,
+            0.19
+          ],
+          "aabb_max_rel_err": 0.0,
+          "engine_aabb_max_rel_err": 0.05893,
+          "engine_aabb_max_abs_err_m": 0.003241,
+          "engine_mass_kg": [
+            0.07
+          ],
+          "engine_shape_materials": [
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ]
+          ],
+          "collider_width_compensation": {
+            "kind": "vhacd_voxelization_erosion_allowance",
+            "masks": "#95",
+            "env": "env_0",
+            "label": "bottle0",
+            "asset_id": "Rigid/bottle/00060",
+            "approximations": [
+              "convexDecomposition"
+            ],
+            "usd_collider_aabb_extents_m": [
+              0.055,
+              0.055,
+              0.19
+            ],
+            "engine_collider_aabb_extents_m": [
+              0.051759,
+              0.052429,
+              0.189303
+            ],
+            "engine_vs_usd_narrowing_m": [
+              0.003241,
+              0.002571,
+              0.000697
+            ],
+            "engine_max_narrowing_vs_usd_m": 0.003241,
+            "engine_aabb_max_rel_err": 0.05893,
+            "engine_aabb_max_abs_err_m": 0.003241,
+            "allowance_m": 0.004,
+            "one_sided": "engine_narrower_than_usd_only"
+          }
+        },
+        "bottle1": {
+          "inst": "bottle_50_11",
+          "type": "rigid",
+          "approximations": [
+            "convexDecomposition"
+          ],
+          "collider_aabb_extents_m": [
+            0.055,
+            0.055,
+            0.19
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.052558,
+            0.052851,
+            0.187911
+          ],
+          "engine_vs_usd_narrowing_m": [
+            0.002442,
+            0.002149,
+            0.002089
+          ],
+          "expected_extents_m": [
+            0.055,
+            0.055,
+            0.19
+          ],
+          "aabb_max_rel_err": 0.0,
+          "engine_aabb_max_rel_err": 0.0444,
+          "engine_aabb_max_abs_err_m": 0.002442,
+          "engine_mass_kg": [
+            0.07
+          ],
+          "engine_shape_materials": [
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ]
+          ],
+          "collider_width_compensation": {
+            "kind": "vhacd_voxelization_erosion_allowance",
+            "masks": "#95",
+            "env": "env_0",
+            "label": "bottle1",
+            "asset_id": "Rigid/bottle/00050",
+            "approximations": [
+              "convexDecomposition"
+            ],
+            "usd_collider_aabb_extents_m": [
+              0.055,
+              0.055,
+              0.19
+            ],
+            "engine_collider_aabb_extents_m": [
+              0.052558,
+              0.052851,
+              0.187911
+            ],
+            "engine_vs_usd_narrowing_m": [
+              0.002442,
+              0.002149,
+              0.002089
+            ],
+            "engine_max_narrowing_vs_usd_m": 0.002442,
+            "engine_aabb_max_rel_err": 0.0444,
+            "engine_aabb_max_abs_err_m": 0.002442,
+            "allowance_m": 0.004,
+            "one_sided": "engine_narrower_than_usd_only"
+          }
+        },
+        "bottle2": {
+          "inst": "bottle_41_12",
+          "type": "rigid",
+          "approximations": [
+            "convexHull"
+          ],
+          "collider_aabb_extents_m": [
+            0.053,
+            0.053,
+            0.185
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.052991,
+            0.051958,
+            0.185
+          ],
+          "engine_vs_usd_narrowing_m": [
+            9e-06,
+            0.001042,
+            0.0
+          ],
+          "expected_extents_m": [
+            0.053,
+            0.053,
+            0.185
+          ],
+          "aabb_max_rel_err": 0.0,
+          "engine_aabb_max_rel_err": 0.01966,
+          "engine_aabb_max_abs_err_m": 0.001042,
+          "engine_mass_kg": [
+            0.02
+          ],
+          "engine_shape_materials": [
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ]
+          ],
+          "collider_width_compensation": null
+        },
+        "bottle3": {
+          "inst": "bottle_59_13",
+          "type": "rigid",
+          "approximations": [
+            "convexDecomposition"
+          ],
+          "collider_aabb_extents_m": [
+            0.055,
+            0.055,
+            0.17
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.052726,
+            0.052735,
+            0.167694
+          ],
+          "engine_vs_usd_narrowing_m": [
+            0.002274,
+            0.002265,
+            0.002306
+          ],
+          "expected_extents_m": [
+            0.055,
+            0.055,
+            0.17
+          ],
+          "aabb_max_rel_err": 0.0,
+          "engine_aabb_max_rel_err": 0.04135,
+          "engine_aabb_max_abs_err_m": 0.002306,
+          "engine_mass_kg": [
+            0.075
+          ],
+          "engine_shape_materials": [
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ]
+          ],
+          "collider_width_compensation": {
+            "kind": "vhacd_voxelization_erosion_allowance",
+            "masks": "#95",
+            "env": "env_0",
+            "label": "bottle3",
+            "asset_id": "Rigid/bottle/00059",
+            "approximations": [
+              "convexDecomposition"
+            ],
+            "usd_collider_aabb_extents_m": [
+              0.055,
+              0.055,
+              0.17
+            ],
+            "engine_collider_aabb_extents_m": [
+              0.052726,
+              0.052735,
+              0.167694
+            ],
+            "engine_vs_usd_narrowing_m": [
+              0.002274,
+              0.002265,
+              0.002306
+            ],
+            "engine_max_narrowing_vs_usd_m": 0.002306,
+            "engine_aabb_max_rel_err": 0.04135,
+            "engine_aabb_max_abs_err_m": 0.002306,
+            "allowance_m": 0.004,
+            "one_sided": "engine_narrower_than_usd_only"
+          }
+        },
+        "camera_stand": {
+          "inst": "camera_stand_0_15",
+          "type": "geometry",
+          "approximations": [
+            "none"
+          ],
+          "collider_aabb_extents_m": [
+            0.3,
+            0.58751,
+            0.109666
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.3,
+            0.58751,
+            0.109666
+          ],
+          "engine_vs_usd_narrowing_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expected_extents_m": [
+            0.3,
+            0.5875,
+            0.1097
+          ],
+          "aabb_max_rel_err": 0.00031,
+          "engine_aabb_max_rel_err": 0.00031,
+          "engine_aabb_max_abs_err_m": 3.4e-05,
+          "engine_mass_kg": null,
+          "engine_shape_materials": null,
+          "collider_width_compensation": null
+        },
+        "dustbin": {
+          "inst": "dustbin_0_14",
+          "type": "geometry",
+          "approximations": [
+            "convexDecomposition"
+          ],
+          "collider_aabb_extents_m": [
+            0.47,
+            0.47,
+            0.65
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.466243,
+            0.467695,
+            0.649756
+          ],
+          "engine_vs_usd_narrowing_m": [
+            0.003757,
+            0.002305,
+            0.000244
+          ],
+          "expected_extents_m": [
+            0.47,
+            0.47,
+            0.65
+          ],
+          "aabb_max_rel_err": 0.0,
+          "engine_aabb_max_rel_err": 0.00799,
+          "engine_aabb_max_abs_err_m": 0.003757,
+          "engine_mass_kg": null,
+          "engine_shape_materials": null,
+          "collider_width_compensation": null
+        }
+      }
+    },
+    {
+      "layout": 2,
+      "assertion_passed": true,
+      "failures": [],
+      "compensations_used": [
+        {
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "env": "env_0",
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00050",
+          "approximations": [
+            "convexDecomposition"
+          ],
+          "usd_collider_aabb_extents_m": [
+            0.055,
+            0.055,
+            0.19
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.052558,
+            0.05285,
+            0.187911
+          ],
+          "engine_vs_usd_narrowing_m": [
+            0.002442,
+            0.00215,
+            0.002089
+          ],
+          "engine_max_narrowing_vs_usd_m": 0.002442,
+          "engine_aabb_max_rel_err": 0.0444,
+          "engine_aabb_max_abs_err_m": 0.002442,
+          "allowance_m": 0.004,
+          "one_sided": "engine_narrower_than_usd_only"
+        },
+        {
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "env": "env_0",
+          "label": "bottle2",
+          "asset_id": "Rigid/bottle/00002",
+          "approximations": [
+            "convexDecomposition"
+          ],
+          "usd_collider_aabb_extents_m": [
+            0.063,
+            0.063,
+            0.245
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.061473,
+            0.061445,
+            0.24425
+          ],
+          "engine_vs_usd_narrowing_m": [
+            0.001527,
+            0.001555,
+            0.00075
+          ],
+          "engine_max_narrowing_vs_usd_m": 0.001555,
+          "engine_aabb_max_rel_err": 0.02468,
+          "engine_aabb_max_abs_err_m": 0.001555,
+          "allowance_m": 0.004,
+          "one_sided": "engine_narrower_than_usd_only"
+        },
+        {
+          "kind": "convex_hull_vertex_limit_allowance",
+          "masks": "#95",
+          "env": "env_0",
+          "label": "bottle3",
+          "asset_id": "Rigid/bottle/00005",
+          "approximations": [
+            "convexHull"
+          ],
+          "usd_collider_aabb_extents_m": [
+            0.0625,
+            0.0625,
+            0.174
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.061522,
+            0.059551,
+            0.173999
+          ],
+          "engine_vs_usd_narrowing_m": [
+            0.000978,
+            0.002949,
+            1e-06
+          ],
+          "engine_max_narrowing_vs_usd_m": 0.002949,
+          "engine_aabb_max_rel_err": 0.04718,
+          "engine_aabb_max_abs_err_m": 0.002949,
+          "allowance_m": 0.004,
+          "one_sided": "engine_narrower_than_usd_only",
+          "physx_hull_vertex_limit": 64
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38,
+      "realised_resting_contacts_matched": 4,
+      "realised_resting_contacts_total": 4,
+      "slide_along_axis_mm": 55.74,
+      "canary_table_slide_mm": 55.58,
+      "canary_ground_slide_mm": 52.52,
+      "objects_env0": {
+        "bottle0": {
+          "inst": "bottle_50_19",
+          "type": "rigid",
+          "approximations": [
+            "convexDecomposition"
+          ],
+          "collider_aabb_extents_m": [
+            0.055,
+            0.055,
+            0.19
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.052558,
+            0.05285,
+            0.187911
+          ],
+          "engine_vs_usd_narrowing_m": [
+            0.002442,
+            0.00215,
+            0.002089
+          ],
+          "expected_extents_m": [
+            0.055,
+            0.055,
+            0.19
+          ],
+          "aabb_max_rel_err": 0.0,
+          "engine_aabb_max_rel_err": 0.0444,
+          "engine_aabb_max_abs_err_m": 0.002442,
+          "engine_mass_kg": [
+            0.07
+          ],
+          "engine_shape_materials": [
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ]
+          ],
+          "collider_width_compensation": {
+            "kind": "vhacd_voxelization_erosion_allowance",
+            "masks": "#95",
+            "env": "env_0",
+            "label": "bottle0",
+            "asset_id": "Rigid/bottle/00050",
+            "approximations": [
+              "convexDecomposition"
+            ],
+            "usd_collider_aabb_extents_m": [
+              0.055,
+              0.055,
+              0.19
+            ],
+            "engine_collider_aabb_extents_m": [
+              0.052558,
+              0.05285,
+              0.187911
+            ],
+            "engine_vs_usd_narrowing_m": [
+              0.002442,
+              0.00215,
+              0.002089
+            ],
+            "engine_max_narrowing_vs_usd_m": 0.002442,
+            "engine_aabb_max_rel_err": 0.0444,
+            "engine_aabb_max_abs_err_m": 0.002442,
+            "allowance_m": 0.004,
+            "one_sided": "engine_narrower_than_usd_only"
+          }
+        },
+        "bottle1": {
+          "inst": "bottle_25_20",
+          "type": "rigid",
+          "approximations": [
+            "convexHull"
+          ],
+          "collider_aabb_extents_m": [
+            0.064,
+            0.064,
+            0.204
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.063683,
+            0.063556,
+            0.204
+          ],
+          "engine_vs_usd_narrowing_m": [
+            0.000317,
+            0.000444,
+            0.0
+          ],
+          "expected_extents_m": [
+            0.064,
+            0.064,
+            0.204
+          ],
+          "aabb_max_rel_err": 0.0,
+          "engine_aabb_max_rel_err": 0.00694,
+          "engine_aabb_max_abs_err_m": 0.000444,
+          "engine_mass_kg": [
+            0.024
+          ],
+          "engine_shape_materials": [
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ]
+          ],
+          "collider_width_compensation": null
+        },
+        "bottle2": {
+          "inst": "bottle_2_21",
+          "type": "rigid",
+          "approximations": [
+            "convexDecomposition"
+          ],
+          "collider_aabb_extents_m": [
+            0.063,
+            0.063,
+            0.245
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.061473,
+            0.061445,
+            0.24425
+          ],
+          "engine_vs_usd_narrowing_m": [
+            0.001527,
+            0.001555,
+            0.00075
+          ],
+          "expected_extents_m": [
+            0.063,
+            0.063,
+            0.245
+          ],
+          "aabb_max_rel_err": 0.0,
+          "engine_aabb_max_rel_err": 0.02468,
+          "engine_aabb_max_abs_err_m": 0.001555,
+          "engine_mass_kg": [
+            0.024
+          ],
+          "engine_shape_materials": [
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ]
+          ],
+          "collider_width_compensation": {
+            "kind": "vhacd_voxelization_erosion_allowance",
+            "masks": "#95",
+            "env": "env_0",
+            "label": "bottle2",
+            "asset_id": "Rigid/bottle/00002",
+            "approximations": [
+              "convexDecomposition"
+            ],
+            "usd_collider_aabb_extents_m": [
+              0.063,
+              0.063,
+              0.245
+            ],
+            "engine_collider_aabb_extents_m": [
+              0.061473,
+              0.061445,
+              0.24425
+            ],
+            "engine_vs_usd_narrowing_m": [
+              0.001527,
+              0.001555,
+              0.00075
+            ],
+            "engine_max_narrowing_vs_usd_m": 0.001555,
+            "engine_aabb_max_rel_err": 0.02468,
+            "engine_aabb_max_abs_err_m": 0.001555,
+            "allowance_m": 0.004,
+            "one_sided": "engine_narrower_than_usd_only"
+          }
+        },
+        "bottle3": {
+          "inst": "bottle_5_22",
+          "type": "rigid",
+          "approximations": [
+            "convexHull"
+          ],
+          "collider_aabb_extents_m": [
+            0.0625,
+            0.0625,
+            0.174
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.061522,
+            0.059551,
+            0.173999
+          ],
+          "engine_vs_usd_narrowing_m": [
+            0.000978,
+            0.002949,
+            1e-06
+          ],
+          "expected_extents_m": [
+            0.0625,
+            0.0625,
+            0.174
+          ],
+          "aabb_max_rel_err": 0.0,
+          "engine_aabb_max_rel_err": 0.04718,
+          "engine_aabb_max_abs_err_m": 0.002949,
+          "engine_mass_kg": [
+            0.075
+          ],
+          "engine_shape_materials": [
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ]
+          ],
+          "collider_width_compensation": {
+            "kind": "convex_hull_vertex_limit_allowance",
+            "masks": "#95",
+            "env": "env_0",
+            "label": "bottle3",
+            "asset_id": "Rigid/bottle/00005",
+            "approximations": [
+              "convexHull"
+            ],
+            "usd_collider_aabb_extents_m": [
+              0.0625,
+              0.0625,
+              0.174
+            ],
+            "engine_collider_aabb_extents_m": [
+              0.061522,
+              0.059551,
+              0.173999
+            ],
+            "engine_vs_usd_narrowing_m": [
+              0.000978,
+              0.002949,
+              1e-06
+            ],
+            "engine_max_narrowing_vs_usd_m": 0.002949,
+            "engine_aabb_max_rel_err": 0.04718,
+            "engine_aabb_max_abs_err_m": 0.002949,
+            "allowance_m": 0.004,
+            "one_sided": "engine_narrower_than_usd_only",
+            "physx_hull_vertex_limit": 64
+          }
+        },
+        "camera_stand": {
+          "inst": "camera_stand_0_24",
+          "type": "geometry",
+          "approximations": [
+            "none"
+          ],
+          "collider_aabb_extents_m": [
+            0.3,
+            0.58751,
+            0.109666
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.3,
+            0.58751,
+            0.109666
+          ],
+          "engine_vs_usd_narrowing_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expected_extents_m": [
+            0.3,
+            0.5875,
+            0.1097
+          ],
+          "aabb_max_rel_err": 0.00031,
+          "engine_aabb_max_rel_err": 0.00031,
+          "engine_aabb_max_abs_err_m": 3.4e-05,
+          "engine_mass_kg": null,
+          "engine_shape_materials": null,
+          "collider_width_compensation": null
+        },
+        "dustbin": {
+          "inst": "dustbin_0_23",
+          "type": "geometry",
+          "approximations": [
+            "convexDecomposition"
+          ],
+          "collider_aabb_extents_m": [
+            0.47,
+            0.47,
+            0.65
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.466243,
+            0.467695,
+            0.649756
+          ],
+          "engine_vs_usd_narrowing_m": [
+            0.003757,
+            0.002305,
+            0.000244
+          ],
+          "expected_extents_m": [
+            0.47,
+            0.47,
+            0.65
+          ],
+          "aabb_max_rel_err": 0.0,
+          "engine_aabb_max_rel_err": 0.00799,
+          "engine_aabb_max_abs_err_m": 0.003757,
+          "engine_mass_kg": null,
+          "engine_shape_materials": null,
+          "collider_width_compensation": null
+        }
+      }
+    },
+    {
+      "layout": 18,
+      "assertion_passed": true,
+      "failures": [],
+      "compensations_used": [
+        {
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "env": "env_0",
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00060",
+          "approximations": [
+            "convexDecomposition"
+          ],
+          "usd_collider_aabb_extents_m": [
+            0.055,
+            0.055,
+            0.19
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.051758,
+            0.052428,
+            0.189302
+          ],
+          "engine_vs_usd_narrowing_m": [
+            0.003242,
+            0.002572,
+            0.000698
+          ],
+          "engine_max_narrowing_vs_usd_m": 0.003242,
+          "engine_aabb_max_rel_err": 0.05895,
+          "engine_aabb_max_abs_err_m": 0.003242,
+          "allowance_m": 0.004,
+          "one_sided": "engine_narrower_than_usd_only"
+        },
+        {
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "env": "env_0",
+          "label": "bottle2",
+          "asset_id": "Rigid/bottle/00050",
+          "approximations": [
+            "convexDecomposition"
+          ],
+          "usd_collider_aabb_extents_m": [
+            0.055,
+            0.055,
+            0.19
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.052558,
+            0.05285,
+            0.18791
+          ],
+          "engine_vs_usd_narrowing_m": [
+            0.002442,
+            0.00215,
+            0.00209
+          ],
+          "engine_max_narrowing_vs_usd_m": 0.002442,
+          "engine_aabb_max_rel_err": 0.0444,
+          "engine_aabb_max_abs_err_m": 0.002442,
+          "allowance_m": 0.004,
+          "one_sided": "engine_narrower_than_usd_only"
+        },
+        {
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "env": "env_0",
+          "label": "bottle3",
+          "asset_id": "Rigid/bottle/00000",
+          "approximations": [
+            "convexDecomposition"
+          ],
+          "usd_collider_aabb_extents_m": [
+            0.063,
+            0.063,
+            0.245
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.06124,
+            0.061564,
+            0.243787
+          ],
+          "engine_vs_usd_narrowing_m": [
+            0.00176,
+            0.001436,
+            0.001213
+          ],
+          "engine_max_narrowing_vs_usd_m": 0.00176,
+          "engine_aabb_max_rel_err": 0.02794,
+          "engine_aabb_max_abs_err_m": 0.00176,
+          "allowance_m": 0.004,
+          "one_sided": "engine_narrower_than_usd_only"
+        }
+      ],
+      "realised_scene_pairs_matched": 38,
+      "realised_scene_pairs_total": 38,
+      "realised_resting_contacts_matched": 4,
+      "realised_resting_contacts_total": 4,
+      "slide_along_axis_mm": 55.6,
+      "canary_table_slide_mm": 55.58,
+      "canary_ground_slide_mm": 52.52,
+      "objects_env0": {
+        "bottle0": {
+          "inst": "bottle_60_28",
+          "type": "rigid",
+          "approximations": [
+            "convexDecomposition"
+          ],
+          "collider_aabb_extents_m": [
+            0.055,
+            0.055,
+            0.19
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.051758,
+            0.052428,
+            0.189302
+          ],
+          "engine_vs_usd_narrowing_m": [
+            0.003242,
+            0.002572,
+            0.000698
+          ],
+          "expected_extents_m": [
+            0.055,
+            0.055,
+            0.19
+          ],
+          "aabb_max_rel_err": 0.0,
+          "engine_aabb_max_rel_err": 0.05895,
+          "engine_aabb_max_abs_err_m": 0.003242,
+          "engine_mass_kg": [
+            0.07
+          ],
+          "engine_shape_materials": [
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ]
+          ],
+          "collider_width_compensation": {
+            "kind": "vhacd_voxelization_erosion_allowance",
+            "masks": "#95",
+            "env": "env_0",
+            "label": "bottle0",
+            "asset_id": "Rigid/bottle/00060",
+            "approximations": [
+              "convexDecomposition"
+            ],
+            "usd_collider_aabb_extents_m": [
+              0.055,
+              0.055,
+              0.19
+            ],
+            "engine_collider_aabb_extents_m": [
+              0.051758,
+              0.052428,
+              0.189302
+            ],
+            "engine_vs_usd_narrowing_m": [
+              0.003242,
+              0.002572,
+              0.000698
+            ],
+            "engine_max_narrowing_vs_usd_m": 0.003242,
+            "engine_aabb_max_rel_err": 0.05895,
+            "engine_aabb_max_abs_err_m": 0.003242,
+            "allowance_m": 0.004,
+            "one_sided": "engine_narrower_than_usd_only"
+          }
+        },
+        "bottle1": {
+          "inst": "bottle_55_29",
+          "type": "rigid",
+          "approximations": [
+            "convexHull"
+          ],
+          "collider_aabb_extents_m": [
+            0.08,
+            0.08,
+            0.225
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.078994,
+            0.08,
+            0.225001
+          ],
+          "engine_vs_usd_narrowing_m": [
+            0.001006,
+            0.0,
+            -1e-06
+          ],
+          "expected_extents_m": [
+            0.08,
+            0.08,
+            0.225
+          ],
+          "aabb_max_rel_err": 0.0,
+          "engine_aabb_max_rel_err": 0.01258,
+          "engine_aabb_max_abs_err_m": 0.001006,
+          "engine_mass_kg": [
+            0.095
+          ],
+          "engine_shape_materials": [
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ]
+          ],
+          "collider_width_compensation": null
+        },
+        "bottle2": {
+          "inst": "bottle_50_30",
+          "type": "rigid",
+          "approximations": [
+            "convexDecomposition"
+          ],
+          "collider_aabb_extents_m": [
+            0.055,
+            0.055,
+            0.19
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.052558,
+            0.05285,
+            0.18791
+          ],
+          "engine_vs_usd_narrowing_m": [
+            0.002442,
+            0.00215,
+            0.00209
+          ],
+          "expected_extents_m": [
+            0.055,
+            0.055,
+            0.19
+          ],
+          "aabb_max_rel_err": 0.0,
+          "engine_aabb_max_rel_err": 0.0444,
+          "engine_aabb_max_abs_err_m": 0.002442,
+          "engine_mass_kg": [
+            0.07
+          ],
+          "engine_shape_materials": [
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ]
+          ],
+          "collider_width_compensation": {
+            "kind": "vhacd_voxelization_erosion_allowance",
+            "masks": "#95",
+            "env": "env_0",
+            "label": "bottle2",
+            "asset_id": "Rigid/bottle/00050",
+            "approximations": [
+              "convexDecomposition"
+            ],
+            "usd_collider_aabb_extents_m": [
+              0.055,
+              0.055,
+              0.19
+            ],
+            "engine_collider_aabb_extents_m": [
+              0.052558,
+              0.05285,
+              0.18791
+            ],
+            "engine_vs_usd_narrowing_m": [
+              0.002442,
+              0.00215,
+              0.00209
+            ],
+            "engine_max_narrowing_vs_usd_m": 0.002442,
+            "engine_aabb_max_rel_err": 0.0444,
+            "engine_aabb_max_abs_err_m": 0.002442,
+            "allowance_m": 0.004,
+            "one_sided": "engine_narrower_than_usd_only"
+          }
+        },
+        "bottle3": {
+          "inst": "bottle_0_31",
+          "type": "rigid",
+          "approximations": [
+            "convexDecomposition"
+          ],
+          "collider_aabb_extents_m": [
+            0.063,
+            0.063,
+            0.245
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.06124,
+            0.061564,
+            0.243787
+          ],
+          "engine_vs_usd_narrowing_m": [
+            0.00176,
+            0.001436,
+            0.001213
+          ],
+          "expected_extents_m": [
+            0.063,
+            0.063,
+            0.245
+          ],
+          "aabb_max_rel_err": 0.0,
+          "engine_aabb_max_rel_err": 0.02794,
+          "engine_aabb_max_abs_err_m": 0.00176,
+          "engine_mass_kg": [
+            0.024
+          ],
+          "engine_shape_materials": [
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ],
+            [
+              0.26744,
+              0.2217,
+              0.25
+            ]
+          ],
+          "collider_width_compensation": {
+            "kind": "vhacd_voxelization_erosion_allowance",
+            "masks": "#95",
+            "env": "env_0",
+            "label": "bottle3",
+            "asset_id": "Rigid/bottle/00000",
+            "approximations": [
+              "convexDecomposition"
+            ],
+            "usd_collider_aabb_extents_m": [
+              0.063,
+              0.063,
+              0.245
+            ],
+            "engine_collider_aabb_extents_m": [
+              0.06124,
+              0.061564,
+              0.243787
+            ],
+            "engine_vs_usd_narrowing_m": [
+              0.00176,
+              0.001436,
+              0.001213
+            ],
+            "engine_max_narrowing_vs_usd_m": 0.00176,
+            "engine_aabb_max_rel_err": 0.02794,
+            "engine_aabb_max_abs_err_m": 0.00176,
+            "allowance_m": 0.004,
+            "one_sided": "engine_narrower_than_usd_only"
+          }
+        },
+        "camera_stand": {
+          "inst": "camera_stand_0_33",
+          "type": "geometry",
+          "approximations": [
+            "none"
+          ],
+          "collider_aabb_extents_m": [
+            0.3,
+            0.58751,
+            0.109666
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.3,
+            0.58751,
+            0.109666
+          ],
+          "engine_vs_usd_narrowing_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expected_extents_m": [
+            0.3,
+            0.5875,
+            0.1097
+          ],
+          "aabb_max_rel_err": 0.00031,
+          "engine_aabb_max_rel_err": 0.00031,
+          "engine_aabb_max_abs_err_m": 3.4e-05,
+          "engine_mass_kg": null,
+          "engine_shape_materials": null,
+          "collider_width_compensation": null
+        },
+        "dustbin": {
+          "inst": "dustbin_0_32",
+          "type": "geometry",
+          "approximations": [
+            "convexDecomposition"
+          ],
+          "collider_aabb_extents_m": [
+            0.47,
+            0.47,
+            0.65
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.466243,
+            0.467695,
+            0.649756
+          ],
+          "engine_vs_usd_narrowing_m": [
+            0.003757,
+            0.002305,
+            0.000244
+          ],
+          "expected_extents_m": [
+            0.47,
+            0.47,
+            0.65
+          ],
+          "aabb_max_rel_err": 0.0,
+          "engine_aabb_max_rel_err": 0.00799,
+          "engine_aabb_max_abs_err_m": 0.003757,
+          "engine_mass_kg": null,
+          "engine_shape_materials": null,
+          "collider_width_compensation": null
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,615 @@
+{
+  "task": "swap_T",
+  "policy": "script_swap_T_v2",
+  "evaluator": "v2",
+  "parity_checks": {
+    "shipped_s0_l0_sha256_equal": true,
+    "shipped_s0_l0_sha256": "230628728fa9151b63ce559ef7c5842d6216073fb92bf887deebb6720ac1b956",
+    "corrected_s0_l0_sha256_equal": true,
+    "corrected_s0_l0_sha256": "d246dc05fda84efcecad536e51101ee49879719e961d11746138317bba7b4149"
+  },
+  "contact_census_file": "audit/out/g2/contact_census_swap_T.json",
+  "refinement_and_pipeline": {
+    "dt2_2ms": {
+      "episodes": 4,
+      "successes": 4,
+      "max_pose_diff_vs_base_mm": 0.0806,
+      "max_rot_diff_vs_base_deg": 0.0816,
+      "hover_pivot_median_deg": 0.001,
+      "hover_pivot_max_deg": 0.102,
+      "held_pivot_max_deg": 0.109,
+      "per_episode": [
+        {
+          "seed": 0,
+          "layout": 0,
+          "success": true,
+          "score": 100.0,
+          "actions": 185,
+          "base_actions": 185,
+          "worst_target_xy_mm": 0.09,
+          "worst_target_rot_deg": 0.018,
+          "max_pose_diff_vs_base_mm": 0.0806,
+          "max_rot_diff_vs_base_deg": 0.047,
+          "max_penetration_mm": 0.1363,
+          "readback": {
+            "overwrite_gpu_setting": 1,
+            "enable_gpu_dynamics_usd": false,
+            "time_steps_per_s": 500.0,
+            "enable_stabilization": false,
+            "min_pos_iters": 64.0,
+            "effective_pos_iters": 64,
+            "nonzero_gpu_stat_counters": 17
+          }
+        },
+        {
+          "seed": 0,
+          "layout": 2,
+          "success": true,
+          "score": 100.0,
+          "actions": 185,
+          "base_actions": 185,
+          "worst_target_xy_mm": 0.02,
+          "worst_target_rot_deg": 0.002,
+          "max_pose_diff_vs_base_mm": 0.04,
+          "max_rot_diff_vs_base_deg": 0.0498,
+          "max_penetration_mm": 0.1464,
+          "readback": {
+            "overwrite_gpu_setting": 1,
+            "enable_gpu_dynamics_usd": false,
+            "time_steps_per_s": 500.0,
+            "enable_stabilization": false,
+            "min_pos_iters": 64.0,
+            "effective_pos_iters": 64,
+            "nonzero_gpu_stat_counters": 17
+          }
+        },
+        {
+          "seed": 0,
+          "layout": 6,
+          "success": true,
+          "score": 100.0,
+          "actions": 186,
+          "base_actions": 186,
+          "worst_target_xy_mm": 0.02,
+          "worst_target_rot_deg": 0.023,
+          "max_pose_diff_vs_base_mm": 0.04,
+          "max_rot_diff_vs_base_deg": 0.0816,
+          "max_penetration_mm": 0.1563,
+          "readback": {
+            "overwrite_gpu_setting": 1,
+            "enable_gpu_dynamics_usd": false,
+            "time_steps_per_s": 500.0,
+            "enable_stabilization": false,
+            "min_pos_iters": 64.0,
+            "effective_pos_iters": 64,
+            "nonzero_gpu_stat_counters": 17
+          }
+        },
+        {
+          "seed": 1,
+          "layout": 4,
+          "success": true,
+          "score": 100.0,
+          "actions": 185,
+          "base_actions": 185,
+          "worst_target_xy_mm": 0.03,
+          "worst_target_rot_deg": 0.026,
+          "max_pose_diff_vs_base_mm": 0.0583,
+          "max_rot_diff_vs_base_deg": 0.056,
+          "max_penetration_mm": 0.354,
+          "readback": {
+            "overwrite_gpu_setting": 1,
+            "enable_gpu_dynamics_usd": false,
+            "time_steps_per_s": 500.0,
+            "enable_stabilization": false,
+            "min_pos_iters": 64.0,
+            "effective_pos_iters": 64,
+            "nonzero_gpu_stat_counters": 17
+          }
+        }
+      ]
+    },
+    "dt1_1ms": {
+      "episodes": 4,
+      "successes": 4,
+      "max_pose_diff_vs_base_mm": 0.0671,
+      "max_rot_diff_vs_base_deg": 0.1236,
+      "hover_pivot_median_deg": 0.001,
+      "hover_pivot_max_deg": 0.005,
+      "held_pivot_max_deg": 0.005,
+      "per_episode": [
+        {
+          "seed": 0,
+          "layout": 0,
+          "success": true,
+          "score": 100.0,
+          "actions": 185,
+          "base_actions": 185,
+          "worst_target_xy_mm": 0.05,
+          "worst_target_rot_deg": 0.007,
+          "max_pose_diff_vs_base_mm": 0.0671,
+          "max_rot_diff_vs_base_deg": 0.0378,
+          "max_penetration_mm": 0.1116,
+          "readback": {
+            "overwrite_gpu_setting": 1,
+            "enable_gpu_dynamics_usd": false,
+            "time_steps_per_s": 1000.0,
+            "enable_stabilization": false,
+            "min_pos_iters": 64.0,
+            "effective_pos_iters": 64,
+            "nonzero_gpu_stat_counters": 17
+          }
+        },
+        {
+          "seed": 0,
+          "layout": 2,
+          "success": true,
+          "score": 100.0,
+          "actions": 185,
+          "base_actions": 185,
+          "worst_target_xy_mm": 0.01,
+          "worst_target_rot_deg": 0.001,
+          "max_pose_diff_vs_base_mm": 0.0608,
+          "max_rot_diff_vs_base_deg": 0.0549,
+          "max_penetration_mm": 0.0584,
+          "readback": {
+            "overwrite_gpu_setting": 1,
+            "enable_gpu_dynamics_usd": false,
+            "time_steps_per_s": 1000.0,
+            "enable_stabilization": false,
+            "min_pos_iters": 64.0,
+            "effective_pos_iters": 64,
+            "nonzero_gpu_stat_counters": 17
+          }
+        },
+        {
+          "seed": 0,
+          "layout": 6,
+          "success": true,
+          "score": 100.0,
+          "actions": 186,
+          "base_actions": 186,
+          "worst_target_xy_mm": 0.01,
+          "worst_target_rot_deg": 0.018,
+          "max_pose_diff_vs_base_mm": 0.0447,
+          "max_rot_diff_vs_base_deg": 0.1236,
+          "max_penetration_mm": 0.1128,
+          "readback": {
+            "overwrite_gpu_setting": 1,
+            "enable_gpu_dynamics_usd": false,
+            "time_steps_per_s": 1000.0,
+            "enable_stabilization": false,
+            "min_pos_iters": 64.0,
+            "effective_pos_iters": 64,
+            "nonzero_gpu_stat_counters": 17
+          }
+        },
+        {
+          "seed": 1,
+          "layout": 4,
+          "success": true,
+          "score": 100.0,
+          "actions": 185,
+          "base_actions": 185,
+          "worst_target_xy_mm": 0.04,
+          "worst_target_rot_deg": 0.023,
+          "max_pose_diff_vs_base_mm": 0.0361,
+          "max_rot_diff_vs_base_deg": 0.0481,
+          "max_penetration_mm": 0.1013,
+          "readback": {
+            "overwrite_gpu_setting": 1,
+            "enable_gpu_dynamics_usd": false,
+            "time_steps_per_s": 1000.0,
+            "enable_stabilization": false,
+            "min_pos_iters": 64.0,
+            "effective_pos_iters": 64,
+            "nonzero_gpu_stat_counters": 17
+          }
+        }
+      ]
+    },
+    "iters255": {
+      "episodes": 4,
+      "successes": 4,
+      "max_pose_diff_vs_base_mm": 0.0671,
+      "max_rot_diff_vs_base_deg": 0.0779,
+      "hover_pivot_median_deg": 0.014,
+      "hover_pivot_max_deg": 0.032,
+      "held_pivot_max_deg": 0.066,
+      "per_episode": [
+        {
+          "seed": 0,
+          "layout": 0,
+          "success": true,
+          "score": 100.0,
+          "actions": 185,
+          "base_actions": 185,
+          "worst_target_xy_mm": 0.02,
+          "worst_target_rot_deg": 0.018,
+          "max_pose_diff_vs_base_mm": 0.02,
+          "max_rot_diff_vs_base_deg": 0.0481,
+          "max_penetration_mm": 0.0238,
+          "readback": {
+            "overwrite_gpu_setting": 1,
+            "enable_gpu_dynamics_usd": false,
+            "time_steps_per_s": 250.0,
+            "enable_stabilization": false,
+            "min_pos_iters": 255.0,
+            "effective_pos_iters": 255,
+            "nonzero_gpu_stat_counters": 17
+          }
+        },
+        {
+          "seed": 0,
+          "layout": 2,
+          "success": true,
+          "score": 100.0,
+          "actions": 185,
+          "base_actions": 185,
+          "worst_target_xy_mm": 0.06,
+          "worst_target_rot_deg": 0.021,
+          "max_pose_diff_vs_base_mm": 0.0671,
+          "max_rot_diff_vs_base_deg": 0.0734,
+          "max_penetration_mm": 0.038,
+          "readback": {
+            "overwrite_gpu_setting": 1,
+            "enable_gpu_dynamics_usd": false,
+            "time_steps_per_s": 250.0,
+            "enable_stabilization": false,
+            "min_pos_iters": 255.0,
+            "effective_pos_iters": 255,
+            "nonzero_gpu_stat_counters": 17
+          }
+        },
+        {
+          "seed": 0,
+          "layout": 6,
+          "success": true,
+          "score": 100.0,
+          "actions": 186,
+          "base_actions": 186,
+          "worst_target_xy_mm": 0.04,
+          "worst_target_rot_deg": 0.027,
+          "max_pose_diff_vs_base_mm": 0.0583,
+          "max_rot_diff_vs_base_deg": 0.0779,
+          "max_penetration_mm": 0.0434,
+          "readback": {
+            "overwrite_gpu_setting": 1,
+            "enable_gpu_dynamics_usd": false,
+            "time_steps_per_s": 250.0,
+            "enable_stabilization": false,
+            "min_pos_iters": 255.0,
+            "effective_pos_iters": 255,
+            "nonzero_gpu_stat_counters": 17
+          }
+        },
+        {
+          "seed": 1,
+          "layout": 4,
+          "success": true,
+          "score": 100.0,
+          "actions": 185,
+          "base_actions": 185,
+          "worst_target_xy_mm": 0.03,
+          "worst_target_rot_deg": 0.011,
+          "max_pose_diff_vs_base_mm": 0.0583,
+          "max_rot_diff_vs_base_deg": 0.0405,
+          "max_penetration_mm": 0.0396,
+          "readback": {
+            "overwrite_gpu_setting": 1,
+            "enable_gpu_dynamics_usd": false,
+            "time_steps_per_s": 250.0,
+            "enable_stabilization": false,
+            "min_pos_iters": 255.0,
+            "effective_pos_iters": 255,
+            "nonzero_gpu_stat_counters": 17
+          }
+        }
+      ]
+    },
+    "iters16_nosolver": {
+      "episodes": 4,
+      "successes": 4,
+      "max_pose_diff_vs_base_mm": 0.5345,
+      "max_rot_diff_vs_base_deg": 1.4073,
+      "hover_pivot_median_deg": null,
+      "hover_pivot_max_deg": null,
+      "held_pivot_max_deg": null,
+      "per_episode": [
+        {
+          "seed": 0,
+          "layout": 0,
+          "success": true,
+          "score": 100.0,
+          "actions": 185,
+          "base_actions": 185,
+          "worst_target_xy_mm": 0.46,
+          "worst_target_rot_deg": 0.082,
+          "max_pose_diff_vs_base_mm": 0.4892,
+          "max_rot_diff_vs_base_deg": 0.0516,
+          "max_penetration_mm": 1.6438,
+          "readback": {
+            "overwrite_gpu_setting": 1,
+            "enable_gpu_dynamics_usd": false,
+            "time_steps_per_s": 250.0,
+            "enable_stabilization": false,
+            "min_pos_iters": 1.0,
+            "effective_pos_iters": 16,
+            "nonzero_gpu_stat_counters": 17
+          }
+        },
+        {
+          "seed": 0,
+          "layout": 2,
+          "success": true,
+          "score": 100.0,
+          "actions": 185,
+          "base_actions": 185,
+          "worst_target_xy_mm": 0.48,
+          "worst_target_rot_deg": 0.267,
+          "max_pose_diff_vs_base_mm": 0.4206,
+          "max_rot_diff_vs_base_deg": 0.2122,
+          "max_penetration_mm": 1.7098,
+          "readback": {
+            "overwrite_gpu_setting": 1,
+            "enable_gpu_dynamics_usd": false,
+            "time_steps_per_s": 250.0,
+            "enable_stabilization": false,
+            "min_pos_iters": 1.0,
+            "effective_pos_iters": 16,
+            "nonzero_gpu_stat_counters": 17
+          }
+        },
+        {
+          "seed": 0,
+          "layout": 6,
+          "success": true,
+          "score": 100.0,
+          "actions": 186,
+          "base_actions": 186,
+          "worst_target_xy_mm": 0.52,
+          "worst_target_rot_deg": 1.512,
+          "max_pose_diff_vs_base_mm": 0.4904,
+          "max_rot_diff_vs_base_deg": 1.4073,
+          "max_penetration_mm": 2.589,
+          "readback": {
+            "overwrite_gpu_setting": 1,
+            "enable_gpu_dynamics_usd": false,
+            "time_steps_per_s": 250.0,
+            "enable_stabilization": false,
+            "min_pos_iters": 1.0,
+            "effective_pos_iters": 16,
+            "nonzero_gpu_stat_counters": 17
+          }
+        },
+        {
+          "seed": 1,
+          "layout": 4,
+          "success": true,
+          "score": 100.0,
+          "actions": 185,
+          "base_actions": 185,
+          "worst_target_xy_mm": 0.6,
+          "worst_target_rot_deg": 0.264,
+          "max_pose_diff_vs_base_mm": 0.5345,
+          "max_rot_diff_vs_base_deg": 0.2133,
+          "max_penetration_mm": 2.2534,
+          "readback": {
+            "overwrite_gpu_setting": 1,
+            "enable_gpu_dynamics_usd": false,
+            "time_steps_per_s": 250.0,
+            "enable_stabilization": false,
+            "min_pos_iters": 1.0,
+            "effective_pos_iters": 16,
+            "nonzero_gpu_stat_counters": 17
+          }
+        }
+      ]
+    },
+    "cpu_dynamics": {
+      "episodes": 2,
+      "successes": 2,
+      "max_pose_diff_vs_base_mm": 0.1965,
+      "max_rot_diff_vs_base_deg": 0.1799,
+      "hover_pivot_median_deg": 0.1035,
+      "hover_pivot_max_deg": 0.227,
+      "held_pivot_max_deg": 0.292,
+      "per_episode": [
+        {
+          "seed": 0,
+          "layout": 0,
+          "success": true,
+          "score": 100.0,
+          "actions": 185,
+          "base_actions": 185,
+          "worst_target_xy_mm": 0.06,
+          "worst_target_rot_deg": 0.087,
+          "max_pose_diff_vs_base_mm": 0.0707,
+          "max_rot_diff_vs_base_deg": 0.0795,
+          "max_penetration_mm": 0.4109,
+          "readback": {
+            "overwrite_gpu_setting": 0,
+            "enable_gpu_dynamics_usd": false,
+            "time_steps_per_s": 250.0,
+            "enable_stabilization": false,
+            "min_pos_iters": 64.0,
+            "effective_pos_iters": 64,
+            "nonzero_gpu_stat_counters": 0
+          }
+        },
+        {
+          "seed": 0,
+          "layout": 1,
+          "success": true,
+          "score": 100.0,
+          "actions": 186,
+          "base_actions": 186,
+          "worst_target_xy_mm": 0.2,
+          "worst_target_rot_deg": 0.21,
+          "max_pose_diff_vs_base_mm": 0.1965,
+          "max_rot_diff_vs_base_deg": 0.1799,
+          "max_penetration_mm": 0.4096,
+          "readback": {
+            "overwrite_gpu_setting": 0,
+            "enable_gpu_dynamics_usd": false,
+            "time_steps_per_s": 250.0,
+            "enable_stabilization": false,
+            "min_pos_iters": 64.0,
+            "effective_pos_iters": 64,
+            "nonzero_gpu_stat_counters": 0
+          }
+        }
+      ]
+    }
+  },
+  "dt2_vs_dt1_diffs": [
+    {
+      "seed": 0,
+      "layout": 0,
+      "max_dp_mm": 0.102,
+      "max_dr_deg": 0.0113
+    },
+    {
+      "seed": 0,
+      "layout": 2,
+      "max_dp_mm": 0.0224,
+      "max_dr_deg": 0.0051
+    },
+    {
+      "seed": 0,
+      "layout": 6,
+      "max_dp_mm": 0.02,
+      "max_dr_deg": 0.042
+    },
+    {
+      "seed": 1,
+      "layout": 4,
+      "max_dp_mm": 0.0412,
+      "max_dr_deg": 0.0492
+    }
+  ],
+  "device_flag_readback": {
+    "device_cpu": {
+      "requested_sim_device": "cpu",
+      "overwrite_gpu_setting": 1,
+      "usd_enableGPUDynamics": false,
+      "nonzero_gpu_stat_counters": 17,
+      "sample_gpu_stats": {
+        "gpu_mem_collision_stack_size": 744,
+        "gpu_mem_found_lost_aggregate_pairs": 52,
+        "gpu_mem_found_lost_pairs": 6,
+        "gpu_mem_heap": 1876395518
+      },
+      "unstable": null,
+      "run_eval_error": null
+    },
+    "device_cuda0": {
+      "requested_sim_device": "cuda:0",
+      "overwrite_gpu_setting": null,
+      "usd_enableGPUDynamics": null,
+      "nonzero_gpu_stat_counters": 0,
+      "sample_gpu_stats": {},
+      "unstable": null,
+      "run_eval_error": null
+    }
+  },
+  "batch_size_num_envs_2_vs_1": {
+    "identical_mode": false,
+    "env_origins_m": [
+      [
+        3.5,
+        0.0,
+        0.0
+      ],
+      [
+        -3.5,
+        0.0,
+        0.0
+      ]
+    ],
+    "slots": [
+      {
+        "env_slot": 0,
+        "layout": 0,
+        "score_ne2": 100.0,
+        "score_ne1": 100.0,
+        "actions_ne2": 185,
+        "actions_ne1": 185,
+        "max_pose_diff_mm": 0.0,
+        "max_rot_diff_deg": 0.0
+      },
+      {
+        "env_slot": 1,
+        "layout": 1,
+        "score_ne2": 100.0,
+        "score_ne1": 100.0,
+        "actions_ne2": 186,
+        "actions_ne1": 186,
+        "max_pose_diff_mm": 0.07211,
+        "max_rot_diff_deg": 0.00512
+      }
+    ]
+  },
+  "invariants_primary_and_refined": {
+    "episodes_checked": 56,
+    "nonfinite_substep_poses": 0,
+    "max_object_linear_speed_m_s": 1.41632,
+    "max_object_angular_speed_rad_s": 38.8403,
+    "min_origin_z_m_by_object": {
+      "t0": 0.7725,
+      "t1": 0.7725
+    },
+    "worst_penetration_mm": 0.7974,
+    "worst_penetration_where": "corrected_dev20:s1l8:r0.link7|t0",
+    "all_within_min_single_shape_contact_offset": false,
+    "all_within_pair_contact_offset_sum": true,
+    "release_windows_checked": 112,
+    "episodes_with_unexplained_release_energy_gain_gt_1mJ": 0,
+    "max_step_dke_on_passive_impact_mJ": 0.420567,
+    "max_step_demech_without_robot_mJ": 8.9e-05
+  },
+  "invariants_iters16_nosolver_contrast": {
+    "episodes_checked": 4,
+    "nonfinite_substep_poses": 0,
+    "max_object_linear_speed_m_s": 1.07593,
+    "max_object_angular_speed_rad_s": 27.4034,
+    "min_origin_z_m_by_object": {
+      "t0": 0.7725,
+      "t1": 0.7725
+    },
+    "worst_penetration_mm": 2.589,
+    "worst_penetration_where": "iters16_nosolver:s0l6:r0.link7|t0",
+    "all_within_min_single_shape_contact_offset": false,
+    "all_within_pair_contact_offset_sum": false,
+    "release_windows_checked": 8,
+    "episodes_with_unexplained_release_energy_gain_gt_1mJ": 0,
+    "max_step_dke_on_passive_impact_mJ": 1e-06,
+    "max_step_demech_without_robot_mJ": 8.4e-05
+  },
+  "invariants_all_logged_episodes": {
+    "episodes_checked": 60,
+    "nonfinite_substep_poses": 0,
+    "max_object_linear_speed_m_s": 1.41632,
+    "max_object_angular_speed_rad_s": 38.8403,
+    "min_origin_z_m_by_object": {
+      "t0": 0.7725,
+      "t1": 0.7725
+    },
+    "worst_penetration_mm": 2.589,
+    "worst_penetration_where": "iters16_nosolver:s0l6:r0.link7|t0",
+    "all_within_min_single_shape_contact_offset": false,
+    "all_within_pair_contact_offset_sum": false,
+    "release_windows_checked": 120,
+    "episodes_with_unexplained_release_energy_gain_gt_1mJ": 0,
+    "max_step_dke_on_passive_impact_mJ": 0.420567,
+    "max_step_demech_without_robot_mJ": 8.9e-05
+  },
+  "cost": {
+    "swap_T_processes": 48,
+    "swap_T_proc_hours": 3.3228,
+    "swap_T_gpu1_busy_hours": 1.0176,
+    "combined_session_processes": 93,
+    "combined_session_proc_hours": 7.9977,
+    "combined_session_gpu1_busy_hours": 2.0191
+  }
+}

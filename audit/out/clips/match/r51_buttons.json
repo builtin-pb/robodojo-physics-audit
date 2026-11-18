@@ -1,0 +1,167 @@
+{
+ "check": "stress",
+ "result": "/tmp/clipsref/r51_buttons/result.json",
+ "reference": "audit/out/stress_hv/steps_shv_buttons_clip_r1.json.gz",
+ "isaac_sim_62": [
+  "5.1.0",
+  "rc.19",
+  "5"
+ ],
+ "repo_head_62": "3155bf6ec2f5d56e44a766173d1afae4a69808f0",
+ "cases": {
+  "press_button1_10mm": {
+   "kind": "robot_press",
+   "steps": [
+    950,
+    950
+   ],
+   "max_button_mm": 0.0,
+   "max_finger_z_mm": 0.0,
+   "first_step_over_tolerance": null,
+   "counters_equal": true,
+   "first_counter_difference": null,
+   "counters_end_62": [
+    95,
+    [
+     [
+      1,
+      0
+     ],
+     [
+      9,
+      1
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    false,
+    true
+   ],
+   "counters_end_51": [
+    95,
+    [
+     [
+      1,
+      0
+     ],
+     [
+      9,
+      1
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    false,
+    true
+   ],
+   "match": true
+  },
+  "press_button1_30mm": {
+   "kind": "robot_press",
+   "steps": [
+    950,
+    950
+   ],
+   "max_button_mm": 0.0,
+   "max_finger_z_mm": 0.0,
+   "first_step_over_tolerance": null,
+   "counters_equal": true,
+   "first_counter_difference": null,
+   "counters_end_62": [
+    190,
+    [
+     [
+      1,
+      0
+     ],
+     [
+      9,
+      3
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    false,
+    true
+   ],
+   "counters_end_51": [
+    190,
+    [
+     [
+      1,
+      0
+     ],
+     [
+      9,
+      3
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    false,
+    true
+   ],
+   "match": true
+  },
+  "press_button0_30mm": {
+   "kind": "robot_press",
+   "steps": [
+    460,
+    460
+   ],
+   "max_button_mm": 0.0,
+   "max_finger_z_mm": 0.0,
+   "first_step_over_tolerance": null,
+   "counters_equal": true,
+   "first_counter_difference": null,
+   "counters_end_62": [
+    236,
+    [
+     [
+      1,
+      2
+     ],
+     [
+      9,
+      3
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    true,
+    false
+   ],
+   "counters_end_51": [
+    236,
+    [
+     [
+      1,
+      2
+     ],
+     [
+      9,
+      3
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    true,
+    false
+   ],
+   "match": true
+  }
+ },
+ "match": true
+}

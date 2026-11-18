@@ -1,0 +1,25 @@
+{
+ "purpose": "A21 #124 play_Xylophone L0, exploit xylophone_hover: state after every action; 5.1 log and 6.2 replay",
+ "cameras": [],
+ "windows": [
+  {
+   "case": null,
+   "unit": "action",
+   "from": 1,
+   "to": 700,
+   "stride": 1
+  }
+ ],
+ "mode_sweep": [
+  {
+   "name": "pt8",
+   "carb": {
+    "/rtx/rendermode": "PathTracing",
+    "/rtx/pathtracing/spp": 8,
+    "/rtx/pathtracing/totalSpp": 8,
+    "/rtx/pathtracing/optixDenoiser/enabled": true
+   },
+   "warmup": 4
+  }
+ ]
+}

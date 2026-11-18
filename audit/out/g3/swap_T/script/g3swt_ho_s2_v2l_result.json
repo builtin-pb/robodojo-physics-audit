@@ -1,0 +1,536 @@
+{
+  "aggregation": {
+    "complete": true,
+    "denominator": 20,
+    "denominator_rule": "all_scheduled",
+    "evaluator_version": "evaluator v2",
+    "excluded_categories": [],
+    "resolved_count": 20,
+    "scheduled_count": 20,
+    "score": 100.0,
+    "success_count": 20,
+    "success_rate": 1.0,
+    "success_rate_pct": 100.0,
+    "valid": true
+  },
+  "category_counts": {
+    "evaluator_error": 0,
+    "excluded": 0,
+    "failure": 0,
+    "policy_error": 0,
+    "simulator_break": 0,
+    "success": 20,
+    "timeout": 0,
+    "unstable_layout": 0
+  },
+  "complete": true,
+  "config_name": "arx_x5",
+  "details": {
+    "0": {
+      "category": "success",
+      "layout_id": 0,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 185,
+      "success": true
+    },
+    "1": {
+      "category": "success",
+      "layout_id": 1,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 185,
+      "success": true
+    },
+    "2": {
+      "category": "success",
+      "layout_id": 2,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 185,
+      "success": true
+    },
+    "3": {
+      "category": "success",
+      "layout_id": 3,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 185,
+      "success": true
+    },
+    "4": {
+      "category": "success",
+      "layout_id": 4,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 185,
+      "success": true
+    },
+    "5": {
+      "category": "success",
+      "layout_id": 5,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 185,
+      "success": true
+    },
+    "6": {
+      "category": "success",
+      "layout_id": 6,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 185,
+      "success": true
+    },
+    "7": {
+      "category": "success",
+      "layout_id": 7,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 186,
+      "success": true
+    },
+    "8": {
+      "category": "success",
+      "layout_id": 8,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 185,
+      "success": true
+    },
+    "9": {
+      "category": "success",
+      "layout_id": 9,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 185,
+      "success": true
+    },
+    "10": {
+      "category": "success",
+      "layout_id": 10,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 185,
+      "success": true
+    },
+    "11": {
+      "category": "success",
+      "layout_id": 11,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 186,
+      "success": true
+    },
+    "12": {
+      "category": "success",
+      "layout_id": 12,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 185,
+      "success": true
+    },
+    "13": {
+      "category": "success",
+      "layout_id": 13,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 185,
+      "success": true
+    },
+    "14": {
+      "category": "success",
+      "layout_id": 14,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 186,
+      "success": true
+    },
+    "15": {
+      "category": "success",
+      "layout_id": 15,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 186,
+      "success": true
+    },
+    "16": {
+      "category": "success",
+      "layout_id": 16,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 186,
+      "success": true
+    },
+    "17": {
+      "category": "success",
+      "layout_id": 17,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 185,
+      "success": true
+    },
+    "18": {
+      "category": "success",
+      "layout_id": 18,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 185,
+      "success": true
+    },
+    "19": {
+      "category": "success",
+      "layout_id": 19,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 185,
+      "success": true
+    }
+  },
+  "drops": {
+    "evaluator_error": 0,
+    "excluded": 0,
+    "policy_error": 0,
+    "simulator_break": 0,
+    "total": 0,
+    "unstable_layout": 0
+  },
+  "eval_time": 20,
+  "evaluator_version": "evaluator v2",
+  "ledger": [
+    {
+      "category": "success",
+      "layout_id": 0,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 185,
+      "success": true
+    },
+    {
+      "category": "success",
+      "layout_id": 1,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 185,
+      "success": true
+    },
+    {
+      "category": "success",
+      "layout_id": 2,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 185,
+      "success": true
+    },
+    {
+      "category": "success",
+      "layout_id": 3,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 185,
+      "success": true
+    },
+    {
+      "category": "success",
+      "layout_id": 4,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 185,
+      "success": true
+    },
+    {
+      "category": "success",
+      "layout_id": 5,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 185,
+      "success": true
+    },
+    {
+      "category": "success",
+      "layout_id": 6,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 185,
+      "success": true
+    },
+    {
+      "category": "success",
+      "layout_id": 7,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 186,
+      "success": true
+    },
+    {
+      "category": "success",
+      "layout_id": 8,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 185,
+      "success": true
+    },
+    {
+      "category": "success",
+      "layout_id": 9,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 185,
+      "success": true
+    },
+    {
+      "category": "success",
+      "layout_id": 10,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 185,
+      "success": true
+    },
+    {
+      "category": "success",
+      "layout_id": 11,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 186,
+      "success": true
+    },
+    {
+      "category": "success",
+      "layout_id": 12,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 185,
+      "success": true
+    },
+    {
+      "category": "success",
+      "layout_id": 13,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 185,
+      "success": true
+    },
+    {
+      "category": "success",
+      "layout_id": 14,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 186,
+      "success": true
+    },
+    {
+      "category": "success",
+      "layout_id": 15,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 186,
+      "success": true
+    },
+    {
+      "category": "success",
+      "layout_id": 16,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 186,
+      "success": true
+    },
+    {
+      "category": "success",
+      "layout_id": 17,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 185,
+      "success": true
+    },
+    {
+      "category": "success",
+      "layout_id": 18,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 185,
+      "success": true
+    },
+    {
+      "category": "success",
+      "layout_id": 19,
+      "reason": "reward_check_passed",
+      "score": 1.0,
+      "seed": 2,
+      "steps": 185,
+      "success": true
+    }
+  ],
+  "native_eval_num": 50,
+  "physics": {
+    "admitted_statuses": [
+      "estimated",
+      "sourced"
+    ],
+    "arm_limits": {
+      "x5": {
+        "effort_case": "nominal",
+        "effort_nm": [
+          30.0,
+          40.0,
+          30.0,
+          15.0,
+          10.0,
+          10.0
+        ],
+        "lower_rad": [
+          -3.14,
+          -0.05,
+          -0.1,
+          -1.6,
+          -1.57,
+          -2.0
+        ],
+        "upper_rad": [
+          2.618,
+          3.5,
+          3.2,
+          1.55,
+          1.57,
+          2.0
+        ],
+        "velocity_rad_s": [
+          5.0,
+          5.0,
+          5.5,
+          5.5,
+          5.0,
+          5.0
+        ]
+      }
+    },
+    "below_g1_unsourced_opt_in": true,
+    "device": "cpu",
+    "dormant_values_active": false,
+    "fixes": [
+      "collision",
+      "gripper",
+      "order",
+      "robot_limits",
+      "size",
+      "solver",
+      "values"
+    ],
+    "gripper": {
+      "x5": {
+        "drive_limit_case": "trip",
+        "effort_case": "nominal",
+        "finger_armature_kg": 11.762,
+        "finger_damping_n_s_m": 1045.49,
+        "finger_effort_n": 80.0,
+        "finger_motor_peak_n": 320.09,
+        "finger_stiffness_n_m": 26137.3,
+        "finger_trip_n": 161.77,
+        "slew_m_s": 0.15
+      }
+    },
+    "preset": "corrected",
+    "scenario": {
+      "fill": "empty",
+      "finger_pad": "pad_hard",
+      "ground_combine": "average",
+      "table": "table_laminate"
+    },
+    "scenario_opt_in": "swap_T_primary",
+    "status_counts": {
+      "estimated": 568,
+      "sourced": 292,
+      "unsourced": 151
+    },
+    "table_sha256": "173a2f162424da07f0633952f537bb367e2c0cad57c8f538783ccbf7266197bb",
+    "values_delivered": true
+  },
+  "policy_name": "harness",
+  "resolved_count": 20,
+  "scheduled_count": 20,
+  "scheduled_layout_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "score": 100.0,
+  "seed": 2,
+  "stillness_rule": "previous_action_snapshot",
+  "success_rate": 1.0,
+  "swap_t_params": {
+    "clearance_m": 0.02,
+    "contact_report_labels": [
+      "t0",
+      "t1"
+    ],
+    "footprint_margin_m": 0.005,
+    "gap_min_m": 0.01,
+    "hold_s": 0.2,
+    "min_impulse_ns": 1e-05,
+    "not_held_at_place": "no_both_pad_contact_any_target_robot",
+    "placed_z_tol_m": 0.005,
+    "rule": "v2_lift",
+    "rule_version": "v2_lift.1",
+    "sampling": "every physics substep in EvalEnv.step"
+  },
+  "swap_t_rule": "v2_lift",
+  "swap_t_rule_version": "v2_lift.1",
+  "task_name": "swap_T",
+  "unresolved_layout_ids": [],
+  "valid": true
+}

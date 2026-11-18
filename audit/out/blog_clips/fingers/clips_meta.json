@@ -1,0 +1,56 @@
+[
+ {
+  "id": "fingers",
+  "segments": [
+   {
+    "runs": [
+     "rp_fingers_shipped",
+     "rp_fingers_light",
+     "rp_fingers_motor"
+    ],
+    "cam": "ax10z",
+    "n_samples": 111,
+    "repeat": 1,
+    "first_frame": [
+     2,
+     2,
+     2
+    ],
+    "last_frame": [
+     112,
+     112,
+     112
+    ]
+   }
+  ],
+  "n_frames": 121,
+  "seconds": 4.84,
+  "sheet": {
+   "frames": [
+    20,
+    40,
+    60,
+    110
+   ],
+   "width": 1440
+  },
+  "poster": {
+   "file": "fingers_poster.png",
+   "frame": 120,
+   "bytes": 788745
+  },
+  "anim": {
+   "file": "fingers.webp",
+   "format": "webp",
+   "frames": 121,
+   "every": 1,
+   "frame_ms": 40,
+   "width": 1440,
+   "quality": 70,
+   "bytes": 2043044
+  },
+  "crf": 23,
+  "file": "fingers.mp4",
+  "bytes": 621064
+ }
+]

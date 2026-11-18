@@ -1,0 +1,2164 @@
+{
+ "g4rb_corrected": {
+  "assertion_passed": true,
+  "bottles": {
+   "bottle0": {
+    "com_m": [
+     -9.6e-05,
+     9.5e-05,
+     -0.005569
+    ],
+    "diag_inertia_kg_m2": [
+     6.933e-05,
+     6.933e-05,
+     1.222e-05
+    ],
+    "inertia_over_mass_m2": [
+     0.00346643,
+     0.00346638,
+     0.0006112
+    ],
+    "inst": "bottle_41_1",
+    "mass_kg": 0.02,
+    "material": [
+     0.26744,
+     0.2217,
+     0.25
+    ],
+    "shapes": 1
+   },
+   "bottle1": {
+    "com_m": [
+     -0.0,
+     -0.0,
+     0.000257
+    ],
+    "diag_inertia_kg_m2": [
+     0.00028086,
+     0.00028096,
+     4.933e-05
+    ],
+    "inertia_over_mass_m2": [
+     0.00401229,
+     0.00401372,
+     0.00070473
+    ],
+    "inst": "bottle_60_2",
+    "mass_kg": 0.07,
+    "material": [
+     0.26744,
+     0.2217,
+     0.25
+    ],
+    "shapes": 1
+   },
+   "bottle2": {
+    "com_m": [
+     -0.000111,
+     3.8e-05,
+     -0.01173
+    ],
+    "diag_inertia_kg_m2": [
+     0.00010269,
+     0.00010272,
+     2.454e-05
+    ],
+    "inertia_over_mass_m2": [
+     0.0042787,
+     0.00428002,
+     0.00102246
+    ],
+    "inst": "bottle_25_3",
+    "mass_kg": 0.024,
+    "material": [
+     0.26744,
+     0.2217,
+     0.25
+    ],
+    "shapes": 1
+   },
+   "bottle3": {
+    "com_m": [
+     -0.000136,
+     0.000126,
+     -0.015604
+    ],
+    "diag_inertia_kg_m2": [
+     0.00114484,
+     0.00114726,
+     0.00022755
+    ],
+    "inertia_over_mass_m2": [
+     0.00520382,
+     0.0052148,
+     0.00103433
+    ],
+    "inst": "bottle_22_4",
+    "mass_kg": 0.22,
+    "material": [
+     0.34,
+     0.28,
+     0.2
+    ],
+    "shapes": 1
+   }
+  },
+  "dormant_values_active": false,
+  "failures": [],
+  "finger_pad_engine_materials": {
+   "link7": [
+    [
+     0.29583,
+     0.27757,
+     0.1
+    ]
+   ],
+   "link8": [
+    [
+     0.29583,
+     0.27757,
+     0.1
+    ]
+   ]
+  },
+  "fixes": [
+   "collision",
+   "order",
+   "size",
+   "values"
+  ],
+  "fixture_colliders": {
+   "Ground": {
+    "approximations": [
+     "none"
+    ],
+    "colliders": 1,
+    "enabled": 1,
+    "non_gprim_enabled": []
+   },
+   "Room": {
+    "approximations": [
+     "boundingCube",
+     "convexDecomposition",
+     "none"
+    ],
+    "colliders": 50,
+    "enabled": 50,
+    "non_gprim_enabled": []
+   },
+   "Table": {
+    "approximations": [
+     "none"
+    ],
+    "colliders": 1,
+    "enabled": 1,
+    "non_gprim_enabled": []
+   }
+  },
+  "mass_delivery": null,
+  "pad_friction_override": null,
+  "robot0_camera_links": {
+   "camera": {
+    "com_m": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "mass_kg": 0.0001
+   },
+   "camera_base": {
+    "com_m": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "mass_kg": 0.0001
+   }
+  },
+  "robot0_link_masses_kg": {
+   "base_link": 0.43995,
+   "camera": 0.0001,
+   "camera_base": 0.0001,
+   "link1": 0.066982,
+   "link2": 1.0795,
+   "link3": 0.54534,
+   "link4": 0.11714,
+   "link5": 0.63488,
+   "link6": 0.44089,
+   "link7": 0.064798,
+   "link8": 0.064798
+  },
+  "robot_unique_shape_materials": [
+   [
+    0.29583,
+    0.27757,
+    0.1
+   ],
+   [
+    0.37004,
+    0.3103,
+    0.4
+   ],
+   [
+    0.61004,
+    0.3701,
+    0.5
+   ]
+  ],
+  "scenario_opt_in": "bottles_primary_empty",
+  "slide": {
+   "final_yaw_deg": 4.707,
+   "inst": "bottle_25_3",
+   "label": "bottle2",
+   "rotation_deg": 4.707,
+   "slide_along_axis_mm": 55.6
+  },
+  "table": {
+   "approximations": [
+    "none"
+   ],
+   "usd_materials": [
+    {
+     "dynamic_friction": 0.2287980020046234,
+     "path": "/World/envs/env_0/Table/material_0122/material_0122_0_8/physics_material",
+     "purpose": "physics",
+     "restitution": 0.10000000149011612,
+     "static_friction": 0.2287980020046234
+    }
+   ]
+  },
+  "table_sha256": "7d053f8c828342dee7db6c3b3aeed22fb75e7caca104fa9884496d52f98c5749",
+  "value_parts": null,
+  "values_delivered": true,
+  "versions": {
+   "container": "isaac-sim_5.1.0.sif",
+   "isaac_sim": [
+    "5.1.0",
+    "rc.19",
+    "5"
+   ],
+   "isaaclab": "afca7b09d60d8beb9c1cb28b43066499940b969b",
+   "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+   "repo_head": "fdaf659a7ba46627f2fe90c86ded64c9cbf5a944"
+  }
+ },
+ "g4rb_corrected_main": {
+  "assertion_passed": true,
+  "bottles": {
+   "bottle0": {
+    "com_m": [
+     -9.6e-05,
+     9.5e-05,
+     -0.005569
+    ],
+    "diag_inertia_kg_m2": [
+     6.933e-05,
+     6.933e-05,
+     1.222e-05
+    ],
+    "inertia_over_mass_m2": [
+     0.00346643,
+     0.00346638,
+     0.0006112
+    ],
+    "inst": "bottle_41_1",
+    "mass_kg": 0.02,
+    "material": [
+     0.26744,
+     0.2217,
+     0.25
+    ],
+    "shapes": 1
+   },
+   "bottle1": {
+    "com_m": [
+     -0.0,
+     -0.0,
+     0.000257
+    ],
+    "diag_inertia_kg_m2": [
+     0.00028086,
+     0.00028096,
+     4.933e-05
+    ],
+    "inertia_over_mass_m2": [
+     0.00401229,
+     0.00401372,
+     0.00070473
+    ],
+    "inst": "bottle_60_2",
+    "mass_kg": 0.07,
+    "material": [
+     0.26744,
+     0.2217,
+     0.25
+    ],
+    "shapes": 1
+   },
+   "bottle2": {
+    "com_m": [
+     -0.000111,
+     3.8e-05,
+     -0.01173
+    ],
+    "diag_inertia_kg_m2": [
+     0.00010269,
+     0.00010272,
+     2.454e-05
+    ],
+    "inertia_over_mass_m2": [
+     0.0042787,
+     0.00428002,
+     0.00102246
+    ],
+    "inst": "bottle_25_3",
+    "mass_kg": 0.024,
+    "material": [
+     0.26744,
+     0.2217,
+     0.25
+    ],
+    "shapes": 1
+   },
+   "bottle3": {
+    "com_m": [
+     -0.000136,
+     0.000126,
+     -0.015604
+    ],
+    "diag_inertia_kg_m2": [
+     0.00114484,
+     0.00114726,
+     0.00022755
+    ],
+    "inertia_over_mass_m2": [
+     0.00520382,
+     0.0052148,
+     0.00103433
+    ],
+    "inst": "bottle_22_4",
+    "mass_kg": 0.22,
+    "material": [
+     0.34,
+     0.28,
+     0.2
+    ],
+    "shapes": 1
+   }
+  },
+  "dormant_values_active": false,
+  "failures": [],
+  "finger_pad_engine_materials": {
+   "link7": [
+    [
+     0.29583,
+     0.27757,
+     0.1
+    ]
+   ],
+   "link8": [
+    [
+     0.29583,
+     0.27757,
+     0.1
+    ]
+   ]
+  },
+  "fixes": [
+   "collision",
+   "order",
+   "size",
+   "values"
+  ],
+  "fixture_colliders": {
+   "Ground": {
+    "approximations": [
+     "none"
+    ],
+    "colliders": 1,
+    "enabled": 1,
+    "non_gprim_enabled": []
+   },
+   "Room": {
+    "approximations": [
+     "boundingCube",
+     "convexDecomposition",
+     "none"
+    ],
+    "colliders": 50,
+    "enabled": 50,
+    "non_gprim_enabled": []
+   },
+   "Table": {
+    "approximations": [
+     "none"
+    ],
+    "colliders": 1,
+    "enabled": 1,
+    "non_gprim_enabled": []
+   }
+  },
+  "mass_delivery": null,
+  "pad_friction_override": null,
+  "robot0_camera_links": {
+   "camera": {
+    "com_m": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "mass_kg": 0.0001
+   },
+   "camera_base": {
+    "com_m": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "mass_kg": 0.0001
+   }
+  },
+  "robot0_link_masses_kg": {
+   "base_link": 0.43995,
+   "camera": 0.0001,
+   "camera_base": 0.0001,
+   "link1": 0.066982,
+   "link2": 1.0795,
+   "link3": 0.54534,
+   "link4": 0.11714,
+   "link5": 0.63488,
+   "link6": 0.44089,
+   "link7": 0.064798,
+   "link8": 0.064798
+  },
+  "robot_unique_shape_materials": [
+   [
+    0.29583,
+    0.27757,
+    0.1
+   ],
+   [
+    0.37004,
+    0.3103,
+    0.4
+   ],
+   [
+    0.61004,
+    0.3701,
+    0.5
+   ]
+  ],
+  "scenario_opt_in": "bottles_primary_empty",
+  "slide": {
+   "final_yaw_deg": 4.707,
+   "inst": "bottle_25_3",
+   "label": "bottle2",
+   "rotation_deg": 4.707,
+   "slide_along_axis_mm": 55.6
+  },
+  "table": {
+   "approximations": [
+    "none"
+   ],
+   "usd_materials": [
+    {
+     "dynamic_friction": 0.2287980020046234,
+     "path": "/World/envs/env_0/Table/material_0122/material_0122_0_8/physics_material",
+     "purpose": "physics",
+     "restitution": 0.10000000149011612,
+     "static_friction": 0.2287980020046234
+    }
+   ]
+  },
+  "table_sha256": "7d053f8c828342dee7db6c3b3aeed22fb75e7caca104fa9884496d52f98c5749",
+  "value_parts": null,
+  "values_delivered": true,
+  "versions": {
+   "container": "isaac-sim_5.1.0.sif",
+   "isaac_sim": [
+    "5.1.0",
+    "rc.19",
+    "5"
+   ],
+   "isaaclab": "afca7b09d60d8beb9c1cb28b43066499940b969b",
+   "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+   "repo_head": "6a9b696fcabcd6fdd057b7aa6964d964c24dbaaf"
+  }
+ },
+ "g4rb_geom": {
+  "assertion_passed": true,
+  "bottles": {
+   "bottle0": {
+    "com_m": [
+     0.000219,
+     0.000142,
+     -0.006414
+    ],
+    "diag_inertia_kg_m2": [
+     0.00089132,
+     0.000891,
+     0.00010284
+    ],
+    "inertia_over_mass_m2": [
+     0.00594214,
+     0.00594003,
+     0.00068557
+    ],
+    "inst": "bottle_41_1",
+    "mass_kg": 0.15,
+    "material": [
+     0.5,
+     0.5,
+     0.0
+    ],
+    "shapes": 1
+   },
+   "bottle1": {
+    "com_m": [
+     -6.4e-05,
+     -0.0002,
+     -0.000381
+    ],
+    "diag_inertia_kg_m2": [
+     0.00125242,
+     0.00125157,
+     0.00013836
+    ],
+    "inertia_over_mass_m2": [
+     0.00834946,
+     0.00834377,
+     0.00092238
+    ],
+    "inst": "bottle_60_2",
+    "mass_kg": 0.15,
+    "material": [
+     0.5,
+     0.5,
+     0.0
+    ],
+    "shapes": 1
+   },
+   "bottle2": {
+    "com_m": [
+     -8.6e-05,
+     -9.3e-05,
+     -0.012485
+    ],
+    "diag_inertia_kg_m2": [
+     0.00194964,
+     0.00194961,
+     0.00033577
+    ],
+    "inertia_over_mass_m2": [
+     0.0129976,
+     0.01299743,
+     0.00223848
+    ],
+    "inst": "bottle_25_3",
+    "mass_kg": 0.15,
+    "material": [
+     0.5,
+     0.5,
+     0.0
+    ],
+    "shapes": 1
+   },
+   "bottle3": {
+    "com_m": [
+     -0.000458,
+     0.000278,
+     -0.018476
+    ],
+    "diag_inertia_kg_m2": [
+     0.00252851,
+     0.00252109,
+     0.00034291
+    ],
+    "inertia_over_mass_m2": [
+     0.00505702,
+     0.00504218,
+     0.00068582
+    ],
+    "inst": "bottle_22_4",
+    "mass_kg": 0.5,
+    "material": [
+     0.5,
+     0.5,
+     0.0
+    ],
+    "shapes": 1
+   }
+  },
+  "dormant_values_active": false,
+  "failures": [],
+  "finger_pad_engine_materials": {
+   "link7": [
+    [
+     0.5,
+     0.5,
+     0.0
+    ]
+   ],
+   "link8": [
+    [
+     0.5,
+     0.5,
+     0.0
+    ]
+   ]
+  },
+  "fixes": [
+   "collision",
+   "size"
+  ],
+  "fixture_colliders": {
+   "Ground": {
+    "approximations": [
+     "none"
+    ],
+    "colliders": 1,
+    "enabled": 1,
+    "non_gprim_enabled": []
+   },
+   "Room": {
+    "approximations": [
+     "boundingCube",
+     "convexDecomposition",
+     "none"
+    ],
+    "colliders": 50,
+    "enabled": 50,
+    "non_gprim_enabled": []
+   },
+   "Table": {
+    "approximations": [
+     "none"
+    ],
+    "colliders": 1,
+    "enabled": 1,
+    "non_gprim_enabled": []
+   }
+  },
+  "mass_delivery": null,
+  "pad_friction_override": null,
+  "robot0_camera_links": {
+   "camera": {
+    "com_m": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "mass_kg": 0.0001
+   },
+   "camera_base": {
+    "com_m": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "mass_kg": 0.0001
+   }
+  },
+  "robot0_link_masses_kg": {
+   "base_link": 0.43995,
+   "camera": 0.0001,
+   "camera_base": 0.0001,
+   "link1": 0.066982,
+   "link2": 1.0795,
+   "link3": 0.54534,
+   "link4": 0.11714,
+   "link5": 0.63488,
+   "link6": 0.44089,
+   "link7": 0.064798,
+   "link8": 0.064798
+  },
+  "robot_unique_shape_materials": [
+   [
+    0.5,
+    0.5,
+    0.0
+   ]
+  ],
+  "scenario_opt_in": null,
+  "slide": {
+   "final_yaw_deg": 0.938,
+   "inst": "bottle_25_3",
+   "label": "bottle2",
+   "rotation_deg": 0.938,
+   "slide_along_axis_mm": 24.55
+  },
+  "table": {
+   "approximations": [
+    "none"
+   ],
+   "usd_materials": [
+    {
+     "dynamic_friction": null,
+     "path": "/physicsScene/defaultMaterial",
+     "purpose": "scene-default",
+     "restitution": null,
+     "static_friction": null
+    }
+   ]
+  },
+  "table_sha256": null,
+  "value_parts": null,
+  "values_delivered": null,
+  "versions": {
+   "container": "isaac-sim_5.1.0.sif",
+   "isaac_sim": [
+    "5.1.0",
+    "rc.19",
+    "5"
+   ],
+   "isaaclab": "afca7b09d60d8beb9c1cb28b43066499940b969b",
+   "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+   "repo_head": "0e3b7aeab5d4ab27dc8a95e91afa3ad8bdd922d7"
+  }
+ },
+ "g4rb_masses": {
+  "assertion_passed": true,
+  "bottles": {
+   "bottle0": {
+    "com_m": [
+     -9.6e-05,
+     9.5e-05,
+     -0.005569
+    ],
+    "diag_inertia_kg_m2": [
+     6.933e-05,
+     6.933e-05,
+     1.222e-05
+    ],
+    "inertia_over_mass_m2": [
+     0.00346643,
+     0.00346638,
+     0.0006112
+    ],
+    "inst": "bottle_41_1",
+    "mass_kg": 0.02,
+    "material": [
+     0.5,
+     0.5,
+     0.0
+    ],
+    "shapes": 1
+   },
+   "bottle1": {
+    "com_m": [
+     -0.0,
+     -0.0,
+     0.000257
+    ],
+    "diag_inertia_kg_m2": [
+     0.00028086,
+     0.00028096,
+     4.933e-05
+    ],
+    "inertia_over_mass_m2": [
+     0.00401229,
+     0.00401372,
+     0.00070473
+    ],
+    "inst": "bottle_60_2",
+    "mass_kg": 0.07,
+    "material": [
+     0.5,
+     0.5,
+     0.0
+    ],
+    "shapes": 1
+   },
+   "bottle2": {
+    "com_m": [
+     -0.000111,
+     3.8e-05,
+     -0.01173
+    ],
+    "diag_inertia_kg_m2": [
+     0.00010269,
+     0.00010272,
+     2.454e-05
+    ],
+    "inertia_over_mass_m2": [
+     0.0042787,
+     0.00428002,
+     0.00102246
+    ],
+    "inst": "bottle_25_3",
+    "mass_kg": 0.024,
+    "material": [
+     0.5,
+     0.5,
+     0.0
+    ],
+    "shapes": 1
+   },
+   "bottle3": {
+    "com_m": [
+     -0.000136,
+     0.000126,
+     -0.015604
+    ],
+    "diag_inertia_kg_m2": [
+     0.00114484,
+     0.00114726,
+     0.00022755
+    ],
+    "inertia_over_mass_m2": [
+     0.00520382,
+     0.0052148,
+     0.00103433
+    ],
+    "inst": "bottle_22_4",
+    "mass_kg": 0.22,
+    "material": [
+     0.5,
+     0.5,
+     0.0
+    ],
+    "shapes": 1
+   }
+  },
+  "dormant_values_active": false,
+  "failures": [],
+  "finger_pad_engine_materials": {
+   "link7": [
+    [
+     0.5,
+     0.5,
+     0.0
+    ]
+   ],
+   "link8": [
+    [
+     0.5,
+     0.5,
+     0.0
+    ]
+   ]
+  },
+  "fixes": [
+   "masses"
+  ],
+  "fixture_colliders": {
+   "Ground": {
+    "approximations": [
+     "none"
+    ],
+    "colliders": 1,
+    "enabled": 1,
+    "non_gprim_enabled": []
+   },
+   "Room": {
+    "approximations": [
+     "boundingCube",
+     "convexDecomposition",
+     "none"
+    ],
+    "colliders": 51,
+    "enabled": 50,
+    "non_gprim_enabled": [
+     "/World/envs/env_0/Rooms/Simple_Room_nolight/Simple_Room_nolight_0_7"
+    ]
+   },
+   "Table": {
+    "approximations": [
+     "convexDecomposition"
+    ],
+    "colliders": 1,
+    "enabled": 1,
+    "non_gprim_enabled": []
+   }
+  },
+  "mass_delivery": "usd_mass_api_before_parse",
+  "pad_friction_override": null,
+  "robot0_camera_links": {
+   "camera": {
+    "com_m": [
+     -0.012682,
+     -0.000213,
+     0.000302
+    ],
+    "mass_kg": 0.044847
+   },
+   "camera_base": {
+    "com_m": [
+     0.001939,
+     9e-06,
+     0.032339
+    ],
+    "mass_kg": 0.05019
+   }
+  },
+  "robot0_link_masses_kg": {
+   "base_link": 0.43995,
+   "camera": 0.044847,
+   "camera_base": 0.05019,
+   "link1": 0.066982,
+   "link2": 1.0795,
+   "link3": 0.54534,
+   "link4": 0.11714,
+   "link5": 0.63488,
+   "link6": 0.44089,
+   "link7": 0.064798,
+   "link8": 0.064798
+  },
+  "robot_unique_shape_materials": [
+   [
+    0.5,
+    0.5,
+    0.0
+   ]
+  ],
+  "scenario_opt_in": "bottles_primary_empty",
+  "slide": {
+   "final_yaw_deg": 2.274,
+   "inst": "bottle_25_3",
+   "label": "bottle2",
+   "rotation_deg": 2.274,
+   "slide_along_axis_mm": 24.58
+  },
+  "table": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "usd_materials": [
+    {
+     "dynamic_friction": null,
+     "path": "/physicsScene/defaultMaterial",
+     "purpose": "scene-default",
+     "restitution": null,
+     "static_friction": null
+    }
+   ]
+  },
+  "table_sha256": "7d053f8c828342dee7db6c3b3aeed22fb75e7caca104fa9884496d52f98c5749",
+  "value_parts": [
+   "masses"
+  ],
+  "values_delivered": null,
+  "versions": {
+   "container": "isaac-sim_5.1.0.sif",
+   "isaac_sim": [
+    "5.1.0",
+    "rc.19",
+    "5"
+   ],
+   "isaaclab": "afca7b09d60d8beb9c1cb28b43066499940b969b",
+   "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+   "repo_head": "fdaf659a7ba46627f2fe90c86ded64c9cbf5a944"
+  }
+ },
+ "g4rb_materials": {
+  "assertion_passed": true,
+  "bottles": {
+   "bottle0": {
+    "com_m": [
+     0.000219,
+     0.000142,
+     -0.006414
+    ],
+    "diag_inertia_kg_m2": [
+     0.00089132,
+     0.000891,
+     0.00010284
+    ],
+    "inertia_over_mass_m2": [
+     0.00594214,
+     0.00594003,
+     0.00068557
+    ],
+    "inst": "bottle_41_1",
+    "mass_kg": 0.15,
+    "material": [
+     0.26744,
+     0.2217,
+     0.25
+    ],
+    "shapes": 1
+   },
+   "bottle1": {
+    "com_m": [
+     -6.4e-05,
+     -0.0002,
+     -0.000381
+    ],
+    "diag_inertia_kg_m2": [
+     0.00125242,
+     0.00125157,
+     0.00013836
+    ],
+    "inertia_over_mass_m2": [
+     0.00834946,
+     0.00834377,
+     0.00092238
+    ],
+    "inst": "bottle_60_2",
+    "mass_kg": 0.15,
+    "material": [
+     0.26744,
+     0.2217,
+     0.25
+    ],
+    "shapes": 1
+   },
+   "bottle2": {
+    "com_m": [
+     -8.6e-05,
+     -9.3e-05,
+     -0.012485
+    ],
+    "diag_inertia_kg_m2": [
+     0.00194964,
+     0.00194961,
+     0.00033577
+    ],
+    "inertia_over_mass_m2": [
+     0.0129976,
+     0.01299743,
+     0.00223848
+    ],
+    "inst": "bottle_25_3",
+    "mass_kg": 0.15,
+    "material": [
+     0.26744,
+     0.2217,
+     0.25
+    ],
+    "shapes": 1
+   },
+   "bottle3": {
+    "com_m": [
+     -0.000458,
+     0.000278,
+     -0.018476
+    ],
+    "diag_inertia_kg_m2": [
+     0.00252851,
+     0.00252109,
+     0.00034291
+    ],
+    "inertia_over_mass_m2": [
+     0.00505702,
+     0.00504218,
+     0.00068582
+    ],
+    "inst": "bottle_22_4",
+    "mass_kg": 0.5,
+    "material": [
+     0.34,
+     0.28,
+     0.2
+    ],
+    "shapes": 1
+   }
+  },
+  "dormant_values_active": false,
+  "failures": [],
+  "finger_pad_engine_materials": {
+   "link7": [
+    [
+     0.29583,
+     0.27757,
+     0.1
+    ]
+   ],
+   "link8": [
+    [
+     0.29583,
+     0.27757,
+     0.1
+    ]
+   ]
+  },
+  "fixes": [
+   "materials",
+   "order"
+  ],
+  "fixture_colliders": {
+   "Ground": {
+    "approximations": [
+     "none"
+    ],
+    "colliders": 1,
+    "enabled": 1,
+    "non_gprim_enabled": []
+   },
+   "Room": {
+    "approximations": [
+     "boundingCube",
+     "convexDecomposition",
+     "none"
+    ],
+    "colliders": 51,
+    "enabled": 50,
+    "non_gprim_enabled": [
+     "/World/envs/env_0/Rooms/Simple_Room_nolight/Simple_Room_nolight_0_7"
+    ]
+   },
+   "Table": {
+    "approximations": [
+     "convexDecomposition"
+    ],
+    "colliders": 1,
+    "enabled": 1,
+    "non_gprim_enabled": []
+   }
+  },
+  "mass_delivery": "shipped_set_mass_after_parse",
+  "pad_friction_override": null,
+  "robot0_camera_links": {
+   "camera": {
+    "com_m": [
+     -0.012682,
+     -0.000213,
+     0.000302
+    ],
+    "mass_kg": 0.044847
+   },
+   "camera_base": {
+    "com_m": [
+     0.001939,
+     9e-06,
+     0.032339
+    ],
+    "mass_kg": 0.05019
+   }
+  },
+  "robot0_link_masses_kg": {
+   "base_link": 0.43995,
+   "camera": 0.044847,
+   "camera_base": 0.05019,
+   "link1": 0.066982,
+   "link2": 1.0795,
+   "link3": 0.54534,
+   "link4": 0.11714,
+   "link5": 0.63488,
+   "link6": 0.44089,
+   "link7": 0.064798,
+   "link8": 0.064798
+  },
+  "robot_unique_shape_materials": [
+   [
+    0.29583,
+    0.27757,
+    0.1
+   ],
+   [
+    0.37004,
+    0.3103,
+    0.4
+   ],
+   [
+    0.61004,
+    0.3701,
+    0.5
+   ]
+  ],
+  "scenario_opt_in": "bottles_primary_empty",
+  "slide": {
+   "final_yaw_deg": 2.088,
+   "inst": "bottle_25_3",
+   "label": "bottle2",
+   "rotation_deg": 2.088,
+   "slide_along_axis_mm": 55.68
+  },
+  "table": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "usd_materials": [
+    {
+     "dynamic_friction": 0.2287980020046234,
+     "path": "/World/envs/env_0/Table/material_0122/material_0122_0_8/physics_material",
+     "purpose": "physics",
+     "restitution": 0.10000000149011612,
+     "static_friction": 0.2287980020046234
+    }
+   ]
+  },
+  "table_sha256": "7d053f8c828342dee7db6c3b3aeed22fb75e7caca104fa9884496d52f98c5749",
+  "value_parts": [
+   "materials"
+  ],
+  "values_delivered": true,
+  "versions": {
+   "container": "isaac-sim_5.1.0.sif",
+   "isaac_sim": [
+    "5.1.0",
+    "rc.19",
+    "5"
+   ],
+   "isaaclab": "afca7b09d60d8beb9c1cb28b43066499940b969b",
+   "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+   "repo_head": "fdaf659a7ba46627f2fe90c86ded64c9cbf5a944"
+  }
+ },
+ "g4rb_noorder": {
+  "assertion_passed": true,
+  "bottles": {
+   "bottle0": {
+    "com_m": [
+     0.000219,
+     0.000142,
+     -0.006414
+    ],
+    "diag_inertia_kg_m2": [
+     0.00089132,
+     0.000891,
+     0.00010284
+    ],
+    "inertia_over_mass_m2": [
+     0.04456603,
+     0.0445502,
+     0.00514175
+    ],
+    "inst": "bottle_41_1",
+    "mass_kg": 0.02,
+    "material": [
+     0.5,
+     0.5,
+     0.0
+    ],
+    "shapes": 1
+   },
+   "bottle1": {
+    "com_m": [
+     -6.4e-05,
+     -0.0002,
+     -0.000381
+    ],
+    "diag_inertia_kg_m2": [
+     0.00125242,
+     0.00125157,
+     0.00013836
+    ],
+    "inertia_over_mass_m2": [
+     0.01789171,
+     0.01787951,
+     0.00197654
+    ],
+    "inst": "bottle_60_2",
+    "mass_kg": 0.07,
+    "material": [
+     0.5,
+     0.5,
+     0.0
+    ],
+    "shapes": 1
+   },
+   "bottle2": {
+    "com_m": [
+     -8.6e-05,
+     -9.3e-05,
+     -0.012485
+    ],
+    "diag_inertia_kg_m2": [
+     0.00194964,
+     0.00194961,
+     0.00033577
+    ],
+    "inertia_over_mass_m2": [
+     0.08123504,
+     0.08123395,
+     0.01399049
+    ],
+    "inst": "bottle_25_3",
+    "mass_kg": 0.024,
+    "material": [
+     0.5,
+     0.5,
+     0.0
+    ],
+    "shapes": 1
+   },
+   "bottle3": {
+    "com_m": [
+     -0.000458,
+     0.000278,
+     -0.018476
+    ],
+    "diag_inertia_kg_m2": [
+     0.00252851,
+     0.00252109,
+     0.00034291
+    ],
+    "inertia_over_mass_m2": [
+     0.01149322,
+     0.01145949,
+     0.00155868
+    ],
+    "inst": "bottle_22_4",
+    "mass_kg": 0.22,
+    "material": [
+     0.5,
+     0.5,
+     0.0
+    ],
+    "shapes": 1
+   }
+  },
+  "dormant_values_active": false,
+  "failures": [],
+  "finger_pad_engine_materials": {
+   "link7": [
+    [
+     0.5,
+     0.5,
+     0.0
+    ]
+   ],
+   "link8": [
+    [
+     0.5,
+     0.5,
+     0.0
+    ]
+   ]
+  },
+  "fixes": [
+   "collision",
+   "size",
+   "values"
+  ],
+  "fixture_colliders": {
+   "Ground": {
+    "approximations": [
+     "none"
+    ],
+    "colliders": 1,
+    "enabled": 1,
+    "non_gprim_enabled": []
+   },
+   "Room": {
+    "approximations": [
+     "boundingCube",
+     "convexDecomposition",
+     "none"
+    ],
+    "colliders": 50,
+    "enabled": 50,
+    "non_gprim_enabled": []
+   },
+   "Table": {
+    "approximations": [
+     "none"
+    ],
+    "colliders": 1,
+    "enabled": 1,
+    "non_gprim_enabled": []
+   }
+  },
+  "mass_delivery": null,
+  "pad_friction_override": null,
+  "robot0_camera_links": {
+   "camera": {
+    "com_m": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "mass_kg": 0.0001
+   },
+   "camera_base": {
+    "com_m": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "mass_kg": 0.0001
+   }
+  },
+  "robot0_link_masses_kg": {
+   "base_link": 0.43995,
+   "camera": 0.0001,
+   "camera_base": 0.0001,
+   "link1": 0.066982,
+   "link2": 1.0795,
+   "link3": 0.54534,
+   "link4": 0.11714,
+   "link5": 0.63488,
+   "link6": 0.44089,
+   "link7": 0.064798,
+   "link8": 0.064798
+  },
+  "robot_unique_shape_materials": [
+   [
+    0.5,
+    0.5,
+    0.0
+   ]
+  ],
+  "scenario_opt_in": "bottles_primary_empty",
+  "slide": {
+   "final_yaw_deg": 0.182,
+   "inst": "bottle_25_3",
+   "label": "bottle2",
+   "rotation_deg": 0.182,
+   "slide_along_axis_mm": 24.51
+  },
+  "table": {
+   "approximations": [
+    "none"
+   ],
+   "usd_materials": [
+    {
+     "dynamic_friction": null,
+     "path": "/physicsScene/defaultMaterial",
+     "purpose": "scene-default",
+     "restitution": null,
+     "static_friction": null
+    }
+   ]
+  },
+  "table_sha256": "7d053f8c828342dee7db6c3b3aeed22fb75e7caca104fa9884496d52f98c5749",
+  "value_parts": null,
+  "values_delivered": false,
+  "versions": {
+   "container": "isaac-sim_5.1.0.sif",
+   "isaac_sim": [
+    "5.1.0",
+    "rc.19",
+    "5"
+   ],
+   "isaaclab": "afca7b09d60d8beb9c1cb28b43066499940b969b",
+   "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+   "repo_head": "fdaf659a7ba46627f2fe90c86ded64c9cbf5a944"
+  }
+ },
+ "g4rb_pad020": {
+  "assertion_passed": true,
+  "bottles": {
+   "bottle0": {
+    "com_m": [
+     -9.6e-05,
+     9.5e-05,
+     -0.005569
+    ],
+    "diag_inertia_kg_m2": [
+     6.933e-05,
+     6.933e-05,
+     1.222e-05
+    ],
+    "inertia_over_mass_m2": [
+     0.00346643,
+     0.00346638,
+     0.0006112
+    ],
+    "inst": "bottle_41_1",
+    "mass_kg": 0.02,
+    "material": [
+     0.26744,
+     0.2217,
+     0.25
+    ],
+    "shapes": 1
+   },
+   "bottle1": {
+    "com_m": [
+     -0.0,
+     -0.0,
+     0.000257
+    ],
+    "diag_inertia_kg_m2": [
+     0.00028086,
+     0.00028096,
+     4.933e-05
+    ],
+    "inertia_over_mass_m2": [
+     0.00401229,
+     0.00401372,
+     0.00070473
+    ],
+    "inst": "bottle_60_2",
+    "mass_kg": 0.07,
+    "material": [
+     0.26744,
+     0.2217,
+     0.25
+    ],
+    "shapes": 1
+   },
+   "bottle2": {
+    "com_m": [
+     -0.000111,
+     3.8e-05,
+     -0.01173
+    ],
+    "diag_inertia_kg_m2": [
+     0.00010269,
+     0.00010272,
+     2.454e-05
+    ],
+    "inertia_over_mass_m2": [
+     0.0042787,
+     0.00428002,
+     0.00102246
+    ],
+    "inst": "bottle_25_3",
+    "mass_kg": 0.024,
+    "material": [
+     0.26744,
+     0.2217,
+     0.25
+    ],
+    "shapes": 1
+   },
+   "bottle3": {
+    "com_m": [
+     -0.000136,
+     0.000126,
+     -0.015604
+    ],
+    "diag_inertia_kg_m2": [
+     0.00114484,
+     0.00114726,
+     0.00022755
+    ],
+    "inertia_over_mass_m2": [
+     0.00520382,
+     0.0052148,
+     0.00103433
+    ],
+    "inst": "bottle_22_4",
+    "mass_kg": 0.22,
+    "material": [
+     0.34,
+     0.28,
+     0.2
+    ],
+    "shapes": 1
+   }
+  },
+  "dormant_values_active": false,
+  "failures": [],
+  "finger_pad_engine_materials": {
+   "link7": [
+    [
+     0.13256,
+     0.0783,
+     0.1
+    ]
+   ],
+   "link8": [
+    [
+     0.13256,
+     0.0783,
+     0.1
+    ]
+   ]
+  },
+  "fixes": [
+   "collision",
+   "order",
+   "size",
+   "values"
+  ],
+  "fixture_colliders": {
+   "Ground": {
+    "approximations": [
+     "none"
+    ],
+    "colliders": 1,
+    "enabled": 1,
+    "non_gprim_enabled": []
+   },
+   "Room": {
+    "approximations": [
+     "boundingCube",
+     "convexDecomposition",
+     "none"
+    ],
+    "colliders": 50,
+    "enabled": 50,
+    "non_gprim_enabled": []
+   },
+   "Table": {
+    "approximations": [
+     "none"
+    ],
+    "colliders": 1,
+    "enabled": 1,
+    "non_gprim_enabled": []
+   }
+  },
+  "mass_delivery": null,
+  "pad_friction_override": [
+   {
+    "combine": "average",
+    "link": "link7",
+    "override": [
+     0.13256,
+     0.0783,
+     0.1
+    ],
+    "robot": "x5",
+    "table": [
+     0.29583,
+     0.277567,
+     0.1
+    ]
+   },
+   {
+    "combine": "average",
+    "link": "link8",
+    "override": [
+     0.13256,
+     0.0783,
+     0.1
+    ],
+    "robot": "x5",
+    "table": [
+     0.29583,
+     0.277567,
+     0.1
+    ]
+   }
+  ],
+  "robot0_camera_links": {
+   "camera": {
+    "com_m": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "mass_kg": 0.0001
+   },
+   "camera_base": {
+    "com_m": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "mass_kg": 0.0001
+   }
+  },
+  "robot0_link_masses_kg": {
+   "base_link": 0.43995,
+   "camera": 0.0001,
+   "camera_base": 0.0001,
+   "link1": 0.066982,
+   "link2": 1.0795,
+   "link3": 0.54534,
+   "link4": 0.11714,
+   "link5": 0.63488,
+   "link6": 0.44089,
+   "link7": 0.064798,
+   "link8": 0.064798
+  },
+  "robot_unique_shape_materials": [
+   [
+    0.13256,
+    0.0783,
+    0.1
+   ],
+   [
+    0.37004,
+    0.3103,
+    0.4
+   ],
+   [
+    0.61004,
+    0.3701,
+    0.5
+   ]
+  ],
+  "scenario_opt_in": "bottles_primary_empty",
+  "slide": {
+   "final_yaw_deg": 4.707,
+   "inst": "bottle_25_3",
+   "label": "bottle2",
+   "rotation_deg": 4.707,
+   "slide_along_axis_mm": 55.6
+  },
+  "table": {
+   "approximations": [
+    "none"
+   ],
+   "usd_materials": [
+    {
+     "dynamic_friction": 0.2287980020046234,
+     "path": "/World/envs/env_0/Table/material_0122/material_0122_0_8/physics_material",
+     "purpose": "physics",
+     "restitution": 0.10000000149011612,
+     "static_friction": 0.2287980020046234
+    }
+   ]
+  },
+  "table_sha256": "7d053f8c828342dee7db6c3b3aeed22fb75e7caca104fa9884496d52f98c5749",
+  "value_parts": null,
+  "values_delivered": true,
+  "versions": {
+   "container": "isaac-sim_5.1.0.sif",
+   "isaac_sim": [
+    "5.1.0",
+    "rc.19",
+    "5"
+   ],
+   "isaaclab": "afca7b09d60d8beb9c1cb28b43066499940b969b",
+   "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+   "repo_head": "0e3b7aeab5d4ab27dc8a95e91afa3ad8bdd922d7"
+  }
+ },
+ "g4rb_shipped": {
+  "assertion_passed": true,
+  "bottles": {
+   "bottle0": {
+    "com_m": [
+     0.000219,
+     0.000142,
+     -0.006414
+    ],
+    "diag_inertia_kg_m2": [
+     0.00089132,
+     0.000891,
+     0.00010284
+    ],
+    "inertia_over_mass_m2": [
+     0.00594214,
+     0.00594003,
+     0.00068557
+    ],
+    "inst": "bottle_41_1",
+    "mass_kg": 0.15,
+    "material": [
+     0.5,
+     0.5,
+     0.0
+    ],
+    "shapes": 1
+   },
+   "bottle1": {
+    "com_m": [
+     -6.4e-05,
+     -0.0002,
+     -0.000381
+    ],
+    "diag_inertia_kg_m2": [
+     0.00125242,
+     0.00125157,
+     0.00013836
+    ],
+    "inertia_over_mass_m2": [
+     0.00834946,
+     0.00834377,
+     0.00092238
+    ],
+    "inst": "bottle_60_2",
+    "mass_kg": 0.15,
+    "material": [
+     0.5,
+     0.5,
+     0.0
+    ],
+    "shapes": 1
+   },
+   "bottle2": {
+    "com_m": [
+     -8.6e-05,
+     -9.3e-05,
+     -0.012485
+    ],
+    "diag_inertia_kg_m2": [
+     0.00194964,
+     0.00194961,
+     0.00033577
+    ],
+    "inertia_over_mass_m2": [
+     0.0129976,
+     0.01299743,
+     0.00223848
+    ],
+    "inst": "bottle_25_3",
+    "mass_kg": 0.15,
+    "material": [
+     0.5,
+     0.5,
+     0.0
+    ],
+    "shapes": 1
+   },
+   "bottle3": {
+    "com_m": [
+     -0.000458,
+     0.000278,
+     -0.018476
+    ],
+    "diag_inertia_kg_m2": [
+     0.00252851,
+     0.00252109,
+     0.00034291
+    ],
+    "inertia_over_mass_m2": [
+     0.00505702,
+     0.00504218,
+     0.00068582
+    ],
+    "inst": "bottle_22_4",
+    "mass_kg": 0.5,
+    "material": [
+     0.5,
+     0.5,
+     0.0
+    ],
+    "shapes": 1
+   }
+  },
+  "dormant_values_active": false,
+  "failures": [],
+  "finger_pad_engine_materials": {
+   "link7": [
+    [
+     0.5,
+     0.5,
+     0.0
+    ]
+   ],
+   "link8": [
+    [
+     0.5,
+     0.5,
+     0.0
+    ]
+   ]
+  },
+  "fixes": [],
+  "fixture_colliders": {
+   "Ground": {
+    "approximations": [
+     "none"
+    ],
+    "colliders": 1,
+    "enabled": 1,
+    "non_gprim_enabled": []
+   },
+   "Room": {
+    "approximations": [
+     "boundingCube",
+     "convexDecomposition",
+     "none"
+    ],
+    "colliders": 51,
+    "enabled": 50,
+    "non_gprim_enabled": [
+     "/World/envs/env_0/Rooms/Simple_Room_nolight/Simple_Room_nolight_0_7"
+    ]
+   },
+   "Table": {
+    "approximations": [
+     "convexDecomposition"
+    ],
+    "colliders": 1,
+    "enabled": 1,
+    "non_gprim_enabled": []
+   }
+  },
+  "mass_delivery": null,
+  "pad_friction_override": null,
+  "robot0_camera_links": {
+   "camera": {
+    "com_m": [
+     -0.012682,
+     -0.000213,
+     0.000302
+    ],
+    "mass_kg": 0.044847
+   },
+   "camera_base": {
+    "com_m": [
+     0.001939,
+     9e-06,
+     0.032339
+    ],
+    "mass_kg": 0.05019
+   }
+  },
+  "robot0_link_masses_kg": {
+   "base_link": 0.43995,
+   "camera": 0.044847,
+   "camera_base": 0.05019,
+   "link1": 0.066982,
+   "link2": 1.0795,
+   "link3": 0.54534,
+   "link4": 0.11714,
+   "link5": 0.63488,
+   "link6": 0.44089,
+   "link7": 0.064798,
+   "link8": 0.064798
+  },
+  "robot_unique_shape_materials": [
+   [
+    0.5,
+    0.5,
+    0.0
+   ]
+  ],
+  "scenario_opt_in": null,
+  "slide": {
+   "final_yaw_deg": 0.94,
+   "inst": "bottle_25_3",
+   "label": "bottle2",
+   "rotation_deg": 0.94,
+   "slide_along_axis_mm": 24.55
+  },
+  "table": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "usd_materials": [
+    {
+     "dynamic_friction": null,
+     "path": "/physicsScene/defaultMaterial",
+     "purpose": "scene-default",
+     "restitution": null,
+     "static_friction": null
+    }
+   ]
+  },
+  "table_sha256": null,
+  "value_parts": null,
+  "values_delivered": null,
+  "versions": {
+   "container": "isaac-sim_5.1.0.sif",
+   "isaac_sim": [
+    "5.1.0",
+    "rc.19",
+    "5"
+   ],
+   "isaaclab": "afca7b09d60d8beb9c1cb28b43066499940b969b",
+   "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+   "repo_head": "fdaf659a7ba46627f2fe90c86ded64c9cbf5a944"
+  }
+ },
+ "g4rb_shipped_main": {
+  "assertion_passed": true,
+  "bottles": {
+   "bottle0": {
+    "com_m": [
+     0.000219,
+     0.000142,
+     -0.006414
+    ],
+    "diag_inertia_kg_m2": [
+     0.00089132,
+     0.000891,
+     0.00010284
+    ],
+    "inertia_over_mass_m2": [
+     0.00594214,
+     0.00594003,
+     0.00068557
+    ],
+    "inst": "bottle_41_1",
+    "mass_kg": 0.15,
+    "material": [
+     0.5,
+     0.5,
+     0.0
+    ],
+    "shapes": 1
+   },
+   "bottle1": {
+    "com_m": [
+     -6.4e-05,
+     -0.0002,
+     -0.000381
+    ],
+    "diag_inertia_kg_m2": [
+     0.00125242,
+     0.00125157,
+     0.00013836
+    ],
+    "inertia_over_mass_m2": [
+     0.00834946,
+     0.00834377,
+     0.00092238
+    ],
+    "inst": "bottle_60_2",
+    "mass_kg": 0.15,
+    "material": [
+     0.5,
+     0.5,
+     0.0
+    ],
+    "shapes": 1
+   },
+   "bottle2": {
+    "com_m": [
+     -8.6e-05,
+     -9.3e-05,
+     -0.012485
+    ],
+    "diag_inertia_kg_m2": [
+     0.00194964,
+     0.00194961,
+     0.00033577
+    ],
+    "inertia_over_mass_m2": [
+     0.0129976,
+     0.01299743,
+     0.00223848
+    ],
+    "inst": "bottle_25_3",
+    "mass_kg": 0.15,
+    "material": [
+     0.5,
+     0.5,
+     0.0
+    ],
+    "shapes": 1
+   },
+   "bottle3": {
+    "com_m": [
+     -0.000458,
+     0.000278,
+     -0.018476
+    ],
+    "diag_inertia_kg_m2": [
+     0.00252851,
+     0.00252109,
+     0.00034291
+    ],
+    "inertia_over_mass_m2": [
+     0.00505702,
+     0.00504218,
+     0.00068582
+    ],
+    "inst": "bottle_22_4",
+    "mass_kg": 0.5,
+    "material": [
+     0.5,
+     0.5,
+     0.0
+    ],
+    "shapes": 1
+   }
+  },
+  "dormant_values_active": false,
+  "failures": [],
+  "finger_pad_engine_materials": {
+   "link7": [
+    [
+     0.5,
+     0.5,
+     0.0
+    ]
+   ],
+   "link8": [
+    [
+     0.5,
+     0.5,
+     0.0
+    ]
+   ]
+  },
+  "fixes": [],
+  "fixture_colliders": {
+   "Ground": {
+    "approximations": [
+     "none"
+    ],
+    "colliders": 1,
+    "enabled": 1,
+    "non_gprim_enabled": []
+   },
+   "Room": {
+    "approximations": [
+     "boundingCube",
+     "convexDecomposition",
+     "none"
+    ],
+    "colliders": 51,
+    "enabled": 50,
+    "non_gprim_enabled": [
+     "/World/envs/env_0/Rooms/Simple_Room_nolight/Simple_Room_nolight_0_7"
+    ]
+   },
+   "Table": {
+    "approximations": [
+     "convexDecomposition"
+    ],
+    "colliders": 1,
+    "enabled": 1,
+    "non_gprim_enabled": []
+   }
+  },
+  "mass_delivery": null,
+  "pad_friction_override": null,
+  "robot0_camera_links": {
+   "camera": {
+    "com_m": [
+     -0.012682,
+     -0.000213,
+     0.000302
+    ],
+    "mass_kg": 0.044847
+   },
+   "camera_base": {
+    "com_m": [
+     0.001939,
+     9e-06,
+     0.032339
+    ],
+    "mass_kg": 0.05019
+   }
+  },
+  "robot0_link_masses_kg": {
+   "base_link": 0.43995,
+   "camera": 0.044847,
+   "camera_base": 0.05019,
+   "link1": 0.066982,
+   "link2": 1.0795,
+   "link3": 0.54534,
+   "link4": 0.11714,
+   "link5": 0.63488,
+   "link6": 0.44089,
+   "link7": 0.064798,
+   "link8": 0.064798
+  },
+  "robot_unique_shape_materials": [
+   [
+    0.5,
+    0.5,
+    0.0
+   ]
+  ],
+  "scenario_opt_in": null,
+  "slide": {
+   "final_yaw_deg": 0.94,
+   "inst": "bottle_25_3",
+   "label": "bottle2",
+   "rotation_deg": 0.94,
+   "slide_along_axis_mm": 24.55
+  },
+  "table": {
+   "approximations": [
+    "convexDecomposition"
+   ],
+   "usd_materials": [
+    {
+     "dynamic_friction": null,
+     "path": "/physicsScene/defaultMaterial",
+     "purpose": "scene-default",
+     "restitution": null,
+     "static_friction": null
+    }
+   ]
+  },
+  "table_sha256": null,
+  "value_parts": null,
+  "values_delivered": null,
+  "versions": {
+   "container": "isaac-sim_5.1.0.sif",
+   "isaac_sim": [
+    "5.1.0",
+    "rc.19",
+    "5"
+   ],
+   "isaaclab": "afca7b09d60d8beb9c1cb28b43066499940b969b",
+   "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+   "repo_head": "6a9b696fcabcd6fdd057b7aa6964d964c24dbaaf"
+  }
+ }
+}

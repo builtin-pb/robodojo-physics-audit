@@ -1,0 +1,35 @@
+[
+ {
+  "cell_name": "press_by_number__shipped",
+  "layout": 0,
+  "overrides": {}
+ },
+ {
+  "cell_name": "press_by_number__dt2",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.002
+  }
+ },
+ {
+  "cell_name": "press_by_number__dt1",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.001
+  }
+ },
+ {
+  "cell_name": "press_by_number__iters4x",
+  "layout": 0,
+  "overrides": {
+   "min_pos_iters": 128
+  }
+ },
+ {
+  "cell_name": "press_by_number__cpu",
+  "layout": 0,
+  "overrides": {
+   "gpu_dynamics": false
+  }
+ }
+]

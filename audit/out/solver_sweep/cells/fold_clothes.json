@@ -1,0 +1,28 @@
+[
+ {
+  "cell_name": "fold_clothes__shipped",
+  "layout": 0,
+  "overrides": {}
+ },
+ {
+  "cell_name": "fold_clothes__dt2",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.002
+  }
+ },
+ {
+  "cell_name": "fold_clothes__dt1",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.001
+  }
+ },
+ {
+  "cell_name": "fold_clothes__iters4x",
+  "layout": 0,
+  "overrides": {
+   "min_pos_iters": 32
+  }
+ }
+]

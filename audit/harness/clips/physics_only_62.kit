@@ -1,0 +1,59 @@
+# Physics-only Kit for Isaac Sim 6.2.0.1: audit/harness/robodojo_physics_only.kit (the 5.1 harness kit) plus omni.isaac.ml_archive,
+# which carries torch on 6.2. For the D4 match runs of the clips (#106 item 5) without the RTX renderer, so PhysX has the GPU.
+# Original header:
+# Physics-only Kit experience for running RoboDojo's scene code without the RTX renderer
+# (Isaac Sim 5.1 crashes on drivers after R580). Physics settings copied from Isaac Lab's
+# isaaclab.python.kit (fork afca7b0): [settings.physics] block, physics.resetOnStop and the
+# persistent prim-creation xform-op order. Rendering, replicator, camera and viewport
+# extensions are deliberately absent.
+
+[package]
+title = "RoboDojo physics only (no RTX renderer)"
+version = "6.2.0"
+
+[dependencies]
+"omni.isaac.ml_archive" = {}
+"isaacsim.core.api" = {}
+"isaacsim.core.cloner" = {}
+"isaacsim.core.prims" = {}
+"isaacsim.core.simulation_manager" = {}
+"isaacsim.core.utils" = {}
+"isaacsim.core.version" = {}
+"omni.physx" = {}
+"omni.physx.tensors" = {}
+"omni.physics.stageupdate" = {}
+"omni.kit.primitive.mesh" = {}
+"omni.warp.core" = {}
+
+[settings.app]
+name = "Isaac-Sim Python"
+version = "6.2.0"
+settings.persistent = false
+enableDeveloperWarnings = false
+player.useFixedTimeStepping = true
+runLoops.main.rateLimitFrequency = 120  # must exist for RoboDojo's carb override (it sets 125, as in evaluation)
+
+[settings.app.exts.folders]
+"++" = ["/isaac-sim/apps", "/isaac-sim/exts", "/isaac-sim/extscache", "/isaac-sim/extsUser", "/isaac-sim/extsDeprecated", "/isaac-sim/extsPhysics"]
+
+[settings.physics]
+autoPopupSimulationOutputWindow = false
+updateToUsd = false
+updateVelocitiesToUsd = false
+updateParticlesToUsd = false
+updateForceSensorsToUsd = false
+outputVelocitiesLocalSpace = false
+useFastCache = false
+visualizationDisplayJoints = false
+fabricUpdateTransformations = false
+fabricUpdateVelocities = false
+fabricUpdateForceSensors = false
+fabricUpdateJointStates = false
+fabricUseGPUInterop = true
+
+[settings]
+physics.visualizationDisplayJoints = false
+physics.visualizationSimulationOutput = false
+physics.resetOnStop = true
+persistent.app.primCreation.DefaultXformOpOrder = "xformOp:translate, xformOp:orient, xformOp:scale"
+persistent.app.primCreation.DefaultXformOpType = "Scale, Orient, Translate"

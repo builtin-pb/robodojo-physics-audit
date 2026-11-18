@@ -1,0 +1,1244 @@
+{
+  "isaac_sim_version": [
+    "6.2.0",
+    "rc.15",
+    "6",
+    "2"
+  ],
+  "kit": "/scratch/<user>/project/robodojo/wt-render/audit/harness/robodojo_full_rtx_62.kit",
+  "task": "cover_blocks",
+  "layout": 0,
+  "mode": "render_and_readback",
+  "order_variant": true,
+  "boot_seconds": 39.17,
+  "total_seconds": 83.92,
+  "steps_through_reset": 844,
+  "episode_steps": 103,
+  "carb_settings": {
+    "/physics/updateToUsd": true,
+    "/physics/fabricEnabled": false,
+    "/physics/fabricUpdateTransformations": true,
+    "/physics/suppressReadback": false,
+    "/isaaclab/render/offscreen": true,
+    "/isaaclab/render/active_viewport": false,
+    "/isaaclab/cameras_enabled": true,
+    "/app/updateOrder/checkForHydraRenderComplete": 1000,
+    "/app/renderer/waitIdle": true,
+    "/app/hydraEngine/waitIdle": true
+  },
+  "settled_poses": {
+    "red": [
+      -0.2,
+      -0.12999,
+      0.77752,
+      1.0,
+      0.00021,
+      7e-05,
+      -6e-05
+    ],
+    "green": [
+      0.2,
+      -0.12999,
+      0.77752,
+      1.0,
+      0.00021,
+      7e-05,
+      -6e-05
+    ],
+    "blue": [
+      0.0,
+      -0.12999,
+      0.77752,
+      1.0,
+      0.00021,
+      7e-05,
+      -6e-05
+    ],
+    "cup0": [
+      -0.19997,
+      -0.23012,
+      0.80099,
+      -0.00023,
+      1.0,
+      -0.0,
+      -0.00038
+    ],
+    "cup1": [
+      3e-05,
+      -0.23012,
+      0.80099,
+      -0.00024,
+      1.0,
+      -0.0,
+      -0.00038
+    ],
+    "cup2": [
+      0.20003,
+      -0.23012,
+      0.80099,
+      -0.00023,
+      1.0,
+      -0.0,
+      -0.00038
+    ]
+  },
+  "policy_data": {
+    "cameras_settled": {
+      "cam_head": {
+        "prim_path": "/World/envs/env_0/Camera_0/cam_head",
+        "shape": [
+          480,
+          640,
+          3
+        ],
+        "min": 0,
+        "max": 255,
+        "mean": 87.09,
+        "std": 67.2,
+        "K": [
+          [
+            288.1325,
+            0.0,
+            320.0
+          ],
+          [
+            0.0,
+            288.1325,
+            240.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "T_cam_to_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.86603,
+            -0.5,
+            -0.41
+          ],
+          [
+            0.0,
+            0.5,
+            0.86603,
+            1.308
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "cam_left_wrist": {
+        "prim_path": "/World/envs/env_0/robot0/camera/Camera_1/cam_left_wrist",
+        "shape": [
+          480,
+          640,
+          3
+        ],
+        "min": 0,
+        "max": 254,
+        "mean": 82.47,
+        "std": 62.78,
+        "K": [
+          [
+            397.0413,
+            0.0,
+            320.0
+          ],
+          [
+            0.0,
+            397.0413,
+            240.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "T_cam_to_world": [
+          [
+            1.0,
+            -0.00015,
+            0.00026,
+            -0.29955
+          ],
+          [
+            0.00029,
+            0.50003,
+            -0.86601,
+            -0.26746
+          ],
+          [
+            0.0,
+            0.86601,
+            0.50003,
+            0.97244
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "cam_right_wrist": {
+        "prim_path": "/World/envs/env_0/robot1/camera/Camera_2/cam_right_wrist",
+        "shape": [
+          480,
+          640,
+          3
+        ],
+        "min": 0,
+        "max": 255,
+        "mean": 87.53,
+        "std": 64.03,
+        "K": [
+          [
+            397.0413,
+            0.0,
+            320.0
+          ],
+          [
+            0.0,
+            397.0413,
+            240.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "T_cam_to_world": [
+          [
+            1.0,
+            -0.00015,
+            0.00026,
+            0.30045
+          ],
+          [
+            0.00029,
+            0.50003,
+            -0.86601,
+            -0.26746
+          ],
+          [
+            0.0,
+            0.86601,
+            0.50003,
+            0.97244
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      }
+    },
+    "materials_after_render": {
+      "usd": {
+        "red": [
+          {
+            "collider": "/World/envs/env_0/rigid/cube/cube_4_1/collision/model",
+            "approx": "convexDecomposition",
+            "resolved": [
+              "physics-purpose",
+              {
+                "path": "/World/envs/env_0/rigid/cube/cube_4_1/physics_material",
+                "has_physics_material_api": true,
+                "staticFriction": 0.6000000238418579,
+                "dynamicFriction": 1.5,
+                "restitution": 0.0,
+                "frictionCombineMode": null,
+                "restitutionCombineMode": null
+              }
+            ]
+          }
+        ],
+        "green": [
+          {
+            "collider": "/World/envs/env_0/rigid/cube/cube_6_2/collision/model",
+            "approx": "convexDecomposition",
+            "resolved": [
+              "physics-purpose",
+              {
+                "path": "/World/envs/env_0/rigid/cube/cube_6_2/physics_material",
+                "has_physics_material_api": true,
+                "staticFriction": 0.6000000238418579,
+                "dynamicFriction": 1.5,
+                "restitution": 0.0,
+                "frictionCombineMode": null,
+                "restitutionCombineMode": null
+              }
+            ]
+          }
+        ],
+        "blue": [
+          {
+            "collider": "/World/envs/env_0/rigid/cube/cube_5_3/collision/model",
+            "approx": "convexDecomposition",
+            "resolved": [
+              "physics-purpose",
+              {
+                "path": "/World/envs/env_0/rigid/cube/cube_5_3/physics_material",
+                "has_physics_material_api": true,
+                "staticFriction": 0.6000000238418579,
+                "dynamicFriction": 1.5,
+                "restitution": 0.0,
+                "frictionCombineMode": null,
+                "restitutionCombineMode": null
+              }
+            ]
+          }
+        ],
+        "cup0": [
+          {
+            "collider": "/World/envs/env_0/rigid/cup/cup_1_4/collision/model",
+            "approx": "convexDecomposition",
+            "resolved": [
+              "physics-purpose",
+              {
+                "path": "/World/envs/env_0/rigid/cup/cup_1_4/physics_material",
+                "has_physics_material_api": true,
+                "staticFriction": 0.6000000238418579,
+                "dynamicFriction": 1.5,
+                "restitution": 0.0,
+                "frictionCombineMode": null,
+                "restitutionCombineMode": null
+              }
+            ]
+          }
+        ],
+        "cup1": [
+          {
+            "collider": "/World/envs/env_0/rigid/cup/cup_1_5/collision/model",
+            "approx": "convexDecomposition",
+            "resolved": [
+              "physics-purpose",
+              {
+                "path": "/World/envs/env_0/rigid/cup/cup_1_5/physics_material",
+                "has_physics_material_api": true,
+                "staticFriction": 0.6000000238418579,
+                "dynamicFriction": 1.5,
+                "restitution": 0.0,
+                "frictionCombineMode": null,
+                "restitutionCombineMode": null
+              }
+            ]
+          }
+        ],
+        "cup2": [
+          {
+            "collider": "/World/envs/env_0/rigid/cup/cup_1_6/collision/model",
+            "approx": "convexDecomposition",
+            "resolved": [
+              "physics-purpose",
+              {
+                "path": "/World/envs/env_0/rigid/cup/cup_1_6/physics_material",
+                "has_physics_material_api": true,
+                "staticFriction": 0.6000000238418579,
+                "dynamicFriction": 1.5,
+                "restitution": 0.0,
+                "frictionCombineMode": null,
+                "restitutionCombineMode": null
+              }
+            ]
+          }
+        ],
+        "robot0/link7": [
+          {
+            "collider": "/World/envs/env_0/robot0/link7/collisions/link7/node_STL_BINARY_",
+            "approx": "convexHull",
+            "resolved": [
+              "scene-default",
+              {
+                "all_purpose_bound": null
+              }
+            ]
+          }
+        ],
+        "robot0/link8": [
+          {
+            "collider": "/World/envs/env_0/robot0/link8/collisions/link8/node_STL_BINARY_",
+            "approx": "convexHull",
+            "resolved": [
+              "scene-default",
+              {
+                "all_purpose_bound": null
+              }
+            ]
+          }
+        ],
+        "robot1/link7": [
+          {
+            "collider": "/World/envs/env_0/robot1/link7/collisions/link7/node_STL_BINARY_",
+            "approx": "convexHull",
+            "resolved": [
+              "scene-default",
+              {
+                "all_purpose_bound": null
+              }
+            ]
+          }
+        ],
+        "robot1/link8": [
+          {
+            "collider": "/World/envs/env_0/robot1/link8/collisions/link8/node_STL_BINARY_",
+            "approx": "convexHull",
+            "resolved": [
+              "scene-default",
+              {
+                "all_purpose_bound": null
+              }
+            ]
+          }
+        ],
+        "table": [
+          {
+            "collider": "/World/envs/env_0/Table/material_0122/material_0122_0_9",
+            "approx": "convexDecomposition",
+            "resolved": [
+              "scene-default",
+              {
+                "all_purpose_bound": "/World/envs/env_0/Table/material_0122/material_0122_0_9/Material"
+              }
+            ]
+          }
+        ],
+        "ground": [
+          {
+            "collider": "/World/envs/env_0/Ground/Ground/Ground_0_10",
+            "approx": "none",
+            "resolved": [
+              "physics-purpose",
+              {
+                "path": "/World/envs/env_0/Ground/Ground/Ground_0_10/physics_material",
+                "has_physics_material_api": true,
+                "staticFriction": 1.0,
+                "dynamicFriction": 1.0,
+                "restitution": 0.0,
+                "frictionCombineMode": "multiply",
+                "restitutionCombineMode": "multiply"
+              }
+            ]
+          }
+        ]
+      },
+      "engine_objects": {
+        "red": [
+          [
+            0.6000000238418579,
+            1.5,
+            0.0
+          ]
+        ],
+        "green": [
+          [
+            0.6000000238418579,
+            1.5,
+            0.0
+          ]
+        ],
+        "blue": [
+          [
+            0.6000000238418579,
+            1.5,
+            0.0
+          ]
+        ],
+        "cup0": [
+          [
+            0.6000000238418579,
+            1.5,
+            0.0
+          ],
+          [
+            0.6000000238418579,
+            1.5,
+            0.0
+          ],
+          [
+            0.6000000238418579,
+            1.5,
+            0.0
+          ],
+          [
+            0.6000000238418579,
+            1.5,
+            0.0
+          ],
+          [
+            0.6000000238418579,
+            1.5,
+            0.0
+          ],
+          [
+            0.6000000238418579,
+            1.5,
+            0.0
+          ],
+          [
+            0.6000000238418579,
+            1.5,
+            0.0
+          ],
+          [
+            0.6000000238418579,
+            1.5,
+            0.0
+          ],
+          [
+            0.6000000238418579,
+            1.5,
+            0.0
+          ],
+          [
+            0.6000000238418579,
+            1.5,
+            0.0
+          ]
+        ],
+        "cup1": [
+          [
+            0.6000000238418579,
+            1.5,
+            0.0
+          ],
+          [
+            0.6000000238418579,
+            1.5,
+            0.0
+          ],
+          [
+            0.6000000238418579,
+            1.5,
+            0.0
+          ],
+          [
+            0.6000000238418579,
+            1.5,
+            0.0
+          ],
+          [
+            0.6000000238418579,
+            1.5,
+            0.0
+          ],
+          [
+            0.6000000238418579,
+            1.5,
+            0.0
+          ],
+          [
+            0.6000000238418579,
+            1.5,
+            0.0
+          ],
+          [
+            0.6000000238418579,
+            1.5,
+            0.0
+          ],
+          [
+            0.6000000238418579,
+            1.5,
+            0.0
+          ],
+          [
+            0.6000000238418579,
+            1.5,
+            0.0
+          ]
+        ],
+        "cup2": [
+          [
+            0.6000000238418579,
+            1.5,
+            0.0
+          ],
+          [
+            0.6000000238418579,
+            1.5,
+            0.0
+          ],
+          [
+            0.6000000238418579,
+            1.5,
+            0.0
+          ],
+          [
+            0.6000000238418579,
+            1.5,
+            0.0
+          ],
+          [
+            0.6000000238418579,
+            1.5,
+            0.0
+          ],
+          [
+            0.6000000238418579,
+            1.5,
+            0.0
+          ],
+          [
+            0.6000000238418579,
+            1.5,
+            0.0
+          ],
+          [
+            0.6000000238418579,
+            1.5,
+            0.0
+          ],
+          [
+            0.6000000238418579,
+            1.5,
+            0.0
+          ],
+          [
+            0.6000000238418579,
+            1.5,
+            0.0
+          ]
+        ]
+      },
+      "engine_masses": {
+        "red": [
+          0.35
+        ],
+        "green": [
+          0.35
+        ],
+        "blue": [
+          0.35
+        ],
+        "cup0": [
+          0.15
+        ],
+        "cup1": [
+          0.15
+        ],
+        "cup2": [
+          0.15
+        ]
+      },
+      "engine_robots": {
+        "robot0": {
+          "max_shapes": 42,
+          "links": [
+            "base_link",
+            "link1",
+            "link2",
+            "link3",
+            "link4",
+            "link5",
+            "link6",
+            "camera_base",
+            "link7",
+            "link8",
+            "camera"
+          ],
+          "shape_materials": [
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ]
+          ]
+        },
+        "robot1": {
+          "max_shapes": 42,
+          "links": [
+            "base_link",
+            "link1",
+            "link2",
+            "link3",
+            "link4",
+            "link5",
+            "link6",
+            "camera_base",
+            "link7",
+            "link8",
+            "camera"
+          ],
+          "shape_materials": [
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ]
+          ]
+        }
+      }
+    },
+    "contacts_resting": [
+      {
+        "collider0": "/World/envs/env_0/rigid/cube/cube_4_1/collision/model",
+        "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_9",
+        "n": 4,
+        "materials": [
+          [
+            "/World/envs/env_0/rigid/cube/cube_4_1/physics_material",
+            "/physicsScene/defaultMaterial"
+          ]
+        ]
+      },
+      {
+        "collider0": "/World/envs/env_0/rigid/cube/cube_5_3/collision/model",
+        "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_9",
+        "n": 4,
+        "materials": [
+          [
+            "/World/envs/env_0/rigid/cube/cube_5_3/physics_material",
+            "/physicsScene/defaultMaterial"
+          ]
+        ]
+      },
+      {
+        "collider0": "/World/envs/env_0/rigid/cube/cube_6_2/collision/model",
+        "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_9",
+        "n": 4,
+        "materials": [
+          [
+            "/World/envs/env_0/rigid/cube/cube_6_2/physics_material",
+            "/physicsScene/defaultMaterial"
+          ]
+        ]
+      },
+      {
+        "collider0": "/World/envs/env_0/rigid/cup/cup_1_4/collision/model",
+        "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_9",
+        "n": 25,
+        "materials": [
+          [
+            "/World/envs/env_0/rigid/cup/cup_1_4/physics_material",
+            "/physicsScene/defaultMaterial"
+          ]
+        ]
+      },
+      {
+        "collider0": "/World/envs/env_0/rigid/cup/cup_1_5/collision/model",
+        "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_9",
+        "n": 25,
+        "materials": [
+          [
+            "/World/envs/env_0/rigid/cup/cup_1_5/physics_material",
+            "/physicsScene/defaultMaterial"
+          ]
+        ]
+      },
+      {
+        "collider0": "/World/envs/env_0/rigid/cup/cup_1_6/collision/model",
+        "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_9",
+        "n": 25,
+        "materials": [
+          [
+            "/World/envs/env_0/rigid/cup/cup_1_6/physics_material",
+            "/physicsScene/defaultMaterial"
+          ]
+        ]
+      }
+    ],
+    "slide_box": {
+      "label": "red",
+      "slide_x_mm": 7.29,
+      "lateral_mm": -0.45,
+      "vertical_mm": -0.0,
+      "rotation_deg": 8.4
+    },
+    "contacts_after_slide": [
+      {
+        "collider0": "/World/envs/env_0/rigid/cube/cube_4_1/collision/model",
+        "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_9",
+        "n": 4,
+        "materials": [
+          [
+            "/World/envs/env_0/rigid/cube/cube_4_1/physics_material",
+            "/physicsScene/defaultMaterial"
+          ]
+        ]
+      },
+      {
+        "collider0": "/World/envs/env_0/rigid/cube/cube_5_3/collision/model",
+        "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_9",
+        "n": 4,
+        "materials": [
+          [
+            "/World/envs/env_0/rigid/cube/cube_5_3/physics_material",
+            "/physicsScene/defaultMaterial"
+          ]
+        ]
+      },
+      {
+        "collider0": "/World/envs/env_0/rigid/cube/cube_6_2/collision/model",
+        "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_9",
+        "n": 4,
+        "materials": [
+          [
+            "/World/envs/env_0/rigid/cube/cube_6_2/physics_material",
+            "/physicsScene/defaultMaterial"
+          ]
+        ]
+      },
+      {
+        "collider0": "/World/envs/env_0/rigid/cup/cup_1_4/collision/model",
+        "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_9",
+        "n": 25,
+        "materials": [
+          [
+            "/World/envs/env_0/rigid/cup/cup_1_4/physics_material",
+            "/physicsScene/defaultMaterial"
+          ]
+        ]
+      },
+      {
+        "collider0": "/World/envs/env_0/rigid/cup/cup_1_5/collision/model",
+        "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_9",
+        "n": 25,
+        "materials": [
+          [
+            "/World/envs/env_0/rigid/cup/cup_1_5/physics_material",
+            "/physicsScene/defaultMaterial"
+          ]
+        ]
+      },
+      {
+        "collider0": "/World/envs/env_0/rigid/cup/cup_1_6/collision/model",
+        "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_9",
+        "n": 25,
+        "materials": [
+          [
+            "/World/envs/env_0/rigid/cup/cup_1_6/physics_material",
+            "/physicsScene/defaultMaterial"
+          ]
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,271 @@
+[
+ {
+  "accidental_bottles": [],
+  "arm": "v1_corrected",
+  "back_to_origin": true,
+  "bottle_mass_override": null,
+  "bottles": {
+   "bottle0": {
+    "accidental": false,
+    "attempts": [
+     {
+      "attempt": 0,
+      "end_step": 84,
+      "outcome": "in_bin_after_release",
+      "route": "left_direct",
+      "start_step": 1,
+      "step": 71
+     }
+    ],
+    "geometric_in_bin": true,
+    "knocked": [],
+    "outcome": "scored",
+    "recovered_failures": [],
+    "scored": true
+   },
+   "bottle1": {
+    "accidental": false,
+    "attempts": [
+     {
+      "attempt": 1,
+      "end_step": 159,
+      "outcome": "in_bin_after_release",
+      "route": "left_direct",
+      "start_step": 85,
+      "step": 146
+     }
+    ],
+    "geometric_in_bin": true,
+    "knocked": [],
+    "outcome": "scored",
+    "recovered_failures": [],
+    "scored": true
+   },
+   "bottle2": {
+    "accidental": false,
+    "attempts": [
+     {
+      "attempt": 2,
+      "end_step": 234,
+      "outcome": "in_bin_after_release",
+      "route": "left_direct",
+      "start_step": 160,
+      "step": 221
+     }
+    ],
+    "geometric_in_bin": true,
+    "knocked": [],
+    "outcome": "scored",
+    "recovered_failures": [],
+    "scored": true
+   },
+   "bottle3": {
+    "accidental": false,
+    "attempts": [
+     {
+      "attempt": 3,
+      "end_step": 355,
+      "outcome": "in_bin_after_release",
+      "route": "right_to_left_handover",
+      "start_step": 235,
+      "step": 352
+     }
+    ],
+    "geometric_in_bin": true,
+    "knocked": [],
+    "outcome": "scored",
+    "recovered_failures": [],
+    "scored": true
+   }
+  },
+  "bottles_in_bin": 4,
+  "bottles_in_bin_geometric": 4,
+  "engine_masses": {
+   "bottle0": 0.075,
+   "bottle1": 0.024,
+   "bottle2": 0.07,
+   "bottle3": 0.095
+  },
+  "episode_dt_s": null,
+  "episode_dt_top_up_steps": null,
+  "episode_seconds": 144.2,
+  "episode_steps": 3620,
+  "evaluator_run": "v1",
+  "final_poses": {
+   "bottle0": [
+    -0.56034,
+    -0.07009,
+    0.31674,
+    0.1505,
+    -0.03335,
+    0.70444,
+    0.69282
+   ],
+   "bottle1": [
+    -0.68787,
+    0.0265,
+    0.31951,
+    0.56804,
+    -0.46841,
+    -0.53852,
+    0.40978
+   ],
+   "bottle2": [
+    -0.7305,
+    -0.10477,
+    0.31131,
+    -0.63982,
+    0.66571,
+    -0.24837,
+    -0.29287
+   ],
+   "bottle3": [
+    -0.66363,
+    -0.0427,
+    0.45698,
+    -0.61122,
+    -0.09433,
+    0.14042,
+    0.77317
+   ]
+  },
+  "first_failure": null,
+  "grippers_open": true,
+  "instances": {
+   "bottle0": "bottle_5_1",
+   "bottle1": "bottle_25_2",
+   "bottle2": "bottle_50_3",
+   "bottle3": "bottle_55_4"
+  },
+  "layout": 16,
+  "max_bottle_speed_m_s": 2.96,
+  "pad_friction_override": null,
+  "physics": {
+   "below_g1_unsourced_opt_in": true,
+   "fixes": [
+    "collision",
+    "gripper",
+    "order",
+    "robot_limits",
+    "size",
+    "solver",
+    "values"
+   ],
+   "mass_delivery": null,
+   "preset": "corrected",
+   "scenario_opt_in": "bottles_primary_empty",
+   "solver": {
+    "position_iteration_factor": 4,
+    "scene_physx": {
+     "enable_stabilization": false,
+     "min_position_iteration_count": 64
+    },
+    "shipped_position_iterations": 16
+   },
+   "status_counts": {
+    "estimated": 80,
+    "sourced": 33,
+    "unsourced": 85
+   },
+   "table_sha256": "9fc05fe3a80681a9d3f85cfe1f9b935557048133347590115294d6ea5321a4d4",
+   "value_parts": null,
+   "values_delivered": true
+  },
+  "plans": [
+   {
+    "handover_aborted_dropped_z": null,
+    "idx": 0,
+    "label": "bottle0",
+    "left_aborted_dropped_z": null,
+    "route": "left_direct",
+    "upright": true
+   },
+   {
+    "handover_aborted_dropped_z": null,
+    "idx": 1,
+    "label": "bottle1",
+    "left_aborted_dropped_z": null,
+    "route": "left_direct",
+    "upright": false
+   },
+   {
+    "handover_aborted_dropped_z": null,
+    "idx": 2,
+    "label": "bottle2",
+    "left_aborted_dropped_z": null,
+    "route": "left_direct",
+    "upright": true
+   },
+   {
+    "handover_aborted_dropped_z": null,
+    "idx": 3,
+    "label": "bottle3",
+    "left_aborted_dropped_z": null,
+    "route": "right_to_left_handover",
+    "upright": true
+   }
+  ],
+  "recovered_failures": [],
+  "reset_rejected": false,
+  "seed": 0,
+  "settled_poses": {
+   "bottle0": [
+    -0.03379,
+    -0.14233,
+    0.85199,
+    0.99714,
+    0.0,
+    -0.0,
+    -0.07556
+   ],
+   "bottle1": [
+    -0.04258,
+    0.0116,
+    0.79662,
+    -0.52475,
+    0.53976,
+    -0.45345,
+    0.47715
+   ],
+   "bottle2": [
+    0.12759,
+    -0.12834,
+    0.85988,
+    0.72247,
+    -0.00129,
+    -0.00022,
+    0.6914
+   ],
+   "bottle3": [
+    0.43902,
+    -0.17428,
+    0.8775,
+    0.87946,
+    -0.0,
+    0.0,
+    0.47598
+   ]
+  },
+  "solver_scene": {
+   "effective": 64,
+   "factor": 4.0,
+   "failures": [],
+   "max_authored": 16,
+   "min_pos_iters": 64.0,
+   "stabilization": false
+  },
+  "steps_per_second": 25.1,
+  "success": true,
+  "tag": "g4_corrected_v1_s0_l16_c7",
+  "take_action_cnt": 362,
+  "unstable_nums": 0,
+  "v1": {
+   "counted": true,
+   "score": 100.0,
+   "success": true
+  },
+  "v2": null,
+  "visibly_impossible": [],
+  "wall_seconds": 152.9
+ }
+]

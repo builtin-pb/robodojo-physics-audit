@@ -1,0 +1,114 @@
+[
+ {
+  "id": "a13_frozen_nuts",
+  "segments": [
+   {
+    "runs": [
+     "rp_fasten_frozen",
+     "rp_fasten_free"
+    ],
+    "cam": "fpair2",
+    "n_samples": 1,
+    "repeat": 12,
+    "first_frame": [
+     2,
+     2
+    ],
+    "last_frame": [
+     2,
+     2
+    ]
+   },
+   {
+    "runs": [
+     "rp_fasten_frozen",
+     "rp_fasten_free"
+    ],
+    "cam": "fpair2",
+    "n_samples": 125,
+    "repeat": 1,
+    "first_frame": [
+     3,
+     3
+    ],
+    "last_frame": [
+     127,
+     127
+    ]
+   }
+  ],
+  "n_frames": 177,
+  "seconds": 7.08,
+  "poster": {
+   "file": "a13_frozen_nuts_poster.png",
+   "frame": 73,
+   "bytes": 576068
+  },
+  "anim": {
+   "file": "a13_frozen_nuts.webp",
+   "format": "webp",
+   "frames": 89,
+   "every": 2,
+   "frame_ms": 80,
+   "width": 960,
+   "quality": 70,
+   "bytes": 359730
+  },
+  "crf": 23,
+  "file": "a13_frozen_nuts.mp4",
+  "bytes": 155395
+ },
+ {
+  "id": "a21_hovering_mallet",
+  "segments": [
+   {
+    "runs": [
+     "rp_xylo"
+    ],
+    "cam": "xside",
+    "n_samples": 18,
+    "repeat": 1,
+    "first_frame": [
+     2
+    ],
+    "last_frame": [
+     19
+    ]
+   },
+   {
+    "runs": [
+     "rp_xylo"
+    ],
+    "cam": "xside",
+    "n_samples": 164,
+    "repeat": 1,
+    "first_frame": [
+     20
+    ],
+    "last_frame": [
+     183
+    ]
+   }
+  ],
+  "n_frames": 198,
+  "seconds": 7.92,
+  "poster": {
+   "file": "a21_hovering_mallet_poster.png",
+   "frame": 94,
+   "bytes": 625120
+  },
+  "anim": {
+   "file": "a21_hovering_mallet.webp",
+   "format": "webp",
+   "frames": 99,
+   "every": 2,
+   "frame_ms": 80,
+   "width": 960,
+   "quality": 70,
+   "bytes": 1313730
+  },
+  "crf": 23,
+  "file": "a21_hovering_mallet.mp4",
+  "bytes": 610975
+ }
+]

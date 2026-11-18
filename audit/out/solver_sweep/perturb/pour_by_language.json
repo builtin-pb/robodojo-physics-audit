@@ -1,0 +1,23 @@
+[
+ {
+  "cell_name": "pour_by_language__perturb",
+  "layout": 0,
+  "overrides": {
+   "spawn_lift": {
+    "stems": "*",
+    "dz_m": 1e-06
+   },
+   "slide_target": {
+    "label": "bowl_0",
+    "inst": "wine_bowl_0_4",
+    "labelled": true,
+    "stem": "wine_bowl_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.999997,
+     -0.0024
+    ]
+   }
+  }
+ }
+]

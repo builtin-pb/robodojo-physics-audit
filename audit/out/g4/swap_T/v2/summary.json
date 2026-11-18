@@ -1,0 +1,196 @@
+{
+ "task": "swap_T",
+ "arms": {
+  "shipped": {
+   "what": "RoboDojo as released (script_swap_T_v2)",
+   "control": false,
+   "episodes": 20,
+   "successes": 20,
+   "mean_score": 100.0,
+   "episode_s_median": 61.4,
+   "failing_layouts": [],
+   "finger_table_contact_episodes": 0,
+   "finger_table_force_episodes": 0,
+   "tilt_at_hover_deg": {
+    "median": 0.438,
+    "max": 15.676
+   },
+   "tilt_max_held_deg": {
+    "median": 0.494,
+    "max": 16.624
+   },
+   "final_err_success": {
+    "xy_mm_max": 0.49,
+    "rot_deg_max": 0.481
+   },
+   "pad_T_max_force_N_median": 26.97,
+   "pad_T_hold_force_N_median": 24.786,
+   "other_contact_pairs": []
+  },
+  "corrected": {
+   "what": "fully corrected (all seven fixes, v2b map; script_swap_T_v2)",
+   "control": false,
+   "episodes": 20,
+   "successes": 20,
+   "mean_score": 100.0,
+   "episode_s_median": 88.15,
+   "failing_layouts": [],
+   "finger_table_contact_episodes": 0,
+   "finger_table_force_episodes": 0,
+   "tilt_at_hover_deg": {
+    "median": 0.022,
+    "max": 0.141
+   },
+   "tilt_max_held_deg": {
+    "median": 0.075,
+    "max": 0.171
+   },
+   "final_err_success": {
+    "xy_mm_max": 0.24,
+    "rot_deg_max": 0.083
+   },
+   "pad_T_max_force_N_median": 497.705,
+   "pad_T_hold_force_N_median": 150.33,
+   "other_contact_pairs": []
+  },
+  "robot_limits": {
+   "what": "shipped + robot_limits (script_swap_T_v2)",
+   "control": false,
+   "episodes": 20,
+   "successes": 20,
+   "mean_score": 100.0,
+   "episode_s_median": 39.45,
+   "failing_layouts": [],
+   "finger_table_contact_episodes": 0,
+   "finger_table_force_episodes": 0,
+   "tilt_at_hover_deg": {
+    "median": 0.444,
+    "max": 14.772
+   },
+   "tilt_max_held_deg": {
+    "median": 0.496,
+    "max": 14.772
+   },
+   "final_err_success": {
+    "xy_mm_max": 0.37,
+    "rot_deg_max": 0.123
+   },
+   "pad_T_max_force_N_median": 26.97,
+   "pad_T_hold_force_N_median": 24.786,
+   "other_contact_pairs": []
+  },
+  "shipped_rep": {
+   "what": "shipped, seed 2 layout 0 twice in one process",
+   "control": true,
+   "episodes": 1,
+   "successes": 1,
+   "mean_score": 100.0,
+   "episode_s_median": 47.5,
+   "failing_layouts": [],
+   "finger_table_contact_episodes": 0,
+   "finger_table_force_episodes": 0,
+   "tilt_at_hover_deg": {
+    "median": 0.278,
+    "max": 0.526
+   },
+   "tilt_max_held_deg": {
+    "median": 0.296,
+    "max": 0.536
+   },
+   "final_err_success": {
+    "xy_mm_max": 0.1,
+    "rot_deg_max": 0.039
+   },
+   "pad_T_max_force_N_median": 28.349,
+   "pad_T_hold_force_N_median": 24.785,
+   "other_contact_pairs": []
+  },
+  "corrected_rep": {
+   "what": "corrected, seed 2 layout 0 twice in one process",
+   "control": true,
+   "episodes": 1,
+   "successes": 1,
+   "mean_score": 100.0,
+   "episode_s_median": 50.9,
+   "failing_layouts": [],
+   "finger_table_contact_episodes": 0,
+   "finger_table_force_episodes": 0,
+   "tilt_at_hover_deg": {
+    "median": 0.026,
+    "max": 0.031
+   },
+   "tilt_max_held_deg": {
+    "median": 0.075,
+    "max": 0.102
+   },
+   "final_err_success": {
+    "xy_mm_max": 0.03,
+    "rot_deg_max": 0.051
+   },
+   "pad_T_max_force_N_median": 497.657,
+   "pad_T_hold_force_N_median": 150.325,
+   "other_contact_pairs": []
+  }
+ },
+ "paired": {
+  "corrected": {
+   "pairs": 20,
+   "arm_only_success": 0,
+   "reference_only_success": 0,
+   "mean_score_difference": 0.0,
+   "bootstrap95": [
+    0.0,
+    0.0
+   ],
+   "mcnemar_p": 1.0,
+   "identical_final_state": 0,
+   "beyond_noise": false,
+   "reference": "shipped"
+  },
+  "robot_limits": {
+   "pairs": 20,
+   "arm_only_success": 0,
+   "reference_only_success": 0,
+   "mean_score_difference": 0.0,
+   "bootstrap95": [
+    0.0,
+    0.0
+   ],
+   "mcnemar_p": 1.0,
+   "identical_final_state": 0,
+   "beyond_noise": false,
+   "reference": "shipped"
+  }
+ },
+ "determinism": {
+  "shipped_rep s2 l0": {
+   "runs": 3,
+   "tags": [
+    "g4st2_sT_ship_rep_q00_vis2",
+    "g4st2_sT_ship_rep_q00_vis2",
+    "g4st2_sT_ship_q01_vis2"
+   ],
+   "distinct_final_sha256": [
+    "e5e76831b2bcc6ddec8feea699a4ced1765945f6f58db7754ee089197b4c3b30"
+   ]
+  },
+  "corrected_rep s2 l0": {
+   "runs": 3,
+   "tags": [
+    "g4st2_sT_corr_rep_q00_vis2",
+    "g4st2_sT_corr_rep_q00_vis2",
+    "g4st2_sT_corr_q00_vis2"
+   ],
+   "distinct_final_sha256": [
+    "d9ee8ad4bf67f5ecc90e7b7319f252049cdb60f8461c3023d4c7df5e847d36dc"
+   ]
+  }
+ },
+ "cost": {
+  "processes": 9,
+  "process_hours": 1.471,
+  "gpu_busy_hours": {
+   "della-vis2:1": 0.375
+  }
+ }
+}

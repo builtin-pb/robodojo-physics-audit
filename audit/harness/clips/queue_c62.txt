@@ -1,0 +1,9 @@
+# 6.2 rollouts (VER=62, SPLIT=1: renderer on GPU 0, PhysX on GPU 1), the same harness cases as queue_r51.txt
+c62_a1|a1_zero.json|--subframes 4 --warmup 10|--task put_bottles_into_dustbin --layouts 0 --policy zero --evaluator v1
+c62_d3_order|d3.json|--subframes 4 --warmup 10|--task cover_blocks --layouts 0 --policy readback --order_variant
+c62_d3_ship|d3.json|--subframes 4 --warmup 10|--task cover_blocks --layouts 0 --policy readback
+c62_coin|coin.json|--subframes 4 --warmup 10|--task deposit_coin --layouts 0 --policy stress_hv --stress_cases <repo>/audit/harness/stress_hv/cases/coin_side_speeds.json
+c62_buttons|buttons.json|--subframes 4 --warmup 10|--task press_by_number --layouts 0 --policy stress_hv --stress_cases <repo>/audit/harness/stress_hv/cases/press_buttons_clip.json
+c62_press40|press40.json|--subframes 4 --warmup 10|--task press_by_number --layouts 0 --policy stress_hv --stress_cases <repo>/audit/harness/stress_hv/cases/press_depth_b0_40_clip.json
+c62_peek|peek.json|--subframes 4 --warmup 10|--task cover_blocks --layouts 1 --policy witness_cb --cb_mode peek_51 --log_poses --evaluator v1
+c62_bulldoze|bulldoze.json|--subframes 4 --warmup 10|--task put_bottles_into_dustbin --layouts 1 --policy exploit --exploit_mode shove_bottles --log_poses --evaluator v1

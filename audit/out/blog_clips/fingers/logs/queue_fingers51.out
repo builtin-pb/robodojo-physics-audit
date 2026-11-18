@@ -1,0 +1,22 @@
+lock held 2026-11-17T22:07:17Z
+== b51_fingers_shipped ver=51 cap=none free=29226 MiB 2026-11-17T22:07:18Z
+exit=0 wall=176s
+RESULT {"scenario": "pad_hard_nom", "trial_kind": "bottle_hold", "wall_s": 79.41, "mass_kg": 0.5, "col": "shipped_lead10p8", "F_avg_plat_N": 24.565, "F_avg_mean_N": 14.95, "F_avg_sub0_N": 4.187, "q7_mm": 30.049, "q8_mm": 30.24, "rot_deg": 77.8, "pad_slip_mm": 7.77, "com_slip_mm": 87.21, "held": false, "held_d3": false, "eng_com_slip_mm": 72.13, "held_shake": false}
+HARNESS done
+== b51_fingers_light ver=51 cap=none free=29226 MiB 2026-11-17T22:10:22Z
+exit=0 wall=83s
+RESULT {"scenario": "pad_hard_nom", "trial_kind": "bottle_hold", "wall_s": 46.96, "mass_kg": 0.5, "col": "real_path", "F_avg_plat_N": 74.202, "F_avg_mean_N": 73.202, "F_avg_sub0_N": 68.285, "q7_mm": 29.837, "q8_mm": 30.07, "rot_deg": 56.96, "pad_slip_mm": 2.78, "com_slip_mm": 64.37, "held": false, "held_d3": false, "eng_com_slip_mm": 53.46, "held_shake": false}
+HARNESS done
+== b51_fingers_motor ver=51 cap=none free=29226 MiB 2026-11-17T22:11:45Z
+exit=0 wall=121s
+RESULT {"scenario": "pad_hard_nom", "trial_kind": "bottle_hold", "wall_s": 83.01, "mass_kg": 0.5, "col": "real_path", "F_avg_plat_N": 79.917, "F_avg_mean_N": 79.915, "F_avg_sub0_N": 79.907, "q7_mm": 30.056, "q8_mm": 30.056, "rot_deg": 0.47, "pad_slip_mm": 0.18, "com_slip_mm": 0.65, "held": true, "held_d3": true, "eng_com_slip_mm": 0.55, "held_shake": true}
+HARNESS done
+== b51_ctx_light_main ver=51 cap=none free=29226 MiB 2026-11-17T22:13:52Z
+exit=0 wall=100s
+RESULT {"scenario": "pad_hard_nom", "trial_kind": "bottle_hold", "wall_s": 58.06, "mass_kg": 0.5, "col": "real_path", "F_avg_plat_N": 139.802, "F_avg_mean_N": 139.807, "F_avg_sub0_N": 139.121, "q7_mm": 29.556, "q8_mm": 30.185, "rot_deg": 0.53, "pad_slip_mm": 0.2, "com_slip_mm": 0.65, "held": true, "held_d3": true, "eng_com_slip_mm": 0.55, "held_shake": true}
+HARNESS done
+== b51_ctx_light_solver ver=51 cap=none free=29226 MiB 2026-11-17T22:15:40Z
+exit=0 wall=139s
+RESULT {"scenario": "pad_hard_nom", "trial_kind": "bottle_hold", "wall_s": 71.98, "mass_kg": 0.5, "col": "real_path", "F_avg_plat_N": 79.913, "F_avg_mean_N": 79.897, "F_avg_sub0_N": 79.835, "q7_mm": 30.177, "q8_mm": 30.176, "rot_deg": 0.03, "pad_slip_mm": 0.01, "com_slip_mm": 0.03, "held": true, "held_d3": true, "eng_com_slip_mm": 0.03, "held_shake": true}
+HARNESS done
+QUEUE_DONE 2026-11-17T22:18:21Z

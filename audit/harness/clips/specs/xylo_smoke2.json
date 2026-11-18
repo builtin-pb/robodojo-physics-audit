@@ -1,0 +1,97 @@
+{
+ "purpose": "A21 camera choice, round 2: long-lens front views at bar-top height (strike 0, hover over key 0 at its closest, key 3 hover, strike 6)",
+ "cameras": [
+  {
+   "name": "xside",
+   "eye": [
+    -0.074,
+    0.75,
+    0.83
+   ],
+   "target": [
+    -0.074,
+    -0.03,
+    0.805
+   ],
+   "focal_mm": 36,
+   "res": [
+    1280,
+    720
+   ]
+  },
+  {
+   "name": "xside_lo",
+   "eye": [
+    -0.074,
+    0.75,
+    0.8
+   ],
+   "target": [
+    -0.074,
+    -0.03,
+    0.8
+   ],
+   "focal_mm": 36,
+   "res": [
+    1280,
+    720
+   ]
+  },
+  {
+   "name": "xside_wide",
+   "eye": [
+    -0.074,
+    0.55,
+    0.835
+   ],
+   "target": [
+    -0.074,
+    -0.03,
+    0.8
+   ],
+   "focal_mm": 26,
+   "res": [
+    1280,
+    720
+   ]
+  }
+ ],
+ "windows": [
+  {
+   "case": null,
+   "unit": "action",
+   "from": 114,
+   "to": 114
+  },
+  {
+   "case": null,
+   "unit": "action",
+   "from": 116,
+   "to": 116
+  },
+  {
+   "case": null,
+   "unit": "action",
+   "from": 182,
+   "to": 182
+  },
+  {
+   "case": null,
+   "unit": "action",
+   "from": 247,
+   "to": 247
+  }
+ ],
+ "mode_sweep": [
+  {
+   "name": "pt8",
+   "carb": {
+    "/rtx/rendermode": "PathTracing",
+    "/rtx/pathtracing/spp": 8,
+    "/rtx/pathtracing/totalSpp": 8,
+    "/rtx/pathtracing/optixDenoiser/enabled": true
+   },
+   "warmup": 4
+  }
+ ]
+}

@@ -1,0 +1,3 @@
+[InternW0_delta] initialized checkpoint=/scratch/<user>/isaac/work/g5/dl/ckpt/robodojo.pt horizon=32 replan=10 denoise=10 physical_time_rope=false fanin=false crop=none
+REAL_WEIGHT_SMOKE_OK actions=10
+REAL_WEIGHT_BATCH_SMOKE_OK envs=2 actions=10

@@ -1,0 +1,89 @@
+{
+ "task": "cover_blocks",
+ "reference": "shipped",
+ "arms": {
+  "shipped": {
+   "what": "RoboDojo as released",
+   "batches": [
+    "g4st_cb_ship"
+   ]
+  },
+  "corrected": {
+   "what": "fully corrected (all seven fixes, v2b map)",
+   "batches": [
+    "g4st_cb_corr"
+   ]
+  },
+  "off3_shipped": {
+   "what": "offset +3 mm in x, shipped",
+   "batches": [
+    "g4st_cb_off3_ship"
+   ],
+   "ref": "shipped"
+  },
+  "off3_corrected": {
+   "what": "offset +3 mm in x, fully corrected",
+   "batches": [
+    "g4st_cb_off3_corr"
+   ],
+   "ref": "off3_shipped"
+  },
+  "off10_shipped": {
+   "what": "offset +10 mm in x, shipped",
+   "batches": [
+    "g4st_cb_off10_ship"
+   ],
+   "ref": "shipped"
+  },
+  "off10_corrected": {
+   "what": "offset +10 mm in x, fully corrected",
+   "batches": [
+    "g4st_cb_off10_corr"
+   ],
+   "ref": "off10_shipped"
+  },
+  "off14_shipped": {
+   "what": "offset +14 mm in x, shipped",
+   "batches": [
+    "g4st_cb_off14_ship"
+   ],
+   "ref": "shipped"
+  },
+  "off14_corrected": {
+   "what": "offset +14 mm in x, fully corrected",
+   "batches": [
+    "g4st_cb_off14_corr"
+   ],
+   "ref": "off14_shipped"
+  },
+  "shipped_rep": {
+   "what": "shipped, seed 2 layout 0 twice in one process",
+   "batches": [
+    "g4st_cb_ship_rep"
+   ],
+   "control": true,
+   "same_as": "shipped"
+  },
+  "corrected_rep": {
+   "what": "corrected, seed 2 layout 0 twice in one process",
+   "batches": [
+    "g4st_cb_corr_rep"
+   ],
+   "control": true,
+   "same_as": "corrected"
+  },
+  "dev_shipped": {
+   "what": "seed 0 layout 0, shipped: plain, --contact_log, offset wrapper at 0,0",
+   "batches": [
+    "g4st_par_cb_ship",
+    "g4st_par_cb_ship_log",
+    "g4st_par_cb_off0"
+   ],
+   "control": true
+  }
+ },
+ "cost_only_batches": [
+  "g4st_rb_cb_corr",
+  "g4st_rb_cb_ship"
+ ]
+}

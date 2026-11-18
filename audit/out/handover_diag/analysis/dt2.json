@@ -1,0 +1,1608 @@
+{
+ "11": {
+  "dt": 0.002,
+  "slew": {
+   "requested_m_s": null,
+   "before": [
+    0.15,
+    0.15
+   ],
+   "after": [
+    0.15,
+    0.15
+   ]
+  },
+  "waits": {},
+  "errors": [],
+  "windows": [
+   {
+    "tag": "b3_bottle3",
+    "label": "bottle3",
+    "inst": "bottle_22_4",
+    "mass_kg": 0.22,
+    "mu_pair": [
+     0.318,
+     0.279
+    ],
+    "steps": 1480,
+    "start_action": 282,
+    "end_action": 355,
+    "timing": {
+     "left_close_cmd": {
+      "i": 620,
+      "action": 313,
+      "substep": 0,
+      "phase": "left_close_handover"
+     },
+     "left_both_pads_contact": {
+      "i": 671,
+      "action": 315,
+      "substep": 11,
+      "phase": "left_close_handover"
+     },
+     "left_drive_at_cap": {
+      "i": 671,
+      "action": 315,
+      "substep": 11,
+      "phase": "left_close_handover"
+     },
+     "giver_open_cmd": {
+      "i": 720,
+      "action": 318,
+      "substep": 0,
+      "phase": "right_release_handover"
+     },
+     "giver_pads_released": {
+      "i": 738,
+      "action": 318,
+      "substep": 18,
+      "phase": "right_release_handover"
+     },
+     "cap_before_open_steps": 49,
+     "close_to_cap_steps": 51,
+     "open_to_release_steps": 18,
+     "cap_N": 160.0
+    },
+    "left_free_close": {
+     "max_finger_speed_m_s": 0.1456,
+     "target_step_mm_max": 0.3
+    },
+    "at_giver_open": {
+     "left_drive_N": -351.35,
+     "left_frozen": true,
+     "left_normal_N": 154.65,
+     "right_normal_N": 155.22,
+     "left_pad_normal_N": [
+      76.72,
+      77.93
+     ],
+     "right_pad_normal_N": [
+      77.67,
+      77.55
+     ],
+     "left_support_z_N": 0.748,
+     "right_support_z_N": 1.102,
+     "weight_N": 2.158,
+     "left_share_of_weight": 0.347,
+     "other_contacts_N": {}
+    },
+    "grip": {
+     "quiet_hold": {
+      "steps": 120,
+      "N_total_median": 158.75,
+      "N_total_p5_p95": [
+       139.17,
+       177.94
+      ],
+      "N_total_min_max": [
+       72.04,
+       276.33
+      ],
+      "cv": 0.123,
+      "steps_below_20pct_of_160N": 0,
+      "frac_below_20pct": 0.0,
+      "step_to_step_abs_change_median_N": 8.9
+     },
+     "carry": {
+      "steps": 229,
+      "N_total_median": 152.23,
+      "N_total_p5_p95": [
+       0.85,
+       503.35
+      ],
+      "N_total_min_max": [
+       0.0,
+       2739.31
+      ],
+      "cv": 1.52,
+      "steps_below_20pct_of_160N": 62,
+      "frac_below_20pct": 0.271,
+      "step_to_step_abs_change_median_N": 21.04
+     },
+     "first_below_32N_after_release": {
+      "action": 332,
+      "substep": 19,
+      "phase": "left_carry_high"
+     },
+     "carry_by_phase": {
+      "left_carry_high": {
+       "steps": 220,
+       "N_total_median": 155.14,
+       "N_total_p5_p95": [
+        2.83,
+        436.02
+       ],
+       "N_total_min_max": [
+        0.0,
+        1182.08
+       ],
+       "cv": 1.158,
+       "steps_below_20pct_of_160N": 54,
+       "frac_below_20pct": 0.245,
+       "step_to_step_abs_change_median_N": 22.28
+      },
+      "left_to_dustbin": {
+       "steps": 9,
+       "N_total_median": 0.6,
+       "N_total_p5_p95": [
+        0.3,
+        1647.15
+       ],
+       "N_total_min_max": [
+        0.28,
+        2739.31
+       ],
+       "cv": 2.811,
+       "steps_below_20pct_of_160N": 8,
+       "frac_below_20pct": 0.889,
+       "step_to_step_abs_change_median_N": 0.43
+      }
+     }
+    },
+    "loss": {
+     "i": 1149,
+     "action": 339,
+     "substep": 9,
+     "phase": "left_to_dustbin",
+     "bottle_xyz": [
+      -0.3515,
+      -0.1831,
+      1.107
+     ],
+     "before_left_release_cmd": true
+    },
+    "slip": {
+     "ref": {
+      "i": 738,
+      "action": 318,
+      "substep": 18,
+      "phase": "right_release_handover"
+     },
+     "max_rotation_deg": 19.17,
+     "max_about_closing_axis_deg": 16.12,
+     "max_translation_mm": 16.23,
+     "rotation_over_2deg": {
+      "i": 835,
+      "action": 323,
+      "substep": 15,
+      "phase": "right_retreat_handover"
+     },
+     "rotation_over_10deg": {
+      "i": 1051,
+      "action": 334,
+      "substep": 11,
+      "phase": "left_carry_high"
+     },
+     "translation_over_2mm": {
+      "i": 895,
+      "action": 326,
+      "substep": 15,
+      "phase": "right_retreat_handover"
+     },
+     "by_phase_end": {
+      "right_release_handover": {
+       "rot_deg": 1.2,
+       "about_axis_deg": 1.2,
+       "trans_mm": [
+        -0.71,
+        -0.04,
+        -0.06
+       ]
+      },
+      "right_retreat_handover": {
+       "rot_deg": 3.72,
+       "about_axis_deg": 3.71,
+       "trans_mm": [
+        -2.21,
+        -0.14,
+        -0.13
+       ]
+      },
+      "left_carry_high": {
+       "rot_deg": 13.88,
+       "about_axis_deg": -11.5,
+       "trans_mm": [
+        2.43,
+        0.97,
+        -12.87
+       ]
+      },
+      "left_to_dustbin": {
+       "rot_deg": 13.15,
+       "about_axis_deg": -9.53,
+       "trans_mm": [
+        -2.07,
+        1.69,
+        -16.01
+       ]
+      }
+     }
+    },
+    "slip_vs_grip": {
+     "steps": 410,
+     "low_grip_steps": 84,
+     "rotation_deg_summed_low_grip_steps": 32.369,
+     "rotation_deg_summed_other_steps": 25.065
+    },
+    "capacity": {
+     "steps_used": 359,
+     "N_pad_median": [
+      78.8764,
+      80.1931
+     ],
+     "spread_mm_median": [
+      1.9033,
+      1.2362
+     ],
+     "C_line_Nm_median": 0.0397,
+     "C_patch_Nm_median": 0.0397,
+     "C_points_Nm_median": 0.0,
+     "C_f_N_median": 50.59,
+     "lever_mm_median": 33.0091,
+     "static_margin_line": 0.557,
+     "tau_rigid_abs_max_before_onset": 0.0108,
+     "u_line_max_before_onset": 0.3085,
+     "u_line_p95_before_onset": 0.2661,
+     "steps_u_line_over_1_before_onset": 0,
+     "u_line_max_overall": 60.186,
+     "u_f_rigid_max": 3.6833,
+     "hand_acc_rms": 16.85,
+     "hand_acc_max": 71.1429,
+     "tau_physx_vs_meas_median_abs_diff_Nm": 0.0052,
+     "onset_rel_rot_over_2deg": {
+      "action": 323,
+      "k": 15,
+      "phase": "right_retreat_handover",
+      "u_line_max_10_steps_before": 0.1909,
+      "u_physx_patch_max_10_steps_before": 0.2545,
+      "tau_rigid_max_10_steps_before": 0.0075,
+      "C_line_median_10_steps_before": 0.0394,
+      "hand_acc_max_10_steps_before": 0.8292
+     },
+     "at_steady_grip": {
+      "steps": 238,
+      "N_pad_median": [
+       78.8891,
+       80.2357
+      ],
+      "spread_mm_median": [
+       1.8978,
+       1.2364
+      ],
+      "C_line_Nm": 0.0396,
+      "C_patch_Nm": 0.0394,
+      "C_f_N": 50.6027,
+      "lever_mm": 33.0099,
+      "weight_N": 2.1582,
+      "static_torque_mgd_Nm": 0.0712,
+      "static_margin_torsion": 0.56,
+      "tangential_margin_Cf_over_weight": 23.4,
+      "swing_tau_rigid_max_Nm": null
+     }
+    },
+    "hand_acc_by_substep_carry": {
+     "0": 25.81,
+     "1": 17.74,
+     "2": 24.16,
+     "3": 25.68,
+     "4": 26.79,
+     "5": 24.78,
+     "6": 23.43,
+     "7": 18.82,
+     "8": 16.29,
+     "9": 14.2,
+     "10": 14.67,
+     "11": 11.35,
+     "12": 12.75,
+     "13": 11.13,
+     "14": 10.63,
+     "15": 9.16,
+     "16": 18.16,
+     "17": 38.51,
+     "18": 44.87,
+     "19": 46.43
+    }
+   }
+  ]
+ },
+ "14": {
+  "dt": 0.002,
+  "slew": {
+   "requested_m_s": null,
+   "before": [
+    0.15,
+    0.15
+   ],
+   "after": [
+    0.15,
+    0.15
+   ]
+  },
+  "waits": {},
+  "errors": [],
+  "windows": [
+   {
+    "tag": "b2_bottle3",
+    "label": "bottle3",
+    "inst": "bottle_55_13",
+    "mass_kg": 0.095,
+    "mu_pair": [
+     0.28171999999999997,
+     0.24985000000000002
+    ],
+    "steps": 1480,
+    "start_action": 207,
+    "end_action": 280,
+    "timing": {
+     "left_close_cmd": {
+      "i": 620,
+      "action": 238,
+      "substep": 0,
+      "phase": "left_close_handover"
+     },
+     "left_both_pads_contact": {
+      "i": 658,
+      "action": 239,
+      "substep": 18,
+      "phase": "left_close_handover"
+     },
+     "left_drive_at_cap": {
+      "i": 658,
+      "action": 239,
+      "substep": 18,
+      "phase": "left_close_handover"
+     },
+     "giver_open_cmd": {
+      "i": 720,
+      "action": 243,
+      "substep": 0,
+      "phase": "right_release_handover"
+     },
+     "giver_pads_released": {
+      "i": 738,
+      "action": 243,
+      "substep": 18,
+      "phase": "right_release_handover"
+     },
+     "cap_before_open_steps": 62,
+     "close_to_cap_steps": 38,
+     "open_to_release_steps": 18,
+     "cap_N": 160.0
+    },
+    "left_free_close": {
+     "max_finger_speed_m_s": 0.134,
+     "target_step_mm_max": 0.3
+    },
+    "at_giver_open": {
+     "left_drive_N": -303.81,
+     "left_frozen": true,
+     "left_normal_N": 164.5,
+     "right_normal_N": 157.23,
+     "left_pad_normal_N": [
+      82.77,
+      81.73
+     ],
+     "right_pad_normal_N": [
+      78.56,
+      78.67
+     ],
+     "left_support_z_N": 1.362,
+     "right_support_z_N": 1.015,
+     "weight_N": 0.932,
+     "left_share_of_weight": 1.461,
+     "other_contacts_N": {}
+    },
+    "grip": {
+     "quiet_hold": {
+      "steps": 120,
+      "N_total_median": 160.03,
+      "N_total_p5_p95": [
+       151.78,
+       165.38
+      ],
+      "N_total_min_max": [
+       102.88,
+       203.96
+      ],
+      "cv": 0.065,
+      "steps_below_20pct_of_160N": 0,
+      "frac_below_20pct": 0.0,
+      "step_to_step_abs_change_median_N": 0.79
+     },
+     "carry": {
+      "steps": 480,
+      "N_total_median": 159.98,
+      "N_total_p5_p95": [
+       149.09,
+       169.76
+      ],
+      "N_total_min_max": [
+       124.27,
+       194.01
+      ],
+      "cv": 0.043,
+      "steps_below_20pct_of_160N": 0,
+      "frac_below_20pct": 0.0,
+      "step_to_step_abs_change_median_N": 2.53
+     },
+     "first_below_32N_after_release": {
+      "action": 245,
+      "substep": 8,
+      "phase": "right_release_handover"
+     },
+     "carry_by_phase": {
+      "left_carry_high": {
+       "steps": 220,
+       "N_total_median": 159.9,
+       "N_total_p5_p95": [
+        143.63,
+        175.34
+       ],
+       "N_total_min_max": [
+        124.27,
+        194.01
+       ],
+       "cv": 0.062,
+       "steps_below_20pct_of_160N": 0,
+       "frac_below_20pct": 0.0,
+       "step_to_step_abs_change_median_N": 6.24
+      },
+      "left_to_dustbin": {
+       "steps": 260,
+       "N_total_median": 159.99,
+       "N_total_p5_p95": [
+        157.58,
+        162.2
+       ],
+       "N_total_min_max": [
+        154.5,
+        166.44
+       ],
+       "cv": 0.01,
+       "steps_below_20pct_of_160N": 0,
+       "frac_below_20pct": 0.0,
+       "step_to_step_abs_change_median_N": 1.59
+      }
+     }
+    },
+    "loss": {
+     "i": 1418,
+     "action": 277,
+     "substep": 18,
+     "phase": "left_release",
+     "bottle_xyz": [
+      -0.6347,
+      -0.1337,
+      0.8968
+     ],
+     "before_left_release_cmd": false
+    },
+    "slip": {
+     "ref": {
+      "i": 738,
+      "action": 243,
+      "substep": 18,
+      "phase": "right_release_handover"
+     },
+     "max_rotation_deg": 16.18,
+     "max_about_closing_axis_deg": 16.03,
+     "max_translation_mm": 10.2,
+     "rotation_over_2deg": {
+      "i": 773,
+      "action": 245,
+      "substep": 13,
+      "phase": "right_release_handover"
+     },
+     "rotation_over_10deg": {
+      "i": 781,
+      "action": 246,
+      "substep": 1,
+      "phase": "right_release_handover"
+     },
+     "translation_over_2mm": {
+      "i": 775,
+      "action": 245,
+      "substep": 15,
+      "phase": "right_release_handover"
+     },
+     "by_phase_end": {
+      "right_release_handover": {
+       "rot_deg": 16.17,
+       "about_axis_deg": 16.01,
+       "trans_mm": [
+        -10.13,
+        0.93,
+        -0.5
+       ]
+      },
+      "right_retreat_handover": {
+       "rot_deg": 13.4,
+       "about_axis_deg": 13.24,
+       "trans_mm": [
+        -8.8,
+        0.6,
+        -1.12
+       ]
+      },
+      "left_carry_high": {
+       "rot_deg": 13.73,
+       "about_axis_deg": 13.58,
+       "trans_mm": [
+        -9.11,
+        0.62,
+        -1.12
+       ]
+      },
+      "left_to_dustbin": {
+       "rot_deg": 13.7,
+       "about_axis_deg": 13.54,
+       "trans_mm": [
+        -9.18,
+        0.63,
+        -1.19
+       ]
+      },
+      "left_release": {
+       "rot_deg": 13.7,
+       "about_axis_deg": 13.54,
+       "trans_mm": [
+        -9.18,
+        0.64,
+        -1.19
+       ]
+      }
+     }
+    },
+    "slip_vs_grip": {
+     "steps": 679,
+     "low_grip_steps": 11,
+     "rotation_deg_summed_low_grip_steps": 6.279,
+     "rotation_deg_summed_other_steps": 17.274
+    },
+    "capacity": {
+     "steps_used": 667,
+     "N_pad_median": [
+      79.9178,
+      80.0377
+     ],
+     "spread_mm_median": [
+      19.4729,
+      18.3454
+     ],
+     "C_line_Nm_median": 0.4094,
+     "C_patch_Nm_median": 0.4255,
+     "C_points_Nm_median": 0.0,
+     "C_f_N_median": 45.0588,
+     "lever_mm_median": 40.52,
+     "static_margin_line": 10.841,
+     "tau_rigid_abs_max_before_onset": 0.0916,
+     "u_line_max_before_onset": 0.1291,
+     "u_line_p95_before_onset": 0.0808,
+     "steps_u_line_over_1_before_onset": 0,
+     "u_line_max_overall": 0.8659,
+     "u_f_rigid_max": 0.2264,
+     "hand_acc_rms": 30.97,
+     "hand_acc_max": 122.748,
+     "tau_physx_vs_meas_median_abs_diff_Nm": 0.0121,
+     "onset_rel_rot_over_2deg": {
+      "action": 245,
+      "k": 13,
+      "phase": "right_release_handover",
+      "u_line_max_10_steps_before": 0.1533,
+      "u_physx_patch_max_10_steps_before": 0.8399,
+      "tau_rigid_max_10_steps_before": 0.1538,
+      "C_line_median_10_steps_before": 0.3684,
+      "hand_acc_max_10_steps_before": 122.748
+     },
+     "at_steady_grip": {
+      "steps": 605,
+      "N_pad_median": [
+       79.9355,
+       80.04
+      ],
+      "spread_mm_median": [
+       19.4735,
+       18.3456
+      ],
+      "C_line_Nm": 0.4094,
+      "C_patch_Nm": 0.4255,
+      "C_f_N": 45.0653,
+      "lever_mm": 40.5719,
+      "weight_N": 0.932,
+      "static_torque_mgd_Nm": 0.0378,
+      "static_margin_torsion": 10.83,
+      "tangential_margin_Cf_over_weight": 48.4,
+      "swing_tau_rigid_max_Nm": null
+     }
+    },
+    "hand_acc_by_substep_carry": {
+     "0": 40.43,
+     "1": 30.35,
+     "2": 30.77,
+     "3": 29.62,
+     "4": 27.18,
+     "5": 24.45,
+     "6": 22.33,
+     "7": 21.06,
+     "8": 20.28,
+     "9": 19.69,
+     "10": 19.03,
+     "11": 17.94,
+     "12": 16.64,
+     "13": 15.05,
+     "14": 13.24,
+     "15": 11.56,
+     "16": 17.76,
+     "17": 37.33,
+     "18": 45.5,
+     "19": 57.85
+    }
+   },
+   {
+    "tag": "b3_bottle0",
+    "label": "bottle0",
+    "inst": "bottle_22_10",
+    "mass_kg": 0.22,
+    "mu_pair": [
+     0.318,
+     0.279
+    ],
+    "steps": 1480,
+    "start_action": 329,
+    "end_action": 402,
+    "timing": {
+     "left_close_cmd": {
+      "i": 620,
+      "action": 360,
+      "substep": 0,
+      "phase": "left_close_handover"
+     },
+     "left_both_pads_contact": {
+      "i": 676,
+      "action": 362,
+      "substep": 16,
+      "phase": "left_close_handover"
+     },
+     "left_drive_at_cap": {
+      "i": 677,
+      "action": 362,
+      "substep": 17,
+      "phase": "left_close_handover"
+     },
+     "giver_open_cmd": {
+      "i": 720,
+      "action": 365,
+      "substep": 0,
+      "phase": "right_release_handover"
+     },
+     "giver_pads_released": {
+      "i": 740,
+      "action": 366,
+      "substep": 0,
+      "phase": "right_release_handover"
+     },
+     "cap_before_open_steps": 43,
+     "close_to_cap_steps": 57,
+     "open_to_release_steps": 20,
+     "cap_N": 160.0
+    },
+    "left_free_close": {
+     "max_finger_speed_m_s": 0.1468,
+     "target_step_mm_max": 0.3
+    },
+    "at_giver_open": {
+     "left_drive_N": -333.55,
+     "left_frozen": true,
+     "left_normal_N": 190.6,
+     "right_normal_N": 166.53,
+     "left_pad_normal_N": [
+      96.58,
+      94.02
+     ],
+     "right_pad_normal_N": [
+      83.76,
+      82.77
+     ],
+     "left_support_z_N": 3.091,
+     "right_support_z_N": -0.337,
+     "weight_N": 2.158,
+     "left_share_of_weight": 1.432,
+     "other_contacts_N": {}
+    },
+    "grip": {
+     "quiet_hold": {
+      "steps": 120,
+      "N_total_median": 157.95,
+      "N_total_p5_p95": [
+       157.24,
+       158.58
+      ],
+      "N_total_min_max": [
+       156.77,
+       159.09
+      ],
+      "cv": 0.003,
+      "steps_below_20pct_of_160N": 0,
+      "frac_below_20pct": 0.0,
+      "step_to_step_abs_change_median_N": 0.73
+     },
+     "carry": {
+      "steps": 382,
+      "N_total_median": 66.68,
+      "N_total_p5_p95": [
+       0.0,
+       573.08
+      ],
+      "N_total_min_max": [
+       0.0,
+       2581.65
+      ],
+      "cv": 1.723,
+      "steps_below_20pct_of_160N": 172,
+      "frac_below_20pct": 0.45,
+      "step_to_step_abs_change_median_N": 36.51
+     },
+     "first_below_32N_after_release": {
+      "action": 378,
+      "substep": 0,
+      "phase": "left_carry_high"
+     },
+     "carry_by_phase": {
+      "left_carry_high": {
+       "steps": 220,
+       "N_total_median": 148.48,
+       "N_total_p5_p95": [
+        0.0,
+        460.31
+       ],
+       "N_total_min_max": [
+        0.0,
+        1182.36
+       ],
+       "cv": 1.115,
+       "steps_below_20pct_of_160N": 53,
+       "frac_below_20pct": 0.241,
+       "step_to_step_abs_change_median_N": 52.85
+      },
+      "left_to_dustbin": {
+       "steps": 162,
+       "N_total_median": 2.86,
+       "N_total_p5_p95": [
+        0.0,
+        757.29
+       ],
+       "N_total_min_max": [
+        0.0,
+        2581.65
+       ],
+       "cv": 2.389,
+       "steps_below_20pct_of_160N": 119,
+       "frac_below_20pct": 0.735,
+       "step_to_step_abs_change_median_N": 3.59
+      }
+     }
+    },
+    "loss": {
+     "i": 1302,
+     "action": 394,
+     "substep": 2,
+     "phase": "left_to_dustbin",
+     "bottle_xyz": [
+      -0.5082,
+      -0.0631,
+      0.9062
+     ],
+     "before_left_release_cmd": true
+    },
+    "slip": {
+     "ref": {
+      "i": 740,
+      "action": 366,
+      "substep": 0,
+      "phase": "right_release_handover"
+     },
+     "max_rotation_deg": 24.53,
+     "max_about_closing_axis_deg": 6.97,
+     "max_translation_mm": 83.77,
+     "rotation_over_2deg": {
+      "i": 1000,
+      "action": 379,
+      "substep": 0,
+      "phase": "left_carry_high"
+     },
+     "rotation_over_10deg": {
+      "i": 1025,
+      "action": 380,
+      "substep": 5,
+      "phase": "left_carry_high"
+     },
+     "translation_over_2mm": {
+      "i": 1001,
+      "action": 379,
+      "substep": 1,
+      "phase": "left_carry_high"
+     },
+     "by_phase_end": {
+      "right_release_handover": {
+       "rot_deg": 0.0,
+       "about_axis_deg": 0.0,
+       "trans_mm": [
+        -0.0,
+        -0.0,
+        0.0
+       ]
+      },
+      "right_retreat_handover": {
+       "rot_deg": 0.0,
+       "about_axis_deg": 0.0,
+       "trans_mm": [
+        -0.0,
+        0.0,
+        0.0
+       ]
+      },
+      "left_carry_high": {
+       "rot_deg": 16.43,
+       "about_axis_deg": 5.9,
+       "trans_mm": [
+        -2.53,
+        4.0,
+        -18.08
+       ]
+      },
+      "left_to_dustbin": {
+       "rot_deg": 24.53,
+       "about_axis_deg": -0.17,
+       "trans_mm": [
+        -17.65,
+        -5.72,
+        -81.69
+       ]
+      }
+     }
+    },
+    "slip_vs_grip": {
+     "steps": 561,
+     "low_grip_steps": 223,
+     "rotation_deg_summed_low_grip_steps": 73.836,
+     "rotation_deg_summed_other_steps": 14.505
+    },
+    "capacity": {
+     "steps_used": 400,
+     "N_pad_median": [
+      78.8564,
+      79.2344
+     ],
+     "spread_mm_median": [
+      18.5059,
+      12.695
+     ],
+     "C_line_Nm_median": 0.3413,
+     "C_patch_Nm_median": 0.391,
+     "C_points_Nm_median": 0.0,
+     "C_f_N_median": 50.2717,
+     "lever_mm_median": 32.4187,
+     "static_margin_line": 4.878,
+     "tau_rigid_abs_max_before_onset": 0.3474,
+     "u_line_max_before_onset": 3.8504,
+     "u_line_p95_before_onset": 0.5624,
+     "steps_u_line_over_1_before_onset": 5,
+     "u_line_max_overall": 85.6111,
+     "u_f_rigid_max": 9.7399,
+     "hand_acc_rms": 20.76,
+     "hand_acc_max": 76.5474,
+     "tau_physx_vs_meas_median_abs_diff_Nm": 0.0115,
+     "onset_rel_rot_over_2deg": {
+      "action": 379,
+      "k": 1,
+      "phase": "left_carry_high",
+      "u_line_max_10_steps_before": 3.8504,
+      "u_physx_patch_max_10_steps_before": 0.4889,
+      "tau_rigid_max_10_steps_before": 0.3474,
+      "C_line_median_10_steps_before": 0.3562,
+      "hand_acc_max_10_steps_before": 49.6538
+     },
+     "at_steady_grip": {
+      "steps": 240,
+      "N_pad_median": [
+       78.7888,
+       79.1984
+      ],
+      "spread_mm_median": [
+       18.506,
+       12.6153
+      ],
+      "C_line_Nm": 0.3411,
+      "C_patch_Nm": 0.3907,
+      "C_f_N": 50.2449,
+      "lever_mm": 32.4105,
+      "weight_N": 2.1582,
+      "static_torque_mgd_Nm": 0.0699,
+      "static_margin_torsion": 4.88,
+      "tangential_margin_Cf_over_weight": 23.3,
+      "swing_tau_rigid_max_Nm": 0.3474,
+      "swing_peak_over_C_line": 1.018
+     }
+    },
+    "hand_acc_by_substep_carry": {
+     "0": 31.36,
+     "1": 21.26,
+     "2": 25.83,
+     "3": 25.29,
+     "4": 25.56,
+     "5": 26.22,
+     "6": 21.42,
+     "7": 20.83,
+     "8": 17.76,
+     "9": 13.35,
+     "10": 13.1,
+     "11": 15.38,
+     "12": 10.18,
+     "13": 10.51,
+     "14": 8.17,
+     "15": 10.52,
+     "16": 18.98,
+     "17": 37.01,
+     "18": 43.87,
+     "19": 51.45
+    }
+   }
+  ]
+ },
+ "15": {
+  "dt": 0.002,
+  "slew": {
+   "requested_m_s": null,
+   "before": [
+    0.15,
+    0.15
+   ],
+   "after": [
+    0.15,
+    0.15
+   ]
+  },
+  "waits": {},
+  "errors": [],
+  "windows": [
+   {
+    "tag": "b2_bottle3",
+    "label": "bottle3",
+    "inst": "bottle_60_22",
+    "mass_kg": 0.07,
+    "mu_pair": [
+     0.28171999999999997,
+     0.24985000000000002
+    ],
+    "steps": 1480,
+    "start_action": 207,
+    "end_action": 280,
+    "timing": {
+     "left_close_cmd": {
+      "i": 620,
+      "action": 238,
+      "substep": 0,
+      "phase": "left_close_handover"
+     },
+     "left_both_pads_contact": {
+      "i": 698,
+      "action": 241,
+      "substep": 18,
+      "phase": "left_close_handover"
+     },
+     "left_drive_at_cap": {
+      "i": 698,
+      "action": 241,
+      "substep": 18,
+      "phase": "left_close_handover"
+     },
+     "giver_open_cmd": {
+      "i": 720,
+      "action": 243,
+      "substep": 0,
+      "phase": "right_release_handover"
+     },
+     "giver_pads_released": {
+      "i": 742,
+      "action": 244,
+      "substep": 2,
+      "phase": "right_release_handover"
+     },
+     "cap_before_open_steps": 22,
+     "close_to_cap_steps": 78,
+     "open_to_release_steps": 22,
+     "cap_N": 160.0
+    },
+    "left_free_close": {
+     "max_finger_speed_m_s": 0.1497,
+     "target_step_mm_max": 0.3
+    },
+    "at_giver_open": {
+     "left_drive_N": -328.98,
+     "left_frozen": true,
+     "left_normal_N": 214.8,
+     "right_normal_N": 207.51,
+     "left_pad_normal_N": [
+      107.16,
+      107.64
+     ],
+     "right_pad_normal_N": [
+      103.48,
+      104.04
+     ],
+     "left_support_z_N": -0.97,
+     "right_support_z_N": 2.029,
+     "weight_N": 0.687,
+     "left_share_of_weight": -1.412,
+     "other_contacts_N": {}
+    },
+    "grip": {
+     "quiet_hold": {
+      "steps": 120,
+      "N_total_median": 159.88,
+      "N_total_p5_p95": [
+       158.98,
+       160.81
+      ],
+      "N_total_min_max": [
+       158.1,
+       161.55
+      ],
+      "cv": 0.004,
+      "steps_below_20pct_of_160N": 0,
+      "frac_below_20pct": 0.0,
+      "step_to_step_abs_change_median_N": 0.88
+     },
+     "carry": {
+      "steps": 230,
+      "N_total_median": 153.26,
+      "N_total_p5_p95": [
+       0.0,
+       480.53
+      ],
+      "N_total_min_max": [
+       0.0,
+       2260.79
+      ],
+      "cv": 1.67,
+      "steps_below_20pct_of_160N": 89,
+      "frac_below_20pct": 0.387,
+      "step_to_step_abs_change_median_N": 6.41
+     },
+     "first_below_32N_after_release": {
+      "action": 257,
+      "substep": 0,
+      "phase": "left_carry_high"
+     },
+     "carry_by_phase": {
+      "left_carry_high": {
+       "steps": 220,
+       "N_total_median": 155.87,
+       "N_total_p5_p95": [
+        0.0,
+        486.59
+       ],
+       "N_total_min_max": [
+        0.0,
+        2260.79
+       ],
+       "cv": 1.62,
+       "steps_below_20pct_of_160N": 79,
+       "frac_below_20pct": 0.359,
+       "step_to_step_abs_change_median_N": 7.25
+      },
+      "left_to_dustbin": {
+       "steps": 10,
+       "N_total_median": 0.0,
+       "N_total_p5_p95": [
+        0.0,
+        2.74
+       ],
+       "N_total_min_max": [
+        0.0,
+        2.77
+       ],
+       "cv": 2.0,
+       "steps_below_20pct_of_160N": 10,
+       "frac_below_20pct": 1.0,
+       "step_to_step_abs_change_median_N": 0.0
+      }
+     }
+    },
+    "loss": {
+     "i": 1150,
+     "action": 264,
+     "substep": 10,
+     "phase": "left_to_dustbin",
+     "bottle_xyz": [
+      -0.3612,
+      -0.1713,
+      1.1018
+     ],
+     "before_left_release_cmd": true
+    },
+    "slip": {
+     "ref": {
+      "i": 742,
+      "action": 244,
+      "substep": 2,
+      "phase": "right_release_handover"
+     },
+     "max_rotation_deg": 28.62,
+     "max_about_closing_axis_deg": 23.95,
+     "max_translation_mm": 25.81,
+     "rotation_over_2deg": {
+      "i": 1012,
+      "action": 257,
+      "substep": 12,
+      "phase": "left_carry_high"
+     },
+     "rotation_over_10deg": {
+      "i": 1030,
+      "action": 258,
+      "substep": 10,
+      "phase": "left_carry_high"
+     },
+     "translation_over_2mm": {
+      "i": 1025,
+      "action": 258,
+      "substep": 5,
+      "phase": "left_carry_high"
+     },
+     "by_phase_end": {
+      "right_release_handover": {
+       "rot_deg": 0.02,
+       "about_axis_deg": -0.02,
+       "trans_mm": [
+        0.01,
+        -0.0,
+        -0.0
+       ]
+      },
+      "right_retreat_handover": {
+       "rot_deg": 0.02,
+       "about_axis_deg": -0.02,
+       "trans_mm": [
+        0.01,
+        -0.0,
+        -0.0
+       ]
+      },
+      "left_carry_high": {
+       "rot_deg": 20.29,
+       "about_axis_deg": 16.53,
+       "trans_mm": [
+        13.77,
+        4.6,
+        -13.26
+       ]
+      },
+      "left_to_dustbin": {
+       "rot_deg": 28.62,
+       "about_axis_deg": 23.95,
+       "trans_mm": [
+        8.85,
+        8.74,
+        -22.61
+       ]
+      }
+     }
+    },
+    "slip_vs_grip": {
+     "steps": 407,
+     "low_grip_steps": 112,
+     "rotation_deg_summed_low_grip_steps": 59.954,
+     "rotation_deg_summed_other_steps": 6.66
+    },
+    "capacity": {
+     "steps_used": 328,
+     "N_pad_median": [
+      79.9739,
+      79.9467
+     ],
+     "spread_mm_median": [
+      11.9727,
+      18.3068
+     ],
+     "C_line_Nm_median": 0.3199,
+     "C_patch_Nm_median": 0.3918,
+     "C_points_Nm_median": 0.0,
+     "C_f_N_median": 45.0589,
+     "lever_mm_median": 17.2514,
+     "static_margin_line": 27.004,
+     "tau_rigid_abs_max_before_onset": 0.0849,
+     "u_line_max_before_onset": 3.1242,
+     "u_line_p95_before_onset": 0.1603,
+     "steps_u_line_over_1_before_onset": 1,
+     "u_line_max_overall": 7.1656,
+     "u_f_rigid_max": 5.4432,
+     "hand_acc_rms": 17.66,
+     "hand_acc_max": 79.7516,
+     "tau_physx_vs_meas_median_abs_diff_Nm": 0.0011,
+     "onset_rel_rot_over_2deg": {
+      "action": 257,
+      "k": 13,
+      "phase": "left_carry_high",
+      "u_line_max_10_steps_before": 3.1242,
+      "u_physx_patch_max_10_steps_before": 0.857,
+      "tau_rigid_max_10_steps_before": 0.0849,
+      "C_line_median_10_steps_before": 0.2768,
+      "hand_acc_max_10_steps_before": 72.7268
+     },
+     "at_steady_grip": {
+      "steps": 247,
+      "N_pad_median": [
+       79.9515,
+       79.9128
+      ],
+      "spread_mm_median": [
+       11.9727,
+       18.3075
+      ],
+      "C_line_Nm": 0.32,
+      "C_patch_Nm": 0.3918,
+      "C_f_N": 45.0429,
+      "lever_mm": 17.2496,
+      "weight_N": 0.6867,
+      "static_torque_mgd_Nm": 0.0118,
+      "static_margin_torsion": 27.01,
+      "tangential_margin_Cf_over_weight": 65.6,
+      "swing_tau_rigid_max_Nm": 0.0849,
+      "swing_peak_over_C_line": 0.265
+     }
+    },
+    "hand_acc_by_substep_carry": {
+     "0": 30.38,
+     "1": 21.47,
+     "2": 28.59,
+     "3": 32.29,
+     "4": 23.62,
+     "5": 23.98,
+     "6": 21.58,
+     "7": 15.26,
+     "8": 13.72,
+     "9": 14.52,
+     "10": 13.97,
+     "11": 12.0,
+     "12": 11.2,
+     "13": 9.45,
+     "14": 8.21,
+     "15": 6.34,
+     "16": 18.23,
+     "17": 35.62,
+     "18": 40.09,
+     "19": 52.17
+    }
+   },
+   {
+    "tag": "b3_bottle1",
+    "label": "bottle1",
+    "inst": "bottle_22_20",
+    "mass_kg": 0.22,
+    "mu_pair": [
+     0.318,
+     0.279
+    ],
+    "steps": 1480,
+    "start_action": 329,
+    "end_action": 402,
+    "timing": {
+     "left_close_cmd": {
+      "i": 620,
+      "action": 360,
+      "substep": 0,
+      "phase": "left_close_handover"
+     },
+     "left_both_pads_contact": {
+      "i": 677,
+      "action": 362,
+      "substep": 17,
+      "phase": "left_close_handover"
+     },
+     "left_drive_at_cap": {
+      "i": 677,
+      "action": 362,
+      "substep": 17,
+      "phase": "left_close_handover"
+     },
+     "giver_open_cmd": {
+      "i": 720,
+      "action": 365,
+      "substep": 0,
+      "phase": "right_release_handover"
+     },
+     "giver_pads_released": {
+      "i": 740,
+      "action": 366,
+      "substep": 0,
+      "phase": "right_release_handover"
+     },
+     "cap_before_open_steps": 43,
+     "close_to_cap_steps": 57,
+     "open_to_release_steps": 20,
+     "cap_N": 160.0
+    },
+    "left_free_close": {
+     "max_finger_speed_m_s": 0.1471,
+     "target_step_mm_max": 0.3
+    },
+    "at_giver_open": {
+     "left_drive_N": -323.75,
+     "left_frozen": true,
+     "left_normal_N": 154.6,
+     "right_normal_N": 155.56,
+     "left_pad_normal_N": [
+      77.53,
+      77.07
+     ],
+     "right_pad_normal_N": [
+      77.66,
+      77.9
+     ],
+     "left_support_z_N": 0.908,
+     "right_support_z_N": 0.917,
+     "weight_N": 2.158,
+     "left_share_of_weight": 0.421,
+     "other_contacts_N": {}
+    },
+    "grip": {
+     "quiet_hold": {
+      "steps": 120,
+      "N_total_median": 157.98,
+      "N_total_p5_p95": [
+       157.01,
+       158.94
+      ],
+      "N_total_min_max": [
+       156.41,
+       159.45
+      ],
+      "cv": 0.004,
+      "steps_below_20pct_of_160N": 0,
+      "frac_below_20pct": 0.0,
+      "step_to_step_abs_change_median_N": 0.89
+     },
+     "carry": {
+      "steps": 382,
+      "N_total_median": 142.62,
+      "N_total_p5_p95": [
+       0.0,
+       350.38
+      ],
+      "N_total_min_max": [
+       0.0,
+       3416.54
+      ],
+      "cv": 1.785,
+      "steps_below_20pct_of_160N": 120,
+      "frac_below_20pct": 0.314,
+      "step_to_step_abs_change_median_N": 20.22
+     },
+     "first_below_32N_after_release": {
+      "action": 378,
+      "substep": 0,
+      "phase": "left_carry_high"
+     },
+     "carry_by_phase": {
+      "left_carry_high": {
+       "steps": 220,
+       "N_total_median": 155.23,
+       "N_total_p5_p95": [
+        15.24,
+        325.04
+       ],
+       "N_total_min_max": [
+        0.0,
+        1304.47
+       ],
+       "cv": 0.821,
+       "steps_below_20pct_of_160N": 29,
+       "frac_below_20pct": 0.132,
+       "step_to_step_abs_change_median_N": 50.5
+      },
+      "left_to_dustbin": {
+       "steps": 162,
+       "N_total_median": 4.03,
+       "N_total_p5_p95": [
+        0.0,
+        448.53
+       ],
+       "N_total_min_max": [
+        0.0,
+        3416.54
+       ],
+       "cv": 2.767,
+       "steps_below_20pct_of_160N": 91,
+       "frac_below_20pct": 0.562,
+       "step_to_step_abs_change_median_N": 1.91
+      }
+     }
+    },
+    "loss": {
+     "i": 1302,
+     "action": 394,
+     "substep": 2,
+     "phase": "left_to_dustbin",
+     "bottle_xyz": [
+      -0.533,
+      -0.0559,
+      0.9064
+     ],
+     "before_left_release_cmd": true
+    },
+    "slip": {
+     "ref": {
+      "i": 740,
+      "action": 366,
+      "substep": 0,
+      "phase": "right_release_handover"
+     },
+     "max_rotation_deg": 25.52,
+     "max_about_closing_axis_deg": 6.77,
+     "max_translation_mm": 81.38,
+     "rotation_over_2deg": {
+      "i": 999,
+      "action": 378,
+      "substep": 19,
+      "phase": "left_carry_high"
+     },
+     "rotation_over_10deg": {
+      "i": 1034,
+      "action": 380,
+      "substep": 14,
+      "phase": "left_carry_high"
+     },
+     "translation_over_2mm": {
+      "i": 1000,
+      "action": 379,
+      "substep": 0,
+      "phase": "left_carry_high"
+     },
+     "by_phase_end": {
+      "right_release_handover": {
+       "rot_deg": 0.0,
+       "about_axis_deg": 0.0,
+       "trans_mm": [
+        0.0,
+        -0.0,
+        -0.0
+       ]
+      },
+      "right_retreat_handover": {
+       "rot_deg": 0.0,
+       "about_axis_deg": 0.0,
+       "trans_mm": [
+        0.0,
+        -0.0,
+        -0.0
+       ]
+      },
+      "left_carry_high": {
+       "rot_deg": 15.25,
+       "about_axis_deg": 2.44,
+       "trans_mm": [
+        -2.47,
+        4.15,
+        -11.45
+       ]
+      },
+      "left_to_dustbin": {
+       "rot_deg": 25.52,
+       "about_axis_deg": 6.49,
+       "trans_mm": [
+        -2.29,
+        14.71,
+        -80.0
+       ]
+      }
+     }
+    },
+    "slip_vs_grip": {
+     "steps": 561,
+     "low_grip_steps": 148,
+     "rotation_deg_summed_low_grip_steps": 53.393,
+     "rotation_deg_summed_other_steps": 18.306
+    },
+    "capacity": {
+     "steps_used": 448,
+     "N_pad_median": [
+      78.8297,
+      79.2214
+     ],
+     "spread_mm_median": [
+      16.7423,
+      12.958
+     ],
+     "C_line_Nm_median": 0.3232,
+     "C_patch_Nm_median": 0.3727,
+     "C_points_Nm_median": 0.0,
+     "C_f_N_median": 50.2576,
+     "lever_mm_median": 33.3171,
+     "static_margin_line": 4.495,
+     "tau_rigid_abs_max_before_onset": 0.3728,
+     "u_line_max_before_onset": 5.8456,
+     "u_line_p95_before_onset": 0.5336,
+     "steps_u_line_over_1_before_onset": 5,
+     "u_line_max_overall": 17.0781,
+     "u_f_rigid_max": 1.9701,
+     "hand_acc_rms": 21.38,
+     "hand_acc_max": 81.9443,
+     "tau_physx_vs_meas_median_abs_diff_Nm": 0.0117,
+     "onset_rel_rot_over_2deg": {
+      "action": 379,
+      "k": 1,
+      "phase": "left_carry_high",
+      "u_line_max_10_steps_before": 5.8456,
+      "u_physx_patch_max_10_steps_before": 0.8204,
+      "tau_rigid_max_10_steps_before": 0.3728,
+      "C_line_median_10_steps_before": 0.3198,
+      "hand_acc_max_10_steps_before": 52.7642
+     },
+     "at_steady_grip": {
+      "steps": 293,
+      "N_pad_median": [
+       78.8321,
+       79.2314
+      ],
+      "spread_mm_median": [
+       16.7424,
+       12.9383
+      ],
+      "C_line_Nm": 0.3227,
+      "C_patch_Nm": 0.3727,
+      "C_f_N": 50.2657,
+      "lever_mm": 33.311,
+      "weight_N": 2.1582,
+      "static_torque_mgd_Nm": 0.0719,
+      "static_margin_torsion": 4.49,
+      "tangential_margin_Cf_over_weight": 23.3,
+      "swing_tau_rigid_max_Nm": 0.3728,
+      "swing_peak_over_C_line": 1.155
+     }
+    },
+    "hand_acc_by_substep_carry": {
+     "0": 30.35,
+     "1": 22.38,
+     "2": 25.6,
+     "3": 26.91,
+     "4": 25.83,
+     "5": 24.51,
+     "6": 22.74,
+     "7": 19.55,
+     "8": 20.59,
+     "9": 15.89,
+     "10": 12.95,
+     "11": 13.54,
+     "12": 11.02,
+     "13": 12.29,
+     "14": 11.1,
+     "15": 9.58,
+     "16": 17.23,
+     "17": 36.27,
+     "18": 41.45,
+     "19": 52.62
+    }
+   }
+  ]
+ }
+}

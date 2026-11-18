@@ -1,0 +1,42 @@
+{
+ "mode": "tiers:T0,T1",
+ "seconds_joint": 1.92,
+ "carried_primary_classes": [
+  "abs_device_housing",
+  "abs_toy_plastic",
+  "aluminium",
+  "engineered_wood",
+  "foam",
+  "glazed_ceramic",
+  "ground",
+  "hardwood",
+  "pad_hard",
+  "paper_cardboard",
+  "pet_plastic",
+  "polyolefin_plastic",
+  "softwood",
+  "steel",
+  "table_laminate"
+ ],
+ "carried_sensitivity_classes": [
+  "pad_elastomer",
+  "table_wood"
+ ],
+ "counted_primary": 83,
+ "counted_sensitivity": 28,
+ "active_stage1": [
+  "glazed_ceramic__glazed_ceramic.mu_static>=lo",
+  "steel__steel.mu_static>=lo",
+  "steel__steel.mu_kinetic>=lo"
+ ],
+ "active_stage2": [],
+ "active_stage3": [],
+ "uncarried": [],
+ "union_pair_count": {
+  "all_formable": 113,
+  "load_bearing": 111,
+  "class_pairs": 104,
+  "override_pairs": 9
+ }
+}
+DONE

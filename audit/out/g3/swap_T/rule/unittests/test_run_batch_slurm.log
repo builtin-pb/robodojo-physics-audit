@@ -1,0 +1,12 @@
+test_end_to_end_slurm_execution_and_recorded_fields (__main__.RunBatchSlurmTests) ... ok
+test_gpu_index_mapping (__main__.RunBatchSlurmTests) ... ok
+test_job_tmp_and_sbatch_template_contracts (__main__.RunBatchSlurmTests) ... ok
+test_refusal_outside_allocation_and_on_login_hosts (__main__.RunBatchSlurmTests) ... ok
+test_slot_construction_and_dry_run_slurm (__main__.RunBatchSlurmTests) ... ok
+test_summarize_gpu_hours_and_fields (__main__.RunBatchSlurmTests) ... ok
+test_unchanged_vis_path_dry_run_matches_main (__main__.RunBatchSlurmTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.230s
+
+OK

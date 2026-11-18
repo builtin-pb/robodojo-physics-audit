@@ -1,0 +1,23 @@
+[
+ {
+  "cell_name": "sort_nesting_dolls_by_size_random__perturb",
+  "layout": 0,
+  "overrides": {
+   "spawn_lift": {
+    "stems": "*",
+    "dz_m": 1e-06
+   },
+   "slide_target": {
+    "label": "key_0_9",
+    "inst": "key_0_9",
+    "labelled": false,
+    "stem": "key_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.943206,
+     -0.332208
+    ]
+   }
+  }
+ }
+]

@@ -1,0 +1,91 @@
+[
+ {
+  "cell_name": "pour_liquid_into_cup_random__shipped",
+  "layout": 0,
+  "overrides": {
+   "slide_target": {
+    "label": "cereal_0_10",
+    "inst": "cereal_0_10",
+    "labelled": false,
+    "stem": "cereal_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.996321,
+     -0.085701
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "pour_liquid_into_cup_random__dt2",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.002,
+   "slide_target": {
+    "label": "cereal_0_10",
+    "inst": "cereal_0_10",
+    "labelled": false,
+    "stem": "cereal_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.996321,
+     -0.085701
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "pour_liquid_into_cup_random__dt1",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.001,
+   "slide_target": {
+    "label": "cereal_0_10",
+    "inst": "cereal_0_10",
+    "labelled": false,
+    "stem": "cereal_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.996321,
+     -0.085701
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "pour_liquid_into_cup_random__iters4x",
+  "layout": 0,
+  "overrides": {
+   "min_pos_iters": 64,
+   "slide_target": {
+    "label": "cereal_0_10",
+    "inst": "cereal_0_10",
+    "labelled": false,
+    "stem": "cereal_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.996321,
+     -0.085701
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "pour_liquid_into_cup_random__stab_off",
+  "layout": 0,
+  "overrides": {
+   "enable_stabilization": false,
+   "slide_target": {
+    "label": "cereal_0_10",
+    "inst": "cereal_0_10",
+    "labelled": false,
+    "stem": "cereal_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.996321,
+     -0.085701
+    ]
+   }
+  }
+ }
+]

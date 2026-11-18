@@ -1,0 +1,23 @@
+[
+ {
+  "cell_name": "sort_nesting_dolls_by_size__perturb",
+  "layout": 0,
+  "overrides": {
+   "spawn_lift": {
+    "stems": "*",
+    "dz_m": 1e-06
+   },
+   "slide_target": {
+    "label": "doll2",
+    "inst": "matryoshka_dolls_11_3",
+    "labelled": true,
+    "stem": "matryoshka_dolls_11",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     1e-06,
+     1.0
+    ]
+   }
+  }
+ }
+]

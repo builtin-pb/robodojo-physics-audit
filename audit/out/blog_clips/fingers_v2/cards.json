@@ -1,0 +1,184 @@
+[
+ {
+  "cam": "ax10z",
+  "note": "slowed 2x",
+  "steps": {
+   "from": 920,
+   "to": 1360,
+   "every": 5,
+   "lift0": 910
+  },
+  "hold_first_s": 0.5,
+  "hold_last_s": 0.4,
+  "readouts": [
+   {
+    "key": "tilt",
+    "label": "tilt in the hand",
+    "unit": "°"
+   },
+   {
+    "key": "grip",
+    "label": "grip per finger, last 40 ms",
+    "unit": "N"
+   }
+  ],
+  "plot_title": "Tilt in the hand",
+  "plot_ymax": 90,
+  "plot_yticks": [
+   0,
+   30,
+   60,
+   90
+  ],
+  "plot_xticks": [
+   0,
+   0.8,
+   1.8
+  ],
+  "plot_xunit": "s",
+  "lift_s": 0.8,
+  "phases": [
+   [
+    0,
+    0.8,
+    "lift 15 cm"
+   ],
+   [
+    0.8,
+    1.8,
+    "hold 1 s"
+   ]
+  ],
+  "poster": -1,
+  "stills": [
+   920,
+   1010,
+   1110,
+   1360
+  ],
+  "id": "fingers3",
+  "title": "Same bottle, three grippers",
+  "width": 1920,
+  "subtitle": "The same 0.5 kg bottle and grasp in each panel. The hand rises 15 cm, then holds still for 1 s.",
+  "panels": [
+   {
+    "replay": "rp_fingers_shipped",
+    "trace": "fingers/runs51/b51_fingers_shipped.result.json.gz",
+    "chip": "as shipped",
+    "legend": "as shipped",
+    "color": "#e3a35a"
+   },
+   {
+    "replay": "rp_fingers_light",
+    "trace": "fingers/runs51/b51_fingers_light.result.json.gz",
+    "chip": "real controller, light fingers",
+    "legend": "light fingers",
+    "color": "#5cc2c4",
+    "dash": true
+   },
+   {
+    "replay": "rp_fingers_motor",
+    "trace": "fingers/runs51/b51_fingers_motor.result.json.gz",
+    "chip": "real controller, motor’s weight",
+    "legend": "motor’s weight",
+    "color": "#5cc2c4"
+   }
+  ],
+  "webp": {
+   "width": 1400,
+   "quality": 70
+  },
+  "text_scale": 1.3,
+  "readout_x": [
+   0,
+   0.42
+  ]
+ },
+ {
+  "cam": "ax10z",
+  "note": "slowed 2x",
+  "steps": {
+   "from": 920,
+   "to": 1360,
+   "every": 5,
+   "lift0": 910
+  },
+  "hold_first_s": 0.5,
+  "hold_last_s": 0.4,
+  "readouts": [
+   {
+    "key": "tilt",
+    "label": "tilt in the hand",
+    "unit": "°"
+   },
+   {
+    "key": "grip",
+    "label": "grip per finger, last 40 ms",
+    "unit": "N"
+   }
+  ],
+  "plot_title": "Tilt in the hand",
+  "plot_ymax": 90,
+  "plot_yticks": [
+   0,
+   30,
+   60,
+   90
+  ],
+  "plot_xticks": [
+   0,
+   0.8,
+   1.8
+  ],
+  "plot_xunit": "s",
+  "lift_s": 0.8,
+  "phases": [
+   [
+    0,
+    0.8,
+    "lift 15 cm"
+   ],
+   [
+    0.8,
+    1.8,
+    "hold 1 s"
+   ]
+  ],
+  "poster": -1,
+  "stills": [
+   920,
+   1010,
+   1110,
+   1360
+  ],
+  "id": "hero",
+  "title": "Same bottle, same grasp: as shipped vs after our fix",
+  "width": 1440,
+  "title_px": 46,
+  "subtitle": "The same 0.5 kg bottle, grasp and arm motion; only the gripper differs. The hand rises 15 cm, then holds still for 1 s.",
+  "panels": [
+   {
+    "replay": "rp_fingers_shipped",
+    "trace": "fingers/runs51/b51_fingers_shipped.result.json.gz",
+    "chip": "as shipped",
+    "legend": "as shipped",
+    "color": "#e3a35a"
+   },
+   {
+    "replay": "rp_fingers_main",
+    "trace": "fingers_v2/runs51/b51_fingers_main.result.json.gz",
+    "chip": "after our fix",
+    "legend": "after our fix",
+    "color": "#5cc2c4"
+   }
+  ],
+  "webp": {
+   "width": 1200,
+   "quality": 70
+  },
+  "readout_x": [
+   0,
+   0.42
+  ]
+ }
+]

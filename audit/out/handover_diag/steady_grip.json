@@ -1,0 +1,302 @@
+[
+ {
+  "file": "raw/hd_base_s2_l11_12_14_15/handover_s2_l14.json.gz",
+  "label": "bottle0",
+  "mass_kg": 0.22,
+  "mu_s": 0.318,
+  "quiet_action": 374,
+  "sum_N": 157.82,
+  "normal_vector_sum_N": [
+   -14.02,
+   -3.02,
+   -13.2
+  ],
+  "friction_at_rest_N": 21.02,
+  "u_f_at_rest": 0.419,
+  "lever_mm": 33.73,
+  "C_line_Nm": 0.3211,
+  "phases": {
+   "left_carry_high": {
+    "steps": 110,
+    "u_f_max": 0.682,
+    "tau_max_Nm": 0.319,
+    "hand_acc_max": 64.7,
+    "hand_ang_acc_max": 346.0,
+    "u_t_max": 0.993,
+    "u_max": 1.175,
+    "steps_u_over_1": 11,
+    "first_u_over_1": {
+     "action": 379,
+     "k": 8
+    },
+    "over_1_at_substeps_8_9_0_1": 11
+   },
+   "left_to_dustbin": {
+    "steps": 130,
+    "u_f_max": 0.699,
+    "tau_max_Nm": 0.5685,
+    "hand_acc_max": 70.0,
+    "hand_ang_acc_max": 226.2,
+    "u_t_max": 1.77,
+    "u_max": 1.785,
+    "steps_u_over_1": 36,
+    "first_u_over_1": {
+     "action": 388,
+     "k": 1
+    },
+    "over_1_at_substeps_8_9_0_1": 31
+   }
+  },
+  "run": "base",
+  "layout": 14,
+  "inst": "bottle_22_19"
+ },
+ {
+  "file": "raw/hd_base_s2_l11_12_14_15/handover_s2_l15.json.gz",
+  "label": "bottle1",
+  "mass_kg": 0.22,
+  "mu_s": 0.318,
+  "quiet_action": 374,
+  "sum_N": 158.09,
+  "normal_vector_sum_N": [
+   -14.02,
+   -2.96,
+   -12.92
+  ],
+  "friction_at_rest_N": 20.8,
+  "u_f_at_rest": 0.414,
+  "lever_mm": 33.66,
+  "C_line_Nm": 0.306,
+  "phases": {
+   "left_carry_high": {
+    "steps": 110,
+    "u_f_max": 0.707,
+    "tau_max_Nm": 0.3326,
+    "hand_acc_max": 70.3,
+    "hand_ang_acc_max": 361.2,
+    "u_t_max": 1.087,
+    "u_max": 1.282,
+    "steps_u_over_1": 15,
+    "first_u_over_1": {
+     "action": 378,
+     "k": 8
+    },
+    "over_1_at_substeps_8_9_0_1": 15
+   },
+   "left_to_dustbin": {
+    "steps": 130,
+    "u_f_max": 0.693,
+    "tau_max_Nm": 0.5661,
+    "hand_acc_max": 70.1,
+    "hand_ang_acc_max": 226.2,
+    "u_t_max": 1.85,
+    "u_max": 1.863,
+    "steps_u_over_1": 40,
+    "first_u_over_1": {
+     "action": 388,
+     "k": 1
+    },
+    "over_1_at_substeps_8_9_0_1": 35
+   }
+  },
+  "run": "base",
+  "layout": 15,
+  "inst": "bottle_22_29"
+ },
+ {
+  "file": "raw/hd_base_s2_l11_12_14_15/handover_s2_l15.json.gz",
+  "label": "bottle3",
+  "mass_kg": 0.07,
+  "mu_s": 0.2817,
+  "quiet_action": 252,
+  "sum_N": 160.12,
+  "normal_vector_sum_N": [
+   0.31,
+   0.12,
+   0.29
+  ],
+  "friction_at_rest_N": 0.52,
+  "u_f_at_rest": 0.011,
+  "lever_mm": 15.6,
+  "C_line_Nm": 0.3187,
+  "phases": {
+   "left_carry_high": {
+    "steps": 110,
+    "u_f_max": 0.16,
+    "tau_max_Nm": 0.0684,
+    "hand_acc_max": 65.5,
+    "hand_ang_acc_max": 353.6,
+    "u_t_max": 0.215,
+    "u_max": 0.268,
+    "steps_u_over_1": 0,
+    "first_u_over_1": null,
+    "over_1_at_substeps_8_9_0_1": 0
+   },
+   "left_to_dustbin": {
+    "steps": 130,
+    "u_f_max": 0.137,
+    "tau_max_Nm": 0.0801,
+    "hand_acc_max": 73.0,
+    "hand_ang_acc_max": 218.6,
+    "u_t_max": 0.251,
+    "u_max": 0.269,
+    "steps_u_over_1": 0,
+    "first_u_over_1": null,
+    "over_1_at_substeps_8_9_0_1": 0
+   }
+  },
+  "run": "base",
+  "layout": 15,
+  "inst": "bottle_60_31"
+ },
+ {
+  "file": "raw/hd_base_s2_l11_12_14_15/handover_s2_l14.json.gz",
+  "label": "bottle3",
+  "mass_kg": 0.095,
+  "mu_s": 0.2817,
+  "quiet_action": 252,
+  "sum_N": 159.31,
+  "normal_vector_sum_N": [
+   0.87,
+   -0.1,
+   -1.05
+  ],
+  "friction_at_rest_N": 2.16,
+  "u_f_at_rest": 0.048,
+  "lever_mm": 29.66,
+  "C_line_Nm": 0.3603,
+  "phases": {
+   "left_carry_high": {
+    "steps": 110,
+    "u_f_max": 0.207,
+    "tau_max_Nm": 0.1452,
+    "hand_acc_max": 63.5,
+    "hand_ang_acc_max": 352.7,
+    "u_t_max": 0.403,
+    "u_max": 0.453,
+    "steps_u_over_1": 0,
+    "first_u_over_1": null,
+    "over_1_at_substeps_8_9_0_1": 0
+   },
+   "left_to_dustbin": {
+    "steps": 130,
+    "u_f_max": 0.199,
+    "tau_max_Nm": 0.1945,
+    "hand_acc_max": 71.3,
+    "hand_ang_acc_max": 219.6,
+    "u_t_max": 0.54,
+    "u_max": 0.554,
+    "steps_u_over_1": 0,
+    "first_u_over_1": null,
+    "over_1_at_substeps_8_9_0_1": 0
+   }
+  },
+  "run": "base",
+  "layout": 14,
+  "inst": "bottle_55_22"
+ },
+ {
+  "file": "raw/hd_d_dt2_s2_l11_14_15/handover_s2_l14.json.gz",
+  "label": "bottle0",
+  "mass_kg": 0.22,
+  "mu_s": 0.318,
+  "quiet_action": 374,
+  "sum_N": 158.58,
+  "normal_vector_sum_N": [
+   -14.34,
+   -2.95,
+   -13.11
+  ],
+  "friction_at_rest_N": 21.15,
+  "u_f_at_rest": 0.419,
+  "lever_mm": 32.4,
+  "C_line_Nm": 0.3409,
+  "phases": {
+   "left_carry_high": {
+    "steps": 220,
+    "u_f_max": 0.849,
+    "tau_max_Nm": 0.4647,
+    "hand_acc_max": 81.9,
+    "hand_ang_acc_max": 571.9,
+    "u_t_max": 1.363,
+    "u_max": 1.606,
+    "steps_u_over_1": 31,
+    "first_u_over_1": {
+     "action": 377,
+     "k": 17
+    },
+    "over_1_at_substeps_8_9_0_1": 2
+   },
+   "left_to_dustbin": {
+    "steps": 260,
+    "u_f_max": 0.834,
+    "tau_max_Nm": 0.7599,
+    "hand_acc_max": 77.0,
+    "hand_ang_acc_max": 390.2,
+    "u_t_max": 2.229,
+    "u_max": 2.257,
+    "steps_u_over_1": 82,
+    "first_u_over_1": {
+     "action": 388,
+     "k": 1
+    },
+    "over_1_at_substeps_8_9_0_1": 13
+   }
+  },
+  "run": "dt2",
+  "layout": 14,
+  "inst": "bottle_22_10"
+ },
+ {
+  "file": "raw/hd_d_dt2_s2_l11_14_15/handover_s2_l15.json.gz",
+  "label": "bottle1",
+  "mass_kg": 0.22,
+  "mu_s": 0.318,
+  "quiet_action": 374,
+  "sum_N": 159.4,
+  "normal_vector_sum_N": [
+   -14.51,
+   -2.96,
+   -12.9
+  ],
+  "friction_at_rest_N": 21.12,
+  "u_f_at_rest": 0.417,
+  "lever_mm": 33.29,
+  "C_line_Nm": 0.3227,
+  "phases": {
+   "left_carry_high": {
+    "steps": 220,
+    "u_f_max": 0.833,
+    "tau_max_Nm": 0.497,
+    "hand_acc_max": 81.9,
+    "hand_ang_acc_max": 528.0,
+    "u_t_max": 1.54,
+    "u_max": 1.751,
+    "steps_u_over_1": 38,
+    "first_u_over_1": {
+     "action": 377,
+     "k": 17
+    },
+    "over_1_at_substeps_8_9_0_1": 2
+   },
+   "left_to_dustbin": {
+    "steps": 260,
+    "u_f_max": 0.826,
+    "tau_max_Nm": 0.8027,
+    "hand_acc_max": 75.6,
+    "hand_ang_acc_max": 398.0,
+    "u_t_max": 2.487,
+    "u_max": 2.503,
+    "steps_u_over_1": 87,
+    "first_u_over_1": {
+     "action": 387,
+     "k": 1
+    },
+    "over_1_at_substeps_8_9_0_1": 14
+   }
+  },
+  "run": "dt2",
+  "layout": 15,
+  "inst": "bottle_22_20"
+ }
+]

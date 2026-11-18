@@ -1,0 +1,97 @@
+{
+  "schema": "robodojo_bottle_census_parity_and_invariants_v1",
+  "raw_archive": {
+    "dir": "audit/out/census_fit/raw",
+    "file_count": 15,
+    "total_compressed_bytes": 634712,
+    "release_archive_note": "The 20 cw_bt_* census episodes ran at commit b61557d (before PR #179 commit 188f1a6 added per-substep g2_release_states_*.json.gz files), so G2EpisodeMonitor stored all 80 release-window records inline under runs[*].policy_log.g2_log.invariants.release_energy.windows inside raw/cw_bt_*.json.gz; re-running 20 full bottle episodes solely for per-substep matrices would cost 0.467 GPU-h and add ~3.6 MiB of binary blobs."
+  },
+  "instrumentation_parity_s0_l0": {
+    "control_process": "cw_par_nog2_q00_vis2",
+    "instrumented_process": "cw_bt_corr_s0_p0_q00_vis2",
+    "settled_state_sha256": "a58f946bb8cae8be5fe43a9b148317a1bc130803f561872f5fc5ec9677bffe35",
+    "settled_state_identical": true,
+    "final_state_sha256": "dccb348619c2bf4ff4f4280a7d866f01c02f9fa408add4a33913c6a14cc83c28",
+    "final_state_identical": true,
+    "max_settled_pos_diff_mm": 0.0,
+    "max_settled_rot_diff_deg": 0.0,
+    "max_final_pos_diff_mm": 0.0,
+    "max_final_rot_diff_deg": 0.0,
+    "actions_control": 409,
+    "actions_instrumented": 409,
+    "score_pct_control": 100.0,
+    "score_pct_instrumented": 100.0
+  },
+  "twenty_episode_invariants": {
+    "episodes_total": 20,
+    "total_actions": 7768,
+    "total_physics_steps": 77680,
+    "nonfinite_substep_poses": 0,
+    "release_windows_total": 80,
+    "releases_exceeding_ke0_plus_mgdz": 0,
+    "releases_with_single_bottle_step_demech_gt_1mJ": 4,
+    "max_inline_excess_ke_over_gravity_mJ": 0.0,
+    "max_recomputed_excess_ke_over_gravity_mJ": 0.0,
+    "max_zcom_rounding_diff_in_mgdz_mJ": 0.004221,
+    "max_step_demech_no_robot_mJ": 5.799456,
+    "max_step_dke_on_passive_impact_mJ": 10.475691,
+    "by_arm": {
+      "corrected": {
+        "episodes": 10,
+        "successes": 10,
+        "mean_score_pct": 100.0,
+        "total_actions": 3884,
+        "total_physics_steps": 38840,
+        "nonfinite_substep_poses": 0,
+        "release_windows": 40,
+        "releases_exceeding_ke0_plus_mgdz": 0,
+        "releases_with_single_bottle_step_demech_gt_1mJ": 3,
+        "max_excess_ke_over_gravity_mJ": 0.0,
+        "max_step_demech_no_robot_mJ": 2.094065
+      },
+      "shipped": {
+        "episodes": 10,
+        "successes": 10,
+        "mean_score_pct": 100.0,
+        "total_actions": 3884,
+        "total_physics_steps": 38840,
+        "nonfinite_substep_poses": 0,
+        "release_windows": 40,
+        "releases_exceeding_ke0_plus_mgdz": 0,
+        "releases_with_single_bottle_step_demech_gt_1mJ": 1,
+        "max_excess_ke_over_gravity_mJ": 0.0,
+        "max_step_demech_no_robot_mJ": 5.799456
+      }
+    }
+  },
+  "gpu_cost_from_batch_summaries": {
+    "batches": {
+      "cw_par_nog2": {
+        "episodes": 1,
+        "procs": 1,
+        "wall_s": 168.1,
+        "gpu_hours": 0.0467
+      },
+      "cw_bt_corr_s0_p0": {
+        "episodes": 1,
+        "procs": 1,
+        "wall_s": 177.4,
+        "gpu_hours": 0.0493
+      },
+      "cw_bt_corr_s0_rest": {
+        "episodes": 9,
+        "procs": 4,
+        "wall_s": 638.2,
+        "gpu_hours": 0.1773
+      },
+      "cw_bt_ship_s0": {
+        "episodes": 10,
+        "procs": 5,
+        "wall_s": 698.2,
+        "gpu_hours": 0.1939
+      }
+    },
+    "total_wall_s": 1681.9,
+    "total_gpu_hours": 0.467
+  }
+}

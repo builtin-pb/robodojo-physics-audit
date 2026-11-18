@@ -1,0 +1,50 @@
+{
+ "main_result_sha256": "7b6af58b3283cc5b763f9052f092def352a4377c12a8357abe4914d04f5a39be",
+ "shipped_result_sha256": "bc722490c239be8ec193e1a8875ca680eebe050601e5dc5b1e29995a617499bf",
+ "all_physics_and_trace_identical": false,
+ "physics_diff_count": 1,
+ "physics_diffs": [
+  {
+   "path": ".runs[0].manifest.physics_scenes./physicsScene.physxScene:solveArticulationContactLast",
+   "main": "<absent>",
+   "shipped": false
+  }
+ ],
+ "non_physics_metadata_timing_diffs": [
+  {
+   "path": ".namespace_shadowing_before_pin.env[1][0]",
+   "main": "/scratch/<user>/isaac/work/fix160/main_ref/env",
+   "shipped": "/scratch/<user>/isaac/work/fix160/robodojo-physics/env"
+  },
+  {
+   "path": ".namespace_shadowing_before_pin.task[1][0]",
+   "main": "/scratch/<user>/isaac/work/fix160/main_ref/task",
+   "shipped": "/scratch/<user>/isaac/work/fix160/robodojo-physics/task"
+  },
+  {
+   "path": ".runs[0].episode_seconds",
+   "main": 201.4,
+   "shipped": 183.0
+  },
+  {
+   "path": ".runs[0].steps_per_second",
+   "main": 7.4,
+   "shipped": 8.2
+  },
+  {
+   "path": ".runs[0].wall_seconds",
+   "main": 206.1,
+   "shipped": 187.8
+  },
+  {
+   "path": ".versions.repo_head",
+   "main": "7dda3ff0e926a1fced8cf035aab6626f20e18c42",
+   "shipped": "6490572d645ddb15633f907a3aac5e528e4baa7e"
+  }
+ ],
+ "metadata_patterns": [
+  "^\\.namespace_shadowing_before_pin\\.",
+  "\\.(episode_seconds|steps_per_second|wall_seconds|wall_s|elapsed_s|wall_clock_s)$",
+  "^\\.versions\\.(repo_head|repo_diff_sha1)$"
+ ]
+}

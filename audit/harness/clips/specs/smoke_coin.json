@@ -1,0 +1,8 @@
+{
+ "purpose": "smoke: candidate cameras on deposit_coin layout 0, settled (zero policy)",
+ "cameras": [
+  {"name": "pig_side", "eye": [0.58, -0.36, 0.90], "target": [0.30, -0.20, 0.80], "focal_mm": 24, "res": [960, 540]},
+  {"name": "pig_front", "eye": [0.24, -0.62, 0.95], "target": [0.30, -0.20, 0.80], "focal_mm": 24, "res": [960, 540]}
+ ],
+ "windows": []
+}

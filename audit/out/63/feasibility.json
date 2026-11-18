@@ -1,0 +1,6286 @@
+{
+ "method": "Joint LP over per-class unary friction u_s[c], u_k[c] >= 0 with u_k[c] <= u_s[c] for every class (objects including mixed_unclear, pads, tables, ground). Under PhysX average combine a pair realises (u_a + u_b)/2, which must lie in the pair band. Stage 1 maximises the common minimum margin t over static and kinetic rows; stage 2 maximises the static margin with kinetic rows held at margin >= t; stage 3 maximises the kinetic margin with static held at its stage-2 optimum. Margins are in effective-friction units (the realised pair coefficient), not pair sums. Rows: every pair that co-occurs in a scored episode. Ground \"multiply\" is the shipped ground (unary 1.0, multiply: realised = u_obj); \"average\" sets the ground material to average with its own unary. pad_elastomer is also run in max mode (realised = max(u_obj, u_pad)). Pure-python two-phase simplex with constraint generation; no scipy.",
+ "combine_rule": "PhysX effective friction combine mode = max(mode0, mode1) with average < min < multiply < max (PxMaterial.h); PhysX also clamps static >= dynamic. The Ground prim in every layout sets friction 1.0 and combine mode multiply, so all object-ground pairs are multiply as shipped.",
+ "scenarios": {
+  "pad_hard+table_laminate": {
+   "membership": "default",
+   "pad_combine=average:ground=multiply": {
+    "feasible": true,
+    "joint_min_margin_mu": 0.0,
+    "static_margin_mu": 0.0,
+    "kinetic_margin_mu": 0.05,
+    "n_band_rows": 406,
+    "n_classes": 19,
+    "unary_static": {
+     "abs_device_housing": 0.35,
+     "abs_toy_plastic": 0.45,
+     "aluminium": 0.4,
+     "engineered_wood": 0.2,
+     "fabric_textile": 0.25,
+     "foam": 0.65,
+     "food_organic": 0.25,
+     "glass": 0.5,
+     "glazed_ceramic": 0.4,
+     "hardwood": 0.25,
+     "mixed_unclear": 0.15,
+     "pad_hard": 0.15,
+     "paper_cardboard": 0.25,
+     "pet_plastic": 0.25,
+     "polyolefin_plastic": 0.15,
+     "rubber_elastomer": 0.85,
+     "softwood": 0.25,
+     "steel": 0.5,
+     "table_laminate": 0.15
+    },
+    "unary_kinetic": {
+     "abs_device_housing": 0.35,
+     "abs_toy_plastic": 0.35,
+     "aluminium": 0.35,
+     "engineered_wood": 0.2,
+     "fabric_textile": 0.25,
+     "foam": 0.55,
+     "food_organic": 0.25,
+     "glass": 0.25,
+     "glazed_ceramic": 0.25,
+     "hardwood": 0.25,
+     "mixed_unclear": 0.15,
+     "pad_hard": 0.15,
+     "paper_cardboard": 0.25,
+     "pet_plastic": 0.25,
+     "polyolefin_plastic": 0.15,
+     "rubber_elastomer": 0.75,
+     "softwood": 0.25,
+     "steel": 0.45,
+     "table_laminate": 0.15
+    },
+    "kinetic_equals_static": [
+     "abs_device_housing",
+     "engineered_wood",
+     "fabric_textile",
+     "food_organic",
+     "hardwood",
+     "mixed_unclear",
+     "pad_hard",
+     "paper_cardboard",
+     "pet_plastic",
+     "polyolefin_plastic",
+     "softwood",
+     "table_laminate"
+    ],
+    "kinetic_above_static": [],
+    "violations": [
+     {
+      "row": "glazed_ceramic__glazed_ceramic",
+      "field": "s",
+      "band": [
+       0.4,
+       1.0
+      ],
+      "realised": 0.4
+     },
+     {
+      "row": "glass__glass",
+      "field": "s",
+      "band": [
+       0.5,
+       1.0
+      ],
+      "realised": 0.5
+     }
+    ],
+    "binding_rows": {
+     "static": [
+      {
+       "row": "pad_hard__pet_plastic",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "abs_toy_plastic__pad_hard",
+       "band": [
+        0.3,
+        0.7
+       ],
+       "realised": 0.3
+      },
+      {
+       "row": "abs_device_housing__pad_hard",
+       "band": [
+        0.25,
+        0.65
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "pad_hard__rubber_elastomer",
+       "band": [
+        0.5,
+        1.2
+       ],
+       "realised": 0.5
+      },
+      {
+       "row": "foam__pad_hard",
+       "band": [
+        0.4,
+        1.3
+       ],
+       "realised": 0.4
+      },
+      {
+       "row": "foam__table_laminate",
+       "band": [
+        0.4,
+        1.3
+       ],
+       "realised": 0.4
+      },
+      {
+       "row": "softwood__softwood",
+       "band": [
+        0.25,
+        0.62
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "softwood__table_laminate",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "pad_hard__softwood",
+       "band": [
+        0.2,
+        0.58
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "hardwood__hardwood",
+       "band": [
+        0.25,
+        0.62
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "hardwood__table_laminate",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "hardwood__pad_hard",
+       "band": [
+        0.2,
+        0.58
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "engineered_wood__engineered_wood",
+       "band": [
+        0.2,
+        0.55
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "fabric_textile__fabric_textile",
+       "band": [
+        0.25,
+        0.7
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "fabric_textile__table_laminate",
+       "band": [
+        0.2,
+        0.6
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "fabric_textile__pad_hard",
+       "band": [
+        0.2,
+        0.6
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "food_organic__table_laminate",
+       "band": [
+        0.2,
+        0.6
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "steel__steel",
+       "band": [
+        0.5,
+        0.8
+       ],
+       "realised": 0.5
+      },
+      {
+       "row": "aluminium__aluminium",
+       "band": [
+        0.4,
+        1.35
+       ],
+       "realised": 0.4
+      },
+      {
+       "row": "glazed_ceramic__glazed_ceramic",
+       "band": [
+        0.4,
+        1.0
+       ],
+       "realised": 0.4
+      },
+      {
+       "row": "glass__glass",
+       "band": [
+        0.5,
+        1.0
+       ],
+       "realised": 0.5
+      },
+      {
+       "row": "paper_cardboard__softwood",
+       "band": [
+        0.25,
+        0.6
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "ground__mixed_unclear (multiply, ground 1.0)",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.15
+      },
+      {
+       "row": "mixed_unclear__mixed_unclear",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.15
+      },
+      {
+       "row": "mixed_unclear__pad_hard",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.15
+      },
+      {
+       "row": "mixed_unclear__polyolefin_plastic",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.15
+      },
+      {
+       "row": "mixed_unclear__table_laminate",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.15
+      }
+     ],
+     "kinetic": [
+      {
+       "row": "pad_hard__pet_plastic",
+       "band": [
+        0.15,
+        0.4
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "abs_toy_plastic__pad_hard",
+       "band": [
+        0.2,
+        0.55
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "abs_device_housing__pad_hard",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "pad_hard__rubber_elastomer",
+       "band": [
+        0.4,
+        1.0
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "foam__pad_hard",
+       "band": [
+        0.3,
+        1.2
+       ],
+       "realised": 0.35
+      },
+      {
+       "row": "foam__table_laminate",
+       "band": [
+        0.3,
+        1.2
+       ],
+       "realised": 0.35
+      },
+      {
+       "row": "softwood__softwood",
+       "band": [
+        0.2,
+        0.48
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "softwood__table_laminate",
+       "band": [
+        0.15,
+        0.45
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "pad_hard__softwood",
+       "band": [
+        0.15,
+        0.45
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "hardwood__hardwood",
+       "band": [
+        0.2,
+        0.48
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "hardwood__table_laminate",
+       "band": [
+        0.15,
+        0.45
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "hardwood__pad_hard",
+       "band": [
+        0.15,
+        0.45
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "engineered_wood__engineered_wood",
+       "band": [
+        0.15,
+        0.45
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "fabric_textile__fabric_textile",
+       "band": [
+        0.2,
+        0.6
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "fabric_textile__table_laminate",
+       "band": [
+        0.15,
+        0.5
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "fabric_textile__pad_hard",
+       "band": [
+        0.15,
+        0.5
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "food_organic__table_laminate",
+       "band": [
+        0.15,
+        0.5
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "steel__steel",
+       "band": [
+        0.4,
+        0.6
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "aluminium__aluminium",
+       "band": [
+        0.3,
+        0.6
+       ],
+       "realised": 0.35
+      },
+      {
+       "row": "aluminium__pad_hard",
+       "band": [
+        0.2,
+        0.45
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "glazed_ceramic__glazed_ceramic",
+       "band": [
+        0.2,
+        0.6
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "glass__glass",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "glass__pad_hard",
+       "band": [
+        0.15,
+        0.5
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "glass__table_laminate",
+       "band": [
+        0.15,
+        0.4
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "glass__glazed_ceramic",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "paper_cardboard__softwood",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "ground__mixed_unclear (multiply, ground 1.0)",
+       "band": [
+        0.1,
+        0.7
+       ],
+       "realised": 0.15
+      },
+      {
+       "row": "ground__steel (multiply, ground 1.0)",
+       "band": [
+        0.15,
+        0.5
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "mixed_unclear__mixed_unclear",
+       "band": [
+        0.1,
+        0.7
+       ],
+       "realised": 0.15
+      },
+      {
+       "row": "mixed_unclear__pad_hard",
+       "band": [
+        0.1,
+        0.7
+       ],
+       "realised": 0.15
+      },
+      {
+       "row": "mixed_unclear__polyolefin_plastic",
+       "band": [
+        0.1,
+        0.7
+       ],
+       "realised": 0.15
+      },
+      {
+       "row": "mixed_unclear__table_laminate",
+       "band": [
+        0.1,
+        0.7
+       ],
+       "realised": 0.15
+      }
+     ]
+    },
+    "static_critical_rows": [
+     {
+      "row": "glass__glass",
+      "band": [
+       0.5,
+       1.0
+      ],
+      "static_margin_without_it": 0.05
+     }
+    ]
+   },
+   "pad_combine=average:ground=average": {
+    "feasible": true,
+    "joint_min_margin_mu": 0.05,
+    "static_margin_mu": 0.05,
+    "kinetic_margin_mu": 0.075,
+    "n_band_rows": 406,
+    "n_classes": 20,
+    "unary_static": {
+     "abs_device_housing": 0.4,
+     "abs_toy_plastic": 0.5,
+     "aluminium": 0.45,
+     "engineered_wood": 0.25,
+     "fabric_textile": 0.3,
+     "foam": 0.7,
+     "food_organic": 0.3,
+     "glass": 0.55,
+     "glazed_ceramic": 0.45,
+     "ground": 0.2,
+     "hardwood": 0.3,
+     "mixed_unclear": 0.2,
+     "pad_hard": 0.2,
+     "paper_cardboard": 0.3,
+     "pet_plastic": 0.3,
+     "polyolefin_plastic": 0.2,
+     "rubber_elastomer": 0.9,
+     "softwood": 0.3,
+     "steel": 0.55,
+     "table_laminate": 0.2
+    },
+    "unary_kinetic": {
+     "abs_device_housing": 0.35,
+     "abs_toy_plastic": 0.35,
+     "aluminium": 0.375,
+     "engineered_wood": 0.225,
+     "fabric_textile": 0.275,
+     "foam": 0.55,
+     "food_organic": 0.25,
+     "glass": 0.275,
+     "glazed_ceramic": 0.275,
+     "ground": 0.2,
+     "hardwood": 0.275,
+     "mixed_unclear": 0.175,
+     "pad_hard": 0.2,
+     "paper_cardboard": 0.275,
+     "pet_plastic": 0.25,
+     "polyolefin_plastic": 0.175,
+     "rubber_elastomer": 0.75,
+     "softwood": 0.275,
+     "steel": 0.475,
+     "table_laminate": 0.2
+    },
+    "kinetic_equals_static": [
+     "ground",
+     "pad_hard",
+     "table_laminate"
+    ],
+    "kinetic_above_static": [],
+    "violations": [],
+    "binding_rows": {
+     "static": [
+      {
+       "row": "pad_hard__pet_plastic",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "abs_toy_plastic__pad_hard",
+       "band": [
+        0.3,
+        0.7
+       ],
+       "realised": 0.35
+      },
+      {
+       "row": "abs_device_housing__pad_hard",
+       "band": [
+        0.25,
+        0.65
+       ],
+       "realised": 0.3
+      },
+      {
+       "row": "pad_hard__rubber_elastomer",
+       "band": [
+        0.5,
+        1.2
+       ],
+       "realised": 0.55
+      },
+      {
+       "row": "foam__pad_hard",
+       "band": [
+        0.4,
+        1.3
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "foam__table_laminate",
+       "band": [
+        0.4,
+        1.3
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "softwood__softwood",
+       "band": [
+        0.25,
+        0.62
+       ],
+       "realised": 0.3
+      },
+      {
+       "row": "softwood__table_laminate",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "pad_hard__softwood",
+       "band": [
+        0.2,
+        0.58
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "hardwood__hardwood",
+       "band": [
+        0.25,
+        0.62
+       ],
+       "realised": 0.3
+      },
+      {
+       "row": "hardwood__table_laminate",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "hardwood__pad_hard",
+       "band": [
+        0.2,
+        0.58
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "engineered_wood__engineered_wood",
+       "band": [
+        0.2,
+        0.55
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "fabric_textile__fabric_textile",
+       "band": [
+        0.25,
+        0.7
+       ],
+       "realised": 0.3
+      },
+      {
+       "row": "fabric_textile__table_laminate",
+       "band": [
+        0.2,
+        0.6
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "fabric_textile__pad_hard",
+       "band": [
+        0.2,
+        0.6
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "food_organic__table_laminate",
+       "band": [
+        0.2,
+        0.6
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "steel__steel",
+       "band": [
+        0.5,
+        0.8
+       ],
+       "realised": 0.55
+      },
+      {
+       "row": "aluminium__aluminium",
+       "band": [
+        0.4,
+        1.35
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "glazed_ceramic__glazed_ceramic",
+       "band": [
+        0.4,
+        1.0
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "glass__glass",
+       "band": [
+        0.5,
+        1.0
+       ],
+       "realised": 0.55
+      },
+      {
+       "row": "paper_cardboard__softwood",
+       "band": [
+        0.25,
+        0.6
+       ],
+       "realised": 0.3
+      },
+      {
+       "row": "aluminium__glazed_ceramic",
+       "band": [
+        0.15,
+        0.5
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "fabric_textile__ground",
+       "band": [
+        0.2,
+        0.7
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "foam__ground",
+       "band": [
+        0.4,
+        1.3
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "food_organic__ground",
+       "band": [
+        0.2,
+        0.7
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "glass__steel",
+       "band": [
+        0.2,
+        0.6
+       ],
+       "realised": 0.55
+      },
+      {
+       "row": "ground__hardwood",
+       "band": [
+        0.2,
+        0.62
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "ground__mixed_unclear",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "ground__softwood",
+       "band": [
+        0.2,
+        0.62
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "mixed_unclear__mixed_unclear",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "mixed_unclear__pad_hard",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "mixed_unclear__polyolefin_plastic",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "mixed_unclear__table_laminate",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.2
+      }
+     ],
+     "kinetic": [
+      {
+       "row": "pad_hard__pet_plastic",
+       "band": [
+        0.15,
+        0.4
+       ],
+       "realised": 0.225
+      },
+      {
+       "row": "abs_toy_plastic__pad_hard",
+       "band": [
+        0.2,
+        0.55
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "abs_device_housing__pad_hard",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "pad_hard__rubber_elastomer",
+       "band": [
+        0.4,
+        1.0
+       ],
+       "realised": 0.475
+      },
+      {
+       "row": "foam__pad_hard",
+       "band": [
+        0.3,
+        1.2
+       ],
+       "realised": 0.375
+      },
+      {
+       "row": "foam__table_laminate",
+       "band": [
+        0.3,
+        1.2
+       ],
+       "realised": 0.375
+      },
+      {
+       "row": "softwood__softwood",
+       "band": [
+        0.2,
+        0.48
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "hardwood__hardwood",
+       "band": [
+        0.2,
+        0.48
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "engineered_wood__engineered_wood",
+       "band": [
+        0.15,
+        0.45
+       ],
+       "realised": 0.225
+      },
+      {
+       "row": "fabric_textile__fabric_textile",
+       "band": [
+        0.2,
+        0.6
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "food_organic__table_laminate",
+       "band": [
+        0.15,
+        0.5
+       ],
+       "realised": 0.225
+      },
+      {
+       "row": "steel__steel",
+       "band": [
+        0.4,
+        0.6
+       ],
+       "realised": 0.475
+      },
+      {
+       "row": "aluminium__aluminium",
+       "band": [
+        0.3,
+        0.6
+       ],
+       "realised": 0.375
+      },
+      {
+       "row": "glazed_ceramic__glazed_ceramic",
+       "band": [
+        0.2,
+        0.6
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "glass__glass",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "glass__glazed_ceramic",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "paper_cardboard__softwood",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "foam__ground",
+       "band": [
+        0.3,
+        1.2
+       ],
+       "realised": 0.375
+      },
+      {
+       "row": "food_organic__ground",
+       "band": [
+        0.15,
+        0.6
+       ],
+       "realised": 0.225
+      },
+      {
+       "row": "hardwood__steel",
+       "band": [
+        0.15,
+        0.45
+       ],
+       "realised": 0.375
+      },
+      {
+       "row": "mixed_unclear__mixed_unclear",
+       "band": [
+        0.1,
+        0.7
+       ],
+       "realised": 0.175
+      },
+      {
+       "row": "mixed_unclear__polyolefin_plastic",
+       "band": [
+        0.1,
+        0.7
+       ],
+       "realised": 0.175
+      },
+      {
+       "row": "paper_cardboard__steel",
+       "band": [
+        0.12,
+        0.45
+       ],
+       "realised": 0.375
+      }
+     ]
+    },
+    "static_critical_rows": []
+   }
+  },
+  "pad_elastomer+table_laminate": {
+   "membership": "sensitivity_pad",
+   "pad_combine=average:ground=multiply": {
+    "feasible": true,
+    "joint_min_margin_mu": 0.0,
+    "static_margin_mu": 0.0,
+    "kinetic_margin_mu": 0.05,
+    "n_band_rows": 406,
+    "n_classes": 19,
+    "unary_static": {
+     "abs_device_housing": 0.55,
+     "abs_toy_plastic": 0.55,
+     "aluminium": 0.6,
+     "engineered_wood": 0.2,
+     "fabric_textile": 0.3,
+     "foam": 0.65,
+     "food_organic": 0.25,
+     "glass": 0.5,
+     "glazed_ceramic": 0.4,
+     "hardwood": 0.25,
+     "mixed_unclear": 0.15,
+     "pad_elastomer": 0.7,
+     "paper_cardboard": 0.3,
+     "pet_plastic": 0.2,
+     "polyolefin_plastic": 0.4,
+     "rubber_elastomer": 0.6,
+     "softwood": 0.3,
+     "steel": 0.5,
+     "table_laminate": 0.15
+    },
+    "unary_kinetic": {
+     "abs_device_housing": 0.25,
+     "abs_toy_plastic": 0.3,
+     "aluminium": 0.45,
+     "engineered_wood": 0.2,
+     "fabric_textile": 0.3,
+     "foam": 0.55,
+     "food_organic": 0.25,
+     "glass": 0.35,
+     "glazed_ceramic": 0.35,
+     "hardwood": 0.25,
+     "mixed_unclear": 0.15,
+     "pad_elastomer": 0.65,
+     "paper_cardboard": 0.2,
+     "pet_plastic": 0.2,
+     "polyolefin_plastic": 0.15,
+     "rubber_elastomer": 0.55,
+     "softwood": 0.3,
+     "steel": 0.45,
+     "table_laminate": 0.15
+    },
+    "kinetic_equals_static": [
+     "engineered_wood",
+     "fabric_textile",
+     "food_organic",
+     "hardwood",
+     "mixed_unclear",
+     "pet_plastic",
+     "softwood",
+     "table_laminate"
+    ],
+    "kinetic_above_static": [],
+    "violations": [
+     {
+      "row": "foam__table_laminate",
+      "field": "s",
+      "band": [
+       0.4,
+       1.3
+      ],
+      "realised": 0.4
+     },
+     {
+      "row": "pad_elastomer__paper_cardboard",
+      "field": "s",
+      "band": [
+       0.5,
+       0.8
+      ],
+      "realised": 0.5
+     },
+     {
+      "row": "fabric_textile__pad_elastomer",
+      "field": "s",
+      "band": [
+       0.5,
+       1.5
+      ],
+      "realised": 0.5
+     },
+     {
+      "row": "pad_elastomer__steel",
+      "field": "s",
+      "band": [
+       0.6,
+       1.6
+      ],
+      "realised": 0.6
+     },
+     {
+      "row": "abs_device_housing__ground (multiply, ground 1.0)",
+      "field": "s",
+      "band": [
+       0.15,
+       0.55
+      ],
+      "realised": 0.55
+     },
+     {
+      "row": "aluminium__polyolefin_plastic",
+      "field": "s",
+      "band": [
+       0.1,
+       0.5
+      ],
+      "realised": 0.5
+     },
+     {
+      "row": "ground__polyolefin_plastic (multiply, ground 1.0)",
+      "field": "s",
+      "band": [
+       0.1,
+       0.4
+      ],
+      "realised": 0.4
+     }
+    ],
+    "binding_rows": {
+     "static": [
+      {
+       "row": "pet_plastic__pet_plastic",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "rubber_elastomer__rubber_elastomer",
+       "band": [
+        0.6,
+        1.5
+       ],
+       "realised": 0.6
+      },
+      {
+       "row": "foam__table_laminate",
+       "band": [
+        0.4,
+        1.3
+       ],
+       "realised": 0.4
+      },
+      {
+       "row": "hardwood__hardwood",
+       "band": [
+        0.25,
+        0.62
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "hardwood__table_laminate",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "engineered_wood__engineered_wood",
+       "band": [
+        0.2,
+        0.55
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "pad_elastomer__paper_cardboard",
+       "band": [
+        0.5,
+        0.8
+       ],
+       "realised": 0.5
+      },
+      {
+       "row": "fabric_textile__pad_elastomer",
+       "band": [
+        0.5,
+        1.5
+       ],
+       "realised": 0.5
+      },
+      {
+       "row": "food_organic__table_laminate",
+       "band": [
+        0.2,
+        0.6
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "steel__steel",
+       "band": [
+        0.5,
+        0.8
+       ],
+       "realised": 0.5
+      },
+      {
+       "row": "pad_elastomer__steel",
+       "band": [
+        0.6,
+        1.6
+       ],
+       "realised": 0.6
+      },
+      {
+       "row": "glazed_ceramic__glazed_ceramic",
+       "band": [
+        0.4,
+        1.0
+       ],
+       "realised": 0.4
+      },
+      {
+       "row": "glass__glass",
+       "band": [
+        0.5,
+        1.0
+       ],
+       "realised": 0.5
+      },
+      {
+       "row": "abs_device_housing__ground (multiply, ground 1.0)",
+       "band": [
+        0.15,
+        0.55
+       ],
+       "realised": 0.55
+      },
+      {
+       "row": "abs_toy_plastic__ground (multiply, ground 1.0)",
+       "band": [
+        0.15,
+        0.55
+       ],
+       "realised": 0.55
+      },
+      {
+       "row": "aluminium__glazed_ceramic",
+       "band": [
+        0.15,
+        0.5
+       ],
+       "realised": 0.5
+      },
+      {
+       "row": "aluminium__ground (multiply, ground 1.0)",
+       "band": [
+        0.2,
+        0.6
+       ],
+       "realised": 0.6
+      },
+      {
+       "row": "aluminium__polyolefin_plastic",
+       "band": [
+        0.1,
+        0.5
+       ],
+       "realised": 0.5
+      },
+      {
+       "row": "glass__ground (multiply, ground 1.0)",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.5
+      },
+      {
+       "row": "ground__mixed_unclear (multiply, ground 1.0)",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.15
+      },
+      {
+       "row": "ground__polyolefin_plastic (multiply, ground 1.0)",
+       "band": [
+        0.1,
+        0.4
+       ],
+       "realised": 0.4
+      },
+      {
+       "row": "mixed_unclear__mixed_unclear",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.15
+      },
+      {
+       "row": "mixed_unclear__table_laminate",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.15
+      }
+     ],
+     "kinetic": [
+      {
+       "row": "pet_plastic__pet_plastic",
+       "band": [
+        0.15,
+        0.4
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "abs_toy_plastic__abs_toy_plastic",
+       "band": [
+        0.25,
+        0.6
+       ],
+       "realised": 0.3
+      },
+      {
+       "row": "abs_device_housing__abs_device_housing",
+       "band": [
+        0.2,
+        0.55
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "rubber_elastomer__rubber_elastomer",
+       "band": [
+        0.5,
+        1.3
+       ],
+       "realised": 0.55
+      },
+      {
+       "row": "rubber_elastomer__table_laminate",
+       "band": [
+        0.3,
+        0.8
+       ],
+       "realised": 0.35
+      },
+      {
+       "row": "foam__table_laminate",
+       "band": [
+        0.3,
+        1.2
+       ],
+       "realised": 0.35
+      },
+      {
+       "row": "hardwood__hardwood",
+       "band": [
+        0.2,
+        0.48
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "hardwood__table_laminate",
+       "band": [
+        0.15,
+        0.45
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "engineered_wood__engineered_wood",
+       "band": [
+        0.15,
+        0.45
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "paper_cardboard__paper_cardboard",
+       "band": [
+        0.15,
+        0.6
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "food_organic__table_laminate",
+       "band": [
+        0.15,
+        0.5
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "steel__steel",
+       "band": [
+        0.4,
+        0.6
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "pad_elastomer__steel",
+       "band": [
+        0.5,
+        1.4
+       ],
+       "realised": 0.55
+      },
+      {
+       "row": "aluminium__pad_elastomer",
+       "band": [
+        0.5,
+        1.4
+       ],
+       "realised": 0.55
+      },
+      {
+       "row": "glazed_ceramic__pad_elastomer",
+       "band": [
+        0.45,
+        0.95
+       ],
+       "realised": 0.5
+      },
+      {
+       "row": "glass__pad_elastomer",
+       "band": [
+        0.45,
+        1.2
+       ],
+       "realised": 0.5
+      },
+      {
+       "row": "paper_cardboard__softwood",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "aluminium__glazed_ceramic",
+       "band": [
+        0.12,
+        0.45
+       ],
+       "realised": 0.4
+      },
+      {
+       "row": "aluminium__ground (multiply, ground 1.0)",
+       "band": [
+        0.15,
+        0.5
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "glass__ground (multiply, ground 1.0)",
+       "band": [
+        0.15,
+        0.4
+       ],
+       "realised": 0.35
+      },
+      {
+       "row": "ground__mixed_unclear (multiply, ground 1.0)",
+       "band": [
+        0.1,
+        0.7
+       ],
+       "realised": 0.15
+      },
+      {
+       "row": "ground__steel (multiply, ground 1.0)",
+       "band": [
+        0.15,
+        0.5
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "mixed_unclear__mixed_unclear",
+       "band": [
+        0.1,
+        0.7
+       ],
+       "realised": 0.15
+      },
+      {
+       "row": "mixed_unclear__polyolefin_plastic",
+       "band": [
+        0.1,
+        0.7
+       ],
+       "realised": 0.15
+      },
+      {
+       "row": "mixed_unclear__table_laminate",
+       "band": [
+        0.1,
+        0.7
+       ],
+       "realised": 0.15
+      }
+     ]
+    },
+    "static_critical_rows": [
+     {
+      "row": "glass__glass",
+      "band": [
+       0.5,
+       1.0
+      ],
+      "static_margin_without_it": 0.05
+     },
+     {
+      "row": "glass__ground (multiply, ground 1.0)",
+      "band": [
+       0.2,
+       0.5
+      ],
+      "static_margin_without_it": 0.05
+     }
+    ]
+   },
+   "pad_combine=average:ground=average": {
+    "feasible": true,
+    "joint_min_margin_mu": 0.05,
+    "static_margin_mu": 0.05,
+    "kinetic_margin_mu": 0.075,
+    "n_band_rows": 406,
+    "n_classes": 20,
+    "unary_static": {
+     "abs_device_housing": 0.3,
+     "abs_toy_plastic": 0.35,
+     "aluminium": 0.45,
+     "engineered_wood": 0.25,
+     "fabric_textile": 0.325,
+     "foam": 0.725,
+     "food_organic": 0.325,
+     "glass": 0.55,
+     "glazed_ceramic": 0.45,
+     "ground": 0.175,
+     "hardwood": 0.325,
+     "mixed_unclear": 0.225,
+     "pad_elastomer": 0.85,
+     "paper_cardboard": 0.275,
+     "pet_plastic": 0.35,
+     "polyolefin_plastic": 0.175,
+     "rubber_elastomer": 0.65,
+     "softwood": 0.325,
+     "steel": 0.55,
+     "table_laminate": 0.35
+    },
+    "unary_kinetic": {
+     "abs_device_housing": 0.275,
+     "abs_toy_plastic": 0.325,
+     "aluminium": 0.45,
+     "engineered_wood": 0.225,
+     "fabric_textile": 0.275,
+     "foam": 0.575,
+     "food_organic": 0.275,
+     "glass": 0.3,
+     "glazed_ceramic": 0.3,
+     "ground": 0.175,
+     "hardwood": 0.275,
+     "mixed_unclear": 0.175,
+     "pad_elastomer": 0.75,
+     "paper_cardboard": 0.25,
+     "pet_plastic": 0.225,
+     "polyolefin_plastic": 0.175,
+     "rubber_elastomer": 0.575,
+     "softwood": 0.3,
+     "steel": 0.475,
+     "table_laminate": 0.175
+    },
+    "kinetic_equals_static": [
+     "aluminium",
+     "ground",
+     "polyolefin_plastic"
+    ],
+    "kinetic_above_static": [],
+    "violations": [],
+    "binding_rows": {
+     "static": [
+      {
+       "row": "abs_toy_plastic__abs_toy_plastic",
+       "band": [
+        0.3,
+        0.8
+       ],
+       "realised": 0.35
+      },
+      {
+       "row": "abs_device_housing__abs_device_housing",
+       "band": [
+        0.25,
+        0.7
+       ],
+       "realised": 0.3
+      },
+      {
+       "row": "rubber_elastomer__rubber_elastomer",
+       "band": [
+        0.6,
+        1.5
+       ],
+       "realised": 0.65
+      },
+      {
+       "row": "engineered_wood__engineered_wood",
+       "band": [
+        0.2,
+        0.55
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "steel__steel",
+       "band": [
+        0.5,
+        0.8
+       ],
+       "realised": 0.55
+      },
+      {
+       "row": "steel__table_laminate",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "aluminium__aluminium",
+       "band": [
+        0.4,
+        1.35
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "aluminium__pad_elastomer",
+       "band": [
+        0.6,
+        1.6
+       ],
+       "realised": 0.65
+      },
+      {
+       "row": "glass__table_laminate",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "pet_plastic__steel",
+       "band": [
+        0.15,
+        0.5
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "paper_cardboard__softwood",
+       "band": [
+        0.25,
+        0.6
+       ],
+       "realised": 0.3
+      },
+      {
+       "row": "aluminium__glazed_ceramic",
+       "band": [
+        0.15,
+        0.5
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "fabric_textile__ground",
+       "band": [
+        0.2,
+        0.7
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "foam__ground",
+       "band": [
+        0.4,
+        1.3
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "food_organic__ground",
+       "band": [
+        0.2,
+        0.7
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "glass__steel",
+       "band": [
+        0.2,
+        0.6
+       ],
+       "realised": 0.55
+      },
+      {
+       "row": "ground__hardwood",
+       "band": [
+        0.2,
+        0.62
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "ground__mixed_unclear",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "ground__softwood",
+       "band": [
+        0.2,
+        0.62
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "mixed_unclear__polyolefin_plastic",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.2
+      }
+     ],
+     "kinetic": [
+      {
+       "row": "pet_plastic__pet_plastic",
+       "band": [
+        0.15,
+        0.4
+       ],
+       "realised": 0.225
+      },
+      {
+       "row": "abs_toy_plastic__abs_toy_plastic",
+       "band": [
+        0.25,
+        0.6
+       ],
+       "realised": 0.325
+      },
+      {
+       "row": "abs_device_housing__abs_device_housing",
+       "band": [
+        0.2,
+        0.55
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "rubber_elastomer__rubber_elastomer",
+       "band": [
+        0.5,
+        1.3
+       ],
+       "realised": 0.575
+      },
+      {
+       "row": "rubber_elastomer__table_laminate",
+       "band": [
+        0.3,
+        0.8
+       ],
+       "realised": 0.375
+      },
+      {
+       "row": "foam__table_laminate",
+       "band": [
+        0.3,
+        1.2
+       ],
+       "realised": 0.375
+      },
+      {
+       "row": "hardwood__hardwood",
+       "band": [
+        0.2,
+        0.48
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "hardwood__table_laminate",
+       "band": [
+        0.15,
+        0.45
+       ],
+       "realised": 0.225
+      },
+      {
+       "row": "engineered_wood__engineered_wood",
+       "band": [
+        0.15,
+        0.45
+       ],
+       "realised": 0.225
+      },
+      {
+       "row": "fabric_textile__fabric_textile",
+       "band": [
+        0.2,
+        0.6
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "fabric_textile__table_laminate",
+       "band": [
+        0.15,
+        0.5
+       ],
+       "realised": 0.225
+      },
+      {
+       "row": "food_organic__table_laminate",
+       "band": [
+        0.15,
+        0.5
+       ],
+       "realised": 0.225
+      },
+      {
+       "row": "steel__steel",
+       "band": [
+        0.4,
+        0.6
+       ],
+       "realised": 0.475
+      },
+      {
+       "row": "glazed_ceramic__pad_elastomer",
+       "band": [
+        0.45,
+        0.95
+       ],
+       "realised": 0.525
+      },
+      {
+       "row": "glass__pad_elastomer",
+       "band": [
+        0.45,
+        1.2
+       ],
+       "realised": 0.525
+      },
+      {
+       "row": "paper_cardboard__softwood",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "aluminium__glazed_ceramic",
+       "band": [
+        0.12,
+        0.45
+       ],
+       "realised": 0.375
+      },
+      {
+       "row": "aluminium__softwood",
+       "band": [
+        0.15,
+        0.45
+       ],
+       "realised": 0.375
+      },
+      {
+       "row": "fabric_textile__ground",
+       "band": [
+        0.15,
+        0.5
+       ],
+       "realised": 0.225
+      },
+      {
+       "row": "foam__ground",
+       "band": [
+        0.3,
+        1.2
+       ],
+       "realised": 0.375
+      },
+      {
+       "row": "food_organic__ground",
+       "band": [
+        0.15,
+        0.6
+       ],
+       "realised": 0.225
+      },
+      {
+       "row": "ground__hardwood",
+       "band": [
+        0.15,
+        0.48
+       ],
+       "realised": 0.225
+      },
+      {
+       "row": "ground__mixed_unclear",
+       "band": [
+        0.1,
+        0.7
+       ],
+       "realised": 0.175
+      },
+      {
+       "row": "ground__rubber_elastomer",
+       "band": [
+        0.3,
+        0.9
+       ],
+       "realised": 0.375
+      },
+      {
+       "row": "hardwood__steel",
+       "band": [
+        0.15,
+        0.45
+       ],
+       "realised": 0.375
+      },
+      {
+       "row": "mixed_unclear__mixed_unclear",
+       "band": [
+        0.1,
+        0.7
+       ],
+       "realised": 0.175
+      },
+      {
+       "row": "mixed_unclear__polyolefin_plastic",
+       "band": [
+        0.1,
+        0.7
+       ],
+       "realised": 0.175
+      },
+      {
+       "row": "mixed_unclear__table_laminate",
+       "band": [
+        0.1,
+        0.7
+       ],
+       "realised": 0.175
+      }
+     ]
+    },
+    "static_critical_rows": []
+   },
+   "pad_combine=max:ground=multiply": {
+    "feasible": true,
+    "joint_min_margin_mu": 0.0,
+    "static_margin_mu": 0.0,
+    "kinetic_margin_mu": 0.05,
+    "n_band_rows": 440,
+    "n_classes": 19,
+    "unary_static": {
+     "abs_device_housing": 0.25,
+     "abs_toy_plastic": 0.3,
+     "aluminium": 0.4,
+     "engineered_wood": 0.2,
+     "fabric_textile": 0.25,
+     "foam": 0.65,
+     "food_organic": 0.25,
+     "glass": 0.5,
+     "glazed_ceramic": 0.4,
+     "hardwood": 0.25,
+     "mixed_unclear": 0.15,
+     "pad_elastomer": 0.6,
+     "paper_cardboard": 0.25,
+     "pet_plastic": 0.2,
+     "polyolefin_plastic": 0.15,
+     "rubber_elastomer": 0.6,
+     "softwood": 0.25,
+     "steel": 0.5,
+     "table_laminate": 0.15
+    },
+    "unary_kinetic": {
+     "abs_device_housing": 0.25,
+     "abs_toy_plastic": 0.3,
+     "aluminium": 0.35,
+     "engineered_wood": 0.2,
+     "fabric_textile": 0.25,
+     "foam": 0.55,
+     "food_organic": 0.25,
+     "glass": 0.25,
+     "glazed_ceramic": 0.25,
+     "hardwood": 0.25,
+     "mixed_unclear": 0.15,
+     "pad_elastomer": 0.55,
+     "paper_cardboard": 0.25,
+     "pet_plastic": 0.2,
+     "polyolefin_plastic": 0.15,
+     "rubber_elastomer": 0.55,
+     "softwood": 0.25,
+     "steel": 0.45,
+     "table_laminate": 0.15
+    },
+    "kinetic_equals_static": [
+     "abs_device_housing",
+     "abs_toy_plastic",
+     "engineered_wood",
+     "fabric_textile",
+     "food_organic",
+     "hardwood",
+     "mixed_unclear",
+     "paper_cardboard",
+     "pet_plastic",
+     "polyolefin_plastic",
+     "softwood",
+     "table_laminate"
+    ],
+    "kinetic_above_static": [],
+    "violations": [
+     {
+      "row": "steel__steel",
+      "field": "s",
+      "band": [
+       0.5,
+       0.8
+      ],
+      "realised": 0.5
+     },
+     {
+      "row": "aluminium__aluminium",
+      "field": "s",
+      "band": [
+       0.4,
+       1.35
+      ],
+      "realised": 0.4
+     },
+     {
+      "row": "glazed_ceramic__glazed_ceramic",
+      "field": "s",
+      "band": [
+       0.4,
+       1.0
+      ],
+      "realised": 0.4
+     },
+     {
+      "row": "glass__glass",
+      "field": "s",
+      "band": [
+       0.5,
+       1.0
+      ],
+      "realised": 0.5
+     }
+    ],
+    "binding_rows": {
+     "static": [
+      {
+       "row": "pet_plastic__pet_plastic",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "abs_toy_plastic__abs_toy_plastic",
+       "band": [
+        0.3,
+        0.8
+       ],
+       "realised": 0.3
+      },
+      {
+       "row": "abs_device_housing__abs_device_housing",
+       "band": [
+        0.25,
+        0.7
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "rubber_elastomer__rubber_elastomer",
+       "band": [
+        0.6,
+        1.5
+       ],
+       "realised": 0.6
+      },
+      {
+       "row": "pad_elastomer__rubber_elastomer (max: u_pad in band)",
+       "band": [
+        0.6,
+        1.5
+       ],
+       "realised": 0.6
+      },
+      {
+       "row": "foam__table_laminate",
+       "band": [
+        0.4,
+        1.3
+       ],
+       "realised": 0.4
+      },
+      {
+       "row": "softwood__softwood",
+       "band": [
+        0.25,
+        0.62
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "softwood__table_laminate",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "hardwood__hardwood",
+       "band": [
+        0.25,
+        0.62
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "hardwood__table_laminate",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "engineered_wood__engineered_wood",
+       "band": [
+        0.2,
+        0.55
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "fabric_textile__fabric_textile",
+       "band": [
+        0.25,
+        0.7
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "fabric_textile__table_laminate",
+       "band": [
+        0.2,
+        0.6
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "food_organic__table_laminate",
+       "band": [
+        0.2,
+        0.6
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "steel__steel",
+       "band": [
+        0.5,
+        0.8
+       ],
+       "realised": 0.5
+      },
+      {
+       "row": "pad_elastomer__steel (max: u_pad in band)",
+       "band": [
+        0.6,
+        1.6
+       ],
+       "realised": 0.6
+      },
+      {
+       "row": "aluminium__aluminium",
+       "band": [
+        0.4,
+        1.35
+       ],
+       "realised": 0.4
+      },
+      {
+       "row": "aluminium__pad_elastomer (max: u_pad in band)",
+       "band": [
+        0.6,
+        1.6
+       ],
+       "realised": 0.6
+      },
+      {
+       "row": "glazed_ceramic__glazed_ceramic",
+       "band": [
+        0.4,
+        1.0
+       ],
+       "realised": 0.4
+      },
+      {
+       "row": "glass__glass",
+       "band": [
+        0.5,
+        1.0
+       ],
+       "realised": 0.5
+      },
+      {
+       "row": "paper_cardboard__softwood",
+       "band": [
+        0.25,
+        0.6
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "ground__mixed_unclear (multiply, ground 1.0)",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.15
+      },
+      {
+       "row": "mixed_unclear__mixed_unclear",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.15
+      },
+      {
+       "row": "mixed_unclear__polyolefin_plastic",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.15
+      },
+      {
+       "row": "mixed_unclear__table_laminate",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.15
+      }
+     ],
+     "kinetic": [
+      {
+       "row": "pet_plastic__pet_plastic",
+       "band": [
+        0.15,
+        0.4
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "abs_toy_plastic__abs_toy_plastic",
+       "band": [
+        0.25,
+        0.6
+       ],
+       "realised": 0.3
+      },
+      {
+       "row": "abs_device_housing__abs_device_housing",
+       "band": [
+        0.2,
+        0.55
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "rubber_elastomer__rubber_elastomer",
+       "band": [
+        0.5,
+        1.3
+       ],
+       "realised": 0.55
+      },
+      {
+       "row": "pad_elastomer__rubber_elastomer (max: u_pad in band)",
+       "band": [
+        0.5,
+        1.3
+       ],
+       "realised": 0.55
+      },
+      {
+       "row": "rubber_elastomer__table_laminate",
+       "band": [
+        0.3,
+        0.8
+       ],
+       "realised": 0.35
+      },
+      {
+       "row": "foam__table_laminate",
+       "band": [
+        0.3,
+        1.2
+       ],
+       "realised": 0.35
+      },
+      {
+       "row": "softwood__softwood",
+       "band": [
+        0.2,
+        0.48
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "softwood__table_laminate",
+       "band": [
+        0.15,
+        0.45
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "hardwood__hardwood",
+       "band": [
+        0.2,
+        0.48
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "hardwood__table_laminate",
+       "band": [
+        0.15,
+        0.45
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "engineered_wood__engineered_wood",
+       "band": [
+        0.15,
+        0.45
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "fabric_textile__fabric_textile",
+       "band": [
+        0.2,
+        0.6
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "fabric_textile__table_laminate",
+       "band": [
+        0.15,
+        0.5
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "food_organic__table_laminate",
+       "band": [
+        0.15,
+        0.5
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "steel__steel",
+       "band": [
+        0.4,
+        0.6
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "pad_elastomer__steel (max: u_pad in band)",
+       "band": [
+        0.5,
+        1.4
+       ],
+       "realised": 0.55
+      },
+      {
+       "row": "aluminium__aluminium",
+       "band": [
+        0.3,
+        0.6
+       ],
+       "realised": 0.35
+      },
+      {
+       "row": "aluminium__pad_elastomer (max: u_pad in band)",
+       "band": [
+        0.5,
+        1.4
+       ],
+       "realised": 0.55
+      },
+      {
+       "row": "glazed_ceramic__glazed_ceramic",
+       "band": [
+        0.2,
+        0.6
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "glass__glass",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "glass__table_laminate",
+       "band": [
+        0.15,
+        0.4
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "glass__glazed_ceramic",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "paper_cardboard__softwood",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "ground__mixed_unclear (multiply, ground 1.0)",
+       "band": [
+        0.1,
+        0.7
+       ],
+       "realised": 0.15
+      },
+      {
+       "row": "ground__steel (multiply, ground 1.0)",
+       "band": [
+        0.15,
+        0.5
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "mixed_unclear__mixed_unclear",
+       "band": [
+        0.1,
+        0.7
+       ],
+       "realised": 0.15
+      },
+      {
+       "row": "mixed_unclear__polyolefin_plastic",
+       "band": [
+        0.1,
+        0.7
+       ],
+       "realised": 0.15
+      },
+      {
+       "row": "mixed_unclear__table_laminate",
+       "band": [
+        0.1,
+        0.7
+       ],
+       "realised": 0.15
+      }
+     ]
+    },
+    "static_critical_rows": [
+     {
+      "row": "glass__glass",
+      "band": [
+       0.5,
+       1.0
+      ],
+      "static_margin_without_it": 0.05
+     }
+    ]
+   },
+   "pad_combine=max:ground=average": {
+    "feasible": true,
+    "joint_min_margin_mu": 0.05,
+    "static_margin_mu": 0.05,
+    "kinetic_margin_mu": 0.075,
+    "n_band_rows": 440,
+    "n_classes": 20,
+    "unary_static": {
+     "abs_device_housing": 0.3,
+     "abs_toy_plastic": 0.35,
+     "aluminium": 0.45,
+     "engineered_wood": 0.25,
+     "fabric_textile": 0.3,
+     "foam": 0.7,
+     "food_organic": 0.3,
+     "glass": 0.55,
+     "glazed_ceramic": 0.45,
+     "ground": 0.2,
+     "hardwood": 0.3,
+     "mixed_unclear": 0.2,
+     "pad_elastomer": 0.65,
+     "paper_cardboard": 0.3,
+     "pet_plastic": 0.25,
+     "polyolefin_plastic": 0.2,
+     "rubber_elastomer": 0.65,
+     "softwood": 0.3,
+     "steel": 0.55,
+     "table_laminate": 0.2
+    },
+    "unary_kinetic": {
+     "abs_device_housing": 0.275,
+     "abs_toy_plastic": 0.325,
+     "aluminium": 0.375,
+     "engineered_wood": 0.225,
+     "fabric_textile": 0.275,
+     "foam": 0.55,
+     "food_organic": 0.25,
+     "glass": 0.275,
+     "glazed_ceramic": 0.275,
+     "ground": 0.2,
+     "hardwood": 0.275,
+     "mixed_unclear": 0.175,
+     "pad_elastomer": 0.575,
+     "paper_cardboard": 0.275,
+     "pet_plastic": 0.225,
+     "polyolefin_plastic": 0.175,
+     "rubber_elastomer": 0.575,
+     "softwood": 0.275,
+     "steel": 0.475,
+     "table_laminate": 0.2
+    },
+    "kinetic_equals_static": [
+     "ground",
+     "table_laminate"
+    ],
+    "kinetic_above_static": [],
+    "violations": [],
+    "binding_rows": {
+     "static": [
+      {
+       "row": "pet_plastic__pet_plastic",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "abs_toy_plastic__abs_toy_plastic",
+       "band": [
+        0.3,
+        0.8
+       ],
+       "realised": 0.35
+      },
+      {
+       "row": "abs_device_housing__abs_device_housing",
+       "band": [
+        0.25,
+        0.7
+       ],
+       "realised": 0.3
+      },
+      {
+       "row": "rubber_elastomer__rubber_elastomer",
+       "band": [
+        0.6,
+        1.5
+       ],
+       "realised": 0.65
+      },
+      {
+       "row": "pad_elastomer__rubber_elastomer (max: u_pad in band)",
+       "band": [
+        0.6,
+        1.5
+       ],
+       "realised": 0.65
+      },
+      {
+       "row": "foam__table_laminate",
+       "band": [
+        0.4,
+        1.3
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "softwood__softwood",
+       "band": [
+        0.25,
+        0.62
+       ],
+       "realised": 0.3
+      },
+      {
+       "row": "softwood__table_laminate",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "hardwood__hardwood",
+       "band": [
+        0.25,
+        0.62
+       ],
+       "realised": 0.3
+      },
+      {
+       "row": "hardwood__table_laminate",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "engineered_wood__engineered_wood",
+       "band": [
+        0.2,
+        0.55
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "fabric_textile__fabric_textile",
+       "band": [
+        0.25,
+        0.7
+       ],
+       "realised": 0.3
+      },
+      {
+       "row": "fabric_textile__table_laminate",
+       "band": [
+        0.2,
+        0.6
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "food_organic__table_laminate",
+       "band": [
+        0.2,
+        0.6
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "steel__steel",
+       "band": [
+        0.5,
+        0.8
+       ],
+       "realised": 0.55
+      },
+      {
+       "row": "pad_elastomer__steel (max: u_pad in band)",
+       "band": [
+        0.6,
+        1.6
+       ],
+       "realised": 0.65
+      },
+      {
+       "row": "aluminium__aluminium",
+       "band": [
+        0.4,
+        1.35
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "aluminium__pad_elastomer (max: u_pad in band)",
+       "band": [
+        0.6,
+        1.6
+       ],
+       "realised": 0.65
+      },
+      {
+       "row": "glazed_ceramic__glazed_ceramic",
+       "band": [
+        0.4,
+        1.0
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "glass__glass",
+       "band": [
+        0.5,
+        1.0
+       ],
+       "realised": 0.55
+      },
+      {
+       "row": "paper_cardboard__softwood",
+       "band": [
+        0.25,
+        0.6
+       ],
+       "realised": 0.3
+      },
+      {
+       "row": "aluminium__glazed_ceramic",
+       "band": [
+        0.15,
+        0.5
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "fabric_textile__ground",
+       "band": [
+        0.2,
+        0.7
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "foam__ground",
+       "band": [
+        0.4,
+        1.3
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "food_organic__ground",
+       "band": [
+        0.2,
+        0.7
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "glass__steel",
+       "band": [
+        0.2,
+        0.6
+       ],
+       "realised": 0.55
+      },
+      {
+       "row": "ground__hardwood",
+       "band": [
+        0.2,
+        0.62
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "ground__mixed_unclear",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "ground__softwood",
+       "band": [
+        0.2,
+        0.62
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "mixed_unclear__mixed_unclear",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "mixed_unclear__polyolefin_plastic",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "mixed_unclear__table_laminate",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.2
+      }
+     ],
+     "kinetic": [
+      {
+       "row": "pet_plastic__pet_plastic",
+       "band": [
+        0.15,
+        0.4
+       ],
+       "realised": 0.225
+      },
+      {
+       "row": "abs_toy_plastic__abs_toy_plastic",
+       "band": [
+        0.25,
+        0.6
+       ],
+       "realised": 0.325
+      },
+      {
+       "row": "abs_device_housing__abs_device_housing",
+       "band": [
+        0.2,
+        0.55
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "rubber_elastomer__rubber_elastomer",
+       "band": [
+        0.5,
+        1.3
+       ],
+       "realised": 0.575
+      },
+      {
+       "row": "pad_elastomer__rubber_elastomer (max: u_pad in band)",
+       "band": [
+        0.5,
+        1.3
+       ],
+       "realised": 0.575
+      },
+      {
+       "row": "foam__table_laminate",
+       "band": [
+        0.3,
+        1.2
+       ],
+       "realised": 0.375
+      },
+      {
+       "row": "softwood__softwood",
+       "band": [
+        0.2,
+        0.48
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "hardwood__hardwood",
+       "band": [
+        0.2,
+        0.48
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "engineered_wood__engineered_wood",
+       "band": [
+        0.15,
+        0.45
+       ],
+       "realised": 0.225
+      },
+      {
+       "row": "fabric_textile__fabric_textile",
+       "band": [
+        0.2,
+        0.6
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "food_organic__table_laminate",
+       "band": [
+        0.15,
+        0.5
+       ],
+       "realised": 0.225
+      },
+      {
+       "row": "steel__steel",
+       "band": [
+        0.4,
+        0.6
+       ],
+       "realised": 0.475
+      },
+      {
+       "row": "pad_elastomer__steel (max: u_pad in band)",
+       "band": [
+        0.5,
+        1.4
+       ],
+       "realised": 0.575
+      },
+      {
+       "row": "aluminium__aluminium",
+       "band": [
+        0.3,
+        0.6
+       ],
+       "realised": 0.375
+      },
+      {
+       "row": "aluminium__pad_elastomer (max: u_pad in band)",
+       "band": [
+        0.5,
+        1.4
+       ],
+       "realised": 0.575
+      },
+      {
+       "row": "glazed_ceramic__glazed_ceramic",
+       "band": [
+        0.2,
+        0.6
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "glass__glass",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "glass__glazed_ceramic",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "paper_cardboard__softwood",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "foam__ground",
+       "band": [
+        0.3,
+        1.2
+       ],
+       "realised": 0.375
+      },
+      {
+       "row": "food_organic__ground",
+       "band": [
+        0.15,
+        0.6
+       ],
+       "realised": 0.225
+      },
+      {
+       "row": "hardwood__steel",
+       "band": [
+        0.15,
+        0.45
+       ],
+       "realised": 0.375
+      },
+      {
+       "row": "mixed_unclear__mixed_unclear",
+       "band": [
+        0.1,
+        0.7
+       ],
+       "realised": 0.175
+      },
+      {
+       "row": "mixed_unclear__polyolefin_plastic",
+       "band": [
+        0.1,
+        0.7
+       ],
+       "realised": 0.175
+      },
+      {
+       "row": "paper_cardboard__steel",
+       "band": [
+        0.12,
+        0.45
+       ],
+       "realised": 0.375
+      }
+     ]
+    },
+    "static_critical_rows": []
+   }
+  },
+  "pad_hard+table_wood": {
+   "membership": "sensitivity_table",
+   "pad_combine=average:ground=multiply": {
+    "feasible": true,
+    "joint_min_margin_mu": 0.0,
+    "static_margin_mu": 0.0,
+    "kinetic_margin_mu": 0.05,
+    "n_band_rows": 406,
+    "n_classes": 19,
+    "unary_static": {
+     "abs_device_housing": 0.35,
+     "abs_toy_plastic": 0.45,
+     "aluminium": 0.4,
+     "engineered_wood": 0.25,
+     "fabric_textile": 0.35,
+     "foam": 0.65,
+     "food_organic": 0.25,
+     "glass": 0.5,
+     "glazed_ceramic": 0.4,
+     "hardwood": 0.35,
+     "mixed_unclear": 0.15,
+     "pad_hard": 0.15,
+     "paper_cardboard": 0.25,
+     "pet_plastic": 0.25,
+     "polyolefin_plastic": 0.15,
+     "rubber_elastomer": 0.85,
+     "softwood": 0.35,
+     "steel": 0.5,
+     "table_wood": 0.15
+    },
+    "unary_kinetic": {
+     "abs_device_housing": 0.35,
+     "abs_toy_plastic": 0.35,
+     "aluminium": 0.35,
+     "engineered_wood": 0.25,
+     "fabric_textile": 0.35,
+     "foam": 0.55,
+     "food_organic": 0.25,
+     "glass": 0.25,
+     "glazed_ceramic": 0.25,
+     "hardwood": 0.35,
+     "mixed_unclear": 0.15,
+     "pad_hard": 0.15,
+     "paper_cardboard": 0.25,
+     "pet_plastic": 0.25,
+     "polyolefin_plastic": 0.15,
+     "rubber_elastomer": 0.75,
+     "softwood": 0.35,
+     "steel": 0.45,
+     "table_wood": 0.15
+    },
+    "kinetic_equals_static": [
+     "abs_device_housing",
+     "engineered_wood",
+     "fabric_textile",
+     "food_organic",
+     "hardwood",
+     "mixed_unclear",
+     "pad_hard",
+     "paper_cardboard",
+     "pet_plastic",
+     "polyolefin_plastic",
+     "softwood",
+     "table_wood"
+    ],
+    "kinetic_above_static": [],
+    "violations": [
+     {
+      "row": "abs_toy_plastic__pad_hard",
+      "field": "s",
+      "band": [
+       0.3,
+       0.7
+      ],
+      "realised": 0.3
+     },
+     {
+      "row": "pad_hard__rubber_elastomer",
+      "field": "s",
+      "band": [
+       0.5,
+       1.2
+      ],
+      "realised": 0.5
+     },
+     {
+      "row": "foam__pad_hard",
+      "field": "s",
+      "band": [
+       0.4,
+       1.3
+      ],
+      "realised": 0.4
+     },
+     {
+      "row": "foam__table_wood",
+      "field": "s",
+      "band": [
+       0.4,
+       1.3
+      ],
+      "realised": 0.4
+     },
+     {
+      "row": "glazed_ceramic__glazed_ceramic",
+      "field": "s",
+      "band": [
+       0.4,
+       1.0
+      ],
+      "realised": 0.4
+     },
+     {
+      "row": "glass__glass",
+      "field": "s",
+      "band": [
+       0.5,
+       1.0
+      ],
+      "realised": 0.5
+     }
+    ],
+    "binding_rows": {
+     "static": [
+      {
+       "row": "pad_hard__pet_plastic",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "pet_plastic__table_wood",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "abs_toy_plastic__pad_hard",
+       "band": [
+        0.3,
+        0.7
+       ],
+       "realised": 0.3
+      },
+      {
+       "row": "abs_device_housing__pad_hard",
+       "band": [
+        0.25,
+        0.65
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "pad_hard__rubber_elastomer",
+       "band": [
+        0.5,
+        1.2
+       ],
+       "realised": 0.5
+      },
+      {
+       "row": "foam__pad_hard",
+       "band": [
+        0.4,
+        1.3
+       ],
+       "realised": 0.4
+      },
+      {
+       "row": "foam__table_wood",
+       "band": [
+        0.4,
+        1.3
+       ],
+       "realised": 0.4
+      },
+      {
+       "row": "softwood__table_wood",
+       "band": [
+        0.25,
+        0.62
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "hardwood__table_wood",
+       "band": [
+        0.25,
+        0.62
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "engineered_wood__table_wood",
+       "band": [
+        0.2,
+        0.55
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "paper_cardboard__table_wood",
+       "band": [
+        0.2,
+        0.6
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "fabric_textile__table_wood",
+       "band": [
+        0.25,
+        0.7
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "food_organic__table_wood",
+       "band": [
+        0.2,
+        0.7
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "steel__steel",
+       "band": [
+        0.5,
+        0.8
+       ],
+       "realised": 0.5
+      },
+      {
+       "row": "aluminium__aluminium",
+       "band": [
+        0.4,
+        1.35
+       ],
+       "realised": 0.4
+      },
+      {
+       "row": "glazed_ceramic__glazed_ceramic",
+       "band": [
+        0.4,
+        1.0
+       ],
+       "realised": 0.4
+      },
+      {
+       "row": "glass__glass",
+       "band": [
+        0.5,
+        1.0
+       ],
+       "realised": 0.5
+      },
+      {
+       "row": "ground__mixed_unclear (multiply, ground 1.0)",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.15
+      },
+      {
+       "row": "mixed_unclear__mixed_unclear",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.15
+      },
+      {
+       "row": "mixed_unclear__pad_hard",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.15
+      },
+      {
+       "row": "mixed_unclear__polyolefin_plastic",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.15
+      },
+      {
+       "row": "mixed_unclear__table_wood",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.15
+      }
+     ],
+     "kinetic": [
+      {
+       "row": "pad_hard__pet_plastic",
+       "band": [
+        0.15,
+        0.4
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "pet_plastic__table_wood",
+       "band": [
+        0.15,
+        0.4
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "abs_toy_plastic__pad_hard",
+       "band": [
+        0.2,
+        0.55
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "abs_device_housing__pad_hard",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "polyolefin_plastic__table_wood",
+       "band": [
+        0.1,
+        0.35
+       ],
+       "realised": 0.15
+      },
+      {
+       "row": "pad_hard__rubber_elastomer",
+       "band": [
+        0.4,
+        1.0
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "foam__pad_hard",
+       "band": [
+        0.3,
+        1.2
+       ],
+       "realised": 0.35
+      },
+      {
+       "row": "foam__table_wood",
+       "band": [
+        0.3,
+        1.2
+       ],
+       "realised": 0.35
+      },
+      {
+       "row": "softwood__table_wood",
+       "band": [
+        0.2,
+        0.48
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "hardwood__table_wood",
+       "band": [
+        0.2,
+        0.48
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "engineered_wood__table_wood",
+       "band": [
+        0.15,
+        0.45
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "paper_cardboard__table_wood",
+       "band": [
+        0.15,
+        0.5
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "fabric_textile__table_wood",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "food_organic__table_wood",
+       "band": [
+        0.15,
+        0.6
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "steel__steel",
+       "band": [
+        0.4,
+        0.6
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "aluminium__aluminium",
+       "band": [
+        0.3,
+        0.6
+       ],
+       "realised": 0.35
+      },
+      {
+       "row": "aluminium__pad_hard",
+       "band": [
+        0.2,
+        0.45
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "aluminium__table_wood",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "glazed_ceramic__glazed_ceramic",
+       "band": [
+        0.2,
+        0.6
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "glazed_ceramic__table_wood",
+       "band": [
+        0.15,
+        0.45
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "glass__glass",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "glass__pad_hard",
+       "band": [
+        0.15,
+        0.5
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "glass__table_wood",
+       "band": [
+        0.15,
+        0.4
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "glass__glazed_ceramic",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "ground__mixed_unclear (multiply, ground 1.0)",
+       "band": [
+        0.1,
+        0.7
+       ],
+       "realised": 0.15
+      },
+      {
+       "row": "ground__steel (multiply, ground 1.0)",
+       "band": [
+        0.15,
+        0.5
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "hardwood__steel",
+       "band": [
+        0.15,
+        0.45
+       ],
+       "realised": 0.4
+      },
+      {
+       "row": "mixed_unclear__mixed_unclear",
+       "band": [
+        0.1,
+        0.7
+       ],
+       "realised": 0.15
+      },
+      {
+       "row": "mixed_unclear__pad_hard",
+       "band": [
+        0.1,
+        0.7
+       ],
+       "realised": 0.15
+      },
+      {
+       "row": "mixed_unclear__polyolefin_plastic",
+       "band": [
+        0.1,
+        0.7
+       ],
+       "realised": 0.15
+      },
+      {
+       "row": "mixed_unclear__table_wood",
+       "band": [
+        0.1,
+        0.7
+       ],
+       "realised": 0.15
+      }
+     ]
+    },
+    "static_critical_rows": [
+     {
+      "row": "glass__glass",
+      "band": [
+       0.5,
+       1.0
+      ],
+      "static_margin_without_it": 0.05
+     }
+    ]
+   },
+   "pad_combine=average:ground=average": {
+    "feasible": true,
+    "joint_min_margin_mu": 0.05,
+    "static_margin_mu": 0.05,
+    "kinetic_margin_mu": 0.075,
+    "n_band_rows": 406,
+    "n_classes": 20,
+    "unary_static": {
+     "abs_device_housing": 0.4,
+     "abs_toy_plastic": 0.5,
+     "aluminium": 0.45,
+     "engineered_wood": 0.25,
+     "fabric_textile": 0.325,
+     "foam": 0.7,
+     "food_organic": 0.3,
+     "glass": 0.55,
+     "glazed_ceramic": 0.45,
+     "ground": 0.2,
+     "hardwood": 0.325,
+     "mixed_unclear": 0.2,
+     "pad_hard": 0.2,
+     "paper_cardboard": 0.25,
+     "pet_plastic": 0.3,
+     "polyolefin_plastic": 0.2,
+     "rubber_elastomer": 0.9,
+     "softwood": 0.35,
+     "steel": 0.55,
+     "table_wood": 0.275
+    },
+    "unary_kinetic": {
+     "abs_device_housing": 0.35,
+     "abs_toy_plastic": 0.35,
+     "aluminium": 0.375,
+     "engineered_wood": 0.225,
+     "fabric_textile": 0.275,
+     "foam": 0.55,
+     "food_organic": 0.25,
+     "glass": 0.275,
+     "glazed_ceramic": 0.275,
+     "ground": 0.2,
+     "hardwood": 0.275,
+     "mixed_unclear": 0.175,
+     "pad_hard": 0.2,
+     "paper_cardboard": 0.225,
+     "pet_plastic": 0.25,
+     "polyolefin_plastic": 0.175,
+     "rubber_elastomer": 0.75,
+     "softwood": 0.325,
+     "steel": 0.475,
+     "table_wood": 0.275
+    },
+    "kinetic_equals_static": [
+     "ground",
+     "pad_hard",
+     "table_wood"
+    ],
+    "kinetic_above_static": [],
+    "violations": [],
+    "binding_rows": {
+     "static": [
+      {
+       "row": "pad_hard__pet_plastic",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "abs_toy_plastic__pad_hard",
+       "band": [
+        0.3,
+        0.7
+       ],
+       "realised": 0.35
+      },
+      {
+       "row": "abs_device_housing__pad_hard",
+       "band": [
+        0.25,
+        0.65
+       ],
+       "realised": 0.3
+      },
+      {
+       "row": "pad_hard__rubber_elastomer",
+       "band": [
+        0.5,
+        1.2
+       ],
+       "realised": 0.55
+      },
+      {
+       "row": "foam__pad_hard",
+       "band": [
+        0.4,
+        1.3
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "hardwood__table_wood",
+       "band": [
+        0.25,
+        0.62
+       ],
+       "realised": 0.3
+      },
+      {
+       "row": "engineered_wood__engineered_wood",
+       "band": [
+        0.2,
+        0.55
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "paper_cardboard__paper_cardboard",
+       "band": [
+        0.2,
+        0.7
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "fabric_textile__table_wood",
+       "band": [
+        0.25,
+        0.7
+       ],
+       "realised": 0.3
+      },
+      {
+       "row": "steel__steel",
+       "band": [
+        0.5,
+        0.8
+       ],
+       "realised": 0.55
+      },
+      {
+       "row": "aluminium__aluminium",
+       "band": [
+        0.4,
+        1.35
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "glazed_ceramic__glazed_ceramic",
+       "band": [
+        0.4,
+        1.0
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "glass__glass",
+       "band": [
+        0.5,
+        1.0
+       ],
+       "realised": 0.55
+      },
+      {
+       "row": "paper_cardboard__softwood",
+       "band": [
+        0.25,
+        0.6
+       ],
+       "realised": 0.3
+      },
+      {
+       "row": "aluminium__glazed_ceramic",
+       "band": [
+        0.15,
+        0.5
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "foam__ground",
+       "band": [
+        0.4,
+        1.3
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "food_organic__ground",
+       "band": [
+        0.2,
+        0.7
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "glass__steel",
+       "band": [
+        0.2,
+        0.6
+       ],
+       "realised": 0.55
+      },
+      {
+       "row": "ground__mixed_unclear",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "mixed_unclear__mixed_unclear",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "mixed_unclear__pad_hard",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "mixed_unclear__polyolefin_plastic",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.2
+      }
+     ],
+     "kinetic": [
+      {
+       "row": "pad_hard__pet_plastic",
+       "band": [
+        0.15,
+        0.4
+       ],
+       "realised": 0.225
+      },
+      {
+       "row": "abs_toy_plastic__pad_hard",
+       "band": [
+        0.2,
+        0.55
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "abs_device_housing__pad_hard",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "pad_hard__rubber_elastomer",
+       "band": [
+        0.4,
+        1.0
+       ],
+       "realised": 0.475
+      },
+      {
+       "row": "foam__pad_hard",
+       "band": [
+        0.3,
+        1.2
+       ],
+       "realised": 0.375
+      },
+      {
+       "row": "hardwood__hardwood",
+       "band": [
+        0.2,
+        0.48
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "hardwood__table_wood",
+       "band": [
+        0.2,
+        0.48
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "engineered_wood__engineered_wood",
+       "band": [
+        0.15,
+        0.45
+       ],
+       "realised": 0.225
+      },
+      {
+       "row": "paper_cardboard__paper_cardboard",
+       "band": [
+        0.15,
+        0.6
+       ],
+       "realised": 0.225
+      },
+      {
+       "row": "fabric_textile__fabric_textile",
+       "band": [
+        0.2,
+        0.6
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "fabric_textile__table_wood",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "steel__steel",
+       "band": [
+        0.4,
+        0.6
+       ],
+       "realised": 0.475
+      },
+      {
+       "row": "aluminium__aluminium",
+       "band": [
+        0.3,
+        0.6
+       ],
+       "realised": 0.375
+      },
+      {
+       "row": "glazed_ceramic__glazed_ceramic",
+       "band": [
+        0.2,
+        0.6
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "glass__glass",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "glass__glazed_ceramic",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "paper_cardboard__softwood",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "foam__ground",
+       "band": [
+        0.3,
+        1.2
+       ],
+       "realised": 0.375
+      },
+      {
+       "row": "food_organic__ground",
+       "band": [
+        0.15,
+        0.6
+       ],
+       "realised": 0.225
+      },
+      {
+       "row": "hardwood__steel",
+       "band": [
+        0.15,
+        0.45
+       ],
+       "realised": 0.375
+      },
+      {
+       "row": "mixed_unclear__mixed_unclear",
+       "band": [
+        0.1,
+        0.7
+       ],
+       "realised": 0.175
+      },
+      {
+       "row": "mixed_unclear__polyolefin_plastic",
+       "band": [
+        0.1,
+        0.7
+       ],
+       "realised": 0.175
+      }
+     ]
+    },
+    "static_critical_rows": []
+   }
+  },
+  "pad_elastomer+table_wood": {
+   "membership": "sensitivity_both",
+   "pad_combine=average:ground=multiply": {
+    "feasible": true,
+    "joint_min_margin_mu": 0.0,
+    "static_margin_mu": 0.0,
+    "kinetic_margin_mu": 0.05,
+    "n_band_rows": 406,
+    "n_classes": 19,
+    "unary_static": {
+     "abs_device_housing": 0.55,
+     "abs_toy_plastic": 0.55,
+     "aluminium": 0.6,
+     "engineered_wood": 0.2,
+     "fabric_textile": 0.3,
+     "foam": 0.6,
+     "food_organic": 0.2,
+     "glass": 0.5,
+     "glazed_ceramic": 0.4,
+     "hardwood": 0.3,
+     "mixed_unclear": 0.15,
+     "pad_elastomer": 0.7,
+     "paper_cardboard": 0.3,
+     "pet_plastic": 0.2,
+     "polyolefin_plastic": 0.4,
+     "rubber_elastomer": 0.6,
+     "softwood": 0.3,
+     "steel": 0.5,
+     "table_wood": 0.2
+    },
+    "unary_kinetic": {
+     "abs_device_housing": 0.25,
+     "abs_toy_plastic": 0.3,
+     "aluminium": 0.45,
+     "engineered_wood": 0.2,
+     "fabric_textile": 0.3,
+     "foam": 0.5,
+     "food_organic": 0.2,
+     "glass": 0.35,
+     "glazed_ceramic": 0.35,
+     "hardwood": 0.3,
+     "mixed_unclear": 0.15,
+     "pad_elastomer": 0.65,
+     "paper_cardboard": 0.2,
+     "pet_plastic": 0.2,
+     "polyolefin_plastic": 0.15,
+     "rubber_elastomer": 0.6,
+     "softwood": 0.3,
+     "steel": 0.45,
+     "table_wood": 0.2
+    },
+    "kinetic_equals_static": [
+     "engineered_wood",
+     "fabric_textile",
+     "food_organic",
+     "hardwood",
+     "mixed_unclear",
+     "pet_plastic",
+     "rubber_elastomer",
+     "softwood",
+     "table_wood"
+    ],
+    "kinetic_above_static": [],
+    "violations": [
+     {
+      "row": "foam__table_wood",
+      "field": "s",
+      "band": [
+       0.4,
+       1.3
+      ],
+      "realised": 0.4
+     },
+     {
+      "row": "pad_elastomer__paper_cardboard",
+      "field": "s",
+      "band": [
+       0.5,
+       0.8
+      ],
+      "realised": 0.5
+     },
+     {
+      "row": "abs_device_housing__ground (multiply, ground 1.0)",
+      "field": "s",
+      "band": [
+       0.15,
+       0.55
+      ],
+      "realised": 0.55
+     },
+     {
+      "row": "aluminium__polyolefin_plastic",
+      "field": "s",
+      "band": [
+       0.1,
+       0.5
+      ],
+      "realised": 0.5
+     },
+     {
+      "row": "ground__polyolefin_plastic (multiply, ground 1.0)",
+      "field": "s",
+      "band": [
+       0.1,
+       0.4
+      ],
+      "realised": 0.4
+     }
+    ],
+    "binding_rows": {
+     "static": [
+      {
+       "row": "pet_plastic__pet_plastic",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "pet_plastic__table_wood",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "rubber_elastomer__rubber_elastomer",
+       "band": [
+        0.6,
+        1.5
+       ],
+       "realised": 0.6
+      },
+      {
+       "row": "rubber_elastomer__table_wood",
+       "band": [
+        0.4,
+        1.1
+       ],
+       "realised": 0.4
+      },
+      {
+       "row": "foam__table_wood",
+       "band": [
+        0.4,
+        1.3
+       ],
+       "realised": 0.4
+      },
+      {
+       "row": "softwood__table_wood",
+       "band": [
+        0.25,
+        0.62
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "hardwood__table_wood",
+       "band": [
+        0.25,
+        0.62
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "engineered_wood__engineered_wood",
+       "band": [
+        0.2,
+        0.55
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "engineered_wood__table_wood",
+       "band": [
+        0.2,
+        0.55
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "pad_elastomer__paper_cardboard",
+       "band": [
+        0.5,
+        0.8
+       ],
+       "realised": 0.5
+      },
+      {
+       "row": "fabric_textile__table_wood",
+       "band": [
+        0.25,
+        0.7
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "fabric_textile__pad_elastomer",
+       "band": [
+        0.5,
+        1.5
+       ],
+       "realised": 0.5
+      },
+      {
+       "row": "food_organic__food_organic",
+       "band": [
+        0.2,
+        0.8
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "food_organic__table_wood",
+       "band": [
+        0.2,
+        0.7
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "steel__steel",
+       "band": [
+        0.5,
+        0.8
+       ],
+       "realised": 0.5
+      },
+      {
+       "row": "pad_elastomer__steel",
+       "band": [
+        0.6,
+        1.6
+       ],
+       "realised": 0.6
+      },
+      {
+       "row": "glazed_ceramic__glazed_ceramic",
+       "band": [
+        0.4,
+        1.0
+       ],
+       "realised": 0.4
+      },
+      {
+       "row": "glass__glass",
+       "band": [
+        0.5,
+        1.0
+       ],
+       "realised": 0.5
+      },
+      {
+       "row": "abs_device_housing__ground (multiply, ground 1.0)",
+       "band": [
+        0.15,
+        0.55
+       ],
+       "realised": 0.55
+      },
+      {
+       "row": "abs_toy_plastic__ground (multiply, ground 1.0)",
+       "band": [
+        0.15,
+        0.55
+       ],
+       "realised": 0.55
+      },
+      {
+       "row": "aluminium__glazed_ceramic",
+       "band": [
+        0.15,
+        0.5
+       ],
+       "realised": 0.5
+      },
+      {
+       "row": "aluminium__ground (multiply, ground 1.0)",
+       "band": [
+        0.2,
+        0.6
+       ],
+       "realised": 0.6
+      },
+      {
+       "row": "aluminium__polyolefin_plastic",
+       "band": [
+        0.1,
+        0.5
+       ],
+       "realised": 0.5
+      },
+      {
+       "row": "food_organic__ground (multiply, ground 1.0)",
+       "band": [
+        0.2,
+        0.7
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "glass__ground (multiply, ground 1.0)",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.5
+      },
+      {
+       "row": "ground__mixed_unclear (multiply, ground 1.0)",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.15
+      },
+      {
+       "row": "ground__polyolefin_plastic (multiply, ground 1.0)",
+       "band": [
+        0.1,
+        0.4
+       ],
+       "realised": 0.4
+      },
+      {
+       "row": "mixed_unclear__mixed_unclear",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.15
+      }
+     ],
+     "kinetic": [
+      {
+       "row": "pet_plastic__pet_plastic",
+       "band": [
+        0.15,
+        0.4
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "pet_plastic__table_wood",
+       "band": [
+        0.15,
+        0.4
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "abs_toy_plastic__abs_toy_plastic",
+       "band": [
+        0.25,
+        0.6
+       ],
+       "realised": 0.3
+      },
+      {
+       "row": "abs_device_housing__abs_device_housing",
+       "band": [
+        0.2,
+        0.55
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "rubber_elastomer__table_wood",
+       "band": [
+        0.35,
+        0.9
+       ],
+       "realised": 0.4
+      },
+      {
+       "row": "foam__table_wood",
+       "band": [
+        0.3,
+        1.2
+       ],
+       "realised": 0.35
+      },
+      {
+       "row": "softwood__table_wood",
+       "band": [
+        0.2,
+        0.48
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "hardwood__table_wood",
+       "band": [
+        0.2,
+        0.48
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "engineered_wood__engineered_wood",
+       "band": [
+        0.15,
+        0.45
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "engineered_wood__table_wood",
+       "band": [
+        0.15,
+        0.45
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "paper_cardboard__paper_cardboard",
+       "band": [
+        0.15,
+        0.6
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "paper_cardboard__table_wood",
+       "band": [
+        0.15,
+        0.5
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "fabric_textile__table_wood",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "food_organic__food_organic",
+       "band": [
+        0.15,
+        0.7
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "food_organic__table_wood",
+       "band": [
+        0.15,
+        0.6
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "steel__steel",
+       "band": [
+        0.4,
+        0.6
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "pad_elastomer__steel",
+       "band": [
+        0.5,
+        1.4
+       ],
+       "realised": 0.55
+      },
+      {
+       "row": "aluminium__pad_elastomer",
+       "band": [
+        0.5,
+        1.4
+       ],
+       "realised": 0.55
+      },
+      {
+       "row": "glazed_ceramic__pad_elastomer",
+       "band": [
+        0.45,
+        0.95
+       ],
+       "realised": 0.5
+      },
+      {
+       "row": "glass__pad_elastomer",
+       "band": [
+        0.45,
+        1.2
+       ],
+       "realised": 0.5
+      },
+      {
+       "row": "paper_cardboard__softwood",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "aluminium__glazed_ceramic",
+       "band": [
+        0.12,
+        0.45
+       ],
+       "realised": 0.4
+      },
+      {
+       "row": "aluminium__ground (multiply, ground 1.0)",
+       "band": [
+        0.15,
+        0.5
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "food_organic__ground (multiply, ground 1.0)",
+       "band": [
+        0.15,
+        0.6
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "glass__ground (multiply, ground 1.0)",
+       "band": [
+        0.15,
+        0.4
+       ],
+       "realised": 0.35
+      },
+      {
+       "row": "ground__mixed_unclear (multiply, ground 1.0)",
+       "band": [
+        0.1,
+        0.7
+       ],
+       "realised": 0.15
+      },
+      {
+       "row": "ground__steel (multiply, ground 1.0)",
+       "band": [
+        0.15,
+        0.5
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "mixed_unclear__mixed_unclear",
+       "band": [
+        0.1,
+        0.7
+       ],
+       "realised": 0.15
+      },
+      {
+       "row": "mixed_unclear__polyolefin_plastic",
+       "band": [
+        0.1,
+        0.7
+       ],
+       "realised": 0.15
+      }
+     ]
+    },
+    "static_critical_rows": [
+     {
+      "row": "glass__glass",
+      "band": [
+       0.5,
+       1.0
+      ],
+      "static_margin_without_it": 0.05
+     },
+     {
+      "row": "glass__ground (multiply, ground 1.0)",
+      "band": [
+       0.2,
+       0.5
+      ],
+      "static_margin_without_it": 0.05
+     }
+    ]
+   },
+   "pad_combine=average:ground=average": {
+    "feasible": true,
+    "joint_min_margin_mu": 0.05,
+    "static_margin_mu": 0.05,
+    "kinetic_margin_mu": 0.075,
+    "n_band_rows": 406,
+    "n_classes": 20,
+    "unary_static": {
+     "abs_device_housing": 0.3,
+     "abs_toy_plastic": 0.65,
+     "aluminium": 0.45,
+     "engineered_wood": 0.25,
+     "fabric_textile": 0.3,
+     "foam": 0.7,
+     "food_organic": 0.55,
+     "glass": 0.55,
+     "glazed_ceramic": 0.45,
+     "ground": 0.2,
+     "hardwood": 0.3,
+     "mixed_unclear": 0.2,
+     "pad_elastomer": 0.85,
+     "paper_cardboard": 0.25,
+     "pet_plastic": 0.35,
+     "polyolefin_plastic": 0.2,
+     "rubber_elastomer": 0.65,
+     "softwood": 0.35,
+     "steel": 0.55,
+     "table_wood": 0.3
+    },
+    "unary_kinetic": {
+     "abs_device_housing": 0.275,
+     "abs_toy_plastic": 0.325,
+     "aluminium": 0.45,
+     "engineered_wood": 0.225,
+     "fabric_textile": 0.275,
+     "foam": 0.55,
+     "food_organic": 0.25,
+     "glass": 0.3,
+     "glazed_ceramic": 0.3,
+     "ground": 0.2,
+     "hardwood": 0.275,
+     "mixed_unclear": 0.175,
+     "pad_elastomer": 0.75,
+     "paper_cardboard": 0.25,
+     "pet_plastic": 0.225,
+     "polyolefin_plastic": 0.175,
+     "rubber_elastomer": 0.575,
+     "softwood": 0.3,
+     "steel": 0.475,
+     "table_wood": 0.275
+    },
+    "kinetic_equals_static": [
+     "aluminium",
+     "ground",
+     "paper_cardboard"
+    ],
+    "kinetic_above_static": [],
+    "violations": [],
+    "binding_rows": {
+     "static": [
+      {
+       "row": "abs_device_housing__abs_device_housing",
+       "band": [
+        0.25,
+        0.7
+       ],
+       "realised": 0.3
+      },
+      {
+       "row": "rubber_elastomer__rubber_elastomer",
+       "band": [
+        0.6,
+        1.5
+       ],
+       "realised": 0.65
+      },
+      {
+       "row": "hardwood__hardwood",
+       "band": [
+        0.25,
+        0.62
+       ],
+       "realised": 0.3
+      },
+      {
+       "row": "hardwood__table_wood",
+       "band": [
+        0.25,
+        0.62
+       ],
+       "realised": 0.3
+      },
+      {
+       "row": "engineered_wood__engineered_wood",
+       "band": [
+        0.2,
+        0.55
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "paper_cardboard__paper_cardboard",
+       "band": [
+        0.2,
+        0.7
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "pad_elastomer__paper_cardboard",
+       "band": [
+        0.5,
+        0.8
+       ],
+       "realised": 0.55
+      },
+      {
+       "row": "fabric_textile__fabric_textile",
+       "band": [
+        0.25,
+        0.7
+       ],
+       "realised": 0.3
+      },
+      {
+       "row": "fabric_textile__table_wood",
+       "band": [
+        0.25,
+        0.7
+       ],
+       "realised": 0.3
+      },
+      {
+       "row": "steel__steel",
+       "band": [
+        0.5,
+        0.8
+       ],
+       "realised": 0.55
+      },
+      {
+       "row": "aluminium__aluminium",
+       "band": [
+        0.4,
+        1.35
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "aluminium__pad_elastomer",
+       "band": [
+        0.6,
+        1.6
+       ],
+       "realised": 0.65
+      },
+      {
+       "row": "glass__glass",
+       "band": [
+        0.5,
+        1.0
+       ],
+       "realised": 0.55
+      },
+      {
+       "row": "pet_plastic__steel",
+       "band": [
+        0.15,
+        0.5
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "paper_cardboard__softwood",
+       "band": [
+        0.25,
+        0.6
+       ],
+       "realised": 0.3
+      },
+      {
+       "row": "abs_toy_plastic__aluminium",
+       "band": [
+        0.2,
+        0.6
+       ],
+       "realised": 0.55
+      },
+      {
+       "row": "aluminium__glazed_ceramic",
+       "band": [
+        0.15,
+        0.5
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "fabric_textile__ground",
+       "band": [
+        0.2,
+        0.7
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "foam__ground",
+       "band": [
+        0.4,
+        1.3
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "food_organic__glass",
+       "band": [
+        0.15,
+        0.6
+       ],
+       "realised": 0.55
+      },
+      {
+       "row": "food_organic__steel",
+       "band": [
+        0.15,
+        0.6
+       ],
+       "realised": 0.55
+      },
+      {
+       "row": "glass__steel",
+       "band": [
+        0.2,
+        0.6
+       ],
+       "realised": 0.55
+      },
+      {
+       "row": "ground__hardwood",
+       "band": [
+        0.2,
+        0.62
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "ground__mixed_unclear",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "mixed_unclear__mixed_unclear",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "mixed_unclear__polyolefin_plastic",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.2
+      }
+     ],
+     "kinetic": [
+      {
+       "row": "pet_plastic__pet_plastic",
+       "band": [
+        0.15,
+        0.4
+       ],
+       "realised": 0.225
+      },
+      {
+       "row": "abs_toy_plastic__abs_toy_plastic",
+       "band": [
+        0.25,
+        0.6
+       ],
+       "realised": 0.325
+      },
+      {
+       "row": "abs_device_housing__abs_device_housing",
+       "band": [
+        0.2,
+        0.55
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "rubber_elastomer__rubber_elastomer",
+       "band": [
+        0.5,
+        1.3
+       ],
+       "realised": 0.575
+      },
+      {
+       "row": "rubber_elastomer__table_wood",
+       "band": [
+        0.35,
+        0.9
+       ],
+       "realised": 0.425
+      },
+      {
+       "row": "hardwood__hardwood",
+       "band": [
+        0.2,
+        0.48
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "hardwood__table_wood",
+       "band": [
+        0.2,
+        0.48
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "engineered_wood__engineered_wood",
+       "band": [
+        0.15,
+        0.45
+       ],
+       "realised": 0.225
+      },
+      {
+       "row": "fabric_textile__fabric_textile",
+       "band": [
+        0.2,
+        0.6
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "fabric_textile__table_wood",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "steel__steel",
+       "band": [
+        0.4,
+        0.6
+       ],
+       "realised": 0.475
+      },
+      {
+       "row": "glazed_ceramic__pad_elastomer",
+       "band": [
+        0.45,
+        0.95
+       ],
+       "realised": 0.525
+      },
+      {
+       "row": "glass__pad_elastomer",
+       "band": [
+        0.45,
+        1.2
+       ],
+       "realised": 0.525
+      },
+      {
+       "row": "paper_cardboard__softwood",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "aluminium__glazed_ceramic",
+       "band": [
+        0.12,
+        0.45
+       ],
+       "realised": 0.375
+      },
+      {
+       "row": "aluminium__softwood",
+       "band": [
+        0.15,
+        0.45
+       ],
+       "realised": 0.375
+      },
+      {
+       "row": "foam__ground",
+       "band": [
+        0.3,
+        1.2
+       ],
+       "realised": 0.375
+      },
+      {
+       "row": "food_organic__ground",
+       "band": [
+        0.15,
+        0.6
+       ],
+       "realised": 0.225
+      },
+      {
+       "row": "hardwood__steel",
+       "band": [
+        0.15,
+        0.45
+       ],
+       "realised": 0.375
+      },
+      {
+       "row": "mixed_unclear__mixed_unclear",
+       "band": [
+        0.1,
+        0.7
+       ],
+       "realised": 0.175
+      },
+      {
+       "row": "mixed_unclear__polyolefin_plastic",
+       "band": [
+        0.1,
+        0.7
+       ],
+       "realised": 0.175
+      }
+     ]
+    },
+    "static_critical_rows": []
+   },
+   "pad_combine=max:ground=multiply": {
+    "feasible": true,
+    "joint_min_margin_mu": 0.0,
+    "static_margin_mu": 0.0,
+    "kinetic_margin_mu": 0.05,
+    "n_band_rows": 440,
+    "n_classes": 19,
+    "unary_static": {
+     "abs_device_housing": 0.25,
+     "abs_toy_plastic": 0.3,
+     "aluminium": 0.4,
+     "engineered_wood": 0.25,
+     "fabric_textile": 0.35,
+     "foam": 0.65,
+     "food_organic": 0.25,
+     "glass": 0.5,
+     "glazed_ceramic": 0.4,
+     "hardwood": 0.35,
+     "mixed_unclear": 0.15,
+     "pad_elastomer": 0.6,
+     "paper_cardboard": 0.25,
+     "pet_plastic": 0.25,
+     "polyolefin_plastic": 0.15,
+     "rubber_elastomer": 0.65,
+     "softwood": 0.35,
+     "steel": 0.5,
+     "table_wood": 0.15
+    },
+    "unary_kinetic": {
+     "abs_device_housing": 0.25,
+     "abs_toy_plastic": 0.3,
+     "aluminium": 0.35,
+     "engineered_wood": 0.25,
+     "fabric_textile": 0.35,
+     "foam": 0.55,
+     "food_organic": 0.25,
+     "glass": 0.25,
+     "glazed_ceramic": 0.25,
+     "hardwood": 0.35,
+     "mixed_unclear": 0.15,
+     "pad_elastomer": 0.55,
+     "paper_cardboard": 0.25,
+     "pet_plastic": 0.25,
+     "polyolefin_plastic": 0.15,
+     "rubber_elastomer": 0.65,
+     "softwood": 0.35,
+     "steel": 0.45,
+     "table_wood": 0.15
+    },
+    "kinetic_equals_static": [
+     "abs_device_housing",
+     "abs_toy_plastic",
+     "engineered_wood",
+     "fabric_textile",
+     "food_organic",
+     "hardwood",
+     "mixed_unclear",
+     "paper_cardboard",
+     "pet_plastic",
+     "polyolefin_plastic",
+     "rubber_elastomer",
+     "softwood",
+     "table_wood"
+    ],
+    "kinetic_above_static": [],
+    "violations": [
+     {
+      "row": "foam__table_wood",
+      "field": "s",
+      "band": [
+       0.4,
+       1.3
+      ],
+      "realised": 0.4
+     },
+     {
+      "row": "steel__steel",
+      "field": "s",
+      "band": [
+       0.5,
+       0.8
+      ],
+      "realised": 0.5
+     },
+     {
+      "row": "aluminium__aluminium",
+      "field": "s",
+      "band": [
+       0.4,
+       1.35
+      ],
+      "realised": 0.4
+     },
+     {
+      "row": "glazed_ceramic__glazed_ceramic",
+      "field": "s",
+      "band": [
+       0.4,
+       1.0
+      ],
+      "realised": 0.4
+     },
+     {
+      "row": "glass__glass",
+      "field": "s",
+      "band": [
+       0.5,
+       1.0
+      ],
+      "realised": 0.5
+     }
+    ],
+    "binding_rows": {
+     "static": [
+      {
+       "row": "pet_plastic__table_wood",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "abs_toy_plastic__abs_toy_plastic",
+       "band": [
+        0.3,
+        0.8
+       ],
+       "realised": 0.3
+      },
+      {
+       "row": "abs_device_housing__abs_device_housing",
+       "band": [
+        0.25,
+        0.7
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "abs_device_housing__table_wood",
+       "band": [
+        0.2,
+        0.55
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "pad_elastomer__rubber_elastomer (max: u_pad in band)",
+       "band": [
+        0.6,
+        1.5
+       ],
+       "realised": 0.6
+      },
+      {
+       "row": "rubber_elastomer__table_wood",
+       "band": [
+        0.4,
+        1.1
+       ],
+       "realised": 0.4
+      },
+      {
+       "row": "foam__table_wood",
+       "band": [
+        0.4,
+        1.3
+       ],
+       "realised": 0.4
+      },
+      {
+       "row": "softwood__table_wood",
+       "band": [
+        0.25,
+        0.62
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "hardwood__table_wood",
+       "band": [
+        0.25,
+        0.62
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "engineered_wood__table_wood",
+       "band": [
+        0.2,
+        0.55
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "paper_cardboard__table_wood",
+       "band": [
+        0.2,
+        0.6
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "fabric_textile__table_wood",
+       "band": [
+        0.25,
+        0.7
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "food_organic__table_wood",
+       "band": [
+        0.2,
+        0.7
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "steel__steel",
+       "band": [
+        0.5,
+        0.8
+       ],
+       "realised": 0.5
+      },
+      {
+       "row": "pad_elastomer__steel (max: u_pad in band)",
+       "band": [
+        0.6,
+        1.6
+       ],
+       "realised": 0.6
+      },
+      {
+       "row": "aluminium__aluminium",
+       "band": [
+        0.4,
+        1.35
+       ],
+       "realised": 0.4
+      },
+      {
+       "row": "aluminium__pad_elastomer (max: u_pad in band)",
+       "band": [
+        0.6,
+        1.6
+       ],
+       "realised": 0.6
+      },
+      {
+       "row": "glazed_ceramic__glazed_ceramic",
+       "band": [
+        0.4,
+        1.0
+       ],
+       "realised": 0.4
+      },
+      {
+       "row": "glass__glass",
+       "band": [
+        0.5,
+        1.0
+       ],
+       "realised": 0.5
+      },
+      {
+       "row": "ground__mixed_unclear (multiply, ground 1.0)",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.15
+      },
+      {
+       "row": "mixed_unclear__mixed_unclear",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.15
+      },
+      {
+       "row": "mixed_unclear__polyolefin_plastic",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.15
+      },
+      {
+       "row": "mixed_unclear__table_wood",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.15
+      }
+     ],
+     "kinetic": [
+      {
+       "row": "pet_plastic__table_wood",
+       "band": [
+        0.15,
+        0.4
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "abs_toy_plastic__abs_toy_plastic",
+       "band": [
+        0.25,
+        0.6
+       ],
+       "realised": 0.3
+      },
+      {
+       "row": "abs_device_housing__abs_device_housing",
+       "band": [
+        0.2,
+        0.55
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "abs_device_housing__table_wood",
+       "band": [
+        0.15,
+        0.45
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "polyolefin_plastic__table_wood",
+       "band": [
+        0.1,
+        0.35
+       ],
+       "realised": 0.15
+      },
+      {
+       "row": "pad_elastomer__rubber_elastomer (max: u_pad in band)",
+       "band": [
+        0.5,
+        1.3
+       ],
+       "realised": 0.55
+      },
+      {
+       "row": "rubber_elastomer__table_wood",
+       "band": [
+        0.35,
+        0.9
+       ],
+       "realised": 0.4
+      },
+      {
+       "row": "foam__table_wood",
+       "band": [
+        0.3,
+        1.2
+       ],
+       "realised": 0.35
+      },
+      {
+       "row": "softwood__table_wood",
+       "band": [
+        0.2,
+        0.48
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "hardwood__table_wood",
+       "band": [
+        0.2,
+        0.48
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "engineered_wood__table_wood",
+       "band": [
+        0.15,
+        0.45
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "paper_cardboard__table_wood",
+       "band": [
+        0.15,
+        0.5
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "fabric_textile__table_wood",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "food_organic__table_wood",
+       "band": [
+        0.15,
+        0.6
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "steel__steel",
+       "band": [
+        0.4,
+        0.6
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "pad_elastomer__steel (max: u_pad in band)",
+       "band": [
+        0.5,
+        1.4
+       ],
+       "realised": 0.55
+      },
+      {
+       "row": "aluminium__aluminium",
+       "band": [
+        0.3,
+        0.6
+       ],
+       "realised": 0.35
+      },
+      {
+       "row": "aluminium__pad_elastomer (max: u_pad in band)",
+       "band": [
+        0.5,
+        1.4
+       ],
+       "realised": 0.55
+      },
+      {
+       "row": "aluminium__table_wood",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "glazed_ceramic__glazed_ceramic",
+       "band": [
+        0.2,
+        0.6
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "glazed_ceramic__table_wood",
+       "band": [
+        0.15,
+        0.45
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "glass__glass",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "glass__table_wood",
+       "band": [
+        0.15,
+        0.4
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "glass__glazed_ceramic",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "ground__mixed_unclear (multiply, ground 1.0)",
+       "band": [
+        0.1,
+        0.7
+       ],
+       "realised": 0.15
+      },
+      {
+       "row": "ground__steel (multiply, ground 1.0)",
+       "band": [
+        0.15,
+        0.5
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "hardwood__steel",
+       "band": [
+        0.15,
+        0.45
+       ],
+       "realised": 0.4
+      },
+      {
+       "row": "mixed_unclear__mixed_unclear",
+       "band": [
+        0.1,
+        0.7
+       ],
+       "realised": 0.15
+      },
+      {
+       "row": "mixed_unclear__polyolefin_plastic",
+       "band": [
+        0.1,
+        0.7
+       ],
+       "realised": 0.15
+      },
+      {
+       "row": "mixed_unclear__table_wood",
+       "band": [
+        0.1,
+        0.7
+       ],
+       "realised": 0.15
+      }
+     ]
+    },
+    "static_critical_rows": [
+     {
+      "row": "glass__glass",
+      "band": [
+       0.5,
+       1.0
+      ],
+      "static_margin_without_it": 0.05
+     }
+    ]
+   },
+   "pad_combine=max:ground=average": {
+    "feasible": true,
+    "joint_min_margin_mu": 0.05,
+    "static_margin_mu": 0.05,
+    "kinetic_margin_mu": 0.075,
+    "n_band_rows": 440,
+    "n_classes": 20,
+    "unary_static": {
+     "abs_device_housing": 0.3,
+     "abs_toy_plastic": 0.35,
+     "aluminium": 0.45,
+     "engineered_wood": 0.25,
+     "fabric_textile": 0.325,
+     "foam": 0.7,
+     "food_organic": 0.3,
+     "glass": 0.55,
+     "glazed_ceramic": 0.45,
+     "ground": 0.2,
+     "hardwood": 0.325,
+     "mixed_unclear": 0.2,
+     "pad_elastomer": 0.65,
+     "paper_cardboard": 0.25,
+     "pet_plastic": 0.25,
+     "polyolefin_plastic": 0.2,
+     "rubber_elastomer": 0.65,
+     "softwood": 0.35,
+     "steel": 0.55,
+     "table_wood": 0.275
+    },
+    "unary_kinetic": {
+     "abs_device_housing": 0.275,
+     "abs_toy_plastic": 0.325,
+     "aluminium": 0.375,
+     "engineered_wood": 0.225,
+     "fabric_textile": 0.275,
+     "foam": 0.55,
+     "food_organic": 0.25,
+     "glass": 0.275,
+     "glazed_ceramic": 0.275,
+     "ground": 0.2,
+     "hardwood": 0.275,
+     "mixed_unclear": 0.175,
+     "pad_elastomer": 0.575,
+     "paper_cardboard": 0.225,
+     "pet_plastic": 0.225,
+     "polyolefin_plastic": 0.175,
+     "rubber_elastomer": 0.575,
+     "softwood": 0.325,
+     "steel": 0.475,
+     "table_wood": 0.275
+    },
+    "kinetic_equals_static": [
+     "ground",
+     "table_wood"
+    ],
+    "kinetic_above_static": [],
+    "violations": [],
+    "binding_rows": {
+     "static": [
+      {
+       "row": "pet_plastic__pet_plastic",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "abs_toy_plastic__abs_toy_plastic",
+       "band": [
+        0.3,
+        0.8
+       ],
+       "realised": 0.35
+      },
+      {
+       "row": "abs_device_housing__abs_device_housing",
+       "band": [
+        0.25,
+        0.7
+       ],
+       "realised": 0.3
+      },
+      {
+       "row": "rubber_elastomer__rubber_elastomer",
+       "band": [
+        0.6,
+        1.5
+       ],
+       "realised": 0.65
+      },
+      {
+       "row": "pad_elastomer__rubber_elastomer (max: u_pad in band)",
+       "band": [
+        0.6,
+        1.5
+       ],
+       "realised": 0.65
+      },
+      {
+       "row": "hardwood__table_wood",
+       "band": [
+        0.25,
+        0.62
+       ],
+       "realised": 0.3
+      },
+      {
+       "row": "engineered_wood__engineered_wood",
+       "band": [
+        0.2,
+        0.55
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "paper_cardboard__paper_cardboard",
+       "band": [
+        0.2,
+        0.7
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "fabric_textile__table_wood",
+       "band": [
+        0.25,
+        0.7
+       ],
+       "realised": 0.3
+      },
+      {
+       "row": "steel__steel",
+       "band": [
+        0.5,
+        0.8
+       ],
+       "realised": 0.55
+      },
+      {
+       "row": "pad_elastomer__steel (max: u_pad in band)",
+       "band": [
+        0.6,
+        1.6
+       ],
+       "realised": 0.65
+      },
+      {
+       "row": "aluminium__aluminium",
+       "band": [
+        0.4,
+        1.35
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "aluminium__pad_elastomer (max: u_pad in band)",
+       "band": [
+        0.6,
+        1.6
+       ],
+       "realised": 0.65
+      },
+      {
+       "row": "glazed_ceramic__glazed_ceramic",
+       "band": [
+        0.4,
+        1.0
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "glass__glass",
+       "band": [
+        0.5,
+        1.0
+       ],
+       "realised": 0.55
+      },
+      {
+       "row": "paper_cardboard__softwood",
+       "band": [
+        0.25,
+        0.6
+       ],
+       "realised": 0.3
+      },
+      {
+       "row": "aluminium__glazed_ceramic",
+       "band": [
+        0.15,
+        0.5
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "foam__ground",
+       "band": [
+        0.4,
+        1.3
+       ],
+       "realised": 0.45
+      },
+      {
+       "row": "food_organic__ground",
+       "band": [
+        0.2,
+        0.7
+       ],
+       "realised": 0.25
+      },
+      {
+       "row": "glass__steel",
+       "band": [
+        0.2,
+        0.6
+       ],
+       "realised": 0.55
+      },
+      {
+       "row": "ground__mixed_unclear",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "mixed_unclear__mixed_unclear",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.2
+      },
+      {
+       "row": "mixed_unclear__polyolefin_plastic",
+       "band": [
+        0.15,
+        0.8
+       ],
+       "realised": 0.2
+      }
+     ],
+     "kinetic": [
+      {
+       "row": "pet_plastic__pet_plastic",
+       "band": [
+        0.15,
+        0.4
+       ],
+       "realised": 0.225
+      },
+      {
+       "row": "abs_toy_plastic__abs_toy_plastic",
+       "band": [
+        0.25,
+        0.6
+       ],
+       "realised": 0.325
+      },
+      {
+       "row": "abs_device_housing__abs_device_housing",
+       "band": [
+        0.2,
+        0.55
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "rubber_elastomer__rubber_elastomer",
+       "band": [
+        0.5,
+        1.3
+       ],
+       "realised": 0.575
+      },
+      {
+       "row": "pad_elastomer__rubber_elastomer (max: u_pad in band)",
+       "band": [
+        0.5,
+        1.3
+       ],
+       "realised": 0.575
+      },
+      {
+       "row": "rubber_elastomer__table_wood",
+       "band": [
+        0.35,
+        0.9
+       ],
+       "realised": 0.425
+      },
+      {
+       "row": "hardwood__hardwood",
+       "band": [
+        0.2,
+        0.48
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "hardwood__table_wood",
+       "band": [
+        0.2,
+        0.48
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "engineered_wood__engineered_wood",
+       "band": [
+        0.15,
+        0.45
+       ],
+       "realised": 0.225
+      },
+      {
+       "row": "paper_cardboard__paper_cardboard",
+       "band": [
+        0.15,
+        0.6
+       ],
+       "realised": 0.225
+      },
+      {
+       "row": "fabric_textile__fabric_textile",
+       "band": [
+        0.2,
+        0.6
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "fabric_textile__table_wood",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "steel__steel",
+       "band": [
+        0.4,
+        0.6
+       ],
+       "realised": 0.475
+      },
+      {
+       "row": "pad_elastomer__steel (max: u_pad in band)",
+       "band": [
+        0.5,
+        1.4
+       ],
+       "realised": 0.575
+      },
+      {
+       "row": "aluminium__aluminium",
+       "band": [
+        0.3,
+        0.6
+       ],
+       "realised": 0.375
+      },
+      {
+       "row": "aluminium__pad_elastomer (max: u_pad in band)",
+       "band": [
+        0.5,
+        1.4
+       ],
+       "realised": 0.575
+      },
+      {
+       "row": "glazed_ceramic__glazed_ceramic",
+       "band": [
+        0.2,
+        0.6
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "glass__glass",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "glass__glazed_ceramic",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "paper_cardboard__softwood",
+       "band": [
+        0.2,
+        0.5
+       ],
+       "realised": 0.275
+      },
+      {
+       "row": "foam__ground",
+       "band": [
+        0.3,
+        1.2
+       ],
+       "realised": 0.375
+      },
+      {
+       "row": "food_organic__ground",
+       "band": [
+        0.15,
+        0.6
+       ],
+       "realised": 0.225
+      },
+      {
+       "row": "hardwood__steel",
+       "band": [
+        0.15,
+        0.45
+       ],
+       "realised": 0.375
+      },
+      {
+       "row": "mixed_unclear__mixed_unclear",
+       "band": [
+        0.1,
+        0.7
+       ],
+       "realised": 0.175
+      },
+      {
+       "row": "mixed_unclear__polyolefin_plastic",
+       "band": [
+        0.1,
+        0.7
+       ],
+       "realised": 0.175
+      }
+     ]
+    },
+    "static_critical_rows": []
+   }
+  }
+ },
+ "per_asset_override_bottle_00022": {
+  "scored_layouts_with_two_or_more_00022": 0,
+  "partners_used": [
+   "aluminium",
+   "pet_plastic",
+   "polyolefin_plastic",
+   "pad_hard",
+   "table_laminate",
+   "ground"
+  ],
+  "mu_static": {
+   "allowed_unary_interval_for_00022": [
+    0.3,
+    0.7
+   ],
+   "by_partner": [
+    "aluminium: u in [0.050, 0.950]",
+    "pet_plastic: u in [0.000, 0.700]",
+    "polyolefin_plastic: u in [0.000, 0.800]",
+    "pad_hard: u in [0.300, 0.800]",
+    "table_laminate: u in [0.200, 0.800]",
+    "ground: u in [0.200, 1.000]"
+   ],
+   "class_steel_unary_in_solution": 0.55
+  },
+  "mu_kinetic": {
+   "allowed_unary_interval_for_00022": [
+    0.2,
+    0.65
+   ],
+   "by_partner": [
+    "aluminium: u in [0.025, 0.725]",
+    "pet_plastic: u in [-0.010, 0.650]",
+    "polyolefin_plastic: u in [-0.015, 0.725]",
+    "pad_hard: u in [0.200, 0.700]",
+    "table_laminate: u in [0.100, 0.700]",
+    "ground: u in [0.100, 0.800]"
+   ],
+   "class_steel_unary_in_solution": 0.475
+  },
+  "note": "The interval is for the stage-3 default solution (pad_hard, table_laminate, ground average); u_k <= u_s must also hold for the override."
+ },
+ "pr84_unary_map_extension": {
+  "fixed_from_84": {
+   "pet_plastic": [
+    0.3,
+    0.24
+   ],
+   "polyolefin_plastic": [
+    0.24,
+    0.2
+   ],
+   "steel": [
+    0.56,
+    0.46
+   ],
+   "pad_hard": [
+    0.4,
+    0.32
+   ],
+   "table_laminate": [
+    0.26,
+    0.2
+   ],
+   "ground": [
+    0.3,
+    0.24
+   ]
+  },
+  "joint_min_margin_mu": 0.02,
+  "extendable": true,
+  "rows_below_band_at_best_extension": [],
+  "unary_static_rest": {
+   "abs_device_housing": 0.27,
+   "abs_toy_plastic": 0.32,
+   "aluminium": 0.42,
+   "engineered_wood": 0.22,
+   "fabric_textile": 0.27,
+   "foam": 0.58,
+   "food_organic": 0.22,
+   "glass": 0.52,
+   "glazed_ceramic": 0.42,
+   "hardwood": 0.27,
+   "mixed_unclear": 0.17,
+   "paper_cardboard": 0.27,
+   "rubber_elastomer": 0.64,
+   "softwood": 0.27
+  },
+  "unary_kinetic_rest": {
+   "abs_device_housing": 0.22,
+   "abs_toy_plastic": 0.27,
+   "aluminium": 0.32,
+   "engineered_wood": 0.17,
+   "fabric_textile": 0.22,
+   "foam": 0.44,
+   "food_organic": 0.17,
+   "glass": 0.22,
+   "glazed_ceramic": 0.22,
+   "hardwood": 0.22,
+   "mixed_unclear": 0.12,
+   "paper_cardboard": 0.22,
+   "rubber_elastomer": 0.52,
+   "softwood": 0.22
+  }
+ }
+}

@@ -1,0 +1,91 @@
+[
+ {
+  "cell_name": "fasten_screws__shipped",
+  "layout": 0,
+  "overrides": {
+   "slide_target": {
+    "label": "nut0",
+    "inst": "factory_nut_2_1",
+    "labelled": true,
+    "stem": "factory_nut_2",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.0,
+     1.0
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "fasten_screws__dt2",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.002,
+   "slide_target": {
+    "label": "nut0",
+    "inst": "factory_nut_2_1",
+    "labelled": true,
+    "stem": "factory_nut_2",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.0,
+     1.0
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "fasten_screws__dt1",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.001,
+   "slide_target": {
+    "label": "nut0",
+    "inst": "factory_nut_2_1",
+    "labelled": true,
+    "stem": "factory_nut_2",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.0,
+     1.0
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "fasten_screws__iters4x",
+  "layout": 0,
+  "overrides": {
+   "min_pos_iters": 128,
+   "slide_target": {
+    "label": "nut0",
+    "inst": "factory_nut_2_1",
+    "labelled": true,
+    "stem": "factory_nut_2",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.0,
+     1.0
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "fasten_screws__cpu",
+  "layout": 0,
+  "overrides": {
+   "gpu_dynamics": false,
+   "slide_target": {
+    "label": "nut0",
+    "inst": "factory_nut_2_1",
+    "labelled": true,
+    "stem": "factory_nut_2",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.0,
+     1.0
+    ]
+   }
+  }
+ }
+]

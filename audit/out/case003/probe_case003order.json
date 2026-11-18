@@ -1,0 +1,294 @@
+[
+ {
+  "condition": "bottle 100",
+  "engine_bottle_shapes": [
+   [
+    0.5,
+    0.5,
+    0.0
+   ]
+  ],
+  "robot_readback_error": "AttributeError(\"'NoneType' object has no attribute 'count'\")",
+  "contacts_resting": [
+   {
+    "actor0": "/World/obj",
+    "actor1": "/World/table",
+    "collider0": "/World/obj/collision/model",
+    "collider1": "/World/table",
+    "n": 4,
+    "materials": [
+     [
+      "",
+      "/World/materials/table"
+     ]
+    ]
+   }
+  ],
+  "contacts_sliding": [
+   {
+    "actor0": "/World/obj",
+    "actor1": "/World/table",
+    "collider0": "/World/obj/collision/model",
+    "collider1": "/World/table",
+    "n": 4,
+    "materials": [
+     [
+      "",
+      "/World/materials/table"
+     ]
+    ]
+   }
+  ],
+  "slide_mm_after_0p5mps": 18.64
+ },
+ {
+  "condition": "1e4 table0.8 (baseline)",
+  "engine_bottle_shapes": [
+   [
+    10000.0,
+    10000.0,
+    0.0
+   ]
+  ],
+  "robot_readback_error": "AttributeError(\"'NoneType' object has no attribute 'count'\")",
+  "contacts_resting": [
+   {
+    "actor0": "/World/obj",
+    "actor1": "/World/table",
+    "collider0": "/World/obj/collision/model",
+    "collider1": "/World/table",
+    "n": 4,
+    "materials": [
+     [
+      "/World/obj/physics_material",
+      "/World/materials/table"
+     ]
+    ]
+   }
+  ],
+  "contacts_sliding": [
+   {
+    "actor0": "/World/obj",
+    "actor1": "/World/table",
+    "collider0": "/World/obj/collision/model",
+    "collider1": "/World/table",
+    "n": 4,
+    "materials": [
+     [
+      "/World/obj/physics_material",
+      "/World/materials/table"
+     ]
+    ]
+   }
+  ],
+  "slide_mm_after_0p5mps": -0.0,
+  "hold_2kg_6cm": {
+   "rotation_in_hand_deg": 0.07,
+   "slip_in_hand_mm": 1.8,
+   "obj_z_after_mm": 153.0,
+   "finger_force_N_est": [
+    93.0,
+    92.3
+   ]
+  },
+  "contacts_in_hand": [
+   {
+    "actor0": "/World/robot/link8",
+    "actor1": "/World/obj",
+    "collider0": "/World/robot/link8/collisions/link8/node_STL_BINARY_",
+    "collider1": "/World/obj/collision/model",
+    "n": 4,
+    "materials": [
+     [
+      "",
+      "/World/obj/physics_material"
+     ]
+    ]
+   },
+   {
+    "actor0": "/World/robot/link7",
+    "actor1": "/World/obj",
+    "collider0": "/World/robot/link7/collisions/link7/node_STL_BINARY_",
+    "collider1": "/World/obj/collision/model",
+    "n": 4,
+    "materials": [
+     [
+      "",
+      "/World/obj/physics_material"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "condition": "1e4 table0.8 (baseline)",
+  "engine_bottle_shapes": [
+   [
+    10000.0,
+    10000.0,
+    0.0
+   ]
+  ],
+  "robot_readback_error": "AttributeError(\"'NoneType' object has no attribute 'count'\")",
+  "contacts_resting": [
+   {
+    "actor0": "/World/obj",
+    "actor1": "/World/table",
+    "collider0": "/World/obj/collision/model",
+    "collider1": "/World/table",
+    "n": 4,
+    "materials": [
+     [
+      "/World/obj/physics_material",
+      "/World/materials/table"
+     ]
+    ]
+   }
+  ],
+  "contacts_sliding": [
+   {
+    "actor0": "/World/obj",
+    "actor1": "/World/table",
+    "collider0": "/World/obj/collision/model",
+    "collider1": "/World/table",
+    "n": 4,
+    "materials": [
+     [
+      "/World/obj/physics_material",
+      "/World/materials/table"
+     ]
+    ]
+   }
+  ],
+  "slide_mm_after_0p5mps": -0.0,
+  "hold_2kg_6cm": {
+   "rotation_in_hand_deg": 0.08,
+   "slip_in_hand_mm": 1.71,
+   "obj_z_after_mm": 153.0,
+   "finger_force_N_est": [
+    93.0,
+    92.3
+   ]
+  },
+  "contacts_in_hand": [
+   {
+    "actor0": "/World/robot/link8",
+    "actor1": "/World/obj",
+    "collider0": "/World/robot/link8/collisions/link8/node_STL_BINARY_",
+    "collider1": "/World/obj/collision/model",
+    "n": 4,
+    "materials": [
+     [
+      "",
+      "/World/obj/physics_material"
+     ]
+    ]
+   },
+   {
+    "actor0": "/World/robot/link7",
+    "actor1": "/World/obj",
+    "collider0": "/World/robot/link7/collisions/link7/node_STL_BINARY_",
+    "collider1": "/World/obj/collision/model",
+    "n": 4,
+    "materials": [
+     [
+      "",
+      "/World/obj/physics_material"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "condition": "realistic",
+  "engine_bottle_shapes": [
+   [
+    0.4000000059604645,
+    0.3499999940395355,
+    0.0
+   ]
+  ],
+  "robot_readback_error": "AttributeError(\"'NoneType' object has no attribute 'count'\")",
+  "contacts_resting": [
+   {
+    "actor0": "/World/obj",
+    "actor1": "/World/table",
+    "collider0": "/World/obj/collision/model",
+    "collider1": "/World/table",
+    "n": 4,
+    "materials": [
+     [
+      "/World/obj/physics_material",
+      "/World/materials/table"
+     ]
+    ]
+   }
+  ],
+  "contacts_sliding": [
+   {
+    "actor0": "/World/obj",
+    "actor1": "/World/table",
+    "collider0": "/World/obj/collision/model",
+    "collider1": "/World/table",
+    "n": 4,
+    "materials": [
+     [
+      "/World/obj/physics_material",
+      "/World/materials/table"
+     ]
+    ]
+   }
+  ],
+  "slide_mm_after_0p5mps": 35.49,
+  "hold_2kg_6cm": {
+   "rotation_in_hand_deg": 72.25,
+   "slip_in_hand_mm": 77.84,
+   "obj_z_after_mm": 102.4,
+   "finger_force_N_est": [
+    90.7,
+    95.1
+   ]
+  },
+  "contacts_in_hand": [
+   {
+    "actor0": "/World/obj",
+    "actor1": "/World/table",
+    "collider0": "/World/obj/collision/model",
+    "collider1": "/World/table",
+    "n": 3,
+    "materials": [
+     [
+      "/World/obj/physics_material",
+      "/World/materials/table"
+     ]
+    ]
+   },
+   {
+    "actor0": "/World/robot/link7",
+    "actor1": "/World/obj",
+    "collider0": "/World/robot/link7/collisions/link7/node_STL_BINARY_",
+    "collider1": "/World/obj/collision/model",
+    "n": 4,
+    "materials": [
+     [
+      "",
+      "/World/obj/physics_material"
+     ]
+    ]
+   },
+   {
+    "actor0": "/World/robot/link8",
+    "actor1": "/World/obj",
+    "collider0": "/World/robot/link8/collisions/link8/node_STL_BINARY_",
+    "collider1": "/World/obj/collision/model",
+    "n": 4,
+    "materials": [
+     [
+      "",
+      "/World/obj/physics_material"
+     ]
+    ]
+   }
+  ]
+ }
+]

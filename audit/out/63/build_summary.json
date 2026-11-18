@@ -1,0 +1,3655 @@
+{
+ "summary": {
+  "models": 724,
+  "confidence_step2": {
+   "high": 253,
+   "medium": 283,
+   "low": 188
+  },
+  "confidence_v3": {
+   "high": 169,
+   "medium": 324,
+   "low": 231
+  },
+  "models_changed_v2_rules": 32,
+  "models_changed_v3_rules": 239,
+  "v3_by_rule": {
+   "outer_contact_material": 1,
+   "real_frames_override": 1,
+   "caption_names_material": 1,
+   "align_84": 4,
+   "multi_material_category": 177,
+   "multi_material_caption": 27,
+   "multi_material_generic_metal": 1,
+   "caption_conflict": 27
+  },
+  "v3_confidence_lowered": 88,
+  "v3_class_changed": [
+   "Rigid/tape_roll/00000",
+   "Rigid/cup/00001",
+   "Clutter/toothpaste/00001"
+  ],
+  "class_counts": {
+   "pet_plastic": 11,
+   "abs_toy_plastic": 206,
+   "abs_device_housing": 96,
+   "polyolefin_plastic": 25,
+   "softwood": 64,
+   "hardwood": 7,
+   "engineered_wood": 5,
+   "glazed_ceramic": 59,
+   "glass": 10,
+   "steel": 61,
+   "aluminium": 24,
+   "rubber_elastomer": 8,
+   "paper_cardboard": 54,
+   "foam": 4,
+   "fabric_textile": 35,
+   "food_organic": 24,
+   "liquid": 4,
+   "mixed_unclear": 27
+  },
+  "class_evidence": {
+   "caption_identity_only:high": 16,
+   "caption_identity_only:low": 16,
+   "caption_identity_only:medium": 44,
+   "caption_material_conflict:low": 9,
+   "caption_material_conflict:medium": 18,
+   "caption_material_generic:high": 59,
+   "caption_material_generic:low": 17,
+   "caption_material_generic:medium": 61,
+   "caption_material_specific:high": 49,
+   "caption_material_specific:medium": 41,
+   "caption_mismatch:high": 1,
+   "caption_mismatch:low": 66,
+   "caption_mismatch:medium": 12,
+   "caption_names_product:high": 1,
+   "no_caption:high": 39,
+   "no_caption:low": 123,
+   "no_caption:medium": 147,
+   "physics_type_fluid:high": 4,
+   "real_robot_frames:medium": 1
+  },
+  "abs_family_evidence": {
+   "caption_identity_only:high": 5,
+   "caption_identity_only:low": 6,
+   "caption_identity_only:medium": 14,
+   "caption_material_conflict:low": 5,
+   "caption_material_conflict:medium": 11,
+   "caption_material_generic:high": 34,
+   "caption_material_generic:low": 1,
+   "caption_material_generic:medium": 42,
+   "caption_material_specific:medium": 5,
+   "caption_mismatch:low": 8,
+   "caption_mismatch:medium": 5,
+   "no_caption:high": 8,
+   "no_caption:low": 66,
+   "no_caption:medium": 92
+  },
+  "reasons_rewritten_stale": 39,
+  "polymer_subtype": {
+   "unspecified": 5,
+   "pe_probable": 4,
+   "pp_probable": 15,
+   "pp": 1
+  },
+  "pairs_input": 94,
+  "pairs_after_dedupe": 91,
+  "dups": [
+   "abs_toy_plastic__abs_toy_plastic",
+   "softwood__softwood",
+   "glazed_ceramic__glazed_ceramic"
+  ],
+  "new_pairs_by_rule": 146,
+  "pairs_total": 237,
+  "pairs_cooccurring_scored": 237,
+  "pairs_spare_only": [],
+  "pairs_never": [],
+  "pairs_by_kind": {
+   "object-object": 152,
+   "object-surface": 85
+  },
+  "fields": 511,
+  "value_status": {
+   "sourced": 19,
+   "unsourced": 163,
+   "estimated": 329
+  },
+  "range_status": {
+   "estimated": 335,
+   "unsourced": 163,
+   "sourced": 13
+  },
+  "status": {
+   "estimated": 335,
+   "unsourced": 163,
+   "sourced": 13
+  },
+  "downgraded_v3": [
+   "hardwood__hardwood:mu_static",
+   "hardwood__hardwood:mu_kinetic",
+   "hardwood__softwood:mu_static",
+   "hardwood__softwood:mu_kinetic",
+   "hardwood__table_wood:mu_static",
+   "hardwood__table_wood:mu_kinetic",
+   "softwood__softwood:mu_static",
+   "softwood__softwood:mu_kinetic",
+   "softwood__table_wood:mu_static",
+   "softwood__table_wood:mu_kinetic",
+   "softwood__steel:mu_static",
+   "aluminium__aluminium:mu_kinetic",
+   "abs_toy_plastic__abs_toy_plastic:mu_static"
+  ],
+  "feasibility": {
+   "pad_hard+table_laminate|pad_combine=average:ground=multiply": [
+    true,
+    0.0,
+    0.05,
+    0.0
+   ],
+   "pad_hard+table_laminate|pad_combine=average:ground=average": [
+    true,
+    0.05,
+    0.075,
+    0.05
+   ],
+   "pad_elastomer+table_laminate|pad_combine=average:ground=multiply": [
+    true,
+    0.0,
+    0.05,
+    0.0
+   ],
+   "pad_elastomer+table_laminate|pad_combine=average:ground=average": [
+    true,
+    0.05,
+    0.075,
+    0.05
+   ],
+   "pad_elastomer+table_laminate|pad_combine=max:ground=multiply": [
+    true,
+    0.0,
+    0.05,
+    0.0
+   ],
+   "pad_elastomer+table_laminate|pad_combine=max:ground=average": [
+    true,
+    0.05,
+    0.075,
+    0.05
+   ],
+   "pad_hard+table_wood|pad_combine=average:ground=multiply": [
+    true,
+    0.0,
+    0.05,
+    0.0
+   ],
+   "pad_hard+table_wood|pad_combine=average:ground=average": [
+    true,
+    0.05,
+    0.075,
+    0.05
+   ],
+   "pad_elastomer+table_wood|pad_combine=average:ground=multiply": [
+    true,
+    0.0,
+    0.05,
+    0.0
+   ],
+   "pad_elastomer+table_wood|pad_combine=average:ground=average": [
+    true,
+    0.05,
+    0.075,
+    0.05
+   ],
+   "pad_elastomer+table_wood|pad_combine=max:ground=multiply": [
+    true,
+    0.0,
+    0.05,
+    0.0
+   ],
+   "pad_elastomer+table_wood|pad_combine=max:ground=average": [
+    true,
+    0.05,
+    0.075,
+    0.05
+   ]
+  },
+  "override_00022": {
+   "mu_static": [
+    0.3,
+    0.7
+   ],
+   "mu_kinetic": [
+    0.2,
+    0.65
+   ]
+  },
+  "pr84_unary_extension": {
+   "joint_min_margin_mu": 0.02,
+   "extendable": true
+  },
+  "layout_integrity": {
+   "files": 8070,
+   "scored_layouts": 6300,
+   "layouts_per_seed": {
+    "0": 2690,
+    "1": 2690,
+    "2": 2690
+   },
+   "blob_count_mismatch_vs_population": {},
+   "scored_instances_not_in_population_scored_assets": 0,
+   "unknown_models": {}
+  },
+  "mass": {
+   "layout_level_slips_layout_mass_differs_from_metadata": {
+    "groups": 151,
+    "distinct_models": 22,
+    "distinct_models_with_scored_hits": 22,
+    "hits_scored": 992,
+    "hits_spare": 186
+   },
+   "hollow_objects_need_fill_dependent_band": {
+    "groups": 291,
+    "distinct_models": 111,
+    "distinct_models_with_scored_hits": 110,
+    "hits_scored": 6105,
+    "hits_spare": 1416
+   },
+   "too_heavy_for_class_band": {
+    "groups": 217,
+    "distinct_models": 140,
+    "distinct_models_with_scored_hits": 139,
+    "hits_scored": 9766,
+    "hits_spare": 2038
+   },
+   "light_for_solid_class_band": {
+    "groups": 361,
+    "distinct_models": 97,
+    "distinct_models_with_scored_hits": 95,
+    "hits_scored": 4259,
+    "hits_spare": 970
+   }
+  },
+  "mass_instances_checked": 72935,
+  "bottle_22kg": {
+   "layouts_with_mass_22_scored": 65,
+   "layouts_with_mass_22_spare": 9,
+   "bottle_slots_all_layouts": 660
+  },
+  "alignment_84_remaining": 10
+ },
+ "model_log": [
+  {
+   "id": "Rigid/bottle/00055",
+   "class": "pet_plastic",
+   "confidence_from": "high",
+   "confidence_to": "low",
+   "alternatives": [
+    "polyolefin_plastic"
+   ],
+   "reason": "Caption says only \"plastic / smooth plastic / molded polymer\"; the word \"plastic\" is not evidence of PET and \"water/sports/squeeze bottle\" is as often PP/HDPE (#84 review, section 3).",
+   "rule": "named_bottle",
+   "version": "v2"
+  },
+  {
+   "id": "Rigid/bottle/00059",
+   "class": "pet_plastic",
+   "confidence_from": "high",
+   "confidence_to": "low",
+   "alternatives": [
+    "polyolefin_plastic"
+   ],
+   "reason": "Caption says only \"plastic / smooth plastic / molded polymer\"; \"single-serve sports bottle\" does not fix the polymer (#84 review, section 3).",
+   "rule": "named_bottle",
+   "version": "v2"
+  },
+  {
+   "id": "Rigid/bottle/00005",
+   "class": "pet_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "low",
+   "alternatives": [
+    "polyolefin_plastic"
+   ],
+   "reason": "Caption reads \"finger cap / rubber / flexible polymer\" and contradicts a 17 cm bottle; neither identity nor polymer is established.",
+   "rule": "named_bottle",
+   "version": "v2"
+  },
+  {
+   "id": "Rigid/bottle/00022",
+   "class": "steel",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [],
+   "reason": "Reason rewritten: dropped stale \"drink bottles are PET\" (it contradicted the steel class); class steel and confidence medium unchanged.",
+   "rule": "named_bottle",
+   "version": "v2"
+  },
+  {
+   "id": "Rigid/bottle/00050",
+   "class": "pet_plastic",
+   "confidence_from": "low",
+   "confidence_to": "low",
+   "alternatives": [
+    "polyolefin_plastic"
+   ],
+   "reason": "Already low (caption names a cap, not a bottle); added polyolefin alternative since \"plastic\" alone does not identify PET.",
+   "rule": "plastic_word_only",
+   "version": "v2"
+  },
+  {
+   "id": "Rigid/bottle/00060",
+   "class": "pet_plastic",
+   "confidence_from": "low",
+   "confidence_to": "low",
+   "alternatives": [
+    "polyolefin_plastic"
+   ],
+   "reason": "Already low (caption names a cap, not a bottle); added polyolefin alternative since \"plastic\" alone does not identify PET.",
+   "rule": "plastic_word_only",
+   "version": "v2"
+  },
+  {
+   "id": "Articulation/egg_holder/00000",
+   "class": "polyolefin_plastic",
+   "confidence_from": "low",
+   "confidence_to": "low",
+   "alternatives": [
+    "softwood"
+   ],
+   "reason": "No caption; class rests on the category prior \"category name only; could be moulded pulp or plastic\", which names no single polymer.",
+   "rule": "category_prior_generic",
+   "version": "v2"
+  },
+  {
+   "id": "Clutter/body_lotion/00000",
+   "class": "polyolefin_plastic",
+   "confidence_from": "high",
+   "confidence_to": "low",
+   "alternatives": [
+    "pet_plastic"
+   ],
+   "reason": "Class rests on the caption word \"plastic\" (no polymer named); the word alone is not evidence of a specific polymer.",
+   "rule": "plastic_word_only",
+   "version": "v2"
+  },
+  {
+   "id": "Clutter/bottle/00000",
+   "class": "pet_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "low",
+   "alternatives": [
+    "polyolefin_plastic"
+   ],
+   "reason": "No caption; class rests on the category prior \"bottle type not determinable\", which names no single polymer.",
+   "rule": "category_prior_generic",
+   "version": "v2"
+  },
+  {
+   "id": "Clutter/comb/00000",
+   "class": "polyolefin_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "abs_toy_plastic"
+   ],
+   "reason": "No caption; the category admits several polymers (\"combs are PS/PP/ABS\"), so the specific class cannot be high.",
+   "rule": "category_prior_multi",
+   "version": "v2"
+  },
+  {
+   "id": "Clutter/palette/00000",
+   "class": "polyolefin_plastic",
+   "confidence_from": "low",
+   "confidence_to": "low",
+   "alternatives": [
+    "softwood"
+   ],
+   "reason": "No caption; class rests on the category prior \"plastic or wooden palette\", which names no single polymer.",
+   "rule": "category_prior_generic",
+   "version": "v2"
+  },
+  {
+   "id": "Clutter/screwdriver/00000",
+   "class": "polyolefin_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "low",
+   "alternatives": [
+    "steel"
+   ],
+   "reason": "Class rests on the caption word \"plastic\" (no polymer named); the word alone is not evidence of a specific polymer.",
+   "rule": "plastic_word_only",
+   "version": "v2"
+  },
+  {
+   "id": "Clutter/shampoo/00000",
+   "class": "polyolefin_plastic",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "pet_plastic"
+   ],
+   "reason": "No caption; the category admits several polymers (\"HDPE/PET bottle\"), so the specific class cannot be high.",
+   "rule": "category_prior_multi",
+   "version": "v2"
+  },
+  {
+   "id": "Clutter/toothpaste/00000",
+   "class": "polyolefin_plastic",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "abs_toy_plastic",
+    "pet_plastic"
+   ],
+   "reason": "No caption; the category admits several polymers (\"laminate/PE tube\"), so the specific class cannot be high.",
+   "rule": "category_prior_multi",
+   "version": "v2"
+  },
+  {
+   "id": "Clutter/toothpaste/00001",
+   "class": "polyolefin_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "low",
+   "alternatives": [
+    "aluminium"
+   ],
+   "reason": "Class rests on the caption word \"plastic\" (no polymer named); the word alone is not evidence of a specific polymer.",
+   "rule": "plastic_word_only",
+   "version": "v2"
+  },
+  {
+   "id": "Geometry/basket/00002",
+   "class": "polyolefin_plastic",
+   "confidence_from": "low",
+   "confidence_to": "low",
+   "alternatives": [
+    "abs_toy_plastic"
+   ],
+   "reason": "Class rests on the caption word \"plastic\" (no polymer named); the word alone is not evidence of a specific polymer.",
+   "rule": "plastic_word_only",
+   "version": "v2"
+  },
+  {
+   "id": "Geometry/basket/00003",
+   "class": "polyolefin_plastic",
+   "confidence_from": "low",
+   "confidence_to": "low",
+   "alternatives": [
+    "abs_toy_plastic"
+   ],
+   "reason": "Class rests on the caption word \"plastic\" (no polymer named); the word alone is not evidence of a specific polymer.",
+   "rule": "plastic_word_only",
+   "version": "v2"
+  },
+  {
+   "id": "Geometry/basket/00004",
+   "class": "polyolefin_plastic",
+   "confidence_from": "low",
+   "confidence_to": "low",
+   "alternatives": [
+    "abs_toy_plastic"
+   ],
+   "reason": "Class rests on the caption word \"plastic\" (no polymer named); the word alone is not evidence of a specific polymer.",
+   "rule": "plastic_word_only",
+   "version": "v2"
+  },
+  {
+   "id": "Geometry/basket/00005",
+   "class": "polyolefin_plastic",
+   "confidence_from": "low",
+   "confidence_to": "low",
+   "alternatives": [
+    "abs_toy_plastic"
+   ],
+   "reason": "Class rests on the caption word \"plastic\" (no polymer named); the word alone is not evidence of a specific polymer.",
+   "rule": "plastic_word_only",
+   "version": "v2"
+  },
+  {
+   "id": "Geometry/dustbin/00000",
+   "class": "polyolefin_plastic",
+   "confidence_from": "high",
+   "confidence_to": "low",
+   "alternatives": [
+    "abs_toy_plastic"
+   ],
+   "reason": "Class rests on the caption word \"plastic\" (no polymer named); the word alone is not evidence of a specific polymer.",
+   "rule": "plastic_word_only",
+   "version": "v2"
+  },
+  {
+   "id": "Rigid/basket_grasp/00002",
+   "class": "polyolefin_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "low",
+   "alternatives": [
+    "abs_toy_plastic"
+   ],
+   "reason": "Class rests on the caption word \"plastic\" (no polymer named); the word alone is not evidence of a specific polymer.",
+   "rule": "plastic_word_only",
+   "version": "v2"
+  },
+  {
+   "id": "Rigid/bottle/00025",
+   "class": "pet_plastic",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "polyolefin_plastic"
+   ],
+   "reason": "Caption says \"transparent/clear plastic bottle\"; clarity is a weak cue for PET but no polymer is named, so capped at medium (not high) with polyolefin alternative.",
+   "rule": "plastic_word_only_clear_cue",
+   "version": "v2"
+  },
+  {
+   "id": "Rigid/bottle/00041",
+   "class": "pet_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "polyolefin_plastic"
+   ],
+   "reason": "Caption says \"transparent/clear plastic bottle\"; clarity is a weak cue for PET but no polymer is named, so capped at medium (not high) with polyolefin alternative.",
+   "rule": "plastic_word_only_clear_cue",
+   "version": "v2"
+  },
+  {
+   "id": "Rigid/bottle/00061",
+   "class": "pet_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "low",
+   "alternatives": [
+    "polyolefin_plastic"
+   ],
+   "reason": "Description \"matte green water bottle\" gives no material; matte opaque sport bottles are at least as often PP/HDPE; \"drink bottles are PET\" is a category prior only.",
+   "rule": "category_prior_generic",
+   "version": "v2"
+  },
+  {
+   "id": "Rigid/broom/00000",
+   "class": "polyolefin_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "low",
+   "alternatives": [
+    "steel"
+   ],
+   "reason": "Class rests on the caption word \"plastic\" (no polymer named); the word alone is not evidence of a specific polymer.",
+   "rule": "plastic_word_only",
+   "version": "v2"
+  },
+  {
+   "id": "Rigid/broom_shovel/00000",
+   "class": "polyolefin_plastic",
+   "confidence_from": "high",
+   "confidence_to": "low",
+   "alternatives": [
+    "abs_toy_plastic"
+   ],
+   "reason": "Class rests on the caption word \"plastic\" (no polymer named); the word alone is not evidence of a specific polymer.",
+   "rule": "plastic_word_only",
+   "version": "v2"
+  },
+  {
+   "id": "Rigid/glue/00000",
+   "class": "polyolefin_plastic",
+   "confidence_from": "high",
+   "confidence_to": "low",
+   "alternatives": [
+    "abs_toy_plastic",
+    "pet_plastic"
+   ],
+   "reason": "Description gives identity but no material; reason \"plastic tube\" names no polymer.",
+   "rule": "category_prior_generic",
+   "version": "v2"
+  },
+  {
+   "id": "Rigid/paint_roller/00000",
+   "class": "polyolefin_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "low",
+   "alternatives": [
+    "abs_toy_plastic"
+   ],
+   "reason": "Description gives identity but no material; reason \"plastic frame and foam roller\" names no polymer.",
+   "rule": "category_prior_generic",
+   "version": "v2"
+  },
+  {
+   "id": "Rigid/pen_holder/00000",
+   "class": "polyolefin_plastic",
+   "confidence_from": "low",
+   "confidence_to": "low",
+   "alternatives": [
+    "steel"
+   ],
+   "reason": "No caption; class rests on the category prior \"plastic or metal\", which names no single polymer.",
+   "rule": "category_prior_generic",
+   "version": "v2"
+  },
+  {
+   "id": "Rigid/shovel/00000",
+   "class": "polyolefin_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "low",
+   "alternatives": [
+    "steel"
+   ],
+   "reason": "Class rests on the caption word \"plastic\" (no polymer named); the word alone is not evidence of a specific polymer.",
+   "rule": "plastic_word_only",
+   "version": "v2"
+  },
+  {
+   "id": "Rigid/watering_can/00000",
+   "class": "polyolefin_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "low",
+   "alternatives": [
+    "steel"
+   ],
+   "reason": "Description gives identity but no material; reason \"plastic or steel\" names no polymer.",
+   "rule": "category_prior_generic",
+   "version": "v2"
+  },
+  {
+   "id": "Rigid/yogurt/00001",
+   "class": "polyolefin_plastic",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "abs_toy_plastic"
+   ],
+   "reason": "Description gives identity but no material; the category admits several polymers (\"PP/PS cup\").",
+   "rule": "category_prior_multi",
+   "version": "v2"
+  },
+  {
+   "id": "Rigid/tape_roll/00000",
+   "class_from": "paper_cardboard",
+   "class": "polyolefin_plastic",
+   "confidence_from": "low",
+   "confidence_to": "low",
+   "alternatives": [
+    "paper_cardboard"
+   ],
+   "reason": "Description \"white packing tape\": the grasped outer surface of a packing-tape roll is the tape film (BOPP, a polypropylene), not the card core; declared friction 0.25 fits a smooth polymer film. Card core kept as alternative (#73 review item 5).",
+   "rule": "outer_contact_material",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/cup/00001",
+   "class_from": "glazed_ceramic",
+   "class": "polyolefin_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "glazed_ceramic"
+   ],
+   "reason": "Used only in cover_blocks. Real ARX X5 frames of cover_blocks episode 0 (audit/out/63/real_frames/, #63 comment 2026-11-11T19:16:17Z) show moulded plastic cups with microwave/dishwasher icons and a recycling mark on the base, read as PP. The synthetic mesh caption says \"glazed ceramic / smooth shiny surface\"; the class follows the real task, the caption class is the alternative (#73 review item 5).",
+   "rule": "real_frames_override",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/toothpaste/00001",
+   "class_from": "polyolefin_plastic",
+   "class": "aluminium",
+   "confidence_from": "low",
+   "confidence_to": "medium",
+   "alternatives": [
+    "polyolefin_plastic"
+   ],
+   "reason": "Caption names the tube material: \"Marvis toothpaste ... flexible aluminum tube / plastic cap / glossy printed film\". Class now follows the caption (v2 kept polyolefin from the step-1 guess \"laminate/PE tube\", which is not caption evidence); laminate tubes kept as alternative.",
+   "rule": "caption_names_material",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/bottle/00005",
+   "class": "pet_plastic",
+   "confidence_from": "low",
+   "confidence_to": "low",
+   "alternatives": [
+    "abs_toy_plastic",
+    "rubber_elastomer"
+   ],
+   "reason": "Adopted PR #84's alternatives: unidentified opaque cylinder whose caption says \"rubber / soft silicone / flexible polymer\".",
+   "rule": "align_84",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/bottle/00050",
+   "class": "pet_plastic",
+   "confidence_from": "low",
+   "confidence_to": "low",
+   "alternatives": [
+    "abs_toy_plastic"
+   ],
+   "reason": "Adopted PR #84's abs_toy_plastic alternative: untextured cylinder, caption names a plastic cap, no polymer.",
+   "rule": "align_84",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/bottle/00060",
+   "class": "pet_plastic",
+   "confidence_from": "low",
+   "confidence_to": "low",
+   "alternatives": [
+    "abs_toy_plastic"
+   ],
+   "reason": "Adopted PR #84's abs_toy_plastic alternative: untextured cylinder, caption names a plastic cap, no polymer.",
+   "rule": "align_84",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/bottle/00025",
+   "class": "pet_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "high",
+   "alternatives": [],
+   "reason": "Adopted PR #84's high: the caption names the product (\"Dongfang Shuye / Oriental Tree Leaf drink\", Nongfu Spring bottled tea), which is sold in PET bottles; the class rests on the identified product, not on the word \"plastic\". polyolefin alternative dropped.",
+   "rule": "align_84",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/audio/00000",
+   "class": "abs_device_housing",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "fabric_textile",
+    "aluminium"
+   ],
+   "reason": "no caption: class rests on the category \"audio\", whose real instances are commonly made of abs_device_housing, fabric_textile, aluminium; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/audio/00001",
+   "class": "abs_device_housing",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "fabric_textile",
+    "aluminium"
+   ],
+   "reason": "no caption: class rests on the category \"audio\", whose real instances are commonly made of abs_device_housing, fabric_textile, aluminium; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/audio/00002",
+   "class": "abs_device_housing",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "fabric_textile",
+    "aluminium"
+   ],
+   "reason": "no caption: class rests on the category \"audio\", whose real instances are commonly made of abs_device_housing, fabric_textile, aluminium; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/baseball_bat/00000",
+   "class": "hardwood",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "aluminium"
+   ],
+   "reason": "no caption: class rests on the category \"baseball_bat\", whose real instances are commonly made of hardwood, aluminium; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/book_shelf/00000",
+   "class": "engineered_wood",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "softwood",
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"book_shelf\", whose real instances are commonly made of engineered_wood, softwood, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/bowl/00000",
+   "class": "glazed_ceramic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "glass",
+    "polyolefin_plastic",
+    "steel"
+   ],
+   "reason": "no caption: class rests on the category \"bowl\", whose real instances are commonly made of glazed_ceramic, glass, polyolefin_plastic, steel; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/bowl/00001",
+   "class": "glazed_ceramic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "glass",
+    "polyolefin_plastic",
+    "steel"
+   ],
+   "reason": "no caption: class rests on the category \"bowl\", whose real instances are commonly made of glazed_ceramic, glass, polyolefin_plastic, steel; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/box/00000",
+   "class": "paper_cardboard",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "polyolefin_plastic",
+    "engineered_wood"
+   ],
+   "reason": "no caption: class rests on the category \"box\", whose real instances are commonly made of paper_cardboard, polyolefin_plastic, engineered_wood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/box/00001",
+   "class": "paper_cardboard",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "polyolefin_plastic",
+    "engineered_wood"
+   ],
+   "reason": "no caption: class rests on the category \"box\", whose real instances are commonly made of paper_cardboard, polyolefin_plastic, engineered_wood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/box/00002",
+   "class": "paper_cardboard",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "polyolefin_plastic",
+    "engineered_wood"
+   ],
+   "reason": "no caption: class rests on the category \"box\", whose real instances are commonly made of paper_cardboard, polyolefin_plastic, engineered_wood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/box/00003",
+   "class": "paper_cardboard",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "polyolefin_plastic",
+    "engineered_wood"
+   ],
+   "reason": "no caption: class rests on the category \"box\", whose real instances are commonly made of paper_cardboard, polyolefin_plastic, engineered_wood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/box/00004",
+   "class": "paper_cardboard",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "polyolefin_plastic",
+    "engineered_wood"
+   ],
+   "reason": "no caption: class rests on the category \"box\", whose real instances are commonly made of paper_cardboard, polyolefin_plastic, engineered_wood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/can/00000",
+   "class": "aluminium",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "steel"
+   ],
+   "reason": "no caption: class rests on the category \"can\", whose real instances are commonly made of aluminium, steel; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/card/00000",
+   "class": "paper_cardboard",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "abs_toy_plastic"
+   ],
+   "reason": "no caption: class rests on the category \"card\", whose real instances are commonly made of paper_cardboard, abs_toy_plastic; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/card/00001",
+   "class": "paper_cardboard",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "abs_toy_plastic"
+   ],
+   "reason": "no caption: class rests on the category \"card\", whose real instances are commonly made of paper_cardboard, abs_toy_plastic; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/clip/00000",
+   "class": "steel",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "abs_toy_plastic"
+   ],
+   "reason": "no caption: class rests on the category \"clip\", whose real instances are commonly made of steel, abs_toy_plastic; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/dog_toy/00000",
+   "class": "rubber_elastomer",
+   "confidence_from": "medium",
+   "confidence_to": "low",
+   "alternatives": [
+    "fabric_textile",
+    "abs_toy_plastic"
+   ],
+   "reason": "no caption: class rests on the category \"dog_toy\", whose real instances are commonly made of rubber_elastomer, fabric_textile, abs_toy_plastic; capped at low with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/earbuds/00000",
+   "class": "abs_device_housing",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "rubber_elastomer"
+   ],
+   "reason": "no caption: class rests on the category \"earbuds\", whose real instances are commonly made of abs_device_housing, rubber_elastomer; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/earth_globe/00000",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "paper_cardboard"
+   ],
+   "reason": "no caption: class rests on the category \"earth_globe\", whose real instances are commonly made of abs_toy_plastic, paper_cardboard; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/hammer/00000",
+   "class": "steel",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood",
+    "abs_toy_plastic",
+    "rubber_elastomer"
+   ],
+   "reason": "no caption: class rests on the category \"hammer\", whose real instances are commonly made of steel, hardwood, abs_toy_plastic, rubber_elastomer; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/headphones/00000",
+   "class": "abs_device_housing",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "foam",
+    "rubber_elastomer"
+   ],
+   "reason": "no caption: class rests on the category \"headphones\", whose real instances are commonly made of abs_device_housing, foam, rubber_elastomer; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/keyboard/00000",
+   "class": "abs_device_housing",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "aluminium"
+   ],
+   "reason": "no caption: class rests on the category \"keyboard\", whose real instances are commonly made of abs_device_housing, aluminium; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/keyboard/00001",
+   "class": "abs_device_housing",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "aluminium"
+   ],
+   "reason": "no caption: class rests on the category \"keyboard\", whose real instances are commonly made of abs_device_housing, aluminium; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/minecraft_blocks/00000",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "foam",
+    "paper_cardboard"
+   ],
+   "reason": "no caption: class rests on the category \"minecraft_blocks\", whose real instances are commonly made of abs_toy_plastic, foam, paper_cardboard; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/minecraft_blocks/00001",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "foam",
+    "paper_cardboard"
+   ],
+   "reason": "no caption: class rests on the category \"minecraft_blocks\", whose real instances are commonly made of abs_toy_plastic, foam, paper_cardboard; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/minecraft_blocks/00002",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "foam",
+    "paper_cardboard"
+   ],
+   "reason": "no caption: class rests on the category \"minecraft_blocks\", whose real instances are commonly made of abs_toy_plastic, foam, paper_cardboard; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/minecraft_blocks/00003",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "foam",
+    "paper_cardboard"
+   ],
+   "reason": "no caption: class rests on the category \"minecraft_blocks\", whose real instances are commonly made of abs_toy_plastic, foam, paper_cardboard; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/minecraft_blocks/00004",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "foam",
+    "paper_cardboard"
+   ],
+   "reason": "no caption: class rests on the category \"minecraft_blocks\", whose real instances are commonly made of abs_toy_plastic, foam, paper_cardboard; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/minecraft_blocks/00005",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "foam",
+    "paper_cardboard"
+   ],
+   "reason": "no caption: class rests on the category \"minecraft_blocks\", whose real instances are commonly made of abs_toy_plastic, foam, paper_cardboard; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/minecraft_blocks/00006",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "foam",
+    "paper_cardboard"
+   ],
+   "reason": "no caption: class rests on the category \"minecraft_blocks\", whose real instances are commonly made of abs_toy_plastic, foam, paper_cardboard; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/minecraft_blocks/00007",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "foam",
+    "paper_cardboard"
+   ],
+   "reason": "no caption: class rests on the category \"minecraft_blocks\", whose real instances are commonly made of abs_toy_plastic, foam, paper_cardboard; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/minecraft_blocks/00008",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "foam",
+    "paper_cardboard"
+   ],
+   "reason": "no caption: class rests on the category \"minecraft_blocks\", whose real instances are commonly made of abs_toy_plastic, foam, paper_cardboard; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/minecraft_blocks/00009",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "foam",
+    "paper_cardboard"
+   ],
+   "reason": "no caption: class rests on the category \"minecraft_blocks\", whose real instances are commonly made of abs_toy_plastic, foam, paper_cardboard; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/minecraft_blocks/00010",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "foam",
+    "paper_cardboard"
+   ],
+   "reason": "no caption: class rests on the category \"minecraft_blocks\", whose real instances are commonly made of abs_toy_plastic, foam, paper_cardboard; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/minecraft_blocks/00011",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "foam",
+    "paper_cardboard"
+   ],
+   "reason": "no caption: class rests on the category \"minecraft_blocks\", whose real instances are commonly made of abs_toy_plastic, foam, paper_cardboard; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/minecraft_blocks/00012",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "foam",
+    "paper_cardboard"
+   ],
+   "reason": "no caption: class rests on the category \"minecraft_blocks\", whose real instances are commonly made of abs_toy_plastic, foam, paper_cardboard; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/minecraft_blocks/00013",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "foam",
+    "paper_cardboard"
+   ],
+   "reason": "no caption: class rests on the category \"minecraft_blocks\", whose real instances are commonly made of abs_toy_plastic, foam, paper_cardboard; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/minecraft_blocks/00014",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "foam",
+    "paper_cardboard"
+   ],
+   "reason": "no caption: class rests on the category \"minecraft_blocks\", whose real instances are commonly made of abs_toy_plastic, foam, paper_cardboard; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/minecraft_blocks/00015",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "foam",
+    "paper_cardboard"
+   ],
+   "reason": "no caption: class rests on the category \"minecraft_blocks\", whose real instances are commonly made of abs_toy_plastic, foam, paper_cardboard; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/monitor/00000",
+   "class": "abs_device_housing",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "aluminium"
+   ],
+   "reason": "no caption: class rests on the category \"monitor\", whose real instances are commonly made of abs_device_housing, aluminium; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/oscilloscope/00000",
+   "class": "abs_device_housing",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "steel"
+   ],
+   "reason": "no caption: class rests on the category \"oscilloscope\", whose real instances are commonly made of abs_device_housing, steel; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/pen/00000",
+   "class": "abs_device_housing",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "aluminium"
+   ],
+   "reason": "no caption: class rests on the category \"pen\", whose real instances are commonly made of abs_device_housing, aluminium; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/pen/00001",
+   "class": "abs_device_housing",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "aluminium"
+   ],
+   "reason": "no caption: class rests on the category \"pen\", whose real instances are commonly made of abs_device_housing, aluminium; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/pen/00002",
+   "class": "abs_device_housing",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "aluminium"
+   ],
+   "reason": "no caption: class rests on the category \"pen\", whose real instances are commonly made of abs_device_housing, aluminium; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/plate/00000",
+   "class": "glazed_ceramic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "glass",
+    "abs_toy_plastic"
+   ],
+   "reason": "no caption: class rests on the category \"plate\", whose real instances are commonly made of glazed_ceramic, glass, abs_toy_plastic; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/plate/00001",
+   "class": "glazed_ceramic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "glass",
+    "abs_toy_plastic"
+   ],
+   "reason": "no caption: class rests on the category \"plate\", whose real instances are commonly made of glazed_ceramic, glass, abs_toy_plastic; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/plier/00000",
+   "class": "steel",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "rubber_elastomer",
+    "abs_toy_plastic"
+   ],
+   "reason": "no caption: class rests on the category \"plier\", whose real instances are commonly made of steel, rubber_elastomer, abs_toy_plastic; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/pokeball/00000",
+   "class": "abs_toy_plastic",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "fabric_textile"
+   ],
+   "reason": "no caption: class rests on the category \"pokeball\", whose real instances are commonly made of abs_toy_plastic, fabric_textile; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/pokeball/00001",
+   "class": "abs_toy_plastic",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "fabric_textile"
+   ],
+   "reason": "no caption: class rests on the category \"pokeball\", whose real instances are commonly made of abs_toy_plastic, fabric_textile; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/pokeball/00002",
+   "class": "abs_toy_plastic",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "fabric_textile"
+   ],
+   "reason": "no caption: class rests on the category \"pokeball\", whose real instances are commonly made of abs_toy_plastic, fabric_textile; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/pokeball/00003",
+   "class": "abs_toy_plastic",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "fabric_textile"
+   ],
+   "reason": "no caption: class rests on the category \"pokeball\", whose real instances are commonly made of abs_toy_plastic, fabric_textile; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/pokeball/00004",
+   "class": "abs_toy_plastic",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "fabric_textile"
+   ],
+   "reason": "no caption: class rests on the category \"pokeball\", whose real instances are commonly made of abs_toy_plastic, fabric_textile; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/pokeball/00005",
+   "class": "abs_toy_plastic",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "fabric_textile"
+   ],
+   "reason": "no caption: class rests on the category \"pokeball\", whose real instances are commonly made of abs_toy_plastic, fabric_textile; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/pokeball/00006",
+   "class": "abs_toy_plastic",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "fabric_textile"
+   ],
+   "reason": "no caption: class rests on the category \"pokeball\", whose real instances are commonly made of abs_toy_plastic, fabric_textile; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/pokeball/00007",
+   "class": "abs_toy_plastic",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "fabric_textile"
+   ],
+   "reason": "no caption: class rests on the category \"pokeball\", whose real instances are commonly made of abs_toy_plastic, fabric_textile; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/pokeball/00008",
+   "class": "abs_toy_plastic",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "fabric_textile"
+   ],
+   "reason": "no caption: class rests on the category \"pokeball\", whose real instances are commonly made of abs_toy_plastic, fabric_textile; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/power_bank/00000",
+   "class": "abs_device_housing",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "aluminium"
+   ],
+   "reason": "no caption: class rests on the category \"power_bank\", whose real instances are commonly made of abs_device_housing, aluminium; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/puzzle_pieces/00000",
+   "class": "paper_cardboard",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "softwood"
+   ],
+   "reason": "no caption: class rests on the category \"puzzle_pieces\", whose real instances are commonly made of paper_cardboard, softwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/scale/00000",
+   "class": "abs_device_housing",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "glass",
+    "steel"
+   ],
+   "reason": "no caption: class rests on the category \"scale\", whose real instances are commonly made of abs_device_housing, glass, steel; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/tape_measure/00000",
+   "class": "abs_device_housing",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "rubber_elastomer"
+   ],
+   "reason": "no caption: class rests on the category \"tape_measure\", whose real instances are commonly made of abs_device_housing, rubber_elastomer; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Geometry/camera_stand/00000",
+   "class": "aluminium",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "steel",
+    "abs_device_housing"
+   ],
+   "reason": "no caption: class rests on the category \"camera_stand\", whose real instances are commonly made of aluminium, steel, abs_device_housing; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Geometry/drawer/00000",
+   "class": "engineered_wood",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "softwood",
+    "polyolefin_plastic"
+   ],
+   "reason": "no caption: class rests on the category \"drawer\", whose real instances are commonly made of engineered_wood, softwood, polyolefin_plastic; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Geometry/monitor/00000",
+   "class": "abs_device_housing",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "aluminium"
+   ],
+   "reason": "caption mismatch: class rests on the category \"monitor\", whose real instances are commonly made of abs_device_housing, aluminium; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Geometry/monitor/00001",
+   "class": "abs_device_housing",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "aluminium"
+   ],
+   "reason": "caption mismatch: class rests on the category \"monitor\", whose real instances are commonly made of abs_device_housing, aluminium; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Geometry/mousemat/00000",
+   "class": "foam",
+   "confidence_from": "medium",
+   "confidence_to": "low",
+   "alternatives": [
+    "fabric_textile",
+    "rubber_elastomer"
+   ],
+   "reason": "caption mismatch: class rests on the category \"mousemat\", whose real instances are commonly made of foam, fabric_textile, rubber_elastomer; capped at low with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Geometry/number_card/00001",
+   "class": "paper_cardboard",
+   "confidence_from": "medium",
+   "confidence_to": "low",
+   "alternatives": [
+    "abs_toy_plastic"
+   ],
+   "reason": "caption mismatch: class rests on the category \"number_card\", whose real instances are commonly made of paper_cardboard, abs_toy_plastic; capped at low with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Geometry/number_card/00002",
+   "class": "paper_cardboard",
+   "confidence_from": "medium",
+   "confidence_to": "low",
+   "alternatives": [
+    "abs_toy_plastic"
+   ],
+   "reason": "caption mismatch: class rests on the category \"number_card\", whose real instances are commonly made of paper_cardboard, abs_toy_plastic; capped at low with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Geometry/number_card/00003",
+   "class": "paper_cardboard",
+   "confidence_from": "medium",
+   "confidence_to": "low",
+   "alternatives": [
+    "abs_toy_plastic"
+   ],
+   "reason": "caption mismatch: class rests on the category \"number_card\", whose real instances are commonly made of paper_cardboard, abs_toy_plastic; capped at low with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Geometry/number_card/00004",
+   "class": "paper_cardboard",
+   "confidence_from": "medium",
+   "confidence_to": "low",
+   "alternatives": [
+    "abs_toy_plastic"
+   ],
+   "reason": "caption mismatch: class rests on the category \"number_card\", whose real instances are commonly made of paper_cardboard, abs_toy_plastic; capped at low with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Geometry/number_card/00005",
+   "class": "paper_cardboard",
+   "confidence_from": "medium",
+   "confidence_to": "low",
+   "alternatives": [
+    "abs_toy_plastic"
+   ],
+   "reason": "caption mismatch: class rests on the category \"number_card\", whose real instances are commonly made of paper_cardboard, abs_toy_plastic; capped at low with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Geometry/number_card/00006",
+   "class": "paper_cardboard",
+   "confidence_from": "medium",
+   "confidence_to": "low",
+   "alternatives": [
+    "abs_toy_plastic"
+   ],
+   "reason": "caption mismatch: class rests on the category \"number_card\", whose real instances are commonly made of paper_cardboard, abs_toy_plastic; capped at low with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Geometry/number_card/00007",
+   "class": "paper_cardboard",
+   "confidence_from": "medium",
+   "confidence_to": "low",
+   "alternatives": [
+    "abs_toy_plastic"
+   ],
+   "reason": "caption mismatch: class rests on the category \"number_card\", whose real instances are commonly made of paper_cardboard, abs_toy_plastic; capped at low with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Geometry/number_card/00008",
+   "class": "paper_cardboard",
+   "confidence_from": "medium",
+   "confidence_to": "low",
+   "alternatives": [
+    "abs_toy_plastic"
+   ],
+   "reason": "caption mismatch: class rests on the category \"number_card\", whose real instances are commonly made of paper_cardboard, abs_toy_plastic; capped at low with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Geometry/number_card/00009",
+   "class": "paper_cardboard",
+   "confidence_from": "medium",
+   "confidence_to": "low",
+   "alternatives": [
+    "abs_toy_plastic"
+   ],
+   "reason": "caption mismatch: class rests on the category \"number_card\", whose real instances are commonly made of paper_cardboard, abs_toy_plastic; capped at low with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Geometry/photo/00001",
+   "class": "paper_cardboard",
+   "confidence_from": "high",
+   "confidence_to": "low",
+   "alternatives": [
+    "glass",
+    "engineered_wood",
+    "abs_toy_plastic"
+   ],
+   "reason": "no caption: class rests on the category \"photo\", whose real instances are commonly made of paper_cardboard, glass, engineered_wood, abs_toy_plastic; capped at low with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Geometry/photo/00002",
+   "class": "paper_cardboard",
+   "confidence_from": "high",
+   "confidence_to": "low",
+   "alternatives": [
+    "glass",
+    "engineered_wood",
+    "abs_toy_plastic"
+   ],
+   "reason": "no caption: class rests on the category \"photo\", whose real instances are commonly made of paper_cardboard, glass, engineered_wood, abs_toy_plastic; capped at low with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Geometry/photo/00003",
+   "class": "paper_cardboard",
+   "confidence_from": "high",
+   "confidence_to": "low",
+   "alternatives": [
+    "glass",
+    "engineered_wood",
+    "abs_toy_plastic"
+   ],
+   "reason": "no caption: class rests on the category \"photo\", whose real instances are commonly made of paper_cardboard, glass, engineered_wood, abs_toy_plastic; capped at low with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Geometry/photo/00004",
+   "class": "paper_cardboard",
+   "confidence_from": "high",
+   "confidence_to": "low",
+   "alternatives": [
+    "glass",
+    "engineered_wood",
+    "abs_toy_plastic"
+   ],
+   "reason": "no caption: class rests on the category \"photo\", whose real instances are commonly made of paper_cardboard, glass, engineered_wood, abs_toy_plastic; capped at low with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Geometry/photo/00005",
+   "class": "paper_cardboard",
+   "confidence_from": "high",
+   "confidence_to": "low",
+   "alternatives": [
+    "glass",
+    "engineered_wood",
+    "abs_toy_plastic"
+   ],
+   "reason": "no caption: class rests on the category \"photo\", whose real instances are commonly made of paper_cardboard, glass, engineered_wood, abs_toy_plastic; capped at low with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Geometry/photo/00006",
+   "class": "paper_cardboard",
+   "confidence_from": "high",
+   "confidence_to": "low",
+   "alternatives": [
+    "glass",
+    "engineered_wood",
+    "abs_toy_plastic"
+   ],
+   "reason": "no caption: class rests on the category \"photo\", whose real instances are commonly made of paper_cardboard, glass, engineered_wood, abs_toy_plastic; capped at low with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Geometry/photo/00007",
+   "class": "paper_cardboard",
+   "confidence_from": "high",
+   "confidence_to": "low",
+   "alternatives": [
+    "glass",
+    "engineered_wood",
+    "abs_toy_plastic"
+   ],
+   "reason": "no caption: class rests on the category \"photo\", whose real instances are commonly made of paper_cardboard, glass, engineered_wood, abs_toy_plastic; capped at low with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Geometry/photo/00008",
+   "class": "paper_cardboard",
+   "confidence_from": "high",
+   "confidence_to": "low",
+   "alternatives": [
+    "glass",
+    "engineered_wood",
+    "abs_toy_plastic"
+   ],
+   "reason": "no caption: class rests on the category \"photo\", whose real instances are commonly made of paper_cardboard, glass, engineered_wood, abs_toy_plastic; capped at low with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Geometry/photo/00009",
+   "class": "paper_cardboard",
+   "confidence_from": "high",
+   "confidence_to": "low",
+   "alternatives": [
+    "glass",
+    "engineered_wood",
+    "abs_toy_plastic"
+   ],
+   "reason": "no caption: class rests on the category \"photo\", whose real instances are commonly made of paper_cardboard, glass, engineered_wood, abs_toy_plastic; capped at low with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Geometry/photo/00010",
+   "class": "paper_cardboard",
+   "confidence_from": "high",
+   "confidence_to": "low",
+   "alternatives": [
+    "glass",
+    "engineered_wood",
+    "abs_toy_plastic"
+   ],
+   "reason": "no caption: class rests on the category \"photo\", whose real instances are commonly made of paper_cardboard, glass, engineered_wood, abs_toy_plastic; capped at low with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Geometry/photo/00012",
+   "class": "paper_cardboard",
+   "confidence_from": "high",
+   "confidence_to": "low",
+   "alternatives": [
+    "glass",
+    "engineered_wood",
+    "abs_toy_plastic"
+   ],
+   "reason": "no caption: class rests on the category \"photo\", whose real instances are commonly made of paper_cardboard, glass, engineered_wood, abs_toy_plastic; capped at low with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Geometry/photo/00013",
+   "class": "paper_cardboard",
+   "confidence_from": "high",
+   "confidence_to": "low",
+   "alternatives": [
+    "glass",
+    "engineered_wood",
+    "abs_toy_plastic"
+   ],
+   "reason": "no caption: class rests on the category \"photo\", whose real instances are commonly made of paper_cardboard, glass, engineered_wood, abs_toy_plastic; capped at low with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Geometry/photo/00014",
+   "class": "paper_cardboard",
+   "confidence_from": "high",
+   "confidence_to": "low",
+   "alternatives": [
+    "glass",
+    "engineered_wood",
+    "abs_toy_plastic"
+   ],
+   "reason": "no caption: class rests on the category \"photo\", whose real instances are commonly made of paper_cardboard, glass, engineered_wood, abs_toy_plastic; capped at low with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Geometry/photo/00015",
+   "class": "paper_cardboard",
+   "confidence_from": "high",
+   "confidence_to": "low",
+   "alternatives": [
+    "glass",
+    "engineered_wood",
+    "abs_toy_plastic"
+   ],
+   "reason": "no caption: class rests on the category \"photo\", whose real instances are commonly made of paper_cardboard, glass, engineered_wood, abs_toy_plastic; capped at low with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Geometry/photo/00016",
+   "class": "paper_cardboard",
+   "confidence_from": "high",
+   "confidence_to": "low",
+   "alternatives": [
+    "glass",
+    "engineered_wood",
+    "abs_toy_plastic"
+   ],
+   "reason": "no caption: class rests on the category \"photo\", whose real instances are commonly made of paper_cardboard, glass, engineered_wood, abs_toy_plastic; capped at low with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Geometry/piggy_bank/00000",
+   "class": "glazed_ceramic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "abs_toy_plastic"
+   ],
+   "reason": "no caption: class rests on the category \"piggy_bank\", whose real instances are commonly made of glazed_ceramic, abs_toy_plastic; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Geometry/toolbox/00000",
+   "class": "polyolefin_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "steel"
+   ],
+   "reason": "no caption: class rests on the category \"toolbox\", whose real instances are commonly made of polyolefin_plastic, steel; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/binoculars/00000",
+   "class": "abs_device_housing",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "rubber_elastomer",
+    "aluminium"
+   ],
+   "reason": "caption identity only: class rests on the category \"binoculars\", whose real instances are commonly made of abs_device_housing, rubber_elastomer, aluminium; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/bottle/00047",
+   "class": "aluminium",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "pet_plastic"
+   ],
+   "reason": "caption mismatch: class rests on the category \"bottle\", whose real instances are commonly made of aluminium, pet_plastic; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/camera/00002",
+   "class": "abs_device_housing",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "aluminium",
+    "rubber_elastomer"
+   ],
+   "reason": "no caption: class rests on the category \"camera\", whose real instances are commonly made of abs_device_housing, aluminium, rubber_elastomer; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/can/00000",
+   "class": "aluminium",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "steel"
+   ],
+   "reason": "caption identity only: class rests on the category \"can\", whose real instances are commonly made of aluminium, steel; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/car/00001",
+   "class": "abs_toy_plastic",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "steel"
+   ],
+   "reason": "no caption: class rests on the category \"car\", whose real instances are commonly made of abs_toy_plastic, steel; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/car/00005",
+   "class": "abs_toy_plastic",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "steel"
+   ],
+   "reason": "no caption: class rests on the category \"car\", whose real instances are commonly made of abs_toy_plastic, steel; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/car/00008",
+   "class": "abs_toy_plastic",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "steel"
+   ],
+   "reason": "caption identity only: class rests on the category \"car\", whose real instances are commonly made of abs_toy_plastic, steel; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/car/00009",
+   "class": "abs_toy_plastic",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "steel"
+   ],
+   "reason": "caption identity only: class rests on the category \"car\", whose real instances are commonly made of abs_toy_plastic, steel; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/car/00010",
+   "class": "abs_toy_plastic",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "steel"
+   ],
+   "reason": "caption identity only: class rests on the category \"car\", whose real instances are commonly made of abs_toy_plastic, steel; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/car/00011",
+   "class": "abs_toy_plastic",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "steel"
+   ],
+   "reason": "caption identity only: class rests on the category \"car\", whose real instances are commonly made of abs_toy_plastic, steel; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/chessman/00000",
+   "class": "steel",
+   "confidence_from": "medium",
+   "confidence_to": "low",
+   "alternatives": [
+    "abs_toy_plastic",
+    "softwood"
+   ],
+   "reason": "caption mismatch: class rests on the category \"chessman\", whose real instances are commonly made of steel, abs_toy_plastic, softwood; capped at low with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/chessman/00001",
+   "class": "steel",
+   "confidence_from": "medium",
+   "confidence_to": "low",
+   "alternatives": [
+    "abs_toy_plastic",
+    "softwood"
+   ],
+   "reason": "caption mismatch: class rests on the category \"chessman\", whose real instances are commonly made of steel, abs_toy_plastic, softwood; capped at low with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/chocolate_bag/00000",
+   "class": "paper_cardboard",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "polyolefin_plastic"
+   ],
+   "reason": "caption identity only: class rests on the category \"chocolate_bag\", whose real instances are commonly made of paper_cardboard, polyolefin_plastic; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/clock/00000",
+   "class": "abs_device_housing",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "steel",
+    "softwood"
+   ],
+   "reason": "caption identity only: class rests on the category \"clock\", whose real instances are commonly made of abs_device_housing, steel, softwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/corkscrew/00000",
+   "class": "steel",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "abs_toy_plastic"
+   ],
+   "reason": "caption identity only: class rests on the category \"corkscrew\", whose real instances are commonly made of steel, abs_toy_plastic; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/earbuds/00000",
+   "class": "abs_device_housing",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "rubber_elastomer"
+   ],
+   "reason": "Caption lists several contact materials (shiny plastic / rubberized ear tip / metal mesh grille) on a multi-material category; capped at medium with alternatives.",
+   "rule": "multi_material_caption",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/goblet/00006",
+   "class": "glass",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "steel",
+    "glazed_ceramic"
+   ],
+   "reason": "no caption: class rests on the category \"goblet\", whose real instances are commonly made of glass, steel, glazed_ceramic; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/hammer/00000",
+   "class": "steel",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood",
+    "abs_toy_plastic",
+    "rubber_elastomer"
+   ],
+   "reason": "no caption: class rests on the category \"hammer\", whose real instances are commonly made of steel, hardwood, abs_toy_plastic, rubber_elastomer; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/hammer/00001",
+   "class": "steel",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood",
+    "abs_toy_plastic",
+    "rubber_elastomer"
+   ],
+   "reason": "no caption: class rests on the category \"hammer\", whose real instances are commonly made of steel, hardwood, abs_toy_plastic, rubber_elastomer; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/hammer/00002",
+   "class": "steel",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood",
+    "abs_toy_plastic",
+    "rubber_elastomer"
+   ],
+   "reason": "no caption: class rests on the category \"hammer\", whose real instances are commonly made of steel, hardwood, abs_toy_plastic, rubber_elastomer; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/hammer/00003",
+   "class": "steel",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood",
+    "abs_toy_plastic",
+    "rubber_elastomer"
+   ],
+   "reason": "no caption: class rests on the category \"hammer\", whose real instances are commonly made of steel, hardwood, abs_toy_plastic, rubber_elastomer; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/hammer/00004",
+   "class": "steel",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood",
+    "abs_toy_plastic",
+    "rubber_elastomer"
+   ],
+   "reason": "no caption: class rests on the category \"hammer\", whose real instances are commonly made of steel, hardwood, abs_toy_plastic, rubber_elastomer; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/hammer/00005",
+   "class": "steel",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood",
+    "abs_toy_plastic",
+    "rubber_elastomer"
+   ],
+   "reason": "no caption: class rests on the category \"hammer\", whose real instances are commonly made of steel, hardwood, abs_toy_plastic, rubber_elastomer; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/hammer/00006",
+   "class": "steel",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "abs_toy_plastic",
+    "rubber_elastomer"
+   ],
+   "reason": "Caption lists several contact materials (steel head / fiberglass or plastic shaft / textured rubber handle) on a multi-material category; capped at medium with alternatives.",
+   "rule": "multi_material_caption",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/hammer/00008",
+   "class": "rubber_elastomer",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "Caption lists several contact materials (rubber head / wooden handle / rubberized grip) on a multi-material category; capped at medium with alternatives.",
+   "rule": "multi_material_caption",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/headphone/00000",
+   "class": "abs_device_housing",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "foam",
+    "rubber_elastomer"
+   ],
+   "reason": "caption identity only: class rests on the category \"headphone\", whose real instances are commonly made of abs_device_housing, foam, rubber_elastomer; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/headset/00003",
+   "class": "abs_device_housing",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "rubber_elastomer"
+   ],
+   "reason": "Caption lists several contact materials (soft-touch plastic / rubberized finish / padded fabric ear cushions) on a multi-material category; capped at medium with alternatives.",
+   "rule": "multi_material_caption",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/headset/00005",
+   "class": "abs_device_housing",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "foam"
+   ],
+   "reason": "Caption lists several contact materials (shiny plastic / soft foam ear pads / fabric-covered cushioning) on a multi-material category; capped at medium with alternatives.",
+   "rule": "multi_material_caption",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/headset/00006",
+   "class": "abs_device_housing",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "foam"
+   ],
+   "reason": "Caption lists several contact materials (plastic / soft-touch polymer / memory foam ear pads) on a multi-material category; capped at medium with alternatives.",
+   "rule": "multi_material_caption",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/headset/00009",
+   "class": "abs_device_housing",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "foam",
+    "rubber_elastomer"
+   ],
+   "reason": "Caption lists several contact materials (shiny plastic / soft foam padding / rubberized ear cushions) on a multi-material category; capped at medium with alternatives.",
+   "rule": "multi_material_caption",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/headset/00010",
+   "class": "abs_device_housing",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "rubber_elastomer"
+   ],
+   "reason": "Caption lists several contact materials (plastic / soft-touch polymer / rubberized ear cushions) on a multi-material category; capped at medium with alternatives.",
+   "rule": "multi_material_caption",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/keyboard/00000",
+   "class": "abs_device_housing",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "aluminium"
+   ],
+   "reason": "caption mismatch: class rests on the category \"keyboard\", whose real instances are commonly made of abs_device_housing, aluminium; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/keyboard/00001",
+   "class": "abs_device_housing",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "aluminium"
+   ],
+   "reason": "caption mismatch: class rests on the category \"keyboard\", whose real instances are commonly made of abs_device_housing, aluminium; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/keyboard/00002",
+   "class": "abs_device_housing",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "aluminium"
+   ],
+   "reason": "caption mismatch: class rests on the category \"keyboard\", whose real instances are commonly made of abs_device_housing, aluminium; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00000",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00001",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00002",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00003",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00004",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00005",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00006",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00007",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00008",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00009",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00010",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00011",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00012",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00013",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00014",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00015",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00016",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00017",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00018",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00019",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00020",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00021",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00022",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00023",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00024",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00025",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00026",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00027",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00028",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00029",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00030",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00031",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00032",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00033",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00034",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00035",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00036",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00037",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00038",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00039",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00040",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mahjong/00041",
+   "class": "abs_toy_plastic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood"
+   ],
+   "reason": "no caption: class rests on the category \"mahjong\", whose real instances are commonly made of abs_toy_plastic, hardwood; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mallet/00000",
+   "class": "hardwood",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "rubber_elastomer"
+   ],
+   "reason": "no caption: class rests on the category \"mallet\", whose real instances are commonly made of hardwood, rubber_elastomer; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mouse/00004",
+   "class": "abs_device_housing",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "rubber_elastomer"
+   ],
+   "reason": "Caption lists several contact materials (shiny plastic shell / textured rubber side grips / carbon-fiber-patterned side panels) on a multi-material category; capped at medium with alternatives.",
+   "rule": "multi_material_caption",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mouse/00007",
+   "class": "abs_device_housing",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "aluminium",
+    "rubber_elastomer"
+   ],
+   "reason": "Caption lists several contact materials (shiny plastic shell / metal base plate / rubber scroll wheel) on a multi-material category; capped at medium with alternatives.",
+   "rule": "multi_material_caption",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mouse/00008",
+   "class": "abs_device_housing",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "rubber_elastomer",
+    "aluminium"
+   ],
+   "reason": "caption identity only: class rests on the category \"mouse\", whose real instances are commonly made of abs_device_housing, rubber_elastomer, aluminium; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/noodles/00000",
+   "class": "paper_cardboard",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "foam"
+   ],
+   "reason": "caption identity only: class rests on the category \"noodles\", whose real instances are commonly made of paper_cardboard, foam; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/peeler/00000",
+   "class": "steel",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "abs_toy_plastic"
+   ],
+   "reason": "caption identity only: class rests on the category \"peeler\", whose real instances are commonly made of steel, abs_toy_plastic; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/pen/00000",
+   "class": "abs_device_housing",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "aluminium"
+   ],
+   "reason": "Caption lists several contact materials (plastic body / metal clip / rubberized grip) on a multi-material category; capped at medium with alternatives.",
+   "rule": "multi_material_caption",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/pen/00004",
+   "class": "abs_device_housing",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "aluminium"
+   ],
+   "reason": "no caption: class rests on the category \"pen\", whose real instances are commonly made of abs_device_housing, aluminium; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/pen/00010",
+   "class": "abs_device_housing",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "aluminium"
+   ],
+   "reason": "caption identity only: class rests on the category \"pen\", whose real instances are commonly made of abs_device_housing, aluminium; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/pen/00011",
+   "class": "abs_device_housing",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "aluminium"
+   ],
+   "reason": "caption identity only: class rests on the category \"pen\", whose real instances are commonly made of abs_device_housing, aluminium; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/phone/00000",
+   "class": "abs_device_housing",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "glass",
+    "aluminium"
+   ],
+   "reason": "no caption: class rests on the category \"phone\", whose real instances are commonly made of abs_device_housing, glass, aluminium; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/piler/00000",
+   "class": "steel",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "rubber_elastomer",
+    "abs_toy_plastic"
+   ],
+   "reason": "caption identity only: class rests on the category \"piler\", whose real instances are commonly made of steel, rubber_elastomer, abs_toy_plastic; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/pliers/00000",
+   "class": "steel",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "rubber_elastomer",
+    "abs_toy_plastic"
+   ],
+   "reason": "no caption: class rests on the category \"pliers\", whose real instances are commonly made of steel, rubber_elastomer, abs_toy_plastic; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/power_bank/00002",
+   "class": "abs_device_housing",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "aluminium"
+   ],
+   "reason": "caption identity only: class rests on the category \"power_bank\", whose real instances are commonly made of abs_device_housing, aluminium; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/scissor/00000",
+   "class": "steel",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "abs_toy_plastic"
+   ],
+   "reason": "caption identity only: class rests on the category \"scissor\", whose real instances are commonly made of steel, abs_toy_plastic; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/shoe/00000",
+   "class": "fabric_textile",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "rubber_elastomer"
+   ],
+   "reason": "Caption lists several contact materials (smooth synthetic leather / perforated mesh toe / rubber sole) on a multi-material category; capped at medium with alternatives.",
+   "rule": "multi_material_caption",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/shoe/00001",
+   "class": "fabric_textile",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "rubber_elastomer"
+   ],
+   "reason": "Caption lists several contact materials (leather-like upper / rubber sole / textile lining) on a multi-material category; capped at medium with alternatives.",
+   "rule": "multi_material_caption",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/shoe/00002",
+   "class": "fabric_textile",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "rubber_elastomer"
+   ],
+   "reason": "Caption lists several contact materials (leather upper / rubber sole / cotton laces) on a multi-material category; capped at medium with alternatives.",
+   "rule": "multi_material_caption",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/shoe/00003",
+   "class": "fabric_textile",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "rubber_elastomer"
+   ],
+   "reason": "Caption lists several contact materials (leather upper / rubber sole / cotton laces) on a multi-material category; capped at medium with alternatives.",
+   "rule": "multi_material_caption",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/shoe/00004",
+   "class": "fabric_textile",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "rubber_elastomer"
+   ],
+   "reason": "Caption lists several contact materials (synthetic mesh upper / rubber outsole / foam midsole / nylon laces) on a multi-material category; capped at medium with alternatives.",
+   "rule": "multi_material_caption",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/shoe/00005",
+   "class": "fabric_textile",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "rubber_elastomer"
+   ],
+   "reason": "Caption lists several contact materials (mesh upper / synthetic overlays / rubber sole / foam midsole) on a multi-material category; capped at medium with alternatives.",
+   "rule": "multi_material_caption",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/shoe/00008",
+   "class": "fabric_textile",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "rubber_elastomer"
+   ],
+   "reason": "Caption lists several contact materials (smooth leather upper / rubber sole / waxed cotton laces) on a multi-material category; capped at medium with alternatives.",
+   "rule": "multi_material_caption",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/shoe/00009",
+   "class": "fabric_textile",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "rubber_elastomer"
+   ],
+   "reason": "Caption lists several contact materials (smooth leather upper / rubber sole / cotton laces) on a multi-material category; capped at medium with alternatives.",
+   "rule": "multi_material_caption",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/shoe/00010",
+   "class": "fabric_textile",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "rubber_elastomer"
+   ],
+   "reason": "Caption lists several contact materials (smooth synthetic leather / perforated toe box mesh / rubber sole / foam midsole) on a multi-material category; capped at medium with alternatives.",
+   "rule": "multi_material_caption",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/shoe/00011",
+   "class": "fabric_textile",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "rubber_elastomer"
+   ],
+   "reason": "Caption lists several contact materials (smooth leather upper / rubber outsole / textured perforated toe box) on a multi-material category; capped at medium with alternatives.",
+   "rule": "multi_material_caption",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/shoe/00012",
+   "class": "fabric_textile",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "rubber_elastomer"
+   ],
+   "reason": "Caption lists several contact materials (smooth leather / rubber sole / synthetic lining) on a multi-material category; capped at medium with alternatives.",
+   "rule": "multi_material_caption",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/shoe/00013",
+   "class": "fabric_textile",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "rubber_elastomer"
+   ],
+   "reason": "Caption lists several contact materials (synthetic leather upper / rubber sole / textile lining) on a multi-material category; capped at medium with alternatives.",
+   "rule": "multi_material_caption",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/shoe/00014",
+   "class": "fabric_textile",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "rubber_elastomer"
+   ],
+   "reason": "Caption lists several contact materials (synthetic leather upper / rubber sole / nylon laces) on a multi-material category; capped at medium with alternatives.",
+   "rule": "multi_material_caption",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/shoe/00015",
+   "class": "fabric_textile",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "rubber_elastomer"
+   ],
+   "reason": "Caption lists several contact materials (synthetic leather upper / rubber sole / nylon laces) on a multi-material category; capped at medium with alternatives.",
+   "rule": "multi_material_caption",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/shoe/00016",
+   "class": "fabric_textile",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "rubber_elastomer"
+   ],
+   "reason": "Caption lists several contact materials (synthetic mesh upper / rubber outsole / foam midsole / textile lining) on a multi-material category; capped at medium with alternatives.",
+   "rule": "multi_material_caption",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/shoe/00017",
+   "class": "fabric_textile",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "rubber_elastomer"
+   ],
+   "reason": "Caption lists several contact materials (synthetic mesh upper / rubber outsole / foam midsole) on a multi-material category; capped at medium with alternatives.",
+   "rule": "multi_material_caption",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/shovel/00001",
+   "class": "steel",
+   "confidence_from": "low",
+   "confidence_to": "low",
+   "alternatives": [
+    "hardwood",
+    "abs_toy_plastic",
+    "aluminium"
+   ],
+   "reason": "caption identity only: class rests on the category \"shovel\", whose real instances are commonly made of steel, hardwood, abs_toy_plastic, aluminium; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/shovel/00002",
+   "class": "steel",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "hardwood",
+    "abs_toy_plastic",
+    "aluminium"
+   ],
+   "reason": "Caption names only \"metal\" (worn metal trowel) on the multi-material category \"shovel\": steel versus aluminium alloy, and a non-metal handle, are all open; capped at medium with those alternatives (#88 item 3).",
+   "rule": "multi_material_generic_metal",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/speaker/00000",
+   "class": "abs_device_housing",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "fabric_textile",
+    "rubber_elastomer"
+   ],
+   "reason": "caption identity only: class rests on the category \"speaker\", whose real instances are commonly made of abs_device_housing, fabric_textile, rubber_elastomer; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/tape_measure/00000",
+   "class": "abs_device_housing",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "rubber_elastomer"
+   ],
+   "reason": "no caption: class rests on the category \"tape_measure\", whose real instances are commonly made of abs_device_housing, rubber_elastomer; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/test_tube/00002",
+   "class": "glass",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "abs_toy_plastic",
+    "polyolefin_plastic"
+   ],
+   "reason": "no caption: class rests on the category \"test_tube\", whose real instances are commonly made of glass, abs_toy_plastic, polyolefin_plastic; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/usb_multip/00000",
+   "class": "abs_device_housing",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "aluminium"
+   ],
+   "reason": "caption identity only: class rests on the category \"usb_multip\", whose real instances are commonly made of abs_device_housing, aluminium; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/whisk/00000",
+   "class": "steel",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "abs_toy_plastic",
+    "rubber_elastomer"
+   ],
+   "reason": "caption identity only: class rests on the category \"whisk\", whose real instances are commonly made of steel, abs_toy_plastic, rubber_elastomer; capped at medium with those alternatives (#73 review item 5).",
+   "rule": "multi_material_category",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/garage/00002",
+   "class": "abs_toy_plastic",
+   "confidence_from": "low",
+   "confidence_to": "low",
+   "alternatives": [
+    "softwood",
+    "hardwood"
+   ],
+   "reason": "Caption material \"painted wood\" names softwood, hardwood, not abs_toy_plastic; the class rests on category, bbox and mass, so it is at most medium with the caption class as alternative (#73 review item 5).",
+   "rule": "caption_conflict",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/garage/00011",
+   "class": "abs_toy_plastic",
+   "confidence_from": "low",
+   "confidence_to": "low",
+   "alternatives": [
+    "rubber_elastomer"
+   ],
+   "reason": "Caption material \"rubbery limbs\" names rubber_elastomer, not abs_toy_plastic; the class rests on category, bbox and mass, so it is at most medium with the caption class as alternative (#73 review item 5).",
+   "rule": "caption_conflict",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/scale/00001",
+   "class": "abs_device_housing",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "steel"
+   ],
+   "reason": "Caption material \"stainless steel weighing platform\" names steel, not abs_device_housing; the class rests on category, bbox and mass, so it is at most medium with the caption class as alternative (#73 review item 5).",
+   "rule": "caption_conflict",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/stapler/00001",
+   "class": "abs_device_housing",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "steel"
+   ],
+   "reason": "Caption material \"stamped steel\" names steel, not abs_device_housing; the class rests on category, bbox and mass, so it is at most medium with the caption class as alternative (#73 review item 5).",
+   "rule": "caption_conflict",
+   "version": "v3"
+  },
+  {
+   "id": "Clutter/tissue/00003",
+   "class": "paper_cardboard",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "steel",
+    "aluminium"
+   ],
+   "reason": "Caption material \"painted metal\" names steel, aluminium, not paper_cardboard; the class rests on category, bbox and mass, so it is at most medium with the caption class as alternative (#73 review item 5).",
+   "rule": "caption_conflict",
+   "version": "v3"
+  },
+  {
+   "id": "Geometry/headset_stand/00000",
+   "class": "aluminium",
+   "confidence_from": "low",
+   "confidence_to": "low",
+   "alternatives": [
+    "softwood",
+    "hardwood"
+   ],
+   "reason": "Caption material \"polished wood\" names softwood, hardwood, not aluminium; the class rests on category, bbox and mass, so it is at most medium with the caption class as alternative (#73 review item 5).",
+   "rule": "caption_conflict",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/alarm/00000",
+   "class": "abs_device_housing",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "steel",
+    "aluminium"
+   ],
+   "reason": "Caption material \"painted metal\" names steel, aluminium, not abs_device_housing; the class rests on category, bbox and mass, so it is at most medium with the caption class as alternative (#73 review item 5).",
+   "rule": "caption_conflict",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/car/00000",
+   "class": "abs_toy_plastic",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "steel",
+    "aluminium"
+   ],
+   "reason": "Caption material \"painted metal body\" names steel, aluminium, not abs_toy_plastic; the class rests on category, bbox and mass, so it is at most medium with the caption class as alternative (#73 review item 5).",
+   "rule": "caption_conflict",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/car/00002",
+   "class": "abs_toy_plastic",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "steel",
+    "aluminium"
+   ],
+   "reason": "Caption material \"painted metal\" names steel, aluminium, not abs_toy_plastic; the class rests on category, bbox and mass, so it is at most medium with the caption class as alternative (#73 review item 5).",
+   "rule": "caption_conflict",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/car/00003",
+   "class": "abs_toy_plastic",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "steel",
+    "aluminium"
+   ],
+   "reason": "Caption material \"painted metal body\" names steel, aluminium, not abs_toy_plastic; the class rests on category, bbox and mass, so it is at most medium with the caption class as alternative (#73 review item 5).",
+   "rule": "caption_conflict",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/car/00007",
+   "class": "abs_toy_plastic",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "steel",
+    "aluminium"
+   ],
+   "reason": "Caption material \"painted metal body\" names steel, aluminium, not abs_toy_plastic; the class rests on category, bbox and mass, so it is at most medium with the caption class as alternative (#73 review item 5).",
+   "rule": "caption_conflict",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/car/00012",
+   "class": "abs_toy_plastic",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "steel",
+    "aluminium"
+   ],
+   "reason": "Caption material \"die-cast metal body\" names steel, aluminium, not abs_toy_plastic; the class rests on category, bbox and mass, so it is at most medium with the caption class as alternative (#73 review item 5).",
+   "rule": "caption_conflict",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/car/00013",
+   "class": "abs_toy_plastic",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "steel",
+    "aluminium"
+   ],
+   "reason": "Caption material \"painted metal\" names steel, aluminium, not abs_toy_plastic; the class rests on category, bbox and mass, so it is at most medium with the caption class as alternative (#73 review item 5).",
+   "rule": "caption_conflict",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/garage/00006",
+   "class": "abs_toy_plastic",
+   "confidence_from": "low",
+   "confidence_to": "low",
+   "alternatives": [
+    "steel",
+    "aluminium"
+   ],
+   "reason": "Caption material \"painted metal\" names steel, aluminium, not abs_toy_plastic; the class rests on category, bbox and mass, so it is at most medium with the caption class as alternative (#73 review item 5).",
+   "rule": "caption_conflict",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/garage/00014",
+   "class": "abs_toy_plastic",
+   "confidence_from": "low",
+   "confidence_to": "low",
+   "alternatives": [
+    "fabric_textile"
+   ],
+   "reason": "Caption material \"fuzzy plush texture\" names fabric_textile, not abs_toy_plastic; the class rests on category, bbox and mass, so it is at most medium with the caption class as alternative (#73 review item 5).",
+   "rule": "caption_conflict",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/handled_paint/00000",
+   "class": "polyolefin_plastic",
+   "confidence_from": "low",
+   "confidence_to": "low",
+   "alternatives": [
+    "softwood",
+    "hardwood"
+   ],
+   "reason": "Caption material \"wood-handled brayer roller\" names softwood, hardwood, not polyolefin_plastic; the class rests on category, bbox and mass, so it is at most medium with the caption class as alternative (#73 review item 5).",
+   "rule": "caption_conflict",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/headset/00002",
+   "class": "abs_device_housing",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "fabric_textile"
+   ],
+   "reason": "Caption material \"soft padded fabric\" names fabric_textile, not abs_device_housing; the class rests on category, bbox and mass, so it is at most medium with the caption class as alternative (#73 review item 5).",
+   "rule": "caption_conflict",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/headset/00007",
+   "class": "abs_device_housing",
+   "confidence_from": "high",
+   "confidence_to": "medium",
+   "alternatives": [
+    "fabric_textile"
+   ],
+   "reason": "Caption material \"leather headband\" names fabric_textile, not abs_device_housing; the class rests on category, bbox and mass, so it is at most medium with the caption class as alternative (#73 review item 5).",
+   "rule": "caption_conflict",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/jewelry_box/00000",
+   "class": "engineered_wood",
+   "confidence_from": "low",
+   "confidence_to": "low",
+   "alternatives": [
+    "fabric_textile"
+   ],
+   "reason": "Caption material \"mint green woven box\" names fabric_textile, not engineered_wood; the class rests on category, bbox and mass, so it is at most medium with the caption class as alternative (#73 review item 5).",
+   "rule": "caption_conflict",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mug/00002",
+   "class": "glazed_ceramic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "steel",
+    "aluminium"
+   ],
+   "reason": "Caption material \"enameled metal\" names steel, aluminium, not glazed_ceramic; the class rests on category, bbox and mass, so it is at most medium with the caption class as alternative (#73 review item 5).",
+   "rule": "caption_conflict",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/mug/00005",
+   "class": "glazed_ceramic",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "abs_toy_plastic"
+   ],
+   "reason": "Caption material \"glossy plastic\" names abs_toy_plastic, not glazed_ceramic; the class rests on category, bbox and mass, so it is at most medium with the caption class as alternative (#73 review item 5).",
+   "rule": "caption_conflict",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/owl/00000",
+   "class": "abs_toy_plastic",
+   "confidence_from": "low",
+   "confidence_to": "low",
+   "alternatives": [
+    "softwood",
+    "hardwood"
+   ],
+   "reason": "Caption material \"wooden owl figurine\" names softwood, hardwood, not abs_toy_plastic; the class rests on category, bbox and mass, so it is at most medium with the caption class as alternative (#73 review item 5).",
+   "rule": "caption_conflict",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/paper_ball/00001",
+   "class": "paper_cardboard",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "glazed_ceramic"
+   ],
+   "reason": "Caption material \"glossy ceramic\" names glazed_ceramic, not paper_cardboard; the class rests on category, bbox and mass, so it is at most medium with the caption class as alternative (#73 review item 5).",
+   "rule": "caption_conflict",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/pot/00001",
+   "class": "steel",
+   "confidence_from": "low",
+   "confidence_to": "low",
+   "alternatives": [
+    "glazed_ceramic"
+   ],
+   "reason": "Caption material \"white ceramic saucepan\" names glazed_ceramic, not steel; the class rests on category, bbox and mass, so it is at most medium with the caption class as alternative (#73 review item 5).",
+   "rule": "caption_conflict",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/saw/00000",
+   "class": "steel",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "softwood",
+    "hardwood"
+   ],
+   "reason": "Caption material \"wooden hacksaw frame\" names softwood, hardwood, not steel; the class rests on category, bbox and mass, so it is at most medium with the caption class as alternative (#73 review item 5).",
+   "rule": "caption_conflict",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/shoe/00006",
+   "class": "fabric_textile",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "rubber_elastomer"
+   ],
+   "reason": "Caption material \"rubber outsole\" names rubber_elastomer, not fabric_textile; the class rests on category, bbox and mass, so it is at most medium with the caption class as alternative (#73 review item 5).",
+   "rule": "caption_conflict",
+   "version": "v3"
+  },
+  {
+   "id": "Rigid/shoe/00007",
+   "class": "fabric_textile",
+   "confidence_from": "medium",
+   "confidence_to": "medium",
+   "alternatives": [
+    "rubber_elastomer"
+   ],
+   "reason": "Caption material \"rubber outsole\" names rubber_elastomer, not fabric_textile; the class rests on category, bbox and mass, so it is at most medium with the caption class as alternative (#73 review item 5).",
+   "rule": "caption_conflict",
+   "version": "v3"
+  }
+ ]
+}

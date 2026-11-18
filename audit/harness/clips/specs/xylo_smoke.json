@@ -1,0 +1,121 @@
+{
+ "purpose": "A21 camera choice: four candidate cameras on five logged actions (start, strikes on keys 0, 2, 6, 7)",
+ "cameras": [
+  {
+   "name": "xfront",
+   "eye": [
+    -0.074,
+    0.38,
+    0.845
+   ],
+   "target": [
+    -0.074,
+    -0.03,
+    0.8
+   ],
+   "focal_mm": 20,
+   "res": [
+    1280,
+    720
+   ]
+  },
+  {
+   "name": "xlow",
+   "eye": [
+    -0.074,
+    0.3,
+    0.812
+   ],
+   "target": [
+    -0.074,
+    -0.03,
+    0.805
+   ],
+   "focal_mm": 18,
+   "res": [
+    1280,
+    720
+   ]
+  },
+  {
+   "name": "xend",
+   "eye": [
+    0.33,
+    -0.03,
+    0.835
+   ],
+   "target": [
+    -0.074,
+    -0.03,
+    0.8
+   ],
+   "focal_mm": 24,
+   "res": [
+    1280,
+    720
+   ]
+  },
+  {
+   "name": "x34",
+   "eye": [
+    0.18,
+    0.32,
+    0.92
+   ],
+   "target": [
+    -0.074,
+    -0.04,
+    0.79
+   ],
+   "focal_mm": 20,
+   "res": [
+    1280,
+    720
+   ]
+  }
+ ],
+ "windows": [
+  {
+   "case": null,
+   "unit": "action",
+   "from": 1,
+   "to": 1
+  },
+  {
+   "case": null,
+   "unit": "action",
+   "from": 114,
+   "to": 114
+  },
+  {
+   "case": null,
+   "unit": "action",
+   "from": 159,
+   "to": 159
+  },
+  {
+   "case": null,
+   "unit": "action",
+   "from": 247,
+   "to": 247
+  },
+  {
+   "case": null,
+   "unit": "action",
+   "from": 269,
+   "to": 269
+  }
+ ],
+ "mode_sweep": [
+  {
+   "name": "pt8",
+   "carb": {
+    "/rtx/rendermode": "PathTracing",
+    "/rtx/pathtracing/spp": 8,
+    "/rtx/pathtracing/totalSpp": 8,
+    "/rtx/pathtracing/optixDenoiser/enabled": true
+   },
+   "warmup": 4
+  }
+ ]
+}

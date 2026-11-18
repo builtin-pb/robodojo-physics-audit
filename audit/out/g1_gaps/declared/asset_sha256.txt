@@ -1,0 +1,12 @@
+5723a835bf5627a935a8dabb3a44447725bd1465243ce791e221b3e990121d63  /scratch/<user>/isaac/robodojo/Assets/Robots/x5/ARX.usd
+96369690dd2a0bdc583f21e7a985e2a0c0d9a50e0f4c6d41d8dc4d9c918df53b  /scratch/<user>/isaac/robodojo/Assets/Robots/x5/configuration/ARX_physics.usd
+7aaa308a1a5b6a213d914db86ba09ddd6252f25cb498ac9a148bfa6c7166a423  /scratch/<user>/isaac/robodojo/Assets/Robots/x5/X5A.urdf
+ebde63388f344570acce9b7b06c30b2d48461ecd83d53cea54de5eded105be07  /scratch/<user>/isaac/robodojo/Assets/Object/RoboDojo/Dynamic/conveyor/00000/object.usdz
+0aae06620ed290d1204ce4fc32cbdd2ec42027fe94d99d545b5d5a9c03ede612  /scratch/<user>/isaac/robodojo/Assets/Object/RoboDojo/Dynamic/conveyor/00001/object.usdz
+417f7b067e13f5371c84164daf2d597dd29b7d96f7af8c3952758695e400f830  /scratch/<user>/isaac/robodojo/Assets/Object/RoboDojo/Articulation/egg_holder/00000/object.usdz
+4314295cc9141473b1d5b2acb55b36112771c7b457d689cc4b2f5c40ceb4fb4e  /scratch/<user>/isaac/robodojo/Assets/Object/RoboDojo/Articulation/laptop/00000/object.usdz
+1283aa1a6a6b148541cf7e25c60b7f0ad83551833f04f89ed1972cfc4c5ae529  /scratch/<user>/isaac/robodojo/Assets/Object/RoboDojo/Articulation/laptop/00001/object.usdz
+0b5e0adeeaa15179b3ab14a56a581c960fe118d4917957b6914e3ecdd7a1330d  /scratch/<user>/isaac/robodojo/Assets/Object/RoboDojo/Articulation/SpringButton/00002/object.usdz
+4be7c9213bff9aceaa5ea385707aeeb7b982bc63bed891a14ad95812e256aecd  /scratch/<user>/isaac/robodojo/Assets/Object/RoboDojo/Articulation/SpringButton/00003/object.usdz
+796bc70d0edf20ca2959cf848c506097e2358931c110eec6612f9e27006ab305  /scratch/<user>/isaac/robodojo/Assets/Object/RoboDojo/Articulation/toaster/00001/object.usdz
+89a09efbf280e3cd6458a22ee441d0be839b2846f3c0cb743729895a4ca3e28c  /scratch/<user>/isaac/robodojo/Assets/Object/RoboDojo/Articulation/toaster/00004/object.usdz

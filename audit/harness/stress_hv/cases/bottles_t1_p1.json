@@ -1,0 +1,443 @@
+[
+ {
+  "name": "rays_dustbin",
+  "kind": "rays",
+  "label": "dustbin",
+  "heights": [
+   -0.28,
+   -0.15,
+   0.0,
+   0.15,
+   0.28
+  ],
+  "n_az": 16,
+  "far": 0.6,
+  "top": 0.45,
+  "below": -0.45,
+  "rim": 0.325
+ },
+ {
+  "name": "drop_release_lying_b2",
+  "kind": "launch",
+  "target": "bottle2",
+  "ref": "dustbin",
+  "pos_frame": "abs",
+  "pos": [
+   -0.62,
+   -0.1,
+   0.88
+  ],
+  "orient": "lying_x",
+  "vel": [
+   0,
+   0,
+   0
+  ],
+  "steps": 300
+ },
+ {
+  "name": "drop_release_upright_b2",
+  "kind": "launch",
+  "target": "bottle2",
+  "ref": "dustbin",
+  "pos_frame": "abs",
+  "pos": [
+   -0.62,
+   -0.1,
+   0.88
+  ],
+  "orient": "upright",
+  "vel": [
+   0,
+   0,
+   0
+  ],
+  "steps": 300
+ },
+ {
+  "name": "drop_release_lying_b1",
+  "kind": "launch",
+  "target": "bottle1",
+  "ref": "dustbin",
+  "pos_frame": "abs",
+  "pos": [
+   -0.62,
+   -0.1,
+   0.88
+  ],
+  "orient": "lying_x",
+  "vel": [
+   0,
+   0,
+   0
+  ],
+  "steps": 300
+ },
+ {
+  "name": "drop_release_lying_b3",
+  "kind": "launch",
+  "target": "bottle3",
+  "ref": "dustbin",
+  "pos_frame": "abs",
+  "pos": [
+   -0.62,
+   -0.1,
+   0.88
+  ],
+  "orient": "lying_x",
+  "vel": [
+   0,
+   0,
+   0
+  ],
+  "steps": 300
+ },
+ {
+  "name": "wall_side_2",
+  "kind": "launch",
+  "target": "bottle2",
+  "ref": "dustbin",
+  "pos": [
+   0,
+   0,
+   0.0
+  ],
+  "orient": "lying_y",
+  "vel": [
+   2,
+   0,
+   0
+  ],
+  "steps": 150
+ },
+ {
+  "name": "wall_side_4",
+  "kind": "launch",
+  "target": "bottle2",
+  "ref": "dustbin",
+  "pos": [
+   0,
+   0,
+   0.0
+  ],
+  "orient": "lying_y",
+  "vel": [
+   4,
+   0,
+   0
+  ],
+  "steps": 150
+ },
+ {
+  "name": "wall_side_6",
+  "kind": "launch",
+  "target": "bottle2",
+  "ref": "dustbin",
+  "pos": [
+   0,
+   0,
+   0.0
+  ],
+  "orient": "lying_y",
+  "vel": [
+   6,
+   0,
+   0
+  ],
+  "steps": 150
+ },
+ {
+  "name": "wall_side_9",
+  "kind": "launch",
+  "target": "bottle2",
+  "ref": "dustbin",
+  "pos": [
+   0,
+   0,
+   0.0
+  ],
+  "orient": "lying_y",
+  "vel": [
+   9,
+   0,
+   0
+  ],
+  "steps": 150
+ },
+ {
+  "name": "wall_side_12",
+  "kind": "launch",
+  "target": "bottle2",
+  "ref": "dustbin",
+  "pos": [
+   0,
+   0,
+   0.0
+  ],
+  "orient": "lying_y",
+  "vel": [
+   12,
+   0,
+   0
+  ],
+  "steps": 150
+ },
+ {
+  "name": "wall_side_16",
+  "kind": "launch",
+  "target": "bottle2",
+  "ref": "dustbin",
+  "pos": [
+   0,
+   0,
+   0.0
+  ],
+  "orient": "lying_y",
+  "vel": [
+   16,
+   0,
+   0
+  ],
+  "steps": 150
+ },
+ {
+  "name": "wall_side_24",
+  "kind": "launch",
+  "target": "bottle2",
+  "ref": "dustbin",
+  "pos": [
+   0,
+   0,
+   0.0
+  ],
+  "orient": "lying_y",
+  "vel": [
+   24,
+   0,
+   0
+  ],
+  "steps": 150
+ },
+ {
+  "name": "wall_end_6",
+  "kind": "launch",
+  "target": "bottle2",
+  "ref": "dustbin",
+  "pos": [
+   0,
+   0,
+   0.0
+  ],
+  "orient": "lying_x",
+  "vel": [
+   6,
+   0,
+   0
+  ],
+  "steps": 150
+ },
+ {
+  "name": "wall_end_12",
+  "kind": "launch",
+  "target": "bottle2",
+  "ref": "dustbin",
+  "pos": [
+   0,
+   0,
+   0.0
+  ],
+  "orient": "lying_x",
+  "vel": [
+   12,
+   0,
+   0
+  ],
+  "steps": 150
+ },
+ {
+  "name": "floor_down_6",
+  "kind": "launch",
+  "target": "bottle2",
+  "ref": "dustbin",
+  "pos": [
+   0,
+   0,
+   -0.15
+  ],
+  "orient": "lying_x",
+  "vel": [
+   0,
+   0,
+   -6
+  ],
+  "steps": 150
+ },
+ {
+  "name": "floor_down_12",
+  "kind": "launch",
+  "target": "bottle2",
+  "ref": "dustbin",
+  "pos": [
+   0,
+   0,
+   -0.15
+  ],
+  "orient": "lying_x",
+  "vel": [
+   0,
+   0,
+   -12
+  ],
+  "steps": 150
+ },
+ {
+  "name": "floor_down_24",
+  "kind": "launch",
+  "target": "bottle2",
+  "ref": "dustbin",
+  "pos": [
+   0,
+   0,
+   -0.15
+  ],
+  "orient": "lying_x",
+  "vel": [
+   0,
+   0,
+   -24
+  ],
+  "steps": 150
+ },
+ {
+  "name": "embed_table_lying_2mm",
+  "kind": "launch",
+  "target": "bottle2",
+  "pos": "settled",
+  "shift": [
+   0,
+   0,
+   -0.002
+  ],
+  "vel": [
+   0,
+   0,
+   0
+  ],
+  "steps": 150,
+  "embed_ref_z": true
+ },
+ {
+  "name": "embed_table_lying_5mm",
+  "kind": "launch",
+  "target": "bottle2",
+  "pos": "settled",
+  "shift": [
+   0,
+   0,
+   -0.005
+  ],
+  "vel": [
+   0,
+   0,
+   0
+  ],
+  "steps": 150,
+  "embed_ref_z": true
+ },
+ {
+  "name": "embed_table_lying_10mm",
+  "kind": "launch",
+  "target": "bottle2",
+  "pos": "settled",
+  "shift": [
+   0,
+   0,
+   -0.01
+  ],
+  "vel": [
+   0,
+   0,
+   0
+  ],
+  "steps": 150,
+  "embed_ref_z": true
+ },
+ {
+  "name": "embed_table_lying_20mm",
+  "kind": "launch",
+  "target": "bottle2",
+  "pos": "settled",
+  "shift": [
+   0,
+   0,
+   -0.02
+  ],
+  "vel": [
+   0,
+   0,
+   0
+  ],
+  "steps": 150,
+  "embed_ref_z": true
+ },
+ {
+  "name": "embed_table_upright_5mm",
+  "kind": "launch",
+  "target": "bottle0",
+  "pos": "settled",
+  "shift": [
+   0,
+   0,
+   -0.005
+  ],
+  "vel": [
+   0,
+   0,
+   0
+  ],
+  "steps": 150,
+  "embed_ref_z": true
+ },
+ {
+  "name": "embed_table_upright_10mm",
+  "kind": "launch",
+  "target": "bottle0",
+  "pos": "settled",
+  "shift": [
+   0,
+   0,
+   -0.01
+  ],
+  "vel": [
+   0,
+   0,
+   0
+  ],
+  "steps": 150,
+  "embed_ref_z": true
+ },
+ {
+  "name": "press_bottle_lying_10mm",
+  "kind": "robot_press",
+  "target": "bottle2",
+  "point_offset": [
+   0,
+   0,
+   0.0
+  ],
+  "point_above_center": 0.032,
+  "depth": 0.01
+ },
+ {
+  "name": "press_bottle_lying_25mm",
+  "kind": "robot_press",
+  "target": "bottle2",
+  "point_offset": [
+   0,
+   0,
+   0.0
+  ],
+  "point_above_center": 0.032,
+  "depth": 0.025
+ }
+]

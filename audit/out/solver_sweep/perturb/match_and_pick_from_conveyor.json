@@ -1,0 +1,12 @@
+[
+ {
+  "cell_name": "match_and_pick_from_conveyor__perturb",
+  "layout": 0,
+  "overrides": {
+   "spawn_lift": {
+    "stems": "*",
+    "dz_m": 1e-06
+   }
+  }
+ }
+]

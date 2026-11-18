@@ -1,0 +1,126 @@
+[
+ {
+  "cell_name": "organize_table__shipped",
+  "layout": 0,
+  "overrides": {
+   "slide_target": {
+    "label": "mouse",
+    "inst": "mouse_4_1",
+    "labelled": true,
+    "stem": "mouse_4",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     -0.005168,
+     -0.999987
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "organize_table__dt2",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.002,
+   "slide_target": {
+    "label": "mouse",
+    "inst": "mouse_4_1",
+    "labelled": true,
+    "stem": "mouse_4",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     -0.005168,
+     -0.999987
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "organize_table__dt1",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.001,
+   "slide_target": {
+    "label": "mouse",
+    "inst": "mouse_4_1",
+    "labelled": true,
+    "stem": "mouse_4",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     -0.005168,
+     -0.999987
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "organize_table__iters4x",
+  "layout": 0,
+  "overrides": {
+   "min_pos_iters": 64,
+   "slide_target": {
+    "label": "mouse",
+    "inst": "mouse_4_1",
+    "labelled": true,
+    "stem": "mouse_4",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     -0.005168,
+     -0.999987
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "organize_table__stab_off",
+  "layout": 0,
+  "overrides": {
+   "enable_stabilization": false,
+   "slide_target": {
+    "label": "mouse",
+    "inst": "mouse_4_1",
+    "labelled": true,
+    "stem": "mouse_4",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     -0.005168,
+     -0.999987
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "organize_table__cpu",
+  "layout": 0,
+  "overrides": {
+   "gpu_dynamics": false,
+   "slide_target": {
+    "label": "mouse",
+    "inst": "mouse_4_1",
+    "labelled": true,
+    "stem": "mouse_4",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     -0.005168,
+     -0.999987
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "organize_table__shipped_repeat",
+  "layout": 0,
+  "overrides": {
+   "slide_target": {
+    "label": "mouse",
+    "inst": "mouse_4_1",
+    "labelled": true,
+    "stem": "mouse_4",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     -0.005168,
+     -0.999987
+    ]
+   }
+  }
+ }
+]

@@ -1,0 +1,14 @@
+tag=probe_ngx_p1 host=della-vis2.princeton.edu slurm_job= start=2026-11-13T17:24:00-05:00
+repo_head=34a19f126e25e3c52d7f50688dde858eb128c0ee repo_diff_sha1=da39a3ee5e6b4b0d3255bfef95601890afd80709
+eval_num=3 evaluator=v1 preset=shipped gpu=1
+index, name, driver_version, memory.used [MiB], memory.total [MiB]
+0, NVIDIA A40, 615.71.10, 38466 MiB, 46068 MiB
+1, NVIDIA A40, 615.71.10, 5049 MiB, 46068 MiB
+need_policy_mib=34000 need_sim_mib=6000 reserve_mib=2000
+render_probe=12 probe_layout=0 (no policy server)
+ngx_bind=-B /usr/lib64/libnvidia-ngx.so.615.71.10:/.singularity.d/libs/libnvidia-ngx.so.1 carb=none save_obs_at=0,5,6,11
+free_check before=sim attempt=0 free_mib=40493 need_mib=8000 t=17:24:01
+sim attempt=0 rc=0 s=93
+end=2026-11-13T17:25:34-05:00 wall_s=94
+physx_corrupt_lines=0 gpu_alloc_fail_lines=0 server_oom_lines=
+ngx_lines: 0 ngx_fail_lines=0

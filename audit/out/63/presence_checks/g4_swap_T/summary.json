@@ -1,0 +1,121 @@
+{
+ "task": "swap_T",
+ "arms": {
+  "shipped": {
+   "what": "RoboDojo as released (script_swap_T_v2)",
+   "control": false,
+   "episodes": 20,
+   "successes": 20,
+   "mean_score": 100.0,
+   "episode_s_median": 61.4,
+   "failing_layouts": [],
+   "finger_table_contact_episodes": 0,
+   "finger_table_force_episodes": 0,
+   "tilt_at_hover_deg": {
+    "median": 0.438,
+    "max": 15.676
+   },
+   "tilt_max_held_deg": {
+    "median": 0.494,
+    "max": 16.624
+   },
+   "final_err_success": {
+    "xy_mm_max": 0.49,
+    "rot_deg_max": 0.481
+   },
+   "pad_T_max_force_N_median": 26.97,
+   "pad_T_hold_force_N_median": 24.786,
+   "other_contact_pairs": []
+  },
+  "v2b": {
+   "what": "fully corrected, global equal-weight map v2b (script_swap_T_v2)",
+   "control": false,
+   "episodes": 20,
+   "successes": 20,
+   "mean_score": 100.0,
+   "episode_s_median": 88.15,
+   "failing_layouts": [],
+   "finger_table_contact_episodes": 0,
+   "finger_table_force_episodes": 0,
+   "tilt_at_hover_deg": {
+    "median": 0.022,
+    "max": 0.141
+   },
+   "tilt_max_held_deg": {
+    "median": 0.075,
+    "max": 0.171
+   },
+   "final_err_success": {
+    "xy_mm_max": 0.24,
+    "rot_deg_max": 0.083
+   },
+   "pad_T_max_force_N_median": 497.705,
+   "pad_T_hold_force_N_median": 150.33,
+   "other_contact_pairs": []
+  },
+  "v2_presence": {
+   "what": "fully corrected, global presence-weighted map v2_presence (script_swap_T_v2)",
+   "control": false,
+   "episodes": 20,
+   "successes": 20,
+   "mean_score": 100.0,
+   "episode_s_median": 129.6,
+   "failing_layouts": [],
+   "finger_table_contact_episodes": 0,
+   "finger_table_force_episodes": 0,
+   "tilt_at_hover_deg": {
+    "median": 0.022,
+    "max": 0.05
+   },
+   "tilt_max_held_deg": {
+    "median": 0.074,
+    "max": 0.147
+   },
+   "final_err_success": {
+    "xy_mm_max": 0.5,
+    "rot_deg_max": 0.277
+   },
+   "pad_T_max_force_N_median": 497.701,
+   "pad_T_hold_force_N_median": 150.322,
+   "other_contact_pairs": []
+  }
+ },
+ "paired": {
+  "shipped": {
+   "pairs": 20,
+   "arm_only_success": 0,
+   "reference_only_success": 0,
+   "mean_score_difference": 0.0,
+   "bootstrap95": [
+    0.0,
+    0.0
+   ],
+   "mcnemar_p": 1.0,
+   "identical_final_state": 0,
+   "beyond_noise": false,
+   "reference": "v2b"
+  },
+  "v2_presence": {
+   "pairs": 20,
+   "arm_only_success": 0,
+   "reference_only_success": 0,
+   "mean_score_difference": 0.0,
+   "bootstrap95": [
+    0.0,
+    0.0
+   ],
+   "mcnemar_p": 1.0,
+   "identical_final_state": 0,
+   "beyond_noise": false,
+   "reference": "v2b"
+  }
+ },
+ "determinism": {},
+ "cost": {
+  "processes": 9,
+  "process_hours": 2.046,
+  "gpu_busy_hours": {
+   "della-vis2:1": 0.494
+  }
+ }
+}

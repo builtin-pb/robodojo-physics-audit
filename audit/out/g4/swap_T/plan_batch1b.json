@@ -1,0 +1,72 @@
+[
+ {
+  "name": "g4st_sT_corr",
+  "seed": 2,
+  "layouts": "0-19",
+  "procs": 3,
+  "args": "--task swap_T --policy script_swap_T --evaluator v2 --contact_log --log_poses --physics_preset corrected --physics_params $W/wt-g4st/docs/params --physics_scenario_opt_in swap_T_primary"
+ },
+ {
+  "name": "g4st_cb_corr",
+  "seed": 2,
+  "layouts": "0,1,6,8,9,14",
+  "procs": 2,
+  "args": "--task cover_blocks --policy script_cover_blocks --evaluator v2 --contact_log --log_poses --physics_preset corrected --physics_params $W/wt-g4st/docs/params --physics_scenario_opt_in cover_blocks_primary"
+ },
+ {
+  "name": "g4st_sT_limits",
+  "seed": 2,
+  "layouts": "0-19",
+  "procs": 2,
+  "args": "--task swap_T --policy script_swap_T --evaluator v2 --contact_log --log_poses --physics_preset shipped --physics_fixes robot_limits --physics_params $W/wt-g4st/docs/params --physics_scenario_opt_in swap_T_primary"
+ },
+ {
+  "name": "g4st_sT_corr_rep",
+  "seed": 2,
+  "layouts": "0",
+  "procs": 1,
+  "args": "--task swap_T --policy script_swap_T --evaluator v2 --contact_log --log_poses --physics_preset corrected --physics_params $W/wt-g4st/docs/params --physics_scenario_opt_in swap_T_primary --repeats 2"
+ },
+ {
+  "name": "g4st_sT_corr_nolimits",
+  "seed": 2,
+  "layouts": "0-19",
+  "procs": 3,
+  "args": "--task swap_T --policy script_swap_T --evaluator v2 --contact_log --log_poses --physics_preset corrected --physics_params $W/wt-g4st/docs/params --physics_scenario_opt_in swap_T_primary --physics_fixes=-robot_limits"
+ },
+ {
+  "name": "g4st_cb_corr_rep",
+  "seed": 2,
+  "layouts": "0",
+  "procs": 1,
+  "args": "--task cover_blocks --policy script_cover_blocks --evaluator v2 --contact_log --log_poses --physics_preset corrected --physics_params $W/wt-g4st/docs/params --physics_scenario_opt_in cover_blocks_primary --repeats 2"
+ },
+ {
+  "name": "g4st_cb_off3_ship",
+  "seed": 2,
+  "layouts": "0,1,6,8,9,14",
+  "procs": 2,
+  "args": "--task cover_blocks --policy script_cover_blocks_offset --evaluator v2 --contact_log --log_poses --cb_offset_mm 3,0 --physics_preset shipped"
+ },
+ {
+  "name": "g4st_cb_off10_ship",
+  "seed": 2,
+  "layouts": "0,1,6,8,9,14",
+  "procs": 2,
+  "args": "--task cover_blocks --policy script_cover_blocks_offset --evaluator v2 --contact_log --log_poses --cb_offset_mm 10,0 --physics_preset shipped"
+ },
+ {
+  "name": "g4st_cb_off3_corr",
+  "seed": 2,
+  "layouts": "0,1,6,8,9,14",
+  "procs": 2,
+  "args": "--task cover_blocks --policy script_cover_blocks_offset --evaluator v2 --contact_log --log_poses --cb_offset_mm 3,0 --physics_preset corrected --physics_params $W/wt-g4st/docs/params --physics_scenario_opt_in cover_blocks_primary"
+ },
+ {
+  "name": "g4st_cb_off10_corr",
+  "seed": 2,
+  "layouts": "0,1,6,8,9,14",
+  "procs": 2,
+  "args": "--task cover_blocks --policy script_cover_blocks_offset --evaluator v2 --contact_log --log_poses --cb_offset_mm 10,0 --physics_preset corrected --physics_params $W/wt-g4st/docs/params --physics_scenario_opt_in cover_blocks_primary"
+ }
+]

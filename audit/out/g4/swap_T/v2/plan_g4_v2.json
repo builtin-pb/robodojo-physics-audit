@@ -1,0 +1,37 @@
+[
+ {
+  "name": "g4st2_sT_ship",
+  "seed": 2,
+  "layouts": "0-19",
+  "procs": 2,
+  "args": "--task swap_T --policy script_swap_T_v2 --evaluator v2 --contact_log --log_poses --physics_preset shipped"
+ },
+ {
+  "name": "g4st2_sT_corr",
+  "seed": 2,
+  "layouts": "0-19",
+  "procs": 3,
+  "args": "--task swap_T --policy script_swap_T_v2 --evaluator v2 --contact_log --log_poses --physics_preset corrected --physics_params $W/wt-sT2/docs/params --physics_scenario_opt_in swap_T_primary"
+ },
+ {
+  "name": "g4st2_sT_limits",
+  "seed": 2,
+  "layouts": "0-19",
+  "procs": 2,
+  "args": "--task swap_T --policy script_swap_T_v2 --evaluator v2 --contact_log --log_poses --physics_preset shipped --physics_fixes robot_limits --physics_params $W/wt-sT2/docs/params --physics_scenario_opt_in swap_T_primary"
+ },
+ {
+  "name": "g4st2_sT_ship_rep",
+  "seed": 2,
+  "layouts": "0",
+  "procs": 1,
+  "args": "--task swap_T --policy script_swap_T_v2 --evaluator v2 --contact_log --log_poses --physics_preset shipped --repeats 2"
+ },
+ {
+  "name": "g4st2_sT_corr_rep",
+  "seed": 2,
+  "layouts": "0",
+  "procs": 1,
+  "args": "--task swap_T --policy script_swap_T_v2 --evaluator v2 --contact_log --log_poses --physics_preset corrected --physics_params $W/wt-sT2/docs/params --physics_scenario_opt_in swap_T_primary --repeats 2"
+ }
+]

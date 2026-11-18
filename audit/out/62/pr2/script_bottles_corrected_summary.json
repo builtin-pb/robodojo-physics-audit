@@ -1,0 +1,4255 @@
+{
+  "full_archive_sha256": "9a9df5c2b2d5e75d2ec658a7f17cd75d0a401d5707e62d1466df873f25c74845",
+  "full_archive_bytes": 1332021,
+  "versions": {
+    "repo_head": "57c472411e6c159c766b55b637bc7d5c004b6f94",
+    "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+    "isaaclab": "afca7b09d60d8beb9c1cb28b43066499940b969b",
+    "container": "isaac-sim_5.1.0.sif",
+    "isaac_sim": [
+      "5.1.0",
+      "rc.19",
+      "5"
+    ]
+  },
+  "layout": 0,
+  "evaluator": "v2",
+  "steps_through_reset": 844,
+  "episode_steps": 6490,
+  "take_action_cnt": 649,
+  "success": true,
+  "wall_seconds": 170.8,
+  "eval_result": {
+    "evaluator_version": "evaluator v2",
+    "task_name": "put_bottles_into_dustbin",
+    "config_name": "arx_x5",
+    "policy_name": "harness",
+    "seed": 0,
+    "native_eval_num": 50,
+    "scheduled_count": 1,
+    "scheduled_layout_ids": [
+      0
+    ],
+    "unresolved_layout_ids": [],
+    "resolved_count": 1,
+    "complete": true,
+    "valid": true,
+    "eval_time": 1,
+    "success_rate": 1.0,
+    "score": 100.0,
+    "category_counts": {
+      "success": 1,
+      "failure": 0,
+      "timeout": 0,
+      "policy_error": 0,
+      "simulator_break": 0,
+      "evaluator_error": 0,
+      "unstable_layout": 0,
+      "excluded": 0
+    },
+    "drops": {
+      "total": 0,
+      "policy_error": 0,
+      "simulator_break": 0,
+      "evaluator_error": 0,
+      "unstable_layout": 0,
+      "excluded": 0
+    },
+    "aggregation": {
+      "evaluator_version": "evaluator v2",
+      "denominator_rule": "all_scheduled",
+      "excluded_categories": [],
+      "scheduled_count": 1,
+      "resolved_count": 1,
+      "denominator": 1,
+      "complete": true,
+      "valid": true,
+      "success_count": 1,
+      "success_rate": 1.0,
+      "success_rate_pct": 100.0,
+      "score": 100.0
+    },
+    "ledger": [
+      {
+        "layout_id": 0,
+        "seed": 0,
+        "category": "success",
+        "success": true,
+        "score": 1.0,
+        "steps": 649,
+        "reason": "reward_check_passed"
+      }
+    ],
+    "details": {
+      "0": {
+        "layout_id": 0,
+        "seed": 0,
+        "category": "success",
+        "success": true,
+        "score": 1.0,
+        "steps": 649,
+        "reason": "reward_check_passed"
+      }
+    },
+    "physics": {
+      "preset": "corrected",
+      "fixes": [
+        "collision",
+        "order",
+        "size",
+        "values"
+      ],
+      "device": "cpu",
+      "dormant_values_active": false,
+      "values_delivered": true,
+      "table_sha256": "7d053f8c828342dee7db6c3b3aeed22fb75e7caca104fa9884496d52f98c5749",
+      "admitted_statuses": [
+        "estimated",
+        "sourced"
+      ],
+      "scenario_opt_in": "bottles_primary_empty",
+      "scenario": {
+        "finger_pad": "pad_hard",
+        "table": "table_laminate",
+        "ground_combine": "average",
+        "fill": "empty"
+      },
+      "status_counts": {
+        "estimated": 72,
+        "unsourced": 85,
+        "sourced": 30
+      },
+      "below_g1_unsourced_opt_in": true,
+      "unsourced_keys_used": [
+        "assets.Rigid/bottle/00000.mass_by_fill.empty",
+        "assets.Rigid/bottle/00002.mass_by_fill.empty",
+        "assets.Rigid/bottle/00005.mass_by_fill.empty",
+        "assets.Rigid/bottle/00022.material_override.restitution_by_fill.empty",
+        "assets.Rigid/bottle/00025.mass_by_fill.empty",
+        "assets.Rigid/bottle/00041.mass_by_fill.empty",
+        "assets.Rigid/bottle/00050.mass_by_fill.empty",
+        "assets.Rigid/bottle/00055.mass_by_fill.empty",
+        "assets.Rigid/bottle/00059.mass_by_fill.empty",
+        "assets.Rigid/bottle/00060.mass_by_fill.empty",
+        "classes.abs_device_housing.restitution",
+        "classes.aluminium.restitution",
+        "classes.ground.restitution",
+        "classes.pad_elastomer.restitution",
+        "classes.pad_hard.restitution",
+        "classes.pet_plastic.restitution",
+        "classes.polyolefin_plastic.restitution",
+        "classes.steel.restitution",
+        "classes.table_laminate.restitution",
+        "classes.table_wood.restitution",
+        "pairs.abs_device_housing__ground.mu_kinetic",
+        "pairs.abs_device_housing__ground.mu_static",
+        "pairs.abs_device_housing__pad_elastomer.mu_kinetic",
+        "pairs.abs_device_housing__pad_elastomer.mu_static",
+        "pairs.abs_device_housing__table_laminate.mu_kinetic",
+        "pairs.abs_device_housing__table_laminate.mu_static",
+        "pairs.abs_device_housing__table_wood.mu_kinetic",
+        "pairs.abs_device_housing__table_wood.mu_static",
+        "pairs.aluminium__ground.mu_kinetic",
+        "pairs.aluminium__ground.mu_static",
+        "pairs.aluminium__table_laminate.mu_kinetic",
+        "pairs.aluminium__table_laminate.mu_static",
+        "pairs.ground__pet_plastic.mu_kinetic",
+        "pairs.ground__pet_plastic.mu_static",
+        "pairs.ground__pet_plastic.restitution",
+        "pairs.ground__polyolefin_plastic.mu_kinetic",
+        "pairs.ground__polyolefin_plastic.mu_static",
+        "pairs.ground__polyolefin_plastic.restitution",
+        "pairs.ground__steel.mu_kinetic",
+        "pairs.ground__steel.mu_static",
+        "pairs.ground__steel.restitution",
+        "pairs.pad_elastomer__pet_plastic.mu_kinetic",
+        "pairs.pad_elastomer__pet_plastic.mu_static",
+        "pairs.pad_elastomer__polyolefin_plastic.mu_kinetic",
+        "pairs.pad_elastomer__polyolefin_plastic.mu_static",
+        "pairs.pet_plastic__pet_plastic.restitution",
+        "pairs.pet_plastic__polyolefin_plastic.restitution",
+        "pairs.pet_plastic__steel.restitution",
+        "pairs.pet_plastic__table_laminate.mu_kinetic",
+        "pairs.pet_plastic__table_laminate.mu_static",
+        "pairs.pet_plastic__table_laminate.restitution",
+        "pairs.pet_plastic__table_wood.mu_kinetic",
+        "pairs.pet_plastic__table_wood.mu_static",
+        "pairs.pet_plastic__table_wood.restitution",
+        "pairs.polyolefin_plastic__polyolefin_plastic.restitution",
+        "pairs.polyolefin_plastic__steel.restitution",
+        "pairs.polyolefin_plastic__table_laminate.mu_kinetic",
+        "pairs.polyolefin_plastic__table_laminate.mu_static",
+        "pairs.polyolefin_plastic__table_laminate.restitution",
+        "pairs.polyolefin_plastic__table_wood.mu_kinetic",
+        "pairs.polyolefin_plastic__table_wood.mu_static",
+        "pairs.polyolefin_plastic__table_wood.restitution",
+        "pairs.steel__table_laminate.mu_kinetic",
+        "pairs.steel__table_laminate.mu_static",
+        "pairs.steel__table_laminate.restitution",
+        "pairs.steel__table_wood.restitution",
+        "robots.x5.non_pad_link_material_classes.base_link",
+        "robots.x5.non_pad_link_material_classes.camera",
+        "robots.x5.non_pad_link_material_classes.camera_base",
+        "robots.x5.non_pad_link_material_classes.link1",
+        "robots.x5.non_pad_link_material_classes.link2",
+        "robots.x5.non_pad_link_material_classes.link3",
+        "robots.x5.non_pad_link_material_classes.link4",
+        "robots.x5.non_pad_link_material_classes.link5",
+        "robots.x5.non_pad_link_material_classes.link6",
+        "robots.x5.sanitize_camera_inertials",
+        "unary_values.abs_device_housing",
+        "unary_values.aluminium",
+        "unary_values.ground",
+        "unary_values.pad_elastomer",
+        "unary_values.pet_plastic",
+        "unary_values.polyolefin_plastic",
+        "unary_values.steel",
+        "unary_values.table_laminate",
+        "unary_values.table_wood"
+      ],
+      "profile_unsourced_keys_used": [
+        "assets.Rigid/bottle/00000.mass_by_fill.empty",
+        "assets.Rigid/bottle/00002.mass_by_fill.empty",
+        "assets.Rigid/bottle/00005.mass_by_fill.empty",
+        "assets.Rigid/bottle/00022.material_override.restitution_by_fill.empty",
+        "assets.Rigid/bottle/00025.mass_by_fill.empty",
+        "assets.Rigid/bottle/00041.mass_by_fill.empty",
+        "assets.Rigid/bottle/00050.mass_by_fill.empty",
+        "assets.Rigid/bottle/00055.mass_by_fill.empty",
+        "assets.Rigid/bottle/00059.mass_by_fill.empty",
+        "assets.Rigid/bottle/00060.mass_by_fill.empty",
+        "classes.abs_device_housing.restitution",
+        "classes.aluminium.restitution",
+        "classes.ground.restitution",
+        "classes.pad_elastomer.restitution",
+        "classes.pad_hard.restitution",
+        "classes.pet_plastic.restitution",
+        "classes.polyolefin_plastic.restitution",
+        "classes.steel.restitution",
+        "classes.table_laminate.restitution",
+        "classes.table_wood.restitution",
+        "pairs.abs_device_housing__ground.mu_kinetic",
+        "pairs.abs_device_housing__ground.mu_static",
+        "pairs.abs_device_housing__pad_elastomer.mu_kinetic",
+        "pairs.abs_device_housing__pad_elastomer.mu_static",
+        "pairs.abs_device_housing__table_laminate.mu_kinetic",
+        "pairs.abs_device_housing__table_laminate.mu_static",
+        "pairs.abs_device_housing__table_wood.mu_kinetic",
+        "pairs.abs_device_housing__table_wood.mu_static",
+        "pairs.aluminium__ground.mu_kinetic",
+        "pairs.aluminium__ground.mu_static",
+        "pairs.aluminium__table_laminate.mu_kinetic",
+        "pairs.aluminium__table_laminate.mu_static",
+        "pairs.ground__pet_plastic.mu_kinetic",
+        "pairs.ground__pet_plastic.mu_static",
+        "pairs.ground__pet_plastic.restitution",
+        "pairs.ground__polyolefin_plastic.mu_kinetic",
+        "pairs.ground__polyolefin_plastic.mu_static",
+        "pairs.ground__polyolefin_plastic.restitution",
+        "pairs.ground__steel.mu_kinetic",
+        "pairs.ground__steel.mu_static",
+        "pairs.ground__steel.restitution",
+        "pairs.pad_elastomer__pet_plastic.mu_kinetic",
+        "pairs.pad_elastomer__pet_plastic.mu_static",
+        "pairs.pad_elastomer__polyolefin_plastic.mu_kinetic",
+        "pairs.pad_elastomer__polyolefin_plastic.mu_static",
+        "pairs.pet_plastic__pet_plastic.restitution",
+        "pairs.pet_plastic__polyolefin_plastic.restitution",
+        "pairs.pet_plastic__steel.restitution",
+        "pairs.pet_plastic__table_laminate.mu_kinetic",
+        "pairs.pet_plastic__table_laminate.mu_static",
+        "pairs.pet_plastic__table_laminate.restitution",
+        "pairs.pet_plastic__table_wood.mu_kinetic",
+        "pairs.pet_plastic__table_wood.mu_static",
+        "pairs.pet_plastic__table_wood.restitution",
+        "pairs.polyolefin_plastic__polyolefin_plastic.restitution",
+        "pairs.polyolefin_plastic__steel.restitution",
+        "pairs.polyolefin_plastic__table_laminate.mu_kinetic",
+        "pairs.polyolefin_plastic__table_laminate.mu_static",
+        "pairs.polyolefin_plastic__table_laminate.restitution",
+        "pairs.polyolefin_plastic__table_wood.mu_kinetic",
+        "pairs.polyolefin_plastic__table_wood.mu_static",
+        "pairs.polyolefin_plastic__table_wood.restitution",
+        "pairs.steel__table_laminate.mu_kinetic",
+        "pairs.steel__table_laminate.mu_static",
+        "pairs.steel__table_laminate.restitution",
+        "pairs.steel__table_wood.restitution",
+        "robots.x5.non_pad_link_material_classes.base_link",
+        "robots.x5.non_pad_link_material_classes.camera",
+        "robots.x5.non_pad_link_material_classes.camera_base",
+        "robots.x5.non_pad_link_material_classes.link1",
+        "robots.x5.non_pad_link_material_classes.link2",
+        "robots.x5.non_pad_link_material_classes.link3",
+        "robots.x5.non_pad_link_material_classes.link4",
+        "robots.x5.non_pad_link_material_classes.link5",
+        "robots.x5.non_pad_link_material_classes.link6",
+        "robots.x5.sanitize_camera_inertials",
+        "unary_values.abs_device_housing",
+        "unary_values.aluminium",
+        "unary_values.ground",
+        "unary_values.pad_elastomer",
+        "unary_values.pet_plastic",
+        "unary_values.polyolefin_plastic",
+        "unary_values.steel",
+        "unary_values.table_laminate",
+        "unary_values.table_wood"
+      ]
+    }
+  },
+  "v2_result_json_relpath": "eval_result_v2/RoboDojo/put_bottles_into_dustbin/harness/arx_x5/0_harness/harness_2026-11-12_14-04-47/_result.json",
+  "v2_result_json": {
+    "evaluator_version": "evaluator v2",
+    "task_name": "put_bottles_into_dustbin",
+    "config_name": "arx_x5",
+    "policy_name": "harness",
+    "seed": 0,
+    "native_eval_num": 50,
+    "scheduled_count": 1,
+    "scheduled_layout_ids": [
+      0
+    ],
+    "unresolved_layout_ids": [],
+    "resolved_count": 1,
+    "complete": true,
+    "valid": true,
+    "eval_time": 1,
+    "success_rate": 1.0,
+    "score": 100.0,
+    "category_counts": {
+      "success": 1,
+      "failure": 0,
+      "timeout": 0,
+      "policy_error": 0,
+      "simulator_break": 0,
+      "evaluator_error": 0,
+      "unstable_layout": 0,
+      "excluded": 0
+    },
+    "drops": {
+      "total": 0,
+      "policy_error": 0,
+      "simulator_break": 0,
+      "evaluator_error": 0,
+      "unstable_layout": 0,
+      "excluded": 0
+    },
+    "aggregation": {
+      "evaluator_version": "evaluator v2",
+      "denominator_rule": "all_scheduled",
+      "excluded_categories": [],
+      "scheduled_count": 1,
+      "resolved_count": 1,
+      "denominator": 1,
+      "complete": true,
+      "valid": true,
+      "success_count": 1,
+      "success_rate": 1.0,
+      "success_rate_pct": 100.0,
+      "score": 100.0
+    },
+    "ledger": [
+      {
+        "layout_id": 0,
+        "seed": 0,
+        "category": "success",
+        "success": true,
+        "score": 1.0,
+        "steps": 649,
+        "reason": "reward_check_passed"
+      }
+    ],
+    "details": {
+      "0": {
+        "layout_id": 0,
+        "seed": 0,
+        "category": "success",
+        "success": true,
+        "score": 1.0,
+        "steps": 649,
+        "reason": "reward_check_passed"
+      }
+    },
+    "physics": {
+      "preset": "corrected",
+      "fixes": [
+        "collision",
+        "order",
+        "size",
+        "values"
+      ],
+      "device": "cpu",
+      "dormant_values_active": false,
+      "values_delivered": true,
+      "table_sha256": "7d053f8c828342dee7db6c3b3aeed22fb75e7caca104fa9884496d52f98c5749",
+      "admitted_statuses": [
+        "estimated",
+        "sourced"
+      ],
+      "scenario_opt_in": "bottles_primary_empty",
+      "scenario": {
+        "finger_pad": "pad_hard",
+        "table": "table_laminate",
+        "ground_combine": "average",
+        "fill": "empty"
+      },
+      "status_counts": {
+        "estimated": 72,
+        "unsourced": 85,
+        "sourced": 30
+      },
+      "below_g1_unsourced_opt_in": true,
+      "unsourced_keys_used": [
+        "assets.Rigid/bottle/00000.mass_by_fill.empty",
+        "assets.Rigid/bottle/00002.mass_by_fill.empty",
+        "assets.Rigid/bottle/00005.mass_by_fill.empty",
+        "assets.Rigid/bottle/00022.material_override.restitution_by_fill.empty",
+        "assets.Rigid/bottle/00025.mass_by_fill.empty",
+        "assets.Rigid/bottle/00041.mass_by_fill.empty",
+        "assets.Rigid/bottle/00050.mass_by_fill.empty",
+        "assets.Rigid/bottle/00055.mass_by_fill.empty",
+        "assets.Rigid/bottle/00059.mass_by_fill.empty",
+        "assets.Rigid/bottle/00060.mass_by_fill.empty",
+        "classes.abs_device_housing.restitution",
+        "classes.aluminium.restitution",
+        "classes.ground.restitution",
+        "classes.pad_elastomer.restitution",
+        "classes.pad_hard.restitution",
+        "classes.pet_plastic.restitution",
+        "classes.polyolefin_plastic.restitution",
+        "classes.steel.restitution",
+        "classes.table_laminate.restitution",
+        "classes.table_wood.restitution",
+        "pairs.abs_device_housing__ground.mu_kinetic",
+        "pairs.abs_device_housing__ground.mu_static",
+        "pairs.abs_device_housing__pad_elastomer.mu_kinetic",
+        "pairs.abs_device_housing__pad_elastomer.mu_static",
+        "pairs.abs_device_housing__table_laminate.mu_kinetic",
+        "pairs.abs_device_housing__table_laminate.mu_static",
+        "pairs.abs_device_housing__table_wood.mu_kinetic",
+        "pairs.abs_device_housing__table_wood.mu_static",
+        "pairs.aluminium__ground.mu_kinetic",
+        "pairs.aluminium__ground.mu_static",
+        "pairs.aluminium__table_laminate.mu_kinetic",
+        "pairs.aluminium__table_laminate.mu_static",
+        "pairs.ground__pet_plastic.mu_kinetic",
+        "pairs.ground__pet_plastic.mu_static",
+        "pairs.ground__pet_plastic.restitution",
+        "pairs.ground__polyolefin_plastic.mu_kinetic",
+        "pairs.ground__polyolefin_plastic.mu_static",
+        "pairs.ground__polyolefin_plastic.restitution",
+        "pairs.ground__steel.mu_kinetic",
+        "pairs.ground__steel.mu_static",
+        "pairs.ground__steel.restitution",
+        "pairs.pad_elastomer__pet_plastic.mu_kinetic",
+        "pairs.pad_elastomer__pet_plastic.mu_static",
+        "pairs.pad_elastomer__polyolefin_plastic.mu_kinetic",
+        "pairs.pad_elastomer__polyolefin_plastic.mu_static",
+        "pairs.pet_plastic__pet_plastic.restitution",
+        "pairs.pet_plastic__polyolefin_plastic.restitution",
+        "pairs.pet_plastic__steel.restitution",
+        "pairs.pet_plastic__table_laminate.mu_kinetic",
+        "pairs.pet_plastic__table_laminate.mu_static",
+        "pairs.pet_plastic__table_laminate.restitution",
+        "pairs.pet_plastic__table_wood.mu_kinetic",
+        "pairs.pet_plastic__table_wood.mu_static",
+        "pairs.pet_plastic__table_wood.restitution",
+        "pairs.polyolefin_plastic__polyolefin_plastic.restitution",
+        "pairs.polyolefin_plastic__steel.restitution",
+        "pairs.polyolefin_plastic__table_laminate.mu_kinetic",
+        "pairs.polyolefin_plastic__table_laminate.mu_static",
+        "pairs.polyolefin_plastic__table_laminate.restitution",
+        "pairs.polyolefin_plastic__table_wood.mu_kinetic",
+        "pairs.polyolefin_plastic__table_wood.mu_static",
+        "pairs.polyolefin_plastic__table_wood.restitution",
+        "pairs.steel__table_laminate.mu_kinetic",
+        "pairs.steel__table_laminate.mu_static",
+        "pairs.steel__table_laminate.restitution",
+        "pairs.steel__table_wood.restitution",
+        "robots.x5.non_pad_link_material_classes.base_link",
+        "robots.x5.non_pad_link_material_classes.camera",
+        "robots.x5.non_pad_link_material_classes.camera_base",
+        "robots.x5.non_pad_link_material_classes.link1",
+        "robots.x5.non_pad_link_material_classes.link2",
+        "robots.x5.non_pad_link_material_classes.link3",
+        "robots.x5.non_pad_link_material_classes.link4",
+        "robots.x5.non_pad_link_material_classes.link5",
+        "robots.x5.non_pad_link_material_classes.link6",
+        "robots.x5.sanitize_camera_inertials",
+        "unary_values.abs_device_housing",
+        "unary_values.aluminium",
+        "unary_values.ground",
+        "unary_values.pad_elastomer",
+        "unary_values.pet_plastic",
+        "unary_values.polyolefin_plastic",
+        "unary_values.steel",
+        "unary_values.table_laminate",
+        "unary_values.table_wood"
+      ],
+      "profile_unsourced_keys_used": [
+        "assets.Rigid/bottle/00000.mass_by_fill.empty",
+        "assets.Rigid/bottle/00002.mass_by_fill.empty",
+        "assets.Rigid/bottle/00005.mass_by_fill.empty",
+        "assets.Rigid/bottle/00022.material_override.restitution_by_fill.empty",
+        "assets.Rigid/bottle/00025.mass_by_fill.empty",
+        "assets.Rigid/bottle/00041.mass_by_fill.empty",
+        "assets.Rigid/bottle/00050.mass_by_fill.empty",
+        "assets.Rigid/bottle/00055.mass_by_fill.empty",
+        "assets.Rigid/bottle/00059.mass_by_fill.empty",
+        "assets.Rigid/bottle/00060.mass_by_fill.empty",
+        "classes.abs_device_housing.restitution",
+        "classes.aluminium.restitution",
+        "classes.ground.restitution",
+        "classes.pad_elastomer.restitution",
+        "classes.pad_hard.restitution",
+        "classes.pet_plastic.restitution",
+        "classes.polyolefin_plastic.restitution",
+        "classes.steel.restitution",
+        "classes.table_laminate.restitution",
+        "classes.table_wood.restitution",
+        "pairs.abs_device_housing__ground.mu_kinetic",
+        "pairs.abs_device_housing__ground.mu_static",
+        "pairs.abs_device_housing__pad_elastomer.mu_kinetic",
+        "pairs.abs_device_housing__pad_elastomer.mu_static",
+        "pairs.abs_device_housing__table_laminate.mu_kinetic",
+        "pairs.abs_device_housing__table_laminate.mu_static",
+        "pairs.abs_device_housing__table_wood.mu_kinetic",
+        "pairs.abs_device_housing__table_wood.mu_static",
+        "pairs.aluminium__ground.mu_kinetic",
+        "pairs.aluminium__ground.mu_static",
+        "pairs.aluminium__table_laminate.mu_kinetic",
+        "pairs.aluminium__table_laminate.mu_static",
+        "pairs.ground__pet_plastic.mu_kinetic",
+        "pairs.ground__pet_plastic.mu_static",
+        "pairs.ground__pet_plastic.restitution",
+        "pairs.ground__polyolefin_plastic.mu_kinetic",
+        "pairs.ground__polyolefin_plastic.mu_static",
+        "pairs.ground__polyolefin_plastic.restitution",
+        "pairs.ground__steel.mu_kinetic",
+        "pairs.ground__steel.mu_static",
+        "pairs.ground__steel.restitution",
+        "pairs.pad_elastomer__pet_plastic.mu_kinetic",
+        "pairs.pad_elastomer__pet_plastic.mu_static",
+        "pairs.pad_elastomer__polyolefin_plastic.mu_kinetic",
+        "pairs.pad_elastomer__polyolefin_plastic.mu_static",
+        "pairs.pet_plastic__pet_plastic.restitution",
+        "pairs.pet_plastic__polyolefin_plastic.restitution",
+        "pairs.pet_plastic__steel.restitution",
+        "pairs.pet_plastic__table_laminate.mu_kinetic",
+        "pairs.pet_plastic__table_laminate.mu_static",
+        "pairs.pet_plastic__table_laminate.restitution",
+        "pairs.pet_plastic__table_wood.mu_kinetic",
+        "pairs.pet_plastic__table_wood.mu_static",
+        "pairs.pet_plastic__table_wood.restitution",
+        "pairs.polyolefin_plastic__polyolefin_plastic.restitution",
+        "pairs.polyolefin_plastic__steel.restitution",
+        "pairs.polyolefin_plastic__table_laminate.mu_kinetic",
+        "pairs.polyolefin_plastic__table_laminate.mu_static",
+        "pairs.polyolefin_plastic__table_laminate.restitution",
+        "pairs.polyolefin_plastic__table_wood.mu_kinetic",
+        "pairs.polyolefin_plastic__table_wood.mu_static",
+        "pairs.polyolefin_plastic__table_wood.restitution",
+        "pairs.steel__table_laminate.mu_kinetic",
+        "pairs.steel__table_laminate.mu_static",
+        "pairs.steel__table_laminate.restitution",
+        "pairs.steel__table_wood.restitution",
+        "robots.x5.non_pad_link_material_classes.base_link",
+        "robots.x5.non_pad_link_material_classes.camera",
+        "robots.x5.non_pad_link_material_classes.camera_base",
+        "robots.x5.non_pad_link_material_classes.link1",
+        "robots.x5.non_pad_link_material_classes.link2",
+        "robots.x5.non_pad_link_material_classes.link3",
+        "robots.x5.non_pad_link_material_classes.link4",
+        "robots.x5.non_pad_link_material_classes.link5",
+        "robots.x5.non_pad_link_material_classes.link6",
+        "robots.x5.sanitize_camera_inertials",
+        "unary_values.abs_device_housing",
+        "unary_values.aluminium",
+        "unary_values.ground",
+        "unary_values.pad_elastomer",
+        "unary_values.pet_plastic",
+        "unary_values.polyolefin_plastic",
+        "unary_values.steel",
+        "unary_values.table_laminate",
+        "unary_values.table_wood"
+      ]
+    }
+  },
+  "v2_resume_manifest_relpath": "eval_result_v2/RoboDojo/put_bottles_into_dustbin/harness/arx_x5/0_harness/_resume_harness_2026-11-12_14-04-47.json",
+  "v2_resume_manifest_has_physics": true,
+  "settled_poses": {
+    "bottle0": [
+      0.11593,
+      -0.24349,
+      0.8576,
+      0.96681,
+      -0.0,
+      0.0,
+      -0.2555
+    ],
+    "bottle1": [
+      0.43502,
+      -0.04053,
+      0.85977,
+      0.8639,
+      -0.00407,
+      0.00031,
+      0.50364
+    ],
+    "bottle2": [
+      0.37052,
+      -0.14482,
+      0.7963,
+      0.70818,
+      0.06205,
+      0.6988,
+      -0.07937
+    ],
+    "bottle3": [
+      -0.22222,
+      -0.0696,
+      0.88515,
+      0.97682,
+      -0.0,
+      0.0,
+      -0.21407
+    ]
+  },
+  "final_poses": {
+    "bottle0": [
+      -0.65238,
+      -0.12601,
+      0.3121,
+      -0.40837,
+      0.36801,
+      0.61577,
+      0.56447
+    ],
+    "bottle1": [
+      -0.75661,
+      -0.07631,
+      0.31516,
+      -0.25171,
+      -0.12801,
+      0.6901,
+      -0.66635
+    ],
+    "bottle2": [
+      -0.49719,
+      -0.08657,
+      0.32414,
+      -0.50004,
+      0.47555,
+      0.51297,
+      0.51057
+    ],
+    "bottle3": [
+      -0.58552,
+      -0.10738,
+      0.31759,
+      0.61058,
+      0.50452,
+      0.50908,
+      -0.33687
+    ]
+  },
+  "assertion_passed": true,
+  "failures": [],
+  "compensations_used": [
+    {
+      "kind": "vhacd_voxelization_erosion_allowance",
+      "masks": "#95",
+      "env": "env_0",
+      "label": "bottle1",
+      "asset_id": "Rigid/bottle/00060",
+      "approximations": [
+        "convexDecomposition"
+      ],
+      "usd_collider_aabb_extents_m": [
+        0.055,
+        0.055,
+        0.19
+      ],
+      "engine_collider_aabb_extents_m": [
+        0.051757,
+        0.052428,
+        0.189301
+      ],
+      "engine_vs_usd_narrowing_m": [
+        0.003243,
+        0.002572,
+        0.000699
+      ],
+      "engine_max_narrowing_vs_usd_m": 0.003243,
+      "engine_aabb_max_rel_err": 0.05896,
+      "engine_aabb_max_abs_err_m": 0.003243,
+      "allowance_m": 0.004,
+      "one_sided": "engine_narrower_than_usd_only"
+    }
+  ],
+  "policy_log_summary": {
+    "plans": [
+      {
+        "idx": 0,
+        "label": "bottle0",
+        "route": "left_direct",
+        "start_pos": [
+          0.1159,
+          -0.2435,
+          0.8576
+        ],
+        "upright": true,
+        "grasp_ik": {
+          "mode": "upright_side",
+          "pitch_deg": 15.0,
+          "err_mm": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "rot_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "bin_ik_mm_deg": [
+          0.0,
+          0.0
+        ],
+        "drop_xy": [
+          -0.6,
+          -0.13
+        ]
+      },
+      {
+        "idx": 1,
+        "label": "bottle3",
+        "route": "left_direct",
+        "start_pos": [
+          -0.2222,
+          -0.0696,
+          0.8851
+        ],
+        "upright": true,
+        "grasp_ik": {
+          "mode": "upright_side",
+          "pitch_deg": 15.0,
+          "err_mm": [
+            0.01,
+            0.01,
+            0.0
+          ],
+          "rot_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "bin_ik_mm_deg": [
+          0.0,
+          0.0
+        ],
+        "drop_xy": [
+          -0.64,
+          -0.07
+        ]
+      },
+      {
+        "idx": 2,
+        "label": "bottle2",
+        "route": "right_to_left_handover",
+        "start_pos": [
+          0.3705,
+          -0.1448,
+          0.7963
+        ],
+        "upright": false,
+        "grasp_ik": {
+          "mode": "lying_top",
+          "axis_sign": 1.0,
+          "err_mm": [
+            0.01,
+            0.01,
+            0.01
+          ],
+          "rot_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "bin_ik_mm_deg": [
+          0.0,
+          0.0
+        ],
+        "drop_xy": [
+          -0.64,
+          -0.13
+        ],
+        "handover_live": {
+          "bottle_pos": [
+            0.0156,
+            -0.2225,
+            1.0401
+          ],
+          "up_axis": [
+            0.016,
+            -0.002,
+            1.0
+          ],
+          "pad_l_pos": [
+            0.016,
+            -0.2225,
+            1.0627
+          ],
+          "left_ho_ik_mm_deg": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      {
+        "idx": 3,
+        "label": "bottle1",
+        "route": "right_to_left_handover",
+        "start_pos": [
+          0.435,
+          -0.0405,
+          0.8598
+        ],
+        "upright": true,
+        "grasp_ik": {
+          "mode": "upright_side",
+          "pitch_deg": 15.0,
+          "err_mm": [
+            0.0,
+            0.0,
+            0.01
+          ],
+          "rot_deg": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "bin_ik_mm_deg": [
+          0.0,
+          0.0
+        ],
+        "drop_xy": [
+          -0.6,
+          -0.07
+        ],
+        "handover_live": {
+          "bottle_pos": [
+            0.0005,
+            -0.22,
+            1.0399
+          ],
+          "up_axis": [
+            0.014,
+            -0.002,
+            1.0
+          ],
+          "pad_l_pos": [
+            0.0008,
+            -0.22,
+            1.0629
+          ],
+          "left_ho_ik_mm_deg": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    ],
+    "ik_common": [
+      {
+        "waypoint": "high_carry",
+        "left_mm_deg": [
+          0.01,
+          0.0
+        ],
+        "right_mm_deg": [
+          0.01,
+          0.0
+        ]
+      },
+      {
+        "waypoint": "right_handover",
+        "ho_mm_deg": [
+          0.0,
+          0.0
+        ],
+        "retreat_mm_deg": [
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "actions_logged": 649,
+    "geometric_check": {
+      "env_idx": 0,
+      "dustbin_world_aabb": {
+        "min": [
+          -0.8651,
+          -0.3349,
+          0.075
+        ],
+        "max": [
+          -0.3948,
+          0.1355,
+          0.725
+        ]
+      },
+      "bottles": {
+        "bottle0": {
+          "inst": "bottle_41_1",
+          "final_pos": [
+            -0.65238,
+            -0.12601,
+            0.3121
+          ],
+          "final_ori": [
+            -0.40837,
+            0.36801,
+            0.61577,
+            0.56447
+          ],
+          "aabb_min": [
+            -0.6975,
+            -0.2214,
+            0.272
+          ],
+          "aabb_max": [
+            -0.607,
+            -0.0308,
+            0.352
+          ],
+          "z_gap_m": 0.19704,
+          "xy_inside": true,
+          "z_below_rim": true,
+          "z_on_bottom": true,
+          "in_dustbin_geometric": true,
+          "task_is_A_on_B_bottom": true
+        },
+        "bottle1": {
+          "inst": "bottle_60_2",
+          "final_pos": [
+            -0.75661,
+            -0.07631,
+            0.31516
+          ],
+          "final_ori": [
+            -0.25171,
+            -0.12801,
+            0.6901,
+            -0.66635
+          ],
+          "aabb_min": [
+            -0.8116,
+            -0.1766,
+            0.275
+          ],
+          "aabb_max": [
+            -0.7017,
+            0.024,
+            0.3553
+          ],
+          "z_gap_m": 0.19998,
+          "xy_inside": true,
+          "z_below_rim": true,
+          "z_on_bottom": true,
+          "in_dustbin_geometric": true,
+          "task_is_A_on_B_bottom": true
+        },
+        "bottle2": {
+          "inst": "bottle_25_3",
+          "final_pos": [
+            -0.49719,
+            -0.08657,
+            0.32414
+          ],
+          "final_ori": [
+            -0.50004,
+            0.47555,
+            0.51297,
+            0.51057
+          ],
+          "aabb_min": [
+            -0.5334,
+            -0.1902,
+            0.2884
+          ],
+          "aabb_max": [
+            -0.4608,
+            0.0168,
+            0.3597
+          ],
+          "z_gap_m": 0.21336,
+          "xy_inside": true,
+          "z_below_rim": true,
+          "z_on_bottom": true,
+          "in_dustbin_geometric": true,
+          "task_is_A_on_B_bottom": true
+        },
+        "bottle3": {
+          "inst": "bottle_22_4",
+          "final_pos": [
+            -0.58552,
+            -0.10738,
+            0.31759
+          ],
+          "final_ori": [
+            0.61058,
+            0.50452,
+            0.50908,
+            -0.33687
+          ],
+          "aabb_min": [
+            -0.6592,
+            -0.2348,
+            0.2726
+          ],
+          "aabb_max": [
+            -0.5118,
+            0.0203,
+            0.3628
+          ],
+          "z_gap_m": 0.19764,
+          "xy_inside": true,
+          "z_below_rim": true,
+          "z_on_bottom": true,
+          "in_dustbin_geometric": true,
+          "task_is_A_on_B_bottom": true
+        }
+      },
+      "in_dustbin_geometric_count": 4,
+      "task_predicate_count": 4,
+      "task_all_robot_back_to_origin": true,
+      "task_is_all_gripper_open_0.8": true
+    }
+  },
+  "layouts": {
+    "0": {
+      "full_archive_sha256": "9a9df5c2b2d5e75d2ec658a7f17cd75d0a401d5707e62d1466df873f25c74845",
+      "full_archive_bytes": 1332021,
+      "versions": {
+        "repo_head": "57c472411e6c159c766b55b637bc7d5c004b6f94",
+        "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "isaaclab": "afca7b09d60d8beb9c1cb28b43066499940b969b",
+        "container": "isaac-sim_5.1.0.sif",
+        "isaac_sim": [
+          "5.1.0",
+          "rc.19",
+          "5"
+        ]
+      },
+      "layout": 0,
+      "evaluator": "v2",
+      "steps_through_reset": 844,
+      "episode_steps": 6490,
+      "take_action_cnt": 649,
+      "success": true,
+      "wall_seconds": 170.8,
+      "eval_result": {
+        "evaluator_version": "evaluator v2",
+        "task_name": "put_bottles_into_dustbin",
+        "config_name": "arx_x5",
+        "policy_name": "harness",
+        "seed": 0,
+        "native_eval_num": 50,
+        "scheduled_count": 1,
+        "scheduled_layout_ids": [
+          0
+        ],
+        "unresolved_layout_ids": [],
+        "resolved_count": 1,
+        "complete": true,
+        "valid": true,
+        "eval_time": 1,
+        "success_rate": 1.0,
+        "score": 100.0,
+        "category_counts": {
+          "success": 1,
+          "failure": 0,
+          "timeout": 0,
+          "policy_error": 0,
+          "simulator_break": 0,
+          "evaluator_error": 0,
+          "unstable_layout": 0,
+          "excluded": 0
+        },
+        "drops": {
+          "total": 0,
+          "policy_error": 0,
+          "simulator_break": 0,
+          "evaluator_error": 0,
+          "unstable_layout": 0,
+          "excluded": 0
+        },
+        "aggregation": {
+          "evaluator_version": "evaluator v2",
+          "denominator_rule": "all_scheduled",
+          "excluded_categories": [],
+          "scheduled_count": 1,
+          "resolved_count": 1,
+          "denominator": 1,
+          "complete": true,
+          "valid": true,
+          "success_count": 1,
+          "success_rate": 1.0,
+          "success_rate_pct": 100.0,
+          "score": 100.0
+        },
+        "ledger": [
+          {
+            "layout_id": 0,
+            "seed": 0,
+            "category": "success",
+            "success": true,
+            "score": 1.0,
+            "steps": 649,
+            "reason": "reward_check_passed"
+          }
+        ],
+        "details": {
+          "0": {
+            "layout_id": 0,
+            "seed": 0,
+            "category": "success",
+            "success": true,
+            "score": 1.0,
+            "steps": 649,
+            "reason": "reward_check_passed"
+          }
+        },
+        "physics": {
+          "preset": "corrected",
+          "fixes": [
+            "collision",
+            "order",
+            "size",
+            "values"
+          ],
+          "device": "cpu",
+          "dormant_values_active": false,
+          "values_delivered": true,
+          "table_sha256": "7d053f8c828342dee7db6c3b3aeed22fb75e7caca104fa9884496d52f98c5749",
+          "admitted_statuses": [
+            "estimated",
+            "sourced"
+          ],
+          "scenario_opt_in": "bottles_primary_empty",
+          "scenario": {
+            "finger_pad": "pad_hard",
+            "table": "table_laminate",
+            "ground_combine": "average",
+            "fill": "empty"
+          },
+          "status_counts": {
+            "estimated": 72,
+            "unsourced": 85,
+            "sourced": 30
+          },
+          "below_g1_unsourced_opt_in": true,
+          "unsourced_keys_used": [
+            "assets.Rigid/bottle/00000.mass_by_fill.empty",
+            "assets.Rigid/bottle/00002.mass_by_fill.empty",
+            "assets.Rigid/bottle/00005.mass_by_fill.empty",
+            "assets.Rigid/bottle/00022.material_override.restitution_by_fill.empty",
+            "assets.Rigid/bottle/00025.mass_by_fill.empty",
+            "assets.Rigid/bottle/00041.mass_by_fill.empty",
+            "assets.Rigid/bottle/00050.mass_by_fill.empty",
+            "assets.Rigid/bottle/00055.mass_by_fill.empty",
+            "assets.Rigid/bottle/00059.mass_by_fill.empty",
+            "assets.Rigid/bottle/00060.mass_by_fill.empty",
+            "classes.abs_device_housing.restitution",
+            "classes.aluminium.restitution",
+            "classes.ground.restitution",
+            "classes.pad_elastomer.restitution",
+            "classes.pad_hard.restitution",
+            "classes.pet_plastic.restitution",
+            "classes.polyolefin_plastic.restitution",
+            "classes.steel.restitution",
+            "classes.table_laminate.restitution",
+            "classes.table_wood.restitution",
+            "pairs.abs_device_housing__ground.mu_kinetic",
+            "pairs.abs_device_housing__ground.mu_static",
+            "pairs.abs_device_housing__pad_elastomer.mu_kinetic",
+            "pairs.abs_device_housing__pad_elastomer.mu_static",
+            "pairs.abs_device_housing__table_laminate.mu_kinetic",
+            "pairs.abs_device_housing__table_laminate.mu_static",
+            "pairs.abs_device_housing__table_wood.mu_kinetic",
+            "pairs.abs_device_housing__table_wood.mu_static",
+            "pairs.aluminium__ground.mu_kinetic",
+            "pairs.aluminium__ground.mu_static",
+            "pairs.aluminium__table_laminate.mu_kinetic",
+            "pairs.aluminium__table_laminate.mu_static",
+            "pairs.ground__pet_plastic.mu_kinetic",
+            "pairs.ground__pet_plastic.mu_static",
+            "pairs.ground__pet_plastic.restitution",
+            "pairs.ground__polyolefin_plastic.mu_kinetic",
+            "pairs.ground__polyolefin_plastic.mu_static",
+            "pairs.ground__polyolefin_plastic.restitution",
+            "pairs.ground__steel.mu_kinetic",
+            "pairs.ground__steel.mu_static",
+            "pairs.ground__steel.restitution",
+            "pairs.pad_elastomer__pet_plastic.mu_kinetic",
+            "pairs.pad_elastomer__pet_plastic.mu_static",
+            "pairs.pad_elastomer__polyolefin_plastic.mu_kinetic",
+            "pairs.pad_elastomer__polyolefin_plastic.mu_static",
+            "pairs.pet_plastic__pet_plastic.restitution",
+            "pairs.pet_plastic__polyolefin_plastic.restitution",
+            "pairs.pet_plastic__steel.restitution",
+            "pairs.pet_plastic__table_laminate.mu_kinetic",
+            "pairs.pet_plastic__table_laminate.mu_static",
+            "pairs.pet_plastic__table_laminate.restitution",
+            "pairs.pet_plastic__table_wood.mu_kinetic",
+            "pairs.pet_plastic__table_wood.mu_static",
+            "pairs.pet_plastic__table_wood.restitution",
+            "pairs.polyolefin_plastic__polyolefin_plastic.restitution",
+            "pairs.polyolefin_plastic__steel.restitution",
+            "pairs.polyolefin_plastic__table_laminate.mu_kinetic",
+            "pairs.polyolefin_plastic__table_laminate.mu_static",
+            "pairs.polyolefin_plastic__table_laminate.restitution",
+            "pairs.polyolefin_plastic__table_wood.mu_kinetic",
+            "pairs.polyolefin_plastic__table_wood.mu_static",
+            "pairs.polyolefin_plastic__table_wood.restitution",
+            "pairs.steel__table_laminate.mu_kinetic",
+            "pairs.steel__table_laminate.mu_static",
+            "pairs.steel__table_laminate.restitution",
+            "pairs.steel__table_wood.restitution",
+            "robots.x5.non_pad_link_material_classes.base_link",
+            "robots.x5.non_pad_link_material_classes.camera",
+            "robots.x5.non_pad_link_material_classes.camera_base",
+            "robots.x5.non_pad_link_material_classes.link1",
+            "robots.x5.non_pad_link_material_classes.link2",
+            "robots.x5.non_pad_link_material_classes.link3",
+            "robots.x5.non_pad_link_material_classes.link4",
+            "robots.x5.non_pad_link_material_classes.link5",
+            "robots.x5.non_pad_link_material_classes.link6",
+            "robots.x5.sanitize_camera_inertials",
+            "unary_values.abs_device_housing",
+            "unary_values.aluminium",
+            "unary_values.ground",
+            "unary_values.pad_elastomer",
+            "unary_values.pet_plastic",
+            "unary_values.polyolefin_plastic",
+            "unary_values.steel",
+            "unary_values.table_laminate",
+            "unary_values.table_wood"
+          ],
+          "profile_unsourced_keys_used": [
+            "assets.Rigid/bottle/00000.mass_by_fill.empty",
+            "assets.Rigid/bottle/00002.mass_by_fill.empty",
+            "assets.Rigid/bottle/00005.mass_by_fill.empty",
+            "assets.Rigid/bottle/00022.material_override.restitution_by_fill.empty",
+            "assets.Rigid/bottle/00025.mass_by_fill.empty",
+            "assets.Rigid/bottle/00041.mass_by_fill.empty",
+            "assets.Rigid/bottle/00050.mass_by_fill.empty",
+            "assets.Rigid/bottle/00055.mass_by_fill.empty",
+            "assets.Rigid/bottle/00059.mass_by_fill.empty",
+            "assets.Rigid/bottle/00060.mass_by_fill.empty",
+            "classes.abs_device_housing.restitution",
+            "classes.aluminium.restitution",
+            "classes.ground.restitution",
+            "classes.pad_elastomer.restitution",
+            "classes.pad_hard.restitution",
+            "classes.pet_plastic.restitution",
+            "classes.polyolefin_plastic.restitution",
+            "classes.steel.restitution",
+            "classes.table_laminate.restitution",
+            "classes.table_wood.restitution",
+            "pairs.abs_device_housing__ground.mu_kinetic",
+            "pairs.abs_device_housing__ground.mu_static",
+            "pairs.abs_device_housing__pad_elastomer.mu_kinetic",
+            "pairs.abs_device_housing__pad_elastomer.mu_static",
+            "pairs.abs_device_housing__table_laminate.mu_kinetic",
+            "pairs.abs_device_housing__table_laminate.mu_static",
+            "pairs.abs_device_housing__table_wood.mu_kinetic",
+            "pairs.abs_device_housing__table_wood.mu_static",
+            "pairs.aluminium__ground.mu_kinetic",
+            "pairs.aluminium__ground.mu_static",
+            "pairs.aluminium__table_laminate.mu_kinetic",
+            "pairs.aluminium__table_laminate.mu_static",
+            "pairs.ground__pet_plastic.mu_kinetic",
+            "pairs.ground__pet_plastic.mu_static",
+            "pairs.ground__pet_plastic.restitution",
+            "pairs.ground__polyolefin_plastic.mu_kinetic",
+            "pairs.ground__polyolefin_plastic.mu_static",
+            "pairs.ground__polyolefin_plastic.restitution",
+            "pairs.ground__steel.mu_kinetic",
+            "pairs.ground__steel.mu_static",
+            "pairs.ground__steel.restitution",
+            "pairs.pad_elastomer__pet_plastic.mu_kinetic",
+            "pairs.pad_elastomer__pet_plastic.mu_static",
+            "pairs.pad_elastomer__polyolefin_plastic.mu_kinetic",
+            "pairs.pad_elastomer__polyolefin_plastic.mu_static",
+            "pairs.pet_plastic__pet_plastic.restitution",
+            "pairs.pet_plastic__polyolefin_plastic.restitution",
+            "pairs.pet_plastic__steel.restitution",
+            "pairs.pet_plastic__table_laminate.mu_kinetic",
+            "pairs.pet_plastic__table_laminate.mu_static",
+            "pairs.pet_plastic__table_laminate.restitution",
+            "pairs.pet_plastic__table_wood.mu_kinetic",
+            "pairs.pet_plastic__table_wood.mu_static",
+            "pairs.pet_plastic__table_wood.restitution",
+            "pairs.polyolefin_plastic__polyolefin_plastic.restitution",
+            "pairs.polyolefin_plastic__steel.restitution",
+            "pairs.polyolefin_plastic__table_laminate.mu_kinetic",
+            "pairs.polyolefin_plastic__table_laminate.mu_static",
+            "pairs.polyolefin_plastic__table_laminate.restitution",
+            "pairs.polyolefin_plastic__table_wood.mu_kinetic",
+            "pairs.polyolefin_plastic__table_wood.mu_static",
+            "pairs.polyolefin_plastic__table_wood.restitution",
+            "pairs.steel__table_laminate.mu_kinetic",
+            "pairs.steel__table_laminate.mu_static",
+            "pairs.steel__table_laminate.restitution",
+            "pairs.steel__table_wood.restitution",
+            "robots.x5.non_pad_link_material_classes.base_link",
+            "robots.x5.non_pad_link_material_classes.camera",
+            "robots.x5.non_pad_link_material_classes.camera_base",
+            "robots.x5.non_pad_link_material_classes.link1",
+            "robots.x5.non_pad_link_material_classes.link2",
+            "robots.x5.non_pad_link_material_classes.link3",
+            "robots.x5.non_pad_link_material_classes.link4",
+            "robots.x5.non_pad_link_material_classes.link5",
+            "robots.x5.non_pad_link_material_classes.link6",
+            "robots.x5.sanitize_camera_inertials",
+            "unary_values.abs_device_housing",
+            "unary_values.aluminium",
+            "unary_values.ground",
+            "unary_values.pad_elastomer",
+            "unary_values.pet_plastic",
+            "unary_values.polyolefin_plastic",
+            "unary_values.steel",
+            "unary_values.table_laminate",
+            "unary_values.table_wood"
+          ]
+        }
+      },
+      "v2_result_json_relpath": "eval_result_v2/RoboDojo/put_bottles_into_dustbin/harness/arx_x5/0_harness/harness_2026-11-12_14-04-47/_result.json",
+      "v2_result_json": {
+        "evaluator_version": "evaluator v2",
+        "task_name": "put_bottles_into_dustbin",
+        "config_name": "arx_x5",
+        "policy_name": "harness",
+        "seed": 0,
+        "native_eval_num": 50,
+        "scheduled_count": 1,
+        "scheduled_layout_ids": [
+          0
+        ],
+        "unresolved_layout_ids": [],
+        "resolved_count": 1,
+        "complete": true,
+        "valid": true,
+        "eval_time": 1,
+        "success_rate": 1.0,
+        "score": 100.0,
+        "category_counts": {
+          "success": 1,
+          "failure": 0,
+          "timeout": 0,
+          "policy_error": 0,
+          "simulator_break": 0,
+          "evaluator_error": 0,
+          "unstable_layout": 0,
+          "excluded": 0
+        },
+        "drops": {
+          "total": 0,
+          "policy_error": 0,
+          "simulator_break": 0,
+          "evaluator_error": 0,
+          "unstable_layout": 0,
+          "excluded": 0
+        },
+        "aggregation": {
+          "evaluator_version": "evaluator v2",
+          "denominator_rule": "all_scheduled",
+          "excluded_categories": [],
+          "scheduled_count": 1,
+          "resolved_count": 1,
+          "denominator": 1,
+          "complete": true,
+          "valid": true,
+          "success_count": 1,
+          "success_rate": 1.0,
+          "success_rate_pct": 100.0,
+          "score": 100.0
+        },
+        "ledger": [
+          {
+            "layout_id": 0,
+            "seed": 0,
+            "category": "success",
+            "success": true,
+            "score": 1.0,
+            "steps": 649,
+            "reason": "reward_check_passed"
+          }
+        ],
+        "details": {
+          "0": {
+            "layout_id": 0,
+            "seed": 0,
+            "category": "success",
+            "success": true,
+            "score": 1.0,
+            "steps": 649,
+            "reason": "reward_check_passed"
+          }
+        },
+        "physics": {
+          "preset": "corrected",
+          "fixes": [
+            "collision",
+            "order",
+            "size",
+            "values"
+          ],
+          "device": "cpu",
+          "dormant_values_active": false,
+          "values_delivered": true,
+          "table_sha256": "7d053f8c828342dee7db6c3b3aeed22fb75e7caca104fa9884496d52f98c5749",
+          "admitted_statuses": [
+            "estimated",
+            "sourced"
+          ],
+          "scenario_opt_in": "bottles_primary_empty",
+          "scenario": {
+            "finger_pad": "pad_hard",
+            "table": "table_laminate",
+            "ground_combine": "average",
+            "fill": "empty"
+          },
+          "status_counts": {
+            "estimated": 72,
+            "unsourced": 85,
+            "sourced": 30
+          },
+          "below_g1_unsourced_opt_in": true,
+          "unsourced_keys_used": [
+            "assets.Rigid/bottle/00000.mass_by_fill.empty",
+            "assets.Rigid/bottle/00002.mass_by_fill.empty",
+            "assets.Rigid/bottle/00005.mass_by_fill.empty",
+            "assets.Rigid/bottle/00022.material_override.restitution_by_fill.empty",
+            "assets.Rigid/bottle/00025.mass_by_fill.empty",
+            "assets.Rigid/bottle/00041.mass_by_fill.empty",
+            "assets.Rigid/bottle/00050.mass_by_fill.empty",
+            "assets.Rigid/bottle/00055.mass_by_fill.empty",
+            "assets.Rigid/bottle/00059.mass_by_fill.empty",
+            "assets.Rigid/bottle/00060.mass_by_fill.empty",
+            "classes.abs_device_housing.restitution",
+            "classes.aluminium.restitution",
+            "classes.ground.restitution",
+            "classes.pad_elastomer.restitution",
+            "classes.pad_hard.restitution",
+            "classes.pet_plastic.restitution",
+            "classes.polyolefin_plastic.restitution",
+            "classes.steel.restitution",
+            "classes.table_laminate.restitution",
+            "classes.table_wood.restitution",
+            "pairs.abs_device_housing__ground.mu_kinetic",
+            "pairs.abs_device_housing__ground.mu_static",
+            "pairs.abs_device_housing__pad_elastomer.mu_kinetic",
+            "pairs.abs_device_housing__pad_elastomer.mu_static",
+            "pairs.abs_device_housing__table_laminate.mu_kinetic",
+            "pairs.abs_device_housing__table_laminate.mu_static",
+            "pairs.abs_device_housing__table_wood.mu_kinetic",
+            "pairs.abs_device_housing__table_wood.mu_static",
+            "pairs.aluminium__ground.mu_kinetic",
+            "pairs.aluminium__ground.mu_static",
+            "pairs.aluminium__table_laminate.mu_kinetic",
+            "pairs.aluminium__table_laminate.mu_static",
+            "pairs.ground__pet_plastic.mu_kinetic",
+            "pairs.ground__pet_plastic.mu_static",
+            "pairs.ground__pet_plastic.restitution",
+            "pairs.ground__polyolefin_plastic.mu_kinetic",
+            "pairs.ground__polyolefin_plastic.mu_static",
+            "pairs.ground__polyolefin_plastic.restitution",
+            "pairs.ground__steel.mu_kinetic",
+            "pairs.ground__steel.mu_static",
+            "pairs.ground__steel.restitution",
+            "pairs.pad_elastomer__pet_plastic.mu_kinetic",
+            "pairs.pad_elastomer__pet_plastic.mu_static",
+            "pairs.pad_elastomer__polyolefin_plastic.mu_kinetic",
+            "pairs.pad_elastomer__polyolefin_plastic.mu_static",
+            "pairs.pet_plastic__pet_plastic.restitution",
+            "pairs.pet_plastic__polyolefin_plastic.restitution",
+            "pairs.pet_plastic__steel.restitution",
+            "pairs.pet_plastic__table_laminate.mu_kinetic",
+            "pairs.pet_plastic__table_laminate.mu_static",
+            "pairs.pet_plastic__table_laminate.restitution",
+            "pairs.pet_plastic__table_wood.mu_kinetic",
+            "pairs.pet_plastic__table_wood.mu_static",
+            "pairs.pet_plastic__table_wood.restitution",
+            "pairs.polyolefin_plastic__polyolefin_plastic.restitution",
+            "pairs.polyolefin_plastic__steel.restitution",
+            "pairs.polyolefin_plastic__table_laminate.mu_kinetic",
+            "pairs.polyolefin_plastic__table_laminate.mu_static",
+            "pairs.polyolefin_plastic__table_laminate.restitution",
+            "pairs.polyolefin_plastic__table_wood.mu_kinetic",
+            "pairs.polyolefin_plastic__table_wood.mu_static",
+            "pairs.polyolefin_plastic__table_wood.restitution",
+            "pairs.steel__table_laminate.mu_kinetic",
+            "pairs.steel__table_laminate.mu_static",
+            "pairs.steel__table_laminate.restitution",
+            "pairs.steel__table_wood.restitution",
+            "robots.x5.non_pad_link_material_classes.base_link",
+            "robots.x5.non_pad_link_material_classes.camera",
+            "robots.x5.non_pad_link_material_classes.camera_base",
+            "robots.x5.non_pad_link_material_classes.link1",
+            "robots.x5.non_pad_link_material_classes.link2",
+            "robots.x5.non_pad_link_material_classes.link3",
+            "robots.x5.non_pad_link_material_classes.link4",
+            "robots.x5.non_pad_link_material_classes.link5",
+            "robots.x5.non_pad_link_material_classes.link6",
+            "robots.x5.sanitize_camera_inertials",
+            "unary_values.abs_device_housing",
+            "unary_values.aluminium",
+            "unary_values.ground",
+            "unary_values.pad_elastomer",
+            "unary_values.pet_plastic",
+            "unary_values.polyolefin_plastic",
+            "unary_values.steel",
+            "unary_values.table_laminate",
+            "unary_values.table_wood"
+          ],
+          "profile_unsourced_keys_used": [
+            "assets.Rigid/bottle/00000.mass_by_fill.empty",
+            "assets.Rigid/bottle/00002.mass_by_fill.empty",
+            "assets.Rigid/bottle/00005.mass_by_fill.empty",
+            "assets.Rigid/bottle/00022.material_override.restitution_by_fill.empty",
+            "assets.Rigid/bottle/00025.mass_by_fill.empty",
+            "assets.Rigid/bottle/00041.mass_by_fill.empty",
+            "assets.Rigid/bottle/00050.mass_by_fill.empty",
+            "assets.Rigid/bottle/00055.mass_by_fill.empty",
+            "assets.Rigid/bottle/00059.mass_by_fill.empty",
+            "assets.Rigid/bottle/00060.mass_by_fill.empty",
+            "classes.abs_device_housing.restitution",
+            "classes.aluminium.restitution",
+            "classes.ground.restitution",
+            "classes.pad_elastomer.restitution",
+            "classes.pad_hard.restitution",
+            "classes.pet_plastic.restitution",
+            "classes.polyolefin_plastic.restitution",
+            "classes.steel.restitution",
+            "classes.table_laminate.restitution",
+            "classes.table_wood.restitution",
+            "pairs.abs_device_housing__ground.mu_kinetic",
+            "pairs.abs_device_housing__ground.mu_static",
+            "pairs.abs_device_housing__pad_elastomer.mu_kinetic",
+            "pairs.abs_device_housing__pad_elastomer.mu_static",
+            "pairs.abs_device_housing__table_laminate.mu_kinetic",
+            "pairs.abs_device_housing__table_laminate.mu_static",
+            "pairs.abs_device_housing__table_wood.mu_kinetic",
+            "pairs.abs_device_housing__table_wood.mu_static",
+            "pairs.aluminium__ground.mu_kinetic",
+            "pairs.aluminium__ground.mu_static",
+            "pairs.aluminium__table_laminate.mu_kinetic",
+            "pairs.aluminium__table_laminate.mu_static",
+            "pairs.ground__pet_plastic.mu_kinetic",
+            "pairs.ground__pet_plastic.mu_static",
+            "pairs.ground__pet_plastic.restitution",
+            "pairs.ground__polyolefin_plastic.mu_kinetic",
+            "pairs.ground__polyolefin_plastic.mu_static",
+            "pairs.ground__polyolefin_plastic.restitution",
+            "pairs.ground__steel.mu_kinetic",
+            "pairs.ground__steel.mu_static",
+            "pairs.ground__steel.restitution",
+            "pairs.pad_elastomer__pet_plastic.mu_kinetic",
+            "pairs.pad_elastomer__pet_plastic.mu_static",
+            "pairs.pad_elastomer__polyolefin_plastic.mu_kinetic",
+            "pairs.pad_elastomer__polyolefin_plastic.mu_static",
+            "pairs.pet_plastic__pet_plastic.restitution",
+            "pairs.pet_plastic__polyolefin_plastic.restitution",
+            "pairs.pet_plastic__steel.restitution",
+            "pairs.pet_plastic__table_laminate.mu_kinetic",
+            "pairs.pet_plastic__table_laminate.mu_static",
+            "pairs.pet_plastic__table_laminate.restitution",
+            "pairs.pet_plastic__table_wood.mu_kinetic",
+            "pairs.pet_plastic__table_wood.mu_static",
+            "pairs.pet_plastic__table_wood.restitution",
+            "pairs.polyolefin_plastic__polyolefin_plastic.restitution",
+            "pairs.polyolefin_plastic__steel.restitution",
+            "pairs.polyolefin_plastic__table_laminate.mu_kinetic",
+            "pairs.polyolefin_plastic__table_laminate.mu_static",
+            "pairs.polyolefin_plastic__table_laminate.restitution",
+            "pairs.polyolefin_plastic__table_wood.mu_kinetic",
+            "pairs.polyolefin_plastic__table_wood.mu_static",
+            "pairs.polyolefin_plastic__table_wood.restitution",
+            "pairs.steel__table_laminate.mu_kinetic",
+            "pairs.steel__table_laminate.mu_static",
+            "pairs.steel__table_laminate.restitution",
+            "pairs.steel__table_wood.restitution",
+            "robots.x5.non_pad_link_material_classes.base_link",
+            "robots.x5.non_pad_link_material_classes.camera",
+            "robots.x5.non_pad_link_material_classes.camera_base",
+            "robots.x5.non_pad_link_material_classes.link1",
+            "robots.x5.non_pad_link_material_classes.link2",
+            "robots.x5.non_pad_link_material_classes.link3",
+            "robots.x5.non_pad_link_material_classes.link4",
+            "robots.x5.non_pad_link_material_classes.link5",
+            "robots.x5.non_pad_link_material_classes.link6",
+            "robots.x5.sanitize_camera_inertials",
+            "unary_values.abs_device_housing",
+            "unary_values.aluminium",
+            "unary_values.ground",
+            "unary_values.pad_elastomer",
+            "unary_values.pet_plastic",
+            "unary_values.polyolefin_plastic",
+            "unary_values.steel",
+            "unary_values.table_laminate",
+            "unary_values.table_wood"
+          ]
+        }
+      },
+      "v2_resume_manifest_relpath": "eval_result_v2/RoboDojo/put_bottles_into_dustbin/harness/arx_x5/0_harness/_resume_harness_2026-11-12_14-04-47.json",
+      "v2_resume_manifest_has_physics": true,
+      "settled_poses": {
+        "bottle0": [
+          0.11593,
+          -0.24349,
+          0.8576,
+          0.96681,
+          -0.0,
+          0.0,
+          -0.2555
+        ],
+        "bottle1": [
+          0.43502,
+          -0.04053,
+          0.85977,
+          0.8639,
+          -0.00407,
+          0.00031,
+          0.50364
+        ],
+        "bottle2": [
+          0.37052,
+          -0.14482,
+          0.7963,
+          0.70818,
+          0.06205,
+          0.6988,
+          -0.07937
+        ],
+        "bottle3": [
+          -0.22222,
+          -0.0696,
+          0.88515,
+          0.97682,
+          -0.0,
+          0.0,
+          -0.21407
+        ]
+      },
+      "final_poses": {
+        "bottle0": [
+          -0.65238,
+          -0.12601,
+          0.3121,
+          -0.40837,
+          0.36801,
+          0.61577,
+          0.56447
+        ],
+        "bottle1": [
+          -0.75661,
+          -0.07631,
+          0.31516,
+          -0.25171,
+          -0.12801,
+          0.6901,
+          -0.66635
+        ],
+        "bottle2": [
+          -0.49719,
+          -0.08657,
+          0.32414,
+          -0.50004,
+          0.47555,
+          0.51297,
+          0.51057
+        ],
+        "bottle3": [
+          -0.58552,
+          -0.10738,
+          0.31759,
+          0.61058,
+          0.50452,
+          0.50908,
+          -0.33687
+        ]
+      },
+      "assertion_passed": true,
+      "failures": [],
+      "compensations_used": [
+        {
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "env": "env_0",
+          "label": "bottle1",
+          "asset_id": "Rigid/bottle/00060",
+          "approximations": [
+            "convexDecomposition"
+          ],
+          "usd_collider_aabb_extents_m": [
+            0.055,
+            0.055,
+            0.19
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.051757,
+            0.052428,
+            0.189301
+          ],
+          "engine_vs_usd_narrowing_m": [
+            0.003243,
+            0.002572,
+            0.000699
+          ],
+          "engine_max_narrowing_vs_usd_m": 0.003243,
+          "engine_aabb_max_rel_err": 0.05896,
+          "engine_aabb_max_abs_err_m": 0.003243,
+          "allowance_m": 0.004,
+          "one_sided": "engine_narrower_than_usd_only"
+        }
+      ],
+      "policy_log_summary": {
+        "plans": [
+          {
+            "idx": 0,
+            "label": "bottle0",
+            "route": "left_direct",
+            "start_pos": [
+              0.1159,
+              -0.2435,
+              0.8576
+            ],
+            "upright": true,
+            "grasp_ik": {
+              "mode": "upright_side",
+              "pitch_deg": 15.0,
+              "err_mm": [
+                0.01,
+                0.01,
+                0.01
+              ],
+              "rot_deg": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "bin_ik_mm_deg": [
+              0.0,
+              0.0
+            ],
+            "drop_xy": [
+              -0.6,
+              -0.13
+            ]
+          },
+          {
+            "idx": 1,
+            "label": "bottle3",
+            "route": "left_direct",
+            "start_pos": [
+              -0.2222,
+              -0.0696,
+              0.8851
+            ],
+            "upright": true,
+            "grasp_ik": {
+              "mode": "upright_side",
+              "pitch_deg": 15.0,
+              "err_mm": [
+                0.01,
+                0.01,
+                0.0
+              ],
+              "rot_deg": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "bin_ik_mm_deg": [
+              0.0,
+              0.0
+            ],
+            "drop_xy": [
+              -0.64,
+              -0.07
+            ]
+          },
+          {
+            "idx": 2,
+            "label": "bottle2",
+            "route": "right_to_left_handover",
+            "start_pos": [
+              0.3705,
+              -0.1448,
+              0.7963
+            ],
+            "upright": false,
+            "grasp_ik": {
+              "mode": "lying_top",
+              "axis_sign": 1.0,
+              "err_mm": [
+                0.01,
+                0.01,
+                0.01
+              ],
+              "rot_deg": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "bin_ik_mm_deg": [
+              0.0,
+              0.0
+            ],
+            "drop_xy": [
+              -0.64,
+              -0.13
+            ],
+            "handover_live": {
+              "bottle_pos": [
+                0.0156,
+                -0.2225,
+                1.0401
+              ],
+              "up_axis": [
+                0.016,
+                -0.002,
+                1.0
+              ],
+              "pad_l_pos": [
+                0.016,
+                -0.2225,
+                1.0627
+              ],
+              "left_ho_ik_mm_deg": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          {
+            "idx": 3,
+            "label": "bottle1",
+            "route": "right_to_left_handover",
+            "start_pos": [
+              0.435,
+              -0.0405,
+              0.8598
+            ],
+            "upright": true,
+            "grasp_ik": {
+              "mode": "upright_side",
+              "pitch_deg": 15.0,
+              "err_mm": [
+                0.0,
+                0.0,
+                0.01
+              ],
+              "rot_deg": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "bin_ik_mm_deg": [
+              0.0,
+              0.0
+            ],
+            "drop_xy": [
+              -0.6,
+              -0.07
+            ],
+            "handover_live": {
+              "bottle_pos": [
+                0.0005,
+                -0.22,
+                1.0399
+              ],
+              "up_axis": [
+                0.014,
+                -0.002,
+                1.0
+              ],
+              "pad_l_pos": [
+                0.0008,
+                -0.22,
+                1.0629
+              ],
+              "left_ho_ik_mm_deg": [
+                0.0,
+                0.0
+              ]
+            }
+          }
+        ],
+        "ik_common": [
+          {
+            "waypoint": "high_carry",
+            "left_mm_deg": [
+              0.01,
+              0.0
+            ],
+            "right_mm_deg": [
+              0.01,
+              0.0
+            ]
+          },
+          {
+            "waypoint": "right_handover",
+            "ho_mm_deg": [
+              0.0,
+              0.0
+            ],
+            "retreat_mm_deg": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "actions_logged": 649,
+        "geometric_check": {
+          "env_idx": 0,
+          "dustbin_world_aabb": {
+            "min": [
+              -0.8651,
+              -0.3349,
+              0.075
+            ],
+            "max": [
+              -0.3948,
+              0.1355,
+              0.725
+            ]
+          },
+          "bottles": {
+            "bottle0": {
+              "inst": "bottle_41_1",
+              "final_pos": [
+                -0.65238,
+                -0.12601,
+                0.3121
+              ],
+              "final_ori": [
+                -0.40837,
+                0.36801,
+                0.61577,
+                0.56447
+              ],
+              "aabb_min": [
+                -0.6975,
+                -0.2214,
+                0.272
+              ],
+              "aabb_max": [
+                -0.607,
+                -0.0308,
+                0.352
+              ],
+              "z_gap_m": 0.19704,
+              "xy_inside": true,
+              "z_below_rim": true,
+              "z_on_bottom": true,
+              "in_dustbin_geometric": true,
+              "task_is_A_on_B_bottom": true
+            },
+            "bottle1": {
+              "inst": "bottle_60_2",
+              "final_pos": [
+                -0.75661,
+                -0.07631,
+                0.31516
+              ],
+              "final_ori": [
+                -0.25171,
+                -0.12801,
+                0.6901,
+                -0.66635
+              ],
+              "aabb_min": [
+                -0.8116,
+                -0.1766,
+                0.275
+              ],
+              "aabb_max": [
+                -0.7017,
+                0.024,
+                0.3553
+              ],
+              "z_gap_m": 0.19998,
+              "xy_inside": true,
+              "z_below_rim": true,
+              "z_on_bottom": true,
+              "in_dustbin_geometric": true,
+              "task_is_A_on_B_bottom": true
+            },
+            "bottle2": {
+              "inst": "bottle_25_3",
+              "final_pos": [
+                -0.49719,
+                -0.08657,
+                0.32414
+              ],
+              "final_ori": [
+                -0.50004,
+                0.47555,
+                0.51297,
+                0.51057
+              ],
+              "aabb_min": [
+                -0.5334,
+                -0.1902,
+                0.2884
+              ],
+              "aabb_max": [
+                -0.4608,
+                0.0168,
+                0.3597
+              ],
+              "z_gap_m": 0.21336,
+              "xy_inside": true,
+              "z_below_rim": true,
+              "z_on_bottom": true,
+              "in_dustbin_geometric": true,
+              "task_is_A_on_B_bottom": true
+            },
+            "bottle3": {
+              "inst": "bottle_22_4",
+              "final_pos": [
+                -0.58552,
+                -0.10738,
+                0.31759
+              ],
+              "final_ori": [
+                0.61058,
+                0.50452,
+                0.50908,
+                -0.33687
+              ],
+              "aabb_min": [
+                -0.6592,
+                -0.2348,
+                0.2726
+              ],
+              "aabb_max": [
+                -0.5118,
+                0.0203,
+                0.3628
+              ],
+              "z_gap_m": 0.19764,
+              "xy_inside": true,
+              "z_below_rim": true,
+              "z_on_bottom": true,
+              "in_dustbin_geometric": true,
+              "task_is_A_on_B_bottom": true
+            }
+          },
+          "in_dustbin_geometric_count": 4,
+          "task_predicate_count": 4,
+          "task_all_robot_back_to_origin": true,
+          "task_is_all_gripper_open_0.8": true
+        }
+      }
+    },
+    "1": {
+      "full_archive_sha256": "5b9fdf76773466853f0ca08539059a79a02bb5f4166ca8dcea5e10db450d8e6f",
+      "full_archive_bytes": 1333895,
+      "versions": {
+        "repo_head": "57c472411e6c159c766b55b637bc7d5c004b6f94",
+        "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "isaaclab": "afca7b09d60d8beb9c1cb28b43066499940b969b",
+        "container": "isaac-sim_5.1.0.sif",
+        "isaac_sim": [
+          "5.1.0",
+          "rc.19",
+          "5"
+        ]
+      },
+      "layout": 1,
+      "evaluator": "v2",
+      "steps_through_reset": 844,
+      "episode_steps": 6490,
+      "take_action_cnt": 649,
+      "success": true,
+      "wall_seconds": 205.9,
+      "eval_result": {
+        "evaluator_version": "evaluator v2",
+        "task_name": "put_bottles_into_dustbin",
+        "config_name": "arx_x5",
+        "policy_name": "harness",
+        "seed": 0,
+        "native_eval_num": 50,
+        "scheduled_count": 1,
+        "scheduled_layout_ids": [
+          1
+        ],
+        "unresolved_layout_ids": [],
+        "resolved_count": 1,
+        "complete": true,
+        "valid": true,
+        "eval_time": 1,
+        "success_rate": 1.0,
+        "score": 100.0,
+        "category_counts": {
+          "success": 1,
+          "failure": 0,
+          "timeout": 0,
+          "policy_error": 0,
+          "simulator_break": 0,
+          "evaluator_error": 0,
+          "unstable_layout": 0,
+          "excluded": 0
+        },
+        "drops": {
+          "total": 0,
+          "policy_error": 0,
+          "simulator_break": 0,
+          "evaluator_error": 0,
+          "unstable_layout": 0,
+          "excluded": 0
+        },
+        "aggregation": {
+          "evaluator_version": "evaluator v2",
+          "denominator_rule": "all_scheduled",
+          "excluded_categories": [],
+          "scheduled_count": 1,
+          "resolved_count": 1,
+          "denominator": 1,
+          "complete": true,
+          "valid": true,
+          "success_count": 1,
+          "success_rate": 1.0,
+          "success_rate_pct": 100.0,
+          "score": 100.0
+        },
+        "ledger": [
+          {
+            "layout_id": 1,
+            "seed": 0,
+            "category": "success",
+            "success": true,
+            "score": 1.0,
+            "steps": 649,
+            "reason": "reward_check_passed"
+          }
+        ],
+        "details": {
+          "0": {
+            "layout_id": 1,
+            "seed": 0,
+            "category": "success",
+            "success": true,
+            "score": 1.0,
+            "steps": 649,
+            "reason": "reward_check_passed"
+          }
+        },
+        "physics": {
+          "preset": "corrected",
+          "fixes": [
+            "collision",
+            "order",
+            "size",
+            "values"
+          ],
+          "device": "cpu",
+          "dormant_values_active": false,
+          "values_delivered": true,
+          "table_sha256": "7d053f8c828342dee7db6c3b3aeed22fb75e7caca104fa9884496d52f98c5749",
+          "admitted_statuses": [
+            "estimated",
+            "sourced"
+          ],
+          "scenario_opt_in": "bottles_primary_empty",
+          "scenario": {
+            "finger_pad": "pad_hard",
+            "table": "table_laminate",
+            "ground_combine": "average",
+            "fill": "empty"
+          },
+          "status_counts": {
+            "estimated": 72,
+            "unsourced": 85,
+            "sourced": 30
+          },
+          "below_g1_unsourced_opt_in": true,
+          "unsourced_keys_used": [
+            "assets.Rigid/bottle/00000.mass_by_fill.empty",
+            "assets.Rigid/bottle/00002.mass_by_fill.empty",
+            "assets.Rigid/bottle/00005.mass_by_fill.empty",
+            "assets.Rigid/bottle/00022.material_override.restitution_by_fill.empty",
+            "assets.Rigid/bottle/00025.mass_by_fill.empty",
+            "assets.Rigid/bottle/00041.mass_by_fill.empty",
+            "assets.Rigid/bottle/00050.mass_by_fill.empty",
+            "assets.Rigid/bottle/00055.mass_by_fill.empty",
+            "assets.Rigid/bottle/00059.mass_by_fill.empty",
+            "assets.Rigid/bottle/00060.mass_by_fill.empty",
+            "classes.abs_device_housing.restitution",
+            "classes.aluminium.restitution",
+            "classes.ground.restitution",
+            "classes.pad_elastomer.restitution",
+            "classes.pad_hard.restitution",
+            "classes.pet_plastic.restitution",
+            "classes.polyolefin_plastic.restitution",
+            "classes.steel.restitution",
+            "classes.table_laminate.restitution",
+            "classes.table_wood.restitution",
+            "pairs.abs_device_housing__ground.mu_kinetic",
+            "pairs.abs_device_housing__ground.mu_static",
+            "pairs.abs_device_housing__pad_elastomer.mu_kinetic",
+            "pairs.abs_device_housing__pad_elastomer.mu_static",
+            "pairs.abs_device_housing__table_laminate.mu_kinetic",
+            "pairs.abs_device_housing__table_laminate.mu_static",
+            "pairs.abs_device_housing__table_wood.mu_kinetic",
+            "pairs.abs_device_housing__table_wood.mu_static",
+            "pairs.aluminium__ground.mu_kinetic",
+            "pairs.aluminium__ground.mu_static",
+            "pairs.aluminium__table_laminate.mu_kinetic",
+            "pairs.aluminium__table_laminate.mu_static",
+            "pairs.ground__pet_plastic.mu_kinetic",
+            "pairs.ground__pet_plastic.mu_static",
+            "pairs.ground__pet_plastic.restitution",
+            "pairs.ground__polyolefin_plastic.mu_kinetic",
+            "pairs.ground__polyolefin_plastic.mu_static",
+            "pairs.ground__polyolefin_plastic.restitution",
+            "pairs.ground__steel.mu_kinetic",
+            "pairs.ground__steel.mu_static",
+            "pairs.ground__steel.restitution",
+            "pairs.pad_elastomer__pet_plastic.mu_kinetic",
+            "pairs.pad_elastomer__pet_plastic.mu_static",
+            "pairs.pad_elastomer__polyolefin_plastic.mu_kinetic",
+            "pairs.pad_elastomer__polyolefin_plastic.mu_static",
+            "pairs.pet_plastic__pet_plastic.restitution",
+            "pairs.pet_plastic__polyolefin_plastic.restitution",
+            "pairs.pet_plastic__steel.restitution",
+            "pairs.pet_plastic__table_laminate.mu_kinetic",
+            "pairs.pet_plastic__table_laminate.mu_static",
+            "pairs.pet_plastic__table_laminate.restitution",
+            "pairs.pet_plastic__table_wood.mu_kinetic",
+            "pairs.pet_plastic__table_wood.mu_static",
+            "pairs.pet_plastic__table_wood.restitution",
+            "pairs.polyolefin_plastic__polyolefin_plastic.restitution",
+            "pairs.polyolefin_plastic__steel.restitution",
+            "pairs.polyolefin_plastic__table_laminate.mu_kinetic",
+            "pairs.polyolefin_plastic__table_laminate.mu_static",
+            "pairs.polyolefin_plastic__table_laminate.restitution",
+            "pairs.polyolefin_plastic__table_wood.mu_kinetic",
+            "pairs.polyolefin_plastic__table_wood.mu_static",
+            "pairs.polyolefin_plastic__table_wood.restitution",
+            "pairs.steel__table_laminate.mu_kinetic",
+            "pairs.steel__table_laminate.mu_static",
+            "pairs.steel__table_laminate.restitution",
+            "pairs.steel__table_wood.restitution",
+            "robots.x5.non_pad_link_material_classes.base_link",
+            "robots.x5.non_pad_link_material_classes.camera",
+            "robots.x5.non_pad_link_material_classes.camera_base",
+            "robots.x5.non_pad_link_material_classes.link1",
+            "robots.x5.non_pad_link_material_classes.link2",
+            "robots.x5.non_pad_link_material_classes.link3",
+            "robots.x5.non_pad_link_material_classes.link4",
+            "robots.x5.non_pad_link_material_classes.link5",
+            "robots.x5.non_pad_link_material_classes.link6",
+            "robots.x5.sanitize_camera_inertials",
+            "unary_values.abs_device_housing",
+            "unary_values.aluminium",
+            "unary_values.ground",
+            "unary_values.pad_elastomer",
+            "unary_values.pet_plastic",
+            "unary_values.polyolefin_plastic",
+            "unary_values.steel",
+            "unary_values.table_laminate",
+            "unary_values.table_wood"
+          ],
+          "profile_unsourced_keys_used": [
+            "assets.Rigid/bottle/00000.mass_by_fill.empty",
+            "assets.Rigid/bottle/00002.mass_by_fill.empty",
+            "assets.Rigid/bottle/00005.mass_by_fill.empty",
+            "assets.Rigid/bottle/00022.material_override.restitution_by_fill.empty",
+            "assets.Rigid/bottle/00025.mass_by_fill.empty",
+            "assets.Rigid/bottle/00041.mass_by_fill.empty",
+            "assets.Rigid/bottle/00050.mass_by_fill.empty",
+            "assets.Rigid/bottle/00055.mass_by_fill.empty",
+            "assets.Rigid/bottle/00059.mass_by_fill.empty",
+            "assets.Rigid/bottle/00060.mass_by_fill.empty",
+            "classes.abs_device_housing.restitution",
+            "classes.aluminium.restitution",
+            "classes.ground.restitution",
+            "classes.pad_elastomer.restitution",
+            "classes.pad_hard.restitution",
+            "classes.pet_plastic.restitution",
+            "classes.polyolefin_plastic.restitution",
+            "classes.steel.restitution",
+            "classes.table_laminate.restitution",
+            "classes.table_wood.restitution",
+            "pairs.abs_device_housing__ground.mu_kinetic",
+            "pairs.abs_device_housing__ground.mu_static",
+            "pairs.abs_device_housing__pad_elastomer.mu_kinetic",
+            "pairs.abs_device_housing__pad_elastomer.mu_static",
+            "pairs.abs_device_housing__table_laminate.mu_kinetic",
+            "pairs.abs_device_housing__table_laminate.mu_static",
+            "pairs.abs_device_housing__table_wood.mu_kinetic",
+            "pairs.abs_device_housing__table_wood.mu_static",
+            "pairs.aluminium__ground.mu_kinetic",
+            "pairs.aluminium__ground.mu_static",
+            "pairs.aluminium__table_laminate.mu_kinetic",
+            "pairs.aluminium__table_laminate.mu_static",
+            "pairs.ground__pet_plastic.mu_kinetic",
+            "pairs.ground__pet_plastic.mu_static",
+            "pairs.ground__pet_plastic.restitution",
+            "pairs.ground__polyolefin_plastic.mu_kinetic",
+            "pairs.ground__polyolefin_plastic.mu_static",
+            "pairs.ground__polyolefin_plastic.restitution",
+            "pairs.ground__steel.mu_kinetic",
+            "pairs.ground__steel.mu_static",
+            "pairs.ground__steel.restitution",
+            "pairs.pad_elastomer__pet_plastic.mu_kinetic",
+            "pairs.pad_elastomer__pet_plastic.mu_static",
+            "pairs.pad_elastomer__polyolefin_plastic.mu_kinetic",
+            "pairs.pad_elastomer__polyolefin_plastic.mu_static",
+            "pairs.pet_plastic__pet_plastic.restitution",
+            "pairs.pet_plastic__polyolefin_plastic.restitution",
+            "pairs.pet_plastic__steel.restitution",
+            "pairs.pet_plastic__table_laminate.mu_kinetic",
+            "pairs.pet_plastic__table_laminate.mu_static",
+            "pairs.pet_plastic__table_laminate.restitution",
+            "pairs.pet_plastic__table_wood.mu_kinetic",
+            "pairs.pet_plastic__table_wood.mu_static",
+            "pairs.pet_plastic__table_wood.restitution",
+            "pairs.polyolefin_plastic__polyolefin_plastic.restitution",
+            "pairs.polyolefin_plastic__steel.restitution",
+            "pairs.polyolefin_plastic__table_laminate.mu_kinetic",
+            "pairs.polyolefin_plastic__table_laminate.mu_static",
+            "pairs.polyolefin_plastic__table_laminate.restitution",
+            "pairs.polyolefin_plastic__table_wood.mu_kinetic",
+            "pairs.polyolefin_plastic__table_wood.mu_static",
+            "pairs.polyolefin_plastic__table_wood.restitution",
+            "pairs.steel__table_laminate.mu_kinetic",
+            "pairs.steel__table_laminate.mu_static",
+            "pairs.steel__table_laminate.restitution",
+            "pairs.steel__table_wood.restitution",
+            "robots.x5.non_pad_link_material_classes.base_link",
+            "robots.x5.non_pad_link_material_classes.camera",
+            "robots.x5.non_pad_link_material_classes.camera_base",
+            "robots.x5.non_pad_link_material_classes.link1",
+            "robots.x5.non_pad_link_material_classes.link2",
+            "robots.x5.non_pad_link_material_classes.link3",
+            "robots.x5.non_pad_link_material_classes.link4",
+            "robots.x5.non_pad_link_material_classes.link5",
+            "robots.x5.non_pad_link_material_classes.link6",
+            "robots.x5.sanitize_camera_inertials",
+            "unary_values.abs_device_housing",
+            "unary_values.aluminium",
+            "unary_values.ground",
+            "unary_values.pad_elastomer",
+            "unary_values.pet_plastic",
+            "unary_values.polyolefin_plastic",
+            "unary_values.steel",
+            "unary_values.table_laminate",
+            "unary_values.table_wood"
+          ]
+        }
+      },
+      "v2_result_json_relpath": "eval_result_v2/RoboDojo/put_bottles_into_dustbin/harness/arx_x5/0_harness/harness_2026-11-12_14-07-56/_result.json",
+      "v2_result_json": {
+        "evaluator_version": "evaluator v2",
+        "task_name": "put_bottles_into_dustbin",
+        "config_name": "arx_x5",
+        "policy_name": "harness",
+        "seed": 0,
+        "native_eval_num": 50,
+        "scheduled_count": 1,
+        "scheduled_layout_ids": [
+          1
+        ],
+        "unresolved_layout_ids": [],
+        "resolved_count": 1,
+        "complete": true,
+        "valid": true,
+        "eval_time": 1,
+        "success_rate": 1.0,
+        "score": 100.0,
+        "category_counts": {
+          "success": 1,
+          "failure": 0,
+          "timeout": 0,
+          "policy_error": 0,
+          "simulator_break": 0,
+          "evaluator_error": 0,
+          "unstable_layout": 0,
+          "excluded": 0
+        },
+        "drops": {
+          "total": 0,
+          "policy_error": 0,
+          "simulator_break": 0,
+          "evaluator_error": 0,
+          "unstable_layout": 0,
+          "excluded": 0
+        },
+        "aggregation": {
+          "evaluator_version": "evaluator v2",
+          "denominator_rule": "all_scheduled",
+          "excluded_categories": [],
+          "scheduled_count": 1,
+          "resolved_count": 1,
+          "denominator": 1,
+          "complete": true,
+          "valid": true,
+          "success_count": 1,
+          "success_rate": 1.0,
+          "success_rate_pct": 100.0,
+          "score": 100.0
+        },
+        "ledger": [
+          {
+            "layout_id": 1,
+            "seed": 0,
+            "category": "success",
+            "success": true,
+            "score": 1.0,
+            "steps": 649,
+            "reason": "reward_check_passed"
+          }
+        ],
+        "details": {
+          "0": {
+            "layout_id": 1,
+            "seed": 0,
+            "category": "success",
+            "success": true,
+            "score": 1.0,
+            "steps": 649,
+            "reason": "reward_check_passed"
+          }
+        },
+        "physics": {
+          "preset": "corrected",
+          "fixes": [
+            "collision",
+            "order",
+            "size",
+            "values"
+          ],
+          "device": "cpu",
+          "dormant_values_active": false,
+          "values_delivered": true,
+          "table_sha256": "7d053f8c828342dee7db6c3b3aeed22fb75e7caca104fa9884496d52f98c5749",
+          "admitted_statuses": [
+            "estimated",
+            "sourced"
+          ],
+          "scenario_opt_in": "bottles_primary_empty",
+          "scenario": {
+            "finger_pad": "pad_hard",
+            "table": "table_laminate",
+            "ground_combine": "average",
+            "fill": "empty"
+          },
+          "status_counts": {
+            "estimated": 72,
+            "unsourced": 85,
+            "sourced": 30
+          },
+          "below_g1_unsourced_opt_in": true,
+          "unsourced_keys_used": [
+            "assets.Rigid/bottle/00000.mass_by_fill.empty",
+            "assets.Rigid/bottle/00002.mass_by_fill.empty",
+            "assets.Rigid/bottle/00005.mass_by_fill.empty",
+            "assets.Rigid/bottle/00022.material_override.restitution_by_fill.empty",
+            "assets.Rigid/bottle/00025.mass_by_fill.empty",
+            "assets.Rigid/bottle/00041.mass_by_fill.empty",
+            "assets.Rigid/bottle/00050.mass_by_fill.empty",
+            "assets.Rigid/bottle/00055.mass_by_fill.empty",
+            "assets.Rigid/bottle/00059.mass_by_fill.empty",
+            "assets.Rigid/bottle/00060.mass_by_fill.empty",
+            "classes.abs_device_housing.restitution",
+            "classes.aluminium.restitution",
+            "classes.ground.restitution",
+            "classes.pad_elastomer.restitution",
+            "classes.pad_hard.restitution",
+            "classes.pet_plastic.restitution",
+            "classes.polyolefin_plastic.restitution",
+            "classes.steel.restitution",
+            "classes.table_laminate.restitution",
+            "classes.table_wood.restitution",
+            "pairs.abs_device_housing__ground.mu_kinetic",
+            "pairs.abs_device_housing__ground.mu_static",
+            "pairs.abs_device_housing__pad_elastomer.mu_kinetic",
+            "pairs.abs_device_housing__pad_elastomer.mu_static",
+            "pairs.abs_device_housing__table_laminate.mu_kinetic",
+            "pairs.abs_device_housing__table_laminate.mu_static",
+            "pairs.abs_device_housing__table_wood.mu_kinetic",
+            "pairs.abs_device_housing__table_wood.mu_static",
+            "pairs.aluminium__ground.mu_kinetic",
+            "pairs.aluminium__ground.mu_static",
+            "pairs.aluminium__table_laminate.mu_kinetic",
+            "pairs.aluminium__table_laminate.mu_static",
+            "pairs.ground__pet_plastic.mu_kinetic",
+            "pairs.ground__pet_plastic.mu_static",
+            "pairs.ground__pet_plastic.restitution",
+            "pairs.ground__polyolefin_plastic.mu_kinetic",
+            "pairs.ground__polyolefin_plastic.mu_static",
+            "pairs.ground__polyolefin_plastic.restitution",
+            "pairs.ground__steel.mu_kinetic",
+            "pairs.ground__steel.mu_static",
+            "pairs.ground__steel.restitution",
+            "pairs.pad_elastomer__pet_plastic.mu_kinetic",
+            "pairs.pad_elastomer__pet_plastic.mu_static",
+            "pairs.pad_elastomer__polyolefin_plastic.mu_kinetic",
+            "pairs.pad_elastomer__polyolefin_plastic.mu_static",
+            "pairs.pet_plastic__pet_plastic.restitution",
+            "pairs.pet_plastic__polyolefin_plastic.restitution",
+            "pairs.pet_plastic__steel.restitution",
+            "pairs.pet_plastic__table_laminate.mu_kinetic",
+            "pairs.pet_plastic__table_laminate.mu_static",
+            "pairs.pet_plastic__table_laminate.restitution",
+            "pairs.pet_plastic__table_wood.mu_kinetic",
+            "pairs.pet_plastic__table_wood.mu_static",
+            "pairs.pet_plastic__table_wood.restitution",
+            "pairs.polyolefin_plastic__polyolefin_plastic.restitution",
+            "pairs.polyolefin_plastic__steel.restitution",
+            "pairs.polyolefin_plastic__table_laminate.mu_kinetic",
+            "pairs.polyolefin_plastic__table_laminate.mu_static",
+            "pairs.polyolefin_plastic__table_laminate.restitution",
+            "pairs.polyolefin_plastic__table_wood.mu_kinetic",
+            "pairs.polyolefin_plastic__table_wood.mu_static",
+            "pairs.polyolefin_plastic__table_wood.restitution",
+            "pairs.steel__table_laminate.mu_kinetic",
+            "pairs.steel__table_laminate.mu_static",
+            "pairs.steel__table_laminate.restitution",
+            "pairs.steel__table_wood.restitution",
+            "robots.x5.non_pad_link_material_classes.base_link",
+            "robots.x5.non_pad_link_material_classes.camera",
+            "robots.x5.non_pad_link_material_classes.camera_base",
+            "robots.x5.non_pad_link_material_classes.link1",
+            "robots.x5.non_pad_link_material_classes.link2",
+            "robots.x5.non_pad_link_material_classes.link3",
+            "robots.x5.non_pad_link_material_classes.link4",
+            "robots.x5.non_pad_link_material_classes.link5",
+            "robots.x5.non_pad_link_material_classes.link6",
+            "robots.x5.sanitize_camera_inertials",
+            "unary_values.abs_device_housing",
+            "unary_values.aluminium",
+            "unary_values.ground",
+            "unary_values.pad_elastomer",
+            "unary_values.pet_plastic",
+            "unary_values.polyolefin_plastic",
+            "unary_values.steel",
+            "unary_values.table_laminate",
+            "unary_values.table_wood"
+          ],
+          "profile_unsourced_keys_used": [
+            "assets.Rigid/bottle/00000.mass_by_fill.empty",
+            "assets.Rigid/bottle/00002.mass_by_fill.empty",
+            "assets.Rigid/bottle/00005.mass_by_fill.empty",
+            "assets.Rigid/bottle/00022.material_override.restitution_by_fill.empty",
+            "assets.Rigid/bottle/00025.mass_by_fill.empty",
+            "assets.Rigid/bottle/00041.mass_by_fill.empty",
+            "assets.Rigid/bottle/00050.mass_by_fill.empty",
+            "assets.Rigid/bottle/00055.mass_by_fill.empty",
+            "assets.Rigid/bottle/00059.mass_by_fill.empty",
+            "assets.Rigid/bottle/00060.mass_by_fill.empty",
+            "classes.abs_device_housing.restitution",
+            "classes.aluminium.restitution",
+            "classes.ground.restitution",
+            "classes.pad_elastomer.restitution",
+            "classes.pad_hard.restitution",
+            "classes.pet_plastic.restitution",
+            "classes.polyolefin_plastic.restitution",
+            "classes.steel.restitution",
+            "classes.table_laminate.restitution",
+            "classes.table_wood.restitution",
+            "pairs.abs_device_housing__ground.mu_kinetic",
+            "pairs.abs_device_housing__ground.mu_static",
+            "pairs.abs_device_housing__pad_elastomer.mu_kinetic",
+            "pairs.abs_device_housing__pad_elastomer.mu_static",
+            "pairs.abs_device_housing__table_laminate.mu_kinetic",
+            "pairs.abs_device_housing__table_laminate.mu_static",
+            "pairs.abs_device_housing__table_wood.mu_kinetic",
+            "pairs.abs_device_housing__table_wood.mu_static",
+            "pairs.aluminium__ground.mu_kinetic",
+            "pairs.aluminium__ground.mu_static",
+            "pairs.aluminium__table_laminate.mu_kinetic",
+            "pairs.aluminium__table_laminate.mu_static",
+            "pairs.ground__pet_plastic.mu_kinetic",
+            "pairs.ground__pet_plastic.mu_static",
+            "pairs.ground__pet_plastic.restitution",
+            "pairs.ground__polyolefin_plastic.mu_kinetic",
+            "pairs.ground__polyolefin_plastic.mu_static",
+            "pairs.ground__polyolefin_plastic.restitution",
+            "pairs.ground__steel.mu_kinetic",
+            "pairs.ground__steel.mu_static",
+            "pairs.ground__steel.restitution",
+            "pairs.pad_elastomer__pet_plastic.mu_kinetic",
+            "pairs.pad_elastomer__pet_plastic.mu_static",
+            "pairs.pad_elastomer__polyolefin_plastic.mu_kinetic",
+            "pairs.pad_elastomer__polyolefin_plastic.mu_static",
+            "pairs.pet_plastic__pet_plastic.restitution",
+            "pairs.pet_plastic__polyolefin_plastic.restitution",
+            "pairs.pet_plastic__steel.restitution",
+            "pairs.pet_plastic__table_laminate.mu_kinetic",
+            "pairs.pet_plastic__table_laminate.mu_static",
+            "pairs.pet_plastic__table_laminate.restitution",
+            "pairs.pet_plastic__table_wood.mu_kinetic",
+            "pairs.pet_plastic__table_wood.mu_static",
+            "pairs.pet_plastic__table_wood.restitution",
+            "pairs.polyolefin_plastic__polyolefin_plastic.restitution",
+            "pairs.polyolefin_plastic__steel.restitution",
+            "pairs.polyolefin_plastic__table_laminate.mu_kinetic",
+            "pairs.polyolefin_plastic__table_laminate.mu_static",
+            "pairs.polyolefin_plastic__table_laminate.restitution",
+            "pairs.polyolefin_plastic__table_wood.mu_kinetic",
+            "pairs.polyolefin_plastic__table_wood.mu_static",
+            "pairs.polyolefin_plastic__table_wood.restitution",
+            "pairs.steel__table_laminate.mu_kinetic",
+            "pairs.steel__table_laminate.mu_static",
+            "pairs.steel__table_laminate.restitution",
+            "pairs.steel__table_wood.restitution",
+            "robots.x5.non_pad_link_material_classes.base_link",
+            "robots.x5.non_pad_link_material_classes.camera",
+            "robots.x5.non_pad_link_material_classes.camera_base",
+            "robots.x5.non_pad_link_material_classes.link1",
+            "robots.x5.non_pad_link_material_classes.link2",
+            "robots.x5.non_pad_link_material_classes.link3",
+            "robots.x5.non_pad_link_material_classes.link4",
+            "robots.x5.non_pad_link_material_classes.link5",
+            "robots.x5.non_pad_link_material_classes.link6",
+            "robots.x5.sanitize_camera_inertials",
+            "unary_values.abs_device_housing",
+            "unary_values.aluminium",
+            "unary_values.ground",
+            "unary_values.pad_elastomer",
+            "unary_values.pet_plastic",
+            "unary_values.polyolefin_plastic",
+            "unary_values.steel",
+            "unary_values.table_laminate",
+            "unary_values.table_wood"
+          ]
+        }
+      },
+      "v2_resume_manifest_relpath": "eval_result_v2/RoboDojo/put_bottles_into_dustbin/harness/arx_x5/0_harness/_resume_harness_2026-11-12_14-07-56.json",
+      "v2_resume_manifest_has_physics": true,
+      "settled_poses": {
+        "bottle0": [
+          -0.0549,
+          -0.07085,
+          0.79063,
+          0.59165,
+          -0.53339,
+          0.45901,
+          -0.39339
+        ],
+        "bottle1": [
+          -0.2873,
+          0.00415,
+          0.85988,
+          0.73034,
+          -0.00023,
+          0.0014,
+          -0.68308
+        ],
+        "bottle2": [
+          0.10731,
+          -0.22736,
+          0.79069,
+          -0.63965,
+          0.67042,
+          0.23479,
+          -0.29369
+        ],
+        "bottle3": [
+          -0.27037,
+          -0.15321,
+          0.85,
+          0.96233,
+          -0.0,
+          -0.0,
+          -0.27189
+        ]
+      },
+      "final_poses": {
+        "bottle0": [
+          -0.60977,
+          -0.12275,
+          0.31351,
+          -0.34269,
+          0.28618,
+          0.64814,
+          0.61692
+        ],
+        "bottle1": [
+          -0.72801,
+          -0.14196,
+          0.31639,
+          0.6429,
+          0.60183,
+          -0.33912,
+          0.33088
+        ],
+        "bottle2": [
+          -0.54689,
+          -0.03679,
+          0.31369,
+          -0.52733,
+          0.18003,
+          0.69537,
+          0.45385
+        ],
+        "bottle3": [
+          -0.66357,
+          -0.13342,
+          0.31164,
+          0.70098,
+          0.71178,
+          0.01965,
+          0.04027
+        ]
+      },
+      "assertion_passed": true,
+      "failures": [],
+      "compensations_used": [
+        {
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "env": "env_0",
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00060",
+          "approximations": [
+            "convexDecomposition"
+          ],
+          "usd_collider_aabb_extents_m": [
+            0.055,
+            0.055,
+            0.19
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.051759,
+            0.052429,
+            0.189303
+          ],
+          "engine_vs_usd_narrowing_m": [
+            0.003241,
+            0.002571,
+            0.000697
+          ],
+          "engine_max_narrowing_vs_usd_m": 0.003241,
+          "engine_aabb_max_rel_err": 0.05893,
+          "engine_aabb_max_abs_err_m": 0.003241,
+          "allowance_m": 0.004,
+          "one_sided": "engine_narrower_than_usd_only"
+        },
+        {
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "env": "env_0",
+          "label": "bottle1",
+          "asset_id": "Rigid/bottle/00050",
+          "approximations": [
+            "convexDecomposition"
+          ],
+          "usd_collider_aabb_extents_m": [
+            0.055,
+            0.055,
+            0.19
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.052558,
+            0.052851,
+            0.187911
+          ],
+          "engine_vs_usd_narrowing_m": [
+            0.002442,
+            0.002149,
+            0.002089
+          ],
+          "engine_max_narrowing_vs_usd_m": 0.002442,
+          "engine_aabb_max_rel_err": 0.0444,
+          "engine_aabb_max_abs_err_m": 0.002442,
+          "allowance_m": 0.004,
+          "one_sided": "engine_narrower_than_usd_only"
+        },
+        {
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "env": "env_0",
+          "label": "bottle3",
+          "asset_id": "Rigid/bottle/00059",
+          "approximations": [
+            "convexDecomposition"
+          ],
+          "usd_collider_aabb_extents_m": [
+            0.055,
+            0.055,
+            0.17
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.052726,
+            0.052735,
+            0.167694
+          ],
+          "engine_vs_usd_narrowing_m": [
+            0.002274,
+            0.002265,
+            0.002306
+          ],
+          "engine_max_narrowing_vs_usd_m": 0.002306,
+          "engine_aabb_max_rel_err": 0.04135,
+          "engine_aabb_max_abs_err_m": 0.002306,
+          "allowance_m": 0.004,
+          "one_sided": "engine_narrower_than_usd_only"
+        }
+      ],
+      "policy_log_summary": {
+        "plans": [
+          {
+            "idx": 0,
+            "label": "bottle2",
+            "route": "right_to_left_handover",
+            "start_pos": [
+              0.1073,
+              -0.2274,
+              0.7907
+            ],
+            "upright": false,
+            "grasp_ik": {
+              "mode": "lying_top",
+              "axis_sign": 1.0,
+              "err_mm": [
+                0.01,
+                0.01,
+                0.0
+              ],
+              "rot_deg": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "bin_ik_mm_deg": [
+              0.0,
+              0.0
+            ],
+            "drop_xy": [
+              -0.6,
+              -0.13
+            ],
+            "handover_live": {
+              "bottle_pos": [
+                0.0136,
+                -0.2229,
+                1.0399
+              ],
+              "up_axis": [
+                -0.008,
+                -0.004,
+                1.0
+              ],
+              "pad_l_pos": [
+                0.0135,
+                -0.223,
+                1.0631
+              ],
+              "left_ho_ik_mm_deg": [
+                0.01,
+                0.0
+              ]
+            }
+          },
+          {
+            "idx": 1,
+            "label": "bottle3",
+            "route": "left_direct",
+            "start_pos": [
+              -0.2704,
+              -0.1532,
+              0.85
+            ],
+            "upright": true,
+            "grasp_ik": {
+              "mode": "upright_side",
+              "pitch_deg": 25.0,
+              "err_mm": [
+                0.0,
+                0.01,
+                0.0
+              ],
+              "rot_deg": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "bin_ik_mm_deg": [
+              0.0,
+              0.0
+            ],
+            "drop_xy": [
+              -0.64,
+              -0.07
+            ]
+          },
+          {
+            "idx": 2,
+            "label": "bottle0",
+            "route": "right_to_left_handover",
+            "start_pos": [
+              -0.0549,
+              -0.0708,
+              0.7906
+            ],
+            "upright": false,
+            "grasp_ik": {
+              "mode": "lying_top",
+              "axis_sign": -1.0,
+              "err_mm": [
+                2.16,
+                0.86,
+                16.54
+              ],
+              "rot_deg": [
+                9.23,
+                0.58,
+                10.75
+              ]
+            },
+            "bin_ik_mm_deg": [
+              0.0,
+              0.0
+            ],
+            "drop_xy": [
+              -0.64,
+              -0.13
+            ],
+            "handover_live": {
+              "bottle_pos": [
+                0.0149,
+                -0.2235,
+                1.0382
+              ],
+              "up_axis": [
+                0.037,
+                -0.009,
+                0.999
+              ],
+              "pad_l_pos": [
+                0.0157,
+                -0.2237,
+                1.0624
+              ],
+              "left_ho_ik_mm_deg": [
+                0.01,
+                0.0
+              ]
+            }
+          },
+          {
+            "idx": 3,
+            "label": "bottle1",
+            "route": "left_direct",
+            "start_pos": [
+              -0.2873,
+              0.0041,
+              0.8599
+            ],
+            "upright": true,
+            "grasp_ik": {
+              "mode": "upright_side",
+              "pitch_deg": 15.0,
+              "err_mm": [
+                0.0,
+                0.0,
+                0.01
+              ],
+              "rot_deg": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "bin_ik_mm_deg": [
+              0.0,
+              0.0
+            ],
+            "drop_xy": [
+              -0.6,
+              -0.07
+            ]
+          }
+        ],
+        "ik_common": [
+          {
+            "waypoint": "high_carry",
+            "left_mm_deg": [
+              0.01,
+              0.0
+            ],
+            "right_mm_deg": [
+              0.01,
+              0.0
+            ]
+          },
+          {
+            "waypoint": "right_handover",
+            "ho_mm_deg": [
+              0.0,
+              0.0
+            ],
+            "retreat_mm_deg": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "actions_logged": 649,
+        "geometric_check": {
+          "env_idx": 0,
+          "dustbin_world_aabb": {
+            "min": [
+              -0.8651,
+              -0.3349,
+              0.075
+            ],
+            "max": [
+              -0.3948,
+              0.1355,
+              0.725
+            ]
+          },
+          "bottles": {
+            "bottle0": {
+              "inst": "bottle_60_1",
+              "final_pos": [
+                -0.60977,
+                -0.12275,
+                0.31351
+              ],
+              "final_ori": [
+                -0.34269,
+                0.28618,
+                0.64814,
+                0.61692
+              ],
+              "aabb_min": [
+                -0.657,
+                -0.2209,
+                0.2745
+              ],
+              "aabb_max": [
+                -0.5626,
+                -0.0246,
+                0.3526
+              ],
+              "z_gap_m": 0.19947,
+              "xy_inside": true,
+              "z_below_rim": true,
+              "z_on_bottom": true,
+              "in_dustbin_geometric": true,
+              "task_is_A_on_B_bottom": true
+            },
+            "bottle1": {
+              "inst": "bottle_50_2",
+              "final_pos": [
+                -0.72801,
+                -0.14196,
+                0.31639
+              ],
+              "final_ori": [
+                0.6429,
+                0.60183,
+                -0.33912,
+                0.33088
+              ],
+              "aabb_min": [
+                -0.7705,
+                -0.2385,
+                0.2732
+              ],
+              "aabb_max": [
+                -0.6856,
+                -0.0454,
+                0.3596
+              ],
+              "z_gap_m": 0.19821,
+              "xy_inside": true,
+              "z_below_rim": true,
+              "z_on_bottom": true,
+              "in_dustbin_geometric": true,
+              "task_is_A_on_B_bottom": true
+            },
+            "bottle2": {
+              "inst": "bottle_41_3",
+              "final_pos": [
+                -0.54689,
+                -0.03679,
+                0.31369
+              ],
+              "final_ori": [
+                -0.52733,
+                0.18003,
+                0.69537,
+                0.45385
+              ],
+              "aabb_min": [
+                -0.6302,
+                -0.134,
+                0.2733
+              ],
+              "aabb_max": [
+                -0.4633,
+                0.0604,
+                0.354
+              ],
+              "z_gap_m": 0.19829,
+              "xy_inside": true,
+              "z_below_rim": true,
+              "z_on_bottom": true,
+              "in_dustbin_geometric": true,
+              "task_is_A_on_B_bottom": true
+            },
+            "bottle3": {
+              "inst": "bottle_59_4",
+              "final_pos": [
+                -0.66357,
+                -0.13342,
+                0.31164
+              ],
+              "final_ori": [
+                0.70098,
+                0.71178,
+                0.01965,
+                0.04027
+              ],
+              "aabb_min": [
+                -0.703,
+                -0.2211,
+                0.2781
+              ],
+              "aabb_max": [
+                -0.6242,
+                -0.0457,
+                0.3451
+              ],
+              "z_gap_m": 0.20314,
+              "xy_inside": true,
+              "z_below_rim": true,
+              "z_on_bottom": true,
+              "in_dustbin_geometric": true,
+              "task_is_A_on_B_bottom": true
+            }
+          },
+          "in_dustbin_geometric_count": 4,
+          "task_predicate_count": 4,
+          "task_all_robot_back_to_origin": true,
+          "task_is_all_gripper_open_0.8": true
+        }
+      }
+    },
+    "2": {
+      "full_archive_sha256": "25c482a31e2cbe18f40ca609509f501bdea37e62840738b08b645f1c8a83b186",
+      "full_archive_bytes": 1342389,
+      "versions": {
+        "repo_head": "57c472411e6c159c766b55b637bc7d5c004b6f94",
+        "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "isaaclab": "afca7b09d60d8beb9c1cb28b43066499940b969b",
+        "container": "isaac-sim_5.1.0.sif",
+        "isaac_sim": [
+          "5.1.0",
+          "rc.19",
+          "5"
+        ]
+      },
+      "layout": 2,
+      "evaluator": "v2",
+      "steps_through_reset": 844,
+      "episode_steps": 6490,
+      "take_action_cnt": 649,
+      "success": true,
+      "wall_seconds": 180.0,
+      "eval_result": {
+        "evaluator_version": "evaluator v2",
+        "task_name": "put_bottles_into_dustbin",
+        "config_name": "arx_x5",
+        "policy_name": "harness",
+        "seed": 0,
+        "native_eval_num": 50,
+        "scheduled_count": 1,
+        "scheduled_layout_ids": [
+          2
+        ],
+        "unresolved_layout_ids": [],
+        "resolved_count": 1,
+        "complete": true,
+        "valid": true,
+        "eval_time": 1,
+        "success_rate": 1.0,
+        "score": 100.0,
+        "category_counts": {
+          "success": 1,
+          "failure": 0,
+          "timeout": 0,
+          "policy_error": 0,
+          "simulator_break": 0,
+          "evaluator_error": 0,
+          "unstable_layout": 0,
+          "excluded": 0
+        },
+        "drops": {
+          "total": 0,
+          "policy_error": 0,
+          "simulator_break": 0,
+          "evaluator_error": 0,
+          "unstable_layout": 0,
+          "excluded": 0
+        },
+        "aggregation": {
+          "evaluator_version": "evaluator v2",
+          "denominator_rule": "all_scheduled",
+          "excluded_categories": [],
+          "scheduled_count": 1,
+          "resolved_count": 1,
+          "denominator": 1,
+          "complete": true,
+          "valid": true,
+          "success_count": 1,
+          "success_rate": 1.0,
+          "success_rate_pct": 100.0,
+          "score": 100.0
+        },
+        "ledger": [
+          {
+            "layout_id": 2,
+            "seed": 0,
+            "category": "success",
+            "success": true,
+            "score": 1.0,
+            "steps": 649,
+            "reason": "reward_check_passed"
+          }
+        ],
+        "details": {
+          "0": {
+            "layout_id": 2,
+            "seed": 0,
+            "category": "success",
+            "success": true,
+            "score": 1.0,
+            "steps": 649,
+            "reason": "reward_check_passed"
+          }
+        },
+        "physics": {
+          "preset": "corrected",
+          "fixes": [
+            "collision",
+            "order",
+            "size",
+            "values"
+          ],
+          "device": "cpu",
+          "dormant_values_active": false,
+          "values_delivered": true,
+          "table_sha256": "7d053f8c828342dee7db6c3b3aeed22fb75e7caca104fa9884496d52f98c5749",
+          "admitted_statuses": [
+            "estimated",
+            "sourced"
+          ],
+          "scenario_opt_in": "bottles_primary_empty",
+          "scenario": {
+            "finger_pad": "pad_hard",
+            "table": "table_laminate",
+            "ground_combine": "average",
+            "fill": "empty"
+          },
+          "status_counts": {
+            "estimated": 72,
+            "unsourced": 85,
+            "sourced": 30
+          },
+          "below_g1_unsourced_opt_in": true,
+          "unsourced_keys_used": [
+            "assets.Rigid/bottle/00000.mass_by_fill.empty",
+            "assets.Rigid/bottle/00002.mass_by_fill.empty",
+            "assets.Rigid/bottle/00005.mass_by_fill.empty",
+            "assets.Rigid/bottle/00022.material_override.restitution_by_fill.empty",
+            "assets.Rigid/bottle/00025.mass_by_fill.empty",
+            "assets.Rigid/bottle/00041.mass_by_fill.empty",
+            "assets.Rigid/bottle/00050.mass_by_fill.empty",
+            "assets.Rigid/bottle/00055.mass_by_fill.empty",
+            "assets.Rigid/bottle/00059.mass_by_fill.empty",
+            "assets.Rigid/bottle/00060.mass_by_fill.empty",
+            "classes.abs_device_housing.restitution",
+            "classes.aluminium.restitution",
+            "classes.ground.restitution",
+            "classes.pad_elastomer.restitution",
+            "classes.pad_hard.restitution",
+            "classes.pet_plastic.restitution",
+            "classes.polyolefin_plastic.restitution",
+            "classes.steel.restitution",
+            "classes.table_laminate.restitution",
+            "classes.table_wood.restitution",
+            "pairs.abs_device_housing__ground.mu_kinetic",
+            "pairs.abs_device_housing__ground.mu_static",
+            "pairs.abs_device_housing__pad_elastomer.mu_kinetic",
+            "pairs.abs_device_housing__pad_elastomer.mu_static",
+            "pairs.abs_device_housing__table_laminate.mu_kinetic",
+            "pairs.abs_device_housing__table_laminate.mu_static",
+            "pairs.abs_device_housing__table_wood.mu_kinetic",
+            "pairs.abs_device_housing__table_wood.mu_static",
+            "pairs.aluminium__ground.mu_kinetic",
+            "pairs.aluminium__ground.mu_static",
+            "pairs.aluminium__table_laminate.mu_kinetic",
+            "pairs.aluminium__table_laminate.mu_static",
+            "pairs.ground__pet_plastic.mu_kinetic",
+            "pairs.ground__pet_plastic.mu_static",
+            "pairs.ground__pet_plastic.restitution",
+            "pairs.ground__polyolefin_plastic.mu_kinetic",
+            "pairs.ground__polyolefin_plastic.mu_static",
+            "pairs.ground__polyolefin_plastic.restitution",
+            "pairs.ground__steel.mu_kinetic",
+            "pairs.ground__steel.mu_static",
+            "pairs.ground__steel.restitution",
+            "pairs.pad_elastomer__pet_plastic.mu_kinetic",
+            "pairs.pad_elastomer__pet_plastic.mu_static",
+            "pairs.pad_elastomer__polyolefin_plastic.mu_kinetic",
+            "pairs.pad_elastomer__polyolefin_plastic.mu_static",
+            "pairs.pet_plastic__pet_plastic.restitution",
+            "pairs.pet_plastic__polyolefin_plastic.restitution",
+            "pairs.pet_plastic__steel.restitution",
+            "pairs.pet_plastic__table_laminate.mu_kinetic",
+            "pairs.pet_plastic__table_laminate.mu_static",
+            "pairs.pet_plastic__table_laminate.restitution",
+            "pairs.pet_plastic__table_wood.mu_kinetic",
+            "pairs.pet_plastic__table_wood.mu_static",
+            "pairs.pet_plastic__table_wood.restitution",
+            "pairs.polyolefin_plastic__polyolefin_plastic.restitution",
+            "pairs.polyolefin_plastic__steel.restitution",
+            "pairs.polyolefin_plastic__table_laminate.mu_kinetic",
+            "pairs.polyolefin_plastic__table_laminate.mu_static",
+            "pairs.polyolefin_plastic__table_laminate.restitution",
+            "pairs.polyolefin_plastic__table_wood.mu_kinetic",
+            "pairs.polyolefin_plastic__table_wood.mu_static",
+            "pairs.polyolefin_plastic__table_wood.restitution",
+            "pairs.steel__table_laminate.mu_kinetic",
+            "pairs.steel__table_laminate.mu_static",
+            "pairs.steel__table_laminate.restitution",
+            "pairs.steel__table_wood.restitution",
+            "robots.x5.non_pad_link_material_classes.base_link",
+            "robots.x5.non_pad_link_material_classes.camera",
+            "robots.x5.non_pad_link_material_classes.camera_base",
+            "robots.x5.non_pad_link_material_classes.link1",
+            "robots.x5.non_pad_link_material_classes.link2",
+            "robots.x5.non_pad_link_material_classes.link3",
+            "robots.x5.non_pad_link_material_classes.link4",
+            "robots.x5.non_pad_link_material_classes.link5",
+            "robots.x5.non_pad_link_material_classes.link6",
+            "robots.x5.sanitize_camera_inertials",
+            "unary_values.abs_device_housing",
+            "unary_values.aluminium",
+            "unary_values.ground",
+            "unary_values.pad_elastomer",
+            "unary_values.pet_plastic",
+            "unary_values.polyolefin_plastic",
+            "unary_values.steel",
+            "unary_values.table_laminate",
+            "unary_values.table_wood"
+          ],
+          "profile_unsourced_keys_used": [
+            "assets.Rigid/bottle/00000.mass_by_fill.empty",
+            "assets.Rigid/bottle/00002.mass_by_fill.empty",
+            "assets.Rigid/bottle/00005.mass_by_fill.empty",
+            "assets.Rigid/bottle/00022.material_override.restitution_by_fill.empty",
+            "assets.Rigid/bottle/00025.mass_by_fill.empty",
+            "assets.Rigid/bottle/00041.mass_by_fill.empty",
+            "assets.Rigid/bottle/00050.mass_by_fill.empty",
+            "assets.Rigid/bottle/00055.mass_by_fill.empty",
+            "assets.Rigid/bottle/00059.mass_by_fill.empty",
+            "assets.Rigid/bottle/00060.mass_by_fill.empty",
+            "classes.abs_device_housing.restitution",
+            "classes.aluminium.restitution",
+            "classes.ground.restitution",
+            "classes.pad_elastomer.restitution",
+            "classes.pad_hard.restitution",
+            "classes.pet_plastic.restitution",
+            "classes.polyolefin_plastic.restitution",
+            "classes.steel.restitution",
+            "classes.table_laminate.restitution",
+            "classes.table_wood.restitution",
+            "pairs.abs_device_housing__ground.mu_kinetic",
+            "pairs.abs_device_housing__ground.mu_static",
+            "pairs.abs_device_housing__pad_elastomer.mu_kinetic",
+            "pairs.abs_device_housing__pad_elastomer.mu_static",
+            "pairs.abs_device_housing__table_laminate.mu_kinetic",
+            "pairs.abs_device_housing__table_laminate.mu_static",
+            "pairs.abs_device_housing__table_wood.mu_kinetic",
+            "pairs.abs_device_housing__table_wood.mu_static",
+            "pairs.aluminium__ground.mu_kinetic",
+            "pairs.aluminium__ground.mu_static",
+            "pairs.aluminium__table_laminate.mu_kinetic",
+            "pairs.aluminium__table_laminate.mu_static",
+            "pairs.ground__pet_plastic.mu_kinetic",
+            "pairs.ground__pet_plastic.mu_static",
+            "pairs.ground__pet_plastic.restitution",
+            "pairs.ground__polyolefin_plastic.mu_kinetic",
+            "pairs.ground__polyolefin_plastic.mu_static",
+            "pairs.ground__polyolefin_plastic.restitution",
+            "pairs.ground__steel.mu_kinetic",
+            "pairs.ground__steel.mu_static",
+            "pairs.ground__steel.restitution",
+            "pairs.pad_elastomer__pet_plastic.mu_kinetic",
+            "pairs.pad_elastomer__pet_plastic.mu_static",
+            "pairs.pad_elastomer__polyolefin_plastic.mu_kinetic",
+            "pairs.pad_elastomer__polyolefin_plastic.mu_static",
+            "pairs.pet_plastic__pet_plastic.restitution",
+            "pairs.pet_plastic__polyolefin_plastic.restitution",
+            "pairs.pet_plastic__steel.restitution",
+            "pairs.pet_plastic__table_laminate.mu_kinetic",
+            "pairs.pet_plastic__table_laminate.mu_static",
+            "pairs.pet_plastic__table_laminate.restitution",
+            "pairs.pet_plastic__table_wood.mu_kinetic",
+            "pairs.pet_plastic__table_wood.mu_static",
+            "pairs.pet_plastic__table_wood.restitution",
+            "pairs.polyolefin_plastic__polyolefin_plastic.restitution",
+            "pairs.polyolefin_plastic__steel.restitution",
+            "pairs.polyolefin_plastic__table_laminate.mu_kinetic",
+            "pairs.polyolefin_plastic__table_laminate.mu_static",
+            "pairs.polyolefin_plastic__table_laminate.restitution",
+            "pairs.polyolefin_plastic__table_wood.mu_kinetic",
+            "pairs.polyolefin_plastic__table_wood.mu_static",
+            "pairs.polyolefin_plastic__table_wood.restitution",
+            "pairs.steel__table_laminate.mu_kinetic",
+            "pairs.steel__table_laminate.mu_static",
+            "pairs.steel__table_laminate.restitution",
+            "pairs.steel__table_wood.restitution",
+            "robots.x5.non_pad_link_material_classes.base_link",
+            "robots.x5.non_pad_link_material_classes.camera",
+            "robots.x5.non_pad_link_material_classes.camera_base",
+            "robots.x5.non_pad_link_material_classes.link1",
+            "robots.x5.non_pad_link_material_classes.link2",
+            "robots.x5.non_pad_link_material_classes.link3",
+            "robots.x5.non_pad_link_material_classes.link4",
+            "robots.x5.non_pad_link_material_classes.link5",
+            "robots.x5.non_pad_link_material_classes.link6",
+            "robots.x5.sanitize_camera_inertials",
+            "unary_values.abs_device_housing",
+            "unary_values.aluminium",
+            "unary_values.ground",
+            "unary_values.pad_elastomer",
+            "unary_values.pet_plastic",
+            "unary_values.polyolefin_plastic",
+            "unary_values.steel",
+            "unary_values.table_laminate",
+            "unary_values.table_wood"
+          ]
+        }
+      },
+      "v2_result_json_relpath": "eval_result_v2/RoboDojo/put_bottles_into_dustbin/harness/arx_x5/0_harness/harness_2026-11-12_13-59-49/_result.json",
+      "v2_result_json": {
+        "evaluator_version": "evaluator v2",
+        "task_name": "put_bottles_into_dustbin",
+        "config_name": "arx_x5",
+        "policy_name": "harness",
+        "seed": 0,
+        "native_eval_num": 50,
+        "scheduled_count": 1,
+        "scheduled_layout_ids": [
+          2
+        ],
+        "unresolved_layout_ids": [],
+        "resolved_count": 1,
+        "complete": true,
+        "valid": true,
+        "eval_time": 1,
+        "success_rate": 1.0,
+        "score": 100.0,
+        "category_counts": {
+          "success": 1,
+          "failure": 0,
+          "timeout": 0,
+          "policy_error": 0,
+          "simulator_break": 0,
+          "evaluator_error": 0,
+          "unstable_layout": 0,
+          "excluded": 0
+        },
+        "drops": {
+          "total": 0,
+          "policy_error": 0,
+          "simulator_break": 0,
+          "evaluator_error": 0,
+          "unstable_layout": 0,
+          "excluded": 0
+        },
+        "aggregation": {
+          "evaluator_version": "evaluator v2",
+          "denominator_rule": "all_scheduled",
+          "excluded_categories": [],
+          "scheduled_count": 1,
+          "resolved_count": 1,
+          "denominator": 1,
+          "complete": true,
+          "valid": true,
+          "success_count": 1,
+          "success_rate": 1.0,
+          "success_rate_pct": 100.0,
+          "score": 100.0
+        },
+        "ledger": [
+          {
+            "layout_id": 2,
+            "seed": 0,
+            "category": "success",
+            "success": true,
+            "score": 1.0,
+            "steps": 649,
+            "reason": "reward_check_passed"
+          }
+        ],
+        "details": {
+          "0": {
+            "layout_id": 2,
+            "seed": 0,
+            "category": "success",
+            "success": true,
+            "score": 1.0,
+            "steps": 649,
+            "reason": "reward_check_passed"
+          }
+        },
+        "physics": {
+          "preset": "corrected",
+          "fixes": [
+            "collision",
+            "order",
+            "size",
+            "values"
+          ],
+          "device": "cpu",
+          "dormant_values_active": false,
+          "values_delivered": true,
+          "table_sha256": "7d053f8c828342dee7db6c3b3aeed22fb75e7caca104fa9884496d52f98c5749",
+          "admitted_statuses": [
+            "estimated",
+            "sourced"
+          ],
+          "scenario_opt_in": "bottles_primary_empty",
+          "scenario": {
+            "finger_pad": "pad_hard",
+            "table": "table_laminate",
+            "ground_combine": "average",
+            "fill": "empty"
+          },
+          "status_counts": {
+            "estimated": 72,
+            "unsourced": 85,
+            "sourced": 30
+          },
+          "below_g1_unsourced_opt_in": true,
+          "unsourced_keys_used": [
+            "assets.Rigid/bottle/00000.mass_by_fill.empty",
+            "assets.Rigid/bottle/00002.mass_by_fill.empty",
+            "assets.Rigid/bottle/00005.mass_by_fill.empty",
+            "assets.Rigid/bottle/00022.material_override.restitution_by_fill.empty",
+            "assets.Rigid/bottle/00025.mass_by_fill.empty",
+            "assets.Rigid/bottle/00041.mass_by_fill.empty",
+            "assets.Rigid/bottle/00050.mass_by_fill.empty",
+            "assets.Rigid/bottle/00055.mass_by_fill.empty",
+            "assets.Rigid/bottle/00059.mass_by_fill.empty",
+            "assets.Rigid/bottle/00060.mass_by_fill.empty",
+            "classes.abs_device_housing.restitution",
+            "classes.aluminium.restitution",
+            "classes.ground.restitution",
+            "classes.pad_elastomer.restitution",
+            "classes.pad_hard.restitution",
+            "classes.pet_plastic.restitution",
+            "classes.polyolefin_plastic.restitution",
+            "classes.steel.restitution",
+            "classes.table_laminate.restitution",
+            "classes.table_wood.restitution",
+            "pairs.abs_device_housing__ground.mu_kinetic",
+            "pairs.abs_device_housing__ground.mu_static",
+            "pairs.abs_device_housing__pad_elastomer.mu_kinetic",
+            "pairs.abs_device_housing__pad_elastomer.mu_static",
+            "pairs.abs_device_housing__table_laminate.mu_kinetic",
+            "pairs.abs_device_housing__table_laminate.mu_static",
+            "pairs.abs_device_housing__table_wood.mu_kinetic",
+            "pairs.abs_device_housing__table_wood.mu_static",
+            "pairs.aluminium__ground.mu_kinetic",
+            "pairs.aluminium__ground.mu_static",
+            "pairs.aluminium__table_laminate.mu_kinetic",
+            "pairs.aluminium__table_laminate.mu_static",
+            "pairs.ground__pet_plastic.mu_kinetic",
+            "pairs.ground__pet_plastic.mu_static",
+            "pairs.ground__pet_plastic.restitution",
+            "pairs.ground__polyolefin_plastic.mu_kinetic",
+            "pairs.ground__polyolefin_plastic.mu_static",
+            "pairs.ground__polyolefin_plastic.restitution",
+            "pairs.ground__steel.mu_kinetic",
+            "pairs.ground__steel.mu_static",
+            "pairs.ground__steel.restitution",
+            "pairs.pad_elastomer__pet_plastic.mu_kinetic",
+            "pairs.pad_elastomer__pet_plastic.mu_static",
+            "pairs.pad_elastomer__polyolefin_plastic.mu_kinetic",
+            "pairs.pad_elastomer__polyolefin_plastic.mu_static",
+            "pairs.pet_plastic__pet_plastic.restitution",
+            "pairs.pet_plastic__polyolefin_plastic.restitution",
+            "pairs.pet_plastic__steel.restitution",
+            "pairs.pet_plastic__table_laminate.mu_kinetic",
+            "pairs.pet_plastic__table_laminate.mu_static",
+            "pairs.pet_plastic__table_laminate.restitution",
+            "pairs.pet_plastic__table_wood.mu_kinetic",
+            "pairs.pet_plastic__table_wood.mu_static",
+            "pairs.pet_plastic__table_wood.restitution",
+            "pairs.polyolefin_plastic__polyolefin_plastic.restitution",
+            "pairs.polyolefin_plastic__steel.restitution",
+            "pairs.polyolefin_plastic__table_laminate.mu_kinetic",
+            "pairs.polyolefin_plastic__table_laminate.mu_static",
+            "pairs.polyolefin_plastic__table_laminate.restitution",
+            "pairs.polyolefin_plastic__table_wood.mu_kinetic",
+            "pairs.polyolefin_plastic__table_wood.mu_static",
+            "pairs.polyolefin_plastic__table_wood.restitution",
+            "pairs.steel__table_laminate.mu_kinetic",
+            "pairs.steel__table_laminate.mu_static",
+            "pairs.steel__table_laminate.restitution",
+            "pairs.steel__table_wood.restitution",
+            "robots.x5.non_pad_link_material_classes.base_link",
+            "robots.x5.non_pad_link_material_classes.camera",
+            "robots.x5.non_pad_link_material_classes.camera_base",
+            "robots.x5.non_pad_link_material_classes.link1",
+            "robots.x5.non_pad_link_material_classes.link2",
+            "robots.x5.non_pad_link_material_classes.link3",
+            "robots.x5.non_pad_link_material_classes.link4",
+            "robots.x5.non_pad_link_material_classes.link5",
+            "robots.x5.non_pad_link_material_classes.link6",
+            "robots.x5.sanitize_camera_inertials",
+            "unary_values.abs_device_housing",
+            "unary_values.aluminium",
+            "unary_values.ground",
+            "unary_values.pad_elastomer",
+            "unary_values.pet_plastic",
+            "unary_values.polyolefin_plastic",
+            "unary_values.steel",
+            "unary_values.table_laminate",
+            "unary_values.table_wood"
+          ],
+          "profile_unsourced_keys_used": [
+            "assets.Rigid/bottle/00000.mass_by_fill.empty",
+            "assets.Rigid/bottle/00002.mass_by_fill.empty",
+            "assets.Rigid/bottle/00005.mass_by_fill.empty",
+            "assets.Rigid/bottle/00022.material_override.restitution_by_fill.empty",
+            "assets.Rigid/bottle/00025.mass_by_fill.empty",
+            "assets.Rigid/bottle/00041.mass_by_fill.empty",
+            "assets.Rigid/bottle/00050.mass_by_fill.empty",
+            "assets.Rigid/bottle/00055.mass_by_fill.empty",
+            "assets.Rigid/bottle/00059.mass_by_fill.empty",
+            "assets.Rigid/bottle/00060.mass_by_fill.empty",
+            "classes.abs_device_housing.restitution",
+            "classes.aluminium.restitution",
+            "classes.ground.restitution",
+            "classes.pad_elastomer.restitution",
+            "classes.pad_hard.restitution",
+            "classes.pet_plastic.restitution",
+            "classes.polyolefin_plastic.restitution",
+            "classes.steel.restitution",
+            "classes.table_laminate.restitution",
+            "classes.table_wood.restitution",
+            "pairs.abs_device_housing__ground.mu_kinetic",
+            "pairs.abs_device_housing__ground.mu_static",
+            "pairs.abs_device_housing__pad_elastomer.mu_kinetic",
+            "pairs.abs_device_housing__pad_elastomer.mu_static",
+            "pairs.abs_device_housing__table_laminate.mu_kinetic",
+            "pairs.abs_device_housing__table_laminate.mu_static",
+            "pairs.abs_device_housing__table_wood.mu_kinetic",
+            "pairs.abs_device_housing__table_wood.mu_static",
+            "pairs.aluminium__ground.mu_kinetic",
+            "pairs.aluminium__ground.mu_static",
+            "pairs.aluminium__table_laminate.mu_kinetic",
+            "pairs.aluminium__table_laminate.mu_static",
+            "pairs.ground__pet_plastic.mu_kinetic",
+            "pairs.ground__pet_plastic.mu_static",
+            "pairs.ground__pet_plastic.restitution",
+            "pairs.ground__polyolefin_plastic.mu_kinetic",
+            "pairs.ground__polyolefin_plastic.mu_static",
+            "pairs.ground__polyolefin_plastic.restitution",
+            "pairs.ground__steel.mu_kinetic",
+            "pairs.ground__steel.mu_static",
+            "pairs.ground__steel.restitution",
+            "pairs.pad_elastomer__pet_plastic.mu_kinetic",
+            "pairs.pad_elastomer__pet_plastic.mu_static",
+            "pairs.pad_elastomer__polyolefin_plastic.mu_kinetic",
+            "pairs.pad_elastomer__polyolefin_plastic.mu_static",
+            "pairs.pet_plastic__pet_plastic.restitution",
+            "pairs.pet_plastic__polyolefin_plastic.restitution",
+            "pairs.pet_plastic__steel.restitution",
+            "pairs.pet_plastic__table_laminate.mu_kinetic",
+            "pairs.pet_plastic__table_laminate.mu_static",
+            "pairs.pet_plastic__table_laminate.restitution",
+            "pairs.pet_plastic__table_wood.mu_kinetic",
+            "pairs.pet_plastic__table_wood.mu_static",
+            "pairs.pet_plastic__table_wood.restitution",
+            "pairs.polyolefin_plastic__polyolefin_plastic.restitution",
+            "pairs.polyolefin_plastic__steel.restitution",
+            "pairs.polyolefin_plastic__table_laminate.mu_kinetic",
+            "pairs.polyolefin_plastic__table_laminate.mu_static",
+            "pairs.polyolefin_plastic__table_laminate.restitution",
+            "pairs.polyolefin_plastic__table_wood.mu_kinetic",
+            "pairs.polyolefin_plastic__table_wood.mu_static",
+            "pairs.polyolefin_plastic__table_wood.restitution",
+            "pairs.steel__table_laminate.mu_kinetic",
+            "pairs.steel__table_laminate.mu_static",
+            "pairs.steel__table_laminate.restitution",
+            "pairs.steel__table_wood.restitution",
+            "robots.x5.non_pad_link_material_classes.base_link",
+            "robots.x5.non_pad_link_material_classes.camera",
+            "robots.x5.non_pad_link_material_classes.camera_base",
+            "robots.x5.non_pad_link_material_classes.link1",
+            "robots.x5.non_pad_link_material_classes.link2",
+            "robots.x5.non_pad_link_material_classes.link3",
+            "robots.x5.non_pad_link_material_classes.link4",
+            "robots.x5.non_pad_link_material_classes.link5",
+            "robots.x5.non_pad_link_material_classes.link6",
+            "robots.x5.sanitize_camera_inertials",
+            "unary_values.abs_device_housing",
+            "unary_values.aluminium",
+            "unary_values.ground",
+            "unary_values.pad_elastomer",
+            "unary_values.pet_plastic",
+            "unary_values.polyolefin_plastic",
+            "unary_values.steel",
+            "unary_values.table_laminate",
+            "unary_values.table_wood"
+          ]
+        }
+      },
+      "v2_resume_manifest_relpath": "eval_result_v2/RoboDojo/put_bottles_into_dustbin/harness/arx_x5/0_harness/_resume_harness_2026-11-12_13-59-49.json",
+      "v2_resume_manifest_has_physics": true,
+      "settled_poses": {
+        "bottle0": [
+          -0.15926,
+          -0.04279,
+          0.85985,
+          0.99995,
+          -0.00144,
+          0.00141,
+          0.0098
+        ],
+        "bottle1": [
+          0.29267,
+          -0.08844,
+          0.7963,
+          0.53634,
+          -0.47397,
+          0.51723,
+          0.46921
+        ],
+        "bottle2": [
+          0.43111,
+          -0.15693,
+          0.8875,
+          0.72992,
+          0.00052,
+          0.00027,
+          0.68353
+        ],
+        "bottle3": [
+          -0.05466,
+          -0.17578,
+          0.79298,
+          -0.61739,
+          0.65816,
+          -0.25814,
+          0.34497
+        ]
+      },
+      "final_poses": {
+        "bottle0": [
+          -0.59488,
+          -0.06267,
+          0.31154,
+          -0.27066,
+          0.46387,
+          0.53504,
+          0.65216
+        ],
+        "bottle1": [
+          -0.73099,
+          -0.06594,
+          0.34258,
+          -0.02508,
+          -0.01091,
+          -0.61371,
+          0.78906
+        ],
+        "bottle2": [
+          -0.49972,
+          -0.10475,
+          0.32257,
+          0.38223,
+          -0.25773,
+          0.64586,
+          0.60856
+        ],
+        "bottle3": [
+          -0.69972,
+          -0.18336,
+          0.31956,
+          0.64781,
+          -0.46132,
+          -0.53722,
+          0.28092
+        ]
+      },
+      "assertion_passed": true,
+      "failures": [],
+      "compensations_used": [
+        {
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "env": "env_0",
+          "label": "bottle0",
+          "asset_id": "Rigid/bottle/00050",
+          "approximations": [
+            "convexDecomposition"
+          ],
+          "usd_collider_aabb_extents_m": [
+            0.055,
+            0.055,
+            0.19
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.052558,
+            0.05285,
+            0.187911
+          ],
+          "engine_vs_usd_narrowing_m": [
+            0.002442,
+            0.00215,
+            0.002089
+          ],
+          "engine_max_narrowing_vs_usd_m": 0.002442,
+          "engine_aabb_max_rel_err": 0.0444,
+          "engine_aabb_max_abs_err_m": 0.002442,
+          "allowance_m": 0.004,
+          "one_sided": "engine_narrower_than_usd_only"
+        },
+        {
+          "kind": "vhacd_voxelization_erosion_allowance",
+          "masks": "#95",
+          "env": "env_0",
+          "label": "bottle2",
+          "asset_id": "Rigid/bottle/00002",
+          "approximations": [
+            "convexDecomposition"
+          ],
+          "usd_collider_aabb_extents_m": [
+            0.063,
+            0.063,
+            0.245
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.061473,
+            0.061445,
+            0.24425
+          ],
+          "engine_vs_usd_narrowing_m": [
+            0.001527,
+            0.001555,
+            0.00075
+          ],
+          "engine_max_narrowing_vs_usd_m": 0.001555,
+          "engine_aabb_max_rel_err": 0.02468,
+          "engine_aabb_max_abs_err_m": 0.001555,
+          "allowance_m": 0.004,
+          "one_sided": "engine_narrower_than_usd_only"
+        },
+        {
+          "kind": "convex_hull_vertex_limit_allowance",
+          "masks": "#95",
+          "env": "env_0",
+          "label": "bottle3",
+          "asset_id": "Rigid/bottle/00005",
+          "approximations": [
+            "convexHull"
+          ],
+          "usd_collider_aabb_extents_m": [
+            0.0625,
+            0.0625,
+            0.174
+          ],
+          "engine_collider_aabb_extents_m": [
+            0.061522,
+            0.059551,
+            0.173999
+          ],
+          "engine_vs_usd_narrowing_m": [
+            0.000978,
+            0.002949,
+            1e-06
+          ],
+          "engine_max_narrowing_vs_usd_m": 0.002949,
+          "engine_aabb_max_rel_err": 0.04718,
+          "engine_aabb_max_abs_err_m": 0.002949,
+          "allowance_m": 0.004,
+          "one_sided": "engine_narrower_than_usd_only",
+          "physx_hull_vertex_limit": 64
+        }
+      ],
+      "policy_log_summary": {
+        "plans": [
+          {
+            "idx": 0,
+            "label": "bottle3",
+            "route": "left_direct",
+            "start_pos": [
+              -0.0547,
+              -0.1758,
+              0.793
+            ],
+            "upright": false,
+            "grasp_ik": {
+              "mode": "lying_top",
+              "axis_sign": 1.0,
+              "err_mm": [
+                0.01,
+                0.01,
+                0.0
+              ],
+              "rot_deg": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "bin_ik_mm_deg": [
+              0.0,
+              0.0
+            ],
+            "drop_xy": [
+              -0.6,
+              -0.13
+            ]
+          },
+          {
+            "idx": 1,
+            "label": "bottle0",
+            "route": "left_direct",
+            "start_pos": [
+              -0.1593,
+              -0.0428,
+              0.8599
+            ],
+            "upright": true,
+            "grasp_ik": {
+              "mode": "upright_side",
+              "pitch_deg": 15.0,
+              "err_mm": [
+                0.0,
+                0.0,
+                0.01
+              ],
+              "rot_deg": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "bin_ik_mm_deg": [
+              0.0,
+              0.0
+            ],
+            "drop_xy": [
+              -0.64,
+              -0.07
+            ]
+          },
+          {
+            "idx": 2,
+            "label": "bottle2",
+            "route": "right_to_left_handover",
+            "start_pos": [
+              0.4311,
+              -0.1569,
+              0.8875
+            ],
+            "upright": true,
+            "grasp_ik": {
+              "mode": "upright_side",
+              "pitch_deg": 15.0,
+              "err_mm": [
+                0.0,
+                0.01,
+                0.01
+              ],
+              "rot_deg": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "bin_ik_mm_deg": [
+              0.0,
+              0.0
+            ],
+            "drop_xy": [
+              -0.64,
+              -0.13
+            ],
+            "handover_live": {
+              "bottle_pos": [
+                0.0003,
+                -0.2202,
+                1.0399
+              ],
+              "up_axis": [
+                0.016,
+                -0.002,
+                1.0
+              ],
+              "pad_l_pos": [
+                0.0006,
+                -0.2203,
+                1.063
+              ],
+              "left_ho_ik_mm_deg": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          {
+            "idx": 3,
+            "label": "bottle1",
+            "route": "right_to_left_handover",
+            "start_pos": [
+              0.2927,
+              -0.0884,
+              0.7963
+            ],
+            "upright": false,
+            "grasp_ik": {
+              "mode": "lying_top",
+              "axis_sign": 1.0,
+              "err_mm": [
+                0.01,
+                0.01,
+                0.01
+              ],
+              "rot_deg": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "bin_ik_mm_deg": [
+              0.0,
+              0.0
+            ],
+            "drop_xy": [
+              -0.6,
+              -0.07
+            ],
+            "handover_live": {
+              "bottle_pos": [
+                0.0169,
+                -0.2229,
+                1.0392
+              ],
+              "up_axis": [
+                0.069,
+                -0.014,
+                0.997
+              ],
+              "pad_l_pos": [
+                0.0185,
+                -0.2232,
+                1.0618
+              ],
+              "left_ho_ik_mm_deg": [
+                0.01,
+                0.0
+              ]
+            }
+          }
+        ],
+        "ik_common": [
+          {
+            "waypoint": "high_carry",
+            "left_mm_deg": [
+              0.01,
+              0.0
+            ],
+            "right_mm_deg": [
+              0.01,
+              0.0
+            ]
+          },
+          {
+            "waypoint": "right_handover",
+            "ho_mm_deg": [
+              0.0,
+              0.0
+            ],
+            "retreat_mm_deg": [
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "actions_logged": 649,
+        "geometric_check": {
+          "env_idx": 0,
+          "dustbin_world_aabb": {
+            "min": [
+              -0.8651,
+              -0.3349,
+              0.075
+            ],
+            "max": [
+              -0.3948,
+              0.1355,
+              0.725
+            ]
+          },
+          "bottles": {
+            "bottle0": {
+              "inst": "bottle_50_1",
+              "final_pos": [
+                -0.59488,
+                -0.06267,
+                0.31154
+              ],
+              "final_ori": [
+                -0.27066,
+                0.46387,
+                0.53504,
+                0.65216
+              ],
+              "aabb_min": [
+                -0.6615,
+                -0.165,
+                0.2726
+              ],
+              "aabb_max": [
+                -0.5282,
+                0.0397,
+                0.3505
+              ],
+              "z_gap_m": 0.19759,
+              "xy_inside": true,
+              "z_below_rim": true,
+              "z_on_bottom": true,
+              "in_dustbin_geometric": true,
+              "task_is_A_on_B_bottom": true
+            },
+            "bottle1": {
+              "inst": "bottle_25_2",
+              "final_pos": [
+                -0.73099,
+                -0.06594,
+                0.34258
+              ],
+              "final_ori": [
+                -0.02508,
+                -0.01091,
+                -0.61371,
+                0.78906
+              ],
+              "aabb_min": [
+                -0.7659,
+                -0.1734,
+                0.2848
+              ],
+              "aabb_max": [
+                -0.6959,
+                0.0417,
+                0.4001
+              ],
+              "z_gap_m": 0.20981,
+              "xy_inside": true,
+              "z_below_rim": true,
+              "z_on_bottom": true,
+              "in_dustbin_geometric": true,
+              "task_is_A_on_B_bottom": true
+            },
+            "bottle2": {
+              "inst": "bottle_2_3",
+              "final_pos": [
+                -0.49972,
+                -0.10475,
+                0.32257
+              ],
+              "final_ori": [
+                0.38223,
+                -0.25773,
+                0.64586,
+                0.60856
+              ],
+              "aabb_min": [
+                -0.5586,
+                -0.2311,
+                0.2812
+              ],
+              "aabb_max": [
+                -0.4409,
+                0.0216,
+                0.3639
+              ],
+              "z_gap_m": 0.20622,
+              "xy_inside": true,
+              "z_below_rim": true,
+              "z_on_bottom": true,
+              "in_dustbin_geometric": true,
+              "task_is_A_on_B_bottom": true
+            },
+            "bottle3": {
+              "inst": "bottle_5_4",
+              "final_pos": [
+                -0.69972,
+                -0.18336,
+                0.31956
+              ],
+              "final_ori": [
+                0.64781,
+                -0.46132,
+                -0.53722,
+                0.28092
+              ],
+              "aabb_min": [
+                -0.7934,
+                -0.2431,
+                0.2836
+              ],
+              "aabb_max": [
+                -0.606,
+                -0.1237,
+                0.3554
+              ],
+              "z_gap_m": 0.20861,
+              "xy_inside": true,
+              "z_below_rim": true,
+              "z_on_bottom": true,
+              "in_dustbin_geometric": true,
+              "task_is_A_on_B_bottom": true
+            }
+          },
+          "in_dustbin_geometric_count": 4,
+          "task_predicate_count": 4,
+          "task_all_robot_back_to_origin": true,
+          "task_is_all_gripper_open_0.8": true
+        }
+      }
+    }
+  }
+}

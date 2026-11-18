@@ -1,0 +1,1052 @@
+[
+ {
+  "closing_xy_shift_mm": 0.31,
+  "finger_q_mm": [
+   31.67,
+   28.83
+  ],
+  "finger_force_N_est": [
+   95.8,
+   89.3
+  ],
+  "obj_z_before_mm": 31.2,
+  "obj_z_after_mm": 155.3,
+  "hand_z_after_mm": 296.5,
+  "slip_in_hand_mm": 0.05,
+  "rotation_in_hand_deg": 0.0,
+  "dropped": false,
+  "steps_per_s_active": 379.4,
+  "condition": "mu 1e4 (layout)",
+  "obj_mass": 0.15,
+  "speed": 1.0
+ },
+ {
+  "closing_xy_shift_mm": 0.01,
+  "finger_q_mm": [
+   31.56,
+   29.0
+  ],
+  "finger_force_N_est": [
+   95.6,
+   89.7
+  ],
+  "obj_z_before_mm": 31.2,
+  "obj_z_after_mm": 154.9,
+  "hand_z_after_mm": 296.1,
+  "slip_in_hand_mm": 0.59,
+  "rotation_in_hand_deg": 0.0,
+  "dropped": false,
+  "steps_per_s_active": 380.5,
+  "condition": "mu 1e4 (layout)",
+  "obj_mass": 0.5,
+  "speed": 1.0
+ },
+ {
+  "closing_xy_shift_mm": 0.01,
+  "finger_q_mm": [
+   31.57,
+   29.0
+  ],
+  "finger_force_N_est": [
+   95.6,
+   89.7
+  ],
+  "obj_z_before_mm": 31.2,
+  "obj_z_after_mm": 154.3,
+  "hand_z_after_mm": 295.6,
+  "slip_in_hand_mm": 0.43,
+  "rotation_in_hand_deg": 0.0,
+  "dropped": false,
+  "steps_per_s_active": 358.8,
+  "condition": "mu 1e4 (layout)",
+  "obj_mass": 1.0,
+  "speed": 1.0
+ },
+ {
+  "closing_xy_shift_mm": 0.01,
+  "finger_q_mm": [
+   31.58,
+   28.99
+  ],
+  "finger_force_N_est": [
+   95.6,
+   89.7
+  ],
+  "obj_z_before_mm": 31.2,
+  "obj_z_after_mm": 153.0,
+  "hand_z_after_mm": 294.3,
+  "slip_in_hand_mm": 0.53,
+  "rotation_in_hand_deg": 0.09,
+  "dropped": false,
+  "steps_per_s_active": 360.0,
+  "condition": "mu 1e4 (layout)",
+  "obj_mass": 2.0,
+  "speed": 1.0
+ },
+ {
+  "closing_xy_shift_mm": 0.0,
+  "finger_q_mm": [
+   31.59,
+   28.99
+  ],
+  "finger_force_N_est": [
+   95.6,
+   89.7
+  ],
+  "obj_z_before_mm": 31.2,
+  "obj_z_after_mm": 150.8,
+  "hand_z_after_mm": 292.0,
+  "slip_in_hand_mm": 1.7,
+  "rotation_in_hand_deg": 0.2,
+  "dropped": false,
+  "steps_per_s_active": 338.9,
+  "condition": "mu 1e4 (layout)",
+  "obj_mass": 4.0,
+  "speed": 1.0
+ },
+ {
+  "closing_xy_shift_mm": 0.24,
+  "finger_q_mm": [
+   31.64,
+   28.87
+  ],
+  "finger_force_N_est": [
+   95.8,
+   89.4
+  ],
+  "obj_z_before_mm": 31.2,
+  "obj_z_after_mm": 155.3,
+  "hand_z_after_mm": 296.5,
+  "slip_in_hand_mm": 0.02,
+  "rotation_in_hand_deg": 0.0,
+  "dropped": false,
+  "steps_per_s_active": 356.4,
+  "condition": "0.6/1.5 (default)",
+  "obj_mass": 0.15,
+  "speed": 1.0
+ },
+ {
+  "closing_xy_shift_mm": 0.09,
+  "finger_q_mm": [
+   31.47,
+   29.08
+  ],
+  "finger_force_N_est": [
+   95.4,
+   89.9
+  ],
+  "obj_z_before_mm": 31.2,
+  "obj_z_after_mm": 154.9,
+  "hand_z_after_mm": 296.1,
+  "slip_in_hand_mm": 0.73,
+  "rotation_in_hand_deg": 0.0,
+  "dropped": false,
+  "steps_per_s_active": 354.1,
+  "condition": "0.6/1.5 (default)",
+  "obj_mass": 0.5,
+  "speed": 1.0
+ },
+ {
+  "closing_xy_shift_mm": 0.1,
+  "finger_q_mm": [
+   31.39,
+   29.18
+  ],
+  "finger_force_N_est": [
+   95.2,
+   90.1
+  ],
+  "obj_z_before_mm": 31.2,
+  "obj_z_after_mm": 154.3,
+  "hand_z_after_mm": 295.6,
+  "slip_in_hand_mm": 0.31,
+  "rotation_in_hand_deg": 0.0,
+  "dropped": false,
+  "steps_per_s_active": 353.9,
+  "condition": "0.6/1.5 (default)",
+  "obj_mass": 1.0,
+  "speed": 1.0
+ },
+ {
+  "closing_xy_shift_mm": 0.04,
+  "finger_q_mm": [
+   31.32,
+   29.25
+  ],
+  "finger_force_N_est": [
+   95.0,
+   90.3
+  ],
+  "obj_z_before_mm": 31.2,
+  "obj_z_after_mm": 103.2,
+  "hand_z_after_mm": 294.2,
+  "slip_in_hand_mm": 54.14,
+  "rotation_in_hand_deg": 48.32,
+  "dropped": false,
+  "steps_per_s_active": 357.1,
+  "condition": "0.6/1.5 (default)",
+  "obj_mass": 2.0,
+  "speed": 1.0
+ },
+ {
+  "closing_xy_shift_mm": 0.02,
+  "finger_q_mm": [
+   31.4,
+   29.17
+  ],
+  "finger_force_N_est": [
+   95.2,
+   90.1
+  ],
+  "obj_z_before_mm": 31.2,
+  "obj_z_after_mm": 101.0,
+  "hand_z_after_mm": 300.0,
+  "slip_in_hand_mm": 76.31,
+  "rotation_in_hand_deg": 83.97,
+  "dropped": false,
+  "steps_per_s_active": 356.1,
+  "condition": "0.6/1.5 (default)",
+  "obj_mass": 4.0,
+  "speed": 1.0
+ },
+ {
+  "closing_xy_shift_mm": 0.45,
+  "finger_q_mm": [
+   31.75,
+   28.76
+  ],
+  "finger_force_N_est": [
+   96.0,
+   89.1
+  ],
+  "obj_z_before_mm": 31.2,
+  "obj_z_after_mm": 155.3,
+  "hand_z_after_mm": 296.6,
+  "slip_in_hand_mm": 0.15,
+  "rotation_in_hand_deg": 0.0,
+  "dropped": false,
+  "steps_per_s_active": 357.0,
+  "condition": "realistic",
+  "obj_mass": 0.15,
+  "speed": 1.0
+ },
+ {
+  "closing_xy_shift_mm": 0.97,
+  "finger_q_mm": [
+   31.84,
+   28.89
+  ],
+  "finger_force_N_est": [
+   96.2,
+   89.4
+  ],
+  "obj_z_before_mm": 31.4,
+  "obj_z_after_mm": 155.0,
+  "hand_z_after_mm": 296.1,
+  "slip_in_hand_mm": 0.34,
+  "rotation_in_hand_deg": 0.12,
+  "dropped": false,
+  "steps_per_s_active": 336.3,
+  "condition": "realistic",
+  "obj_mass": 0.5,
+  "speed": 1.0
+ },
+ {
+  "closing_xy_shift_mm": 0.51,
+  "finger_q_mm": [
+   31.65,
+   29.1
+  ],
+  "finger_force_N_est": [
+   95.8,
+   89.9
+  ],
+  "obj_z_before_mm": 31.3,
+  "obj_z_after_mm": 105.9,
+  "hand_z_after_mm": 295.5,
+  "slip_in_hand_mm": 52.35,
+  "rotation_in_hand_deg": 45.66,
+  "dropped": false,
+  "steps_per_s_active": 359.3,
+  "condition": "realistic",
+  "obj_mass": 1.0,
+  "speed": 1.0
+ },
+ {
+  "closing_xy_shift_mm": 1.24,
+  "finger_q_mm": [
+   31.37,
+   29.38
+  ],
+  "finger_force_N_est": [
+   95.1,
+   90.6
+  ],
+  "obj_z_before_mm": 31.3,
+  "obj_z_after_mm": 101.2,
+  "hand_z_after_mm": 298.1,
+  "slip_in_hand_mm": 86.94,
+  "rotation_in_hand_deg": 89.44,
+  "dropped": false,
+  "steps_per_s_active": 355.2,
+  "condition": "realistic",
+  "obj_mass": 2.0,
+  "speed": 1.0
+ },
+ {
+  "closing_xy_shift_mm": 0.58,
+  "finger_q_mm": [
+   31.55,
+   29.24
+  ],
+  "finger_force_N_est": [
+   95.6,
+   90.2
+  ],
+  "obj_z_before_mm": 31.2,
+  "obj_z_after_mm": 31.7,
+  "hand_z_after_mm": 296.7,
+  "slip_in_hand_mm": 173.41,
+  "rotation_in_hand_deg": 166.2,
+  "dropped": false,
+  "steps_per_s_active": 357.9,
+  "condition": "realistic",
+  "obj_mass": 4.0,
+  "speed": 1.0
+ },
+ {
+  "closing_xy_shift_mm": 0.45,
+  "finger_q_mm": [
+   31.75,
+   28.76
+  ],
+  "finger_force_N_est": [
+   96.0,
+   89.1
+  ],
+  "obj_z_before_mm": 31.2,
+  "obj_z_after_mm": 155.3,
+  "hand_z_after_mm": 296.6,
+  "slip_in_hand_mm": 0.14,
+  "rotation_in_hand_deg": 0.0,
+  "dropped": false,
+  "steps_per_s_active": 383.2,
+  "condition": "realistic + torsional patch 10 mm",
+  "obj_mass": 0.15,
+  "speed": 1.0
+ },
+ {
+  "closing_xy_shift_mm": 0.97,
+  "finger_q_mm": [
+   31.84,
+   28.89
+  ],
+  "finger_force_N_est": [
+   96.2,
+   89.5
+  ],
+  "obj_z_before_mm": 31.4,
+  "obj_z_after_mm": 155.0,
+  "hand_z_after_mm": 296.1,
+  "slip_in_hand_mm": 0.33,
+  "rotation_in_hand_deg": 0.12,
+  "dropped": false,
+  "steps_per_s_active": 356.9,
+  "condition": "realistic + torsional patch 10 mm",
+  "obj_mass": 0.5,
+  "speed": 1.0
+ },
+ {
+  "closing_xy_shift_mm": 0.51,
+  "finger_q_mm": [
+   31.65,
+   29.1
+  ],
+  "finger_force_N_est": [
+   95.8,
+   89.9
+  ],
+  "obj_z_before_mm": 31.3,
+  "obj_z_after_mm": 106.4,
+  "hand_z_after_mm": 295.5,
+  "slip_in_hand_mm": 51.86,
+  "rotation_in_hand_deg": 45.3,
+  "dropped": false,
+  "steps_per_s_active": 354.6,
+  "condition": "realistic + torsional patch 10 mm",
+  "obj_mass": 1.0,
+  "speed": 1.0
+ },
+ {
+  "closing_xy_shift_mm": 1.23,
+  "finger_q_mm": [
+   31.38,
+   29.36
+  ],
+  "finger_force_N_est": [
+   95.2,
+   90.5
+  ],
+  "obj_z_before_mm": 31.3,
+  "obj_z_after_mm": 100.6,
+  "hand_z_after_mm": 297.9,
+  "slip_in_hand_mm": 91.02,
+  "rotation_in_hand_deg": 94.26,
+  "dropped": false,
+  "steps_per_s_active": 356.3,
+  "condition": "realistic + torsional patch 10 mm",
+  "obj_mass": 2.0,
+  "speed": 1.0
+ },
+ {
+  "closing_xy_shift_mm": 0.59,
+  "finger_q_mm": [
+   31.58,
+   29.21
+  ],
+  "finger_force_N_est": [
+   95.6,
+   90.2
+  ],
+  "obj_z_before_mm": 31.2,
+  "obj_z_after_mm": 100.6,
+  "hand_z_after_mm": 297.4,
+  "slip_in_hand_mm": 75.44,
+  "rotation_in_hand_deg": 81.34,
+  "dropped": false,
+  "steps_per_s_active": 355.7,
+  "condition": "realistic + torsional patch 10 mm",
+  "obj_mass": 4.0,
+  "speed": 1.0
+ },
+ {
+  "closing_xy_shift_mm": 0.45,
+  "finger_q_mm": [
+   31.74,
+   28.76
+  ],
+  "finger_force_N_est": [
+   96.0,
+   89.1
+  ],
+  "obj_z_before_mm": 31.2,
+  "obj_z_after_mm": 155.3,
+  "hand_z_after_mm": 296.6,
+  "slip_in_hand_mm": 0.14,
+  "rotation_in_hand_deg": 0.0,
+  "dropped": false,
+  "steps_per_s_active": 381.9,
+  "condition": "realistic + correlation 5 mm",
+  "obj_mass": 0.15,
+  "speed": 1.0
+ },
+ {
+  "closing_xy_shift_mm": 0.97,
+  "finger_q_mm": [
+   31.84,
+   28.89
+  ],
+  "finger_force_N_est": [
+   96.2,
+   89.5
+  ],
+  "obj_z_before_mm": 31.4,
+  "obj_z_after_mm": 155.0,
+  "hand_z_after_mm": 296.1,
+  "slip_in_hand_mm": 0.31,
+  "rotation_in_hand_deg": 0.11,
+  "dropped": false,
+  "steps_per_s_active": 354.8,
+  "condition": "realistic + correlation 5 mm",
+  "obj_mass": 0.5,
+  "speed": 1.0
+ },
+ {
+  "closing_xy_shift_mm": 0.51,
+  "finger_q_mm": [
+   31.65,
+   29.1
+  ],
+  "finger_force_N_est": [
+   95.8,
+   89.9
+  ],
+  "obj_z_before_mm": 31.3,
+  "obj_z_after_mm": 106.1,
+  "hand_z_after_mm": 295.5,
+  "slip_in_hand_mm": 52.22,
+  "rotation_in_hand_deg": 45.64,
+  "dropped": false,
+  "steps_per_s_active": 381.8,
+  "condition": "realistic + correlation 5 mm",
+  "obj_mass": 1.0,
+  "speed": 1.0
+ },
+ {
+  "closing_xy_shift_mm": 1.22,
+  "finger_q_mm": [
+   31.39,
+   29.36
+  ],
+  "finger_force_N_est": [
+   95.2,
+   90.5
+  ],
+  "obj_z_before_mm": 31.3,
+  "obj_z_after_mm": 92.7,
+  "hand_z_after_mm": 295.3,
+  "slip_in_hand_mm": 108.86,
+  "rotation_in_hand_deg": 111.72,
+  "dropped": false,
+  "steps_per_s_active": 359.7,
+  "condition": "realistic + correlation 5 mm",
+  "obj_mass": 2.0,
+  "speed": 1.0
+ },
+ {
+  "closing_xy_shift_mm": 0.58,
+  "finger_q_mm": [
+   31.56,
+   29.23
+  ],
+  "finger_force_N_est": [
+   95.6,
+   90.2
+  ],
+  "obj_z_before_mm": 31.2,
+  "obj_z_after_mm": 101.3,
+  "hand_z_after_mm": 297.8,
+  "slip_in_hand_mm": 86.65,
+  "rotation_in_hand_deg": 78.96,
+  "dropped": false,
+  "steps_per_s_active": 357.8,
+  "condition": "realistic + correlation 5 mm",
+  "obj_mass": 4.0,
+  "speed": 1.0
+ },
+ {
+  "closing_xy_shift_mm": 0.01,
+  "finger_q_mm": [
+   31.51,
+   28.99
+  ],
+  "finger_force_N_est": [
+   95.5,
+   89.7
+  ],
+  "obj_z_before_mm": 31.2,
+  "obj_z_after_mm": 155.3,
+  "hand_z_after_mm": 296.5,
+  "slip_in_hand_mm": 0.02,
+  "rotation_in_hand_deg": 0.0,
+  "dropped": false,
+  "steps_per_s_active": 355.3,
+  "condition": "mu 1e4 (layout)",
+  "obj_mass": 0.15,
+  "speed": 2.5
+ },
+ {
+  "closing_xy_shift_mm": 0.01,
+  "finger_q_mm": [
+   31.56,
+   29.0
+  ],
+  "finger_force_N_est": [
+   95.6,
+   89.7
+  ],
+  "obj_z_before_mm": 31.2,
+  "obj_z_after_mm": 154.9,
+  "hand_z_after_mm": 296.1,
+  "slip_in_hand_mm": 1.01,
+  "rotation_in_hand_deg": 0.0,
+  "dropped": false,
+  "steps_per_s_active": 382.4,
+  "condition": "mu 1e4 (layout)",
+  "obj_mass": 0.5,
+  "speed": 2.5
+ },
+ {
+  "closing_xy_shift_mm": 0.01,
+  "finger_q_mm": [
+   31.57,
+   29.0
+  ],
+  "finger_force_N_est": [
+   95.6,
+   89.7
+  ],
+  "obj_z_before_mm": 31.2,
+  "obj_z_after_mm": 154.3,
+  "hand_z_after_mm": 295.6,
+  "slip_in_hand_mm": 1.21,
+  "rotation_in_hand_deg": 0.0,
+  "dropped": false,
+  "steps_per_s_active": 384.6,
+  "condition": "mu 1e4 (layout)",
+  "obj_mass": 1.0,
+  "speed": 2.5
+ },
+ {
+  "closing_xy_shift_mm": 0.02,
+  "finger_q_mm": [
+   31.55,
+   29.02
+  ],
+  "finger_force_N_est": [
+   95.6,
+   89.8
+  ],
+  "obj_z_before_mm": 31.2,
+  "obj_z_after_mm": 152.9,
+  "hand_z_after_mm": 294.2,
+  "slip_in_hand_mm": 2.75,
+  "rotation_in_hand_deg": 0.2,
+  "dropped": false,
+  "steps_per_s_active": 405.1,
+  "condition": "mu 1e4 (layout)",
+  "obj_mass": 2.0,
+  "speed": 2.5
+ },
+ {
+  "closing_xy_shift_mm": 0.0,
+  "finger_q_mm": [
+   31.59,
+   28.99
+  ],
+  "finger_force_N_est": [
+   95.6,
+   89.7
+  ],
+  "obj_z_before_mm": 31.2,
+  "obj_z_after_mm": 148.8,
+  "hand_z_after_mm": 290.2,
+  "slip_in_hand_mm": 7.61,
+  "rotation_in_hand_deg": 3.65,
+  "dropped": false,
+  "steps_per_s_active": 355.3,
+  "condition": "mu 1e4 (layout)",
+  "obj_mass": 4.0,
+  "speed": 2.5
+ },
+ {
+  "closing_xy_shift_mm": 0.24,
+  "finger_q_mm": [
+   31.64,
+   28.87
+  ],
+  "finger_force_N_est": [
+   95.8,
+   89.4
+  ],
+  "obj_z_before_mm": 31.2,
+  "obj_z_after_mm": 155.3,
+  "hand_z_after_mm": 296.5,
+  "slip_in_hand_mm": 0.1,
+  "rotation_in_hand_deg": 0.0,
+  "dropped": false,
+  "steps_per_s_active": 338.1,
+  "condition": "0.6/1.5 (default)",
+  "obj_mass": 0.15,
+  "speed": 2.5
+ },
+ {
+  "closing_xy_shift_mm": 0.09,
+  "finger_q_mm": [
+   31.47,
+   29.08
+  ],
+  "finger_force_N_est": [
+   95.4,
+   89.9
+  ],
+  "obj_z_before_mm": 31.2,
+  "obj_z_after_mm": 154.9,
+  "hand_z_after_mm": 296.1,
+  "slip_in_hand_mm": 1.13,
+  "rotation_in_hand_deg": 0.0,
+  "dropped": false,
+  "steps_per_s_active": 359.2,
+  "condition": "0.6/1.5 (default)",
+  "obj_mass": 0.5,
+  "speed": 2.5
+ },
+ {
+  "closing_xy_shift_mm": 0.1,
+  "finger_q_mm": [
+   31.39,
+   29.18
+  ],
+  "finger_force_N_est": [
+   95.2,
+   90.1
+  ],
+  "obj_z_before_mm": 31.2,
+  "obj_z_after_mm": 146.3,
+  "hand_z_after_mm": 295.5,
+  "slip_in_hand_mm": 8.14,
+  "rotation_in_hand_deg": 6.87,
+  "dropped": false,
+  "steps_per_s_active": 339.6,
+  "condition": "0.6/1.5 (default)",
+  "obj_mass": 1.0,
+  "speed": 2.5
+ },
+ {
+  "closing_xy_shift_mm": 0.05,
+  "finger_q_mm": [
+   31.31,
+   29.27
+  ],
+  "finger_force_N_est": [
+   95.0,
+   90.3
+  ],
+  "obj_z_before_mm": 31.2,
+  "obj_z_after_mm": 31.7,
+  "hand_z_after_mm": 296.7,
+  "slip_in_hand_mm": 212.45,
+  "rotation_in_hand_deg": 175.66,
+  "dropped": false,
+  "steps_per_s_active": 376.4,
+  "condition": "0.6/1.5 (default)",
+  "obj_mass": 2.0,
+  "speed": 2.5
+ },
+ {
+  "closing_xy_shift_mm": 0.02,
+  "finger_q_mm": [
+   31.39,
+   29.18
+  ],
+  "finger_force_N_est": [
+   95.2,
+   90.1
+  ],
+  "obj_z_before_mm": 31.2,
+  "obj_z_after_mm": 31.3,
+  "hand_z_after_mm": 296.7,
+  "slip_in_hand_mm": 384.85,
+  "rotation_in_hand_deg": 141.75,
+  "dropped": false,
+  "steps_per_s_active": 379.5,
+  "condition": "0.6/1.5 (default)",
+  "obj_mass": 4.0,
+  "speed": 2.5
+ },
+ {
+  "closing_xy_shift_mm": 0.45,
+  "finger_q_mm": [
+   31.75,
+   28.76
+  ],
+  "finger_force_N_est": [
+   96.0,
+   89.1
+  ],
+  "obj_z_before_mm": 31.2,
+  "obj_z_after_mm": 155.3,
+  "hand_z_after_mm": 296.6,
+  "slip_in_hand_mm": 0.29,
+  "rotation_in_hand_deg": 0.03,
+  "dropped": false,
+  "steps_per_s_active": 359.0,
+  "condition": "realistic",
+  "obj_mass": 0.15,
+  "speed": 2.5
+ },
+ {
+  "closing_xy_shift_mm": 0.97,
+  "finger_q_mm": [
+   31.84,
+   28.89
+  ],
+  "finger_force_N_est": [
+   96.2,
+   89.4
+  ],
+  "obj_z_before_mm": 31.4,
+  "obj_z_after_mm": 145.6,
+  "hand_z_after_mm": 296.1,
+  "slip_in_hand_mm": 9.53,
+  "rotation_in_hand_deg": 8.49,
+  "dropped": false,
+  "steps_per_s_active": 356.7,
+  "condition": "realistic",
+  "obj_mass": 0.5,
+  "speed": 2.5
+ },
+ {
+  "closing_xy_shift_mm": 0.51,
+  "finger_q_mm": [
+   31.65,
+   29.1
+  ],
+  "finger_force_N_est": [
+   95.8,
+   89.9
+  ],
+  "obj_z_before_mm": 31.3,
+  "obj_z_after_mm": 31.6,
+  "hand_z_after_mm": 296.7,
+  "slip_in_hand_mm": 208.32,
+  "rotation_in_hand_deg": 102.89,
+  "dropped": false,
+  "steps_per_s_active": 377.9,
+  "condition": "realistic",
+  "obj_mass": 1.0,
+  "speed": 2.5
+ },
+ {
+  "closing_xy_shift_mm": 1.23,
+  "finger_q_mm": [
+   31.37,
+   29.38
+  ],
+  "finger_force_N_est": [
+   95.1,
+   90.6
+  ],
+  "obj_z_before_mm": 31.3,
+  "obj_z_after_mm": 31.2,
+  "hand_z_after_mm": 296.7,
+  "slip_in_hand_mm": 287.49,
+  "rotation_in_hand_deg": 106.05,
+  "dropped": false,
+  "steps_per_s_active": 376.3,
+  "condition": "realistic",
+  "obj_mass": 2.0,
+  "speed": 2.5
+ },
+ {
+  "closing_xy_shift_mm": 0.59,
+  "finger_q_mm": [
+   31.58,
+   29.21
+  ],
+  "finger_force_N_est": [
+   95.6,
+   90.2
+  ],
+  "obj_z_before_mm": 31.2,
+  "obj_z_after_mm": 31.2,
+  "hand_z_after_mm": 296.7,
+  "slip_in_hand_mm": 176.59,
+  "rotation_in_hand_deg": 27.25,
+  "dropped": false,
+  "steps_per_s_active": 355.4,
+  "condition": "realistic",
+  "obj_mass": 4.0,
+  "speed": 2.5
+ },
+ {
+  "closing_xy_shift_mm": 0.43,
+  "finger_q_mm": [
+   31.74,
+   28.76
+  ],
+  "finger_force_N_est": [
+   96.0,
+   89.2
+  ],
+  "obj_z_before_mm": 31.2,
+  "obj_z_after_mm": 155.3,
+  "hand_z_after_mm": 296.6,
+  "slip_in_hand_mm": 0.33,
+  "rotation_in_hand_deg": 0.0,
+  "dropped": false,
+  "steps_per_s_active": 337.8,
+  "condition": "realistic + torsional patch 10 mm",
+  "obj_mass": 0.15,
+  "speed": 2.5
+ },
+ {
+  "closing_xy_shift_mm": 0.97,
+  "finger_q_mm": [
+   31.84,
+   28.89
+  ],
+  "finger_force_N_est": [
+   96.2,
+   89.5
+  ],
+  "obj_z_before_mm": 31.4,
+  "obj_z_after_mm": 145.5,
+  "hand_z_after_mm": 296.1,
+  "slip_in_hand_mm": 9.6,
+  "rotation_in_hand_deg": 8.58,
+  "dropped": false,
+  "steps_per_s_active": 355.5,
+  "condition": "realistic + torsional patch 10 mm",
+  "obj_mass": 0.5,
+  "speed": 2.5
+ },
+ {
+  "closing_xy_shift_mm": 0.51,
+  "finger_q_mm": [
+   31.65,
+   29.1
+  ],
+  "finger_force_N_est": [
+   95.8,
+   89.9
+  ],
+  "obj_z_before_mm": 31.3,
+  "obj_z_after_mm": 31.3,
+  "hand_z_after_mm": 296.7,
+  "slip_in_hand_mm": 174.99,
+  "rotation_in_hand_deg": 166.61,
+  "dropped": false,
+  "steps_per_s_active": 360.2,
+  "condition": "realistic + torsional patch 10 mm",
+  "obj_mass": 1.0,
+  "speed": 2.5
+ },
+ {
+  "closing_xy_shift_mm": 1.21,
+  "finger_q_mm": [
+   31.38,
+   29.36
+  ],
+  "finger_force_N_est": [
+   95.2,
+   90.5
+  ],
+  "obj_z_before_mm": 31.3,
+  "obj_z_after_mm": 31.7,
+  "hand_z_after_mm": 296.7,
+  "slip_in_hand_mm": 317.38,
+  "rotation_in_hand_deg": 95.78,
+  "dropped": false,
+  "steps_per_s_active": 359.4,
+  "condition": "realistic + torsional patch 10 mm",
+  "obj_mass": 2.0,
+  "speed": 2.5
+ },
+ {
+  "closing_xy_shift_mm": 0.58,
+  "finger_q_mm": [
+   31.56,
+   29.24
+  ],
+  "finger_force_N_est": [
+   95.6,
+   90.2
+  ],
+  "obj_z_before_mm": 31.2,
+  "obj_z_after_mm": 31.2,
+  "hand_z_after_mm": 296.7,
+  "slip_in_hand_mm": 189.83,
+  "rotation_in_hand_deg": 29.65,
+  "dropped": false,
+  "steps_per_s_active": 359.0,
+  "condition": "realistic + torsional patch 10 mm",
+  "obj_mass": 4.0,
+  "speed": 2.5
+ },
+ {
+  "closing_xy_shift_mm": 0.46,
+  "finger_q_mm": [
+   31.75,
+   28.75
+  ],
+  "finger_force_N_est": [
+   96.0,
+   89.1
+  ],
+  "obj_z_before_mm": 31.2,
+  "obj_z_after_mm": 155.3,
+  "hand_z_after_mm": 296.6,
+  "slip_in_hand_mm": 0.25,
+  "rotation_in_hand_deg": 0.0,
+  "dropped": false,
+  "steps_per_s_active": 376.8,
+  "condition": "realistic + correlation 5 mm",
+  "obj_mass": 0.15,
+  "speed": 2.5
+ },
+ {
+  "closing_xy_shift_mm": 0.97,
+  "finger_q_mm": [
+   31.84,
+   28.89
+  ],
+  "finger_force_N_est": [
+   96.2,
+   89.5
+  ],
+  "obj_z_before_mm": 31.4,
+  "obj_z_after_mm": 144.5,
+  "hand_z_after_mm": 296.1,
+  "slip_in_hand_mm": 10.58,
+  "rotation_in_hand_deg": 9.4,
+  "dropped": false,
+  "steps_per_s_active": 356.6,
+  "condition": "realistic + correlation 5 mm",
+  "obj_mass": 0.5,
+  "speed": 2.5
+ },
+ {
+  "closing_xy_shift_mm": 0.51,
+  "finger_q_mm": [
+   31.65,
+   29.1
+  ],
+  "finger_force_N_est": [
+   95.8,
+   89.9
+  ],
+  "obj_z_before_mm": 31.3,
+  "obj_z_after_mm": 31.6,
+  "hand_z_after_mm": 296.7,
+  "slip_in_hand_mm": 161.7,
+  "rotation_in_hand_deg": 110.88,
+  "dropped": false,
+  "steps_per_s_active": 356.3,
+  "condition": "realistic + correlation 5 mm",
+  "obj_mass": 1.0,
+  "speed": 2.5
+ },
+ {
+  "closing_xy_shift_mm": 1.22,
+  "finger_q_mm": [
+   31.38,
+   29.37
+  ],
+  "finger_force_N_est": [
+   95.2,
+   90.5
+  ],
+  "obj_z_before_mm": 31.3,
+  "obj_z_after_mm": 31.2,
+  "hand_z_after_mm": 296.7,
+  "slip_in_hand_mm": 266.2,
+  "rotation_in_hand_deg": 16.54,
+  "dropped": false,
+  "steps_per_s_active": 354.2,
+  "condition": "realistic + correlation 5 mm",
+  "obj_mass": 2.0,
+  "speed": 2.5
+ },
+ {
+  "closing_xy_shift_mm": 0.59,
+  "finger_q_mm": [
+   31.57,
+   29.21
+  ],
+  "finger_force_N_est": [
+   95.6,
+   90.2
+  ],
+  "obj_z_before_mm": 31.2,
+  "obj_z_after_mm": 31.2,
+  "hand_z_after_mm": 296.7,
+  "slip_in_hand_mm": 176.39,
+  "rotation_in_hand_deg": 13.86,
+  "dropped": false,
+  "steps_per_s_active": 357.0,
+  "condition": "realistic + correlation 5 mm",
+  "obj_mass": 4.0,
+  "speed": 2.5
+ }
+]

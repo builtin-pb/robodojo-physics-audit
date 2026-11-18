@@ -1,0 +1,32 @@
+lock held 2026-11-15T22:12:42Z
+== rp_fasten_frozen ver=62 cap=none free=8317 MiB 2026-11-15T22:12:43Z
+exit=0 wall=70s
+RESULT {"seed": 0, "layout": 0, "seed_batch": [0], "num_envs": 1, "device": "cpu", "repeat": 0, "policy": "zero", "evaluator": "v1", "layout_files": ["Eval_Layout/RoboDojo/arx_x5/0/fasten_screws_0.json"], "steps_through_reset": 844, "renders_through_reset": 52, "camera_reset_steps": 1, "settled_poses": {"nut0": [0.09672, -0.21632, 0.77364, 1.0, -0.0, -0.0, -0.0], "nut1": [-0.38375, -0.21011, 0.77364, 1.0, 0.0, 0.0, -0.0], "nut2": [0.30598, -0.09304, 0.77364, 1.0, 0.0, 0.0, -0.0]}, "episode_steps": 0, "renders_total": 191, "episode_seconds": 16.3, "steps_per_second": 0.0, "final_poses": {"nut0"
+HARNESS done
+2026-11-15T22:13:35Z [50,385ms] [Error] [omni.physx.tensors.plugin] Pattern '/World/envs/env_0/geometry/factory_bolt/factory_bolt_2_5' did not match any rigid bodies
+2026-11-15T22:13:35Z [50,385ms] [Error] [omni.physx.tensors.plugin] Provided pattern list did not match any rigid bodies
+2026-11-15T22:13:35Z [50,385ms] [Error] [omni.physx.tensors.plugin] Pattern '/World/envs/env_0/geometry/factory_bolt/factory_bolt_1_6' did not match any rigid bodies
+2026-11-15T22:13:35Z [50,385ms] [Error] [omni.physx.tensors.plugin] Provided pattern list did not match any rigid bodies
+2026-11-15T22:13:35Z [50,386ms] [Error] [omni.physx.tensors.plugin] Pattern '/World/envs/env_0/geometry/factory_bolt/factory_bolt_4_7' did not match any rigid bodies
+2026-11-15T22:13:35Z [50,386ms] [Error] [omni.physx.tensors.plugin] Provided pattern list did not match any rigid bodies
+== rp_fasten_free ver=62 cap=none free=40429 MiB 2026-11-15T22:13:53Z
+exit=0 wall=77s
+RESULT {"seed": 0, "layout": 0, "seed_batch": [0], "num_envs": 1, "device": "cpu", "repeat": 0, "policy": "zero", "evaluator": "v1", "layout_files": ["Eval_Layout/RoboDojo/arx_x5/0/fasten_screws_0.json"], "steps_through_reset": 844, "renders_through_reset": 52, "camera_reset_steps": 1, "settled_poses": {"nut0": [0.09672, -0.21632, 0.77364, 1.0, -0.0, -0.0, -0.0], "nut1": [-0.38375, -0.21011, 0.77364, 1.0, 0.0, 0.0, -0.0], "nut2": [0.30598, -0.09304, 0.77364, 1.0, 0.0, 0.0, -0.0]}, "episode_steps": 0, "renders_total": 191, "episode_seconds": 23.2, "steps_per_second": 0.0, "final_poses": {"nut0"
+HARNESS done
+2026-11-15T22:14:45Z [50,502ms] [Error] [omni.physx.tensors.plugin] Pattern '/World/envs/env_0/geometry/factory_bolt/factory_bolt_2_5' did not match any rigid bodies
+2026-11-15T22:14:45Z [50,502ms] [Error] [omni.physx.tensors.plugin] Provided pattern list did not match any rigid bodies
+2026-11-15T22:14:45Z [50,502ms] [Error] [omni.physx.tensors.plugin] Pattern '/World/envs/env_0/geometry/factory_bolt/factory_bolt_1_6' did not match any rigid bodies
+2026-11-15T22:14:45Z [50,502ms] [Error] [omni.physx.tensors.plugin] Provided pattern list did not match any rigid bodies
+2026-11-15T22:14:45Z [50,502ms] [Error] [omni.physx.tensors.plugin] Pattern '/World/envs/env_0/geometry/factory_bolt/factory_bolt_4_7' did not match any rigid bodies
+2026-11-15T22:14:45Z [50,502ms] [Error] [omni.physx.tensors.plugin] Provided pattern list did not match any rigid bodies
+== rp_xylo ver=62 cap=none free=40429 MiB 2026-11-15T22:15:10Z
+exit=0 wall=360s
+RESULT {"seed": 0, "layout": 0, "seed_batch": [0], "num_envs": 1, "device": "cpu", "repeat": 0, "policy": "zero", "evaluator": "v1", "layout_files": ["Eval_Layout/RoboDojo/arx_x5/0/play_Xylophone_0.json"], "steps_through_reset": 844, "renders_through_reset": 52, "camera_reset_steps": 1, "settled_poses": {"mallet_stand": [-0.1915, -0.18753, 0.77257, -0.60186, 9e-05, 0.00011, 0.7986], "mallet": [-0.10121, -0.2133, 0.77759, 0.79738, 0.04953, -0.06143, 0.5983]}, "episode_steps": 0, "renders_total": 247, "episode_seconds": 304.1, "steps_per_second": 0.0, "final_poses": {"mallet_stand": [-0.19151, -
+HARNESS done
+2026-11-15T22:15:24Z [12,526ms] [Warning] [carb.omniclient.plugin]  3057864: OmniHub: ThreadId(03) Hub encountered error. Trying to reconnect to Hub. retry_reason="Hub failed to launch: Io(\"child exited with exit status: 1 without writing file \\\"/tmp/hub-<netid>-EE349062.config.json\\\"\")"
+2026-11-15T22:15:43Z [31,432ms] [Error] [omni.rtx] Could not get NGX parameters block because NGX isn't enabled.
+2026-11-15T22:15:43Z [31,433ms] [Error] [omni.rtx] Failed to create NGX context.
+2026-11-15T22:16:04Z [52,482ms] [Error] [omni.physx.tensors.plugin] Pattern '/World/envs/env_0/geometry/xylophone/xylophone_0_3' did not match any rigid bodies
+2026-11-15T22:16:04Z [52,482ms] [Error] [omni.physx.tensors.plugin] Provided pattern list did not match any rigid bodies
+2026-11-15T22:16:04Z [52,483ms] [Error] [omni.physx.tensors.plugin] Provided pattern list did not match any rigid bodies
+QUEUE_DONE 2026-11-15T22:21:12Z

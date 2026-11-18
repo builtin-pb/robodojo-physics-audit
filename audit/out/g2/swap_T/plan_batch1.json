@@ -1,0 +1,72 @@
+[
+  {
+    "name": "g2_b1_sT_corr_s0",
+    "seed": 0,
+    "layouts": "0-9",
+    "procs": 5,
+    "args": "--task swap_T --policy script_swap_T_v2 --evaluator v2 --physics_preset corrected --physics_params $W/wt-g2st/docs/params --physics_scenario_opt_in swap_T_primary --g2_log --contact_log --log_poses"
+  },
+  {
+    "name": "g2_b1_sT_corr_s1",
+    "seed": 1,
+    "layouts": "0-9",
+    "procs": 5,
+    "args": "--task swap_T --policy script_swap_T_v2 --evaluator v2 --physics_preset corrected --physics_params $W/wt-g2st/docs/params --physics_scenario_opt_in swap_T_primary --g2_log --contact_log --log_poses"
+  },
+  {
+    "name": "g2_b1_sT_ship_s0",
+    "seed": 0,
+    "layouts": "0-9",
+    "procs": 5,
+    "args": "--task swap_T --policy script_swap_T_v2 --evaluator v2 --g2_log --contact_log --log_poses"
+  },
+  {
+    "name": "g2_b1_sT_ship_s1",
+    "seed": 1,
+    "layouts": "0-9",
+    "procs": 5,
+    "args": "--task swap_T --policy script_swap_T_v2 --evaluator v2 --g2_log --contact_log --log_poses"
+  },
+  {
+    "name": "g2_b1_cb_corr_s0",
+    "seed": 0,
+    "layouts": "0,1,2,7",
+    "procs": 4,
+    "args": "--task cover_blocks --policy script_cover_blocks --evaluator v2 --physics_preset corrected --physics_params $W/wt-g2st/docs/params --physics_scenario_opt_in cover_blocks_primary --g2_log --contact_log --log_poses"
+  },
+  {
+    "name": "g2_b1_cb_corr_s1",
+    "seed": 1,
+    "layouts": "6,8",
+    "procs": 1,
+    "args": "--task cover_blocks --policy script_cover_blocks --evaluator v2 --physics_preset corrected --physics_params $W/wt-g2st/docs/params --physics_scenario_opt_in cover_blocks_primary --g2_log --contact_log --log_poses"
+  },
+  {
+    "name": "g2_b1_cb_ship_s0",
+    "seed": 0,
+    "layouts": "0,1,2,7",
+    "procs": 4,
+    "args": "--task cover_blocks --policy script_cover_blocks --evaluator v2 --g2_log --contact_log --log_poses"
+  },
+  {
+    "name": "g2_b1_cb_ship_s1",
+    "seed": 1,
+    "layouts": "6,8",
+    "procs": 1,
+    "args": "--task cover_blocks --policy script_cover_blocks --evaluator v2 --g2_log --contact_log --log_poses"
+  },
+  {
+    "name": "g2_b1_cb_off14_corr",
+    "seed": 0,
+    "layouts": "0",
+    "procs": 1,
+    "args": "--task cover_blocks --policy script_cover_blocks_offset --cb_offset_mm 14,0 --evaluator v2 --physics_preset corrected --physics_params $W/wt-g2st/docs/params --physics_scenario_opt_in cover_blocks_primary --g2_log --contact_log --log_poses"
+  },
+  {
+    "name": "g2_b1_cb_off14_ship",
+    "seed": 0,
+    "layouts": "0",
+    "procs": 1,
+    "args": "--task cover_blocks --policy script_cover_blocks_offset --cb_offset_mm 14,0 --evaluator v2 --g2_log --contact_log --log_poses"
+  }
+]

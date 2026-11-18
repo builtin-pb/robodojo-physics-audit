@@ -1,0 +1,15 @@
+{
+ "purpose": "Blog clip, three finger versions, camera smoke 2 (6.2 replay, no physics step), the same five states as smoke 1. Smoke 1's three views from +y (fy110, fy130, fy125w) all lose the held bottle's neck behind bottle1 (the upright white bottle at x 0.435, y -0.041) in some state: at the start, in the light-finger end state, or the motor-weight one; bk115 (from -y) is filled by robot1's base. Here, oblique views that keep bottle1 off every line of sight to the neck: from +y on the -x side (ax15, ax10; the lines to the neck pass 2 to 10 cm left of bottle1) and from -y on the +x side past robot1's base (dx75, dx65)",
+ "cameras": [
+  {"name": "ax15", "eye": [-0.15, 0.55, 1.15], "target": [0.36, -0.14, 0.90], "focal_mm": 40, "res": [640, 720]},
+  {"name": "ax10", "eye": [-0.10, 0.60, 1.05], "target": [0.37, -0.14, 0.90], "focal_mm": 40, "res": [640, 720]},
+  {"name": "dx75", "eye": [0.75, -0.85, 1.10], "target": [0.36, -0.14, 0.92], "focal_mm": 40, "res": [640, 720]},
+  {"name": "dx65", "eye": [0.65, -0.95, 1.20], "target": [0.36, -0.14, 0.92], "focal_mm": 45, "res": [640, 720]}
+ ],
+ "windows": [
+  {"case": null, "unit": "step", "from": 900, "to": 1400, "stride": 1}
+ ],
+ "mode_sweep": [
+  {"name": "pt8", "carb": {"/rtx/rendermode": "PathTracing", "/rtx/pathtracing/spp": 8, "/rtx/pathtracing/totalSpp": 8, "/rtx/pathtracing/optixDenoiser/enabled": true}, "warmup": 4}
+ ]
+}

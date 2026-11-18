@@ -1,0 +1,73 @@
+[
+ {
+  "cell_name": "fold_clothes_random__shipped",
+  "layout": 0,
+  "overrides": {
+   "slide_target": {
+    "label": "audio_2_16",
+    "inst": "audio_2_16",
+    "labelled": false,
+    "stem": "audio_2",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.880262,
+     0.474487
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "fold_clothes_random__dt2",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.002,
+   "slide_target": {
+    "label": "audio_2_16",
+    "inst": "audio_2_16",
+    "labelled": false,
+    "stem": "audio_2",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.880262,
+     0.474487
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "fold_clothes_random__dt1",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.001,
+   "slide_target": {
+    "label": "audio_2_16",
+    "inst": "audio_2_16",
+    "labelled": false,
+    "stem": "audio_2",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.880262,
+     0.474487
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "fold_clothes_random__iters4x",
+  "layout": 0,
+  "overrides": {
+   "min_pos_iters": 64,
+   "slide_target": {
+    "label": "audio_2_16",
+    "inst": "audio_2_16",
+    "labelled": false,
+    "stem": "audio_2",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.880262,
+     0.474487
+    ]
+   }
+  }
+ }
+]

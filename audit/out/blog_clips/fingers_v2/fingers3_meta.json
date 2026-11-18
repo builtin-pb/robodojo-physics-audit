@@ -1,0 +1,63 @@
+{
+ "id": "fingers3",
+ "size": [
+  1920,
+  1306
+ ],
+ "panel": [
+  604,
+  680
+ ],
+ "steps": [
+  920,
+  1360,
+  5
+ ],
+ "rendered_frames": 89,
+ "out_frames": 111,
+ "seconds": 4.44,
+ "fps": 25,
+ "hold_first_frames": 12,
+ "hold_last_frames": 10,
+ "mp4": {
+  "file": "fingers3.mp4",
+  "bytes": 624999,
+  "crf": 23
+ },
+ "webp": {
+  "file": "fingers3.webp",
+  "bytes": 2479716,
+  "size": [
+   1400,
+   952
+  ],
+  "quality": 70,
+  "frames_given": 89
+ },
+ "poster": {
+  "file": "fingers3_poster.png",
+  "bytes": 1012396,
+  "step": 1360
+ },
+ "panels": [
+  {
+   "replay": "rp_fingers_shipped",
+   "trace": "fingers/runs51/b51_fingers_shipped.result.json.gz",
+   "chip": "as shipped",
+   "color": "#e3a35a"
+  },
+  {
+   "replay": "rp_fingers_light",
+   "trace": "fingers/runs51/b51_fingers_light.result.json.gz",
+   "chip": "real controller, light fingers",
+   "color": "#5cc2c4",
+   "dash": true
+  },
+  {
+   "replay": "rp_fingers_motor",
+   "trace": "fingers/runs51/b51_fingers_motor.result.json.gz",
+   "chip": "real controller, motor\u2019s weight",
+   "color": "#5cc2c4"
+  }
+ ]
+}

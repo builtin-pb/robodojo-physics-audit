@@ -1,0 +1,23 @@
+[
+ {
+  "cell_name": "align_blocks__perturb",
+  "layout": 0,
+  "overrides": {
+   "spawn_lift": {
+    "stems": "*",
+    "dz_m": 1e-06
+   },
+   "slide_target": {
+    "label": "cube0",
+    "inst": "cube_0_2",
+    "labelled": true,
+    "stem": "cube_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.854792,
+     0.51897
+    ]
+   }
+  }
+ }
+]

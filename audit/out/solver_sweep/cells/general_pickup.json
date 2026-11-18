@@ -1,0 +1,91 @@
+[
+ {
+  "cell_name": "general_pickup__shipped",
+  "layout": 0,
+  "overrides": {
+   "slide_target": {
+    "label": "cutter_0_4",
+    "inst": "cutter_0_4",
+    "labelled": false,
+    "stem": "cutter_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     -0.039852,
+     0.999206
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "general_pickup__dt2",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.002,
+   "slide_target": {
+    "label": "cutter_0_4",
+    "inst": "cutter_0_4",
+    "labelled": false,
+    "stem": "cutter_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     -0.039852,
+     0.999206
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "general_pickup__dt1",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.001,
+   "slide_target": {
+    "label": "cutter_0_4",
+    "inst": "cutter_0_4",
+    "labelled": false,
+    "stem": "cutter_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     -0.039852,
+     0.999206
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "general_pickup__iters4x",
+  "layout": 0,
+  "overrides": {
+   "min_pos_iters": 64,
+   "slide_target": {
+    "label": "cutter_0_4",
+    "inst": "cutter_0_4",
+    "labelled": false,
+    "stem": "cutter_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     -0.039852,
+     0.999206
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "general_pickup__cpu",
+  "layout": 0,
+  "overrides": {
+   "gpu_dynamics": false,
+   "slide_target": {
+    "label": "cutter_0_4",
+    "inst": "cutter_0_4",
+    "labelled": false,
+    "stem": "cutter_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     -0.039852,
+     0.999206
+    ]
+   }
+  }
+ }
+]

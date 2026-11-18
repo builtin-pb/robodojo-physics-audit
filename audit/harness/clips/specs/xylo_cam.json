@@ -1,0 +1,51 @@
+{
+ "purpose": "A21 production replay: long-lens front view with the eye 12 mm above the xylophone's top (0.788 m), aimed slightly up; actions 1-103 every 6th, 106-269 every action",
+ "cameras": [
+  {
+   "name": "xside",
+   "eye": [
+    -0.074,
+    0.75,
+    0.8
+   ],
+   "target": [
+    -0.074,
+    -0.03,
+    0.835
+   ],
+   "focal_mm": 36,
+   "res": [
+    1280,
+    720
+   ]
+  }
+ ],
+ "windows": [
+  {
+   "case": null,
+   "unit": "action",
+   "from": 1,
+   "to": 103,
+   "stride": 6
+  },
+  {
+   "case": null,
+   "unit": "action",
+   "from": 106,
+   "to": 269,
+   "stride": 1
+  }
+ ],
+ "mode_sweep": [
+  {
+   "name": "pt8",
+   "carb": {
+    "/rtx/rendermode": "PathTracing",
+    "/rtx/pathtracing/spp": 8,
+    "/rtx/pathtracing/totalSpp": 8,
+    "/rtx/pathtracing/optixDenoiser/enabled": true
+   },
+   "warmup": 4
+  }
+ ]
+}

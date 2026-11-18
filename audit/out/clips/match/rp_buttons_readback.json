@@ -1,0 +1,12 @@
+{
+ "check": "replay read-back",
+ "run": "runs/rp_buttons",
+ "source": "runs/r51_buttons/frames/index.json",
+ "frames": 107,
+ "physics_steps_during_replay": 0,
+ "max_rigid_position_error_mm": 0.0,
+ "max_joint_error_rad": 0.0,
+ "max_button_joint_error_m": 0.0,
+ "commit": "3fcd7351",
+ "note": "#111, 20 mm past the stop (cases press_button1_30mm, press_button0_30mm): engine read-back of each set state (rigid positions, both arms' joints, button joints) against the logged 5.1 state; the frames' overlay metadata (action, counters) is the 5.1 log's"
+}

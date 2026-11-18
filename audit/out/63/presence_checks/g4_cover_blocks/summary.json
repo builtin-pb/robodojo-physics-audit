@@ -1,0 +1,85 @@
+{
+ "task": "cover_blocks",
+ "arms": {
+  "shipped": {
+   "what": "RoboDojo as released (script_cover_blocks)",
+   "control": false,
+   "episodes": 6,
+   "successes": 6,
+   "mean_score": 100.0,
+   "episode_s_median": 266.3,
+   "failing_layouts": [],
+   "cup_cube_force_episodes": 0,
+   "cube_over_50mm_episodes": 0,
+   "covers_seated": 18,
+   "covers": 18,
+   "max_cube_disp_mm": 0.0
+  },
+  "v2b": {
+   "what": "fully corrected, global equal-weight map v2b (script_cover_blocks)",
+   "control": false,
+   "episodes": 6,
+   "successes": 6,
+   "mean_score": 100.0,
+   "episode_s_median": 351.85,
+   "failing_layouts": [],
+   "cup_cube_force_episodes": 0,
+   "cube_over_50mm_episodes": 0,
+   "covers_seated": 18,
+   "covers": 18,
+   "max_cube_disp_mm": 0.0
+  },
+  "v2_presence": {
+   "what": "fully corrected, global presence-weighted map v2_presence (script_cover_blocks)",
+   "control": false,
+   "episodes": 6,
+   "successes": 6,
+   "mean_score": 100.0,
+   "episode_s_median": 324.85,
+   "failing_layouts": [],
+   "cup_cube_force_episodes": 0,
+   "cube_over_50mm_episodes": 0,
+   "covers_seated": 18,
+   "covers": 18,
+   "max_cube_disp_mm": 0.0
+  }
+ },
+ "paired": {
+  "shipped": {
+   "pairs": 6,
+   "arm_only_success": 0,
+   "reference_only_success": 0,
+   "mean_score_difference": 0.0,
+   "bootstrap95": [
+    0.0,
+    0.0
+   ],
+   "mcnemar_p": 1.0,
+   "identical_final_state": 0,
+   "beyond_noise": false,
+   "reference": "v2b"
+  },
+  "v2_presence": {
+   "pairs": 6,
+   "arm_only_success": 0,
+   "reference_only_success": 0,
+   "mean_score_difference": 0.0,
+   "bootstrap95": [
+    0.0,
+    0.0
+   ],
+   "mcnemar_p": 1.0,
+   "identical_final_state": 0,
+   "beyond_noise": false,
+   "reference": "v2b"
+  }
+ },
+ "determinism": {},
+ "cost": {
+  "processes": 8,
+  "process_hours": 1.822,
+  "gpu_busy_hours": {
+   "della-vis2:1": 0.745
+  }
+ }
+}

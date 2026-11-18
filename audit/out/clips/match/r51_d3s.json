@@ -1,0 +1,49 @@
+{
+ "check": "slide_box",
+ "result": "/tmp/clipsref/r51_d3_ship/result.json",
+ "reference": "audit/out/60/tilt60_cb_none_1.json",
+ "isaac_sim_62": [
+  "5.1.0",
+  "rc.19",
+  "5"
+ ],
+ "repo_head_62": "3155bf6ec2f5d56e44a766173d1afae4a69808f0",
+ "values_62": {
+  "slide_x_mm": 24.72,
+  "max_slide_x_mm": 24.734,
+  "max_tilt_deg": 1.805,
+  "max_com_dz_mm": 0.183,
+  "final_yaw_deg": 3.757,
+  "rotation_deg": 3.8
+ },
+ "values_51": {
+  "slide_x_mm": 24.72,
+  "max_slide_x_mm": 24.734,
+  "max_tilt_deg": 1.805,
+  "max_com_dz_mm": 0.183,
+  "final_yaw_deg": 3.757,
+  "rotation_deg": 3.8
+ },
+ "normal_N_steps2to8_62": [
+  0.21,
+  2.66,
+  10.886,
+  0.706,
+  0.12,
+  0.0,
+  2.068
+ ],
+ "normal_N_steps2to8_51": [
+  0.21,
+  2.66,
+  10.886,
+  0.706,
+  0.12,
+  0.0,
+  2.068
+ ],
+ "max_dx_series_diff_mm": 0.0,
+ "identical_series": true,
+ "match": true,
+ "tolerance": "final and peak slide within 0.5 mm, peak tilt within 1 degree, zero normal impulse on the same steps 3 to 8"
+}

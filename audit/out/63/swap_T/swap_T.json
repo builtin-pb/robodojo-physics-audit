@@ -1,0 +1,2588 @@
+{
+ "schema": "v2",
+ "schema_version": "2.1-d2-aligned-main-9be4007",
+ "revision": "v2 (#167 decisions: cube class from the real frames; pad-surface analogue bands; no unary map in the slice)",
+ "status_vocabulary": [
+  "sourced",
+  "estimated",
+  "unsourced"
+ ],
+ "task": "swap_T",
+ "issue": "#63",
+ "generated_by": "audit/tools/build_param_slices_cb_swapT.py",
+ "repo_commit": "9be4007",
+ "upstream_commit": "f57e163",
+ "hf_dataset_revision": "1127bda94f172d757386945af3eb3a6754d1a4e6",
+ "input_checksums_sha256": {
+  "audit/out/63/class_values.json": "0057afcabc932845233e1dbecba5bb62f4e76bd484e79199719085ec5c5b2efa",
+  "audit/out/63/classes.json": "5df279552bb42aadf3622c6a8eadc32e3c0efe9ff6bdc8d7fa0f1bc3a72c3be1",
+  "audit/out/63/usd_geometry_facts_cb_swapT.json": "5d39fbe223764d275950df833eba8eb2fc81b25f580ea946137fc012c1b5ce68",
+  "audit/out/63/usd_geometry_facts.json": "8fcd9ac18b549ef0374fb99f3cb8acc460bf6b0ae7424a497db5f114f4b9d34a",
+  "audit/out/63/bottles/put_bottles_into_dustbin.json": "a214ec317b108c4659f0148b79e654206522d35d5004dc995450f49f7a8c0a5b",
+  "audit/out/31/population.json": "a185ab9e75f17968755a94e6ade93b926d466ea39b677eb5d4e46972900ada5e"
+ },
+ "sourcing_status": {
+  "sourcing_stopped": true,
+  "stopping_rule": "AGENTS.md: stop after two probes that move no verdict. Two targeted searches (ABS on melamine laminate; polypropylene on melamine or HPL) found no matched measurement, as for the bottles (#84).",
+  "summary": "Sizes, volumes, centres of mass and inertia ratios come from the pinned USD (exact). Bulk densities are sourced; every mass is a density or product-based estimate because each class rests on a caption or a visual reading. No contact friction pair is sourced; pairs keep the class table's bands under the pad_hard + table_laminate scenario."
+ },
+ "count_summary": {
+  "sourced": 10,
+  "estimated": 32,
+  "unsourced": 41,
+  "total_parameter_fields": 83,
+  "real_world_dynamics_values_sourced": 0,
+  "note": "Sourced leaves are geometry (sizes, solid-collider I/m), bulk densities and the PhysX combine rule; none fixes a real mass or friction of this task's objects. Pair restitutions are derived from class unaries and not counted.",
+  "keys": {
+   "sourced": [
+    "assets.Rigid/t/00000.size_m",
+    "assets.Rigid/t/00000.solid_collider_inertia_over_mass_m2",
+    "assets.Rigid/t/00001.size_m",
+    "assets.Rigid/t/00001.solid_collider_inertia_over_mass_m2",
+    "assets.Geometry/camera_stand/00000.size_m",
+    "assets.Scene/Table.size_m",
+    "assets.Scene/Ground.size_m",
+    "assets.Robot/x5/finger_pad.size_m",
+    "classes.abs_toy_plastic.density_kg_m3",
+    "physx_combine_and_unary_realisation.combine_algebra_rule"
+   ],
+   "estimated": [
+    "assets.Rigid/t/00000.mass_kg",
+    "assets.Rigid/t/00000.com_offset_m",
+    "assets.Rigid/t/00000.inertia_over_mass_m2",
+    "assets.Rigid/t/00001.mass_kg",
+    "assets.Rigid/t/00001.com_offset_m",
+    "assets.Rigid/t/00001.inertia_over_mass_m2",
+    "pairs.abs_device_housing__abs_device_housing.mu_static",
+    "pairs.abs_device_housing__abs_device_housing.mu_kinetic",
+    "pairs.abs_device_housing__abs_toy_plastic.mu_static",
+    "pairs.abs_device_housing__abs_toy_plastic.mu_kinetic",
+    "pairs.abs_device_housing__aluminium.mu_static",
+    "pairs.abs_device_housing__aluminium.mu_kinetic",
+    "pairs.abs_device_housing__pad_hard.mu_static",
+    "pairs.abs_device_housing__pad_hard.mu_kinetic",
+    "pairs.abs_toy_plastic__abs_toy_plastic.mu_static",
+    "pairs.abs_toy_plastic__abs_toy_plastic.mu_kinetic",
+    "pairs.abs_toy_plastic__aluminium.mu_static",
+    "pairs.abs_toy_plastic__aluminium.mu_kinetic",
+    "pairs.abs_toy_plastic__pad_hard.mu_static",
+    "pairs.abs_toy_plastic__pad_hard.mu_kinetic",
+    "pairs.aluminium__aluminium.mu_static",
+    "pairs.aluminium__aluminium.mu_kinetic",
+    "pairs.aluminium__pad_elastomer.mu_static",
+    "pairs.aluminium__pad_elastomer.mu_kinetic",
+    "pairs.aluminium__pad_hard.mu_static",
+    "pairs.aluminium__pad_hard.mu_kinetic",
+    "pairs.aluminium__table_wood.mu_static",
+    "pairs.aluminium__table_wood.mu_kinetic",
+    "pairs.pad_elastomer__pad_elastomer.mu_static",
+    "pairs.pad_elastomer__pad_elastomer.mu_kinetic",
+    "pairs.pad_hard__pad_hard.mu_static",
+    "pairs.pad_hard__pad_hard.mu_kinetic"
+   ],
+   "unsourced": [
+    "assets.Robot/x5/finger_pad.jaw_mass_kg",
+    "classes.abs_device_housing.restitution",
+    "classes.abs_toy_plastic.restitution",
+    "classes.aluminium.restitution",
+    "classes.ground.restitution",
+    "classes.pad_elastomer.restitution",
+    "classes.pad_hard.restitution",
+    "classes.table_laminate.restitution",
+    "classes.table_wood.restitution",
+    "pairs.abs_device_housing__ground.mu_static",
+    "pairs.abs_device_housing__ground.mu_kinetic",
+    "pairs.abs_device_housing__pad_elastomer.mu_static",
+    "pairs.abs_device_housing__pad_elastomer.mu_kinetic",
+    "pairs.abs_device_housing__table_laminate.mu_static",
+    "pairs.abs_device_housing__table_laminate.mu_kinetic",
+    "pairs.abs_device_housing__table_wood.mu_static",
+    "pairs.abs_device_housing__table_wood.mu_kinetic",
+    "pairs.abs_toy_plastic__ground.mu_static",
+    "pairs.abs_toy_plastic__ground.mu_kinetic",
+    "pairs.abs_toy_plastic__pad_elastomer.mu_static",
+    "pairs.abs_toy_plastic__pad_elastomer.mu_kinetic",
+    "pairs.abs_toy_plastic__table_laminate.mu_static",
+    "pairs.abs_toy_plastic__table_laminate.mu_kinetic",
+    "pairs.abs_toy_plastic__table_wood.mu_static",
+    "pairs.abs_toy_plastic__table_wood.mu_kinetic",
+    "pairs.aluminium__ground.mu_static",
+    "pairs.aluminium__ground.mu_kinetic",
+    "pairs.aluminium__table_laminate.mu_static",
+    "pairs.aluminium__table_laminate.mu_kinetic",
+    "pairs.ground__pad_elastomer.mu_static",
+    "pairs.ground__pad_elastomer.mu_kinetic",
+    "pairs.ground__pad_hard.mu_static",
+    "pairs.ground__pad_hard.mu_kinetic",
+    "pairs.pad_elastomer__table_laminate.mu_static",
+    "pairs.pad_elastomer__table_laminate.mu_kinetic",
+    "pairs.pad_elastomer__table_wood.mu_static",
+    "pairs.pad_elastomer__table_wood.mu_kinetic",
+    "pairs.pad_hard__table_laminate.mu_static",
+    "pairs.pad_hard__table_laminate.mu_kinetic",
+    "pairs.pad_hard__table_wood.mu_static",
+    "pairs.pad_hard__table_wood.mu_kinetic"
+   ]
+  }
+ },
+ "scenarios": {
+  "default": {
+   "finger_pad": "pad_hard",
+   "table": "table_laminate",
+   "ground_combine": "average",
+   "fill": "empty (not applicable: no container is filled)"
+  },
+  "sensitivity": {
+   "finger_pad": [
+    "pad_elastomer"
+   ],
+   "table": [
+    "table_wood"
+   ]
+  },
+  "surface_basis": {
+   "default_surfaces": "Bo's visual reading of real ARX X5 camera frames in cover_blocks episode 0 (origin/bp/params-classes:audit/out/63/real_frames/, #63 comment 2026-11-11T19:16:17Z): dark-grey smooth hard thermoplastic finger faces without rubber pads (pad_hard) and smooth white melamine/laminate tabletop in an aluminium-extrusion enclosure (table_laminate).",
+   "sensitivity_surfaces": "pad_elastomer tests adhered silicone/rubber/TPU Shore A 60-90 grip tape (#32 hardware check open); table_wood tests finished/lacquered mahogany or hardwood matching simulation shader Mahogany_Planks.mdl (env/scene_manager/objects/table.py:61)."
+  }
+ },
+ "assets": {
+  "Rigid/t/00000": {
+   "id": "Rigid/t/00000",
+   "type": "Rigid",
+   "category": "t",
+   "label_in_task": "t0",
+   "material_class": "abs_toy_plastic",
+   "alternative_material_classes": [],
+   "confidence": "medium",
+   "identity": "Flat T: two 60 x 20 x 15 mm box colliders (crossbar at x in [-0.04, -0.02], stem at x in [-0.02, 0.04]; the prims are named box_stem and box_bar the other way round), plus a disabled SDF collider of the same T. Caption: smooth plastic / polished resin. No real-robot data for swap_T.",
+   "flags": [
+    "identity_unclear",
+    "declared_density_exceeds_class_bbox_bound"
+   ],
+   "size_m": {
+    "value": [
+     0.08,
+     0.06,
+     0.015
+    ],
+    "unit": "m",
+    "status": "sourced",
+    "basis": "Union of the two enabled Cube colliders [[0.06, 0.02, 0.015], [0.02, 0.06, 0.015]] m (zero overlap); visual mesh closed, volume 3.6e-05 m^3; metadata bbox [0.08, 0.06, 0.015].",
+    "sources": [
+     {
+      "url": "https://huggingface.co/datasets/RoboDojo-Benchmark/RoboDojo/resolve/1127bda94f172d757386945af3eb3a6754d1a4e6/Assets/Object/RoboDojo/Rigid/t/00000/object.usdz",
+      "quote": "sha256=98bae9ae3dddf67e58004695930c09f3d36f715dfa2bf5d65d1ed2b7179fa493; enabled Cube colliders [{\"prim_path\": \"/World/collision/box_bar\", \"cube_size_attr\": 1.0, \"center_m\": [0.01, 0.0, 0.0], \"dims_m\": [0.06, 0.02, 0.015]}, {\"prim_path\": \"/World/collision/box_stem\", \"cube_size_attr\": 1.0, \"center_m\": [-0.03, 0.0, 0.0], \"dims_m\": [0.02, 0.06, 0.015]}]",
+      "conditions": "Computed by audit/tools/extract_usd_geometry_facts.py --models (audit/out/63/usd_geometry_facts_cb_swapT.json) from the pinned USD, rigid-body root frame."
+     },
+     {
+      "url": "https://huggingface.co/datasets/RoboDojo-Benchmark/RoboDojo/resolve/1127bda94f172d757386945af3eb3a6754d1a4e6/Assets/Object/RoboDojo/Rigid/t/00000/metadata.json",
+      "quote": "sha256=4b40f7225308b3bede5b33947853800b86b20266ff2a0c5947b1a884182e1a25; physics.mass=0.35, friction=0.45, aligned_bbox.extents=[0.08, 0.06, 0.015]",
+      "conditions": "Declared values (shipped); not a real-world source."
+     }
+    ],
+    "mesh_volume_m3": 3.6e-05
+   },
+   "mass_kg": {
+    "value": 0.03816,
+    "range": [
+     0.03708,
+     0.0504
+    ],
+    "unit": "kg",
+    "status": "estimated",
+    "basis": "Uniform solid ABS over the exact T volume (3.6e-05 m^3 x 1,060 [1,030, 1,400] kg/m^3, the class table's abs_toy_plastic span). Estimated: class from caption only (medium); a 3D-printed T at partial infill would be lighter (unsourced).",
+    "sources": [
+     {
+      "url": "https://www.engineeringtoolbox.com/density-solids-d_1265.html",
+      "quote": "ABS - copolymer of acrylonitrile, butadiene and styrene | 1.06",
+      "conditions": "Bulk solid at room temperature, unit 10^3 kg/m^3; raw HTML table rows fetched with curl 2026-11-14."
+     },
+     {
+      "url": "https://huggingface.co/datasets/RoboDojo-Benchmark/RoboDojo/resolve/1127bda94f172d757386945af3eb3a6754d1a4e6/Assets/Object/RoboDojo/Rigid/t/00000/object.usdz",
+      "quote": "sha256=98bae9ae3dddf67e58004695930c09f3d36f715dfa2bf5d65d1ed2b7179fa493; box collider volume 3.6e-05 m^3",
+      "conditions": "Computed by audit/tools/extract_usd_geometry_facts.py --models (audit/out/63/usd_geometry_facts_cb_swapT.json) from the pinned USD, rigid-body root frame."
+     }
+    ],
+    "shipped": {
+     "declared_layout_kg": 0.1,
+     "declared_metadata_kg": 0.35,
+     "engine_kg": 0.1,
+     "issues": [
+      "#44"
+     ]
+    }
+   },
+   "com_offset_m": {
+    "value": [
+     -0.01,
+     0.0,
+     0.0
+    ],
+    "unit": "m",
+    "status": "estimated",
+    "basis": "Centroid of the uniform solid T (1 cm from the root origin toward the crossbar).",
+    "sources": [
+     {
+      "url": "https://huggingface.co/datasets/RoboDojo-Benchmark/RoboDojo/resolve/1127bda94f172d757386945af3eb3a6754d1a4e6/Assets/Object/RoboDojo/Rigid/t/00000/object.usdz",
+      "quote": "sha256=98bae9ae3dddf67e58004695930c09f3d36f715dfa2bf5d65d1ed2b7179fa493; box-union centroid",
+      "conditions": "Computed by audit/tools/extract_usd_geometry_facts.py --models (audit/out/63/usd_geometry_facts_cb_swapT.json) from the pinned USD, rigid-body root frame."
+     }
+    ],
+    "shipped": {
+     "engine_com_m": [
+      -0.01,
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "inertia_over_mass_m2": {
+    "value": [
+     0.000185417,
+     0.000585417,
+     0.000733333
+    ],
+    "unit": "m^2",
+    "status": "estimated",
+    "basis": "Uniform solid T about its centroid (exact box sums with parallel axes; equals the closed visual mesh's integral). Principal axes = root axes (off-diagonal 0).",
+    "sources": [
+     {
+      "url": "https://huggingface.co/datasets/RoboDojo-Benchmark/RoboDojo/resolve/1127bda94f172d757386945af3eb3a6754d1a4e6/Assets/Object/RoboDojo/Rigid/t/00000/object.usdz",
+      "quote": "sha256=98bae9ae3dddf67e58004695930c09f3d36f715dfa2bf5d65d1ed2b7179fa493; box-union I/m [0.000185417, 0.000585417, 0.000733333]; visual-mesh enclosed-solid I/m [0.000185417, 0.000585417, 0.000733333]",
+      "conditions": "Computed by audit/tools/extract_usd_geometry_facts.py --models (audit/out/63/usd_geometry_facts_cb_swapT.json) from the pinned USD, rigid-body root frame."
+     }
+    ],
+    "shipped": {
+     "engine_diag_inertia_kg_m2": [
+      1.335e-05,
+      4.215e-05,
+      5.28e-05
+     ],
+     "engine_I_over_engine_mass_m2": [
+      0.0001335,
+      0.0004215,
+      0.000528
+     ],
+     "note": "Inertia of a uniform 72 g solid T at mass 0.1 kg (#113)."
+    }
+   },
+   "solid_collider_inertia_over_mass_m2": {
+    "value": [
+     0.000185417,
+     0.000585417,
+     0.000733333
+    ],
+    "unit": "m^2",
+    "status": "sourced",
+    "basis": "Pure geometry of the two enabled box colliders.",
+    "sources": [
+     {
+      "url": "https://huggingface.co/datasets/RoboDojo-Benchmark/RoboDojo/resolve/1127bda94f172d757386945af3eb3a6754d1a4e6/Assets/Object/RoboDojo/Rigid/t/00000/object.usdz",
+      "quote": "sha256=98bae9ae3dddf67e58004695930c09f3d36f715dfa2bf5d65d1ed2b7179fa493; box-union I/m",
+      "conditions": "Computed by audit/tools/extract_usd_geometry_facts.py --models (audit/out/63/usd_geometry_facts_cb_swapT.json) from the pinned USD, rigid-body root frame."
+     }
+    ]
+   },
+   "declared_metadata": {
+    "mass_kg": 0.35,
+    "friction": 0.45
+   }
+  },
+  "Rigid/t/00001": {
+   "id": "Rigid/t/00001",
+   "type": "Rigid",
+   "category": "t",
+   "label_in_task": "t1",
+   "material_class": "abs_toy_plastic",
+   "alternative_material_classes": [],
+   "confidence": "medium",
+   "identity": "Flat T: two 60 x 20 x 15 mm box colliders (crossbar at x in [-0.04, -0.02], stem at x in [-0.02, 0.04]; the prims are named box_stem and box_bar the other way round), plus a disabled SDF collider of the same T. Caption: smooth plastic / polished resin. No real-robot data for swap_T.",
+   "flags": [
+    "identity_unclear",
+    "declared_density_exceeds_class_bbox_bound"
+   ],
+   "size_m": {
+    "value": [
+     0.08,
+     0.06,
+     0.015
+    ],
+    "unit": "m",
+    "status": "sourced",
+    "basis": "Union of the two enabled Cube colliders [[0.06, 0.02, 0.015], [0.02, 0.06, 0.015]] m (zero overlap); visual mesh closed, volume 3.6e-05 m^3; metadata bbox [0.08, 0.06, 0.015].",
+    "sources": [
+     {
+      "url": "https://huggingface.co/datasets/RoboDojo-Benchmark/RoboDojo/resolve/1127bda94f172d757386945af3eb3a6754d1a4e6/Assets/Object/RoboDojo/Rigid/t/00001/object.usdz",
+      "quote": "sha256=f6634d82aa7e5a389b17f8ce40af445a82e156a02c1c45d08c64838b6c41b7c2; enabled Cube colliders [{\"prim_path\": \"/World/collision/box_bar\", \"cube_size_attr\": 1.0, \"center_m\": [0.01, 0.0, 0.0], \"dims_m\": [0.06, 0.02, 0.015]}, {\"prim_path\": \"/World/collision/box_stem\", \"cube_size_attr\": 1.0, \"center_m\": [-0.03, 0.0, 0.0], \"dims_m\": [0.02, 0.06, 0.015]}]",
+      "conditions": "Computed by audit/tools/extract_usd_geometry_facts.py --models (audit/out/63/usd_geometry_facts_cb_swapT.json) from the pinned USD, rigid-body root frame."
+     },
+     {
+      "url": "https://huggingface.co/datasets/RoboDojo-Benchmark/RoboDojo/resolve/1127bda94f172d757386945af3eb3a6754d1a4e6/Assets/Object/RoboDojo/Rigid/t/00001/metadata.json",
+      "quote": "sha256=4b40f7225308b3bede5b33947853800b86b20266ff2a0c5947b1a884182e1a25; physics.mass=0.35, friction=0.45, aligned_bbox.extents=[0.08, 0.06, 0.015]",
+      "conditions": "Declared values (shipped); not a real-world source."
+     }
+    ],
+    "mesh_volume_m3": 3.6e-05
+   },
+   "mass_kg": {
+    "value": 0.03816,
+    "range": [
+     0.03708,
+     0.0504
+    ],
+    "unit": "kg",
+    "status": "estimated",
+    "basis": "Uniform solid ABS over the exact T volume (3.6e-05 m^3 x 1,060 [1,030, 1,400] kg/m^3, the class table's abs_toy_plastic span). Estimated: class from caption only (medium); a 3D-printed T at partial infill would be lighter (unsourced).",
+    "sources": [
+     {
+      "url": "https://www.engineeringtoolbox.com/density-solids-d_1265.html",
+      "quote": "ABS - copolymer of acrylonitrile, butadiene and styrene | 1.06",
+      "conditions": "Bulk solid at room temperature, unit 10^3 kg/m^3; raw HTML table rows fetched with curl 2026-11-14."
+     },
+     {
+      "url": "https://huggingface.co/datasets/RoboDojo-Benchmark/RoboDojo/resolve/1127bda94f172d757386945af3eb3a6754d1a4e6/Assets/Object/RoboDojo/Rigid/t/00001/object.usdz",
+      "quote": "sha256=f6634d82aa7e5a389b17f8ce40af445a82e156a02c1c45d08c64838b6c41b7c2; box collider volume 3.6e-05 m^3",
+      "conditions": "Computed by audit/tools/extract_usd_geometry_facts.py --models (audit/out/63/usd_geometry_facts_cb_swapT.json) from the pinned USD, rigid-body root frame."
+     }
+    ],
+    "shipped": {
+     "declared_layout_kg": 0.1,
+     "declared_metadata_kg": 0.35,
+     "engine_kg": 0.1,
+     "issues": [
+      "#44"
+     ]
+    }
+   },
+   "com_offset_m": {
+    "value": [
+     -0.01,
+     0.0,
+     0.0
+    ],
+    "unit": "m",
+    "status": "estimated",
+    "basis": "Centroid of the uniform solid T (1 cm from the root origin toward the crossbar).",
+    "sources": [
+     {
+      "url": "https://huggingface.co/datasets/RoboDojo-Benchmark/RoboDojo/resolve/1127bda94f172d757386945af3eb3a6754d1a4e6/Assets/Object/RoboDojo/Rigid/t/00001/object.usdz",
+      "quote": "sha256=f6634d82aa7e5a389b17f8ce40af445a82e156a02c1c45d08c64838b6c41b7c2; box-union centroid",
+      "conditions": "Computed by audit/tools/extract_usd_geometry_facts.py --models (audit/out/63/usd_geometry_facts_cb_swapT.json) from the pinned USD, rigid-body root frame."
+     }
+    ],
+    "shipped": {
+     "engine_com_m": [
+      -0.01,
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "inertia_over_mass_m2": {
+    "value": [
+     0.000185417,
+     0.000585417,
+     0.000733333
+    ],
+    "unit": "m^2",
+    "status": "estimated",
+    "basis": "Uniform solid T about its centroid (exact box sums with parallel axes; equals the closed visual mesh's integral). Principal axes = root axes (off-diagonal 0).",
+    "sources": [
+     {
+      "url": "https://huggingface.co/datasets/RoboDojo-Benchmark/RoboDojo/resolve/1127bda94f172d757386945af3eb3a6754d1a4e6/Assets/Object/RoboDojo/Rigid/t/00001/object.usdz",
+      "quote": "sha256=f6634d82aa7e5a389b17f8ce40af445a82e156a02c1c45d08c64838b6c41b7c2; box-union I/m [0.000185417, 0.000585417, 0.000733333]; visual-mesh enclosed-solid I/m [0.000185417, 0.000585417, 0.000733333]",
+      "conditions": "Computed by audit/tools/extract_usd_geometry_facts.py --models (audit/out/63/usd_geometry_facts_cb_swapT.json) from the pinned USD, rigid-body root frame."
+     }
+    ],
+    "shipped": {
+     "engine_diag_inertia_kg_m2": [
+      1.335e-05,
+      4.215e-05,
+      5.28e-05
+     ],
+     "engine_I_over_engine_mass_m2": [
+      0.0001335,
+      0.0004215,
+      0.000528
+     ],
+     "note": "Inertia of a uniform 72 g solid T at mass 0.1 kg (#113)."
+    }
+   },
+   "solid_collider_inertia_over_mass_m2": {
+    "value": [
+     0.000185417,
+     0.000585417,
+     0.000733333
+    ],
+    "unit": "m^2",
+    "status": "sourced",
+    "basis": "Pure geometry of the two enabled box colliders.",
+    "sources": [
+     {
+      "url": "https://huggingface.co/datasets/RoboDojo-Benchmark/RoboDojo/resolve/1127bda94f172d757386945af3eb3a6754d1a4e6/Assets/Object/RoboDojo/Rigid/t/00001/object.usdz",
+      "quote": "sha256=f6634d82aa7e5a389b17f8ce40af445a82e156a02c1c45d08c64838b6c41b7c2; box-union I/m",
+      "conditions": "Computed by audit/tools/extract_usd_geometry_facts.py --models (audit/out/63/usd_geometry_facts_cb_swapT.json) from the pinned USD, rigid-body root frame."
+     }
+    ]
+   },
+   "declared_metadata": {
+    "mass_kg": 0.35,
+    "friction": 0.45
+   }
+  },
+  "Geometry/camera_stand/00000": {
+   "id": "Geometry/camera_stand/00000",
+   "type": "Geometry (static collider)",
+   "category": "camera_stand",
+   "material_class": "aluminium",
+   "alternative_material_classes": [
+    "steel",
+    "abs_device_housing"
+   ],
+   "confidence": "medium",
+   "identity": "Camera stand at [0.0, -0.47, 0.765] m in every layout (behind the objects, between the arm bases); static, 12 enabled mesh colliders (#96 W3 engine bounds).",
+   "flags": [
+    "declared_mass_missing",
+    "static"
+   ],
+   "size_m": {
+    "value": [
+     0.3,
+     0.5875,
+     0.1097
+    ],
+    "unit": "m",
+    "status": "sourced",
+    "basis": "metadata aligned bbox; USD collider union [0.3, 0.58751, 0.109666] (audit/out/63/usd_geometry_facts.json), engine overlap-box bounds within 0.03% (#96).",
+    "sources": [
+     {
+      "url": "https://huggingface.co/datasets/RoboDojo-Benchmark/RoboDojo/resolve/1127bda94f172d757386945af3eb3a6754d1a4e6/Assets/Object/RoboDojo/Geometry/camera_stand/00000/metadata.json",
+      "quote": "sha256=981392df89e5a45a28c0240ef0cb289b778550ec7ad49e98419a813865bb3d30 aligned_bbox.extents=[0.3, 0.5875, 0.1097]",
+      "conditions": "Pinned HF revision."
+     }
+    ]
+   },
+   "mass": {
+    "static_collider_in_sim": true
+   }
+  },
+  "Scene/Table": {
+   "id": "Scene/Table",
+   "type": "StaticTable",
+   "category": "Table",
+   "material_class": "table_laminate",
+   "alternative_material_classes": [
+    "table_wood"
+   ],
+   "scenario_role": "table",
+   "confidence": "medium",
+   "identity": "Tabletop 1.4 x 1.1 x 0.05 m at [0.0, -0.05, 0.74] (top z = 0.765 m); real ARX X5 frames show white melamine/laminate (#63); sim shader Mahogany_Planks.mdl.",
+   "flags": [
+    "size_differs_from_bottle_task"
+   ],
+   "size_m": {
+    "value": [
+     1.4,
+     1.1,
+     0.05
+    ],
+    "unit": "m",
+    "status": "sourced",
+    "basis": "Identical in all 165 layouts of swap_T and equal to env_cfg/scene/default.yml:7-11; the bottle task's layouts override it to [1.0, 1.1, 0.05] at [0.09, -0.05, 0.74].",
+    "sources": [
+     {
+      "url": "https://huggingface.co/datasets/RoboDojo-Benchmark/RoboDojo/resolve/1127bda94f172d757386945af3eb3a6754d1a4e6/Assets/Eval_Layout/RoboDojo/arx_x5/0/swap_T_0.json",
+      "quote": "{\"Table\": {\"default\": \"material_0122\", \"default_ori\": [1.0, 0.0, 0.0, 0.0], \"default_pos\": [0.0, -0.05, 0.74], \"scale\": [1.4, 1.1, 0.05]}}",
+      "conditions": "Layout declaration (scale is the box size; table.py builds a unit cube scaled by it)."
+     }
+    ]
+   },
+   "mass": {
+    "static_collider_in_sim": true,
+    "note": "Static collider; mass not applicable (#14)."
+   }
+  },
+  "Scene/Ground": {
+   "id": "Scene/Ground",
+   "type": "StaticGround",
+   "category": "Ground",
+   "asset_path": "env/scene_manager/objects/ground.py + env_cfg/scene/default.yml:17-32",
+   "material_class": "ground",
+   "alternative_material_classes": [],
+   "scenario_role": "ground",
+   "confidence": "low",
+   "identity": "Floor box collider 7.0 x 7.0 x 0.10 m (as in #84); reached only by objects knocked off the table, which already fails both tasks.",
+   "flags": [],
+   "size_m": {
+    "value": [
+     7.0,
+     7.0,
+     0.1
+    ],
+    "unit": "m",
+    "status": "sourced",
+    "sources": [
+     {
+      "url": "env_cfg/scene/default.yml:17-21 and env_cfg/sim/sim_config.yml:6",
+      "quote": "Ground: geometry: \"cube\" thickness: 0.1 axis: \"Z\" default_pos: [0.0, 0.0, 0.0] ... env_spacing: 7",
+      "conditions": "env/scene_manager/objects/ground.py:173-176 sets size_x = size_y = env_spacing (7.0 m), size_z = thickness (0.1 m)."
+     }
+    ]
+   },
+   "mass": {
+    "static_collider_in_sim": true,
+    "note": "Static floor collider; mass not applicable."
+   }
+  },
+  "Robot/x5/finger_pad": {
+   "id": "Robot/x5/finger_pad",
+   "type": "RobotLink",
+   "category": "finger_pad",
+   "asset_path": "Assets/Robots/x5 (X5A.urdf, configuration/ARX_physics.usd, meshes/link7.STL, meshes/link8.STL)",
+   "material_class": "pad_hard",
+   "alternative_material_classes": [
+    "pad_elastomer"
+   ],
+   "scenario_role": "finger_pad",
+   "confidence": "medium",
+   "identity": "ARX X5 parallel-jaw fingers (link7, link8; raised inner pad 15.00 x 18.33 x 1.50 mm, stroke 0-44 mm): real wrist camera frames show smooth dark-grey hard thermoplastic faces with crisp edges and no visible rubber pad (pad_hard, primary; pad_elastomer sensitivity, #32).",
+   "flags": [],
+   "size_m": {
+    "value": [
+     0.015,
+     0.0015,
+     0.01833
+    ],
+    "full_link_bbox_m": [
+     0.086,
+     0.03735,
+     0.061
+    ],
+    "stroke_per_finger_m": [
+     0.0,
+     0.044
+    ],
+    "jaw_opening_span_m": [
+     0.00081,
+     0.08881
+    ],
+    "unit": "m",
+    "status": "sourced",
+    "check": "checked-cite63",
+    "sources": [
+     {
+      "url": "https://huggingface.co/datasets/RoboDojo-Benchmark/RoboDojo/resolve/1127bda94f172d757386945af3eb3a6754d1a4e6/Assets/Robots/x5/meshes/link7.STL",
+      "quote": "[Computed vertex bounds from binary STL link7.STL (1304 triangles; no ASCII text in binary STL)]: full link [0.08600, 0.03735, 0.06100] m; inner contact face at y = -0.02449 m spans x in [0.05600, 0.07100] m (15.00 mm) and z in [-0.01036, 0.00797] m (18.33 mm); X5A.urdf joint7/joint8 stroke [0, 0.044] m",
+      "conditions": "Unit scale; convexHull collider in ARX_physics.usd."
+     }
+    ]
+   },
+   "mass_by_fill": {
+    "gravity_disabled_on_robot_links": true,
+    "jaw_mass_kg": {
+     "value": 0.0648,
+     "range": [
+      0.045,
+      0.09
+     ],
+     "unit": "kg",
+     "status": "unsourced",
+     "basis": "CAD link7/link8 mass in X5A.urdf only; no real per-jaw bench weighing (#32).",
+     "sources": [
+      {
+       "url": "https://huggingface.co/datasets/RoboDojo-Benchmark/RoboDojo/resolve/1127bda94f172d757386945af3eb3a6754d1a4e6/Assets/Robots/x5/X5A.urdf",
+       "quote": "<link name=\"link7\"> <inertial> <origin xyz=\"-0.00035522 -0.007827 -0.0029883\" rpy=\"0 0 0\" /> <mass value=\"0.064798\" />",
+       "conditions": "CAD mass in URDF only; ARX assembly manual lists whole-gripper ~510 g without per-jaw bench weighing (#32)."
+      }
+     ]
+    }
+   },
+   "declared_metadata": {
+    "urdf_link_mass_kg": 0.064798,
+    "usd_physics_material": null
+   },
+   "notes": "Copied unchanged from the #84 bottle slice; the jaw mass belongs in robots.json link inertials (#84 review B1). D3 (#90) gripper values live in docs/params/robots.json."
+  }
+ },
+ "classes": {
+  "abs_device_housing": {
+   "density_kg_m3": {
+    "value": 450,
+    "range": [
+     200,
+     1000
+    ],
+    "status": "estimated",
+    "sources": [
+     {
+      "url": "https://www.engineeringtoolbox.com/density-solids-d_1265.html",
+      "quote": "\"ABS - copolymer of acrylonitrile, butadiene and styrene\": 1.06",
+      "conditions": " Quote is the line as returned by the fetch tool's page extraction (not a raw-HTML check). Density at room temperature, bulk material, unit 10^3 kg/m3. Source gives only the bulk material (1060 kg/m3). The 450 effective object density (mass over bounding-volume or hull volume, with hollow shell, PCB, battery) is my estimate, not sourced; it depends on how the benchmark computes density from mass and shape.",
+      "check": {
+       "verdict": "number_mismatch",
+       "note": "Value 450 lies outside the source span 1060-1060 (more than 10% of the value)",
+       "source_id": 2
+      }
+     }
+    ],
+    "basis": "Copied from class_values.json; no dynamic body of this task takes its mass from this density (camera stand static, arm links carry URDF masses).",
+    "used_by_task_body": false
+   },
+   "restitution": {
+    "value": 0.4,
+    "range": [
+     0.2,
+     0.6
+    ],
+    "status": "unsourced",
+    "sources": [],
+    "dormant_in_task": true
+   },
+   "copied_from": "audit/out/63/class_values.json"
+  },
+  "abs_toy_plastic": {
+   "density_kg_m3": {
+    "value": 1060,
+    "range": [
+     1030,
+     1400
+    ],
+    "unit": "kg/m^3",
+    "status": "sourced",
+    "basis": "Bulk density; class table value 1060 [1030, 1400] (sourced).",
+    "sources": [
+     {
+      "url": "https://www.engineeringtoolbox.com/density-solids-d_1265.html",
+      "quote": "ABS - copolymer of acrylonitrile, butadiene and styrene | 1.06",
+      "conditions": "Bulk solid at room temperature, unit 10^3 kg/m^3; raw HTML table rows fetched with curl 2026-11-14."
+     }
+    ]
+   },
+   "restitution": {
+    "value": 0.6,
+    "range": [
+     0.4,
+     0.8
+    ],
+    "status": "unsourced",
+    "sources": [],
+    "dormant_in_task": true
+   },
+   "copied_from": "audit/out/63/class_values.json"
+  },
+  "aluminium": {
+   "density_kg_m3": {
+    "value": 2700,
+    "range": [
+     2600,
+     2850
+    ],
+    "status": "sourced",
+    "sources": [
+     {
+      "url": "https://www.engineeringtoolbox.com/density-solids-d_1265.html",
+      "quote": "Aluminum 2.7",
+      "conditions": "10^3 kg/m3",
+      "check": {
+       "verdict": "confirmed",
+       "note": "",
+       "source_id": 41
+      }
+     },
+     {
+      "url": "https://www.engineeringtoolbox.com/density-solids-d_1265.html",
+      "quote": "Aluminum Alloys 2.6 - 2.85",
+      "conditions": "10^3 kg/m3",
+      "check": {
+       "verdict": "confirmed",
+       "note": "",
+       "source_id": 42
+      }
+     }
+    ],
+    "basis": "Copied from class_values.json; no dynamic body of this task takes its mass from this density (camera stand static, arm links carry URDF masses).",
+    "used_by_task_body": false
+   },
+   "restitution": {
+    "value": 0.5,
+    "range": [
+     0.3,
+     0.8
+    ],
+    "status": "unsourced",
+    "sources": [],
+    "dormant_in_task": true
+   },
+   "copied_from": "audit/out/63/class_values.json"
+  },
+  "ground": {
+   "restitution": {
+    "value": 0.0,
+    "range": [
+     0.0,
+     0.3
+    ],
+    "status": "unsourced",
+    "dormant_in_task": true
+   },
+   "scenario_membership": "fixed",
+   "copied_from": "audit/out/63/class_values.json"
+  },
+  "pad_elastomer": {
+   "restitution": {
+    "value": 0.1,
+    "range": [
+     0.0,
+     0.3
+    ],
+    "status": "unsourced",
+    "sources": [
+     {
+      "url": "https://samaterials.com/content/coefficient-of-restitution.html",
+      "quote": "Rubber at 20°C: COR ≈ 0.9",
+      "conditions": "rubber ball, upper bound only; Shore A 60-90 damped TPU/rubber pads rebound far less"
+     }
+    ],
+    "dormant_in_task": true
+   },
+   "scenario_membership": "sensitivity",
+   "copied_from": "audit/out/63/class_values.json"
+  },
+  "pad_hard": {
+   "restitution": {
+    "value": 0.1,
+    "range": [
+     0.0,
+     0.35
+    ],
+    "status": "unsourced",
+    "sources": [],
+    "dormant_in_task": true
+   },
+   "scenario_membership": "default",
+   "copied_from": "audit/out/63/class_values.json"
+  },
+  "table_laminate": {
+   "restitution": {
+    "value": 0.1,
+    "range": [
+     0.05,
+     0.4
+    ],
+    "status": "unsourced",
+    "sources": [],
+    "dormant_in_task": true
+   },
+   "scenario_membership": "default",
+   "copied_from": "audit/out/63/class_values.json"
+  },
+  "table_wood": {
+   "restitution": {
+    "value": 0.1,
+    "range": [
+     0.05,
+     0.4
+    ],
+    "status": "unsourced",
+    "sources": [
+     {
+      "url": "https://samaterials.com/content/coefficient-of-restitution.html",
+      "quote": "Wooden block – Concrete | 0.40 – 0.55",
+      "conditions": "secondary web table; impact speed not stated; wooden block on concrete, not on a lacquered wood table",
+      "check": {
+       "verdict": "conditions_mismatch",
+       "note": "Wooden block on concrete, not a wood table",
+       "source_id": 61
+      }
+     }
+    ],
+    "dormant_in_task": true
+   },
+   "scenario_membership": "sensitivity",
+   "copied_from": "audit/out/63/class_values.json"
+  }
+ },
+ "pairs": {
+  "abs_device_housing__abs_device_housing": {
+   "key": "abs_device_housing__abs_device_housing",
+   "a": "abs_device_housing",
+   "b": "abs_device_housing",
+   "kind": "object-object",
+   "scenario_membership": "all",
+   "formable_in_cells": [
+    "pad_hard+table_laminate",
+    "pad_hard+table_wood",
+    "pad_elastomer+table_laminate",
+    "pad_elastomer+table_wood"
+   ],
+   "outcome_relevance": "low",
+   "task_contact": "Wrist camera housing grazes.",
+   "mu_static": {
+    "value": 0.4,
+    "range": [
+     0.25,
+     0.7
+    ],
+    "status": "estimated",
+    "value_status": "estimated",
+    "range_status": "estimated",
+    "sources": []
+   },
+   "mu_kinetic": {
+    "value": 0.33,
+    "range": [
+     0.2,
+     0.55
+    ],
+    "status": "estimated",
+    "value_status": "estimated",
+    "range_status": "estimated",
+    "sources": [
+     {
+      "url": "https://www.engineeringtoolbox.com/friction-coefficients-d_778.html",
+      "quote": "Kinetic or sliding frictional coefficient only when there is a relative motion between the surfaces.",
+      "conditions": "Kinetic value estimated as about 0.8-0.9 of static; no fetched kinetic number for this pair. Page notes static is 'somewhat higher' than kinetic.",
+      "check": {
+       "verdict": "number_mismatch",
+       "note": "Generic definition sentence; gives no number",
+       "source_id": 7
+      }
+     }
+    ]
+   },
+   "restitution_realised_from_class_unaries": {
+    "value": 0.4,
+    "status": "unsourced",
+    "impact_speed_above_0.5_m_s": false,
+    "note": "Not counted as a leaf: PhysX has no pair restitution (#91 schema); average of the two class unaries. Dormant below the 0.5 m/s bounce threshold (env/environment/base_env.py:27); placements and grazes in this task stay below it."
+   },
+   "cooccurrence_episodes_scored_3seeds": null,
+   "copied_from": "audit/out/63/class_values.json (main wins on class and pair values, #84 review B4)"
+  },
+  "abs_device_housing__abs_toy_plastic": {
+   "key": "abs_device_housing__abs_toy_plastic",
+   "a": "abs_device_housing",
+   "b": "abs_toy_plastic",
+   "kind": "object-object",
+   "scenario_membership": "all",
+   "formable_in_cells": [
+    "pad_hard+table_laminate",
+    "pad_hard+table_wood",
+    "pad_elastomer+table_laminate",
+    "pad_elastomer+table_wood"
+   ],
+   "outcome_relevance": "low",
+   "task_contact": "Wrist camera housing grazes.",
+   "mu_static": {
+    "value": 0.362,
+    "range": [
+     0.15,
+     0.7
+    ],
+    "status": "estimated",
+    "value_status": "estimated",
+    "range_status": "estimated",
+    "derivation": "hull of the two classes' bands against pad_hard and table_laminate (abs_device_housing-pad_hard, abs_device_housing-table_laminate, abs_toy_plastic-pad_hard, abs_toy_plastic-table_laminate); nominal = mean of their four nominals",
+    "reasoning": "No pair measurement exists. Both classes were rated against the same hard smooth counterfaces; a mixed pair is expected to fall between their per-counterface values. The hull is deliberately wide."
+   },
+   "mu_kinetic": {
+    "value": 0.295,
+    "range": [
+     0.12,
+     0.55
+    ],
+    "status": "estimated",
+    "value_status": "estimated",
+    "range_status": "estimated",
+    "derivation": "hull of the two classes' bands against pad_hard and table_laminate (abs_device_housing-pad_hard, abs_device_housing-table_laminate, abs_toy_plastic-pad_hard, abs_toy_plastic-table_laminate); nominal = mean of their four nominals",
+    "reasoning": "No pair measurement exists. Both classes were rated against the same hard smooth counterfaces; a mixed pair is expected to fall between their per-counterface values. The hull is deliberately wide."
+   },
+   "restitution_realised_from_class_unaries": {
+    "value": 0.5,
+    "status": "unsourced",
+    "impact_speed_above_0.5_m_s": false,
+    "note": "Not counted as a leaf: PhysX has no pair restitution (#91 schema); average of the two class unaries. Dormant below the 0.5 m/s bounce threshold (env/environment/base_env.py:27); placements and grazes in this task stay below it."
+   },
+   "cooccurrence_episodes_scored_3seeds": null,
+   "copied_from": "audit/out/63/class_values.json (main wins on class and pair values, #84 review B4)"
+  },
+  "abs_device_housing__aluminium": {
+   "key": "abs_device_housing__aluminium",
+   "a": "abs_device_housing",
+   "b": "aluminium",
+   "kind": "object-object",
+   "scenario_membership": "all",
+   "formable_in_cells": [
+    "pad_hard+table_laminate",
+    "pad_hard+table_wood",
+    "pad_elastomer+table_laminate",
+    "pad_elastomer+table_wood"
+   ],
+   "outcome_relevance": "low",
+   "task_contact": "Wrist camera housing grazes.",
+   "mu_static": {
+    "value": 0.35,
+    "range": [
+     0.15,
+     0.65
+    ],
+    "status": "estimated",
+    "value_status": "estimated",
+    "range_status": "estimated",
+    "derivation": "hull of the two classes' bands against pad_hard and table_laminate (abs_device_housing-pad_hard, abs_device_housing-table_laminate, aluminium-pad_hard, aluminium-table_laminate); nominal = mean of their four nominals",
+    "reasoning": "No pair measurement exists. Both classes were rated against the same hard smooth counterfaces; a mixed pair is expected to fall between their per-counterface values. The hull is deliberately wide."
+   },
+   "mu_kinetic": {
+    "value": 0.295,
+    "range": [
+     0.12,
+     0.5
+    ],
+    "status": "estimated",
+    "value_status": "estimated",
+    "range_status": "estimated",
+    "derivation": "hull of the two classes' bands against pad_hard and table_laminate (abs_device_housing-pad_hard, abs_device_housing-table_laminate, aluminium-pad_hard, aluminium-table_laminate); nominal = mean of their four nominals",
+    "reasoning": "No pair measurement exists. Both classes were rated against the same hard smooth counterfaces; a mixed pair is expected to fall between their per-counterface values. The hull is deliberately wide."
+   },
+   "restitution_realised_from_class_unaries": {
+    "value": 0.45,
+    "status": "unsourced",
+    "impact_speed_above_0.5_m_s": false,
+    "note": "Not counted as a leaf: PhysX has no pair restitution (#91 schema); average of the two class unaries. Dormant below the 0.5 m/s bounce threshold (env/environment/base_env.py:27); placements and grazes in this task stay below it."
+   },
+   "cooccurrence_episodes_scored_3seeds": null,
+   "copied_from": "audit/out/63/class_values.json (main wins on class and pair values, #84 review B4)"
+  },
+  "abs_device_housing__ground": {
+   "key": "abs_device_housing__ground",
+   "a": "abs_device_housing",
+   "b": "ground",
+   "kind": "object-surface",
+   "scenario_membership": "fixed",
+   "formable_in_cells": [
+    "pad_hard+table_laminate",
+    "pad_hard+table_wood",
+    "pad_elastomer+table_laminate",
+    "pad_elastomer+table_wood"
+   ],
+   "outcome_relevance": "dormant",
+   "task_contact": "Only objects knocked off the table reach the floor; that already fails the task.",
+   "mu_static": {
+    "value": 0.325,
+    "range": [
+     0.15,
+     0.55
+    ],
+    "status": "unsourced",
+    "value_status": "unsourced",
+    "range_status": "unsourced",
+    "reasoning": "Floor material unidentified. Placeholder: hull of the class's table_laminate and table_wood bands (both hard smooth horizontal surfaces)."
+   },
+   "mu_kinetic": {
+    "value": 0.275,
+    "range": [
+     0.12,
+     0.45
+    ],
+    "status": "unsourced",
+    "value_status": "unsourced",
+    "range_status": "unsourced",
+    "reasoning": "Floor material unidentified. Placeholder: hull of the class's table_laminate and table_wood bands (both hard smooth horizontal surfaces)."
+   },
+   "restitution_realised_from_class_unaries": {
+    "value": 0.2,
+    "status": "unsourced",
+    "impact_speed_above_0.5_m_s": false,
+    "note": "Not counted as a leaf: PhysX has no pair restitution (#91 schema); average of the two class unaries. Dormant below the 0.5 m/s bounce threshold (env/environment/base_env.py:27); placements and grazes in this task stay below it."
+   },
+   "cooccurrence_episodes_scored_3seeds": null,
+   "copied_from": "audit/out/63/class_values.json (main wins on class and pair values, #84 review B4)"
+  },
+  "abs_device_housing__pad_elastomer": {
+   "key": "abs_device_housing__pad_elastomer",
+   "a": "abs_device_housing",
+   "b": "pad_elastomer",
+   "kind": "object-surface",
+   "scenario_membership": "sensitivity",
+   "formable_in_cells": [
+    "pad_elastomer+table_laminate",
+    "pad_elastomer+table_wood"
+   ],
+   "outcome_relevance": "low",
+   "task_contact": "Sensitivity surface. Wrist camera housing grazes.",
+   "mu_static": {
+    "value": 0.7,
+    "range": [
+     0.4,
+     1.2
+    ],
+    "status": "unsourced",
+    "value_status": "unsourced",
+    "range_status": "unsourced",
+    "sources": []
+   },
+   "mu_kinetic": {
+    "value": 0.6,
+    "range": [
+     0.3,
+     1.0
+    ],
+    "status": "unsourced",
+    "value_status": "unsourced",
+    "range_status": "unsourced",
+    "sources": []
+   },
+   "restitution_realised_from_class_unaries": {
+    "value": 0.25,
+    "status": "unsourced",
+    "impact_speed_above_0.5_m_s": false,
+    "note": "Not counted as a leaf: PhysX has no pair restitution (#91 schema); average of the two class unaries. Dormant below the 0.5 m/s bounce threshold (env/environment/base_env.py:27); placements and grazes in this task stay below it."
+   },
+   "cooccurrence_episodes_scored_3seeds": null,
+   "copied_from": "audit/out/63/class_values.json (main wins on class and pair values, #84 review B4)"
+  },
+  "abs_device_housing__pad_hard": {
+   "key": "abs_device_housing__pad_hard",
+   "a": "abs_device_housing",
+   "b": "pad_hard",
+   "kind": "object-surface",
+   "scenario_membership": "default",
+   "formable_in_cells": [
+    "pad_hard+table_laminate",
+    "pad_hard+table_wood"
+   ],
+   "outcome_relevance": "low",
+   "task_contact": "Wrist camera housing grazes.",
+   "mu_static": {
+    "value": 0.4,
+    "range": [
+     0.25,
+     0.65
+    ],
+    "status": "estimated",
+    "value_status": "estimated",
+    "range_status": "estimated",
+    "sources": []
+   },
+   "mu_kinetic": {
+    "value": 0.33,
+    "range": [
+     0.2,
+     0.5
+    ],
+    "status": "estimated",
+    "value_status": "estimated",
+    "range_status": "estimated",
+    "sources": [
+     {
+      "url": "https://www.engineeringtoolbox.com/friction-coefficients-d_778.html",
+      "quote": "Kinetic or sliding frictional coefficient only when there is a relative motion between the surfaces.",
+      "conditions": "Kinetic value estimated as about 0.8-0.9 of static; no fetched kinetic number for this pair. Page notes static is 'somewhat higher' than kinetic.",
+      "check": {
+       "verdict": "number_mismatch",
+       "note": "Generic definition sentence; gives no number",
+       "source_id": 7
+      }
+     }
+    ]
+   },
+   "restitution_realised_from_class_unaries": {
+    "value": 0.25,
+    "status": "unsourced",
+    "impact_speed_above_0.5_m_s": false,
+    "note": "Not counted as a leaf: PhysX has no pair restitution (#91 schema); average of the two class unaries. Dormant below the 0.5 m/s bounce threshold (env/environment/base_env.py:27); placements and grazes in this task stay below it."
+   },
+   "cooccurrence_episodes_scored_3seeds": null,
+   "copied_from": "audit/out/63/class_values.json (main wins on class and pair values, #84 review B4)"
+  },
+  "abs_device_housing__table_laminate": {
+   "key": "abs_device_housing__table_laminate",
+   "a": "abs_device_housing",
+   "b": "table_laminate",
+   "kind": "object-surface",
+   "scenario_membership": "default",
+   "formable_in_cells": [
+    "pad_hard+table_laminate",
+    "pad_elastomer+table_laminate"
+   ],
+   "outcome_relevance": "low",
+   "task_contact": "Wrist camera housing grazes.",
+   "mu_static": {
+    "value": 0.3,
+    "range": [
+     0.15,
+     0.5
+    ],
+    "status": "unsourced",
+    "value_status": "unsourced",
+    "range_status": "unsourced",
+    "sources": []
+   },
+   "mu_kinetic": {
+    "value": 0.25,
+    "range": [
+     0.12,
+     0.4
+    ],
+    "status": "unsourced",
+    "value_status": "unsourced",
+    "range_status": "unsourced",
+    "sources": []
+   },
+   "restitution_realised_from_class_unaries": {
+    "value": 0.25,
+    "status": "unsourced",
+    "impact_speed_above_0.5_m_s": false,
+    "note": "Not counted as a leaf: PhysX has no pair restitution (#91 schema); average of the two class unaries. Dormant below the 0.5 m/s bounce threshold (env/environment/base_env.py:27); placements and grazes in this task stay below it."
+   },
+   "cooccurrence_episodes_scored_3seeds": null,
+   "copied_from": "audit/out/63/class_values.json (main wins on class and pair values, #84 review B4)"
+  },
+  "abs_device_housing__table_wood": {
+   "key": "abs_device_housing__table_wood",
+   "a": "abs_device_housing",
+   "b": "table_wood",
+   "kind": "object-surface",
+   "scenario_membership": "sensitivity",
+   "formable_in_cells": [
+    "pad_hard+table_wood",
+    "pad_elastomer+table_wood"
+   ],
+   "outcome_relevance": "low",
+   "task_contact": "Sensitivity surface. Wrist camera housing grazes.",
+   "mu_static": {
+    "value": 0.35,
+    "range": [
+     0.2,
+     0.55
+    ],
+    "status": "unsourced",
+    "value_status": "unsourced",
+    "range_status": "unsourced",
+    "sources": []
+   },
+   "mu_kinetic": {
+    "value": 0.3,
+    "range": [
+     0.15,
+     0.45
+    ],
+    "status": "unsourced",
+    "value_status": "unsourced",
+    "range_status": "unsourced",
+    "sources": []
+   },
+   "restitution_realised_from_class_unaries": {
+    "value": 0.25,
+    "status": "unsourced",
+    "impact_speed_above_0.5_m_s": false,
+    "note": "Not counted as a leaf: PhysX has no pair restitution (#91 schema); average of the two class unaries. Dormant below the 0.5 m/s bounce threshold (env/environment/base_env.py:27); placements and grazes in this task stay below it."
+   },
+   "cooccurrence_episodes_scored_3seeds": null,
+   "copied_from": "audit/out/63/class_values.json (main wins on class and pair values, #84 review B4)"
+  },
+  "abs_toy_plastic__abs_toy_plastic": {
+   "key": "abs_toy_plastic__abs_toy_plastic",
+   "a": "abs_toy_plastic",
+   "b": "abs_toy_plastic",
+   "kind": "object-object",
+   "scenario_membership": "all",
+   "formable_in_cells": [
+    "pad_hard+table_laminate",
+    "pad_hard+table_wood",
+    "pad_elastomer+table_laminate",
+    "pad_elastomer+table_wood"
+   ],
+   "outcome_relevance": "medium",
+   "task_contact": "T-T: each T's goal is the other's start (60-180 mm apart), so a T can be pushed against or set onto the other.",
+   "mu_static": {
+    "value": 0.5,
+    "range": [
+     0.3,
+     0.8
+    ],
+    "status": "estimated",
+    "value_status": "estimated",
+    "range_status": "estimated",
+    "sources": [
+     {
+      "url": "https://www.engineeringtoolbox.com/friction-coefficients-d_778.html",
+      "quote": "Polystyrene | Polystyrene | Clean and Dry | 0.5",
+      "conditions": "Dry, clean, PS on PS, static (first of the page's columns). As returned by fetch extraction. PS is a class member, not glossy ABS specifically.",
+      "check": {
+       "verdict": "confirmed",
+       "note": "",
+       "source_id": 8
+      }
+     },
+     {
+      "url": "https://engineersedge.com/coeffients_of_friction.htm",
+      "quote": "Polystyrene | Polystyrene | 0.50 | 0.50",
+      "conditions": "Static table, dry and lubricated columns both 0.50",
+      "check": {
+       "verdict": "confirmed",
+       "note": "",
+       "source_id": 9
+      }
+     },
+     {
+      "url": "https://www.professionalplastics.com/professionalplastics/content/downloads/MechanicalPropertiesofPlastics.pdf",
+      "quote": "Polyacrylonitrile- ABS ... Coefficient of friction 0.5",
+      "conditions": "Table column 'Coefficient of friction', counterface and static/kinetic not stated; pdftotext of the PDF",
+      "check": {
+       "verdict": "confirmed",
+       "note": "",
+       "source_id": 10
+      }
+     }
+    ]
+   },
+   "mu_kinetic": {
+    "value": 0.4,
+    "range": [
+     0.25,
+     0.6
+    ],
+    "status": "estimated",
+    "value_status": "estimated",
+    "range_status": "estimated",
+    "sources": [
+     {
+      "url": "https://www.engineeringtoolbox.com/friction-coefficients-d_778.html",
+      "quote": "Kinetic or sliding frictional coefficient only when there is a relative motion between the surfaces.",
+      "conditions": "Kinetic value estimated as about 0.8-0.9 of static; no fetched kinetic number for this pair. Page notes static is 'somewhat higher' than kinetic.",
+      "check": {
+       "verdict": "number_mismatch",
+       "note": "Generic definition sentence; gives no number",
+       "source_id": 7
+      }
+     }
+    ]
+   },
+   "restitution_realised_from_class_unaries": {
+    "value": 0.6,
+    "status": "unsourced",
+    "impact_speed_above_0.5_m_s": false,
+    "note": "Not counted as a leaf: PhysX has no pair restitution (#91 schema); average of the two class unaries. Dormant below the 0.5 m/s bounce threshold (env/environment/base_env.py:27); placements and grazes in this task stay below it."
+   },
+   "cooccurrence_episodes_scored_3seeds": 150,
+   "copied_from": "audit/out/63/class_values.json (main wins on class and pair values, #84 review B4)"
+  },
+  "abs_toy_plastic__aluminium": {
+   "key": "abs_toy_plastic__aluminium",
+   "a": "abs_toy_plastic",
+   "b": "aluminium",
+   "kind": "object-object",
+   "scenario_membership": "all",
+   "formable_in_cells": [
+    "pad_hard+table_laminate",
+    "pad_hard+table_wood",
+    "pad_elastomer+table_laminate",
+    "pad_elastomer+table_wood"
+   ],
+   "outcome_relevance": "low",
+   "task_contact": "T against arm links or the camera stand (stand at y = -0.47 m, Ts at y in [-0.20, -0.15] m).",
+   "mu_static": {
+    "value": 0.35,
+    "range": [
+     0.2,
+     0.6
+    ],
+    "status": "estimated",
+    "value_status": "estimated",
+    "range_status": "estimated",
+    "sources": [
+     {
+      "url": "https://www.engineeringtoolbox.com/friction-coefficients-d_778.html",
+      "quote": "Polystyrene | Steel | Clean and Dry | 0.3 - 0.35",
+      "conditions": "ANALOGUE for ABS/PS-type plastic on steel, dry; Engineering Toolbox table, 'Clean and Dry' surfaces, no load/speed stated; first number static, second kinetic where two given. Quote as returned by the fetch tool (page text flattened).",
+      "check": {
+       "verdict": "conditions_mismatch",
+       "note": "Source describes a different material or surface than the pair; used as an analogue/anchor",
+       "source_id": 67
+      }
+     }
+    ]
+   },
+   "mu_kinetic": {
+    "value": 0.3,
+    "range": [
+     0.15,
+     0.5
+    ],
+    "status": "estimated",
+    "value_status": "estimated",
+    "range_status": "estimated",
+    "sources": [
+     {
+      "url": "https://www.engineeringtoolbox.com/friction-coefficients-d_778.html",
+      "quote": "Polystyrene | Steel | Clean and Dry | 0.3 - 0.35",
+      "conditions": "ANALOGUE for ABS/PS-type plastic on steel, dry; Engineering Toolbox table, 'Clean and Dry' surfaces, no load/speed stated; first number static, second kinetic where two given. Quote as returned by the fetch tool (page text flattened).",
+      "check": {
+       "verdict": "number_mismatch",
+       "note": "Source gives no kinetic number for this value",
+       "source_id": 67
+      }
+     }
+    ]
+   },
+   "restitution_realised_from_class_unaries": {
+    "value": 0.55,
+    "status": "unsourced",
+    "impact_speed_above_0.5_m_s": false,
+    "note": "Not counted as a leaf: PhysX has no pair restitution (#91 schema); average of the two class unaries. Dormant below the 0.5 m/s bounce threshold (env/environment/base_env.py:27); placements and grazes in this task stay below it."
+   },
+   "cooccurrence_episodes_scored_3seeds": 150,
+   "copied_from": "audit/out/63/class_values.json (main wins on class and pair values, #84 review B4)"
+  },
+  "abs_toy_plastic__ground": {
+   "key": "abs_toy_plastic__ground",
+   "a": "abs_toy_plastic",
+   "b": "ground",
+   "kind": "object-surface",
+   "scenario_membership": "fixed",
+   "formable_in_cells": [
+    "pad_hard+table_laminate",
+    "pad_hard+table_wood",
+    "pad_elastomer+table_laminate",
+    "pad_elastomer+table_wood"
+   ],
+   "outcome_relevance": "dormant",
+   "task_contact": "Only objects knocked off the table reach the floor; that already fails the task.",
+   "mu_static": {
+    "value": 0.325,
+    "range": [
+     0.15,
+     0.55
+    ],
+    "status": "unsourced",
+    "value_status": "unsourced",
+    "range_status": "unsourced",
+    "reasoning": "Floor material unidentified. Placeholder: hull of the class's table_laminate and table_wood bands (both hard smooth horizontal surfaces)."
+   },
+   "mu_kinetic": {
+    "value": 0.275,
+    "range": [
+     0.12,
+     0.45
+    ],
+    "status": "unsourced",
+    "value_status": "unsourced",
+    "range_status": "unsourced",
+    "reasoning": "Floor material unidentified. Placeholder: hull of the class's table_laminate and table_wood bands (both hard smooth horizontal surfaces)."
+   },
+   "restitution_realised_from_class_unaries": {
+    "value": 0.3,
+    "status": "unsourced",
+    "impact_speed_above_0.5_m_s": false,
+    "note": "Not counted as a leaf: PhysX has no pair restitution (#91 schema); average of the two class unaries. Dormant below the 0.5 m/s bounce threshold (env/environment/base_env.py:27); placements and grazes in this task stay below it."
+   },
+   "cooccurrence_episodes_scored_3seeds": 150,
+   "copied_from": "audit/out/63/class_values.json (main wins on class and pair values, #84 review B4)"
+  },
+  "abs_toy_plastic__pad_elastomer": {
+   "key": "abs_toy_plastic__pad_elastomer",
+   "a": "abs_toy_plastic",
+   "b": "pad_elastomer",
+   "kind": "object-surface",
+   "scenario_membership": "sensitivity",
+   "formable_in_cells": [
+    "pad_elastomer+table_laminate",
+    "pad_elastomer+table_wood"
+   ],
+   "outcome_relevance": "low",
+   "task_contact": "Sensitivity surface. Finger contact with arm links or stand.",
+   "mu_static": {
+    "value": 0.7,
+    "range": [
+     0.4,
+     1.2
+    ],
+    "status": "unsourced",
+    "value_status": "unsourced",
+    "range_status": "unsourced",
+    "sources": []
+   },
+   "mu_kinetic": {
+    "value": 0.6,
+    "range": [
+     0.3,
+     1.0
+    ],
+    "status": "unsourced",
+    "value_status": "unsourced",
+    "range_status": "unsourced",
+    "sources": []
+   },
+   "restitution_realised_from_class_unaries": {
+    "value": 0.35,
+    "status": "unsourced",
+    "impact_speed_above_0.5_m_s": false,
+    "note": "Not counted as a leaf: PhysX has no pair restitution (#91 schema); average of the two class unaries. Dormant below the 0.5 m/s bounce threshold (env/environment/base_env.py:27); placements and grazes in this task stay below it."
+   },
+   "cooccurrence_episodes_scored_3seeds": 150,
+   "copied_from": "audit/out/63/class_values.json (main wins on class and pair values, #84 review B4)"
+  },
+  "abs_toy_plastic__pad_hard": {
+   "key": "abs_toy_plastic__pad_hard",
+   "a": "abs_toy_plastic",
+   "b": "pad_hard",
+   "kind": "object-surface",
+   "scenario_membership": "default",
+   "formable_in_cells": [
+    "pad_hard+table_laminate",
+    "pad_hard+table_wood"
+   ],
+   "outcome_relevance": "high",
+   "task_contact": "pad-T: pinch of a 15 mm tall T; in-grasp rotation and slip at release set the placed orientation.",
+   "mu_static": {
+    "value": 0.45,
+    "range": [
+     0.3,
+     0.7
+    ],
+    "status": "estimated",
+    "value_status": "estimated",
+    "range_status": "estimated",
+    "sources": []
+   },
+   "mu_kinetic": {
+    "value": 0.35,
+    "range": [
+     0.2,
+     0.55
+    ],
+    "status": "estimated",
+    "value_status": "estimated",
+    "range_status": "estimated",
+    "sources": [
+     {
+      "url": "https://www.engineeringtoolbox.com/friction-coefficients-d_778.html",
+      "quote": "Kinetic or sliding frictional coefficient only when there is a relative motion between the surfaces.",
+      "conditions": "Kinetic value estimated as about 0.8-0.9 of static; no fetched kinetic number for this pair. Page notes static is 'somewhat higher' than kinetic.",
+      "check": {
+       "verdict": "number_mismatch",
+       "note": "Generic definition sentence; gives no number",
+       "source_id": 7
+      }
+     }
+    ]
+   },
+   "restitution_realised_from_class_unaries": {
+    "value": 0.35,
+    "status": "unsourced",
+    "impact_speed_above_0.5_m_s": false,
+    "note": "Not counted as a leaf: PhysX has no pair restitution (#91 schema); average of the two class unaries. Dormant below the 0.5 m/s bounce threshold (env/environment/base_env.py:27); placements and grazes in this task stay below it."
+   },
+   "cooccurrence_episodes_scored_3seeds": 150,
+   "copied_from": "audit/out/63/class_values.json (main wins on class and pair values, #84 review B4)"
+  },
+  "abs_toy_plastic__table_laminate": {
+   "key": "abs_toy_plastic__table_laminate",
+   "a": "abs_toy_plastic",
+   "b": "table_laminate",
+   "kind": "object-surface",
+   "scenario_membership": "default",
+   "formable_in_cells": [
+    "pad_hard+table_laminate",
+    "pad_elastomer+table_laminate"
+   ],
+   "outcome_relevance": "high",
+   "task_contact": "T-table: the T is set down and any drag or post-release slide moves it; success needs 20 mm xy and 3 deg orientation (swap_T.py:23-27, quaternion angle).",
+   "mu_static": {
+    "value": 0.3,
+    "range": [
+     0.15,
+     0.5
+    ],
+    "status": "unsourced",
+    "value_status": "unsourced",
+    "range_status": "unsourced",
+    "sources": []
+   },
+   "mu_kinetic": {
+    "value": 0.25,
+    "range": [
+     0.12,
+     0.4
+    ],
+    "status": "unsourced",
+    "value_status": "unsourced",
+    "range_status": "unsourced",
+    "sources": []
+   },
+   "restitution_realised_from_class_unaries": {
+    "value": 0.35,
+    "status": "unsourced",
+    "impact_speed_above_0.5_m_s": false,
+    "note": "Not counted as a leaf: PhysX has no pair restitution (#91 schema); average of the two class unaries. Dormant below the 0.5 m/s bounce threshold (env/environment/base_env.py:27); placements and grazes in this task stay below it."
+   },
+   "cooccurrence_episodes_scored_3seeds": 150,
+   "copied_from": "audit/out/63/class_values.json (main wins on class and pair values, #84 review B4)"
+  },
+  "abs_toy_plastic__table_wood": {
+   "key": "abs_toy_plastic__table_wood",
+   "a": "abs_toy_plastic",
+   "b": "table_wood",
+   "kind": "object-surface",
+   "scenario_membership": "sensitivity",
+   "formable_in_cells": [
+    "pad_hard+table_wood",
+    "pad_elastomer+table_wood"
+   ],
+   "outcome_relevance": "low",
+   "task_contact": "Sensitivity surface. Arm-link or stand grazes.",
+   "mu_static": {
+    "value": 0.35,
+    "range": [
+     0.2,
+     0.55
+    ],
+    "status": "unsourced",
+    "value_status": "unsourced",
+    "range_status": "unsourced",
+    "sources": []
+   },
+   "mu_kinetic": {
+    "value": 0.3,
+    "range": [
+     0.15,
+     0.45
+    ],
+    "status": "unsourced",
+    "value_status": "unsourced",
+    "range_status": "unsourced",
+    "sources": []
+   },
+   "restitution_realised_from_class_unaries": {
+    "value": 0.35,
+    "status": "unsourced",
+    "impact_speed_above_0.5_m_s": false,
+    "note": "Not counted as a leaf: PhysX has no pair restitution (#91 schema); average of the two class unaries. Dormant below the 0.5 m/s bounce threshold (env/environment/base_env.py:27); placements and grazes in this task stay below it."
+   },
+   "cooccurrence_episodes_scored_3seeds": 150,
+   "copied_from": "audit/out/63/class_values.json (main wins on class and pair values, #84 review B4)"
+  },
+  "aluminium__aluminium": {
+   "key": "aluminium__aluminium",
+   "a": "aluminium",
+   "b": "aluminium",
+   "kind": "object-object",
+   "scenario_membership": "all",
+   "formable_in_cells": [
+    "pad_hard+table_laminate",
+    "pad_hard+table_wood",
+    "pad_elastomer+table_laminate",
+    "pad_elastomer+table_wood"
+   ],
+   "outcome_relevance": "low_in_task",
+   "task_contact": "arm-arm and arm-stand only.",
+   "mu_static": {
+    "value": 0.9,
+    "range": [
+     0.4,
+     1.35
+    ],
+    "status": "estimated",
+    "value_status": "estimated",
+    "range_status": "estimated",
+    "sources": [
+     {
+      "url": "https://engineeringtoolbox.com/friction-coefficients-d_778.html",
+      "quote": "Aluminum on aluminum | Clean and dry | 1.05 - 1.35 | 0.4",
+      "conditions": "clean dry bare Al, static|kinetic; no anodised data; load/speed not stated",
+      "check": {
+       "verdict": "number_mismatch",
+       "note": "Value 0.9 lies outside the source span 1.05-1.35 (more than 10% of the value)",
+       "source_id": 54
+      }
+     },
+     {
+      "url": "https://roymech.org/Useful_Tables/Tribology/co_of_frict.html",
+      "quote": "Aluminum | Aluminum | 1,05-1,35 | 1,4 | 0,3",
+      "conditions": "same table; the sliding 1,4 looks anomalous/typo, ignored",
+      "check": {
+       "verdict": "number_mismatch",
+       "note": "Value 0.9 lies outside the source span 1.05-1.35 (more than 10% of the value)",
+       "source_id": 55
+      }
+     }
+    ]
+   },
+   "mu_kinetic": {
+    "value": 0.4,
+    "range": [
+     0.3,
+     0.6
+    ],
+    "status": "estimated",
+    "value_status": "estimated",
+    "range_status": "estimated",
+    "sources": [
+     {
+      "url": "https://engineeringtoolbox.com/friction-coefficients-d_778.html",
+      "quote": "Aluminum on aluminum | Clean and dry | 1.05 - 1.35 | 0.4",
+      "conditions": "clean dry bare Al, static|kinetic; no anodised data; load/speed not stated",
+      "check": {
+       "verdict": "confirmed",
+       "note": "",
+       "source_id": 54
+      }
+     },
+     {
+      "url": "https://roymech.org/Useful_Tables/Tribology/co_of_frict.html",
+      "quote": "Aluminum | Aluminum | 1,05-1,35 | 1,4 | 0,3",
+      "conditions": "same table; the sliding 1,4 looks anomalous/typo, ignored",
+      "check": {
+       "verdict": "number_mismatch",
+       "note": "Value 0.4 lies outside the source span 1.4-1.4 (more than 10% of the value)",
+       "source_id": 55
+      }
+     }
+    ]
+   },
+   "restitution_realised_from_class_unaries": {
+    "value": 0.5,
+    "status": "unsourced",
+    "impact_speed_above_0.5_m_s": false,
+    "note": "Not counted as a leaf: PhysX has no pair restitution (#91 schema); average of the two class unaries. Dormant below the 0.5 m/s bounce threshold (env/environment/base_env.py:27); placements and grazes in this task stay below it."
+   },
+   "cooccurrence_episodes_scored_3seeds": null,
+   "copied_from": "audit/out/63/class_values.json (main wins on class and pair values, #84 review B4)"
+  },
+  "aluminium__ground": {
+   "key": "aluminium__ground",
+   "a": "aluminium",
+   "b": "ground",
+   "kind": "object-surface",
+   "scenario_membership": "fixed",
+   "formable_in_cells": [
+    "pad_hard+table_laminate",
+    "pad_hard+table_wood",
+    "pad_elastomer+table_laminate",
+    "pad_elastomer+table_wood"
+   ],
+   "outcome_relevance": "dormant",
+   "task_contact": "Only objects knocked off the table reach the floor; that already fails the task.",
+   "mu_static": {
+    "value": 0.375,
+    "range": [
+     0.2,
+     0.6
+    ],
+    "status": "unsourced",
+    "value_status": "unsourced",
+    "range_status": "unsourced",
+    "reasoning": "Floor material unidentified. Placeholder: hull of the class's table_laminate and table_wood bands (both hard smooth horizontal surfaces)."
+   },
+   "mu_kinetic": {
+    "value": 0.3,
+    "range": [
+     0.15,
+     0.5
+    ],
+    "status": "unsourced",
+    "value_status": "unsourced",
+    "range_status": "unsourced",
+    "reasoning": "Floor material unidentified. Placeholder: hull of the class's table_laminate and table_wood bands (both hard smooth horizontal surfaces)."
+   },
+   "restitution_realised_from_class_unaries": {
+    "value": 0.25,
+    "status": "unsourced",
+    "impact_speed_above_0.5_m_s": false,
+    "note": "Not counted as a leaf: PhysX has no pair restitution (#91 schema); average of the two class unaries. Dormant below the 0.5 m/s bounce threshold (env/environment/base_env.py:27); placements and grazes in this task stay below it."
+   },
+   "cooccurrence_episodes_scored_3seeds": 150,
+   "copied_from": "audit/out/63/class_values.json (main wins on class and pair values, #84 review B4)"
+  },
+  "aluminium__pad_elastomer": {
+   "key": "aluminium__pad_elastomer",
+   "a": "aluminium",
+   "b": "pad_elastomer",
+   "kind": "object-surface",
+   "scenario_membership": "sensitivity",
+   "formable_in_cells": [
+    "pad_elastomer+table_laminate",
+    "pad_elastomer+table_wood"
+   ],
+   "outcome_relevance": "low",
+   "task_contact": "Sensitivity surface. Finger contact with arm links or stand.",
+   "mu_static": {
+    "value": 1.0,
+    "range": [
+     0.6,
+     1.6
+    ],
+    "status": "estimated",
+    "value_status": "estimated",
+    "range_status": "estimated",
+    "sources": [
+     {
+      "url": "https://coefficientoffrictiontester-co.pages.dev/blog/rubber-cof-testing-guide",
+      "quote": "Static COF for natural rubber against steel typically falls in the range of 0.8–2.0 depending on compound and surface finish.",
+      "conditions": "natural rubber vs steel; vendor blog (weak source); TPU / Shore A 60-90 expected at lower end",
+      "check": {
+       "verdict": "conditions_mismatch",
+       "note": "Source describes a different material or surface than the pair; used as an analogue/anchor",
+       "source_id": 51
+      }
+     },
+     {
+      "url": "https://coefficientoffrictiontester-co.pages.dev/blog/rubber-cof-testing-guide",
+      "quote": "Kinetic COF is always lower than static for rubber — values of 0.5–1.5 are typical for unfilled and carbon-black-filled compounds.",
+      "conditions": "counterface and speed not stated",
+      "check": {
+       "verdict": "number_mismatch",
+       "note": "Source gives no relevant number for this value",
+       "source_id": 52
+      }
+     }
+    ]
+   },
+   "mu_kinetic": {
+    "value": 0.8,
+    "range": [
+     0.5,
+     1.4
+    ],
+    "status": "estimated",
+    "value_status": "estimated",
+    "range_status": "estimated",
+    "sources": [
+     {
+      "url": "https://coefficientoffrictiontester-co.pages.dev/blog/rubber-cof-testing-guide",
+      "quote": "Static COF for natural rubber against steel typically falls in the range of 0.8–2.0 depending on compound and surface finish.",
+      "conditions": "natural rubber vs steel; vendor blog (weak source); TPU / Shore A 60-90 expected at lower end",
+      "check": {
+       "verdict": "number_mismatch",
+       "note": "Source gives no kinetic number for this value",
+       "source_id": 51
+      }
+     },
+     {
+      "url": "https://coefficientoffrictiontester-co.pages.dev/blog/rubber-cof-testing-guide",
+      "quote": "Kinetic COF is always lower than static for rubber — values of 0.5–1.5 are typical for unfilled and carbon-black-filled compounds.",
+      "conditions": "counterface and speed not stated",
+      "check": {
+       "verdict": "conditions_mismatch",
+       "note": "Source describes a different material or surface than the pair; used as an analogue/anchor",
+       "source_id": 52
+      }
+     }
+    ]
+   },
+   "restitution_realised_from_class_unaries": {
+    "value": 0.3,
+    "status": "unsourced",
+    "impact_speed_above_0.5_m_s": false,
+    "note": "Not counted as a leaf: PhysX has no pair restitution (#91 schema); average of the two class unaries. Dormant below the 0.5 m/s bounce threshold (env/environment/base_env.py:27); placements and grazes in this task stay below it."
+   },
+   "cooccurrence_episodes_scored_3seeds": 150,
+   "copied_from": "audit/out/63/class_values.json (main wins on class and pair values, #84 review B4)"
+  },
+  "aluminium__pad_hard": {
+   "key": "aluminium__pad_hard",
+   "a": "aluminium",
+   "b": "pad_hard",
+   "kind": "object-surface",
+   "scenario_membership": "default",
+   "formable_in_cells": [
+    "pad_hard+table_laminate",
+    "pad_hard+table_wood"
+   ],
+   "outcome_relevance": "low",
+   "task_contact": "Finger contact with arm links or stand.",
+   "mu_static": {
+    "value": 0.35,
+    "range": [
+     0.25,
+     0.5
+    ],
+    "status": "estimated",
+    "value_status": "estimated",
+    "range_status": "estimated",
+    "sources": [
+     {
+      "url": "https://roymech.org/Useful_Tables/Tribology/co_of_frict.html",
+      "quote": "Plexiglas | Steel | 0,4 - 0,5",
+      "conditions": "analogue for hard thermoplastic on steel, dry; not ABS/PLA",
+      "check": {
+       "verdict": "number_mismatch",
+       "note": "Value 0.35 lies outside the source span 0.4-0.5 (more than 10% of the value)",
+       "source_id": 49
+      }
+     },
+     {
+      "url": "https://roymech.org/Useful_Tables/Tribology/co_of_frict.html",
+      "quote": "Polystyrene | Steel | 0,3-0,35",
+      "conditions": "analogue for hard thermoplastic on steel, dry; not ABS/PLA",
+      "check": {
+       "verdict": "conditions_mismatch",
+       "note": "Source describes a different material or surface than the pair; used as an analogue/anchor",
+       "source_id": 50
+      }
+     }
+    ]
+   },
+   "mu_kinetic": {
+    "value": 0.3,
+    "range": [
+     0.2,
+     0.45
+    ],
+    "status": "estimated",
+    "value_status": "estimated",
+    "range_status": "estimated",
+    "sources": [
+     {
+      "url": "https://roymech.org/Useful_Tables/Tribology/co_of_frict.html",
+      "quote": "Plexiglas | Steel | 0,4 - 0,5",
+      "conditions": "analogue for hard thermoplastic on steel, dry; not ABS/PLA",
+      "check": {
+       "verdict": "number_mismatch",
+       "note": "Value 0.3 lies outside the source span 0.4-0.5 (more than 10% of the value)",
+       "source_id": 49
+      }
+     },
+     {
+      "url": "https://roymech.org/Useful_Tables/Tribology/co_of_frict.html",
+      "quote": "Polystyrene | Steel | 0,3-0,35",
+      "conditions": "analogue for hard thermoplastic on steel, dry; not ABS/PLA",
+      "check": {
+       "verdict": "conditions_mismatch",
+       "note": "Source does not label static vs kinetic; used for a kinetic value",
+       "source_id": 50
+      }
+     }
+    ]
+   },
+   "restitution_realised_from_class_unaries": {
+    "value": 0.3,
+    "status": "unsourced",
+    "impact_speed_above_0.5_m_s": false,
+    "note": "Not counted as a leaf: PhysX has no pair restitution (#91 schema); average of the two class unaries. Dormant below the 0.5 m/s bounce threshold (env/environment/base_env.py:27); placements and grazes in this task stay below it."
+   },
+   "cooccurrence_episodes_scored_3seeds": 150,
+   "copied_from": "audit/out/63/class_values.json (main wins on class and pair values, #84 review B4)"
+  },
+  "aluminium__table_laminate": {
+   "key": "aluminium__table_laminate",
+   "a": "aluminium",
+   "b": "table_laminate",
+   "kind": "object-surface",
+   "scenario_membership": "default",
+   "formable_in_cells": [
+    "pad_hard+table_laminate",
+    "pad_elastomer+table_laminate"
+   ],
+   "outcome_relevance": "low",
+   "task_contact": "Arm-link or stand grazes.",
+   "mu_static": {
+    "value": 0.35,
+    "range": [
+     0.2,
+     0.5
+    ],
+    "status": "unsourced",
+    "value_status": "unsourced",
+    "range_status": "unsourced",
+    "sources": []
+   },
+   "mu_kinetic": {
+    "value": 0.3,
+    "range": [
+     0.15,
+     0.45
+    ],
+    "status": "unsourced",
+    "value_status": "unsourced",
+    "range_status": "unsourced",
+    "sources": []
+   },
+   "restitution_realised_from_class_unaries": {
+    "value": 0.3,
+    "status": "unsourced",
+    "impact_speed_above_0.5_m_s": false,
+    "note": "Not counted as a leaf: PhysX has no pair restitution (#91 schema); average of the two class unaries. Dormant below the 0.5 m/s bounce threshold (env/environment/base_env.py:27); placements and grazes in this task stay below it."
+   },
+   "cooccurrence_episodes_scored_3seeds": 150,
+   "copied_from": "audit/out/63/class_values.json (main wins on class and pair values, #84 review B4)"
+  },
+  "aluminium__table_wood": {
+   "key": "aluminium__table_wood",
+   "a": "aluminium",
+   "b": "table_wood",
+   "kind": "object-surface",
+   "scenario_membership": "sensitivity",
+   "formable_in_cells": [
+    "pad_hard+table_wood",
+    "pad_elastomer+table_wood"
+   ],
+   "outcome_relevance": "low",
+   "task_contact": "Sensitivity surface. Arm-link or stand grazes.",
+   "mu_static": {
+    "value": 0.4,
+    "range": [
+     0.2,
+     0.6
+    ],
+    "status": "estimated",
+    "value_status": "estimated",
+    "range_status": "estimated",
+    "sources": [
+     {
+      "url": "https://engineeringtoolbox.com/friction-coefficients-d_778.html",
+      "quote": "Wood on clean metal | Clean and dry | 0.2 - 0.6",
+      "conditions": "bare wood on clean metal, static; not lacquered",
+      "check": {
+       "verdict": "conditions_mismatch",
+       "note": "Source describes a different material or surface than the pair; used as an analogue/anchor",
+       "source_id": 53
+      }
+     }
+    ]
+   },
+   "mu_kinetic": {
+    "value": 0.3,
+    "range": [
+     0.2,
+     0.5
+    ],
+    "status": "estimated",
+    "value_status": "estimated",
+    "range_status": "estimated",
+    "sources": [
+     {
+      "url": "https://engineeringtoolbox.com/friction-coefficients-d_778.html",
+      "quote": "Wood on clean metal | Clean and dry | 0.2 - 0.6",
+      "conditions": "bare wood on clean metal, static; not lacquered",
+      "check": {
+       "verdict": "number_mismatch",
+       "note": "Source gives no kinetic number for this value",
+       "source_id": 53
+      }
+     }
+    ]
+   },
+   "restitution_realised_from_class_unaries": {
+    "value": 0.3,
+    "status": "unsourced",
+    "impact_speed_above_0.5_m_s": false,
+    "note": "Not counted as a leaf: PhysX has no pair restitution (#91 schema); average of the two class unaries. Dormant below the 0.5 m/s bounce threshold (env/environment/base_env.py:27); placements and grazes in this task stay below it."
+   },
+   "cooccurrence_episodes_scored_3seeds": 150,
+   "copied_from": "audit/out/63/class_values.json (main wins on class and pair values, #84 review B4)"
+  },
+  "ground__pad_elastomer": {
+   "key": "ground__pad_elastomer",
+   "a": "ground",
+   "b": "pad_elastomer",
+   "kind": "object-surface",
+   "scenario_membership": "sensitivity",
+   "formable_in_cells": [
+    "pad_elastomer+table_laminate",
+    "pad_elastomer+table_wood"
+   ],
+   "outcome_relevance": "dormant",
+   "task_contact": "Sensitivity surface. Only objects knocked off the table reach the floor; that already fails the task.",
+   "mu_static": {
+    "value": 0.65,
+    "range": [
+     0.35,
+     1.1
+    ],
+    "status": "unsourced",
+    "value_status": "unsourced",
+    "range_status": "unsourced",
+    "derivation": "Copied from class pair ground__rubber_elastomer (class_values.json, status unsourced; a sourced analogue is capped at estimated); analogue surfaces pad_hard -> abs_toy_plastic, pad_elastomer -> rubber_elastomer.",
+    "reasoning": "Sensitivity pad: rubber/TPU pad on the floor box (failed episodes only), as rubber on the floor.",
+    "sources": []
+   },
+   "mu_kinetic": {
+    "value": 0.55,
+    "range": [
+     0.3,
+     0.9
+    ],
+    "status": "unsourced",
+    "value_status": "unsourced",
+    "range_status": "unsourced",
+    "derivation": "Copied from class pair ground__rubber_elastomer (class_values.json, status unsourced; a sourced analogue is capped at estimated); analogue surfaces pad_hard -> abs_toy_plastic, pad_elastomer -> rubber_elastomer.",
+    "reasoning": "Sensitivity pad: rubber/TPU pad on the floor box (failed episodes only), as rubber on the floor.",
+    "sources": []
+   },
+   "restitution_realised_from_class_unaries": {
+    "value": 0.05,
+    "status": "unsourced",
+    "impact_speed_above_0.5_m_s": false,
+    "note": "Not counted as a leaf: PhysX has no pair restitution (#91 schema); average of the two class unaries. Dormant below the 0.5 m/s bounce threshold (env/environment/base_env.py:27); placements and grazes in this task stay below it."
+   },
+   "cooccurrence_episodes_scored_3seeds": null,
+   "copied_from": "analogue band of ground__rubber_elastomer (class_values.json), added on #167"
+  },
+  "ground__pad_hard": {
+   "key": "ground__pad_hard",
+   "a": "ground",
+   "b": "pad_hard",
+   "kind": "object-surface",
+   "scenario_membership": "fixed",
+   "formable_in_cells": [
+    "pad_hard+table_laminate",
+    "pad_hard+table_wood"
+   ],
+   "outcome_relevance": "dormant",
+   "task_contact": "Only objects knocked off the table reach the floor; that already fails the task.",
+   "mu_static": {
+    "value": 0.325,
+    "range": [
+     0.15,
+     0.55
+    ],
+    "status": "unsourced",
+    "value_status": "unsourced",
+    "range_status": "unsourced",
+    "derivation": "Copied from class pair abs_toy_plastic__ground (class_values.json, status unsourced; a sourced analogue is capped at estimated); analogue surfaces pad_hard -> abs_toy_plastic, pad_elastomer -> rubber_elastomer.",
+    "reasoning": "Fingertips on the floor box: only reachable after an arm reaches below the table top, which already fails every task; the analogue is an ABS part on the unidentified floor.",
+    "sources": []
+   },
+   "mu_kinetic": {
+    "value": 0.275,
+    "range": [
+     0.12,
+     0.45
+    ],
+    "status": "unsourced",
+    "value_status": "unsourced",
+    "range_status": "unsourced",
+    "derivation": "Copied from class pair abs_toy_plastic__ground (class_values.json, status unsourced; a sourced analogue is capped at estimated); analogue surfaces pad_hard -> abs_toy_plastic, pad_elastomer -> rubber_elastomer.",
+    "reasoning": "Fingertips on the floor box: only reachable after an arm reaches below the table top, which already fails every task; the analogue is an ABS part on the unidentified floor.",
+    "sources": []
+   },
+   "restitution_realised_from_class_unaries": {
+    "value": 0.05,
+    "status": "unsourced",
+    "impact_speed_above_0.5_m_s": false,
+    "note": "Not counted as a leaf: PhysX has no pair restitution (#91 schema); average of the two class unaries. Dormant below the 0.5 m/s bounce threshold (env/environment/base_env.py:27); placements and grazes in this task stay below it."
+   },
+   "cooccurrence_episodes_scored_3seeds": null,
+   "copied_from": "analogue band of abs_toy_plastic__ground (class_values.json), added on #167"
+  },
+  "pad_elastomer__pad_elastomer": {
+   "key": "pad_elastomer__pad_elastomer",
+   "a": "pad_elastomer",
+   "b": "pad_elastomer",
+   "kind": "object-object",
+   "scenario_membership": "sensitivity",
+   "formable_in_cells": [
+    "pad_elastomer+table_laminate",
+    "pad_elastomer+table_wood"
+   ],
+   "outcome_relevance": "low",
+   "task_contact": "Sensitivity surface. Finger contact with arm links or stand.",
+   "mu_static": {
+    "value": 1.15,
+    "range": [
+     0.6,
+     1.5
+    ],
+    "status": "estimated",
+    "value_status": "estimated",
+    "range_status": "estimated",
+    "derivation": "Copied from class pair rubber_elastomer__rubber_elastomer (class_values.json, status estimated; a sourced analogue is capped at estimated); analogue surfaces pad_hard -> abs_toy_plastic, pad_elastomer -> rubber_elastomer.",
+    "reasoning": "Sensitivity pad: rubber/TPU pad on itself, as rubber on rubber.",
+    "sources": []
+   },
+   "mu_kinetic": {
+    "value": 1.0,
+    "range": [
+     0.5,
+     1.3
+    ],
+    "status": "estimated",
+    "value_status": "estimated",
+    "range_status": "estimated",
+    "derivation": "Copied from class pair rubber_elastomer__rubber_elastomer (class_values.json, status estimated; a sourced analogue is capped at estimated); analogue surfaces pad_hard -> abs_toy_plastic, pad_elastomer -> rubber_elastomer.",
+    "reasoning": "Sensitivity pad: rubber/TPU pad on itself, as rubber on rubber.",
+    "sources": []
+   },
+   "restitution_realised_from_class_unaries": {
+    "value": 0.1,
+    "status": "unsourced",
+    "impact_speed_above_0.5_m_s": false,
+    "note": "Not counted as a leaf: PhysX has no pair restitution (#91 schema); average of the two class unaries. Dormant below the 0.5 m/s bounce threshold (env/environment/base_env.py:27); placements and grazes in this task stay below it."
+   },
+   "cooccurrence_episodes_scored_3seeds": null,
+   "copied_from": "analogue band of rubber_elastomer__rubber_elastomer (class_values.json), added on #167"
+  },
+  "pad_elastomer__table_laminate": {
+   "key": "pad_elastomer__table_laminate",
+   "a": "pad_elastomer",
+   "b": "table_laminate",
+   "kind": "object-surface",
+   "scenario_membership": "sensitivity",
+   "formable_in_cells": [
+    "pad_elastomer+table_laminate"
+   ],
+   "outcome_relevance": "low",
+   "task_contact": "Sensitivity surface. Finger contact with arm links or stand.",
+   "mu_static": {
+    "value": 0.6,
+    "range": [
+     0.35,
+     1.0
+    ],
+    "status": "unsourced",
+    "value_status": "unsourced",
+    "range_status": "unsourced",
+    "derivation": "Copied from class pair rubber_elastomer__table_laminate (class_values.json, status unsourced; a sourced analogue is capped at estimated); analogue surfaces pad_hard -> abs_toy_plastic, pad_elastomer -> rubber_elastomer.",
+    "reasoning": "Sensitivity pad: rubber/TPU pad on melamine, as rubber on the laminate table.",
+    "sources": []
+   },
+   "mu_kinetic": {
+    "value": 0.5,
+    "range": [
+     0.3,
+     0.8
+    ],
+    "status": "unsourced",
+    "value_status": "unsourced",
+    "range_status": "unsourced",
+    "derivation": "Copied from class pair rubber_elastomer__table_laminate (class_values.json, status unsourced; a sourced analogue is capped at estimated); analogue surfaces pad_hard -> abs_toy_plastic, pad_elastomer -> rubber_elastomer.",
+    "reasoning": "Sensitivity pad: rubber/TPU pad on melamine, as rubber on the laminate table.",
+    "sources": []
+   },
+   "restitution_realised_from_class_unaries": {
+    "value": 0.1,
+    "status": "unsourced",
+    "impact_speed_above_0.5_m_s": false,
+    "note": "Not counted as a leaf: PhysX has no pair restitution (#91 schema); average of the two class unaries. Dormant below the 0.5 m/s bounce threshold (env/environment/base_env.py:27); placements and grazes in this task stay below it."
+   },
+   "cooccurrence_episodes_scored_3seeds": null,
+   "copied_from": "analogue band of rubber_elastomer__table_laminate (class_values.json), added on #167"
+  },
+  "pad_elastomer__table_wood": {
+   "key": "pad_elastomer__table_wood",
+   "a": "pad_elastomer",
+   "b": "table_wood",
+   "kind": "object-surface",
+   "scenario_membership": "sensitivity",
+   "formable_in_cells": [
+    "pad_elastomer+table_wood"
+   ],
+   "outcome_relevance": "low",
+   "task_contact": "Sensitivity surface. Finger contact with arm links or stand.",
+   "mu_static": {
+    "value": 0.7,
+    "range": [
+     0.4,
+     1.1
+    ],
+    "status": "unsourced",
+    "value_status": "unsourced",
+    "range_status": "unsourced",
+    "derivation": "Copied from class pair rubber_elastomer__table_wood (class_values.json, status unsourced; a sourced analogue is capped at estimated); analogue surfaces pad_hard -> abs_toy_plastic, pad_elastomer -> rubber_elastomer.",
+    "reasoning": "Sensitivity pad and table: rubber/TPU pad on lacquered wood, as rubber on the wood table.",
+    "sources": []
+   },
+   "mu_kinetic": {
+    "value": 0.6,
+    "range": [
+     0.35,
+     0.9
+    ],
+    "status": "unsourced",
+    "value_status": "unsourced",
+    "range_status": "unsourced",
+    "derivation": "Copied from class pair rubber_elastomer__table_wood (class_values.json, status unsourced; a sourced analogue is capped at estimated); analogue surfaces pad_hard -> abs_toy_plastic, pad_elastomer -> rubber_elastomer.",
+    "reasoning": "Sensitivity pad and table: rubber/TPU pad on lacquered wood, as rubber on the wood table.",
+    "sources": []
+   },
+   "restitution_realised_from_class_unaries": {
+    "value": 0.1,
+    "status": "unsourced",
+    "impact_speed_above_0.5_m_s": false,
+    "note": "Not counted as a leaf: PhysX has no pair restitution (#91 schema); average of the two class unaries. Dormant below the 0.5 m/s bounce threshold (env/environment/base_env.py:27); placements and grazes in this task stay below it."
+   },
+   "cooccurrence_episodes_scored_3seeds": null,
+   "copied_from": "analogue band of rubber_elastomer__table_wood (class_values.json), added on #167"
+  },
+  "pad_hard__pad_hard": {
+   "key": "pad_hard__pad_hard",
+   "a": "pad_hard",
+   "b": "pad_hard",
+   "kind": "object-object",
+   "scenario_membership": "default",
+   "formable_in_cells": [
+    "pad_hard+table_laminate",
+    "pad_hard+table_wood"
+   ],
+   "outcome_relevance": "low",
+   "task_contact": "Finger contact with arm links or stand.",
+   "mu_static": {
+    "value": 0.5,
+    "range": [
+     0.3,
+     0.8
+    ],
+    "status": "estimated",
+    "value_status": "estimated",
+    "range_status": "estimated",
+    "derivation": "Copied from class pair abs_toy_plastic__abs_toy_plastic (class_values.json, status estimated; a sourced analogue is capped at estimated); analogue surfaces pad_hard -> abs_toy_plastic, pad_elastomer -> rubber_elastomer.",
+    "reasoning": "Finger on finger: the two pads of one jaw meet when the gripper closes on nothing, and pads of the two arms can touch; same thermoplastic on itself, as ABS on ABS.",
+    "sources": []
+   },
+   "mu_kinetic": {
+    "value": 0.4,
+    "range": [
+     0.25,
+     0.6
+    ],
+    "status": "estimated",
+    "value_status": "estimated",
+    "range_status": "estimated",
+    "derivation": "Copied from class pair abs_toy_plastic__abs_toy_plastic (class_values.json, status estimated; a sourced analogue is capped at estimated); analogue surfaces pad_hard -> abs_toy_plastic, pad_elastomer -> rubber_elastomer.",
+    "reasoning": "Finger on finger: the two pads of one jaw meet when the gripper closes on nothing, and pads of the two arms can touch; same thermoplastic on itself, as ABS on ABS.",
+    "sources": []
+   },
+   "restitution_realised_from_class_unaries": {
+    "value": 0.1,
+    "status": "unsourced",
+    "impact_speed_above_0.5_m_s": false,
+    "note": "Not counted as a leaf: PhysX has no pair restitution (#91 schema); average of the two class unaries. Dormant below the 0.5 m/s bounce threshold (env/environment/base_env.py:27); placements and grazes in this task stay below it."
+   },
+   "cooccurrence_episodes_scored_3seeds": null,
+   "copied_from": "analogue band of abs_toy_plastic__abs_toy_plastic (class_values.json), added on #167"
+  },
+  "pad_hard__table_laminate": {
+   "key": "pad_hard__table_laminate",
+   "a": "pad_hard",
+   "b": "table_laminate",
+   "kind": "object-surface",
+   "scenario_membership": "default",
+   "formable_in_cells": [
+    "pad_hard+table_laminate"
+   ],
+   "outcome_relevance": "high",
+   "task_contact": "fingertips on the table: the T is 15 mm tall and the pad face 18.3 mm, so a pinch of the T brings the fingertips to the table (#167: decisive for swap_T).",
+   "mu_static": {
+    "value": 0.3,
+    "range": [
+     0.15,
+     0.5
+    ],
+    "status": "unsourced",
+    "value_status": "unsourced",
+    "range_status": "unsourced",
+    "derivation": "Copied from class pair abs_toy_plastic__table_laminate (class_values.json, status unsourced; a sourced analogue is capped at estimated); analogue surfaces pad_hard -> abs_toy_plastic, pad_elastomer -> rubber_elastomer.",
+    "reasoning": "Fingertips on the melamine table top: a hard smooth thermoplastic face sliding on a hard smooth melamine film, the same contact as an ABS part on the table. In swap_T the 15 mm T is lower than the 18.3 mm pad face, so this contact happens in every low pinch.",
+    "sources": []
+   },
+   "mu_kinetic": {
+    "value": 0.25,
+    "range": [
+     0.12,
+     0.4
+    ],
+    "status": "unsourced",
+    "value_status": "unsourced",
+    "range_status": "unsourced",
+    "derivation": "Copied from class pair abs_toy_plastic__table_laminate (class_values.json, status unsourced; a sourced analogue is capped at estimated); analogue surfaces pad_hard -> abs_toy_plastic, pad_elastomer -> rubber_elastomer.",
+    "reasoning": "Fingertips on the melamine table top: a hard smooth thermoplastic face sliding on a hard smooth melamine film, the same contact as an ABS part on the table. In swap_T the 15 mm T is lower than the 18.3 mm pad face, so this contact happens in every low pinch.",
+    "sources": []
+   },
+   "restitution_realised_from_class_unaries": {
+    "value": 0.1,
+    "status": "unsourced",
+    "impact_speed_above_0.5_m_s": false,
+    "note": "Not counted as a leaf: PhysX has no pair restitution (#91 schema); average of the two class unaries. Dormant below the 0.5 m/s bounce threshold (env/environment/base_env.py:27); placements and grazes in this task stay below it."
+   },
+   "cooccurrence_episodes_scored_3seeds": null,
+   "copied_from": "analogue band of abs_toy_plastic__table_laminate (class_values.json), added on #167"
+  },
+  "pad_hard__table_wood": {
+   "key": "pad_hard__table_wood",
+   "a": "pad_hard",
+   "b": "table_wood",
+   "kind": "object-surface",
+   "scenario_membership": "sensitivity",
+   "formable_in_cells": [
+    "pad_hard+table_wood"
+   ],
+   "outcome_relevance": "low",
+   "task_contact": "Sensitivity surface. Finger contact with arm links or stand.",
+   "mu_static": {
+    "value": 0.35,
+    "range": [
+     0.2,
+     0.55
+    ],
+    "status": "unsourced",
+    "value_status": "unsourced",
+    "range_status": "unsourced",
+    "derivation": "Copied from class pair abs_toy_plastic__table_wood (class_values.json, status unsourced; a sourced analogue is capped at estimated); analogue surfaces pad_hard -> abs_toy_plastic, pad_elastomer -> rubber_elastomer.",
+    "reasoning": "Sensitivity table: hard thermoplastic pad on lacquered wood, as an ABS part on the wood table.",
+    "sources": []
+   },
+   "mu_kinetic": {
+    "value": 0.3,
+    "range": [
+     0.15,
+     0.45
+    ],
+    "status": "unsourced",
+    "value_status": "unsourced",
+    "range_status": "unsourced",
+    "derivation": "Copied from class pair abs_toy_plastic__table_wood (class_values.json, status unsourced; a sourced analogue is capped at estimated); analogue surfaces pad_hard -> abs_toy_plastic, pad_elastomer -> rubber_elastomer.",
+    "reasoning": "Sensitivity table: hard thermoplastic pad on lacquered wood, as an ABS part on the wood table.",
+    "sources": []
+   },
+   "restitution_realised_from_class_unaries": {
+    "value": 0.1,
+    "status": "unsourced",
+    "impact_speed_above_0.5_m_s": false,
+    "note": "Not counted as a leaf: PhysX has no pair restitution (#91 schema); average of the two class unaries. Dormant below the 0.5 m/s bounce threshold (env/environment/base_env.py:27); placements and grazes in this task stay below it."
+   },
+   "cooccurrence_episodes_scored_3seeds": null,
+   "copied_from": "analogue band of abs_toy_plastic__table_wood (class_values.json), added on #167"
+  }
+ },
+ "unbanded_formable_pairs": {
+  "keys": [],
+  "note": "Formable in this task and banded neither in class_values.json nor by a pad-surface analogue. The 8 pad-surface pairs of #96 review item 4 now carry analogue bands (origin analogue_167)."
+ },
+ "physx_combine_and_unary_realisation": {
+  "combine_algebra_rule": {
+   "physx_sdk_version": "5.6.1",
+   "isaac_sim_container_pin": "Isaac Sim 5.1.0 (/isaac-sim/VERSION = 5.1.0-rc.19+release.26219.9c81211b.gl in isaac-sim_5.1.0.sif) ships omni.physx-107.3.26+107.3.3.lx64.r.cp311.u353 and omni.physx.foundation-107.3.26+107.3.3.lx64.r.cp311.u353; libomni.physx.plugin.so compiles PX_PHYSICS_VERSION = 0x05060100 (mov edi, 0x05060100 at offsets 0x352f5f and 0x3536b1), matching NVIDIA-Omniverse/PhysX tag 107.3-physx-5.6.1 (PhysX 5.6.1, not 'PhysX 5.1' and not main/5.12).",
+   "precedence_rule": "effective_mode = max(mode0, mode1) with eAVERAGE(0) < eMIN(1) < eMULTIPLY(2) < eMAX(3) (PxMaterial.h:112,127-130 at tag 107.3-physx-5.6.1); staticFriction_eff = max(staticFriction, dynamicFriction) (PxMaterial.h:148); effective restitution = 0.0 for normal impact speed < bounce_threshold_velocity = 0.5 m/s (env/environment/base_env.py:27).",
+   "status": "sourced",
+   "sources": [
+    {
+     "url": "https://raw.githubusercontent.com/NVIDIA-Omniverse/PhysX/107.3-physx-5.6.1/physx/include/foundation/PxPhysicsVersion.h",
+     "quote": "#define PX_PHYSICS_VERSION_MAJOR 5\n#define PX_PHYSICS_VERSION_MINOR 6\n#define PX_PHYSICS_VERSION_BUGFIX 1",
+     "conditions": "Lines 48-50 at tag 107.3-physx-5.6.1; verified against 0x05060100 in /isaac-sim/extscache/omni.physx-107.3.26+107.3.3.lx64.r.cp311.u353/bin/libomni.physx.plugin.so."
+    },
+    {
+     "url": "https://raw.githubusercontent.com/NVIDIA-Omniverse/PhysX/107.3-physx-5.6.1/physx/include/PxMaterial.h",
+     "quote": "The effective combine mode for the pair is maximum(material0.combineMode, material1.combineMode). ... eAVERAGE = 0, //!< Average: (a + b)/2 eMIN = 1, //!< Minimum: minimum(a,b) eMULTIPLY = 2, //!< Multiply: a*b eMAX = 3, //!< Maximum: maximum(a,b) ... If set to greater than staticFriction, the effective value of staticFriction will be increased to match.",
+     "conditions": "PhysX 5.6.1 SDK header lines 112, 127-130, and 148 at tag 107.3-physx-5.6.1 (replaces unpinned main/5.12 line numbers 89, 104-107, 125)."
+    }
+   ]
+  },
+  "unary_map": "None in the slice. One global unary map is fitted jointly over every pair the engine objects of all tasks in scope can form (#167 decision 2) by audit/tools/build_docs_params.py; realised values are in docs/params/pairs.json realised_vs_nominal."
+ },
+ "params_diff": {
+  "layout_census": {
+   "layout_files_3_seeds": 165,
+   "distinct_layout_files": 165,
+   "slots": {
+    "camera_stand": {
+     "model": "Geometry/camera_stand/00000",
+     "instances": 165,
+     "declared_physics": [
+      {
+       "type": "geometry"
+      }
+     ],
+     "place_tag": [
+      "None"
+     ],
+     "spawn_z_m": [
+      0.765
+     ]
+    },
+    "t0": {
+     "model": "Rigid/t/00000",
+     "instances": 165,
+     "declared_physics": [
+      {
+       "dynamic_friction": 2.0,
+       "friction": 0.45,
+       "mass": 0.1,
+       "static_friction": 2.0,
+       "type": "rigid"
+      }
+     ],
+     "place_tag": [
+      "None"
+     ],
+     "spawn_z_m": [
+      0.7725
+     ]
+    },
+    "t1": {
+     "model": "Rigid/t/00001",
+     "instances": 165,
+     "declared_physics": [
+      {
+       "dynamic_friction": 2.0,
+       "friction": 0.45,
+       "mass": 0.1,
+       "static_friction": 2.0,
+       "type": "rigid"
+      }
+     ],
+     "place_tag": [
+      "None"
+     ],
+     "spawn_z_m": [
+      0.7725
+     ]
+    }
+   },
+   "fixtures": {
+    "Table": [
+     {
+      "default": "material_0122",
+      "default_ori": [
+       1.0,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "default_pos": [
+       0.0,
+       -0.05,
+       0.74
+      ],
+      "scale": [
+       1.4,
+       1.1,
+       0.05
+      ]
+     }
+    ],
+    "Ground": [
+     {
+      "axis": "Z",
+      "default_pos": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "geometry": "cube",
+      "materials": {
+       "default": "material_0564",
+       "random": false,
+       "type": "mdl"
+      },
+      "physics_material": {
+       "compliant_contact_damping": 0.0,
+       "compliant_contact_stiffness": 0.0,
+       "dynamic_friction": 1.0,
+       "friction_combine_mode": "multiply",
+       "restitution": 0.0,
+       "restitution_combine_mode": "multiply",
+       "static_friction": 1.0
+      },
+      "thickness": 0.1
+     }
+    ],
+    "Room": [
+     {
+      "default": "Simple_Room_nolight",
+      "default_pos": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "default_rot": [
+       1.0,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "scale": [
+       0.5,
+       0.5,
+       0.5
+      ]
+     }
+    ]
+   }
+  },
+  "population": {
+   "scored_layouts": 150,
+   "objects": [
+    {
+     "section": "Geometry",
+     "kind": "Geometry",
+     "category": "camera_stand",
+     "asset_dir": "Assets/Object/RoboDojo/Geometry/camera_stand",
+     "indices": [
+      0
+     ],
+     "indices_scored_seed0": [
+      0
+     ],
+     "indices_scored_all_seeds": [
+      0
+     ],
+     "indices_spare_only": [],
+     "all_exist_in_hf": true
+    },
+    {
+     "section": "Rigid",
+     "kind": "Rigid",
+     "category": "t",
+     "asset_dir": "Assets/Object/RoboDojo/Rigid/t",
+     "indices": [
+      0,
+      1
+     ],
+     "indices_scored_seed0": [
+      0,
+      1
+     ],
+     "indices_scored_all_seeds": [
+      0,
+      1
+     ],
+     "indices_spare_only": [],
+     "all_exist_in_hf": true
+    }
+   ],
+   "evaluator": {
+    "step_lim": 400,
+    "episode_seconds": 16.0,
+    "instruction_template": "Pick up the two T-shaped blocks, swap their positions, and place them back with the correct orientations.",
+    "predicates_called": [
+     "all_robot_back_to_origin",
+     "is_A_xy_distance_close_to_pos",
+     "is_qpos_close"
+    ],
+    "e3_form_verdict": "risk",
+    "e3_form_summary": "Angular tolerance is far tighter than positional tolerance."
+   }
+  },
+  "dormant_and_quarantined": [
+   {
+    "what": "code default material 0.6 / 1.5 on every rigid object without static_friction/dynamic_friction keys (rigid.py:84-90); PhysX would clamp it to 1.5 / 1.5 (PxMaterial.h:148)",
+    "shipped_effective": "0.5 / 0.5 on cpu (#58)",
+    "decision": "quarantined; replaced by class unaries (#62)"
+   },
+   {
+    "what": "dead 'friction' key in layouts and metadata",
+    "decision": "never read (#1, #6)"
+   },
+   {
+    "what": "Ground 1.0 / 1.0, multiply combine (env_cfg/scene/default.yml:25-32)",
+    "decision": "corrected path overrides Ground to average (#62 D2)"
+   },
+   {
+    "what": "inertia never follows mass (#113): engine inertia is the parse-time uniform solid at 1,000 kg/m^3",
+    "decision": "corrected path authors MassAPI mass, centre of mass and diagonal inertia before parse (#96)"
+   },
+   {
+    "what": "T static_friction / dynamic_friction 2.0 / 2.0 in all 330 T slots (a September patch 'to make the objects less prone to slipping', findings D4)",
+    "shipped_effective": "0.5 / 0.5 on cpu (#58); the order fix alone would switch on 2.0, i.e. 1.25 against the 0.5 table",
+    "decision": "quarantined; a compensation (masks #58 slip); replaced by the abs_toy_plastic unary"
+   },
+   {
+    "what": "T mass 0.1 kg in all 330 layout slots vs metadata 0.35 kg (push_T uses 0.35, #44)",
+    "shipped_effective": "0.1 kg",
+    "decision": "replaced by mass_kg (0.038 kg ABS nominal)"
+   }
+  ]
+ }
+}

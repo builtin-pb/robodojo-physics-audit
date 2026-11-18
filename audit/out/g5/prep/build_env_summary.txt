@@ -1,0 +1,13 @@
+Successfully installed pip-26.3
+Successfully installed MarkupSafe-3.0.3 cuda-bindings-12.9.4 cuda-pathfinder-1.6.0 filelock-4.2.4 fsspec-2026.9.0 jinja2-3.1.6 mpmath-1.3.0 networkx-3.6.1 numpy-2.4.6 nvidia-cublas-cu12-12.8.4.1 nvidia-cuda-cupti-cu12-12.8.90 nvidia-cuda-nvrtc-cu12-12.8.93 nvidia-cuda-runtime-cu12-12.8.90 nvidia-cudnn-cu12-9.10.2.21 nvidia-cufft-cu12-11.3.3.83 nvidia-cufile-cu12-1.13.1.3 nvidia-curand-cu12-10.3.9.
+Successfully installed annotated-doc-0.0.6 annotated-types-0.8.0 anyio-4.16.0 certifi-2026.10.23 charset_normalizer-3.5.2 click-8.5.1 einops-0.8.2 fla-core-0.5.1 flash-linear-attention-0.5.1 ftfy-6.3.1 h11-0.16.0 hf-xet-1.8.0 httpcore2-2.16.0 httpx2-2.16.0 huggingface-hub-2.4.0 idna-3.20 markdown-it-py-4.3.0 mdurl-0.1.2 modelscope-1.34.0 pydantic-2.14.3 pydantic-core-2.50.4 pygments-2.21.0 pyyaml-
+Successfully built causal-conv1d
+Successfully installed causal-conv1d-1.6.2.post1 ninja-1.13.2
+Successfully built wam-robodojo-runtime antlr4-python3-runtime
+Successfully installed Pillow-11.3.0 accelerate-1.14.0 antlr4-python3-runtime-4.9.3 einops-0.8.1 httpcore-1.0.9 httpx-0.28.1 huggingface_hub-1.33.0 hydra-core-1.3.2 numpy-1.26.4 omegaconf-2.3.0 psutil-7.2.2 rich-14.2.0 tokenizers-0.22.2 tqdm-4.66.5 transformers-5.13.0 wam-robodojo-runtime-0.1.0
+Successfully built xpolicylab
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+wam-robodojo-runtime 0.1.0 requires numpy==1.26.4, but you have numpy 2.4.6 which is incompatible.
+Successfully installed h5py-3.16.0 msgpack-1.2.4 msgpack-numpy-0.4.8 numpy-2.4.6 opencv-python-headless-5.0.0.93 websockets-17.4 xpolicylab-0.0.1
+torch 2.10.0+cu128 cuda 12.8 transformers 5.13.0
+BUILD_OK

@@ -1,0 +1,47 @@
+[
+ {
+  "cell_name": "match_and_pick_from_conveyor__shipped",
+  "layout": 0,
+  "overrides": {}
+ },
+ {
+  "cell_name": "match_and_pick_from_conveyor__dt2",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.002
+  }
+ },
+ {
+  "cell_name": "match_and_pick_from_conveyor__dt1",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.001
+  }
+ },
+ {
+  "cell_name": "match_and_pick_from_conveyor__iters4x",
+  "layout": 0,
+  "overrides": {
+   "min_pos_iters": 64
+  }
+ },
+ {
+  "cell_name": "match_and_pick_from_conveyor__stab_off",
+  "layout": 0,
+  "overrides": {
+   "enable_stabilization": false
+  }
+ },
+ {
+  "cell_name": "match_and_pick_from_conveyor__cpu",
+  "layout": 0,
+  "overrides": {
+   "gpu_dynamics": false
+  }
+ },
+ {
+  "cell_name": "match_and_pick_from_conveyor__shipped_repeat",
+  "layout": 0,
+  "overrides": {}
+ }
+]

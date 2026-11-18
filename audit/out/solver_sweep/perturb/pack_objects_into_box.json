@@ -1,0 +1,23 @@
+[
+ {
+  "cell_name": "pack_objects_into_box__perturb",
+  "layout": 0,
+  "overrides": {
+   "spawn_lift": {
+    "stems": "*",
+    "dz_m": 1e-06
+   },
+   "slide_target": {
+    "label": "hammer",
+    "inst": "hammer_3_3",
+    "labelled": true,
+    "stem": "hammer_3",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     -0.994594,
+     0.103837
+    ]
+   }
+  }
+ }
+]

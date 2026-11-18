@@ -1,0 +1,4012 @@
+{
+ "general_pickup": {
+  "label": "target",
+  "threshold_m": 0.1,
+  "placements": 165,
+  "excluded_suspect_frame": [
+   "Rigid/corkscrew/00000",
+   "Rigid/glasses/00000",
+   "Rigid/nail_clippers/00000"
+  ],
+  "pass_resting_on_a_face": 14,
+  "pass_held_on_a_corner": 26,
+  "models_passing_resting_on_a_face": [
+   "Rigid/can/00000",
+   "Rigid/pen/00011",
+   "Rigid/remote/00000",
+   "Rigid/scissor/00000",
+   "Rigid/shovel/00001",
+   "Rigid/whisk/00000"
+  ],
+  "rows": [
+   {
+    "layout": "0/general_pickup_0.json",
+    "model": "Rigid/scissor/00000",
+    "h0_mm": 10.7,
+    "rise_resting_on_a_face_mm": 103.5,
+    "rise_held_on_a_corner_mm": 117.0,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_1.json",
+    "model": "Rigid/shovel/00000",
+    "h0_mm": 41.7,
+    "rise_resting_on_a_face_mm": 89.7,
+    "rise_held_on_a_corner_mm": 102.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_10.json",
+    "model": "Rigid/remote/00000",
+    "h0_mm": 0.3,
+    "rise_resting_on_a_face_mm": 100.3,
+    "rise_held_on_a_corner_mm": 104.4,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_11.json",
+    "model": "Rigid/whisk/00000",
+    "h0_mm": 58.1,
+    "rise_resting_on_a_face_mm": 112.7,
+    "rise_held_on_a_corner_mm": 123.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_12.json",
+    "model": "Rigid/seashell/00000",
+    "h0_mm": 43.6,
+    "rise_resting_on_a_face_mm": -0.5,
+    "rise_held_on_a_corner_mm": 14.0,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_13.json",
+    "model": "Rigid/shovel/00001",
+    "h0_mm": 7.0,
+    "rise_resting_on_a_face_mm": 123.4,
+    "rise_held_on_a_corner_mm": 134.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_14.json",
+    "model": "Rigid/usb_multip/00000",
+    "h0_mm": 7.7,
+    "rise_resting_on_a_face_mm": 52.4,
+    "rise_held_on_a_corner_mm": 64.8,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_15.json",
+    "model": "Rigid/pen/00010",
+    "h0_mm": 3.2,
+    "rise_resting_on_a_face_mm": 49.7,
+    "rise_held_on_a_corner_mm": 53.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_16.json",
+    "model": "Rigid/toy/00000",
+    "h0_mm": 131.8,
+    "rise_resting_on_a_face_mm": -36.3,
+    "rise_held_on_a_corner_mm": 19.4,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_17.json",
+    "model": "Rigid/toy/00002",
+    "h0_mm": 36.5,
+    "rise_resting_on_a_face_mm": 1.4,
+    "rise_held_on_a_corner_mm": 17.8,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_18.json",
+    "model": "Rigid/watch/00003",
+    "h0_mm": 4.1,
+    "rise_resting_on_a_face_mm": 86.0,
+    "rise_held_on_a_corner_mm": 87.2,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_19.json",
+    "model": "Rigid/owl/00000",
+    "h0_mm": 60.5,
+    "rise_resting_on_a_face_mm": -4.1,
+    "rise_held_on_a_corner_mm": 14.4,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_2.json",
+    "model": "Rigid/seashell/00000",
+    "h0_mm": 43.6,
+    "rise_resting_on_a_face_mm": -0.5,
+    "rise_held_on_a_corner_mm": 14.0,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_20.json",
+    "model": "Rigid/car/00011",
+    "h0_mm": 19.1,
+    "rise_resting_on_a_face_mm": 29.9,
+    "rise_held_on_a_corner_mm": 37.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_21.json",
+    "model": "Rigid/teddy_bear/00000",
+    "h0_mm": 63.1,
+    "rise_resting_on_a_face_mm": 0.0,
+    "rise_held_on_a_corner_mm": 26.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_22.json",
+    "model": "Rigid/toy/00002",
+    "h0_mm": 36.5,
+    "rise_resting_on_a_face_mm": 1.4,
+    "rise_held_on_a_corner_mm": 17.8,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_23.json",
+    "model": "Rigid/waffle/00000",
+    "h0_mm": 16.3,
+    "rise_resting_on_a_face_mm": 31.8,
+    "rise_held_on_a_corner_mm": 52.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_24.json",
+    "model": "Rigid/toy/00001",
+    "h0_mm": 56.3,
+    "rise_resting_on_a_face_mm": -0.7,
+    "rise_held_on_a_corner_mm": 30.2,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_25.json",
+    "model": "Rigid/jewelry_box/00000",
+    "h0_mm": 26.0,
+    "rise_resting_on_a_face_mm": 61.6,
+    "rise_held_on_a_corner_mm": 77.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_26.json",
+    "model": "Rigid/grapes/00000",
+    "h0_mm": 86.6,
+    "rise_resting_on_a_face_mm": -27.6,
+    "rise_held_on_a_corner_mm": 10.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_27.json",
+    "model": "Rigid/chick/00000",
+    "h0_mm": 56.3,
+    "rise_resting_on_a_face_mm": -12.2,
+    "rise_held_on_a_corner_mm": 7.8,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_28.json",
+    "model": "Rigid/tape_roll/00000",
+    "h0_mm": 13.0,
+    "rise_resting_on_a_face_mm": 25.3,
+    "rise_held_on_a_corner_mm": 31.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_29.json",
+    "model": "Rigid/wrench/00001",
+    "h0_mm": 83.3,
+    "rise_resting_on_a_face_mm": 3.4,
+    "rise_held_on_a_corner_mm": 5.0,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_3.json",
+    "model": "Rigid/car/00011",
+    "h0_mm": 19.1,
+    "rise_resting_on_a_face_mm": 29.9,
+    "rise_held_on_a_corner_mm": 37.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_30.json",
+    "model": "Rigid/tiara/00000",
+    "h0_mm": 60.2,
+    "rise_resting_on_a_face_mm": 15.1,
+    "rise_held_on_a_corner_mm": 45.2,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_31.json",
+    "model": "Rigid/piler/00000",
+    "h0_mm": 22.1,
+    "rise_resting_on_a_face_mm": 68.9,
+    "rise_held_on_a_corner_mm": 75.5,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_32.json",
+    "model": "Rigid/shovel/00002",
+    "h0_mm": 164.8,
+    "rise_resting_on_a_face_mm": 38.3,
+    "rise_held_on_a_corner_mm": 51.0,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_33.json",
+    "model": "Rigid/pepper/00000",
+    "h0_mm": 31.7,
+    "rise_resting_on_a_face_mm": -2.1,
+    "rise_held_on_a_corner_mm": 15.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_34.json",
+    "model": "Rigid/shovel/00002",
+    "h0_mm": 164.8,
+    "rise_resting_on_a_face_mm": 38.3,
+    "rise_held_on_a_corner_mm": 51.0,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_35.json",
+    "model": "Rigid/clock/00000",
+    "h0_mm": 70.1,
+    "rise_resting_on_a_face_mm": -4.5,
+    "rise_held_on_a_corner_mm": 25.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_36.json",
+    "model": "Rigid/tape_roll/00000",
+    "h0_mm": 13.0,
+    "rise_resting_on_a_face_mm": 25.3,
+    "rise_held_on_a_corner_mm": 31.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_37.json",
+    "model": "Rigid/toy/00002",
+    "h0_mm": 36.5,
+    "rise_resting_on_a_face_mm": 1.4,
+    "rise_held_on_a_corner_mm": 17.8,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_38.json",
+    "model": "Rigid/piler/00000",
+    "h0_mm": 22.1,
+    "rise_resting_on_a_face_mm": 68.9,
+    "rise_held_on_a_corner_mm": 75.5,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_39.json",
+    "model": "Rigid/wooden_toy/00000",
+    "h0_mm": 37.0,
+    "rise_resting_on_a_face_mm": 1.1,
+    "rise_held_on_a_corner_mm": 19.4,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_4.json",
+    "model": "Rigid/car/00009",
+    "h0_mm": 19.6,
+    "rise_resting_on_a_face_mm": 49.9,
+    "rise_held_on_a_corner_mm": 60.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_40.json",
+    "model": "Rigid/noodles/00000",
+    "h0_mm": 0.9,
+    "rise_resting_on_a_face_mm": 99.2,
+    "rise_held_on_a_corner_mm": 120.9,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_41.json",
+    "model": "Rigid/glue/00000",
+    "h0_mm": 60.1,
+    "rise_resting_on_a_face_mm": -0.0,
+    "rise_held_on_a_corner_mm": 5.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_42.json",
+    "model": "Rigid/chick/00000",
+    "h0_mm": 56.3,
+    "rise_resting_on_a_face_mm": -12.2,
+    "rise_held_on_a_corner_mm": 7.8,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_43.json",
+    "model": "Rigid/toy/00002",
+    "h0_mm": 36.5,
+    "rise_resting_on_a_face_mm": 1.4,
+    "rise_held_on_a_corner_mm": 17.8,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_44.json",
+    "model": "Rigid/pepper/00000",
+    "h0_mm": 31.7,
+    "rise_resting_on_a_face_mm": -2.1,
+    "rise_held_on_a_corner_mm": 15.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_45.json",
+    "model": "Rigid/drawing_compass/00000",
+    "h0_mm": 14.8,
+    "rise_resting_on_a_face_mm": 63.1,
+    "rise_held_on_a_corner_mm": 71.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_46.json",
+    "model": "Rigid/pepper/00000",
+    "h0_mm": 31.7,
+    "rise_resting_on_a_face_mm": -2.1,
+    "rise_held_on_a_corner_mm": 15.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_47.json",
+    "model": "Rigid/chick/00000",
+    "h0_mm": 56.3,
+    "rise_resting_on_a_face_mm": -12.2,
+    "rise_held_on_a_corner_mm": 7.8,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_48.json",
+    "model": "Rigid/tape_dispense/00000",
+    "h0_mm": 26.4,
+    "rise_resting_on_a_face_mm": 26.2,
+    "rise_held_on_a_corner_mm": 38.0,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_49.json",
+    "model": "Rigid/corkscrew/00000",
+    "h0_mm": -199.9,
+    "rise_resting_on_a_face_mm": 470.9,
+    "rise_held_on_a_corner_mm": 575.0,
+    "suspect_frame": true
+   },
+   {
+    "layout": "0/general_pickup_5.json",
+    "model": "Rigid/clock/00000",
+    "h0_mm": 70.1,
+    "rise_resting_on_a_face_mm": -4.5,
+    "rise_held_on_a_corner_mm": 25.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_50.json",
+    "model": "Rigid/correction_tape/00000",
+    "h0_mm": 12.2,
+    "rise_resting_on_a_face_mm": 59.9,
+    "rise_held_on_a_corner_mm": 67.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_51.json",
+    "model": "Rigid/waffle/00000",
+    "h0_mm": 16.3,
+    "rise_resting_on_a_face_mm": 31.8,
+    "rise_held_on_a_corner_mm": 52.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_52.json",
+    "model": "Rigid/tape_dispense/00000",
+    "h0_mm": 26.4,
+    "rise_resting_on_a_face_mm": 26.2,
+    "rise_held_on_a_corner_mm": 38.0,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_53.json",
+    "model": "Rigid/paint_roller/00000",
+    "h0_mm": 42.7,
+    "rise_resting_on_a_face_mm": 45.3,
+    "rise_held_on_a_corner_mm": 74.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_54.json",
+    "model": "Rigid/tape_roll/00000",
+    "h0_mm": 13.0,
+    "rise_resting_on_a_face_mm": 25.3,
+    "rise_held_on_a_corner_mm": 31.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_6.json",
+    "model": "Rigid/noodles/00000",
+    "h0_mm": 0.9,
+    "rise_resting_on_a_face_mm": 99.2,
+    "rise_held_on_a_corner_mm": 120.9,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_7.json",
+    "model": "Rigid/power_bank/00002",
+    "h0_mm": 14.8,
+    "rise_resting_on_a_face_mm": 60.3,
+    "rise_held_on_a_corner_mm": 69.0,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_8.json",
+    "model": "Rigid/paint_roller/00000",
+    "h0_mm": 42.7,
+    "rise_resting_on_a_face_mm": 45.3,
+    "rise_held_on_a_corner_mm": 74.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/general_pickup_9.json",
+    "model": "Rigid/corkscrew/00000",
+    "h0_mm": -199.9,
+    "rise_resting_on_a_face_mm": 470.9,
+    "rise_held_on_a_corner_mm": 575.0,
+    "suspect_frame": true
+   },
+   {
+    "layout": "1/general_pickup_0.json",
+    "model": "Rigid/headphone/00000",
+    "h0_mm": 66.8,
+    "rise_resting_on_a_face_mm": 33.2,
+    "rise_held_on_a_corner_mm": 76.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_1.json",
+    "model": "Rigid/mouse/00008",
+    "h0_mm": 46.8,
+    "rise_resting_on_a_face_mm": -0.1,
+    "rise_held_on_a_corner_mm": 19.9,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_10.json",
+    "model": "Rigid/pen/00010",
+    "h0_mm": 3.2,
+    "rise_resting_on_a_face_mm": 49.7,
+    "rise_held_on_a_corner_mm": 53.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_11.json",
+    "model": "Rigid/piler/00000",
+    "h0_mm": 22.1,
+    "rise_resting_on_a_face_mm": 68.9,
+    "rise_held_on_a_corner_mm": 75.5,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_12.json",
+    "model": "Rigid/grapes/00000",
+    "h0_mm": 86.6,
+    "rise_resting_on_a_face_mm": -27.6,
+    "rise_held_on_a_corner_mm": 10.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_13.json",
+    "model": "Rigid/bottle_opener/00000",
+    "h0_mm": 38.0,
+    "rise_resting_on_a_face_mm": 4.6,
+    "rise_held_on_a_corner_mm": 9.2,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_14.json",
+    "model": "Rigid/pepper/00000",
+    "h0_mm": 31.7,
+    "rise_resting_on_a_face_mm": -2.1,
+    "rise_held_on_a_corner_mm": 15.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_15.json",
+    "model": "Rigid/wooden_toy/00000",
+    "h0_mm": 37.0,
+    "rise_resting_on_a_face_mm": 1.1,
+    "rise_held_on_a_corner_mm": 19.4,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_16.json",
+    "model": "Rigid/owl/00000",
+    "h0_mm": 60.5,
+    "rise_resting_on_a_face_mm": -4.1,
+    "rise_held_on_a_corner_mm": 14.4,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_17.json",
+    "model": "Rigid/glue/00000",
+    "h0_mm": 60.1,
+    "rise_resting_on_a_face_mm": -0.0,
+    "rise_held_on_a_corner_mm": 5.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_18.json",
+    "model": "Rigid/paint_roller/00000",
+    "h0_mm": 42.7,
+    "rise_resting_on_a_face_mm": 45.3,
+    "rise_held_on_a_corner_mm": 74.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_19.json",
+    "model": "Rigid/usb_multip/00000",
+    "h0_mm": 7.7,
+    "rise_resting_on_a_face_mm": 52.4,
+    "rise_held_on_a_corner_mm": 64.8,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_2.json",
+    "model": "Rigid/whisk/00000",
+    "h0_mm": 58.1,
+    "rise_resting_on_a_face_mm": 112.7,
+    "rise_held_on_a_corner_mm": 123.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_20.json",
+    "model": "Rigid/toy/00002",
+    "h0_mm": 36.5,
+    "rise_resting_on_a_face_mm": 1.4,
+    "rise_held_on_a_corner_mm": 17.8,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_21.json",
+    "model": "Rigid/owl/00000",
+    "h0_mm": 60.5,
+    "rise_resting_on_a_face_mm": -4.1,
+    "rise_held_on_a_corner_mm": 14.4,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_22.json",
+    "model": "Rigid/handled_paint/00000",
+    "h0_mm": 22.5,
+    "rise_resting_on_a_face_mm": 67.6,
+    "rise_held_on_a_corner_mm": 84.2,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_23.json",
+    "model": "Rigid/cup/00007",
+    "h0_mm": 0.1,
+    "rise_resting_on_a_face_mm": 71.9,
+    "rise_held_on_a_corner_mm": 88.9,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_24.json",
+    "model": "Rigid/helicopter/00000",
+    "h0_mm": 58.0,
+    "rise_resting_on_a_face_mm": 53.6,
+    "rise_held_on_a_corner_mm": 88.9,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_25.json",
+    "model": "Rigid/speaker/00000",
+    "h0_mm": 100.3,
+    "rise_resting_on_a_face_mm": -0.2,
+    "rise_held_on_a_corner_mm": 16.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_26.json",
+    "model": "Rigid/bottle/00061",
+    "h0_mm": 88.1,
+    "rise_resting_on_a_face_mm": -0.5,
+    "rise_held_on_a_corner_mm": 9.2,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_27.json",
+    "model": "Rigid/thread/00000",
+    "h0_mm": 87.7,
+    "rise_resting_on_a_face_mm": -0.1,
+    "rise_held_on_a_corner_mm": 16.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_28.json",
+    "model": "Rigid/cup/00007",
+    "h0_mm": 0.1,
+    "rise_resting_on_a_face_mm": 71.9,
+    "rise_held_on_a_corner_mm": 88.9,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_29.json",
+    "model": "Rigid/scissor/00000",
+    "h0_mm": 10.7,
+    "rise_resting_on_a_face_mm": 103.5,
+    "rise_held_on_a_corner_mm": 117.0,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_3.json",
+    "model": "Rigid/tape_roll/00000",
+    "h0_mm": 13.0,
+    "rise_resting_on_a_face_mm": 25.3,
+    "rise_held_on_a_corner_mm": 31.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_30.json",
+    "model": "Rigid/cactus/00000",
+    "h0_mm": 97.2,
+    "rise_resting_on_a_face_mm": -7.2,
+    "rise_held_on_a_corner_mm": 11.2,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_31.json",
+    "model": "Rigid/car/00009",
+    "h0_mm": 19.6,
+    "rise_resting_on_a_face_mm": 49.9,
+    "rise_held_on_a_corner_mm": 60.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_32.json",
+    "model": "Rigid/pot/00001",
+    "h0_mm": 93.8,
+    "rise_resting_on_a_face_mm": 76.5,
+    "rise_held_on_a_corner_mm": 126.9,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_33.json",
+    "model": "Rigid/car/00010",
+    "h0_mm": 13.1,
+    "rise_resting_on_a_face_mm": 31.4,
+    "rise_held_on_a_corner_mm": 37.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_34.json",
+    "model": "Rigid/shovel/00000",
+    "h0_mm": 41.7,
+    "rise_resting_on_a_face_mm": 89.7,
+    "rise_held_on_a_corner_mm": 102.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_35.json",
+    "model": "Rigid/wrench/00002",
+    "h0_mm": 33.4,
+    "rise_resting_on_a_face_mm": 96.9,
+    "rise_held_on_a_corner_mm": 102.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_36.json",
+    "model": "Rigid/chick/00000",
+    "h0_mm": 56.3,
+    "rise_resting_on_a_face_mm": -12.2,
+    "rise_held_on_a_corner_mm": 7.8,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_37.json",
+    "model": "Rigid/saw/00000",
+    "h0_mm": 213.8,
+    "rise_resting_on_a_face_mm": -1.8,
+    "rise_held_on_a_corner_mm": 13.8,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_38.json",
+    "model": "Rigid/wrench/00002",
+    "h0_mm": 33.4,
+    "rise_resting_on_a_face_mm": 96.9,
+    "rise_held_on_a_corner_mm": 102.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_39.json",
+    "model": "Rigid/kiwi/00000",
+    "h0_mm": 6.4,
+    "rise_resting_on_a_face_mm": 28.2,
+    "rise_held_on_a_corner_mm": 36.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_4.json",
+    "model": "Rigid/bell/00000",
+    "h0_mm": 132.8,
+    "rise_resting_on_a_face_mm": -24.7,
+    "rise_held_on_a_corner_mm": 13.0,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_40.json",
+    "model": "Rigid/whisk/00000",
+    "h0_mm": 58.1,
+    "rise_resting_on_a_face_mm": 112.7,
+    "rise_held_on_a_corner_mm": 123.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_41.json",
+    "model": "Rigid/donut/00000",
+    "h0_mm": 23.6,
+    "rise_resting_on_a_face_mm": 39.2,
+    "rise_held_on_a_corner_mm": 48.2,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_42.json",
+    "model": "Rigid/chick/00000",
+    "h0_mm": 56.3,
+    "rise_resting_on_a_face_mm": -12.2,
+    "rise_held_on_a_corner_mm": 7.8,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_43.json",
+    "model": "Rigid/waffle/00000",
+    "h0_mm": 16.3,
+    "rise_resting_on_a_face_mm": 31.8,
+    "rise_held_on_a_corner_mm": 52.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_44.json",
+    "model": "Rigid/remote/00000",
+    "h0_mm": 0.3,
+    "rise_resting_on_a_face_mm": 100.3,
+    "rise_held_on_a_corner_mm": 104.4,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_45.json",
+    "model": "Rigid/garage/00017",
+    "h0_mm": 90.9,
+    "rise_resting_on_a_face_mm": -2.0,
+    "rise_held_on_a_corner_mm": 34.4,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_46.json",
+    "model": "Rigid/watch/00003",
+    "h0_mm": 4.1,
+    "rise_resting_on_a_face_mm": 86.0,
+    "rise_held_on_a_corner_mm": 87.2,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_47.json",
+    "model": "Rigid/nail_clippers/00000",
+    "h0_mm": -197.7,
+    "rise_resting_on_a_face_mm": 472.4,
+    "rise_held_on_a_corner_mm": 542.7,
+    "suspect_frame": true
+   },
+   {
+    "layout": "1/general_pickup_48.json",
+    "model": "Rigid/scan/00000",
+    "h0_mm": 19.2,
+    "rise_resting_on_a_face_mm": 44.3,
+    "rise_held_on_a_corner_mm": 54.4,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_49.json",
+    "model": "Rigid/prayer_bead/00000",
+    "h0_mm": 8.9,
+    "rise_resting_on_a_face_mm": 60.5,
+    "rise_held_on_a_corner_mm": 61.0,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_5.json",
+    "model": "Rigid/nail_clippers/00000",
+    "h0_mm": -197.7,
+    "rise_resting_on_a_face_mm": 472.4,
+    "rise_held_on_a_corner_mm": 542.7,
+    "suspect_frame": true
+   },
+   {
+    "layout": "1/general_pickup_50.json",
+    "model": "Rigid/car/00010",
+    "h0_mm": 13.1,
+    "rise_resting_on_a_face_mm": 31.4,
+    "rise_held_on_a_corner_mm": 37.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_51.json",
+    "model": "Rigid/figurine/00000",
+    "h0_mm": 64.6,
+    "rise_resting_on_a_face_mm": -3.1,
+    "rise_held_on_a_corner_mm": 9.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_52.json",
+    "model": "Rigid/shovel/00001",
+    "h0_mm": 7.0,
+    "rise_resting_on_a_face_mm": 123.4,
+    "rise_held_on_a_corner_mm": 134.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_53.json",
+    "model": "Rigid/glue/00000",
+    "h0_mm": 60.1,
+    "rise_resting_on_a_face_mm": -0.0,
+    "rise_held_on_a_corner_mm": 5.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_54.json",
+    "model": "Rigid/chocolate_bag/00000",
+    "h0_mm": 27.0,
+    "rise_resting_on_a_face_mm": 45.0,
+    "rise_held_on_a_corner_mm": 66.4,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_6.json",
+    "model": "Rigid/pot/00001",
+    "h0_mm": 93.8,
+    "rise_resting_on_a_face_mm": 76.5,
+    "rise_held_on_a_corner_mm": 126.9,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_7.json",
+    "model": "Rigid/power_bank/00002",
+    "h0_mm": 14.8,
+    "rise_resting_on_a_face_mm": 60.3,
+    "rise_held_on_a_corner_mm": 69.0,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_8.json",
+    "model": "Rigid/trophy/00000",
+    "h0_mm": 90.1,
+    "rise_resting_on_a_face_mm": -0.0,
+    "rise_held_on_a_corner_mm": 35.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/general_pickup_9.json",
+    "model": "Rigid/seashell/00000",
+    "h0_mm": 43.6,
+    "rise_resting_on_a_face_mm": -0.5,
+    "rise_held_on_a_corner_mm": 14.0,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_0.json",
+    "model": "Rigid/owl/00000",
+    "h0_mm": 60.5,
+    "rise_resting_on_a_face_mm": -4.1,
+    "rise_held_on_a_corner_mm": 14.4,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_1.json",
+    "model": "Rigid/bottle/00061",
+    "h0_mm": 88.1,
+    "rise_resting_on_a_face_mm": -0.5,
+    "rise_held_on_a_corner_mm": 9.2,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_10.json",
+    "model": "Rigid/headphone/00000",
+    "h0_mm": 75.2,
+    "rise_resting_on_a_face_mm": 24.7,
+    "rise_held_on_a_corner_mm": 68.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_11.json",
+    "model": "Rigid/binoculars/00000",
+    "h0_mm": 31.9,
+    "rise_resting_on_a_face_mm": 56.2,
+    "rise_held_on_a_corner_mm": 93.4,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_12.json",
+    "model": "Rigid/garage/00017",
+    "h0_mm": 90.9,
+    "rise_resting_on_a_face_mm": -2.0,
+    "rise_held_on_a_corner_mm": 34.4,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_13.json",
+    "model": "Rigid/wrench/00002",
+    "h0_mm": 33.4,
+    "rise_resting_on_a_face_mm": 96.9,
+    "rise_held_on_a_corner_mm": 102.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_14.json",
+    "model": "Rigid/shovel/00001",
+    "h0_mm": 7.0,
+    "rise_resting_on_a_face_mm": 123.4,
+    "rise_held_on_a_corner_mm": 134.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_15.json",
+    "model": "Rigid/pen/00010",
+    "h0_mm": 3.2,
+    "rise_resting_on_a_face_mm": 49.7,
+    "rise_held_on_a_corner_mm": 53.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_16.json",
+    "model": "Rigid/waffle/00000",
+    "h0_mm": 16.3,
+    "rise_resting_on_a_face_mm": 31.8,
+    "rise_held_on_a_corner_mm": 52.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_17.json",
+    "model": "Rigid/yogurt/00001",
+    "h0_mm": 33.0,
+    "rise_resting_on_a_face_mm": 11.6,
+    "rise_held_on_a_corner_mm": 29.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_18.json",
+    "model": "Rigid/seashell/00000",
+    "h0_mm": 43.6,
+    "rise_resting_on_a_face_mm": -0.5,
+    "rise_held_on_a_corner_mm": 14.0,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_19.json",
+    "model": "Rigid/usb_multip/00000",
+    "h0_mm": 7.7,
+    "rise_resting_on_a_face_mm": 52.4,
+    "rise_held_on_a_corner_mm": 64.8,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_2.json",
+    "model": "Rigid/corkscrew/00000",
+    "h0_mm": -199.9,
+    "rise_resting_on_a_face_mm": 470.9,
+    "rise_held_on_a_corner_mm": 575.0,
+    "suspect_frame": true
+   },
+   {
+    "layout": "2/general_pickup_20.json",
+    "model": "Rigid/car/00008",
+    "h0_mm": 23.8,
+    "rise_resting_on_a_face_mm": 63.2,
+    "rise_held_on_a_corner_mm": 74.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_21.json",
+    "model": "Rigid/prayer_bead/00000",
+    "h0_mm": 8.9,
+    "rise_resting_on_a_face_mm": 60.5,
+    "rise_held_on_a_corner_mm": 61.0,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_22.json",
+    "model": "Rigid/pen/00011",
+    "h0_mm": 9.2,
+    "rise_resting_on_a_face_mm": 116.6,
+    "rise_held_on_a_corner_mm": 117.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_23.json",
+    "model": "Rigid/car/00008",
+    "h0_mm": 23.8,
+    "rise_resting_on_a_face_mm": 63.2,
+    "rise_held_on_a_corner_mm": 74.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_24.json",
+    "model": "Rigid/cup/00007",
+    "h0_mm": 0.1,
+    "rise_resting_on_a_face_mm": 71.9,
+    "rise_held_on_a_corner_mm": 88.9,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_25.json",
+    "model": "Rigid/watering_can/00000",
+    "h0_mm": 69.0,
+    "rise_resting_on_a_face_mm": 45.4,
+    "rise_held_on_a_corner_mm": 74.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_26.json",
+    "model": "Rigid/power_bank/00002",
+    "h0_mm": 14.8,
+    "rise_resting_on_a_face_mm": 60.3,
+    "rise_held_on_a_corner_mm": 69.0,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_27.json",
+    "model": "Rigid/tape_roll/00000",
+    "h0_mm": 13.0,
+    "rise_resting_on_a_face_mm": 25.3,
+    "rise_held_on_a_corner_mm": 31.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_28.json",
+    "model": "Rigid/handled_paint/00000",
+    "h0_mm": 22.5,
+    "rise_resting_on_a_face_mm": 67.6,
+    "rise_held_on_a_corner_mm": 84.2,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_29.json",
+    "model": "Rigid/clock/00000",
+    "h0_mm": 70.1,
+    "rise_resting_on_a_face_mm": -4.5,
+    "rise_held_on_a_corner_mm": 25.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_3.json",
+    "model": "Rigid/shovel/00002",
+    "h0_mm": 164.8,
+    "rise_resting_on_a_face_mm": 38.3,
+    "rise_held_on_a_corner_mm": 51.0,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_30.json",
+    "model": "Rigid/tape_dispense/00000",
+    "h0_mm": 26.4,
+    "rise_resting_on_a_face_mm": 26.2,
+    "rise_held_on_a_corner_mm": 38.0,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_31.json",
+    "model": "Rigid/car/00008",
+    "h0_mm": 23.8,
+    "rise_resting_on_a_face_mm": 63.2,
+    "rise_held_on_a_corner_mm": 74.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_32.json",
+    "model": "Rigid/cup/00007",
+    "h0_mm": 0.1,
+    "rise_resting_on_a_face_mm": 71.9,
+    "rise_held_on_a_corner_mm": 88.9,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_33.json",
+    "model": "Rigid/usb_multip/00000",
+    "h0_mm": 7.7,
+    "rise_resting_on_a_face_mm": 52.4,
+    "rise_held_on_a_corner_mm": 64.8,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_34.json",
+    "model": "Rigid/shovel/00000",
+    "h0_mm": 41.7,
+    "rise_resting_on_a_face_mm": 89.7,
+    "rise_held_on_a_corner_mm": 102.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_35.json",
+    "model": "Rigid/can/00000",
+    "h0_mm": 30.2,
+    "rise_resting_on_a_face_mm": 108.3,
+    "rise_held_on_a_corner_mm": 112.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_36.json",
+    "model": "Rigid/toy/00002",
+    "h0_mm": 36.5,
+    "rise_resting_on_a_face_mm": 1.4,
+    "rise_held_on_a_corner_mm": 17.8,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_37.json",
+    "model": "Rigid/can/00000",
+    "h0_mm": 30.2,
+    "rise_resting_on_a_face_mm": 108.3,
+    "rise_held_on_a_corner_mm": 112.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_38.json",
+    "model": "Rigid/remote/00001",
+    "h0_mm": 9.8,
+    "rise_resting_on_a_face_mm": 62.6,
+    "rise_held_on_a_corner_mm": 66.8,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_39.json",
+    "model": "Rigid/yogurt/00001",
+    "h0_mm": 33.0,
+    "rise_resting_on_a_face_mm": 11.6,
+    "rise_held_on_a_corner_mm": 29.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_4.json",
+    "model": "Rigid/figurine/00000",
+    "h0_mm": 64.6,
+    "rise_resting_on_a_face_mm": -3.1,
+    "rise_held_on_a_corner_mm": 9.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_40.json",
+    "model": "Rigid/tape_roll/00000",
+    "h0_mm": 13.0,
+    "rise_resting_on_a_face_mm": 25.3,
+    "rise_held_on_a_corner_mm": 31.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_41.json",
+    "model": "Rigid/headphone/00000",
+    "h0_mm": 75.2,
+    "rise_resting_on_a_face_mm": 24.7,
+    "rise_held_on_a_corner_mm": 68.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_42.json",
+    "model": "Rigid/pot/00001",
+    "h0_mm": 93.8,
+    "rise_resting_on_a_face_mm": 76.5,
+    "rise_held_on_a_corner_mm": 126.9,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_43.json",
+    "model": "Rigid/jewelry_box/00000",
+    "h0_mm": 26.0,
+    "rise_resting_on_a_face_mm": 61.6,
+    "rise_held_on_a_corner_mm": 77.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_44.json",
+    "model": "Rigid/watering_can/00000",
+    "h0_mm": 69.0,
+    "rise_resting_on_a_face_mm": 45.4,
+    "rise_held_on_a_corner_mm": 74.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_45.json",
+    "model": "Rigid/remote/00000",
+    "h0_mm": 0.3,
+    "rise_resting_on_a_face_mm": 100.3,
+    "rise_held_on_a_corner_mm": 104.4,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_46.json",
+    "model": "Rigid/kiwi/00000",
+    "h0_mm": 6.4,
+    "rise_resting_on_a_face_mm": 28.2,
+    "rise_held_on_a_corner_mm": 36.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_47.json",
+    "model": "Rigid/correction_tape/00000",
+    "h0_mm": 12.2,
+    "rise_resting_on_a_face_mm": 59.9,
+    "rise_held_on_a_corner_mm": 67.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_48.json",
+    "model": "Rigid/piler/00000",
+    "h0_mm": 22.1,
+    "rise_resting_on_a_face_mm": 68.9,
+    "rise_held_on_a_corner_mm": 75.5,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_49.json",
+    "model": "Rigid/wrench/00001",
+    "h0_mm": 83.3,
+    "rise_resting_on_a_face_mm": 3.4,
+    "rise_held_on_a_corner_mm": 5.0,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_5.json",
+    "model": "Rigid/grapes/00000",
+    "h0_mm": 86.6,
+    "rise_resting_on_a_face_mm": -27.6,
+    "rise_held_on_a_corner_mm": 10.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_50.json",
+    "model": "Rigid/helicopter/00000",
+    "h0_mm": 58.0,
+    "rise_resting_on_a_face_mm": 53.6,
+    "rise_held_on_a_corner_mm": 88.9,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_51.json",
+    "model": "Rigid/bell/00000",
+    "h0_mm": 132.8,
+    "rise_resting_on_a_face_mm": -24.7,
+    "rise_held_on_a_corner_mm": 13.0,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_52.json",
+    "model": "Rigid/noodles/00000",
+    "h0_mm": 0.9,
+    "rise_resting_on_a_face_mm": 99.2,
+    "rise_held_on_a_corner_mm": 120.9,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_53.json",
+    "model": "Rigid/cactus/00000",
+    "h0_mm": 97.2,
+    "rise_resting_on_a_face_mm": -7.2,
+    "rise_held_on_a_corner_mm": 11.2,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_54.json",
+    "model": "Rigid/glasses/00000",
+    "h0_mm": -159.4,
+    "rise_resting_on_a_face_mm": 463.7,
+    "rise_held_on_a_corner_mm": 567.6,
+    "suspect_frame": true
+   },
+   {
+    "layout": "2/general_pickup_6.json",
+    "model": "Rigid/remote/00001",
+    "h0_mm": 9.8,
+    "rise_resting_on_a_face_mm": 62.6,
+    "rise_held_on_a_corner_mm": 66.8,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_7.json",
+    "model": "Rigid/scan/00000",
+    "h0_mm": 19.2,
+    "rise_resting_on_a_face_mm": 44.3,
+    "rise_held_on_a_corner_mm": 54.4,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_8.json",
+    "model": "Rigid/jewelry_box/00000",
+    "h0_mm": 26.0,
+    "rise_resting_on_a_face_mm": 61.6,
+    "rise_held_on_a_corner_mm": 77.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/general_pickup_9.json",
+    "model": "Rigid/garage/00017",
+    "h0_mm": 90.9,
+    "rise_resting_on_a_face_mm": -2.0,
+    "rise_held_on_a_corner_mm": 34.4,
+    "suspect_frame": false
+   }
+  ]
+ },
+ "match_and_pick_from_conveyor": {
+  "label": "target1",
+  "threshold_m": 0.1,
+  "placements": 165,
+  "excluded_suspect_frame": [],
+  "pass_resting_on_a_face": 25,
+  "pass_held_on_a_corner": 36,
+  "models_passing_resting_on_a_face": [
+   "Rigid/phone/00000"
+  ],
+  "rows": [
+   {
+    "layout": "0/match_and_pick_from_conveyor_0.json",
+    "model": "Rigid/game_machine/00000",
+    "h0_mm": 11.7,
+    "rise_resting_on_a_face_mm": 20.2,
+    "rise_held_on_a_corner_mm": 34.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_1.json",
+    "model": "Rigid/phone/00000",
+    "h0_mm": 9.6,
+    "rise_resting_on_a_face_mm": 105.2,
+    "rise_held_on_a_corner_mm": 108.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_10.json",
+    "model": "Rigid/camera/00002",
+    "h0_mm": 79.9,
+    "rise_resting_on_a_face_mm": 67.5,
+    "rise_held_on_a_corner_mm": 117.0,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_11.json",
+    "model": "Rigid/garage/00016",
+    "h0_mm": 120.2,
+    "rise_resting_on_a_face_mm": 0.0,
+    "rise_held_on_a_corner_mm": 32.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_12.json",
+    "model": "Rigid/bottle/00047",
+    "h0_mm": 73.0,
+    "rise_resting_on_a_face_mm": 0.0,
+    "rise_held_on_a_corner_mm": 10.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_13.json",
+    "model": "Rigid/puppet/00000",
+    "h0_mm": 64.7,
+    "rise_resting_on_a_face_mm": 3.6,
+    "rise_held_on_a_corner_mm": 18.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_14.json",
+    "model": "Rigid/garage/00016",
+    "h0_mm": 120.2,
+    "rise_resting_on_a_face_mm": 0.0,
+    "rise_held_on_a_corner_mm": 32.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_15.json",
+    "model": "Rigid/phone/00000",
+    "h0_mm": 9.6,
+    "rise_resting_on_a_face_mm": 105.2,
+    "rise_held_on_a_corner_mm": 108.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_16.json",
+    "model": "Rigid/bottle/00047",
+    "h0_mm": 73.0,
+    "rise_resting_on_a_face_mm": 0.0,
+    "rise_held_on_a_corner_mm": 10.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_17.json",
+    "model": "Rigid/garage/00016",
+    "h0_mm": 120.2,
+    "rise_resting_on_a_face_mm": 0.0,
+    "rise_held_on_a_corner_mm": 32.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_18.json",
+    "model": "Rigid/game_machine/00000",
+    "h0_mm": 11.7,
+    "rise_resting_on_a_face_mm": 20.2,
+    "rise_held_on_a_corner_mm": 34.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_19.json",
+    "model": "Rigid/ice_cream/00000",
+    "h0_mm": 50.3,
+    "rise_resting_on_a_face_mm": 1.8,
+    "rise_held_on_a_corner_mm": 38.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_2.json",
+    "model": "Rigid/ice_cream/00000",
+    "h0_mm": 50.3,
+    "rise_resting_on_a_face_mm": 1.8,
+    "rise_held_on_a_corner_mm": 38.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_20.json",
+    "model": "Rigid/game_machine/00000",
+    "h0_mm": 11.7,
+    "rise_resting_on_a_face_mm": 20.2,
+    "rise_held_on_a_corner_mm": 34.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_21.json",
+    "model": "Rigid/camera/00002",
+    "h0_mm": 79.9,
+    "rise_resting_on_a_face_mm": 67.5,
+    "rise_held_on_a_corner_mm": 117.0,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_22.json",
+    "model": "Rigid/puppet/00000",
+    "h0_mm": 64.7,
+    "rise_resting_on_a_face_mm": 3.6,
+    "rise_held_on_a_corner_mm": 18.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_23.json",
+    "model": "Rigid/puppet/00000",
+    "h0_mm": 64.7,
+    "rise_resting_on_a_face_mm": 3.6,
+    "rise_held_on_a_corner_mm": 18.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_24.json",
+    "model": "Rigid/ice_cream/00000",
+    "h0_mm": 50.3,
+    "rise_resting_on_a_face_mm": 1.8,
+    "rise_held_on_a_corner_mm": 38.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_25.json",
+    "model": "Rigid/phone/00000",
+    "h0_mm": 9.6,
+    "rise_resting_on_a_face_mm": 105.2,
+    "rise_held_on_a_corner_mm": 108.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_26.json",
+    "model": "Rigid/game_machine/00000",
+    "h0_mm": 11.7,
+    "rise_resting_on_a_face_mm": 20.2,
+    "rise_held_on_a_corner_mm": 34.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_27.json",
+    "model": "Rigid/phone/00000",
+    "h0_mm": 9.6,
+    "rise_resting_on_a_face_mm": 105.2,
+    "rise_held_on_a_corner_mm": 108.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_28.json",
+    "model": "Rigid/camera/00002",
+    "h0_mm": 79.9,
+    "rise_resting_on_a_face_mm": 67.5,
+    "rise_held_on_a_corner_mm": 117.0,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_29.json",
+    "model": "Rigid/bottle/00047",
+    "h0_mm": 32.0,
+    "rise_resting_on_a_face_mm": 41.0,
+    "rise_held_on_a_corner_mm": 51.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_3.json",
+    "model": "Rigid/phone/00000",
+    "h0_mm": 9.6,
+    "rise_resting_on_a_face_mm": 105.2,
+    "rise_held_on_a_corner_mm": 108.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_30.json",
+    "model": "Rigid/garage/00016",
+    "h0_mm": 120.2,
+    "rise_resting_on_a_face_mm": 0.0,
+    "rise_held_on_a_corner_mm": 32.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_31.json",
+    "model": "Rigid/ice_cream/00000",
+    "h0_mm": 50.3,
+    "rise_resting_on_a_face_mm": 1.8,
+    "rise_held_on_a_corner_mm": 38.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_32.json",
+    "model": "Rigid/puppet/00000",
+    "h0_mm": 64.7,
+    "rise_resting_on_a_face_mm": 3.6,
+    "rise_held_on_a_corner_mm": 18.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_33.json",
+    "model": "Rigid/ice_cream/00000",
+    "h0_mm": 50.3,
+    "rise_resting_on_a_face_mm": 1.8,
+    "rise_held_on_a_corner_mm": 38.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_34.json",
+    "model": "Rigid/garage/00016",
+    "h0_mm": 120.2,
+    "rise_resting_on_a_face_mm": 0.0,
+    "rise_held_on_a_corner_mm": 32.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_35.json",
+    "model": "Rigid/game_machine/00000",
+    "h0_mm": 11.7,
+    "rise_resting_on_a_face_mm": 20.2,
+    "rise_held_on_a_corner_mm": 34.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_36.json",
+    "model": "Rigid/bottle/00047",
+    "h0_mm": 73.0,
+    "rise_resting_on_a_face_mm": 0.0,
+    "rise_held_on_a_corner_mm": 10.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_37.json",
+    "model": "Rigid/headset/00007",
+    "h0_mm": 59.5,
+    "rise_resting_on_a_face_mm": 60.9,
+    "rise_held_on_a_corner_mm": 105.4,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_38.json",
+    "model": "Rigid/plate/00002",
+    "h0_mm": 17.8,
+    "rise_resting_on_a_face_mm": 72.3,
+    "rise_held_on_a_corner_mm": 75.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_39.json",
+    "model": "Rigid/camera/00002",
+    "h0_mm": 79.9,
+    "rise_resting_on_a_face_mm": 67.5,
+    "rise_held_on_a_corner_mm": 117.0,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_4.json",
+    "model": "Rigid/game_machine/00000",
+    "h0_mm": 11.7,
+    "rise_resting_on_a_face_mm": 20.2,
+    "rise_held_on_a_corner_mm": 34.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_40.json",
+    "model": "Rigid/phone/00000",
+    "h0_mm": 9.6,
+    "rise_resting_on_a_face_mm": 105.2,
+    "rise_held_on_a_corner_mm": 108.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_41.json",
+    "model": "Rigid/game_machine/00000",
+    "h0_mm": 11.7,
+    "rise_resting_on_a_face_mm": 20.2,
+    "rise_held_on_a_corner_mm": 34.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_42.json",
+    "model": "Rigid/bottle/00047",
+    "h0_mm": 32.0,
+    "rise_resting_on_a_face_mm": 41.0,
+    "rise_held_on_a_corner_mm": 51.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_43.json",
+    "model": "Rigid/puppet/00000",
+    "h0_mm": 64.7,
+    "rise_resting_on_a_face_mm": 3.6,
+    "rise_held_on_a_corner_mm": 18.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_44.json",
+    "model": "Rigid/bottle/00047",
+    "h0_mm": 32.0,
+    "rise_resting_on_a_face_mm": 41.0,
+    "rise_held_on_a_corner_mm": 51.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_45.json",
+    "model": "Rigid/ice_cream/00000",
+    "h0_mm": 50.3,
+    "rise_resting_on_a_face_mm": 1.8,
+    "rise_held_on_a_corner_mm": 38.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_46.json",
+    "model": "Rigid/plate/00002",
+    "h0_mm": 17.8,
+    "rise_resting_on_a_face_mm": 72.3,
+    "rise_held_on_a_corner_mm": 75.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_47.json",
+    "model": "Rigid/puppet/00000",
+    "h0_mm": 64.7,
+    "rise_resting_on_a_face_mm": 3.6,
+    "rise_held_on_a_corner_mm": 18.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_48.json",
+    "model": "Rigid/ice_cream/00000",
+    "h0_mm": 50.3,
+    "rise_resting_on_a_face_mm": 1.8,
+    "rise_held_on_a_corner_mm": 38.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_49.json",
+    "model": "Rigid/plate/00002",
+    "h0_mm": 17.8,
+    "rise_resting_on_a_face_mm": 72.3,
+    "rise_held_on_a_corner_mm": 75.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_5.json",
+    "model": "Rigid/ice_cream/00000",
+    "h0_mm": 50.3,
+    "rise_resting_on_a_face_mm": 1.8,
+    "rise_held_on_a_corner_mm": 38.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_50.json",
+    "model": "Rigid/bottle/00047",
+    "h0_mm": 73.0,
+    "rise_resting_on_a_face_mm": 0.0,
+    "rise_held_on_a_corner_mm": 10.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_51.json",
+    "model": "Rigid/game_machine/00000",
+    "h0_mm": 11.7,
+    "rise_resting_on_a_face_mm": 20.2,
+    "rise_held_on_a_corner_mm": 34.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_52.json",
+    "model": "Rigid/phone/00000",
+    "h0_mm": 9.6,
+    "rise_resting_on_a_face_mm": 105.2,
+    "rise_held_on_a_corner_mm": 108.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_53.json",
+    "model": "Rigid/ice_cream/00000",
+    "h0_mm": 50.3,
+    "rise_resting_on_a_face_mm": 1.8,
+    "rise_held_on_a_corner_mm": 38.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_54.json",
+    "model": "Rigid/game_machine/00000",
+    "h0_mm": 11.7,
+    "rise_resting_on_a_face_mm": 20.2,
+    "rise_held_on_a_corner_mm": 34.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_6.json",
+    "model": "Rigid/phone/00000",
+    "h0_mm": 9.6,
+    "rise_resting_on_a_face_mm": 105.2,
+    "rise_held_on_a_corner_mm": 108.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_7.json",
+    "model": "Rigid/ice_cream/00000",
+    "h0_mm": 50.3,
+    "rise_resting_on_a_face_mm": 1.8,
+    "rise_held_on_a_corner_mm": 38.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_8.json",
+    "model": "Rigid/bottle/00047",
+    "h0_mm": 73.0,
+    "rise_resting_on_a_face_mm": 0.0,
+    "rise_held_on_a_corner_mm": 10.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/match_and_pick_from_conveyor_9.json",
+    "model": "Rigid/phone/00000",
+    "h0_mm": 9.6,
+    "rise_resting_on_a_face_mm": 105.2,
+    "rise_held_on_a_corner_mm": 108.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_0.json",
+    "model": "Rigid/camera/00002",
+    "h0_mm": 79.9,
+    "rise_resting_on_a_face_mm": 67.5,
+    "rise_held_on_a_corner_mm": 117.0,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_1.json",
+    "model": "Rigid/plate/00002",
+    "h0_mm": 17.8,
+    "rise_resting_on_a_face_mm": 72.3,
+    "rise_held_on_a_corner_mm": 75.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_10.json",
+    "model": "Rigid/puppet/00000",
+    "h0_mm": 64.7,
+    "rise_resting_on_a_face_mm": 3.6,
+    "rise_held_on_a_corner_mm": 18.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_11.json",
+    "model": "Rigid/plate/00002",
+    "h0_mm": 17.8,
+    "rise_resting_on_a_face_mm": 72.3,
+    "rise_held_on_a_corner_mm": 75.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_12.json",
+    "model": "Rigid/game_machine/00000",
+    "h0_mm": 11.7,
+    "rise_resting_on_a_face_mm": 20.2,
+    "rise_held_on_a_corner_mm": 34.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_13.json",
+    "model": "Rigid/phone/00000",
+    "h0_mm": 9.6,
+    "rise_resting_on_a_face_mm": 105.2,
+    "rise_held_on_a_corner_mm": 108.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_14.json",
+    "model": "Rigid/bottle/00047",
+    "h0_mm": 32.0,
+    "rise_resting_on_a_face_mm": 41.0,
+    "rise_held_on_a_corner_mm": 51.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_15.json",
+    "model": "Rigid/game_machine/00000",
+    "h0_mm": 11.7,
+    "rise_resting_on_a_face_mm": 20.2,
+    "rise_held_on_a_corner_mm": 34.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_16.json",
+    "model": "Rigid/plate/00002",
+    "h0_mm": 17.8,
+    "rise_resting_on_a_face_mm": 72.3,
+    "rise_held_on_a_corner_mm": 75.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_17.json",
+    "model": "Rigid/plate/00002",
+    "h0_mm": 17.8,
+    "rise_resting_on_a_face_mm": 72.3,
+    "rise_held_on_a_corner_mm": 75.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_18.json",
+    "model": "Rigid/ice_cream/00000",
+    "h0_mm": 50.3,
+    "rise_resting_on_a_face_mm": 1.8,
+    "rise_held_on_a_corner_mm": 38.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_19.json",
+    "model": "Rigid/phone/00000",
+    "h0_mm": 9.6,
+    "rise_resting_on_a_face_mm": 105.2,
+    "rise_held_on_a_corner_mm": 108.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_2.json",
+    "model": "Rigid/puppet/00000",
+    "h0_mm": 64.7,
+    "rise_resting_on_a_face_mm": 3.6,
+    "rise_held_on_a_corner_mm": 18.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_20.json",
+    "model": "Rigid/puppet/00000",
+    "h0_mm": 64.7,
+    "rise_resting_on_a_face_mm": 3.6,
+    "rise_held_on_a_corner_mm": 18.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_21.json",
+    "model": "Rigid/bottle/00047",
+    "h0_mm": 73.0,
+    "rise_resting_on_a_face_mm": 0.0,
+    "rise_held_on_a_corner_mm": 10.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_22.json",
+    "model": "Rigid/camera/00002",
+    "h0_mm": 79.9,
+    "rise_resting_on_a_face_mm": 67.5,
+    "rise_held_on_a_corner_mm": 117.0,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_23.json",
+    "model": "Rigid/plate/00002",
+    "h0_mm": 17.8,
+    "rise_resting_on_a_face_mm": 72.3,
+    "rise_held_on_a_corner_mm": 75.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_24.json",
+    "model": "Rigid/plate/00002",
+    "h0_mm": 17.8,
+    "rise_resting_on_a_face_mm": 72.3,
+    "rise_held_on_a_corner_mm": 75.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_25.json",
+    "model": "Rigid/bottle/00047",
+    "h0_mm": 73.0,
+    "rise_resting_on_a_face_mm": 0.0,
+    "rise_held_on_a_corner_mm": 10.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_26.json",
+    "model": "Rigid/ice_cream/00000",
+    "h0_mm": 50.3,
+    "rise_resting_on_a_face_mm": 1.8,
+    "rise_held_on_a_corner_mm": 38.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_27.json",
+    "model": "Rigid/phone/00000",
+    "h0_mm": 9.6,
+    "rise_resting_on_a_face_mm": 105.2,
+    "rise_held_on_a_corner_mm": 108.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_28.json",
+    "model": "Rigid/plate/00002",
+    "h0_mm": 17.8,
+    "rise_resting_on_a_face_mm": 72.3,
+    "rise_held_on_a_corner_mm": 75.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_29.json",
+    "model": "Rigid/bottle/00047",
+    "h0_mm": 73.0,
+    "rise_resting_on_a_face_mm": 0.0,
+    "rise_held_on_a_corner_mm": 10.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_3.json",
+    "model": "Rigid/bottle/00047",
+    "h0_mm": 73.0,
+    "rise_resting_on_a_face_mm": 0.0,
+    "rise_held_on_a_corner_mm": 10.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_30.json",
+    "model": "Rigid/garage/00016",
+    "h0_mm": 120.2,
+    "rise_resting_on_a_face_mm": 0.0,
+    "rise_held_on_a_corner_mm": 32.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_31.json",
+    "model": "Rigid/phone/00000",
+    "h0_mm": 9.6,
+    "rise_resting_on_a_face_mm": 105.2,
+    "rise_held_on_a_corner_mm": 108.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_32.json",
+    "model": "Rigid/garage/00016",
+    "h0_mm": 120.2,
+    "rise_resting_on_a_face_mm": 0.0,
+    "rise_held_on_a_corner_mm": 32.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_33.json",
+    "model": "Rigid/phone/00000",
+    "h0_mm": 9.6,
+    "rise_resting_on_a_face_mm": 105.2,
+    "rise_held_on_a_corner_mm": 108.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_34.json",
+    "model": "Rigid/phone/00000",
+    "h0_mm": 9.6,
+    "rise_resting_on_a_face_mm": 105.2,
+    "rise_held_on_a_corner_mm": 108.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_35.json",
+    "model": "Rigid/garage/00016",
+    "h0_mm": 120.2,
+    "rise_resting_on_a_face_mm": 0.0,
+    "rise_held_on_a_corner_mm": 32.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_36.json",
+    "model": "Rigid/game_machine/00000",
+    "h0_mm": 11.7,
+    "rise_resting_on_a_face_mm": 20.2,
+    "rise_held_on_a_corner_mm": 34.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_37.json",
+    "model": "Rigid/plate/00002",
+    "h0_mm": 17.8,
+    "rise_resting_on_a_face_mm": 72.3,
+    "rise_held_on_a_corner_mm": 75.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_38.json",
+    "model": "Rigid/garage/00016",
+    "h0_mm": 120.2,
+    "rise_resting_on_a_face_mm": 0.0,
+    "rise_held_on_a_corner_mm": 32.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_39.json",
+    "model": "Rigid/headset/00007",
+    "h0_mm": 59.5,
+    "rise_resting_on_a_face_mm": 60.9,
+    "rise_held_on_a_corner_mm": 105.4,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_4.json",
+    "model": "Rigid/puppet/00000",
+    "h0_mm": 64.7,
+    "rise_resting_on_a_face_mm": 3.6,
+    "rise_held_on_a_corner_mm": 18.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_40.json",
+    "model": "Rigid/phone/00000",
+    "h0_mm": 9.6,
+    "rise_resting_on_a_face_mm": 105.2,
+    "rise_held_on_a_corner_mm": 108.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_41.json",
+    "model": "Rigid/puppet/00000",
+    "h0_mm": 64.7,
+    "rise_resting_on_a_face_mm": 3.6,
+    "rise_held_on_a_corner_mm": 18.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_42.json",
+    "model": "Rigid/plate/00002",
+    "h0_mm": 17.8,
+    "rise_resting_on_a_face_mm": 72.3,
+    "rise_held_on_a_corner_mm": 75.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_43.json",
+    "model": "Rigid/phone/00000",
+    "h0_mm": 9.6,
+    "rise_resting_on_a_face_mm": 105.2,
+    "rise_held_on_a_corner_mm": 108.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_44.json",
+    "model": "Rigid/garage/00016",
+    "h0_mm": 120.2,
+    "rise_resting_on_a_face_mm": 0.0,
+    "rise_held_on_a_corner_mm": 32.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_45.json",
+    "model": "Rigid/plate/00002",
+    "h0_mm": 17.8,
+    "rise_resting_on_a_face_mm": 72.3,
+    "rise_held_on_a_corner_mm": 75.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_46.json",
+    "model": "Rigid/plate/00002",
+    "h0_mm": 17.8,
+    "rise_resting_on_a_face_mm": 72.3,
+    "rise_held_on_a_corner_mm": 75.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_47.json",
+    "model": "Rigid/game_machine/00000",
+    "h0_mm": 11.7,
+    "rise_resting_on_a_face_mm": 20.2,
+    "rise_held_on_a_corner_mm": 34.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_48.json",
+    "model": "Rigid/plate/00002",
+    "h0_mm": 17.8,
+    "rise_resting_on_a_face_mm": 72.3,
+    "rise_held_on_a_corner_mm": 75.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_49.json",
+    "model": "Rigid/puppet/00000",
+    "h0_mm": 64.7,
+    "rise_resting_on_a_face_mm": 3.6,
+    "rise_held_on_a_corner_mm": 18.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_5.json",
+    "model": "Rigid/ice_cream/00000",
+    "h0_mm": 50.3,
+    "rise_resting_on_a_face_mm": 1.8,
+    "rise_held_on_a_corner_mm": 38.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_50.json",
+    "model": "Rigid/camera/00002",
+    "h0_mm": 79.9,
+    "rise_resting_on_a_face_mm": 67.5,
+    "rise_held_on_a_corner_mm": 117.0,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_51.json",
+    "model": "Rigid/plate/00002",
+    "h0_mm": 17.8,
+    "rise_resting_on_a_face_mm": 72.3,
+    "rise_held_on_a_corner_mm": 75.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_52.json",
+    "model": "Rigid/game_machine/00000",
+    "h0_mm": 11.7,
+    "rise_resting_on_a_face_mm": 20.2,
+    "rise_held_on_a_corner_mm": 34.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_53.json",
+    "model": "Rigid/bottle/00047",
+    "h0_mm": 73.0,
+    "rise_resting_on_a_face_mm": 0.0,
+    "rise_held_on_a_corner_mm": 10.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_54.json",
+    "model": "Rigid/garage/00016",
+    "h0_mm": 120.2,
+    "rise_resting_on_a_face_mm": 0.0,
+    "rise_held_on_a_corner_mm": 32.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_6.json",
+    "model": "Rigid/bottle/00047",
+    "h0_mm": 32.0,
+    "rise_resting_on_a_face_mm": 41.0,
+    "rise_held_on_a_corner_mm": 51.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_7.json",
+    "model": "Rigid/garage/00016",
+    "h0_mm": 120.2,
+    "rise_resting_on_a_face_mm": 0.0,
+    "rise_held_on_a_corner_mm": 32.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_8.json",
+    "model": "Rigid/bottle/00047",
+    "h0_mm": 73.0,
+    "rise_resting_on_a_face_mm": 0.0,
+    "rise_held_on_a_corner_mm": 10.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/match_and_pick_from_conveyor_9.json",
+    "model": "Rigid/plate/00002",
+    "h0_mm": 17.8,
+    "rise_resting_on_a_face_mm": 72.3,
+    "rise_held_on_a_corner_mm": 75.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_0.json",
+    "model": "Rigid/ice_cream/00000",
+    "h0_mm": 50.3,
+    "rise_resting_on_a_face_mm": 1.8,
+    "rise_held_on_a_corner_mm": 38.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_1.json",
+    "model": "Rigid/phone/00000",
+    "h0_mm": 9.6,
+    "rise_resting_on_a_face_mm": 105.2,
+    "rise_held_on_a_corner_mm": 108.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_10.json",
+    "model": "Rigid/garage/00016",
+    "h0_mm": 120.2,
+    "rise_resting_on_a_face_mm": 0.0,
+    "rise_held_on_a_corner_mm": 32.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_11.json",
+    "model": "Rigid/camera/00002",
+    "h0_mm": 79.9,
+    "rise_resting_on_a_face_mm": 67.5,
+    "rise_held_on_a_corner_mm": 117.0,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_12.json",
+    "model": "Rigid/puppet/00000",
+    "h0_mm": 64.7,
+    "rise_resting_on_a_face_mm": 3.6,
+    "rise_held_on_a_corner_mm": 18.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_13.json",
+    "model": "Rigid/ice_cream/00000",
+    "h0_mm": 50.3,
+    "rise_resting_on_a_face_mm": 1.8,
+    "rise_held_on_a_corner_mm": 38.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_14.json",
+    "model": "Rigid/plate/00002",
+    "h0_mm": 17.8,
+    "rise_resting_on_a_face_mm": 72.3,
+    "rise_held_on_a_corner_mm": 75.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_15.json",
+    "model": "Rigid/game_machine/00000",
+    "h0_mm": 11.7,
+    "rise_resting_on_a_face_mm": 20.2,
+    "rise_held_on_a_corner_mm": 34.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_16.json",
+    "model": "Rigid/puppet/00000",
+    "h0_mm": 64.7,
+    "rise_resting_on_a_face_mm": 3.6,
+    "rise_held_on_a_corner_mm": 18.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_17.json",
+    "model": "Rigid/bottle/00047",
+    "h0_mm": 73.0,
+    "rise_resting_on_a_face_mm": 0.0,
+    "rise_held_on_a_corner_mm": 10.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_18.json",
+    "model": "Rigid/game_machine/00000",
+    "h0_mm": 11.7,
+    "rise_resting_on_a_face_mm": 20.2,
+    "rise_held_on_a_corner_mm": 34.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_19.json",
+    "model": "Rigid/ice_cream/00000",
+    "h0_mm": 50.3,
+    "rise_resting_on_a_face_mm": 1.8,
+    "rise_held_on_a_corner_mm": 38.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_2.json",
+    "model": "Rigid/phone/00000",
+    "h0_mm": 9.6,
+    "rise_resting_on_a_face_mm": 105.2,
+    "rise_held_on_a_corner_mm": 108.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_20.json",
+    "model": "Rigid/puppet/00000",
+    "h0_mm": 64.7,
+    "rise_resting_on_a_face_mm": 3.6,
+    "rise_held_on_a_corner_mm": 18.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_21.json",
+    "model": "Rigid/puppet/00000",
+    "h0_mm": 64.7,
+    "rise_resting_on_a_face_mm": 3.6,
+    "rise_held_on_a_corner_mm": 18.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_22.json",
+    "model": "Rigid/garage/00016",
+    "h0_mm": 120.2,
+    "rise_resting_on_a_face_mm": 0.0,
+    "rise_held_on_a_corner_mm": 32.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_23.json",
+    "model": "Rigid/bottle/00047",
+    "h0_mm": 73.0,
+    "rise_resting_on_a_face_mm": 0.0,
+    "rise_held_on_a_corner_mm": 10.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_24.json",
+    "model": "Rigid/ice_cream/00000",
+    "h0_mm": 50.3,
+    "rise_resting_on_a_face_mm": 1.8,
+    "rise_held_on_a_corner_mm": 38.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_25.json",
+    "model": "Rigid/phone/00000",
+    "h0_mm": 9.6,
+    "rise_resting_on_a_face_mm": 105.2,
+    "rise_held_on_a_corner_mm": 108.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_26.json",
+    "model": "Rigid/game_machine/00000",
+    "h0_mm": 11.7,
+    "rise_resting_on_a_face_mm": 20.2,
+    "rise_held_on_a_corner_mm": 34.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_27.json",
+    "model": "Rigid/bottle/00047",
+    "h0_mm": 32.0,
+    "rise_resting_on_a_face_mm": 41.0,
+    "rise_held_on_a_corner_mm": 51.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_28.json",
+    "model": "Rigid/garage/00016",
+    "h0_mm": 120.2,
+    "rise_resting_on_a_face_mm": 0.0,
+    "rise_held_on_a_corner_mm": 32.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_29.json",
+    "model": "Rigid/plate/00002",
+    "h0_mm": 17.8,
+    "rise_resting_on_a_face_mm": 72.3,
+    "rise_held_on_a_corner_mm": 75.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_3.json",
+    "model": "Rigid/phone/00000",
+    "h0_mm": 9.6,
+    "rise_resting_on_a_face_mm": 105.2,
+    "rise_held_on_a_corner_mm": 108.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_30.json",
+    "model": "Rigid/puppet/00000",
+    "h0_mm": 64.7,
+    "rise_resting_on_a_face_mm": 3.6,
+    "rise_held_on_a_corner_mm": 18.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_31.json",
+    "model": "Rigid/bottle/00047",
+    "h0_mm": 73.0,
+    "rise_resting_on_a_face_mm": 0.0,
+    "rise_held_on_a_corner_mm": 10.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_32.json",
+    "model": "Rigid/puppet/00000",
+    "h0_mm": 64.7,
+    "rise_resting_on_a_face_mm": 3.6,
+    "rise_held_on_a_corner_mm": 18.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_33.json",
+    "model": "Rigid/phone/00000",
+    "h0_mm": 9.6,
+    "rise_resting_on_a_face_mm": 105.2,
+    "rise_held_on_a_corner_mm": 108.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_34.json",
+    "model": "Rigid/plate/00002",
+    "h0_mm": 17.8,
+    "rise_resting_on_a_face_mm": 72.3,
+    "rise_held_on_a_corner_mm": 75.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_35.json",
+    "model": "Rigid/game_machine/00000",
+    "h0_mm": 11.7,
+    "rise_resting_on_a_face_mm": 20.2,
+    "rise_held_on_a_corner_mm": 34.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_36.json",
+    "model": "Rigid/game_machine/00000",
+    "h0_mm": 11.7,
+    "rise_resting_on_a_face_mm": 20.2,
+    "rise_held_on_a_corner_mm": 34.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_37.json",
+    "model": "Rigid/puppet/00000",
+    "h0_mm": 64.7,
+    "rise_resting_on_a_face_mm": 3.6,
+    "rise_held_on_a_corner_mm": 18.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_38.json",
+    "model": "Rigid/garage/00016",
+    "h0_mm": 120.2,
+    "rise_resting_on_a_face_mm": 0.0,
+    "rise_held_on_a_corner_mm": 32.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_39.json",
+    "model": "Rigid/game_machine/00000",
+    "h0_mm": 11.7,
+    "rise_resting_on_a_face_mm": 20.2,
+    "rise_held_on_a_corner_mm": 34.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_4.json",
+    "model": "Rigid/phone/00000",
+    "h0_mm": 9.6,
+    "rise_resting_on_a_face_mm": 105.2,
+    "rise_held_on_a_corner_mm": 108.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_40.json",
+    "model": "Rigid/ice_cream/00000",
+    "h0_mm": 50.3,
+    "rise_resting_on_a_face_mm": 1.8,
+    "rise_held_on_a_corner_mm": 38.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_41.json",
+    "model": "Rigid/camera/00002",
+    "h0_mm": 79.9,
+    "rise_resting_on_a_face_mm": 67.5,
+    "rise_held_on_a_corner_mm": 117.0,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_42.json",
+    "model": "Rigid/garage/00016",
+    "h0_mm": 120.2,
+    "rise_resting_on_a_face_mm": 0.0,
+    "rise_held_on_a_corner_mm": 32.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_43.json",
+    "model": "Rigid/ice_cream/00000",
+    "h0_mm": 50.3,
+    "rise_resting_on_a_face_mm": 1.8,
+    "rise_held_on_a_corner_mm": 38.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_44.json",
+    "model": "Rigid/ice_cream/00000",
+    "h0_mm": 50.3,
+    "rise_resting_on_a_face_mm": 1.8,
+    "rise_held_on_a_corner_mm": 38.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_45.json",
+    "model": "Rigid/ice_cream/00000",
+    "h0_mm": 50.3,
+    "rise_resting_on_a_face_mm": 1.8,
+    "rise_held_on_a_corner_mm": 38.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_46.json",
+    "model": "Rigid/plate/00002",
+    "h0_mm": 17.8,
+    "rise_resting_on_a_face_mm": 72.3,
+    "rise_held_on_a_corner_mm": 75.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_47.json",
+    "model": "Rigid/bottle/00047",
+    "h0_mm": 73.0,
+    "rise_resting_on_a_face_mm": 0.0,
+    "rise_held_on_a_corner_mm": 10.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_48.json",
+    "model": "Rigid/bottle/00047",
+    "h0_mm": 73.0,
+    "rise_resting_on_a_face_mm": 0.0,
+    "rise_held_on_a_corner_mm": 10.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_49.json",
+    "model": "Rigid/plate/00002",
+    "h0_mm": 17.8,
+    "rise_resting_on_a_face_mm": 72.3,
+    "rise_held_on_a_corner_mm": 75.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_5.json",
+    "model": "Rigid/phone/00000",
+    "h0_mm": 9.6,
+    "rise_resting_on_a_face_mm": 105.2,
+    "rise_held_on_a_corner_mm": 108.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_50.json",
+    "model": "Rigid/plate/00002",
+    "h0_mm": 17.8,
+    "rise_resting_on_a_face_mm": 72.3,
+    "rise_held_on_a_corner_mm": 75.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_51.json",
+    "model": "Rigid/puppet/00000",
+    "h0_mm": 64.7,
+    "rise_resting_on_a_face_mm": 3.6,
+    "rise_held_on_a_corner_mm": 18.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_52.json",
+    "model": "Rigid/plate/00002",
+    "h0_mm": 17.8,
+    "rise_resting_on_a_face_mm": 72.3,
+    "rise_held_on_a_corner_mm": 75.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_53.json",
+    "model": "Rigid/game_machine/00000",
+    "h0_mm": 11.7,
+    "rise_resting_on_a_face_mm": 20.2,
+    "rise_held_on_a_corner_mm": 34.1,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_54.json",
+    "model": "Rigid/phone/00000",
+    "h0_mm": 9.6,
+    "rise_resting_on_a_face_mm": 105.2,
+    "rise_held_on_a_corner_mm": 108.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_6.json",
+    "model": "Rigid/plate/00002",
+    "h0_mm": 17.8,
+    "rise_resting_on_a_face_mm": 72.3,
+    "rise_held_on_a_corner_mm": 75.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_7.json",
+    "model": "Rigid/bottle/00047",
+    "h0_mm": 73.0,
+    "rise_resting_on_a_face_mm": 0.0,
+    "rise_held_on_a_corner_mm": 10.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_8.json",
+    "model": "Rigid/bottle/00047",
+    "h0_mm": 73.0,
+    "rise_resting_on_a_face_mm": 0.0,
+    "rise_held_on_a_corner_mm": 10.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/match_and_pick_from_conveyor_9.json",
+    "model": "Rigid/ice_cream/00000",
+    "h0_mm": 50.3,
+    "rise_resting_on_a_face_mm": 1.8,
+    "rise_held_on_a_corner_mm": 38.6,
+    "suspect_frame": false
+   }
+  ]
+ },
+ "pick_from_conveyor_by_image": {
+  "label": "target",
+  "threshold_m": 0.08,
+  "placements": 165,
+  "excluded_suspect_frame": [],
+  "pass_resting_on_a_face": 30,
+  "pass_held_on_a_corner": 39,
+  "models_passing_resting_on_a_face": [
+   "Rigid/can/00000",
+   "Rigid/noodles/00000",
+   "Rigid/remote/00000"
+  ],
+  "rows": [
+   {
+    "layout": "0/pick_from_conveyor_by_image_0.json",
+    "model": "Rigid/toy/00001",
+    "h0_mm": 56.3,
+    "rise_resting_on_a_face_mm": -0.7,
+    "rise_held_on_a_corner_mm": 30.2,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_1.json",
+    "model": "Rigid/figurine/00000",
+    "h0_mm": 64.6,
+    "rise_resting_on_a_face_mm": -3.1,
+    "rise_held_on_a_corner_mm": 9.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_10.json",
+    "model": "Rigid/figurine/00000",
+    "h0_mm": 64.6,
+    "rise_resting_on_a_face_mm": -3.1,
+    "rise_held_on_a_corner_mm": 9.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_11.json",
+    "model": "Rigid/donut/00000",
+    "h0_mm": 23.6,
+    "rise_resting_on_a_face_mm": 39.2,
+    "rise_held_on_a_corner_mm": 48.2,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_12.json",
+    "model": "Rigid/figurine/00000",
+    "h0_mm": 64.6,
+    "rise_resting_on_a_face_mm": -3.1,
+    "rise_held_on_a_corner_mm": 9.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_13.json",
+    "model": "Rigid/peeler/00000",
+    "h0_mm": 7.9,
+    "rise_resting_on_a_face_mm": 55.2,
+    "rise_held_on_a_corner_mm": 61.8,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_14.json",
+    "model": "Rigid/donut/00000",
+    "h0_mm": 23.6,
+    "rise_resting_on_a_face_mm": 39.2,
+    "rise_held_on_a_corner_mm": 48.2,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_15.json",
+    "model": "Rigid/remote/00001",
+    "h0_mm": 9.8,
+    "rise_resting_on_a_face_mm": 62.6,
+    "rise_held_on_a_corner_mm": 66.8,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_16.json",
+    "model": "Rigid/donut/00000",
+    "h0_mm": 23.6,
+    "rise_resting_on_a_face_mm": 39.2,
+    "rise_held_on_a_corner_mm": 48.2,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_17.json",
+    "model": "Rigid/toy/00001",
+    "h0_mm": 56.3,
+    "rise_resting_on_a_face_mm": -0.7,
+    "rise_held_on_a_corner_mm": 30.2,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_18.json",
+    "model": "Rigid/remote/00000",
+    "h0_mm": 0.3,
+    "rise_resting_on_a_face_mm": 100.3,
+    "rise_held_on_a_corner_mm": 104.4,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_19.json",
+    "model": "Rigid/toy/00001",
+    "h0_mm": 56.3,
+    "rise_resting_on_a_face_mm": -0.7,
+    "rise_held_on_a_corner_mm": 30.2,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_2.json",
+    "model": "Rigid/can/00000",
+    "h0_mm": 30.2,
+    "rise_resting_on_a_face_mm": 108.3,
+    "rise_held_on_a_corner_mm": 112.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_20.json",
+    "model": "Rigid/donut/00000",
+    "h0_mm": 23.6,
+    "rise_resting_on_a_face_mm": 39.2,
+    "rise_held_on_a_corner_mm": 48.2,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_21.json",
+    "model": "Rigid/cup/00007",
+    "h0_mm": 0.1,
+    "rise_resting_on_a_face_mm": 71.9,
+    "rise_held_on_a_corner_mm": 88.9,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_22.json",
+    "model": "Rigid/donut/00000",
+    "h0_mm": 23.6,
+    "rise_resting_on_a_face_mm": 39.2,
+    "rise_held_on_a_corner_mm": 48.2,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_23.json",
+    "model": "Rigid/correction_tape/00000",
+    "h0_mm": 12.2,
+    "rise_resting_on_a_face_mm": 59.9,
+    "rise_held_on_a_corner_mm": 67.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_24.json",
+    "model": "Rigid/correction_tape/00000",
+    "h0_mm": 12.2,
+    "rise_resting_on_a_face_mm": 59.9,
+    "rise_held_on_a_corner_mm": 67.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_25.json",
+    "model": "Rigid/car/00009",
+    "h0_mm": 19.6,
+    "rise_resting_on_a_face_mm": 49.9,
+    "rise_held_on_a_corner_mm": 60.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_26.json",
+    "model": "Rigid/figurine/00000",
+    "h0_mm": 64.6,
+    "rise_resting_on_a_face_mm": -3.1,
+    "rise_held_on_a_corner_mm": 9.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_27.json",
+    "model": "Rigid/toy/00001",
+    "h0_mm": 56.3,
+    "rise_resting_on_a_face_mm": -0.7,
+    "rise_held_on_a_corner_mm": 30.2,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_28.json",
+    "model": "Rigid/donut/00000",
+    "h0_mm": 23.6,
+    "rise_resting_on_a_face_mm": 39.2,
+    "rise_held_on_a_corner_mm": 48.2,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_29.json",
+    "model": "Rigid/remote/00000",
+    "h0_mm": 0.3,
+    "rise_resting_on_a_face_mm": 100.3,
+    "rise_held_on_a_corner_mm": 104.4,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_3.json",
+    "model": "Rigid/cup/00007",
+    "h0_mm": 0.1,
+    "rise_resting_on_a_face_mm": 71.9,
+    "rise_held_on_a_corner_mm": 88.9,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_30.json",
+    "model": "Rigid/glue/00000",
+    "h0_mm": 60.1,
+    "rise_resting_on_a_face_mm": -0.0,
+    "rise_held_on_a_corner_mm": 5.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_31.json",
+    "model": "Rigid/donut/00000",
+    "h0_mm": 23.6,
+    "rise_resting_on_a_face_mm": 39.2,
+    "rise_held_on_a_corner_mm": 48.2,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_32.json",
+    "model": "Rigid/figurine/00000",
+    "h0_mm": 64.6,
+    "rise_resting_on_a_face_mm": -3.1,
+    "rise_held_on_a_corner_mm": 9.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_33.json",
+    "model": "Rigid/cup/00007",
+    "h0_mm": 0.1,
+    "rise_resting_on_a_face_mm": 71.9,
+    "rise_held_on_a_corner_mm": 88.9,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_34.json",
+    "model": "Rigid/car/00010",
+    "h0_mm": 13.1,
+    "rise_resting_on_a_face_mm": 31.4,
+    "rise_held_on_a_corner_mm": 37.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_35.json",
+    "model": "Rigid/noodles/00000",
+    "h0_mm": 0.9,
+    "rise_resting_on_a_face_mm": 99.2,
+    "rise_held_on_a_corner_mm": 120.9,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_36.json",
+    "model": "Rigid/remote/00000",
+    "h0_mm": 0.3,
+    "rise_resting_on_a_face_mm": 100.3,
+    "rise_held_on_a_corner_mm": 104.4,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_37.json",
+    "model": "Rigid/yogurt/00001",
+    "h0_mm": 33.0,
+    "rise_resting_on_a_face_mm": 11.6,
+    "rise_held_on_a_corner_mm": 29.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_38.json",
+    "model": "Rigid/car/00009",
+    "h0_mm": 19.6,
+    "rise_resting_on_a_face_mm": 49.9,
+    "rise_held_on_a_corner_mm": 60.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_39.json",
+    "model": "Rigid/figurine/00000",
+    "h0_mm": 64.6,
+    "rise_resting_on_a_face_mm": -3.1,
+    "rise_held_on_a_corner_mm": 9.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_4.json",
+    "model": "Rigid/toy/00001",
+    "h0_mm": 56.3,
+    "rise_resting_on_a_face_mm": -0.7,
+    "rise_held_on_a_corner_mm": 30.2,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_40.json",
+    "model": "Rigid/glue/00000",
+    "h0_mm": 60.1,
+    "rise_resting_on_a_face_mm": -0.0,
+    "rise_held_on_a_corner_mm": 5.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_41.json",
+    "model": "Rigid/remote/00001",
+    "h0_mm": 9.8,
+    "rise_resting_on_a_face_mm": 62.6,
+    "rise_held_on_a_corner_mm": 66.8,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_42.json",
+    "model": "Rigid/cup/00007",
+    "h0_mm": 0.1,
+    "rise_resting_on_a_face_mm": 71.9,
+    "rise_held_on_a_corner_mm": 88.9,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_43.json",
+    "model": "Rigid/correction_tape/00000",
+    "h0_mm": 12.2,
+    "rise_resting_on_a_face_mm": 59.9,
+    "rise_held_on_a_corner_mm": 67.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_44.json",
+    "model": "Rigid/yogurt/00001",
+    "h0_mm": 33.0,
+    "rise_resting_on_a_face_mm": 11.6,
+    "rise_held_on_a_corner_mm": 29.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_45.json",
+    "model": "Rigid/figurine/00000",
+    "h0_mm": 64.6,
+    "rise_resting_on_a_face_mm": -3.1,
+    "rise_held_on_a_corner_mm": 9.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_46.json",
+    "model": "Rigid/remote/00001",
+    "h0_mm": 9.8,
+    "rise_resting_on_a_face_mm": 62.6,
+    "rise_held_on_a_corner_mm": 66.8,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_47.json",
+    "model": "Rigid/figurine/00000",
+    "h0_mm": 64.6,
+    "rise_resting_on_a_face_mm": -3.1,
+    "rise_held_on_a_corner_mm": 9.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_48.json",
+    "model": "Rigid/noodles/00000",
+    "h0_mm": 0.9,
+    "rise_resting_on_a_face_mm": 99.2,
+    "rise_held_on_a_corner_mm": 120.9,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_49.json",
+    "model": "Rigid/can/00000",
+    "h0_mm": 30.2,
+    "rise_resting_on_a_face_mm": 108.3,
+    "rise_held_on_a_corner_mm": 112.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_5.json",
+    "model": "Rigid/remote/00001",
+    "h0_mm": 9.8,
+    "rise_resting_on_a_face_mm": 62.6,
+    "rise_held_on_a_corner_mm": 66.8,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_50.json",
+    "model": "Rigid/car/00009",
+    "h0_mm": 19.6,
+    "rise_resting_on_a_face_mm": 49.9,
+    "rise_held_on_a_corner_mm": 60.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_51.json",
+    "model": "Rigid/yogurt/00001",
+    "h0_mm": 33.0,
+    "rise_resting_on_a_face_mm": 11.6,
+    "rise_held_on_a_corner_mm": 29.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_52.json",
+    "model": "Rigid/correction_tape/00000",
+    "h0_mm": 12.2,
+    "rise_resting_on_a_face_mm": 59.9,
+    "rise_held_on_a_corner_mm": 67.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_53.json",
+    "model": "Rigid/cup/00007",
+    "h0_mm": 0.1,
+    "rise_resting_on_a_face_mm": 71.9,
+    "rise_held_on_a_corner_mm": 88.9,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_54.json",
+    "model": "Rigid/car/00010",
+    "h0_mm": 13.1,
+    "rise_resting_on_a_face_mm": 31.4,
+    "rise_held_on_a_corner_mm": 37.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_6.json",
+    "model": "Rigid/car/00009",
+    "h0_mm": 19.6,
+    "rise_resting_on_a_face_mm": 49.9,
+    "rise_held_on_a_corner_mm": 60.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_7.json",
+    "model": "Rigid/yogurt/00001",
+    "h0_mm": 33.0,
+    "rise_resting_on_a_face_mm": 11.6,
+    "rise_held_on_a_corner_mm": 29.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_8.json",
+    "model": "Rigid/remote/00001",
+    "h0_mm": 9.8,
+    "rise_resting_on_a_face_mm": 62.6,
+    "rise_held_on_a_corner_mm": 66.8,
+    "suspect_frame": false
+   },
+   {
+    "layout": "0/pick_from_conveyor_by_image_9.json",
+    "model": "Rigid/yogurt/00001",
+    "h0_mm": 33.0,
+    "rise_resting_on_a_face_mm": 11.6,
+    "rise_held_on_a_corner_mm": 29.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_0.json",
+    "model": "Rigid/toy/00001",
+    "h0_mm": 56.3,
+    "rise_resting_on_a_face_mm": -0.7,
+    "rise_held_on_a_corner_mm": 30.2,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_1.json",
+    "model": "Rigid/peeler/00000",
+    "h0_mm": 7.9,
+    "rise_resting_on_a_face_mm": 55.2,
+    "rise_held_on_a_corner_mm": 61.8,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_10.json",
+    "model": "Rigid/sachet/00000",
+    "h0_mm": 58.7,
+    "rise_resting_on_a_face_mm": -12.7,
+    "rise_held_on_a_corner_mm": 8.4,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_11.json",
+    "model": "Rigid/yogurt/00001",
+    "h0_mm": 33.0,
+    "rise_resting_on_a_face_mm": 11.6,
+    "rise_held_on_a_corner_mm": 29.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_12.json",
+    "model": "Rigid/can/00000",
+    "h0_mm": 30.2,
+    "rise_resting_on_a_face_mm": 108.3,
+    "rise_held_on_a_corner_mm": 112.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_13.json",
+    "model": "Rigid/toy/00001",
+    "h0_mm": 56.3,
+    "rise_resting_on_a_face_mm": -0.7,
+    "rise_held_on_a_corner_mm": 30.2,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_14.json",
+    "model": "Rigid/noodles/00000",
+    "h0_mm": 0.9,
+    "rise_resting_on_a_face_mm": 99.2,
+    "rise_held_on_a_corner_mm": 120.9,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_15.json",
+    "model": "Rigid/cup/00007",
+    "h0_mm": 0.1,
+    "rise_resting_on_a_face_mm": 71.9,
+    "rise_held_on_a_corner_mm": 88.9,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_16.json",
+    "model": "Rigid/yogurt/00001",
+    "h0_mm": 33.0,
+    "rise_resting_on_a_face_mm": 11.6,
+    "rise_held_on_a_corner_mm": 29.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_17.json",
+    "model": "Rigid/can/00000",
+    "h0_mm": 30.2,
+    "rise_resting_on_a_face_mm": 108.3,
+    "rise_held_on_a_corner_mm": 112.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_18.json",
+    "model": "Rigid/yogurt/00001",
+    "h0_mm": 33.0,
+    "rise_resting_on_a_face_mm": 11.6,
+    "rise_held_on_a_corner_mm": 29.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_19.json",
+    "model": "Rigid/toy/00001",
+    "h0_mm": 56.3,
+    "rise_resting_on_a_face_mm": -0.7,
+    "rise_held_on_a_corner_mm": 30.2,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_2.json",
+    "model": "Rigid/glue/00000",
+    "h0_mm": 60.1,
+    "rise_resting_on_a_face_mm": -0.0,
+    "rise_held_on_a_corner_mm": 5.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_20.json",
+    "model": "Rigid/glue/00000",
+    "h0_mm": 60.1,
+    "rise_resting_on_a_face_mm": -0.0,
+    "rise_held_on_a_corner_mm": 5.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_21.json",
+    "model": "Rigid/cup/00007",
+    "h0_mm": 0.1,
+    "rise_resting_on_a_face_mm": 71.9,
+    "rise_held_on_a_corner_mm": 88.9,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_22.json",
+    "model": "Rigid/sachet/00000",
+    "h0_mm": 58.7,
+    "rise_resting_on_a_face_mm": -12.7,
+    "rise_held_on_a_corner_mm": 8.4,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_23.json",
+    "model": "Rigid/glue/00000",
+    "h0_mm": 60.1,
+    "rise_resting_on_a_face_mm": -0.0,
+    "rise_held_on_a_corner_mm": 5.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_24.json",
+    "model": "Rigid/noodles/00000",
+    "h0_mm": 0.9,
+    "rise_resting_on_a_face_mm": 99.2,
+    "rise_held_on_a_corner_mm": 120.9,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_25.json",
+    "model": "Rigid/remote/00000",
+    "h0_mm": 0.3,
+    "rise_resting_on_a_face_mm": 100.3,
+    "rise_held_on_a_corner_mm": 104.4,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_26.json",
+    "model": "Rigid/sachet/00000",
+    "h0_mm": 58.7,
+    "rise_resting_on_a_face_mm": -12.7,
+    "rise_held_on_a_corner_mm": 8.4,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_27.json",
+    "model": "Rigid/cup/00007",
+    "h0_mm": 0.1,
+    "rise_resting_on_a_face_mm": 71.9,
+    "rise_held_on_a_corner_mm": 88.9,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_28.json",
+    "model": "Rigid/glue/00000",
+    "h0_mm": 60.1,
+    "rise_resting_on_a_face_mm": -0.0,
+    "rise_held_on_a_corner_mm": 5.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_29.json",
+    "model": "Rigid/noodles/00000",
+    "h0_mm": 0.9,
+    "rise_resting_on_a_face_mm": 99.2,
+    "rise_held_on_a_corner_mm": 120.9,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_3.json",
+    "model": "Rigid/noodles/00000",
+    "h0_mm": 0.9,
+    "rise_resting_on_a_face_mm": 99.2,
+    "rise_held_on_a_corner_mm": 120.9,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_30.json",
+    "model": "Rigid/remote/00000",
+    "h0_mm": 0.3,
+    "rise_resting_on_a_face_mm": 100.3,
+    "rise_held_on_a_corner_mm": 104.4,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_31.json",
+    "model": "Rigid/peeler/00000",
+    "h0_mm": 7.9,
+    "rise_resting_on_a_face_mm": 55.2,
+    "rise_held_on_a_corner_mm": 61.8,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_32.json",
+    "model": "Rigid/figurine/00000",
+    "h0_mm": 64.6,
+    "rise_resting_on_a_face_mm": -3.1,
+    "rise_held_on_a_corner_mm": 9.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_33.json",
+    "model": "Rigid/peeler/00000",
+    "h0_mm": 7.9,
+    "rise_resting_on_a_face_mm": 55.2,
+    "rise_held_on_a_corner_mm": 61.8,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_34.json",
+    "model": "Rigid/noodles/00000",
+    "h0_mm": 0.9,
+    "rise_resting_on_a_face_mm": 99.2,
+    "rise_held_on_a_corner_mm": 120.9,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_35.json",
+    "model": "Rigid/noodles/00000",
+    "h0_mm": 0.9,
+    "rise_resting_on_a_face_mm": 99.2,
+    "rise_held_on_a_corner_mm": 120.9,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_36.json",
+    "model": "Rigid/toy/00001",
+    "h0_mm": 56.3,
+    "rise_resting_on_a_face_mm": -0.7,
+    "rise_held_on_a_corner_mm": 30.2,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_37.json",
+    "model": "Rigid/yogurt/00001",
+    "h0_mm": 33.0,
+    "rise_resting_on_a_face_mm": 11.6,
+    "rise_held_on_a_corner_mm": 29.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_38.json",
+    "model": "Rigid/donut/00000",
+    "h0_mm": 23.6,
+    "rise_resting_on_a_face_mm": 39.2,
+    "rise_held_on_a_corner_mm": 48.2,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_39.json",
+    "model": "Rigid/glue/00000",
+    "h0_mm": 60.1,
+    "rise_resting_on_a_face_mm": -0.0,
+    "rise_held_on_a_corner_mm": 5.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_4.json",
+    "model": "Rigid/figurine/00000",
+    "h0_mm": 64.6,
+    "rise_resting_on_a_face_mm": -3.1,
+    "rise_held_on_a_corner_mm": 9.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_40.json",
+    "model": "Rigid/can/00000",
+    "h0_mm": 30.2,
+    "rise_resting_on_a_face_mm": 108.3,
+    "rise_held_on_a_corner_mm": 112.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_41.json",
+    "model": "Rigid/peeler/00000",
+    "h0_mm": 7.9,
+    "rise_resting_on_a_face_mm": 55.2,
+    "rise_held_on_a_corner_mm": 61.8,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_42.json",
+    "model": "Rigid/car/00010",
+    "h0_mm": 13.1,
+    "rise_resting_on_a_face_mm": 31.4,
+    "rise_held_on_a_corner_mm": 37.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_43.json",
+    "model": "Rigid/toy/00001",
+    "h0_mm": 56.3,
+    "rise_resting_on_a_face_mm": -0.7,
+    "rise_held_on_a_corner_mm": 30.2,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_44.json",
+    "model": "Rigid/toy/00001",
+    "h0_mm": 56.3,
+    "rise_resting_on_a_face_mm": -0.7,
+    "rise_held_on_a_corner_mm": 30.2,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_45.json",
+    "model": "Rigid/figurine/00000",
+    "h0_mm": 64.6,
+    "rise_resting_on_a_face_mm": -3.1,
+    "rise_held_on_a_corner_mm": 9.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_46.json",
+    "model": "Rigid/toy/00001",
+    "h0_mm": 56.3,
+    "rise_resting_on_a_face_mm": -0.7,
+    "rise_held_on_a_corner_mm": 30.2,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_47.json",
+    "model": "Rigid/correction_tape/00000",
+    "h0_mm": 12.2,
+    "rise_resting_on_a_face_mm": 59.9,
+    "rise_held_on_a_corner_mm": 67.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_48.json",
+    "model": "Rigid/toy/00001",
+    "h0_mm": 56.3,
+    "rise_resting_on_a_face_mm": -0.7,
+    "rise_held_on_a_corner_mm": 30.2,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_49.json",
+    "model": "Rigid/car/00010",
+    "h0_mm": 13.1,
+    "rise_resting_on_a_face_mm": 31.4,
+    "rise_held_on_a_corner_mm": 37.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_5.json",
+    "model": "Rigid/glue/00000",
+    "h0_mm": 60.1,
+    "rise_resting_on_a_face_mm": -0.0,
+    "rise_held_on_a_corner_mm": 5.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_50.json",
+    "model": "Rigid/yogurt/00001",
+    "h0_mm": 33.0,
+    "rise_resting_on_a_face_mm": 11.6,
+    "rise_held_on_a_corner_mm": 29.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_51.json",
+    "model": "Rigid/peeler/00000",
+    "h0_mm": 7.9,
+    "rise_resting_on_a_face_mm": 55.2,
+    "rise_held_on_a_corner_mm": 61.8,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_52.json",
+    "model": "Rigid/yogurt/00001",
+    "h0_mm": 33.0,
+    "rise_resting_on_a_face_mm": 11.6,
+    "rise_held_on_a_corner_mm": 29.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_53.json",
+    "model": "Rigid/remote/00001",
+    "h0_mm": 9.8,
+    "rise_resting_on_a_face_mm": 62.6,
+    "rise_held_on_a_corner_mm": 66.8,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_54.json",
+    "model": "Rigid/noodles/00000",
+    "h0_mm": 0.9,
+    "rise_resting_on_a_face_mm": 99.2,
+    "rise_held_on_a_corner_mm": 120.9,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_6.json",
+    "model": "Rigid/car/00009",
+    "h0_mm": 19.6,
+    "rise_resting_on_a_face_mm": 49.9,
+    "rise_held_on_a_corner_mm": 60.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_7.json",
+    "model": "Rigid/donut/00000",
+    "h0_mm": 23.6,
+    "rise_resting_on_a_face_mm": 39.2,
+    "rise_held_on_a_corner_mm": 48.2,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_8.json",
+    "model": "Rigid/glue/00000",
+    "h0_mm": 60.1,
+    "rise_resting_on_a_face_mm": -0.0,
+    "rise_held_on_a_corner_mm": 5.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "1/pick_from_conveyor_by_image_9.json",
+    "model": "Rigid/sachet/00000",
+    "h0_mm": 58.7,
+    "rise_resting_on_a_face_mm": -12.7,
+    "rise_held_on_a_corner_mm": 8.4,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_0.json",
+    "model": "Rigid/noodles/00000",
+    "h0_mm": 0.9,
+    "rise_resting_on_a_face_mm": 99.2,
+    "rise_held_on_a_corner_mm": 120.9,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_1.json",
+    "model": "Rigid/remote/00000",
+    "h0_mm": 0.3,
+    "rise_resting_on_a_face_mm": 100.3,
+    "rise_held_on_a_corner_mm": 104.4,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_10.json",
+    "model": "Rigid/peeler/00000",
+    "h0_mm": 7.9,
+    "rise_resting_on_a_face_mm": 55.2,
+    "rise_held_on_a_corner_mm": 61.8,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_11.json",
+    "model": "Rigid/donut/00000",
+    "h0_mm": 23.6,
+    "rise_resting_on_a_face_mm": 39.2,
+    "rise_held_on_a_corner_mm": 48.2,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_12.json",
+    "model": "Rigid/yogurt/00001",
+    "h0_mm": 33.0,
+    "rise_resting_on_a_face_mm": 11.6,
+    "rise_held_on_a_corner_mm": 29.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_13.json",
+    "model": "Rigid/sachet/00000",
+    "h0_mm": 58.7,
+    "rise_resting_on_a_face_mm": -12.7,
+    "rise_held_on_a_corner_mm": 8.4,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_14.json",
+    "model": "Rigid/noodles/00000",
+    "h0_mm": 0.9,
+    "rise_resting_on_a_face_mm": 99.2,
+    "rise_held_on_a_corner_mm": 120.9,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_15.json",
+    "model": "Rigid/toy/00001",
+    "h0_mm": 56.3,
+    "rise_resting_on_a_face_mm": -0.7,
+    "rise_held_on_a_corner_mm": 30.2,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_16.json",
+    "model": "Rigid/donut/00000",
+    "h0_mm": 23.6,
+    "rise_resting_on_a_face_mm": 39.2,
+    "rise_held_on_a_corner_mm": 48.2,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_17.json",
+    "model": "Rigid/donut/00000",
+    "h0_mm": 23.6,
+    "rise_resting_on_a_face_mm": 39.2,
+    "rise_held_on_a_corner_mm": 48.2,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_18.json",
+    "model": "Rigid/peeler/00000",
+    "h0_mm": 7.9,
+    "rise_resting_on_a_face_mm": 55.2,
+    "rise_held_on_a_corner_mm": 61.8,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_19.json",
+    "model": "Rigid/yogurt/00001",
+    "h0_mm": 33.0,
+    "rise_resting_on_a_face_mm": 11.6,
+    "rise_held_on_a_corner_mm": 29.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_2.json",
+    "model": "Rigid/donut/00000",
+    "h0_mm": 23.6,
+    "rise_resting_on_a_face_mm": 39.2,
+    "rise_held_on_a_corner_mm": 48.2,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_20.json",
+    "model": "Rigid/sachet/00000",
+    "h0_mm": 58.7,
+    "rise_resting_on_a_face_mm": -12.7,
+    "rise_held_on_a_corner_mm": 8.4,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_21.json",
+    "model": "Rigid/car/00010",
+    "h0_mm": 13.1,
+    "rise_resting_on_a_face_mm": 31.4,
+    "rise_held_on_a_corner_mm": 37.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_22.json",
+    "model": "Rigid/can/00000",
+    "h0_mm": 30.2,
+    "rise_resting_on_a_face_mm": 108.3,
+    "rise_held_on_a_corner_mm": 112.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_23.json",
+    "model": "Rigid/correction_tape/00000",
+    "h0_mm": 12.2,
+    "rise_resting_on_a_face_mm": 59.9,
+    "rise_held_on_a_corner_mm": 67.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_24.json",
+    "model": "Rigid/remote/00001",
+    "h0_mm": 9.8,
+    "rise_resting_on_a_face_mm": 62.6,
+    "rise_held_on_a_corner_mm": 66.8,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_25.json",
+    "model": "Rigid/correction_tape/00000",
+    "h0_mm": 12.2,
+    "rise_resting_on_a_face_mm": 59.9,
+    "rise_held_on_a_corner_mm": 67.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_26.json",
+    "model": "Rigid/car/00009",
+    "h0_mm": 19.6,
+    "rise_resting_on_a_face_mm": 49.9,
+    "rise_held_on_a_corner_mm": 60.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_27.json",
+    "model": "Rigid/noodles/00000",
+    "h0_mm": 0.9,
+    "rise_resting_on_a_face_mm": 99.2,
+    "rise_held_on_a_corner_mm": 120.9,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_28.json",
+    "model": "Rigid/car/00009",
+    "h0_mm": 19.6,
+    "rise_resting_on_a_face_mm": 49.9,
+    "rise_held_on_a_corner_mm": 60.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_29.json",
+    "model": "Rigid/car/00010",
+    "h0_mm": 13.1,
+    "rise_resting_on_a_face_mm": 31.4,
+    "rise_held_on_a_corner_mm": 37.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_3.json",
+    "model": "Rigid/remote/00001",
+    "h0_mm": 9.8,
+    "rise_resting_on_a_face_mm": 62.6,
+    "rise_held_on_a_corner_mm": 66.8,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_30.json",
+    "model": "Rigid/cup/00007",
+    "h0_mm": 0.1,
+    "rise_resting_on_a_face_mm": 71.9,
+    "rise_held_on_a_corner_mm": 88.9,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_31.json",
+    "model": "Rigid/car/00010",
+    "h0_mm": 13.1,
+    "rise_resting_on_a_face_mm": 31.4,
+    "rise_held_on_a_corner_mm": 37.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_32.json",
+    "model": "Rigid/car/00010",
+    "h0_mm": 13.1,
+    "rise_resting_on_a_face_mm": 31.4,
+    "rise_held_on_a_corner_mm": 37.7,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_33.json",
+    "model": "Rigid/correction_tape/00000",
+    "h0_mm": 12.2,
+    "rise_resting_on_a_face_mm": 59.9,
+    "rise_held_on_a_corner_mm": 67.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_34.json",
+    "model": "Rigid/figurine/00000",
+    "h0_mm": 64.6,
+    "rise_resting_on_a_face_mm": -3.1,
+    "rise_held_on_a_corner_mm": 9.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_35.json",
+    "model": "Rigid/noodles/00000",
+    "h0_mm": 0.9,
+    "rise_resting_on_a_face_mm": 99.2,
+    "rise_held_on_a_corner_mm": 120.9,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_36.json",
+    "model": "Rigid/figurine/00000",
+    "h0_mm": 64.6,
+    "rise_resting_on_a_face_mm": -3.1,
+    "rise_held_on_a_corner_mm": 9.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_37.json",
+    "model": "Rigid/figurine/00000",
+    "h0_mm": 64.6,
+    "rise_resting_on_a_face_mm": -3.1,
+    "rise_held_on_a_corner_mm": 9.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_38.json",
+    "model": "Rigid/yogurt/00001",
+    "h0_mm": 33.0,
+    "rise_resting_on_a_face_mm": 11.6,
+    "rise_held_on_a_corner_mm": 29.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_39.json",
+    "model": "Rigid/figurine/00000",
+    "h0_mm": 64.6,
+    "rise_resting_on_a_face_mm": -3.1,
+    "rise_held_on_a_corner_mm": 9.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_4.json",
+    "model": "Rigid/remote/00001",
+    "h0_mm": 9.8,
+    "rise_resting_on_a_face_mm": 62.6,
+    "rise_held_on_a_corner_mm": 66.8,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_40.json",
+    "model": "Rigid/glue/00000",
+    "h0_mm": 60.1,
+    "rise_resting_on_a_face_mm": -0.0,
+    "rise_held_on_a_corner_mm": 5.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_41.json",
+    "model": "Rigid/car/00009",
+    "h0_mm": 19.6,
+    "rise_resting_on_a_face_mm": 49.9,
+    "rise_held_on_a_corner_mm": 60.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_42.json",
+    "model": "Rigid/peeler/00000",
+    "h0_mm": 7.9,
+    "rise_resting_on_a_face_mm": 55.2,
+    "rise_held_on_a_corner_mm": 61.8,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_43.json",
+    "model": "Rigid/remote/00001",
+    "h0_mm": 9.8,
+    "rise_resting_on_a_face_mm": 62.6,
+    "rise_held_on_a_corner_mm": 66.8,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_44.json",
+    "model": "Rigid/can/00000",
+    "h0_mm": 30.2,
+    "rise_resting_on_a_face_mm": 108.3,
+    "rise_held_on_a_corner_mm": 112.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_45.json",
+    "model": "Rigid/remote/00000",
+    "h0_mm": 0.3,
+    "rise_resting_on_a_face_mm": 100.3,
+    "rise_held_on_a_corner_mm": 104.4,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_46.json",
+    "model": "Rigid/correction_tape/00000",
+    "h0_mm": 12.2,
+    "rise_resting_on_a_face_mm": 59.9,
+    "rise_held_on_a_corner_mm": 67.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_47.json",
+    "model": "Rigid/correction_tape/00000",
+    "h0_mm": 12.2,
+    "rise_resting_on_a_face_mm": 59.9,
+    "rise_held_on_a_corner_mm": 67.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_48.json",
+    "model": "Rigid/remote/00000",
+    "h0_mm": 0.3,
+    "rise_resting_on_a_face_mm": 100.3,
+    "rise_held_on_a_corner_mm": 104.4,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_49.json",
+    "model": "Rigid/correction_tape/00000",
+    "h0_mm": 12.2,
+    "rise_resting_on_a_face_mm": 59.9,
+    "rise_held_on_a_corner_mm": 67.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_5.json",
+    "model": "Rigid/figurine/00000",
+    "h0_mm": 64.6,
+    "rise_resting_on_a_face_mm": -3.1,
+    "rise_held_on_a_corner_mm": 9.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_50.json",
+    "model": "Rigid/figurine/00000",
+    "h0_mm": 64.6,
+    "rise_resting_on_a_face_mm": -3.1,
+    "rise_held_on_a_corner_mm": 9.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_51.json",
+    "model": "Rigid/remote/00001",
+    "h0_mm": 9.8,
+    "rise_resting_on_a_face_mm": 62.6,
+    "rise_held_on_a_corner_mm": 66.8,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_52.json",
+    "model": "Rigid/yogurt/00001",
+    "h0_mm": 33.0,
+    "rise_resting_on_a_face_mm": 11.6,
+    "rise_held_on_a_corner_mm": 29.3,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_53.json",
+    "model": "Rigid/figurine/00000",
+    "h0_mm": 64.6,
+    "rise_resting_on_a_face_mm": -3.1,
+    "rise_held_on_a_corner_mm": 9.6,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_54.json",
+    "model": "Rigid/remote/00000",
+    "h0_mm": 0.3,
+    "rise_resting_on_a_face_mm": 100.3,
+    "rise_held_on_a_corner_mm": 104.4,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_6.json",
+    "model": "Rigid/noodles/00000",
+    "h0_mm": 0.9,
+    "rise_resting_on_a_face_mm": 99.2,
+    "rise_held_on_a_corner_mm": 120.9,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_7.json",
+    "model": "Rigid/sachet/00000",
+    "h0_mm": 58.7,
+    "rise_resting_on_a_face_mm": -12.7,
+    "rise_held_on_a_corner_mm": 8.4,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_8.json",
+    "model": "Rigid/sachet/00000",
+    "h0_mm": 58.7,
+    "rise_resting_on_a_face_mm": -12.7,
+    "rise_held_on_a_corner_mm": 8.4,
+    "suspect_frame": false
+   },
+   {
+    "layout": "2/pick_from_conveyor_by_image_9.json",
+    "model": "Rigid/figurine/00000",
+    "h0_mm": 64.6,
+    "rise_resting_on_a_face_mm": -3.1,
+    "rise_held_on_a_corner_mm": 9.6,
+    "suspect_frame": false
+   }
+  ]
+ }
+}

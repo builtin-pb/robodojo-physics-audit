@@ -1,0 +1,9 @@
+{
+  "bottles": ["L14_00022", "L14_00055"],
+  "inputs": "audit/out/fix_160/witness_inputs.json",
+  "variants": [
+    {"name": "trip"},
+    {"name": "motor_peak640", "joint7_effort_limit_n": 640.18},
+    {"name": "d3_cap160", "joint7_effort_limit_n": 160.0}
+  ]
+}

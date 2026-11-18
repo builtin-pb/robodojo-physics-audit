@@ -1,0 +1,23 @@
+[
+ {
+  "cell_name": "imitate_sorting_sequence__perturb",
+  "layout": 0,
+  "overrides": {
+   "spawn_lift": {
+    "stems": "*",
+    "dz_m": 1e-06
+   },
+   "slide_target": {
+    "label": "aim3",
+    "inst": "phone_0_8",
+    "labelled": true,
+    "stem": "phone_0",
+    "stem_rank": 1,
+    "dir_world_xy": [
+     0.787132,
+     0.616785
+    ]
+   }
+  }
+ }
+]

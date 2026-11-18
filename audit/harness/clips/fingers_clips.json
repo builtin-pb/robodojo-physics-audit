@@ -1,0 +1,61 @@
+[
+ {
+  "id": "fingers",
+  "sheet_label": "three finger versions",
+  "style": {
+   "font": 26,
+   "alpha": 120
+  },
+  "width": 1920,
+  "label_pos": "top",
+  "note": "slowed 2x",
+  "segments": [
+   {
+    "runs": [
+     "rp_fingers_shipped",
+     "rp_fingers_light",
+     "rp_fingers_motor"
+    ],
+    "cam": "ax10z",
+    "select": {
+     "why": [
+      "step"
+     ],
+     "key": "phys",
+     "from": 810,
+     "to": 1360
+    },
+    "labels": [
+     "as shipped",
+     "real controller, light fingers",
+     "real controller, motor's weight"
+    ]
+   }
+  ],
+  "hold_last_s": 0.4,
+  "max_s": 8.0,
+  "webp": {
+   "width": 1440,
+   "every": 1,
+   "quality": 70
+  },
+  "poster": {
+   "frame": -1
+  },
+  "sheet": {
+   "frames": [
+    20,
+    40,
+    60,
+    110
+   ],
+   "width": 1440,
+   "labels": [
+    "Before the lift (episode step 910): the bottle squeezed on the table",
+    "Halfway up (0.4 s, step 1010): turned 30.3 / 11.1 / 0.08 degrees (as shipped / light fingers / motor's weight)",
+    "End of the lift (0.8 s, step 1110): 77.5 / 24.7 / 0.48 degrees",
+    "End of the 1 s hold (1.8 s, step 1360): 77.8 / 57.0 / 0.47 degrees; the light-finger bottle is still turning"
+   ]
+  }
+ }
+]

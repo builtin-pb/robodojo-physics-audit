@@ -1,0 +1,99 @@
+[
+ {
+  "cell_name": "arrange_largest_number__shipped",
+  "layout": 0,
+  "overrides": {
+   "slide_target": {
+    "label": "digit_0",
+    "inst": "number_2_1",
+    "labelled": true,
+    "stem": "number_2",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.587077,
+     0.809531
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "arrange_largest_number__cpu",
+  "layout": 0,
+  "overrides": {
+   "gpu_dynamics": false,
+   "slide_target": {
+    "label": "digit_0",
+    "inst": "number_2_1",
+    "labelled": true,
+    "stem": "number_2",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.587077,
+     0.809531
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "arrange_largest_number__hull",
+  "layout": 0,
+  "overrides": {
+   "approx_override": {
+    "number_2": "convexHull"
+   },
+   "slide_target": {
+    "label": "digit_0",
+    "inst": "number_2_1",
+    "labelled": true,
+    "stem": "number_2",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.587077,
+     0.809531
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "arrange_largest_number__hull_cpu",
+  "layout": 0,
+  "overrides": {
+   "approx_override": {
+    "number_2": "convexHull"
+   },
+   "gpu_dynamics": false,
+   "slide_target": {
+    "label": "digit_0",
+    "inst": "number_2_1",
+    "labelled": true,
+    "stem": "number_2",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.587077,
+     0.809531
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "arrange_largest_number__hull_dt1",
+  "layout": 0,
+  "overrides": {
+   "approx_override": {
+    "number_2": "convexHull"
+   },
+   "dt_s": 0.001,
+   "slide_target": {
+    "label": "digit_0",
+    "inst": "number_2_1",
+    "labelled": true,
+    "stem": "number_2",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.587077,
+     0.809531
+    ]
+   }
+  }
+ }
+]

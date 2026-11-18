@@ -1,0 +1,3432 @@
+{
+ "arrange_largest_number": {
+  "lerobot_episode": 0,
+  "lerobot_len": 578,
+  "n_keys": 36,
+  "top": [
+   "action",
+   "additional_info",
+   "data_format_version",
+   "instruction",
+   "state",
+   "vision"
+  ],
+  "attrs": {
+   "fix_obs_shift_rgb": "shift_drop_first_drop_last+rgb_jpeg"
+  },
+  "hdf5_len": 578,
+  "instruction": "b'Arrange the numbers from left to right to form the largest possible number, and place them on the pad.'",
+  "shift_ok": true,
+  "same_as_lerobot_action_maxdiff": 2.9623731800931807e-08,
+  "same_as_lerobot_state_maxdiff": 2.9623731800931807e-08,
+  "action_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    1.0,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.032557496333542574,
+   "z_min": 0.9216411082906028,
+   "z_max": 1.075819470622004
+  },
+  "state_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998639979163,
+    1.0000000323478093
+   ],
+   "pos_step_max_m": 0.03255746824177944,
+   "z_min": 0.921500027179718,
+   "z_max": 1.0758193731307983
+  },
+  "action_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    1.0,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.03687809586758305,
+   "z_min": 0.9214999963252838,
+   "z_max": 1.0757487539997983
+  },
+  "state_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998790929657,
+    1.0000000282897799
+   ],
+   "pos_step_max_m": 0.03687802937834187,
+   "z_min": 0.921500027179718,
+   "z_max": 1.0757485628128052
+  },
+  "cam_head": {
+   "frames": 578,
+   "jpeg_bytes_min": 83621,
+   "jpeg_bytes_median": 89787,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": false,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_left_wrist": {
+   "frames": 578,
+   "jpeg_bytes_min": 55497,
+   "jpeg_bytes_median": 72060,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_right_wrist": {
+   "frames": 578,
+   "jpeg_bytes_min": 55908,
+   "jpeg_bytes_median": 73671,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "keys_with_success_object_words": []
+ },
+ "build_tower": {
+  "lerobot_episode": 100,
+  "lerobot_len": 722,
+  "n_keys": 36,
+  "top": [
+   "action",
+   "additional_info",
+   "data_format_version",
+   "instruction",
+   "state",
+   "vision"
+  ],
+  "attrs": {
+   "fix_obs_shift_rgb": "shift_drop_first_drop_last+rgb_jpeg"
+  },
+  "hdf5_len": 722,
+  "instruction": "b'Build a tower using the wooden blocks and wooden boards.'",
+  "shift_ok": true,
+  "same_as_lerobot_action_maxdiff": 2.975271395921908e-08,
+  "same_as_lerobot_state_maxdiff": 2.975271395921908e-08,
+  "action_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    1.0,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.032376715613779576,
+   "z_min": 0.8872860343237565,
+   "z_max": 1.108712470124874
+  },
+  "state_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998705108453,
+    1.0000000356308387
+   ],
+   "pos_step_max_m": 0.03237666958995132,
+   "z_min": 0.8872860074043274,
+   "z_max": 1.1087123155593872
+  },
+  "action_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    1.0,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.03581281062460307,
+   "z_min": 0.8872357380505675,
+   "z_max": 1.0952295972580277
+  },
+  "state_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998779065007,
+    1.000000040197305
+   ],
+   "pos_step_max_m": 0.03581279313944312,
+   "z_min": 0.8872356414794922,
+   "z_max": 1.0952296257019043
+  },
+  "cam_head": {
+   "frames": 722,
+   "jpeg_bytes_min": 83939,
+   "jpeg_bytes_median": 89363,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": false,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_left_wrist": {
+   "frames": 722,
+   "jpeg_bytes_min": 57954,
+   "jpeg_bytes_median": 75511,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_right_wrist": {
+   "frames": 722,
+   "jpeg_bytes_min": 59528,
+   "jpeg_bytes_median": 75984,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "keys_with_success_object_words": []
+ },
+ "classify_objects": {
+  "lerobot_episode": 200,
+  "lerobot_len": 747,
+  "n_keys": 36,
+  "top": [
+   "action",
+   "additional_info",
+   "data_format_version",
+   "instruction",
+   "state",
+   "vision"
+  ],
+  "attrs": {
+   "fix_obs_shift_rgb": "shift_drop_first_drop_last+rgb_jpeg"
+  },
+  "hdf5_len": 747,
+  "instruction": "b'Sort the objects by category into the three baskets.'",
+  "shift_ok": true,
+  "same_as_lerobot_action_maxdiff": 2.9467059237120452e-08,
+  "same_as_lerobot_state_maxdiff": 2.9467059237120452e-08,
+  "action_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    1.0,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.028360717393087407,
+   "z_min": 0.9148928390076826,
+   "z_max": 1.1230397503311944
+  },
+  "state_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.999999875672563,
+    1.0000000363832873
+   ],
+   "pos_step_max_m": 0.028360743706507194,
+   "z_min": 0.9148929715156555,
+   "z_max": 1.1230398416519165
+  },
+  "action_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    1.0,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.028029332537562315,
+   "z_min": 0.919632255824674,
+   "z_max": 1.060844581599438
+  },
+  "state_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998865045243,
+    1.0000000377229663
+   ],
+   "pos_step_max_m": 0.028029448776587255,
+   "z_min": 0.9196322560310364,
+   "z_max": 1.0608446598052979
+  },
+  "cam_head": {
+   "frames": 747,
+   "jpeg_bytes_min": 89734,
+   "jpeg_bytes_median": 93015,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": false,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_left_wrist": {
+   "frames": 747,
+   "jpeg_bytes_min": 31785,
+   "jpeg_bytes_median": 73496,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_right_wrist": {
+   "frames": 747,
+   "jpeg_bytes_min": 40750,
+   "jpeg_bytes_median": 73692,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "keys_with_success_object_words": []
+ },
+ "cover_blocks": {
+  "lerobot_episode": 300,
+  "lerobot_len": 555,
+  "n_keys": 36,
+  "top": [
+   "action",
+   "additional_info",
+   "data_format_version",
+   "instruction",
+   "state",
+   "vision"
+  ],
+  "attrs": {
+   "fix_obs_shift_rgb": "shift_drop_first_drop_last+rgb_jpeg"
+  },
+  "hdf5_len": 555,
+  "instruction": "b'Cover the blocks from left to right, remember their colors, then uncover them in the order: red, green, and blue.'",
+  "shift_ok": true,
+  "same_as_lerobot_action_maxdiff": 2.974713286807429e-08,
+  "same_as_lerobot_state_maxdiff": 2.974713286807429e-08,
+  "action_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.03263194999016841,
+   "z_min": 0.9214931885108797,
+   "z_max": 1.1180564348613715
+  },
+  "state_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998824279113,
+    1.0000000333144965
+   ],
+   "pos_step_max_m": 0.03263203237072581,
+   "z_min": 0.9214932918548584,
+   "z_max": 1.1180565357208252
+  },
+  "action_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    1.0,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.03316833977693366,
+   "z_min": 0.9214999963252838,
+   "z_max": 1.1359854079306733
+  },
+  "state_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998747430989,
+    1.0000000418670179
+   ],
+   "pos_step_max_m": 0.03316831575572055,
+   "z_min": 0.921500027179718,
+   "z_max": 1.1359854936599731
+  },
+  "cam_head": {
+   "frames": 555,
+   "jpeg_bytes_min": 82531,
+   "jpeg_bytes_median": 89353,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": false,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_left_wrist": {
+   "frames": 555,
+   "jpeg_bytes_min": 54022,
+   "jpeg_bytes_median": 69781,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_right_wrist": {
+   "frames": 555,
+   "jpeg_bytes_min": 54864,
+   "jpeg_bytes_median": 68971,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "keys_with_success_object_words": []
+ },
+ "deposit_coin": {
+  "lerobot_episode": 400,
+  "lerobot_len": 191,
+  "n_keys": 36,
+  "top": [
+   "action",
+   "additional_info",
+   "data_format_version",
+   "instruction",
+   "state",
+   "vision"
+  ],
+  "attrs": {
+   "fix_obs_shift_rgb": "shift_drop_first_drop_last+rgb_jpeg"
+  },
+  "hdf5_len": 191,
+  "instruction": "b'Pick up the coin from the holder and insert it precisely into the coin bank.'",
+  "shift_ok": true,
+  "same_as_lerobot_action_maxdiff": 2.8177643107696326e-08,
+  "same_as_lerobot_state_maxdiff": 2.8177643107696326e-08,
+  "action_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.021334023761824798,
+   "z_min": 0.9214999963252838,
+   "z_max": 1.0655294111682254
+  },
+  "state_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998838905008,
+    1.0000000320832139
+   ],
+   "pos_step_max_m": 0.021334043234555487,
+   "z_min": 0.921500027179718,
+   "z_max": 1.065529465675354
+  },
+  "action_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    1.0,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.021203024363788264,
+   "z_min": 0.9215012574501087,
+   "z_max": 1.0090782464721255
+  },
+  "state_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998947413394,
+    1.0000000382742358
+   ],
+   "pos_step_max_m": 0.021203025142253976,
+   "z_min": 0.921500027179718,
+   "z_max": 1.009078025817871
+  },
+  "cam_head": {
+   "frames": 191,
+   "jpeg_bytes_min": 82519,
+   "jpeg_bytes_median": 86376,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": false,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_left_wrist": {
+   "frames": 191,
+   "jpeg_bytes_min": 52045,
+   "jpeg_bytes_median": 67407,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_right_wrist": {
+   "frames": 191,
+   "jpeg_bytes_min": 59507,
+   "jpeg_bytes_median": 71376,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "keys_with_success_object_words": []
+ },
+ "dlc": {
+  "lerobot_episode": 500,
+  "lerobot_len": 656,
+  "n_keys": 36,
+  "top": [
+   "action",
+   "additional_info",
+   "data_format_version",
+   "instruction",
+   "state",
+   "vision"
+  ],
+  "attrs": {
+   "fix_obs_shift_rgb": "shift_drop_first_drop_last+rgb_jpeg"
+  },
+  "hdf5_len": 656,
+  "instruction": "b'Arrange the letters to spell \"RoboDojo\" in a row.'",
+  "shift_ok": true,
+  "same_as_lerobot_action_maxdiff": 2.9076797747329408e-08,
+  "same_as_lerobot_state_maxdiff": 2.9076797747329408e-08,
+  "action_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.03355264404927727,
+   "z_min": 0.9216590253568122,
+   "z_max": 1.0686186770502186
+  },
+  "state_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.999999871956015,
+    1.0000000300045144
+   ],
+   "pos_step_max_m": 0.03355263522015592,
+   "z_min": 0.921500027179718,
+   "z_max": 1.068618893623352
+  },
+  "action_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.034730041349936486,
+   "z_min": 0.9214999963252838,
+   "z_max": 1.0222216323142208
+  },
+  "state_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998819989339,
+    1.0000000289089446
+   ],
+   "pos_step_max_m": 0.03473012604824982,
+   "z_min": 0.921500027179718,
+   "z_max": 1.022221565246582
+  },
+  "cam_head": {
+   "frames": 656,
+   "jpeg_bytes_min": 124670,
+   "jpeg_bytes_median": 135256,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": false,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_left_wrist": {
+   "frames": 656,
+   "jpeg_bytes_min": 59561,
+   "jpeg_bytes_median": 101749,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_right_wrist": {
+   "frames": 656,
+   "jpeg_bytes_min": 60682,
+   "jpeg_bytes_median": 102053,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "keys_with_success_object_words": []
+ },
+ "fasten_screws": {
+  "lerobot_episode": 600,
+  "lerobot_len": 1510,
+  "n_keys": 36,
+  "top": [
+   "action",
+   "additional_info",
+   "data_format_version",
+   "instruction",
+   "state",
+   "vision"
+  ],
+  "attrs": {
+   "fix_obs_shift_rgb": "shift_drop_first_drop_last+rgb_jpeg"
+  },
+  "hdf5_len": 1510,
+  "instruction": "b'Insert and tighten each screw into the nut of the same color.'",
+  "shift_ok": true,
+  "same_as_lerobot_action_maxdiff": 2.9746512697492733e-08,
+  "same_as_lerobot_state_maxdiff": 2.9746512697492733e-08,
+  "action_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.03221208383686046,
+   "z_min": 0.9214822180522679,
+   "z_max": 1.0875488329340992
+  },
+  "state_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998496285714,
+    1.0000000459638383
+   ],
+   "pos_step_max_m": 0.03221205187987088,
+   "z_min": 0.9214822053909302,
+   "z_max": 1.087548851966858
+  },
+  "action_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.037267686655774734,
+   "z_min": 0.9215019126901915,
+   "z_max": 1.0867215287134966
+  },
+  "state_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998655169572,
+    1.0000000486451317
+   ],
+   "pos_step_max_m": 0.03726757882376184,
+   "z_min": 0.921500027179718,
+   "z_max": 1.0867215394973755
+  },
+  "cam_head": {
+   "frames": 1510,
+   "jpeg_bytes_min": 81767,
+   "jpeg_bytes_median": 90859,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": false,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_left_wrist": {
+   "frames": 1510,
+   "jpeg_bytes_min": 59875,
+   "jpeg_bytes_median": 74685,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_right_wrist": {
+   "frames": 1510,
+   "jpeg_bytes_min": 58049,
+   "jpeg_bytes_median": 70991,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "keys_with_success_object_words": []
+ },
+ "fill_egg_holder": {
+  "lerobot_episode": 700,
+  "lerobot_len": 488,
+  "n_keys": 36,
+  "top": [
+   "action",
+   "additional_info",
+   "data_format_version",
+   "instruction",
+   "state",
+   "vision"
+  ],
+  "attrs": {
+   "fix_obs_shift_rgb": "shift_drop_first_drop_last+rgb_jpeg"
+  },
+  "hdf5_len": 488,
+  "instruction": "b'Place the four eggs from the basket into the egg holder, then close the lid.'",
+  "shift_ok": true,
+  "same_as_lerobot_action_maxdiff": 2.9471185492013774e-08,
+  "same_as_lerobot_state_maxdiff": 2.9471185492013774e-08,
+  "action_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    1.0,
+    1.0
+   ],
+   "pos_step_max_m": 3.747019155822317e-14,
+   "z_min": 0.9214999963252838,
+   "z_max": 0.921499996325284
+  },
+  "state_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999521412185,
+    0.9999999521412185
+   ],
+   "pos_step_max_m": 0.0,
+   "z_min": 0.921500027179718,
+   "z_max": 0.921500027179718
+  },
+  "action_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.029554547648831347,
+   "z_min": 0.9216123438649344,
+   "z_max": 1.139223112150601
+  },
+  "state_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998683356301,
+    1.0000000462317036
+   ],
+   "pos_step_max_m": 0.02955434109995557,
+   "z_min": 0.921500027179718,
+   "z_max": 1.1392230987548828
+  },
+  "cam_head": {
+   "frames": 488,
+   "jpeg_bytes_min": 86914,
+   "jpeg_bytes_median": 93382,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": false,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_left_wrist": {
+   "frames": 488,
+   "jpeg_bytes_min": 67297,
+   "jpeg_bytes_median": 78391,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": false,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_right_wrist": {
+   "frames": 488,
+   "jpeg_bytes_min": 62260,
+   "jpeg_bytes_median": 75513,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "keys_with_success_object_words": []
+ },
+ "fill_pen_holder": {
+  "lerobot_episode": 800,
+  "lerobot_len": 933,
+  "n_keys": 36,
+  "top": [
+   "action",
+   "additional_info",
+   "data_format_version",
+   "instruction",
+   "state",
+   "vision"
+  ],
+  "attrs": {
+   "fix_obs_shift_rgb": "shift_drop_first_drop_last+rgb_jpeg"
+  },
+  "hdf5_len": 933,
+  "instruction": "b'Hold the pen holder with one hand, place all pens into it with the other hand, then put it back down.'",
+  "shift_ok": true,
+  "same_as_lerobot_action_maxdiff": 2.9581564531255822e-08,
+  "same_as_lerobot_state_maxdiff": 2.9581564531255822e-08,
+  "action_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.019870338048746376,
+   "z_min": 0.8538503503892833,
+   "z_max": 1.006512852897936
+  },
+  "state_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998961860581,
+    1.0000000294159637
+   ],
+   "pos_step_max_m": 0.019870377012168015,
+   "z_min": 0.8538503646850586,
+   "z_max": 1.0065128803253174
+  },
+  "action_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.024359533707210185,
+   "z_min": 0.9179372631338095,
+   "z_max": 1.1793086890624644
+  },
+  "state_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998782169082,
+    1.0000000564997442
+   ],
+   "pos_step_max_m": 0.024359543294475317,
+   "z_min": 0.9179370999336243,
+   "z_max": 1.1793087720870972
+  },
+  "cam_head": {
+   "frames": 933,
+   "jpeg_bytes_min": 86338,
+   "jpeg_bytes_median": 91196,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": false,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_left_wrist": {
+   "frames": 933,
+   "jpeg_bytes_min": 36508,
+   "jpeg_bytes_median": 69932,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_right_wrist": {
+   "frames": 933,
+   "jpeg_bytes_min": 54888,
+   "jpeg_bytes_median": 72269,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "keys_with_success_object_words": []
+ },
+ "fold_clothes": {
+  "lerobot_episode": 900,
+  "lerobot_len": 300,
+  "n_keys": 36,
+  "top": [
+   "action",
+   "additional_info",
+   "data_format_version",
+   "instruction",
+   "state",
+   "vision"
+  ],
+  "attrs": {
+   "fix_obs_shift_rgb": "shift_drop_first_drop_last+rgb_jpeg"
+  },
+  "hdf5_len": 300,
+  "instruction": "b'Fold the clothes neatly.'",
+  "shift_ok": true,
+  "same_as_lerobot_action_maxdiff": 2.954187749981685e-08,
+  "same_as_lerobot_state_maxdiff": 2.954187749981685e-08,
+  "action_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.03401557784583221,
+   "z_min": 0.9216195712806754,
+   "z_max": 1.0781464708383464
+  },
+  "state_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998893104763,
+    1.0000000388261967
+   ],
+   "pos_step_max_m": 0.03401552144413969,
+   "z_min": 0.921500027179718,
+   "z_max": 1.0781464576721191
+  },
+  "action_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.0355250297061312,
+   "z_min": 0.9214999963252838,
+   "z_max": 1.0025187883388191
+  },
+  "state_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998824777573,
+    1.000000042044448
+   ],
+   "pos_step_max_m": 0.03552500955156768,
+   "z_min": 0.921500027179718,
+   "z_max": 1.0025185346603394
+  },
+  "cam_head": {
+   "frames": 300,
+   "jpeg_bytes_min": 86438,
+   "jpeg_bytes_median": 97748,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": false,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_left_wrist": {
+   "frames": 300,
+   "jpeg_bytes_min": 64043,
+   "jpeg_bytes_median": 110767,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_right_wrist": {
+   "frames": 300,
+   "jpeg_bytes_min": 67743,
+   "jpeg_bytes_median": 103335,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "keys_with_success_object_words": []
+ },
+ "hang_mugs": {
+  "lerobot_episode": 1000,
+  "lerobot_len": 512,
+  "n_keys": 36,
+  "top": [
+   "action",
+   "additional_info",
+   "data_format_version",
+   "instruction",
+   "state",
+   "vision"
+  ],
+  "attrs": {
+   "fix_obs_shift_rgb": "shift_drop_first_drop_last+rgb_jpeg"
+  },
+  "hdf5_len": 512,
+  "instruction": "b'Hang all the mugs on the mug rack.'",
+  "shift_ok": true,
+  "same_as_lerobot_action_maxdiff": 2.9234924925347627e-08,
+  "same_as_lerobot_state_maxdiff": 2.9234924925347627e-08,
+  "action_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.022874020186916443,
+   "z_min": 0.9214999963252838,
+   "z_max": 1.0758369620558748
+  },
+  "state_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998669877126,
+    1.0000000333100498
+   ],
+   "pos_step_max_m": 0.022874035961871753,
+   "z_min": 0.921500027179718,
+   "z_max": 1.0758367776870728
+  },
+  "action_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.03076516636380368,
+   "z_min": 0.9204345935726559,
+   "z_max": 1.0958740173233539
+  },
+  "state_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.999999873726438,
+    1.0000000485370875
+   ],
+   "pos_step_max_m": 0.03076526540371523,
+   "z_min": 0.9204345345497131,
+   "z_max": 1.0958739519119263
+  },
+  "cam_head": {
+   "frames": 512,
+   "jpeg_bytes_min": 86278,
+   "jpeg_bytes_median": 92303,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": false,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_left_wrist": {
+   "frames": 512,
+   "jpeg_bytes_min": 62699,
+   "jpeg_bytes_median": 77680,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_right_wrist": {
+   "frames": 512,
+   "jpeg_bytes_min": 61566,
+   "jpeg_bytes_median": 74282,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "keys_with_success_object_words": []
+ },
+ "imitate_sorting_sequence": {
+  "lerobot_episode": 1100,
+  "lerobot_len": 1187,
+  "n_keys": 36,
+  "top": [
+   "action",
+   "additional_info",
+   "data_format_version",
+   "instruction",
+   "state",
+   "vision"
+  ],
+  "attrs": {
+   "fix_obs_shift_rgb": "shift_drop_first_drop_last+rgb_jpeg"
+  },
+  "hdf5_len": 1187,
+  "instruction": "b'Observe the object placement order, remember it, then place the corresponding objects into the basket in the same order.'",
+  "shift_ok": true,
+  "same_as_lerobot_action_maxdiff": 2.9680905622164744e-08,
+  "same_as_lerobot_state_maxdiff": 2.9680905622164744e-08,
+  "action_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.040549772553554415,
+   "z_min": 0.9214999963252838,
+   "z_max": 1.081799845936123
+  },
+  "state_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998794320679,
+    1.0000000428528413
+   ],
+   "pos_step_max_m": 0.04054994621237445,
+   "z_min": 0.921500027179718,
+   "z_max": 1.0817999839782715
+  },
+  "action_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.04335283855512588,
+   "z_min": 0.9214759907031961,
+   "z_max": 1.0914997211793107
+  },
+  "state_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.999999881469815,
+    1.0000000448335196
+   ],
+   "pos_step_max_m": 0.04335263741770659,
+   "z_min": 0.9214760065078735,
+   "z_max": 1.0914994478225708
+  },
+  "cam_head": {
+   "frames": 1187,
+   "jpeg_bytes_min": 88369,
+   "jpeg_bytes_median": 97737,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": false,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_left_wrist": {
+   "frames": 1187,
+   "jpeg_bytes_min": 40592,
+   "jpeg_bytes_median": 70321,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_right_wrist": {
+   "frames": 1187,
+   "jpeg_bytes_min": 58573,
+   "jpeg_bytes_median": 79330,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "keys_with_success_object_words": []
+ },
+ "insert_key": {
+  "lerobot_episode": 1200,
+  "lerobot_len": 175,
+  "n_keys": 36,
+  "top": [
+   "action",
+   "additional_info",
+   "data_format_version",
+   "instruction",
+   "state",
+   "vision"
+  ],
+  "attrs": {
+   "fix_obs_shift_rgb": "shift_drop_first_drop_last+rgb_jpeg"
+  },
+  "hdf5_len": 175,
+  "instruction": "b'Pick up the key, hand it over to the other hand, insert it into the keyhole, then turn it.'",
+  "shift_ok": true,
+  "same_as_lerobot_action_maxdiff": 2.8624119963183148e-08,
+  "same_as_lerobot_state_maxdiff": 2.8624119963183148e-08,
+  "action_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.02444360753227091,
+   "z_min": 0.9209721511517999,
+   "z_max": 1.0607028923733814
+  },
+  "state_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998899398169,
+    1.000000051987688
+   ],
+   "pos_step_max_m": 0.024443681462075772,
+   "z_min": 0.9209719896316528,
+   "z_max": 1.060703158378601
+  },
+  "action_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.01951511528693276,
+   "z_min": 0.9216128688860484,
+   "z_max": 1.076111838356533
+  },
+  "state_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998796122331,
+    1.000000044737098
+   ],
+   "pos_step_max_m": 0.019515113459925917,
+   "z_min": 0.921500027179718,
+   "z_max": 1.0761117935180664
+  },
+  "cam_head": {
+   "frames": 175,
+   "jpeg_bytes_min": 82607,
+   "jpeg_bytes_median": 85521,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": false,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_left_wrist": {
+   "frames": 175,
+   "jpeg_bytes_min": 54828,
+   "jpeg_bytes_median": 67045,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_right_wrist": {
+   "frames": 175,
+   "jpeg_bytes_min": 58435,
+   "jpeg_bytes_median": 72238,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "keys_with_success_object_words": []
+ },
+ "insert_tubes": {
+  "lerobot_episode": 1300,
+  "lerobot_len": 319,
+  "n_keys": 36,
+  "top": [
+   "action",
+   "additional_info",
+   "data_format_version",
+   "instruction",
+   "state",
+   "vision"
+  ],
+  "attrs": {
+   "fix_obs_shift_rgb": "shift_drop_first_drop_last+rgb_jpeg"
+  },
+  "hdf5_len": 319,
+  "instruction": "b'Insert the three tubes into the rack one by one.'",
+  "shift_ok": true,
+  "same_as_lerobot_action_maxdiff": 2.9777518006923742e-08,
+  "same_as_lerobot_state_maxdiff": 2.9777518006923742e-08,
+  "action_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.027597855488511645,
+   "z_min": 0.8570169612445028,
+   "z_max": 1.0570750490490362
+  },
+  "state_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.999999879754517,
+    1.0000000301448455
+   ],
+   "pos_step_max_m": 0.027597758878276823,
+   "z_min": 0.857016921043396,
+   "z_max": 1.057075023651123
+  },
+  "action_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.02223159812503534,
+   "z_min": 0.8570343907651928,
+   "z_max": 1.0241627051209858
+  },
+  "state_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998767595173,
+    1.000000046679051
+   ],
+   "pos_step_max_m": 0.022231502079563283,
+   "z_min": 0.85703444480896,
+   "z_max": 1.024162769317627
+  },
+  "cam_head": {
+   "frames": 319,
+   "jpeg_bytes_min": 86728,
+   "jpeg_bytes_median": 90271,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": false,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_left_wrist": {
+   "frames": 319,
+   "jpeg_bytes_min": 57535,
+   "jpeg_bytes_median": 72122,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_right_wrist": {
+   "frames": 319,
+   "jpeg_bytes_min": 67745,
+   "jpeg_bytes_median": 77107,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "keys_with_success_object_words": []
+ },
+ "make_kong": {
+  "lerobot_episode": 1400,
+  "lerobot_len": 382,
+  "n_keys": 36,
+  "top": [
+   "action",
+   "additional_info",
+   "data_format_version",
+   "instruction",
+   "state",
+   "vision"
+  ],
+  "attrs": {
+   "fix_obs_shift_rgb": "shift_drop_first_drop_last+rgb_jpeg"
+  },
+  "hdf5_len": 382,
+  "instruction": "b'Wait for the opponent to discard a tile, then declare a kong with the matching tiles.'",
+  "shift_ok": true,
+  "same_as_lerobot_action_maxdiff": 2.9076797747329408e-08,
+  "same_as_lerobot_state_maxdiff": 2.9076797747329408e-08,
+  "action_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.025535496726177487,
+   "z_min": 0.9148540339860292,
+   "z_max": 0.9882492165270932
+  },
+  "state_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998920797181,
+    1.0000000367169155
+   ],
+   "pos_step_max_m": 0.02553538393931361,
+   "z_min": 0.9148540496826172,
+   "z_max": 0.9882491827011108
+  },
+  "action_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.03268337401851152,
+   "z_min": 0.9051076810612593,
+   "z_max": 1.0351253361868868
+  },
+  "state_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998780364773,
+    1.0000000364844244
+   ],
+   "pos_step_max_m": 0.032683260021943175,
+   "z_min": 0.9051077365875244,
+   "z_max": 1.0351251363754272
+  },
+  "cam_head": {
+   "frames": 382,
+   "jpeg_bytes_min": 90976,
+   "jpeg_bytes_median": 93872,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": false,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_left_wrist": {
+   "frames": 382,
+   "jpeg_bytes_min": 55252,
+   "jpeg_bytes_median": 78475,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_right_wrist": {
+   "frames": 382,
+   "jpeg_bytes_min": 58990,
+   "jpeg_bytes_median": 78330,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "keys_with_success_object_words": []
+ },
+ "make_toast": {
+  "lerobot_episode": 1500,
+  "lerobot_len": 583,
+  "n_keys": 36,
+  "top": [
+   "action",
+   "additional_info",
+   "data_format_version",
+   "instruction",
+   "state",
+   "vision"
+  ],
+  "attrs": {
+   "fix_obs_shift_rgb": "shift_drop_first_drop_last+rgb_jpeg"
+  },
+  "hdf5_len": 583,
+  "instruction": "b'Pick up two slices of bread, place them into the toaster, and press the lever down.'",
+  "shift_ok": true,
+  "same_as_lerobot_action_maxdiff": 2.97279362238001e-08,
+  "same_as_lerobot_state_maxdiff": 2.97279362238001e-08,
+  "action_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.030004829921312683,
+   "z_min": 0.9178276705525888,
+   "z_max": 1.2787177157932212
+  },
+  "state_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998766432617,
+    1.0000000374311286
+   ],
+   "pos_step_max_m": 0.030004655539714147,
+   "z_min": 0.9178276658058167,
+   "z_max": 1.2787176370620728
+  },
+  "action_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.03670018033433052,
+   "z_min": 0.9232714466749778,
+   "z_max": 1.1817039386130839
+  },
+  "state_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998736253303,
+    1.0000000370675435
+   ],
+   "pos_step_max_m": 0.03670026113994356,
+   "z_min": 0.921500027179718,
+   "z_max": 1.1817039251327515
+  },
+  "cam_head": {
+   "frames": 583,
+   "jpeg_bytes_min": 82367,
+   "jpeg_bytes_median": 90739,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": false,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_left_wrist": {
+   "frames": 583,
+   "jpeg_bytes_min": 46173,
+   "jpeg_bytes_median": 73857,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_right_wrist": {
+   "frames": 583,
+   "jpeg_bytes_min": 61025,
+   "jpeg_bytes_median": 74791,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "keys_with_success_object_words": []
+ },
+ "match_and_pick_from_conveyor": {
+  "lerobot_episode": 1600,
+  "lerobot_len": 474,
+  "n_keys": 36,
+  "top": [
+   "action",
+   "additional_info",
+   "data_format_version",
+   "instruction",
+   "state",
+   "vision"
+  ],
+  "attrs": {
+   "fix_obs_shift_rgb": "shift_drop_first_drop_last+rgb_jpeg"
+  },
+  "hdf5_len": 474,
+  "instruction": "b'Remember the first object on the conveyor, then pick the matching object when it appears again.'",
+  "shift_ok": true,
+  "same_as_lerobot_action_maxdiff": 2.6226044003152538e-08,
+  "same_as_lerobot_state_maxdiff": 2.6226044003152538e-08,
+  "action_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    1.0,
+    1.0
+   ],
+   "pos_step_max_m": 1.182609023851647e-14,
+   "z_min": 0.9214999963252838,
+   "z_max": 0.9214999963252946
+  },
+  "state_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999521412198,
+    0.9999999521412198
+   ],
+   "pos_step_max_m": 0.0,
+   "z_min": 0.921500027179718,
+   "z_max": 0.921500027179718
+  },
+  "action_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    1.0,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.018937729915996977,
+   "z_min": 0.9106557171054872,
+   "z_max": 1.1339512331081516
+  },
+  "state_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998846333715,
+    1.0000000256326331
+   ],
+   "pos_step_max_m": 0.018937410077045958,
+   "z_min": 0.9106554985046387,
+   "z_max": 1.1267871856689453
+  },
+  "cam_head": {
+   "frames": 474,
+   "jpeg_bytes_min": 81045,
+   "jpeg_bytes_median": 89565,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": false,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_left_wrist": {
+   "frames": 474,
+   "jpeg_bytes_min": 53132,
+   "jpeg_bytes_median": 59357,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": false,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_right_wrist": {
+   "frames": 474,
+   "jpeg_bytes_min": 47193,
+   "jpeg_bytes_median": 58774,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "keys_with_success_object_words": []
+ },
+ "organize_table": {
+  "lerobot_episode": 1700,
+  "lerobot_len": 838,
+  "n_keys": 36,
+  "top": [
+   "action",
+   "additional_info",
+   "data_format_version",
+   "instruction",
+   "state",
+   "vision"
+  ],
+  "attrs": {
+   "fix_obs_shift_rgb": "shift_drop_first_drop_last+rgb_jpeg"
+  },
+  "hdf5_len": 838,
+  "instruction": "b'Place the alarm clock on the drawer, put the figurine on the stand, place the mouse on the mouse pad, and push the keyboard into the frame.'",
+  "shift_ok": true,
+  "same_as_lerobot_action_maxdiff": 2.974713286807429e-08,
+  "same_as_lerobot_state_maxdiff": 2.974713286807429e-08,
+  "action_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.02827714307175913,
+   "z_min": 0.8619770353483283,
+   "z_max": 1.2013004755797438
+  },
+  "state_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998699414168,
+    1.0000000400454607
+   ],
+   "pos_step_max_m": 0.02827730215298849,
+   "z_min": 0.8619771599769592,
+   "z_max": 1.2013003826141357
+  },
+  "action_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.02157879277774052,
+   "z_min": 0.8612314641844111,
+   "z_max": 1.0750018927881047
+  },
+  "state_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998830873962,
+    1.0000000430752856
+   ],
+   "pos_step_max_m": 0.02157880608198749,
+   "z_min": 0.8612313866615295,
+   "z_max": 1.075001835823059
+  },
+  "cam_head": {
+   "frames": 838,
+   "jpeg_bytes_min": 81737,
+   "jpeg_bytes_median": 88960,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": false,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_left_wrist": {
+   "frames": 838,
+   "jpeg_bytes_min": 25806,
+   "jpeg_bytes_median": 65909,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_right_wrist": {
+   "frames": 838,
+   "jpeg_bytes_min": 26020,
+   "jpeg_bytes_median": 60988,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "keys_with_success_object_words": []
+ },
+ "pack_objects_into_box": {
+  "lerobot_episode": 1800,
+  "lerobot_len": 1156,
+  "n_keys": 36,
+  "top": [
+   "action",
+   "additional_info",
+   "data_format_version",
+   "instruction",
+   "state",
+   "vision"
+  ],
+  "attrs": {
+   "fix_obs_shift_rgb": "shift_drop_first_drop_last+rgb_jpeg"
+  },
+  "hdf5_len": 1156,
+  "instruction": "b'Place all the objects into the box with their front sides facing left.'",
+  "shift_ok": true,
+  "same_as_lerobot_action_maxdiff": 2.978677615672609e-08,
+  "same_as_lerobot_state_maxdiff": 2.978677615672609e-08,
+  "action_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.02693772653313747,
+   "z_min": 0.9214999963252838,
+   "z_max": 1.1795685378922929
+  },
+  "state_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998814651649,
+    1.0000000395155595
+   ],
+   "pos_step_max_m": 0.026937613983389275,
+   "z_min": 0.921500027179718,
+   "z_max": 1.1795685291290283
+  },
+  "action_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.021992259649205273,
+   "z_min": 0.9181781884869377,
+   "z_max": 1.1790336165472153
+  },
+  "state_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998568745739,
+    1.0000000436631584
+   ],
+   "pos_step_max_m": 0.021992270201994315,
+   "z_min": 0.9181782007217407,
+   "z_max": 1.1790337562561035
+  },
+  "cam_head": {
+   "frames": 1156,
+   "jpeg_bytes_min": 86063,
+   "jpeg_bytes_median": 90196,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": false,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_left_wrist": {
+   "frames": 1156,
+   "jpeg_bytes_min": 46980,
+   "jpeg_bytes_median": 77583,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_right_wrist": {
+   "frames": 1156,
+   "jpeg_bytes_min": 36539,
+   "jpeg_bytes_median": 68563,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "keys_with_success_object_words": []
+ },
+ "play_Xylophone": {
+  "lerobot_episode": 1900,
+  "lerobot_len": 310,
+  "n_keys": 36,
+  "top": [
+   "action",
+   "additional_info",
+   "data_format_version",
+   "instruction",
+   "state",
+   "vision"
+  ],
+  "attrs": {
+   "fix_obs_shift_rgb": "shift_drop_first_drop_last+rgb_jpeg"
+  },
+  "hdf5_len": 310,
+  "instruction": "b'Pick up the mallet and strike all xylophone keys from left to right.'",
+  "shift_ok": true,
+  "same_as_lerobot_action_maxdiff": 2.625337502948355e-08,
+  "same_as_lerobot_state_maxdiff": 2.625337502948355e-08,
+  "action_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.02893084357985848,
+   "z_min": 0.9216058282614709,
+   "z_max": 1.083371851568681
+  },
+  "state_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998804081209,
+    1.0000000221434966
+   ],
+   "pos_step_max_m": 0.028930792322155646,
+   "z_min": 0.921500027179718,
+   "z_max": 1.0833717584609985
+  },
+  "action_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.02545501581395565,
+   "z_min": 0.9205488716805758,
+   "z_max": 1.0711065174306178
+  },
+  "state_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998794231647,
+    1.000000038245302
+   ],
+   "pos_step_max_m": 0.02545490908738431,
+   "z_min": 0.9205487370491028,
+   "z_max": 1.0711065530776978
+  },
+  "cam_head": {
+   "frames": 310,
+   "jpeg_bytes_min": 89322,
+   "jpeg_bytes_median": 93119,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": false,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_left_wrist": {
+   "frames": 310,
+   "jpeg_bytes_min": 61514,
+   "jpeg_bytes_median": 79222,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_right_wrist": {
+   "frames": 310,
+   "jpeg_bytes_min": 63365,
+   "jpeg_bytes_median": 80636,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "keys_with_success_object_words": []
+ },
+ "play_stacking_toy": {
+  "lerobot_episode": 2000,
+  "lerobot_len": 887,
+  "n_keys": 36,
+  "top": [
+   "action",
+   "additional_info",
+   "data_format_version",
+   "instruction",
+   "state",
+   "vision"
+  ],
+  "attrs": {
+   "fix_obs_shift_rgb": "shift_drop_first_drop_last+rgb_jpeg"
+  },
+  "hdf5_len": 887,
+  "instruction": "b'Place all stacking toy pieces onto the correct pegs.'",
+  "shift_ok": true,
+  "same_as_lerobot_action_maxdiff": 2.974713286807429e-08,
+  "same_as_lerobot_state_maxdiff": 2.974713286807429e-08,
+  "action_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.03633742453357821,
+   "z_min": 0.921499996470529,
+   "z_max": 1.1123015566015548
+  },
+  "state_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998736099043,
+    1.0000000333533714
+   ],
+   "pos_step_max_m": 0.03633738481819922,
+   "z_min": 0.9214999079704285,
+   "z_max": 1.1123018264770508
+  },
+  "action_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.04458030544303751,
+   "z_min": 0.9214999963252838,
+   "z_max": 1.0509462902237947
+  },
+  "state_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998608154513,
+    1.000000036990586
+   ],
+   "pos_step_max_m": 0.04458033847270516,
+   "z_min": 0.921500027179718,
+   "z_max": 1.0509463548660278
+  },
+  "cam_head": {
+   "frames": 887,
+   "jpeg_bytes_min": 86044,
+   "jpeg_bytes_median": 92172,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": false,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_left_wrist": {
+   "frames": 887,
+   "jpeg_bytes_min": 63189,
+   "jpeg_bytes_median": 76731,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_right_wrist": {
+   "frames": 887,
+   "jpeg_bytes_min": 60746,
+   "jpeg_bytes_median": 77317,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "keys_with_success_object_words": []
+ },
+ "play_tic_tac_toe": {
+  "lerobot_episode": 2100,
+  "lerobot_len": 883,
+  "n_keys": 36,
+  "top": [
+   "action",
+   "additional_info",
+   "data_format_version",
+   "instruction",
+   "state",
+   "vision"
+  ],
+  "attrs": {
+   "fix_obs_shift_rgb": "shift_drop_first_drop_last+rgb_jpeg"
+  },
+  "hdf5_len": 883,
+  "instruction": "b'Play tic-tac-toe as the first player and fill the board with the opponent.'",
+  "shift_ok": true,
+  "same_as_lerobot_action_maxdiff": 2.9541877721861454e-08,
+  "same_as_lerobot_state_maxdiff": 2.9541877721861454e-08,
+  "action_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.038442417394247703,
+   "z_min": 0.9084840093489217,
+   "z_max": 1.0868480422867794
+  },
+  "state_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998823268399,
+    1.000000049825163
+   ],
+   "pos_step_max_m": 0.03844244345269119,
+   "z_min": 0.9084840416908264,
+   "z_max": 1.0868480205535889
+  },
+  "action_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.03341663923612856,
+   "z_min": 0.9084859494014214,
+   "z_max": 1.0337932486268016
+  },
+  "state_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998866210251,
+    1.000000055145323
+   ],
+   "pos_step_max_m": 0.03341664212250967,
+   "z_min": 0.908486008644104,
+   "z_max": 1.0337932109832764
+  },
+  "cam_head": {
+   "frames": 883,
+   "jpeg_bytes_min": 89612,
+   "jpeg_bytes_median": 96040,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": false,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_left_wrist": {
+   "frames": 883,
+   "jpeg_bytes_min": 53487,
+   "jpeg_bytes_median": 74134,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_right_wrist": {
+   "frames": 883,
+   "jpeg_bytes_min": 61640,
+   "jpeg_bytes_median": 76097,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "keys_with_success_object_words": []
+ },
+ "plug_in_charger": {
+  "lerobot_episode": 2200,
+  "lerobot_len": 195,
+  "n_keys": 36,
+  "top": [
+   "action",
+   "additional_info",
+   "data_format_version",
+   "instruction",
+   "state",
+   "vision"
+  ],
+  "attrs": {
+   "fix_obs_shift_rgb": "shift_drop_first_drop_last+rgb_jpeg"
+  },
+  "hdf5_len": 195,
+  "instruction": "b'Plug the charger into the power strip.'",
+  "shift_ok": true,
+  "same_as_lerobot_action_maxdiff": 2.905819451726188e-08,
+  "same_as_lerobot_state_maxdiff": 2.905819451726188e-08,
+  "action_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.025599598003920254,
+   "z_min": 0.9214999963252838,
+   "z_max": 1.0781444829852926
+  },
+  "state_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998699768609,
+    1.0000000361489272
+   ],
+   "pos_step_max_m": 0.025599561388184155,
+   "z_min": 0.921500027179718,
+   "z_max": 1.0781444311141968
+  },
+  "action_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.02638216739421892,
+   "z_min": 0.9163537582265604,
+   "z_max": 1.0718016380272555
+  },
+  "state_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998898471955,
+    1.0000000390647792
+   ],
+   "pos_step_max_m": 0.02638219045761131,
+   "z_min": 0.9163537621498108,
+   "z_max": 1.0718016624450684
+  },
+  "cam_head": {
+   "frames": 195,
+   "jpeg_bytes_min": 83210,
+   "jpeg_bytes_median": 87468,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": false,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_left_wrist": {
+   "frames": 195,
+   "jpeg_bytes_min": 59400,
+   "jpeg_bytes_median": 70007,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_right_wrist": {
+   "frames": 195,
+   "jpeg_bytes_min": 52792,
+   "jpeg_bytes_median": 68690,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "keys_with_success_object_words": []
+ },
+ "pour_balls_into_vase": {
+  "lerobot_episode": 2300,
+  "lerobot_len": 355,
+  "n_keys": 36,
+  "top": [
+   "action",
+   "additional_info",
+   "data_format_version",
+   "instruction",
+   "state",
+   "vision"
+  ],
+  "attrs": {
+   "fix_obs_shift_rgb": "shift_drop_first_drop_last+rgb_jpeg"
+  },
+  "hdf5_len": 355,
+  "instruction": "b'Pour all the balls from the cup into the vase.'",
+  "shift_ok": true,
+  "same_as_lerobot_action_maxdiff": 2.9471185492013774e-08,
+  "same_as_lerobot_state_maxdiff": 2.9471185492013774e-08,
+  "action_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.021619272207815295,
+   "z_min": 0.811245715379265,
+   "z_max": 1.1244658057536234
+  },
+  "state_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998615406018,
+    1.000000031584597
+   ],
+   "pos_step_max_m": 0.02161908558138407,
+   "z_min": 0.8112456202507019,
+   "z_max": 1.1244659423828125
+  },
+  "action_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.018934546475550276,
+   "z_min": 0.9215489458223276,
+   "z_max": 1.0658093097176249
+  },
+  "state_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.999999887339892,
+    1.0000000398164577
+   ],
+   "pos_step_max_m": 0.018934493133247653,
+   "z_min": 0.921500027179718,
+   "z_max": 1.0658091306686401
+  },
+  "cam_head": {
+   "frames": 355,
+   "jpeg_bytes_min": 83702,
+   "jpeg_bytes_median": 87978,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": false,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_left_wrist": {
+   "frames": 355,
+   "jpeg_bytes_min": 38672,
+   "jpeg_bytes_median": 67357,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_right_wrist": {
+   "frames": 355,
+   "jpeg_bytes_min": 57289,
+   "jpeg_bytes_median": 68944,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "keys_with_success_object_words": []
+ },
+ "pour_liquid_into_cup": {
+  "lerobot_episode": 2400,
+  "lerobot_len": 176,
+  "n_keys": 36,
+  "top": [
+   "action",
+   "additional_info",
+   "data_format_version",
+   "instruction",
+   "state",
+   "vision"
+  ],
+  "attrs": {
+   "fix_obs_shift_rgb": "shift_drop_first_drop_last+rgb_jpeg"
+  },
+  "hdf5_len": 176,
+  "instruction": "b'Pour the liquid from the bottle into the cup.'",
+  "shift_ok": true,
+  "same_as_lerobot_action_maxdiff": 2.958156442023352e-08,
+  "same_as_lerobot_state_maxdiff": 2.958156442023352e-08,
+  "action_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.018265210805413327,
+   "z_min": 0.8749343255346317,
+   "z_max": 1.0373857193928375
+  },
+  "state_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.999999890120638,
+    1.0000000262004078
+   ],
+   "pos_step_max_m": 0.01826526950647146,
+   "z_min": 0.8749343752861023,
+   "z_max": 1.0373858213424683
+  },
+  "action_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    1.0,
+    1.0
+   ],
+   "pos_step_max_m": 1.0491754436577389e-14,
+   "z_min": 0.9214999963252838,
+   "z_max": 0.9214999963252855
+  },
+  "state_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999521412185,
+    0.9999999521412185
+   ],
+   "pos_step_max_m": 0.0,
+   "z_min": 0.921500027179718,
+   "z_max": 0.921500027179718
+  },
+  "cam_head": {
+   "frames": 176,
+   "jpeg_bytes_min": 83180,
+   "jpeg_bytes_median": 87509,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": false,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_left_wrist": {
+   "frames": 176,
+   "jpeg_bytes_min": 24230,
+   "jpeg_bytes_median": 28606,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_right_wrist": {
+   "frames": 176,
+   "jpeg_bytes_min": 67690,
+   "jpeg_bytes_median": 73730,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": false,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "keys_with_success_object_words": []
+ },
+ "press_by_number": {
+  "lerobot_episode": 2500,
+  "lerobot_len": 377,
+  "n_keys": 36,
+  "top": [
+   "action",
+   "additional_info",
+   "data_format_version",
+   "instruction",
+   "state",
+   "vision"
+  ],
+  "attrs": {
+   "fix_obs_shift_rgb": "shift_drop_first_drop_last+rgb_jpeg"
+  },
+  "hdf5_len": 377,
+  "instruction": "b'Press the two red buttons the required number of times according to the number cards, then press the blue button to confirm.'",
+  "shift_ok": true,
+  "same_as_lerobot_action_maxdiff": 2.9653496880222008e-08,
+  "same_as_lerobot_state_maxdiff": 2.9653496880222008e-08,
+  "action_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.03284973042300385,
+   "z_min": 0.9214999963202146,
+   "z_max": 1.0693835234411995
+  },
+  "state_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998796405246,
+    1.0000000246380998
+   ],
+   "pos_step_max_m": 0.032849620148341904,
+   "z_min": 0.921500027179718,
+   "z_max": 1.0693833827972412
+  },
+  "action_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.02240173752916733,
+   "z_min": 0.9214999962472081,
+   "z_max": 1.0259188824951109
+  },
+  "state_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998839494818,
+    1.000000032183953
+   ],
+   "pos_step_max_m": 0.02240171033695844,
+   "z_min": 0.921500027179718,
+   "z_max": 1.0259188413619995
+  },
+  "cam_head": {
+   "frames": 377,
+   "jpeg_bytes_min": 83344,
+   "jpeg_bytes_median": 88941,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": false,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_left_wrist": {
+   "frames": 377,
+   "jpeg_bytes_min": 58692,
+   "jpeg_bytes_median": 66135,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_right_wrist": {
+   "frames": 377,
+   "jpeg_bytes_min": 59300,
+   "jpeg_bytes_median": 72404,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "keys_with_success_object_words": []
+ },
+ "push_T": {
+  "lerobot_episode": 2600,
+  "lerobot_len": 359,
+  "n_keys": 36,
+  "top": [
+   "action",
+   "additional_info",
+   "data_format_version",
+   "instruction",
+   "state",
+   "vision"
+  ],
+  "attrs": {
+   "fix_obs_shift_rgb": "shift_drop_first_drop_last+rgb_jpeg"
+  },
+  "hdf5_len": 359,
+  "instruction": "b'Push the T-shaped block to align it precisely with the gray T-shaped pad.'",
+  "shift_ok": true,
+  "same_as_lerobot_action_maxdiff": 2.9207020024735186e-08,
+  "same_as_lerobot_state_maxdiff": 2.9207020024735186e-08,
+  "action_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.0004985126685700516,
+   "z_min": 0.9209070482946756,
+   "z_max": 0.9215003361548901
+  },
+  "state_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998998155175,
+    0.9999999925439856
+   ],
+   "pos_step_max_m": 0.0013480136931236322,
+   "z_min": 0.9209070801734924,
+   "z_max": 0.9215003848075867
+  },
+  "action_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.020021309855757854,
+   "z_min": 0.9213810138591558,
+   "z_max": 1.0504934577533138
+  },
+  "state_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998708728582,
+    1.0000000357059478
+   ],
+   "pos_step_max_m": 0.020021308349487635,
+   "z_min": 0.921380877494812,
+   "z_max": 1.0504933595657349
+  },
+  "cam_head": {
+   "frames": 359,
+   "jpeg_bytes_min": 81279,
+   "jpeg_bytes_median": 87600,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": false,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_left_wrist": {
+   "frames": 359,
+   "jpeg_bytes_min": 65729,
+   "jpeg_bytes_median": 75837,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_right_wrist": {
+   "frames": 359,
+   "jpeg_bytes_min": 53368,
+   "jpeg_bytes_median": 61551,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "keys_with_success_object_words": []
+ },
+ "put_bottles_into_dustbin": {
+  "lerobot_episode": 2700,
+  "lerobot_len": 362,
+  "n_keys": 36,
+  "top": [
+   "action",
+   "additional_info",
+   "data_format_version",
+   "instruction",
+   "state",
+   "vision"
+  ],
+  "attrs": {
+   "fix_obs_shift_rgb": "shift_drop_first_drop_last+rgb_jpeg"
+  },
+  "hdf5_len": 362,
+  "instruction": "b'Pick up the bottles and throw them into the dustbin, using handover when needed.'",
+  "shift_ok": true,
+  "same_as_lerobot_action_maxdiff": 2.8610230518033575e-08,
+  "same_as_lerobot_state_maxdiff": 2.8610230518033575e-08,
+  "action_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.023648608406455413,
+   "z_min": 0.8913925369730823,
+   "z_max": 1.1016277515621091
+  },
+  "state_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998736470476,
+    1.000000038954546
+   ],
+   "pos_step_max_m": 0.023648555810036127,
+   "z_min": 0.8913924694061279,
+   "z_max": 1.1016277074813843
+  },
+  "action_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    1.0,
+    1.0
+   ],
+   "pos_step_max_m": 1.4471954085963869e-13,
+   "z_min": 0.9214999963252838,
+   "z_max": 0.9214999963252846
+  },
+  "state_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999521412198,
+    0.9999999521412198
+   ],
+   "pos_step_max_m": 0.0,
+   "z_min": 0.921500027179718,
+   "z_max": 0.921500027179718
+  },
+  "cam_head": {
+   "frames": 362,
+   "jpeg_bytes_min": 83603,
+   "jpeg_bytes_median": 87239,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": false,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_left_wrist": {
+   "frames": 362,
+   "jpeg_bytes_min": 31992,
+   "jpeg_bytes_median": 63329,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_right_wrist": {
+   "frames": 362,
+   "jpeg_bytes_min": 72109,
+   "jpeg_bytes_median": 79850,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": false,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "keys_with_success_object_words": []
+ },
+ "sort_nesting_dolls_by_size": {
+  "lerobot_episode": 2800,
+  "lerobot_len": 748,
+  "n_keys": 36,
+  "top": [
+   "action",
+   "additional_info",
+   "data_format_version",
+   "instruction",
+   "state",
+   "vision"
+  ],
+  "attrs": {
+   "fix_obs_shift_rgb": "shift_drop_first_drop_last+rgb_jpeg"
+  },
+  "hdf5_len": 748,
+  "instruction": "b'Arrange the five nesting dolls in a row from left to right, from smallest to largest.'",
+  "shift_ok": true,
+  "same_as_lerobot_action_maxdiff": 2.9476766472136262e-08,
+  "same_as_lerobot_state_maxdiff": 2.9476766472136262e-08,
+  "action_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.029095198825932367,
+   "z_min": 0.9152287513946398,
+   "z_max": 1.0792780717911243
+  },
+  "state_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.999999877600565,
+    1.0000000329948022
+   ],
+   "pos_step_max_m": 0.029095393986231403,
+   "z_min": 0.9152289032936096,
+   "z_max": 1.0792782306671143
+  },
+  "action_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.03944870699641597,
+   "z_min": 0.9135805944236822,
+   "z_max": 1.1115271049932962
+  },
+  "state_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998699621904,
+    1.0000000375277438
+   ],
+   "pos_step_max_m": 0.03944871820393671,
+   "z_min": 0.913580596446991,
+   "z_max": 1.1115270853042603
+  },
+  "cam_head": {
+   "frames": 748,
+   "jpeg_bytes_min": 83337,
+   "jpeg_bytes_median": 88275,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": false,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_left_wrist": {
+   "frames": 748,
+   "jpeg_bytes_min": 62402,
+   "jpeg_bytes_median": 73771,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_right_wrist": {
+   "frames": 748,
+   "jpeg_bytes_min": 63069,
+   "jpeg_bytes_median": 76517,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "keys_with_success_object_words": []
+ },
+ "stack_blocks": {
+  "lerobot_episode": 2900,
+  "lerobot_len": 267,
+  "n_keys": 36,
+  "top": [
+   "action",
+   "additional_info",
+   "data_format_version",
+   "instruction",
+   "state",
+   "vision"
+  ],
+  "attrs": {
+   "fix_obs_shift_rgb": "shift_drop_first_drop_last+rgb_jpeg"
+  },
+  "hdf5_len": 267,
+  "instruction": "b'Stack the three blocks with different textures.'",
+  "shift_ok": true,
+  "same_as_lerobot_action_maxdiff": 2.9579083959951902e-08,
+  "same_as_lerobot_state_maxdiff": 2.9579083959951902e-08,
+  "action_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.04059184350765905,
+   "z_min": 0.9214999963252838,
+   "z_max": 1.0813238873888007
+  },
+  "state_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998873153467,
+    1.0000000278281806
+   ],
+   "pos_step_max_m": 0.04059197253653619,
+   "z_min": 0.921500027179718,
+   "z_max": 1.0813237428665161
+  },
+  "action_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.031370110840078305,
+   "z_min": 0.9215000122865065,
+   "z_max": 1.04792279155322
+  },
+  "state_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998722643769,
+    1.0000000371125033
+   ],
+   "pos_step_max_m": 0.031370210535193975,
+   "z_min": 0.9214999079704285,
+   "z_max": 1.0479227304458618
+  },
+  "cam_head": {
+   "frames": 267,
+   "jpeg_bytes_min": 80773,
+   "jpeg_bytes_median": 87352,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": false,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_left_wrist": {
+   "frames": 267,
+   "jpeg_bytes_min": 59564,
+   "jpeg_bytes_median": 70166,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_right_wrist": {
+   "frames": 267,
+   "jpeg_bytes_min": 51220,
+   "jpeg_bytes_median": 72819,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "keys_with_success_object_words": []
+ },
+ "stack_bowls": {
+  "lerobot_episode": 3000,
+  "lerobot_len": 240,
+  "n_keys": 36,
+  "top": [
+   "action",
+   "additional_info",
+   "data_format_version",
+   "instruction",
+   "state",
+   "vision"
+  ],
+  "attrs": {
+   "fix_obs_shift_rgb": "shift_drop_first_drop_last+rgb_jpeg"
+  },
+  "hdf5_len": 240,
+  "instruction": "b'Stack the three bowls together.'",
+  "shift_ok": true,
+  "same_as_lerobot_action_maxdiff": 2.9306236992709955e-08,
+  "same_as_lerobot_state_maxdiff": 2.9306236992709955e-08,
+  "action_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.030763386167106603,
+   "z_min": 0.8852959045827626,
+   "z_max": 1.0491746388524357
+  },
+  "state_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998920583781,
+    1.000000027059413
+   ],
+   "pos_step_max_m": 0.03076333838022986,
+   "z_min": 0.8852956295013428,
+   "z_max": 1.0491745471954346
+  },
+  "action_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.025285393834326018,
+   "z_min": 0.9106001965503144,
+   "z_max": 1.0598129249980262
+  },
+  "state_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998822571821,
+    1.0000000273902176
+   ],
+   "pos_step_max_m": 0.025285341336323392,
+   "z_min": 0.9106001853942871,
+   "z_max": 1.0598127841949463
+  },
+  "cam_head": {
+   "frames": 240,
+   "jpeg_bytes_min": 84469,
+   "jpeg_bytes_median": 88238,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": false,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_left_wrist": {
+   "frames": 240,
+   "jpeg_bytes_min": 46332,
+   "jpeg_bytes_median": 70332,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_right_wrist": {
+   "frames": 240,
+   "jpeg_bytes_min": 46185,
+   "jpeg_bytes_median": 67125,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "keys_with_success_object_words": []
+ },
+ "store_laptop_and_headphones": {
+  "lerobot_episode": 3100,
+  "lerobot_len": 550,
+  "n_keys": 36,
+  "top": [
+   "action",
+   "additional_info",
+   "data_format_version",
+   "instruction",
+   "state",
+   "vision"
+  ],
+  "attrs": {
+   "fix_obs_shift_rgb": "shift_drop_first_drop_last+rgb_jpeg"
+  },
+  "hdf5_len": 550,
+  "instruction": "b'Hang the headphones on the headphone stand, close the laptop, then place it into the vertical laptop stand.'",
+  "shift_ok": true,
+  "same_as_lerobot_action_maxdiff": 2.9776289545146994e-08,
+  "same_as_lerobot_state_maxdiff": 2.9776289545146994e-08,
+  "action_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.01894396814026168,
+   "z_min": 0.8526575816301474,
+   "z_max": 1.068794091236949
+  },
+  "state_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998654254203,
+    1.0000000362140182
+   ],
+   "pos_step_max_m": 0.018944052208387695,
+   "z_min": 0.852657675743103,
+   "z_max": 1.0687938928604126
+  },
+  "action_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.026915848605399986,
+   "z_min": 0.9214999963252838,
+   "z_max": 1.1436552324436327
+  },
+  "state_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998759189962,
+    1.0000000395142739
+   ],
+   "pos_step_max_m": 0.026915866758923008,
+   "z_min": 0.921500027179718,
+   "z_max": 1.1436553001403809
+  },
+  "cam_head": {
+   "frames": 550,
+   "jpeg_bytes_min": 87644,
+   "jpeg_bytes_median": 92143,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": false,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_left_wrist": {
+   "frames": 550,
+   "jpeg_bytes_min": 52540,
+   "jpeg_bytes_median": 75683,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_right_wrist": {
+   "frames": 550,
+   "jpeg_bytes_min": 31454,
+   "jpeg_bytes_median": 70969,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "keys_with_success_object_words": []
+ },
+ "swap_T": {
+  "lerobot_episode": 3200,
+  "lerobot_len": 272,
+  "n_keys": 36,
+  "top": [
+   "action",
+   "additional_info",
+   "data_format_version",
+   "instruction",
+   "state",
+   "vision"
+  ],
+  "attrs": {
+   "fix_obs_shift_rgb": "shift_drop_first_drop_last+rgb_jpeg"
+  },
+  "hdf5_len": 272,
+  "instruction": "b'Pick up the two T-shaped blocks, swap their positions, and place them back with the correct orientations.'",
+  "shift_ok": true,
+  "same_as_lerobot_action_maxdiff": 2.9541877721861454e-08,
+  "same_as_lerobot_state_maxdiff": 2.9541877721861454e-08,
+  "action_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.036379618874474495,
+   "z_min": 0.9205546042299236,
+   "z_max": 1.0805769744884508
+  },
+  "state_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998864967627,
+    1.0000000305215266
+   ],
+   "pos_step_max_m": 0.03637957930788585,
+   "z_min": 0.9205546379089355,
+   "z_max": 1.0805766582489014
+  },
+  "action_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.03341262243739295,
+   "z_min": 0.9205766619734089,
+   "z_max": 1.0582217877137743
+  },
+  "state_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998573405945,
+    1.0000000417027959
+   ],
+   "pos_step_max_m": 0.03341265399084835,
+   "z_min": 0.920576810836792,
+   "z_max": 1.0582218170166016
+  },
+  "cam_head": {
+   "frames": 272,
+   "jpeg_bytes_min": 83200,
+   "jpeg_bytes_median": 86944,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": false,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_left_wrist": {
+   "frames": 272,
+   "jpeg_bytes_min": 53184,
+   "jpeg_bytes_median": 62229,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_right_wrist": {
+   "frames": 272,
+   "jpeg_bytes_min": 51472,
+   "jpeg_bytes_median": 67244,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "keys_with_success_object_words": []
+ },
+ "swap_blocks": {
+  "lerobot_episode": 3300,
+  "lerobot_len": 444,
+  "n_keys": 36,
+  "top": [
+   "action",
+   "additional_info",
+   "data_format_version",
+   "instruction",
+   "state",
+   "vision"
+  ],
+  "attrs": {
+   "fix_obs_shift_rgb": "shift_drop_first_drop_last+rgb_jpeg"
+  },
+  "hdf5_len": 444,
+  "instruction": "b'Swap the two blocks using the empty mat, pressing the button after each move.'",
+  "shift_ok": true,
+  "same_as_lerobot_action_maxdiff": 2.9455062722227865e-08,
+  "same_as_lerobot_state_maxdiff": 2.9455062722227865e-08,
+  "action_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.028501193999332014,
+   "z_min": 0.921488653965949,
+   "z_max": 1.0268130957183121
+  },
+  "state_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998856316911,
+    1.0000000280930288
+   ],
+   "pos_step_max_m": 0.02850117001198286,
+   "z_min": 0.9214887619018555,
+   "z_max": 1.0268131494522095
+  },
+  "action_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.03493777853597698,
+   "z_min": 0.9215020584155903,
+   "z_max": 1.0448364861851143
+  },
+  "state_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998772852368,
+    1.0000000412852286
+   ],
+   "pos_step_max_m": 0.03493772718211619,
+   "z_min": 0.921500027179718,
+   "z_max": 1.0448366403579712
+  },
+  "cam_head": {
+   "frames": 444,
+   "jpeg_bytes_min": 84482,
+   "jpeg_bytes_median": 89375,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": false,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_left_wrist": {
+   "frames": 444,
+   "jpeg_bytes_min": 57088,
+   "jpeg_bytes_median": 74120,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_right_wrist": {
+   "frames": 444,
+   "jpeg_bytes_min": 56361,
+   "jpeg_bytes_median": 70344,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "keys_with_success_object_words": []
+ },
+ "sweep_blocks": {
+  "lerobot_episode": 3400,
+  "lerobot_len": 702,
+  "n_keys": 36,
+  "top": [
+   "action",
+   "additional_info",
+   "data_format_version",
+   "instruction",
+   "state",
+   "vision"
+  ],
+  "attrs": {
+   "fix_obs_shift_rgb": "shift_drop_first_drop_last+rgb_jpeg"
+  },
+  "hdf5_len": 702,
+  "instruction": "b'Pick up the broom, hand it over to the right hand, then use the dustpan to sweep the blocks.'",
+  "shift_ok": true,
+  "same_as_lerobot_action_maxdiff": 2.9625716324588325e-08,
+  "same_as_lerobot_state_maxdiff": 2.9625716324588325e-08,
+  "action_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.03568269418964091,
+   "z_min": 0.9217990795393582,
+   "z_max": 1.1787551478993192
+  },
+  "state_left_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.999999870018844,
+    1.0000000610219597
+   ],
+   "pos_step_max_m": 0.03568256553857621,
+   "z_min": 0.921500027179718,
+   "z_max": 1.1787551641464233
+  },
+  "action_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999999999999999,
+    1.0000000000000002
+   ],
+   "pos_step_max_m": 0.02018964062836993,
+   "z_min": 0.9214999963252838,
+   "z_max": 1.0706945294515717
+  },
+  "state_right_ee": {
+   "finite": true,
+   "quat_norm_range": [
+    0.9999998672163591,
+    1.0000000446425799
+   ],
+   "pos_step_max_m": 0.020189696517849742,
+   "z_min": 0.921500027179718,
+   "z_max": 1.0706943273544312
+  },
+  "cam_head": {
+   "frames": 702,
+   "jpeg_bytes_min": 85431,
+   "jpeg_bytes_median": 90986,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": false,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_left_wrist": {
+   "frames": 702,
+   "jpeg_bytes_min": 34367,
+   "jpeg_bytes_median": 44268,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "cam_right_wrist": {
+   "frames": 702,
+   "jpeg_bytes_min": 51274,
+   "jpeg_bytes_median": 59077,
+   "jpeg_starts_ffd8": true,
+   "extrinsic_varies": true,
+   "shape": [
+    480,
+    640,
+    3
+   ]
+  },
+  "keys_with_success_object_words": []
+ }
+}

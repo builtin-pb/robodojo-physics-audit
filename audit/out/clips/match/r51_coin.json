@@ -1,0 +1,175 @@
+{
+ "check": "stress",
+ "result": "/tmp/clipsref/r51_coin/result.json",
+ "reference": "audit/out/stress_hv/steps_shv_coinspeed_r1.json.gz",
+ "isaac_sim_62": [
+  "5.1.0",
+  "rc.19",
+  "5"
+ ],
+ "repo_head_62": "3155bf6ec2f5d56e44a766173d1afae4a69808f0",
+ "cases": {
+  "coin_side_1ms_ph0": {
+   "kind": "launch",
+   "steps": [
+    500,
+    500
+   ],
+   "max_mm": 0.0,
+   "max_deg": 0.0,
+   "first_over_tolerance": null,
+   "end_pos_62": [
+    0.30224,
+    -0.24071,
+    0.765
+   ],
+   "end_pos_51": [
+    0.30224,
+    -0.24071,
+    0.765
+   ],
+   "end_mm": 0.0,
+   "eval_checks_equal": true,
+   "match": true
+  },
+  "coin_side_2ms_ph0": {
+   "kind": "launch",
+   "steps": [
+    500,
+    500
+   ],
+   "max_mm": 0.0,
+   "max_deg": 0.0,
+   "first_over_tolerance": null,
+   "end_pos_62": [
+    0.30059,
+    -0.22275,
+    0.81343
+   ],
+   "end_pos_51": [
+    0.30059,
+    -0.22275,
+    0.81343
+   ],
+   "end_mm": 0.0,
+   "eval_checks_equal": true,
+   "match": true
+  },
+  "coin_side_2ms_ph3": {
+   "kind": "launch",
+   "steps": [
+    500,
+    500
+   ],
+   "max_mm": 0.0,
+   "max_deg": 0.0,
+   "first_over_tolerance": null,
+   "end_pos_62": [
+    0.30058,
+    -0.22386,
+    0.81207
+   ],
+   "end_pos_51": [
+    0.30058,
+    -0.22386,
+    0.81207
+   ],
+   "end_mm": 0.0,
+   "eval_checks_equal": true,
+   "match": true
+  },
+  "coin_side_4ms_ph0": {
+   "kind": "launch",
+   "steps": [
+    500,
+    500
+   ],
+   "max_mm": 0.0,
+   "max_deg": 0.0,
+   "first_over_tolerance": null,
+   "end_pos_62": [
+    0.30027,
+    -0.21859,
+    0.81843
+   ],
+   "end_pos_51": [
+    0.30027,
+    -0.21859,
+    0.81843
+   ],
+   "end_mm": 0.0,
+   "eval_checks_equal": true,
+   "match": true
+  },
+  "coin_side_4ms_ph2": {
+   "kind": "launch",
+   "steps": [
+    500,
+    500
+   ],
+   "max_mm": 0.0,
+   "max_deg": 0.0,
+   "first_over_tolerance": null,
+   "end_pos_62": [
+    0.31641,
+    -0.09205,
+    0.81478
+   ],
+   "end_pos_51": [
+    0.31641,
+    -0.09205,
+    0.81478
+   ],
+   "end_mm": 0.0,
+   "eval_checks_equal": true,
+   "match": true
+  },
+  "coin_side_4ms_ph3": {
+   "kind": "launch",
+   "steps": [
+    500,
+    500
+   ],
+   "max_mm": 0.0,
+   "max_deg": 0.0,
+   "first_over_tolerance": null,
+   "end_pos_62": [
+    0.3184,
+    -0.08974,
+    0.80674
+   ],
+   "end_pos_51": [
+    0.3184,
+    -0.08974,
+    0.80674
+   ],
+   "end_mm": 0.0,
+   "eval_checks_equal": true,
+   "match": true
+  },
+  "control_coin_slot_slow_in": {
+   "kind": "launch",
+   "steps": [
+    300,
+    300
+   ],
+   "max_mm": 0.0,
+   "max_deg": 0.0,
+   "first_over_tolerance": null,
+   "end_pos_62": [
+    0.3029,
+    -0.14548,
+    0.77873
+   ],
+   "end_pos_51": [
+    0.3029,
+    -0.14548,
+    0.77873
+   ],
+   "end_mm": 0.0,
+   "eval_checks_equal": true,
+   "match": true
+  }
+ },
+ "match": true
+}

@@ -1,0 +1,10 @@
+# Harness fidelity, batch 1: the same policy on the same layouts through the harness (fh_), the fork's main.py (fm_) and upstream f57e163's main.py (fu_). della-vis2 GPU 0.
+fh_shove_L01|fork|--task put_bottles_into_dustbin --layouts 0,1 --policy exploit --exploit_mode shove_bottles --log_poses --evaluator v1
+fm_shove|fork|--mode exploit --exploit_mode shove_bottles --task put_bottles_into_dustbin --evaluator v1 --eval_num 2 --log_poses --run_id fid_shove
+fu_shove|up|--mode exploit --exploit_mode shove_bottles --task put_bottles_into_dustbin --eval_num 2 --log_poses --upstream --run_id fid_shove_up
+fh_presslit_L0|fork|--task press_by_number --layouts 0 --policy exploit --exploit_mode press_by_number --exploit_args '{"order":"literal"}' --log_poses --evaluator v1
+fm_presslit|fork|--mode exploit --exploit_mode press_by_number --exploit_args '{"order":"literal"}' --task press_by_number --evaluator v1 --eval_num 1 --log_poses --run_id fid_presslit
+fu_presslit|up|--mode exploit --exploit_mode press_by_number --exploit_args '{"order":"literal"}' --task press_by_number --eval_num 1 --log_poses --upstream --run_id fid_presslit_up
+fh_peek_L01|fork|--task cover_blocks --layouts 0,1 --policy witness_cb --cb_mode peek_51 --log_poses --evaluator v1
+fm_peek|fork|--mode witness_cb --cb_mode peek_51 --task cover_blocks --evaluator v1 --eval_num 2 --log_poses --run_id fid_peek
+fu_peek|up|--mode witness_cb --cb_mode peek_51 --task cover_blocks --eval_num 2 --log_poses --upstream --run_id fid_peek_up

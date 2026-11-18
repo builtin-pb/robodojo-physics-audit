@@ -1,0 +1,606 @@
+{
+ "arms": {
+  "corrected": {
+   "accidental_bottles": 6,
+   "bottles_in_bin": 78,
+   "bottles_total": 80,
+   "episodes_with_impossible_motion": 0,
+   "episodes_with_recovered_failures": 9,
+   "first_failure_phases": {
+    "none": 18,
+    "transport": 2
+   },
+   "fixes": "all seven, before #160's fix (audit/out/g4/put_bottles_into_dustbin/raw)",
+   "max_bottle_speed_m_s": 3.59,
+   "mean_actions": 423.55,
+   "mean_steps_per_second": 27.36,
+   "mean_wall_seconds": 174.5,
+   "n": 20,
+   "seed_mean_range": 20.0,
+   "seed_mean_scores": {
+    "0": 100.0,
+    "1": 100.0,
+    "2": 80.0
+   },
+   "solver_readback_failures": 0,
+   "solver_scene": [
+    "{\"effective\": 64, \"factor\": 4.0, \"min_pos_iters\": 64.0, \"stabilization\": false}"
+   ],
+   "success_rate": 0.9,
+   "success_rate_ci95": [
+    0.699,
+    0.972
+   ],
+   "successes": 18,
+   "transport_losses": {
+    "by_model": {
+     "bottle_2": 1,
+     "bottle_22": 7,
+     "bottle_5": 1,
+     "bottle_60": 1
+    },
+    "by_phase": {
+     "handover": 1,
+     "left_carry_high": 2,
+     "left_to_dustbin": 7
+    },
+    "by_place": {
+     "bin side": 6,
+     "table": 4
+    },
+    "episodes": 10,
+    "rows": [
+     [
+      0,
+      11,
+      "bottle1",
+      "bottle_2",
+      "left_to_dustbin",
+      208,
+      true,
+      "bin side",
+      -0.453
+     ],
+     [
+      0,
+      12,
+      "bottle1",
+      "bottle_22",
+      "left_to_dustbin",
+      143,
+      true,
+      "bin side",
+      -0.642
+     ],
+     [
+      0,
+      13,
+      "bottle3",
+      "bottle_22",
+      "left_to_dustbin",
+      347,
+      true,
+      "bin side",
+      -0.532
+     ],
+     [
+      1,
+      10,
+      "bottle2",
+      "bottle_22",
+      "left_to_dustbin",
+      196,
+      true,
+      "bin side",
+      -0.555
+     ],
+     [
+      1,
+      11,
+      "bottle1",
+      "bottle_60",
+      "left_to_dustbin",
+      345,
+      true,
+      "bin side",
+      -0.448
+     ],
+     [
+      2,
+      10,
+      "bottle1",
+      "bottle_22",
+      "left_to_dustbin",
+      442,
+      true,
+      "bin side",
+      -0.586
+     ],
+     [
+      2,
+      11,
+      "bottle3",
+      "bottle_22",
+      "left_carry_high",
+      336,
+      true,
+      "table",
+      0.039
+     ],
+     [
+      2,
+      12,
+      "bottle2",
+      "bottle_5",
+      "handover",
+      426,
+      false,
+      "table",
+      -0.034
+     ],
+     [
+      2,
+      14,
+      "bottle0",
+      "bottle_22",
+      "left_to_dustbin",
+      387,
+      true,
+      "table",
+      -0.293
+     ],
+     [
+      2,
+      15,
+      "bottle1",
+      "bottle_22",
+      "left_carry_high",
+      384,
+      false,
+      "table",
+      -0.277
+     ]
+    ]
+   },
+   "v1_counted": 20,
+   "v1_mean_score": 94.0,
+   "v1_successes": 18,
+   "v2_mean_score": 94.0
+  },
+  "corrected_fix160": {
+   "accidental_bottles": 0,
+   "bottles_in_bin": 79,
+   "bottles_total": 80,
+   "episodes_with_impossible_motion": 0,
+   "episodes_with_recovered_failures": 1,
+   "first_failure_phases": {
+    "grasp": 1,
+    "none": 19
+   },
+   "fixes": "all seven with #160's fix, drive limited at the motor's peak (now scenario gripper_drive_limit: motor_peak)",
+   "max_bottle_speed_m_s": 4.1,
+   "mean_actions": 407.2,
+   "mean_steps_per_second": 26.46,
+   "mean_wall_seconds": 187.7,
+   "n": 20,
+   "seed_mean_range": 8.57,
+   "seed_mean_scores": {
+    "0": 91.43,
+    "1": 100.0,
+    "2": 100.0
+   },
+   "solver_readback_failures": 0,
+   "solver_scene": [
+    "{\"effective\": 64, \"factor\": 4.0, \"min_pos_iters\": 64.0, \"stabilization\": false}"
+   ],
+   "success_rate": 0.95,
+   "success_rate_ci95": [
+    0.764,
+    0.991
+   ],
+   "successes": 19,
+   "transport_losses": {
+    "by_model": {},
+    "by_phase": {},
+    "by_place": {},
+    "episodes": 0,
+    "rows": []
+   },
+   "v1_counted": 20,
+   "v1_mean_score": 97.0,
+   "v1_successes": 19,
+   "v2_mean_score": 97.0
+  },
+  "corrected_trip": {
+   "accidental_bottles": 0,
+   "bottles_in_bin": 79,
+   "bottles_total": 80,
+   "episodes_with_impossible_motion": 0,
+   "episodes_with_recovered_failures": 1,
+   "first_failure_phases": {
+    "bin": 1,
+    "none": 19
+   },
+   "fixes": "all seven with #160's fix as decided (option 2): drive limited at the SDK's trip, 323.54 N on joint7 (the corrected default)",
+   "max_bottle_speed_m_s": 3.2,
+   "mean_actions": 407.2,
+   "mean_steps_per_second": 24.02,
+   "mean_wall_seconds": 196.7,
+   "n": 20,
+   "seed_mean_range": 8.57,
+   "seed_mean_scores": {
+    "0": 91.43,
+    "1": 100.0,
+    "2": 100.0
+   },
+   "solver_readback_failures": 0,
+   "solver_scene": [
+    "{\"effective\": 64, \"factor\": 4.0, \"min_pos_iters\": 64.0, \"stabilization\": false}"
+   ],
+   "success_rate": 0.95,
+   "success_rate_ci95": [
+    0.764,
+    0.991
+   ],
+   "successes": 19,
+   "transport_losses": {
+    "by_model": {},
+    "by_phase": {},
+    "by_place": {},
+    "episodes": 0,
+    "rows": []
+   },
+   "v1_counted": 20,
+   "v1_mean_score": 97.0,
+   "v1_successes": 19,
+   "v2_mean_score": 97.0
+  },
+  "shipped": {
+   "accidental_bottles": 3,
+   "bottles_in_bin": 80,
+   "bottles_total": 80,
+   "episodes_with_impossible_motion": 0,
+   "episodes_with_recovered_failures": 3,
+   "first_failure_phases": {
+    "none": 20
+   },
+   "fixes": "none (PR #153's runs, audit/out/g4/put_bottles_into_dustbin/raw)",
+   "max_bottle_speed_m_s": 3.2,
+   "mean_actions": 386.95,
+   "mean_steps_per_second": 27.24,
+   "mean_wall_seconds": 173.4,
+   "n": 20,
+   "seed_mean_range": 0.0,
+   "seed_mean_scores": {
+    "0": 100.0,
+    "1": 100.0,
+    "2": 100.0
+   },
+   "solver_readback_failures": 0,
+   "solver_scene": [
+    "{\"effective\": null, \"factor\": null, \"min_pos_iters\": null, \"stabilization\": null}"
+   ],
+   "success_rate": 1.0,
+   "success_rate_ci95": [
+    0.839,
+    1.0
+   ],
+   "successes": 20,
+   "transport_losses": {
+    "by_model": {
+     "bottle_22": 3
+    },
+    "by_phase": {
+     "left_to_dustbin": 3
+    },
+    "by_place": {
+     "bin side": 3
+    },
+    "episodes": 3,
+    "rows": [
+     [
+      1,
+      10,
+      "bottle2",
+      "bottle_22",
+      "left_to_dustbin",
+      200,
+      true,
+      "bin side",
+      -0.613
+     ],
+     [
+      2,
+      11,
+      "bottle3",
+      "bottle_22",
+      "left_to_dustbin",
+      346,
+      true,
+      "bin side",
+      -0.488
+     ],
+     [
+      2,
+      14,
+      "bottle0",
+      "bottle_22",
+      "left_to_dustbin",
+      394,
+      true,
+      "bin side",
+      -0.536
+     ]
+    ]
+   },
+   "v1_counted": 20,
+   "v1_mean_score": 100.0,
+   "v1_successes": 20,
+   "v2_mean_score": 100.0
+  }
+ },
+ "paired_vs_corrected": {
+  "corrected_fix160": {
+   "arm_only_successes": 2,
+   "beyond_noise": false,
+   "changed_episodes": [
+    {
+     "arm": 40.0,
+     "arm_phase": "grasp",
+     "layout": 12,
+     "ref": 100.0,
+     "ref_phase": null,
+     "seed": 0
+    },
+    {
+     "arm": 100.0,
+     "arm_phase": null,
+     "layout": 12,
+     "ref": 40.0,
+     "ref_phase": "transport",
+     "seed": 2
+    },
+    {
+     "arm": 100.0,
+     "arm_phase": null,
+     "layout": 15,
+     "ref": 40.0,
+     "ref_phase": "transport",
+     "seed": 2
+    }
+   ],
+   "mcnemar_p": 1.0,
+   "mean_score_diff": 3.0,
+   "pairs": 20,
+   "ref_only_successes": 1,
+   "rule": "beyond noise: at least 2 layout flips, all in one direction (#94 matched-episode rule), and a paired bootstrap 95% CI of the mean score difference that excludes 0 (layout and seed spread)",
+   "same_sign_all_seeds": false,
+   "score_diff_ci95_bootstrap": [
+    -6.0,
+    12.0
+   ],
+   "seed_mean_diffs": {
+    "0": -8.57,
+    "1": 0.0,
+    "2": 20.0
+   },
+   "transport_loss_episodes": {
+    "arm_only": 0,
+    "both": 0,
+    "mcnemar_p": 0.002,
+    "ref_only": 10
+   }
+  },
+  "corrected_trip": {
+   "arm_only_successes": 2,
+   "beyond_noise": false,
+   "changed_episodes": [
+    {
+     "arm": 40.0,
+     "arm_phase": "bin",
+     "layout": 12,
+     "ref": 100.0,
+     "ref_phase": null,
+     "seed": 0
+    },
+    {
+     "arm": 100.0,
+     "arm_phase": null,
+     "layout": 12,
+     "ref": 40.0,
+     "ref_phase": "transport",
+     "seed": 2
+    },
+    {
+     "arm": 100.0,
+     "arm_phase": null,
+     "layout": 15,
+     "ref": 40.0,
+     "ref_phase": "transport",
+     "seed": 2
+    }
+   ],
+   "mcnemar_p": 1.0,
+   "mean_score_diff": 3.0,
+   "pairs": 20,
+   "ref_only_successes": 1,
+   "rule": "beyond noise: at least 2 layout flips, all in one direction (#94 matched-episode rule), and a paired bootstrap 95% CI of the mean score difference that excludes 0 (layout and seed spread)",
+   "same_sign_all_seeds": false,
+   "score_diff_ci95_bootstrap": [
+    -6.0,
+    12.0
+   ],
+   "seed_mean_diffs": {
+    "0": -8.57,
+    "1": 0.0,
+    "2": 20.0
+   },
+   "transport_loss_episodes": {
+    "arm_only": 0,
+    "both": 0,
+    "mcnemar_p": 0.002,
+    "ref_only": 10
+   }
+  },
+  "shipped": {
+   "arm_only_successes": 2,
+   "beyond_noise": false,
+   "changed_episodes": [
+    {
+     "arm": 100.0,
+     "arm_phase": null,
+     "layout": 12,
+     "ref": 40.0,
+     "ref_phase": "transport",
+     "seed": 2
+    },
+    {
+     "arm": 100.0,
+     "arm_phase": null,
+     "layout": 15,
+     "ref": 40.0,
+     "ref_phase": "transport",
+     "seed": 2
+    }
+   ],
+   "mcnemar_p": 0.5,
+   "mean_score_diff": 6.0,
+   "pairs": 20,
+   "ref_only_successes": 0,
+   "rule": "beyond noise: at least 2 layout flips, all in one direction (#94 matched-episode rule), and a paired bootstrap 95% CI of the mean score difference that excludes 0 (layout and seed spread)",
+   "same_sign_all_seeds": false,
+   "score_diff_ci95_bootstrap": [
+    0.0,
+    15.0
+   ],
+   "seed_mean_diffs": {
+    "0": 0.0,
+    "1": 0.0,
+    "2": 20.0
+   },
+   "transport_loss_episodes": {
+    "arm_only": 0,
+    "both": 3,
+    "mcnemar_p": 0.0156,
+    "ref_only": 7
+   }
+  }
+ },
+ "paired_vs_reference": {
+  "corrected": {
+   "arm_only_successes": 0,
+   "beyond_noise": false,
+   "changed_episodes": [
+    {
+     "arm": 40.0,
+     "arm_phase": "transport",
+     "layout": 12,
+     "ref": 100.0,
+     "ref_phase": null,
+     "seed": 2
+    },
+    {
+     "arm": 40.0,
+     "arm_phase": "transport",
+     "layout": 15,
+     "ref": 100.0,
+     "ref_phase": null,
+     "seed": 2
+    }
+   ],
+   "mcnemar_p": 0.5,
+   "mean_score_diff": -6.0,
+   "pairs": 20,
+   "ref_only_successes": 2,
+   "rule": "beyond noise: at least 2 layout flips, all in one direction (#94 matched-episode rule), and a paired bootstrap 95% CI of the mean score difference that excludes 0 (layout and seed spread)",
+   "same_sign_all_seeds": false,
+   "score_diff_ci95_bootstrap": [
+    -15.0,
+    0.0
+   ],
+   "seed_mean_diffs": {
+    "0": 0.0,
+    "1": 0.0,
+    "2": -20.0
+   },
+   "transport_loss_episodes": {
+    "arm_only": 7,
+    "both": 3,
+    "mcnemar_p": 0.0156,
+    "ref_only": 0
+   }
+  },
+  "corrected_fix160": {
+   "arm_only_successes": 0,
+   "beyond_noise": false,
+   "changed_episodes": [
+    {
+     "arm": 40.0,
+     "arm_phase": "grasp",
+     "layout": 12,
+     "ref": 100.0,
+     "ref_phase": null,
+     "seed": 0
+    }
+   ],
+   "mcnemar_p": 1.0,
+   "mean_score_diff": -3.0,
+   "pairs": 20,
+   "ref_only_successes": 1,
+   "rule": "beyond noise: at least 2 layout flips, all in one direction (#94 matched-episode rule), and a paired bootstrap 95% CI of the mean score difference that excludes 0 (layout and seed spread)",
+   "same_sign_all_seeds": false,
+   "score_diff_ci95_bootstrap": [
+    -9.0,
+    0.0
+   ],
+   "seed_mean_diffs": {
+    "0": -8.57,
+    "1": 0.0,
+    "2": 0.0
+   },
+   "transport_loss_episodes": {
+    "arm_only": 0,
+    "both": 0,
+    "mcnemar_p": 0.25,
+    "ref_only": 3
+   }
+  },
+  "corrected_trip": {
+   "arm_only_successes": 0,
+   "beyond_noise": false,
+   "changed_episodes": [
+    {
+     "arm": 40.0,
+     "arm_phase": "bin",
+     "layout": 12,
+     "ref": 100.0,
+     "ref_phase": null,
+     "seed": 0
+    }
+   ],
+   "mcnemar_p": 1.0,
+   "mean_score_diff": -3.0,
+   "pairs": 20,
+   "ref_only_successes": 1,
+   "rule": "beyond noise: at least 2 layout flips, all in one direction (#94 matched-episode rule), and a paired bootstrap 95% CI of the mean score difference that excludes 0 (layout and seed spread)",
+   "same_sign_all_seeds": false,
+   "score_diff_ci95_bootstrap": [
+    -9.0,
+    0.0
+   ],
+   "seed_mean_diffs": {
+    "0": -8.57,
+    "1": 0.0,
+    "2": 0.0
+   },
+   "transport_loss_episodes": {
+    "arm_only": 0,
+    "both": 0,
+    "mcnemar_p": 0.25,
+    "ref_only": 3
+   }
+  }
+ },
+ "reference": "shipped",
+ "settle": {}
+}

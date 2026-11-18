@@ -1,0 +1,114 @@
+[
+ {
+  "cell_name": "classify_objects__shipped",
+  "layout": 0,
+  "overrides": {
+   "slide_target": {
+    "label": "cat0_0",
+    "inst": "pen_4_1",
+    "labelled": true,
+    "stem": "pen_4",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.990832,
+     -0.135101
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "classify_objects__cpu_stab_off",
+  "layout": 0,
+  "overrides": {
+   "gpu_dynamics": false,
+   "enable_stabilization": false,
+   "slide_target": {
+    "label": "cat0_0",
+    "inst": "pen_4_1",
+    "labelled": true,
+    "stem": "pen_4",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.990832,
+     -0.135101
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "classify_objects__stab_off_dt2",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.002,
+   "enable_stabilization": false,
+   "slide_target": {
+    "label": "cat0_0",
+    "inst": "pen_4_1",
+    "labelled": true,
+    "stem": "pen_4",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.990832,
+     -0.135101
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "classify_objects__stab_off_dt1",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.001,
+   "enable_stabilization": false,
+   "slide_target": {
+    "label": "cat0_0",
+    "inst": "pen_4_1",
+    "labelled": true,
+    "stem": "pen_4",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.990832,
+     -0.135101
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "classify_objects__cpu_dt2",
+  "layout": 0,
+  "overrides": {
+   "gpu_dynamics": false,
+   "dt_s": 0.002,
+   "slide_target": {
+    "label": "cat0_0",
+    "inst": "pen_4_1",
+    "labelled": true,
+    "stem": "pen_4",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.990832,
+     -0.135101
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "classify_objects__cpu_dt1",
+  "layout": 0,
+  "overrides": {
+   "gpu_dynamics": false,
+   "dt_s": 0.001,
+   "slide_target": {
+    "label": "cat0_0",
+    "inst": "pen_4_1",
+    "labelled": true,
+    "stem": "pen_4",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.990832,
+     -0.135101
+    ]
+   }
+  }
+ }
+]

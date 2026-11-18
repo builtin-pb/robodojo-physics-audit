@@ -1,0 +1,655 @@
+{
+ "tool": "audit/out/bottles_grip_corner/summarize.py",
+ "runs": {
+  "NOMINAL": {
+   "table_sha256": "e9c487cb88aff6cd4df265f3feef92bbad74e336c61378100a915ad0d3eeb750",
+   "table_sha256_in_result": [
+    "e9c487cb88aff6cd4df265f3feef92bbad74e336c61378100a915ad0d3eeb750"
+   ],
+   "expected_joint7": {
+    "Fmax": 323.54,
+    "K": 52274.6,
+    "c": 2090.98,
+    "armature": 23.524
+   },
+   "readback": [
+    {
+     "at": "start",
+     "engine": {
+      "Fmax": 323.54,
+      "K": 52274.6016,
+      "c": 2090.98,
+      "armature": 23.524
+     },
+     "expected": {
+      "Fmax": 323.54,
+      "K": 52274.6,
+      "c": 2090.98,
+      "armature": 23.524
+     },
+     "mismatches": []
+    },
+    {
+     "at": "trip 00022",
+     "engine": {
+      "Fmax": 323.54,
+      "K": 52274.6016,
+      "c": 2090.98,
+      "armature": 23.524
+     },
+     "expected": {
+      "Fmax": 323.54,
+      "K": 52274.6,
+      "c": 2090.98,
+      "armature": 23.524
+     },
+     "mismatches": []
+    },
+    {
+     "at": "trip 00055",
+     "engine": {
+      "Fmax": 323.54,
+      "K": 52274.6016,
+      "c": 2090.98,
+      "armature": 23.524
+     },
+     "expected": {
+      "Fmax": 323.54,
+      "K": 52274.6,
+      "c": 2090.98,
+      "armature": 23.524
+     },
+     "mismatches": []
+    },
+    {
+     "at": "trip_arm_corner 00022",
+     "engine": {
+      "Fmax": 323.54,
+      "K": 52274.6016,
+      "c": 2090.98,
+      "armature": 28.124
+     },
+     "expected": {
+      "Fmax": 323.54,
+      "K": 52274.6,
+      "c": 2090.98,
+      "armature": 28.124
+     },
+     "mismatches": []
+    }
+   ],
+   "ok": true
+  },
+  "CORNER": {
+   "table_sha256": "0a26327ec673315e4828f41600da7a8ff3de2a014090e1eb603e8ae839a5093e",
+   "table_sha256_in_result": [
+    "0a26327ec673315e4828f41600da7a8ff3de2a014090e1eb603e8ae839a5093e"
+   ],
+   "expected_joint7": {
+    "Fmax": 283.1,
+    "K": 45740.2,
+    "c": 1829.62,
+    "armature": 28.124
+   },
+   "readback": [
+    {
+     "at": "start",
+     "engine": {
+      "Fmax": 283.1,
+      "K": 45740.1992,
+      "c": 1829.62,
+      "armature": 28.124
+     },
+     "expected": {
+      "Fmax": 283.1,
+      "K": 45740.2,
+      "c": 1829.62,
+      "armature": 28.124
+     },
+     "mismatches": []
+    },
+    {
+     "at": "corner 00022",
+     "engine": {
+      "Fmax": 283.1,
+      "K": 45740.1992,
+      "c": 1829.62,
+      "armature": 28.124
+     },
+     "expected": {
+      "Fmax": 283.1,
+      "K": 45740.2,
+      "c": 1829.62,
+      "armature": 28.124
+     },
+     "mismatches": []
+    },
+    {
+     "at": "corner 00055",
+     "engine": {
+      "Fmax": 283.1,
+      "K": 45740.1992,
+      "c": 1829.62,
+      "armature": 28.124
+     },
+     "expected": {
+      "Fmax": 283.1,
+      "K": 45740.2,
+      "c": 1829.62,
+      "armature": 28.124
+     },
+     "mismatches": []
+    },
+    {
+     "at": "corner_arm_nominal 00022",
+     "engine": {
+      "Fmax": 283.1,
+      "K": 45740.1992,
+      "c": 1829.62,
+      "armature": 23.524
+     },
+     "expected": {
+      "Fmax": 283.1,
+      "K": 45740.2,
+      "c": 1829.62,
+      "armature": 23.524
+     },
+     "mismatches": []
+    }
+   ],
+   "ok": true
+  }
+ },
+ "rows": [
+  {
+   "run": "NOMINAL",
+   "variant": "trip",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    323.5,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.078,
+   "close_steps": 40,
+   "F_ss_N": 314.759,
+   "quiet_cv": 0.0006,
+   "lead_mm": 6.1015,
+   "drive_est_N": -318.96,
+   "pen_mm": 0.0364,
+   "lost": null,
+   "tap_readback_N": 1.074,
+   "swing_ik_err_mm_max": 0.009,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 315.18,
+    "f_min_N": 314.45,
+    "rot_max_deg": 0.002,
+    "acc_peak_m_s2": 1.16,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 315.28,
+    "f_min_N": 314.14,
+    "rot_max_deg": 0.002,
+    "acc_peak_m_s2": 12.53,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 319.91,
+    "f_min_N": 309.47,
+    "rot_max_deg": 0.025,
+    "acc_peak_m_s2": 83.72,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 340,
+    "low20": 15,
+    "low32N": 12,
+    "f_max_N": 1952.3,
+    "f_min_N": 0.65,
+    "rot_max_deg": 21.567,
+    "acc_peak_m_s2": 64.06,
+    "by_phase_low20": {
+     "swing": 15,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "NOMINAL",
+   "variant": "trip",
+   "bottle": "L14_00055",
+   "asset": "00055",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    323.5,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.078,
+   "close_steps": 20,
+   "F_ss_N": 313.242,
+   "quiet_cv": 0.00066,
+   "lead_mm": 6.0141,
+   "drive_est_N": -314.35,
+   "pen_mm": 0.0398,
+   "lost": null,
+   "tap_readback_N": 1.01,
+   "swing_ik_err_mm_max": 0.005,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 313.66,
+    "f_min_N": 312.67,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 0.49,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 313.68,
+    "f_min_N": 312.64,
+    "rot_max_deg": 0.002,
+    "acc_peak_m_s2": 13.08,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 408.53,
+    "f_min_N": 166.19,
+    "rot_max_deg": 0.63,
+    "acc_peak_m_s2": 87.26,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 340,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 552.73,
+    "f_min_N": 117.28,
+    "rot_max_deg": 1.642,
+    "acc_peak_m_s2": 71.04,
+    "by_phase_low20": {
+     "swing": 0,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "NOMINAL",
+   "variant": "trip_arm_corner",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    28.124,
+    0.0
+   ],
+   "fmax_eng": [
+    323.5,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.079,
+   "close_steps": 40,
+   "F_ss_N": 311.54,
+   "quiet_cv": 0.00067,
+   "lead_mm": 6.0008,
+   "drive_est_N": -313.69,
+   "pen_mm": 0.0361,
+   "lost": null,
+   "tap_readback_N": 1.12,
+   "swing_ik_err_mm_max": 0.009,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 312.06,
+    "f_min_N": 310.94,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 1.1,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 312.07,
+    "f_min_N": 310.92,
+    "rot_max_deg": 0.002,
+    "acc_peak_m_s2": 12.53,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 316.44,
+    "f_min_N": 302.85,
+    "rot_max_deg": 2.269,
+    "acc_peak_m_s2": 83.72,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 340,
+    "low20": 20,
+    "low32N": 19,
+    "f_max_N": 2173.76,
+    "f_min_N": 0.0,
+    "rot_max_deg": 13.135,
+    "acc_peak_m_s2": 69.72,
+    "by_phase_low20": {
+     "swing": 20,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "CORNER",
+   "variant": "corner",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    28.124,
+    0.0
+   ],
+   "fmax_eng": [
+    283.1,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.078,
+   "close_steps": 30,
+   "F_ss_N": 270.242,
+   "quiet_cv": 0.00076,
+   "lead_mm": 5.9843,
+   "drive_est_N": -273.72,
+   "pen_mm": 0.0312,
+   "lost": {
+    "phase": "swing",
+    "step": 1451
+   },
+   "tap_readback_N": 1.068,
+   "swing_ik_err_mm_max": 0.009,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 270.8,
+    "f_min_N": 269.75,
+    "rot_max_deg": 0.002,
+    "acc_peak_m_s2": 1.16,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 270.83,
+    "f_min_N": 269.35,
+    "rot_max_deg": 0.002,
+    "acc_peak_m_s2": 12.47,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 334.24,
+    "f_min_N": 212.76,
+    "rot_max_deg": 0.074,
+    "acc_peak_m_s2": 83.72,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 100,
+    "low20": 24,
+    "low32N": 21,
+    "f_max_N": 2172.09,
+    "f_min_N": 0.0,
+    "rot_max_deg": 64.084,
+    "acc_peak_m_s2": 64.58,
+    "by_phase_low20": {
+     "swing": 24
+    }
+   }
+  },
+  {
+   "run": "CORNER",
+   "variant": "corner",
+   "bottle": "L14_00055",
+   "asset": "00055",
+   "armature_eng": [
+    28.124,
+    0.0
+   ],
+   "fmax_eng": [
+    283.1,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.0,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.077,
+   "close_steps": 20,
+   "F_ss_N": 280.334,
+   "quiet_cv": 0.0004,
+   "lead_mm": 6.1795,
+   "drive_est_N": -282.63,
+   "pen_mm": 0.0357,
+   "lost": null,
+   "tap_readback_N": 1.006,
+   "swing_ik_err_mm_max": 0.005,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 280.88,
+    "f_min_N": 279.71,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 0.6,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 280.82,
+    "f_min_N": 279.71,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 13.08,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 1,
+    "low32N": 0,
+    "f_max_N": 393.56,
+    "f_min_N": 40.61,
+    "rot_max_deg": 1.8,
+    "acc_peak_m_s2": 87.27,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 1,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 340,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 349.23,
+    "f_min_N": 149.57,
+    "rot_max_deg": 2.435,
+    "acc_peak_m_s2": 71.15,
+    "by_phase_low20": {
+     "swing": 0,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "CORNER",
+   "variant": "corner_arm_nominal",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    283.1,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.079,
+   "close_steps": 40,
+   "F_ss_N": 275.202,
+   "quiet_cv": 0.00045,
+   "lead_mm": 6.0415,
+   "drive_est_N": -276.33,
+   "pen_mm": 0.0318,
+   "lost": {
+    "phase": "swing",
+    "step": 1575
+   },
+   "tap_readback_N": 1.072,
+   "swing_ik_err_mm_max": 0.009,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 275.54,
+    "f_min_N": 274.97,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 1.14,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 275.68,
+    "f_min_N": 274.7,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 12.53,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 280.36,
+    "f_min_N": 269.86,
+    "rot_max_deg": 0.032,
+    "acc_peak_m_s2": 83.7,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 210,
+    "low20": 41,
+    "low32N": 40,
+    "f_max_N": 1385.15,
+    "f_min_N": 0.0,
+    "rot_max_deg": 41.459,
+    "acc_peak_m_s2": 64.71,
+    "by_phase_low20": {
+     "swing": 41
+    }
+   }
+  }
+ ]
+}

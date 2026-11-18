@@ -1,0 +1,2445 @@
+{
+ "episodes": [
+  {
+   "actions": 310,
+   "credited_live": [
+    "bottle0"
+   ],
+   "file": "bg3_cf_v21.result.json.gz",
+   "kind": "closed_fist_low_lift",
+   "layout": 0,
+   "live_hold_check_v21": {
+    "arm_verdicts": 2480,
+    "disagree": 0,
+    "disagreements": []
+   },
+   "per_bottle": {
+    "bottle0": {
+     "flip_gaps_mm": [
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.84,
+      1.32,
+      1.49,
+      1.6,
+      1.44,
+      1.34,
+      1.35,
+      1.33,
+      1.09,
+      0.95,
+      0.86,
+      0.85,
+      0.81,
+      0.81,
+      0.86,
+      0.85,
+      1.12,
+      1.01,
+      1.7,
+      1.72,
+      1.45,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.85,
+      0.87,
+      0.87,
+      0.86,
+      0.87,
+      0.86,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81
+     ],
+     "flips": 104,
+     "held_gap_min_mm_v21": 0.8099999999999999,
+     "held_gap_min_mm_v22": null,
+     "held_v21": 104,
+     "held_v22": 0
+    },
+    "bottle1": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": null,
+     "held_gap_min_mm_v22": null,
+     "held_v21": 0,
+     "held_v22": 0
+    },
+    "bottle2": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": null,
+     "held_gap_min_mm_v22": null,
+     "held_v21": 0,
+     "held_v22": 0
+    },
+    "bottle3": {
+     "flip_gaps_mm": [
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81,
+      0.81
+     ],
+     "flips": 12,
+     "held_gap_min_mm_v21": 0.8099999999999999,
+     "held_gap_min_mm_v22": null,
+     "held_v21": 12,
+     "held_v22": 0
+    }
+   },
+   "picked_live": [
+    "bottle0"
+   ],
+   "picked_v22": [],
+   "replay": {
+    "v2.1": {
+     "bottle0": {
+      "held_actions": 104,
+      "longest_clear_s": 1.1599999999999997,
+      "max_clearance_m": 0.07969831300881902,
+      "picked": true,
+      "picked_t_s": 2.4,
+      "sustained_clearance_m": 0.03888339025519494
+     },
+     "bottle1": {
+      "held_actions": 0,
+      "longest_clear_s": 0.0,
+      "max_clearance_m": null,
+      "picked": false,
+      "picked_t_s": null,
+      "sustained_clearance_m": null
+     },
+     "bottle2": {
+      "held_actions": 0,
+      "longest_clear_s": 0.0,
+      "max_clearance_m": null,
+      "picked": false,
+      "picked_t_s": null,
+      "sustained_clearance_m": null
+     },
+     "bottle3": {
+      "held_actions": 12,
+      "longest_clear_s": 0.0,
+      "max_clearance_m": -0.012361049827213644,
+      "picked": false,
+      "picked_t_s": null,
+      "sustained_clearance_m": -0.01348744635122645
+     }
+    },
+    "v2.2": {
+     "bottle0": {
+      "held_actions": 0,
+      "longest_clear_s": 0.0,
+      "max_clearance_m": null,
+      "picked": false,
+      "picked_t_s": null,
+      "sustained_clearance_m": null
+     },
+     "bottle1": {
+      "held_actions": 0,
+      "longest_clear_s": 0.0,
+      "max_clearance_m": null,
+      "picked": false,
+      "picked_t_s": null,
+      "sustained_clearance_m": null
+     },
+     "bottle2": {
+      "held_actions": 0,
+      "longest_clear_s": 0.0,
+      "max_clearance_m": null,
+      "picked": false,
+      "picked_t_s": null,
+      "sustained_clearance_m": null
+     },
+     "bottle3": {
+      "held_actions": 0,
+      "longest_clear_s": 0.0,
+      "max_clearance_m": null,
+      "picked": false,
+      "picked_t_s": null,
+      "sustained_clearance_m": null
+     }
+    }
+   },
+   "replay_v21_matches_live": true,
+   "replay_v21_vs_live": {
+    "bottle0": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 4.322936280942713e-06,
+     "picked": true,
+     "picked_t_s": true
+    },
+    "bottle1": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": null,
+     "picked": true,
+     "picked_t_s": true
+    },
+    "bottle2": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": null,
+     "picked": true,
+     "picked_t_s": true
+    },
+    "bottle3": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 3.322155626817036e-06,
+     "picked": true,
+     "picked_t_s": true
+    }
+   },
+   "rule_live": "v2.1",
+   "score_live": 10.0,
+   "seed": 0,
+   "verdict_flips_v22": 116
+  },
+  {
+   "actions": 306,
+   "credited_live": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "file": "bg3_scr_corr_q00_vis2.result.json.gz",
+   "kind": "script",
+   "layout": 1,
+   "live_hold_check_v21": {
+    "arm_verdicts": 2448,
+    "disagree": 0,
+    "disagreements": []
+   },
+   "per_bottle": {
+    "bottle0": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 50.85,
+     "held_gap_min_mm_v22": 50.85,
+     "held_v21": 40,
+     "held_v22": 40
+    },
+    "bottle1": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 50.15,
+     "held_gap_min_mm_v22": 50.15,
+     "held_v21": 41,
+     "held_v22": 41
+    },
+    "bottle2": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 48.33,
+     "held_gap_min_mm_v22": 48.33,
+     "held_v21": 42,
+     "held_v22": 42
+    },
+    "bottle3": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 52.309999999999995,
+     "held_gap_min_mm_v22": 52.309999999999995,
+     "held_v21": 40,
+     "held_v22": 40
+    }
+   },
+   "picked_live": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "picked_v22": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "replay": {
+    "v2.1": {
+     "bottle0": {
+      "held_actions": 40,
+      "longest_clear_s": 1.3599999999999994,
+      "max_clearance_m": 0.2888443700904816,
+      "picked": true,
+      "picked_t_s": 10.76,
+      "sustained_clearance_m": 0.2711302271467989
+     },
+     "bottle1": {
+      "held_actions": 41,
+      "longest_clear_s": 1.3599999999999994,
+      "max_clearance_m": 0.28469928656288757,
+      "picked": true,
+      "picked_t_s": 4.76,
+      "sustained_clearance_m": 0.27506041161578076
+     },
+     "bottle2": {
+      "held_actions": 42,
+      "longest_clear_s": 1.3599999999999994,
+      "max_clearance_m": 0.29118033699039036,
+      "picked": true,
+      "picked_t_s": 7.76,
+      "sustained_clearance_m": 0.27225293804397166
+     },
+     "bottle3": {
+      "held_actions": 40,
+      "longest_clear_s": 1.3599999999999999,
+      "max_clearance_m": 0.2932678396276168,
+      "picked": true,
+      "picked_t_s": 1.76,
+      "sustained_clearance_m": 0.2761643586736987
+     }
+    },
+    "v2.2": {
+     "bottle0": {
+      "held_actions": 40,
+      "longest_clear_s": 1.3599999999999994,
+      "max_clearance_m": 0.2888443700904816,
+      "picked": true,
+      "picked_t_s": 10.76,
+      "sustained_clearance_m": 0.2711302271467989
+     },
+     "bottle1": {
+      "held_actions": 41,
+      "longest_clear_s": 1.3599999999999994,
+      "max_clearance_m": 0.28469928656288757,
+      "picked": true,
+      "picked_t_s": 4.76,
+      "sustained_clearance_m": 0.27506041161578076
+     },
+     "bottle2": {
+      "held_actions": 42,
+      "longest_clear_s": 1.3599999999999994,
+      "max_clearance_m": 0.29118033699039036,
+      "picked": true,
+      "picked_t_s": 7.76,
+      "sustained_clearance_m": 0.27225293804397166
+     },
+     "bottle3": {
+      "held_actions": 40,
+      "longest_clear_s": 1.3599999999999999,
+      "max_clearance_m": 0.2932678396276168,
+      "picked": true,
+      "picked_t_s": 1.76,
+      "sustained_clearance_m": 0.2761643586736987
+     }
+    }
+   },
+   "replay_v21_matches_live": true,
+   "replay_v21_vs_live": {
+    "bottle0": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 3.239246215702707e-07,
+     "picked": true,
+     "picked_t_s": true
+    },
+    "bottle1": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 4.1112003186238866e-06,
+     "picked": true,
+     "picked_t_s": true
+    },
+    "bottle2": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 4.564162659370652e-06,
+     "picked": true,
+     "picked_t_s": true
+    },
+    "bottle3": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 3.0041625700416574e-06,
+     "picked": true,
+     "picked_t_s": true
+    }
+   },
+   "rule_live": "v2.1",
+   "score_live": 100.0,
+   "seed": 0,
+   "verdict_flips_v22": 0
+  },
+  {
+   "actions": 409,
+   "credited_live": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "file": "bg3_scr_corr_q00_vis2.result.json.gz",
+   "kind": "script",
+   "layout": 6,
+   "live_hold_check_v21": {
+    "arm_verdicts": 3272,
+    "disagree": 0,
+    "disagreements": []
+   },
+   "per_bottle": {
+    "bottle0": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 59.61,
+     "held_gap_min_mm_v22": 59.61,
+     "held_v21": 43,
+     "held_v22": 43
+    },
+    "bottle1": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 50.83,
+     "held_gap_min_mm_v22": 50.83,
+     "held_v21": 86,
+     "held_v22": 86
+    },
+    "bottle2": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 59.67,
+     "held_gap_min_mm_v22": 59.67,
+     "held_v21": 55,
+     "held_v22": 55
+    },
+    "bottle3": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 62.57,
+     "held_gap_min_mm_v22": 62.57,
+     "held_v21": 87,
+     "held_v22": 87
+    }
+   },
+   "picked_live": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "picked_v22": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "replay": {
+    "v2.1": {
+     "bottle0": {
+      "held_actions": 43,
+      "longest_clear_s": 1.3599999999999999,
+      "max_clearance_m": 0.2921950607984335,
+      "picked": true,
+      "picked_t_s": 1.76,
+      "sustained_clearance_m": 0.2750398003028337
+     },
+     "bottle1": {
+      "held_actions": 86,
+      "longest_clear_s": 3.16,
+      "max_clearance_m": 0.2764180279544092,
+      "picked": true,
+      "picked_t_s": 13.040000000000001,
+      "sustained_clearance_m": 0.26631599346589596
+     },
+     "bottle2": {
+      "held_actions": 55,
+      "longest_clear_s": 1.3199999999999994,
+      "max_clearance_m": 0.27480626641038397,
+      "picked": true,
+      "picked_t_s": 4.76,
+      "sustained_clearance_m": 0.2622010311386932
+     },
+     "bottle3": {
+      "held_actions": 87,
+      "longest_clear_s": 2.960000000000001,
+      "max_clearance_m": 0.23167253954132794,
+      "picked": true,
+      "picked_t_s": 8.2,
+      "sustained_clearance_m": 0.22193023867736084
+     }
+    },
+    "v2.2": {
+     "bottle0": {
+      "held_actions": 43,
+      "longest_clear_s": 1.3599999999999999,
+      "max_clearance_m": 0.2921950607984335,
+      "picked": true,
+      "picked_t_s": 1.76,
+      "sustained_clearance_m": 0.2750398003028337
+     },
+     "bottle1": {
+      "held_actions": 86,
+      "longest_clear_s": 3.16,
+      "max_clearance_m": 0.2764180279544092,
+      "picked": true,
+      "picked_t_s": 13.040000000000001,
+      "sustained_clearance_m": 0.26631599346589596
+     },
+     "bottle2": {
+      "held_actions": 55,
+      "longest_clear_s": 1.3199999999999994,
+      "max_clearance_m": 0.27480626641038397,
+      "picked": true,
+      "picked_t_s": 4.76,
+      "sustained_clearance_m": 0.2622010311386932
+     },
+     "bottle3": {
+      "held_actions": 87,
+      "longest_clear_s": 2.960000000000001,
+      "max_clearance_m": 0.23167253954132794,
+      "picked": true,
+      "picked_t_s": 8.2,
+      "sustained_clearance_m": 0.22193023867736084
+     }
+    }
+   },
+   "replay_v21_matches_live": true,
+   "replay_v21_vs_live": {
+    "bottle0": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 1.3991426612847135e-06,
+     "picked": true,
+     "picked_t_s": true
+    },
+    "bottle1": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 2.9104241954236443e-06,
+     "picked": true,
+     "picked_t_s": true
+    },
+    "bottle2": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 3.1855920641365998e-06,
+     "picked": true,
+     "picked_t_s": true
+    },
+    "bottle3": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 2.3917879795609664e-06,
+     "picked": true,
+     "picked_t_s": true
+    }
+   },
+   "rule_live": "v2.1",
+   "score_live": 100.0,
+   "seed": 0,
+   "verdict_flips_v22": 0
+  },
+  {
+   "actions": 409,
+   "credited_live": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "file": "bg3_scr_corr_q01_vis2.result.json.gz",
+   "kind": "script",
+   "layout": 0,
+   "live_hold_check_v21": {
+    "arm_verdicts": 3272,
+    "disagree": 0,
+    "disagreements": []
+   },
+   "per_bottle": {
+    "bottle0": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 52.21,
+     "held_gap_min_mm_v22": 52.21,
+     "held_v21": 41,
+     "held_v22": 41
+    },
+    "bottle1": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 52.269999999999996,
+     "held_gap_min_mm_v22": 52.269999999999996,
+     "held_v21": 86,
+     "held_v22": 86
+    },
+    "bottle2": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 61.41,
+     "held_gap_min_mm_v22": 61.41,
+     "held_v21": 85,
+     "held_v22": 85
+    },
+    "bottle3": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 69.00999999999999,
+     "held_gap_min_mm_v22": 69.00999999999999,
+     "held_v21": 41,
+     "held_v22": 41
+    }
+   },
+   "picked_live": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "picked_v22": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "replay": {
+    "v2.1": {
+     "bottle0": {
+      "held_actions": 41,
+      "longest_clear_s": 1.3599999999999994,
+      "max_clearance_m": 0.2867544498665128,
+      "picked": true,
+      "picked_t_s": 4.76,
+      "sustained_clearance_m": 0.27703908693790036
+     },
+     "bottle1": {
+      "held_actions": 86,
+      "longest_clear_s": 3.16,
+      "max_clearance_m": 0.26609897630986634,
+      "picked": true,
+      "picked_t_s": 13.040000000000001,
+      "sustained_clearance_m": 0.25566292224073683
+     },
+     "bottle2": {
+      "held_actions": 85,
+      "longest_clear_s": 3.12,
+      "max_clearance_m": 0.25799808862374596,
+      "picked": true,
+      "picked_t_s": 8.16,
+      "sustained_clearance_m": 0.2481581295053591
+     },
+     "bottle3": {
+      "held_actions": 41,
+      "longest_clear_s": 1.2799999999999998,
+      "max_clearance_m": 0.2568865402433388,
+      "picked": true,
+      "picked_t_s": 1.76,
+      "sustained_clearance_m": 0.24281909946908764
+     }
+    },
+    "v2.2": {
+     "bottle0": {
+      "held_actions": 41,
+      "longest_clear_s": 1.3599999999999994,
+      "max_clearance_m": 0.2867544498665128,
+      "picked": true,
+      "picked_t_s": 4.76,
+      "sustained_clearance_m": 0.27703908693790036
+     },
+     "bottle1": {
+      "held_actions": 86,
+      "longest_clear_s": 3.16,
+      "max_clearance_m": 0.26609897630986634,
+      "picked": true,
+      "picked_t_s": 13.040000000000001,
+      "sustained_clearance_m": 0.25566292224073683
+     },
+     "bottle2": {
+      "held_actions": 85,
+      "longest_clear_s": 3.12,
+      "max_clearance_m": 0.25799808862374596,
+      "picked": true,
+      "picked_t_s": 8.16,
+      "sustained_clearance_m": 0.2481581295053591
+     },
+     "bottle3": {
+      "held_actions": 41,
+      "longest_clear_s": 1.2799999999999998,
+      "max_clearance_m": 0.2568865402433388,
+      "picked": true,
+      "picked_t_s": 1.76,
+      "sustained_clearance_m": 0.24281909946908764
+     }
+    }
+   },
+   "replay_v21_matches_live": true,
+   "replay_v21_vs_live": {
+    "bottle0": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 5.548343398054101e-07,
+     "picked": true,
+     "picked_t_s": true
+    },
+    "bottle1": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 1.4837386563826271e-06,
+     "picked": true,
+     "picked_t_s": true
+    },
+    "bottle2": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 2.8169432564340013e-06,
+     "picked": true,
+     "picked_t_s": true
+    },
+    "bottle3": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 2.5895193975777886e-06,
+     "picked": true,
+     "picked_t_s": true
+    }
+   },
+   "rule_live": "v2.1",
+   "score_live": 100.0,
+   "seed": 0,
+   "verdict_flips_v22": 0
+  },
+  {
+   "actions": 409,
+   "credited_live": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "file": "bg3_scr_corr_q01_vis2.result.json.gz",
+   "kind": "script",
+   "layout": 9,
+   "live_hold_check_v21": {
+    "arm_verdicts": 3272,
+    "disagree": 0,
+    "disagreements": []
+   },
+   "per_bottle": {
+    "bottle0": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 61.489999999999995,
+     "held_gap_min_mm_v22": 61.489999999999995,
+     "held_v21": 85,
+     "held_v22": 85
+    },
+    "bottle1": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 56.5,
+     "held_gap_min_mm_v22": 56.5,
+     "held_v21": 43,
+     "held_v22": 43
+    },
+    "bottle2": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 78.08999999999999,
+     "held_gap_min_mm_v22": 78.08999999999999,
+     "held_v21": 51,
+     "held_v22": 51
+    },
+    "bottle3": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 59.43,
+     "held_gap_min_mm_v22": 59.43,
+     "held_v21": 85,
+     "held_v22": 85
+    }
+   },
+   "picked_live": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "picked_v22": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "replay": {
+    "v2.1": {
+     "bottle0": {
+      "held_actions": 85,
+      "longest_clear_s": 3.160000000000001,
+      "max_clearance_m": 0.2588343529579359,
+      "picked": true,
+      "picked_t_s": 8.16,
+      "sustained_clearance_m": 0.2489936233667266
+     },
+     "bottle1": {
+      "held_actions": 43,
+      "longest_clear_s": 1.3599999999999994,
+      "max_clearance_m": 0.29215734533765747,
+      "picked": true,
+      "picked_t_s": 4.76,
+      "sustained_clearance_m": 0.2825230472720365
+     },
+     "bottle2": {
+      "held_actions": 51,
+      "longest_clear_s": 1.3199999999999998,
+      "max_clearance_m": 0.2644466397155424,
+      "picked": true,
+      "picked_t_s": 1.76,
+      "sustained_clearance_m": 0.251780217537542
+     },
+     "bottle3": {
+      "held_actions": 85,
+      "longest_clear_s": 3.0,
+      "max_clearance_m": 0.23866166520385612,
+      "picked": true,
+      "picked_t_s": 13.040000000000001,
+      "sustained_clearance_m": 0.2281666425471427
+     }
+    },
+    "v2.2": {
+     "bottle0": {
+      "held_actions": 85,
+      "longest_clear_s": 3.160000000000001,
+      "max_clearance_m": 0.2588343529579359,
+      "picked": true,
+      "picked_t_s": 8.16,
+      "sustained_clearance_m": 0.2489936233667266
+     },
+     "bottle1": {
+      "held_actions": 43,
+      "longest_clear_s": 1.3599999999999994,
+      "max_clearance_m": 0.29215734533765747,
+      "picked": true,
+      "picked_t_s": 4.76,
+      "sustained_clearance_m": 0.2825230472720365
+     },
+     "bottle2": {
+      "held_actions": 51,
+      "longest_clear_s": 1.3199999999999998,
+      "max_clearance_m": 0.2644466397155424,
+      "picked": true,
+      "picked_t_s": 1.76,
+      "sustained_clearance_m": 0.251780217537542
+     },
+     "bottle3": {
+      "held_actions": 85,
+      "longest_clear_s": 3.0,
+      "max_clearance_m": 0.23866166520385612,
+      "picked": true,
+      "picked_t_s": 13.040000000000001,
+      "sustained_clearance_m": 0.2281666425471427
+     }
+    }
+   },
+   "replay_v21_matches_live": true,
+   "replay_v21_vs_live": {
+    "bottle0": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 3.2121296735798666e-06,
+     "picked": true,
+     "picked_t_s": true
+    },
+    "bottle1": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 2.7342058745993825e-06,
+     "picked": true,
+     "picked_t_s": true
+    },
+    "bottle2": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 3.4436133797832724e-06,
+     "picked": true,
+     "picked_t_s": true
+    },
+    "bottle3": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 3.532615497237046e-06,
+     "picked": true,
+     "picked_t_s": true
+    }
+   },
+   "rule_live": "v2.1",
+   "score_live": 100.0,
+   "seed": 0,
+   "verdict_flips_v22": 0
+  },
+  {
+   "actions": 306,
+   "credited_live": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "file": "bg3_scr_ship_q00_vis2.result.json.gz",
+   "kind": "script",
+   "layout": 1,
+   "live_hold_check_v21": {
+    "arm_verdicts": 2448,
+    "disagree": 0,
+    "disagreements": []
+   },
+   "per_bottle": {
+    "bottle0": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 50.12,
+     "held_gap_min_mm_v22": 50.12,
+     "held_v21": 41,
+     "held_v22": 41
+    },
+    "bottle1": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 49.85,
+     "held_gap_min_mm_v22": 49.85,
+     "held_v21": 41,
+     "held_v22": 41
+    },
+    "bottle2": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 48.39,
+     "held_gap_min_mm_v22": 48.39,
+     "held_v21": 41,
+     "held_v22": 41
+    },
+    "bottle3": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 52.33,
+     "held_gap_min_mm_v22": 52.33,
+     "held_v21": 40,
+     "held_v22": 40
+    }
+   },
+   "picked_live": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "picked_v22": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "replay": {
+    "v2.1": {
+     "bottle0": {
+      "held_actions": 41,
+      "longest_clear_s": 1.2799999999999994,
+      "max_clearance_m": 0.28589793888933424,
+      "picked": true,
+      "picked_t_s": 10.76,
+      "sustained_clearance_m": 0.2706079259369475
+     },
+     "bottle1": {
+      "held_actions": 41,
+      "longest_clear_s": 1.2799999999999994,
+      "max_clearance_m": 0.28395691450584104,
+      "picked": true,
+      "picked_t_s": 4.76,
+      "sustained_clearance_m": 0.27463821725589377
+     },
+     "bottle2": {
+      "held_actions": 41,
+      "longest_clear_s": 1.2799999999999994,
+      "max_clearance_m": 0.28634577074501555,
+      "picked": true,
+      "picked_t_s": 7.76,
+      "sustained_clearance_m": 0.2666272531709545
+     },
+     "bottle3": {
+      "held_actions": 40,
+      "longest_clear_s": 1.2799999999999998,
+      "max_clearance_m": 0.2931972294970727,
+      "picked": true,
+      "picked_t_s": 1.76,
+      "sustained_clearance_m": 0.2764059760010832
+     }
+    },
+    "v2.2": {
+     "bottle0": {
+      "held_actions": 41,
+      "longest_clear_s": 1.2799999999999994,
+      "max_clearance_m": 0.28589793888933424,
+      "picked": true,
+      "picked_t_s": 10.76,
+      "sustained_clearance_m": 0.2706079259369475
+     },
+     "bottle1": {
+      "held_actions": 41,
+      "longest_clear_s": 1.2799999999999994,
+      "max_clearance_m": 0.28395691450584104,
+      "picked": true,
+      "picked_t_s": 4.76,
+      "sustained_clearance_m": 0.27463821725589377
+     },
+     "bottle2": {
+      "held_actions": 41,
+      "longest_clear_s": 1.2799999999999994,
+      "max_clearance_m": 0.28634577074501555,
+      "picked": true,
+      "picked_t_s": 7.76,
+      "sustained_clearance_m": 0.2666272531709545
+     },
+     "bottle3": {
+      "held_actions": 40,
+      "longest_clear_s": 1.2799999999999998,
+      "max_clearance_m": 0.2931972294970727,
+      "picked": true,
+      "picked_t_s": 1.76,
+      "sustained_clearance_m": 0.2764059760010832
+     }
+    }
+   },
+   "replay_v21_matches_live": true,
+   "replay_v21_vs_live": {
+    "bottle0": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 2.0247544145757246e-06,
+     "picked": true,
+     "picked_t_s": true
+    },
+    "bottle1": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 3.415912804838328e-06,
+     "picked": true,
+     "picked_t_s": true
+    },
+    "bottle2": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 4.178707632584988e-06,
+     "picked": true,
+     "picked_t_s": true
+    },
+    "bottle3": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 1.3202809718837472e-06,
+     "picked": true,
+     "picked_t_s": true
+    }
+   },
+   "rule_live": "v2.1",
+   "score_live": 100.0,
+   "seed": 0,
+   "verdict_flips_v22": 0
+  },
+  {
+   "actions": 409,
+   "credited_live": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "file": "bg3_scr_ship_q00_vis2.result.json.gz",
+   "kind": "script",
+   "layout": 6,
+   "live_hold_check_v21": {
+    "arm_verdicts": 3272,
+    "disagree": 0,
+    "disagreements": []
+   },
+   "per_bottle": {
+    "bottle0": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 59.51,
+     "held_gap_min_mm_v22": 59.51,
+     "held_v21": 42,
+     "held_v22": 42
+    },
+    "bottle1": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 50.74,
+     "held_gap_min_mm_v22": 50.74,
+     "held_v21": 86,
+     "held_v22": 86
+    },
+    "bottle2": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 58.84,
+     "held_gap_min_mm_v22": 58.84,
+     "held_v21": 54,
+     "held_v22": 54
+    },
+    "bottle3": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 48.010000000000005,
+     "held_gap_min_mm_v22": 48.010000000000005,
+     "held_v21": 87,
+     "held_v22": 87
+    }
+   },
+   "picked_live": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "picked_v22": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "replay": {
+    "v2.1": {
+     "bottle0": {
+      "held_actions": 42,
+      "longest_clear_s": 1.2799999999999998,
+      "max_clearance_m": 0.2916500811524635,
+      "picked": true,
+      "picked_t_s": 1.76,
+      "sustained_clearance_m": 0.27488213868682
+     },
+     "bottle1": {
+      "held_actions": 86,
+      "longest_clear_s": 3.08,
+      "max_clearance_m": 0.274501209063723,
+      "picked": true,
+      "picked_t_s": 13.08,
+      "sustained_clearance_m": 0.26513616726028866
+     },
+     "bottle2": {
+      "held_actions": 54,
+      "longest_clear_s": 1.2799999999999994,
+      "max_clearance_m": 0.27177372109495457,
+      "picked": true,
+      "picked_t_s": 4.76,
+      "sustained_clearance_m": 0.2585740202498449
+     },
+     "bottle3": {
+      "held_actions": 87,
+      "longest_clear_s": 2.880000000000001,
+      "max_clearance_m": 0.2297946553603386,
+      "picked": true,
+      "picked_t_s": 8.2,
+      "sustained_clearance_m": 0.2101063464217129
+     }
+    },
+    "v2.2": {
+     "bottle0": {
+      "held_actions": 42,
+      "longest_clear_s": 1.2799999999999998,
+      "max_clearance_m": 0.2916500811524635,
+      "picked": true,
+      "picked_t_s": 1.76,
+      "sustained_clearance_m": 0.27488213868682
+     },
+     "bottle1": {
+      "held_actions": 86,
+      "longest_clear_s": 3.08,
+      "max_clearance_m": 0.274501209063723,
+      "picked": true,
+      "picked_t_s": 13.08,
+      "sustained_clearance_m": 0.26513616726028866
+     },
+     "bottle2": {
+      "held_actions": 54,
+      "longest_clear_s": 1.2799999999999994,
+      "max_clearance_m": 0.27177372109495457,
+      "picked": true,
+      "picked_t_s": 4.76,
+      "sustained_clearance_m": 0.2585740202498449
+     },
+     "bottle3": {
+      "held_actions": 87,
+      "longest_clear_s": 2.880000000000001,
+      "max_clearance_m": 0.2297946553603386,
+      "picked": true,
+      "picked_t_s": 8.2,
+      "sustained_clearance_m": 0.2101063464217129
+     }
+    }
+   },
+   "replay_v21_matches_live": true,
+   "replay_v21_vs_live": {
+    "bottle0": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 1.6747521658366793e-06,
+     "picked": true,
+     "picked_t_s": true
+    },
+    "bottle1": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 1.2314328650120387e-06,
+     "picked": true,
+     "picked_t_s": true
+    },
+    "bottle2": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 3.572158419284932e-06,
+     "picked": true,
+     "picked_t_s": true
+    },
+    "bottle3": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 1.0766289757491165e-06,
+     "picked": true,
+     "picked_t_s": true
+    }
+   },
+   "rule_live": "v2.1",
+   "score_live": 100.0,
+   "seed": 0,
+   "verdict_flips_v22": 0
+  },
+  {
+   "actions": 409,
+   "credited_live": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "file": "bg3_scr_ship_q01_vis2.result.json.gz",
+   "kind": "script",
+   "layout": 0,
+   "live_hold_check_v21": {
+    "arm_verdicts": 3272,
+    "disagree": 0,
+    "disagreements": []
+   },
+   "per_bottle": {
+    "bottle0": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 52.3,
+     "held_gap_min_mm_v22": 52.3,
+     "held_v21": 41,
+     "held_v22": 41
+    },
+    "bottle1": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 52.239999999999995,
+     "held_gap_min_mm_v22": 52.239999999999995,
+     "held_v21": 86,
+     "held_v22": 86
+    },
+    "bottle2": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 61.78,
+     "held_gap_min_mm_v22": 61.78,
+     "held_v21": 86,
+     "held_v22": 86
+    },
+    "bottle3": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 68.67,
+     "held_gap_min_mm_v22": 68.67,
+     "held_v21": 41,
+     "held_v22": 41
+    }
+   },
+   "picked_live": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "picked_v22": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "replay": {
+    "v2.1": {
+     "bottle0": {
+      "held_actions": 41,
+      "longest_clear_s": 1.2799999999999994,
+      "max_clearance_m": 0.2855823439784916,
+      "picked": true,
+      "picked_t_s": 4.76,
+      "sustained_clearance_m": 0.27623434622329757
+     },
+     "bottle1": {
+      "held_actions": 86,
+      "longest_clear_s": 3.08,
+      "max_clearance_m": 0.26475802321339625,
+      "picked": true,
+      "picked_t_s": 13.040000000000001,
+      "sustained_clearance_m": 0.25459970796652376
+     },
+     "bottle2": {
+      "held_actions": 86,
+      "longest_clear_s": 3.080000000000001,
+      "max_clearance_m": 0.2570644379579138,
+      "picked": true,
+      "picked_t_s": 8.16,
+      "sustained_clearance_m": 0.24713348879587815
+     },
+     "bottle3": {
+      "held_actions": 41,
+      "longest_clear_s": 1.1600000000000001,
+      "max_clearance_m": 0.2562954779368486,
+      "picked": true,
+      "picked_t_s": 1.76,
+      "sustained_clearance_m": 0.24242076495534215
+     }
+    },
+    "v2.2": {
+     "bottle0": {
+      "held_actions": 41,
+      "longest_clear_s": 1.2799999999999994,
+      "max_clearance_m": 0.2855823439784916,
+      "picked": true,
+      "picked_t_s": 4.76,
+      "sustained_clearance_m": 0.27623434622329757
+     },
+     "bottle1": {
+      "held_actions": 86,
+      "longest_clear_s": 3.08,
+      "max_clearance_m": 0.26475802321339625,
+      "picked": true,
+      "picked_t_s": 13.040000000000001,
+      "sustained_clearance_m": 0.25459970796652376
+     },
+     "bottle2": {
+      "held_actions": 86,
+      "longest_clear_s": 3.080000000000001,
+      "max_clearance_m": 0.2570644379579138,
+      "picked": true,
+      "picked_t_s": 8.16,
+      "sustained_clearance_m": 0.24713348879587815
+     },
+     "bottle3": {
+      "held_actions": 41,
+      "longest_clear_s": 1.1600000000000001,
+      "max_clearance_m": 0.2562954779368486,
+      "picked": true,
+      "picked_t_s": 1.76,
+      "sustained_clearance_m": 0.24242076495534215
+     }
+    }
+   },
+   "replay_v21_matches_live": true,
+   "replay_v21_vs_live": {
+    "bottle0": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 4.4191670309778885e-06,
+     "picked": true,
+     "picked_t_s": true
+    },
+    "bottle1": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 1.4054941661623133e-06,
+     "picked": true,
+     "picked_t_s": true
+    },
+    "bottle2": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 2.5762814623853103e-06,
+     "picked": true,
+     "picked_t_s": true
+    },
+    "bottle3": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 1.963777506164277e-06,
+     "picked": true,
+     "picked_t_s": true
+    }
+   },
+   "rule_live": "v2.1",
+   "score_live": 100.0,
+   "seed": 0,
+   "verdict_flips_v22": 0
+  },
+  {
+   "actions": 409,
+   "credited_live": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "file": "bg3_scr_ship_q01_vis2.result.json.gz",
+   "kind": "script",
+   "layout": 9,
+   "live_hold_check_v21": {
+    "arm_verdicts": 3272,
+    "disagree": 0,
+    "disagreements": []
+   },
+   "per_bottle": {
+    "bottle0": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 61.82,
+     "held_gap_min_mm_v22": 61.82,
+     "held_v21": 86,
+     "held_v22": 86
+    },
+    "bottle1": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 56.4,
+     "held_gap_min_mm_v22": 56.4,
+     "held_v21": 42,
+     "held_v22": 42
+    },
+    "bottle2": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 77.86999999999999,
+     "held_gap_min_mm_v22": 77.86999999999999,
+     "held_v21": 50,
+     "held_v22": 50
+    },
+    "bottle3": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 59.56,
+     "held_gap_min_mm_v22": 59.56,
+     "held_v21": 86,
+     "held_v22": 86
+    }
+   },
+   "picked_live": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "picked_v22": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "replay": {
+    "v2.1": {
+     "bottle0": {
+      "held_actions": 86,
+      "longest_clear_s": 3.080000000000001,
+      "max_clearance_m": 0.2560411134187729,
+      "picked": true,
+      "picked_t_s": 8.16,
+      "sustained_clearance_m": 0.24644800297101332
+     },
+     "bottle1": {
+      "held_actions": 42,
+      "longest_clear_s": 1.2799999999999994,
+      "max_clearance_m": 0.29126399212570375,
+      "picked": true,
+      "picked_t_s": 4.76,
+      "sustained_clearance_m": 0.2818708439650265
+     },
+     "bottle2": {
+      "held_actions": 50,
+      "longest_clear_s": 1.2799999999999998,
+      "max_clearance_m": 0.26524995813713825,
+      "picked": true,
+      "picked_t_s": 1.76,
+      "sustained_clearance_m": 0.25276429795462085
+     },
+     "bottle3": {
+      "held_actions": 86,
+      "longest_clear_s": 3.0,
+      "max_clearance_m": 0.23690347746575868,
+      "picked": true,
+      "picked_t_s": 13.040000000000001,
+      "sustained_clearance_m": 0.22647396044335166
+     }
+    },
+    "v2.2": {
+     "bottle0": {
+      "held_actions": 86,
+      "longest_clear_s": 3.080000000000001,
+      "max_clearance_m": 0.2560411134187729,
+      "picked": true,
+      "picked_t_s": 8.16,
+      "sustained_clearance_m": 0.24644800297101332
+     },
+     "bottle1": {
+      "held_actions": 42,
+      "longest_clear_s": 1.2799999999999994,
+      "max_clearance_m": 0.29126399212570375,
+      "picked": true,
+      "picked_t_s": 4.76,
+      "sustained_clearance_m": 0.2818708439650265
+     },
+     "bottle2": {
+      "held_actions": 50,
+      "longest_clear_s": 1.2799999999999998,
+      "max_clearance_m": 0.26524995813713825,
+      "picked": true,
+      "picked_t_s": 1.76,
+      "sustained_clearance_m": 0.25276429795462085
+     },
+     "bottle3": {
+      "held_actions": 86,
+      "longest_clear_s": 3.0,
+      "max_clearance_m": 0.23690347746575868,
+      "picked": true,
+      "picked_t_s": 13.040000000000001,
+      "sustained_clearance_m": 0.22647396044335166
+     }
+    }
+   },
+   "replay_v21_matches_live": true,
+   "replay_v21_vs_live": {
+    "bottle0": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 3.049656591258554e-06,
+     "picked": true,
+     "picked_t_s": true
+    },
+    "bottle1": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 4.407592237631874e-06,
+     "picked": true,
+     "picked_t_s": true
+    },
+    "bottle2": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 2.100062874710318e-06,
+     "picked": true,
+     "picked_t_s": true
+    },
+    "bottle3": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 2.8383267647313914e-07,
+     "picked": true,
+     "picked_t_s": true
+    }
+   },
+   "rule_live": "v2.1",
+   "score_live": 100.0,
+   "seed": 0,
+   "verdict_flips_v22": 0
+  },
+  {
+   "actions": 700,
+   "credited_live": [
+    "bottle0",
+    "bottle2",
+    "bottle3"
+   ],
+   "file": "r181_scr_corr2_q00_vis2.result.json.gz",
+   "kind": "script",
+   "layout": 12,
+   "live_hold_check_v21": {
+    "arm_verdicts": 5600,
+    "disagree": 0,
+    "disagreements": []
+   },
+   "per_bottle": {
+    "bottle0": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 72.14999999999999,
+     "held_gap_min_mm_v22": 72.14999999999999,
+     "held_v21": 100,
+     "held_v22": 100
+    },
+    "bottle1": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 69.03,
+     "held_gap_min_mm_v22": 69.03,
+     "held_v21": 41,
+     "held_v22": 41
+    },
+    "bottle2": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 56.43,
+     "held_gap_min_mm_v22": 56.43,
+     "held_v21": 51,
+     "held_v22": 51
+    },
+    "bottle3": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 53.870000000000005,
+     "held_gap_min_mm_v22": 53.870000000000005,
+     "held_v21": 40,
+     "held_v22": 40
+    }
+   },
+   "picked_live": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "picked_v22": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "replay": {
+    "v2.1": {
+     "bottle0": {
+      "held_actions": 100,
+      "longest_clear_s": 3.0,
+      "max_clearance_m": 0.2458356293366769,
+      "picked": true,
+      "picked_t_s": 11.200000000000001,
+      "sustained_clearance_m": 0.23617876892373701
+     },
+     "bottle1": {
+      "held_actions": 41,
+      "longest_clear_s": 1.3199999999999994,
+      "max_clearance_m": 0.2641406320590588,
+      "picked": true,
+      "picked_t_s": 4.76,
+      "sustained_clearance_m": 0.2601671101215034
+     },
+     "bottle2": {
+      "held_actions": 51,
+      "longest_clear_s": 1.2799999999999998,
+      "max_clearance_m": 0.2559997703890621,
+      "picked": true,
+      "picked_t_s": 1.76,
+      "sustained_clearance_m": 0.2406724880100627
+     },
+     "bottle3": {
+      "held_actions": 40,
+      "longest_clear_s": 1.3599999999999994,
+      "max_clearance_m": 0.2957519208435003,
+      "picked": true,
+      "picked_t_s": 7.76,
+      "sustained_clearance_m": 0.28835396222027143
+     }
+    },
+    "v2.2": {
+     "bottle0": {
+      "held_actions": 100,
+      "longest_clear_s": 3.0,
+      "max_clearance_m": 0.2458356293366769,
+      "picked": true,
+      "picked_t_s": 11.200000000000001,
+      "sustained_clearance_m": 0.23617876892373701
+     },
+     "bottle1": {
+      "held_actions": 41,
+      "longest_clear_s": 1.3199999999999994,
+      "max_clearance_m": 0.2641406320590588,
+      "picked": true,
+      "picked_t_s": 4.76,
+      "sustained_clearance_m": 0.2601671101215034
+     },
+     "bottle2": {
+      "held_actions": 51,
+      "longest_clear_s": 1.2799999999999998,
+      "max_clearance_m": 0.2559997703890621,
+      "picked": true,
+      "picked_t_s": 1.76,
+      "sustained_clearance_m": 0.2406724880100627
+     },
+     "bottle3": {
+      "held_actions": 40,
+      "longest_clear_s": 1.3599999999999994,
+      "max_clearance_m": 0.2957519208435003,
+      "picked": true,
+      "picked_t_s": 7.76,
+      "sustained_clearance_m": 0.28835396222027143
+     }
+    }
+   },
+   "replay_v21_matches_live": true,
+   "replay_v21_vs_live": {
+    "bottle0": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 3.44818876785169e-07,
+     "picked": true,
+     "picked_t_s": true
+    },
+    "bottle1": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 4.047811358098841e-06,
+     "picked": true,
+     "picked_t_s": true
+    },
+    "bottle2": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 1.2358994370131882e-06,
+     "picked": true,
+     "picked_t_s": true
+    },
+    "bottle3": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 9.677108530059542e-07,
+     "picked": true,
+     "picked_t_s": true
+    }
+   },
+   "rule_live": "v2.1",
+   "score_live": 40.0,
+   "seed": 0,
+   "verdict_flips_v22": 0
+  },
+  {
+   "actions": 362,
+   "credited_live": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "file": "r181_scr_corr2_q01_vis2.result.json.gz",
+   "kind": "script",
+   "layout": 10,
+   "live_hold_check_v21": {
+    "arm_verdicts": 2896,
+    "disagree": 0,
+    "disagreements": []
+   },
+   "per_bottle": {
+    "bottle0": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 56.029999999999994,
+     "held_gap_min_mm_v22": 56.029999999999994,
+     "held_v21": 98,
+     "held_v22": 98
+    },
+    "bottle1": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 59.61,
+     "held_gap_min_mm_v22": 59.61,
+     "held_v21": 43,
+     "held_v22": 43
+    },
+    "bottle2": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 50.33,
+     "held_gap_min_mm_v22": 50.33,
+     "held_v21": 40,
+     "held_v22": 40
+    },
+    "bottle3": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 50.91,
+     "held_gap_min_mm_v22": 50.91,
+     "held_v21": 42,
+     "held_v22": 42
+    }
+   },
+   "picked_live": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "picked_v22": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "replay": {
+    "v2.1": {
+     "bottle0": {
+      "held_actions": 98,
+      "longest_clear_s": 2.960000000000001,
+      "max_clearance_m": 0.23885217611652443,
+      "picked": true,
+      "picked_t_s": 11.200000000000001,
+      "sustained_clearance_m": 0.22937273815139858
+     },
+     "bottle1": {
+      "held_actions": 43,
+      "longest_clear_s": 1.3599999999999999,
+      "max_clearance_m": 0.2889686657560123,
+      "picked": true,
+      "picked_t_s": 1.76,
+      "sustained_clearance_m": 0.27377260609630805
+     },
+     "bottle2": {
+      "held_actions": 40,
+      "longest_clear_s": 1.3599999999999994,
+      "max_clearance_m": 0.2996417552185714,
+      "picked": true,
+      "picked_t_s": 4.76,
+      "sustained_clearance_m": 0.27923654457081637
+     },
+     "bottle3": {
+      "held_actions": 42,
+      "longest_clear_s": 1.3599999999999994,
+      "max_clearance_m": 0.29719646425775814,
+      "picked": true,
+      "picked_t_s": 7.76,
+      "sustained_clearance_m": 0.2827991284820278
+     }
+    },
+    "v2.2": {
+     "bottle0": {
+      "held_actions": 98,
+      "longest_clear_s": 2.960000000000001,
+      "max_clearance_m": 0.23885217611652443,
+      "picked": true,
+      "picked_t_s": 11.200000000000001,
+      "sustained_clearance_m": 0.22937273815139858
+     },
+     "bottle1": {
+      "held_actions": 43,
+      "longest_clear_s": 1.3599999999999999,
+      "max_clearance_m": 0.2889686657560123,
+      "picked": true,
+      "picked_t_s": 1.76,
+      "sustained_clearance_m": 0.27377260609630805
+     },
+     "bottle2": {
+      "held_actions": 40,
+      "longest_clear_s": 1.3599999999999994,
+      "max_clearance_m": 0.2996417552185714,
+      "picked": true,
+      "picked_t_s": 4.76,
+      "sustained_clearance_m": 0.27923654457081637
+     },
+     "bottle3": {
+      "held_actions": 42,
+      "longest_clear_s": 1.3599999999999994,
+      "max_clearance_m": 0.29719646425775814,
+      "picked": true,
+      "picked_t_s": 7.76,
+      "sustained_clearance_m": 0.2827991284820278
+     }
+    }
+   },
+   "replay_v21_matches_live": true,
+   "replay_v21_vs_live": {
+    "bottle0": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 3.857207664825779e-06,
+     "picked": true,
+     "picked_t_s": true
+    },
+    "bottle1": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 1.7001781627001833e-06,
+     "picked": true,
+     "picked_t_s": true
+    },
+    "bottle2": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 4.070402892519809e-07,
+     "picked": true,
+     "picked_t_s": true
+    },
+    "bottle3": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 1.0203106446393662e-06,
+     "picked": true,
+     "picked_t_s": true
+    }
+   },
+   "rule_live": "v2.1",
+   "score_live": 100.0,
+   "seed": 0,
+   "verdict_flips_v22": 0
+  },
+  {
+   "actions": 362,
+   "credited_live": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "file": "r181_scr_ship2_q00_vis2.result.json.gz",
+   "kind": "script",
+   "layout": 12,
+   "live_hold_check_v21": {
+    "arm_verdicts": 2896,
+    "disagree": 0,
+    "disagreements": []
+   },
+   "per_bottle": {
+    "bottle0": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 74.1,
+     "held_gap_min_mm_v22": 74.1,
+     "held_v21": 99,
+     "held_v22": 99
+    },
+    "bottle1": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 61.52,
+     "held_gap_min_mm_v22": 61.52,
+     "held_v21": 42,
+     "held_v22": 42
+    },
+    "bottle2": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 57.12,
+     "held_gap_min_mm_v22": 57.12,
+     "held_v21": 49,
+     "held_v22": 49
+    },
+    "bottle3": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 53.81999999999999,
+     "held_gap_min_mm_v22": 53.81999999999999,
+     "held_v21": 40,
+     "held_v22": 40
+    }
+   },
+   "picked_live": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "picked_v22": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "replay": {
+    "v2.1": {
+     "bottle0": {
+      "held_actions": 99,
+      "longest_clear_s": 2.960000000000001,
+      "max_clearance_m": 0.24442090150457518,
+      "picked": true,
+      "picked_t_s": 11.200000000000001,
+      "sustained_clearance_m": 0.23522459178604505
+     },
+     "bottle1": {
+      "held_actions": 42,
+      "longest_clear_s": 1.1599999999999993,
+      "max_clearance_m": 0.2587013221585187,
+      "picked": true,
+      "picked_t_s": 4.76,
+      "sustained_clearance_m": 0.25367520231329566
+     },
+     "bottle2": {
+      "held_actions": 49,
+      "longest_clear_s": 1.2400000000000002,
+      "max_clearance_m": 0.2536417669883787,
+      "picked": true,
+      "picked_t_s": 1.76,
+      "sustained_clearance_m": 0.23829100984426022
+     },
+     "bottle3": {
+      "held_actions": 40,
+      "longest_clear_s": 1.2799999999999994,
+      "max_clearance_m": 0.29432170588550866,
+      "picked": true,
+      "picked_t_s": 7.76,
+      "sustained_clearance_m": 0.2864263296255115
+     }
+    },
+    "v2.2": {
+     "bottle0": {
+      "held_actions": 99,
+      "longest_clear_s": 2.960000000000001,
+      "max_clearance_m": 0.24442090150457518,
+      "picked": true,
+      "picked_t_s": 11.200000000000001,
+      "sustained_clearance_m": 0.23522459178604505
+     },
+     "bottle1": {
+      "held_actions": 42,
+      "longest_clear_s": 1.1599999999999993,
+      "max_clearance_m": 0.2587013221585187,
+      "picked": true,
+      "picked_t_s": 4.76,
+      "sustained_clearance_m": 0.25367520231329566
+     },
+     "bottle2": {
+      "held_actions": 49,
+      "longest_clear_s": 1.2400000000000002,
+      "max_clearance_m": 0.2536417669883787,
+      "picked": true,
+      "picked_t_s": 1.76,
+      "sustained_clearance_m": 0.23829100984426022
+     },
+     "bottle3": {
+      "held_actions": 40,
+      "longest_clear_s": 1.2799999999999994,
+      "max_clearance_m": 0.29432170588550866,
+      "picked": true,
+      "picked_t_s": 7.76,
+      "sustained_clearance_m": 0.2864263296255115
+     }
+    }
+   },
+   "replay_v21_matches_live": true,
+   "replay_v21_vs_live": {
+    "bottle0": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 3.882641630426065e-08,
+     "picked": true,
+     "picked_t_s": true
+    },
+    "bottle1": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 4.23118660730637e-06,
+     "picked": true,
+     "picked_t_s": true
+    },
+    "bottle2": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 3.6538376284589447e-06,
+     "picked": true,
+     "picked_t_s": true
+    },
+    "bottle3": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 2.52693957292216e-06,
+     "picked": true,
+     "picked_t_s": true
+    }
+   },
+   "rule_live": "v2.1",
+   "score_live": 100.0,
+   "seed": 0,
+   "verdict_flips_v22": 0
+  },
+  {
+   "actions": 362,
+   "credited_live": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "file": "r181_scr_ship_c00_vis2.result.json.gz",
+   "kind": "script",
+   "layout": 10,
+   "live_hold_check_v21": {
+    "arm_verdicts": 2896,
+    "disagree": 0,
+    "disagreements": []
+   },
+   "per_bottle": {
+    "bottle0": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 57.190000000000005,
+     "held_gap_min_mm_v22": 57.190000000000005,
+     "held_v21": 97,
+     "held_v22": 97
+    },
+    "bottle1": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 59.25,
+     "held_gap_min_mm_v22": 59.25,
+     "held_v21": 42,
+     "held_v22": 42
+    },
+    "bottle2": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 48.730000000000004,
+     "held_gap_min_mm_v22": 48.730000000000004,
+     "held_v21": 40,
+     "held_v22": 40
+    },
+    "bottle3": {
+     "flip_gaps_mm": [],
+     "flips": 0,
+     "held_gap_min_mm_v21": 51.47,
+     "held_gap_min_mm_v22": 51.47,
+     "held_v21": 41,
+     "held_v22": 41
+    }
+   },
+   "picked_live": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "picked_v22": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "replay": {
+    "v2.1": {
+     "bottle0": {
+      "held_actions": 97,
+      "longest_clear_s": 2.960000000000001,
+      "max_clearance_m": 0.2352527264845582,
+      "picked": true,
+      "picked_t_s": 11.200000000000001,
+      "sustained_clearance_m": 0.22574445432795265
+     },
+     "bottle1": {
+      "held_actions": 42,
+      "longest_clear_s": 1.2799999999999998,
+      "max_clearance_m": 0.2881820981974986,
+      "picked": true,
+      "picked_t_s": 1.76,
+      "sustained_clearance_m": 0.27264951479579513
+     },
+     "bottle2": {
+      "held_actions": 40,
+      "longest_clear_s": 1.2399999999999993,
+      "max_clearance_m": 0.29546313285495496,
+      "picked": true,
+      "picked_t_s": 4.8,
+      "sustained_clearance_m": 0.2755780557272197
+     },
+     "bottle3": {
+      "held_actions": 41,
+      "longest_clear_s": 1.2399999999999993,
+      "max_clearance_m": 0.28652981229572483,
+      "picked": true,
+      "picked_t_s": 7.8,
+      "sustained_clearance_m": 0.27250024235079084
+     }
+    },
+    "v2.2": {
+     "bottle0": {
+      "held_actions": 97,
+      "longest_clear_s": 2.960000000000001,
+      "max_clearance_m": 0.2352527264845582,
+      "picked": true,
+      "picked_t_s": 11.200000000000001,
+      "sustained_clearance_m": 0.22574445432795265
+     },
+     "bottle1": {
+      "held_actions": 42,
+      "longest_clear_s": 1.2799999999999998,
+      "max_clearance_m": 0.2881820981974986,
+      "picked": true,
+      "picked_t_s": 1.76,
+      "sustained_clearance_m": 0.27264951479579513
+     },
+     "bottle2": {
+      "held_actions": 40,
+      "longest_clear_s": 1.2399999999999993,
+      "max_clearance_m": 0.29546313285495496,
+      "picked": true,
+      "picked_t_s": 4.8,
+      "sustained_clearance_m": 0.2755780557272197
+     },
+     "bottle3": {
+      "held_actions": 41,
+      "longest_clear_s": 1.2399999999999993,
+      "max_clearance_m": 0.28652981229572483,
+      "picked": true,
+      "picked_t_s": 7.8,
+      "sustained_clearance_m": 0.27250024235079084
+     }
+    }
+   },
+   "replay_v21_matches_live": true,
+   "replay_v21_vs_live": {
+    "bottle0": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 2.3575851360035927e-06,
+     "picked": true,
+     "picked_t_s": true
+    },
+    "bottle1": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 4.475349398624928e-06,
+     "picked": true,
+     "picked_t_s": true
+    },
+    "bottle2": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 1.0248292598991071e-06,
+     "picked": true,
+     "picked_t_s": true
+    },
+    "bottle3": {
+     "held_actions": true,
+     "longest_clear_s": true,
+     "max_clearance_m_abs_diff": 2.633053181266831e-06,
+     "picked": true,
+     "picked_t_s": true
+    }
+   },
+   "rule_live": "v2.1",
+   "score_live": 100.0,
+   "seed": 0,
+   "verdict_flips_v22": 0
+  }
+ ],
+ "evaluator": {
+  "file": "src/eval_client/evaluator_v2.py",
+  "params_v21": {
+   "clearance_m": 0.02,
+   "footprint_margin_m": 0.005,
+   "gap_tol_m": 0.01,
+   "hold_margin_m": 0.02,
+   "hold_s": 0.2,
+   "rule": "v2.1",
+   "sampling": "once per action"
+  },
+  "params_v22": {
+   "clearance_m": 0.02,
+   "footprint_margin_m": 0.005,
+   "gap_min_m": 0.02,
+   "gap_tol_m": 0.01,
+   "hold_margin_m": 0.02,
+   "hold_s": 0.2,
+   "rule": "v2.2",
+   "sampling": "once per action"
+  },
+  "sha256": "8cd8bd0a1a1f655b157f50764532638910adacdc450b880c4cbf6ad083d0f563"
+ },
+ "inputs": {
+  "bg3_cf_v21.result.json.gz": "fa32a0c6538e81ab9ee3cb76950d180d182a12aab46eca182480a612d56115d6",
+  "bg3_scr_corr_q00_vis2.result.json.gz": "c808d1f0f4f20aa1a93c73e3892ec1847d6cb8d7140032cbfd992c6c9b05ca28",
+  "bg3_scr_corr_q01_vis2.result.json.gz": "7f82e52a24188f756ad0dd5c9849097891fd8d404d1c4a4e3e82c6454ffc6d1a",
+  "bg3_scr_ship_q00_vis2.result.json.gz": "4f8c4e8bd481d743c3a87049590658d1f39bafde47906406f7d2edac65f835ff",
+  "bg3_scr_ship_q01_vis2.result.json.gz": "27900a4d925af197100da2b5a98c68a9924323fa7f6c4987b6327881a0b53c3a",
+  "r181_scr_corr2_q00_vis2.result.json.gz": "dbf513ffaf82ad5613381f53087c01045a0093ae0a4ffb008580a3d4ffe0a02d",
+  "r181_scr_corr2_q01_vis2.result.json.gz": "b3929af5ae4c5072a872520fa65856aa3e83473d569f2944c4b852d1d1ffe510",
+  "r181_scr_ship2_q00_vis2.result.json.gz": "4784898e7d5eb0a6a97ef2902cd6bee6596c56ebc89122681f165909bc78a7a0",
+  "r181_scr_ship_c00_vis2.result.json.gz": "fad1dfacc87379b62dda035030d11f091e05b07a6805c334dc937c9e4e3bdad7"
+ },
+ "schema": "eval_v22_rescore_g3_v1",
+ "summary": {
+  "episodes": 13,
+  "live_hold_check_v21": {
+   "arm_verdicts": 41296,
+   "disagree": 0
+  },
+  "replay_v21_matches_live_all": true,
+  "script": {
+   "bottles": 48,
+   "episodes_with_flips": [],
+   "held_gap_min_mm_v21": 48.010000000000005,
+   "picked_t_s_equal_v21_v22_all": true,
+   "picked_v21_replay": 48,
+   "picked_v22_replay": 48,
+   "scores_live": [
+    [
+     0,
+     1,
+     "bg3_scr_corr_q00_vis2",
+     100.0
+    ],
+    [
+     0,
+     6,
+     "bg3_scr_corr_q00_vis2",
+     100.0
+    ],
+    [
+     0,
+     0,
+     "bg3_scr_corr_q01_vis2",
+     100.0
+    ],
+    [
+     0,
+     9,
+     "bg3_scr_corr_q01_vis2",
+     100.0
+    ],
+    [
+     0,
+     1,
+     "bg3_scr_ship_q00_vis2",
+     100.0
+    ],
+    [
+     0,
+     6,
+     "bg3_scr_ship_q00_vis2",
+     100.0
+    ],
+    [
+     0,
+     0,
+     "bg3_scr_ship_q01_vis2",
+     100.0
+    ],
+    [
+     0,
+     9,
+     "bg3_scr_ship_q01_vis2",
+     100.0
+    ],
+    [
+     0,
+     12,
+     "r181_scr_corr2_q00_vis2",
+     40.0
+    ],
+    [
+     0,
+     10,
+     "r181_scr_corr2_q01_vis2",
+     100.0
+    ],
+    [
+     0,
+     12,
+     "r181_scr_ship2_q00_vis2",
+     100.0
+    ],
+    [
+     0,
+     10,
+     "r181_scr_ship_c00_vis2",
+     100.0
+    ]
+   ],
+   "verdict_flips_v22": 0
+  },
+  "script_episodes": 12,
+  "witness": [
+   {
+    "credited_live": [
+     "bottle0"
+    ],
+    "flipped_holds_widest_jaw_mm": 1.72,
+    "held_actions_v21_replay": {
+     "bottle0": 104,
+     "bottle1": 0,
+     "bottle2": 0,
+     "bottle3": 12
+    },
+    "held_actions_v22_replay": {
+     "bottle0": 0,
+     "bottle1": 0,
+     "bottle2": 0,
+     "bottle3": 0
+    },
+    "picked_v22": [],
+    "score_live_v21": 10.0,
+    "score_v22": 0.0
+   }
+  ]
+ },
+ "urdf_sha256": "7aaa308a1a5b6a213d914db86ba09ddd6252f25cb498ac9a148bfa6c7166a423"
+}

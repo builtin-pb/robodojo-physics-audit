@@ -1,0 +1,5 @@
+[34m[1m[CONNECTING][0m Policy server -> localhost:42165 (PID=427597, timeout=1200s)
+[34m[1m[CONNECTING][0m Policy server still waiting for localhost:42165 (30/1200s)
+[34m[1m[CONNECTING][0m Policy server still waiting for localhost:42165 (60/1200s)
+[34m[1m[CONNECTING][0m Policy server still waiting for localhost:42165 (90/1200s)
+[31m[1m[ERROR][0m Policy server (PID=427597) exited before opening port 42165.

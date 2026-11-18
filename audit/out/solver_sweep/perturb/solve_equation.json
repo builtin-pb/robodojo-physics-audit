@@ -1,0 +1,23 @@
+[
+ {
+  "cell_name": "solve_equation__perturb",
+  "layout": 0,
+  "overrides": {
+   "spawn_lift": {
+    "stems": "*",
+    "dz_m": 1e-06
+   },
+   "slide_target": {
+    "label": "num_0",
+    "inst": "number_5_1",
+    "labelled": true,
+    "stem": "number_5",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     -0.135685,
+     0.990752
+    ]
+   }
+  }
+ }
+]

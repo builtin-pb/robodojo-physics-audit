@@ -1,0 +1,91 @@
+{
+  "schema": "d3-gripper-sources-v1",
+  "description": "Source constants for the D3 (#90) ARX X5 gripper drive; audit/tools/build_docs_params.py derives robots.json's gripper block from these by exact arithmetic. Every number here is quoted from its source or is the D3 decision value.",
+  "arx5_sdk": {
+    "repo": "https://github.com/real-stanford/arx5-sdk",
+    "config_url": "https://raw.githubusercontent.com/real-stanford/arx5-sdk/main/include/app/config.h",
+    "controller_url": "https://raw.githubusercontent.com/real-stanford/arx5-sdk/main/src/app/controller_base.cpp",
+    "checked": "2026-11-12, robot X5 and joint_controller_6 entries (also quoted in audit/out/32/phase1.md A.3)",
+    "gripper_vel_max_m_s": "0.3",
+    "gripper_vel_max_quote": "0.3, // gripper_vel_max",
+    "gripper_width_m": "0.088",
+    "gripper_width_quote": "0.088, // gripper_width",
+    "gripper_open_readout_rad": "5.03",
+    "gripper_open_readout_quote": "5.03, // gripper_open_readout",
+    "default_gripper_kp_nm_per_rad": "5.0",
+    "default_gripper_kp_quote": "5.0, // default_gripper_kp",
+    "default_gripper_kd_nm_s_per_rad": "0.2",
+    "default_gripper_kd_quote": "0.2, // default_gripper_kd",
+    "gripper_torque_max_nm": "1.5",
+    "torque_constant_dm_j4310": "0.424",
+    "control_law_quote": "can_handle_.send_DM_motor_cmd(robot_config_.gripper_motor_id, gain_.gripper_kp, gain_.gripper_kd, gripper_motor_pos, gripper_motor_vel, gripper_motor_torque); gripper_motor_pos = output_joint_cmd_.gripper_pos / robot_config_.gripper_width * robot_config_.gripper_open_readout",
+    "slew_quote": "double new_gripper_pos = prev_output_cmd.gripper_pos + robot_config_.gripper_vel_max * dt * gripper_delta_pos / std::abs(gripper_delta_pos);",
+    "velocity_feedforward_note": "controller_base.cpp passes the interpolator's gripper_vel to the motor; whether it is non-zero is not shown in that file. RoboDojo writes no gripper velocity target (0), which is kept."
+  },
+  "transmission": {
+    "source": "audit/out/32/phase1.md A.4 (#71): symmetric rack, jaw width w = q7 + q8 spans gripper_width over gripper_open_readout of motor rotation; F_finger = eta * tau / (dw/dtheta)",
+    "efficiency_nominal": "0.8",
+    "efficiency_low": "0.7",
+    "efficiency_high": "0.9",
+    "status": "inferred (spur-rack and guide efficiency; no vendor figure)"
+  },
+  "effort": {
+    "decision": "#90 D3 default item 2: 80 N per finger nominal where the arx5-sdk torque-freeze reading (70.8-91.0 N) and the 2 N*m reading of ARX's '2NM' (80.0-102.9 N) overlap; 35 N and 100 N named sensitivity values",
+    "nominal_n": "80",
+    "low_n": "35",
+    "high_n": "100",
+    "freeze_torque_nm_numerator": "0.75",
+    "freeze_torque_nm_note": "gripper_torque_max / 2 = 0.75; unscaled CAN torque reading 0.75 / 0.424 N*m (phase1.md A.3); literal 0.75 N*m is the least plausible reading",
+    "arx_2nm_torque_nm": "2.0",
+    "urdf_effort_n": "100",
+    "urdf_quote": "<limit lower=\"0\" upper=\"0.044\" effort=\"100\" velocity=\"1000\" /> (X5A.urdf joint7/joint8, phase1.md A.2)"
+  },
+  "mimic": {
+    "robot_config_url": "https://huggingface.co/datasets/RoboDojo-Benchmark/RoboDojo/resolve/1127bda94f172d757386945af3eb3a6754d1a4e6/Assets/Robots/x5/robot_config.yml",
+    "robot_config_quote": "mimic: [\"joint8\", 1., 0.]",
+    "software_gearing": "1.0",
+    "software_offset": "0.0",
+    "physx_relation": "PhysxMimicJointAPI (Isaac Sim 5.1 omni.usd.schema.physx 107.3.26): jointPosition + (gearing * referenceJointPosition) + offset = 0; instance tokens rotX, rotY, rotZ only; the constraint impulse is applied to the reference joint as well",
+    "axis_token": "rotX",
+    "axis_note": "#86: a linear/transX/X token is silently ignored on prismatic joints; rotX couples them"
+  },
+  "rotor_inertia": {
+    "url": "https://wiki.seeedstudio.com/cn/damiao_series/",
+    "page_sha256": "6100ba6ca67c7f83e41db87f6b3ec051026ce246617ddbbbee16a520ed1abe81",
+    "checked": "2026-11-13",
+    "quote": "达妙 43 系列电机入门指南, 规格参数 table: columns 磁链 (Wb) | 转动惯量 (Kg*m²) | 扭矩常数 (Nm/A); row J4310-2EC V1.1: 0.0045 | 1.80E-05 | 0.945 (row J4340-2EC, 40:1: 0.00485 | 2.00E-05 | 4.074)",
+    "rotor_inertia_kg_m2": "0.000018",
+    "gear_ratio": "10",
+    "gear_ratio_quote": "Damiao 2025 product selection manual p. 8, DM-J4310-2EC V1.1: 减速比 Reduction Ratio 10 (PDF sha256 c99c4ad41a9635833f80444cc9e4fc0e007a64940e123d00286a98048b65eed3); the manual lists no inertia",
+    "motor_side_check": "Motor side, not output: the 40:1 J4340-2EC lists nearly the same inertia (2.00E-05) while its torque constant scales with the gear (4.074 vs 0.945 Nm/A); 1.5 * 14 pole pairs * 0.0045 Wb * 10 = 0.945 Nm/A, so the torque constant is output side and the inertia is not; arx5-sdk's gripper gains Kp 5.0, Kd 0.2 are critically damped on the output inertia 100 * 1.8e-5 kg*m^2 (zeta = 0.2 / (2 sqrt(5.0 * 0.0018)) = 1.05)",
+    "alt_stroke_width_m": "0.080",
+    "alt_stroke_readout_rad": "5.0",
+    "alt_stroke_source": "audit/out/32/phase1.md A.4: ARX manual 0-80mm and ARX5_beta/readme.md 5.0 rad (inferred alternative stroke mapping)",
+    "status": "estimated: distributor's table (Seeed Studio), not Damiao's manual; gearbox and pinion inertia not included, so a lower bound on the reflected mass under the stroke mapping"
+  },
+  "motor_peak": {
+    "url": "https://raw.githubusercontent.com/dmBots/DM-J4310-2EC/master/manual/DM-J4310-2EC%20V1.1%20Geared%20Motor%20User%20Manual%20V1.3%202026-09-14.pdf",
+    "quote": "Model: DM-J4310-2EC V1.1 | Rated Voltage: 24V | Rated Phase Current: 2.5A | Peak Phase Current: 7.5A | Rated Torque: 3NM | Peak Torque: 7NM | Reduction Ratio: 10:1",
+    "conditions": "Damiao DM-J4310-2EC V1.1 user manual V1.3 p. 7, Specifications, 24 V column (also Damiao's product page: 峰值扭矩：7Nm); quoted in audit/out/32/phase1.md A.2; V1.2 raises the peak to 12.5 N*m",
+    "peak_torque_nm": "7",
+    "v1_2_peak_torque_nm": "12.5",
+    "controller_quote": "arx5-sdk c160db7 src/app/controller_base.cpp L562-578: if (std::abs(joint_state_.gripper_torque) > robot_config_.gripper_torque_max / 2) { ... if (delta_pos * sign > 0) output_joint_cmd_.gripper_pos = prev_output_cmd.gripper_pos; } and L380-397 (over_current_protection_): if (std::abs(joint_state_.gripper_torque) > robot_config_.gripper_torque_max) over_current_cnt_++ ... if (over_current_cnt_ > controller_config_.over_current_cnt_max) enter_emergency_state_(); include/app/common.h L33: double gripper_vel = 0.0f; // currently not supported",
+    "controller_note": "The SDK clips no motor torque at its freeze threshold: the MIT-mode motor applies Kp (target - q) + Kd (0 - v) up to its own peak, and the command stops advancing above gripper_torque_max / 2. Uncapped, the drive's limit is the motor's peak (scenario gripper_drive_limit = motor_peak, #160 sensitivity); the corrected default limits it at the over-current trip (overcurrent_trip below)."
+  },
+  "overcurrent_trip": {
+    "decision": "Bo, November 14 (#163, option 2): the corrected gripper follows arx5-sdk's control law (real-stanford/arx5-sdk at c160db7, a community SDK, not necessarily what RoboDojo's real setup runs), mapped through an inferred transmission and efficiency, with its drive limited at the force the SDK's over-current trip maps to, so the simulation never sustains a grip that controller would trip on. The trip's emergency path is not modelled: at c160db7 it appears to self-deadlock (below), so its real effect is unknown.",
+    "commit": "c160db7834530a3d80fec524547c74e1d4fa8035",
+    "checked": "2026-11-14, files fetched at the commit (controller_base.cpp sha256 38bff89a1ecca0f99aba5181e124f5d80b63803cf19546e70394a28cbbde46c8, config.h sha256 cc2141639ca936c3d2d4fbbeb85161f3ed36ca96d58e45390296f76dce1ae265)",
+    "trip_quote": "src/app/controller_base.cpp L380-392: if (std::abs(joint_state_.gripper_torque) > robot_config_.gripper_torque_max) { over_current = true; ... } if (over_current) { over_current_cnt_++; if (over_current_cnt_ > controller_config_.over_current_cnt_max) { ... enter_emergency_state_(); } }",
+    "trip_url": "https://github.com/real-stanford/arx5-sdk/blob/c160db7834530a3d80fec524547c74e1d4fa8035/src/app/controller_base.cpp#L380-L392",
+    "torque_max_quote": "include/app/config.h L105 (robot X5): 1.5, // gripper_torque_max; L323-330 (joint_controller_6): 20, // over_current_cnt_max; 0.002, // controller_dt",
+    "torque_max_url": "https://github.com/real-stanford/arx5-sdk/blob/c160db7834530a3d80fec524547c74e1d4fa8035/include/app/config.h#L105",
+    "reading_quote": "src/app/controller_base.cpp L427: const double torque_constant_DM_J4310 = 0.424; L462-463: joint_state_.gripper_torque = motor_msg[robot_config_.gripper_motor_id].current_actual_float * torque_constant_DM_J4310;",
+    "reading_url": "https://github.com/real-stanford/arx5-sdk/blob/c160db7834530a3d80fec524547c74e1d4fa8035/src/app/controller_base.cpp#L462-L463",
+    "reading_note": "The trip compares the same reading as the freeze (L562), at gripper_torque_max instead of gripper_torque_max / 2, so it maps to output torque as D3's freeze does: 1.5 / 0.424 N*m (the unscaled CAN torque reading, effort.freeze_torque_nm_note), then eta * tau / J_w.",
+    "emergency_quote": "src/app/controller_base.cpp L401-420: enter_emergency_state_() { ... while (true) { std::lock_guard<std::mutex> guard(cmd_mutex_); set_gain(damping_gain); ... } }; L119-122 set_gain: { std::lock_guard<std::mutex> guard(cmd_mutex_); gain_ = new_gain; }; include/app/controller_base.h L58: std::mutex cmd_mutex_;",
+    "emergency_url": "https://github.com/real-stanford/arx5-sdk/blob/c160db7834530a3d80fec524547c74e1d4fa8035/src/app/controller_base.cpp#L401-L420",
+    "emergency_note": "Open caveat, not a finding: the emergency path locks cmd_mutex_ and then calls set_gain, which locks the same non-recursive std::mutex, so at c160db7 it appears to deadlock before the damping gains are sent (independent review of #163). What a real X5 does after the trip (keeps the last command, motor watchdog, goes limp) is unknown, so the trip is modelled only as a force limit.",
+    "trip_torque_numerator_nm": "1.5"
+  }
+}

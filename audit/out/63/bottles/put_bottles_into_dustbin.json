@@ -1,0 +1,4303 @@
+{
+  "schema": "v2",
+  "schema_version": "2.1-d2-aligned-bp73-v2",
+  "revision": "v4 (post-PR #84 review: #73 v2 vocabulary & canonical pairs, #85 fill bands, PhysX 5.6.1 pin, 00022 ~0.6 L & asset override, params_diff, average-combine feasibility verified)",
+  "status_vocabulary": [
+    "sourced",
+    "estimated",
+    "unsourced"
+  ],
+  "task": "put_bottles_into_dustbin",
+  "issue": "#63",
+  "fill_decision_issue": "#85",
+  "generated_utc": "2026-11-11",
+  "repo_commit": "68ebf87",
+  "bp_params_classes_commit": "52e73b1",
+  "upstream_commit": "f57e163",
+  "hf_dataset_revision": "1127bda94f172d757386945af3eb3a6754d1a4e6",
+  "sourcing_status": {
+    "sourcing_stopped": true,
+    "stopping_rule": "AGENTS.md: stop after two probes that do not move a verdict",
+    "summary": "Two literature-sourcing passes, two citation audits (cite63, cite63b), and Bo's PR #84 review confirm that 0 real-world values changing put_bottles_into_dustbin's dynamics are sourced. Evidence statuses use #73's vocabulary ('sourced', 'estimated', 'unsourced') separately from 'scenarios' (#73 surfaces + #85 fill convention).",
+    "corrected_prior_claims": [
+      {
+        "where": "#63 comment 2026-11-11T19:14:00Z and v2 entries[54]",
+        "prior_claim": "dry rigid PET-PET static friction 0.29-0.35 sourced from PMC10746984",
+        "correction": "Downgraded by cite63b §3.11/§5.4/§6.1: Ptak et al. 2023 (PMC10746984 Table 3) tested rough machined solid extruded PET pins/plates (Sa = 6.32 / 7.93 um, Sz = 80.6 / 97.6 um, 34.4-84.4 N / 0.65-1.6 MPa, 0.27-0.37 with ±alpha), not glossy stretch-blow-molded PET bottles (Sa < 0.3 um) or shrink-sleeved beverage bottles (00000, 00002, 00025)."
+      },
+      {
+        "where": "v2 entries[39,40,41,45,46,48,49,50] and rev63-report.md:84",
+        "prior_claim": "8 narrow contact-friction sub-pairs marked sourced (PMC5618392, PMC7361995, ETB wood-metal, arXiv:1604.04038, Lee 1995 PP-PP, PMC5638825 304-PP) and 0.135 kg called a sourced hold limit",
+        "correction": "All downgraded by cite63b §3.3-3.10/§6.1 due to 12 um flexible film vs rigid bottle, 3 km PLA wear on C45 steel, raw lumber/plywood vs table_laminate, no verified PP-bodied bottle + truncated SPI-SPE #1 smooth PP (up to 0.706), and 229 C frictional melting of PP in PMC5638825."
+      },
+      {
+        "where": "PR #84 v3 (68ebf87) put_bottles_into_dustbin.{json,md}",
+        "prior_claim": "00022 empty/full (0.14-0.29 / 0.64-0.79 kg at 0.5 L) and dustbin/00000 (0.9-2.2 kg) marked sourced; mahogany slab and 0.5 L LCI counted as sourced asset values; PET density [1330,1400] marked sourced; header called 'PhysX 5.1' from main; 5 class disagreements claimed; PP-PP nominal set to 0.24 from unary back-solving",
+        "correction": "PR #84 review (v4): 00022 and dustbin masses relabelled estimated and 00022 full recomputed at ~0.60 L ([0.75, 0.95] kg, nominal 0.82 kg) from 698.73 cm^3 collider volume; mahogany slab and 0.5 L LCI moved to references; PET density band marked estimated around 1,350 kg/m^3; header pinned to Isaac Sim 5.1.0's PhysX 5.6.1 (tag 107.3-physx-5.6.1, PxMaterial.h:112,127-130,148); 3 class disagreements vs #73 v1 noted (all resolved in #73 v2 52e73b1); PP-PP nominal set to 0.30/0.25 from Lee 1995 Table K.1."
+      }
+    ]
+  },
+  "count_summary": {
+    "status_vocabulary": [
+      "sourced",
+      "estimated",
+      "unsourced"
+    ],
+    "sourced": 17,
+    "estimated": 26,
+    "unsourced": 87,
+    "total_parameter_fields": 130,
+    "real_world_dynamics_values_sourced": 0,
+    "note_on_sourced_entries": "Zero real-world values that change put_bottles_into_dustbin's dynamics are sourced. The 17 sourced fields consist solely of 14 repo/HF asset and scene geometries (size_m), 2 bulk solid resin/metal densities (polyolefin_plastic, steel) unused on hollow assets, and 1 PhysX 5.6.1 SDK combine/clamp algebra rule. Cross-task steel__steel [0.50, 0.80]/[0.40, 0.60] is sourced in #73 v2 (recorded under cross_task_class_constraints; 0 episodes in this task). Counterfactual mahogany table mass and 0.5 L LCI bottle weights are kept under references and excluded from counts.",
+    "assets_defined": 14,
+    "classes_defined": 8,
+    "task_class_pairs_defined": 20,
+    "cross_task_constraints_checked": 1,
+    "reference_anchors_not_counted": 3,
+    "breakdown": {
+      "sourced_keys": [
+        "assets.Rigid/bottle/00000.size_m",
+        "assets.Rigid/bottle/00002.size_m",
+        "assets.Rigid/bottle/00005.size_m",
+        "assets.Rigid/bottle/00022.size_m",
+        "assets.Rigid/bottle/00025.size_m",
+        "assets.Rigid/bottle/00041.size_m",
+        "assets.Rigid/bottle/00050.size_m",
+        "assets.Rigid/bottle/00055.size_m",
+        "assets.Rigid/bottle/00059.size_m",
+        "assets.Rigid/bottle/00060.size_m",
+        "assets.Geometry/dustbin/00000.size_m",
+        "assets.Scene/Table.size_m",
+        "assets.Scene/Ground.size_m",
+        "assets.Robot/x5/finger_pad.size_m",
+        "classes.polyolefin_plastic.density_kg_m3",
+        "classes.steel.density_kg_m3",
+        "physx_combine_and_unary_realisation.combine_algebra_rule"
+      ],
+      "estimated_keys": [
+        "assets.Rigid/bottle/00022.mass_by_fill.empty",
+        "assets.Rigid/bottle/00022.mass_by_fill.full",
+        "assets.Rigid/bottle/00022.material_override.mu_static_unary",
+        "assets.Rigid/bottle/00022.material_override.mu_kinetic_unary",
+        "assets.Geometry/dustbin/00000.mass_by_fill.empty",
+        "classes.pet_plastic.density_kg_m3",
+        "pairs.pad_elastomer__steel.mu_static",
+        "pairs.pad_elastomer__steel.mu_kinetic",
+        "pairs.pad_hard__pet_plastic.mu_static",
+        "pairs.pad_hard__pet_plastic.mu_kinetic",
+        "pairs.pad_hard__polyolefin_plastic.mu_static",
+        "pairs.pad_hard__polyolefin_plastic.mu_kinetic",
+        "pairs.pad_hard__steel.mu_static",
+        "pairs.pad_hard__steel.mu_kinetic",
+        "pairs.pet_plastic__pet_plastic.mu_static",
+        "pairs.pet_plastic__pet_plastic.mu_kinetic",
+        "pairs.pet_plastic__polyolefin_plastic.mu_static",
+        "pairs.pet_plastic__polyolefin_plastic.mu_kinetic",
+        "pairs.pet_plastic__steel.mu_static",
+        "pairs.pet_plastic__steel.mu_kinetic",
+        "pairs.polyolefin_plastic__polyolefin_plastic.mu_static",
+        "pairs.polyolefin_plastic__polyolefin_plastic.mu_kinetic",
+        "pairs.polyolefin_plastic__steel.mu_static",
+        "pairs.polyolefin_plastic__steel.mu_kinetic",
+        "pairs.steel__table_wood.mu_static",
+        "pairs.steel__table_wood.mu_kinetic"
+      ],
+      "unsourced_count_by_group": {
+        "plastic_bottle_empty_and_full_masses_9x2": 18,
+        "x5_finger_jaw_bench_mass": 1,
+        "class_restitutions": 8,
+        "unsourced_pair_frictions_10x2": 20,
+        "pair_restitutions_empty_and_full_20x2": 40
+      }
+    }
+  },
+  "scenarios": {
+    "default": {
+      "finger_pad": "pad_hard",
+      "table": "table_laminate",
+      "ground_combine": "average",
+      "bottle_fill": "empty"
+    },
+    "sensitivity": {
+      "finger_pad": [
+        "pad_elastomer"
+      ],
+      "table": [
+        "table_wood"
+      ],
+      "bottle_fill": [
+        "full"
+      ],
+      "untextured_bottle_class": {
+        "models": [
+          "Rigid/bottle/00005",
+          "Rigid/bottle/00050",
+          "Rigid/bottle/00055",
+          "Rigid/bottle/00059",
+          "Rigid/bottle/00060"
+        ],
+        "alternative_class": "polyolefin_plastic"
+      }
+    },
+    "fill_convention": {
+      "decision_issue": "#85",
+      "default": "empty",
+      "stress_case": "full",
+      "basis": "Task instruction ('Pick up the bottles and throw them into the dustbin') does not state fill and has no real-robot recordings; upstream plastic masses (0.12-0.20 kg) match neither empty (0.011-0.032 kg single-use PET) nor full (0.26-0.555 kg), while bottle/00022 metadata 0.22 kg fits an empty steel bottle (#85). Defaulting to empty matches discarded bottles; full stays a G4 sensitivity stress case (at #55's ~24.8 N clamp on pad_hard, empty plastic bottles hold off-centre while full bottles drop)."
+    },
+    "surface_basis": {
+      "default_surfaces": "Bo's visual reading of real ARX X5 camera frames in cover_blocks episode 0 (origin/bp/params-classes:audit/out/63/real_frames/, #63 comment 2026-11-11T19:16:17Z): dark-grey smooth hard thermoplastic finger faces without rubber pads (pad_hard) and smooth white melamine/laminate tabletop in an aluminium-extrusion enclosure (table_laminate).",
+      "sensitivity_surfaces": "pad_elastomer tests adhered silicone/rubber/TPU Shore A 60-90 grip tape (#32 hardware check open); table_wood tests finished/lacquered mahogany or hardwood matching simulation shader Mahogany_Planks.mdl (env/scene_manager/objects/table.py:61)."
+    },
+    "note": "scenario membership is its own field and never mixed into evidence status"
+  },
+  "references": {
+    "note": "Reference anchors only; excluded from asset/class/pair status counts because none directly measures an in-scope asset under benchmark conditions (mahogany is a counterfactual static table shader, and 0.5 L LCI bottle figures do not match thick petaloid carbonated soda 00000/00002 or hot-fill tea 00025).",
+    "mahogany_table_slab_counterfactual_kg": {
+      "value": 35.8,
+      "range": [
+        27.5,
+        46.75
+      ],
+      "unit": "kg",
+      "why_reference_not_asset_value": "Counterfactual solid mahogany mass for a 1.0 x 1.1 x 0.05 m (0.055 m^3) slab matching the simulation visual shader Mahogany_Planks.mdl; the real setup uses a thin melamine/laminate panel (table_laminate) and Scene/Table is a static collider in PhysX (infinite effective mass, #14).",
+      "sources": [
+        {
+          "url": "https://www.engineeringtoolbox.com/wood-density-d_40.html",
+          "quote": "Mahogany, African 500 - 850 Mahogany, Cuban 660 Mahogany, Honduras 650",
+          "conditions": "0.055 m^3 x [500, 850] kg/m^3 = 27.5-46.75 kg (35.75 kg at 650 kg/m^3)."
+        }
+      ]
+    },
+    "pet_500ml_beverage_lci_kg": {
+      "empty_kg": {
+        "value": 0.01541,
+        "range": [
+          0.01104,
+          0.01541
+        ],
+        "unit": "kg",
+        "why_reference_not_asset_value": "Two LCI studies for generic 0.5 L PET beverage/drinking-water bottles: PMC10078631 states 'carbonated and non-carbonated beverages' for a 15.41 g 0.5 L bottle (10.3 g body + 5.10 g HDPE cap + 0.01 g PE label) and Lawale et al. 2026 gives 22.08 kg / 2,000 = 11.04 g for drinking water (whereas PMC8835206 Table 2 lists 12-20 g commercial 500 mL water bottles). Does not source Chinese Coca-Cola (00000), Sprite (00002), or hot-fill octagonal tea (00025) preforms.",
+        "sources": [
+          {
+            "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=PMC10078631",
+            "quote": "Its components consisted of a PET bottle body (10.3 g), a high‐density polyethylene (HDPE) cap (5.10 g), and a polyethylene (PE) etiquette label (0.01 g), with a total weight of 0.01541 kg (15.41 g).",
+            "conditions": "0.5 L single-use PET beverage bottle ('for packaging of carbonated and non-carbonated beverages', Borocz 2023)."
+          },
+          {
+            "url": "https://www.nature.com/articles/s41598-026-70556-9_reference.pdf",
+            "quote": "For the PET-bottled system, the common retail format of 0.5 L bottles translates the functional unit into 2,000 individual bottles (1,000 L ÷ 0.5 L/bottle = 2,000 bottles) ... A total unfilled bottle mass of 22.08 kg is required to deliver 1,000 L of drinking water, consisting primarily of 16.6 kg of PET for the bottle body, 2.48 kg of HDPE for caps, and 3.00 kg of PP for labels",
+            "conditions": "22.08 kg / 2,000 = 0.01104 kg/bottle (Lawale et al., Sci. Rep. 2026, p. 3 & Table 1 p. 6; Table 4 at https://www.nature.com/articles/s41598-026-70556-9/tables/2)."
+          }
+        ]
+      },
+      "water_filled_kg": {
+        "value": 0.51104,
+        "range": [
+          0.51104,
+          0.51541
+        ],
+        "unit": "kg",
+        "why_reference_not_asset_value": "Adds 0.500 kg water to the two 0.5 L LCI bottles above; does not cover sugared soda (~1,040 kg/m^3) or heavier CSD/hot-fill preforms.",
+        "sources": [
+          {
+            "url": "https://www.nature.com/articles/s41598-026-70556-9/tables/2",
+            "quote": "Subtotal: bottle parts to filling factory 22.08 — 20.152 Bottling plant (Uludağ) → distribution centre (Pursaklar, Ankara) 1,022.08",
+            "conditions": "1,022.08 kg / 2,000 bottles = 0.51104 kg/bottle."
+          },
+          {
+            "url": "https://www.engineeringtoolbox.com/liquids-densities-d_743.html",
+            "quote": "Water - pure | 4 | 1000",
+            "conditions": "Pure water 1,000 kg/m^3 at 4 C (997.0-998.2 kg/m^3 at 20-25 C)."
+          }
+        ]
+      }
+    }
+  },
+  "assets": {
+    "Rigid/bottle/00000": {
+      "id": "Rigid/bottle/00000",
+      "type": "Rigid",
+      "category": "bottle",
+      "asset_path": "Assets/Object/RoboDojo/Rigid/bottle/00000",
+      "material_class": "pet_plastic",
+      "alternative_material_classes": [],
+      "confidence": "high",
+      "identity": "Chinese Coca-Cola 500 mL single-use PET carbonated soft-drink bottle with HDPE screw cap and printed shrink sleeve.",
+      "flags": [
+        "hollow_contents_dependent"
+      ],
+      "bp_classes_comparison": {
+        "disagreed_with_73_v1": false,
+        "note": "Agrees with #73 v1 and v2 (pet_plastic, high); shrink-film sleeve covers grasp zone."
+      },
+      "size_m": {
+        "value": [
+          0.063,
+          0.063,
+          0.245
+        ],
+        "unit": "m",
+        "base_contact_radius_m": 0.0274,
+        "mesh_volume_m3": null,
+        "status": "sourced",
+        "check": "checked-cite63",
+        "sources": [
+          {
+            "url": "https://huggingface.co/datasets/RoboDojo-Benchmark/RoboDojo/resolve/1127bda94f172d757386945af3eb3a6754d1a4e6/Assets/Object/RoboDojo/Rigid/bottle/00000/metadata.json",
+            "quote": "\"aligned_bbox\": {\"vertices\": [[-0.0315, -0.0315, -0.1225], ...], \"extents\": [0.063, 0.063, 0.245]}",
+            "conditions": "Aligned bounding box in metadata.json."
+          }
+        ]
+      },
+      "mass_by_fill": {
+        "default_fill": "empty",
+        "stress_fill": "full",
+        "decision_issue": "#85",
+        "empty": {
+          "value": 0.024,
+          "range": [
+            0.011,
+            0.032
+          ],
+          "unit": "kg",
+          "status": "unsourced",
+          "basis": "Lower bound 0.011 kg anchored to 0.01104 kg still-water 0.5 L PET preform floor (Lawale et al. 2026); upper bound 0.032 kg for thicker carbonated soft-drink (CSD) petaloid preforms has no fetched primary source (cite63 §3.3).",
+          "sources": [],
+          "reference_key": "references.pet_500ml_beverage_lci_kg.empty_kg"
+        },
+        "full": {
+          "value": 0.54,
+          "range": [
+            0.511,
+            0.555
+          ],
+          "unit": "kg",
+          "status": "unsourced",
+          "basis": "Fixed objects[0].min from 0.515 to 0.511 kg per cite63b §4/§5.1 (0.01104 kg still-water bottle + 0.500 kg water = 0.51104 kg); sugared-cola upper bound 0.555 kg (~1,040 kg/m^3 + CSD preform) is unsourced.",
+          "sources": [],
+          "reference_key": "references.pet_500ml_beverage_lci_kg.water_filled_kg"
+        }
+      },
+      "declared_metadata": {
+        "mass_kg": 0.19,
+        "friction": 0.32
+      }
+    },
+    "Rigid/bottle/00002": {
+      "id": "Rigid/bottle/00002",
+      "type": "Rigid",
+      "category": "bottle",
+      "asset_path": "Assets/Object/RoboDojo/Rigid/bottle/00002",
+      "material_class": "pet_plastic",
+      "alternative_material_classes": [],
+      "confidence": "high",
+      "identity": "Chinese Sprite ('Xue Bi') 500 mL green single-use PET carbonated soda bottle with five-pointed petaloid base and plastic cap.",
+      "flags": [
+        "hollow_contents_dependent"
+      ],
+      "bp_classes_comparison": {
+        "disagreed_with_73_v1": false,
+        "note": "Agrees with #73 v1 and v2 (pet_plastic, high); Chinese 'Xue Bi' is Sprite, not 'Snow Beer'."
+      },
+      "size_m": {
+        "value": [
+          0.063,
+          0.063,
+          0.245
+        ],
+        "unit": "m",
+        "base_contact_radius_m": 0.0274,
+        "mesh_volume_m3": null,
+        "status": "sourced",
+        "check": "checked-cite63",
+        "sources": [
+          {
+            "url": "https://huggingface.co/datasets/RoboDojo-Benchmark/RoboDojo/resolve/1127bda94f172d757386945af3eb3a6754d1a4e6/Assets/Object/RoboDojo/Rigid/bottle/00002/metadata.json",
+            "quote": "\"aligned_bbox\": {\"vertices\": [[-0.0315, -0.0315, -0.1225], ...], \"extents\": [0.063, 0.063, 0.245]}",
+            "conditions": "Aligned bounding box in metadata.json."
+          }
+        ]
+      },
+      "mass_by_fill": {
+        "default_fill": "empty",
+        "stress_fill": "full",
+        "decision_issue": "#85",
+        "empty": {
+          "value": 0.024,
+          "range": [
+            0.011,
+            0.032
+          ],
+          "unit": "kg",
+          "status": "unsourced",
+          "basis": "Lower bound 0.011 kg anchored to 0.01104 kg still-water 0.5 L PET floor; CSD petaloid preform upper bound 0.032 kg is unsourced.",
+          "sources": [],
+          "reference_key": "references.pet_500ml_beverage_lci_kg.empty_kg"
+        },
+        "full": {
+          "value": 0.54,
+          "range": [
+            0.511,
+            0.555
+          ],
+          "unit": "kg",
+          "status": "unsourced",
+          "basis": "Fixed objects[1].min from 0.515 to 0.511 kg per cite63b §4/§5.1; sugared-soda upper bound 0.555 kg is unsourced.",
+          "sources": [],
+          "reference_key": "references.pet_500ml_beverage_lci_kg.water_filled_kg"
+        }
+      },
+      "declared_metadata": {
+        "mass_kg": 0.19,
+        "friction": 0.38
+      }
+    },
+    "Rigid/bottle/00005": {
+      "id": "Rigid/bottle/00005",
+      "type": "Rigid",
+      "category": "bottle",
+      "asset_path": "Assets/Object/RoboDojo/Rigid/bottle/00005",
+      "material_class": "pet_plastic",
+      "alternative_material_classes": [
+        "polyolefin_plastic",
+        "abs_toy_plastic",
+        "rubber_elastomer"
+      ],
+      "confidence": "low",
+      "identity": "Unidentified matte-black opaque tapered cylinder in Rigid/bottle (62.5 x 62.5 x 174 mm); VLM misidentifies unscaled mesh as a rubber fingertip 'finger cap'.",
+      "flags": [
+        "hollow_contents_dependent",
+        "caption_mismatch",
+        "identity_unclear"
+      ],
+      "bp_classes_comparison": {
+        "disagreed_with_73_v1": true,
+        "note": "Disagreement 1 of 3 vs #73 v1 (3d2f634): v1 had medium pet_plastic despite caption 'finger cap / rubber'; lowered to low with polyolefin_plastic alternative (adopted in #73 v2 52e73b1)."
+      },
+      "size_m": {
+        "value": [
+          0.0625,
+          0.0625,
+          0.174
+        ],
+        "unit": "m",
+        "base_contact_radius_m": 0.0265,
+        "mesh_volume_m3": null,
+        "status": "sourced",
+        "check": "checked-cite63",
+        "sources": [
+          {
+            "url": "https://huggingface.co/datasets/RoboDojo-Benchmark/RoboDojo/resolve/1127bda94f172d757386945af3eb3a6754d1a4e6/Assets/Object/RoboDojo/Rigid/bottle/00005/metadata.json",
+            "quote": "\"aligned_bbox\": {\"vertices\": [[-0.0312, -0.0312, -0.087], ...], \"extents\": [0.0625, 0.0625, 0.174]}",
+            "conditions": "Aligned bounding box in metadata.json."
+          }
+        ]
+      },
+      "mass_by_fill": {
+        "default_fill": "empty",
+        "stress_fill": "full",
+        "decision_issue": "#85",
+        "empty": {
+          "value": 0.075,
+          "range": [
+            0.035,
+            0.13
+          ],
+          "unit": "kg",
+          "status": "unsourced",
+          "basis": "Unidentified 174 mm matte-black hollow polymer cylinder (description.json VLM hallucination 'finger cap' at fingertip scale).",
+          "sources": []
+        },
+        "full": {
+          "value": 0.36,
+          "range": [
+            0.3,
+            0.45
+          ],
+          "unit": "kg",
+          "status": "unsourced",
+          "basis": "Plausible engineering range if ~300-350 mL hollow container filled with aqueous liquid.",
+          "sources": []
+        }
+      },
+      "declared_metadata": {
+        "mass_kg": 0.12,
+        "friction": 0.45
+      }
+    },
+    "Rigid/bottle/00022": {
+      "id": "Rigid/bottle/00022",
+      "type": "Rigid",
+      "category": "bottle",
+      "asset_path": "Assets/Object/RoboDojo/Rigid/bottle/00022",
+      "material_class": "steel",
+      "alternative_material_classes": [],
+      "confidence": "medium",
+      "identity": "Reusable stainless-steel water bottle (bbox 70 x 70 x 240 mm, signed outer collider volume 698.73 cm^3); VLM description.json names IKEA stainless-steel bottle with plastic/PP cap and rubber seal (IKEA SKU identity and coated finish are caption-derived, not verified).",
+      "flags": [
+        "hollow_contents_dependent"
+      ],
+      "bp_classes_comparison": {
+        "disagreed_with_73_v1": false,
+        "note": "Both sides assign steel (medium confidence; IKEA identity and PP cap are caption-derived, not verified); #73 v2 removed stale reason 'drink bottles are PET'."
+      },
+      "size_m": {
+        "value": [
+          0.07,
+          0.07,
+          0.24
+        ],
+        "unit": "m",
+        "base_contact_radius_m": 0.0291,
+        "mesh_volume_m3": 0.00069873,
+        "status": "sourced",
+        "check": "checked-cite63",
+        "sources": [
+          {
+            "url": "https://huggingface.co/datasets/RoboDojo-Benchmark/RoboDojo/resolve/1127bda94f172d757386945af3eb3a6754d1a4e6/Assets/Object/RoboDojo/Rigid/bottle/00022/metadata.json",
+            "quote": "\"aligned_bbox\": {\"vertices\": [[-0.0351, -0.0349, -0.1201], ...], \"extents\": [0.07, 0.07, 0.24]}",
+            "conditions": "Aligned bounding box in metadata.json; signed outer collider mesh volume 698.73 cm^3 (audit/out/e1_census.json)."
+          }
+        ]
+      },
+      "mass_by_fill": {
+        "default_fill": "empty",
+        "stress_fill": "full",
+        "decision_issue": "#85",
+        "empty": {
+          "value": 0.22,
+          "range": [
+            0.14,
+            0.34
+          ],
+          "unit": "kg",
+          "status": "estimated",
+          "basis": "Relabelled from sourced to estimated per PR #84 review: 'IKEA' comes from the VLM caption, and the cited IKEA ENKELSPARIG (5 oz = 0.1417 kg packaged, Length 6 3/4 in = 17.1 cm packaged / ~17.8 cm bottle) and UNDERSOKA (10 oz = 0.2835 kg packaged, Length 8 1/4 in = 21.0 cm packaged / ~20.3 cm bottle) are packaging weights for bottles shorter than 00022's 24.0 cm bbox. Scaling 0.2835 kg by 24.0 / 20.3 gives 0.335 kg (rounded to 0.34 kg), bracketing metadata.json's 0.22 kg nominal across single-wall to insulated 24 cm steel bottles.",
+          "sources": [
+            {
+              "url": "https://www.ikea.com/us/en/p/enkelsparig-water-bottle-stainless-steel-beige-00497222/",
+              "quote": "Material Body: Stainless steel Lid: Polypropylene Seal: Silicone rubber ... Volume 17 oz Packaging 1 × ENKELSPÅRIG Water bottle 004.972.22 Length: 6 ¾ \" Weight: 5 oz Diameter: 2 ¾ \"",
+              "conditions": "Single-wall 17 oz (0.5 L) IKEA stainless-steel bottle: 5 oz = 0.1417 kg packaged weight, 2 3/4 in = 6.99 cm diameter."
+            },
+            {
+              "url": "https://www.ikea.com/us/en/p/undersoeka-insulated-steel-flask-black-30497268/",
+              "quote": "Volume 14 oz Packaging 1 × UNDERSÖKA Insulated steel flask 304.972.68 Length: 8 ¼ \" Weight: 10 oz Diameter: 2 ½ \"",
+              "conditions": "Double-wall insulated IKEA stainless-steel bottle: 10 oz = 0.2835 kg packaged weight; brackets metadata.json 0.22 kg cleanly (0.140-0.290 kg)."
+            }
+          ]
+        },
+        "full": {
+          "value": 0.82,
+          "range": [
+            0.75,
+            0.95
+          ],
+          "unit": "kg",
+          "volume_basis_liters": {
+            "nominal_l": 0.6,
+            "range_l": [
+              0.55,
+              0.63
+            ],
+            "derivation": "Signed outer collider mesh volume is 698.73 cm^3 (0.69873 L, audit/out/e1_census.json; bbox 7.0 x 7.0 x 24.0 cm = 1,176 cm^3, cylinder envelope 923.6 cm^3). Deducting ~70-150 cm^3 for steel wall/vacuum-insulation shell, neck, plastic loop cap, and headspace yields ~0.60 L ([0.55, 0.63] L, ~79-90% of outer collider volume), not 0.50 L. Adding ~0.60 kg pure water (1,000 kg/m^3) to height-appropriate empty steel bottle mass (~0.15-0.17 kg single-wall to ~0.335 kg double-wall at 24.0 cm, nominal 0.22 kg) gives 0.82 kg nominal and [0.75, 0.95] kg."
+          },
+          "status": "estimated",
+          "basis": "Relabelled from sourced to estimated and recomputed at ~0.60 L internal water capacity from the 698.73 cm^3 outer collider volume (PR #84 review item 1): 0.22 + 0.60 = 0.82 kg nominal, [0.75, 0.95] kg range.",
+          "sources": [
+            {
+              "url": "https://www.engineeringtoolbox.com/liquids-densities-d_743.html",
+              "quote": "Water - pure | 4 | 1000",
+              "conditions": "Pure water 1,000 kg/m^3 applied to estimated ~0.60 L ([0.55, 0.63] L) internal volume."
+            }
+          ]
+        }
+      },
+      "declared_metadata": {
+        "mass_kg": 0.22,
+        "friction": 0.25
+      },
+      "material_override": {
+        "applies_to_asset": "Rigid/bottle/00022",
+        "reason": "Class steel unary (0.56 static / 0.46 kinetic, or 0.525 / 0.45 in #73 LP) must stay in [0.50, 0.80] / [0.40, 0.60] to satisfy #73's sourced bare steel__steel band across other tasks. Bottle 00022 has a painted/coated exterior and plastic cap, and select_mode='unique' places at most one 00022 per layout (0/165 layouts have >=2 instances, so steel__steel never occurs in this task). Per-asset override keeps class steel intact while realising coated bottle contacts inside every partner band under average combine.",
+        "mu_static_unary": {
+          "value": 0.34,
+          "allowed_interval_in_default_scenario": [
+            0.1,
+            0.6
+          ],
+          "allowed_interval_in_bp73_lp_solution": [
+            0.075,
+            0.575
+          ],
+          "status": "estimated",
+          "sources": []
+        },
+        "mu_kinetic_unary": {
+          "value": 0.28,
+          "allowed_interval_in_default_scenario": [
+            0.08,
+            0.58
+          ],
+          "allowed_interval_in_bp73_lp_solution": [
+            0.05,
+            0.55
+          ],
+          "status": "estimated",
+          "sources": []
+        },
+        "friction_combine_mode": "average",
+        "restitution_by_fill": {
+          "empty": {
+            "value": 0.2,
+            "combine_mode": "average"
+          },
+          "full": {
+            "value": 0.1,
+            "combine_mode": "min"
+          }
+        }
+      }
+    },
+    "Rigid/bottle/00025": {
+      "id": "Rigid/bottle/00025",
+      "type": "Rigid",
+      "category": "bottle",
+      "asset_path": "Assets/Object/RoboDojo/Rigid/bottle/00025",
+      "material_class": "pet_plastic",
+      "alternative_material_classes": [],
+      "confidence": "high",
+      "identity": "Nongfu Spring 'Dongfang Shuye' (Oriental Leaf) ~500 mL octagonal transparent PET herbal tea bottle with screw cap and printed paper label.",
+      "flags": [
+        "hollow_contents_dependent"
+      ],
+      "bp_classes_comparison": {
+        "disagreed_with_73_v1": false,
+        "note": "Agrees with #73 v1 and v2 (pet_plastic, high; #73 v2 caps clarity-only at medium on untextured models, keeps 00025 medium/high)."
+      },
+      "size_m": {
+        "value": [
+          0.064,
+          0.064,
+          0.204
+        ],
+        "unit": "m",
+        "base_contact_radius_m": null,
+        "mesh_volume_m3": 0.00058716,
+        "status": "sourced",
+        "check": "checked-cite63",
+        "sources": [
+          {
+            "url": "https://huggingface.co/datasets/RoboDojo-Benchmark/RoboDojo/resolve/1127bda94f172d757386945af3eb3a6754d1a4e6/Assets/Object/RoboDojo/Rigid/bottle/00025/metadata.json",
+            "quote": "\"aligned_bbox\": {\"vertices\": [[-0.0321, -0.0319, -0.1021], ...], \"extents\": [0.064, 0.064, 0.204]}",
+            "conditions": "Aligned bounding box in metadata.json; signed outer collider mesh volume 587.16 cm^3; metadata active.place.up.orientation is rotated 90 deg ([0.7071, 0.0001, 0.7071, 0.0001])."
+          }
+        ]
+      },
+      "mass_by_fill": {
+        "default_fill": "empty",
+        "stress_fill": "full",
+        "decision_issue": "#85",
+        "empty": {
+          "value": 0.024,
+          "range": [
+            0.011,
+            0.032
+          ],
+          "unit": "kg",
+          "status": "unsourced",
+          "basis": "Lower bound 0.011 kg anchored to 0.01104 kg still-water 0.5 L PET floor; aseptic/hot-fill octagonal tea preform upper bound 0.032 kg is unsourced.",
+          "sources": [],
+          "reference_key": "references.pet_500ml_beverage_lci_kg.empty_kg"
+        },
+        "full": {
+          "value": 0.524,
+          "range": [
+            0.511,
+            0.535
+          ],
+          "unit": "kg",
+          "status": "unsourced",
+          "basis": "Lower bound 0.511 kg from 0.51104 kg still-water baseline; 0.535 kg hot-fill tea upper bound is unsourced.",
+          "sources": [],
+          "reference_key": "references.pet_500ml_beverage_lci_kg.water_filled_kg"
+        }
+      },
+      "declared_metadata": {
+        "mass_kg": 0.15,
+        "friction": 0.3
+      }
+    },
+    "Rigid/bottle/00041": {
+      "id": "Rigid/bottle/00041",
+      "type": "Rigid",
+      "category": "bottle",
+      "asset_path": "Assets/Object/RoboDojo/Rigid/bottle/00041",
+      "material_class": "pet_plastic",
+      "alternative_material_classes": [],
+      "confidence": "medium",
+      "identity": "Single-serving (~8 fl oz / 240-300 mL est.) slim clear PET NFC orange-juice bottle with metallic screw cap and printed vinyl label.",
+      "flags": [
+        "hollow_contents_dependent"
+      ],
+      "bp_classes_comparison": {
+        "disagreed_with_73_v1": false,
+        "note": "Agrees with #73 v1 and v2 (pet_plastic, medium)."
+      },
+      "size_m": {
+        "value": [
+          0.053,
+          0.053,
+          0.185
+        ],
+        "unit": "m",
+        "base_contact_radius_m": 0.0226,
+        "mesh_volume_m3": 0.00034633,
+        "status": "sourced",
+        "check": "checked-cite63",
+        "sources": [
+          {
+            "url": "https://huggingface.co/datasets/RoboDojo-Benchmark/RoboDojo/resolve/1127bda94f172d757386945af3eb3a6754d1a4e6/Assets/Object/RoboDojo/Rigid/bottle/00041/metadata.json",
+            "quote": "\"aligned_bbox\": {\"vertices\": [[-0.0266, -0.0264, -0.0926], ...], \"extents\": [0.053, 0.053, 0.185]}",
+            "conditions": "Aligned bounding box in metadata.json; signed outer collider mesh volume 346.33 cm^3."
+          }
+        ]
+      },
+      "mass_by_fill": {
+        "default_fill": "empty",
+        "stress_fill": "full",
+        "decision_issue": "#85",
+        "empty": {
+          "value": 0.02,
+          "range": [
+            0.014,
+            0.028
+          ],
+          "unit": "kg",
+          "status": "unsourced",
+          "basis": "Downgraded per cite63 §3.2: no product SKU or 8-10 oz PET bottle datasheet fetched.",
+          "sources": []
+        },
+        "full": {
+          "value": 0.3,
+          "range": [
+            0.26,
+            0.335
+          ],
+          "unit": "kg",
+          "status": "unsourced",
+          "basis": "Internal volume (240-300 mL) estimated from 346.33 cm^3 outer collider volume; no juice density row in etb_liquids.",
+          "sources": []
+        }
+      },
+      "declared_metadata": {
+        "mass_kg": 0.15,
+        "friction": 0.3
+      }
+    },
+    "Rigid/bottle/00050": {
+      "id": "Rigid/bottle/00050",
+      "type": "Rigid",
+      "category": "bottle",
+      "asset_path": "Assets/Object/RoboDojo/Rigid/bottle/00050",
+      "material_class": "pet_plastic",
+      "alternative_material_classes": [
+        "polyolefin_plastic",
+        "abs_toy_plastic"
+      ],
+      "confidence": "low",
+      "identity": "Unidentified untextured matte-gray plastic cylinder in Rigid/bottle (55 x 55 x 190 mm); VLM mislabels unscaled mesh as 'end cap'; metadata.physics missing.",
+      "flags": [
+        "hollow_contents_dependent",
+        "declared_mass_missing",
+        "caption_mismatch",
+        "identity_unclear"
+      ],
+      "bp_classes_comparison": {
+        "disagreed_with_73_v1": false,
+        "note": "Already low pet_plastic in #73 v1 (not a confidence disagreement); #73 v2 added polyolefin_plastic alternative."
+      },
+      "size_m": {
+        "value": [
+          0.055,
+          0.055,
+          0.19
+        ],
+        "unit": "m",
+        "base_contact_radius_m": 0.0235,
+        "mesh_volume_m3": null,
+        "status": "sourced",
+        "check": "checked-cite63",
+        "sources": [
+          {
+            "url": "https://huggingface.co/datasets/RoboDojo-Benchmark/RoboDojo/resolve/1127bda94f172d757386945af3eb3a6754d1a4e6/Assets/Object/RoboDojo/Rigid/bottle/00050/metadata.json",
+            "quote": "\"aligned_bbox\": {\"vertices\": [[-0.0275, -0.0275, -0.095], ...], \"extents\": [0.055, 0.055, 0.19]}",
+            "conditions": "Aligned bounding box in metadata.json."
+          }
+        ]
+      },
+      "mass_by_fill": {
+        "default_fill": "empty",
+        "stress_fill": "full",
+        "decision_issue": "#85",
+        "empty": {
+          "value": 0.07,
+          "range": [
+            0.035,
+            0.11
+          ],
+          "unit": "kg",
+          "status": "unsourced",
+          "basis": "Untextured 190 mm gray cylinder; no product identity or metadata.physics.",
+          "sources": []
+        },
+        "full": {
+          "value": 0.38,
+          "range": [
+            0.33,
+            0.43
+          ],
+          "unit": "kg",
+          "status": "unsourced",
+          "basis": "Plausible engineering range if filled hollow ~330 mL container.",
+          "sources": []
+        }
+      },
+      "declared_metadata": {
+        "mass_kg": null,
+        "friction": null
+      }
+    },
+    "Rigid/bottle/00055": {
+      "id": "Rigid/bottle/00055",
+      "type": "Rigid",
+      "category": "bottle",
+      "asset_path": "Assets/Object/RoboDojo/Rigid/bottle/00055",
+      "material_class": "pet_plastic",
+      "alternative_material_classes": [
+        "polyolefin_plastic"
+      ],
+      "confidence": "low",
+      "identity": "Unidentified untextured matte-gray hourglass mesh in Rigid/bottle (80 x 80 x 225 mm); unscaled VLM captions as 'squeeze bottle / sport bottle' of 'molded polymer'; metadata friction missing.",
+      "flags": [
+        "hollow_contents_dependent",
+        "identity_unclear"
+      ],
+      "bp_classes_comparison": {
+        "disagreed_with_73_v1": true,
+        "note": "Disagreement 2 of 3 vs #73 v1 (3d2f634): v1 had high pet_plastic from the generic word 'plastic'; lowered to low pet_plastic with polyolefin_plastic alternative (adopted in #73 v2 52e73b1)."
+      },
+      "size_m": {
+        "value": [
+          0.08,
+          0.08,
+          0.225
+        ],
+        "unit": "m",
+        "base_contact_radius_m": 0.0203,
+        "mesh_volume_m3": null,
+        "status": "sourced",
+        "check": "checked-cite63",
+        "sources": [
+          {
+            "url": "https://huggingface.co/datasets/RoboDojo-Benchmark/RoboDojo/resolve/1127bda94f172d757386945af3eb3a6754d1a4e6/Assets/Object/RoboDojo/Rigid/bottle/00055/metadata.json",
+            "quote": "\"aligned_bbox\": {\"vertices\": [[-0.04, -0.04, -0.1125], ...], \"extents\": [0.08, 0.08, 0.225]}",
+            "conditions": "Aligned bounding box in metadata.json."
+          }
+        ]
+      },
+      "mass_by_fill": {
+        "default_fill": "empty",
+        "stress_fill": "full",
+        "decision_issue": "#85",
+        "empty": {
+          "value": 0.095,
+          "range": [
+            0.065,
+            0.14
+          ],
+          "unit": "kg",
+          "status": "unsourced",
+          "basis": "Downgraded per cite63 §3.1: untextured matte-gray hourglass mesh with no verified SKU.",
+          "sources": []
+        },
+        "full": {
+          "value": 0.685,
+          "range": [
+            0.65,
+            0.74
+          ],
+          "unit": "kg",
+          "status": "unsourced",
+          "basis": "Plausible engineering range if ~590 mL sport bottle filled with water.",
+          "sources": []
+        }
+      },
+      "declared_metadata": {
+        "mass_kg": 0.15,
+        "friction": null
+      }
+    },
+    "Rigid/bottle/00059": {
+      "id": "Rigid/bottle/00059",
+      "type": "Rigid",
+      "category": "bottle",
+      "asset_path": "Assets/Object/RoboDojo/Rigid/bottle/00059",
+      "material_class": "pet_plastic",
+      "alternative_material_classes": [
+        "polyolefin_plastic"
+      ],
+      "confidence": "low",
+      "identity": "Unidentified untextured matte-gray cylindrical mesh in Rigid/bottle (55 x 55 x 170 mm); unscaled VLM captions as 'sports bottle / reusable bottle' of 'molded polymer'; metadata friction missing.",
+      "flags": [
+        "hollow_contents_dependent",
+        "identity_unclear"
+      ],
+      "bp_classes_comparison": {
+        "disagreed_with_73_v1": true,
+        "note": "Disagreement 3 of 3 vs #73 v1 (3d2f634): v1 had high pet_plastic from the generic word 'plastic' ('single-serve' does not establish polyolefin either); lowered to low pet_plastic with polyolefin_plastic alternative (adopted in #73 v2 52e73b1)."
+      },
+      "size_m": {
+        "value": [
+          0.055,
+          0.055,
+          0.17
+        ],
+        "unit": "m",
+        "base_contact_radius_m": 0.0258,
+        "mesh_volume_m3": null,
+        "status": "sourced",
+        "check": "checked-cite63",
+        "sources": [
+          {
+            "url": "https://huggingface.co/datasets/RoboDojo-Benchmark/RoboDojo/resolve/1127bda94f172d757386945af3eb3a6754d1a4e6/Assets/Object/RoboDojo/Rigid/bottle/00059/metadata.json",
+            "quote": "\"aligned_bbox\": {\"vertices\": [[-0.0275, -0.0275, -0.085], ...], \"extents\": [0.055, 0.055, 0.17]}",
+            "conditions": "Aligned bounding box in metadata.json."
+          }
+        ]
+      },
+      "mass_by_fill": {
+        "default_fill": "empty",
+        "stress_fill": "full",
+        "decision_issue": "#85",
+        "empty": {
+          "value": 0.075,
+          "range": [
+            0.045,
+            0.105
+          ],
+          "unit": "kg",
+          "status": "unsourced",
+          "basis": "Downgraded per cite63 §3.1: untextured matte-gray cylindrical mesh with no verified SKU.",
+          "sources": []
+        },
+        "full": {
+          "value": 0.36,
+          "range": [
+            0.32,
+            0.41
+          ],
+          "unit": "kg",
+          "status": "unsourced",
+          "basis": "Plausible engineering range if ~280-310 mL bottle filled with water.",
+          "sources": []
+        }
+      },
+      "declared_metadata": {
+        "mass_kg": 0.15,
+        "friction": null
+      }
+    },
+    "Rigid/bottle/00060": {
+      "id": "Rigid/bottle/00060",
+      "type": "Rigid",
+      "category": "bottle",
+      "asset_path": "Assets/Object/RoboDojo/Rigid/bottle/00060",
+      "material_class": "pet_plastic",
+      "alternative_material_classes": [
+        "polyolefin_plastic",
+        "abs_toy_plastic"
+      ],
+      "confidence": "low",
+      "identity": "Unidentified untextured matte-gray tapered plastic cylinder in Rigid/bottle (55 x 55 x 190 mm, 404.42 cm^3); VLM mislabels unscaled mesh as 'snap-on cap' of 'injection-molded plastic'; metadata.physics missing.",
+      "flags": [
+        "hollow_contents_dependent",
+        "declared_mass_missing",
+        "caption_mismatch",
+        "identity_unclear"
+      ],
+      "bp_classes_comparison": {
+        "disagreed_with_73_v1": false,
+        "note": "Already low pet_plastic in #73 v1 (not a confidence disagreement); #73 v2 added polyolefin_plastic alternative."
+      },
+      "size_m": {
+        "value": [
+          0.055,
+          0.055,
+          0.19
+        ],
+        "unit": "m",
+        "base_contact_radius_m": 0.0204,
+        "mesh_volume_m3": 0.00040442,
+        "status": "sourced",
+        "check": "checked-cite63",
+        "sources": [
+          {
+            "url": "https://huggingface.co/datasets/RoboDojo-Benchmark/RoboDojo/resolve/1127bda94f172d757386945af3eb3a6754d1a4e6/Assets/Object/RoboDojo/Rigid/bottle/00060/metadata.json",
+            "quote": "\"aligned_bbox\": {\"vertices\": [[-0.0275, -0.0275, -0.095], ...], \"extents\": [0.055, 0.055, 0.19]}",
+            "conditions": "Aligned bounding box in metadata.json."
+          }
+        ]
+      },
+      "mass_by_fill": {
+        "default_fill": "empty",
+        "stress_fill": "full",
+        "decision_issue": "#85",
+        "empty": {
+          "value": 0.07,
+          "range": [
+            0.035,
+            0.11
+          ],
+          "unit": "kg",
+          "status": "unsourced",
+          "basis": "Untextured 190 mm gray tapered cylinder; no product identity or metadata.physics.",
+          "sources": []
+        },
+        "full": {
+          "value": 0.38,
+          "range": [
+            0.33,
+            0.43
+          ],
+          "unit": "kg",
+          "status": "unsourced",
+          "basis": "Plausible engineering range if filled hollow ~330 mL container.",
+          "sources": []
+        }
+      },
+      "declared_metadata": {
+        "mass_kg": null,
+        "friction": null
+      }
+    },
+    "Geometry/dustbin/00000": {
+      "id": "Geometry/dustbin/00000",
+      "type": "Geometry",
+      "category": "dustbin",
+      "asset_path": "Assets/Object/RoboDojo/Geometry/dustbin/00000",
+      "material_class": "polyolefin_plastic",
+      "alternative_material_classes": [],
+      "confidence": "low",
+      "identity": "Square-prism injection-molded polymer waste bin (bbox 470 x 470 x 650 mm, ~144 L outer envelope); static collider in simulation (env/scene_manager/objects/geometry.py:104, #9).",
+      "flags": [
+        "hollow_contents_dependent"
+      ],
+      "bp_classes_comparison": {
+        "disagreed_with_73_v1": false,
+        "note": "Aligned with #73 v2 (polyolefin_plastic, polymer_subtype='pp_probable', confidence lowered to low under plastic-word rule)."
+      },
+      "size_m": {
+        "value": [
+          0.47,
+          0.47,
+          0.65
+        ],
+        "unit": "m",
+        "base_contact_radius_m": null,
+        "mesh_volume_m3": null,
+        "status": "sourced",
+        "check": "checked-cite63",
+        "sources": [
+          {
+            "url": "https://huggingface.co/datasets/RoboDojo-Benchmark/RoboDojo/resolve/1127bda94f172d757386945af3eb3a6754d1a4e6/Assets/Object/RoboDojo/Geometry/dustbin/00000/metadata.json",
+            "quote": "\"aligned_bbox\": {\"vertices\": [[-0.235, -0.2347, -0.325], ...], \"extents\": [0.47, 0.47, 0.65]}",
+            "conditions": "Aligned bounding box [0.47, 0.47, 0.65] m (~0.1437 m^3 outer envelope) in metadata.json."
+          }
+        ]
+      },
+      "mass_by_fill": {
+        "static_collider_in_sim": true,
+        "empty": {
+          "value": 1.8,
+          "range": [
+            0.9,
+            2.2
+          ],
+          "unit": "kg",
+          "status": "estimated",
+          "basis": "Relabelled from sourced to estimated per PR #84 review item 1: IKEA HALLBAR 6-9 gal bins (0.936-2.041 kg packaged; 9 gal is 55 cm tall, ~35 L) are smaller than dustbin/00000's 47 x 47 x 65 cm (~144 L) bbox. Static collider in sim (#9), so mass has zero effect on PhysX dynamics.",
+          "sources": [
+            {
+              "url": "https://www.ikea.com/us/en/p/hallbar-bin-with-lid-light-gray-50420206/",
+              "quote": "Polypropylene plastic (min. 50% recycled) ... Volume 9 gallon Packaging This product comes as 2 packages. 1 × HÅLLBAR Bin with lid 504.202.06 Package 1 Width: 15 ¾ \" Height: 10 ¼ \" Length: 21 ½ \" Weight: 3 lb 10 oz",
+              "conditions": "9 gal PP bin body = 3 lb 10 oz (1.644 kg; 2.041 kg with 14 oz lid)."
+            },
+            {
+              "url": "https://www.ikea.com/us/en/p/hallbar-bin-with-lid-light-gray-20420203/",
+              "quote": "Volume 6 gallon Packaging This product comes as 2 packages. 1 × HÅLLBAR Bin with lid 204.202.03 Package 1 Width: 12 ¾ \" Height: 10 ¼ \" Length: 15 ¾ \" Weight: 2 lb 1 oz",
+              "conditions": "6 gal PP bin body = 2 lb 1 oz (0.936 kg); static collider in sim (#9)."
+            }
+          ]
+        }
+      },
+      "declared_metadata": {
+        "mass_kg": 1.8,
+        "friction": 0.38
+      }
+    },
+    "Scene/Table": {
+      "id": "Scene/Table",
+      "type": "StaticTable",
+      "category": "Table",
+      "asset_path": "env/scene_manager/objects/table.py + Assets/Material/material_0122/Mahogany_Planks.mdl",
+      "material_class": "table_laminate",
+      "alternative_material_classes": [
+        "table_wood"
+      ],
+      "scenario_role": "table",
+      "confidence": "medium",
+      "identity": "Manipulation tabletop (1.0 x 1.1 x 0.05 m at [0.09, -0.05, 0.74] m, top z = 0.765 m): real ARX X5 setup frames show smooth white melamine/laminate board (table_laminate, primary); simulation visual shader uses Mahogany_Planks.mdl (table_wood, sensitivity).",
+      "flags": [],
+      "size_m": {
+        "value": [
+          1.0,
+          1.1,
+          0.05
+        ],
+        "unit": "m",
+        "base_contact_radius_m": null,
+        "mesh_volume_m3": 0.055,
+        "status": "sourced",
+        "check": "checked-cite63",
+        "sources": [
+          {
+            "url": "https://huggingface.co/datasets/RoboDojo-Benchmark/RoboDojo/resolve/1127bda94f172d757386945af3eb3a6754d1a4e6/Assets/Eval_Layout/RoboDojo/arx_x5/0/put_bottles_into_dustbin_0.json",
+            "quote": "\"Table\": {\"default\": \"material_0122\", \"default_ori\": [1.0, 0.0, 0.0, 0.0], \"default_pos\": [0.09, -0.05, 0.74], \"scale\": [1, 1.1, 0.05]}",
+            "conditions": "Identical across all 165 evaluation layouts (top surface z = 0.765 m)."
+          }
+        ]
+      },
+      "mass_by_fill": {
+        "static_collider_in_sim": true,
+        "note": "Static collider in PhysX (infinite effective mass, #14); real melamine panel thickness is unmeasured and counterfactual solid mahogany slab mass (27.5-46.75 kg) is moved to references.mahogany_table_slab_counterfactual_kg."
+      }
+    },
+    "Scene/Ground": {
+      "id": "Scene/Ground",
+      "type": "StaticGround",
+      "category": "Ground",
+      "asset_path": "env/scene_manager/objects/ground.py + env_cfg/scene/default.yml:17-32",
+      "material_class": "ground",
+      "alternative_material_classes": [],
+      "scenario_role": "ground",
+      "confidence": "low",
+      "identity": "Floor box collider under table and dustbin (7.0 x 7.0 x 0.10 m along Z at [0, 0, 0] m; visual MDL Wood_Tiles_Fineline.mdl, real floor unidentified).",
+      "flags": [],
+      "size_m": {
+        "value": [
+          7.0,
+          7.0,
+          0.1
+        ],
+        "unit": "m",
+        "status": "sourced",
+        "sources": [
+          {
+            "url": "env_cfg/scene/default.yml:17-21 and env_cfg/sim/sim_config.yml:6",
+            "quote": "Ground: geometry: \"cube\" thickness: 0.1 axis: \"Z\" default_pos: [0.0, 0.0, 0.0] ... env_spacing: 7",
+            "conditions": "env/scene_manager/objects/ground.py:173-176 sets size_x = size_y = env_spacing (7.0 m), size_z = thickness (0.1 m)."
+          }
+        ]
+      },
+      "mass_by_fill": {
+        "static_collider_in_sim": true,
+        "note": "Static floor mesh collider; mass not applicable."
+      }
+    },
+    "Robot/x5/finger_pad": {
+      "id": "Robot/x5/finger_pad",
+      "type": "RobotLink",
+      "category": "finger_pad",
+      "asset_path": "Assets/Robots/x5 (X5A.urdf, configuration/ARX_physics.usd, meshes/link7.STL, meshes/link8.STL)",
+      "material_class": "pad_hard",
+      "alternative_material_classes": [
+        "pad_elastomer"
+      ],
+      "scenario_role": "finger_pad",
+      "confidence": "medium",
+      "identity": "ARX X5 parallel-jaw fingers (link7, link8; raised inner pad 15.00 x 18.33 x 1.50 mm, stroke 0-44 mm): real wrist camera frames show smooth dark-grey hard thermoplastic faces with crisp edges and no visible rubber pad (pad_hard, primary; pad_elastomer sensitivity, #32).",
+      "flags": [],
+      "size_m": {
+        "value": [
+          0.015,
+          0.0015,
+          0.01833
+        ],
+        "full_link_bbox_m": [
+          0.086,
+          0.03735,
+          0.061
+        ],
+        "stroke_per_finger_m": [
+          0.0,
+          0.044
+        ],
+        "jaw_opening_span_m": [
+          0.00081,
+          0.08881
+        ],
+        "unit": "m",
+        "status": "sourced",
+        "check": "checked-cite63",
+        "sources": [
+          {
+            "url": "https://huggingface.co/datasets/RoboDojo-Benchmark/RoboDojo/resolve/1127bda94f172d757386945af3eb3a6754d1a4e6/Assets/Robots/x5/meshes/link7.STL",
+            "quote": "[Computed vertex bounds from binary STL link7.STL (1304 triangles; no ASCII text in binary STL)]: full link [0.08600, 0.03735, 0.06100] m; inner contact face at y = -0.02449 m spans x in [0.05600, 0.07100] m (15.00 mm) and z in [-0.01036, 0.00797] m (18.33 mm); X5A.urdf joint7/joint8 stroke [0, 0.044] m",
+            "conditions": "Unit scale; convexHull collider in ARX_physics.usd."
+          }
+        ]
+      },
+      "mass_by_fill": {
+        "gravity_disabled_on_robot_links": true,
+        "jaw_mass_kg": {
+          "value": 0.0648,
+          "range": [
+            0.045,
+            0.09
+          ],
+          "unit": "kg",
+          "status": "unsourced",
+          "basis": "CAD link7/link8 mass in X5A.urdf only; no real per-jaw bench weighing (#32).",
+          "sources": [
+            {
+              "url": "https://huggingface.co/datasets/RoboDojo-Benchmark/RoboDojo/resolve/1127bda94f172d757386945af3eb3a6754d1a4e6/Assets/Robots/x5/X5A.urdf",
+              "quote": "<link name=\"link7\"> <inertial> <origin xyz=\"-0.00035522 -0.007827 -0.0029883\" rpy=\"0 0 0\" /> <mass value=\"0.064798\" />",
+              "conditions": "CAD mass in URDF only; ARX assembly manual lists whole-gripper ~510 g without per-jaw bench weighing (#32)."
+            }
+          ]
+        }
+      },
+      "declared_metadata": {
+        "urdf_link_mass_kg": 0.064798,
+        "usd_physics_material": null
+      }
+    }
+  },
+  "classes": {
+    "pet_plastic": {
+      "description": "Thin-wall rigid PET: smooth glossy polymer surface (or shrink-film label), bulk ~1,350-1,380 kg/m^3; hollow drink bottles use per-asset mass_by_fill.",
+      "density_kg_m3": {
+        "value": 1350,
+        "range": [
+          1330,
+          1400
+        ],
+        "sourced_point_kg_m3": 1350,
+        "status": "estimated",
+        "basis": "Relabelled from sourced to estimated per PR #84 review: Engineering ToolBox gives a single point 1.35 (1,350 kg/m^3), so [1,330, 1,400] is an estimated amorphous-to-semicrystalline band. Unused on hollow bottles (per-asset mass_by_fill applies).",
+        "sources": [
+          {
+            "url": "https://www.engineeringtoolbox.com/density-solids-d_1265.html",
+            "quote": "PET - poly ethylene terephthalate | 1.35",
+            "conditions": "Bulk solid PET resin at room temperature in 10^3 kg/m^3 (raw HTML table cell verified via curl; [1330, 1400] widens around 1350 for amorphous-to-semicrystalline PET; hollow bottles use per-asset mass_kg)."
+          }
+        ]
+      },
+      "restitution": {
+        "value": 0.25,
+        "range": [
+          0.15,
+          0.5
+        ],
+        "full_fill_range": [
+          0.05,
+          0.2
+        ],
+        "status": "unsourced",
+        "sources": [],
+        "notes": "Unsourced above bounce_threshold_velocity = 0.5 m/s (env/environment/base_env.py:27); bin drops impact around ~3.5-4.0 m/s, so restitution is active in the bin."
+      }
+    },
+    "polyolefin_plastic": {
+      "description": "PP/HDPE/LDPE containers, caps and wastebins: waxy semi-gloss molded polymer surface, bulk 910-960 kg/m^3; hollow bins/bottles use per-asset mass_by_fill.",
+      "density_kg_m3": {
+        "value": 930,
+        "range": [
+          910,
+          960
+        ],
+        "status": "sourced",
+        "sources": [
+          {
+            "url": "https://www.engineeringtoolbox.com/density-solids-d_1265.html",
+            "quote": "LDPE - low density poly ethylene | 0.91 ... HDPE - (PEH) - high density poly ethylene | 0.96 ... PP - poly propylene | 0.91 - 0.94",
+            "conditions": "Bulk solid polyolefin resins at room temperature in 10^3 kg/m^3 ([910, 960] kg/m^3 exact source span; hollow bins/bottles use per-asset mass_kg)."
+          }
+        ]
+      },
+      "restitution": {
+        "value": 0.25,
+        "range": [
+          0.15,
+          0.5
+        ],
+        "status": "unsourced",
+        "sources": [],
+        "notes": "Unsourced for thin-wall molded PP wastebins/containers above 0.5 m/s."
+      }
+    },
+    "steel": {
+      "description": "Stainless or carbon steel bodies: bare metal in general tasks (steel__steel [0.50, 0.80] static), coated/painted on bottle/00022 via per-asset material_override.",
+      "density_kg_m3": {
+        "value": 7820,
+        "range": [
+          7820,
+          7820
+        ],
+        "status": "sourced",
+        "sources": [
+          {
+            "url": "https://www.engineeringtoolbox.com/density-solids-d_1265.html",
+            "quote": "Steel | 7.82",
+            "conditions": "Bulk solid steel at room temperature in 10^3 kg/m^3 (7,820 kg/m^3; hollow bottle/00022 uses sourced per-asset IKEA mass_kg)."
+          }
+        ]
+      },
+      "restitution": {
+        "value": 0.2,
+        "range": [
+          0.1,
+          0.45
+        ],
+        "full_fill_range": [
+          0.05,
+          0.2
+        ],
+        "status": "unsourced",
+        "sources": [],
+        "notes": "Unsourced for thin-wall hollow/filled stainless-steel drink bottle above 0.5 m/s."
+      }
+    },
+    "pad_hard": {
+      "description": "ARX X5 finger jaw face: smooth dark-grey hard thermoplastic (#63 real wrist frames, default scenario).",
+      "role": "finger_pad",
+      "scenario_membership": "default",
+      "restitution": {
+        "value": 0.05,
+        "range": [
+          0.0,
+          0.3
+        ],
+        "status": "unsourced",
+        "sources": [],
+        "notes": "Closing speed <= 0.27 m/s under #55 is below bounce_threshold_velocity = 0.5 m/s (effective e = 0.0)."
+      }
+    },
+    "pad_elastomer": {
+      "description": "ARX X5 finger jaw face with adhered silicone/rubber/TPU Shore A 60-90 grip pad (#32 sensitivity scenario).",
+      "role": "finger_pad",
+      "scenario_membership": "sensitivity",
+      "restitution": {
+        "value": 0.05,
+        "range": [
+          0.0,
+          0.25
+        ],
+        "status": "unsourced",
+        "sources": []
+      }
+    },
+    "table_laminate": {
+      "description": "Smooth white melamine/laminate tabletop board (#63 real head/wrist frames, default scenario).",
+      "role": "table",
+      "scenario_membership": "default",
+      "restitution": {
+        "value": 0.05,
+        "range": [
+          0.05,
+          0.4
+        ],
+        "status": "unsourced",
+        "sources": []
+      }
+    },
+    "table_wood": {
+      "description": "Finished/lacquered mahogany or hardwood tabletop matching simulation shader Mahogany_Planks.mdl (sensitivity scenario).",
+      "role": "table",
+      "scenario_membership": "sensitivity",
+      "restitution": {
+        "value": 0.05,
+        "range": [
+          0.05,
+          0.4
+        ],
+        "status": "unsourced",
+        "sources": []
+      }
+    },
+    "ground": {
+      "description": "Floor collider under table and dustbin (Ground prim, material_0564; real floor unidentified).",
+      "role": "ground",
+      "scenario_membership": "fixed",
+      "restitution": {
+        "value": 0.0,
+        "range": [
+          0.0,
+          0.3
+        ],
+        "status": "unsourced",
+        "sources": [],
+        "notes": "Shipped layout declares restitution 0.0 with multiply combine (kills floor bounce); real floor COR is unmeasured."
+      }
+    }
+  },
+  "pairs": {
+    "ground__pet_plastic": {
+      "key": "ground__pet_plastic",
+      "a": "ground",
+      "b": "pet_plastic",
+      "kind": "object-surface",
+      "task_contact_family": "bottle-ground",
+      "scenario_membership": "fixed",
+      "mu_static": {
+        "value": 0.275,
+        "range": [
+          0.15,
+          0.5
+        ],
+        "status": "unsourced",
+        "basis": "Floor material unidentified; placeholder hull of pet_plastic table_laminate [0.15, 0.45] and table_wood [0.20, 0.50] bands (matches #73 v2).",
+        "sources": []
+      },
+      "mu_kinetic": {
+        "value": 0.225,
+        "range": [
+          0.12,
+          0.4
+        ],
+        "status": "unsourced",
+        "basis": "Floor material unidentified; placeholder hull of pet_plastic table kinetic bands (matches #73 v2).",
+        "sources": []
+      },
+      "restitution_by_fill": {
+        "empty": {
+          "value": 0.15,
+          "range": [
+            0.0,
+            0.35
+          ],
+          "status": "unsourced"
+        },
+        "full": {
+          "value": 0.05,
+          "range": [
+            0.0,
+            0.15
+          ],
+          "status": "unsourced"
+        },
+        "effective_below_0_5_m_s": 0.0
+      }
+    },
+    "ground__polyolefin_plastic": {
+      "key": "ground__polyolefin_plastic",
+      "a": "ground",
+      "b": "polyolefin_plastic",
+      "kind": "object-surface",
+      "task_contact_family": "bottle-ground",
+      "scenario_membership": "fixed",
+      "mu_static": {
+        "value": 0.225,
+        "range": [
+          0.1,
+          0.4
+        ],
+        "status": "unsourced",
+        "basis": "Floor material unidentified; placeholder hull of polyolefin_plastic table_laminate [0.10, 0.35] and table_wood [0.12, 0.40] bands (matches #73 v2).",
+        "sources": []
+      },
+      "mu_kinetic": {
+        "value": 0.175,
+        "range": [
+          0.08,
+          0.35
+        ],
+        "status": "unsourced",
+        "basis": "Floor material unidentified; placeholder hull of polyolefin_plastic table kinetic bands (matches #73 v2).",
+        "sources": []
+      },
+      "restitution_by_fill": {
+        "empty": {
+          "value": 0.15,
+          "range": [
+            0.0,
+            0.35
+          ],
+          "status": "unsourced"
+        },
+        "full": {
+          "value": 0.05,
+          "range": [
+            0.0,
+            0.15
+          ],
+          "status": "unsourced"
+        },
+        "effective_below_0_5_m_s": 0.0
+      }
+    },
+    "ground__steel": {
+      "key": "ground__steel",
+      "a": "ground",
+      "b": "steel",
+      "kind": "object-surface",
+      "task_contact_family": "bottle-ground",
+      "scenario_membership": "fixed",
+      "mu_static": {
+        "value": 0.375,
+        "range": [
+          0.2,
+          0.6
+        ],
+        "status": "unsourced",
+        "basis": "Floor material unidentified; placeholder hull of steel table_laminate [0.20, 0.50] and table_wood [0.20, 0.60] bands (matches #73 v2).",
+        "sources": []
+      },
+      "mu_kinetic": {
+        "value": 0.3,
+        "range": [
+          0.15,
+          0.5
+        ],
+        "status": "unsourced",
+        "basis": "Floor material unidentified; placeholder hull of steel table kinetic bands (matches #73 v2).",
+        "sources": []
+      },
+      "restitution_by_fill": {
+        "empty": {
+          "value": 0.125,
+          "range": [
+            0.0,
+            0.35
+          ],
+          "status": "unsourced"
+        },
+        "full": {
+          "value": 0.05,
+          "range": [
+            0.0,
+            0.15
+          ],
+          "status": "unsourced"
+        },
+        "effective_below_0_5_m_s": 0.0
+      }
+    },
+    "pad_elastomer__pet_plastic": {
+      "key": "pad_elastomer__pet_plastic",
+      "a": "pad_elastomer",
+      "b": "pet_plastic",
+      "kind": "object-surface",
+      "task_contact_family": "bottle-pad",
+      "scenario_membership": "sensitivity",
+      "mu_static": {
+        "value": 0.7,
+        "range": [
+          0.4,
+          1.2
+        ],
+        "status": "unsourced",
+        "basis": "Sensitivity band for adhered elastomer fingertip pad on PET bottle (#32 hardware check open; aligned with #73 v2 [0.40, 1.20]; secondary review PMC13029759 notes 0.5-1.2 dynamic on smooth plastic).",
+        "sources": []
+      },
+      "mu_kinetic": {
+        "value": 0.6,
+        "range": [
+          0.3,
+          1.0
+        ],
+        "status": "unsourced",
+        "basis": "Sensitivity kinetic band for elastomer pad on PET bottle (aligned with #73 v2 [0.30, 1.00]).",
+        "sources": [
+          {
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13029759/fullTextXML",
+            "quote": "The dynamic friction coefficients associated with the sliding of silicone rubber against a smooth plastic surface are typically in the range of approximately 0.5–1.2, increasing to about 0.8–1.8 for highly rough plastic surfaces, and ranging between 0.7 and 1.5 for metal contacts, under dry and unlubricated conditions",
+            "conditions": "Secondary unreferenced review sentence for silicone rubber on smooth plastic (corroborated by 0.5 FEA input in PMC10526553); kept as scenario anchor because hardware pad presence (#32) is unverified and real frames point to pad_hard (cite63b §6)."
+          }
+        ]
+      },
+      "restitution_by_fill": {
+        "empty": {
+          "value": 0.05,
+          "range": [
+            0.0,
+            0.15
+          ],
+          "status": "unsourced"
+        },
+        "full": {
+          "value": 0.05,
+          "range": [
+            0.0,
+            0.1
+          ],
+          "status": "unsourced"
+        },
+        "effective_below_0_5_m_s": 0.0
+      }
+    },
+    "pad_elastomer__polyolefin_plastic": {
+      "key": "pad_elastomer__polyolefin_plastic",
+      "a": "pad_elastomer",
+      "b": "polyolefin_plastic",
+      "kind": "object-surface",
+      "task_contact_family": "bottle-pad",
+      "scenario_membership": "sensitivity",
+      "mu_static": {
+        "value": 0.5,
+        "range": [
+          0.3,
+          1.0
+        ],
+        "status": "unsourced",
+        "basis": "Sensitivity band for elastomer fingertip pad on PP/HDPE bottle (aligned with #73 v2 [0.30, 1.00]).",
+        "sources": []
+      },
+      "mu_kinetic": {
+        "value": 0.45,
+        "range": [
+          0.25,
+          0.9
+        ],
+        "status": "unsourced",
+        "basis": "Sensitivity kinetic band for elastomer pad on PP/HDPE bottle (aligned with #73 v2 [0.25, 0.90]).",
+        "sources": []
+      },
+      "restitution_by_fill": {
+        "empty": {
+          "value": 0.05,
+          "range": [
+            0.0,
+            0.15
+          ],
+          "status": "unsourced"
+        },
+        "full": {
+          "value": 0.05,
+          "range": [
+            0.0,
+            0.1
+          ],
+          "status": "unsourced"
+        },
+        "effective_below_0_5_m_s": 0.0
+      }
+    },
+    "pad_elastomer__steel": {
+      "key": "pad_elastomer__steel",
+      "a": "pad_elastomer",
+      "b": "steel",
+      "kind": "object-surface",
+      "task_contact_family": "bottle-pad",
+      "scenario_membership": "sensitivity",
+      "mu_static": {
+        "value": 1.0,
+        "range": [
+          0.6,
+          1.6
+        ],
+        "status": "estimated",
+        "basis": "Sensitivity band for elastomer fingertip pad on steel / coated 00022 (aligned with #73 v2 [0.60, 1.60]; PMC13029759 secondary review quotes 0.7-1.5 dynamic on metal).",
+        "sources": []
+      },
+      "mu_kinetic": {
+        "value": 0.8,
+        "range": [
+          0.5,
+          1.4
+        ],
+        "status": "estimated",
+        "basis": "Sensitivity kinetic band for elastomer pad on steel / coated 00022 (aligned with #73 v2 [0.50, 1.40]).",
+        "sources": [
+          {
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13029759/fullTextXML",
+            "quote": "The dynamic friction coefficients associated with the sliding of silicone rubber against a smooth plastic surface are typically in the range of approximately 0.5–1.2, increasing to about 0.8–1.8 for highly rough plastic surfaces, and ranging between 0.7 and 1.5 for metal contacts, under dry and unlubricated conditions",
+            "conditions": "Secondary unreferenced review sentence for silicone rubber on smooth plastic (corroborated by 0.5 FEA input in PMC10526553); kept as scenario anchor because hardware pad presence (#32) is unverified and real frames point to pad_hard (cite63b §6)."
+          }
+        ]
+      },
+      "restitution_by_fill": {
+        "empty": {
+          "value": 0.05,
+          "range": [
+            0.0,
+            0.15
+          ],
+          "status": "unsourced"
+        },
+        "full": {
+          "value": 0.05,
+          "range": [
+            0.0,
+            0.1
+          ],
+          "status": "unsourced"
+        },
+        "effective_below_0_5_m_s": 0.0
+      }
+    },
+    "pad_hard__pet_plastic": {
+      "key": "pad_hard__pet_plastic",
+      "a": "pad_hard",
+      "b": "pet_plastic",
+      "kind": "object-surface",
+      "task_contact_family": "bottle-pad",
+      "scenario_membership": "default",
+      "mu_static": {
+        "value": 0.3,
+        "range": [
+          0.2,
+          0.5
+        ],
+        "status": "estimated",
+        "basis": "Estimated band for glossy/shrink-sleeved PET bottle against smooth dark-grey hard thermoplastic X5 jaw (#63 real wrist frames; matches #73 v2; 12 um PET film PMC5618392 not used as source).",
+        "sources": []
+      },
+      "mu_kinetic": {
+        "value": 0.25,
+        "range": [
+          0.15,
+          0.4
+        ],
+        "status": "estimated",
+        "basis": "Estimated kinetic band for PET bottle on hard thermoplastic X5 jaw (matches #73 v2).",
+        "sources": []
+      },
+      "restitution_by_fill": {
+        "empty": {
+          "value": 0.05,
+          "range": [
+            0.0,
+            0.15
+          ],
+          "status": "unsourced"
+        },
+        "full": {
+          "value": 0.05,
+          "range": [
+            0.0,
+            0.1
+          ],
+          "status": "unsourced"
+        },
+        "effective_below_0_5_m_s": 0.0
+      }
+    },
+    "pad_hard__polyolefin_plastic": {
+      "key": "pad_hard__polyolefin_plastic",
+      "a": "pad_hard",
+      "b": "polyolefin_plastic",
+      "kind": "object-surface",
+      "task_contact_family": "bottle-pad",
+      "scenario_membership": "default",
+      "mu_static": {
+        "value": 0.2,
+        "range": [
+          0.1,
+          0.35
+        ],
+        "status": "estimated",
+        "basis": "Estimated band if untextured bottles (00005/50/55/59/60) are PP/HDPE against hard thermoplastic X5 jaw (aligned with #73 v2 [0.10, 0.35]; smooth PP may reach ~0.40).",
+        "sources": []
+      },
+      "mu_kinetic": {
+        "value": 0.17,
+        "range": [
+          0.08,
+          0.3
+        ],
+        "status": "estimated",
+        "basis": "Estimated kinetic band for polyolefin bottle on hard thermoplastic X5 jaw (aligned with #73 v2).",
+        "sources": []
+      },
+      "restitution_by_fill": {
+        "empty": {
+          "value": 0.05,
+          "range": [
+            0.0,
+            0.15
+          ],
+          "status": "unsourced"
+        },
+        "full": {
+          "value": 0.05,
+          "range": [
+            0.0,
+            0.1
+          ],
+          "status": "unsourced"
+        },
+        "effective_below_0_5_m_s": 0.0
+      }
+    },
+    "pad_hard__steel": {
+      "key": "pad_hard__steel",
+      "a": "pad_hard",
+      "b": "steel",
+      "kind": "object-surface",
+      "task_contact_family": "bottle-pad",
+      "scenario_membership": "default",
+      "mu_static": {
+        "value": 0.35,
+        "range": [
+          0.25,
+          0.5
+        ],
+        "status": "estimated",
+        "basis": "Estimated band for steel (and coated 00022 via per-asset override) against hard thermoplastic X5 jaw (aligned with #73 v2 [0.25, 0.50]).",
+        "sources": []
+      },
+      "mu_kinetic": {
+        "value": 0.3,
+        "range": [
+          0.2,
+          0.45
+        ],
+        "status": "estimated",
+        "basis": "Estimated kinetic band for steel / coated 00022 against hard thermoplastic X5 jaw (aligned with #73 v2).",
+        "sources": []
+      },
+      "restitution_by_fill": {
+        "empty": {
+          "value": 0.05,
+          "range": [
+            0.0,
+            0.15
+          ],
+          "status": "unsourced"
+        },
+        "full": {
+          "value": 0.05,
+          "range": [
+            0.0,
+            0.1
+          ],
+          "status": "unsourced"
+        },
+        "effective_below_0_5_m_s": 0.0
+      }
+    },
+    "pet_plastic__pet_plastic": {
+      "key": "pet_plastic__pet_plastic",
+      "a": "pet_plastic",
+      "b": "pet_plastic",
+      "kind": "object-object",
+      "task_contact_family": "bottle-bottle",
+      "scenario_membership": "all",
+      "mu_static": {
+        "value": 0.3,
+        "range": [
+          0.2,
+          0.5
+        ],
+        "status": "estimated",
+        "basis": "Estimated self-mated PET bottle-bottle band (aligned with #73 v2; PMC10746984 0.27-0.37 is rough machined solid PET Sa=6.3-7.9 um, not glossy blow-molded or shrink-sleeved bottles).",
+        "sources": [
+          {
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10746984/fullTextXML",
+            "quote": "Table 3 Average values of static friction coefficients for pairs of same-type polymers. ... POM–POM PET–PET PA6–PA6 ... 0 0.30 0.00 0.37 0.02 0.33 0.02 0.34 0.02 0.31 0.00 0.35 0.01 ... 10 ... 0.31 0.01 0.35 0.01 0.29 0.02",
+            "conditions": "Machined extruded solid PET specimen anchor ONLY (Sa = 6.322 / 7.928 um, 0.65-1.6 MPa, 0.27-0.37 with ±alpha; conditions mismatch for glossy blow-molded / shrink-sleeved bottles per cite63b §3.11)."
+          }
+        ]
+      },
+      "mu_kinetic": {
+        "value": 0.25,
+        "range": [
+          0.15,
+          0.4
+        ],
+        "status": "estimated",
+        "basis": "Estimated kinetic band for PET bottle-bottle contact (aligned with #73 v2).",
+        "sources": []
+      },
+      "restitution_by_fill": {
+        "empty": {
+          "value": 0.25,
+          "range": [
+            0.15,
+            0.5
+          ],
+          "status": "unsourced"
+        },
+        "full": {
+          "value": 0.1,
+          "range": [
+            0.05,
+            0.2
+          ],
+          "status": "unsourced"
+        },
+        "effective_below_0_5_m_s": 0.0
+      }
+    },
+    "pet_plastic__polyolefin_plastic": {
+      "key": "pet_plastic__polyolefin_plastic",
+      "a": "pet_plastic",
+      "b": "polyolefin_plastic",
+      "kind": "object-object",
+      "task_contact_family": "bottle-dustbin",
+      "scenario_membership": "all",
+      "mu_static": {
+        "value": 0.25,
+        "range": [
+          0.1,
+          0.5
+        ],
+        "status": "estimated",
+        "basis": "Estimated band for PET bottles against PP/HDPE dustbin/00000 and polyolefin bottles (aligned with #73 v2 [0.10, 0.50]).",
+        "sources": []
+      },
+      "mu_kinetic": {
+        "value": 0.2,
+        "range": [
+          0.08,
+          0.4
+        ],
+        "status": "estimated",
+        "basis": "Estimated kinetic band for PET against PP/HDPE dustbin/00000 (aligned with #73 v2 [0.08, 0.40]).",
+        "sources": []
+      },
+      "restitution_by_fill": {
+        "empty": {
+          "value": 0.25,
+          "range": [
+            0.15,
+            0.5
+          ],
+          "status": "unsourced"
+        },
+        "full": {
+          "value": 0.1,
+          "range": [
+            0.05,
+            0.2
+          ],
+          "status": "unsourced"
+        },
+        "effective_below_0_5_m_s": 0.0
+      }
+    },
+    "pet_plastic__steel": {
+      "key": "pet_plastic__steel",
+      "a": "pet_plastic",
+      "b": "steel",
+      "kind": "object-object",
+      "task_contact_family": "bottle-bottle",
+      "scenario_membership": "all",
+      "mu_static": {
+        "value": 0.3,
+        "range": [
+          0.15,
+          0.5
+        ],
+        "status": "estimated",
+        "basis": "Estimated band for PET bottles contacting steel / coated 00022 in 74/165 episodes (aligned with #73 v2 [0.15, 0.50]).",
+        "sources": []
+      },
+      "mu_kinetic": {
+        "value": 0.25,
+        "range": [
+          0.12,
+          0.45
+        ],
+        "status": "estimated",
+        "basis": "Estimated kinetic band for PET bottles contacting steel / coated 00022 (aligned with #73 v2 [0.12, 0.45]).",
+        "sources": []
+      },
+      "restitution_by_fill": {
+        "empty": {
+          "value": 0.225,
+          "range": [
+            0.15,
+            0.5
+          ],
+          "status": "unsourced"
+        },
+        "full": {
+          "value": 0.1,
+          "range": [
+            0.05,
+            0.2
+          ],
+          "status": "unsourced"
+        },
+        "effective_below_0_5_m_s": 0.0
+      }
+    },
+    "pet_plastic__table_laminate": {
+      "key": "pet_plastic__table_laminate",
+      "a": "pet_plastic",
+      "b": "table_laminate",
+      "kind": "object-surface",
+      "task_contact_family": "bottle-table",
+      "scenario_membership": "default",
+      "mu_static": {
+        "value": 0.25,
+        "range": [
+          0.15,
+          0.45
+        ],
+        "status": "unsourced",
+        "basis": "Unmeasured PET bottle on white melamine/laminate tabletop (#63 real frames; aligned with #73 v2).",
+        "sources": []
+      },
+      "mu_kinetic": {
+        "value": 0.2,
+        "range": [
+          0.12,
+          0.35
+        ],
+        "status": "unsourced",
+        "basis": "Unmeasured kinetic friction of PET bottle on melamine/laminate tabletop (aligned with #73 v2).",
+        "sources": []
+      },
+      "restitution_by_fill": {
+        "empty": {
+          "value": 0.15,
+          "range": [
+            0.05,
+            0.35
+          ],
+          "status": "unsourced"
+        },
+        "full": {
+          "value": 0.05,
+          "range": [
+            0.05,
+            0.15
+          ],
+          "status": "unsourced"
+        },
+        "effective_below_0_5_m_s": 0.0
+      }
+    },
+    "pet_plastic__table_wood": {
+      "key": "pet_plastic__table_wood",
+      "a": "pet_plastic",
+      "b": "table_wood",
+      "kind": "object-surface",
+      "task_contact_family": "bottle-table",
+      "scenario_membership": "sensitivity",
+      "mu_static": {
+        "value": 0.3,
+        "range": [
+          0.2,
+          0.5
+        ],
+        "status": "unsourced",
+        "basis": "Sensitivity band for PET bottle on finished/lacquered wood tabletop matching Mahogany_Planks.mdl (aligned with #73 v2).",
+        "sources": []
+      },
+      "mu_kinetic": {
+        "value": 0.25,
+        "range": [
+          0.15,
+          0.4
+        ],
+        "status": "unsourced",
+        "basis": "Sensitivity kinetic band for PET bottle on finished wood tabletop (aligned with #73 v2).",
+        "sources": []
+      },
+      "restitution_by_fill": {
+        "empty": {
+          "value": 0.15,
+          "range": [
+            0.05,
+            0.35
+          ],
+          "status": "unsourced"
+        },
+        "full": {
+          "value": 0.05,
+          "range": [
+            0.05,
+            0.15
+          ],
+          "status": "unsourced"
+        },
+        "effective_below_0_5_m_s": 0.0
+      }
+    },
+    "polyolefin_plastic__polyolefin_plastic": {
+      "key": "polyolefin_plastic__polyolefin_plastic",
+      "a": "polyolefin_plastic",
+      "b": "polyolefin_plastic",
+      "kind": "object-object",
+      "task_contact_family": "bottle-dustbin",
+      "scenario_membership": "all",
+      "mu_static": {
+        "value": 0.3,
+        "range": [
+          0.1,
+          0.71
+        ],
+        "status": "estimated",
+        "basis": "Nominal raised from 0.24 to 0.30 per PR #84 review item 5 (and #73 v2): Lee 1995 Table K.1 self-mated moulded PP spans 0.218-0.388 textured (mean 0.284, n=24) and 0.307-0.706 smooth SPI-SPE #1 (mean 0.571, n=8); 0.30 sits at the textured-top / smooth-bottom overlap rather than being back-solved from unary algebra. Estimated because no bottle has a verified PP body and PE/PP remain one class.",
+        "sources": [
+          {
+            "url": "https://vtechworks.lib.vt.edu/bitstreams/4924b50d-66c2-45c4-a241-4f513b44eb26/download",
+            "quote": "Unfilled Polypropylene Montana Surface Load: 10.7 Newtons ... 0.261 0.264 ... Load: 20.7 Newtons ... 0.218 0.207 ... Unfilled Polypropylene Naples Surface Load: 10.7 Newtons ... 0.388 0.388",
+            "conditions": "Lee (1995) VTech MS thesis Appendix K Table K.1 (p. 113 / PDF p. 124), unfilled Ferro NPP00GW01BK moulded PP plaques at 0.5 mm/s, 0.265-0.513 MPa: 24 textured runs span 0.218-0.388 static (mean 0.284, SD 0.041) and 0.153-0.388 kinetic (mean 0.251, SD 0.051); 8 smooth SPI-SPE #1 runs span 0.307-0.706 static (mean 0.571) and 0.317-0.673 kinetic."
+          }
+        ]
+      },
+      "mu_kinetic": {
+        "value": 0.25,
+        "range": [
+          0.08,
+          0.6
+        ],
+        "status": "estimated",
+        "basis": "Nominal raised from 0.20 to 0.25 per Lee 1995 Table K.1 textured kinetic mean (0.251 across n=24 runs; smooth SPI-SPE #1 kinetic spans 0.317-0.673; aligned with #73 v2 [0.08, 0.60]).",
+        "sources": [
+          {
+            "url": "https://vtechworks.lib.vt.edu/bitstreams/4924b50d-66c2-45c4-a241-4f513b44eb26/download",
+            "quote": "Unfilled Polypropylene Montana Surface Load: 10.7 Newtons ... 0.261 0.264 ... Load: 20.7 Newtons ... 0.218 0.207 ... Unfilled Polypropylene Naples Surface Load: 10.7 Newtons ... 0.388 0.388",
+            "conditions": "Lee (1995) VTech MS thesis Appendix K Table K.1 (p. 113 / PDF p. 124), unfilled Ferro NPP00GW01BK moulded PP plaques at 0.5 mm/s, 0.265-0.513 MPa: 24 textured runs span 0.218-0.388 static (mean 0.284, SD 0.041) and 0.153-0.388 kinetic (mean 0.251, SD 0.051); 8 smooth SPI-SPE #1 runs span 0.307-0.706 static (mean 0.571) and 0.317-0.673 kinetic."
+          }
+        ]
+      },
+      "restitution_by_fill": {
+        "empty": {
+          "value": 0.25,
+          "range": [
+            0.15,
+            0.5
+          ],
+          "status": "unsourced"
+        },
+        "full": {
+          "value": 0.1,
+          "range": [
+            0.05,
+            0.2
+          ],
+          "status": "unsourced"
+        },
+        "effective_below_0_5_m_s": 0.0
+      }
+    },
+    "polyolefin_plastic__steel": {
+      "key": "polyolefin_plastic__steel",
+      "a": "polyolefin_plastic",
+      "b": "steel",
+      "kind": "object-object",
+      "task_contact_family": "bottle-dustbin",
+      "scenario_membership": "all",
+      "mu_static": {
+        "value": 0.275,
+        "range": [
+          0.1,
+          0.5
+        ],
+        "status": "estimated",
+        "basis": "Estimated band for steel / coated 00022 against PP dustbin/00000 in 74/165 episodes (hull estimate adopted in #73 v2 [0.10, 0.50]).",
+        "sources": []
+      },
+      "mu_kinetic": {
+        "value": 0.23,
+        "range": [
+          0.08,
+          0.45
+        ],
+        "status": "estimated",
+        "basis": "Estimated kinetic band for steel / coated 00022 against PP dustbin/00000 (aligned with #73 v2 [0.08, 0.45]).",
+        "sources": []
+      },
+      "restitution_by_fill": {
+        "empty": {
+          "value": 0.225,
+          "range": [
+            0.15,
+            0.5
+          ],
+          "status": "unsourced"
+        },
+        "full": {
+          "value": 0.1,
+          "range": [
+            0.05,
+            0.2
+          ],
+          "status": "unsourced"
+        },
+        "effective_below_0_5_m_s": 0.0
+      }
+    },
+    "polyolefin_plastic__table_laminate": {
+      "key": "polyolefin_plastic__table_laminate",
+      "a": "polyolefin_plastic",
+      "b": "table_laminate",
+      "kind": "object-surface",
+      "task_contact_family": "bottle-table",
+      "scenario_membership": "default",
+      "mu_static": {
+        "value": 0.2,
+        "range": [
+          0.1,
+          0.35
+        ],
+        "status": "unsourced",
+        "basis": "Unmeasured PP/HDPE bottle on white melamine/laminate tabletop (aligned with #73 v2 [0.10, 0.35]).",
+        "sources": []
+      },
+      "mu_kinetic": {
+        "value": 0.15,
+        "range": [
+          0.08,
+          0.3
+        ],
+        "status": "unsourced",
+        "basis": "Unmeasured kinetic friction of PP/HDPE bottle on melamine/laminate tabletop (aligned with #73 v2).",
+        "sources": []
+      },
+      "restitution_by_fill": {
+        "empty": {
+          "value": 0.15,
+          "range": [
+            0.05,
+            0.35
+          ],
+          "status": "unsourced"
+        },
+        "full": {
+          "value": 0.05,
+          "range": [
+            0.05,
+            0.15
+          ],
+          "status": "unsourced"
+        },
+        "effective_below_0_5_m_s": 0.0
+      }
+    },
+    "polyolefin_plastic__table_wood": {
+      "key": "polyolefin_plastic__table_wood",
+      "a": "polyolefin_plastic",
+      "b": "table_wood",
+      "kind": "object-surface",
+      "task_contact_family": "bottle-table",
+      "scenario_membership": "sensitivity",
+      "mu_static": {
+        "value": 0.25,
+        "range": [
+          0.12,
+          0.4
+        ],
+        "status": "unsourced",
+        "basis": "Sensitivity band for PP/HDPE bottle on finished wood tabletop (aligned with #73 v2 [0.12, 0.40]).",
+        "sources": []
+      },
+      "mu_kinetic": {
+        "value": 0.2,
+        "range": [
+          0.1,
+          0.35
+        ],
+        "status": "unsourced",
+        "basis": "Sensitivity kinetic band for PP/HDPE bottle on finished wood tabletop (aligned with #73 v2).",
+        "sources": []
+      },
+      "restitution_by_fill": {
+        "empty": {
+          "value": 0.15,
+          "range": [
+            0.05,
+            0.35
+          ],
+          "status": "unsourced"
+        },
+        "full": {
+          "value": 0.05,
+          "range": [
+            0.05,
+            0.15
+          ],
+          "status": "unsourced"
+        },
+        "effective_below_0_5_m_s": 0.0
+      }
+    },
+    "steel__table_laminate": {
+      "key": "steel__table_laminate",
+      "a": "steel",
+      "b": "table_laminate",
+      "kind": "object-surface",
+      "task_contact_family": "bottle-table",
+      "scenario_membership": "default",
+      "mu_static": {
+        "value": 0.35,
+        "range": [
+          0.2,
+          0.5
+        ],
+        "status": "unsourced",
+        "basis": "Unmeasured steel / coated 00022 bottle on white melamine/laminate tabletop (aligned with #73 v2 [0.20, 0.50]).",
+        "sources": []
+      },
+      "mu_kinetic": {
+        "value": 0.3,
+        "range": [
+          0.15,
+          0.45
+        ],
+        "status": "unsourced",
+        "basis": "Unmeasured kinetic friction of steel / coated 00022 on melamine/laminate tabletop (aligned with #73 v2).",
+        "sources": []
+      },
+      "restitution_by_fill": {
+        "empty": {
+          "value": 0.125,
+          "range": [
+            0.05,
+            0.35
+          ],
+          "status": "unsourced"
+        },
+        "full": {
+          "value": 0.05,
+          "range": [
+            0.05,
+            0.15
+          ],
+          "status": "unsourced"
+        },
+        "effective_below_0_5_m_s": 0.0
+      }
+    },
+    "steel__table_wood": {
+      "key": "steel__table_wood",
+      "a": "steel",
+      "b": "table_wood",
+      "kind": "object-surface",
+      "task_contact_family": "bottle-table",
+      "scenario_membership": "sensitivity",
+      "mu_static": {
+        "value": 0.4,
+        "range": [
+          0.2,
+          0.6
+        ],
+        "status": "estimated",
+        "basis": "Sensitivity band for steel / coated 00022 on wood tabletop (aligned with #73 v2 [0.20, 0.60]; Engineering ToolBox Wood-Clean Metal static 0.2-0.6 is raw wood/bare metal).",
+        "sources": [
+          {
+            "url": "https://www.engineeringtoolbox.com/friction-coefficients-d_778.html",
+            "quote": "Wood | Clean Metal | Clean and Dry | 0.2 - 0.6 |",
+            "conditions": "Raw wood vs bare clean metal static handbook span; estimated for lacquered wood / coated 00022."
+          }
+        ]
+      },
+      "mu_kinetic": {
+        "value": 0.3,
+        "range": [
+          0.2,
+          0.5
+        ],
+        "status": "estimated",
+        "basis": "Sensitivity kinetic band for steel / coated 00022 on wood tabletop (aligned with #73 v2 [0.20, 0.50]; arXiv:1604.04038 bead-blasted steel on raw plywood is 0.24-0.28).",
+        "sources": []
+      },
+      "restitution_by_fill": {
+        "empty": {
+          "value": 0.125,
+          "range": [
+            0.05,
+            0.35
+          ],
+          "status": "unsourced"
+        },
+        "full": {
+          "value": 0.05,
+          "range": [
+            0.05,
+            0.15
+          ],
+          "status": "unsourced"
+        },
+        "effective_below_0_5_m_s": 0.0
+      }
+    }
+  },
+  "cross_task_class_constraints": {
+    "steel__steel": {
+      "key": "steel__steel",
+      "a": "steel",
+      "b": "steel",
+      "cooccurs_in_this_task": false,
+      "why_enforced": "Enforced on the global steel class unary so this slice never lowers class steel below [0.50, 0.80] static / [0.40, 0.60] kinetic (#73 v2 sourced steel__steel band); coated bottle/00022 uses its per-asset material_override instead.",
+      "mu_static_range": [
+        0.5,
+        0.8
+      ],
+      "mu_kinetic_range": [
+        0.4,
+        0.6
+      ],
+      "sources": [
+        {
+          "url": "https://www.engineeringtoolbox.com/friction-coefficients-d_778.html",
+          "quote": "Steel | Steel | Clean and Dry | 0.5 - 0.8 | 0.42",
+          "conditions": "Clean dry bare steel-on-steel static [0.5, 0.8] and kinetic 0.42."
+        },
+        {
+          "url": "https://roymech.org/Useful_Tables/Tribology/co_of_frict",
+          "quote": "Steel (Mild) | Steel (Mild) | 0,74 | 0,57",
+          "conditions": "Clean dry mild steel static 0.74, sliding 0.57 (#73 v2 kinetic range [0.40, 0.60])."
+        }
+      ]
+    }
+  },
+  "physx_combine_and_unary_realisation": {
+    "combine_algebra_rule": {
+      "physx_sdk_version": "5.6.1",
+      "isaac_sim_container_pin": "Isaac Sim 5.1.0 (/isaac-sim/VERSION = 5.1.0-rc.19+release.26219.9c81211b.gl in isaac-sim_5.1.0.sif) ships omni.physx-107.3.26+107.3.3.lx64.r.cp311.u353 and omni.physx.foundation-107.3.26+107.3.3.lx64.r.cp311.u353; libomni.physx.plugin.so compiles PX_PHYSICS_VERSION = 0x05060100 (mov edi, 0x05060100 at offsets 0x352f5f and 0x3536b1), matching NVIDIA-Omniverse/PhysX tag 107.3-physx-5.6.1 (PhysX 5.6.1, not 'PhysX 5.1' and not main/5.12).",
+      "precedence_rule": "effective_mode = max(mode0, mode1) with eAVERAGE(0) < eMIN(1) < eMULTIPLY(2) < eMAX(3) (PxMaterial.h:112,127-130 at tag 107.3-physx-5.6.1); staticFriction_eff = max(staticFriction, dynamicFriction) (PxMaterial.h:148); effective restitution = 0.0 for normal impact speed < bounce_threshold_velocity = 0.5 m/s (env/environment/base_env.py:27).",
+      "status": "sourced",
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/NVIDIA-Omniverse/PhysX/107.3-physx-5.6.1/physx/include/foundation/PxPhysicsVersion.h",
+          "quote": "#define PX_PHYSICS_VERSION_MAJOR 5\n#define PX_PHYSICS_VERSION_MINOR 6\n#define PX_PHYSICS_VERSION_BUGFIX 1",
+          "conditions": "Lines 48-50 at tag 107.3-physx-5.6.1; verified against 0x05060100 in /isaac-sim/extscache/omni.physx-107.3.26+107.3.3.lx64.r.cp311.u353/bin/libomni.physx.plugin.so."
+        },
+        {
+          "url": "https://raw.githubusercontent.com/NVIDIA-Omniverse/PhysX/107.3-physx-5.6.1/physx/include/PxMaterial.h",
+          "quote": "The effective combine mode for the pair is maximum(material0.combineMode, material1.combineMode). ... eAVERAGE = 0, //!< Average: (a + b)/2 eMIN = 1, //!< Minimum: minimum(a,b) eMULTIPLY = 2, //!< Multiply: a*b eMAX = 3, //!< Maximum: maximum(a,b) ... If set to greater than staticFriction, the effective value of staticFriction will be increased to match.",
+          "conditions": "PhysX 5.6.1 SDK header lines 112, 127-130, and 148 at tag 107.3-physx-5.6.1 (replaces unpinned main/5.12 line numbers 89, 104-107, 125)."
+        }
+      ]
+    },
+    "unary_materials_average_combine": {
+      "note": "Unary friction assignments per material class (plus Rigid/bottle/00022 per-asset override), using friction_combine_mode='average' across ALL classes and surfaces (including pad_elastomer and ground). Class steel stays at 0.56/0.46 inside #73's sourced [0.50, 0.80]/[0.40, 0.60] steel__steel band.",
+      "classes": {
+        "pet_plastic": {
+          "static_friction": 0.3,
+          "dynamic_friction": 0.24,
+          "friction_combine_mode": "average",
+          "restitution_by_fill": {
+            "empty": {
+              "value": 0.25,
+              "combine_mode": "average"
+            },
+            "full": {
+              "value": 0.1,
+              "combine_mode": "min"
+            }
+          }
+        },
+        "polyolefin_plastic": {
+          "static_friction": 0.24,
+          "dynamic_friction": 0.2,
+          "friction_combine_mode": "average",
+          "restitution_by_fill": {
+            "empty": {
+              "value": 0.25,
+              "combine_mode": "average"
+            },
+            "full": {
+              "value": 0.1,
+              "combine_mode": "min"
+            }
+          }
+        },
+        "steel": {
+          "static_friction": 0.56,
+          "dynamic_friction": 0.46,
+          "friction_combine_mode": "average",
+          "restitution_by_fill": {
+            "empty": {
+              "value": 0.2,
+              "combine_mode": "average"
+            },
+            "full": {
+              "value": 0.1,
+              "combine_mode": "min"
+            }
+          }
+        },
+        "pad_hard": {
+          "static_friction": 0.4,
+          "dynamic_friction": 0.32,
+          "friction_combine_mode": "average",
+          "restitution": {
+            "value": 0.05,
+            "combine_mode": "min"
+          }
+        },
+        "pad_elastomer": {
+          "static_friction": 1.3,
+          "dynamic_friction": 1.1,
+          "friction_combine_mode": "average",
+          "restitution": {
+            "value": 0.05,
+            "combine_mode": "min"
+          }
+        },
+        "table_laminate": {
+          "static_friction": 0.26,
+          "dynamic_friction": 0.2,
+          "friction_combine_mode": "average",
+          "restitution": {
+            "value": 0.05,
+            "combine_mode": "average"
+          }
+        },
+        "table_wood": {
+          "static_friction": 0.34,
+          "dynamic_friction": 0.26,
+          "friction_combine_mode": "average",
+          "restitution": {
+            "value": 0.05,
+            "combine_mode": "average"
+          }
+        },
+        "ground": {
+          "static_friction": 0.3,
+          "dynamic_friction": 0.24,
+          "friction_combine_mode": "average",
+          "restitution": {
+            "value": 0.05,
+            "combine_mode": "average"
+          }
+        }
+      },
+      "per_asset_overrides": {
+        "Rigid/bottle/00022": {
+          "static_friction": 0.34,
+          "dynamic_friction": 0.28,
+          "friction_combine_mode": "average"
+        }
+      }
+    },
+    "feasibility_check": {
+      "method": "Two checks run across all 4 surface combinations (pad_hard+table_laminate, pad_elastomer+table_laminate, pad_hard+table_wood, pad_elastomer+table_wood) under pure average combine ((u_a + u_b)/2): (1) #73's pure-Python simplex LP (extended to enforce u_kinetic <= u_static per class) maximising minimum band margin across all 14 active task pairs + steel__steel; (2) direct verification of the proposed unary table + Rigid/bottle/00022 per-asset override against every active pair band.",
+      "all_scenarios_feasible_under_average_combine": true,
+      "scenarios": {
+        "pad_hard+table_laminate": {
+          "scenario_tag": "default",
+          "combine_mode_all_materials": "average",
+          "n_class_pair_constraints": 15,
+          "n_override_00022_partner_constraints": 5,
+          "proposed_unary_feasible": true,
+          "proposed_min_margin_static": 0.02,
+          "proposed_min_margin_kinetic": 0.04,
+          "violations": [],
+          "lp_max_joint_margin": 0.075,
+          "lp_unary_static": {
+            "pet_plastic": 0.275,
+            "polyolefin_plastic": 0.175,
+            "steel": 0.575,
+            "pad_hard": 0.275,
+            "table_laminate": 0.175,
+            "ground": 0.175
+          },
+          "lp_unary_kinetic": {
+            "pet_plastic": 0.275,
+            "polyolefin_plastic": 0.175,
+            "steel": 0.475,
+            "pad_hard": 0.175,
+            "table_laminate": 0.135,
+            "ground": 0.135
+          },
+          "realised_class_pairs": {
+            "ground__pet_plastic": {
+              "static": 0.3,
+              "static_band": [
+                0.15,
+                0.5
+              ],
+              "dynamic": 0.24,
+              "dynamic_band": [
+                0.12,
+                0.4
+              ]
+            },
+            "ground__polyolefin_plastic": {
+              "static": 0.27,
+              "static_band": [
+                0.1,
+                0.4
+              ],
+              "dynamic": 0.22,
+              "dynamic_band": [
+                0.08,
+                0.35
+              ]
+            },
+            "ground__steel": {
+              "static": 0.43,
+              "static_band": [
+                0.2,
+                0.6
+              ],
+              "dynamic": 0.35,
+              "dynamic_band": [
+                0.15,
+                0.5
+              ]
+            },
+            "pad_hard__pet_plastic": {
+              "static": 0.35,
+              "static_band": [
+                0.2,
+                0.5
+              ],
+              "dynamic": 0.28,
+              "dynamic_band": [
+                0.15,
+                0.4
+              ]
+            },
+            "pad_hard__polyolefin_plastic": {
+              "static": 0.32,
+              "static_band": [
+                0.1,
+                0.35
+              ],
+              "dynamic": 0.26,
+              "dynamic_band": [
+                0.08,
+                0.3
+              ]
+            },
+            "pad_hard__steel": {
+              "static": 0.48,
+              "static_band": [
+                0.25,
+                0.5
+              ],
+              "dynamic": 0.39,
+              "dynamic_band": [
+                0.2,
+                0.45
+              ]
+            },
+            "pet_plastic__pet_plastic": {
+              "static": 0.3,
+              "static_band": [
+                0.2,
+                0.5
+              ],
+              "dynamic": 0.24,
+              "dynamic_band": [
+                0.15,
+                0.4
+              ]
+            },
+            "pet_plastic__polyolefin_plastic": {
+              "static": 0.27,
+              "static_band": [
+                0.1,
+                0.5
+              ],
+              "dynamic": 0.22,
+              "dynamic_band": [
+                0.08,
+                0.4
+              ]
+            },
+            "pet_plastic__steel": {
+              "static": 0.43,
+              "static_band": [
+                0.15,
+                0.5
+              ],
+              "dynamic": 0.35,
+              "dynamic_band": [
+                0.12,
+                0.45
+              ]
+            },
+            "pet_plastic__table_laminate": {
+              "static": 0.28,
+              "static_band": [
+                0.15,
+                0.45
+              ],
+              "dynamic": 0.22,
+              "dynamic_band": [
+                0.12,
+                0.35
+              ]
+            },
+            "polyolefin_plastic__polyolefin_plastic": {
+              "static": 0.24,
+              "static_band": [
+                0.1,
+                0.71
+              ],
+              "dynamic": 0.2,
+              "dynamic_band": [
+                0.08,
+                0.6
+              ]
+            },
+            "polyolefin_plastic__steel": {
+              "static": 0.4,
+              "static_band": [
+                0.1,
+                0.5
+              ],
+              "dynamic": 0.33,
+              "dynamic_band": [
+                0.08,
+                0.45
+              ]
+            },
+            "polyolefin_plastic__table_laminate": {
+              "static": 0.25,
+              "static_band": [
+                0.1,
+                0.35
+              ],
+              "dynamic": 0.2,
+              "dynamic_band": [
+                0.08,
+                0.3
+              ]
+            },
+            "steel__table_laminate": {
+              "static": 0.41,
+              "static_band": [
+                0.2,
+                0.5
+              ],
+              "dynamic": 0.33,
+              "dynamic_band": [
+                0.15,
+                0.45
+              ]
+            },
+            "steel__steel (cross-task #73)": {
+              "static": 0.56,
+              "static_band": [
+                0.5,
+                0.8
+              ],
+              "dynamic": 0.46,
+              "dynamic_band": [
+                0.4,
+                0.6
+              ]
+            }
+          },
+          "realised_00022_override_pairs": {
+            "Rigid/bottle/00022__pet_plastic": {
+              "target_pair_band_key": "pet_plastic__steel",
+              "static": 0.32,
+              "static_band": [
+                0.15,
+                0.5
+              ],
+              "dynamic": 0.26,
+              "dynamic_band": [
+                0.12,
+                0.45
+              ],
+              "inside_band": true
+            },
+            "Rigid/bottle/00022__polyolefin_plastic": {
+              "target_pair_band_key": "polyolefin_plastic__steel",
+              "static": 0.29,
+              "static_band": [
+                0.1,
+                0.5
+              ],
+              "dynamic": 0.24,
+              "dynamic_band": [
+                0.08,
+                0.45
+              ],
+              "inside_band": true
+            },
+            "Rigid/bottle/00022__pad_hard": {
+              "target_pair_band_key": "pad_hard__steel",
+              "static": 0.37,
+              "static_band": [
+                0.25,
+                0.5
+              ],
+              "dynamic": 0.3,
+              "dynamic_band": [
+                0.2,
+                0.45
+              ],
+              "inside_band": true
+            },
+            "Rigid/bottle/00022__table_laminate": {
+              "target_pair_band_key": "steel__table_laminate",
+              "static": 0.3,
+              "static_band": [
+                0.2,
+                0.5
+              ],
+              "dynamic": 0.24,
+              "dynamic_band": [
+                0.15,
+                0.45
+              ],
+              "inside_band": true
+            },
+            "Rigid/bottle/00022__ground": {
+              "target_pair_band_key": "ground__steel",
+              "static": 0.32,
+              "static_band": [
+                0.2,
+                0.6
+              ],
+              "dynamic": 0.26,
+              "dynamic_band": [
+                0.15,
+                0.5
+              ],
+              "inside_band": true
+            }
+          }
+        },
+        "pad_elastomer+table_laminate": {
+          "scenario_tag": "sensitivity_pad",
+          "combine_mode_all_materials": "average",
+          "n_class_pair_constraints": 15,
+          "n_override_00022_partner_constraints": 5,
+          "proposed_unary_feasible": true,
+          "proposed_min_margin_static": 0.06,
+          "proposed_min_margin_kinetic": 0.06,
+          "violations": [],
+          "lp_max_joint_margin": 0.075,
+          "lp_unary_static": {
+            "pet_plastic": 0.275,
+            "polyolefin_plastic": 0.175,
+            "steel": 0.575,
+            "pad_elastomer": 0.775,
+            "table_laminate": 0.175,
+            "ground": 0.175
+          },
+          "lp_unary_kinetic": {
+            "pet_plastic": 0.225,
+            "polyolefin_plastic": 0.155,
+            "steel": 0.525,
+            "pad_elastomer": 0.625,
+            "table_laminate": 0.165,
+            "ground": 0.165
+          },
+          "realised_class_pairs": {
+            "ground__pet_plastic": {
+              "static": 0.3,
+              "static_band": [
+                0.15,
+                0.5
+              ],
+              "dynamic": 0.24,
+              "dynamic_band": [
+                0.12,
+                0.4
+              ]
+            },
+            "ground__polyolefin_plastic": {
+              "static": 0.27,
+              "static_band": [
+                0.1,
+                0.4
+              ],
+              "dynamic": 0.22,
+              "dynamic_band": [
+                0.08,
+                0.35
+              ]
+            },
+            "ground__steel": {
+              "static": 0.43,
+              "static_band": [
+                0.2,
+                0.6
+              ],
+              "dynamic": 0.35,
+              "dynamic_band": [
+                0.15,
+                0.5
+              ]
+            },
+            "pad_elastomer__pet_plastic": {
+              "static": 0.8,
+              "static_band": [
+                0.4,
+                1.2
+              ],
+              "dynamic": 0.67,
+              "dynamic_band": [
+                0.3,
+                1.0
+              ]
+            },
+            "pad_elastomer__polyolefin_plastic": {
+              "static": 0.77,
+              "static_band": [
+                0.3,
+                1.0
+              ],
+              "dynamic": 0.65,
+              "dynamic_band": [
+                0.25,
+                0.9
+              ]
+            },
+            "pad_elastomer__steel": {
+              "static": 0.93,
+              "static_band": [
+                0.6,
+                1.6
+              ],
+              "dynamic": 0.78,
+              "dynamic_band": [
+                0.5,
+                1.4
+              ]
+            },
+            "pet_plastic__pet_plastic": {
+              "static": 0.3,
+              "static_band": [
+                0.2,
+                0.5
+              ],
+              "dynamic": 0.24,
+              "dynamic_band": [
+                0.15,
+                0.4
+              ]
+            },
+            "pet_plastic__polyolefin_plastic": {
+              "static": 0.27,
+              "static_band": [
+                0.1,
+                0.5
+              ],
+              "dynamic": 0.22,
+              "dynamic_band": [
+                0.08,
+                0.4
+              ]
+            },
+            "pet_plastic__steel": {
+              "static": 0.43,
+              "static_band": [
+                0.15,
+                0.5
+              ],
+              "dynamic": 0.35,
+              "dynamic_band": [
+                0.12,
+                0.45
+              ]
+            },
+            "pet_plastic__table_laminate": {
+              "static": 0.28,
+              "static_band": [
+                0.15,
+                0.45
+              ],
+              "dynamic": 0.22,
+              "dynamic_band": [
+                0.12,
+                0.35
+              ]
+            },
+            "polyolefin_plastic__polyolefin_plastic": {
+              "static": 0.24,
+              "static_band": [
+                0.1,
+                0.71
+              ],
+              "dynamic": 0.2,
+              "dynamic_band": [
+                0.08,
+                0.6
+              ]
+            },
+            "polyolefin_plastic__steel": {
+              "static": 0.4,
+              "static_band": [
+                0.1,
+                0.5
+              ],
+              "dynamic": 0.33,
+              "dynamic_band": [
+                0.08,
+                0.45
+              ]
+            },
+            "polyolefin_plastic__table_laminate": {
+              "static": 0.25,
+              "static_band": [
+                0.1,
+                0.35
+              ],
+              "dynamic": 0.2,
+              "dynamic_band": [
+                0.08,
+                0.3
+              ]
+            },
+            "steel__table_laminate": {
+              "static": 0.41,
+              "static_band": [
+                0.2,
+                0.5
+              ],
+              "dynamic": 0.33,
+              "dynamic_band": [
+                0.15,
+                0.45
+              ]
+            },
+            "steel__steel (cross-task #73)": {
+              "static": 0.56,
+              "static_band": [
+                0.5,
+                0.8
+              ],
+              "dynamic": 0.46,
+              "dynamic_band": [
+                0.4,
+                0.6
+              ]
+            }
+          },
+          "realised_00022_override_pairs": {
+            "Rigid/bottle/00022__pet_plastic": {
+              "target_pair_band_key": "pet_plastic__steel",
+              "static": 0.32,
+              "static_band": [
+                0.15,
+                0.5
+              ],
+              "dynamic": 0.26,
+              "dynamic_band": [
+                0.12,
+                0.45
+              ],
+              "inside_band": true
+            },
+            "Rigid/bottle/00022__polyolefin_plastic": {
+              "target_pair_band_key": "polyolefin_plastic__steel",
+              "static": 0.29,
+              "static_band": [
+                0.1,
+                0.5
+              ],
+              "dynamic": 0.24,
+              "dynamic_band": [
+                0.08,
+                0.45
+              ],
+              "inside_band": true
+            },
+            "Rigid/bottle/00022__pad_elastomer": {
+              "target_pair_band_key": "pad_elastomer__steel",
+              "static": 0.82,
+              "static_band": [
+                0.6,
+                1.6
+              ],
+              "dynamic": 0.69,
+              "dynamic_band": [
+                0.5,
+                1.4
+              ],
+              "inside_band": true
+            },
+            "Rigid/bottle/00022__table_laminate": {
+              "target_pair_band_key": "steel__table_laminate",
+              "static": 0.3,
+              "static_band": [
+                0.2,
+                0.5
+              ],
+              "dynamic": 0.24,
+              "dynamic_band": [
+                0.15,
+                0.45
+              ],
+              "inside_band": true
+            },
+            "Rigid/bottle/00022__ground": {
+              "target_pair_band_key": "ground__steel",
+              "static": 0.32,
+              "static_band": [
+                0.2,
+                0.6
+              ],
+              "dynamic": 0.26,
+              "dynamic_band": [
+                0.15,
+                0.5
+              ],
+              "inside_band": true
+            }
+          }
+        },
+        "pad_hard+table_wood": {
+          "scenario_tag": "sensitivity_table",
+          "combine_mode_all_materials": "average",
+          "n_class_pair_constraints": 15,
+          "n_override_00022_partner_constraints": 5,
+          "proposed_unary_feasible": true,
+          "proposed_min_margin_static": 0.02,
+          "proposed_min_margin_kinetic": 0.04,
+          "violations": [],
+          "lp_max_joint_margin": 0.075,
+          "lp_unary_static": {
+            "pet_plastic": 0.275,
+            "polyolefin_plastic": 0.175,
+            "steel": 0.575,
+            "pad_hard": 0.275,
+            "table_wood": 0.275,
+            "ground": 0.175
+          },
+          "lp_unary_kinetic": {
+            "pet_plastic": 0.275,
+            "polyolefin_plastic": 0.175,
+            "steel": 0.475,
+            "pad_hard": 0.175,
+            "table_wood": 0.175,
+            "ground": 0.135
+          },
+          "realised_class_pairs": {
+            "ground__pet_plastic": {
+              "static": 0.3,
+              "static_band": [
+                0.15,
+                0.5
+              ],
+              "dynamic": 0.24,
+              "dynamic_band": [
+                0.12,
+                0.4
+              ]
+            },
+            "ground__polyolefin_plastic": {
+              "static": 0.27,
+              "static_band": [
+                0.1,
+                0.4
+              ],
+              "dynamic": 0.22,
+              "dynamic_band": [
+                0.08,
+                0.35
+              ]
+            },
+            "ground__steel": {
+              "static": 0.43,
+              "static_band": [
+                0.2,
+                0.6
+              ],
+              "dynamic": 0.35,
+              "dynamic_band": [
+                0.15,
+                0.5
+              ]
+            },
+            "pad_hard__pet_plastic": {
+              "static": 0.35,
+              "static_band": [
+                0.2,
+                0.5
+              ],
+              "dynamic": 0.28,
+              "dynamic_band": [
+                0.15,
+                0.4
+              ]
+            },
+            "pad_hard__polyolefin_plastic": {
+              "static": 0.32,
+              "static_band": [
+                0.1,
+                0.35
+              ],
+              "dynamic": 0.26,
+              "dynamic_band": [
+                0.08,
+                0.3
+              ]
+            },
+            "pad_hard__steel": {
+              "static": 0.48,
+              "static_band": [
+                0.25,
+                0.5
+              ],
+              "dynamic": 0.39,
+              "dynamic_band": [
+                0.2,
+                0.45
+              ]
+            },
+            "pet_plastic__pet_plastic": {
+              "static": 0.3,
+              "static_band": [
+                0.2,
+                0.5
+              ],
+              "dynamic": 0.24,
+              "dynamic_band": [
+                0.15,
+                0.4
+              ]
+            },
+            "pet_plastic__polyolefin_plastic": {
+              "static": 0.27,
+              "static_band": [
+                0.1,
+                0.5
+              ],
+              "dynamic": 0.22,
+              "dynamic_band": [
+                0.08,
+                0.4
+              ]
+            },
+            "pet_plastic__steel": {
+              "static": 0.43,
+              "static_band": [
+                0.15,
+                0.5
+              ],
+              "dynamic": 0.35,
+              "dynamic_band": [
+                0.12,
+                0.45
+              ]
+            },
+            "pet_plastic__table_wood": {
+              "static": 0.32,
+              "static_band": [
+                0.2,
+                0.5
+              ],
+              "dynamic": 0.25,
+              "dynamic_band": [
+                0.15,
+                0.4
+              ]
+            },
+            "polyolefin_plastic__polyolefin_plastic": {
+              "static": 0.24,
+              "static_band": [
+                0.1,
+                0.71
+              ],
+              "dynamic": 0.2,
+              "dynamic_band": [
+                0.08,
+                0.6
+              ]
+            },
+            "polyolefin_plastic__steel": {
+              "static": 0.4,
+              "static_band": [
+                0.1,
+                0.5
+              ],
+              "dynamic": 0.33,
+              "dynamic_band": [
+                0.08,
+                0.45
+              ]
+            },
+            "polyolefin_plastic__table_wood": {
+              "static": 0.29,
+              "static_band": [
+                0.12,
+                0.4
+              ],
+              "dynamic": 0.23,
+              "dynamic_band": [
+                0.1,
+                0.35
+              ]
+            },
+            "steel__table_wood": {
+              "static": 0.45,
+              "static_band": [
+                0.2,
+                0.6
+              ],
+              "dynamic": 0.36,
+              "dynamic_band": [
+                0.2,
+                0.5
+              ]
+            },
+            "steel__steel (cross-task #73)": {
+              "static": 0.56,
+              "static_band": [
+                0.5,
+                0.8
+              ],
+              "dynamic": 0.46,
+              "dynamic_band": [
+                0.4,
+                0.6
+              ]
+            }
+          },
+          "realised_00022_override_pairs": {
+            "Rigid/bottle/00022__pet_plastic": {
+              "target_pair_band_key": "pet_plastic__steel",
+              "static": 0.32,
+              "static_band": [
+                0.15,
+                0.5
+              ],
+              "dynamic": 0.26,
+              "dynamic_band": [
+                0.12,
+                0.45
+              ],
+              "inside_band": true
+            },
+            "Rigid/bottle/00022__polyolefin_plastic": {
+              "target_pair_band_key": "polyolefin_plastic__steel",
+              "static": 0.29,
+              "static_band": [
+                0.1,
+                0.5
+              ],
+              "dynamic": 0.24,
+              "dynamic_band": [
+                0.08,
+                0.45
+              ],
+              "inside_band": true
+            },
+            "Rigid/bottle/00022__pad_hard": {
+              "target_pair_band_key": "pad_hard__steel",
+              "static": 0.37,
+              "static_band": [
+                0.25,
+                0.5
+              ],
+              "dynamic": 0.3,
+              "dynamic_band": [
+                0.2,
+                0.45
+              ],
+              "inside_band": true
+            },
+            "Rigid/bottle/00022__table_wood": {
+              "target_pair_band_key": "steel__table_wood",
+              "static": 0.34,
+              "static_band": [
+                0.2,
+                0.6
+              ],
+              "dynamic": 0.27,
+              "dynamic_band": [
+                0.2,
+                0.5
+              ],
+              "inside_band": true
+            },
+            "Rigid/bottle/00022__ground": {
+              "target_pair_band_key": "ground__steel",
+              "static": 0.32,
+              "static_band": [
+                0.2,
+                0.6
+              ],
+              "dynamic": 0.26,
+              "dynamic_band": [
+                0.15,
+                0.5
+              ],
+              "inside_band": true
+            }
+          }
+        },
+        "pad_elastomer+table_wood": {
+          "scenario_tag": "sensitivity_both",
+          "combine_mode_all_materials": "average",
+          "n_class_pair_constraints": 15,
+          "n_override_00022_partner_constraints": 5,
+          "proposed_unary_feasible": true,
+          "proposed_min_margin_static": 0.06,
+          "proposed_min_margin_kinetic": 0.06,
+          "violations": [],
+          "lp_max_joint_margin": 0.075,
+          "lp_unary_static": {
+            "pet_plastic": 0.275,
+            "polyolefin_plastic": 0.175,
+            "steel": 0.575,
+            "pad_elastomer": 0.775,
+            "table_wood": 0.275,
+            "ground": 0.175
+          },
+          "lp_unary_kinetic": {
+            "pet_plastic": 0.225,
+            "polyolefin_plastic": 0.155,
+            "steel": 0.525,
+            "pad_elastomer": 0.625,
+            "table_wood": 0.275,
+            "ground": 0.165
+          },
+          "realised_class_pairs": {
+            "ground__pet_plastic": {
+              "static": 0.3,
+              "static_band": [
+                0.15,
+                0.5
+              ],
+              "dynamic": 0.24,
+              "dynamic_band": [
+                0.12,
+                0.4
+              ]
+            },
+            "ground__polyolefin_plastic": {
+              "static": 0.27,
+              "static_band": [
+                0.1,
+                0.4
+              ],
+              "dynamic": 0.22,
+              "dynamic_band": [
+                0.08,
+                0.35
+              ]
+            },
+            "ground__steel": {
+              "static": 0.43,
+              "static_band": [
+                0.2,
+                0.6
+              ],
+              "dynamic": 0.35,
+              "dynamic_band": [
+                0.15,
+                0.5
+              ]
+            },
+            "pad_elastomer__pet_plastic": {
+              "static": 0.8,
+              "static_band": [
+                0.4,
+                1.2
+              ],
+              "dynamic": 0.67,
+              "dynamic_band": [
+                0.3,
+                1.0
+              ]
+            },
+            "pad_elastomer__polyolefin_plastic": {
+              "static": 0.77,
+              "static_band": [
+                0.3,
+                1.0
+              ],
+              "dynamic": 0.65,
+              "dynamic_band": [
+                0.25,
+                0.9
+              ]
+            },
+            "pad_elastomer__steel": {
+              "static": 0.93,
+              "static_band": [
+                0.6,
+                1.6
+              ],
+              "dynamic": 0.78,
+              "dynamic_band": [
+                0.5,
+                1.4
+              ]
+            },
+            "pet_plastic__pet_plastic": {
+              "static": 0.3,
+              "static_band": [
+                0.2,
+                0.5
+              ],
+              "dynamic": 0.24,
+              "dynamic_band": [
+                0.15,
+                0.4
+              ]
+            },
+            "pet_plastic__polyolefin_plastic": {
+              "static": 0.27,
+              "static_band": [
+                0.1,
+                0.5
+              ],
+              "dynamic": 0.22,
+              "dynamic_band": [
+                0.08,
+                0.4
+              ]
+            },
+            "pet_plastic__steel": {
+              "static": 0.43,
+              "static_band": [
+                0.15,
+                0.5
+              ],
+              "dynamic": 0.35,
+              "dynamic_band": [
+                0.12,
+                0.45
+              ]
+            },
+            "pet_plastic__table_wood": {
+              "static": 0.32,
+              "static_band": [
+                0.2,
+                0.5
+              ],
+              "dynamic": 0.25,
+              "dynamic_band": [
+                0.15,
+                0.4
+              ]
+            },
+            "polyolefin_plastic__polyolefin_plastic": {
+              "static": 0.24,
+              "static_band": [
+                0.1,
+                0.71
+              ],
+              "dynamic": 0.2,
+              "dynamic_band": [
+                0.08,
+                0.6
+              ]
+            },
+            "polyolefin_plastic__steel": {
+              "static": 0.4,
+              "static_band": [
+                0.1,
+                0.5
+              ],
+              "dynamic": 0.33,
+              "dynamic_band": [
+                0.08,
+                0.45
+              ]
+            },
+            "polyolefin_plastic__table_wood": {
+              "static": 0.29,
+              "static_band": [
+                0.12,
+                0.4
+              ],
+              "dynamic": 0.23,
+              "dynamic_band": [
+                0.1,
+                0.35
+              ]
+            },
+            "steel__table_wood": {
+              "static": 0.45,
+              "static_band": [
+                0.2,
+                0.6
+              ],
+              "dynamic": 0.36,
+              "dynamic_band": [
+                0.2,
+                0.5
+              ]
+            },
+            "steel__steel (cross-task #73)": {
+              "static": 0.56,
+              "static_band": [
+                0.5,
+                0.8
+              ],
+              "dynamic": 0.46,
+              "dynamic_band": [
+                0.4,
+                0.6
+              ]
+            }
+          },
+          "realised_00022_override_pairs": {
+            "Rigid/bottle/00022__pet_plastic": {
+              "target_pair_band_key": "pet_plastic__steel",
+              "static": 0.32,
+              "static_band": [
+                0.15,
+                0.5
+              ],
+              "dynamic": 0.26,
+              "dynamic_band": [
+                0.12,
+                0.45
+              ],
+              "inside_band": true
+            },
+            "Rigid/bottle/00022__polyolefin_plastic": {
+              "target_pair_band_key": "polyolefin_plastic__steel",
+              "static": 0.29,
+              "static_band": [
+                0.1,
+                0.5
+              ],
+              "dynamic": 0.24,
+              "dynamic_band": [
+                0.08,
+                0.45
+              ],
+              "inside_band": true
+            },
+            "Rigid/bottle/00022__pad_elastomer": {
+              "target_pair_band_key": "pad_elastomer__steel",
+              "static": 0.82,
+              "static_band": [
+                0.6,
+                1.6
+              ],
+              "dynamic": 0.69,
+              "dynamic_band": [
+                0.5,
+                1.4
+              ],
+              "inside_band": true
+            },
+            "Rigid/bottle/00022__table_wood": {
+              "target_pair_band_key": "steel__table_wood",
+              "static": 0.34,
+              "static_band": [
+                0.2,
+                0.6
+              ],
+              "dynamic": 0.27,
+              "dynamic_band": [
+                0.2,
+                0.5
+              ],
+              "inside_band": true
+            },
+            "Rigid/bottle/00022__ground": {
+              "target_pair_band_key": "ground__steel",
+              "static": 0.32,
+              "static_band": [
+                0.2,
+                0.6
+              ],
+              "dynamic": 0.26,
+              "dynamic_band": [
+                0.15,
+                0.5
+              ],
+              "inside_band": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "params_diff": {
+    "description": "Task-specific layout declarations, slot/orientation census, layout-vs-metadata slips, shipped effective engine values, and #62 D2 dormant-value quarantine decisions across all 165 evaluation layouts (seeds 0, 1, 2 x 55 layouts = 150 scored + 15 spare; 660 bottle slots total) at HF revision 1127bda94f172d757386945af3eb3a6754d1a4e6.",
+    "layout_census": {
+      "layouts_total_3_seeds": 165,
+      "layouts_scored_3_seeds": 150,
+      "bottle_slots_total": 660,
+      "upright_slots": 355,
+      "lying_slots": 305,
+      "select_mode": "unique (4 distinct bottles per layout; 0 layouts hold two 00022 bottles)",
+      "bottle_00022_mass_22kg_layouts": {
+        "layouts_total": 74,
+        "layouts_scored": 65,
+        "fraction_of_layouts": 0.4485,
+        "declared_layout_mass_kg": 22.0,
+        "metadata_mass_kg": 0.22,
+        "ratio_layout_to_metadata": 100.0,
+        "collider_implied_density_kg_m3": 31485.7,
+        "bbox_implied_density_kg_m3": 18707.5,
+        "shipped_engine_mass_kg": 0.5,
+        "issue_refs": [
+          "#4",
+          "#5"
+        ],
+        "note": "x100 decimal slip in layouts (not metadata.json); masked on shipped path by rigid.py:65 min(m, 0.5)."
+      },
+      "other_layout_vs_metadata_mass_differences": [
+        {
+          "model": "Rigid/bottle/00000",
+          "metadata_kg": 0.19,
+          "layout_kg": 0.15,
+          "instances": 63
+        },
+        {
+          "model": "Rigid/bottle/00002",
+          "metadata_kg": 0.19,
+          "layout_kg": 0.2,
+          "instances": 74
+        },
+        {
+          "model": "Rigid/bottle/00005",
+          "metadata_kg": 0.12,
+          "layout_kg": 0.2,
+          "instances": 54
+        },
+        {
+          "model": "Rigid/bottle/00050",
+          "metadata_kg": null,
+          "layout_kg": 0.15,
+          "instances": 63
+        },
+        {
+          "model": "Rigid/bottle/00060",
+          "metadata_kg": null,
+          "layout_kg": 0.15,
+          "instances": 69
+        }
+      ],
+      "bottle_00025_orientation_anomaly": {
+        "lying_slots": 82,
+        "total_slots": 82,
+        "note": "metadata.json active.place.up.orientation is rotated 90 deg ([0.7071, 0.0001, 0.7071, 0.0001]), so 00025 spawns lying in 82/82 occurrences."
+      },
+      "layout_friction_10000_slots": {
+        "slots_with_static_and_dynamic_10000": 660,
+        "total_bottle_slots": 660,
+        "issue_refs": [
+          "#3",
+          "#58"
+        ]
+      },
+      "non_bottle_scene_instances": [
+        {
+          "id": "Geometry/dustbin/00000",
+          "layouts": 165,
+          "pos_m": [
+            -0.63,
+            -0.1,
+            0.4
+          ],
+          "declared_layout": {
+            "mass": 1.8,
+            "friction": 0.38
+          },
+          "shipped_effective": {
+            "static": true,
+            "friction": [
+              0.5,
+              0.5
+            ],
+            "restitution": 0.0
+          },
+          "decision": "override_with_polyolefin_plastic_static_spec",
+          "issue_refs": [
+            "#9",
+            "#23"
+          ]
+        },
+        {
+          "id": "Geometry/camera_stand/00000",
+          "layouts": 165,
+          "pos_m": [
+            0.0,
+            -0.47,
+            0.715
+          ],
+          "declared_layout": {
+            "collision_default": false
+          },
+          "shipped_effective": {
+            "static": true,
+            "outside_bottle_workspace": true
+          },
+          "decision": "keep_non_contact_fixture"
+        },
+        {
+          "id": "Scene/Table",
+          "layouts": 165,
+          "pos_m": [
+            0.09,
+            -0.05,
+            0.74
+          ],
+          "top_z_m": 0.765,
+          "declared_code": {
+            "static_friction": 0.8,
+            "dynamic_friction": 0.8,
+            "unbound_when_static": true
+          },
+          "shipped_effective": {
+            "static": true,
+            "friction": [
+              0.5,
+              0.5
+            ],
+            "restitution": 0.0
+          },
+          "decision": "override_with_scenario_table_class",
+          "issue_refs": [
+            "#14",
+            "#50"
+          ]
+        },
+        {
+          "id": "Scene/Ground",
+          "layouts": 165,
+          "pos_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "declared_config": {
+            "static_friction": 1.0,
+            "dynamic_friction": 1.0,
+            "restitution": 0.0,
+            "combine_modes": [
+              "multiply",
+              "multiply"
+            ]
+          },
+          "shipped_effective": {
+            "static": true,
+            "friction": [
+              1.0,
+              1.0
+            ],
+            "restitution": 0.0,
+            "combine_modes": [
+              "multiply",
+              "multiply"
+            ]
+          },
+          "decision": "override_combine_to_average_with_ground_unary",
+          "issue_refs": [
+            "#58"
+          ]
+        },
+        {
+          "id": "Robot/x5/finger_pad",
+          "robots_per_env": 2,
+          "fingers_per_robot": 2,
+          "declared_usd": null,
+          "shipped_effective": {
+            "friction": [
+              0.5,
+              0.5
+            ],
+            "restitution": 0.0,
+            "grip_force_clamped_N": 24.8
+          },
+          "decision": "bind_scenario_pad_class_on_deinstanced_link7_link8",
+          "issue_refs": [
+            "#12",
+            "#55"
+          ]
+        }
+      ]
+    },
+    "per_bottle_model_diff": [
+      {
+        "model": "Rigid/bottle/00000",
+        "class": "pet_plastic",
+        "layouts_and_slots_seeds_0_2": {
+          "total": 63,
+          "upright": 37,
+          "lying": 26
+        },
+        "declared_metadata_mass_kg": 0.19,
+        "declared_layout_mass_kg": 0.15,
+        "layout_vs_metadata_mass_ratio": 0.789,
+        "shipped_effective_mass_kg": 0.15,
+        "corrected_mass_kg_by_fill": {
+          "empty_default": 0.024,
+          "empty_range": [
+            0.011,
+            0.032
+          ],
+          "full_stress": 0.54,
+          "full_range": [
+            0.511,
+            0.555
+          ]
+        },
+        "declared_metadata_friction": 0.32,
+        "declared_layout_friction": {
+          "static_friction": 10000.0,
+          "dynamic_friction": 10000.0
+        },
+        "shipped_effective_friction_cpu": {
+          "static_friction": 0.5,
+          "dynamic_friction": 0.5,
+          "restitution": 0.0,
+          "combine": "average"
+        },
+        "layout_declaration_decision": "reject_layout_friction_10000_and_use_fill_band",
+        "mass_check_verdict": "hollow_needs_fill_dependent_band"
+      },
+      {
+        "model": "Rigid/bottle/00002",
+        "class": "pet_plastic",
+        "layouts_and_slots_seeds_0_2": {
+          "total": 74,
+          "upright": 47,
+          "lying": 27
+        },
+        "declared_metadata_mass_kg": 0.19,
+        "declared_layout_mass_kg": 0.2,
+        "layout_vs_metadata_mass_ratio": 1.053,
+        "shipped_effective_mass_kg": 0.2,
+        "corrected_mass_kg_by_fill": {
+          "empty_default": 0.024,
+          "empty_range": [
+            0.011,
+            0.032
+          ],
+          "full_stress": 0.54,
+          "full_range": [
+            0.511,
+            0.555
+          ]
+        },
+        "declared_metadata_friction": 0.38,
+        "declared_layout_friction": {
+          "static_friction": 10000.0,
+          "dynamic_friction": 10000.0
+        },
+        "shipped_effective_friction_cpu": {
+          "static_friction": 0.5,
+          "dynamic_friction": 0.5,
+          "restitution": 0.0,
+          "combine": "average"
+        },
+        "layout_declaration_decision": "reject_layout_friction_10000_and_use_fill_band",
+        "mass_check_verdict": "hollow_needs_fill_dependent_band"
+      },
+      {
+        "model": "Rigid/bottle/00005",
+        "class": "pet_plastic",
+        "layouts_and_slots_seeds_0_2": {
+          "total": 54,
+          "upright": 31,
+          "lying": 23
+        },
+        "declared_metadata_mass_kg": 0.12,
+        "declared_layout_mass_kg": 0.2,
+        "layout_vs_metadata_mass_ratio": 1.667,
+        "shipped_effective_mass_kg": 0.2,
+        "corrected_mass_kg_by_fill": {
+          "empty_default": 0.075,
+          "empty_range": [
+            0.035,
+            0.13
+          ],
+          "full_stress": 0.36,
+          "full_range": [
+            0.3,
+            0.45
+          ]
+        },
+        "declared_metadata_friction": 0.45,
+        "declared_layout_friction": {
+          "static_friction": 10000.0,
+          "dynamic_friction": 10000.0
+        },
+        "shipped_effective_friction_cpu": {
+          "static_friction": 0.5,
+          "dynamic_friction": 0.5,
+          "restitution": 0.0,
+          "combine": "average"
+        },
+        "layout_declaration_decision": "reject_layout_friction_10000_and_use_fill_band",
+        "mass_check_verdict": "hollow_needs_fill_dependent_band"
+      },
+      {
+        "model": "Rigid/bottle/00022",
+        "class": "steel",
+        "layouts_and_slots_seeds_0_2": {
+          "total": 74,
+          "upright": 45,
+          "lying": 29
+        },
+        "declared_metadata_mass_kg": 0.22,
+        "declared_layout_mass_kg": 22.0,
+        "layout_vs_metadata_mass_ratio": 100.0,
+        "shipped_effective_mass_kg": 0.5,
+        "corrected_mass_kg_by_fill": {
+          "empty_default": 0.22,
+          "empty_range": [
+            0.14,
+            0.34
+          ],
+          "full_stress": 0.82,
+          "full_range": [
+            0.75,
+            0.95
+          ]
+        },
+        "declared_metadata_friction": 0.25,
+        "declared_layout_friction": {
+          "static_friction": 10000.0,
+          "dynamic_friction": 10000.0
+        },
+        "shipped_effective_friction_cpu": {
+          "static_friction": 0.5,
+          "dynamic_friction": 0.5,
+          "restitution": 0.0,
+          "combine": "average"
+        },
+        "layout_declaration_decision": "reject_layout_mass_22_and_friction_10000_use_fill_band_and_asset_override",
+        "mass_check_verdict": "too_heavy_for_class_100x_slip"
+      },
+      {
+        "model": "Rigid/bottle/00025",
+        "class": "pet_plastic",
+        "layouts_and_slots_seeds_0_2": {
+          "total": 82,
+          "upright": 0,
+          "lying": 82
+        },
+        "declared_metadata_mass_kg": 0.15,
+        "declared_layout_mass_kg": 0.15,
+        "layout_vs_metadata_mass_ratio": 1.0,
+        "shipped_effective_mass_kg": 0.15,
+        "corrected_mass_kg_by_fill": {
+          "empty_default": 0.024,
+          "empty_range": [
+            0.011,
+            0.032
+          ],
+          "full_stress": 0.524,
+          "full_range": [
+            0.511,
+            0.535
+          ]
+        },
+        "declared_metadata_friction": 0.3,
+        "declared_layout_friction": {
+          "static_friction": 10000.0,
+          "dynamic_friction": 10000.0
+        },
+        "shipped_effective_friction_cpu": {
+          "static_friction": 0.5,
+          "dynamic_friction": 0.5,
+          "restitution": 0.0,
+          "combine": "average"
+        },
+        "layout_declaration_decision": "reject_layout_friction_10000_and_use_fill_band",
+        "mass_check_verdict": "hollow_needs_fill_dependent_band"
+      },
+      {
+        "model": "Rigid/bottle/00041",
+        "class": "pet_plastic",
+        "layouts_and_slots_seeds_0_2": {
+          "total": 54,
+          "upright": 35,
+          "lying": 19
+        },
+        "declared_metadata_mass_kg": 0.15,
+        "declared_layout_mass_kg": 0.15,
+        "layout_vs_metadata_mass_ratio": 1.0,
+        "shipped_effective_mass_kg": 0.15,
+        "corrected_mass_kg_by_fill": {
+          "empty_default": 0.02,
+          "empty_range": [
+            0.014,
+            0.028
+          ],
+          "full_stress": 0.3,
+          "full_range": [
+            0.26,
+            0.335
+          ]
+        },
+        "declared_metadata_friction": 0.3,
+        "declared_layout_friction": {
+          "static_friction": 10000.0,
+          "dynamic_friction": 10000.0
+        },
+        "shipped_effective_friction_cpu": {
+          "static_friction": 0.5,
+          "dynamic_friction": 0.5,
+          "restitution": 0.0,
+          "combine": "average"
+        },
+        "layout_declaration_decision": "reject_layout_friction_10000_and_use_fill_band",
+        "mass_check_verdict": "hollow_needs_fill_dependent_band"
+      },
+      {
+        "model": "Rigid/bottle/00050",
+        "class": "pet_plastic",
+        "layouts_and_slots_seeds_0_2": {
+          "total": 63,
+          "upright": 38,
+          "lying": 25
+        },
+        "declared_metadata_mass_kg": null,
+        "declared_layout_mass_kg": 0.15,
+        "layout_vs_metadata_mass_ratio": null,
+        "shipped_effective_mass_kg": 0.15,
+        "corrected_mass_kg_by_fill": {
+          "empty_default": 0.07,
+          "empty_range": [
+            0.035,
+            0.11
+          ],
+          "full_stress": 0.38,
+          "full_range": [
+            0.33,
+            0.43
+          ]
+        },
+        "declared_metadata_friction": null,
+        "declared_layout_friction": {
+          "static_friction": 10000.0,
+          "dynamic_friction": 10000.0
+        },
+        "shipped_effective_friction_cpu": {
+          "static_friction": 0.5,
+          "dynamic_friction": 0.5,
+          "restitution": 0.0,
+          "combine": "average"
+        },
+        "layout_declaration_decision": "reject_layout_friction_10000_and_use_fill_band",
+        "mass_check_verdict": "hollow_needs_fill_dependent_band"
+      },
+      {
+        "model": "Rigid/bottle/00055",
+        "class": "pet_plastic",
+        "layouts_and_slots_seeds_0_2": {
+          "total": 60,
+          "upright": 44,
+          "lying": 16
+        },
+        "declared_metadata_mass_kg": 0.15,
+        "declared_layout_mass_kg": 0.15,
+        "layout_vs_metadata_mass_ratio": 1.0,
+        "shipped_effective_mass_kg": 0.15,
+        "corrected_mass_kg_by_fill": {
+          "empty_default": 0.095,
+          "empty_range": [
+            0.065,
+            0.14
+          ],
+          "full_stress": 0.685,
+          "full_range": [
+            0.65,
+            0.74
+          ]
+        },
+        "declared_metadata_friction": null,
+        "declared_layout_friction": {
+          "static_friction": 10000.0,
+          "dynamic_friction": 10000.0
+        },
+        "shipped_effective_friction_cpu": {
+          "static_friction": 0.5,
+          "dynamic_friction": 0.5,
+          "restitution": 0.0,
+          "combine": "average"
+        },
+        "layout_declaration_decision": "reject_layout_friction_10000_and_use_fill_band",
+        "mass_check_verdict": "hollow_needs_fill_dependent_band"
+      },
+      {
+        "model": "Rigid/bottle/00059",
+        "class": "pet_plastic",
+        "layouts_and_slots_seeds_0_2": {
+          "total": 67,
+          "upright": 35,
+          "lying": 32
+        },
+        "declared_metadata_mass_kg": 0.15,
+        "declared_layout_mass_kg": 0.15,
+        "layout_vs_metadata_mass_ratio": 1.0,
+        "shipped_effective_mass_kg": 0.15,
+        "corrected_mass_kg_by_fill": {
+          "empty_default": 0.075,
+          "empty_range": [
+            0.045,
+            0.105
+          ],
+          "full_stress": 0.36,
+          "full_range": [
+            0.32,
+            0.41
+          ]
+        },
+        "declared_metadata_friction": null,
+        "declared_layout_friction": {
+          "static_friction": 10000.0,
+          "dynamic_friction": 10000.0
+        },
+        "shipped_effective_friction_cpu": {
+          "static_friction": 0.5,
+          "dynamic_friction": 0.5,
+          "restitution": 0.0,
+          "combine": "average"
+        },
+        "layout_declaration_decision": "reject_layout_friction_10000_and_use_fill_band",
+        "mass_check_verdict": "hollow_needs_fill_dependent_band"
+      },
+      {
+        "model": "Rigid/bottle/00060",
+        "class": "pet_plastic",
+        "layouts_and_slots_seeds_0_2": {
+          "total": 69,
+          "upright": 43,
+          "lying": 26
+        },
+        "declared_metadata_mass_kg": null,
+        "declared_layout_mass_kg": 0.15,
+        "layout_vs_metadata_mass_ratio": null,
+        "shipped_effective_mass_kg": 0.15,
+        "corrected_mass_kg_by_fill": {
+          "empty_default": 0.07,
+          "empty_range": [
+            0.035,
+            0.11
+          ],
+          "full_stress": 0.38,
+          "full_range": [
+            0.33,
+            0.43
+          ]
+        },
+        "declared_metadata_friction": null,
+        "declared_layout_friction": {
+          "static_friction": 10000.0,
+          "dynamic_friction": 10000.0
+        },
+        "shipped_effective_friction_cpu": {
+          "static_friction": 0.5,
+          "dynamic_friction": 0.5,
+          "restitution": 0.0,
+          "combine": "average"
+        },
+        "layout_declaration_decision": "reject_layout_friction_10000_and_use_fill_band",
+        "mass_check_verdict": "hollow_needs_fill_dependent_band"
+      }
+    ],
+    "dormant_values_quarantined": [
+      {
+        "target": "all 10 bottle models in put_bottles_into_dustbin layouts (660/660 instances)",
+        "issue_refs": [
+          "#3",
+          "#58"
+        ],
+        "where_authored": "Assets/Eval_Layout/RoboDojo/arx_x5/{0,1,2}/put_bottles_into_dustbin_*.json -> physics.{static_friction, dynamic_friction} = 10000.0; read at env/scene_manager/objects/rigid.py:74-75",
+        "dormant_value": {
+          "static_friction": 10000.0,
+          "dynamic_friction": 10000.0
+        },
+        "trigger": "Fixing #58 alone (binding RigidObject.physics_material before SingleRigidPrim.__init__ flushes to PhysX).",
+        "effect_if_activated": "Bottle material jumps from 0.5/0.5 to 10,000/10,000. Against unbound Table (0.5), Dustbin (0.5), and X5 Fingers (0.5) under average combine, pair friction jumps from 0.50 to 5,000.25 (and bottle-bottle to 10,000). Table slide drops from 24.55 mm to 0.0 mm (#57/#58): pushed standing bottles topple instead of sliding, off-centre grasps never slip or pivot even at 4 kg (#26), and bottles can hang up on dustbin inner walls."
+      },
+      {
+        "target": "same bottle models in other tasks without layout static_friction/dynamic_friction (e.g. bottle/00000 in stack_blocks_random)",
+        "issue_refs": [
+          "#1",
+          "#2",
+          "#58"
+        ],
+        "where_authored": "env/scene_manager/objects/rigid.py:74-75 defaults static_friction=0.6, dynamic_friction=1.5",
+        "dormant_value": {
+          "static_friction_authored": 0.6,
+          "dynamic_friction_authored": 1.5,
+          "static_friction_physx_effective": 1.5
+        },
+        "trigger": "Fixing #58 alone without changing RigidObject defaults.",
+        "effect_if_activated": "PhysX 5.6.1 clamps static friction up to dynamic = 1.5 (PxMaterial.h:148 at tag 107.3-physx-5.6.1, #2). Bottles grip table and fingers at pair friction (1.5 + 0.5)/2 = 1.0 and each other at 1.5 (rubber-like)."
+      },
+      {
+        "target": "metadata.json dead 'friction' key on bottles 00000 (0.32), 00002 (0.38), 00005 (0.45), 00022 (0.25), 00025 (0.30), 00041 (0.30) and missing key on 00050, 00055, 00059, 00060 (null)",
+        "issue_refs": [
+          "#1",
+          "#6",
+          "#8"
+        ],
+        "where_authored": "Assets/Object/RoboDojo/Rigid/bottle/*/metadata.json -> physics.friction",
+        "dormant_value": {
+          "00000": 0.32,
+          "00002": 0.38,
+          "00005": 0.45,
+          "00022": 0.25,
+          "00025": 0.3,
+          "00041": 0.3,
+          "00050": null,
+          "00055": null,
+          "00059": null,
+          "00060": null
+        },
+        "trigger": "Fixing #58 plus naively mapping dead key 'friction' (#1).",
+        "effect_if_activated": "In put_bottles_into_dustbin layouts, explicit static_friction=10000 still overrides unless stripped; if stripped and fallback is 0.0, bottles 00050/00055/00059/00060 become frictionless (like the 1,530 friction: 0.0 instances across RoboDojo in #8). If 'friction' maps only to static_friction while dynamic_friction keeps its 1.5 default (#6), PhysX still raises effective static friction to 1.5 (#2)."
+      },
+      {
+        "target": "dustbin/00000 unbound GeometryObject material and dead layout physics keys",
+        "issue_refs": [
+          "#9",
+          "#23",
+          "N6"
+        ],
+        "where_authored": "env/scene_manager/objects/geometry.py:85-90 creates unbound PhysicsMaterial(static_friction=0.0, dynamic_friction=0.0, restitution=0.5) at <prim>/physcis_material; layout/metadata declare mass=1.8, friction=0.38",
+        "dormant_value": {
+          "unbound_material": {
+            "static_friction": 0.0,
+            "dynamic_friction": 0.0,
+            "restitution": 0.5
+          },
+          "dead_layout_keys": {
+            "mass": 1.8,
+            "friction": 0.38
+          }
+        },
+        "trigger": "Binding GeometryObject.physics_material without fixing its 0.0/0.0/0.5 defaults.",
+        "effect_if_activated": "Dustbin becomes frictionless (0.0/0.0, halving pair friction with bottles) and bouncy (restitution 0.5 -> pair 0.25 with bottles, increasing bounce inside bin)."
+      },
+      {
+        "target": "Table unbound PhysicsMaterial and undefined self.mass",
+        "issue_refs": [
+          "#14",
+          "N11"
+        ],
+        "where_authored": "env/scene_manager/objects/table.py:101-106 creates PhysicsMaterial(0.8, 0.8, restitution=0); table.py:198-211 binds it only if not self.is_static and accesses undefined self.mass",
+        "dormant_value": {
+          "static_friction": 0.8,
+          "dynamic_friction": 0.8,
+          "restitution": 0.0
+        },
+        "trigger": "Binding Table.physics_material on static tables (#14) or setting Table static=False (N11).",
+        "effect_if_activated": "Binding 0.8/0.8 raises wood tabletop friction well above sourced wood-polymer range (pair becomes 0.55 against 0.30 PET or 1.15 against 1.5 code default); setting static=False raises AttributeError on self.mass."
+      },
+      {
+        "target": "bottle/00022 layout mass=22 and missing metadata.physics on bottles 00050 and 00060",
+        "issue_refs": [
+          "#4",
+          "#5",
+          "#42",
+          "#43",
+          "N2"
+        ],
+        "where_authored": "put_bottles_into_dustbin_*.json sets bottle/00022 mass=22 (metadata=0.22), bottle/00000 mass=0.15 (metadata=0.19), bottle/00002 mass=0.20 (metadata=0.19), bottle/00005 mass=0.20 (metadata=0.12); env/scene_manager/objects/rigid.py:65 caps at 0.5 kg",
+        "dormant_value": {
+          "bottle_00022_layout_mass_kg": 22.0,
+          "bottle_00050_00060_default_if_missing_kg": 0.5
+        },
+        "trigger": "Removing the 0.5 kg mass cap in rigid.py:65 (#5) without fixing layout mass typos (#4).",
+        "effect_if_activated": "bottle/00022 becomes a 22 kg cylinder (31,486 kg/m^3 mesh density) exceeding both the 25 N clamped grip and the 100 N-m arm joint effort limit, making every layout containing bottle/00022 (74 of 660 bottle slots; ~45% of episodes) unsolvable."
+      }
+    ]
+  }
+}

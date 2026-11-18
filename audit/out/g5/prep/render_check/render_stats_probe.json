@@ -1,0 +1,753 @@
+{
+ "meta": {
+  "demos": [
+   {
+    "file": "episode_0000000.hdf5",
+    "frames": 362,
+    "indices": [
+     0,
+     90,
+     180
+    ]
+   },
+   {
+    "file": "episode_0000001.hdf5",
+    "frames": 422,
+    "indices": [
+     0,
+     105,
+     210
+    ]
+   },
+   {
+    "file": "episode_0000002.hdf5",
+    "frames": 433,
+    "indices": [
+     0,
+     108,
+     216
+    ]
+   },
+   {
+    "file": "episode_0000003.hdf5",
+    "frames": 437,
+    "indices": [
+     0,
+     109,
+     218
+    ]
+   },
+   {
+    "file": "episode_0000004.hdf5",
+    "frames": 458,
+    "indices": [
+     0,
+     114,
+     228
+    ]
+   }
+  ],
+  "runs": {
+   "6.2_no_ngx": {
+    "dir": "/scratch/<user>/isaac/work/g5/runs/t3_shipped_v1_r3/frames",
+    "glob": "E*",
+    "frames": 9
+   },
+   "6.2_ngx_probe": {
+    "dir": "/scratch/<user>/isaac/work/g5/runs/probe_ngx_p1/frames",
+    "glob": "E0",
+    "frames": 3
+   }
+  },
+  "jpeg": {
+   "quality_estimate": 95,
+   "table_abs_error": 0,
+   "legacy_bgr": false,
+   "subsampling": 2,
+   "size": [
+    480,
+    640,
+    3
+   ]
+  }
+ },
+ "summary": {
+  "demo_5.1": {
+   "cam_head": {
+    "mean": {
+     "median": 79.73,
+     "min": 77.65,
+     "max": 83.39
+    },
+    "std": {
+     "median": 54.94,
+     "min": 51.61,
+     "max": 58.32
+    },
+    "grain": {
+     "median": 1.51,
+     "min": 1.38,
+     "max": 1.61
+    },
+    "grain_jpeg": {
+     "median": 1.51,
+     "min": 1.38,
+     "max": 1.61
+    },
+    "channel_means_median": [
+     96.7,
+     75.3,
+     67.4
+    ],
+    "n": 15
+   },
+   "cam_left_wrist": {
+    "mean": {
+     "median": 78.57,
+     "min": 60.74,
+     "max": 128.1
+    },
+    "std": {
+     "median": 56.06,
+     "min": 44.28,
+     "max": 81.99
+    },
+    "grain": {
+     "median": 0.91,
+     "min": 0.26,
+     "max": 1.74
+    },
+    "grain_jpeg": {
+     "median": 0.91,
+     "min": 0.26,
+     "max": 1.74
+    },
+    "channel_means_median": [
+     96.0,
+     75.9,
+     69.4
+    ],
+    "n": 15
+   },
+   "cam_right_wrist": {
+    "mean": {
+     "median": 89.33,
+     "min": 46.01,
+     "max": 179.85
+    },
+    "std": {
+     "median": 52.26,
+     "min": 44.63,
+     "max": 80.65
+    },
+    "grain": {
+     "median": 1.63,
+     "min": 0.32,
+     "max": 1.93
+    },
+    "grain_jpeg": {
+     "median": 1.63,
+     "min": 0.32,
+     "max": 1.93
+    },
+    "channel_means_median": [
+     109.1,
+     84.4,
+     72.3
+    ],
+    "n": 15
+   }
+  },
+  "6.2_no_ngx": {
+   "cam_head": {
+    "mean": {
+     "median": 79.52,
+     "min": 79.45,
+     "max": 80.52
+    },
+    "std": {
+     "median": 69.23,
+     "min": 69.23,
+     "max": 70.07
+    },
+    "grain": {
+     "median": 23.9,
+     "min": 23.71,
+     "max": 23.95
+    },
+    "grain_jpeg": {
+     "median": 23.59,
+     "min": 23.43,
+     "max": 23.63
+    },
+    "channel_means_median": [
+     98.8,
+     75.6,
+     64.7
+    ],
+    "n": 3
+   },
+   "cam_left_wrist": {
+    "mean": {
+     "median": 77.25,
+     "min": 75.26,
+     "max": 92.06
+    },
+    "std": {
+     "median": 67.96,
+     "min": 66.76,
+     "max": 79.52
+    },
+    "grain": {
+     "median": 24.92,
+     "min": 24.3,
+     "max": 26.07
+    },
+    "grain_jpeg": {
+     "median": 24.47,
+     "min": 23.36,
+     "max": 25.83
+    },
+    "channel_means_median": [
+     102.5,
+     72.7,
+     65.4
+    ],
+    "n": 3
+   },
+   "cam_right_wrist": {
+    "mean": {
+     "median": 96.32,
+     "min": 88.24,
+     "max": 115.7
+    },
+    "std": {
+     "median": 75.63,
+     "min": 63.65,
+     "max": 82.48
+    },
+    "grain": {
+     "median": 27.17,
+     "min": 26.99,
+     "max": 27.56
+    },
+    "grain_jpeg": {
+     "median": 26.67,
+     "min": 26.55,
+     "max": 27.04
+    },
+    "channel_means_median": [
+     116.2,
+     94.4,
+     78.3
+    ],
+    "n": 3
+   }
+  },
+  "6.2_ngx_probe": {
+   "cam_head": {
+    "mean": {
+     "median": 90.61,
+     "min": 90.61,
+     "max": 90.61
+    },
+    "std": {
+     "median": 63.07,
+     "min": 63.07,
+     "max": 63.07
+    },
+    "grain": {
+     "median": 1.71,
+     "min": 1.71,
+     "max": 1.71
+    },
+    "grain_jpeg": {
+     "median": 1.91,
+     "min": 1.91,
+     "max": 1.91
+    },
+    "channel_means_median": [
+     110.4,
+     85.1,
+     76.3
+    ],
+    "n": 1
+   },
+   "cam_left_wrist": {
+    "mean": {
+     "median": 84.15,
+     "min": 84.15,
+     "max": 84.15
+    },
+    "std": {
+     "median": 59.14,
+     "min": 59.14,
+     "max": 59.14
+    },
+    "grain": {
+     "median": 1.28,
+     "min": 1.28,
+     "max": 1.28
+    },
+    "grain_jpeg": {
+     "median": 1.41,
+     "min": 1.41,
+     "max": 1.41
+    },
+    "channel_means_median": [
+     112.6,
+     68.3,
+     71.6
+    ],
+    "n": 1
+   },
+   "cam_right_wrist": {
+    "mean": {
+     "median": 126.61,
+     "min": 126.61,
+     "max": 126.61
+    },
+    "std": {
+     "median": 71.43,
+     "min": 71.43,
+     "max": 71.43
+    },
+    "grain": {
+     "median": 1.39,
+     "min": 1.39,
+     "max": 1.39
+    },
+    "grain_jpeg": {
+     "median": 1.53,
+     "min": 1.53,
+     "max": 1.53
+    },
+    "channel_means_median": [
+     143.8,
+     124.7,
+     111.3
+    ],
+    "n": 1
+   }
+  }
+ },
+ "frames": {
+  "demo_5.1|cam_head": [
+   {
+    "mean": 77.65,
+    "std": 53.59,
+    "grain": 1.42,
+    "grain_jpeg": 1.42,
+    "frame": "episode_0000000.hdf5#0"
+   },
+   {
+    "mean": 80.11,
+    "std": 52.5,
+    "grain": 1.5,
+    "grain_jpeg": 1.5,
+    "frame": "episode_0000000.hdf5#90"
+   },
+   {
+    "mean": 80.23,
+    "std": 52.75,
+    "grain": 1.55,
+    "grain_jpeg": 1.55,
+    "frame": "episode_0000000.hdf5#180"
+   },
+   {
+    "mean": 78.66,
+    "std": 54.03,
+    "grain": 1.51,
+    "grain_jpeg": 1.51,
+    "frame": "episode_0000001.hdf5#0"
+   },
+   {
+    "mean": 81.33,
+    "std": 51.61,
+    "grain": 1.61,
+    "grain_jpeg": 1.61,
+    "frame": "episode_0000001.hdf5#105"
+   },
+   {
+    "mean": 79.08,
+    "std": 56.55,
+    "grain": 1.51,
+    "grain_jpeg": 1.51,
+    "frame": "episode_0000001.hdf5#210"
+   },
+   {
+    "mean": 80.45,
+    "std": 56.24,
+    "grain": 1.51,
+    "grain_jpeg": 1.51,
+    "frame": "episode_0000002.hdf5#0"
+   },
+   {
+    "mean": 79.73,
+    "std": 56.56,
+    "grain": 1.5,
+    "grain_jpeg": 1.5,
+    "frame": "episode_0000002.hdf5#108"
+   },
+   {
+    "mean": 80.85,
+    "std": 57.43,
+    "grain": 1.47,
+    "grain_jpeg": 1.47,
+    "frame": "episode_0000002.hdf5#216"
+   },
+   {
+    "mean": 79.49,
+    "std": 54.94,
+    "grain": 1.55,
+    "grain_jpeg": 1.55,
+    "frame": "episode_0000003.hdf5#0"
+   },
+   {
+    "mean": 78.87,
+    "std": 54.65,
+    "grain": 1.56,
+    "grain_jpeg": 1.56,
+    "frame": "episode_0000003.hdf5#109"
+   },
+   {
+    "mean": 78.19,
+    "std": 58.32,
+    "grain": 1.47,
+    "grain_jpeg": 1.47,
+    "frame": "episode_0000003.hdf5#218"
+   },
+   {
+    "mean": 81.24,
+    "std": 55.87,
+    "grain": 1.5,
+    "grain_jpeg": 1.5,
+    "frame": "episode_0000004.hdf5#0"
+   },
+   {
+    "mean": 83.39,
+    "std": 54.42,
+    "grain": 1.57,
+    "grain_jpeg": 1.57,
+    "frame": "episode_0000004.hdf5#114"
+   },
+   {
+    "mean": 79.64,
+    "std": 58.15,
+    "grain": 1.38,
+    "grain_jpeg": 1.38,
+    "frame": "episode_0000004.hdf5#228"
+   }
+  ],
+  "demo_5.1|cam_left_wrist": [
+   {
+    "mean": 67.75,
+    "std": 51.92,
+    "grain": 1.39,
+    "grain_jpeg": 1.39,
+    "frame": "episode_0000000.hdf5#0"
+   },
+   {
+    "mean": 128.1,
+    "std": 68.34,
+    "grain": 0.26,
+    "grain_jpeg": 0.26,
+    "frame": "episode_0000000.hdf5#90"
+   },
+   {
+    "mean": 83.67,
+    "std": 68.27,
+    "grain": 0.98,
+    "grain_jpeg": 0.98,
+    "frame": "episode_0000000.hdf5#180"
+   },
+   {
+    "mean": 78.57,
+    "std": 50.62,
+    "grain": 1.67,
+    "grain_jpeg": 1.67,
+    "frame": "episode_0000001.hdf5#0"
+   },
+   {
+    "mean": 108.94,
+    "std": 59.48,
+    "grain": 0.46,
+    "grain_jpeg": 0.46,
+    "frame": "episode_0000001.hdf5#105"
+   },
+   {
+    "mean": 75.35,
+    "std": 66.14,
+    "grain": 0.75,
+    "grain_jpeg": 0.75,
+    "frame": "episode_0000001.hdf5#210"
+   },
+   {
+    "mean": 85.57,
+    "std": 56.31,
+    "grain": 1.74,
+    "grain_jpeg": 1.74,
+    "frame": "episode_0000002.hdf5#0"
+   },
+   {
+    "mean": 60.74,
+    "std": 52.13,
+    "grain": 0.63,
+    "grain_jpeg": 0.63,
+    "frame": "episode_0000002.hdf5#108"
+   },
+   {
+    "mean": 120.82,
+    "std": 56.06,
+    "grain": 0.55,
+    "grain_jpeg": 0.55,
+    "frame": "episode_0000002.hdf5#216"
+   },
+   {
+    "mean": 75.78,
+    "std": 44.28,
+    "grain": 1.68,
+    "grain_jpeg": 1.68,
+    "frame": "episode_0000003.hdf5#0"
+   },
+   {
+    "mean": 72.13,
+    "std": 53.25,
+    "grain": 0.91,
+    "grain_jpeg": 0.91,
+    "frame": "episode_0000003.hdf5#109"
+   },
+   {
+    "mean": 89.23,
+    "std": 71.49,
+    "grain": 1.25,
+    "grain_jpeg": 1.25,
+    "frame": "episode_0000003.hdf5#218"
+   },
+   {
+    "mean": 74.77,
+    "std": 44.61,
+    "grain": 1.67,
+    "grain_jpeg": 1.67,
+    "frame": "episode_0000004.hdf5#0"
+   },
+   {
+    "mean": 126.51,
+    "std": 81.99,
+    "grain": 0.46,
+    "grain_jpeg": 0.46,
+    "frame": "episode_0000004.hdf5#114"
+   },
+   {
+    "mean": 65.24,
+    "std": 55.98,
+    "grain": 0.79,
+    "grain_jpeg": 0.79,
+    "frame": "episode_0000004.hdf5#228"
+   }
+  ],
+  "demo_5.1|cam_right_wrist": [
+   {
+    "mean": 87.64,
+    "std": 44.63,
+    "grain": 1.63,
+    "grain_jpeg": 1.63,
+    "frame": "episode_0000000.hdf5#0"
+   },
+   {
+    "mean": 88.76,
+    "std": 45.05,
+    "grain": 1.8,
+    "grain_jpeg": 1.8,
+    "frame": "episode_0000000.hdf5#90"
+   },
+   {
+    "mean": 89.33,
+    "std": 45.24,
+    "grain": 1.93,
+    "grain_jpeg": 1.93,
+    "frame": "episode_0000000.hdf5#180"
+   },
+   {
+    "mean": 82.21,
+    "std": 51.91,
+    "grain": 1.63,
+    "grain_jpeg": 1.63,
+    "frame": "episode_0000001.hdf5#0"
+   },
+   {
+    "mean": 83.2,
+    "std": 52.26,
+    "grain": 1.76,
+    "grain_jpeg": 1.76,
+    "frame": "episode_0000001.hdf5#105"
+   },
+   {
+    "mean": 172.11,
+    "std": 80.65,
+    "grain": 0.58,
+    "grain_jpeg": 0.58,
+    "frame": "episode_0000001.hdf5#210"
+   },
+   {
+    "mean": 77.03,
+    "std": 50.42,
+    "grain": 1.71,
+    "grain_jpeg": 1.71,
+    "frame": "episode_0000002.hdf5#0"
+   },
+   {
+    "mean": 77.84,
+    "std": 50.78,
+    "grain": 1.81,
+    "grain_jpeg": 1.81,
+    "frame": "episode_0000002.hdf5#108"
+   },
+   {
+    "mean": 179.85,
+    "std": 58.25,
+    "grain": 0.32,
+    "grain_jpeg": 0.32,
+    "frame": "episode_0000002.hdf5#216"
+   },
+   {
+    "mean": 93.73,
+    "std": 67.43,
+    "grain": 1.58,
+    "grain_jpeg": 1.58,
+    "frame": "episode_0000003.hdf5#0"
+   },
+   {
+    "mean": 94.51,
+    "std": 67.51,
+    "grain": 1.69,
+    "grain_jpeg": 1.69,
+    "frame": "episode_0000003.hdf5#109"
+   },
+   {
+    "mean": 115.79,
+    "std": 58.01,
+    "grain": 0.73,
+    "grain_jpeg": 0.73,
+    "frame": "episode_0000003.hdf5#218"
+   },
+   {
+    "mean": 96.66,
+    "std": 63.7,
+    "grain": 1.61,
+    "grain_jpeg": 1.61,
+    "frame": "episode_0000004.hdf5#0"
+   },
+   {
+    "mean": 97.88,
+    "std": 63.71,
+    "grain": 1.77,
+    "grain_jpeg": 1.77,
+    "frame": "episode_0000004.hdf5#114"
+   },
+   {
+    "mean": 46.01,
+    "std": 50.79,
+    "grain": 1.37,
+    "grain_jpeg": 1.37,
+    "frame": "episode_0000004.hdf5#228"
+   }
+  ],
+  "6.2_no_ngx|cam_head": [
+   {
+    "mean": 80.52,
+    "std": 70.07,
+    "grain": 23.95,
+    "grain_jpeg": 23.59,
+    "frame": "E0_cam_head.png"
+   },
+   {
+    "mean": 79.45,
+    "std": 69.23,
+    "grain": 23.9,
+    "grain_jpeg": 23.63,
+    "frame": "E1_cam_head.png"
+   },
+   {
+    "mean": 79.52,
+    "std": 69.23,
+    "grain": 23.71,
+    "grain_jpeg": 23.43,
+    "frame": "E2_cam_head.png"
+   }
+  ],
+  "6.2_no_ngx|cam_left_wrist": [
+   {
+    "mean": 75.26,
+    "std": 67.96,
+    "grain": 24.3,
+    "grain_jpeg": 23.36,
+    "frame": "E0_cam_left_wrist.png"
+   },
+   {
+    "mean": 92.06,
+    "std": 79.52,
+    "grain": 26.07,
+    "grain_jpeg": 25.83,
+    "frame": "E1_cam_left_wrist.png"
+   },
+   {
+    "mean": 77.25,
+    "std": 66.76,
+    "grain": 24.92,
+    "grain_jpeg": 24.47,
+    "frame": "E2_cam_left_wrist.png"
+   }
+  ],
+  "6.2_no_ngx|cam_right_wrist": [
+   {
+    "mean": 115.7,
+    "std": 82.48,
+    "grain": 27.56,
+    "grain_jpeg": 27.04,
+    "frame": "E0_cam_right_wrist.png"
+   },
+   {
+    "mean": 88.24,
+    "std": 63.65,
+    "grain": 27.17,
+    "grain_jpeg": 26.67,
+    "frame": "E1_cam_right_wrist.png"
+   },
+   {
+    "mean": 96.32,
+    "std": 75.63,
+    "grain": 26.99,
+    "grain_jpeg": 26.55,
+    "frame": "E2_cam_right_wrist.png"
+   }
+  ],
+  "6.2_ngx_probe|cam_head": [
+   {
+    "mean": 90.61,
+    "std": 63.07,
+    "grain": 1.71,
+    "grain_jpeg": 1.91,
+    "frame": "E0_cam_head.png"
+   }
+  ],
+  "6.2_ngx_probe|cam_left_wrist": [
+   {
+    "mean": 84.15,
+    "std": 59.14,
+    "grain": 1.28,
+    "grain_jpeg": 1.41,
+    "frame": "E0_cam_left_wrist.png"
+   }
+  ],
+  "6.2_ngx_probe|cam_right_wrist": [
+   {
+    "mean": 126.61,
+    "std": 71.43,
+    "grain": 1.39,
+    "grain_jpeg": 1.53,
+    "frame": "E0_cam_right_wrist.png"
+   }
+  ]
+ }
+}

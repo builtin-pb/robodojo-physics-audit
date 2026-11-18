@@ -1,0 +1,62 @@
+[SERVER] policy=InternW0_delta task=put_bottles_into_dustbin replan=10
+[SERVER] checkpoint=/scratch/<user>/isaac/work/g5/dl/ckpt/robodojo.pt
+Traceback (most recent call last):
+  File "/scratch/<user>/isaac/work/g5/conda/internw0/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 92, in _call_target
+    return _target_(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/<user>/isaac/work/g5/robodojo-physics/XPolicyLab/policy/InternW0_delta/wam_runtime/src/wam/model/factory.py", line 225, in create_wam
+    return build_wam_from_wan22(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/<user>/isaac/work/g5/robodojo-physics/XPolicyLab/policy/InternW0_delta/wam_runtime/src/wam/model/factory.py", line 79, in build_wam_from_wan22
+    components = load_wan22_ti2v_5b_components(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/<user>/isaac/work/g5/robodojo-physics/XPolicyLab/policy/InternW0_delta/wam_runtime/src/wam/model/backbones/wan22/helpers/loader.py", line 289, in load_wan22_ti2v_5b_components
+    text_encoder = _load_registered_model(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/<user>/isaac/work/g5/robodojo-physics/XPolicyLab/policy/InternW0_delta/wam_runtime/src/wam/model/backbones/wan22/helpers/loader.py", line 131, in _load_registered_model
+    model = model.to(device=device, dtype=torch_dtype)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/<user>/isaac/work/g5/conda/internw0/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1381, in to
+    return self._apply(convert)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/<user>/isaac/work/g5/conda/internw0/lib/python3.11/site-packages/torch/nn/modules/module.py", line 933, in _apply
+    module._apply(fn)
+  File "/scratch/<user>/isaac/work/g5/conda/internw0/lib/python3.11/site-packages/torch/nn/modules/module.py", line 933, in _apply
+    module._apply(fn)
+  File "/scratch/<user>/isaac/work/g5/conda/internw0/lib/python3.11/site-packages/torch/nn/modules/module.py", line 933, in _apply
+    module._apply(fn)
+  [Previous line repeated 1 more time]
+  File "/scratch/<user>/isaac/work/g5/conda/internw0/lib/python3.11/site-packages/torch/nn/modules/module.py", line 964, in _apply
+    param_applied = fn(param)
+                    ^^^^^^^^^
+  File "/scratch/<user>/isaac/work/g5/conda/internw0/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1367, in convert
+    return t.to(
+           ^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 80.00 MiB. GPU 0 has a total capacity of 44.47 GiB of which 103.56 MiB is free. Process 2784241 has 266.00 MiB memory in use. Process 4108857 has 266.00 MiB memory in use. Process 376536 has 2.08 GiB memory in use. Process 391943 has 26.71 GiB memory in use. Including non-PyTorch memory, this process has 14.98 GiB memory in use. Of the allocated memory 14.71 GiB is allocated by PyTorch, and 20.09 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/scratch/<user>/isaac/work/g5/robodojo-physics/XPolicyLab/setup_policy_server.py", line 168, in <module>
+    main(deploy_cfg)
+  File "/scratch/<user>/isaac/work/g5/robodojo-physics/XPolicyLab/setup_policy_server.py", line 32, in main
+    model = model_class_func(deploy_cfg)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/<user>/isaac/work/g5/robodojo-physics/XPolicyLab/policy/InternW0_delta/_adapter_base.py", line 116, in __init__
+    self._load_real_policy()
+  File "/scratch/<user>/isaac/work/g5/robodojo-physics/XPolicyLab/policy/InternW0_delta/model.py", line 199, in _load_real_policy
+    self.runtime = build_robotwin_shared_runtime(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/<user>/isaac/work/g5/robodojo-physics/XPolicyLab/policy/InternW0_delta/wam_runtime/src/wam/runtime/robodojo_policy.py", line 206, in build_robotwin_shared_runtime
+    model = instantiate(model_cfg_copy, model_dtype=model_dtype, device=device)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/<user>/isaac/work/g5/conda/internw0/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+           ^^^^^^^^^^^^^^^^^
+  File "/scratch/<user>/isaac/work/g5/conda/internw0/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+    return _call_target(_target_, partial, args, kwargs, full_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/<user>/isaac/work/g5/conda/internw0/lib/python3.11/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 97, in _call_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error in call to target 'wam.model.factory.create_wam':
+OutOfMemoryError('CUDA out of memory. Tried to allocate 80.00 MiB. GPU 0 has a total capacity of 44.47 GiB of which 103.56 MiB is free. Process 2784241 has 266.00 MiB memory in use. Process 4108857 has 266.00 MiB memory in use. Process 376536 has 2.08 GiB memory in use. Process 391943 has 26.71 GiB memory in use. Including non-PyTorch memory, this process has 14.98 GiB memory in use. Of the allocated memory 14.71 GiB is allocated by PyTorch, and 20.09 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)')

@@ -1,0 +1,5 @@
+# Blog clips round 3, 5.1 state logs on della-vis2 GPU 0 (blog_queue.sh, MPS=1): fasten_screws as #114's evidence, cold kit
+# cache each, as a client of a private MPS daemon; first capped at 2,475 MiB (the free memory of the starved VERIFY run
+# vb_fasten_drop, the cap Wenhao's side used), then uncapped right after (the healthy control).
+b51_fasten_cap2475|51|fasten_drop.json||--task fasten_screws --seed 0 --layouts 0 --policy sweep --sweep_steps 250 --sweep_drop_m 0.03|2475
+b51_fasten_free|51|fasten_drop.json||--task fasten_screws --seed 0 --layouts 0 --policy sweep --sweep_steps 250 --sweep_drop_m 0.03|none

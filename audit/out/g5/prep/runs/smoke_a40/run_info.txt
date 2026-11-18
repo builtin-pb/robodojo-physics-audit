@@ -1,0 +1,9 @@
+tag=smoke_a40 host=della-vis2.princeton.edu slurm_job= start=2026-11-13T15:34:17-05:00
+repo_head=be97062d8f71add4b3a8a363a89773bac59feb43 repo_diff_sha1=da39a3ee5e6b4b0d3255bfef95601890afd80709
+eval_num=3 evaluator=v1 preset=shipped gpu=0
+index, name, driver_version, memory.used [MiB], memory.total [MiB]
+0, NVIDIA A40, 615.71.10, 6025 MiB, 46068 MiB
+1, NVIDIA A40, 615.71.10, 5057 MiB, 46068 MiB
+free_check before=smoke free_mib=39517 need_mib=36500 t=15:34:18
+smoke rc=0 s=325
+end=2026-11-13T15:39:43-05:00 wall_s=326

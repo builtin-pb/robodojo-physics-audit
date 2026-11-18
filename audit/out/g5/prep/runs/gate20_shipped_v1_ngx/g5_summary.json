@@ -1,0 +1,1863 @@
+{
+ "run": "gate20_shipped_v1_ngx",
+ "result_files": [
+  "eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/_result.json"
+ ],
+ "score": {
+  "successes": 20,
+  "episodes": 20,
+  "success_rate": 1.0,
+  "score": 100.0,
+  "layouts": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19
+  ],
+  "failed_layouts": [],
+  "clopper_pearson_95": [
+   0.8316,
+   1.0
+  ],
+  "contains_published": true,
+  "p_at_most_k_if_published": 1.0
+ },
+ "episodes": [
+  {
+   "episode": 0,
+   "layouts": {
+    "0": 0
+   },
+   "success": [
+    true
+   ],
+   "actions": [
+    484
+   ],
+   "reset_s": 32.19,
+   "run_s": 289.94,
+   "physics_steps_run": 4840,
+   "acc": {
+    "client_call": {
+     "n": 534,
+     "sum_s": 60.36,
+     "max_s": 3.689
+    },
+    "get_obs": {
+     "n": 485,
+     "sum_s": 106.52,
+     "max_s": 0.401
+    },
+    "take_action": {
+     "n": 484,
+     "sum_s": 116.67,
+     "max_s": 0.531
+    }
+   },
+   "error": null
+  },
+  {
+   "episode": 1,
+   "layouts": {
+    "0": 1
+   },
+   "success": [
+    true
+   ],
+   "actions": [
+    302
+   ],
+   "reset_s": 31.07,
+   "run_s": 170.05,
+   "physics_steps_run": 3020,
+   "acc": {
+    "client_call": {
+     "n": 334,
+     "sum_s": 35.14,
+     "max_s": 1.247
+    },
+    "get_obs": {
+     "n": 303,
+     "sum_s": 56.96,
+     "max_s": 0.415
+    },
+    "take_action": {
+     "n": 302,
+     "sum_s": 76.56,
+     "max_s": 0.5
+    }
+   },
+   "error": null
+  },
+  {
+   "episode": 2,
+   "layouts": {
+    "0": 2
+   },
+   "success": [
+    true
+   ],
+   "actions": [
+    422
+   ],
+   "reset_s": 39.63,
+   "run_s": 263.21,
+   "physics_steps_run": 4220,
+   "acc": {
+    "client_call": {
+     "n": 466,
+     "sum_s": 50.06,
+     "max_s": 1.196
+    },
+    "get_obs": {
+     "n": 423,
+     "sum_s": 95.48,
+     "max_s": 0.592
+    },
+    "take_action": {
+     "n": 422,
+     "sum_s": 116.54,
+     "max_s": 0.615
+    }
+   },
+   "error": null
+  },
+  {
+   "episode": 3,
+   "layouts": {
+    "0": 3
+   },
+   "success": [
+    true
+   ],
+   "actions": [
+    434
+   ],
+   "reset_s": 35.66,
+   "run_s": 260.03,
+   "physics_steps_run": 4340,
+   "acc": {
+    "client_call": {
+     "n": 479,
+     "sum_s": 52.77,
+     "max_s": 1.418
+    },
+    "get_obs": {
+     "n": 435,
+     "sum_s": 94.15,
+     "max_s": 0.615
+    },
+    "take_action": {
+     "n": 434,
+     "sum_s": 111.54,
+     "max_s": 0.404
+    }
+   },
+   "error": null
+  },
+  {
+   "episode": 4,
+   "layouts": {
+    "0": 4
+   },
+   "success": [
+    true
+   ],
+   "actions": [
+    504
+   ],
+   "reset_s": 39.7,
+   "run_s": 334.79,
+   "physics_steps_run": 5040,
+   "acc": {
+    "client_call": {
+     "n": 556,
+     "sum_s": 63.29,
+     "max_s": 1.212
+    },
+    "get_obs": {
+     "n": 505,
+     "sum_s": 120.84,
+     "max_s": 0.456
+    },
+    "take_action": {
+     "n": 504,
+     "sum_s": 149.57,
+     "max_s": 0.603
+    }
+   },
+   "error": null
+  },
+  {
+   "episode": 5,
+   "layouts": {
+    "0": 5
+   },
+   "success": [
+    true
+   ],
+   "actions": [
+    488
+   ],
+   "reset_s": 37.68,
+   "run_s": 322.34,
+   "physics_steps_run": 4880,
+   "acc": {
+    "client_call": {
+     "n": 538,
+     "sum_s": 62.16,
+     "max_s": 1.349
+    },
+    "get_obs": {
+     "n": 489,
+     "sum_s": 116.98,
+     "max_s": 0.582
+    },
+    "take_action": {
+     "n": 488,
+     "sum_s": 141.96,
+     "max_s": 0.603
+    }
+   },
+   "error": null
+  },
+  {
+   "episode": 6,
+   "layouts": {
+    "0": 6
+   },
+   "success": [
+    true
+   ],
+   "actions": [
+    454
+   ],
+   "reset_s": 38.55,
+   "run_s": 289.05,
+   "physics_steps_run": 4540,
+   "acc": {
+    "client_call": {
+     "n": 501,
+     "sum_s": 56.07,
+     "max_s": 1.165
+    },
+    "get_obs": {
+     "n": 455,
+     "sum_s": 100.62,
+     "max_s": 0.372
+    },
+    "take_action": {
+     "n": 454,
+     "sum_s": 131.32,
+     "max_s": 0.587
+    }
+   },
+   "error": null
+  },
+  {
+   "episode": 7,
+   "layouts": {
+    "0": 7
+   },
+   "success": [
+    true
+   ],
+   "actions": [
+    453
+   ],
+   "reset_s": 36.66,
+   "run_s": 286.88,
+   "physics_steps_run": 4530,
+   "acc": {
+    "client_call": {
+     "n": 500,
+     "sum_s": 55.55,
+     "max_s": 1.205
+    },
+    "get_obs": {
+     "n": 454,
+     "sum_s": 99.2,
+     "max_s": 0.54
+    },
+    "take_action": {
+     "n": 453,
+     "sum_s": 130.77,
+     "max_s": 0.41
+    }
+   },
+   "error": null
+  },
+  {
+   "episode": 8,
+   "layouts": {
+    "0": 8
+   },
+   "success": [
+    true
+   ],
+   "actions": [
+    347
+   ],
+   "reset_s": 38.58,
+   "run_s": 232.33,
+   "physics_steps_run": 3470,
+   "acc": {
+    "client_call": {
+     "n": 383,
+     "sum_s": 42.55,
+     "max_s": 1.238
+    },
+    "get_obs": {
+     "n": 348,
+     "sum_s": 88.35,
+     "max_s": 0.424
+    },
+    "take_action": {
+     "n": 347,
+     "sum_s": 91.93,
+     "max_s": 0.604
+    }
+   },
+   "error": null
+  },
+  {
+   "episode": 9,
+   "layouts": {
+    "0": 9
+   },
+   "success": [
+    true
+   ],
+   "actions": [
+    440
+   ],
+   "reset_s": 37.92,
+   "run_s": 231.04,
+   "physics_steps_run": 4400,
+   "acc": {
+    "client_call": {
+     "n": 485,
+     "sum_s": 46.36,
+     "max_s": 1.209
+    },
+    "get_obs": {
+     "n": 441,
+     "sum_s": 82.03,
+     "max_s": 0.551
+    },
+    "take_action": {
+     "n": 440,
+     "sum_s": 101.49,
+     "max_s": 0.369
+    }
+   },
+   "error": null
+  },
+  {
+   "episode": 10,
+   "layouts": {
+    "0": 10
+   },
+   "success": [
+    true
+   ],
+   "actions": [
+    360
+   ],
+   "reset_s": 26.58,
+   "run_s": 171.07,
+   "physics_steps_run": 3600,
+   "acc": {
+    "client_call": {
+     "n": 397,
+     "sum_s": 36.03,
+     "max_s": 1.127
+    },
+    "get_obs": {
+     "n": 361,
+     "sum_s": 59.27,
+     "max_s": 0.327
+    },
+    "take_action": {
+     "n": 360,
+     "sum_s": 74.53,
+     "max_s": 0.408
+    }
+   },
+   "error": null
+  },
+  {
+   "episode": 11,
+   "layouts": {
+    "0": 11
+   },
+   "success": [
+    true
+   ],
+   "actions": [
+    335
+   ],
+   "reset_s": 30.61,
+   "run_s": 150.86,
+   "physics_steps_run": 3350,
+   "acc": {
+    "client_call": {
+     "n": 370,
+     "sum_s": 32.07,
+     "max_s": 0.868
+    },
+    "get_obs": {
+     "n": 336,
+     "sum_s": 44.98,
+     "max_s": 0.366
+    },
+    "take_action": {
+     "n": 335,
+     "sum_s": 72.69,
+     "max_s": 0.411
+    }
+   },
+   "error": null
+  },
+  {
+   "episode": 12,
+   "layouts": {
+    "0": 12
+   },
+   "success": [
+    true
+   ],
+   "actions": [
+    375
+   ],
+   "reset_s": 26.39,
+   "run_s": 179.48,
+   "physics_steps_run": 3750,
+   "acc": {
+    "client_call": {
+     "n": 414,
+     "sum_s": 37.9,
+     "max_s": 0.872
+    },
+    "get_obs": {
+     "n": 376,
+     "sum_s": 59.84,
+     "max_s": 0.342
+    },
+    "take_action": {
+     "n": 375,
+     "sum_s": 80.6,
+     "max_s": 0.451
+    }
+   },
+   "error": null
+  },
+  {
+   "episode": 13,
+   "layouts": {
+    "0": 13
+   },
+   "success": [
+    true
+   ],
+   "actions": [
+    403
+   ],
+   "reset_s": 28.58,
+   "run_s": 192.91,
+   "physics_steps_run": 4030,
+   "acc": {
+    "client_call": {
+     "n": 445,
+     "sum_s": 40.89,
+     "max_s": 0.916
+    },
+    "get_obs": {
+     "n": 404,
+     "sum_s": 62.6,
+     "max_s": 0.343
+    },
+    "take_action": {
+     "n": 403,
+     "sum_s": 88.2,
+     "max_s": 0.362
+    }
+   },
+   "error": null
+  },
+  {
+   "episode": 14,
+   "layouts": {
+    "0": 14
+   },
+   "success": [
+    true
+   ],
+   "actions": [
+    504
+   ],
+   "reset_s": 27.6,
+   "run_s": 217.79,
+   "physics_steps_run": 5040,
+   "acc": {
+    "client_call": {
+     "n": 556,
+     "sum_s": 48.64,
+     "max_s": 1.045
+    },
+    "get_obs": {
+     "n": 505,
+     "sum_s": 71.58,
+     "max_s": 0.338
+    },
+    "take_action": {
+     "n": 504,
+     "sum_s": 96.54,
+     "max_s": 0.454
+    }
+   },
+   "error": null
+  },
+  {
+   "episode": 15,
+   "layouts": {
+    "0": 15
+   },
+   "success": [
+    true
+   ],
+   "actions": [
+    335
+   ],
+   "reset_s": 24.44,
+   "run_s": 154.96,
+   "physics_steps_run": 3350,
+   "acc": {
+    "client_call": {
+     "n": 370,
+     "sum_s": 34.38,
+     "max_s": 1.091
+    },
+    "get_obs": {
+     "n": 336,
+     "sum_s": 54.46,
+     "max_s": 0.275
+    },
+    "take_action": {
+     "n": 335,
+     "sum_s": 64.97,
+     "max_s": 0.333
+    }
+   },
+   "error": null
+  },
+  {
+   "episode": 16,
+   "layouts": {
+    "0": 16
+   },
+   "success": [
+    true
+   ],
+   "actions": [
+    416
+   ],
+   "reset_s": 22.93,
+   "run_s": 194.41,
+   "physics_steps_run": 4160,
+   "acc": {
+    "client_call": {
+     "n": 459,
+     "sum_s": 42.59,
+     "max_s": 0.954
+    },
+    "get_obs": {
+     "n": 417,
+     "sum_s": 64.96,
+     "max_s": 0.259
+    },
+    "take_action": {
+     "n": 416,
+     "sum_s": 85.72,
+     "max_s": 0.426
+    }
+   },
+   "error": null
+  },
+  {
+   "episode": 17,
+   "layouts": {
+    "0": 17
+   },
+   "success": [
+    true
+   ],
+   "actions": [
+    344
+   ],
+   "reset_s": 22.27,
+   "run_s": 132.68,
+   "physics_steps_run": 3440,
+   "acc": {
+    "client_call": {
+     "n": 380,
+     "sum_s": 32.46,
+     "max_s": 0.921
+    },
+    "get_obs": {
+     "n": 345,
+     "sum_s": 43.35,
+     "max_s": 0.348
+    },
+    "take_action": {
+     "n": 344,
+     "sum_s": 55.71,
+     "max_s": 0.283
+    }
+   },
+   "error": null
+  },
+  {
+   "episode": 18,
+   "layouts": {
+    "0": 18
+   },
+   "success": [
+    true
+   ],
+   "actions": [
+    271
+   ],
+   "reset_s": 17.74,
+   "run_s": 94.31,
+   "physics_steps_run": 2710,
+   "acc": {
+    "client_call": {
+     "n": 300,
+     "sum_s": 24.24,
+     "max_s": 0.822
+    },
+    "get_obs": {
+     "n": 272,
+     "sum_s": 26.26,
+     "max_s": 0.239
+    },
+    "take_action": {
+     "n": 271,
+     "sum_s": 42.96,
+     "max_s": 0.292
+    }
+   },
+   "error": null
+  },
+  {
+   "episode": 19,
+   "layouts": {
+    "0": 19
+   },
+   "success": [
+    true
+   ],
+   "actions": [
+    473
+   ],
+   "reset_s": 18.06,
+   "run_s": 168.72,
+   "physics_steps_run": 4730,
+   "acc": {
+    "client_call": {
+     "n": 522,
+     "sum_s": 41.62,
+     "max_s": 0.841
+    },
+    "get_obs": {
+     "n": 474,
+     "sum_s": 45.72,
+     "max_s": 0.209
+    },
+    "take_action": {
+     "n": 473,
+     "sum_s": 80.16,
+     "max_s": 0.324
+    }
+   },
+   "error": null
+  }
+ ],
+ "episode_wall_s": {
+  "mean": 247.5,
+  "min": 112.0,
+  "max": 374.5
+ },
+ "actions_per_episode": {
+  "mean": 407.2,
+  "min": 271,
+  "max": 504
+ },
+ "take_action_s_mean": 0.235,
+ "get_obs_s_mean": 0.183,
+ "policy_call_s": {
+  "n": 825,
+  "first": 2.7596,
+  "median_after_first": 0.871,
+  "mean_after_first": 0.906,
+  "max": 3.6889
+ },
+ "first_frames": [
+  {
+   "kind": "first_frames",
+   "episode": 0,
+   "obs_index": 0,
+   "stats": {
+    "cam_head": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 80.13,
+     "std": 59.21
+    },
+    "cam_left_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 73.83,
+     "std": 55.31
+    },
+    "cam_right_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 115.66,
+     "std": 71.78
+    },
+    "render": {
+     "/rtx/rendermode": "RealTimePathTracing",
+     "/rtx/post/aa/op": 4,
+     "/rtx/post/dlss/execMode": 2,
+     "/rtx-transient/dldenoiser/enabled": true,
+     "/ngx/enabled": true,
+     "/rtx/post/tonemap/filmIso": 80
+    }
+   },
+   "actions_so_far": 0,
+   "state_keys": [
+    "left_arm_joint_state",
+    "left_ee_joint_state",
+    "left_ee_pose",
+    "right_arm_joint_state",
+    "right_ee_joint_state",
+    "right_ee_pose"
+   ],
+   "instruction": "Pick up the bottles and throw them into the dustbin, using handover when needed.",
+   "t": 80.965
+  },
+  {
+   "kind": "first_frames",
+   "episode": 1,
+   "obs_index": 0,
+   "stats": {
+    "cam_head": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 89.68,
+     "std": 62.48
+    },
+    "cam_left_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 102.91,
+     "std": 71.72
+    },
+    "cam_right_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 97.32,
+     "std": 50.07
+    },
+    "render": {
+     "/rtx/rendermode": "RealTimePathTracing",
+     "/rtx/post/aa/op": 4,
+     "/rtx/post/dlss/execMode": 2,
+     "/rtx-transient/dldenoiser/enabled": true,
+     "/ngx/enabled": true,
+     "/rtx/post/tonemap/filmIso": 100.0
+    }
+   },
+   "actions_so_far": 0,
+   "state_keys": [
+    "left_arm_joint_state",
+    "left_ee_joint_state",
+    "left_ee_pose",
+    "right_arm_joint_state",
+    "right_ee_joint_state",
+    "right_ee_pose"
+   ],
+   "instruction": "Pick up the bottles and throw them into the dustbin, using handover when needed.",
+   "t": 398.394
+  },
+  {
+   "kind": "first_frames",
+   "episode": 2,
+   "obs_index": 0,
+   "stats": {
+    "cam_head": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 89.66,
+     "std": 62.35
+    },
+    "cam_left_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 86.32,
+     "std": 56.65
+    },
+    "cam_right_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 106.49,
+     "std": 64.02
+    },
+    "render": {
+     "/rtx/rendermode": "RealTimePathTracing",
+     "/rtx/post/aa/op": 4,
+     "/rtx/post/dlss/execMode": 2,
+     "/rtx-transient/dldenoiser/enabled": true,
+     "/ngx/enabled": true,
+     "/rtx/post/tonemap/filmIso": 100.0
+    }
+   },
+   "actions_so_far": 0,
+   "state_keys": [
+    "left_arm_joint_state",
+    "left_ee_joint_state",
+    "left_ee_pose",
+    "right_arm_joint_state",
+    "right_ee_joint_state",
+    "right_ee_pose"
+   ],
+   "instruction": "Pick up the bottles and throw them into the dustbin, using handover when needed.",
+   "t": 609.774
+  },
+  {
+   "kind": "first_frames",
+   "episode": 3,
+   "obs_index": 0,
+   "stats": {
+    "cam_head": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 90.22,
+     "std": 62.76
+    },
+    "cam_left_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 85.38,
+     "std": 57.8
+    },
+    "cam_right_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 100.92,
+     "std": 59.89
+    },
+    "render": {
+     "/rtx/rendermode": "RealTimePathTracing",
+     "/rtx/post/aa/op": 4,
+     "/rtx/post/dlss/execMode": 2,
+     "/rtx-transient/dldenoiser/enabled": true,
+     "/ngx/enabled": true,
+     "/rtx/post/tonemap/filmIso": 100.0
+    }
+   },
+   "actions_so_far": 0,
+   "state_keys": [
+    "left_arm_joint_state",
+    "left_ee_joint_state",
+    "left_ee_pose",
+    "right_arm_joint_state",
+    "right_ee_joint_state",
+    "right_ee_pose"
+   ],
+   "instruction": "Pick up the bottles and throw them into the dustbin, using handover when needed.",
+   "t": 909.929
+  },
+  {
+   "kind": "first_frames",
+   "episode": 4,
+   "obs_index": 0,
+   "stats": {
+    "cam_head": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 90.89,
+     "std": 63.33
+    },
+    "cam_left_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 80.89,
+     "std": 52.54
+    },
+    "cam_right_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 120.87,
+     "std": 70.9
+    },
+    "render": {
+     "/rtx/rendermode": "RealTimePathTracing",
+     "/rtx/post/aa/op": 4,
+     "/rtx/post/dlss/execMode": 2,
+     "/rtx-transient/dldenoiser/enabled": true,
+     "/ngx/enabled": true,
+     "/rtx/post/tonemap/filmIso": 100.0
+    }
+   },
+   "actions_so_far": 0,
+   "state_keys": [
+    "left_arm_joint_state",
+    "left_ee_joint_state",
+    "left_ee_pose",
+    "right_arm_joint_state",
+    "right_ee_joint_state",
+    "right_ee_pose"
+   ],
+   "instruction": "Pick up the bottles and throw them into the dustbin, using handover when needed.",
+   "t": 1211.212
+  },
+  {
+   "kind": "first_frames",
+   "episode": 5,
+   "obs_index": 0,
+   "stats": {
+    "cam_head": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 88.7,
+     "std": 61.81
+    },
+    "cam_left_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 80.65,
+     "std": 50.93
+    },
+    "cam_right_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 106.17,
+     "std": 67.01
+    },
+    "render": {
+     "/rtx/rendermode": "RealTimePathTracing",
+     "/rtx/post/aa/op": 4,
+     "/rtx/post/dlss/execMode": 2,
+     "/rtx-transient/dldenoiser/enabled": true,
+     "/ngx/enabled": true,
+     "/rtx/post/tonemap/filmIso": 100.0
+    }
+   },
+   "actions_so_far": 0,
+   "state_keys": [
+    "left_arm_joint_state",
+    "left_ee_joint_state",
+    "left_ee_pose",
+    "right_arm_joint_state",
+    "right_ee_joint_state",
+    "right_ee_pose"
+   ],
+   "instruction": "Pick up the bottles and throw them into the dustbin, using handover when needed.",
+   "t": 1585.283
+  },
+  {
+   "kind": "first_frames",
+   "episode": 6,
+   "obs_index": 0,
+   "stats": {
+    "cam_head": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 89.42,
+     "std": 62.05
+    },
+    "cam_left_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 91.47,
+     "std": 58.5
+    },
+    "cam_right_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 99.25,
+     "std": 62.85
+    },
+    "render": {
+     "/rtx/rendermode": "RealTimePathTracing",
+     "/rtx/post/aa/op": 4,
+     "/rtx/post/dlss/execMode": 2,
+     "/rtx-transient/dldenoiser/enabled": true,
+     "/ngx/enabled": true,
+     "/rtx/post/tonemap/filmIso": 100.0
+    }
+   },
+   "actions_so_far": 0,
+   "state_keys": [
+    "left_arm_joint_state",
+    "left_ee_joint_state",
+    "left_ee_pose",
+    "right_arm_joint_state",
+    "right_ee_joint_state",
+    "right_ee_pose"
+   ],
+   "instruction": "Pick up the bottles and throw them into the dustbin, using handover when needed.",
+   "t": 1947.191
+  },
+  {
+   "kind": "first_frames",
+   "episode": 7,
+   "obs_index": 0,
+   "stats": {
+    "cam_head": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 89.07,
+     "std": 62.18
+    },
+    "cam_left_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 86.21,
+     "std": 67.65
+    },
+    "cam_right_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 98.68,
+     "std": 54.31
+    },
+    "render": {
+     "/rtx/rendermode": "RealTimePathTracing",
+     "/rtx/post/aa/op": 4,
+     "/rtx/post/dlss/execMode": 2,
+     "/rtx-transient/dldenoiser/enabled": true,
+     "/ngx/enabled": true,
+     "/rtx/post/tonemap/filmIso": 100.0
+    }
+   },
+   "actions_so_far": 0,
+   "state_keys": [
+    "left_arm_joint_state",
+    "left_ee_joint_state",
+    "left_ee_pose",
+    "right_arm_joint_state",
+    "right_ee_joint_state",
+    "right_ee_pose"
+   ],
+   "instruction": "Pick up the bottles and throw them into the dustbin, using handover when needed.",
+   "t": 2274.414
+  },
+  {
+   "kind": "first_frames",
+   "episode": 8,
+   "obs_index": 0,
+   "stats": {
+    "cam_head": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 89.92,
+     "std": 62.8
+    },
+    "cam_left_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 89.23,
+     "std": 59.15
+    },
+    "cam_right_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 93.76,
+     "std": 54.51
+    },
+    "render": {
+     "/rtx/rendermode": "RealTimePathTracing",
+     "/rtx/post/aa/op": 4,
+     "/rtx/post/dlss/execMode": 2,
+     "/rtx-transient/dldenoiser/enabled": true,
+     "/ngx/enabled": true,
+     "/rtx/post/tonemap/filmIso": 100.0
+    }
+   },
+   "actions_so_far": 0,
+   "state_keys": [
+    "left_arm_joint_state",
+    "left_ee_joint_state",
+    "left_ee_pose",
+    "right_arm_joint_state",
+    "right_ee_joint_state",
+    "right_ee_pose"
+   ],
+   "instruction": "Pick up the bottles and throw them into the dustbin, using handover when needed.",
+   "t": 2601.069
+  },
+  {
+   "kind": "first_frames",
+   "episode": 9,
+   "obs_index": 0,
+   "stats": {
+    "cam_head": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 89.97,
+     "std": 63.39
+    },
+    "cam_left_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 95.32,
+     "std": 63.91
+    },
+    "cam_right_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 105.85,
+     "std": 66.11
+    },
+    "render": {
+     "/rtx/rendermode": "RealTimePathTracing",
+     "/rtx/post/aa/op": 4,
+     "/rtx/post/dlss/execMode": 2,
+     "/rtx-transient/dldenoiser/enabled": true,
+     "/ngx/enabled": true,
+     "/rtx/post/tonemap/filmIso": 100.0
+    }
+   },
+   "actions_so_far": 0,
+   "state_keys": [
+    "left_arm_joint_state",
+    "left_ee_joint_state",
+    "left_ee_pose",
+    "right_arm_joint_state",
+    "right_ee_joint_state",
+    "right_ee_pose"
+   ],
+   "instruction": "Pick up the bottles and throw them into the dustbin, using handover when needed.",
+   "t": 2872.777
+  },
+  {
+   "kind": "first_frames",
+   "episode": 10,
+   "obs_index": 0,
+   "stats": {
+    "cam_head": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 89.31,
+     "std": 62.03
+    },
+    "cam_left_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 90.91,
+     "std": 58.22
+    },
+    "cam_right_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 96.58,
+     "std": 53.86
+    },
+    "render": {
+     "/rtx/rendermode": "RealTimePathTracing",
+     "/rtx/post/aa/op": 4,
+     "/rtx/post/dlss/execMode": 2,
+     "/rtx-transient/dldenoiser/enabled": true,
+     "/ngx/enabled": true,
+     "/rtx/post/tonemap/filmIso": 100.0
+    }
+   },
+   "actions_so_far": 0,
+   "state_keys": [
+    "left_arm_joint_state",
+    "left_ee_joint_state",
+    "left_ee_pose",
+    "right_arm_joint_state",
+    "right_ee_joint_state",
+    "right_ee_pose"
+   ],
+   "instruction": "Pick up the bottles and throw them into the dustbin, using handover when needed.",
+   "t": 3131.416
+  },
+  {
+   "kind": "first_frames",
+   "episode": 11,
+   "obs_index": 0,
+   "stats": {
+    "cam_head": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 88.94,
+     "std": 62.1
+    },
+    "cam_left_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 81.7,
+     "std": 49.82
+    },
+    "cam_right_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 87.25,
+     "std": 54.86
+    },
+    "render": {
+     "/rtx/rendermode": "RealTimePathTracing",
+     "/rtx/post/aa/op": 4,
+     "/rtx/post/dlss/execMode": 2,
+     "/rtx-transient/dldenoiser/enabled": true,
+     "/ngx/enabled": true,
+     "/rtx/post/tonemap/filmIso": 100.0
+    }
+   },
+   "actions_so_far": 0,
+   "state_keys": [
+    "left_arm_joint_state",
+    "left_ee_joint_state",
+    "left_ee_pose",
+    "right_arm_joint_state",
+    "right_ee_joint_state",
+    "right_ee_pose"
+   ],
+   "instruction": "Pick up the bottles and throw them into the dustbin, using handover when needed.",
+   "t": 3334.359
+  },
+  {
+   "kind": "first_frames",
+   "episode": 12,
+   "obs_index": 0,
+   "stats": {
+    "cam_head": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 89.25,
+     "std": 62.31
+    },
+    "cam_left_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 84.07,
+     "std": 55.68
+    },
+    "cam_right_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 102.43,
+     "std": 62.39
+    },
+    "render": {
+     "/rtx/rendermode": "RealTimePathTracing",
+     "/rtx/post/aa/op": 4,
+     "/rtx/post/dlss/execMode": 2,
+     "/rtx-transient/dldenoiser/enabled": true,
+     "/ngx/enabled": true,
+     "/rtx/post/tonemap/filmIso": 100.0
+    }
+   },
+   "actions_so_far": 0,
+   "state_keys": [
+    "left_arm_joint_state",
+    "left_ee_joint_state",
+    "left_ee_pose",
+    "right_arm_joint_state",
+    "right_ee_joint_state",
+    "right_ee_pose"
+   ],
+   "instruction": "Pick up the bottles and throw them into the dustbin, using handover when needed.",
+   "t": 3512.804
+  },
+  {
+   "kind": "first_frames",
+   "episode": 13,
+   "obs_index": 0,
+   "stats": {
+    "cam_head": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 87.74,
+     "std": 61.55
+    },
+    "cam_left_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 79.59,
+     "std": 55.16
+    },
+    "cam_right_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 95.28,
+     "std": 54.98
+    },
+    "render": {
+     "/rtx/rendermode": "RealTimePathTracing",
+     "/rtx/post/aa/op": 4,
+     "/rtx/post/dlss/execMode": 2,
+     "/rtx-transient/dldenoiser/enabled": true,
+     "/ngx/enabled": true,
+     "/rtx/post/tonemap/filmIso": 100.0
+    }
+   },
+   "actions_so_far": 0,
+   "state_keys": [
+    "left_arm_joint_state",
+    "left_ee_joint_state",
+    "left_ee_pose",
+    "right_arm_joint_state",
+    "right_ee_joint_state",
+    "right_ee_pose"
+   ],
+   "instruction": "Pick up the bottles and throw them into the dustbin, using handover when needed.",
+   "t": 3722.114
+  },
+  {
+   "kind": "first_frames",
+   "episode": 14,
+   "obs_index": 0,
+   "stats": {
+    "cam_head": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 89.54,
+     "std": 62.2
+    },
+    "cam_left_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 81.85,
+     "std": 49.87
+    },
+    "cam_right_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 111.32,
+     "std": 65.76
+    },
+    "render": {
+     "/rtx/rendermode": "RealTimePathTracing",
+     "/rtx/post/aa/op": 4,
+     "/rtx/post/dlss/execMode": 2,
+     "/rtx-transient/dldenoiser/enabled": true,
+     "/ngx/enabled": true,
+     "/rtx/post/tonemap/filmIso": 100.0
+    }
+   },
+   "actions_so_far": 0,
+   "state_keys": [
+    "left_arm_joint_state",
+    "left_ee_joint_state",
+    "left_ee_pose",
+    "right_arm_joint_state",
+    "right_ee_joint_state",
+    "right_ee_pose"
+   ],
+   "instruction": "Pick up the bottles and throw them into the dustbin, using handover when needed.",
+   "t": 3944.496
+  },
+  {
+   "kind": "first_frames",
+   "episode": 15,
+   "obs_index": 0,
+   "stats": {
+    "cam_head": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 89.23,
+     "std": 61.81
+    },
+    "cam_left_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 88.75,
+     "std": 61.5
+    },
+    "cam_right_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 92.56,
+     "std": 53.56
+    },
+    "render": {
+     "/rtx/rendermode": "RealTimePathTracing",
+     "/rtx/post/aa/op": 4,
+     "/rtx/post/dlss/execMode": 2,
+     "/rtx-transient/dldenoiser/enabled": true,
+     "/ngx/enabled": true,
+     "/rtx/post/tonemap/filmIso": 100.0
+    }
+   },
+   "actions_so_far": 0,
+   "state_keys": [
+    "left_arm_joint_state",
+    "left_ee_joint_state",
+    "left_ee_pose",
+    "right_arm_joint_state",
+    "right_ee_joint_state",
+    "right_ee_pose"
+   ],
+   "instruction": "Pick up the bottles and throw them into the dustbin, using handover when needed.",
+   "t": 4187.87
+  },
+  {
+   "kind": "first_frames",
+   "episode": 16,
+   "obs_index": 0,
+   "stats": {
+    "cam_head": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 91.48,
+     "std": 63.73
+    },
+    "cam_left_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 86.29,
+     "std": 55.0
+    },
+    "cam_right_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 97.26,
+     "std": 51.57
+    },
+    "render": {
+     "/rtx/rendermode": "RealTimePathTracing",
+     "/rtx/post/aa/op": 4,
+     "/rtx/post/dlss/execMode": 2,
+     "/rtx-transient/dldenoiser/enabled": true,
+     "/ngx/enabled": true,
+     "/rtx/post/tonemap/filmIso": 100.0
+    }
+   },
+   "actions_so_far": 0,
+   "state_keys": [
+    "left_arm_joint_state",
+    "left_ee_joint_state",
+    "left_ee_pose",
+    "right_arm_joint_state",
+    "right_ee_joint_state",
+    "right_ee_pose"
+   ],
+   "instruction": "Pick up the bottles and throw them into the dustbin, using handover when needed.",
+   "t": 4367.148
+  },
+  {
+   "kind": "first_frames",
+   "episode": 17,
+   "obs_index": 0,
+   "stats": {
+    "cam_head": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 90.01,
+     "std": 62.42
+    },
+    "cam_left_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 89.09,
+     "std": 59.77
+    },
+    "cam_right_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 98.09,
+     "std": 57.08
+    },
+    "render": {
+     "/rtx/rendermode": "RealTimePathTracing",
+     "/rtx/post/aa/op": 4,
+     "/rtx/post/dlss/execMode": 2,
+     "/rtx-transient/dldenoiser/enabled": true,
+     "/ngx/enabled": true,
+     "/rtx/post/tonemap/filmIso": 100.0
+    }
+   },
+   "actions_so_far": 0,
+   "state_keys": [
+    "left_arm_joint_state",
+    "left_ee_joint_state",
+    "left_ee_pose",
+    "right_arm_joint_state",
+    "right_ee_joint_state",
+    "right_ee_pose"
+   ],
+   "instruction": "Pick up the bottles and throw them into the dustbin, using handover when needed.",
+   "t": 4585.226
+  },
+  {
+   "kind": "first_frames",
+   "episode": 18,
+   "obs_index": 0,
+   "stats": {
+    "cam_head": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 89.09,
+     "std": 62.68
+    },
+    "cam_left_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 88.18,
+     "std": 65.01
+    },
+    "cam_right_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 96.65,
+     "std": 49.83
+    },
+    "render": {
+     "/rtx/rendermode": "RealTimePathTracing",
+     "/rtx/post/aa/op": 4,
+     "/rtx/post/dlss/execMode": 2,
+     "/rtx-transient/dldenoiser/enabled": true,
+     "/ngx/enabled": true,
+     "/rtx/post/tonemap/filmIso": 100.0
+    }
+   },
+   "actions_so_far": 0,
+   "state_keys": [
+    "left_arm_joint_state",
+    "left_ee_joint_state",
+    "left_ee_pose",
+    "right_arm_joint_state",
+    "right_ee_joint_state",
+    "right_ee_pose"
+   ],
+   "instruction": "Pick up the bottles and throw them into the dustbin, using handover when needed.",
+   "t": 4736.738
+  },
+  {
+   "kind": "first_frames",
+   "episode": 19,
+   "obs_index": 0,
+   "stats": {
+    "cam_head": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 90.2,
+     "std": 63.0
+    },
+    "cam_left_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 81.93,
+     "std": 49.84
+    },
+    "cam_right_wrist": {
+     "shape": [
+      480,
+      640,
+      3
+     ],
+     "dtype": "uint8",
+     "mean": 98.73,
+     "std": 63.83
+    },
+    "render": {
+     "/rtx/rendermode": "RealTimePathTracing",
+     "/rtx/post/aa/op": 4,
+     "/rtx/post/dlss/execMode": 2,
+     "/rtx-transient/dldenoiser/enabled": true,
+     "/ngx/enabled": true,
+     "/rtx/post/tonemap/filmIso": 100.0
+    }
+   },
+   "actions_so_far": 0,
+   "state_keys": [
+    "left_arm_joint_state",
+    "left_ee_joint_state",
+    "left_ee_pose",
+    "right_arm_joint_state",
+    "right_ee_joint_state",
+    "right_ee_pose"
+   ],
+   "instruction": "Pick up the bottles and throw them into the dustbin, using handover when needed.",
+   "t": 4850.374
+  }
+ ],
+ "gpu_peak_mib_ours": {
+  "policy_server": 29070,
+  "simulator": 5594
+ },
+ "gpu_free_mib_min": 4436,
+ "run_info_tail": [
+  "tag=gate20_shipped_v1_ngx host=della-vis2.princeton.edu slurm_job= start=2026-11-13T17:34:03-05:00",
+  "repo_head=a73d92bbf70b7f639720227876a4313a9bd56c9d repo_diff_sha1=da39a3ee5e6b4b0d3255bfef95601890afd80709",
+  "eval_num=20 evaluator=v1 preset=shipped gpu=1",
+  "need_policy_mib=30500 need_sim_mib=6000 reserve_mib=2000",
+  "free_check before=policy_server free_mib=42260 need_mib=38500 t=17:34:03",
+  "server_ready=yes port=33525 s=258",
+  "ngx_bind=-B /usr/lib64/libnvidia-ngx.so.615.71.10:/.singularity.d/libs/libnvidia-ngx.so.1 carb=/rtx/post/tonemap/filmIso=80 save_obs_at=0,150,300",
+  "free_check before=sim attempt=0 free_mib=12201 need_mib=8000 t=17:38:21",
+  "sim attempt=0 rc=0 s=5022",
+  "end=2026-11-13T19:02:03-05:00 wall_s=5280",
+  "physx_corrupt_lines=0 gpu_alloc_fail_lines=0 server_oom_lines=0",
+  "ngx_lines: 0 ngx_fail_lines=0"
+ ]
+}

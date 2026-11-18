@@ -1,0 +1,24 @@
+{
+  "task": "cover_blocks",
+  "reference": "v2b",
+  "arms": {
+    "shipped": {
+      "what": "RoboDojo as released (script_cover_blocks)",
+      "batches": [
+        "g4st_cb_ship"
+      ]
+    },
+    "v2b": {
+      "what": "fully corrected, global equal-weight map v2b (script_cover_blocks)",
+      "batches": [
+        "g4st_cb_corr"
+      ]
+    },
+    "v2_presence": {
+      "what": "fully corrected, global presence-weighted map v2_presence (script_cover_blocks)",
+      "batches": [
+        "pw_g4_cb_s2"
+      ]
+    }
+  }
+}

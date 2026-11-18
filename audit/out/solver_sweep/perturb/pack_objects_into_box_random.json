@@ -1,0 +1,23 @@
+[
+ {
+  "cell_name": "pack_objects_into_box_random__perturb",
+  "layout": 0,
+  "overrides": {
+   "spawn_lift": {
+    "stems": "*",
+    "dz_m": 1e-06
+   },
+   "slide_target": {
+    "label": "box",
+    "inst": "box_0_5",
+    "labelled": true,
+    "stem": "box_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     -0.95699,
+     -0.290122
+    ]
+   }
+  }
+ }
+]

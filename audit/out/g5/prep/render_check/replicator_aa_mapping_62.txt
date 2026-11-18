@@ -1,0 +1,33 @@
+# /isaac-sim/extscache/omni.replicator.core-1.13.38+110.4.0.lx64.r.cp312/omni/replicator/core/scripts/settings.py (inside isaac-sim_6.2.0.1.sif)
+26:REALTIME_ANTIALIASING = "/rtx/post/aa/op"
+def set_render_rtx_realtime(antialiasing: Union[str, ReplicatorItem] = "FXAA") -> None:
+    """Setup RTX Realtime render mode
+
+    Args:
+        antialiasing: Antialiasing algorithm. Select from [Off, FXAA, DLSS, TAA, DLAA]. FXAA is recommended
+            for non-sequential data generation as it does not accumulate samples across frames.
+
+    Example:
+        >>> import omni.replicator.core as rep
+        >>> rep.settings.set_render_rtx_realtime(antialiasing="DLSS")
+    """
+    carb_settings(RENDER_MODE, "RealTimePathTracing")
+
+    # From `omni.rtx.settings.dev/omni/rtx/settings/dev/dev_stack.py`
+    aa_mapping = {
+        "off": 0,
+        "taa": 1,
+        "fxaa": 2,
+        "dlss": 3,
+        "dlaa": 4,
+    }
+    if antialiasing.lower() not in aa_mapping:
+        raise ValueError(
+            f"Invalid antialiasing argument `{antialiasing}`. Select from {[aa.upper() for aa in aa_mapping]}"
+        )
+    if antialiasing.lower() not in ["dlss", "dlaa"]:
+        carb.log_info("Disabling AA limited ops.")
+        carb_settings("/rtx-transient/post/aa/limitedOps", False)
+    carb_settings(REALTIME_ANTIALIASING, aa_mapping[antialiasing.lower()])
+
+

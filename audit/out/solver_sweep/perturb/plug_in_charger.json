@@ -1,0 +1,23 @@
+[
+ {
+  "cell_name": "plug_in_charger__perturb",
+  "layout": 0,
+  "overrides": {
+   "spawn_lift": {
+    "stems": "*",
+    "dz_m": 1e-06
+   },
+   "slide_target": {
+    "label": "charger",
+    "inst": "charger_0_1",
+    "labelled": true,
+    "stem": "charger_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.0782,
+     0.996938
+    ]
+   }
+  }
+ }
+]

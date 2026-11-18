@@ -1,0 +1,9 @@
+ba2b318 G5 prep: unset __EGL_VENDOR_LIBRARY_DIRS after Della's anaconda3 module (it broke the 6.2 renderer's Vulkan ICD); need_planner false for dual_x5 as run_main_exploit.py (RobotManager builds cuRobo per arm); Vulkan probe and bisect
+plain: VK_PROBE result=0 devices=2 VK_DRIVER_FILES=/etc/vulkan/icd.d/n
+tmpdir: VK_PROBE result=0 devices=2 VK_DRIVER_FILES=/etc/vulkan/icd.d/
+hf: VK_PROBE result=0 devices=2 VK_DRIVER_FILES=/etc/vulkan/icd.d/nvid
+triton: VK_PROBE result=0 devices=2 VK_DRIVER_FILES=/etc/vulkan/icd.d/
+conda_path: VK_PROBE result=0 devices=2 VK_DRIVER_FILES=/etc/vulkan/ic
+module_anaconda3: VK_PROBE result=-9 devices=0 VK_DRIVER_FILES=/etc/vu
+egl_only: VK_PROBE result=-9 devices=0 VK_DRIVER_FILES=/etc/vulkan/icd
+module_minus_egl: VK_PROBE result=0 devices=2 VK_DRIVER_FILES=/etc/vul

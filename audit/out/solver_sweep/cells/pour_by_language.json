@@ -1,0 +1,73 @@
+[
+ {
+  "cell_name": "pour_by_language__shipped",
+  "layout": 0,
+  "overrides": {
+   "slide_target": {
+    "label": "bowl_0",
+    "inst": "wine_bowl_0_4",
+    "labelled": true,
+    "stem": "wine_bowl_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.999997,
+     -0.0024
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "pour_by_language__dt2",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.002,
+   "slide_target": {
+    "label": "bowl_0",
+    "inst": "wine_bowl_0_4",
+    "labelled": true,
+    "stem": "wine_bowl_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.999997,
+     -0.0024
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "pour_by_language__dt1",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.001,
+   "slide_target": {
+    "label": "bowl_0",
+    "inst": "wine_bowl_0_4",
+    "labelled": true,
+    "stem": "wine_bowl_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.999997,
+     -0.0024
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "pour_by_language__iters4x",
+  "layout": 0,
+  "overrides": {
+   "min_pos_iters": 64,
+   "slide_target": {
+    "label": "bowl_0",
+    "inst": "wine_bowl_0_4",
+    "labelled": true,
+    "stem": "wine_bowl_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.999997,
+     -0.0024
+    ]
+   }
+  }
+ }
+]

@@ -1,0 +1,301 @@
+{
+ "task": "cover_blocks",
+ "arms": {
+  "shipped": {
+   "what": "RoboDojo as released",
+   "control": false,
+   "episodes": 6,
+   "successes": 6,
+   "mean_score": 100.0,
+   "episode_s_median": 266.3,
+   "failing_layouts": [],
+   "cup_cube_force_episodes": 0,
+   "cube_over_50mm_episodes": 0,
+   "covers_seated": 18,
+   "covers": 18,
+   "max_cube_disp_mm": 0.0
+  },
+  "corrected": {
+   "what": "fully corrected (all seven fixes, v2b map)",
+   "control": false,
+   "episodes": 6,
+   "successes": 6,
+   "mean_score": 100.0,
+   "episode_s_median": 351.85,
+   "failing_layouts": [],
+   "cup_cube_force_episodes": 0,
+   "cube_over_50mm_episodes": 0,
+   "covers_seated": 18,
+   "covers": 18,
+   "max_cube_disp_mm": 0.0
+  },
+  "off3_shipped": {
+   "what": "offset +3 mm in x, shipped",
+   "control": false,
+   "episodes": 6,
+   "successes": 6,
+   "mean_score": 100.0,
+   "episode_s_median": 159.4,
+   "failing_layouts": [],
+   "cup_cube_force_episodes": 0,
+   "cube_over_50mm_episodes": 0,
+   "covers_seated": 18,
+   "covers": 18,
+   "max_cube_disp_mm": 0.0
+  },
+  "off3_corrected": {
+   "what": "offset +3 mm in x, fully corrected",
+   "control": false,
+   "episodes": 6,
+   "successes": 6,
+   "mean_score": 100.0,
+   "episode_s_median": 359.45,
+   "failing_layouts": [],
+   "cup_cube_force_episodes": 0,
+   "cube_over_50mm_episodes": 0,
+   "covers_seated": 18,
+   "covers": 18,
+   "max_cube_disp_mm": 0.0
+  },
+  "off10_shipped": {
+   "what": "offset +10 mm in x, shipped",
+   "control": false,
+   "episodes": 6,
+   "successes": 6,
+   "mean_score": 100.0,
+   "episode_s_median": 164.4,
+   "failing_layouts": [],
+   "cup_cube_force_episodes": 0,
+   "cube_over_50mm_episodes": 0,
+   "covers_seated": 18,
+   "covers": 18,
+   "max_cube_disp_mm": 0.0
+  },
+  "off10_corrected": {
+   "what": "offset +10 mm in x, fully corrected",
+   "control": false,
+   "episodes": 6,
+   "successes": 6,
+   "mean_score": 100.0,
+   "episode_s_median": 368.85,
+   "failing_layouts": [],
+   "cup_cube_force_episodes": 6,
+   "cube_over_50mm_episodes": 0,
+   "covers_seated": 18,
+   "covers": 18,
+   "max_cube_disp_mm": 0.55
+  },
+  "off14_shipped": {
+   "what": "offset +14 mm in x, shipped",
+   "control": false,
+   "episodes": 6,
+   "successes": 6,
+   "mean_score": 100.0,
+   "episode_s_median": 231.45,
+   "failing_layouts": [],
+   "cup_cube_force_episodes": 6,
+   "cube_over_50mm_episodes": 0,
+   "covers_seated": 18,
+   "covers": 18,
+   "max_cube_disp_mm": 0.98
+  },
+  "off14_corrected": {
+   "what": "offset +14 mm in x, fully corrected",
+   "control": false,
+   "episodes": 6,
+   "successes": 6,
+   "mean_score": 100.0,
+   "episode_s_median": 342.9,
+   "failing_layouts": [],
+   "cup_cube_force_episodes": 6,
+   "cube_over_50mm_episodes": 0,
+   "covers_seated": 18,
+   "covers": 18,
+   "max_cube_disp_mm": 3.72
+  },
+  "shipped_rep": {
+   "what": "shipped, seed 2 layout 0 twice in one process",
+   "control": true,
+   "episodes": 1,
+   "successes": 1,
+   "mean_score": 100.0,
+   "episode_s_median": 269.9,
+   "failing_layouts": [],
+   "cup_cube_force_episodes": 0,
+   "cube_over_50mm_episodes": 0,
+   "covers_seated": 3,
+   "covers": 3,
+   "max_cube_disp_mm": 0.0
+  },
+  "corrected_rep": {
+   "what": "corrected, seed 2 layout 0 twice in one process",
+   "control": true,
+   "episodes": 1,
+   "successes": 1,
+   "mean_score": 100.0,
+   "episode_s_median": 244.5,
+   "failing_layouts": [],
+   "cup_cube_force_episodes": 0,
+   "cube_over_50mm_episodes": 0,
+   "covers_seated": 3,
+   "covers": 3,
+   "max_cube_disp_mm": 0.0
+  },
+  "dev_shipped": {
+   "what": "seed 0 layout 0, shipped: plain, --contact_log, offset wrapper at 0,0",
+   "control": true,
+   "episodes": 1,
+   "successes": 1,
+   "mean_score": 100.0,
+   "episode_s_median": 103.5,
+   "failing_layouts": [],
+   "cup_cube_force_episodes": 0,
+   "cube_over_50mm_episodes": 0,
+   "covers_seated": 3,
+   "covers": 3,
+   "max_cube_disp_mm": 0.0
+  }
+ },
+ "paired": {
+  "corrected": {
+   "pairs": 6,
+   "arm_only_success": 0,
+   "reference_only_success": 0,
+   "mean_score_difference": 0.0,
+   "bootstrap95": [
+    0.0,
+    0.0
+   ],
+   "mcnemar_p": 1.0,
+   "identical_final_state": 0,
+   "beyond_noise": false,
+   "reference": "shipped"
+  },
+  "off3_shipped": {
+   "pairs": 6,
+   "arm_only_success": 0,
+   "reference_only_success": 0,
+   "mean_score_difference": 0.0,
+   "bootstrap95": [
+    0.0,
+    0.0
+   ],
+   "mcnemar_p": 1.0,
+   "identical_final_state": 0,
+   "beyond_noise": false,
+   "reference": "shipped"
+  },
+  "off3_corrected": {
+   "pairs": 6,
+   "arm_only_success": 0,
+   "reference_only_success": 0,
+   "mean_score_difference": 0.0,
+   "bootstrap95": [
+    0.0,
+    0.0
+   ],
+   "mcnemar_p": 1.0,
+   "identical_final_state": 0,
+   "beyond_noise": false,
+   "reference": "off3_shipped"
+  },
+  "off10_shipped": {
+   "pairs": 6,
+   "arm_only_success": 0,
+   "reference_only_success": 0,
+   "mean_score_difference": 0.0,
+   "bootstrap95": [
+    0.0,
+    0.0
+   ],
+   "mcnemar_p": 1.0,
+   "identical_final_state": 0,
+   "beyond_noise": false,
+   "reference": "shipped"
+  },
+  "off10_corrected": {
+   "pairs": 6,
+   "arm_only_success": 0,
+   "reference_only_success": 0,
+   "mean_score_difference": 0.0,
+   "bootstrap95": [
+    0.0,
+    0.0
+   ],
+   "mcnemar_p": 1.0,
+   "identical_final_state": 0,
+   "beyond_noise": false,
+   "reference": "off10_shipped"
+  },
+  "off14_shipped": {
+   "pairs": 6,
+   "arm_only_success": 0,
+   "reference_only_success": 0,
+   "mean_score_difference": 0.0,
+   "bootstrap95": [
+    0.0,
+    0.0
+   ],
+   "mcnemar_p": 1.0,
+   "identical_final_state": 0,
+   "beyond_noise": false,
+   "reference": "shipped"
+  },
+  "off14_corrected": {
+   "pairs": 6,
+   "arm_only_success": 0,
+   "reference_only_success": 0,
+   "mean_score_difference": 0.0,
+   "bootstrap95": [
+    0.0,
+    0.0
+   ],
+   "mcnemar_p": 1.0,
+   "identical_final_state": 0,
+   "beyond_noise": false,
+   "reference": "off14_shipped"
+  }
+ },
+ "determinism": {
+  "shipped_rep s2 l0": {
+   "runs": 3,
+   "tags": [
+    "g4st_cb_ship_rep_q00_vis2",
+    "g4st_cb_ship_rep_q00_vis2",
+    "g4st_cb_ship_q00_vis2"
+   ],
+   "distinct_final_sha256": [
+    "4ec1afc4d92ef78c3bd6ea835a31b7de1caa1de4335421d3f5f70d02a368cf58"
+   ]
+  },
+  "corrected_rep s2 l0": {
+   "runs": 3,
+   "tags": [
+    "g4st_cb_corr_rep_q00_vis2",
+    "g4st_cb_corr_rep_q00_vis2",
+    "g4st_cb_corr_q00_vis2"
+   ],
+   "distinct_final_sha256": [
+    "c2cd692e3598c6ddf79328679c6536ae869c0ddd3394bf4c9b45f9eda863c766"
+   ]
+  },
+  "dev_shipped s0 l0": {
+   "runs": 3,
+   "tags": [
+    "g4st_par_cb_off0_q00_vis2",
+    "g4st_par_cb_ship_log_q00_vis2",
+    "g4st_par_cb_ship_q00_vis2"
+   ],
+   "distinct_final_sha256": [
+    "027f567436fbace7c8b690283d0ee8ec260b0d933598de48467948855c3d3832"
+   ]
+  }
+ },
+ "cost": {
+  "processes": 23,
+  "process_hours": 4.415,
+  "gpu_busy_hours": {
+   "della-vis2:1": 1.514
+  }
+ }
+}

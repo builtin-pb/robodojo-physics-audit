@@ -1,0 +1,60 @@
+[
+ {
+  "condition": "1e4",
+  "engine_material_after_1": [
+   [
+    0.5,
+    0.5,
+    0.0
+   ]
+  ],
+  "engine_material_after_10": [
+   [
+    0.5,
+    0.5,
+    0.0
+   ]
+  ],
+  "slide_mm_after_0p5mps": 18.64,
+  "vertical_change_mm": -0.0,
+  "case001_hold_2kg": {
+   "rotation_in_hand_deg": 0.0,
+   "slip_in_hand_mm": 2.12,
+   "obj_z_before_mm": 31.3,
+   "obj_z_after_mm": 153.1,
+   "finger_force_N_est": [
+    93.6,
+    91.7
+   ]
+  }
+ },
+ {
+  "condition": "realistic",
+  "engine_material_after_1": [
+   [
+    0.4000000059604645,
+    0.3499999940395355,
+    0.0
+   ]
+  ],
+  "engine_material_after_10": [
+   [
+    0.4000000059604645,
+    0.3499999940395355,
+    0.0
+   ]
+  ],
+  "slide_mm_after_0p5mps": 35.49,
+  "vertical_change_mm": -0.0,
+  "case001_hold_2kg": {
+   "rotation_in_hand_deg": 77.87,
+   "slip_in_hand_mm": 78.06,
+   "obj_z_before_mm": 31.2,
+   "obj_z_after_mm": 101.6,
+   "finger_force_N_est": [
+    90.6,
+    95.1
+   ]
+  }
+ }
+]

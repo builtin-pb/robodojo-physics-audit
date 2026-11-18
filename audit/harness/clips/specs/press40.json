@@ -1,0 +1,51 @@
+{
+ "purpose": "#111 press_by_number L0, press_depth_b0_40_clip.json (finger through the button); frames thinned to fit the GPU budget (path tracing costs about 0.4 s per frame after each physics change)",
+ "cameras": [
+  {
+   "name": "btn",
+   "eye": [
+    -0.06,
+    0.2,
+    0.93
+   ],
+   "target": [
+    -0.075,
+    -0.17,
+    0.79
+   ],
+   "focal_mm": 30,
+   "res": [
+    960,
+    540
+   ]
+  }
+ ],
+ "windows": [
+  {
+   "case": "press_button0_40mm_hold3s",
+   "unit": "step",
+   "from": 0,
+   "to": 250,
+   "stride": 50
+  },
+  {
+   "case": "press_button0_40mm_hold3s",
+   "unit": "step",
+   "from": 250,
+   "to": 400,
+   "stride": 3
+  }
+ ],
+ "mode_sweep": [
+  {
+   "name": "pt8",
+   "carb": {
+    "/rtx/rendermode": "PathTracing",
+    "/rtx/pathtracing/spp": 8,
+    "/rtx/pathtracing/totalSpp": 8,
+    "/rtx/pathtracing/optixDenoiser/enabled": true
+   },
+   "warmup": 4
+  }
+ ]
+}

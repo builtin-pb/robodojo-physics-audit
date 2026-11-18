@@ -1,0 +1,3594 @@
+{
+  "task": "put_bottles_into_dustbin",
+  "gate_verdict": {
+    "overall_g2_pass": false,
+    "verdict": "FAIL (does not pass G2 on main's map; points to #193 velocity iterations and #160 pad compliance/chatter)",
+    "criteria": {
+      "post_release_energy": {
+        "status": "FAIL",
+        "detail": "At corrected 4 ms (min_vel_iters=1), multi-bottle rule cuts dE_mech > 1 mJ from 6 -> 1 / 16 windows (1.0249 mJ floor settle), while unresolved #164 rebounds flag 2 / 16 windows (+16.818 mJ on s2 l11 00022, +6.894 mJ on s2 l11 00000; +69.036 mJ at 2 ms, +330.247 mJ at 1 ms on s2 l11 00022; 23 -> 3 / 68 dE_mech and 9 / 68 rebounds across 17 corrected 64/128-iter episodes; pre-v_com-fix inline values were +46.962, +68.925, +328.906 mJ); #164 v2b controls (+604.97, +289.68 mJ; pre-fix +607.17, +288.44 mJ) flag True; all 30 / 30 archives recompute to 0.000000000 mJ."
+      },
+      "penetration_vs_offsets": {
+        "status": "FAIL",
+        "detail": "At corrected 4 ms (CCD=False), 3 / 4 episodes violate bottle|bottle pair contactOffset sum on free-fall bin impacts (max 7.4048 mm > 2.2640 mm; scales as v*dt to 2.8568 mm 1/4 at 2 ms and 0.9119 mm, 0/3 violations at 1 ms). Finger-pad/table pairs have 0 / 11 violations at 64 iters (pad max 0.6238, 0.3150, 0.3318 mm), while 128/255 iters graze r*.camera (3.5689, 7.1050 mm). Controls: 16 iters 5.7735 > 2.7843 mm; 1 iter 34.8493 > 2.9462 mm."
+      },
+      "no_blowups": {
+        "status": "FAIL",
+        "detail": "Passes at 64 and 128 iterations (0 / 17 corrected episodes, max ||v|| = 3.31225 m/s <= 5.0 m/s; 0 / 2 shipped at 3.58109 m/s), but FAILS under 255-iteration stress (2 / 4 episodes: 6.4813 and 6.8589 m/s > 5.0 m/s via #180 S17 jaw bounce). Spike control: 7.96076 > 5.0 m/s (any_blowup=True)."
+      },
+      "iteration_refinement": {
+        "status": "FAIL",
+        "detail": "128 iters (4/4, 100.0) exceeds predeclared 25.0 mm release band (max 33.9988 mm > 25.0 mm on s0 l12 b0_bottle2; 5.78 mm med). 255 iters drops to 3/4 (85.0, s2 l11 flips 100 -> 40 on #160/#180 jaw bounce; max 399.0967 mm > 25.0 mm). Failing controls (iters1_posctrl, iters16_nosolver) trip the same agreement check."
+      },
+      "timestep_refinement": {
+        "status": "OPEN",
+        "detail": "2 ms agrees (4/4, 100.0, settled <= 1.999 mm / 1.292 deg, 13 releases 0.238-7.413 mm <= 30.0 mm, holds s2 l11 00022 to 352). Open at 1 ms: s2 l10 fails reset (UnStableError, v2.1 = 0.0) at check_layout_stability maxstep=300 = 0.300 s (#152/#151), and s0 l12 settles 4.3542 mm > 3.0 mm (3/3 completed layouts score 100.0 with dt2<->dt1 0.511-14.853 mm, 1.6736 mm on s2 l11 00022). Coarse dt=20 ms control trips the same agreement check (s2 l10 40.0, 1266.9053 mm > 30.0 mm)."
+      },
+      "cpu_vs_gpu_dynamics": {
+        "status": "FAIL",
+        "detail": "Outside predeclared 1.0 mm / 1.0 deg settled band on s2 l10 bottle3 (2.0649 mm, 3.3629 deg > 1.0 mm / 1.0 deg; PREDICTIONS.md:48), though 2/2 score 100.0 (362, 456 actions) and 8/8 releases are 0.230-9.200 mm <= 10.0 mm. Coarse 0.001 control exceeds 10 mm (33.81-59.29 mm); #194 upward threshold > +100%."
+      },
+      "batch_size_num_envs_2_vs_1": {
+        "status": "FAIL",
+        "detail": "Outside predeclared 5.0 mm release band on s2 l10 b3_bottle1 00022 handover (6.3859 mm > 5.0 mm; PREDICTIONS.md:54), though [100.0, 100.0] in [456, 476] actions, settled <= 0.0224 mm / 0.0504 deg, and 5/6 releases are 0.100-1.456 mm <= 5.0 mm (env_0 pad/all max pen 0.8270 / 5.0108 mm). Coarse 0.001 control fails ([25.0, 40.0], 1152.8 & 939.9 mm)."
+      },
+      "instrumentation_parity_and_census": {
+        "status": "PASS",
+        "detail": "s0 l12 settled/final SHA-256 bit-identical (0.000000 mm, 0.000000 deg); #183 census complete (8/28 primary pairs carry force, pad-PET 84.514% + 00022-pad 13.893% = 98.407% impulse)."
+      }
+    }
+  },
+  "policy": "script_bottles (tag script-bottles-v2, SHA-256 d2e581ea43eaea935d5fd902318aa4501d95f781f1c20ac04b3c27fede80bb36)",
+  "evaluator": "v2.1 (--evaluator v2; default pickup rule on main is v2.1 per #181; v2.2 #192 open, not merged)",
+  "physics_profile": "corrected at main docs/params (v2_presence #186; stabilization off, min_pos_iters=64, min_vel_iters=1, #160 trip 161.77 N/finger = 323.54 N joint7; #164 unresolved on main)",
+  "held_out_subset": {
+    "episodes": [
+      {
+        "seed": 0,
+        "layout": 12
+      },
+      {
+        "seed": 2,
+        "layout": 10
+      },
+      {
+        "seed": 2,
+        "layout": 11
+      },
+      {
+        "seed": 2,
+        "layout": 12
+      }
+    ],
+    "bottle_models_covered": "10 / 10 (00000, 00002, 00005, 00022, 00025, 00041, 00050, 00055, 00059, 00060)"
+  },
+  "parity_checks": {
+    "corrected_s0_l12_settled_sha256_equal": true,
+    "corrected_s0_l12_settled_sha256": "2caab9e70af0a2178e9efa0f00b0b7daf5155eb6ea79e658061228e4b8f628fc",
+    "corrected_s0_l12_final_sha256_equal": true,
+    "corrected_s0_l12_final_sha256": "0eee7901378dc0e2e02a49d329a21365a0747a0b8035311fb68ee2298b64aaa7"
+  },
+  "contact_census_file": "audit/out/g2/contact_census_put_bottles_into_dustbin.json",
+  "handover_carry_margin_153": {
+    "s2_l11": {
+      "process": "bg2_b1_hdiag_s2_c00_vis2",
+      "joint7_drive_limit_N": 323.54,
+      "windows": [
+        {
+          "tag": "b3_bottle3",
+          "label": "bottle3",
+          "instance": "bottle_22_4",
+          "aborted_before_left_carry": false,
+          "quiet_grip_F_ss_N": 292.92,
+          "carry_substeps": 240,
+          "low_steps_lt_20pct_F_ss": 64,
+          "low_steps_lt_32N": 62,
+          "peak_carry_pad_force_N": 2385.9,
+          "jaw_gap_start_end_mm": [
+            68.1,
+            15.54
+          ],
+          "permanent_drop_before_release": {
+            "action": 349,
+            "substep": 2,
+            "phase": "left_to_dustbin",
+            "bottle_pos_w_m": [
+              -0.574469,
+              -0.062055,
+              0.864527
+            ],
+            "margin_inside_bin_rim_x_mm": 179.67,
+            "margin_past_table_edge_x_mm": 164.47
+          },
+          "end_carry_bottle_pos_w_m": [
+            -0.647507,
+            -0.079259,
+            0.654173
+          ]
+        }
+      ]
+    },
+    "s2_l12": {
+      "process": "bg2_b1_hdiag_s2_c01_vis2",
+      "joint7_drive_limit_N": 323.54,
+      "windows": [
+        {
+          "tag": "b2_bottle3",
+          "label": "bottle3",
+          "instance": "bottle_41_4",
+          "aborted_before_left_carry": true,
+          "end_action": 224,
+          "end_bottle_pos_w_m": [
+            0.27639,
+            -0.08987,
+            0.789398
+          ],
+          "z_margin_vs_0p88m_abort_mm": -90.6
+        },
+        {
+          "tag": "b3_bottle3",
+          "label": "bottle3",
+          "instance": "bottle_41_4",
+          "aborted_before_left_carry": false,
+          "quiet_grip_F_ss_N": 320.86,
+          "carry_substeps": 240,
+          "low_steps_lt_20pct_F_ss": 0,
+          "low_steps_lt_32N": 0,
+          "peak_carry_pad_force_N": 345.9,
+          "jaw_gap_start_end_mm": [
+            49.9,
+            49.9
+          ],
+          "permanent_drop_before_release": null,
+          "end_carry_bottle_pos_w_m": [
+            -0.600058,
+            -0.067871,
+            0.889987
+          ]
+        },
+        {
+          "tag": "b4_bottle2",
+          "label": "bottle2",
+          "instance": "bottle_5_3",
+          "aborted_before_left_carry": false,
+          "quiet_grip_F_ss_N": 323.46,
+          "carry_substeps": 240,
+          "low_steps_lt_20pct_F_ss": 0,
+          "low_steps_lt_32N": 0,
+          "peak_carry_pad_force_N": 356.5,
+          "jaw_gap_start_end_mm": [
+            57.61,
+            57.61
+          ],
+          "permanent_drop_before_release": null,
+          "end_carry_bottle_pos_w_m": [
+            -0.600115,
+            -0.129814,
+            0.897543
+          ]
+        }
+      ]
+    }
+  },
+  "refinement_and_pipeline": {
+    "dt2_2ms": {
+      "episodes": 4,
+      "successes": 4,
+      "mean_v2_1_score": 100.0,
+      "predeclared_settled_band": {
+        "pos_mm": 3.0,
+        "rot_deg": 4.0
+      },
+      "predeclared_release_band_mm": 30.0,
+      "within_predeclared_settled_band": true,
+      "within_predeclared_release_band": true,
+      "outcome_and_action_within_band": true,
+      "within_all_predeclared_bands": true,
+      "agreement_pass": true,
+      "non_marginal_releases_compared": 13,
+      "median_non_marginal_release_diff_mm": 0.8648,
+      "max_non_marginal_release_diff_mm": 7.4135,
+      "per_episode": [
+        {
+          "seed": 0,
+          "layout": 12,
+          "reset_completed": true,
+          "success": true,
+          "v2_1_score": 100.0,
+          "actions": 362,
+          "base_actions": 362,
+          "outcome_agrees": true,
+          "action_count_within_band": true,
+          "delivered_releases_count": 4,
+          "expected_releases_count": 4,
+          "missing_releases_count": 0,
+          "settled_diff_mm_deg": [
+            1.9989,
+            1.2921
+          ],
+          "release_diff_same_tag_mm": {
+            "b0_bottle2": 0.91,
+            "b1_bottle1": 0.5839,
+            "b2_bottle3": 2.5051,
+            "b3_bottle0": 0.8699
+          },
+          "max_non_marginal_release_diff_mm": 2.5051,
+          "within_predeclared_settled_band": true,
+          "within_predeclared_release_band": true,
+          "episode_agreement_pass": true,
+          "post_tumble_bin_final_diff_mm_deg": [
+            103.9553,
+            136.198
+          ],
+          "s2_l11_00022_ke_at_release_mJ": null,
+          "penetration": {
+            "worst_overall_mm": 0.9638,
+            "worst_overall_pair": "bottle0|bottle1",
+            "all_within_single_body_offset": true,
+            "all_within_pair_offset_sum": true,
+            "finger_pad_max_mm": 0.1226,
+            "robot_non_pad_link_max_mm": 0.0,
+            "table_max_mm": 0.211,
+            "dustbin_impact_max_mm": 0.2683,
+            "bottle_bottle_impact_max_mm": 0.9638,
+            "finger_pad_pair_violations": [],
+            "robot_non_pad_pair_violations": [],
+            "free_fall_bin_pair_violations": []
+          },
+          "readback": {
+            "overwrite_gpu_setting": 1,
+            "enable_gpu_dynamics_usd": false,
+            "time_steps_per_s": 500.0,
+            "enable_stabilization": false,
+            "min_pos_iters": 64.0,
+            "effective_pos_iters": 64,
+            "nonzero_gpu_stat_counters": 17
+          }
+        },
+        {
+          "seed": 2,
+          "layout": 10,
+          "reset_completed": true,
+          "success": true,
+          "v2_1_score": 100.0,
+          "actions": 456,
+          "base_actions": 456,
+          "outcome_agrees": true,
+          "action_count_within_band": true,
+          "delivered_releases_count": 4,
+          "expected_releases_count": 4,
+          "missing_releases_count": 0,
+          "settled_diff_mm_deg": [
+            0.7184,
+            1.0023
+          ],
+          "release_diff_same_tag_mm": {
+            "b0_bottle2": 0.8648,
+            "b1_bottle3": 0.5061,
+            "b2_bottle0": 0.845,
+            "b3_bottle1": 7.4135
+          },
+          "max_non_marginal_release_diff_mm": 7.4135,
+          "within_predeclared_settled_band": true,
+          "within_predeclared_release_band": true,
+          "episode_agreement_pass": true,
+          "post_tumble_bin_final_diff_mm_deg": [
+            217.5883,
+            178.3683
+          ],
+          "s2_l11_00022_ke_at_release_mJ": null,
+          "penetration": {
+            "worst_overall_mm": 2.8568,
+            "worst_overall_pair": "bottle2|bottle3",
+            "all_within_single_body_offset": false,
+            "all_within_pair_offset_sum": false,
+            "finger_pad_max_mm": 0.2543,
+            "robot_non_pad_link_max_mm": 0.0,
+            "table_max_mm": 0.0066,
+            "dustbin_impact_max_mm": 1.6329,
+            "bottle_bottle_impact_max_mm": 2.8568,
+            "finger_pad_pair_violations": [],
+            "robot_non_pad_pair_violations": [],
+            "free_fall_bin_pair_violations": [
+              {
+                "pair": "bottle2|bottle3",
+                "pen_mm": 2.8568,
+                "pair_offset_mm": 2.4959
+              }
+            ]
+          },
+          "readback": {
+            "overwrite_gpu_setting": 1,
+            "enable_gpu_dynamics_usd": false,
+            "time_steps_per_s": 500.0,
+            "enable_stabilization": false,
+            "min_pos_iters": 64.0,
+            "effective_pos_iters": 64,
+            "nonzero_gpu_stat_counters": 17
+          }
+        },
+        {
+          "seed": 2,
+          "layout": 11,
+          "reset_completed": true,
+          "success": true,
+          "v2_1_score": 100.0,
+          "actions": 362,
+          "base_actions": 362,
+          "outcome_agrees": true,
+          "action_count_within_band": true,
+          "delivered_releases_count": 4,
+          "expected_releases_count": 4,
+          "missing_releases_count": 0,
+          "settled_diff_mm_deg": [
+            0.0141,
+            0.0014
+          ],
+          "release_diff_same_tag_mm": {
+            "b0_bottle2": 0.7808,
+            "b1_bottle0": 7.079,
+            "b2_bottle1": 2.3674,
+            "b3_bottle3": 256.6845
+          },
+          "max_non_marginal_release_diff_mm": 7.079,
+          "within_predeclared_settled_band": true,
+          "within_predeclared_release_band": true,
+          "episode_agreement_pass": true,
+          "post_tumble_bin_final_diff_mm_deg": [
+            175.6099,
+            171.0442
+          ],
+          "s2_l11_00022_ke_at_release_mJ": 0.020705,
+          "penetration": {
+            "worst_overall_mm": 1.5852,
+            "worst_overall_pair": "bottle0|bottle1",
+            "all_within_single_body_offset": false,
+            "all_within_pair_offset_sum": true,
+            "finger_pad_max_mm": 0.284,
+            "robot_non_pad_link_max_mm": 0.0176,
+            "table_max_mm": 0.0284,
+            "dustbin_impact_max_mm": 0.3425,
+            "bottle_bottle_impact_max_mm": 1.5852,
+            "finger_pad_pair_violations": [],
+            "robot_non_pad_pair_violations": [],
+            "free_fall_bin_pair_violations": []
+          },
+          "readback": {
+            "overwrite_gpu_setting": 1,
+            "enable_gpu_dynamics_usd": false,
+            "time_steps_per_s": 500.0,
+            "enable_stabilization": false,
+            "min_pos_iters": 64.0,
+            "effective_pos_iters": 64,
+            "nonzero_gpu_stat_counters": 17
+          }
+        },
+        {
+          "seed": 2,
+          "layout": 12,
+          "reset_completed": true,
+          "success": true,
+          "v2_1_score": 100.0,
+          "actions": 476,
+          "base_actions": 476,
+          "outcome_agrees": true,
+          "action_count_within_band": true,
+          "delivered_releases_count": 4,
+          "expected_releases_count": 4,
+          "missing_releases_count": 0,
+          "settled_diff_mm_deg": [
+            0.0141,
+            0.0019
+          ],
+          "release_diff_same_tag_mm": {
+            "b0_bottle1": 0.3617,
+            "b1_bottle0": 0.2378
+          },
+          "max_non_marginal_release_diff_mm": 0.3617,
+          "within_predeclared_settled_band": true,
+          "within_predeclared_release_band": true,
+          "episode_agreement_pass": true,
+          "post_tumble_bin_final_diff_mm_deg": [
+            268.7838,
+            154.9682
+          ],
+          "s2_l11_00022_ke_at_release_mJ": null,
+          "penetration": {
+            "worst_overall_mm": 1.7062,
+            "worst_overall_pair": "Table|bottle3",
+            "all_within_single_body_offset": false,
+            "all_within_pair_offset_sum": true,
+            "finger_pad_max_mm": 0.3148,
+            "robot_non_pad_link_max_mm": 0.48,
+            "table_max_mm": 1.7062,
+            "dustbin_impact_max_mm": 0.2572,
+            "bottle_bottle_impact_max_mm": 0.301,
+            "finger_pad_pair_violations": [],
+            "robot_non_pad_pair_violations": [],
+            "free_fall_bin_pair_violations": []
+          },
+          "readback": {
+            "overwrite_gpu_setting": 1,
+            "enable_gpu_dynamics_usd": false,
+            "time_steps_per_s": 500.0,
+            "enable_stabilization": false,
+            "min_pos_iters": 64.0,
+            "effective_pos_iters": 64,
+            "nonzero_gpu_stat_counters": 17
+          }
+        }
+      ]
+    },
+    "dt1_1ms": {
+      "episodes": 4,
+      "successes": 3,
+      "mean_v2_1_score": 75.0,
+      "predeclared_settled_band": {
+        "pos_mm": 3.0,
+        "rot_deg": 4.0
+      },
+      "predeclared_release_band_mm": 30.0,
+      "within_predeclared_settled_band": false,
+      "within_predeclared_release_band": false,
+      "outcome_and_action_within_band": false,
+      "within_all_predeclared_bands": false,
+      "agreement_pass": false,
+      "non_marginal_releases_compared": 11,
+      "median_non_marginal_release_diff_mm": 1.073,
+      "max_non_marginal_release_diff_mm": 14.7407,
+      "per_episode": [
+        {
+          "seed": 0,
+          "layout": 12,
+          "reset_completed": true,
+          "success": true,
+          "v2_1_score": 100.0,
+          "actions": 362,
+          "base_actions": 362,
+          "outcome_agrees": true,
+          "action_count_within_band": true,
+          "delivered_releases_count": 4,
+          "expected_releases_count": 4,
+          "missing_releases_count": 0,
+          "settled_diff_mm_deg": [
+            4.3542,
+            2.7142
+          ],
+          "release_diff_same_tag_mm": {
+            "b0_bottle2": 4.3692,
+            "b1_bottle1": 0.6582,
+            "b2_bottle3": 9.4217,
+            "b3_bottle0": 0.6219
+          },
+          "max_non_marginal_release_diff_mm": 9.4217,
+          "within_predeclared_settled_band": false,
+          "within_predeclared_release_band": true,
+          "episode_agreement_pass": false,
+          "post_tumble_bin_final_diff_mm_deg": [
+            156.9625,
+            158.4876
+          ],
+          "s2_l11_00022_ke_at_release_mJ": null,
+          "penetration": {
+            "worst_overall_mm": 1.9394,
+            "worst_overall_pair": "bottle3|dustbin",
+            "all_within_single_body_offset": false,
+            "all_within_pair_offset_sum": true,
+            "finger_pad_max_mm": 0.0966,
+            "robot_non_pad_link_max_mm": 0.0,
+            "table_max_mm": 0.2095,
+            "dustbin_impact_max_mm": 1.9394,
+            "bottle_bottle_impact_max_mm": 0.2702,
+            "finger_pad_pair_violations": [],
+            "robot_non_pad_pair_violations": [],
+            "free_fall_bin_pair_violations": []
+          },
+          "readback": {
+            "overwrite_gpu_setting": 1,
+            "enable_gpu_dynamics_usd": false,
+            "time_steps_per_s": 1000.0,
+            "enable_stabilization": false,
+            "min_pos_iters": 64.0,
+            "effective_pos_iters": 64,
+            "nonzero_gpu_stat_counters": 17
+          }
+        },
+        {
+          "seed": 2,
+          "layout": 10,
+          "unstable": "UnStableError('All scene Unstable Error!')",
+          "reset_completed": false,
+          "success": false,
+          "v2_1_score": 0.0,
+          "actions": 0,
+          "base_actions": 456,
+          "outcome_agrees": false,
+          "action_count_within_band": false,
+          "within_predeclared_settled_band": false,
+          "within_predeclared_release_band": false,
+          "episode_agreement_pass": false,
+          "reason": "check_layout_stability maxstep=300 (0.300 s at dt=1 ms before +2532 top-up; #152/#151)"
+        },
+        {
+          "seed": 2,
+          "layout": 11,
+          "reset_completed": true,
+          "success": true,
+          "v2_1_score": 100.0,
+          "actions": 366,
+          "base_actions": 362,
+          "outcome_agrees": true,
+          "action_count_within_band": false,
+          "delivered_releases_count": 4,
+          "expected_releases_count": 4,
+          "missing_releases_count": 0,
+          "settled_diff_mm_deg": [
+            0.1105,
+            0.0074
+          ],
+          "release_diff_same_tag_mm": {
+            "b0_bottle2": 0.6794,
+            "b1_bottle0": 5.1299,
+            "b2_bottle1": 1.073,
+            "b3_bottle3": 258.0613
+          },
+          "max_non_marginal_release_diff_mm": 5.1299,
+          "within_predeclared_settled_band": true,
+          "within_predeclared_release_band": true,
+          "episode_agreement_pass": false,
+          "post_tumble_bin_final_diff_mm_deg": [
+            233.1474,
+            132.1165
+          ],
+          "s2_l11_00022_ke_at_release_mJ": 0.038478,
+          "penetration": {
+            "worst_overall_mm": 4.3033,
+            "worst_overall_pair": "bottle1|dustbin",
+            "all_within_single_body_offset": false,
+            "all_within_pair_offset_sum": true,
+            "finger_pad_max_mm": 0.3322,
+            "robot_non_pad_link_max_mm": 0.012,
+            "table_max_mm": 0.0032,
+            "dustbin_impact_max_mm": 4.3033,
+            "bottle_bottle_impact_max_mm": 0.3152,
+            "finger_pad_pair_violations": [],
+            "robot_non_pad_pair_violations": [],
+            "free_fall_bin_pair_violations": []
+          },
+          "readback": {
+            "overwrite_gpu_setting": 1,
+            "enable_gpu_dynamics_usd": false,
+            "time_steps_per_s": 1000.0,
+            "enable_stabilization": false,
+            "min_pos_iters": 64.0,
+            "effective_pos_iters": 64,
+            "nonzero_gpu_stat_counters": 17
+          }
+        },
+        {
+          "seed": 2,
+          "layout": 12,
+          "reset_completed": true,
+          "success": true,
+          "v2_1_score": 100.0,
+          "actions": 476,
+          "base_actions": 476,
+          "outcome_agrees": true,
+          "action_count_within_band": true,
+          "delivered_releases_count": 4,
+          "expected_releases_count": 4,
+          "missing_releases_count": 0,
+          "settled_diff_mm_deg": [
+            0.17,
+            0.0114
+          ],
+          "release_diff_same_tag_mm": {
+            "b0_bottle1": 0.5697,
+            "b1_bottle0": 14.7407,
+            "b3_bottle3": 7.8266,
+            "b4_bottle2": 0.2096
+          },
+          "max_non_marginal_release_diff_mm": 14.7407,
+          "within_predeclared_settled_band": true,
+          "within_predeclared_release_band": true,
+          "episode_agreement_pass": true,
+          "post_tumble_bin_final_diff_mm_deg": [
+            232.7432,
+            166.5749
+          ],
+          "s2_l11_00022_ke_at_release_mJ": null,
+          "penetration": {
+            "worst_overall_mm": 0.9119,
+            "worst_overall_pair": "bottle0|bottle3",
+            "all_within_single_body_offset": true,
+            "all_within_pair_offset_sum": true,
+            "finger_pad_max_mm": 0.1424,
+            "robot_non_pad_link_max_mm": 0.0072,
+            "table_max_mm": 0.1373,
+            "dustbin_impact_max_mm": 0.5576,
+            "bottle_bottle_impact_max_mm": 0.9119,
+            "finger_pad_pair_violations": [],
+            "robot_non_pad_pair_violations": [],
+            "free_fall_bin_pair_violations": []
+          },
+          "readback": {
+            "overwrite_gpu_setting": 1,
+            "enable_gpu_dynamics_usd": false,
+            "time_steps_per_s": 1000.0,
+            "enable_stabilization": false,
+            "min_pos_iters": 64.0,
+            "effective_pos_iters": 64,
+            "nonzero_gpu_stat_counters": 17
+          }
+        }
+      ]
+    },
+    "iters128": {
+      "episodes": 4,
+      "successes": 4,
+      "mean_v2_1_score": 100.0,
+      "predeclared_settled_band": {
+        "pos_mm": 3.0,
+        "rot_deg": 4.0
+      },
+      "predeclared_release_band_mm": 25.0,
+      "within_predeclared_settled_band": true,
+      "within_predeclared_release_band": false,
+      "outcome_and_action_within_band": true,
+      "within_all_predeclared_bands": false,
+      "agreement_pass": false,
+      "non_marginal_releases_compared": 13,
+      "median_non_marginal_release_diff_mm": 5.778,
+      "max_non_marginal_release_diff_mm": 33.9989,
+      "per_episode": [
+        {
+          "seed": 0,
+          "layout": 12,
+          "reset_completed": true,
+          "success": true,
+          "v2_1_score": 100.0,
+          "actions": 362,
+          "base_actions": 362,
+          "outcome_agrees": true,
+          "action_count_within_band": true,
+          "delivered_releases_count": 4,
+          "expected_releases_count": 4,
+          "missing_releases_count": 0,
+          "settled_diff_mm_deg": [
+            0.0,
+            0.0109
+          ],
+          "release_diff_same_tag_mm": {
+            "b0_bottle2": 33.9989,
+            "b1_bottle1": 0.6,
+            "b2_bottle3": 0.2973,
+            "b3_bottle0": 5.778
+          },
+          "max_non_marginal_release_diff_mm": 33.9989,
+          "within_predeclared_settled_band": true,
+          "within_predeclared_release_band": false,
+          "episode_agreement_pass": false,
+          "post_tumble_bin_final_diff_mm_deg": [
+            157.2828,
+            147.9814
+          ],
+          "s2_l11_00022_ke_at_release_mJ": null,
+          "penetration": {
+            "worst_overall_mm": 2.6895,
+            "worst_overall_pair": "bottle0|bottle1",
+            "all_within_single_body_offset": false,
+            "all_within_pair_offset_sum": true,
+            "finger_pad_max_mm": 0.7568,
+            "robot_non_pad_link_max_mm": 1.6287,
+            "table_max_mm": 0.4841,
+            "dustbin_impact_max_mm": 1.0337,
+            "bottle_bottle_impact_max_mm": 2.6895,
+            "finger_pad_pair_violations": [],
+            "robot_non_pad_pair_violations": [],
+            "free_fall_bin_pair_violations": []
+          },
+          "readback": {
+            "overwrite_gpu_setting": 1,
+            "enable_gpu_dynamics_usd": false,
+            "time_steps_per_s": 250.0,
+            "enable_stabilization": false,
+            "min_pos_iters": 128.0,
+            "effective_pos_iters": 128,
+            "nonzero_gpu_stat_counters": 17
+          }
+        },
+        {
+          "seed": 2,
+          "layout": 10,
+          "reset_completed": true,
+          "success": true,
+          "v2_1_score": 100.0,
+          "actions": 456,
+          "base_actions": 456,
+          "outcome_agrees": true,
+          "action_count_within_band": true,
+          "delivered_releases_count": 4,
+          "expected_releases_count": 4,
+          "missing_releases_count": 0,
+          "settled_diff_mm_deg": [
+            0.0949,
+            0.2649
+          ],
+          "release_diff_same_tag_mm": {
+            "b0_bottle2": 9.5749,
+            "b1_bottle3": 1.2912,
+            "b2_bottle0": 0.6844,
+            "b3_bottle1": 21.8445
+          },
+          "max_non_marginal_release_diff_mm": 21.8445,
+          "within_predeclared_settled_band": true,
+          "within_predeclared_release_band": true,
+          "episode_agreement_pass": true,
+          "post_tumble_bin_final_diff_mm_deg": [
+            144.579,
+            170.0104
+          ],
+          "s2_l11_00022_ke_at_release_mJ": null,
+          "penetration": {
+            "worst_overall_mm": 8.6502,
+            "worst_overall_pair": "bottle0|bottle2",
+            "all_within_single_body_offset": false,
+            "all_within_pair_offset_sum": false,
+            "finger_pad_max_mm": 0.2993,
+            "robot_non_pad_link_max_mm": 0.0,
+            "table_max_mm": 0.8534,
+            "dustbin_impact_max_mm": 0.6155,
+            "bottle_bottle_impact_max_mm": 8.6502,
+            "finger_pad_pair_violations": [],
+            "robot_non_pad_pair_violations": [],
+            "free_fall_bin_pair_violations": [
+              {
+                "pair": "bottle0|bottle2",
+                "pen_mm": 8.6502,
+                "pair_offset_mm": 2.3223
+              }
+            ]
+          },
+          "readback": {
+            "overwrite_gpu_setting": 1,
+            "enable_gpu_dynamics_usd": false,
+            "time_steps_per_s": 250.0,
+            "enable_stabilization": false,
+            "min_pos_iters": 128.0,
+            "effective_pos_iters": 128,
+            "nonzero_gpu_stat_counters": 17
+          }
+        },
+        {
+          "seed": 2,
+          "layout": 11,
+          "reset_completed": true,
+          "success": true,
+          "v2_1_score": 100.0,
+          "actions": 362,
+          "base_actions": 362,
+          "outcome_agrees": true,
+          "action_count_within_band": true,
+          "delivered_releases_count": 4,
+          "expected_releases_count": 4,
+          "missing_releases_count": 0,
+          "settled_diff_mm_deg": [
+            0.01,
+            0.0017
+          ],
+          "release_diff_same_tag_mm": {
+            "b0_bottle2": 14.6366,
+            "b1_bottle0": 9.1536,
+            "b2_bottle1": 1.8757,
+            "b3_bottle3": 289.4373
+          },
+          "max_non_marginal_release_diff_mm": 14.6366,
+          "within_predeclared_settled_band": true,
+          "within_predeclared_release_band": true,
+          "episode_agreement_pass": true,
+          "post_tumble_bin_final_diff_mm_deg": [
+            91.703,
+            177.6465
+          ],
+          "s2_l11_00022_ke_at_release_mJ": 33.683262,
+          "penetration": {
+            "worst_overall_mm": 4.7974,
+            "worst_overall_pair": "Table|bottle3",
+            "all_within_single_body_offset": false,
+            "all_within_pair_offset_sum": false,
+            "finger_pad_max_mm": 1.3047,
+            "robot_non_pad_link_max_mm": 3.5741,
+            "table_max_mm": 4.7974,
+            "dustbin_impact_max_mm": 0.6519,
+            "bottle_bottle_impact_max_mm": 2.9368,
+            "finger_pad_pair_violations": [],
+            "robot_non_pad_pair_violations": [
+              {
+                "pair": "bottle0|r0.camera",
+                "pen_mm": 2.9293,
+                "pair_offset_mm": 2.7884
+              },
+              {
+                "pair": "bottle3|r1.camera",
+                "pen_mm": 3.5741,
+                "pair_offset_mm": 2.9463
+              }
+            ],
+            "free_fall_bin_pair_violations": [
+              {
+                "pair": "bottle0|bottle2",
+                "pen_mm": 2.9368,
+                "pair_offset_mm": 2.2834
+              }
+            ]
+          },
+          "readback": {
+            "overwrite_gpu_setting": 1,
+            "enable_gpu_dynamics_usd": false,
+            "time_steps_per_s": 250.0,
+            "enable_stabilization": false,
+            "min_pos_iters": 128.0,
+            "effective_pos_iters": 128,
+            "nonzero_gpu_stat_counters": 17
+          }
+        },
+        {
+          "seed": 2,
+          "layout": 12,
+          "reset_completed": true,
+          "success": true,
+          "v2_1_score": 100.0,
+          "actions": 476,
+          "base_actions": 476,
+          "outcome_agrees": true,
+          "action_count_within_band": true,
+          "delivered_releases_count": 4,
+          "expected_releases_count": 4,
+          "missing_releases_count": 0,
+          "settled_diff_mm_deg": [
+            0.01,
+            0.0011
+          ],
+          "release_diff_same_tag_mm": {
+            "b0_bottle1": 5.2818,
+            "b1_bottle0": 19.3413
+          },
+          "max_non_marginal_release_diff_mm": 19.3413,
+          "within_predeclared_settled_band": true,
+          "within_predeclared_release_band": true,
+          "episode_agreement_pass": true,
+          "post_tumble_bin_final_diff_mm_deg": [
+            264.8899,
+            99.1098
+          ],
+          "s2_l11_00022_ke_at_release_mJ": null,
+          "penetration": {
+            "worst_overall_mm": 1.5169,
+            "worst_overall_pair": "bottle1|bottle3",
+            "all_within_single_body_offset": false,
+            "all_within_pair_offset_sum": true,
+            "finger_pad_max_mm": 0.2729,
+            "robot_non_pad_link_max_mm": 0.1155,
+            "table_max_mm": 0.3986,
+            "dustbin_impact_max_mm": 0.8391,
+            "bottle_bottle_impact_max_mm": 1.5169,
+            "finger_pad_pair_violations": [],
+            "robot_non_pad_pair_violations": [],
+            "free_fall_bin_pair_violations": []
+          },
+          "readback": {
+            "overwrite_gpu_setting": 1,
+            "enable_gpu_dynamics_usd": false,
+            "time_steps_per_s": 250.0,
+            "enable_stabilization": false,
+            "min_pos_iters": 128.0,
+            "effective_pos_iters": 128,
+            "nonzero_gpu_stat_counters": 17
+          }
+        }
+      ]
+    },
+    "iters255": {
+      "episodes": 4,
+      "successes": 3,
+      "mean_v2_1_score": 85.0,
+      "predeclared_settled_band": {
+        "pos_mm": 3.0,
+        "rot_deg": 4.0
+      },
+      "predeclared_release_band_mm": 25.0,
+      "within_predeclared_settled_band": true,
+      "within_predeclared_release_band": false,
+      "outcome_and_action_within_band": false,
+      "within_all_predeclared_bands": false,
+      "agreement_pass": false,
+      "non_marginal_releases_compared": 13,
+      "median_non_marginal_release_diff_mm": 5.0018,
+      "max_non_marginal_release_diff_mm": 399.0967,
+      "per_episode": [
+        {
+          "seed": 0,
+          "layout": 12,
+          "reset_completed": true,
+          "success": true,
+          "v2_1_score": 100.0,
+          "actions": 362,
+          "base_actions": 362,
+          "outcome_agrees": true,
+          "action_count_within_band": true,
+          "delivered_releases_count": 4,
+          "expected_releases_count": 4,
+          "missing_releases_count": 0,
+          "settled_diff_mm_deg": [
+            0.0,
+            0.0145
+          ],
+          "release_diff_same_tag_mm": {
+            "b0_bottle2": 2.9988,
+            "b1_bottle1": 0.195,
+            "b2_bottle3": 1.7889,
+            "b3_bottle0": 35.272
+          },
+          "max_non_marginal_release_diff_mm": 35.272,
+          "within_predeclared_settled_band": true,
+          "within_predeclared_release_band": false,
+          "episode_agreement_pass": false,
+          "post_tumble_bin_final_diff_mm_deg": [
+            105.6956,
+            176.2179
+          ],
+          "s2_l11_00022_ke_at_release_mJ": null,
+          "penetration": {
+            "worst_overall_mm": 6.9511,
+            "worst_overall_pair": "bottle2|bottle3",
+            "all_within_single_body_offset": false,
+            "all_within_pair_offset_sum": false,
+            "finger_pad_max_mm": 0.3485,
+            "robot_non_pad_link_max_mm": 0.1665,
+            "table_max_mm": 0.0009,
+            "dustbin_impact_max_mm": 0.3189,
+            "bottle_bottle_impact_max_mm": 6.9511,
+            "finger_pad_pair_violations": [],
+            "robot_non_pad_pair_violations": [],
+            "free_fall_bin_pair_violations": [
+              {
+                "pair": "bottle2|bottle3",
+                "pen_mm": 6.9511,
+                "pair_offset_mm": 2.264
+              }
+            ]
+          },
+          "readback": {
+            "overwrite_gpu_setting": 1,
+            "enable_gpu_dynamics_usd": false,
+            "time_steps_per_s": 250.0,
+            "enable_stabilization": false,
+            "min_pos_iters": 255.0,
+            "effective_pos_iters": 255,
+            "nonzero_gpu_stat_counters": 17
+          }
+        },
+        {
+          "seed": 2,
+          "layout": 10,
+          "reset_completed": true,
+          "success": true,
+          "v2_1_score": 100.0,
+          "actions": 456,
+          "base_actions": 456,
+          "outcome_agrees": true,
+          "action_count_within_band": true,
+          "delivered_releases_count": 4,
+          "expected_releases_count": 4,
+          "missing_releases_count": 0,
+          "settled_diff_mm_deg": [
+            0.1931,
+            0.4139
+          ],
+          "release_diff_same_tag_mm": {
+            "b0_bottle2": 13.1299,
+            "b1_bottle3": 4.3941,
+            "b2_bottle0": 5.0018,
+            "b3_bottle1": 399.0967
+          },
+          "max_non_marginal_release_diff_mm": 399.0967,
+          "within_predeclared_settled_band": true,
+          "within_predeclared_release_band": false,
+          "episode_agreement_pass": false,
+          "post_tumble_bin_final_diff_mm_deg": [
+            185.3183,
+            168.2218
+          ],
+          "s2_l11_00022_ke_at_release_mJ": null,
+          "penetration": {
+            "worst_overall_mm": 9.872,
+            "worst_overall_pair": "bottle0|bottle1",
+            "all_within_single_body_offset": false,
+            "all_within_pair_offset_sum": false,
+            "finger_pad_max_mm": 0.7048,
+            "robot_non_pad_link_max_mm": 1.3095,
+            "table_max_mm": 0.0058,
+            "dustbin_impact_max_mm": 1.243,
+            "bottle_bottle_impact_max_mm": 9.872,
+            "finger_pad_pair_violations": [],
+            "robot_non_pad_pair_violations": [],
+            "free_fall_bin_pair_violations": [
+              {
+                "pair": "bottle0|bottle1",
+                "pen_mm": 9.872,
+                "pair_offset_mm": 2.438
+              },
+              {
+                "pair": "bottle0|bottle2",
+                "pen_mm": 2.8244,
+                "pair_offset_mm": 2.3223
+              }
+            ]
+          },
+          "readback": {
+            "overwrite_gpu_setting": 1,
+            "enable_gpu_dynamics_usd": false,
+            "time_steps_per_s": 250.0,
+            "enable_stabilization": false,
+            "min_pos_iters": 255.0,
+            "effective_pos_iters": 255,
+            "nonzero_gpu_stat_counters": 17
+          }
+        },
+        {
+          "seed": 2,
+          "layout": 11,
+          "reset_completed": true,
+          "success": false,
+          "v2_1_score": 40.0,
+          "actions": 700,
+          "base_actions": 362,
+          "outcome_agrees": false,
+          "action_count_within_band": false,
+          "delivered_releases_count": 4,
+          "expected_releases_count": 4,
+          "missing_releases_count": 0,
+          "settled_diff_mm_deg": [
+            0.0141,
+            0.0011
+          ],
+          "release_diff_same_tag_mm": {
+            "b0_bottle2": 12.4717,
+            "b1_bottle0": 5.3448,
+            "b2_bottle1": 1.4411,
+            "b3_bottle3": 677.0289
+          },
+          "max_non_marginal_release_diff_mm": 12.4717,
+          "within_predeclared_settled_band": true,
+          "within_predeclared_release_band": true,
+          "episode_agreement_pass": false,
+          "post_tumble_bin_final_diff_mm_deg": [
+            629.0752,
+            89.4318
+          ],
+          "s2_l11_00022_ke_at_release_mJ": 312.219619,
+          "penetration": {
+            "worst_overall_mm": 8.3068,
+            "worst_overall_pair": "Ground|bottle3",
+            "all_within_single_body_offset": false,
+            "all_within_pair_offset_sum": false,
+            "finger_pad_max_mm": 0.7523,
+            "robot_non_pad_link_max_mm": 0.0212,
+            "table_max_mm": 0.0011,
+            "dustbin_impact_max_mm": 1.9598,
+            "bottle_bottle_impact_max_mm": 4.3682,
+            "finger_pad_pair_violations": [],
+            "robot_non_pad_pair_violations": [],
+            "free_fall_bin_pair_violations": [
+              {
+                "pair": "bottle1|bottle2",
+                "pen_mm": 4.3682,
+                "pair_offset_mm": 2.0896
+              }
+            ]
+          },
+          "readback": {
+            "overwrite_gpu_setting": 1,
+            "enable_gpu_dynamics_usd": false,
+            "time_steps_per_s": 250.0,
+            "enable_stabilization": false,
+            "min_pos_iters": 255.0,
+            "effective_pos_iters": 255,
+            "nonzero_gpu_stat_counters": 17
+          }
+        },
+        {
+          "seed": 2,
+          "layout": 12,
+          "reset_completed": true,
+          "success": true,
+          "v2_1_score": 100.0,
+          "actions": 476,
+          "base_actions": 476,
+          "outcome_agrees": true,
+          "action_count_within_band": true,
+          "delivered_releases_count": 4,
+          "expected_releases_count": 4,
+          "missing_releases_count": 0,
+          "settled_diff_mm_deg": [
+            0.01,
+            0.0016
+          ],
+          "release_diff_same_tag_mm": {
+            "b0_bottle1": 3.0146,
+            "b1_bottle0": 20.2284
+          },
+          "max_non_marginal_release_diff_mm": 20.2284,
+          "within_predeclared_settled_band": true,
+          "within_predeclared_release_band": true,
+          "episode_agreement_pass": true,
+          "post_tumble_bin_final_diff_mm_deg": [
+            250.0822,
+            137.327
+          ],
+          "s2_l11_00022_ke_at_release_mJ": null,
+          "penetration": {
+            "worst_overall_mm": 7.105,
+            "worst_overall_pair": "bottle3|r1.camera",
+            "all_within_single_body_offset": false,
+            "all_within_pair_offset_sum": false,
+            "finger_pad_max_mm": 2.4154,
+            "robot_non_pad_link_max_mm": 7.105,
+            "table_max_mm": 0.8344,
+            "dustbin_impact_max_mm": 0.9979,
+            "bottle_bottle_impact_max_mm": 6.317,
+            "finger_pad_pair_violations": [],
+            "robot_non_pad_pair_violations": [
+              {
+                "pair": "bottle3|r1.camera",
+                "pen_mm": 7.105,
+                "pair_offset_mm": 2.5987
+              }
+            ],
+            "free_fall_bin_pair_violations": [
+              {
+                "pair": "bottle0|bottle1",
+                "pen_mm": 6.317,
+                "pair_offset_mm": 2.4219
+              },
+              {
+                "pair": "bottle0|bottle2",
+                "pen_mm": 3.7193,
+                "pair_offset_mm": 2.2261
+              },
+              {
+                "pair": "bottle1|bottle2",
+                "pen_mm": 3.729,
+                "pair_offset_mm": 2.5778
+              },
+              {
+                "pair": "bottle1|bottle3",
+                "pen_mm": 4.1809,
+                "pair_offset_mm": 2.426
+              }
+            ]
+          },
+          "readback": {
+            "overwrite_gpu_setting": 1,
+            "enable_gpu_dynamics_usd": false,
+            "time_steps_per_s": 250.0,
+            "enable_stabilization": false,
+            "min_pos_iters": 255.0,
+            "effective_pos_iters": 255,
+            "nonzero_gpu_stat_counters": 17
+          }
+        }
+      ]
+    },
+    "cpu_dynamics": {
+      "episodes": 2,
+      "successes": 2,
+      "mean_v2_1_score": 100.0,
+      "predeclared_settled_band": {
+        "pos_mm": 1.0,
+        "rot_deg": 1.0
+      },
+      "predeclared_release_band_mm": 10.0,
+      "within_predeclared_settled_band": false,
+      "within_predeclared_release_band": true,
+      "outcome_and_action_within_band": true,
+      "within_all_predeclared_bands": false,
+      "agreement_pass": false,
+      "non_marginal_releases_compared": 8,
+      "median_non_marginal_release_diff_mm": 1.4893,
+      "max_non_marginal_release_diff_mm": 9.2004,
+      "per_episode": [
+        {
+          "seed": 0,
+          "layout": 12,
+          "reset_completed": true,
+          "success": true,
+          "v2_1_score": 100.0,
+          "actions": 362,
+          "base_actions": 362,
+          "outcome_agrees": true,
+          "action_count_within_band": true,
+          "delivered_releases_count": 4,
+          "expected_releases_count": 4,
+          "missing_releases_count": 0,
+          "settled_diff_mm_deg": [
+            0.1947,
+            0.1181
+          ],
+          "release_diff_same_tag_mm": {
+            "b0_bottle2": 9.2004,
+            "b1_bottle1": 1.3657,
+            "b2_bottle3": 0.2296,
+            "b3_bottle0": 1.2094
+          },
+          "max_non_marginal_release_diff_mm": 9.2004,
+          "within_predeclared_settled_band": true,
+          "within_predeclared_release_band": true,
+          "episode_agreement_pass": true,
+          "post_tumble_bin_final_diff_mm_deg": [
+            99.9444,
+            172.7877
+          ],
+          "s2_l11_00022_ke_at_release_mJ": null,
+          "penetration": {
+            "worst_overall_mm": 8.0668,
+            "worst_overall_pair": "bottle1|bottle3",
+            "all_within_single_body_offset": false,
+            "all_within_pair_offset_sum": false,
+            "finger_pad_max_mm": 0.394,
+            "robot_non_pad_link_max_mm": 0.0,
+            "table_max_mm": 0.0408,
+            "dustbin_impact_max_mm": 0.9045,
+            "bottle_bottle_impact_max_mm": 8.0668,
+            "finger_pad_pair_violations": [],
+            "robot_non_pad_pair_violations": [],
+            "free_fall_bin_pair_violations": [
+              {
+                "pair": "bottle0|bottle1",
+                "pen_mm": 4.4667,
+                "pair_offset_mm": 2.9667
+              },
+              {
+                "pair": "bottle0|bottle2",
+                "pen_mm": 4.1091,
+                "pair_offset_mm": 2.8088
+              },
+              {
+                "pair": "bottle1|bottle3",
+                "pen_mm": 8.0668,
+                "pair_offset_mm": 2.4219
+              },
+              {
+                "pair": "bottle2|bottle3",
+                "pen_mm": 3.3868,
+                "pair_offset_mm": 2.264
+              }
+            ]
+          },
+          "readback": {
+            "overwrite_gpu_setting": 0,
+            "enable_gpu_dynamics_usd": false,
+            "time_steps_per_s": 250.0,
+            "enable_stabilization": false,
+            "min_pos_iters": 64.0,
+            "effective_pos_iters": 64,
+            "nonzero_gpu_stat_counters": 0
+          },
+          "within_predeclared_settled_1mm_1deg": true,
+          "within_predeclared_release_10mm": true,
+          "within_tabletop_5mm_2deg_final_band": false
+        },
+        {
+          "seed": 2,
+          "layout": 10,
+          "reset_completed": true,
+          "success": true,
+          "v2_1_score": 100.0,
+          "actions": 456,
+          "base_actions": 456,
+          "outcome_agrees": true,
+          "action_count_within_band": true,
+          "delivered_releases_count": 4,
+          "expected_releases_count": 4,
+          "missing_releases_count": 0,
+          "settled_diff_mm_deg": [
+            2.0649,
+            3.3629
+          ],
+          "release_diff_same_tag_mm": {
+            "b0_bottle2": 1.5625,
+            "b1_bottle3": 1.7618,
+            "b2_bottle0": 1.4162,
+            "b3_bottle1": 6.9842
+          },
+          "max_non_marginal_release_diff_mm": 6.9842,
+          "within_predeclared_settled_band": false,
+          "within_predeclared_release_band": true,
+          "episode_agreement_pass": false,
+          "post_tumble_bin_final_diff_mm_deg": [
+            203.9804,
+            163.2188
+          ],
+          "s2_l11_00022_ke_at_release_mJ": null,
+          "penetration": {
+            "worst_overall_mm": 8.2981,
+            "worst_overall_pair": "bottle2|bottle3",
+            "all_within_single_body_offset": false,
+            "all_within_pair_offset_sum": false,
+            "finger_pad_max_mm": 0.5366,
+            "robot_non_pad_link_max_mm": 0.0,
+            "table_max_mm": 0.0071,
+            "dustbin_impact_max_mm": 0.8464,
+            "bottle_bottle_impact_max_mm": 8.2981,
+            "finger_pad_pair_violations": [],
+            "robot_non_pad_pair_violations": [],
+            "free_fall_bin_pair_violations": [
+              {
+                "pair": "bottle0|bottle2",
+                "pen_mm": 4.6522,
+                "pair_offset_mm": 2.3223
+              },
+              {
+                "pair": "bottle1|bottle2",
+                "pen_mm": 5.4482,
+                "pair_offset_mm": 2.6579
+              },
+              {
+                "pair": "bottle2|bottle3",
+                "pen_mm": 8.2981,
+                "pair_offset_mm": 2.4959
+              }
+            ]
+          },
+          "readback": {
+            "overwrite_gpu_setting": 0,
+            "enable_gpu_dynamics_usd": false,
+            "time_steps_per_s": 250.0,
+            "enable_stabilization": false,
+            "min_pos_iters": 64.0,
+            "effective_pos_iters": 64,
+            "nonzero_gpu_stat_counters": 0
+          },
+          "within_predeclared_settled_1mm_1deg": false,
+          "within_predeclared_release_10mm": true,
+          "within_tabletop_5mm_2deg_final_band": false
+        }
+      ],
+      "within_tabletop_5mm_2deg_final_band": false
+    }
+  },
+  "dt2_vs_dt1_diffs_on_3_completed_episodes": {
+    "episodes_compared": 3,
+    "same_tag_releases_compared": 10,
+    "median_release_diff_mm": 2.2667,
+    "max_release_diff_mm": 14.8531,
+    "s2_l11_00022_handover_release_diff_mm": 1.6736,
+    "per_episode": [
+      {
+        "seed": 0,
+        "layout": 12,
+        "same_tag_release_diff_mm": {
+          "b0_bottle2": 3.508,
+          "b1_bottle1": 0.5108,
+          "b2_bottle3": 7.0802,
+          "b3_bottle0": 1.3827
+        },
+        "max_release_diff_mm": 7.0802
+      },
+      {
+        "seed": 2,
+        "layout": 11,
+        "same_tag_release_diff_mm": {
+          "b0_bottle2": 1.0785,
+          "b1_bottle0": 6.9544,
+          "b2_bottle1": 2.8598,
+          "b3_bottle3": 1.6736
+        },
+        "max_release_diff_mm": 6.9544
+      },
+      {
+        "seed": 2,
+        "layout": 12,
+        "same_tag_release_diff_mm": {
+          "b0_bottle1": 0.8871,
+          "b1_bottle0": 14.8531
+        },
+        "max_release_diff_mm": 14.8531
+      }
+    ]
+  },
+  "device_flag_readback": {
+    "cpu_flag": {
+      "sim_device": "cpu",
+      "overwrite_gpu_setting": 1,
+      "usd_enableGPUDynamics": false,
+      "nonzero_gpu_stat_counters": 17
+    },
+    "cuda0_flag": {
+      "sim_device": "cuda:0",
+      "known_92_reset_error": true
+    }
+  },
+  "batch_size_num_envs_2_vs_1": {
+    "identical_mode": false,
+    "env_origins_m": [
+      [
+        3.5,
+        0.0,
+        0.0
+      ],
+      [
+        -3.5,
+        0.0,
+        0.0
+      ]
+    ],
+    "within_predeclared_settled_band": true,
+    "within_predeclared_release_5mm_band": false,
+    "within_all_predeclared_bands": false,
+    "within_tabletop_3mm_1p5deg_final_band": false,
+    "env_0_penetration": {
+      "worst_overall_mm": 5.0108,
+      "worst_overall_pair": "bottle1|bottle3",
+      "all_within_single_body_offset": false,
+      "all_within_pair_offset_sum": false,
+      "finger_pad_max_mm": 0.827,
+      "robot_non_pad_link_max_mm": 0.0,
+      "table_max_mm": 0.004,
+      "dustbin_impact_max_mm": 2.8812,
+      "bottle_bottle_impact_max_mm": 5.0108,
+      "finger_pad_pair_violations": [],
+      "robot_non_pad_pair_violations": [],
+      "free_fall_bin_pair_violations": [
+        {
+          "pair": "bottle0|bottle2",
+          "pen_mm": 3.442,
+          "pair_offset_mm": 2.3223
+        },
+        {
+          "pair": "bottle1|bottle3",
+          "pen_mm": 5.0108,
+          "pair_offset_mm": 2.6116
+        },
+        {
+          "pair": "bottle2|bottle3",
+          "pen_mm": 2.8705,
+          "pair_offset_mm": 2.4959
+        }
+      ]
+    },
+    "slots": [
+      {
+        "env_slot": 0,
+        "seed": 2,
+        "layout": 10,
+        "score_ne2": 100.0,
+        "score_ne1": 100.0,
+        "actions_ne2": 456,
+        "actions_ne1": 456,
+        "same_attempt_order": true,
+        "plans_ne2": [
+          [
+            "bottle2",
+            "left_direct"
+          ],
+          [
+            "bottle3",
+            "right_to_left_handover"
+          ],
+          [
+            "bottle0",
+            "right_to_left_handover"
+          ],
+          [
+            "bottle1",
+            "right_to_left_handover"
+          ]
+        ],
+        "plans_ne1": [
+          [
+            "bottle2",
+            "left_direct"
+          ],
+          [
+            "bottle3",
+            "right_to_left_handover"
+          ],
+          [
+            "bottle0",
+            "right_to_left_handover"
+          ],
+          [
+            "bottle1",
+            "right_to_left_handover"
+          ]
+        ],
+        "settled_diff_mm_deg": [
+          0.0224,
+          0.0504
+        ],
+        "same_sequence_release_diff_mm": {
+          "b0_bottle2": 1.456,
+          "b1_bottle3": 0.6403,
+          "b2_bottle0": 0.1414,
+          "b3_bottle1": 6.3859
+        },
+        "max_same_sequence_release_diff_mm": 6.3859,
+        "within_predeclared_settled_0p5mm_0p5deg": true,
+        "within_predeclared_release_5mm": false,
+        "post_tumble_bin_final_diff_mm_deg": [
+          99.092,
+          172.8281
+        ],
+        "within_tabletop_3mm_1p5deg_final_band": false
+      },
+      {
+        "env_slot": 1,
+        "seed": 2,
+        "layout": 12,
+        "score_ne2": 100.0,
+        "score_ne1": 100.0,
+        "actions_ne2": 476,
+        "actions_ne1": 476,
+        "same_attempt_order": false,
+        "plans_ne2": [
+          [
+            "bottle1",
+            "left_direct"
+          ],
+          [
+            "bottle0",
+            "left_direct"
+          ],
+          [
+            "bottle3",
+            "right_to_left_handover"
+          ],
+          [
+            "bottle2",
+            "right_to_left_handover"
+          ],
+          [
+            "bottle3",
+            "right_to_left_handover"
+          ]
+        ],
+        "plans_ne1": [
+          [
+            "bottle1",
+            "left_direct"
+          ],
+          [
+            "bottle0",
+            "left_direct"
+          ],
+          [
+            "bottle3",
+            "right_to_left_handover"
+          ],
+          [
+            "bottle3",
+            "right_to_left_handover"
+          ],
+          [
+            "bottle2",
+            "right_to_left_handover"
+          ]
+        ],
+        "settled_diff_mm_deg": [
+          0.0141,
+          0.0011
+        ],
+        "same_sequence_release_diff_mm": {
+          "b0_bottle1": 0.1732,
+          "b1_bottle0": 0.1
+        },
+        "max_same_sequence_release_diff_mm": 0.1732,
+        "within_predeclared_settled_0p5mm_0p5deg": true,
+        "within_predeclared_release_5mm": true,
+        "post_tumble_bin_final_diff_mm_deg": [
+          190.5218,
+          155.2873
+        ],
+        "within_tabletop_3mm_1p5deg_final_band": false
+      }
+    ]
+  },
+  "invariants_by_arm": {
+    "corrected_4ms": {
+      "episodes_checked": 4,
+      "nonfinite_substep_poses": 0,
+      "episodes_with_any_blowup": 0,
+      "max_object_linear_speed_m_s": 3.31225,
+      "max_object_linear_speed_where": "corrected_4ms:s2l11:bottle3@{'action': 354, 'substep': 9, 'phase': 'b3_bottle3:left_release'}",
+      "max_object_angular_speed_rad_s": 45.3754,
+      "min_origin_z_m": 0.311337,
+      "release_energy_with_multi_bottle_rule": {
+        "windows_checked": 16,
+        "unexplained_energy_gain_gt_1mJ_windows": 1,
+        "unexplained_energy_gain_gt_1mJ_episodes": 1,
+        "super_restitution_rebound_gt_1mJ_windows": 2,
+        "super_restitution_rebound_gt_1mJ_episodes": 1,
+        "max_step_demech_no_robot_mJ": 1.024939,
+        "max_excess_rebound_ke_over_restitution_mJ": 16.817929
+      },
+      "release_energy_without_multi_bottle_rule": {
+        "windows_checked": 16,
+        "unexplained_energy_gain_gt_1mJ_windows": 6,
+        "unexplained_energy_gain_gt_1mJ_episodes": 4,
+        "super_restitution_rebound_gt_1mJ_windows": 2,
+        "super_restitution_rebound_gt_1mJ_episodes": 1,
+        "episodes_where_multi_bottle_rule_changed_counts": 4
+      },
+      "penetration_vs_offsets": {
+        "worst_overall_mm": 7.4048,
+        "finger_pad_max_mm": 0.6239,
+        "robot_non_pad_link_max_mm": 0.0438,
+        "table_max_mm": 1.2719,
+        "bottle_bottle_impact_max_mm": 7.4048,
+        "episodes_with_finger_pad_pair_violation": 0,
+        "episodes_with_robot_non_pad_pair_violation": 0,
+        "episodes_with_any_pair_offset_violation": 3
+      },
+      "pre_vcom_fix_rebound_summary": {
+        "with_multi_bottle_rule": {
+          "super_restitution_rebound_gt_1mJ_windows": 2,
+          "super_restitution_rebound_gt_1mJ_episodes": 1,
+          "max_excess_rebound_ke_over_restitution_mJ": 46.962284
+        },
+        "without_multi_bottle_rule": {
+          "super_restitution_rebound_gt_1mJ_windows": 2,
+          "super_restitution_rebound_gt_1mJ_episodes": 1
+        }
+      }
+    },
+    "shipped_4ms": {
+      "episodes_checked": 2,
+      "nonfinite_substep_poses": 0,
+      "episodes_with_any_blowup": 0,
+      "max_object_linear_speed_m_s": 3.58109,
+      "max_object_linear_speed_where": "shipped_4ms:s2l11:bottle3@{'action': 352, 'substep': 6, 'phase': 'b3_bottle3:left_to_dustbin'}",
+      "max_object_angular_speed_rad_s": 19.1602,
+      "min_origin_z_m": 0.31416,
+      "release_energy_with_multi_bottle_rule": {
+        "windows_checked": 8,
+        "unexplained_energy_gain_gt_1mJ_windows": 1,
+        "unexplained_energy_gain_gt_1mJ_episodes": 1,
+        "super_restitution_rebound_gt_1mJ_windows": 0,
+        "super_restitution_rebound_gt_1mJ_episodes": 0,
+        "max_step_demech_no_robot_mJ": 3.323709,
+        "max_excess_rebound_ke_over_restitution_mJ": 0.0
+      },
+      "release_energy_without_multi_bottle_rule": {
+        "windows_checked": 8,
+        "unexplained_energy_gain_gt_1mJ_windows": 2,
+        "unexplained_energy_gain_gt_1mJ_episodes": 2,
+        "super_restitution_rebound_gt_1mJ_windows": 0,
+        "super_restitution_rebound_gt_1mJ_episodes": 0,
+        "episodes_where_multi_bottle_rule_changed_counts": 1
+      },
+      "penetration_vs_offsets": {
+        "worst_overall_mm": 4.7516,
+        "finger_pad_max_mm": 0.2944,
+        "robot_non_pad_link_max_mm": 0.151,
+        "table_max_mm": 0.0006,
+        "bottle_bottle_impact_max_mm": 4.7516,
+        "episodes_with_finger_pad_pair_violation": 0,
+        "episodes_with_robot_non_pad_pair_violation": 0,
+        "episodes_with_any_pair_offset_violation": 1
+      },
+      "pre_vcom_fix_rebound_summary": {
+        "with_multi_bottle_rule": {
+          "super_restitution_rebound_gt_1mJ_windows": 0,
+          "super_restitution_rebound_gt_1mJ_episodes": 0,
+          "max_excess_rebound_ke_over_restitution_mJ": 0.0
+        },
+        "without_multi_bottle_rule": {
+          "super_restitution_rebound_gt_1mJ_windows": 0,
+          "super_restitution_rebound_gt_1mJ_episodes": 0
+        }
+      }
+    },
+    "dt2_2ms": {
+      "episodes_checked": 4,
+      "nonfinite_substep_poses": 0,
+      "episodes_with_any_blowup": 0,
+      "max_object_linear_speed_m_s": 3.25363,
+      "max_object_linear_speed_where": "dt2_2ms:s2l11:bottle2@{'action': 81, 'substep': 4, 'phase': 'b0_bottle2:left_retreat_bin'}",
+      "max_object_angular_speed_rad_s": 48.1807,
+      "min_origin_z_m": 0.311379,
+      "release_energy_with_multi_bottle_rule": {
+        "windows_checked": 16,
+        "unexplained_energy_gain_gt_1mJ_windows": 1,
+        "unexplained_energy_gain_gt_1mJ_episodes": 1,
+        "super_restitution_rebound_gt_1mJ_windows": 3,
+        "super_restitution_rebound_gt_1mJ_episodes": 2,
+        "max_step_demech_no_robot_mJ": 5.495527,
+        "max_excess_rebound_ke_over_restitution_mJ": 69.035779
+      },
+      "release_energy_without_multi_bottle_rule": {
+        "windows_checked": 16,
+        "unexplained_energy_gain_gt_1mJ_windows": 6,
+        "unexplained_energy_gain_gt_1mJ_episodes": 3,
+        "super_restitution_rebound_gt_1mJ_windows": 3,
+        "super_restitution_rebound_gt_1mJ_episodes": 2,
+        "episodes_where_multi_bottle_rule_changed_counts": 3
+      },
+      "penetration_vs_offsets": {
+        "worst_overall_mm": 2.8568,
+        "finger_pad_max_mm": 0.3148,
+        "robot_non_pad_link_max_mm": 0.48,
+        "table_max_mm": 1.7062,
+        "bottle_bottle_impact_max_mm": 2.8568,
+        "episodes_with_finger_pad_pair_violation": 0,
+        "episodes_with_robot_non_pad_pair_violation": 0,
+        "episodes_with_any_pair_offset_violation": 1
+      },
+      "pre_vcom_fix_rebound_summary": {
+        "with_multi_bottle_rule": {
+          "super_restitution_rebound_gt_1mJ_windows": 3,
+          "super_restitution_rebound_gt_1mJ_episodes": 2,
+          "max_excess_rebound_ke_over_restitution_mJ": 68.925123
+        },
+        "without_multi_bottle_rule": {
+          "super_restitution_rebound_gt_1mJ_windows": 3,
+          "super_restitution_rebound_gt_1mJ_episodes": 2
+        }
+      }
+    },
+    "dt1_1ms": {
+      "episodes_checked": 3,
+      "nonfinite_substep_poses": 0,
+      "episodes_with_any_blowup": 0,
+      "max_object_linear_speed_m_s": 3.26709,
+      "max_object_linear_speed_where": "dt1_1ms:s2l11:bottle2@{'action': 81, 'substep': 14, 'phase': 'b0_bottle2:left_retreat_bin'}",
+      "max_object_angular_speed_rad_s": 57.4609,
+      "min_origin_z_m": 0.312234,
+      "release_energy_with_multi_bottle_rule": {
+        "windows_checked": 12,
+        "unexplained_energy_gain_gt_1mJ_windows": 0,
+        "unexplained_energy_gain_gt_1mJ_episodes": 0,
+        "super_restitution_rebound_gt_1mJ_windows": 2,
+        "super_restitution_rebound_gt_1mJ_episodes": 2,
+        "max_step_demech_no_robot_mJ": 0.481129,
+        "max_excess_rebound_ke_over_restitution_mJ": 330.247108
+      },
+      "release_energy_without_multi_bottle_rule": {
+        "windows_checked": 12,
+        "unexplained_energy_gain_gt_1mJ_windows": 6,
+        "unexplained_energy_gain_gt_1mJ_episodes": 3,
+        "super_restitution_rebound_gt_1mJ_windows": 2,
+        "super_restitution_rebound_gt_1mJ_episodes": 2,
+        "episodes_where_multi_bottle_rule_changed_counts": 3
+      },
+      "penetration_vs_offsets": {
+        "worst_overall_mm": 4.3033,
+        "finger_pad_max_mm": 0.3322,
+        "robot_non_pad_link_max_mm": 0.012,
+        "table_max_mm": 0.2095,
+        "bottle_bottle_impact_max_mm": 0.9119,
+        "episodes_with_finger_pad_pair_violation": 0,
+        "episodes_with_robot_non_pad_pair_violation": 0,
+        "episodes_with_any_pair_offset_violation": 0
+      },
+      "pre_vcom_fix_rebound_summary": {
+        "with_multi_bottle_rule": {
+          "super_restitution_rebound_gt_1mJ_windows": 2,
+          "super_restitution_rebound_gt_1mJ_episodes": 2,
+          "max_excess_rebound_ke_over_restitution_mJ": 328.906237
+        },
+        "without_multi_bottle_rule": {
+          "super_restitution_rebound_gt_1mJ_windows": 2,
+          "super_restitution_rebound_gt_1mJ_episodes": 2
+        }
+      }
+    },
+    "iters128": {
+      "episodes_checked": 4,
+      "nonfinite_substep_poses": 0,
+      "episodes_with_any_blowup": 0,
+      "max_object_linear_speed_m_s": 3.21229,
+      "max_object_linear_speed_where": "iters128:s2l11:bottle2@{'action': 81, 'substep': 2, 'phase': 'b0_bottle2:left_retreat_bin'}",
+      "max_object_angular_speed_rad_s": 110.9845,
+      "min_origin_z_m": 0.312356,
+      "release_energy_with_multi_bottle_rule": {
+        "windows_checked": 16,
+        "unexplained_energy_gain_gt_1mJ_windows": 0,
+        "unexplained_energy_gain_gt_1mJ_episodes": 0,
+        "super_restitution_rebound_gt_1mJ_windows": 1,
+        "super_restitution_rebound_gt_1mJ_episodes": 1,
+        "max_step_demech_no_robot_mJ": 0.392688,
+        "max_excess_rebound_ke_over_restitution_mJ": 1.09637
+      },
+      "release_energy_without_multi_bottle_rule": {
+        "windows_checked": 16,
+        "unexplained_energy_gain_gt_1mJ_windows": 3,
+        "unexplained_energy_gain_gt_1mJ_episodes": 1,
+        "super_restitution_rebound_gt_1mJ_windows": 1,
+        "super_restitution_rebound_gt_1mJ_episodes": 1,
+        "episodes_where_multi_bottle_rule_changed_counts": 1
+      },
+      "penetration_vs_offsets": {
+        "worst_overall_mm": 8.6502,
+        "finger_pad_max_mm": 1.3047,
+        "robot_non_pad_link_max_mm": 3.5741,
+        "table_max_mm": 4.7974,
+        "bottle_bottle_impact_max_mm": 8.6502,
+        "episodes_with_finger_pad_pair_violation": 0,
+        "episodes_with_robot_non_pad_pair_violation": 1,
+        "episodes_with_any_pair_offset_violation": 2
+      },
+      "pre_vcom_fix_rebound_summary": {
+        "with_multi_bottle_rule": {
+          "super_restitution_rebound_gt_1mJ_windows": 1,
+          "super_restitution_rebound_gt_1mJ_episodes": 1,
+          "max_excess_rebound_ke_over_restitution_mJ": 1.095394
+        },
+        "without_multi_bottle_rule": {
+          "super_restitution_rebound_gt_1mJ_windows": 1,
+          "super_restitution_rebound_gt_1mJ_episodes": 1
+        }
+      }
+    },
+    "iters255": {
+      "episodes_checked": 4,
+      "nonfinite_substep_poses": 0,
+      "episodes_with_any_blowup": 2,
+      "max_object_linear_speed_m_s": 6.85889,
+      "max_object_linear_speed_where": "iters255:s2l12:bottle3@{'action': 386, 'substep': 7, 'phase': 'b4_bottle3:right_lift'}",
+      "max_object_angular_speed_rad_s": 140.5209,
+      "min_origin_z_m": 0.081004,
+      "release_energy_with_multi_bottle_rule": {
+        "windows_checked": 16,
+        "unexplained_energy_gain_gt_1mJ_windows": 1,
+        "unexplained_energy_gain_gt_1mJ_episodes": 1,
+        "super_restitution_rebound_gt_1mJ_windows": 0,
+        "super_restitution_rebound_gt_1mJ_episodes": 0,
+        "max_step_demech_no_robot_mJ": 1.054281,
+        "max_excess_rebound_ke_over_restitution_mJ": 0.72493
+      },
+      "release_energy_without_multi_bottle_rule": {
+        "windows_checked": 16,
+        "unexplained_energy_gain_gt_1mJ_windows": 4,
+        "unexplained_energy_gain_gt_1mJ_episodes": 3,
+        "super_restitution_rebound_gt_1mJ_windows": 0,
+        "super_restitution_rebound_gt_1mJ_episodes": 0,
+        "episodes_where_multi_bottle_rule_changed_counts": 3
+      },
+      "penetration_vs_offsets": {
+        "worst_overall_mm": 9.872,
+        "finger_pad_max_mm": 2.4154,
+        "robot_non_pad_link_max_mm": 7.105,
+        "table_max_mm": 0.8344,
+        "bottle_bottle_impact_max_mm": 9.872,
+        "episodes_with_finger_pad_pair_violation": 0,
+        "episodes_with_robot_non_pad_pair_violation": 1,
+        "episodes_with_any_pair_offset_violation": 4
+      },
+      "pre_vcom_fix_rebound_summary": {
+        "with_multi_bottle_rule": {
+          "super_restitution_rebound_gt_1mJ_windows": 1,
+          "super_restitution_rebound_gt_1mJ_episodes": 1,
+          "max_excess_rebound_ke_over_restitution_mJ": 1.442662
+        },
+        "without_multi_bottle_rule": {
+          "super_restitution_rebound_gt_1mJ_windows": 1,
+          "super_restitution_rebound_gt_1mJ_episodes": 1
+        }
+      }
+    },
+    "cpu_dynamics": {
+      "episodes_checked": 2,
+      "nonfinite_substep_poses": 0,
+      "episodes_with_any_blowup": 0,
+      "max_object_linear_speed_m_s": 3.1812,
+      "max_object_linear_speed_where": "cpu_dynamics:s2l10:bottle2@{'action': 81, 'substep': 0, 'phase': 'b0_bottle2:left_retreat_bin'}",
+      "max_object_angular_speed_rad_s": 46.7127,
+      "min_origin_z_m": 0.31425,
+      "release_energy_with_multi_bottle_rule": {
+        "windows_checked": 8,
+        "unexplained_energy_gain_gt_1mJ_windows": 1,
+        "unexplained_energy_gain_gt_1mJ_episodes": 1,
+        "super_restitution_rebound_gt_1mJ_windows": 1,
+        "super_restitution_rebound_gt_1mJ_episodes": 1,
+        "max_step_demech_no_robot_mJ": 3.878128,
+        "max_excess_rebound_ke_over_restitution_mJ": 6.838446
+      },
+      "release_energy_without_multi_bottle_rule": {
+        "windows_checked": 8,
+        "unexplained_energy_gain_gt_1mJ_windows": 2,
+        "unexplained_energy_gain_gt_1mJ_episodes": 2,
+        "super_restitution_rebound_gt_1mJ_windows": 1,
+        "super_restitution_rebound_gt_1mJ_episodes": 1,
+        "episodes_where_multi_bottle_rule_changed_counts": 1
+      },
+      "penetration_vs_offsets": {
+        "worst_overall_mm": 8.2981,
+        "finger_pad_max_mm": 0.5366,
+        "robot_non_pad_link_max_mm": 0.0,
+        "table_max_mm": 0.0408,
+        "bottle_bottle_impact_max_mm": 8.2981,
+        "episodes_with_finger_pad_pair_violation": 0,
+        "episodes_with_robot_non_pad_pair_violation": 0,
+        "episodes_with_any_pair_offset_violation": 2
+      },
+      "pre_vcom_fix_rebound_summary": {
+        "with_multi_bottle_rule": {
+          "super_restitution_rebound_gt_1mJ_windows": 1,
+          "super_restitution_rebound_gt_1mJ_episodes": 1,
+          "max_excess_rebound_ke_over_restitution_mJ": 6.402599
+        },
+        "without_multi_bottle_rule": {
+          "super_restitution_rebound_gt_1mJ_windows": 1,
+          "super_restitution_rebound_gt_1mJ_episodes": 1
+        }
+      }
+    },
+    "num_envs_2": {
+      "episodes_checked": 1,
+      "nonfinite_substep_poses": 0,
+      "episodes_with_any_blowup": 0,
+      "max_object_linear_speed_m_s": 3.18275,
+      "max_object_linear_speed_where": "num_envs_2:s2l10:bottle2@{'action': 81, 'substep': 0, 'phase': 'b0_bottle2:left_retreat_bin'}",
+      "max_object_angular_speed_rad_s": 25.8066,
+      "min_origin_z_m": 0.31402,
+      "release_energy_with_multi_bottle_rule": {
+        "windows_checked": 4,
+        "unexplained_energy_gain_gt_1mJ_windows": 0,
+        "unexplained_energy_gain_gt_1mJ_episodes": 0,
+        "super_restitution_rebound_gt_1mJ_windows": 0,
+        "super_restitution_rebound_gt_1mJ_episodes": 0,
+        "max_step_demech_no_robot_mJ": 0.495689,
+        "max_excess_rebound_ke_over_restitution_mJ": 0.297621
+      },
+      "release_energy_without_multi_bottle_rule": {
+        "windows_checked": 4,
+        "unexplained_energy_gain_gt_1mJ_windows": 2,
+        "unexplained_energy_gain_gt_1mJ_episodes": 1,
+        "super_restitution_rebound_gt_1mJ_windows": 0,
+        "super_restitution_rebound_gt_1mJ_episodes": 0,
+        "episodes_where_multi_bottle_rule_changed_counts": 1
+      },
+      "penetration_vs_offsets": {
+        "worst_overall_mm": 5.0108,
+        "finger_pad_max_mm": 0.827,
+        "robot_non_pad_link_max_mm": 0.0,
+        "table_max_mm": 0.004,
+        "bottle_bottle_impact_max_mm": 5.0108,
+        "episodes_with_finger_pad_pair_violation": 0,
+        "episodes_with_robot_non_pad_pair_violation": 0,
+        "episodes_with_any_pair_offset_violation": 1
+      },
+      "pre_vcom_fix_rebound_summary": {
+        "with_multi_bottle_rule": {
+          "super_restitution_rebound_gt_1mJ_windows": 0,
+          "super_restitution_rebound_gt_1mJ_episodes": 0,
+          "max_excess_rebound_ke_over_restitution_mJ": 0.365133
+        },
+        "without_multi_bottle_rule": {
+          "super_restitution_rebound_gt_1mJ_windows": 0,
+          "super_restitution_rebound_gt_1mJ_episodes": 0
+        }
+      }
+    },
+    "corrected_64_and_128_iter_unperturbed": {
+      "episodes_checked": 17,
+      "nonfinite_substep_poses": 0,
+      "episodes_with_any_blowup": 0,
+      "max_object_linear_speed_m_s": 3.31225,
+      "max_object_linear_speed_where": "corrected_4ms:s2l11:bottle3@{'action': 354, 'substep': 9, 'phase': 'b3_bottle3:left_release'}",
+      "max_object_angular_speed_rad_s": 110.9845,
+      "min_origin_z_m": 0.311337,
+      "release_energy_with_multi_bottle_rule": {
+        "windows_checked": 68,
+        "unexplained_energy_gain_gt_1mJ_windows": 3,
+        "unexplained_energy_gain_gt_1mJ_episodes": 3,
+        "super_restitution_rebound_gt_1mJ_windows": 9,
+        "super_restitution_rebound_gt_1mJ_episodes": 7,
+        "max_step_demech_no_robot_mJ": 5.495527,
+        "max_excess_rebound_ke_over_restitution_mJ": 330.247108
+      },
+      "release_energy_without_multi_bottle_rule": {
+        "windows_checked": 68,
+        "unexplained_energy_gain_gt_1mJ_windows": 23,
+        "unexplained_energy_gain_gt_1mJ_episodes": 13,
+        "super_restitution_rebound_gt_1mJ_windows": 9,
+        "super_restitution_rebound_gt_1mJ_episodes": 7,
+        "episodes_where_multi_bottle_rule_changed_counts": 12
+      },
+      "penetration_vs_offsets": {
+        "worst_overall_mm": 8.6502,
+        "finger_pad_max_mm": 1.3047,
+        "robot_non_pad_link_max_mm": 3.5741,
+        "table_max_mm": 4.7974,
+        "bottle_bottle_impact_max_mm": 8.6502,
+        "episodes_with_finger_pad_pair_violation": 0,
+        "episodes_with_robot_non_pad_pair_violation": 1,
+        "episodes_with_any_pair_offset_violation": 8
+      },
+      "pre_vcom_fix_rebound_summary": {
+        "with_multi_bottle_rule": {
+          "super_restitution_rebound_gt_1mJ_windows": 9,
+          "super_restitution_rebound_gt_1mJ_episodes": 7,
+          "max_excess_rebound_ke_over_restitution_mJ": 328.906237
+        },
+        "without_multi_bottle_rule": {
+          "super_restitution_rebound_gt_1mJ_windows": 9,
+          "super_restitution_rebound_gt_1mJ_episodes": 7
+        }
+      }
+    }
+  },
+  "two_sided_positive_controls": {
+    "refinement_agreement_failing_controls": {
+      "note": "Evaluated by the identical evaluate_refinement_agreement() function and predeclared bands (30.0 mm dt, 25.0 mm iterations, 3.0 mm / 4.0 deg settled, +/-2 action band, outcome match) as the primary refinement arms.",
+      "dt20_20ms_posctrl": {
+        "episodes": 2,
+        "successes": 1,
+        "mean_v2_1_score": 70.0,
+        "predeclared_settled_band": {
+          "pos_mm": 3.0,
+          "rot_deg": 4.0
+        },
+        "predeclared_release_band_mm": 30.0,
+        "within_predeclared_settled_band": true,
+        "within_predeclared_release_band": false,
+        "outcome_and_action_within_band": false,
+        "within_all_predeclared_bands": false,
+        "agreement_pass": false,
+        "non_marginal_releases_compared": 8,
+        "median_non_marginal_release_diff_mm": 1.4859,
+        "max_non_marginal_release_diff_mm": 1266.9053,
+        "per_episode": [
+          {
+            "seed": 0,
+            "layout": 12,
+            "reset_completed": true,
+            "success": true,
+            "v2_1_score": 100.0,
+            "actions": 371,
+            "base_actions": 362,
+            "outcome_agrees": true,
+            "action_count_within_band": false,
+            "delivered_releases_count": 4,
+            "expected_releases_count": 4,
+            "missing_releases_count": 0,
+            "settled_diff_mm_deg": [
+              0.1934,
+              0.1141
+            ],
+            "release_diff_same_tag_mm": {
+              "b0_bottle2": 4.0234,
+              "b1_bottle1": 1.3501,
+              "b2_bottle3": 0.5933,
+              "b3_bottle0": 0.7944
+            },
+            "max_non_marginal_release_diff_mm": 4.0234,
+            "within_predeclared_settled_band": true,
+            "within_predeclared_release_band": true,
+            "episode_agreement_pass": false,
+            "post_tumble_bin_final_diff_mm_deg": [
+              121.6215,
+              172.4463
+            ],
+            "s2_l11_00022_ke_at_release_mJ": null,
+            "penetration": {
+              "worst_overall_mm": 31.6669,
+              "worst_overall_pair": "bottle0|bottle1",
+              "all_within_single_body_offset": false,
+              "all_within_pair_offset_sum": false,
+              "finger_pad_max_mm": 5.5228,
+              "robot_non_pad_link_max_mm": 0.5504,
+              "table_max_mm": 0.0049,
+              "dustbin_impact_max_mm": 8.1712,
+              "bottle_bottle_impact_max_mm": 31.6669,
+              "finger_pad_pair_violations": [],
+              "robot_non_pad_pair_violations": [],
+              "free_fall_bin_pair_violations": [
+                {
+                  "pair": "bottle0|bottle1",
+                  "pen_mm": 31.6669,
+                  "pair_offset_mm": 15.696
+                }
+              ]
+            },
+            "readback": {
+              "overwrite_gpu_setting": 1,
+              "enable_gpu_dynamics_usd": false,
+              "time_steps_per_s": 50.0,
+              "enable_stabilization": false,
+              "min_pos_iters": 64.0,
+              "effective_pos_iters": 64,
+              "nonzero_gpu_stat_counters": 17
+            }
+          },
+          {
+            "seed": 2,
+            "layout": 10,
+            "reset_completed": true,
+            "success": false,
+            "v2_1_score": 40.0,
+            "actions": 700,
+            "base_actions": 456,
+            "outcome_agrees": false,
+            "action_count_within_band": false,
+            "delivered_releases_count": 5,
+            "expected_releases_count": 4,
+            "missing_releases_count": 0,
+            "settled_diff_mm_deg": [
+              0.5004,
+              0.1541
+            ],
+            "release_diff_same_tag_mm": {
+              "b0_bottle2": 1.6216,
+              "b1_bottle3": 1266.9053,
+              "b2_bottle0": 0.6415,
+              "b3_bottle1": 16.1697
+            },
+            "max_non_marginal_release_diff_mm": 1266.9053,
+            "within_predeclared_settled_band": true,
+            "within_predeclared_release_band": false,
+            "episode_agreement_pass": false,
+            "post_tumble_bin_final_diff_mm_deg": [
+              505.7772,
+              175.8501
+            ],
+            "s2_l11_00022_ke_at_release_mJ": null,
+            "penetration": {
+              "worst_overall_mm": 36.6641,
+              "worst_overall_pair": "bottle0|dustbin",
+              "all_within_single_body_offset": false,
+              "all_within_pair_offset_sum": false,
+              "finger_pad_max_mm": 20.9987,
+              "robot_non_pad_link_max_mm": 24.109,
+              "table_max_mm": 23.3547,
+              "dustbin_impact_max_mm": 36.6641,
+              "bottle_bottle_impact_max_mm": 4.8187,
+              "finger_pad_pair_violations": [
+                {
+                  "pair": "bottle3|r0.link7",
+                  "pen_mm": 17.2576,
+                  "pair_offset_mm": 15.696
+                },
+                {
+                  "pair": "bottle3|r1.link8",
+                  "pen_mm": 20.9987,
+                  "pair_offset_mm": 15.696
+                }
+              ],
+              "robot_non_pad_pair_violations": [
+                {
+                  "pair": "bottle3|r0.link4",
+                  "pen_mm": 24.109,
+                  "pair_offset_mm": 15.696
+                },
+                {
+                  "pair": "bottle3|r0.link5",
+                  "pen_mm": 21.0655,
+                  "pair_offset_mm": 15.696
+                }
+              ],
+              "free_fall_bin_pair_violations": [
+                {
+                  "pair": "bottle0|dustbin",
+                  "pen_mm": 36.6641,
+                  "pair_offset_mm": 27.848
+                },
+                {
+                  "pair": "bottle1|dustbin",
+                  "pen_mm": 32.652,
+                  "pair_offset_mm": 27.848
+                }
+              ]
+            },
+            "readback": {
+              "overwrite_gpu_setting": 1,
+              "enable_gpu_dynamics_usd": false,
+              "time_steps_per_s": 50.0,
+              "enable_stabilization": false,
+              "min_pos_iters": 64.0,
+              "effective_pos_iters": 64,
+              "nonzero_gpu_stat_counters": 17
+            }
+          }
+        ],
+        "control_detected_disagreement": true
+      },
+      "iters1_posctrl": {
+        "episodes": 1,
+        "successes": 0,
+        "mean_v2_1_score": 0.0,
+        "predeclared_settled_band": {
+          "pos_mm": 3.0,
+          "rot_deg": 4.0
+        },
+        "predeclared_release_band_mm": 25.0,
+        "within_predeclared_settled_band": true,
+        "within_predeclared_release_band": false,
+        "outcome_and_action_within_band": false,
+        "within_all_predeclared_bands": false,
+        "agreement_pass": false,
+        "non_marginal_releases_compared": 0,
+        "median_non_marginal_release_diff_mm": null,
+        "max_non_marginal_release_diff_mm": null,
+        "per_episode": [
+          {
+            "seed": 0,
+            "layout": 12,
+            "reset_completed": true,
+            "success": false,
+            "v2_1_score": 0.0,
+            "actions": 700,
+            "base_actions": 362,
+            "outcome_agrees": false,
+            "action_count_within_band": false,
+            "delivered_releases_count": 0,
+            "expected_releases_count": 4,
+            "missing_releases_count": 4,
+            "settled_diff_mm_deg": [
+              0.2644,
+              0.6237
+            ],
+            "release_diff_same_tag_mm": {},
+            "max_non_marginal_release_diff_mm": null,
+            "within_predeclared_settled_band": true,
+            "within_predeclared_release_band": false,
+            "episode_agreement_pass": false,
+            "post_tumble_bin_final_diff_mm_deg": [
+              1052.4976,
+              142.1114
+            ],
+            "s2_l11_00022_ke_at_release_mJ": null,
+            "penetration": {
+              "worst_overall_mm": 34.8493,
+              "worst_overall_pair": "bottle1|r0.link8",
+              "all_within_single_body_offset": false,
+              "all_within_pair_offset_sum": false,
+              "finger_pad_max_mm": 34.8493,
+              "robot_non_pad_link_max_mm": 0.0,
+              "table_max_mm": 2.5328,
+              "dustbin_impact_max_mm": 0.0,
+              "bottle_bottle_impact_max_mm": 5.5485,
+              "finger_pad_pair_violations": [
+                {
+                  "pair": "bottle1|r0.link7",
+                  "pen_mm": 9.1486,
+                  "pair_offset_mm": 2.9463
+                },
+                {
+                  "pair": "bottle1|r0.link8",
+                  "pen_mm": 34.8493,
+                  "pair_offset_mm": 2.9463
+                },
+                {
+                  "pair": "bottle2|r0.link7",
+                  "pen_mm": 27.0576,
+                  "pair_offset_mm": 2.7884
+                },
+                {
+                  "pair": "bottle2|r0.link8",
+                  "pen_mm": 33.1935,
+                  "pair_offset_mm": 2.7884
+                },
+                {
+                  "pair": "bottle2|r1.link7",
+                  "pen_mm": 20.0719,
+                  "pair_offset_mm": 2.7884
+                },
+                {
+                  "pair": "bottle2|r1.link8",
+                  "pen_mm": 24.3664,
+                  "pair_offset_mm": 2.7884
+                }
+              ],
+              "robot_non_pad_pair_violations": [],
+              "free_fall_bin_pair_violations": [
+                {
+                  "pair": "bottle1|bottle2",
+                  "pen_mm": 5.5485,
+                  "pair_offset_mm": 2.6157
+                }
+              ]
+            },
+            "readback": {
+              "overwrite_gpu_setting": 1,
+              "enable_gpu_dynamics_usd": false,
+              "time_steps_per_s": 250.0,
+              "enable_stabilization": true,
+              "min_pos_iters": 1.0,
+              "effective_pos_iters": 1,
+              "nonzero_gpu_stat_counters": 17
+            }
+          }
+        ],
+        "control_detected_disagreement": true
+      },
+      "iters16_nosolver": {
+        "episodes": 2,
+        "successes": 2,
+        "mean_v2_1_score": 100.0,
+        "predeclared_settled_band": {
+          "pos_mm": 3.0,
+          "rot_deg": 4.0
+        },
+        "predeclared_release_band_mm": 25.0,
+        "within_predeclared_settled_band": true,
+        "within_predeclared_release_band": true,
+        "outcome_and_action_within_band": false,
+        "within_all_predeclared_bands": false,
+        "agreement_pass": false,
+        "non_marginal_releases_compared": 8,
+        "median_non_marginal_release_diff_mm": 0.8422,
+        "max_non_marginal_release_diff_mm": 7.8044,
+        "per_episode": [
+          {
+            "seed": 0,
+            "layout": 12,
+            "reset_completed": true,
+            "success": true,
+            "v2_1_score": 100.0,
+            "actions": 362,
+            "base_actions": 362,
+            "outcome_agrees": true,
+            "action_count_within_band": true,
+            "delivered_releases_count": 4,
+            "expected_releases_count": 4,
+            "missing_releases_count": 0,
+            "settled_diff_mm_deg": [
+              0.0574,
+              0.2354
+            ],
+            "release_diff_same_tag_mm": {
+              "b0_bottle2": 4.4293,
+              "b1_bottle1": 0.2346,
+              "b2_bottle3": 0.0665,
+              "b3_bottle0": 0.499
+            },
+            "max_non_marginal_release_diff_mm": 4.4293,
+            "within_predeclared_settled_band": true,
+            "within_predeclared_release_band": true,
+            "episode_agreement_pass": true,
+            "post_tumble_bin_final_diff_mm_deg": [
+              175.8577,
+              165.1387
+            ],
+            "s2_l11_00022_ke_at_release_mJ": null,
+            "penetration": {
+              "worst_overall_mm": 8.5015,
+              "worst_overall_pair": "bottle2|bottle3",
+              "all_within_single_body_offset": false,
+              "all_within_pair_offset_sum": false,
+              "finger_pad_max_mm": 2.1921,
+              "robot_non_pad_link_max_mm": 0.0,
+              "table_max_mm": 0.0019,
+              "dustbin_impact_max_mm": 6.8565,
+              "bottle_bottle_impact_max_mm": 8.5015,
+              "finger_pad_pair_violations": [],
+              "robot_non_pad_pair_violations": [],
+              "free_fall_bin_pair_violations": [
+                {
+                  "pair": "bottle1|bottle2",
+                  "pen_mm": 8.1792,
+                  "pair_offset_mm": 2.6157
+                },
+                {
+                  "pair": "bottle2|bottle3",
+                  "pen_mm": 8.5015,
+                  "pair_offset_mm": 2.264
+                }
+              ]
+            },
+            "readback": {
+              "overwrite_gpu_setting": 1,
+              "enable_gpu_dynamics_usd": false,
+              "time_steps_per_s": 250.0,
+              "enable_stabilization": true,
+              "min_pos_iters": 1.0,
+              "effective_pos_iters": 16,
+              "nonzero_gpu_stat_counters": 17
+            }
+          },
+          {
+            "seed": 2,
+            "layout": 10,
+            "reset_completed": true,
+            "success": true,
+            "v2_1_score": 100.0,
+            "actions": 464,
+            "base_actions": 456,
+            "outcome_agrees": true,
+            "action_count_within_band": false,
+            "delivered_releases_count": 4,
+            "expected_releases_count": 4,
+            "missing_releases_count": 0,
+            "settled_diff_mm_deg": [
+              0.153,
+              0.0518
+            ],
+            "release_diff_same_tag_mm": {
+              "b0_bottle2": 1.1855,
+              "b1_bottle3": 1.4651,
+              "b2_bottle0": 0.0607,
+              "b3_bottle1": 7.8044
+            },
+            "max_non_marginal_release_diff_mm": 7.8044,
+            "within_predeclared_settled_band": true,
+            "within_predeclared_release_band": true,
+            "episode_agreement_pass": false,
+            "post_tumble_bin_final_diff_mm_deg": [
+              167.4004,
+              177.8066
+            ],
+            "s2_l11_00022_ke_at_release_mJ": null,
+            "penetration": {
+              "worst_overall_mm": 9.1006,
+              "worst_overall_pair": "bottle0|bottle2",
+              "all_within_single_body_offset": false,
+              "all_within_pair_offset_sum": false,
+              "finger_pad_max_mm": 5.7735,
+              "robot_non_pad_link_max_mm": 0.0,
+              "table_max_mm": 0.0165,
+              "dustbin_impact_max_mm": 2.6307,
+              "bottle_bottle_impact_max_mm": 9.1006,
+              "finger_pad_pair_violations": [
+                {
+                  "pair": "bottle3|r0.link8",
+                  "pen_mm": 5.7735,
+                  "pair_offset_mm": 2.7843
+                },
+                {
+                  "pair": "bottle3|r1.link8",
+                  "pen_mm": 3.3754,
+                  "pair_offset_mm": 2.7843
+                }
+              ],
+              "robot_non_pad_pair_violations": [],
+              "free_fall_bin_pair_violations": [
+                {
+                  "pair": "bottle0|bottle2",
+                  "pen_mm": 9.1006,
+                  "pair_offset_mm": 2.3223
+                },
+                {
+                  "pair": "bottle1|bottle2",
+                  "pen_mm": 7.6402,
+                  "pair_offset_mm": 2.6579
+                }
+              ]
+            },
+            "readback": {
+              "overwrite_gpu_setting": 1,
+              "enable_gpu_dynamics_usd": false,
+              "time_steps_per_s": 250.0,
+              "enable_stabilization": true,
+              "min_pos_iters": 1.0,
+              "effective_pos_iters": 16,
+              "nonzero_gpu_stat_counters": 17
+            }
+          }
+        ],
+        "control_detected_disagreement": true
+      },
+      "all_controls_detected_disagreement": true
+    },
+    "release_energy_164_v2b_reused": {
+      "note": "Reused from audit/out/g2/positive_controls/ (identical G2EpisodeMonitor --g2_invariants_only code path on put_bottles_into_dustbin s0 l12 at map v2b); recomputed unclosed values verified non-vacuously against v_com-corrected legacy inline_summary (28 comparisons/archive, 0.000000000 mJ diff) and against untouched runtime pre_vcom_fix_inline_summary on all 6 unaffected keys (24 comparisons/archive, 0.000000000 mJ diff) in recomputed_release_energy.json.",
+      "with_multi_bottle_rule": [
+        {
+          "gz_file": "release_states_bt_164_trip_s0_l12.json.gz",
+          "task": "put_bottles_into_dustbin",
+          "seed": 0,
+          "layout": 12,
+          "windows_recomputed": 4,
+          "inline_comparison_mode": "recomputed_unclosed_vs_legacy_inline",
+          "inline_comparison_complete": true,
+          "inline_comparisons_count": 28,
+          "max_abs_diff_vs_inline_mJ": 0.0,
+          "exact_match_to_1e_6_mJ": true,
+          "any_unexplained_energy_gain_gt_1mJ": false,
+          "any_super_restitution_rebound_gt_1mJ": true,
+          "any_release_energy_violation": true,
+          "windows": [
+            {
+              "tag": "b0_bottle2",
+              "label": "bottle2",
+              "open_action": 71,
+              "free_steps_logged": 730,
+              "free_prefix_steps_without_robot": 5,
+              "recontact_robot_steps": 5,
+              "mass_kg": 0.024,
+              "z_com_release_m": 0.911152,
+              "z_com_min_free_m": 0.909137,
+              "drop_mm": 2.0144,
+              "ke_at_release_mJ": 0.037061,
+              "ke_peak_free_mJ": 0.437401,
+              "available_gravity_work_mJ": 0.474276,
+              "excess_ke_over_gravity_mJ": 0.0,
+              "max_step_dke_on_passive_impact_mJ": 0.39193,
+              "max_step_demech_no_robot_mJ": 0.000717,
+              "max_step_demech_where": {
+                "action": 97,
+                "step": 953
+              },
+              "excess_rebound_ke_over_restitution_mJ": 0.0,
+              "excess_rebound_where": null,
+              "unexplained_energy_gain_gt_1mJ": false,
+              "super_restitution_rebound_gt_1mJ": false,
+              "flagged_energy_violation": false,
+              "max_speed_after_release_m_s": 0.1877,
+              "multi_bottle_close_action": 145
+            },
+            {
+              "tag": "b1_bottle1",
+              "label": "bottle1",
+              "open_action": 146,
+              "free_steps_logged": 730,
+              "free_prefix_steps_without_robot": 730,
+              "recontact_robot_steps": 0,
+              "mass_kg": 0.22,
+              "z_com_release_m": 0.905109,
+              "z_com_min_free_m": 0.081274,
+              "drop_mm": 823.8352,
+              "ke_at_release_mJ": 0.011614,
+              "ke_peak_free_mJ": 1297.549945,
+              "available_gravity_work_mJ": 1778.001263,
+              "excess_ke_over_gravity_mJ": 0.0,
+              "max_step_dke_on_passive_impact_mJ": 7.205286,
+              "max_step_demech_no_robot_mJ": 0.075769,
+              "max_step_demech_where": {
+                "action": 155,
+                "step": 1539
+              },
+              "excess_rebound_ke_over_restitution_mJ": 604.971387,
+              "excess_rebound_where": {
+                "action": 155,
+                "step": 1538,
+                "vz_pre_m_s": -2.989,
+                "vz_post_m_s": 2.46133,
+                "e_bound": 0.25
+              },
+              "unexplained_energy_gain_gt_1mJ": false,
+              "super_restitution_rebound_gt_1mJ": true,
+              "flagged_energy_violation": true,
+              "max_speed_after_release_m_s": 3.4245,
+              "multi_bottle_close_action": 220
+            },
+            {
+              "tag": "b2_bottle3",
+              "label": "bottle3",
+              "open_action": 221,
+              "free_steps_logged": 1291,
+              "free_prefix_steps_without_robot": 1291,
+              "recontact_robot_steps": 0,
+              "mass_kg": 0.07,
+              "z_com_release_m": 0.921544,
+              "z_com_min_free_m": 0.379738,
+              "drop_mm": 541.8063,
+              "ke_at_release_mJ": 0.019809,
+              "ke_peak_free_mJ": 367.65846,
+              "available_gravity_work_mJ": 372.058392,
+              "excess_ke_over_gravity_mJ": 0.0,
+              "max_step_dke_on_passive_impact_mJ": 0.123068,
+              "max_step_demech_no_robot_mJ": 0.187001,
+              "max_step_demech_where": {
+                "action": 332,
+                "step": 3302
+              },
+              "excess_rebound_ke_over_restitution_mJ": 0.162133,
+              "excess_rebound_where": {
+                "action": 235,
+                "step": 2332,
+                "vz_pre_m_s": -0.68792,
+                "vz_post_m_s": 0.18763,
+                "e_bound": 0.25
+              },
+              "unexplained_energy_gain_gt_1mJ": false,
+              "super_restitution_rebound_gt_1mJ": false,
+              "flagged_energy_violation": false,
+              "max_speed_after_release_m_s": 3.24107,
+              "multi_bottle_close_action": 351
+            },
+            {
+              "tag": "b3_bottle0",
+              "label": "bottle0",
+              "open_action": 352,
+              "free_steps_logged": 3481,
+              "free_prefix_steps_without_robot": 3481,
+              "recontact_robot_steps": 0,
+              "mass_kg": 0.095,
+              "z_com_release_m": 0.886272,
+              "z_com_min_free_m": 0.325336,
+              "drop_mm": 560.936,
+              "ke_at_release_mJ": 0.076071,
+              "ke_peak_free_mJ": 289.862803,
+              "available_gravity_work_mJ": 522.764275,
+              "excess_ke_over_gravity_mJ": 0.0,
+              "max_step_dke_on_passive_impact_mJ": 2.160354,
+              "max_step_demech_no_robot_mJ": 0.164643,
+              "max_step_demech_where": {
+                "action": 378,
+                "step": 3762
+              },
+              "excess_rebound_ke_over_restitution_mJ": 0.0,
+              "excess_rebound_where": null,
+              "unexplained_energy_gain_gt_1mJ": false,
+              "super_restitution_rebound_gt_1mJ": false,
+              "flagged_energy_violation": false,
+              "max_speed_after_release_m_s": 2.47028,
+              "multi_bottle_close_action": null
+            }
+          ],
+          "inline_summary_vcom_fix": {
+            "status": "corrected_from_substeps",
+            "preserved_runtime_fields": [
+              "pre_vcom_fix_inline_summary"
+            ],
+            "reason": "obj.get_linear_velocity() already returns PhysX COM velocity; pre-fix runtime inline_summary added w x r_com onto vz_com"
+          },
+          "pre_vcom_fix_unaffected_comparisons_count": 24,
+          "pre_vcom_fix_unaffected_max_abs_diff_mJ": 0.0,
+          "pre_vcom_fix_rebound_summary": {
+            "scope": "legacy_unclosed",
+            "super_restitution_rebound_gt_1mJ_windows_count": 2,
+            "any_super_restitution_rebound_gt_1mJ": true,
+            "max_excess_rebound_ke_over_restitution_mJ": 607.165498
+          },
+          "multi_bottle_window_rule_applied": true,
+          "unexplained_energy_gain_gt_1mJ_windows_count": 0,
+          "super_restitution_rebound_gt_1mJ_windows_count": 1,
+          "without_multi_bottle_rule": {
+            "any_unexplained_energy_gain_gt_1mJ": true,
+            "any_super_restitution_rebound_gt_1mJ": true,
+            "any_release_energy_violation": true,
+            "unexplained_energy_gain_gt_1mJ_windows_count": 2,
+            "super_restitution_rebound_gt_1mJ_windows_count": 2,
+            "max_step_demech_no_robot_mJ": 45.602627,
+            "max_excess_rebound_ke_over_restitution_mJ": 604.971387,
+            "pre_vcom_fix_rebound_summary": {
+              "super_restitution_rebound_gt_1mJ_windows_count": 2,
+              "any_super_restitution_rebound_gt_1mJ": true,
+              "max_excess_rebound_ke_over_restitution_mJ": 607.165498
+            }
+          },
+          "multi_bottle_rule_changed_counts": true
+        },
+        {
+          "gz_file": "release_states_bt_164_mpeak_s0_l12.json.gz",
+          "task": "put_bottles_into_dustbin",
+          "seed": 0,
+          "layout": 12,
+          "windows_recomputed": 4,
+          "inline_comparison_mode": "recomputed_unclosed_vs_legacy_inline",
+          "inline_comparison_complete": true,
+          "inline_comparisons_count": 28,
+          "max_abs_diff_vs_inline_mJ": 0.0,
+          "exact_match_to_1e_6_mJ": true,
+          "any_unexplained_energy_gain_gt_1mJ": true,
+          "any_super_restitution_rebound_gt_1mJ": true,
+          "any_release_energy_violation": true,
+          "windows": [
+            {
+              "tag": "b0_bottle2",
+              "label": "bottle2",
+              "open_action": 71,
+              "free_steps_logged": 730,
+              "free_prefix_steps_without_robot": 5,
+              "recontact_robot_steps": 5,
+              "mass_kg": 0.024,
+              "z_com_release_m": 0.911131,
+              "z_com_min_free_m": 0.908902,
+              "drop_mm": 2.2295,
+              "ke_at_release_mJ": 0.020471,
+              "ke_peak_free_mJ": 0.471457,
+              "available_gravity_work_mJ": 0.524909,
+              "excess_ke_over_gravity_mJ": 0.0,
+              "max_step_dke_on_passive_impact_mJ": 0.476932,
+              "max_step_demech_no_robot_mJ": 2.1e-05,
+              "max_step_demech_where": {
+                "action": 109,
+                "step": 1073
+              },
+              "excess_rebound_ke_over_restitution_mJ": 0.008378,
+              "excess_rebound_where": {
+                "action": 85,
+                "step": 834,
+                "vz_pre_m_s": -0.72583,
+                "vz_post_m_s": 0.2059,
+                "e_bound": 0.25
+              },
+              "unexplained_energy_gain_gt_1mJ": false,
+              "super_restitution_rebound_gt_1mJ": false,
+              "flagged_energy_violation": false,
+              "max_speed_after_release_m_s": 0.19821,
+              "multi_bottle_close_action": 145
+            },
+            {
+              "tag": "b1_bottle1",
+              "label": "bottle1",
+              "open_action": 146,
+              "free_steps_logged": 730,
+              "free_prefix_steps_without_robot": 730,
+              "recontact_robot_steps": 0,
+              "mass_kg": 0.22,
+              "z_com_release_m": 0.905035,
+              "z_com_min_free_m": 0.319353,
+              "drop_mm": 585.6816,
+              "ke_at_release_mJ": 0.017216,
+              "ke_peak_free_mJ": 982.203308,
+              "available_gravity_work_mJ": 1264.018144,
+              "excess_ke_over_gravity_mJ": 0.0,
+              "max_step_dke_on_passive_impact_mJ": 10.620911,
+              "max_step_demech_no_robot_mJ": 2.374754,
+              "max_step_demech_where": {
+                "action": 170,
+                "step": 1684
+              },
+              "excess_rebound_ke_over_restitution_mJ": 289.683987,
+              "excess_rebound_where": {
+                "action": 155,
+                "step": 1538,
+                "vz_pre_m_s": -2.98814,
+                "vz_post_m_s": 1.78649,
+                "e_bound": 0.25
+              },
+              "unexplained_energy_gain_gt_1mJ": true,
+              "super_restitution_rebound_gt_1mJ": true,
+              "flagged_energy_violation": true,
+              "max_speed_after_release_m_s": 2.98815,
+              "multi_bottle_close_action": 220
+            },
+            {
+              "tag": "b2_bottle3",
+              "label": "bottle3",
+              "open_action": 221,
+              "free_steps_logged": 1291,
+              "free_prefix_steps_without_robot": 1291,
+              "recontact_robot_steps": 0,
+              "mass_kg": 0.07,
+              "z_com_release_m": 0.921109,
+              "z_com_min_free_m": 0.313793,
+              "drop_mm": 607.316,
+              "ke_at_release_mJ": 0.019902,
+              "ke_peak_free_mJ": 358.7906,
+              "available_gravity_work_mJ": 417.043921,
+              "excess_ke_over_gravity_mJ": 0.0,
+              "max_step_dke_on_passive_impact_mJ": 1.450394,
+              "max_step_demech_no_robot_mJ": 4.5e-05,
+              "max_step_demech_where": {
+                "action": 316,
+                "step": 3148
+              },
+              "excess_rebound_ke_over_restitution_mJ": 0.0,
+              "excess_rebound_where": null,
+              "unexplained_energy_gain_gt_1mJ": false,
+              "super_restitution_rebound_gt_1mJ": false,
+              "flagged_energy_violation": false,
+              "max_speed_after_release_m_s": 3.20174,
+              "multi_bottle_close_action": 351
+            },
+            {
+              "tag": "b3_bottle0",
+              "label": "bottle0",
+              "open_action": 352,
+              "free_steps_logged": 101,
+              "free_prefix_steps_without_robot": 101,
+              "recontact_robot_steps": 0,
+              "mass_kg": 0.095,
+              "z_com_release_m": 0.887121,
+              "z_com_min_free_m": 0.394395,
+              "drop_mm": 492.7264,
+              "ke_at_release_mJ": 0.070591,
+              "ke_peak_free_mJ": 410.532226,
+              "available_gravity_work_mJ": 459.196428,
+              "excess_ke_over_gravity_mJ": 0.0,
+              "max_step_dke_on_passive_impact_mJ": 0.0,
+              "max_step_demech_no_robot_mJ": 0.039565,
+              "max_step_demech_where": {
+                "action": 361,
+                "step": 3596
+              },
+              "excess_rebound_ke_over_restitution_mJ": 0.0,
+              "excess_rebound_where": null,
+              "unexplained_energy_gain_gt_1mJ": false,
+              "super_restitution_rebound_gt_1mJ": false,
+              "flagged_energy_violation": false,
+              "max_speed_after_release_m_s": 2.93984,
+              "multi_bottle_close_action": null
+            }
+          ],
+          "inline_summary_vcom_fix": {
+            "status": "corrected_from_substeps",
+            "preserved_runtime_fields": [
+              "pre_vcom_fix_inline_summary"
+            ],
+            "reason": "obj.get_linear_velocity() already returns PhysX COM velocity; pre-fix runtime inline_summary added w x r_com onto vz_com"
+          },
+          "pre_vcom_fix_unaffected_comparisons_count": 24,
+          "pre_vcom_fix_unaffected_max_abs_diff_mJ": 0.0,
+          "pre_vcom_fix_rebound_summary": {
+            "scope": "legacy_unclosed",
+            "super_restitution_rebound_gt_1mJ_windows_count": 1,
+            "any_super_restitution_rebound_gt_1mJ": true,
+            "max_excess_rebound_ke_over_restitution_mJ": 288.443674
+          },
+          "multi_bottle_window_rule_applied": true,
+          "unexplained_energy_gain_gt_1mJ_windows_count": 1,
+          "super_restitution_rebound_gt_1mJ_windows_count": 1,
+          "without_multi_bottle_rule": {
+            "any_unexplained_energy_gain_gt_1mJ": true,
+            "any_super_restitution_rebound_gt_1mJ": true,
+            "any_release_energy_violation": true,
+            "unexplained_energy_gain_gt_1mJ_windows_count": 2,
+            "super_restitution_rebound_gt_1mJ_windows_count": 1,
+            "max_step_demech_no_robot_mJ": 46.353044,
+            "max_excess_rebound_ke_over_restitution_mJ": 289.683987,
+            "pre_vcom_fix_rebound_summary": {
+              "super_restitution_rebound_gt_1mJ_windows_count": 1,
+              "any_super_restitution_rebound_gt_1mJ": true,
+              "max_excess_rebound_ke_over_restitution_mJ": 288.443674
+            }
+          },
+          "multi_bottle_rule_changed_counts": true
+        }
+      ]
+    },
+    "blowup_injected_vel_spike": {
+      "process": "bg2_b3_spike_s0l12_c00_vis2",
+      "raw_input": "audit/out/g2/put_bottles_into_dustbin/raw/bg2_b3_spike_s0l12_c00_vis2.json.gz",
+      "injected_events": [
+        {
+          "label": "bottle0",
+          "action": 5,
+          "substep": 0,
+          "injected_vel_m_s": [
+            0.0,
+            0.0,
+            8.0
+          ]
+        }
+      ],
+      "blowup_check": {
+        "limits": {
+          "max_linear_speed_m_s": 5.0,
+          "max_angular_speed_rad_s": 200.0,
+          "min_origin_z_m": -0.05
+        },
+        "nonfinite_substep_poses": 0,
+        "violations": [
+          {
+            "label": "bottle0",
+            "metric": "max_linear_speed_m_s",
+            "value": 7.96076,
+            "limit": 5.0,
+            "where": {
+              "action": 5,
+              "substep": 0,
+              "phase": "b0_bottle2:left_transit_high"
+            }
+          }
+        ],
+        "any_blowup": true
+      },
+      "control_flagged_violation": true
+    },
+    "penetration_low_iteration_controls": {
+      "iters16_nosolver": {
+        "invariants": {
+          "episodes_checked": 2,
+          "nonfinite_substep_poses": 0,
+          "episodes_with_any_blowup": 0,
+          "max_object_linear_speed_m_s": 3.18206,
+          "max_object_linear_speed_where": "iters16_nosolver:s2l10:bottle2@{'action': 81, 'substep': 2, 'phase': 'b0_bottle2:left_retreat_bin'}",
+          "max_object_angular_speed_rad_s": 55.3989,
+          "min_origin_z_m": 0.311444,
+          "release_energy_with_multi_bottle_rule": {
+            "windows_checked": 8,
+            "unexplained_energy_gain_gt_1mJ_windows": 2,
+            "unexplained_energy_gain_gt_1mJ_episodes": 2,
+            "super_restitution_rebound_gt_1mJ_windows": 4,
+            "super_restitution_rebound_gt_1mJ_episodes": 2,
+            "max_step_demech_no_robot_mJ": 499.485076,
+            "max_excess_rebound_ke_over_restitution_mJ": 500.263912
+          },
+          "release_energy_without_multi_bottle_rule": {
+            "windows_checked": 8,
+            "unexplained_energy_gain_gt_1mJ_windows": 4,
+            "unexplained_energy_gain_gt_1mJ_episodes": 2,
+            "super_restitution_rebound_gt_1mJ_windows": 4,
+            "super_restitution_rebound_gt_1mJ_episodes": 2,
+            "episodes_where_multi_bottle_rule_changed_counts": 2
+          },
+          "penetration_vs_offsets": {
+            "worst_overall_mm": 9.1006,
+            "finger_pad_max_mm": 5.7735,
+            "robot_non_pad_link_max_mm": 0.0,
+            "table_max_mm": 0.0165,
+            "bottle_bottle_impact_max_mm": 9.1006,
+            "episodes_with_finger_pad_pair_violation": 1,
+            "episodes_with_robot_non_pad_pair_violation": 0,
+            "episodes_with_any_pair_offset_violation": 2
+          },
+          "pre_vcom_fix_rebound_summary": {
+            "with_multi_bottle_rule": {
+              "super_restitution_rebound_gt_1mJ_windows": 5,
+              "super_restitution_rebound_gt_1mJ_episodes": 2,
+              "max_excess_rebound_ke_over_restitution_mJ": 500.747569
+            },
+            "without_multi_bottle_rule": {
+              "super_restitution_rebound_gt_1mJ_windows": 6,
+              "super_restitution_rebound_gt_1mJ_episodes": 2
+            }
+          }
+        },
+        "s0_l12_readback": {
+          "scene_min_pos_iters": 1,
+          "scene_max_pos_iters": 255,
+          "rigid_objects_authored_pos_iters": [
+            16
+          ],
+          "articulation_roots_authored_pos_iters": [
+            8
+          ],
+          "solver_scene_readback_pos_iters": 16
+        },
+        "s2_l10_finger_pad_pair_violations": [
+          {
+            "pair": "bottle3|r0.link8",
+            "pen_mm": 5.7735,
+            "pair_offset_mm": 2.7843
+          },
+          {
+            "pair": "bottle3|r1.link8",
+            "pen_mm": 3.3754,
+            "pair_offset_mm": 2.7843
+          }
+        ]
+      },
+      "iters1_forced_pos_iters_control": {
+        "process": "bg2_b3_it1_posctrl_s0l12_c00_vis2",
+        "raw_input": "audit/out/g2/put_bottles_into_dustbin/raw/bg2_b3_it1_posctrl_s0l12_c00_vis2.json.gz",
+        "score": 0.0,
+        "actions": 700,
+        "readback": {
+          "scene_min_pos_iters": 1,
+          "scene_max_pos_iters": 255,
+          "rigid_objects_authored_pos_iters": [
+            1
+          ],
+          "articulation_roots_authored_pos_iters": [
+            1
+          ],
+          "solver_scene_readback_pos_iters": 1
+        },
+        "penetration_split": {
+          "worst_overall_mm": 34.8493,
+          "worst_overall_pair": "bottle1|r0.link8",
+          "all_within_single_body_offset": false,
+          "all_within_pair_offset_sum": false,
+          "finger_pad_max_mm": 34.8493,
+          "robot_non_pad_link_max_mm": 0.0,
+          "table_max_mm": 2.5328,
+          "dustbin_impact_max_mm": 0.0,
+          "bottle_bottle_impact_max_mm": 5.5485,
+          "finger_pad_pair_violations": [
+            {
+              "pair": "bottle1|r0.link7",
+              "pen_mm": 9.1486,
+              "pair_offset_mm": 2.9463
+            },
+            {
+              "pair": "bottle1|r0.link8",
+              "pen_mm": 34.8493,
+              "pair_offset_mm": 2.9463
+            },
+            {
+              "pair": "bottle2|r0.link7",
+              "pen_mm": 27.0576,
+              "pair_offset_mm": 2.7884
+            },
+            {
+              "pair": "bottle2|r0.link8",
+              "pen_mm": 33.1935,
+              "pair_offset_mm": 2.7884
+            },
+            {
+              "pair": "bottle2|r1.link7",
+              "pen_mm": 20.0719,
+              "pair_offset_mm": 2.7884
+            },
+            {
+              "pair": "bottle2|r1.link8",
+              "pen_mm": 24.3664,
+              "pair_offset_mm": 2.7884
+            }
+          ],
+          "robot_non_pad_pair_violations": [],
+          "free_fall_bin_pair_violations": [
+            {
+              "pair": "bottle1|bottle2",
+              "pen_mm": 5.5485,
+              "pair_offset_mm": 2.6157
+            }
+          ]
+        },
+        "control_flagged_pair_offset_violation": true
+      }
+    },
+    "cpu_gpu_and_batch_coarse_wiring_controls": {
+      "cpu_mu001_s0_l12": {
+        "process": "bg2_b3_cpu_mu001_s0l12_c00_vis2",
+        "raw_input": "audit/out/g2/put_bottles_into_dustbin/raw/bg2_b3_cpu_mu001_s0l12_c00_vis2.json.gz",
+        "pad_friction_override": [
+          {
+            "robot": "x5",
+            "link": "link7",
+            "table": [
+              0.335753,
+              0.284829,
+              0.1
+            ],
+            "override": [
+              0.001,
+              0.001,
+              0.1
+            ],
+            "combine": "min",
+            "table_combine": "average"
+          },
+          {
+            "robot": "x5",
+            "link": "link8",
+            "table": [
+              0.335753,
+              0.284829,
+              0.1
+            ],
+            "override": [
+              0.001,
+              0.001,
+              0.1
+            ],
+            "combine": "min",
+            "table_combine": "average"
+          }
+        ],
+        "score": 100.0,
+        "actions": 362,
+        "settled_diff_mm_deg": [
+          0.1947,
+          0.1181
+        ],
+        "release_diff_mm": {
+          "b0_bottle2": 33.8141,
+          "b1_bottle1": 59.2865,
+          "b2_bottle3": 38.1944,
+          "b3_bottle0": 45.5219
+        },
+        "max_release_diff_mm": 59.2865,
+        "exceeds_release_10mm_tolerance": true,
+        "post_tumble_bin_final_diff_mm_deg": [
+          120.6555,
+          177.7596
+        ],
+        "exceeds_tabletop_5mm_2deg_band": true
+      },
+      "num_envs_2_mu001_s2_l10_12": {
+        "process": "bg2_b3_ne2_mu001_s2l10_12_c00_vis2",
+        "raw_input": "audit/out/g2/put_bottles_into_dustbin/raw/bg2_b3_ne2_mu001_s2l10_12_c00_vis2.json.gz",
+        "pad_friction_override": [
+          {
+            "robot": "x5",
+            "link": "link7",
+            "table": [
+              0.335753,
+              0.284829,
+              0.1
+            ],
+            "override": [
+              0.001,
+              0.001,
+              0.1
+            ],
+            "combine": "min",
+            "table_combine": "average"
+          },
+          {
+            "robot": "x5",
+            "link": "link8",
+            "table": [
+              0.335753,
+              0.284829,
+              0.1
+            ],
+            "override": [
+              0.001,
+              0.001,
+              0.1
+            ],
+            "combine": "min",
+            "table_combine": "average"
+          }
+        ],
+        "scores": [
+          25.0,
+          40.0
+        ],
+        "actions": [
+          700,
+          700
+        ],
+        "slots": [
+          {
+            "env_slot": 0,
+            "layout": 10,
+            "score": 25.0,
+            "actions": 700,
+            "release_diff_at_ref_open_action_mm": {
+              "b0_bottle2": 16.5692,
+              "b1_bottle3": 1152.832,
+              "b2_bottle0": 719.208,
+              "b3_bottle1": 868.9378
+            },
+            "max_left_direct_release_diff_mm": 16.5692,
+            "max_all_release_diff_mm": 1152.832,
+            "exceeds_release_5mm_tolerance": true,
+            "post_tumble_bin_final_diff_mm_deg": [
+              1058.1278,
+              164.0831
+            ],
+            "exceeds_tabletop_3mm_1p5deg_band": true
+          },
+          {
+            "env_slot": 1,
+            "layout": 12,
+            "score": 40.0,
+            "actions": 700,
+            "release_diff_at_ref_open_action_mm": {
+              "b0_bottle1": 332.234,
+              "b1_bottle0": 25.3239,
+              "b3_bottle3": 939.9278,
+              "b4_bottle2": 589.9167
+            },
+            "max_left_direct_release_diff_mm": 332.234,
+            "max_all_release_diff_mm": 939.9278,
+            "exceeds_release_5mm_tolerance": true,
+            "post_tumble_bin_final_diff_mm_deg": [
+              1100.5422,
+              171.1648
+            ],
+            "exceeds_tabletop_3mm_1p5deg_band": true
+          }
+        ]
+      }
+    },
+    "one_pair_friction_sensitivity_194": {
+      "target_pair": "pad_hard__pet_plastic",
+      "census_impulse_share_pct": 84.514,
+      "coupled_override_pair": "Rigid/bottle/00022__pad_hard (13.893% impulse; +9.27% at +10%, +92.72% at +100%; 98.407% combined grasp share; 0/10 contacts on all other pad_hard__* pairs)",
+      "baseline_realised_mu": [
+        0.313288,
+        0.261866
+      ],
+      "asserting_readbacks": {
+        "plus_10pct": {
+          "process": "bg2_b3_rb_p10_c00_vis2",
+          "raw_input": "audit/out/g2/put_bottles_into_dustbin/raw/bg2_b3_rb_p10_c00_vis2.json.gz",
+          "assertion_passed": true,
+          "failures": [],
+          "pad_friction_override": [
+            {
+              "robot": "x5",
+              "link": "link7",
+              "table": [
+                0.335753,
+                0.284829,
+                0.1
+              ],
+              "override": [
+                0.398411,
+                0.337202,
+                0.1
+              ],
+              "combine": "average",
+              "table_combine": "average"
+            },
+            {
+              "robot": "x5",
+              "link": "link8",
+              "table": [
+                0.335753,
+                0.284829,
+                0.1
+              ],
+              "override": [
+                0.398411,
+                0.337202,
+                0.1
+              ],
+              "combine": "average",
+              "table_combine": "average"
+            }
+          ],
+          "engine_robot0_link7_material": [
+            0.39841,
+            0.3372,
+            0.1
+          ],
+          "engine_robot0_link8_material": [
+            0.39841,
+            0.3372,
+            0.1
+          ],
+          "engine_bottle0_material": [
+            0.29082,
+            0.2389,
+            0.25
+          ],
+          "engine_realised_pair_mu": [
+            0.344615,
+            0.28805
+          ],
+          "shift_vs_baseline_pct": [
+            9.9994,
+            9.999
+          ],
+          "non_pad_scene_pairs_checked": 34,
+          "all_non_pad_scene_pairs_unchanged": true
+        },
+        "plus_100pct": {
+          "process": "bg2_b3_rb_p100_c00_vis2",
+          "raw_input": "audit/out/g2/put_bottles_into_dustbin/raw/bg2_b3_rb_p100_c00_vis2.json.gz",
+          "assertion_passed": true,
+          "failures": [],
+          "pad_friction_override": [
+            {
+              "robot": "x5",
+              "link": "link7",
+              "table": [
+                0.335753,
+                0.284829,
+                0.1
+              ],
+              "override": [
+                0.96233,
+                0.808562,
+                0.1
+              ],
+              "combine": "average",
+              "table_combine": "average"
+            },
+            {
+              "robot": "x5",
+              "link": "link8",
+              "table": [
+                0.335753,
+                0.284829,
+                0.1
+              ],
+              "override": [
+                0.96233,
+                0.808562,
+                0.1
+              ],
+              "combine": "average",
+              "table_combine": "average"
+            }
+          ],
+          "engine_robot0_link7_material": [
+            0.96233,
+            0.80856,
+            0.1
+          ],
+          "engine_robot0_link8_material": [
+            0.96233,
+            0.80856,
+            0.1
+          ],
+          "engine_bottle0_material": [
+            0.29082,
+            0.2389,
+            0.25
+          ],
+          "engine_realised_pair_mu": [
+            0.626575,
+            0.52373
+          ],
+          "shift_vs_baseline_pct": [
+            99.9997,
+            99.9992
+          ],
+          "non_pad_scene_pairs_checked": 34,
+          "all_non_pad_scene_pairs_unchanged": true
+        }
+      },
+      "plus_10pct_arms": {
+        "gpu_only_s0_l12": {
+          "process": "bg2_b3_gpu_p10_s0l12_c00_vis2",
+          "raw_input": "audit/out/g2/put_bottles_into_dustbin/raw/bg2_b3_gpu_p10_s0l12_c00_vis2.json.gz",
+          "pad_friction_override": [
+            {
+              "robot": "x5",
+              "link": "link7",
+              "table": [
+                0.335753,
+                0.284829,
+                0.1
+              ],
+              "override": [
+                0.398411,
+                0.337202,
+                0.1
+              ],
+              "combine": "average",
+              "table_combine": "average"
+            },
+            {
+              "robot": "x5",
+              "link": "link8",
+              "table": [
+                0.335753,
+                0.284829,
+                0.1
+              ],
+              "override": [
+                0.398411,
+                0.337202,
+                0.1
+              ],
+              "combine": "average",
+              "table_combine": "average"
+            }
+          ],
+          "score": 100.0,
+          "actions": 362,
+          "settled_diff_mm_deg": [
+            0.0,
+            0.0
+          ],
+          "release_diff_mm": {
+            "b0_bottle2": 9.4635,
+            "b1_bottle1": 0.4861,
+            "b2_bottle3": 1.1942,
+            "b3_bottle0": 0.4587
+          },
+          "max_release_diff_mm": 9.4635,
+          "exceeds_release_10mm_tolerance": false,
+          "post_tumble_bin_final_diff_mm_deg": [
+            149.1404,
+            153.7963
+          ],
+          "exceeds_tabletop_5mm_2deg_band": true
+        },
+        "cpu_s0_l12": {
+          "process": "bg2_b3_cpu_p10_s0l12_c00_vis2",
+          "raw_input": "audit/out/g2/put_bottles_into_dustbin/raw/bg2_b3_cpu_p10_s0l12_c00_vis2.json.gz",
+          "pad_friction_override": [
+            {
+              "robot": "x5",
+              "link": "link7",
+              "table": [
+                0.335753,
+                0.284829,
+                0.1
+              ],
+              "override": [
+                0.398411,
+                0.337202,
+                0.1
+              ],
+              "combine": "average",
+              "table_combine": "average"
+            },
+            {
+              "robot": "x5",
+              "link": "link8",
+              "table": [
+                0.335753,
+                0.284829,
+                0.1
+              ],
+              "override": [
+                0.398411,
+                0.337202,
+                0.1
+              ],
+              "combine": "average",
+              "table_combine": "average"
+            }
+          ],
+          "score": 100.0,
+          "actions": 362,
+          "settled_diff_mm_deg": [
+            0.1947,
+            0.1181
+          ],
+          "release_diff_mm": {
+            "b0_bottle2": 2.6061,
+            "b1_bottle1": 4.8111,
+            "b2_bottle3": 0.3769,
+            "b3_bottle0": 0.6481
+          },
+          "max_release_diff_mm": 4.8111,
+          "exceeds_release_10mm_tolerance": false,
+          "post_tumble_bin_final_diff_mm_deg": [
+            146.2541,
+            143.9178
+          ],
+          "exceeds_tabletop_5mm_2deg_band": true
+        },
+        "num_envs_2_s2_l10_12": {
+          "process": "bg2_b3_ne2_p10_s2l10_12_c00_vis2",
+          "raw_input": "audit/out/g2/put_bottles_into_dustbin/raw/bg2_b3_ne2_p10_s2l10_12_c00_vis2.json.gz",
+          "pad_friction_override": [
+            {
+              "robot": "x5",
+              "link": "link7",
+              "table": [
+                0.335753,
+                0.284829,
+                0.1
+              ],
+              "override": [
+                0.398411,
+                0.337202,
+                0.1
+              ],
+              "combine": "average",
+              "table_combine": "average"
+            },
+            {
+              "robot": "x5",
+              "link": "link8",
+              "table": [
+                0.335753,
+                0.284829,
+                0.1
+              ],
+              "override": [
+                0.398411,
+                0.337202,
+                0.1
+              ],
+              "combine": "average",
+              "table_combine": "average"
+            }
+          ],
+          "scores": [
+            100.0,
+            100.0
+          ],
+          "actions": [
+            456,
+            476
+          ],
+          "slots": [
+            {
+              "env_slot": 0,
+              "layout": 10,
+              "score": 100.0,
+              "actions": 456,
+              "release_diff_at_ref_open_action_mm": {
+                "b0_bottle2": 1.1874,
+                "b1_bottle3": 0.5385,
+                "b2_bottle0": 0.1414,
+                "b3_bottle1": 6.0183
+              },
+              "max_left_direct_release_diff_mm": 1.1874,
+              "max_all_release_diff_mm": 6.0183,
+              "exceeds_release_5mm_tolerance": true,
+              "post_tumble_bin_final_diff_mm_deg": [
+                128.3383,
+                156.4433
+              ],
+              "exceeds_tabletop_3mm_1p5deg_band": true
+            },
+            {
+              "env_slot": 1,
+              "layout": 12,
+              "score": 100.0,
+              "actions": 476,
+              "release_diff_at_ref_open_action_mm": {
+                "b0_bottle1": 1.1576,
+                "b1_bottle0": 0.2236,
+                "b3_bottle3": 8.5575,
+                "b4_bottle2": 0.5831
+              },
+              "max_left_direct_release_diff_mm": 1.1576,
+              "max_all_release_diff_mm": 8.5575,
+              "exceeds_release_5mm_tolerance": true,
+              "post_tumble_bin_final_diff_mm_deg": [
+                15.4552,
+                92.632
+              ],
+              "exceeds_tabletop_3mm_1p5deg_band": true
+            }
+          ]
+        }
+      },
+      "plus_100pct_gpu_only_s0_l12": {
+        "process": "bg2_b3_gpu_p100_s0l12_c00_vis2",
+        "raw_input": "audit/out/g2/put_bottles_into_dustbin/raw/bg2_b3_gpu_p100_s0l12_c00_vis2.json.gz",
+        "pad_friction_override": [
+          {
+            "robot": "x5",
+            "link": "link7",
+            "table": [
+              0.335753,
+              0.284829,
+              0.1
+            ],
+            "override": [
+              0.96233,
+              0.808562,
+              0.1
+            ],
+            "combine": "average",
+            "table_combine": "average"
+          },
+          {
+            "robot": "x5",
+            "link": "link8",
+            "table": [
+              0.335753,
+              0.284829,
+              0.1
+            ],
+            "override": [
+              0.96233,
+              0.808562,
+              0.1
+            ],
+            "combine": "average",
+            "table_combine": "average"
+          }
+        ],
+        "score": 100.0,
+        "actions": 362,
+        "settled_diff_mm_deg": [
+          0.0,
+          0.0
+        ],
+        "release_diff_mm": {
+          "b0_bottle2": 2.5011,
+          "b1_bottle1": 0.8362,
+          "b2_bottle3": 0.1914,
+          "b3_bottle0": 0.6535
+        },
+        "max_release_diff_mm": 2.5011,
+        "exceeds_release_10mm_tolerance": false,
+        "post_tumble_bin_final_diff_mm_deg": [
+          152.6331,
+          161.9763
+        ],
+        "exceeds_tabletop_5mm_2deg_band": true
+      },
+      "upward_release_10mm_detection_threshold": "> +100% on s0 l12 (max release diff 9.4635 mm at +10% and 2.5011 mm at +100%, both < 10.0 mm; handover tilts on s2 l10/l12 shift release by 6.02-8.56 mm; post-tumble bin resting poses scatter 15-204 mm at every level incl. +0%)"
+    }
+  },
+  "cost": {
+    "hardware": "della-vis2 GPU 1 (1x NVIDIA A40, HARNESS_GPU=1, <= 3 concurrent processes)",
+    "total_processes": 44,
+    "total_process_hours": 2.8405,
+    "total_gpu1_busy_union_hours": 1.2834,
+    "batch1": {
+      "processes": 14,
+      "proc_hours": 0.5391,
+      "gpu1_union_hours": 0.2353
+    },
+    "batch2": {
+      "processes": 16,
+      "proc_hours": 1.8126,
+      "gpu1_union_hours": 0.749
+    },
+    "batch3": {
+      "processes": 12,
+      "proc_hours": 0.403,
+      "gpu1_union_hours": 0.2159
+    },
+    "batch4": {
+      "processes": 2,
+      "proc_hours": 0.0858,
+      "gpu1_union_hours": 0.0832
+    }
+  }
+}

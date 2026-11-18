@@ -1,0 +1,23 @@
+[
+ {
+  "cell_name": "play_tic_tac_toe__perturb",
+  "layout": 0,
+  "overrides": {
+   "spawn_lift": {
+    "stems": "*",
+    "dz_m": 1e-06
+   },
+   "slide_target": {
+    "label": "opponent_piece0",
+    "inst": "chessman_1_6",
+    "labelled": true,
+    "stem": "chessman_1",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     1.0,
+     0.0
+    ]
+   }
+  }
+ }
+]

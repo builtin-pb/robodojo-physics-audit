@@ -1,0 +1,126 @@
+[
+ {
+  "cell_name": "pack_objects_into_box__shipped",
+  "layout": 0,
+  "overrides": {
+   "slide_target": {
+    "label": "hammer",
+    "inst": "hammer_3_3",
+    "labelled": true,
+    "stem": "hammer_3",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     -0.994594,
+     0.103837
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "pack_objects_into_box__dt2",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.002,
+   "slide_target": {
+    "label": "hammer",
+    "inst": "hammer_3_3",
+    "labelled": true,
+    "stem": "hammer_3",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     -0.994594,
+     0.103837
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "pack_objects_into_box__dt1",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.001,
+   "slide_target": {
+    "label": "hammer",
+    "inst": "hammer_3_3",
+    "labelled": true,
+    "stem": "hammer_3",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     -0.994594,
+     0.103837
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "pack_objects_into_box__iters4x",
+  "layout": 0,
+  "overrides": {
+   "min_pos_iters": 64,
+   "slide_target": {
+    "label": "hammer",
+    "inst": "hammer_3_3",
+    "labelled": true,
+    "stem": "hammer_3",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     -0.994594,
+     0.103837
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "pack_objects_into_box__stab_off",
+  "layout": 0,
+  "overrides": {
+   "enable_stabilization": false,
+   "slide_target": {
+    "label": "hammer",
+    "inst": "hammer_3_3",
+    "labelled": true,
+    "stem": "hammer_3",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     -0.994594,
+     0.103837
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "pack_objects_into_box__cpu",
+  "layout": 0,
+  "overrides": {
+   "gpu_dynamics": false,
+   "slide_target": {
+    "label": "hammer",
+    "inst": "hammer_3_3",
+    "labelled": true,
+    "stem": "hammer_3",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     -0.994594,
+     0.103837
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "pack_objects_into_box__shipped_repeat",
+  "layout": 0,
+  "overrides": {
+   "slide_target": {
+    "label": "hammer",
+    "inst": "hammer_3_3",
+    "labelled": true,
+    "stem": "hammer_3",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     -0.994594,
+     0.103837
+    ]
+   }
+  }
+ }
+]

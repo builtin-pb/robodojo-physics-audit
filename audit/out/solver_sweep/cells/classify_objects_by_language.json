@@ -1,0 +1,108 @@
+[
+ {
+  "cell_name": "classify_objects_by_language__shipped",
+  "layout": 0,
+  "overrides": {
+   "slide_target": {
+    "label": "cat2_0",
+    "inst": "wooden_toy_1_5",
+    "labelled": true,
+    "stem": "wooden_toy_1",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.803293,
+     0.595584
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "classify_objects_by_language__dt2",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.002,
+   "slide_target": {
+    "label": "cat2_0",
+    "inst": "wooden_toy_1_5",
+    "labelled": true,
+    "stem": "wooden_toy_1",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.803293,
+     0.595584
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "classify_objects_by_language__dt1",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.001,
+   "slide_target": {
+    "label": "cat2_0",
+    "inst": "wooden_toy_1_5",
+    "labelled": true,
+    "stem": "wooden_toy_1",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.803293,
+     0.595584
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "classify_objects_by_language__iters4x",
+  "layout": 0,
+  "overrides": {
+   "min_pos_iters": 64,
+   "slide_target": {
+    "label": "cat2_0",
+    "inst": "wooden_toy_1_5",
+    "labelled": true,
+    "stem": "wooden_toy_1",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.803293,
+     0.595584
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "classify_objects_by_language__cpu",
+  "layout": 0,
+  "overrides": {
+   "gpu_dynamics": false,
+   "slide_target": {
+    "label": "cat2_0",
+    "inst": "wooden_toy_1_5",
+    "labelled": true,
+    "stem": "wooden_toy_1",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.803293,
+     0.595584
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "classify_objects_by_language__shipped_repeat",
+  "layout": 0,
+  "overrides": {
+   "slide_target": {
+    "label": "cat2_0",
+    "inst": "wooden_toy_1_5",
+    "labelled": true,
+    "stem": "wooden_toy_1",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.803293,
+     0.595584
+    ]
+   }
+  }
+ }
+]

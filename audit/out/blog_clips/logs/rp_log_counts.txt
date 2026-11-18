@@ -1,0 +1,5 @@
+# 6.2 replay logs on Della (runs/<tag>/log.txt, checksums in ../RAW_SHA256): counts of "Scene state is corrupted",
+# "failed to allocate" and "SDF cooking failed" lines (grep -c), taken after the production queue.
+rp_fasten_frozen corrupted=0 alloc_fail=0 sdf_fail=0 sha256=e2f30f7aedc8a2d33a2a4a48629aae5c3ac6cf093ff9d2edbbc5e7067e10d563
+rp_fasten_free corrupted=0 alloc_fail=0 sdf_fail=0 sha256=ed539b2b9047f9da8249f85aefd38fb7d871fb958d878df18301f0005f92fc03
+rp_xylo corrupted=0 alloc_fail=0 sdf_fail=0 sha256=6f09304b59a89b491cf442cb9b27cd319f67f343f80d4ad850db987e1529cb23

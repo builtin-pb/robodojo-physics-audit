@@ -1,0 +1,6 @@
+# 6.2 rollouts, second batch (VER=62, SPLIT=1), Replicator capture, 1 subframe at 8 spp with the OptiX denoiser
+c62_bulldoze|bulldoze.json|--subframes 1 --warmup 6 --capture rep|--task put_bottles_into_dustbin --layouts 1 --policy exploit --exploit_mode shove_bottles --log_poses --evaluator v1
+c62_buttons|buttons.json|--subframes 1 --warmup 6 --capture rep|--task press_by_number --layouts 0 --policy stress_hv --stress_cases <repo>/audit/harness/stress_hv/cases/press_buttons_clip.json
+c62_peek|peek.json|--subframes 1 --warmup 6 --capture rep|--task cover_blocks --layouts 1 --policy witness_cb --cb_mode peek_51 --log_poses --evaluator v1
+c62_coin|coin.json|--subframes 1 --warmup 6 --capture rep|--task deposit_coin --layouts 0 --policy stress_hv --stress_cases <repo>/audit/harness/stress_hv/cases/coin_side_speeds.json
+c62_press40|press40.json|--subframes 1 --warmup 6 --capture rep|--task press_by_number --layouts 0 --policy stress_hv --stress_cases <repo>/audit/harness/stress_hv/cases/press_depth_b0_40_clip.json

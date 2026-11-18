@@ -1,0 +1,6 @@
+v2l_knock_v1|--task put_bottles_into_dustbin --layouts 7 --policy exploit --exploit_mode knock_bottle_in --exploit_args {"X":"bottle0","Y":"bottle3"} --evaluator v1 --pickup_trace --log_poses
+v2l_knock_v2|--task put_bottles_into_dustbin --layouts 7 --policy exploit --exploit_mode knock_bottle_in --exploit_args {"X":"bottle0","Y":"bottle3"} --evaluator v2 --pickup_trace --log_poses
+v2l_shove_v1|--task put_bottles_into_dustbin --layouts 0,1 --policy exploit --exploit_mode shove_bottles --evaluator v1 --pickup_trace --log_poses
+v2l_shove_v2|--task put_bottles_into_dustbin --layouts 0,1 --policy exploit --exploit_mode shove_bottles --evaluator v2 --pickup_trace --log_poses
+v2l_script_v2|--task put_bottles_into_dustbin --layouts 0,1,2 --policy script_bottles --evaluator v2 --pickup_trace --fast_log
+v2l_script_inplace_v2|--task put_bottles_into_dustbin --layouts 0,1 --policy script_bottles --evaluator v2 --pickup_trace --fast_log --no_close_between_resets

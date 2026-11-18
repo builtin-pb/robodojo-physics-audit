@@ -1,0 +1,9 @@
+tag=t3_shipped_v1_r2 host=della-vis2.princeton.edu slurm_job= start=2026-11-13T15:49:23-05:00
+repo_head=ba2b318b39ae443b6f9523f6b8d23a11ce5d0594 repo_diff_sha1=da39a3ee5e6b4b0d3255bfef95601890afd80709
+eval_num=3 evaluator=v1 preset=shipped gpu=0
+index, name, driver_version, memory.used [MiB], memory.total [MiB]
+0, NVIDIA A40, 615.71.10, 5730 MiB, 46068 MiB
+1, NVIDIA A40, 615.71.10, 5059 MiB, 46068 MiB
+free_check before=policy_server free_mib=39812 need_mib=38500 t=15:49:24
+server_ready=yes port=34535 s=271
+free_check before=sim attempt=0 free_mib=10945 need_mib=8000 t=15:53:55

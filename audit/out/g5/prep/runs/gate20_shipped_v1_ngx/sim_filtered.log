@@ -1,0 +1,9341 @@
+Warning: running in conda env, please deactivate before executing this script
+Starting kit application with the following args:  ['/isaac-sim/exts/isaacsim.simulation_app/isaacsim/simulation_app/simulation_app.py', '/scratch/<user>/isaac/work/g5/robodojo-physics/audit/harness/robodojo_full_rtx_62.kit', '--/app/tokens/exe-path=/isaac-sim/kit', '--/persistent/app/viewport/displayOptions=3094', '--/rtx/materialDb/syncLoads=True', '--/rtx/hydra/materialSyncLoads=True', '--/omni/kit/plugin/syncUsdLoads=True', '--/app/renderer/resolution/width=1280', '--/app/renderer/resolution/height=720', '--/app/window/width=1440', '--/app/window/height=900', '--/renderer/multiGpu/enabled=False', '--/app/fastShutdown=True', '--/app/installSignalHandlers=0', '--ext-folder', '/isaac-sim/exts', '--ext-folder', '/isaac-sim/apps', '--/renderer/activeGpu=1', '--/physics/cudaDevice=0', '--/plugins/carb.tasking.plugin/threadCount=16', '--/plugins/omni.tbb.globalcontrol/maxThreadCount=16', '--portable', '--no-window', '--/app/window/hideUi=1']
+Passing the following args to the base kit application:  ['--/app/updateOrder/checkForHydraRenderComplete=1000', '--/app/renderer/waitIdle=true', '--/app/hydraEngine/waitIdle=true']
+2026-11-13T22:38:22Z [Info] [carb] Logging to file: /isaac-sim/kit/logs/Kit/Isaac-Sim/6.2/kit_20261113_173822.log
+2026-11-13T22:38:22Z [22ms] [Warning] [omni.ext.plugin] [ext: carb.S5oFgr] Extensions config 'extension.toml' doesn't exist '/scratch/<user>/isaac/work/g5/tmp/carb.S5oFgr' or '/scratch/<user>/isaac/work/g5/tmp/carb.S5oFgr/config'
+2026-11-13T22:38:22Z [24ms] [Warning] [omni.ext.plugin] [ext: carb.cnxkm8] Extensions config 'extension.toml' doesn't exist '/scratch/<user>/isaac/work/g5/tmp/carb.cnxkm8' or '/scratch/<user>/isaac/work/g5/tmp/carb.cnxkm8/config'
+2026-11-13T22:38:22Z [24ms] [Warning] [omni.ext.plugin] [ext: isaaclab] Extensions config 'extension.toml' doesn't exist '/scratch/<user>/isaac/work/g5/tmp/isaaclab' or '/scratch/<user>/isaac/work/g5/tmp/isaaclab/config'
+2026-11-13T22:38:22Z [26ms] [Warning] [omni.ext.plugin] [ext: carb.o65e21] Extensions config 'extension.toml' doesn't exist '/scratch/<user>/isaac/work/g5/tmp/carb.o65e21' or '/scratch/<user>/isaac/work/g5/tmp/carb.o65e21/config'
+2026-11-13T22:38:22Z [26ms] [Warning] [omni.ext.plugin] [ext: wp_pch_uhbq3xb8] Extensions config 'extension.toml' doesn't exist '/scratch/<user>/isaac/work/g5/tmp/wp_pch_uhbq3xb8' or '/scratch/<user>/isaac/work/g5/tmp/wp_pch_uhbq3xb8/config'
+2026-11-13T22:38:22Z [29ms] [Warning] [omni.ext.plugin] [ext: carb.PKp3PR] Extensions config 'extension.toml' doesn't exist '/scratch/<user>/isaac/work/g5/tmp/carb.PKp3PR' or '/scratch/<user>/isaac/work/g5/tmp/carb.PKp3PR/config'
+2026-11-13T22:38:22Z [31ms] [Warning] [omni.ext.plugin] [ext: carb.nOZG1s] Extensions config 'extension.toml' doesn't exist '/scratch/<user>/isaac/work/g5/tmp/carb.nOZG1s' or '/scratch/<user>/isaac/work/g5/tmp/carb.nOZG1s/config'
+[0.280s] [ext: omni.assets.plugins-0.0.0] startup
+[0.303s] [ext: omni.blobkey-1.1.2] startup
+[0.306s] [ext: omni.kit.async_engine-0.0.5] startup
+[3.042s] [ext: omni.client.lib-1.1.1] startup
+[3.181s] [ext: omni.client-1.3.0] startup
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1794609515.978307  607792 descriptor_database.cc:633] File already exists in database: grpc/health/v1/health.proto
+W0000 00:00:1794609515.978948  607792 message.cc:301] Protobuf GeneratedMessageFactory: File is already registered: grpc/health/v1/health.proto
+[13.531s] [ext: omni.protobuf.lib-1.0.1] startup
+[13.553s] [ext: omni.grpc.lib-1.0.1] startup
+[13.599s] [ext: omni.metrics.core-0.0.3] startup
+[13.600s] [ext: omni.datastore-0.0.0] startup
+[13.608s] [ext: omni.gpu_foundation.shadercache.vulkan-1.0.0] startup
+[13.622s] [ext: omni.hsscclient-1.1.4] startup
+[13.626s] [ext: omni.stats-1.0.1] startup
+[13.634s] [ext: omni.ujitso.default-1.0.0] startup
+[13.650s] [ext: omni.gpu_foundation-0.0.0] startup
+[13.900s] [ext: carb.windowing.plugins-1.0.1] startup
+[13.920s] [ext: omni.kit.renderer.init-1.0.1] startup
+2026-11-13T22:38:36Z [13,912ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-11-13T22:38:36Z [13,914ms] [Warning] [omni.rtx] CUDA_VISIBLE_DEVICES environment variable is set.
+2026-11-13T22:38:36Z [13,914ms] [Warning] [omni.rtx] Note CUDA device enumeration and Omniverse device enumeration are different.
+2026-11-13T22:38:36Z [13,914ms] [Warning] [omni.rtx] Setting CUDA_VISIBLE_DEVICES can lead to undesired behavior or crashes.
+2026-11-13T22:38:37Z [14,737ms] [Warning] [omni.rtx] Skipping NVIDIA graphics device because the matching CUDA device could not be found: NVIDIA A40
+2026-11-13T22:38:37Z [14,737ms] [Warning] [omni.rtx] Please restart your system if CUDA is known to work in your system, check if the NVIDIA driver is installed and working correctly, or check the MIG instance configuration if MIG is enabled.
+2026-11-13T22:38:37Z [14,737ms] [Warning] [omni.rtx] Skipping NVIDIA graphics device because the matching CUDA device could not be found: NVIDIA A40
+2026-11-13T22:38:37Z [14,738ms] [Warning] [omni.rtx] Please restart your system if CUDA is known to work in your system, check if the NVIDIA driver is installed and working correctly, or check the MIG instance configuration if MIG is enabled.
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 615.71.10     | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA A40                       |        |     | 46068   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2235      | 9a686fbc.. |
+|     |                                  |        |     |            | 21        |            |
+|---------------------------------------------------------------------------------------------|
+| 1   | NVIDIA A40                       | Yes: 0 |     | 46068   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2235      | 2034d210.. |
+|     |                                  |        |     |            | e1        |            |
+|=============================================================================================|
+| OS: 24.04.3 LTS (Noble Numbat) ubuntu, Version: 24.04.3, Kernel: 5.14.0-687.66.1.el9_8.x86_64
+| Processor: AMD EPYC 9454 48-Core Processor
+| Cores: 96 | Logical Cores: 96
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 2063296 | Free Memory: 1860957
+| Total Page/Swap (MB): 7999 | Free Page/Swap: 7999
+|---------------------------------------------------------------------------------------------|
+2026-11-13T22:38:37Z [15,094ms] [Warning] [omni.rtx] ECC is enabled on physical device 1
+2026-11-13T22:38:37Z [15,097ms] [Warning] [omni.rtx] IOMMU is enabled.
+[15.449s] [ext: omni.kit.pipapi-0.0.0] startup
+[15.454s] [ext: omni.kit.pip_archive-0.0.0] startup
+[15.455s] [ext: isaacsim.pip.newton-0.12.1] startup
+[15.459s] [ext: isaacsim.pip.nv-1.0.2] startup
+[15.460s] [ext: isaacsim.pip.onnx-1.0.1] startup
+[15.461s] [ext: omni.pip.compute-1.9.7] startup
+[15.463s] [ext: omni.isaac.core_archive-5.4.1] startup
+[15.466s] [ext: omni.kit.telemetry-0.5.2] startup
+[15.515s] [ext: omni.kit.loop-isaac-1.6.2] startup
+[15.526s] [ext: omni.kit.test-2.2.3] startup
+[15.920s] [ext: omni.materialx.libs-1.0.9] startup
+[15.959s] [ext: omni.gpucompute.plugins-0.0.0] startup
+[15.963s] [ext: omni.usd.config-1.0.8] startup
+[15.980s] [ext: omni.usd.libs-1.0.3] startup
+[16.327s] [ext: omni.iray.libs-0.0.1] startup
+[16.527s] [ext: omni.mdl-57.0.6] startup
+[17.069s] [ext: omni.mdl.neuraylib-0.2.23] startup
+[17.079s] [ext: omni.kit.usd.mdl-1.1.12] startup
+[17.350s] [ext: omni.appwindow-1.2.2] startup
+[17.362s] [ext: omni.kit.renderer.core-1.3.2] startup
+2026-11-13T22:38:39Z [17,304ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T22:38:39Z [17,304ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+[17.419s] [ext: omni.kit.renderer.capture-2.0.2] startup
+[17.426s] [ext: omni.kit.renderer.imgui-2.2.1] startup
+2026-11-13T22:38:39Z [17,345ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T22:38:39Z [17,345ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T22:38:39Z [17,346ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T22:38:39Z [17,346ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+[17.619s] [ext: omni.ui-3.3.10] startup
+[17.678s] [ext: omni.kit.mainwindow-1.0.4] startup
+[17.684s] [ext: carb.audio-0.1.0] startup
+[17.699s] [ext: omni.uiaudio-1.0.0] startup
+[17.703s] [ext: omni.kit.uiapp-0.0.0] startup
+[17.703s] [ext: omni.usd.schema.metrics.assembler-110.1.1] startup
+[17.712s] [ext: omni.usd.schema.audio-0.0.1] startup
+[17.718s] [ext: omni.usd_resolver-1.0.0] startup
+[17.729s] [ext: omni.usd.core-1.10.42] startup
+[17.761s] [ext: omni.metropolis.schema-0.0.3] startup
+[17.763s] [ext: isaacsim.anim.robot.schema-0.1.1] startup
+[17.765s] [ext: isaacsim.common-6.2.0] startup
+[17.772s] [ext: omni.usd.schema.anim-0.0.1] startup
+[17.808s] [ext: omni.usd.schema.geospatial-0.0.1] startup
+[17.812s] [ext: omni.usd.schema.omnigraph-1.0.1] startup
+[17.824s] [ext: omni.usd.schema.semantics-0.0.0] startup
+[17.828s] [ext: omni.activity.core-1.0.4] startup
+[17.841s] [ext: omni.cubric-0.1.0] startup
+[17.848s] [ext: omni.graph.exec-0.9.6] startup
+[17.849s] [ext: omni.hydra.scene_delegate-0.3.5] startup
+[17.867s] [ext: usdrt.scenegraph-7.6.3] startup
+[17.968s] [ext: omni.hydra.usdrt_delegate-7.5.2] startup
+[17.993s] [ext: omni.inspect-1.0.2] startup
+[18.001s] [ext: omni.kit.actions.core-1.2.1] startup
+[18.009s] [ext: omni.kit.audiodeviceenum-1.0.2] startup
+[18.019s] [ext: omni.kit.commands-1.6.2] startup
+[18.036s] [ext: omni.kit.exec.core-0.13.6] startup
+[18.050s] [ext: omni.kit.usd_undo-0.1.8] startup
+[18.052s] [ext: omni.kit.window.popup_dialog-2.0.26] startup
+[18.066s] [ext: omni.kit.widget.connection_manager-1.0.4] startup
+[18.106s] [ext: omni.timeline-1.1.2] startup
+[18.112s] [ext: omni.usd-1.19.11] startup
+[18.245s] [ext: omni.graph.core-3.1.8] startup
+[18.266s] [ext: omni.kit.notification_manager-1.0.17] startup
+[18.275s] [ext: isaacsim.core.deprecation_manager-0.4.5] startup
+[18.279s] [ext: isaacsim.replicator.agent.schema-0.1.2] startup
+[18.282s] [ext: isaacsim.robot.schema-7.0.2] startup
+[18.294s] [ext: isaacsim.robot_motion.schema-0.2.2] startup
+[18.300s] [ext: omni.anim.behavior.schema-110.4.0] startup
+[18.302s] [ext: omni.anim.graph.schema-110.4.0] startup
+[18.305s] [ext: omni.anim.navigation.schema-110.4.0] startup
+[18.307s] [ext: omni.behavior.tree.schema-110.4.0] startup
+[18.309s] [ext: omni.isaac.ml_archive-3.4.0] startup
+[18.310s] [ext: omni.kit.asset_converter-6.1.0] startup
+[18.409s] [ext: omni.pip.cloud-1.5.7] startup
+[18.447s] [ext: omni.usd.schema.flow-110.0.0] startup
+[18.449s] [ext: omni.usd.schema.newton-1.5.0] startup
+[18.452s] [ext: omni.usd.schema.mujoco-1.1.4] startup
+[18.454s] [ext: omni.usd.schema.omni_dome_light-1.0.0] startup
+[18.456s] [ext: omni.usd.schema.omni_lens_distortion-1.0.0] startup
+[18.457s] [ext: omni.usd.schema.omni_projectors-1.0.0] startup
+[18.458s] [ext: omni.usd.schema.omni_sensors-0.0.0] startup
+[18.474s] [ext: omni.usd.schema.omniscripting-1.0.1] startup
+[18.481s] [ext: omni.usd.schema.physical_lighting-0.1.0] startup
+[18.486s] [ext: omni.usd.schema.physx-110.4.4] startup
+[18.587s] [ext: omni.usd.schema.render_settings.rtx-1.0.3] startup
+[18.596s] [ext: omni.usd.schema.usd_particle_field-1.0.0] startup
+[18.597s] [ext: omni.kit.menu.core-1.3.0] startup
+[18.602s] [ext: omni.kit.menu.utils-2.2.8] startup
+[18.653s] [ext: omni.kit.usd.layers-2.7.9] startup
+[18.696s] [ext: omni.kit.primitive.mesh-1.1.1] startup
+[18.714s] [ext: omni.kit.stage_template.core-1.1.23] startup
+[18.716s] [ext: omni.kit.stage_templates-2.0.3] startup
+[18.724s] [ext: omni.usd.metrics.assembler-110.1.2] startup
+[18.731s] [ext: omni.warp.core-1.17.0] startup
+[19.325s] [ext: isaacsim.core.experimental.utils-0.23.3] startup
+[19.329s] [ext: omni.convexdecomposition-110.4.4] startup
+[19.342s] [ext: omni.physics-110.4.4] startup
+[19.359s] [ext: omni.physx.gpu-110.4.4] startup
+[19.361s] [ext: omni.physx.foundation-110.4.4] startup
+[19.375s] [ext: omni.usdphysics-110.4.4] startup
+[19.379Warning: Possible version incompatibility. Attempting to load carb::ujitso::IFactory with version v0.3 against v0.2.
+Warp 1.17.0 initialized:
+   CUDA Toolkit 12.9, Driver 13.4
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA A40" (44 GiB, sm_86, mempool enabled)
+   Kernel cache:
+     /scratch/<user>/isaac/work/g5/home_62/.cache/warp/1.17.0
+s] [ext: omni.physx.cooking-110.4.4] startup
+[19.390s] [ext: omni.physx-110.4.4] startup
+[19.449s] [ext: omni.physics.physx-110.4.4] startup
+[19.453s] [ext: omni.physics.stageupdate-110.4.4] startup
+[19.459s] [ext: omni.physics.tensors-110.4.4] startup
+[19.483s] [ext: omni.physx.tensors-110.4.4] startup
+[19.497s] [ext: omni.usdex.libs-3.0.0] startup
+[19.524s] [ext: isaacsim.core.simulation_manager-1.17.4] startup
+[19.569s] [ext: isaacsim.test.docstring-1.3.2] startup
+[19.609s] [ext: isaacsim.core.experimental.prims-1.12.1] startup
+[20.517s] [ext: isaacsim.core.experimental.primdata-0.3.6] startup
+[20.523s] [ext: omni.kit.clipboard-1.1.1] startup
+[20.525s] [ext: omni.kit.widget.context_menu-1.5.0] startup
+[20.535s] [ext: omni.kit.context_menu-1.10.0] startup
+[20.546s] [ext: omni.kit.helper.file_utils-0.1.10] startup
+[20.551s] [ext: omni.kit.widget.nucleus_info-2.0.2] startup
+[20.554s] [ext: omni.kit.search_core-1.0.8] startup
+[20.557s] [ext: omni.kit.widget.path_field-2.0.14] startup
+[20.562s] [ext: omni.kit.widget.browser_bar-2.0.11] startup
+[20.568s] [ext: omni.kit.widget.filebrowser-2.14.5] startup
+[20.600s] [ext: omni.kit.widget.nucleus_connector-2.4.0] startup
+[20.602s] [ext: omni.kit.widget.options_menu-1.1.7] startup
+[20.613s] [ext: omni.kit.widget.options_button-1.0.3] startup
+[20.615s] [ext: omni.kit.widget.search_delegate-1.0.10] startup
+[20.621s] [ext: omni.ui.scene-2.1.1] startup
+[20.642s] [ext: omni.kit.window.filepicker-3.0.18] startup
+[20.753s] [ext: omni.kit.window.file_importer-1.1.22] startup
+[20.761s] [ext: omni.kit.material.library-3.1.8] startup
+[20.799s] [ext: isaacsim.core.experimental.materials-0.11.1] startup
+[20.818s] [ext: isaacsim.core.experimental.objects-0.9.1] startup
+[21.256s] [ext: isaacsim.robot_motion.experimental.motion_generation-7.2.0] startup
+[21.352s] [ext: isaacsim.robot_motion.controllers-0.4.0] startup
+[21.380s] [ext: isaacsim.robot_motion.cumotion-1.5.0] startup
+[21.475s] [ext: omni.kit.hotkeys.core-1.6.1] startup
+[21.476s] [ext: omni.kit.widget.filter-1.1.9] startup
+[21.479s] [ext: omni.kit.widget.prompt-1.0.7] startup
+[21.483s] [ext: omni.kit.widget.searchfield-1.1.8] startup
+[21.490s] [ext: omni.kit.window.file_exporter-1.0.38] startup
+[21.494s] [ext: omni.kit.widget.stage-4.7.2] startup
+[21.588s] [ext: omni.kit.window.content_browser_registry-0.0.6] startup
+[21.590s] [ext: omni.kit.window.drop_support-1.0.8] startup
+[21.591s] [ext: omni.kit.window.file-2.0.17] startup
+[21.643s] [ext: omni.kit.window.content_browser-3.1.14] startup
+[21.671s] [ext: omni.kit.widget.layers-1.9.3] startup
+[21.742s] [ext: isaacsim.core.version-2.2.1] startup
+[21.747s] [ext: isaacsim.app.about-2.3.2] startup
+[21.766s] [ext: isaacsim.asset.transformer-6.2.1] startup
+[21.780s] [ext: omni.scene.optimizer.core-110.3.1] startup
+[21.927s] [ext: isaacsim.asset.importer.utils-1.9.1] startup
+[21.953s] [ext: isaacsim.asset.exporter.urdf-2.2.10] startup
+[21.999s] [ext: isaacsim.asset.transformer.rules-1.7.25] startup
+[22.097s] [ext: isaacsim.asset.importer.mjcf-3.13.0] startup
+[22.102s] [ext: isaacsim.asset.importer.urdf-3.11.12] startup
+[22.123s] [ext: isaacsim.storage.native-1.12.2] startup
+[22.133s] [ext: omni.hydra.rtx.shadercache.vulkan-1.0.0] startup
+[22.142s] [ext: omni.index.libs-392300.2120.0] startup
+[22.142s] [ext: omni.index-1.0.1] startup
+[22.145s] [ext: omni.ujitso.client-0.0.0] startup
+[22.146s] [ext: omni.usd.schema.playback-1.1.0] startup
+[22.148s] [ext: omni.volume-0.5.2] startup
+[22.183s] [ext: omni.hydra.rtx-1.0.5] startup
+2026-11-13T22:38:44Z [22,285ms] [Warning] [omni.log] Source: omni.hydra was already registered.
+[22.532s] [ext: omni.debugdraw-0.1.4] startup
+[22.541s] [ext: omni.hydra.engine.stats-1.0.5] startup
+[22.545s] [ext: omni.kit.hydra_texture-1.6.2] startup
+[22.554s] [ext: omni.kit.manipulator.selector-1.1.4] startup
+[22.558s] [ext: omni.kit.widget.searchable_combobox-1.0.7] startup
+[22.564s] [ext: omni.kit.widget.settings-2.0.1] startup
+[22.577s] [ext: omni.kit.window.preferences-1.8.5] startup
+[22.620s] [ext: omni.kit.manipulator.transform-107.0.1] startup
+[22.644s] [ext: omni.kit.raycast.query-1.2.0] startup
+[22.652s] [ext: omni.kit.viewport.legacy_gizmos-1.0.24] startup
+[22.659s] [ext: omni.kit.viewport.registry-104.0.6] startup
+[22.663s] [ext: omni.kit.viewport.scene_camera_model-1.0.7] startup
+[22.677s] [ext: omni.kit.widget.viewport-110.0.1] startup
+[22.703s] [ext: omni.kit.viewport.window-110.0.5] startup
+[22.795s] [ext: omni.kit.viewport.utility-2.1.2] startup
+[22.799s] [ext: omni.kit.widget.toolbar-2.1.0] startup
+[22.849s] [ext: omni.kit.manipulator.tool.snap-1.5.15] startup
+[22.865s] [ext: omni.kit.manipulator.viewport-107.0.1] startup
+[22.868s] [ext: omni.kit.viewport.manipulator.transform-107.0.4] startup
+[22.876s] [ext: omni.kit.manipulator.prim.core-108.0.2] startup
+[22.910s] [ext: omni.kit.manipulator.prim.usd-107.0.3] startup
+[22.942s] [ext: omni.kit.manipulator.prim-108.0.0] startup
+[22.942s] [ext: omni.kit.manipulator.selection-110.1.0] startup
+[22.950s] [ext: omni.kit.property.adapter.core-1.1.1] startup
+[22.956s] [ext: omni.kit.property.adapter.usd-1.0.6] startup
+[22.959s] [ext: omni.kit.widget.highlight_label-1.0.3] startup
+[22.961s] [ext: omni.kit.window.property-1.15.2] startup
+[23.152s] [ext: omni.kit.property.usd-4.9.18] startup
+[23.276s] [ext: omni.kit.viewport.actions-110.1.1] startup
+[23.286s] [ext: omni.kit.viewport.menubar.core-110.0.4] startup
+[23.371s] [ext: omni.kit.viewport.menubar.display-110.0.0] startup
+[23.376s] [ext: omni.physx.commands-110.4.4] startup
+[23.397s] [ext: omni.usdphysics.ui-110.4.4] startup
+[23.500s] [ext: omni.physx.ui-110.4.4] startup
+[23.659s] [ext: omni.usd.metrics.assembler.physics-110.4.4] startup
+[23.673s] [ext: isaacsim.core.utils-4.1.9] startup
+[23.682s] [ext: isaacsim.core.prims-0.11.7] startup
+[28.335s] [ext: isaacsim.core.api-5.3.2] startup
+[28.391s] [ext: isaacsim.core.cloner-1.7.6] startup
+[28.400s] [ext: omni.graph.tools-1.81.0] startup
+[28.550s] [ext: omni.graph-1.142.6] startup
+[28.701s] [ext: isaacsim.core.experimental.actuators-0.2.1] startup
+[28.753s] [ext: isaacsim.core.rendering_manager-0.5.3] startup
+[28.762s] [ext: omni.graph.action_core-1.1.9] startup
+[28.771s] [ext: omni.graph.action_nodes_core-2.11.0] startup
+[28.780s] [ext: omni.graph.action_nodes-2.11.0] startup
+[28.842s] [ext: omni.graph.action-2.10.2] startup
+[28.845s] [ext: omni.graph.image.core-0.6.1] startup
+[28.849s] [ext: omni.graph.image.nodes-1.3.2] startup
+[28.855s] [ext: omni.graph.nodes_core-2.11.0] startup
+[28.928s] [ext: omni.graph.nodes-2.12.1] startup
+[28.966s] [ext: omni.kit.widget.text_editor-1.1.1] startup
+[28.972s] [ext: omni.graph.scriptnode-2.10.2] startup
+[28.994s] [ext: omni.syntheticdata-0.6.17] startup
+[29.100s] [ext: omni.replicator.nv-1.1.7] startup
+[29.122s] [ext: omni.videoencoding-0.2.1] startup
+[29.130s] [ext: omni.replicator.core-1.13.38] startup
+2026-11-13T22:38:51Z [29,138ms] [Warning] [pxr.Semantics] pxr.Semantics is deprecated - please use Semantics instead
+2026-11-13T22:38:52Z [30,191ms] [Warning] [omni.replicator.core.scripts.extension] No material configuration file, adding configuration to material settings directly.
+[30.897s] [ext: isaacsim.core.nodes-5.10.15] startup
+[31.022s] [ext: isaacsim.core.throttling-2.3.7] startup
+[31.027s] [ext: omni.graph.visualization.nodes-2.1.4] startup
+[31.061s] [ext: omni.kit.window.extensions-1.7.0] startup
+[31.108s] [ext: isaacsim.gui.components-1.8.9] startup
+[31.143s] [ext: isaacsim.examples.base-1.3.4] startup
+[31.150s] [ext: omni.kit.widget.zoombar-1.0.7] startup
+[31.153s] [ext: omni.kit.browser.core-2.3.18] startup
+[31.175s] [ext: omni.kit.browser.folder.core-2.0.3] startup
+[31.204s] [ext: omni.kit.widget.stage_icons-1.0.8] startup
+[31.207s] [ext: omni.kit.window.stage-2.6.4] startup
+[31.217s] [ext: omni.kit.menu.stage-1.2.7] startup
+[31.223s] [ext: omni.kit.usd.collect-3.0.7] startup
+[31.240s] [ext: omni.kit.tool.collect-2.3.0] startup
+[31.263s] [ext: isaacsim.examples.browser-0.3.4] startup
+[31.272s] [ext: omni.kit.search.files-1.0.4] startup
+[31.276s] [ext: omni.kit.widget.calendar-1.0.9] startup
+[31.281s] [ext: omni.kit.widget.extended_searchfield-1.0.31] startup
+[31.320s] [ext: omni.simready.content.browser-0.3.10] startup
+[31.866s] [ext: isaacsim.gui.content_browser-0.5.1] startup
+[31.873s] [ext: omni.kit.selection-0.1.6] startup
+[31.879s] [ext: isaacsim.gui.menu-2.10.12] startup
+[31.911s] [ext: isaacsim.gui.property-1.6.4] startup
+[31.951s] [ext: isaacsim.gui.sensors.icon-2.2.4] startup
+[31.962s] [ext: omni.behavior.scripting.core-110.4.0] startup
+[31.979s] [ext: isaacsim.replicator.behavior-1.6.2] startup
+[32.016s] [ext: isaacsim.replicator.experimental.domain_randomization-1.2.12] startup
+[32.081s] [ext: isaacsim.replicator.domain_randomization-1.2.4] startup
+[32.216s] [ext: isaacsim.replicator.writers-1.5.7] startup
+[32.333s] [ext: isaacsim.robot.experimental.wheeled_robots-0.2.17] startup
+[32.439s] [ext: isaacsim.robot.surface_gripper-3.7.1] startup
+[32.469s] [ext: isaacsim.robot.manipulators-3.4.5] startup
+[32.498s] [ext: isaacsim.robot.policy.examples-7.2.3] startup
+[32.611s] [ext: isaacsim.robot.wheeled_robots-5.2.5] startup
+[32.624s] [ext: isaacsim.robot.wheeled_robots.nodes-0.1.14] startup
+[32.706s] [ext: isaacsim.robot_motion.lula-4.1.4] startup
+[32.745s] [ext: isaacsim.robot_motion.motion_generation-9.0.0] startup
+[32.776s] [ext: omni.kit.numpy.common-0.1.3] startup
+[32.780s] [ext: omni.rtx.spg-0.4.0] startup
+[33.076s] [ext: omni.sensors.nv.camera-1.4.0] startup
+[33.254s] [ext: isaacsim.sensors.camera-1.7.13] startup
+[33.317s] [ext: isaacsim.sensors.experimental.physics-4.0.0] startup
+[33.348s] [ext: omni.sensors.net-1.4.0] startup
+[33.360s] [ext: omni.sensors.nv.common-3.4.0] startup
+[33.457s] [ext: omni.sensors.nv.materials-2.4.0] startup
+[33.479s] [ext: omni.sensors.nv.acoustic-3.4.0] startup
+[33.493s] [ext: omni.sensors.nv.ids-2.4.0] startup
+[33.501s] [ext: omni.sensors.nv.lidar-3.4.0] startup
+[33.520s] [ext: omni.sensors.nv.radar-3.4.0] startup
+[33.540s] [ext: isaacsim.sensors.experimental.rtx-2.0.1] startup
+[34.247s] [ext: isaacsim.sensors.physics.nodes-1.6.2] startup
+[34.262s] [ext: isaacsim.util.debug_draw-3.2.8] startup
+[34.284s] [ext: isaacsim.sensors.physx-2.5.7] startup
+[34.311s] [ext: isaacsim.sensors.rtx-15.17.5] startup
+[34.340s] [ext: isaacsim.simulation_app-2.19.0] startup
+[34.340s] [ext: omni.anim.curve.core-1.6.1] startup
+[34.393s] [ext: omni.graph.ui_nodes-2.11.2] startup
+[34.489s] [ext: omni.kit.manipulator.camera-110.1.1] startup
+[34.516s] [ext: omni.kit.menu.create-2.0.2] startup
+[34.522s] [ext: omni.kit.property.audio-1.0.18] startup
+[34.536s] [ext: omni.kit.property.camera-1.0.14] startup
+[34.541s] [ext: omni.kit.property.geometry-2.1.2] startup
+[34.565s] [ext: omni.kit.property.light-1.0.16] startup
+[34.642s] [ext: omni.kit.property.material-1.15.1] startup
+[34.677s] [ext: omni.kit.property.render-1.2.2] startup
+[34.681s] [ext: omni.kit.property.transform-1.6.13] startup
+[34.708s] [ext: omni.kit.property.bundle-1.5.3] startup
+[34.713s] [ext: omni.kit.usdz_export-1.1.1] startup
+[34.721s] [ext: omni.kit.tool.asset_importer-6.0.4] startup
+[34.747s] [ext: omni.kit.ui.actions-1.0.5] startup
+[34.753s] [ext: omni.kit.viewport.menubar.camera-107.0.16] startup
+[34.842s] [ext: omni.kit.viewport.menubar.lighting-107.3.4] startup
+[34.857s] [ext: omni.kit.viewport.menubar.render-110.1.1] startup
+[34.941s] [ext: omni.kit.viewport.menubar.settings-110.0.2] startup
+[34.961s] [ext: omni.kit.window.console-1.1.12] startup
+[34.978s] [ext: omni.kit.window.status_bar-0.1.11] startup
+[34.987s] [ext: omni.kit.window.toolbar-3.0.3] startup
+[34.992s] [ext: omni.ocio-0.1.1] startup
+[34.995s] [ext: omni.replicator.replicator_yaml-2.0.12] startup
+[35.036s] [ext: omni.rtx.window.settings-0.8.5] startup
+[35.052s] [ext: omni.rtx.settings.core-0.7.2] startup
+[35.076s] [ext: omni.usd.metrics.assembler.ui-110.1.3] startup
+[35.098s] [ext: semantics.schema.editor-2.0.2] startup
+[35.112s] [ext: semantics.schema.property-2.0.2] startup
+[35.118s] [ext: omni.kit.menu.common-2.0.2] startup
+[35.122s] [ext: isaacsim.exp.base-6.2.0] startup
+[35.122s] [ext: omni.asset_validator.core-1.22.0] startup
+[35.540s] [ext: omni.kit.property.physics-110.4.4] startup
+[35.593s] [ext: omni.ui_query-1.1.12] startup
+[35.599s] [ext: omni.kit.ui_test-1.5.3] startup
+[35.609s] [ext: omni.kit.viewport.rtx-107.0.0] startup
+[35.609s] [ext: omni.physics.isaacsimready-110.4.4] startup
+[35.628s] [ext: omni.physics.physx.ui-110.4.4] startup
+[35.678s] [ext: omni.physics.ui-110.4.4] startup
+[35.694s] [ext: omni.physx.asset_validator-110.4.4] startup
+[35.723s] [ext: omni.physx.demos-110.4.4] startup
+[35.845s] [ext: omni.physx.vehicle-110.4.4] startup
+[35.940s] [ext: omni.physx.camera-110.4.4] startup
+[35.960s] [ext: omni.physx.cct-110.4.4] startup
+[36.023s] [ext: omni.physx.graph-110.4.4] startup
+[36.100s] [ext: omni.physx.supportui-110.4.4] startup
+[36.151s] [ext: omni.physx.bundle-110.4.4] startup
+[36.152s] [ext: robodojo_full_rtx_62-6.2.0] startup
+[36.156s] Simulation App Starting
+2026-11-13T22:38:58Z [36,112ms] [Warning] [carb.omniclient.plugin]  Main: core: Core::getServerInfo: rejecting empty URL as invalid
+[39.250s] Simulation App Startup Complete
+[39.253s] app ready
+[g5] SimulationApp started in 39.78 s
+[g5] running main.py --task_name put_bottles_into_dustbin --env_cfg_type arx_x5 --num_envs 1 --enable_cameras --kit_args --enable isaacsim.replicator.behavior --enable isaacsim.sensors.camera --device_id 0 --policy_name InternW0_delta --port 33525 --protocol ws --policy_server_url ws://localhost:33525 --additional_info ckpt_name=robodojo,action_type=joint --seed 0 --host localhost --headless --evaluator v1 --physics_preset shipped
+[main] PhysX monitor enabled=False (task=put_bottles_into_dustbin)
+[34m[1m[CONNECTING][0m websocket policy server ws://localhost:33525 (attempt 1/180, timeout=30s)
+[32m[1m[CONNECTED][0m websocket policy server connected: ws://localhost:33525
+[INFO]: Parsing configuration from: env.environment.isaac.isaac_rl_env:IsaacRLEnvCfg
+
+[36m===============================================================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /scratch/<user>/isaac/work/g5/tmp/isaaclab/logs/isaaclab_2026-11-13_17-39-04.log[0m
+[36m===============================================================================================================================[0m
+
+[33m17:39:04 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 0
+	Physics step-size     : 0.004
+	Rendering step-size   : 0.04
+	Environment step-size : 0.004
+[INFO]: Time taken for scene creation : 0.524046 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 1
+	Environment spacing   : 7
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : False
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 0.682199 seconds
+[INFO]: Completed setting up the environment...
+[INFO] Resetting all environments
+[render_sync] zero-delay Kit settings active; one delivered frame per capture.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000000_cam_head_success.mp4`, containing [94m485[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000000_cam_left_wrist_success.mp4`, containing [94m485[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000000_cam_right_wrist_success.mp4`, containing [94m485[0m frames at 640×480 resolution and 25 FPS.
+Success nums: 1, Fail nums: 0, Unstable nums: 0
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+[INFO]: Parsing configuration from: env.environment.isaac.isaac_rl_env:IsaacRLEnvCfg
+
+[36m===============================================================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /scratch/<user>/isaac/work/g5/tmp/isaaclab/logs/isaaclab_2026-11-13_17-44-28.log[0m
+[36m===============================================================================================================================[0m
+
+[33m17:44:28 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 1
+	Physics step-size     : 0.004
+	Rendering step-size   : 0.04
+	Environment step-size : 0.004
+[INFO]: Time taken for scene creation : 0.330529 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 1
+	Environment spacing   : 7
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : False
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 0.768412 seconds
+[INFO]: Completed setting up the environment...
+[INFO] Resetting all environments
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000001_cam_head_success.mp4`, containing [94m303[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000001_cam_left_wrist_success.mp4`, containing [94m303[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000001_cam_right_wrist_success.mp4`, containing [94m303[0m frames at 640×480 resolution and 25 FPS.
+Success nums: 2, Fail nums: 0, Unstable nums: 0
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+[INFO]: Parsing configuration from: env.environment.isaac.isaac_rl_env:IsaacRLEnvCfg
+
+[36m===============================================================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /scratch/<user>/isaac/work/g5/tmp/isaaclab/logs/isaaclab_2026-11-13_17-47-51.log[0m
+[36m===============================================================================================================================[0m
+
+[33m17:47:51 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 2
+	Physics step-size     : 0.004
+	Rendering step-size   : 0.04
+	Environment step-size : 0.004
+[INFO]: Time taken for scene creation : 0.335757 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 1
+	Environment spacing   : 7
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : False
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 0.707905 seconds
+[INFO]: Completed setting up the environment...
+[INFO] Resetting all environments
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000002_cam_head_success.mp4`, containing [94m423[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000002_cam_left_wrist_success.mp4`, containing [94m423[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000002_cam_right_wrist_success.mp4`, containing [94m423[0m frames at 640×480 resolution and 25 FPS.
+Success nums: 3, Fail nums: 0, Unstable nums: 0
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+[INFO]: Parsing configuration from: env.environment.isaac.isaac_rl_env:IsaacRLEnvCfg
+
+[36m===============================================================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /scratch/<user>/isaac/work/g5/tmp/isaaclab/logs/isaaclab_2026-11-13_17-52-55.log[0m
+[36m===============================================================================================================================[0m
+
+[33m17:52:55 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 3
+	Physics step-size     : 0.004
+	Rendering step-size   : 0.04
+	Environment step-size : 0.004
+[INFO]: Time taken for scene creation : 0.329748 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 1
+	Environment spacing   : 7
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : False
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 0.661692 seconds
+[INFO]: Completed setting up the environment...
+[INFO] Resetting all environments
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000003_cam_head_success.mp4`, containing [94m435[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000003_cam_left_wrist_success.mp4`, containing [94m435[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000003_cam_right_wrist_success.mp4`, containing [94m435[0m frames at 640×480 resolution and 25 FPS.
+Success nums: 4, Fail nums: 0, Unstable nums: 0
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+[INFO]: Parsing configuration from: env.environment.isaac.isaac_rl_env:IsaacRLEnvCfg
+
+[36m===============================================================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /scratch/<user>/isaac/work/g5/tmp/isaaclab/logs/isaaclab_2026-11-13_17-57-52.log[0m
+[36m===============================================================================================================================[0m
+
+[33m17:57:52 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 4
+	Physics step-size     : 0.004
+	Rendering step-size   : 0.04
+	Environment step-size : 0.004
+2026-11-13T22:39:02Z [39,553ms] [Warning] [omni.kit.menu.utils.layout] Multiple matching items found for layout "Physics". Found Create, Window. Change <<class 'omni.kit.menu.utils.layout.MenuLayout.SubMenu'> name:Physics> to use specific source. Using "source="Create/Physics""
+2026-11-13T22:39:05Z [43,005ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T22:39:05Z [43,018ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T22:39:05Z [43,029ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T22:39:05Z [43,048ms] [Warning] [omni.usd] Encountered USD Warnings but USD Diagnostics are currently muted. To view USD Warnings, please set the '/persistent/app/usd/muteUsdDiagnostics' setting to false in Preferences page.
+2026-11-13T22:39:06Z [44,513ms] [Warning] [omni.fabric.plugin] Warning: attribute material:binding not found for path /World/envs/env_0/Ground/Ground/Ground_0_9/Looks
+
+2026-11-13T22:39:15Z [52,876ms] [Warning] [rtx.neuraylib.plugin] [MDLC:COMPILER]   1.0   MDLC   comp warn : file:/scratch/<user>/isaac/work/clips/vis/Assets/Material/material_0122/Mahogany_Planks.mdl(49,24): C302 conversion from 'float' to 'float2' must be explicit
+2026-11-13T22:39:15Z [52,876ms] [Warning] [rtx.neuraylib.plugin] [MDLC:COMPILER]   1.0   MDLC   comp warn : file:/scratch/<user>/isaac/work/clips/vis/Assets/Material/material_0122/Mahogany_Planks.mdl(51,20): C302 conversion from 'float' to 'float2' must be explicit
+2026-11-13T22:39:15Z [52,876ms] [Warning] [rtx.neuraylib.plugin] [MDLC:COMPILER]   1.0   MDLC   comp warn : file:/scratch/<user>/isaac/work/clips/vis/Assets/Material/material_0122/Mahogany_Planks.mdl(52,31): C302 conversion from 'float' to 'float2' must be explicit
+2026-11-13T22:39:15Z [52,876ms] [Warning] [rtx.neuraylib.plugin] [MDLC:COMPILER]   1.0   MDLC   comp warn : file:/scratch/<user>/isaac/work/clips/vis/Assets/Material/material_0122/Mahogany_Planks.mdl(54,27): C302 conversion from 'float' to 'float2' must be explicit
+2026-11-13T22:39:18Z [55,677ms] [Warning] [omni.syntheticdata.plugin] SdRenderVarPtr missing valid input renderVar LdrColorSDbuff
+2026-11-13T22:44:28Z [365,553ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T22:44:28Z [365,553ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T22:44:28Z [366,342ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T22:44:28Z [366,352ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T22:44:28Z [366,362ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T22:44:34Z [371,543ms] [Warning] [carb] Client omni.hydratexture.plugin has acquired [carb::settings::ISettings v1.1] 100 times. Consider accessing this interface with carb::getCachedInterface() (Performance warning)
+2026-11-13T22:47:50Z [568,102ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T22:47:50Z [568,102ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T22:47:51Z [568,959ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T22:47:51Z [568,969ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T22:47:51Z [568,979ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T22:47:57Z [574,683ms] [Warning] [carb] Client omni.hydratexture.plugin has acquired [carb::dictionary::IDictionary v1.2] 100 times. Consider accessing this interface with carb::getCachedInterface() (Performance warning)
+2026-11-13T22:52:54Z [872,284ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T22:52:54Z [872,284ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T22:52:55Z [873,064ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T22:52:55Z [873,074ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T22:52:55Z [873,084ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T22:57:52Z [1,169,699ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T22:57:52Z [1,169,699ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T22:57:53Z [1,170,692ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T22:57:53Z [1,170,703ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T22:57:53Z [1,170,713ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+[INFO]: Time taken for scene creation : 0.372004 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 1
+	Environment spacing   : 7
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : False
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 0.652626 seconds
+[INFO]: Completed setting up the environment...
+[INFO] Resetting all environments
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000004_cam_head_success.mp4`, containing [94m505[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000004_cam_left_wrist_success.mp4`, containing [94m505[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000004_cam_right_wrist_success.mp4`, containing [94m505[0m frames at 640×480 resolution and 25 FPS.
+Success nums: 5, Fail nums: 0, Unstable nums: 0
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+[INFO]: Parsing configuration from: env.environment.isaac.isaac_rl_env:IsaacRLEnvCfg
+
+[36m===============================================================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /scratch/<user>/isaac/work/g5/tmp/isaaclab/logs/isaaclab_2026-11-13_18-04-08.log[0m
+[36m===============================================================================================================================[0m
+
+[33m18:04:08 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 5
+	Physics step-size     : 0.004
+	Rendering step-size   : 0.04
+	Environment step-size : 0.004
+[INFO]: Time taken for scene creation : 0.352447 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 1
+	Environment spacing   : 7
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : False
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 0.657145 seconds
+[INFO]: Completed setting up the environment...
+[INFO] Resetting all environments
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000005_cam_head_success.mp4`, containing [94m489[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000005_cam_left_wrist_success.mp4`, containing [94m489[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000005_cam_right_wrist_success.mp4`, containing [94m489[0m frames at 640×480 resolution and 25 FPS.
+Success nums: 6, Fail nums: 0, Unstable nums: 0
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+[INFO]: Parsing configuration from: env.environment.isaac.isaac_rl_env:IsaacRLEnvCfg
+
+[36m===============================================================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /scratch/<user>/isaac/work/g5/tmp/isaaclab/logs/isaaclab_2026-11-13_18-10-09.log[0m
+[36m===============================================================================================================================[0m
+
+[33m18:10:09 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 6
+	Physics step-size     : 0.004
+	Rendering step-size   : 0.04
+	Environment step-size : 0.004
+[INFO]: Time taken for scene creation : 0.349258 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 1
+	Environment spacing   : 7
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : False
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 0.616507 seconds
+[INFO]: Completed setting up the environment...
+[INFO] Resetting all environments
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000006_cam_head_success.mp4`, containing [94m455[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000006_cam_left_wrist_success.mp4`, containing [94m455[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000006_cam_right_wrist_success.mp4`, containing [94m455[0m frames at 640×480 resolution and 25 FPS.
+Success nums: 7, Fail nums: 0, Unstable nums: 0
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+[INFO]: Parsing configuration from: env.environment.isaac.isaac_rl_env:IsaacRLEnvCfg
+
+[36m===============================================================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /scratch/<user>/isaac/work/g5/tmp/isaaclab/logs/isaaclab_2026-11-13_18-15-38.log[0m
+[36m===============================================================================================================================[0m
+
+[33m18:15:38 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 7
+	Physics step-size     : 0.004
+	Rendering step-size   : 0.04
+	Environment step-size : 0.004
+[INFO]: Time taken for scene creation : 0.332703 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 1
+	Environment spacing   : 7
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : False
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 0.609429 seconds
+[INFO]: Completed setting up the environment...
+[INFO] Resetting all environments
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000007_cam_head_success.mp4`, containing [94m454[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000007_cam_left_wrist_success.mp4`, containing [94m454[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000007_cam_right_wrist_success.mp4`, containing [94m454[0m frames at 640×480 resolution and 25 FPS.
+Success nums: 8, Fail nums: 0, Unstable nums: 0
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+[INFO]: Parsing configuration from: env.environment.isaac.isaac_rl_env:IsaacRLEnvCfg
+
+[36m===============================================================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /scratch/<user>/isaac/work/g5/tmp/isaaclab/logs/isaaclab_2026-11-13_18-21-03.log[0m
+[36m===============================================================================================================================[0m
+
+[33m18:21:03 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 8
+	Physics step-size     : 0.004
+	Rendering step-size   : 0.04
+	Environment step-size : 0.004
+[INFO]: Time taken for scene creation : 0.331908 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 1
+	Environment spacing   : 7
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : False
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 0.586406 seconds
+[INFO]: Completed setting up the environment...
+[INFO] Resetting all environments
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000008_cam_head_success.mp4`, containing [94m348[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000008_cam_left_wrist_success.mp4`, containing [94m348[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000008_cam_right_wrist_success.mp4`, containing [94m348[0m frames at 640×480 resolution and 25 FPS.
+Success nums: 9, Fail nums: 0, Unstable nums: 0
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+[INFO]: Parsing configuration from: env.environment.isaac.isaac_rl_env:IsaacRLEnvCfg
+
+[36m===============================================================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /scratch/<user>/isaac/work/g5/tmp/isaaclab/logs/isaaclab_2026-11-13_18-25-35.log[0m
+[36m===============================================================================================================================[0m
+
+[33m18:25:35 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 9
+	Physics step-size     : 0.004
+	Rendering step-size   : 0.04
+	Environment step-size : 0.004
+[INFO]: Time taken for scene creation : 0.330513 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 1
+	Environment spacing   : 7
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : False
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 0.642846 seconds
+[INFO]: Completed setting up the environment...
+[INFO] Resetting all environments
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000009_cam_head_success.mp4`, containing [94m441[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000009_cam_left_wrist_success.mp4`, containing [94m441[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000009_cam_right_wrist_success.mp4`, containing [94m441[0m frames at 640×480 resolution and 25 FPS.
+Success nums: 10, Fail nums: 0, Unstable nums: 0
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+[INFO]: Parsing configuration from: env.environment.isaac.isaac_rl_env:IsaacRLEnvCfg
+
+[36m===============================================================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /scratch/<user>/isaac/work/g5/tmp/isaaclab/logs/isaaclab_2026-11-13_18-30-06.log[0m
+[36m===============================================================================================================================[0m
+
+[33m18:30:06 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 10
+	Physics step-size     : 0.004
+	Rendering step-size   : 0.04
+	Environment step-size : 0.004
+[INFO]: Time taken for scene creation : 0.333810 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 1
+	Environment spacing   : 7
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : False
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 0.603767 seconds
+[INFO]: Completed setting up the environment...
+[INFO] Resetting all environments
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000010_cam_head_success.mp4`, containing [94m361[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000010_cam_left_wrist_success.mp4`, containing [94m361[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000010_cam_right_wrist_success.mp4`, containing [94m361[0m frames at 640×480 resolution and 25 FPS.
+Success nums: 11, Fail nums: 0, Unstable nums: 0
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+[INFO]: Parsing configuration from: env.environment.isaac.isaac_rl_env:IsaacRLEnvCfg
+
+[36m===============================================================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /scratch/<user>/isaac/work/g5/tmp/isaaclab/logs/isaaclab_2026-11-13_18-33-24.log[0m
+[36m===============================================================================================================================[0m
+
+[33m18:33:24 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 11
+	Physics step-size     : 0.004
+	Rendering step-size   : 0.04
+	Environment step-size : 0.004
+2026-11-13T23:04:08Z [1,545,608ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T23:04:08Z [1,545,608ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T23:04:08Z [1,546,474ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:04:08Z [1,546,485ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:04:08Z [1,546,495ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:10:09Z [1,906,967ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T23:10:09Z [1,906,967ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T23:10:10Z [1,907,808ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:10:10Z [1,907,818ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:10:10Z [1,907,829ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:15:38Z [2,235,848ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T23:15:38Z [2,235,849ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T23:15:39Z [2,236,600ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:15:39Z [2,236,610ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:15:39Z [2,236,621ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:21:03Z [2,560,778ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T23:21:03Z [2,560,778ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T23:21:04Z [2,561,583ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:21:04Z [2,561,593ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:21:04Z [2,561,604ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:25:35Z [2,832,938ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T23:25:35Z [2,832,938ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T23:25:36Z [2,833,692ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:25:36Z [2,833,702ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:25:36Z [2,833,712ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:30:05Z [3,103,146ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T23:30:05Z [3,103,146ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T23:30:06Z [3,103,882ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:30:06Z [3,103,892ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:30:06Z [3,103,902ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:33:24Z [3,302,023ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T23:33:24Z [3,302,023ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T23:33:25Z [3,302,786ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+[INFO]: Time taken for scene creation : 0.348830 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 1
+	Environment spacing   : 7
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : False
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 0.623112 seconds
+[INFO]: Completed setting up the environment...
+[INFO] Resetting all environments
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000011_cam_head_success.mp4`, containing [94m336[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000011_cam_left_wrist_success.mp4`, containing [94m336[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000011_cam_right_wrist_success.mp4`, containing [94m336[0m frames at 640×480 resolution and 25 FPS.
+Success nums: 12, Fail nums: 0, Unstable nums: 0
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+[INFO]: Parsing configuration from: env.environment.isaac.isaac_rl_env:IsaacRLEnvCfg
+
+[36m===============================================================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /scratch/<user>/isaac/work/g5/tmp/isaaclab/logs/isaaclab_2026-11-13_18-36-27.log[0m
+[36m===============================================================================================================================[0m
+
+[33m18:36:27 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 12
+	Physics step-size     : 0.004
+	Rendering step-size   : 0.04
+	Environment step-size : 0.004
+[INFO]: Time taken for scene creation : 0.342054 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 1
+	Environment spacing   : 7
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : False
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 0.616910 seconds
+[INFO]: Completed setting up the environment...
+[INFO] Resetting all environments
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000012_cam_head_success.mp4`, containing [94m376[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000012_cam_left_wrist_success.mp4`, containing [94m376[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000012_cam_right_wrist_success.mp4`, containing [94m376[0m frames at 640×480 resolution and 25 FPS.
+Success nums: 13, Fail nums: 0, Unstable nums: 0
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+[INFO]: Parsing configuration from: env.environment.isaac.isaac_rl_env:IsaacRLEnvCfg
+
+[36m===============================================================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /scratch/<user>/isaac/work/g5/tmp/isaaclab/logs/isaaclab_2026-11-13_18-39-54.log[0m
+[36m===============================================================================================================================[0m
+
+[33m18:39:54 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 13
+	Physics step-size     : 0.004
+	Rendering step-size   : 0.04
+	Environment step-size : 0.004
+[INFO]: Time taken for scene creation : 0.334723 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 1
+	Environment spacing   : 7
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : False
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 0.615059 seconds
+[INFO]: Completed setting up the environment...
+[INFO] Resetting all environments
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000013_cam_head_success.mp4`, containing [94m404[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000013_cam_left_wrist_success.mp4`, containing [94m404[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000013_cam_right_wrist_success.mp4`, containing [94m404[0m frames at 640×480 resolution and 25 FPS.
+Success nums: 14, Fail nums: 0, Unstable nums: 0
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+[INFO]: Parsing configuration from: env.environment.isaac.isaac_rl_env:IsaacRLEnvCfg
+
+[36m===============================================================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /scratch/<user>/isaac/work/g5/tmp/isaaclab/logs/isaaclab_2026-11-13_18-43-38.log[0m
+[36m===============================================================================================================================[0m
+
+[33m18:43:38 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 14
+	Physics step-size     : 0.004
+	Rendering step-size   : 0.04
+	Environment step-size : 0.004
+[INFO]: Time taken for scene creation : 0.346181 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 1
+	Environment spacing   : 7
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : False
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 0.633266 seconds
+[INFO]: Completed setting up the environment...
+[INFO] Resetting all environments
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000014_cam_head_success.mp4`, containing [94m505[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000014_cam_left_wrist_success.mp4`, containing [94m505[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000014_cam_right_wrist_success.mp4`, containing [94m505[0m frames at 640×480 resolution and 25 FPS.
+Success nums: 15, Fail nums: 0, Unstable nums: 0
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+[INFO]: Parsing configuration from: env.environment.isaac.isaac_rl_env:IsaacRLEnvCfg
+
+[36m===============================================================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /scratch/<user>/isaac/work/g5/tmp/isaaclab/logs/isaaclab_2026-11-13_18-47-44.log[0m
+[36m===============================================================================================================================[0m
+
+[33m18:47:44 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 15
+	Physics step-size     : 0.004
+	Rendering step-size   : 0.04
+	Environment step-size : 0.004
+[INFO]: Time taken for scene creation : 0.334512 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 1
+	Environment spacing   : 7
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : False
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 0.611428 seconds
+[INFO]: Completed setting up the environment...
+[INFO] Resetting all environments
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000015_cam_head_success.mp4`, containing [94m336[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000015_cam_left_wrist_success.mp4`, containing [94m336[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000015_cam_right_wrist_success.mp4`, containing [94m336[0m frames at 640×480 resolution and 25 FPS.
+Success nums: 16, Fail nums: 0, Unstable nums: 0
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+[INFO]: Parsing configuration from: env.environment.isaac.isaac_rl_env:IsaacRLEnvCfg
+
+[36m===============================================================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /scratch/<user>/isaac/work/g5/tmp/isaaclab/logs/isaaclab_2026-11-13_18-50-45.log[0m
+[36m===============================================================================================================================[0m
+
+[33m18:50:45 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 16
+	Physics step-size     : 0.004
+	Rendering step-size   : 0.04
+	Environment step-size : 0.004
+[INFO]: Time taken for scene creation : 0.335585 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 1
+	Environment spacing   : 7
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : False
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 0.621394 seconds
+[INFO]: Completed setting up the environment...
+[INFO] Resetting all environments
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000016_cam_head_success.mp4`, containing [94m417[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000016_cam_left_wrist_success.mp4`, containing [94m417[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000016_cam_right_wrist_success.mp4`, containing [94m417[0m frames at 640×480 resolution and 25 FPS.
+Success nums: 17, Fail nums: 0, Unstable nums: 0
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+[INFO]: Parsing configuration from: env.environment.isaac.isaac_rl_env:IsaacRLEnvCfg
+
+[36m===============================================================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /scratch/<user>/isaac/work/g5/tmp/isaaclab/logs/isaaclab_2026-11-13_18-54-24.log[0m
+[36m===============================================================================================================================[0m
+
+[33m18:54:24 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 17
+	Physics step-size     : 0.004
+	Rendering step-size   : 0.04
+	Environment step-size : 0.004
+2026-11-13T23:33:25Z [3,302,797ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:33:25Z [3,302,807ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:36:27Z [3,484,697ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T23:36:27Z [3,484,697ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T23:36:27Z [3,485,469ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:36:27Z [3,485,479ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:36:27Z [3,485,490ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:39:54Z [3,691,820ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T23:39:54Z [3,691,820ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T23:39:55Z [3,692,586ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:39:55Z [3,692,596ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:39:55Z [3,692,606ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:43:37Z [3,915,119ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T23:43:37Z [3,915,119ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T23:43:38Z [3,915,966ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:43:38Z [3,915,977ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:43:38Z [3,915,987ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:47:44Z [4,161,823ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T23:47:44Z [4,161,823ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T23:47:45Z [4,162,593ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:47:45Z [4,162,603ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:47:45Z [4,162,613ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:50:45Z [4,342,619ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T23:50:45Z [4,342,619ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T23:50:45Z [4,343,399ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:50:45Z [4,343,409ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:50:45Z [4,343,419ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:54:23Z [4,561,226ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T23:54:23Z [4,561,226ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T23:54:24Z [4,562,020ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:54:24Z [4,562,030ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:54:24Z [4,562,040ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+[INFO]: Time taken for scene creation : 0.354832 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 1
+	Environment spacing   : 7
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : False
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 0.634707 seconds
+[INFO]: Completed setting up the environment...
+[INFO] Resetting all environments
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000017_cam_head_success.mp4`, containing [94m345[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000017_cam_left_wrist_success.mp4`, containing [94m345[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000017_cam_right_wrist_success.mp4`, containing [94m345[0m frames at 640×480 resolution and 25 FPS.
+Success nums: 18, Fail nums: 0, Unstable nums: 0
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+[INFO]: Parsing configuration from: env.environment.isaac.isaac_rl_env:IsaacRLEnvCfg
+
+[36m===============================================================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /scratch/<user>/isaac/work/g5/tmp/isaaclab/logs/isaaclab_2026-11-13_18-57-00.log[0m
+[36m===============================================================================================================================[0m
+
+[33m18:57:00 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 18
+	Physics step-size     : 0.004
+	Rendering step-size   : 0.04
+	Environment step-size : 0.004
+[INFO]: Time taken for scene creation : 0.345521 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 1
+	Environment spacing   : 7
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : False
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 0.617214 seconds
+[INFO]: Completed setting up the environment...
+[INFO] Resetting all environments
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000018_cam_head_success.mp4`, containing [94m272[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000018_cam_left_wrist_success.mp4`, containing [94m272[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000018_cam_right_wrist_success.mp4`, containing [94m272[0m frames at 640×480 resolution and 25 FPS.
+Success nums: 19, Fail nums: 0, Unstable nums: 0
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+[INFO]: Parsing configuration from: env.environment.isaac.isaac_rl_env:IsaacRLEnvCfg
+
+[36m===============================================================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /scratch/<user>/isaac/work/g5/tmp/isaaclab/logs/isaaclab_2026-11-13_18-58-53.log[0m
+[36m===============================================================================================================================[0m
+
+[33m18:58:53 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cpu
+	Environment seed      : 19
+	Physics step-size     : 0.004
+	Rendering step-size   : 0.04
+	Environment step-size : 0.004
+[INFO]: Time taken for scene creation : 0.339047 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 1
+	Environment spacing   : 7
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : False
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 0.621368 seconds
+[INFO]: Completed setting up the environment...
+[INFO] Resetting all environments
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000019_cam_head_success.mp4`, containing [94m474[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000019_cam_left_wrist_success.mp4`, containing [94m474[0m frames at 640×480 resolution and 25 FPS.
+🎬 Video is saved to `eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/gate20_shipped_v1_ngx/episode_0000019_cam_right_wrist_success.mp4`, containing [94m474[0m frames at 640×480 resolution and 25 FPS.
+Success nums: 20, Fail nums: 0, Unstable nums: 0
+[main] removed resume manifest eval_result/RoboDojo/put_bottles_into_dustbin/InternW0_delta/arx_x5/0_ckpt_name=robodojo,action_type=joint/_resume_gate20_shipped_v1_ngx.json (eval completed)
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+Currently unsupported type (unknown) for UsdAttribute.Get() at <invalid UsdAttribute>
+2026-11-13T23:56:59Z [4,717,425ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T23:56:59Z [4,717,425ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T23:57:00Z [4,718,191ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:57:00Z [4,718,201ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:57:00Z [4,718,211ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:58:53Z [4,830,735ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T23:58:53Z [4,830,735ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T23:58:53Z [4,831,499ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:58:53Z [4,831,510ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-13T23:58:53Z [4,831,520ms] [Warning] [isaacsim.sensors.camera.camera] 'verticalAperture' (1.5290800094604493) and 'horizontalAperture' (2.0954999923706055) are inconsistent with the pixel resolution aspect ratio (1.3333333333333333). Setting 'verticalAperture' to 1.571624994277954 to ensure square pixels.
+2026-11-14T00:02:01Z [5,018,756ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-14T00:02:01Z [5,018,756ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+[5019.397s] Simulation App Shutting Down

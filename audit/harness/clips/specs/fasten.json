@@ -1,0 +1,44 @@
+{
+ "purpose": "A13 production replay: camera fpair2 (smoke 2), two nuts (nut2 pink, nut0 blue) at table height; every second step of the drop test and the settled state",
+ "cameras": [
+  {
+   "name": "fpair2",
+   "eye": [
+    0.2,
+    0.17,
+    0.81
+   ],
+   "target": [
+    0.2,
+    -0.16,
+    0.79
+   ],
+   "focal_mm": 18,
+   "res": [
+    1280,
+    360
+   ]
+  }
+ ],
+ "windows": [
+  {
+   "case": "drop",
+   "unit": "step",
+   "from": 0,
+   "to": 250,
+   "stride": 2
+  }
+ ],
+ "mode_sweep": [
+  {
+   "name": "pt8",
+   "carb": {
+    "/rtx/rendermode": "PathTracing",
+    "/rtx/pathtracing/spp": 8,
+    "/rtx/pathtracing/totalSpp": 8,
+    "/rtx/pathtracing/optixDenoiser/enabled": true
+   },
+   "warmup": 4
+  }
+ ]
+}

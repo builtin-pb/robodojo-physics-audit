@@ -1,0 +1,3 @@
+# Blog clip S16 (#164) bounce, 5.1 state log on della-vis2 GPU 0 (blog_queue.sh, MPS=0): the #164 command at c4ca002's
+# harness and parameter table (f160_b6_release_l12), state after every action and after every physics step of actions 121-215.
+b51_bounce|51|bounce51.json||--task put_bottles_into_dustbin --policy script_bottles --evaluator v2 --fast_log --bottle_trace --release_log --seed 0 --layouts 12 --physics_preset corrected --physics_params <repo>/docs/params --physics_scenario_opt_in bottles_primary_empty --physics_scenario {"gripper_drive_limit":"motor_peak"}|

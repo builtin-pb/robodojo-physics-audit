@@ -1,0 +1,23 @@
+[
+ {
+  "cell_name": "organize_table__perturb",
+  "layout": 0,
+  "overrides": {
+   "spawn_lift": {
+    "stems": "*",
+    "dz_m": 1e-06
+   },
+   "slide_target": {
+    "label": "mouse",
+    "inst": "mouse_4_1",
+    "labelled": true,
+    "stem": "mouse_4",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     -0.005168,
+     -0.999987
+    ]
+   }
+  }
+ }
+]

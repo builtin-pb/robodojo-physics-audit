@@ -1,0 +1,84 @@
+[2026-11-15 16:58:53.861 Other INFO 2960829] Using MPS V2 protocol
+[2026-11-15 16:58:53.867 Server INFO 2961473] Starting MPS Server
+[2026-11-15 16:58:53.867 Server INFO 2961473] Connected to control daemon on socket: /scratch/<user>/isaac/work/blogclips/mps/pipe/control
+[2026-11-15 16:58:53.895 Server INFO 2961473] Creating server context on device 0 (NVIDIA A40)
+[2026-11-15 16:58:54.012 Server INFO 2961473] Created anonymous shared memory region mps.shm.384914.2961473
+[2026-11-15 16:58:54.012 Server INFO 2961473] CUDA MPS Server for Linux/Unix. Binary version: 13040
+[2026-11-15 16:58:54.012 Server INFO 2961473] Display Driver version: 615
+[2026-11-15 16:58:54.012 Server INFO 2961473] Active Threads Percentage set to 100.0
+[2026-11-15 16:58:54.012 Server INFO 2961473] Server Priority set to 0
+[2026-11-15 16:58:54.012 Server INFO 2961473] Static Partitioning mode disabled
+[2026-11-15 16:58:54.012 Server INFO 2961473] Server has started
+[2026-11-15 16:58:54.013 Client INFO 2960829] MPS server type: V2, Compatibility mode: Enabled
+[2026-11-15 16:58:54.013 Server INFO 2961473] Received new client request from PID 2960829
+[2026-11-15 16:58:54.013 Server INFO 2961473] Priority level of client {2960829} is: 0 (NORMAL)
+[2026-11-15 16:58:54.013 Server INFO 2961473] Client {PID: 2960829, Context ID: 0} connected
+[2026-11-15 16:58:54.013 Server INFO 2961473] Creating worker thread for client {PID: 2960829, Context ID: 0}
+[2026-11-15 16:58:54.055 Client INFO 2960829] Using MPS V2 protocol
+[2026-11-15 16:58:54.055 Client INFO 2960829] MPS server type: V2, Compatibility mode: Enabled
+[2026-11-15 16:58:54.055 Server INFO 2961473] Received new client request from PID 2960829
+[2026-11-15 16:58:54.055 Server INFO 2961473] Priority level of client {2960829} is: 0 (NORMAL)
+[2026-11-15 16:58:54.055 Server INFO 2961473] Client {PID: 2960829, Context ID: 1} connected
+[2026-11-15 16:58:54.055 Server INFO 2961473] Creating worker thread for client {PID: 2960829, Context ID: 1}
+[2026-11-15 16:58:54.055 Server INFO 2961473] Device NVIDIA A40 (uuid GPU-9a686fbc-3da4-ffee-0df8-d9fcb490a39f) is associated
+[2026-11-15 16:58:54.055 Server INFO 2961473] Status of client {PID: 2960829, Context ID: 1} is ACTIVE
+[2026-11-15 16:58:54.056 Client INFO 2960829] Static partitioning mode disabled
+[2026-11-15 16:59:00.892 Client INFO 2960829] Using MPS V2 protocol
+[2026-11-15 16:59:00.893 Client INFO 2960829] MPS server type: V2, Compatibility mode: Enabled
+[2026-11-15 16:59:00.893 Server INFO 2961473] Received new client request from PID 2960829
+[2026-11-15 16:59:00.893 Server INFO 2961473] Priority level of client {2960829} is: 0 (NORMAL)
+[2026-11-15 16:59:00.893 Server INFO 2961473] Client {PID: 2960829, Context ID: 2} connected
+[2026-11-15 16:59:00.893 Server INFO 2961473] Creating worker thread for client {PID: 2960829, Context ID: 2}
+[2026-11-15 16:59:00.893 Server INFO 2961473] Device NVIDIA A40 (uuid GPU-9a686fbc-3da4-ffee-0df8-d9fcb490a39f) is associated
+[2026-11-15 16:59:00.893 Server INFO 2961473] Status of client {PID: 2960829, Context ID: 2} is ACTIVE
+[2026-11-15 16:59:00.894 Client INFO 2960829] Static partitioning mode disabled
+[2026-11-15 16:59:09.804 Client ERROR 2960829] No CUDA context is current to the calling thread
+[2026-11-15 16:59:09.804 Client ERROR 2960829] Returning 201 (CUDA_ERROR_INVALID_CONTEXT) from cuCtxGetDevice
+[2026-11-15 16:59:09.808 Client ERROR 2960829] Returning 2 (CUDA_ERROR_OUT_OF_MEMORY) from cuMemAlloc_v2
+[2026-11-15 16:59:13.643 Server ERROR 2961473] Message receive failed, assuming the other end is dead
+[2026-11-15 16:59:13.643 Server ERROR 2961473] Server failed to receive command: the remote procedural call between the MPS server and the MPS client failed, assuming client {PID: 2960829, Context ID: 2} has exited
+[2026-11-15 16:59:13.643 Server WARN 2961473] Client {PID: 2960829, Context ID: 2} exiting. Number of active client contexts is 1.
+[2026-11-15 16:59:13.645 Server ERROR 2961473] Message receive failed, assuming the other end is dead
+[2026-11-15 16:59:13.645 Server ERROR 2961473] Server failed to receive command: the remote procedural call between the MPS server and the MPS client failed, assuming client {PID: 2960829, Context ID: 1} has exited
+[2026-11-15 16:59:13.645 Server WARN 2961473] Client {PID: 2960829, Context ID: 1} exiting. Number of active client contexts is 0.
+[2026-11-15 16:59:13.815 Server ERROR 2961473] Message receive failed, assuming the other end is dead
+[2026-11-15 16:59:13.815 Server ERROR 2961473] Server failed to receive command: the remote procedural call between the MPS server and the MPS client failed, assuming client {PID: 2960829, Context ID: 0} has exited
+[2026-11-15 16:59:13.815 Server WARN 2961473] Client process 2960829 disconnected
+[2026-11-15 16:59:19.494 Other INFO 2963734] Using MPS V2 protocol
+[2026-11-15 16:59:19.494 Client INFO 2963734] MPS server type: V2, Compatibility mode: Enabled
+[2026-11-15 16:59:19.494 Server INFO 2961473] Received new client request from PID 2963734
+[2026-11-15 16:59:19.494 Server INFO 2961473] Priority level of client {2963734} is: 0 (NORMAL)
+[2026-11-15 16:59:19.494 Server INFO 2961473] Client {PID: 2963734, Context ID: 0} connected
+[2026-11-15 16:59:19.494 Server INFO 2961473] Creating worker thread for client {PID: 2963734, Context ID: 0}
+[2026-11-15 16:59:19.534 Client INFO 2963734] Using MPS V2 protocol
+[2026-11-15 16:59:19.534 Client INFO 2963734] MPS server type: V2, Compatibility mode: Enabled
+[2026-11-15 16:59:19.534 Server INFO 2961473] Received new client request from PID 2963734
+[2026-11-15 16:59:19.534 Server INFO 2961473] Priority level of client {2963734} is: 0 (NORMAL)
+[2026-11-15 16:59:19.534 Server INFO 2961473] Client {PID: 2963734, Context ID: 1} connected
+[2026-11-15 16:59:19.534 Server INFO 2961473] Creating worker thread for client {PID: 2963734, Context ID: 1}
+[2026-11-15 16:59:19.535 Server INFO 2961473] Device NVIDIA A40 (uuid GPU-9a686fbc-3da4-ffee-0df8-d9fcb490a39f) is associated
+[2026-11-15 16:59:19.535 Server INFO 2961473] Status of client {PID: 2963734, Context ID: 1} is ACTIVE
+[2026-11-15 16:59:19.535 Client INFO 2963734] Static partitioning mode disabled
+[2026-11-15 16:59:26.158 Client INFO 2963734] Using MPS V2 protocol
+[2026-11-15 16:59:26.158 Client INFO 2963734] MPS server type: V2, Compatibility mode: Enabled
+[2026-11-15 16:59:26.158 Server INFO 2961473] Received new client request from PID 2963734
+[2026-11-15 16:59:26.158 Server INFO 2961473] Priority level of client {2963734} is: 0 (NORMAL)
+[2026-11-15 16:59:26.158 Server INFO 2961473] Client {PID: 2963734, Context ID: 2} connected
+[2026-11-15 16:59:26.159 Server INFO 2961473] Creating worker thread for client {PID: 2963734, Context ID: 2}
+[2026-11-15 16:59:26.159 Server INFO 2961473] Device NVIDIA A40 (uuid GPU-9a686fbc-3da4-ffee-0df8-d9fcb490a39f) is associated
+[2026-11-15 16:59:26.159 Server INFO 2961473] Status of client {PID: 2963734, Context ID: 2} is ACTIVE
+[2026-11-15 16:59:26.160 Client INFO 2963734] Static partitioning mode disabled
+[2026-11-15 16:59:34.057 Client ERROR 2963734] No CUDA context is current to the calling thread
+[2026-11-15 16:59:34.057 Client ERROR 2963734] Returning 201 (CUDA_ERROR_INVALID_CONTEXT) from cuCtxGetDevice
+[2026-11-15 17:00:12.443 Server ERROR 2961473] Message receive failed, assuming the other end is dead
+[2026-11-15 17:00:12.443 Server ERROR 2961473] Server failed to receive command: the remote procedural call between the MPS server and the MPS client failed, assuming client {PID: 2963734, Context ID: 2} has exited
+[2026-11-15 17:00:12.443 Server WARN 2961473] Client {PID: 2963734, Context ID: 2} exiting. Number of active client contexts is 1.
+[2026-11-15 17:00:12.444 Server ERROR 2961473] Message receive failed, assuming the other end is dead
+[2026-11-15 17:00:12.444 Server ERROR 2961473] Server failed to receive command: the remote procedural call between the MPS server and the MPS client failed, assuming client {PID: 2963734, Context ID: 1} has exited
+[2026-11-15 17:00:12.444 Server WARN 2961473] Client {PID: 2963734, Context ID: 1} exiting. Number of active client contexts is 0.
+[2026-11-15 17:00:12.598 Server ERROR 2961473] Message receive failed, assuming the other end is dead
+[2026-11-15 17:00:12.598 Server ERROR 2961473] Server failed to receive command: the remote procedural call between the MPS server and the MPS client failed, assuming client {PID: 2963734, Context ID: 0} has exited
+[2026-11-15 17:00:12.598 Server WARN 2961473] Client process 2963734 disconnected
+[2026-11-15 17:00:13.036 Server WARN 2961473] Server has been notified to shut down
+[2026-11-15 17:00:13.036 Server INFO 2961473] Waiting for current clients to finish
+[2026-11-15 17:00:13.036 Server INFO 2961473] Exiting

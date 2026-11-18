@@ -1,0 +1,20 @@
+## host: della-vis1.princeton.edu
+## policy env
+3.11.18 torch 2.10.0+cu128 transformers 5.13.0 numpy 2.4.6 msgpack_numpy ? websockets 17.4
+## 6.2 container without our pylib
+websockets 12.0
+msgpack MISSING: ModuleNotFoundError No module named 'msgpack'
+msgpack_numpy MISSING: ModuleNotFoundError No module named 'msgpack_numpy'
+pydantic 2.11.10
+cv2 4.14.0
+## our pylib_62 additions
+msgpack-1.2.4.dist-info
+msgpack_numpy-0.4.8.dist-info
+websockets-17.4.dist-info
+## causal_conv1d_cuda kernels (cuobjdump --list-elf, CUDA 12.8)
+      3 sm_100
+      3 sm_120
+      3 sm_75
+      3 sm_80
+      3 sm_87
+      3 sm_90

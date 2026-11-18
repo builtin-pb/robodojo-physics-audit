@@ -1,0 +1,15 @@
+tag=bottles_Cdiag_shipped_v2 host=della-vis2.princeton.edu slurm_job= start=2026-11-15T01:21:45-05:00
+repo_head=960de0d99bb3bc3e1a4fa405931fb55cfc1a3d37 repo_diff_sha1=49ee81abfc1262255bb4c8ae811da1ae2c240673
+eval_num=6 evaluator=v2 preset=shipped gpu=0
+index, name, driver_version, memory.used [MiB], memory.total [MiB]
+0, NVIDIA A40, 615.71.10, 345 MiB, 46068 MiB
+1, NVIDIA A40, 615.71.10, 10296 MiB, 46068 MiB
+need_policy_mib=30500 need_sim_mib=6000 reserve_mib=2000
+free_check before=policy_server free_mib=45196 need_mib=38500 t=01:21:45
+server_ready=yes port=44531 s=258
+ngx_bind=-B /usr/lib64/libnvidia-ngx.so.615.71.10:/.singularity.d/libs/libnvidia-ngx.so.1 carb=none save_obs_at=0
+free_check before=sim attempt=0 free_mib=16382 need_mib=8000 t=01:26:03
+sim attempt=0 rc=0 s=1511
+end=2026-11-15T01:51:14-05:00 wall_s=1769
+physx_corrupt_lines=0 gpu_alloc_fail_lines=0 server_oom_lines=0
+ngx_lines: 0 ngx_fail_lines=0

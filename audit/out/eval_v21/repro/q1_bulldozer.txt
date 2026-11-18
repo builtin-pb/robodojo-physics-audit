@@ -1,0 +1,1 @@
+v21_shove|--task put_bottles_into_dustbin --layouts 0,1 --policy exploit --exploit_mode shove_bottles --evaluator v2 --bottles_pickup_rule v2.1 --pickup_trace --log_poses

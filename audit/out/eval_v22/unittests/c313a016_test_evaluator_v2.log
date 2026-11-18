@@ -1,0 +1,55 @@
+test_a_4cm_carry_counts_under_v21_not_v2 (audit.tools.test_evaluator_v2.BottlesPickupRuleTaskTests.test_a_4cm_carry_counts_under_v21_not_v2) ... ok
+test_a_4cm_carry_with_a_real_grasp_counts_under_v22 (audit.tools.test_evaluator_v2.BottlesPickupRuleTaskTests.test_a_4cm_carry_with_a_real_grasp_counts_under_v22) ... ok
+test_a_4cm_lift_held_five_actions_is_not_a_pick (audit.tools.test_evaluator_v2.BottlesPickupRuleTaskTests.test_a_4cm_lift_held_five_actions_is_not_a_pick) ... ok
+test_bulldozer_jaw_on_the_table_does_not_count (audit.tools.test_evaluator_v2.BottlesPickupRuleTaskTests.test_bulldozer_jaw_on_the_table_does_not_count) ... ok
+test_closed_fist_carry_counts_under_v21_not_v22 (audit.tools.test_evaluator_v2.BottlesPickupRuleTaskTests.test_closed_fist_carry_counts_under_v21_not_v22) ... ok
+test_held_bottle_shoved_onto_another_does_not_count (audit.tools.test_evaluator_v2.BottlesPickupRuleTaskTests.test_held_bottle_shoved_onto_another_does_not_count) ... ok
+test_in_place_reset_keeps_the_rule_and_starts_clean (audit.tools.test_evaluator_v2.BottlesPickupRuleTaskTests.test_in_place_reset_keeps_the_rule_and_starts_clean) ... ok
+test_tracker_samples_time_and_table (audit.tools.test_evaluator_v2.BottlesPickupRuleTaskTests.test_tracker_samples_time_and_table) ... ok
+test_zero_action_period_fails_loudly (audit.tools.test_evaluator_v2.BottlesPickupRuleTaskTests.test_zero_action_period_fails_loudly) ... ok
+test_a_bottle_beside_the_lifted_one_does_not_count_as_support (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_a_bottle_beside_the_lifted_one_does_not_count_as_support) ... ok
+test_aggregation_refuses_mixed_pickup_rules (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_aggregation_refuses_mixed_pickup_rules) ... ok
+test_beneath_a_taller_overlapping_bottle_is_not_clear (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_beneath_a_taller_overlapping_bottle_is_not_clear) ... ok
+test_bottle_on_the_table_under_a_narrow_jaw_is_not_picked (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_bottle_on_the_table_under_a_narrow_jaw_is_not_picked) ... ok
+test_clearance_must_strictly_exceed_2cm (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_clearance_must_strictly_exceed_2cm) ... ok
+test_entry_before_the_pick_is_not_credited (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_entry_before_the_pick_is_not_credited) ... ok
+test_envs_are_independent_under_v21 (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_envs_are_independent_under_v21) ... ok
+test_footprint_overlap (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_footprint_overlap) ... ok
+test_held_3cm_clear_for_01s_is_not_picked (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_held_3cm_clear_for_01s_is_not_picked) ... ok
+test_held_3cm_clear_for_02s_is_picked (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_held_3cm_clear_for_02s_is_picked) ... ok
+test_held_bottle_pushed_onto_another_bottle_is_not_picked (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_held_bottle_pushed_onto_another_bottle_is_not_picked) ... ok
+test_held_on_another_bottle_beyond_v2s_bar_is_v2_picked_not_v21 (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_held_on_another_bottle_beyond_v2s_bar_is_v2_picked_not_v21) ... ok
+test_hold_time_uses_simulated_time_not_sample_count (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_hold_time_uses_simulated_time_not_sample_count) ... ok
+test_incomplete_sample_breaks_continuity (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_incomplete_sample_breaks_continuity) ... ok
+test_known_limit_of_v21_bottle_on_closed_fingers_counts_as_held (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_known_limit_of_v21_bottle_on_closed_fingers_counts_as_held) ... ok
+test_lifted_clear_above_another_bottle_counts (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_lifted_clear_above_another_bottle_counts) ... ok
+test_one_unheld_sample_restarts_the_clock (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_one_unheld_sample_restarts_the_clock) ... ok
+test_result_files_record_the_rule (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_result_files_record_the_rule) ... ok
+test_resume_keeps_the_rule_it_started_with (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_resume_keeps_the_rule_it_started_with) ... ok
+test_rule_selection_and_params (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_rule_selection_and_params) ... ok
+test_stillness_rule_resume_and_mixed_aggregation_guard (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_stillness_rule_resume_and_mixed_aggregation_guard) ... ok
+test_unobserved_samples_do_not_bridge_continuity (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_unobserved_samples_do_not_bridge_continuity) ... ok
+test_v21_needs_time_and_table (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_v21_needs_time_and_table) ... ok
+test_v2_rule_is_bit_identical_to_v2_before_177 (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_v2_rule_is_bit_identical_to_v2_before_177) ... ok
+test_v2_rule_reproduces_v2s_existing_test_file (audit.tools.test_evaluator_v2.BottlesPickupRuleTests.test_v2_rule_reproduces_v2s_existing_test_file) ... ok
+test_20mm_boundary (audit.tools.test_evaluator_v2.BottlesPickupRuleV22Tests.test_20mm_boundary) ... ok
+test_closed_fists_pressing_3cm_clear_for_02s_count_under_v21_not_v22 (audit.tools.test_evaluator_v2.BottlesPickupRuleV22Tests.test_closed_fists_pressing_3cm_clear_for_02s_count_under_v21_not_v22) ... ok
+test_one_closed_gripper_does_not_veto_a_real_grasp (audit.tools.test_evaluator_v2.BottlesPickupRuleV22Tests.test_one_closed_gripper_does_not_veto_a_real_grasp) ... ok
+test_real_grasp_at_48mm_is_picked_under_both (audit.tools.test_evaluator_v2.BottlesPickupRuleV22Tests.test_real_grasp_at_48mm_is_picked_under_both) ... ok
+test_v22_needs_time_and_table (audit.tools.test_evaluator_v2.BottlesPickupRuleV22Tests.test_v22_needs_time_and_table) ... ok
+test_v2_and_v21_are_bit_identical_to_before_v22 (audit.tools.test_evaluator_v2.BottlesPickupRuleV22Tests.test_v2_and_v21_are_bit_identical_to_before_v22) ... ok
+test_benchmark_aggregation_and_macro_vs_equal_weighting (audit.tools.test_evaluator_v2.EvaluatorV2UnitTests.test_benchmark_aggregation_and_macro_vs_equal_weighting) ... ok
+test_episode_starts_as_failure_and_disqualification_split (audit.tools.test_evaluator_v2.EvaluatorV2UnitTests.test_episode_starts_as_failure_and_disqualification_split) ... ok
+test_ledger_completeness_drops_first_drop_stands_and_denominator (audit.tools.test_evaluator_v2.EvaluatorV2UnitTests.test_ledger_completeness_drops_first_drop_stands_and_denominator) ... ok
+test_make_ledger_entry_zeroes_drop_scores (audit.tools.test_evaluator_v2.EvaluatorV2UnitTests.test_make_ledger_entry_zeroes_drop_scores) ... ok
+test_physics_block_carried_through_v2_ledger_result_and_loader (audit.tools.test_evaluator_v2.EvaluatorV2UnitTests.test_physics_block_carried_through_v2_ledger_result_and_loader) ... ok
+test_seed_manager_freezes_scheduled_pool_and_resume (audit.tools.test_evaluator_v2.EvaluatorV2UnitTests.test_seed_manager_freezes_scheduled_pool_and_resume) ... ok
+test_v1_v2_isolation_both_directions (audit.tools.test_evaluator_v2.EvaluatorV2UnitTests.test_v1_v2_isolation_both_directions)
+Required #1: shipped summarize_result.py never picks up a v2 run, and a later v1 run never makes v2 INCOMPLETE. ... ok
+test_version_roots_and_categories (audit.tools.test_evaluator_v2.EvaluatorV2UnitTests.test_version_roots_and_categories) ... ok
+
+----------------------------------------------------------------------
+Ran 48 tests in 8.979s
+
+OK
+[SeedManager] init_eval resume filter: excluded=2 remaining=3/5

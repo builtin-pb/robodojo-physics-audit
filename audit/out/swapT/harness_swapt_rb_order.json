@@ -1,0 +1,2399 @@
+{
+ "versions": {
+  "repo_head": "0694f7e73d6698d8d78fd9a31859080cf95e003c",
+  "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+  "isaaclab": "afca7b09d60d8beb9c1cb28b43066499940b969b",
+  "container": "isaac-sim_5.1.0.sif",
+  "isaac_sim": [
+   "5.1.0",
+   "rc.19",
+   "5"
+  ]
+ },
+ "deviations": "- Kit experience audit/harness/robodojo_physics_only.kit instead of isaaclab.python.kit (no RTX, replicator, camera or\n  viewport extensions); AppLauncher is bypassed and its carb settings are set as evaluation sets them, except that\n  cameras and the offscreen flag are off (offscreen needs the viewport extension); evaluation's PARTIAL_RENDERING\n  render() (forward, then app.update with playSimulations off) is reproduced by patching SimulationContext.render;\n  evaluation's zero-delay render args and camera extensions are not added.\n- sys.modules stubs: CameraManager and TiledCaptureManager (null; reset keeps the per-env reseeding and the one\n  sim_step), create_mdl_material (USD-only Material + Shader, no physics API), WsModelClient (no-op),\n  CuroboPlanner (need_planner false; joint actions never use it), and the policy module (a local scripted policy).\n- `env`, `task` and `utils` are pinned to the repository (namespace packages that Kit's own `utils` shadows).\n- Assets: table and ground MDL files are empty placeholders (visual only); wrist and head camera prims are not created.",
+ "eval_carb_differences": {
+  "/isaaclab/render/offscreen": {
+   "eval": true,
+   "harness": false
+  },
+  "/isaaclab/cameras_enabled": {
+   "eval": true,
+   "harness": false
+  }
+ },
+ "namespace_shadowing_before_pin": {
+  "env": [
+   null,
+   [
+    "/scratch/<user>/project/robodojo/wt-swapt/env"
+   ]
+  ],
+  "task": [
+   null,
+   [
+    "/scratch/<user>/project/robodojo/wt-swapt/task"
+   ]
+  ],
+  "utils": [
+   "/isaac-sim/exts/omni.pip.compute/pip_prebundle/cv2/utils/__init__.py",
+   [
+    "/isaac-sim/exts/omni.pip.compute/pip_prebundle/cv2/utils"
+   ]
+  ]
+ },
+ "sim_config_after_process_config": {
+  "decimation": 1,
+  "dt": 0.004,
+  "render_interval": 10,
+  "scene": {
+   "num_envs": 1,
+   "env_spacing": 7
+  },
+  "seed": [
+   0
+  ]
+ },
+ "eval_num_from_task": 50,
+ "runs": [
+  {
+   "layout": 0,
+   "repeat": 0,
+   "policy": "readback",
+   "steps_through_reset": 844,
+   "renders_through_reset": 92,
+   "camera_reset_steps": 1,
+   "settled_poses": {},
+   "manifest": {
+    "overwrite_gpu_setting": 1,
+    "physics_scenes": {
+     "/physicsScene": {
+      "physxScene:enableGPUDynamics": false,
+      "physxScene:broadphaseType": "MBP",
+      "physxScene:solverType": "TGS",
+      "physxScene:minPositionIterationCount": 1.0,
+      "physxScene:maxPositionIterationCount": 255.0,
+      "physxScene:minVelocityIterationCount": 0.0,
+      "physxScene:maxVelocityIterationCount": 255.0,
+      "physxScene:enableStabilization": false,
+      "physxScene:enableCCD": false,
+      "physxScene:bounceThreshold": 0.5,
+      "physxScene:frictionOffsetThreshold": 0.03999999910593033,
+      "physxScene:frictionCorrelationDistance": 0.02500000037252903,
+      "physxScene:enableEnhancedDeterminism": false,
+      "physxScene:timeStepsPerSecond": 250.0,
+      "physics:gravityMagnitude": 9.8100004196167,
+      "default_material": {
+       "path": "/physicsScene/defaultMaterial",
+       "has_physics_material_api": true,
+       "staticFriction": 0.5,
+       "dynamicFriction": 0.5,
+       "restitution": 0.0,
+       "frictionCombineMode": "average",
+       "restitutionCombineMode": "average"
+      }
+     }
+    },
+    "statistics_api": {
+     "enable_carb_stats_upload": "enable_carb_stats_upload(self: omni.physx.bindings._physx.IPhysxStatistics, enable: bool) -> None\n\n\n        Enables/disables upload of Physx statistics for all PhysicsScenes into carb::stats.\n\n        Args:\n            enable: bool true=enable, false=disable.  \n    \n",
+     "get_physx_scene_statistics": "get_physx_scene_statistics(self: omni.physx.bindings._physx.IPhysxStatistics, stage_id: int, path: int, stats: omni.physx.bindings._physx.PhysicsSceneStats) -> bool\n\n\n        Get physics scene PhysX simulation statistics.\n\n        Args:\n            stage_id: current stageId\n            path: physics"
+    },
+    "scene_statistics": {
+     "compressed_contact_size": 0,
+     "gpu_mem_collision_stack_size": 0,
+     "gpu_mem_deformable_surface_contacts": 0,
+     "gpu_mem_deformable_surfaces": 0,
+     "gpu_mem_deformable_volume_contacts": 0,
+     "gpu_mem_deformable_volumes": 0,
+     "gpu_mem_found_lost_aggregate_pairs": 52,
+     "gpu_mem_found_lost_pairs": 6,
+     "gpu_mem_heap": 1476395008,
+     "gpu_mem_heap_articulation": 1960,
+     "gpu_mem_heap_broadphase": 1183504888,
+     "gpu_mem_heap_deformable_surfaces": 0,
+     "gpu_mem_heap_deformable_volumes": 0,
+     "gpu_mem_heap_narrowphase": 11073520,
+     "gpu_mem_heap_other": 0,
+     "gpu_mem_heap_particles": 0,
+     "gpu_mem_heap_simulation": 52776,
+     "gpu_mem_heap_simulation_articulation": 486936,
+     "gpu_mem_heap_simulation_deformable_surface": 8,
+     "gpu_mem_heap_simulation_deformable_volume": 12,
+     "gpu_mem_heap_simulation_particles": 0,
+     "gpu_mem_heap_solver": 220503316,
+     "gpu_mem_particle_contacts": 0,
+     "gpu_mem_particles": 0,
+     "gpu_mem_rigid_contact_count": 24,
+     "gpu_mem_rigid_patch_count": 6,
+     "gpu_mem_temp_buffer_capacity": 2588,
+     "gpu_mem_total_aggregate_pairs": 2,
+     "nb_active_constraints": 0,
+     "nb_active_dynamic_rigids": 2,
+     "nb_active_kinematic_rigids": 0,
+     "nb_aggregates": 2,
+     "nb_articulations": 2,
+     "nb_axis_solver_constaints": 0,
+     "nb_box_shapes": 23,
+     "nb_capsule_shapes": 0,
+     "nb_cone_shapes": 0,
+     "nb_convex_shapes": 97,
+     "nb_cylinder_shapes": 0,
+     "nb_discrete_contact_pairs_total": 8,
+     "nb_discrete_contact_pairs_with_cache_hits": 0,
+     "nb_discrete_contact_pairs_with_contacts": 0,
+     "nb_dynamic_rigids": 24,
+     "nb_kinematic_rigids": 0,
+     "nb_lost_pairs": 0,
+     "nb_lost_touches": 0,
+     "nb_new_pairs": 0,
+     "nb_new_touches": 0,
+     "nb_partitions": 0,
+     "nb_plane_shapes": 0,
+     "nb_sphere_shapes": 0,
+     "nb_static_rigids": 114,
+     "nb_trimesh_shapes": 92,
+     "peak_constraint_memory": 0,
+     "required_contact_constraint_memory": 0
+    },
+    "carb": {
+     "/physics/updateToUsd": false,
+     "/physics/fabricEnabled": false,
+     "/physics/fabricUpdateTransformations": true,
+     "/physics/suppressReadback": false,
+     "/physics/resetOnStop": true,
+     "/isaaclab/render/offscreen": false,
+     "/isaaclab/render/active_viewport": false,
+     "/isaaclab/cameras_enabled": false,
+     "/app/player/useFixedTimeStepping": false
+    },
+    "articulations": [
+     {
+      "path": "/World/envs/env_0/robot0",
+      "pos_iters": 8.0,
+      "vel_iters": 0.0,
+      "self_collisions": true
+     },
+     {
+      "path": "/World/envs/env_0/robot1",
+      "pos_iters": 8.0,
+      "vel_iters": 0.0,
+      "self_collisions": true
+     }
+    ],
+    "rigid_bodies_count": 24,
+    "rigid_bodies_authoring_iterations": [
+     {
+      "path": "/World/envs/env_0/rigid/t/t_0_1",
+      "enabled": true,
+      "pos_iters": 16.0,
+      "vel_iters": 1.0,
+      "stab_threshold": 9.999999747378752e-06,
+      "mass_attr": null
+     },
+     {
+      "path": "/World/envs/env_0/rigid/t/t_1_2",
+      "enabled": true,
+      "pos_iters": 16.0,
+      "vel_iters": 1.0,
+      "stab_threshold": 9.999999747378752e-06,
+      "mass_attr": null
+     }
+    ],
+    "objects": {
+     "t0": {
+      "inst": "t_0_1",
+      "prim": "/World/envs/env_0/rigid/t/t_0_1",
+      "type": "rigid",
+      "colliders": 3,
+      "colliders_enabled": 2,
+      "approximations": [
+       "None",
+       "sdf"
+      ],
+      "contact_offsets": [],
+      "material": [
+       "physics-purpose",
+       {
+        "path": "/World/envs/env_0/rigid/t/t_0_1/physics_material",
+        "has_physics_material_api": true,
+        "staticFriction": 2.0,
+        "dynamicFriction": 2.0,
+        "restitution": 0.0,
+        "frictionCombineMode": null,
+        "restitutionCombineMode": null
+       }
+      ],
+      "body": {
+       "path": "/World/envs/env_0/rigid/t/t_0_1",
+       "enabled": true,
+       "pos_iters": 16.0,
+       "vel_iters": 1.0,
+       "stab_threshold": 9.999999747378752e-06,
+       "mass_attr": null
+      },
+      "engine_mass": [
+       0.1
+      ],
+      "engine_material_props": [
+       [
+        2.0,
+        2.0,
+        0.0
+       ],
+       [
+        2.0,
+        2.0,
+        0.0
+       ],
+       [
+        2.0,
+        2.0,
+        0.0
+       ]
+      ]
+     },
+     "t1": {
+      "inst": "t_1_2",
+      "prim": "/World/envs/env_0/rigid/t/t_1_2",
+      "type": "rigid",
+      "colliders": 3,
+      "colliders_enabled": 2,
+      "approximations": [
+       "None",
+       "sdf"
+      ],
+      "contact_offsets": [],
+      "material": [
+       "physics-purpose",
+       {
+        "path": "/World/envs/env_0/rigid/t/t_1_2/physics_material",
+        "has_physics_material_api": true,
+        "staticFriction": 2.0,
+        "dynamicFriction": 2.0,
+        "restitution": 0.0,
+        "frictionCombineMode": null,
+        "restitutionCombineMode": null
+       }
+      ],
+      "body": {
+       "path": "/World/envs/env_0/rigid/t/t_1_2",
+       "enabled": true,
+       "pos_iters": 16.0,
+       "vel_iters": 1.0,
+       "stab_threshold": 9.999999747378752e-06,
+       "mass_attr": null
+      },
+      "engine_mass": [
+       0.1
+      ],
+      "engine_material_props": [
+       [
+        2.0,
+        2.0,
+        0.0
+       ],
+       [
+        2.0,
+        2.0,
+        0.0
+       ],
+       [
+        2.0,
+        2.0,
+        0.0
+       ]
+      ]
+     },
+     "camera_stand": {
+      "inst": "camera_stand_0_3",
+      "prim": "/World/envs/env_0/geometry/camera_stand/camera_stand_0_3",
+      "type": "geometry",
+      "colliders": 12,
+      "colliders_enabled": 12,
+      "approximations": [
+       "none"
+      ],
+      "contact_offsets": [
+       null
+      ],
+      "material": [
+       "scene-default",
+       {
+        "all_purpose_bound": "/World/envs/env_0/geometry/camera_stand/camera_stand_0_3/base_br/_materials/wrought_iron"
+       }
+      ],
+      "body": null,
+      "engine_readback_error": "AttributeError(\"'NoneType' object has no attribute 'count'\")"
+     }
+    },
+    "fixtures": {
+     "Table": {
+      "colliders": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "rigid_body": false,
+      "material": [
+       "scene-default",
+       {
+        "all_purpose_bound": "/World/envs/env_0/Table/material_0122/material_0122_0_5/Material"
+       }
+      ]
+     },
+     "Ground": {
+      "colliders": 1,
+      "approximations": [
+       "none"
+      ],
+      "rigid_body": false,
+      "material": [
+       "physics-purpose",
+       {
+        "path": "/World/envs/env_0/Ground/Ground/Ground_0_6/physics_material",
+        "has_physics_material_api": true,
+        "staticFriction": 1.0,
+        "dynamicFriction": 1.0,
+        "restitution": 0.0,
+        "frictionCombineMode": "multiply",
+        "restitutionCombineMode": "multiply"
+       }
+      ]
+     }
+    },
+    "robot": {
+     "masses": [
+      0.4399999976158142,
+      0.06700000166893005,
+      1.0794999599456787,
+      0.5453000068664551,
+      0.11710000038146973,
+      0.6348999738693237,
+      0.4408999979496002,
+      0.050200000405311584,
+      0.06480000168085098,
+      0.06480000168085098,
+      0.04479999840259552
+     ],
+     "stiffness": [
+      4400.0,
+      4400.0,
+      4400.0,
+      4400.0,
+      4400.0,
+      4400.0,
+      2300.0,
+      2300.0
+     ],
+     "damping": [
+      40.0,
+      40.0,
+      40.0,
+      40.0,
+      40.0,
+      40.0,
+      100.0,
+      100.0
+     ],
+     "effort_limits": [
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0
+     ],
+     "vel_limits": [
+      5.0,
+      5.0,
+      5.0,
+      5.0,
+      5.0,
+      5.0,
+      1000.0,
+      1000.0
+     ],
+     "joint_names": [
+      "joint1",
+      "joint2",
+      "joint3",
+      "joint4",
+      "joint5",
+      "joint6",
+      "joint7",
+      "joint8"
+     ]
+    },
+    "sim_cfg_physx": {
+     "solver_type": 1,
+     "enable_stabilization": false,
+     "enable_ccd": false,
+     "bounce_threshold_velocity": 0.5,
+     "friction_offset_threshold": 0.04,
+     "friction_correlation_distance": 0.025,
+     "min_position_iteration_count": 1,
+     "max_position_iteration_count": 255,
+     "min_velocity_iteration_count": 0,
+     "max_velocity_iteration_count": 255,
+     "enable_enhanced_determinism": false
+    },
+    "sim_cfg": {
+     "dt": 0.004,
+     "render_interval": 10,
+     "device": "cpu",
+     "use_fabric": false,
+     "decimation": 1
+    },
+    "interpolation_nums": 10.0
+   },
+   "episode_steps": 103,
+   "renders_total": 92,
+   "episode_seconds": 1.0,
+   "steps_per_second": 103.0,
+   "final_poses": {},
+   "success": true,
+   "take_action_cnt": 0,
+   "eval_result": {
+    "success_rate": 1.0,
+    "eval_time": 1,
+    "score": 100.0,
+    "details": {
+     "0": {
+      "layout_id": 0,
+      "success": true,
+      "score": 1.0
+     }
+    }
+   },
+   "unstable_nums": 0,
+   "policy_log": {
+    "materials": {
+     "usd": {
+      "t0": [
+       {
+        "collider": "/World/envs/env_0/rigid/t/t_0_1/collision/model",
+        "approx": "sdf",
+        "resolved": [
+         "physics-purpose",
+         {
+          "path": "/World/envs/env_0/rigid/t/t_0_1/physics_material",
+          "has_physics_material_api": true,
+          "staticFriction": 2.0,
+          "dynamicFriction": 2.0,
+          "restitution": 0.0,
+          "frictionCombineMode": null,
+          "restitutionCombineMode": null
+         }
+        ]
+       },
+       {
+        "collider": "/World/envs/env_0/rigid/t/t_0_1/collision/box_bar",
+        "approx": null,
+        "resolved": [
+         "physics-purpose",
+         {
+          "path": "/World/envs/env_0/rigid/t/t_0_1/physics_material",
+          "has_physics_material_api": true,
+          "staticFriction": 2.0,
+          "dynamicFriction": 2.0,
+          "restitution": 0.0,
+          "frictionCombineMode": null,
+          "restitutionCombineMode": null
+         }
+        ]
+       },
+       {
+        "collider": "/World/envs/env_0/rigid/t/t_0_1/collision/box_stem",
+        "approx": null,
+        "resolved": [
+         "physics-purpose",
+         {
+          "path": "/World/envs/env_0/rigid/t/t_0_1/physics_material",
+          "has_physics_material_api": true,
+          "staticFriction": 2.0,
+          "dynamicFriction": 2.0,
+          "restitution": 0.0,
+          "frictionCombineMode": null,
+          "restitutionCombineMode": null
+         }
+        ]
+       }
+      ],
+      "t1": [
+       {
+        "collider": "/World/envs/env_0/rigid/t/t_1_2/collision/model",
+        "approx": "sdf",
+        "resolved": [
+         "physics-purpose",
+         {
+          "path": "/World/envs/env_0/rigid/t/t_1_2/physics_material",
+          "has_physics_material_api": true,
+          "staticFriction": 2.0,
+          "dynamicFriction": 2.0,
+          "restitution": 0.0,
+          "frictionCombineMode": null,
+          "restitutionCombineMode": null
+         }
+        ]
+       },
+       {
+        "collider": "/World/envs/env_0/rigid/t/t_1_2/collision/box_bar",
+        "approx": null,
+        "resolved": [
+         "physics-purpose",
+         {
+          "path": "/World/envs/env_0/rigid/t/t_1_2/physics_material",
+          "has_physics_material_api": true,
+          "staticFriction": 2.0,
+          "dynamicFriction": 2.0,
+          "restitution": 0.0,
+          "frictionCombineMode": null,
+          "restitutionCombineMode": null
+         }
+        ]
+       },
+       {
+        "collider": "/World/envs/env_0/rigid/t/t_1_2/collision/box_stem",
+        "approx": null,
+        "resolved": [
+         "physics-purpose",
+         {
+          "path": "/World/envs/env_0/rigid/t/t_1_2/physics_material",
+          "has_physics_material_api": true,
+          "staticFriction": 2.0,
+          "dynamicFriction": 2.0,
+          "restitution": 0.0,
+          "frictionCombineMode": null,
+          "restitutionCombineMode": null
+         }
+        ]
+       }
+      ],
+      "robot0/link7": [
+       {
+        "collider": "/World/envs/env_0/robot0/link7/collisions/link7/node_STL_BINARY_",
+        "approx": "convexHull",
+        "resolved": [
+         "scene-default",
+         {
+          "all_purpose_bound": null
+         }
+        ]
+       }
+      ],
+      "robot0/link8": [
+       {
+        "collider": "/World/envs/env_0/robot0/link8/collisions/link8/node_STL_BINARY_",
+        "approx": "convexHull",
+        "resolved": [
+         "scene-default",
+         {
+          "all_purpose_bound": null
+         }
+        ]
+       }
+      ],
+      "robot1/link7": [
+       {
+        "collider": "/World/envs/env_0/robot1/link7/collisions/link7/node_STL_BINARY_",
+        "approx": "convexHull",
+        "resolved": [
+         "scene-default",
+         {
+          "all_purpose_bound": null
+         }
+        ]
+       }
+      ],
+      "robot1/link8": [
+       {
+        "collider": "/World/envs/env_0/robot1/link8/collisions/link8/node_STL_BINARY_",
+        "approx": "convexHull",
+        "resolved": [
+         "scene-default",
+         {
+          "all_purpose_bound": null
+         }
+        ]
+       }
+      ],
+      "table": [
+       {
+        "collider": "/World/envs/env_0/Table/material_0122/material_0122_0_5",
+        "approx": "convexDecomposition",
+        "resolved": [
+         "scene-default",
+         {
+          "all_purpose_bound": "/World/envs/env_0/Table/material_0122/material_0122_0_5/Material"
+         }
+        ]
+       }
+      ],
+      "ground": [
+       {
+        "collider": "/World/envs/env_0/Ground/Ground/Ground_0_6",
+        "approx": "none",
+        "resolved": [
+         "physics-purpose",
+         {
+          "path": "/World/envs/env_0/Ground/Ground/Ground_0_6/physics_material",
+          "has_physics_material_api": true,
+          "staticFriction": 1.0,
+          "dynamicFriction": 1.0,
+          "restitution": 0.0,
+          "frictionCombineMode": "multiply",
+          "restitutionCombineMode": "multiply"
+         }
+        ]
+       }
+      ]
+     },
+     "engine_objects": {
+      "t0": [
+       [
+        2.0,
+        2.0,
+        0.0
+       ],
+       [
+        2.0,
+        2.0,
+        0.0
+       ],
+       [
+        2.0,
+        2.0,
+        0.0
+       ]
+      ],
+      "t1": [
+       [
+        2.0,
+        2.0,
+        0.0
+       ],
+       [
+        2.0,
+        2.0,
+        0.0
+       ],
+       [
+        2.0,
+        2.0,
+        0.0
+       ]
+      ]
+     },
+     "engine_robots": {
+      "robot0": {
+       "max_shapes": 42,
+       "links": [
+        "base_link",
+        "link1",
+        "link2",
+        "link3",
+        "link4",
+        "link5",
+        "link6",
+        "camera_base",
+        "link7",
+        "link8",
+        "camera"
+       ],
+       "shape_materials": [
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ]
+       ]
+      },
+      "robot1": {
+       "max_shapes": 42,
+       "links": [
+        "base_link",
+        "link1",
+        "link2",
+        "link3",
+        "link4",
+        "link5",
+        "link6",
+        "camera_base",
+        "link7",
+        "link8",
+        "camera"
+       ],
+       "shape_materials": [
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ]
+       ]
+      }
+     }
+    },
+    "contacts_resting": [
+     {
+      "collider0": "/World/envs/env_0/rigid/t/t_0_1/collision/box_bar",
+      "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_5",
+      "n": 4,
+      "materials": [
+       [
+        "/World/envs/env_0/rigid/t/t_0_1/physics_material",
+        "/physicsScene/defaultMaterial"
+       ]
+      ]
+     },
+     {
+      "collider0": "/World/envs/env_0/rigid/t/t_0_1/collision/box_stem",
+      "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_5",
+      "n": 4,
+      "materials": [
+       [
+        "/World/envs/env_0/rigid/t/t_0_1/physics_material",
+        "/physicsScene/defaultMaterial"
+       ]
+      ]
+     },
+     {
+      "collider0": "/World/envs/env_0/rigid/t/t_1_2/collision/box_bar",
+      "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_5",
+      "n": 4,
+      "materials": [
+       [
+        "/World/envs/env_0/rigid/t/t_1_2/physics_material",
+        "/physicsScene/defaultMaterial"
+       ]
+      ]
+     },
+     {
+      "collider0": "/World/envs/env_0/rigid/t/t_1_2/collision/box_stem",
+      "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_5",
+      "n": 4,
+      "materials": [
+       [
+        "/World/envs/env_0/rigid/t/t_1_2/physics_material",
+        "/physicsScene/defaultMaterial"
+       ]
+      ]
+     }
+    ],
+    "slide_box": {
+     "label": "t0",
+     "slide_x_mm": 9.21,
+     "lateral_mm": 0.06,
+     "vertical_mm": 0.0,
+     "rotation_deg": 0.3,
+     "max_abs_pitch_deg": 0.002,
+     "max_abs_roll_deg": 0.001,
+     "max_tilt_deg": 0.002,
+     "final_tilt_deg": 0.0,
+     "max_com_dz_mm": -0.0,
+     "max_slide_x_mm": 9.212,
+     "final_yaw_deg": -0.281,
+     "table_contacts_min_max": [
+      8,
+      8
+     ],
+     "com_local_mm": [
+      -10.0,
+      0.0,
+      0.0
+     ],
+     "predicted_mm": {
+      "pair_0.5": 25.5,
+      "pair_1.0": 12.7
+     },
+     "predicted_time_ms": {
+      "pair_0.5": 101.94,
+      "pair_1.0": 50.97
+     },
+     "series": {
+      "dx_mm": [
+       1.804,
+       3.411,
+       4.822,
+       6.038,
+       7.056,
+       7.879,
+       8.505,
+       8.935,
+       9.169,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212,
+       9.212
+      ],
+      "dy_mm": [
+       0.002,
+       0.006,
+       0.011,
+       0.018,
+       0.026,
+       0.034,
+       0.043,
+       0.052,
+       0.059,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062,
+       0.062
+      ],
+      "dz_com_mm": [
+       -0.0,
+       0.0,
+       0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       -0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       -0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       -0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       -0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       -0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       -0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       -0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       -0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       -0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       -0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       -0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       -0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       -0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       -0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       -0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "vx_m_s": [
+       0.451,
+       0.4019,
+       0.3544,
+       0.3027,
+       0.2548,
+       0.2056,
+       0.1567,
+       0.1075,
+       0.0586,
+       0.0096,
+       -0.0,
+       0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       0.0,
+       0.0
+      ],
+      "speed_xy_m_s": [
+       0.451,
+       0.4019,
+       0.3544,
+       0.3027,
+       0.2548,
+       0.2056,
+       0.1567,
+       0.1075,
+       0.0586,
+       0.0096,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "pitch_deg": [
+       -0.0,
+       -0.0,
+       -0.001,
+       0.002,
+       -0.0,
+       0.0,
+       -0.0,
+       0.001,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       0.0
+      ],
+      "roll_deg": [
+       -0.0,
+       -0.0,
+       -0.0,
+       0.001,
+       0.0,
+       0.0,
+       -0.0,
+       0.0,
+       0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       0.0,
+       -0.0,
+       0.0
+      ],
+      "yaw_deg": [
+       -0.011,
+       -0.032,
+       -0.059,
+       -0.094,
+       -0.133,
+       -0.172,
+       -0.211,
+       -0.246,
+       -0.272,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281,
+       -0.281
+      ],
+      "yaw_rate_deg_s": [
+       -2.75,
+       -5.34,
+       -6.81,
+       -9.03,
+       -9.6,
+       -10.04,
+       -9.88,
+       -8.97,
+       -6.7,
+       -2.18,
+       -0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       -0.01,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.01,
+       -0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       -0.01,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       -0.0,
+       0.0,
+       -0.0
+      ],
+      "table_contacts": [
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8,
+       8
+      ],
+      "normal_N": [
+       0.981,
+       0.981,
+       0.951,
+       1.034,
+       0.958,
+       0.984,
+       0.979,
+       0.984,
+       0.978,
+       0.981,
+       0.981,
+       0.981,
+       0.981,
+       0.981,
+       0.981,
+       0.982,
+       0.981,
+       0.981,
+       0.981,
+       0.98,
+       0.982,
+       0.981,
+       0.981,
+       0.981,
+       0.98,
+       0.982,
+       0.981,
+       0.981,
+       0.98,
+       0.981,
+       0.98,
+       0.981,
+       0.981,
+       0.981,
+       0.981,
+       0.982,
+       0.981,
+       0.981,
+       0.98,
+       0.981,
+       0.981,
+       0.982,
+       0.981,
+       0.98,
+       0.982,
+       0.981,
+       0.981,
+       0.981,
+       0.98,
+       0.982,
+       0.981,
+       0.981,
+       0.98,
+       0.981,
+       0.982,
+       0.981,
+       0.981,
+       0.981,
+       0.981,
+       0.981,
+       0.982,
+       0.981,
+       0.981,
+       0.981,
+       0.98,
+       0.982,
+       0.981,
+       0.981,
+       0.98,
+       0.981,
+       0.982,
+       0.981,
+       0.981,
+       0.981,
+       0.981,
+       0.98,
+       0.982,
+       0.981,
+       0.981,
+       0.98,
+       0.981,
+       0.982,
+       0.981,
+       0.981,
+       0.981,
+       0.98,
+       0.982,
+       0.981,
+       0.981,
+       0.981,
+       0.98,
+       0.982,
+       0.981,
+       0.981,
+       0.981,
+       0.981,
+       0.982,
+       0.981,
+       0.981,
+       0.981
+      ]
+     }
+    },
+    "contacts_after_slide": [
+     {
+      "collider0": "/World/envs/env_0/rigid/t/t_0_1/collision/box_bar",
+      "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_5",
+      "n": 4,
+      "materials": [
+       [
+        "/World/envs/env_0/rigid/t/t_0_1/physics_material",
+        "/physicsScene/defaultMaterial"
+       ]
+      ]
+     },
+     {
+      "collider0": "/World/envs/env_0/rigid/t/t_0_1/collision/box_stem",
+      "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_5",
+      "n": 4,
+      "materials": [
+       [
+        "/World/envs/env_0/rigid/t/t_0_1/physics_material",
+        "/physicsScene/defaultMaterial"
+       ]
+      ]
+     },
+     {
+      "collider0": "/World/envs/env_0/rigid/t/t_1_2/collision/box_bar",
+      "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_5",
+      "n": 4,
+      "materials": [
+       [
+        "/World/envs/env_0/rigid/t/t_1_2/physics_material",
+        "/physicsScene/defaultMaterial"
+       ]
+      ]
+     },
+     {
+      "collider0": "/World/envs/env_0/rigid/t/t_1_2/collision/box_stem",
+      "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_5",
+      "n": 4,
+      "materials": [
+       [
+        "/World/envs/env_0/rigid/t/t_1_2/physics_material",
+        "/physicsScene/defaultMaterial"
+       ]
+      ]
+     }
+    ]
+   },
+   "wall_seconds": 9.9
+  }
+ ],
+ "render_emulation": true,
+ "order_variant": "RigidObject binds its physics material before SingleRigidPrim.__init__"
+}

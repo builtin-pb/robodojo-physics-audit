@@ -1,0 +1,11 @@
+{
+ "bottles": [
+  "L14_00022"
+ ],
+ "variants": [
+  {
+   "name": "base"
+  }
+ ],
+ "inputs": "audit/out/fix_160/witness_inputs.json"
+}

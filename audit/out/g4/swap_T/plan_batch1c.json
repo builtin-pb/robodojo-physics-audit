@@ -1,0 +1,9 @@
+[
+ {
+  "name": "g4st_cb_off14_ship",
+  "seed": 2,
+  "layouts": "0,1,6,8,9,14",
+  "procs": 1,
+  "args": "--task cover_blocks --policy script_cover_blocks_offset --evaluator v2 --contact_log --log_poses --cb_offset_mm 14,0 --physics_preset shipped"
+ }
+]

@@ -1,0 +1,2 @@
+v2l_m_script_v2|--task put_bottles_into_dustbin --layouts 0,1,2 --policy script_bottles --evaluator v2 --pickup_trace --fast_log
+v2l_m_shove_v2|--task put_bottles_into_dustbin --layouts 0,1 --policy exploit --exploit_mode shove_bottles --evaluator v2 --pickup_trace --log_poses

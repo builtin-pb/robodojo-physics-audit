@@ -1,0 +1,1681 @@
+{
+  "schema": "t1_hf_fetch_manifest_v1",
+  "hf_dataset": "RoboDojo-Benchmark/RoboDojo",
+  "hf_dataset_revision": "1127bda94f172d757386945af3eb3a6754d1a4e6",
+  "spawned_models_total": 119,
+  "present_before_fetch_count": 27,
+  "fetched_model_count": 92,
+  "fetched_file_count": 184,
+  "total_bytes": 1099117563,
+  "sha256_mismatches_vs_hf_lfs": 0,
+  "present_before_fetch": [
+    "Geometry/camera_stand/00000",
+    "Geometry/cube_cushion/00001",
+    "Geometry/cube_cushion/00002",
+    "Geometry/drawer/00000",
+    "Geometry/frame/00000",
+    "Geometry/monitor/00000",
+    "Geometry/mousemat/00000",
+    "Geometry/piggy_bank/00000",
+    "Geometry/toolbox/00000",
+    "Geometry/vertical_coin_stand/00000",
+    "Geometry/xylophone/00000",
+    "Rigid/alarm/00000",
+    "Rigid/coin/00000",
+    "Rigid/garage/00008",
+    "Rigid/hammer/00005",
+    "Rigid/keyboard/00000",
+    "Rigid/mallet/00000",
+    "Rigid/mallet_stand/00000",
+    "Rigid/mouse/00004",
+    "Rigid/number/00000",
+    "Rigid/number/00002",
+    "Rigid/number/00007",
+    "Rigid/number/00008",
+    "Rigid/pliers/00000",
+    "Rigid/t/00000",
+    "Rigid/tape_measure/00000",
+    "Rigid/wrench/00000"
+  ],
+  "fetched_models": [
+    "Geometry/key_slot/00000",
+    "Geometry/monitor/00001",
+    "Geometry/t_cushion/00000",
+    "Rigid/block/00000",
+    "Rigid/block/00001",
+    "Rigid/block/00002",
+    "Rigid/block/00003",
+    "Rigid/block/00004",
+    "Rigid/block/00005",
+    "Rigid/block/00006",
+    "Rigid/block/00007",
+    "Rigid/block/00008",
+    "Rigid/block/00009",
+    "Rigid/block/00010",
+    "Rigid/block/00011",
+    "Rigid/block/00012",
+    "Rigid/block/00013",
+    "Rigid/block/00014",
+    "Rigid/block/00015",
+    "Rigid/block/00016",
+    "Rigid/block/00017",
+    "Rigid/block/00018",
+    "Rigid/block/00019",
+    "Rigid/brick/00000",
+    "Rigid/brick/00001",
+    "Rigid/brick/00002",
+    "Rigid/broom/00000",
+    "Rigid/broom_shovel/00000",
+    "Rigid/cube/00000",
+    "Rigid/cube/00001",
+    "Rigid/cube/00002",
+    "Rigid/cube/00003",
+    "Rigid/cube/00007",
+    "Rigid/cube/00008",
+    "Rigid/cube/00009",
+    "Rigid/division/00000",
+    "Rigid/earbuds/00000",
+    "Rigid/earbuds/00001",
+    "Rigid/earbuds/00002",
+    "Rigid/equal/00000",
+    "Rigid/garage/00005",
+    "Rigid/garage/00006",
+    "Rigid/garage/00007",
+    "Rigid/garage/00011",
+    "Rigid/key/00000",
+    "Rigid/keyboard/00001",
+    "Rigid/keyboard/00002",
+    "Rigid/minus/00000",
+    "Rigid/mouse/00006",
+    "Rigid/mouse/00007",
+    "Rigid/multiplication/00000",
+    "Rigid/number/00001",
+    "Rigid/number/00003",
+    "Rigid/number/00004",
+    "Rigid/number/00005",
+    "Rigid/number/00006",
+    "Rigid/number/00009",
+    "Rigid/number/00010",
+    "Rigid/number/00011",
+    "Rigid/number/00012",
+    "Rigid/number/00013",
+    "Rigid/number/00014",
+    "Rigid/number/00015",
+    "Rigid/number/00016",
+    "Rigid/number/00017",
+    "Rigid/number/00018",
+    "Rigid/number/00019",
+    "Rigid/number/00020",
+    "Rigid/number/00021",
+    "Rigid/number/00022",
+    "Rigid/number/00023",
+    "Rigid/number/00024",
+    "Rigid/number/00025",
+    "Rigid/number/00026",
+    "Rigid/number/00027",
+    "Rigid/number/00028",
+    "Rigid/number/00029",
+    "Rigid/paper_ball/00000",
+    "Rigid/paper_ball/00001",
+    "Rigid/paper_ball/00002",
+    "Rigid/plus/00000",
+    "Rigid/small_cube/00000",
+    "Rigid/small_cube/00001",
+    "Rigid/small_cube/00002",
+    "Rigid/small_cube/00003",
+    "Rigid/small_cube/00004",
+    "Rigid/small_cube/00005",
+    "Rigid/small_cube/00006",
+    "Rigid/small_cube/00007",
+    "Rigid/small_cube/00008",
+    "Rigid/small_cube/00009",
+    "Rigid/triangular_prism/00000"
+  ],
+  "per_task_inventory": {
+    "align_blocks": {
+      "spawned_models": [
+        "Geometry/camera_stand/00000",
+        "Rigid/cube/00000",
+        "Rigid/triangular_prism/00000"
+      ],
+      "present_before_fetch": [
+        "Geometry/camera_stand/00000"
+      ],
+      "fetched_now": [
+        "Rigid/cube/00000",
+        "Rigid/triangular_prism/00000"
+      ]
+    },
+    "arrange_largest_number": {
+      "spawned_models": [
+        "Geometry/camera_stand/00000",
+        "Geometry/cube_cushion/00001",
+        "Rigid/number/00000",
+        "Rigid/number/00001",
+        "Rigid/number/00002",
+        "Rigid/number/00003",
+        "Rigid/number/00004",
+        "Rigid/number/00005",
+        "Rigid/number/00006",
+        "Rigid/number/00007",
+        "Rigid/number/00008",
+        "Rigid/number/00009",
+        "Rigid/number/00010",
+        "Rigid/number/00011",
+        "Rigid/number/00012",
+        "Rigid/number/00013",
+        "Rigid/number/00014",
+        "Rigid/number/00015",
+        "Rigid/number/00016",
+        "Rigid/number/00017",
+        "Rigid/number/00018",
+        "Rigid/number/00019",
+        "Rigid/number/00020",
+        "Rigid/number/00021",
+        "Rigid/number/00022",
+        "Rigid/number/00023",
+        "Rigid/number/00024",
+        "Rigid/number/00025",
+        "Rigid/number/00026",
+        "Rigid/number/00027",
+        "Rigid/number/00028",
+        "Rigid/number/00029"
+      ],
+      "present_before_fetch": [
+        "Geometry/camera_stand/00000",
+        "Geometry/cube_cushion/00001",
+        "Rigid/number/00000",
+        "Rigid/number/00002",
+        "Rigid/number/00007",
+        "Rigid/number/00008"
+      ],
+      "fetched_now": [
+        "Rigid/number/00001",
+        "Rigid/number/00003",
+        "Rigid/number/00004",
+        "Rigid/number/00005",
+        "Rigid/number/00006",
+        "Rigid/number/00009",
+        "Rigid/number/00010",
+        "Rigid/number/00011",
+        "Rigid/number/00012",
+        "Rigid/number/00013",
+        "Rigid/number/00014",
+        "Rigid/number/00015",
+        "Rigid/number/00016",
+        "Rigid/number/00017",
+        "Rigid/number/00018",
+        "Rigid/number/00019",
+        "Rigid/number/00020",
+        "Rigid/number/00021",
+        "Rigid/number/00022",
+        "Rigid/number/00023",
+        "Rigid/number/00024",
+        "Rigid/number/00025",
+        "Rigid/number/00026",
+        "Rigid/number/00027",
+        "Rigid/number/00028",
+        "Rigid/number/00029"
+      ]
+    },
+    "build_tower": {
+      "spawned_models": [
+        "Geometry/camera_stand/00000",
+        "Rigid/block/00000",
+        "Rigid/block/00001",
+        "Rigid/block/00002",
+        "Rigid/block/00003",
+        "Rigid/block/00004"
+      ],
+      "present_before_fetch": [
+        "Geometry/camera_stand/00000"
+      ],
+      "fetched_now": [
+        "Rigid/block/00000",
+        "Rigid/block/00001",
+        "Rigid/block/00002",
+        "Rigid/block/00003",
+        "Rigid/block/00004"
+      ]
+    },
+    "deposit_coin": {
+      "spawned_models": [
+        "Geometry/camera_stand/00000",
+        "Geometry/piggy_bank/00000",
+        "Geometry/vertical_coin_stand/00000",
+        "Rigid/coin/00000"
+      ],
+      "present_before_fetch": [
+        "Geometry/camera_stand/00000",
+        "Geometry/piggy_bank/00000",
+        "Geometry/vertical_coin_stand/00000",
+        "Rigid/coin/00000"
+      ],
+      "fetched_now": []
+    },
+    "insert_key": {
+      "spawned_models": [
+        "Geometry/camera_stand/00000",
+        "Geometry/key_slot/00000",
+        "Rigid/key/00000"
+      ],
+      "present_before_fetch": [
+        "Geometry/camera_stand/00000"
+      ],
+      "fetched_now": [
+        "Geometry/key_slot/00000",
+        "Rigid/key/00000"
+      ]
+    },
+    "organize_table": {
+      "spawned_models": [
+        "Geometry/camera_stand/00000",
+        "Geometry/cube_cushion/00002",
+        "Geometry/drawer/00000",
+        "Geometry/frame/00000",
+        "Geometry/monitor/00000",
+        "Geometry/monitor/00001",
+        "Geometry/mousemat/00000",
+        "Rigid/alarm/00000",
+        "Rigid/garage/00005",
+        "Rigid/garage/00006",
+        "Rigid/garage/00007",
+        "Rigid/garage/00008",
+        "Rigid/garage/00011",
+        "Rigid/keyboard/00000",
+        "Rigid/keyboard/00001",
+        "Rigid/keyboard/00002",
+        "Rigid/mouse/00004",
+        "Rigid/mouse/00006",
+        "Rigid/mouse/00007"
+      ],
+      "present_before_fetch": [
+        "Geometry/camera_stand/00000",
+        "Geometry/cube_cushion/00002",
+        "Geometry/drawer/00000",
+        "Geometry/frame/00000",
+        "Geometry/monitor/00000",
+        "Geometry/mousemat/00000",
+        "Rigid/alarm/00000",
+        "Rigid/garage/00008",
+        "Rigid/keyboard/00000",
+        "Rigid/mouse/00004"
+      ],
+      "fetched_now": [
+        "Geometry/monitor/00001",
+        "Rigid/garage/00005",
+        "Rigid/garage/00006",
+        "Rigid/garage/00007",
+        "Rigid/garage/00011",
+        "Rigid/keyboard/00001",
+        "Rigid/keyboard/00002",
+        "Rigid/mouse/00006",
+        "Rigid/mouse/00007"
+      ]
+    },
+    "play_Xylophone": {
+      "spawned_models": [
+        "Geometry/camera_stand/00000",
+        "Geometry/xylophone/00000",
+        "Rigid/mallet/00000",
+        "Rigid/mallet_stand/00000"
+      ],
+      "present_before_fetch": [
+        "Geometry/camera_stand/00000",
+        "Geometry/xylophone/00000",
+        "Rigid/mallet/00000",
+        "Rigid/mallet_stand/00000"
+      ],
+      "fetched_now": []
+    },
+    "push_T": {
+      "spawned_models": [
+        "Geometry/camera_stand/00000",
+        "Geometry/t_cushion/00000",
+        "Rigid/t/00000"
+      ],
+      "present_before_fetch": [
+        "Geometry/camera_stand/00000",
+        "Rigid/t/00000"
+      ],
+      "fetched_now": [
+        "Geometry/t_cushion/00000"
+      ]
+    },
+    "solve_equation": {
+      "spawned_models": [
+        "Geometry/camera_stand/00000",
+        "Geometry/cube_cushion/00001",
+        "Rigid/division/00000",
+        "Rigid/equal/00000",
+        "Rigid/minus/00000",
+        "Rigid/multiplication/00000",
+        "Rigid/number/00000",
+        "Rigid/number/00001",
+        "Rigid/number/00002",
+        "Rigid/number/00003",
+        "Rigid/number/00004",
+        "Rigid/number/00005",
+        "Rigid/number/00006",
+        "Rigid/number/00007",
+        "Rigid/number/00008",
+        "Rigid/number/00009",
+        "Rigid/number/00010",
+        "Rigid/number/00011",
+        "Rigid/number/00012",
+        "Rigid/number/00013",
+        "Rigid/number/00014",
+        "Rigid/number/00015",
+        "Rigid/number/00016",
+        "Rigid/number/00017",
+        "Rigid/number/00018",
+        "Rigid/number/00019",
+        "Rigid/number/00020",
+        "Rigid/number/00021",
+        "Rigid/number/00022",
+        "Rigid/number/00023",
+        "Rigid/number/00024",
+        "Rigid/number/00025",
+        "Rigid/number/00026",
+        "Rigid/number/00027",
+        "Rigid/number/00028",
+        "Rigid/number/00029",
+        "Rigid/plus/00000"
+      ],
+      "present_before_fetch": [
+        "Geometry/camera_stand/00000",
+        "Geometry/cube_cushion/00001",
+        "Rigid/number/00000",
+        "Rigid/number/00002",
+        "Rigid/number/00007",
+        "Rigid/number/00008"
+      ],
+      "fetched_now": [
+        "Rigid/division/00000",
+        "Rigid/equal/00000",
+        "Rigid/minus/00000",
+        "Rigid/multiplication/00000",
+        "Rigid/number/00001",
+        "Rigid/number/00003",
+        "Rigid/number/00004",
+        "Rigid/number/00005",
+        "Rigid/number/00006",
+        "Rigid/number/00009",
+        "Rigid/number/00010",
+        "Rigid/number/00011",
+        "Rigid/number/00012",
+        "Rigid/number/00013",
+        "Rigid/number/00014",
+        "Rigid/number/00015",
+        "Rigid/number/00016",
+        "Rigid/number/00017",
+        "Rigid/number/00018",
+        "Rigid/number/00019",
+        "Rigid/number/00020",
+        "Rigid/number/00021",
+        "Rigid/number/00022",
+        "Rigid/number/00023",
+        "Rigid/number/00024",
+        "Rigid/number/00025",
+        "Rigid/number/00026",
+        "Rigid/number/00027",
+        "Rigid/number/00028",
+        "Rigid/number/00029",
+        "Rigid/plus/00000"
+      ]
+    },
+    "stack_blocks": {
+      "spawned_models": [
+        "Geometry/camera_stand/00000",
+        "Rigid/block/00005",
+        "Rigid/block/00006",
+        "Rigid/block/00007",
+        "Rigid/block/00008",
+        "Rigid/block/00009",
+        "Rigid/block/00010",
+        "Rigid/block/00011",
+        "Rigid/block/00012",
+        "Rigid/block/00013",
+        "Rigid/block/00014",
+        "Rigid/block/00015",
+        "Rigid/block/00016",
+        "Rigid/block/00017",
+        "Rigid/block/00018",
+        "Rigid/block/00019"
+      ],
+      "present_before_fetch": [
+        "Geometry/camera_stand/00000"
+      ],
+      "fetched_now": [
+        "Rigid/block/00005",
+        "Rigid/block/00006",
+        "Rigid/block/00007",
+        "Rigid/block/00008",
+        "Rigid/block/00009",
+        "Rigid/block/00010",
+        "Rigid/block/00011",
+        "Rigid/block/00012",
+        "Rigid/block/00013",
+        "Rigid/block/00014",
+        "Rigid/block/00015",
+        "Rigid/block/00016",
+        "Rigid/block/00017",
+        "Rigid/block/00018",
+        "Rigid/block/00019"
+      ]
+    },
+    "stack_blocks_by_language": {
+      "spawned_models": [
+        "Geometry/camera_stand/00000",
+        "Rigid/cube/00001",
+        "Rigid/cube/00002",
+        "Rigid/cube/00003",
+        "Rigid/cube/00007",
+        "Rigid/cube/00008",
+        "Rigid/cube/00009"
+      ],
+      "present_before_fetch": [
+        "Geometry/camera_stand/00000"
+      ],
+      "fetched_now": [
+        "Rigid/cube/00001",
+        "Rigid/cube/00002",
+        "Rigid/cube/00003",
+        "Rigid/cube/00007",
+        "Rigid/cube/00008",
+        "Rigid/cube/00009"
+      ]
+    },
+    "store_tools_in_toolbox": {
+      "spawned_models": [
+        "Geometry/camera_stand/00000",
+        "Geometry/toolbox/00000",
+        "Rigid/hammer/00005",
+        "Rigid/pliers/00000",
+        "Rigid/tape_measure/00000",
+        "Rigid/wrench/00000"
+      ],
+      "present_before_fetch": [
+        "Geometry/camera_stand/00000",
+        "Geometry/toolbox/00000",
+        "Rigid/hammer/00005",
+        "Rigid/pliers/00000",
+        "Rigid/tape_measure/00000",
+        "Rigid/wrench/00000"
+      ],
+      "fetched_now": []
+    },
+    "sweep_blocks": {
+      "spawned_models": [
+        "Geometry/camera_stand/00000",
+        "Rigid/broom/00000",
+        "Rigid/broom_shovel/00000",
+        "Rigid/small_cube/00000",
+        "Rigid/small_cube/00001",
+        "Rigid/small_cube/00002",
+        "Rigid/small_cube/00003",
+        "Rigid/small_cube/00004",
+        "Rigid/small_cube/00005",
+        "Rigid/small_cube/00006",
+        "Rigid/small_cube/00007",
+        "Rigid/small_cube/00008",
+        "Rigid/small_cube/00009"
+      ],
+      "present_before_fetch": [
+        "Geometry/camera_stand/00000"
+      ],
+      "fetched_now": [
+        "Rigid/broom/00000",
+        "Rigid/broom_shovel/00000",
+        "Rigid/small_cube/00000",
+        "Rigid/small_cube/00001",
+        "Rigid/small_cube/00002",
+        "Rigid/small_cube/00003",
+        "Rigid/small_cube/00004",
+        "Rigid/small_cube/00005",
+        "Rigid/small_cube/00006",
+        "Rigid/small_cube/00007",
+        "Rigid/small_cube/00008",
+        "Rigid/small_cube/00009"
+      ]
+    },
+    "sweep_blocks_random": {
+      "spawned_models": [
+        "Geometry/camera_stand/00000",
+        "Rigid/brick/00000",
+        "Rigid/brick/00001",
+        "Rigid/brick/00002",
+        "Rigid/broom/00000",
+        "Rigid/broom_shovel/00000",
+        "Rigid/earbuds/00000",
+        "Rigid/earbuds/00001",
+        "Rigid/earbuds/00002",
+        "Rigid/paper_ball/00000",
+        "Rigid/paper_ball/00001",
+        "Rigid/paper_ball/00002"
+      ],
+      "present_before_fetch": [
+        "Geometry/camera_stand/00000"
+      ],
+      "fetched_now": [
+        "Rigid/brick/00000",
+        "Rigid/brick/00001",
+        "Rigid/brick/00002",
+        "Rigid/broom/00000",
+        "Rigid/broom_shovel/00000",
+        "Rigid/earbuds/00000",
+        "Rigid/earbuds/00001",
+        "Rigid/earbuds/00002",
+        "Rigid/paper_ball/00000",
+        "Rigid/paper_ball/00001",
+        "Rigid/paper_ball/00002"
+      ]
+    }
+  },
+  "fetched_files": [
+    {
+      "path": "Assets/Object/RoboDojo/Geometry/key_slot/00000/metadata.json",
+      "size_bytes": 4219,
+      "sha256": "b9e4a01b5764b1b60f8dabd36ecdc113ffa351692e75aca3b53b8ccc6195b343",
+      "hf_lfs_sha256": "b9e4a01b5764b1b60f8dabd36ecdc113ffa351692e75aca3b53b8ccc6195b343"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Geometry/key_slot/00000/object.usdz",
+      "size_bytes": 3597392,
+      "sha256": "ebd8a10b73ce90a8e8b3dfb5b80e2598920a5a567d1113e67149fdf1bb023c07",
+      "hf_lfs_sha256": "ebd8a10b73ce90a8e8b3dfb5b80e2598920a5a567d1113e67149fdf1bb023c07"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Geometry/monitor/00001/metadata.json",
+      "size_bytes": 3422,
+      "sha256": "5602b898059332890ec73ba0b819cd7a65c601427516eed799bde95ab5cfd042",
+      "hf_lfs_sha256": "5602b898059332890ec73ba0b819cd7a65c601427516eed799bde95ab5cfd042"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Geometry/monitor/00001/object.usdz",
+      "size_bytes": 808194,
+      "sha256": "562e1563ab4c9f5d990d33a85661623524a46423fbc0f1f87545121b486e91a8",
+      "hf_lfs_sha256": "562e1563ab4c9f5d990d33a85661623524a46423fbc0f1f87545121b486e91a8"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Geometry/t_cushion/00000/metadata.json",
+      "size_bytes": 3874,
+      "sha256": "5db39d764136c7aa8fc506e529322f5fcb1901349eeb5f6bf53d227b36215e9c",
+      "hf_lfs_sha256": "5db39d764136c7aa8fc506e529322f5fcb1901349eeb5f6bf53d227b36215e9c"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Geometry/t_cushion/00000/object.usdz",
+      "size_bytes": 8862,
+      "sha256": "4823fa3cfaf1a41cd26dd29deca0f5549da20f1211284d5d944618701a2115bf",
+      "hf_lfs_sha256": "4823fa3cfaf1a41cd26dd29deca0f5549da20f1211284d5d944618701a2115bf"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00000/metadata.json",
+      "size_bytes": 5410,
+      "sha256": "7aaee6a3f407543f6ce6232f643b242ec0be86e44f9623491eedb3bda5e64b39",
+      "hf_lfs_sha256": "7aaee6a3f407543f6ce6232f643b242ec0be86e44f9623491eedb3bda5e64b39"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00000/object.usdz",
+      "size_bytes": 131296877,
+      "sha256": "1a0d580d60766cdace95e6d02cc9c778fcfa5a4b71837838f0c56458d373ab29",
+      "hf_lfs_sha256": "1a0d580d60766cdace95e6d02cc9c778fcfa5a4b71837838f0c56458d373ab29"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00001/metadata.json",
+      "size_bytes": 5517,
+      "sha256": "7016602ec35c489a31c6282abc3b822ddee010776077c5436c751fb9bbb368e9",
+      "hf_lfs_sha256": "7016602ec35c489a31c6282abc3b822ddee010776077c5436c751fb9bbb368e9"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00001/object.usdz",
+      "size_bytes": 18375871,
+      "sha256": "9e71af43eaa1afcf63198dfc5653f11472fae47d498264b065aa269aa26be611",
+      "hf_lfs_sha256": "9e71af43eaa1afcf63198dfc5653f11472fae47d498264b065aa269aa26be611"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00002/metadata.json",
+      "size_bytes": 3916,
+      "sha256": "b5ebf53ce713dde2182bcb7c2c7e6d22f27ff9116ae7f2a0f252cddc35c16fa4",
+      "hf_lfs_sha256": "b5ebf53ce713dde2182bcb7c2c7e6d22f27ff9116ae7f2a0f252cddc35c16fa4"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00002/object.usdz",
+      "size_bytes": 20553332,
+      "sha256": "96c0efea570c1bcd97e84553e6fed475a1976a2e639f6f3eceaaabbb614fc783",
+      "hf_lfs_sha256": "96c0efea570c1bcd97e84553e6fed475a1976a2e639f6f3eceaaabbb614fc783"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00003/metadata.json",
+      "size_bytes": 3926,
+      "sha256": "d8c177ed390b74d253e0f940ecf18323a485bfb18fe19e67c795aeff25cbfb93",
+      "hf_lfs_sha256": "d8c177ed390b74d253e0f940ecf18323a485bfb18fe19e67c795aeff25cbfb93"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00003/object.usdz",
+      "size_bytes": 12948655,
+      "sha256": "1ec5a14f80f740c50f91a1bf1dce6385e8b1d00e2ecd0c659435086ae7549409",
+      "hf_lfs_sha256": "1ec5a14f80f740c50f91a1bf1dce6385e8b1d00e2ecd0c659435086ae7549409"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00004/metadata.json",
+      "size_bytes": 4544,
+      "sha256": "3ccef21becea07906c7a39b975714de01513b2b9988d0e418f332084d088df9a",
+      "hf_lfs_sha256": "3ccef21becea07906c7a39b975714de01513b2b9988d0e418f332084d088df9a"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00004/object.usdz",
+      "size_bytes": 131297010,
+      "sha256": "88e41c68186f9eeb5b4ca5926e3f0bae2d92a22b6c16b7732a64576fd65bb252",
+      "hf_lfs_sha256": "88e41c68186f9eeb5b4ca5926e3f0bae2d92a22b6c16b7732a64576fd65bb252"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00005/metadata.json",
+      "size_bytes": 4131,
+      "sha256": "297ea5c16775a98e249cd7be15a878e01f0d45a73f80dff5d6439c201f953ac8",
+      "hf_lfs_sha256": "297ea5c16775a98e249cd7be15a878e01f0d45a73f80dff5d6439c201f953ac8"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00005/object.usdz",
+      "size_bytes": 10402306,
+      "sha256": "81b22f7917231d48714e1e15eb283857e60d2b97a48286b187dcbf616dde65a1",
+      "hf_lfs_sha256": "81b22f7917231d48714e1e15eb283857e60d2b97a48286b187dcbf616dde65a1"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00006/metadata.json",
+      "size_bytes": 3992,
+      "sha256": "54b619c4aec667c45c3b67f997557e5c618a3df852eb7f5e4e723f3e473f6978",
+      "hf_lfs_sha256": "54b619c4aec667c45c3b67f997557e5c618a3df852eb7f5e4e723f3e473f6978"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00006/object.usdz",
+      "size_bytes": 10402306,
+      "sha256": "4ef81752cbaaf830dfd0e0d547f2e1f088c41adbee5833c28bf774f159675d00",
+      "hf_lfs_sha256": "4ef81752cbaaf830dfd0e0d547f2e1f088c41adbee5833c28bf774f159675d00"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00007/metadata.json",
+      "size_bytes": 4103,
+      "sha256": "ada5f57bd37be72b0b782e6e87b32f2085e4c1bca362ff4a0bda590573dd2a97",
+      "hf_lfs_sha256": "ada5f57bd37be72b0b782e6e87b32f2085e4c1bca362ff4a0bda590573dd2a97"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00007/object.usdz",
+      "size_bytes": 10402306,
+      "sha256": "91c02c87a9b47ff031514b6da6b541896faff493c78ab49d1101d410cb09248d",
+      "hf_lfs_sha256": "91c02c87a9b47ff031514b6da6b541896faff493c78ab49d1101d410cb09248d"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00008/metadata.json",
+      "size_bytes": 3937,
+      "sha256": "466a0037968e8b3585b792f7d8e4b7ad3ca1e512cc317667ac382cda62241d2b",
+      "hf_lfs_sha256": "466a0037968e8b3585b792f7d8e4b7ad3ca1e512cc317667ac382cda62241d2b"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00008/object.usdz",
+      "size_bytes": 9329025,
+      "sha256": "ba6f0da261446f22140b9faeb92fd5e30fa1557f4c6cc7b0421315ead4b71751",
+      "hf_lfs_sha256": "ba6f0da261446f22140b9faeb92fd5e30fa1557f4c6cc7b0421315ead4b71751"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00009/metadata.json",
+      "size_bytes": 3992,
+      "sha256": "22b7384bd96388fe70961f0a5d16e55d83d2a1314d42a2a919557fdbb4ce2e1e",
+      "hf_lfs_sha256": "22b7384bd96388fe70961f0a5d16e55d83d2a1314d42a2a919557fdbb4ce2e1e"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00009/object.usdz",
+      "size_bytes": 9329025,
+      "sha256": "edce904abea5428dbcc91972d3a26ac9bf6482511d962c9485d9c96ed7d1f46e",
+      "hf_lfs_sha256": "edce904abea5428dbcc91972d3a26ac9bf6482511d962c9485d9c96ed7d1f46e"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00010/metadata.json",
+      "size_bytes": 3899,
+      "sha256": "75074576af651021c6eb0cd406084718b9098981f8f8571aa42c4889aeef2265",
+      "hf_lfs_sha256": "75074576af651021c6eb0cd406084718b9098981f8f8571aa42c4889aeef2265"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00010/object.usdz",
+      "size_bytes": 9329025,
+      "sha256": "e09c8d4f5b27e7286cd033cf6535fe880baa524345421e9170e118d8bddc839f",
+      "hf_lfs_sha256": "e09c8d4f5b27e7286cd033cf6535fe880baa524345421e9170e118d8bddc839f"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00011/metadata.json",
+      "size_bytes": 3937,
+      "sha256": "f1dfcace066322825ec7c9c7de2bf412c7a13d5522f2d039ab2730945826838b",
+      "hf_lfs_sha256": "f1dfcace066322825ec7c9c7de2bf412c7a13d5522f2d039ab2730945826838b"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00011/object.usdz",
+      "size_bytes": 9120428,
+      "sha256": "d2549aa1b83d8d4a684df1244caf0bbfbe1cdbb6c12ebcb2abf0c49dee5cb922",
+      "hf_lfs_sha256": "d2549aa1b83d8d4a684df1244caf0bbfbe1cdbb6c12ebcb2abf0c49dee5cb922"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00012/metadata.json",
+      "size_bytes": 3992,
+      "sha256": "1e674058e0051fa062a05d470269681dfc03396ebf650ef7500007b0964ebb44",
+      "hf_lfs_sha256": "1e674058e0051fa062a05d470269681dfc03396ebf650ef7500007b0964ebb44"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00012/object.usdz",
+      "size_bytes": 9120428,
+      "sha256": "de1de2a3912a3a3cba5cc4d07c41205272eb958e50c4882d0fe28ea690730c6e",
+      "hf_lfs_sha256": "de1de2a3912a3a3cba5cc4d07c41205272eb958e50c4882d0fe28ea690730c6e"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00013/metadata.json",
+      "size_bytes": 3899,
+      "sha256": "b8c284e168f3d72fc21da6f926f456626024ed22bab442adcd8066b78b84ee0a",
+      "hf_lfs_sha256": "b8c284e168f3d72fc21da6f926f456626024ed22bab442adcd8066b78b84ee0a"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00013/object.usdz",
+      "size_bytes": 9120428,
+      "sha256": "24365b7b52d25ba759ba42bac44cbb8c591e22989e345b180995a1bcd371e6fa",
+      "hf_lfs_sha256": "24365b7b52d25ba759ba42bac44cbb8c591e22989e345b180995a1bcd371e6fa"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00014/metadata.json",
+      "size_bytes": 3937,
+      "sha256": "df8c771ebcba1ee533b9a5be54730b2d92a4c042499de7d9ce4dfcdd1bd30a4a",
+      "hf_lfs_sha256": "df8c771ebcba1ee533b9a5be54730b2d92a4c042499de7d9ce4dfcdd1bd30a4a"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00014/object.usdz",
+      "size_bytes": 8602857,
+      "sha256": "1d4c373f7d6656676237c45ab6b1b3343c8aeded751f87b54ac12e5d2f8a6c9c",
+      "hf_lfs_sha256": "1d4c373f7d6656676237c45ab6b1b3343c8aeded751f87b54ac12e5d2f8a6c9c"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00015/metadata.json",
+      "size_bytes": 3992,
+      "sha256": "0fb0918b2b8e889aa74f0020ea114eeb731afc8aabc771048ee3f459d53b913f",
+      "hf_lfs_sha256": "0fb0918b2b8e889aa74f0020ea114eeb731afc8aabc771048ee3f459d53b913f"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00015/object.usdz",
+      "size_bytes": 8602857,
+      "sha256": "697f736c68fd7173ca54838b9f98dc5a4424d8dc567b6019d48bae6e5e7d99b0",
+      "hf_lfs_sha256": "697f736c68fd7173ca54838b9f98dc5a4424d8dc567b6019d48bae6e5e7d99b0"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00016/metadata.json",
+      "size_bytes": 3899,
+      "sha256": "4dcddb7178357d13445300e354613236881df94e16b2e016adbbf3f8b6074859",
+      "hf_lfs_sha256": "4dcddb7178357d13445300e354613236881df94e16b2e016adbbf3f8b6074859"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00016/object.usdz",
+      "size_bytes": 8602857,
+      "sha256": "120a7719d5554e687f7f96298970c566ba3779a3d09d4fdec3c537d6aae7e94d",
+      "hf_lfs_sha256": "120a7719d5554e687f7f96298970c566ba3779a3d09d4fdec3c537d6aae7e94d"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00017/metadata.json",
+      "size_bytes": 3937,
+      "sha256": "6d3c2bbff99adf42f81b98b6293405b706a7862c1a0f5d5a155223ad91f9a9b2",
+      "hf_lfs_sha256": "6d3c2bbff99adf42f81b98b6293405b706a7862c1a0f5d5a155223ad91f9a9b2"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00017/object.usdz",
+      "size_bytes": 9402869,
+      "sha256": "0a7f51a5ee935cc031944c621147f65f32ea138f0193f81fa8908715479e1394",
+      "hf_lfs_sha256": "0a7f51a5ee935cc031944c621147f65f32ea138f0193f81fa8908715479e1394"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00018/metadata.json",
+      "size_bytes": 3992,
+      "sha256": "d2be9c9a95dcd2c3337229aef0f878fea08652ba372fa40452a9c37580991cb2",
+      "hf_lfs_sha256": "d2be9c9a95dcd2c3337229aef0f878fea08652ba372fa40452a9c37580991cb2"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00018/object.usdz",
+      "size_bytes": 9402869,
+      "sha256": "492383081d92e01aa1a760f62687bcdb45dfd9b337a7589e855e9bd619ad3233",
+      "hf_lfs_sha256": "492383081d92e01aa1a760f62687bcdb45dfd9b337a7589e855e9bd619ad3233"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00019/metadata.json",
+      "size_bytes": 3899,
+      "sha256": "cd607b0ebe8de9316c0448879b7ee07b564d0e039294bd23704491ca96350dd2",
+      "hf_lfs_sha256": "cd607b0ebe8de9316c0448879b7ee07b564d0e039294bd23704491ca96350dd2"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/block/00019/object.usdz",
+      "size_bytes": 9402869,
+      "sha256": "b27c6d47c21a07cf89280a55576769ef63418cea6108f9241271d6802e7afd9b",
+      "hf_lfs_sha256": "b27c6d47c21a07cf89280a55576769ef63418cea6108f9241271d6802e7afd9b"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/brick/00000/metadata.json",
+      "size_bytes": 3512,
+      "sha256": "889f89b703b989bfa4ef3e70173073e9a3e97aac06ce531d77ef64d8bf2c7196",
+      "hf_lfs_sha256": "889f89b703b989bfa4ef3e70173073e9a3e97aac06ce531d77ef64d8bf2c7196"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/brick/00000/object.usdz",
+      "size_bytes": 12255805,
+      "sha256": "539abd853016ba9c85d1ba2d943bd6edc208e8f0388892203bef470e36bc597a",
+      "hf_lfs_sha256": "539abd853016ba9c85d1ba2d943bd6edc208e8f0388892203bef470e36bc597a"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/brick/00001/metadata.json",
+      "size_bytes": 3498,
+      "sha256": "a5d22861b0951c9b3e85ca6b3b9db99e34800019e3abbf6363b86bb63ae6fe40",
+      "hf_lfs_sha256": "a5d22861b0951c9b3e85ca6b3b9db99e34800019e3abbf6363b86bb63ae6fe40"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/brick/00001/object.usdz",
+      "size_bytes": 23948645,
+      "sha256": "6b3af80c711765d808e0ea939b911a72ecc4c8b1d6b30cd10983cc77d9649fe2",
+      "hf_lfs_sha256": "6b3af80c711765d808e0ea939b911a72ecc4c8b1d6b30cd10983cc77d9649fe2"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/brick/00002/metadata.json",
+      "size_bytes": 3463,
+      "sha256": "cff3883f5f6d77e2287699fe2aeff1299ddebff91d69039b89ec4d097e9701e2",
+      "hf_lfs_sha256": "cff3883f5f6d77e2287699fe2aeff1299ddebff91d69039b89ec4d097e9701e2"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/brick/00002/object.usdz",
+      "size_bytes": 24337077,
+      "sha256": "cc8bd158fe4a08aaf656d66b01abab0a71a05f90348398cac872bc97e8219acd",
+      "hf_lfs_sha256": "cc8bd158fe4a08aaf656d66b01abab0a71a05f90348398cac872bc97e8219acd"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/broom/00000/metadata.json",
+      "size_bytes": 3541,
+      "sha256": "19110d42166c7839a0d7564a4782bf8fa25d0a54a92d70d7fb03c1a438ac3869",
+      "hf_lfs_sha256": "19110d42166c7839a0d7564a4782bf8fa25d0a54a92d70d7fb03c1a438ac3869"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/broom/00000/object.usdz",
+      "size_bytes": 44840357,
+      "sha256": "6066429e8f0f81efc77c3f39cd8fd142d75f9c252b29322ea47af50507c5215e",
+      "hf_lfs_sha256": "6066429e8f0f81efc77c3f39cd8fd142d75f9c252b29322ea47af50507c5215e"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/broom_shovel/00000/metadata.json",
+      "size_bytes": 5552,
+      "sha256": "786b65b1d6692913072ed03a9a1efd3d7b17f0690f48180ec603b084ce09bc30",
+      "hf_lfs_sha256": "786b65b1d6692913072ed03a9a1efd3d7b17f0690f48180ec603b084ce09bc30"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/broom_shovel/00000/object.usdz",
+      "size_bytes": 7374271,
+      "sha256": "d0a7c11437705ab739d8fbc9e580a35f754126176f77776d5ed706171b221218",
+      "hf_lfs_sha256": "d0a7c11437705ab739d8fbc9e580a35f754126176f77776d5ed706171b221218"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/cube/00000/metadata.json",
+      "size_bytes": 4372,
+      "sha256": "4a7909bedcb340743b84164cc5d9ca8c10d9cff96d3d4d7a8695a9a4c9ab591b",
+      "hf_lfs_sha256": "4a7909bedcb340743b84164cc5d9ca8c10d9cff96d3d4d7a8695a9a4c9ab591b"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/cube/00000/object.usdz",
+      "size_bytes": 6753,
+      "sha256": "a1e271a77bb8d364038845aefbebf753c04f36a7f9fd8bc0a7d589a25097d2b7",
+      "hf_lfs_sha256": "a1e271a77bb8d364038845aefbebf753c04f36a7f9fd8bc0a7d589a25097d2b7"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/cube/00001/metadata.json",
+      "size_bytes": 4372,
+      "sha256": "cc2f548f7d3cf82ba78f2b430f053e237cbbe76969b1499ca2a344b99ce479bf",
+      "hf_lfs_sha256": "cc2f548f7d3cf82ba78f2b430f053e237cbbe76969b1499ca2a344b99ce479bf"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/cube/00001/object.usdz",
+      "size_bytes": 6737,
+      "sha256": "95a555a472401952403660e99faa3b0791d523b71e28c3e923c6fc6aaf89bba4",
+      "hf_lfs_sha256": "95a555a472401952403660e99faa3b0791d523b71e28c3e923c6fc6aaf89bba4"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/cube/00002/metadata.json",
+      "size_bytes": 4372,
+      "sha256": "2d8c2afdd9ab564322ac78a34c2fbd2e4171dd5a29974907e4aa9db3046e234e",
+      "hf_lfs_sha256": "2d8c2afdd9ab564322ac78a34c2fbd2e4171dd5a29974907e4aa9db3046e234e"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/cube/00002/object.usdz",
+      "size_bytes": 6632,
+      "sha256": "d2e6b6b0a40d599b30a4dbcf84fa5081a71cbe55ae5b3c90bbe35f03d9c510b1",
+      "hf_lfs_sha256": "d2e6b6b0a40d599b30a4dbcf84fa5081a71cbe55ae5b3c90bbe35f03d9c510b1"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/cube/00003/metadata.json",
+      "size_bytes": 4373,
+      "sha256": "af8a01a59769cc6aeea06ea1d573fa1f552feb752ab789044d7f4d1f04388c4d",
+      "hf_lfs_sha256": "af8a01a59769cc6aeea06ea1d573fa1f552feb752ab789044d7f4d1f04388c4d"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/cube/00003/object.usdz",
+      "size_bytes": 6632,
+      "sha256": "66eb66bdd05680c118dc0c8996a392625c712f244735a487f323038e7ccf4640",
+      "hf_lfs_sha256": "66eb66bdd05680c118dc0c8996a392625c712f244735a487f323038e7ccf4640"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/cube/00007/metadata.json",
+      "size_bytes": 4372,
+      "sha256": "2409177e5ab816e6c4426ae558be141aa436ed468aa271dd325347d52221fed6",
+      "hf_lfs_sha256": "2409177e5ab816e6c4426ae558be141aa436ed468aa271dd325347d52221fed6"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/cube/00007/object.usdz",
+      "size_bytes": 6737,
+      "sha256": "103f29d3e13be778780c69589693cf74a32fa70c78b6807ddb197cba6c213788",
+      "hf_lfs_sha256": "103f29d3e13be778780c69589693cf74a32fa70c78b6807ddb197cba6c213788"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/cube/00008/metadata.json",
+      "size_bytes": 4372,
+      "sha256": "80794c78ac60019f4e3a700c6715baef18000e38b0602173009c384c931b2927",
+      "hf_lfs_sha256": "80794c78ac60019f4e3a700c6715baef18000e38b0602173009c384c931b2927"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/cube/00008/object.usdz",
+      "size_bytes": 6651,
+      "sha256": "f17119453bf6e1ba536a42b342f8b2dc0286eceb407d1506200e9b761ba76529",
+      "hf_lfs_sha256": "f17119453bf6e1ba536a42b342f8b2dc0286eceb407d1506200e9b761ba76529"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/cube/00009/metadata.json",
+      "size_bytes": 4373,
+      "sha256": "3c484e3ea5bfa618a1ca3f675704eed621b20c0d6ce8702a8c0d8ed57b979625",
+      "hf_lfs_sha256": "3c484e3ea5bfa618a1ca3f675704eed621b20c0d6ce8702a8c0d8ed57b979625"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/cube/00009/object.usdz",
+      "size_bytes": 6651,
+      "sha256": "af9f9ff5012aa62deea9878798d861d5409f100fae2c1a5814e7a1aadd548c2f",
+      "hf_lfs_sha256": "af9f9ff5012aa62deea9878798d861d5409f100fae2c1a5814e7a1aadd548c2f"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/division/00000/metadata.json",
+      "size_bytes": 3444,
+      "sha256": "58a98cc32eb138c3fd1ad77465742afe6132214c40d093d920dac194976eb22a",
+      "hf_lfs_sha256": "58a98cc32eb138c3fd1ad77465742afe6132214c40d093d920dac194976eb22a"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/division/00000/object.usdz",
+      "size_bytes": 99353,
+      "sha256": "807c57eadc0197794725ee7863cfc4322519cf3af23d2de3a43ea8534127e607",
+      "hf_lfs_sha256": "807c57eadc0197794725ee7863cfc4322519cf3af23d2de3a43ea8534127e607"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/earbuds/00000/metadata.json",
+      "size_bytes": 3532,
+      "sha256": "14af6ebbf383eff4e5409a94cdebe3525d6d5c9bc0fa21e7b46cc15352b675ed",
+      "hf_lfs_sha256": "14af6ebbf383eff4e5409a94cdebe3525d6d5c9bc0fa21e7b46cc15352b675ed"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/earbuds/00000/object.usdz",
+      "size_bytes": 12176102,
+      "sha256": "c1ad1d86be78c94db9da7aa8e959252645bb2b527e789bd3fdc18f7622b9f378",
+      "hf_lfs_sha256": "c1ad1d86be78c94db9da7aa8e959252645bb2b527e789bd3fdc18f7622b9f378"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/earbuds/00001/metadata.json",
+      "size_bytes": 3535,
+      "sha256": "7fbbcc47c262c82c59bb8e45ac048376274a77d80ec193e768e3af2918b270ac",
+      "hf_lfs_sha256": "7fbbcc47c262c82c59bb8e45ac048376274a77d80ec193e768e3af2918b270ac"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/earbuds/00001/object.usdz",
+      "size_bytes": 14563126,
+      "sha256": "6d4d985045a64a663235b1bcd258f539dec7542689727ecc22764eb9958e8beb",
+      "hf_lfs_sha256": "6d4d985045a64a663235b1bcd258f539dec7542689727ecc22764eb9958e8beb"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/earbuds/00002/metadata.json",
+      "size_bytes": 3544,
+      "sha256": "713f1b1d91ff656083089ab77b11129f049443e4e3afbce7207a14f94af4a063",
+      "hf_lfs_sha256": "713f1b1d91ff656083089ab77b11129f049443e4e3afbce7207a14f94af4a063"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/earbuds/00002/object.usdz",
+      "size_bytes": 8988716,
+      "sha256": "3316b62125c3d73a5d5403b7034c8987cacad6e944dc207022f4344278c5d748",
+      "hf_lfs_sha256": "3316b62125c3d73a5d5403b7034c8987cacad6e944dc207022f4344278c5d748"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/equal/00000/metadata.json",
+      "size_bytes": 3441,
+      "sha256": "c429a394b493efe22fa0ddc8f62e84075f640a004edcc6220fdc30fb04912924",
+      "hf_lfs_sha256": "c429a394b493efe22fa0ddc8f62e84075f640a004edcc6220fdc30fb04912924"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/equal/00000/object.usdz",
+      "size_bytes": 29756,
+      "sha256": "46204a963579dc4e75dc0e58aaa5a474307cbf44f37f558a9dd2b17e0fe11c87",
+      "hf_lfs_sha256": "46204a963579dc4e75dc0e58aaa5a474307cbf44f37f558a9dd2b17e0fe11c87"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/garage/00005/metadata.json",
+      "size_bytes": 3494,
+      "sha256": "dcd7f053972a67d1f5cfc523caee21937b5490a09de9d3d809971cb6936f366d",
+      "hf_lfs_sha256": "dcd7f053972a67d1f5cfc523caee21937b5490a09de9d3d809971cb6936f366d"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/garage/00005/object.usdz",
+      "size_bytes": 52730878,
+      "sha256": "4aaff456602920e5c94a7447f8b649bf4286e1573128596627c57a58390bd24f",
+      "hf_lfs_sha256": "4aaff456602920e5c94a7447f8b649bf4286e1573128596627c57a58390bd24f"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/garage/00006/metadata.json",
+      "size_bytes": 3496,
+      "sha256": "bbe0cd73347c38169b9e0946038d15347fb13ed7f085786a7de932e8d897f463",
+      "hf_lfs_sha256": "bbe0cd73347c38169b9e0946038d15347fb13ed7f085786a7de932e8d897f463"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/garage/00006/object.usdz",
+      "size_bytes": 40036618,
+      "sha256": "606618e81b8b83136b7fed4861e544124184ee6d18adb444d097f5238551e367",
+      "hf_lfs_sha256": "606618e81b8b83136b7fed4861e544124184ee6d18adb444d097f5238551e367"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/garage/00007/metadata.json",
+      "size_bytes": 3502,
+      "sha256": "ee03c2892e54421fd9ea4a5dab96ea739dffc7f5874fe9d41b533fddb61add7b",
+      "hf_lfs_sha256": "ee03c2892e54421fd9ea4a5dab96ea739dffc7f5874fe9d41b533fddb61add7b"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/garage/00007/object.usdz",
+      "size_bytes": 45292721,
+      "sha256": "f6a0b23d5a513f3c8616c473c1e6a76023c7964d687c39585957141533030955",
+      "hf_lfs_sha256": "f6a0b23d5a513f3c8616c473c1e6a76023c7964d687c39585957141533030955"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/garage/00011/metadata.json",
+      "size_bytes": 3502,
+      "sha256": "4bf0bedd086dd5ac075b60594b0b8b884645d66d043aada048056163ea6d2d23",
+      "hf_lfs_sha256": "4bf0bedd086dd5ac075b60594b0b8b884645d66d043aada048056163ea6d2d23"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/garage/00011/object.usdz",
+      "size_bytes": 41361123,
+      "sha256": "e199cb611e09b16834e273f0348439078b133d75b59fa2ccd7c637c0530ce87d",
+      "hf_lfs_sha256": "e199cb611e09b16834e273f0348439078b133d75b59fa2ccd7c637c0530ce87d"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/key/00000/metadata.json",
+      "size_bytes": 3956,
+      "sha256": "c5a6f1a996ab3672f4b60acb60cddfb0cb302bcb7090f514b31a34543c6d0d42",
+      "hf_lfs_sha256": "c5a6f1a996ab3672f4b60acb60cddfb0cb302bcb7090f514b31a34543c6d0d42"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/key/00000/object.usdz",
+      "size_bytes": 11674406,
+      "sha256": "b1f712655c6e2ad36aea7cc680841aa96d7762b63d38a9d4fd4ffc6cbe0c87ea",
+      "hf_lfs_sha256": "b1f712655c6e2ad36aea7cc680841aa96d7762b63d38a9d4fd4ffc6cbe0c87ea"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/keyboard/00001/metadata.json",
+      "size_bytes": 3414,
+      "sha256": "f2f73cc60502639894d834de46a8b7ac909e3181b437794f8ba6b63b9a47c79d",
+      "hf_lfs_sha256": "f2f73cc60502639894d834de46a8b7ac909e3181b437794f8ba6b63b9a47c79d"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/keyboard/00001/object.usdz",
+      "size_bytes": 1887396,
+      "sha256": "d73060c15531c91315be37d625e5d51de2f6179d84d321648541caeb6a6da0a2",
+      "hf_lfs_sha256": "d73060c15531c91315be37d625e5d51de2f6179d84d321648541caeb6a6da0a2"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/keyboard/00002/metadata.json",
+      "size_bytes": 3414,
+      "sha256": "5869132ae8736bdf8dd5252b84d45b437972f26c4d73148d5c269ee181820362",
+      "hf_lfs_sha256": "5869132ae8736bdf8dd5252b84d45b437972f26c4d73148d5c269ee181820362"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/keyboard/00002/object.usdz",
+      "size_bytes": 8322247,
+      "sha256": "b4f08ccd6ce4b9eda7e39f692668acc41523f6620a4fe07ed4f1d77ab61e9475",
+      "hf_lfs_sha256": "b4f08ccd6ce4b9eda7e39f692668acc41523f6620a4fe07ed4f1d77ab61e9475"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/minus/00000/metadata.json",
+      "size_bytes": 3442,
+      "sha256": "18a891ed716b5a53b99dee757353d0739015bf5a687a6c4ea4aa7069b77f6506",
+      "hf_lfs_sha256": "18a891ed716b5a53b99dee757353d0739015bf5a687a6c4ea4aa7069b77f6506"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/minus/00000/object.usdz",
+      "size_bytes": 28238,
+      "sha256": "9a62e4596f42b09edd24bf57dbcafd0fb6ac81277caf64b1be7b8ee2107fa9c7",
+      "hf_lfs_sha256": "9a62e4596f42b09edd24bf57dbcafd0fb6ac81277caf64b1be7b8ee2107fa9c7"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/mouse/00006/metadata.json",
+      "size_bytes": 3537,
+      "sha256": "fe12880e521f95541060cd5d5b27834a042a87b270f880b1d7ffdafe85b2ab89",
+      "hf_lfs_sha256": "fe12880e521f95541060cd5d5b27834a042a87b270f880b1d7ffdafe85b2ab89"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/mouse/00006/object.usdz",
+      "size_bytes": 51541263,
+      "sha256": "2d82e578e64ee75edac2f0461618976abe6d3b63fd75424de2a1cbfe2717edc7",
+      "hf_lfs_sha256": "2d82e578e64ee75edac2f0461618976abe6d3b63fd75424de2a1cbfe2717edc7"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/mouse/00007/metadata.json",
+      "size_bytes": 3520,
+      "sha256": "44b0bc23161081382d571d2e377f037e6acee6ea4649480155df73d7c311cafa",
+      "hf_lfs_sha256": "44b0bc23161081382d571d2e377f037e6acee6ea4649480155df73d7c311cafa"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/mouse/00007/object.usdz",
+      "size_bytes": 32711959,
+      "sha256": "c255f5f6c332e95969a7b45aecbb69d4724e30b42adb42c6fb2370fb65c8a659",
+      "hf_lfs_sha256": "c255f5f6c332e95969a7b45aecbb69d4724e30b42adb42c6fb2370fb65c8a659"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/multiplication/00000/metadata.json",
+      "size_bytes": 3440,
+      "sha256": "f016989e1fb3ece4d163e41f65d5b720b8bbd06d86807bc5f43e6db8eeb8b2d3",
+      "hf_lfs_sha256": "f016989e1fb3ece4d163e41f65d5b720b8bbd06d86807bc5f43e6db8eeb8b2d3"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/multiplication/00000/object.usdz",
+      "size_bytes": 31295,
+      "sha256": "a8b319b2d5385c989f6247566c308ea227e3ea9b3c491dd316468adbfdd6e0c9",
+      "hf_lfs_sha256": "a8b319b2d5385c989f6247566c308ea227e3ea9b3c491dd316468adbfdd6e0c9"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00001/metadata.json",
+      "size_bytes": 3960,
+      "sha256": "29f4f1b0cf37ec0758275ae01a4e88c8f5c0e291b23d5ef30f249f19a03e8249",
+      "hf_lfs_sha256": "29f4f1b0cf37ec0758275ae01a4e88c8f5c0e291b23d5ef30f249f19a03e8249"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00001/object.usdz",
+      "size_bytes": 4455763,
+      "sha256": "dfd6de6b011e5ab1b8d321858f9b6e2a6850a153feed53595eacdbad3a1c490e",
+      "hf_lfs_sha256": "dfd6de6b011e5ab1b8d321858f9b6e2a6850a153feed53595eacdbad3a1c490e"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00003/metadata.json",
+      "size_bytes": 3962,
+      "sha256": "7311ece545dc9c98422ee8506887c8747560a46f951e5e8c68d4265343ad411d",
+      "hf_lfs_sha256": "7311ece545dc9c98422ee8506887c8747560a46f951e5e8c68d4265343ad411d"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00003/object.usdz",
+      "size_bytes": 4514659,
+      "sha256": "7712ec64d42a7389298eb75d69241ef7b179bdec7d9b8b13c7e33bf1c9ab0ce9",
+      "hf_lfs_sha256": "7712ec64d42a7389298eb75d69241ef7b179bdec7d9b8b13c7e33bf1c9ab0ce9"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00004/metadata.json",
+      "size_bytes": 3948,
+      "sha256": "364914d85e179ed3c65b45efa673cc987b333bb5eb2bb4d5e19ed95aa7cb0a39",
+      "hf_lfs_sha256": "364914d85e179ed3c65b45efa673cc987b333bb5eb2bb4d5e19ed95aa7cb0a39"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00004/object.usdz",
+      "size_bytes": 4533818,
+      "sha256": "e4ecd263c9392dee8d40efec7fb1869e242e164a8c45034543075fe4cad0ab48",
+      "hf_lfs_sha256": "e4ecd263c9392dee8d40efec7fb1869e242e164a8c45034543075fe4cad0ab48"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00005/metadata.json",
+      "size_bytes": 3937,
+      "sha256": "b5181f9e5a315e27bfdc7e7dd11b4ec20cff1cefe7504ff5d2097f8c1f3423f8",
+      "hf_lfs_sha256": "b5181f9e5a315e27bfdc7e7dd11b4ec20cff1cefe7504ff5d2097f8c1f3423f8"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00005/object.usdz",
+      "size_bytes": 4533867,
+      "sha256": "72d173ae12d82b194ed18c3ef286e083dfc486edcad8e673885a9691de5f7345",
+      "hf_lfs_sha256": "72d173ae12d82b194ed18c3ef286e083dfc486edcad8e673885a9691de5f7345"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00006/metadata.json",
+      "size_bytes": 3957,
+      "sha256": "22c6b915179ed09d7d4c6a32f3b0bce4858cbb41cf50379399d18ea60dfcfe21",
+      "hf_lfs_sha256": "22c6b915179ed09d7d4c6a32f3b0bce4858cbb41cf50379399d18ea60dfcfe21"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00006/object.usdz",
+      "size_bytes": 4514309,
+      "sha256": "093d11ede112cc7c340c4977665d0795a011b61d6da6987f1b52890b2eb935a2",
+      "hf_lfs_sha256": "093d11ede112cc7c340c4977665d0795a011b61d6da6987f1b52890b2eb935a2"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00009/metadata.json",
+      "size_bytes": 3946,
+      "sha256": "9f05c9198c07f8fdc94caf2fc583d8ebe5ea3bd6422ffd4fbf1793a346f229b8",
+      "hf_lfs_sha256": "9f05c9198c07f8fdc94caf2fc583d8ebe5ea3bd6422ffd4fbf1793a346f229b8"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00009/object.usdz",
+      "size_bytes": 4514282,
+      "sha256": "5c608d37b9fefdd83b94c7f1b307881a451c12d5ee7973c132d444266952cf0d",
+      "hf_lfs_sha256": "5c608d37b9fefdd83b94c7f1b307881a451c12d5ee7973c132d444266952cf0d"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00010/metadata.json",
+      "size_bytes": 3939,
+      "sha256": "faf13e7ff15809eca972fe22383b65b7fc0e07d75f292c7b07cec5f693df3714",
+      "hf_lfs_sha256": "faf13e7ff15809eca972fe22383b65b7fc0e07d75f292c7b07cec5f693df3714"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00010/object.usdz",
+      "size_bytes": 4470456,
+      "sha256": "83beb975dc4cb48be01578264590772f504339d1c0eee1733fb6701a8cd51aee",
+      "hf_lfs_sha256": "83beb975dc4cb48be01578264590772f504339d1c0eee1733fb6701a8cd51aee"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00011/metadata.json",
+      "size_bytes": 3960,
+      "sha256": "29f4f1b0cf37ec0758275ae01a4e88c8f5c0e291b23d5ef30f249f19a03e8249",
+      "hf_lfs_sha256": "29f4f1b0cf37ec0758275ae01a4e88c8f5c0e291b23d5ef30f249f19a03e8249"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00011/object.usdz",
+      "size_bytes": 4455768,
+      "sha256": "f917c9a38aee19dc674278efb63e187cd494c41d8d5beed1d2d1119a91f65d4d",
+      "hf_lfs_sha256": "f917c9a38aee19dc674278efb63e187cd494c41d8d5beed1d2d1119a91f65d4d"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00012/metadata.json",
+      "size_bytes": 3971,
+      "sha256": "9f809d066f04d40e0db8dd4f648f02c302de4714927d22b2fbb434b2fde74142",
+      "hf_lfs_sha256": "9f809d066f04d40e0db8dd4f648f02c302de4714927d22b2fbb434b2fde74142"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00012/object.usdz",
+      "size_bytes": 4504591,
+      "sha256": "f6ab2f6502ef37b9840b83a35d47a1b9115a27ffd015d9553f4e298af50e9d8d",
+      "hf_lfs_sha256": "f6ab2f6502ef37b9840b83a35d47a1b9115a27ffd015d9553f4e298af50e9d8d"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00013/metadata.json",
+      "size_bytes": 3962,
+      "sha256": "7311ece545dc9c98422ee8506887c8747560a46f951e5e8c68d4265343ad411d",
+      "hf_lfs_sha256": "7311ece545dc9c98422ee8506887c8747560a46f951e5e8c68d4265343ad411d"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00013/object.usdz",
+      "size_bytes": 4514664,
+      "sha256": "2da3101769b9b985f395dfbef07b5f5cd47d937431e841b6cdecbdf76ad07c4c",
+      "hf_lfs_sha256": "2da3101769b9b985f395dfbef07b5f5cd47d937431e841b6cdecbdf76ad07c4c"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00014/metadata.json",
+      "size_bytes": 3948,
+      "sha256": "364914d85e179ed3c65b45efa673cc987b333bb5eb2bb4d5e19ed95aa7cb0a39",
+      "hf_lfs_sha256": "364914d85e179ed3c65b45efa673cc987b333bb5eb2bb4d5e19ed95aa7cb0a39"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00014/object.usdz",
+      "size_bytes": 4533823,
+      "sha256": "60808655262722b3b5adaa231ee631ada84eef5c4802eb655e33679ba436dcda",
+      "hf_lfs_sha256": "60808655262722b3b5adaa231ee631ada84eef5c4802eb655e33679ba436dcda"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00015/metadata.json",
+      "size_bytes": 3937,
+      "sha256": "b5181f9e5a315e27bfdc7e7dd11b4ec20cff1cefe7504ff5d2097f8c1f3423f8",
+      "hf_lfs_sha256": "b5181f9e5a315e27bfdc7e7dd11b4ec20cff1cefe7504ff5d2097f8c1f3423f8"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00015/object.usdz",
+      "size_bytes": 4533872,
+      "sha256": "c130052ea8faa590b6f2070b5ede29981b2c348993c286d31e5b7497dc95e006",
+      "hf_lfs_sha256": "c130052ea8faa590b6f2070b5ede29981b2c348993c286d31e5b7497dc95e006"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00016/metadata.json",
+      "size_bytes": 3957,
+      "sha256": "22c6b915179ed09d7d4c6a32f3b0bce4858cbb41cf50379399d18ea60dfcfe21",
+      "hf_lfs_sha256": "22c6b915179ed09d7d4c6a32f3b0bce4858cbb41cf50379399d18ea60dfcfe21"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00016/object.usdz",
+      "size_bytes": 4514314,
+      "sha256": "1e4482efcc4558072dac6008773eb24375c970c65f0c6ef0f701bf72ba1ed1c3",
+      "hf_lfs_sha256": "1e4482efcc4558072dac6008773eb24375c970c65f0c6ef0f701bf72ba1ed1c3"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00017/metadata.json",
+      "size_bytes": 3961,
+      "sha256": "23b8e3d5f55511f966b9f0a491cbbbf78b403b861094bc5f514910aad620c5f5",
+      "hf_lfs_sha256": "23b8e3d5f55511f966b9f0a491cbbbf78b403b861094bc5f514910aad620c5f5"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00017/object.usdz",
+      "size_bytes": 4465600,
+      "sha256": "b11404295444b118466b08cfe9ecaf57795361d67c409de34e4bb50926426b5d",
+      "hf_lfs_sha256": "b11404295444b118466b08cfe9ecaf57795361d67c409de34e4bb50926426b5d"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00018/metadata.json",
+      "size_bytes": 3932,
+      "sha256": "3e1ff58dcfbff2b9e0e69fff28c6af4b947ab3e968bdbcc06fc67e02528038da",
+      "hf_lfs_sha256": "3e1ff58dcfbff2b9e0e69fff28c6af4b947ab3e968bdbcc06fc67e02528038da"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00018/object.usdz",
+      "size_bytes": 4678778,
+      "sha256": "874c170692491a16bc0fd226495c32d034d5e50d2cc0221f5a7949e6bf953ae4",
+      "hf_lfs_sha256": "874c170692491a16bc0fd226495c32d034d5e50d2cc0221f5a7949e6bf953ae4"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00019/metadata.json",
+      "size_bytes": 3946,
+      "sha256": "9f05c9198c07f8fdc94caf2fc583d8ebe5ea3bd6422ffd4fbf1793a346f229b8",
+      "hf_lfs_sha256": "9f05c9198c07f8fdc94caf2fc583d8ebe5ea3bd6422ffd4fbf1793a346f229b8"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00019/object.usdz",
+      "size_bytes": 4514287,
+      "sha256": "e525e40c39214625ee06cb6b1dba888dd7b826f8bf74ad1d0125b6b66dd97b59",
+      "hf_lfs_sha256": "e525e40c39214625ee06cb6b1dba888dd7b826f8bf74ad1d0125b6b66dd97b59"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00020/metadata.json",
+      "size_bytes": 3939,
+      "sha256": "faf13e7ff15809eca972fe22383b65b7fc0e07d75f292c7b07cec5f693df3714",
+      "hf_lfs_sha256": "faf13e7ff15809eca972fe22383b65b7fc0e07d75f292c7b07cec5f693df3714"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00020/object.usdz",
+      "size_bytes": 4470450,
+      "sha256": "37adb0f40176680d359a23293fe4a23369234745a5b4bcfc64a812f9d22ab494",
+      "hf_lfs_sha256": "37adb0f40176680d359a23293fe4a23369234745a5b4bcfc64a812f9d22ab494"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00021/metadata.json",
+      "size_bytes": 3960,
+      "sha256": "29f4f1b0cf37ec0758275ae01a4e88c8f5c0e291b23d5ef30f249f19a03e8249",
+      "hf_lfs_sha256": "29f4f1b0cf37ec0758275ae01a4e88c8f5c0e291b23d5ef30f249f19a03e8249"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00021/object.usdz",
+      "size_bytes": 4455762,
+      "sha256": "a66e9af0aadd5f5e1086fc3720f6fa64e839b28cafcbbe2cf0202efe2db58093",
+      "hf_lfs_sha256": "a66e9af0aadd5f5e1086fc3720f6fa64e839b28cafcbbe2cf0202efe2db58093"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00022/metadata.json",
+      "size_bytes": 3971,
+      "sha256": "9f809d066f04d40e0db8dd4f648f02c302de4714927d22b2fbb434b2fde74142",
+      "hf_lfs_sha256": "9f809d066f04d40e0db8dd4f648f02c302de4714927d22b2fbb434b2fde74142"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00022/object.usdz",
+      "size_bytes": 4504585,
+      "sha256": "0bd9222ae678a02726a4dfb48c46ae209a0ac46d9803a11cc462f27da19b47be",
+      "hf_lfs_sha256": "0bd9222ae678a02726a4dfb48c46ae209a0ac46d9803a11cc462f27da19b47be"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00023/metadata.json",
+      "size_bytes": 3962,
+      "sha256": "7311ece545dc9c98422ee8506887c8747560a46f951e5e8c68d4265343ad411d",
+      "hf_lfs_sha256": "7311ece545dc9c98422ee8506887c8747560a46f951e5e8c68d4265343ad411d"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00023/object.usdz",
+      "size_bytes": 4514658,
+      "sha256": "3299429d53c2c4c032b93178ce05ecf3368238e99e7dc93cee99f38a2330ef0d",
+      "hf_lfs_sha256": "3299429d53c2c4c032b93178ce05ecf3368238e99e7dc93cee99f38a2330ef0d"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00024/metadata.json",
+      "size_bytes": 3948,
+      "sha256": "364914d85e179ed3c65b45efa673cc987b333bb5eb2bb4d5e19ed95aa7cb0a39",
+      "hf_lfs_sha256": "364914d85e179ed3c65b45efa673cc987b333bb5eb2bb4d5e19ed95aa7cb0a39"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00024/object.usdz",
+      "size_bytes": 4533817,
+      "sha256": "72f5a13abe2f379718c7575a0a9fbe1ac3bae7ea51516110af6b32388ea40a96",
+      "hf_lfs_sha256": "72f5a13abe2f379718c7575a0a9fbe1ac3bae7ea51516110af6b32388ea40a96"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00025/metadata.json",
+      "size_bytes": 3937,
+      "sha256": "b5181f9e5a315e27bfdc7e7dd11b4ec20cff1cefe7504ff5d2097f8c1f3423f8",
+      "hf_lfs_sha256": "b5181f9e5a315e27bfdc7e7dd11b4ec20cff1cefe7504ff5d2097f8c1f3423f8"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00025/object.usdz",
+      "size_bytes": 4533866,
+      "sha256": "bd4c061390719814b7c0bd95ac22beadc8742bcbe43c6c829c91435d48de5538",
+      "hf_lfs_sha256": "bd4c061390719814b7c0bd95ac22beadc8742bcbe43c6c829c91435d48de5538"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00026/metadata.json",
+      "size_bytes": 3957,
+      "sha256": "22c6b915179ed09d7d4c6a32f3b0bce4858cbb41cf50379399d18ea60dfcfe21",
+      "hf_lfs_sha256": "22c6b915179ed09d7d4c6a32f3b0bce4858cbb41cf50379399d18ea60dfcfe21"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00026/object.usdz",
+      "size_bytes": 4514380,
+      "sha256": "8e4ecf082a4b86f5b978d62a85d5ac90e4172ecabccba55d7c42f2699307d888",
+      "hf_lfs_sha256": "8e4ecf082a4b86f5b978d62a85d5ac90e4172ecabccba55d7c42f2699307d888"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00027/metadata.json",
+      "size_bytes": 3961,
+      "sha256": "23b8e3d5f55511f966b9f0a491cbbbf78b403b861094bc5f514910aad620c5f5",
+      "hf_lfs_sha256": "23b8e3d5f55511f966b9f0a491cbbbf78b403b861094bc5f514910aad620c5f5"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00027/object.usdz",
+      "size_bytes": 4465594,
+      "sha256": "c6a7bd23cff13665eaa8e9c9318b94f643246c021bde6a9d85ca7e796c35ded0",
+      "hf_lfs_sha256": "c6a7bd23cff13665eaa8e9c9318b94f643246c021bde6a9d85ca7e796c35ded0"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00028/metadata.json",
+      "size_bytes": 3932,
+      "sha256": "3e1ff58dcfbff2b9e0e69fff28c6af4b947ab3e968bdbcc06fc67e02528038da",
+      "hf_lfs_sha256": "3e1ff58dcfbff2b9e0e69fff28c6af4b947ab3e968bdbcc06fc67e02528038da"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00028/object.usdz",
+      "size_bytes": 4678772,
+      "sha256": "617de057c813708f7f559a7f10ea318999e8d0a56e441a88f3e499d03ff57d71",
+      "hf_lfs_sha256": "617de057c813708f7f559a7f10ea318999e8d0a56e441a88f3e499d03ff57d71"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00029/metadata.json",
+      "size_bytes": 3946,
+      "sha256": "9f05c9198c07f8fdc94caf2fc583d8ebe5ea3bd6422ffd4fbf1793a346f229b8",
+      "hf_lfs_sha256": "9f05c9198c07f8fdc94caf2fc583d8ebe5ea3bd6422ffd4fbf1793a346f229b8"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/number/00029/object.usdz",
+      "size_bytes": 4514281,
+      "sha256": "edae445b06d8e5a384e31c64548ba30edd3d2fe7b2213c6bb2bd18ada9d4df5b",
+      "hf_lfs_sha256": "edae445b06d8e5a384e31c64548ba30edd3d2fe7b2213c6bb2bd18ada9d4df5b"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/paper_ball/00000/metadata.json",
+      "size_bytes": 3536,
+      "sha256": "351ccce8aaa466e4059bafd61faddb3bea9fed492c5d449235d7be6b3077f850",
+      "hf_lfs_sha256": "351ccce8aaa466e4059bafd61faddb3bea9fed492c5d449235d7be6b3077f850"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/paper_ball/00000/object.usdz",
+      "size_bytes": 26844725,
+      "sha256": "7c277deb385ddab962105d29a9befc43eedb798c15c2ceef236f33d4eac536a0",
+      "hf_lfs_sha256": "7c277deb385ddab962105d29a9befc43eedb798c15c2ceef236f33d4eac536a0"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/paper_ball/00001/metadata.json",
+      "size_bytes": 3539,
+      "sha256": "8ef6b76890ce52f336f03d4f3237617f920c61d2798e1c22c8ede0f29f9ac411",
+      "hf_lfs_sha256": "8ef6b76890ce52f336f03d4f3237617f920c61d2798e1c22c8ede0f29f9ac411"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/paper_ball/00001/object.usdz",
+      "size_bytes": 17904942,
+      "sha256": "a202cf9ddc68b16e5505971ff3368a5be2b4da53a2725c038e488c2d8c449c10",
+      "hf_lfs_sha256": "a202cf9ddc68b16e5505971ff3368a5be2b4da53a2725c038e488c2d8c449c10"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/paper_ball/00002/metadata.json",
+      "size_bytes": 3533,
+      "sha256": "d2dce31e63b68792efe626c7c2ce26fafcbd7449622edaf80cd34f5cc79b7b45",
+      "hf_lfs_sha256": "d2dce31e63b68792efe626c7c2ce26fafcbd7449622edaf80cd34f5cc79b7b45"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/paper_ball/00002/object.usdz",
+      "size_bytes": 32330433,
+      "sha256": "cfca0e7a034b9abecc337c40cff3c7ea67667eb299e995254a211c29ff4ead82",
+      "hf_lfs_sha256": "cfca0e7a034b9abecc337c40cff3c7ea67667eb299e995254a211c29ff4ead82"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/plus/00000/metadata.json",
+      "size_bytes": 3432,
+      "sha256": "6cae7e8c7ad15cda5779737c954824c14f8f743693b57744ee3f752ef4ee9618",
+      "hf_lfs_sha256": "6cae7e8c7ad15cda5779737c954824c14f8f743693b57744ee3f752ef4ee9618"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/plus/00000/object.usdz",
+      "size_bytes": 30617,
+      "sha256": "5f94fef24ea8a179972c9a32445d7ec027dace0c60764f51d8a0e361aa641b62",
+      "hf_lfs_sha256": "5f94fef24ea8a179972c9a32445d7ec027dace0c60764f51d8a0e361aa641b62"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/small_cube/00000/metadata.json",
+      "size_bytes": 3596,
+      "sha256": "db49617a0da67d2e7c7faeeaaf6432b2d29c1ad5ebcb387f76d1714135062369",
+      "hf_lfs_sha256": "db49617a0da67d2e7c7faeeaaf6432b2d29c1ad5ebcb387f76d1714135062369"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/small_cube/00000/object.usdz",
+      "size_bytes": 6753,
+      "sha256": "980fed00f62b29bd1aebdb4e33be8e98fc1ad9dd89d6240c43b9e4324ecb965b",
+      "hf_lfs_sha256": "980fed00f62b29bd1aebdb4e33be8e98fc1ad9dd89d6240c43b9e4324ecb965b"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/small_cube/00001/metadata.json",
+      "size_bytes": 3596,
+      "sha256": "db49617a0da67d2e7c7faeeaaf6432b2d29c1ad5ebcb387f76d1714135062369",
+      "hf_lfs_sha256": "db49617a0da67d2e7c7faeeaaf6432b2d29c1ad5ebcb387f76d1714135062369"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/small_cube/00001/object.usdz",
+      "size_bytes": 6892,
+      "sha256": "e818a9f4fde38418eca7c4ee8171701445e4a55906d59ed7e0528f94fb560e8d",
+      "hf_lfs_sha256": "e818a9f4fde38418eca7c4ee8171701445e4a55906d59ed7e0528f94fb560e8d"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/small_cube/00002/metadata.json",
+      "size_bytes": 3596,
+      "sha256": "db49617a0da67d2e7c7faeeaaf6432b2d29c1ad5ebcb387f76d1714135062369",
+      "hf_lfs_sha256": "db49617a0da67d2e7c7faeeaaf6432b2d29c1ad5ebcb387f76d1714135062369"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/small_cube/00002/object.usdz",
+      "size_bytes": 6753,
+      "sha256": "77672283ac12f63303a554c88f3166925e14482b3b838e4467b8fe99099f3128",
+      "hf_lfs_sha256": "77672283ac12f63303a554c88f3166925e14482b3b838e4467b8fe99099f3128"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/small_cube/00003/metadata.json",
+      "size_bytes": 3596,
+      "sha256": "db49617a0da67d2e7c7faeeaaf6432b2d29c1ad5ebcb387f76d1714135062369",
+      "hf_lfs_sha256": "db49617a0da67d2e7c7faeeaaf6432b2d29c1ad5ebcb387f76d1714135062369"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/small_cube/00003/object.usdz",
+      "size_bytes": 6753,
+      "sha256": "08f91149564d115b9df17856608ea33ce72949d25194bf96bd0b33c7953d01b4",
+      "hf_lfs_sha256": "08f91149564d115b9df17856608ea33ce72949d25194bf96bd0b33c7953d01b4"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/small_cube/00004/metadata.json",
+      "size_bytes": 3596,
+      "sha256": "db49617a0da67d2e7c7faeeaaf6432b2d29c1ad5ebcb387f76d1714135062369",
+      "hf_lfs_sha256": "db49617a0da67d2e7c7faeeaaf6432b2d29c1ad5ebcb387f76d1714135062369"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/small_cube/00004/object.usdz",
+      "size_bytes": 6753,
+      "sha256": "93bbe5d5c9625077cf0be30c32118547e6cb4d2e898a3b41570e2af47f71d45a",
+      "hf_lfs_sha256": "93bbe5d5c9625077cf0be30c32118547e6cb4d2e898a3b41570e2af47f71d45a"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/small_cube/00005/metadata.json",
+      "size_bytes": 3596,
+      "sha256": "db49617a0da67d2e7c7faeeaaf6432b2d29c1ad5ebcb387f76d1714135062369",
+      "hf_lfs_sha256": "db49617a0da67d2e7c7faeeaaf6432b2d29c1ad5ebcb387f76d1714135062369"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/small_cube/00005/object.usdz",
+      "size_bytes": 6753,
+      "sha256": "3af8076f1e64c08b6c7db5dfbf8edfe47243431c566073ee927747fc63b6f3a0",
+      "hf_lfs_sha256": "3af8076f1e64c08b6c7db5dfbf8edfe47243431c566073ee927747fc63b6f3a0"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/small_cube/00006/metadata.json",
+      "size_bytes": 3596,
+      "sha256": "db49617a0da67d2e7c7faeeaaf6432b2d29c1ad5ebcb387f76d1714135062369",
+      "hf_lfs_sha256": "db49617a0da67d2e7c7faeeaaf6432b2d29c1ad5ebcb387f76d1714135062369"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/small_cube/00006/object.usdz",
+      "size_bytes": 6753,
+      "sha256": "ecbfaecabd0962eee203df08fc4efd5220db0f173a26d1bbafb991dd504e932c",
+      "hf_lfs_sha256": "ecbfaecabd0962eee203df08fc4efd5220db0f173a26d1bbafb991dd504e932c"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/small_cube/00007/metadata.json",
+      "size_bytes": 3596,
+      "sha256": "db49617a0da67d2e7c7faeeaaf6432b2d29c1ad5ebcb387f76d1714135062369",
+      "hf_lfs_sha256": "db49617a0da67d2e7c7faeeaaf6432b2d29c1ad5ebcb387f76d1714135062369"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/small_cube/00007/object.usdz",
+      "size_bytes": 6753,
+      "sha256": "5e884b3ea23bca1706aabbc53f7d6cfe66cafc57fd70ddfc5ba031d5107ec583",
+      "hf_lfs_sha256": "5e884b3ea23bca1706aabbc53f7d6cfe66cafc57fd70ddfc5ba031d5107ec583"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/small_cube/00008/metadata.json",
+      "size_bytes": 3596,
+      "sha256": "db49617a0da67d2e7c7faeeaaf6432b2d29c1ad5ebcb387f76d1714135062369",
+      "hf_lfs_sha256": "db49617a0da67d2e7c7faeeaaf6432b2d29c1ad5ebcb387f76d1714135062369"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/small_cube/00008/object.usdz",
+      "size_bytes": 6753,
+      "sha256": "1cdcd684e416609b98d160e95b412bea2c87a0d5636d94ab630d3a08cca8ee8c",
+      "hf_lfs_sha256": "1cdcd684e416609b98d160e95b412bea2c87a0d5636d94ab630d3a08cca8ee8c"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/small_cube/00009/metadata.json",
+      "size_bytes": 3596,
+      "sha256": "db49617a0da67d2e7c7faeeaaf6432b2d29c1ad5ebcb387f76d1714135062369",
+      "hf_lfs_sha256": "db49617a0da67d2e7c7faeeaaf6432b2d29c1ad5ebcb387f76d1714135062369"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/small_cube/00009/object.usdz",
+      "size_bytes": 6753,
+      "sha256": "e9184d87bad849135512ec6a506c83323fb22506a26da2425e5335355de4b570",
+      "hf_lfs_sha256": "e9184d87bad849135512ec6a506c83323fb22506a26da2425e5335355de4b570"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/triangular_prism/00000/metadata.json",
+      "size_bytes": 3487,
+      "sha256": "8d22301d321c026520732bdea211d0c46c54a2b198878297d3e9063708e1cfaf",
+      "hf_lfs_sha256": "8d22301d321c026520732bdea211d0c46c54a2b198878297d3e9063708e1cfaf"
+    },
+    {
+      "path": "Assets/Object/RoboDojo/Rigid/triangular_prism/00000/object.usdz",
+      "size_bytes": 10406394,
+      "sha256": "903f1bed9ddb0c756fb4e56b2683a26dd15f0b01eef7552240c2a3cc48fb3278",
+      "hf_lfs_sha256": "903f1bed9ddb0c756fb4e56b2683a26dd15f0b01eef7552240c2a3cc48fb3278"
+    }
+  ]
+}

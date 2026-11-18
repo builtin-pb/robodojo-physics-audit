@@ -1,0 +1,51 @@
+test_all_8070_pinned_population_layouts_validate_cleanly (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_all_8070_pinned_population_layouts_validate_cleanly) ... ok
+test_author_usd_collision_gated_behind_collision_fix_and_mock_stage (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_author_usd_collision_gated_behind_collision_fix_and_mock_stage) ... ok
+test_b4_collider_narrowing_allowance_one_sided_and_scoped (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_b4_collider_narrowing_allowance_one_sided_and_scoped) ... ok
+test_census_records_validate_cleanly (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_census_records_validate_cleanly) ... ok
+test_combine_priority_and_pair_band_violation_raise (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_combine_priority_and_pair_band_violation_raise) ... ok
+test_derived_unary_status_uses_only_checked_bands_and_wood_note3 (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_derived_unary_status_uses_only_checked_bands_and_wood_note3) ... ok
+test_docs_params_cover_blocks_and_swap_T_load_with_global_map (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_docs_params_cover_blocks_and_swap_T_load_with_global_map)
+#167: cover_blocks and swap_T load from the global docs/params with their own opt-in profiles. ... ok
+test_docs_params_gate_opt_in_fill_scope_cor_guard_and_byte_identity (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_docs_params_gate_opt_in_fill_scope_cor_guard_and_byte_identity) ... [SKIP] test_docs_params byte-identity git:753d7d7 check skipped: 'git' executable not found in PATH
+ok
+test_dormant_values_quarantined_and_default_collision_enabled_is_none (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_dormant_values_quarantined_and_default_collision_enabled_is_none) ... ok
+test_duplicate_collider_classification_generic_rules (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_duplicate_collider_classification_generic_rules) ... ok
+test_friction_ladder_summary_uses_matched_episodes_and_unknown_thresholds (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_friction_ladder_summary_uses_matched_episodes_and_unknown_thresholds)
+Review problem 6: the nominal arm's extra episodes stay out of the ladder; a missing level leaves the threshold unknown. ... ok
+test_from_config_reads_only_physics_keys_and_ignores_env_params_when_shipped (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_from_config_reads_only_physics_keys_and_ignores_env_params_when_shipped) ... ok
+test_gripper_command_step_follows_arx5_sdk (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_gripper_command_step_follows_arx5_sdk) ... ok
+test_gripper_fix_d3_table_resolver_and_actuator_split (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_gripper_fix_d3_table_resolver_and_actuator_split) ... ok
+test_load_real_73_class_table_audit_out_63 (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_load_real_73_class_table_audit_out_63) ... ok
+test_missing_asset_tasks_stays_conservative_never_skips_flag_validation (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_missing_asset_tasks_stays_conservative_never_skips_flag_validation)
+#175 re-review gap 2: removing one asset's tasks list never disables can_form_in_task validation globally. ... ok
+test_nan_and_inf_in_declaration_raise (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_nan_and_inf_in_declaration_raise) ... ok
+test_nan_in_param_table_dict_and_json_raise (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_nan_in_param_table_dict_and_json_raise) ... ok
+test_pxr_real_t1_duplicate_collider_assets_when_available (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_pxr_real_t1_duplicate_collider_assets_when_available) ... skipped 'pxr not installed in host Python; run inside container to verify real USDZ stages'
+test_readback_robot_link_pairs_formed_and_banded (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_readback_robot_link_pairs_formed_and_banded)
+#167: the realised-pair readback pairs each robot link with each static collider (the pads on the table in ... ok
+test_restitution_cooccurrence_rejects_false_flag_and_skips_disjoint_tasks (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_restitution_cooccurrence_rejects_false_flag_and_skips_disjoint_tasks)
+#175 review item 3: false can_form_in_task on a pair that meets is rejected; non-co-occurring pairs stay skipped. ... ok
+test_restitution_witness_includes_robot_link_carriers (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_restitution_witness_includes_robot_link_carriers)
+#175 re-review gap 1: task-scoped ABS assets must never suppress the robot's ABS camera link carrier. ... ok
+test_robot_limits_fix_table_resolver_and_actuators (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_robot_limits_fix_table_resolver_and_actuators) ... ok
+test_solid_upper_and_lower_density_and_hollow_shell_band_and_static_mass_raise (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_solid_upper_and_lower_density_and_hollow_shell_band_and_static_mass_raise) ... ok
+test_solver_fix_scene_settings_and_readback_check (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_solver_fix_scene_settings_and_readback_check)
+#62 `solver`: stabilization off and 4x position iterations on the scene; nothing under shipped; no table needed. ... ok
+test_static_lt_dynamic_raises_everywhere (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_static_lt_dynamic_raises_everywhere) ... ok
+test_status_defaults_to_unsourced_on_every_leaf (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_status_defaults_to_unsourced_on_every_leaf) ... ok
+test_t1_population_wiring_exact_done_invariance_and_allowances (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_t1_population_wiring_exact_done_invariance_and_allowances) ... ok
+test_t1_review175_masses_and_estimated_basis_gates (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_t1_review175_masses_and_estimated_basis_gates)
+#175 review items 1 & 2: geometry-independent brick/key masses, zero range contradictions, and estimated basis gate. ... ok
+test_unauthored_robot_keys_and_invalid_specs_rejected_with_physics_spec_error (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_unauthored_robot_keys_and_invalid_specs_rejected_with_physics_spec_error) ... ok
+test_unknown_key_in_declaration_raises (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_unknown_key_in_declaration_raises) ... ok
+test_unknown_key_in_param_table_file_and_directory_modes_raises (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_unknown_key_in_param_table_file_and_directory_modes_raises) ... ok
+test_unknown_preset_and_fix_and_cli_dormant_gate_raise (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_unknown_preset_and_fix_and_cli_dormant_gate_raise) ... ok
+test_unsourced_and_missing_table_and_per_key_opt_in (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_unsourced_and_missing_table_and_per_key_opt_in) ... ok
+test_values_split_into_materials_and_masses_for_g4 (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_values_split_into_materials_and_masses_for_g4)
+#62 review position 4: ``materials`` and ``masses`` each move one factor; together they equal ``values``. ... ok
+test_values_without_order_labelled_not_delivered_on_cpu (audit.harness.test_physics_spec_unit.TestPhysicsSpecValidation.test_values_without_order_labelled_not_delivered_on_cpu) ... ok
+
+----------------------------------------------------------------------
+Ran 36 tests in 28.311s
+
+OK (skipped=1)

@@ -1,0 +1,9 @@
+tag=gate20_shipped_v1_r2 host=della-vis2.princeton.edu slurm_job= start=2026-11-13T16:50:29-05:00
+repo_head=4c512bd56458e05d64de911172253a8bedc24120 repo_diff_sha1=da39a3ee5e6b4b0d3255bfef95601890afd80709
+eval_num=20 evaluator=v1 preset=shipped gpu=0
+index, name, driver_version, memory.used [MiB], memory.total [MiB]
+0, NVIDIA A40, 615.71.10, 2727 MiB, 46068 MiB
+1, NVIDIA A40, 615.71.10, 5069 MiB, 46068 MiB
+need_policy_mib=30500 need_sim_mib=6000 reserve_mib=2000
+free_check before=policy_server free_mib=42815 need_mib=38500 t=16:50:29
+server_ready=no s=141

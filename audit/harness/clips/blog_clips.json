@@ -1,0 +1,143 @@
+[
+ {
+  "id": "a13_frozen_nuts",
+  "sheet_label": "A13 frozen nuts (#114)",
+  "style": {
+   "font": 20,
+   "alpha": 120
+  },
+  "segments": [
+   {
+    "runs": [
+     "rp_fasten_frozen",
+     "rp_fasten_free"
+    ],
+    "cam": "fpair2",
+    "layout": "v",
+    "select": {
+     "why": [
+      "case_start"
+     ],
+     "case": "drop",
+     "key": "case_phys",
+     "from": 0,
+     "to": 0
+    },
+    "ref": {
+     "why": [
+      "case_start"
+     ],
+     "case": "drop",
+     "key": "case_phys",
+     "from": 0,
+     "to": 0
+    },
+    "repeat": 12,
+    "labels": [
+     "GPU memory capped at 2,475 MiB",
+     "Same command, no cap"
+    ],
+    "bottom": "fasten_screws, no policy acting: two of the three nuts at rest"
+   },
+   {
+    "runs": [
+     "rp_fasten_frozen",
+     "rp_fasten_free"
+    ],
+    "cam": "fpair2",
+    "layout": "v",
+    "select": {
+     "why": [
+      "step"
+     ],
+     "case": "drop",
+     "key": "case_phys",
+     "from": 2,
+     "to": 250
+    },
+    "ref": {
+     "why": [
+      "case_start"
+     ],
+     "case": "drop",
+     "key": "case_phys",
+     "from": 0,
+     "to": 0
+    },
+    "labels": [
+     "Capped at 2,475 MiB: nuts {dz_max} mm up",
+     "No cap: nuts {dz_max} mm up"
+    ],
+    "bottom": "Test: the harness sets each nut 3 cm higher and lets go   t = {t_s} s (5x slow)"
+   }
+  ],
+  "hold_last_s": 1.6,
+  "hold_bottom": "The top run's log: \"Scene state is corrupted\", 1,352 times.\nRoboDojo's result files for the two runs are byte-identical (0, fail): nothing marks the top one as broken.",
+  "max_s": 8.0,
+  "webp": {
+   "width": 960,
+   "every": 2,
+   "quality": 70
+  },
+  "poster": {
+   "frame": 73
+  }
+ },
+ {
+  "id": "a21_hovering_mallet",
+  "sheet_label": "A21 hovering mallet (#124)",
+  "style": {
+   "font": 20,
+   "alpha": 120
+  },
+  "action_log": {
+   "run": "b51_xylo"
+  },
+  "strikes_from": 15,
+  "segments": [
+   {
+    "runs": [
+     "rp_xylo"
+    ],
+    "cam": "xside",
+    "select": {
+     "why": [
+      "action"
+     ],
+     "key": "action",
+     "from": 1,
+     "to": 103
+    },
+    "top": "play_Xylophone: \"strike all xylophone keys from left to right\" (the robot's left is screen right; 6x speed)",
+    "bottom": "strikes counted {strikes}/8   mallet-xylophone contacts {xyl_contacts}"
+   },
+   {
+    "runs": [
+     "rp_xylo"
+    ],
+    "cam": "xside",
+    "select": {
+     "why": [
+      "action"
+     ],
+     "key": "action",
+     "from": 106,
+     "to": 269
+    },
+    "top": "play_Xylophone: \"strike all xylophone keys from left to right\" (the robot's left is screen right; real time)",
+    "bottom": "strikes counted {strikes}/8   head {head_mm} mm above the bars   mallet-xylophone contacts {xyl_contacts}"
+   }
+  ],
+  "hold_last_s": 0.64,
+  "hold_bottom": "Score 100: all 8 strikes counted, and the mallet never touched the xylophone",
+  "max_s": 8.0,
+  "webp": {
+   "width": 960,
+   "every": 2,
+   "quality": 70
+  },
+  "poster": {
+   "frame": 94
+  }
+ }
+]

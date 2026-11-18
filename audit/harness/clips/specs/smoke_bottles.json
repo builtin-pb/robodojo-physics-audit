@@ -1,0 +1,55 @@
+{
+ "purpose": "smoke and A1: put_bottles_into_dustbin layout 0, settled; zero policy (quits at once); one camera",
+ "cameras": [
+  {
+   "name": "bin_far",
+   "eye": [
+    -0.45,
+    0.85,
+    1.55
+   ],
+   "target": [
+    -0.42,
+    -0.15,
+    0.62
+   ],
+   "focal_mm": 16,
+   "res": [
+    960,
+    540
+   ]
+  }
+ ],
+ "windows": [],
+ "mode_sweep": [
+  {
+   "name": "default",
+   "carb": {},
+   "warmup": 10
+  },
+  {
+   "name": "rt",
+   "carb": {
+    "/rtx/rendermode": "RaytracedLighting"
+   },
+   "warmup": 10
+  },
+  {
+   "name": "pt",
+   "carb": {
+    "/rtx/rendermode": "PathTracing",
+    "/rtx/pathtracing/spp": 16,
+    "/rtx/pathtracing/totalSpp": 64,
+    "/rtx/pathtracing/optixDenoiser/enabled": true
+   },
+   "warmup": 6
+  },
+  {
+   "name": "rt2",
+   "carb": {
+    "/rtx/rendermode": "RealTimePathTracing"
+   },
+   "warmup": 10
+  }
+ ]
+}

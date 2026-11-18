@@ -1,0 +1,44 @@
+{
+ "purpose": "D3 cover_blocks L0 readback (red cube given 0.5 m/s along +x), shipped or --order_variant; every physics step",
+ "cameras": [
+  {
+   "name": "cube",
+   "eye": [
+    -0.17,
+    0.1,
+    0.82
+   ],
+   "target": [
+    -0.19,
+    -0.13,
+    0.79
+   ],
+   "focal_mm": 50,
+   "res": [
+    960,
+    540
+   ]
+  }
+ ],
+ "windows": [
+  {
+   "case": null,
+   "unit": "step",
+   "from": 0,
+   "to": 140,
+   "stride": 1
+  }
+ ],
+ "mode_sweep": [
+  {
+   "name": "pt",
+   "carb": {
+    "/rtx/rendermode": "PathTracing",
+    "/rtx/pathtracing/spp": 16,
+    "/rtx/pathtracing/totalSpp": 64,
+    "/rtx/pathtracing/optixDenoiser/enabled": true
+   },
+   "warmup": 6
+  }
+ ]
+}

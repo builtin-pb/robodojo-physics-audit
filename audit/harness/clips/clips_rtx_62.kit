@@ -1,0 +1,81 @@
+# Lean RTX Kit experience for the blog clips (#106 item 5) on Isaac Sim 6.2.0.1 (Kit 110.4.0).
+# The full kit (robodojo_full_rtx_62.kit: isaacsim.exp.base, rtx.spg, MDL warm-up) stalled at startup and died with
+# "Out of resource descriptors" when a co-tenant left about 2.4 GB free on della-vis2's A40s (November 13). This kit is
+# robodojo_min_rtx_62.kit's extension set (which started and rendered in that budget) with the physics settings block of
+# robodojo_physics_only.kit, the kit of the 5.1 harness runs the clips are matched against. Settings that only affect
+# rendering are declared here; none of them is a physics setting.
+
+[package]
+title = "RoboDojo clips RTX 6.2.0.1 (lean)"
+version = "6.2.0"
+
+[dependencies]
+"omni.isaac.ml_archive" = {}
+"isaacsim.core.api" = {}
+"isaacsim.core.cloner" = {}
+"isaacsim.core.prims" = {}
+"isaacsim.core.simulation_manager" = {}
+"isaacsim.core.utils" = {}
+"isaacsim.core.version" = {}
+"isaacsim.replicator.behavior" = {}
+"isaacsim.sensors.camera" = {}
+"omni.physx" = {}
+"omni.physx.bundle" = {}
+"omni.physx.tensors" = {}
+"omni.physics.stageupdate" = {}
+"omni.kit.primitive.mesh" = {}
+"omni.warp.core" = {}
+"omni.hydra.rtx" = {}
+"omni.kit.viewport.rtx" = {}
+"omni.kit.material.library" = {}
+"omni.replicator.core" = {}
+"omni.syntheticdata" = {}
+
+[settings.app]
+name = "Isaac-Sim Python Clips RTX 6.2"
+version = "6.2.0"
+settings.persistent = false
+settings.fabricDefaultStageFrameHistoryCount = 3
+enableDeveloperWarnings = false
+player.useFixedTimeStepping = true
+vulkan = true
+asyncRendering = false
+asyncRenderingLowLatency = false
+runLoops.main.rateLimitFrequency = 120
+
+[settings.app.exts.folders]
+"++" = ["/isaac-sim/apps", "/isaac-sim/exts", "/isaac-sim/extscache", "/isaac-sim/extsUser", "/isaac-sim/extsDeprecated", "/isaac-sim/extsPhysics"]
+
+[settings]
+renderer.activeGpu = 1
+renderer.multiGpu.enabled = false
+renderer.multiGpu.maxGpuCount = 1
+renderer.gpuEnumeration.glInterop.enabled = false
+exts."omni.kit.renderer.core".present.enabled = false
+exts."omni.renderer.core".present.enabled = false
+omni.replicator.asyncRendering = false
+app.updateOrder.checkForHydraRenderComplete = 1000
+app.renderer.waitIdle = true
+app.hydraEngine.waitIdle = true
+rtx-transient.dlssg.enabled = false
+physics.visualizationDisplayJoints = false
+physics.visualizationSimulationOutput = false
+physics.resetOnStop = true
+persistent.app.primCreation.DefaultXformOpOrder = "xformOp:translate, xformOp:orient, xformOp:scale"
+persistent.app.primCreation.DefaultXformOpType = "Scale, Orient, Translate"
+rtx.hydra.mdlMaterialWarmup = false
+
+[settings.physics]
+autoPopupSimulationOutputWindow = false
+updateToUsd = false
+updateVelocitiesToUsd = false
+updateParticlesToUsd = false
+updateForceSensorsToUsd = false
+outputVelocitiesLocalSpace = false
+useFastCache = false
+visualizationDisplayJoints = false
+fabricUpdateTransformations = false
+fabricUpdateVelocities = false
+fabricUpdateForceSensors = false
+fabricUpdateJointStates = false
+fabricUseGPUInterop = true

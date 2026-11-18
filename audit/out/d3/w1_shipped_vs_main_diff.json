@@ -1,0 +1,44 @@
+{
+ "main_result_sha256": "e4a2d43c12c6caf42f7c5dbed6b4d7efd873548257f0f86e6acfdbf6c020b659",
+ "shipped_result_sha256": "8d49f7e1dfbca2fff058fc0d6230e0f885965d805735f12fef769af8574dfdd9",
+ "all_physics_and_trace_identical": true,
+ "physics_diff_count": 0,
+ "physics_diffs": [],
+ "non_physics_metadata_timing_diffs": [
+  {
+   "path": ".namespace_shadowing_before_pin.env[1][0]",
+   "main": "/scratch/<user>/isaac/work/gripper-d3/main/env",
+   "shipped": "/scratch/<user>/isaac/work/gripper-d3/head/env"
+  },
+  {
+   "path": ".namespace_shadowing_before_pin.task[1][0]",
+   "main": "/scratch/<user>/isaac/work/gripper-d3/main/task",
+   "shipped": "/scratch/<user>/isaac/work/gripper-d3/head/task"
+  },
+  {
+   "path": ".runs[0].episode_seconds",
+   "main": 53.1,
+   "shipped": 53.4
+  },
+  {
+   "path": ".runs[0].steps_per_second",
+   "main": 133.8,
+   "shipped": 133.0
+  },
+  {
+   "path": ".runs[0].wall_seconds",
+   "main": 57.7,
+   "shipped": 57.9
+  },
+  {
+   "path": ".versions.repo_head",
+   "main": "8dbcd1db147b5aee5b617cc45021466b55d4f9b5",
+   "shipped": "f36bc74f7daa53004ddf858129509d39015fc31e"
+  }
+ ],
+ "metadata_patterns": [
+  "^\\.namespace_shadowing_before_pin\\.",
+  "\\.(episode_seconds|steps_per_second|wall_seconds|wall_s|elapsed_s|wall_clock_s)$",
+  "^\\.versions\\.(repo_head|repo_diff_sha1)$"
+ ]
+}

@@ -1,0 +1,47 @@
+{
+  "task": "put_bottles_into_dustbin",
+  "layout": 0,
+  "policy": "readback",
+  "main_base_commit": "84d0ad73381edb85bfbd89f96a0a9e2ac3139a0a",
+  "main_result_sha256": "c6bf0d7da955b9121ec516216992c2e56280bfcecb7645b7ab3e3ed8326d7ca1",
+  "shipped_result_sha256": "bf93a3d63898bc66697aa10a07bd87a23570f36cec2ae2f00ddc7f048cf0875e",
+  "all_physics_and_trace_identical": true,
+  "physics_diff_count": 0,
+  "non_physics_metadata_timing_diffs": [
+    {
+      "path": ".namespace_shadowing_before_pin.env[1][0]",
+      "main": "/scratch/<user>/project/robodojo/tmp/d2pr2_work/main_84d0ad7/env",
+      "shipped": "/scratch/<user>/project/robodojo/wt-62b/env"
+    },
+    {
+      "path": ".namespace_shadowing_before_pin.task[1][0]",
+      "main": "/scratch/<user>/project/robodojo/tmp/d2pr2_work/main_84d0ad7/task",
+      "shipped": "/scratch/<user>/project/robodojo/wt-62b/task"
+    },
+    {
+      "path": ".runs[0].episode_seconds",
+      "main": 52.5,
+      "shipped": 53.1
+    },
+    {
+      "path": ".runs[0].steps_per_second",
+      "main": 135.3,
+      "shipped": 133.8
+    },
+    {
+      "path": ".runs[0].wall_seconds",
+      "main": 57.1,
+      "shipped": 57.7
+    },
+    {
+      "path": ".versions.repo_diff_sha1",
+      "main": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "shipped": "225b56aa1be26b0ef3a0c2aa74989e46cdee4da1"
+    },
+    {
+      "path": ".versions.repo_head",
+      "main": "",
+      "shipped": "84d0ad73381edb85bfbd89f96a0a9e2ac3139a0a"
+    }
+  ]
+}

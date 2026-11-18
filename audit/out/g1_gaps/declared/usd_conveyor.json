@@ -1,0 +1,402 @@
+[
+ {
+  "path": "/scratch/<user>/isaac/robodojo/Assets/Object/RoboDojo/Dynamic/conveyor/00000/object.usdz",
+  "metersPerUnit": 1.0,
+  "upAxis": "Z",
+  "defaultPrim": "/World",
+  "layers": [
+   "anon:0x14398f0:object-session.usda",
+   "object.usdz"
+  ],
+  "prims": [
+   {
+    "path": "/World/ConveyorTrack/Physics_materials/ConveyorBelt_Mat",
+    "type": "Material",
+    "apis": [
+     "PhysicsMaterialAPI"
+    ],
+    "attrs": {
+     "physics:dynamicFriction": {
+      "v": 0.8999999761581421,
+      "layer": "physics_material.usd"
+     },
+     "physics:staticFriction": {
+      "v": 0.8999999761581421,
+      "layer": "physics_material.usd"
+     },
+     "physxMaterial:compliantContactStiffness": {
+      "v": 0.0,
+      "layer": "physics_material.usd"
+     },
+     "physxMaterial:frictionCombineMode": {
+      "v": "max",
+      "layer": "physics_material.usd"
+     }
+    }
+   },
+   {
+    "path": "/World/ConveyorTrack/Physics_materials/ConveyorRoller_Mat",
+    "type": "Material",
+    "apis": [
+     "PhysicsMaterialAPI"
+    ],
+    "attrs": {
+     "physics:dynamicFriction": {
+      "v": 0.4000000059604645,
+      "layer": "physics_material.usd"
+     },
+     "physics:restitution": {
+      "v": 0.0,
+      "layer": "physics_material.usd"
+     },
+     "physics:staticFriction": {
+      "v": 0.4000000059604645,
+      "layer": "physics_material.usd"
+     },
+     "physxMaterial:compliantContactDamping": {
+      "v": 0.0,
+      "layer": "physics_material.usd"
+     },
+     "physxMaterial:compliantContactStiffness": {
+      "v": 0.0,
+      "layer": "physics_material.usd"
+     },
+     "physxMaterial:frictionCombineMode": {
+      "v": "average",
+      "layer": "physics_material.usd"
+     }
+    }
+   },
+   {
+    "path": "/World/ConveyorTrack/SM_ConveyorBelt_A09_02",
+    "type": "Mesh",
+    "apis": [
+     "ShadowAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "sdf",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "ConveyorBelt_A09.usd"
+     },
+     "physxCollision:contactOffset": {
+      "v": 9.999999747378752e-05,
+      "layer": "object.usdz"
+     },
+     "physxCollision:restOffset": {
+      "v": 9.999999747378752e-05,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxSDFMeshCollision:sdfMargin": {
+      "v": 0.0,
+      "layer": "object.usdz"
+     },
+     "physxTriangleMeshSimplificationCollision:metric": {
+      "v": 0.4000000059604645,
+      "layer": "ConveyorBelt_A09.usd"
+     }
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/World/ConveyorTrack/Belt",
+    "type": "Xform",
+    "apis": [
+     "PhysicsRigidBodyAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexHull",
+      "layer": "ConveyorBelt_A09.usd"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "ConveyorBelt_A09.usd"
+     },
+     "physics:kinematicEnabled": {
+      "v": true,
+      "layer": "ConveyorBelt_A09.usd"
+     },
+     "physics:rigidBodyEnabled": {
+      "v": true,
+      "layer": "ConveyorBelt_A09.usd"
+     },
+     "physxSurfaceVelocity:surfaceVelocity": {
+      "v": [
+       -0.10000000149011612,
+       -0.0,
+       -0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physxSurfaceVelocity:surfaceVelocityEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "physics",
+     "material": "/World/Looks/Aluminum_Anodized_Black"
+    },
+    "world_t": [
+     -1.965605,
+     -2e-06,
+     0.704404
+    ]
+   },
+   {
+    "path": "/World/Cube",
+    "type": "Mesh",
+    "apis": [
+     "PhysicsRigidBodyAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexHull",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physics:kinematicEnabled": {
+      "v": false,
+      "layer": "object.usdz"
+     },
+     "physics:rigidBodyEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "world_t": [
+     -3.821783,
+     0.0,
+     1.302865
+    ]
+   }
+  ],
+  "n_colliders": 3,
+  "collider_approximations": {
+   "sdf": 1,
+   "convexHull": 2
+  }
+ },
+ {
+  "path": "/scratch/<user>/isaac/robodojo/Assets/Object/RoboDojo/Dynamic/conveyor/00001/object.usdz",
+  "metersPerUnit": 1.0,
+  "upAxis": "Z",
+  "defaultPrim": "/World",
+  "layers": [
+   "anon:0x14d730045bf0:object-session.usda",
+   "object.usdz"
+  ],
+  "prims": [
+   {
+    "path": "/World/ConveyorTrack/Physics_materials/ConveyorBelt_Mat",
+    "type": "Material",
+    "apis": [
+     "PhysicsMaterialAPI"
+    ],
+    "attrs": {
+     "physics:dynamicFriction": {
+      "v": 0.8999999761581421,
+      "layer": "physics_material.usd"
+     },
+     "physics:staticFriction": {
+      "v": 0.8999999761581421,
+      "layer": "physics_material.usd"
+     },
+     "physxMaterial:compliantContactStiffness": {
+      "v": 0.0,
+      "layer": "physics_material.usd"
+     },
+     "physxMaterial:frictionCombineMode": {
+      "v": "max",
+      "layer": "physics_material.usd"
+     }
+    }
+   },
+   {
+    "path": "/World/ConveyorTrack/Physics_materials/ConveyorRoller_Mat",
+    "type": "Material",
+    "apis": [
+     "PhysicsMaterialAPI"
+    ],
+    "attrs": {
+     "physics:dynamicFriction": {
+      "v": 0.4000000059604645,
+      "layer": "physics_material.usd"
+     },
+     "physics:restitution": {
+      "v": 0.0,
+      "layer": "physics_material.usd"
+     },
+     "physics:staticFriction": {
+      "v": 0.4000000059604645,
+      "layer": "physics_material.usd"
+     },
+     "physxMaterial:compliantContactDamping": {
+      "v": 0.0,
+      "layer": "physics_material.usd"
+     },
+     "physxMaterial:compliantContactStiffness": {
+      "v": 0.0,
+      "layer": "physics_material.usd"
+     },
+     "physxMaterial:frictionCombineMode": {
+      "v": "average",
+      "layer": "physics_material.usd"
+     }
+    }
+   },
+   {
+    "path": "/World/ConveyorTrack/SM_ConveyorBelt_A09_02",
+    "type": "Mesh",
+    "apis": [
+     "ShadowAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "sdf",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "ConveyorBelt_A09.usd"
+     },
+     "physxCollision:contactOffset": {
+      "v": 9.999999747378752e-05,
+      "layer": "object.usdz"
+     },
+     "physxCollision:restOffset": {
+      "v": 9.999999747378752e-05,
+      "layer": "object.usdz"
+     },
+     "physxConvexDecompositionCollision:shrinkWrap": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physxSDFMeshCollision:sdfMargin": {
+      "v": 0.0,
+      "layer": "object.usdz"
+     },
+     "physxTriangleMeshSimplificationCollision:metric": {
+      "v": 0.4000000059604645,
+      "layer": "ConveyorBelt_A09.usd"
+     }
+    },
+    "world_t": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "path": "/World/ConveyorTrack/Belt",
+    "type": "Xform",
+    "apis": [
+     "PhysicsRigidBodyAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI",
+     "MaterialBindingAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexHull",
+      "layer": "ConveyorBelt_A09.usd"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "ConveyorBelt_A09.usd"
+     },
+     "physics:kinematicEnabled": {
+      "v": true,
+      "layer": "ConveyorBelt_A09.usd"
+     },
+     "physics:rigidBodyEnabled": {
+      "v": true,
+      "layer": "ConveyorBelt_A09.usd"
+     },
+     "physxSurfaceVelocity:surfaceVelocity": {
+      "v": [
+       -0.10000000149011612,
+       -0.0,
+       -0.0
+      ],
+      "layer": "object.usdz"
+     },
+     "physxSurfaceVelocity:surfaceVelocityEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "physics_binding": {
+     "purpose": "physics",
+     "material": "/World/Looks/Aluminum_Anodized_Black"
+    },
+    "world_t": [
+     -1.965605,
+     -2e-06,
+     0.704404
+    ]
+   },
+   {
+    "path": "/World/Cube",
+    "type": "Mesh",
+    "apis": [
+     "PhysicsRigidBodyAPI",
+     "PhysicsCollisionAPI",
+     "PhysicsMeshCollisionAPI"
+    ],
+    "attrs": {
+     "physics:approximation": {
+      "v": "convexHull",
+      "layer": "object.usdz"
+     },
+     "physics:collisionEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     },
+     "physics:kinematicEnabled": {
+      "v": false,
+      "layer": "object.usdz"
+     },
+     "physics:rigidBodyEnabled": {
+      "v": true,
+      "layer": "object.usdz"
+     }
+    },
+    "world_t": [
+     -3.821783,
+     0.0,
+     1.302865
+    ]
+   }
+  ],
+  "n_colliders": 3,
+  "collider_approximations": {
+   "sdf": 1,
+   "convexHull": 2
+  }
+ }
+]

@@ -1,0 +1,121 @@
+[
+ {
+  "name": "g4st_par_sT_ship",
+  "seed": 0,
+  "layouts": "0",
+  "procs": 1,
+  "args": "--task swap_T --policy script_swap_T --evaluator v2 --physics_preset shipped"
+ },
+ {
+  "name": "g4st_par_sT_ship_log",
+  "seed": 0,
+  "layouts": "0",
+  "procs": 1,
+  "args": "--task swap_T --policy script_swap_T --evaluator v2 --physics_preset shipped --contact_log"
+ },
+ {
+  "name": "g4st_par_sT_corr",
+  "seed": 0,
+  "layouts": "0",
+  "procs": 1,
+  "args": "--task swap_T --policy script_swap_T --evaluator v2 --physics_preset corrected --physics_params $W/wt-g4st/docs/params --physics_scenario_opt_in swap_T_primary"
+ },
+ {
+  "name": "g4st_par_sT_corr_log",
+  "seed": 0,
+  "layouts": "0",
+  "procs": 1,
+  "args": "--task swap_T --policy script_swap_T --evaluator v2 --physics_preset corrected --physics_params $W/wt-g4st/docs/params --physics_scenario_opt_in swap_T_primary --contact_log"
+ },
+ {
+  "name": "g4st_par_cb_ship",
+  "seed": 0,
+  "layouts": "0",
+  "procs": 1,
+  "args": "--task cover_blocks --policy script_cover_blocks --evaluator v2 --physics_preset shipped"
+ },
+ {
+  "name": "g4st_par_cb_ship_log",
+  "seed": 0,
+  "layouts": "0",
+  "procs": 1,
+  "args": "--task cover_blocks --policy script_cover_blocks --evaluator v2 --physics_preset shipped --contact_log"
+ },
+ {
+  "name": "g4st_par_cb_off0",
+  "seed": 0,
+  "layouts": "0",
+  "procs": 1,
+  "args": "--task cover_blocks --policy script_cover_blocks_offset --cb_offset_mm 0,0 --evaluator v2 --physics_preset shipped"
+ },
+ {
+  "name": "g4st_rb_sT_corr",
+  "seed": 2,
+  "layouts": "0",
+  "procs": 1,
+  "args": "--task swap_T --policy spec_readback --assert_readback --canary_contacts --physics_preset corrected --physics_params $W/wt-g4st/docs/params --physics_scenario_opt_in swap_T_primary"
+ },
+ {
+  "name": "g4st_rb_sT_ship",
+  "seed": 2,
+  "layouts": "0",
+  "procs": 1,
+  "args": "--task swap_T --policy spec_readback --assert_readback --physics_preset shipped"
+ },
+ {
+  "name": "g4st_rb_cb_corr",
+  "seed": 2,
+  "layouts": "0",
+  "procs": 1,
+  "args": "--task cover_blocks --policy spec_readback --assert_readback --canary_contacts --physics_preset corrected --physics_params $W/wt-g4st/docs/params --physics_scenario_opt_in cover_blocks_primary"
+ },
+ {
+  "name": "g4st_rb_cb_ship",
+  "seed": 2,
+  "layouts": "0",
+  "procs": 1,
+  "args": "--task cover_blocks --policy spec_readback --assert_readback --physics_preset shipped"
+ },
+ {
+  "name": "g4st_rb_cell_PL_lo",
+  "seed": 2,
+  "layouts": "0",
+  "procs": 1,
+  "args": "--task swap_T --policy spec_readback --canary_contacts --physics_preset corrected --physics_params $W/wt-g4st/docs/params --physics_scenario_opt_in swap_T_primary --class_friction 'pad_hard=0.194329,0.156786;table_laminate=0.105671,0.083214;abs_toy_plastic=0.560756,0.478079'"
+ },
+ {
+  "name": "g4st_rb_cell_PL_hi",
+  "seed": 2,
+  "layouts": "0",
+  "procs": 1,
+  "args": "--task swap_T --policy spec_readback --canary_contacts --physics_preset corrected --physics_params $W/wt-g4st/docs/params --physics_scenario_opt_in swap_T_primary --class_friction 'pad_hard=0.544329,0.436786;table_laminate=0.455671,0.363214;abs_toy_plastic=0.210756,0.198079'"
+ },
+ {
+  "name": "g4st_rb_cell_PA_lo",
+  "seed": 2,
+  "layouts": "0",
+  "procs": 1,
+  "args": "--task swap_T --policy spec_readback --canary_contacts --physics_preset corrected --physics_params $W/wt-g4st/docs/params --physics_scenario_opt_in swap_T_primary --class_friction 'pad_hard=0.256481,0.175847;table_laminate=0.322908,0.322894;abs_toy_plastic=0.343519,0.238399'"
+ },
+ {
+  "name": "g4st_rb_cell_PA_hi",
+  "seed": 2,
+  "layouts": "0",
+  "procs": 1,
+  "args": "--task swap_T --policy spec_readback --canary_contacts --physics_preset corrected --physics_params $W/wt-g4st/docs/params --physics_scenario_opt_in swap_T_primary --class_friction 'pad_hard=0.978939,0.751291'"
+ },
+ {
+  "name": "g4st_rb_cell_AL_lo",
+  "seed": 2,
+  "layouts": "0",
+  "procs": 1,
+  "args": "--task swap_T --policy spec_readback --canary_contacts --physics_preset corrected --physics_params $W/wt-g4st/docs/params --physics_scenario_opt_in swap_T_primary --class_friction 'pad_hard=0.517237,0.446804;table_laminate=0.062152,0.051938;abs_toy_plastic=0.237848,0.188062'"
+ },
+ {
+  "name": "g4st_rb_cell_AL_hi",
+  "seed": 2,
+  "layouts": "0",
+  "procs": 1,
+  "args": "--task swap_T --policy spec_readback --canary_contacts --physics_preset corrected --physics_params $W/wt-g4st/docs/params --physics_scenario_opt_in swap_T_primary --class_friction 'pad_hard=0.167237,0.166803;table_laminate=0.412153,0.331938;abs_toy_plastic=0.587848,0.468062'"
+ }
+]

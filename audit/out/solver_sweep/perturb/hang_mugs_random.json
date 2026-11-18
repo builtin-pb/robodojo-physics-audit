@@ -1,0 +1,23 @@
+[
+ {
+  "cell_name": "hang_mugs_random__perturb",
+  "layout": 0,
+  "overrides": {
+   "spawn_lift": {
+    "stems": "*",
+    "dz_m": 1e-06
+   },
+   "slide_target": {
+    "label": "audio_2_14",
+    "inst": "audio_2_14",
+    "labelled": false,
+    "stem": "audio_2",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.994452,
+     0.105194
+    ]
+   }
+  }
+ }
+]

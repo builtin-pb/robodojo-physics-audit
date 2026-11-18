@@ -1,0 +1,108 @@
+[
+ {
+  "cell_name": "arrange_largest_number__shipped",
+  "layout": 0,
+  "overrides": {
+   "slide_target": {
+    "label": "digit_0",
+    "inst": "number_2_1",
+    "labelled": true,
+    "stem": "number_2",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.587077,
+     0.809531
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "arrange_largest_number__dt2",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.002,
+   "slide_target": {
+    "label": "digit_0",
+    "inst": "number_2_1",
+    "labelled": true,
+    "stem": "number_2",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.587077,
+     0.809531
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "arrange_largest_number__dt1",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.001,
+   "slide_target": {
+    "label": "digit_0",
+    "inst": "number_2_1",
+    "labelled": true,
+    "stem": "number_2",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.587077,
+     0.809531
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "arrange_largest_number__iters4x",
+  "layout": 0,
+  "overrides": {
+   "min_pos_iters": 64,
+   "slide_target": {
+    "label": "digit_0",
+    "inst": "number_2_1",
+    "labelled": true,
+    "stem": "number_2",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.587077,
+     0.809531
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "arrange_largest_number__cpu",
+  "layout": 0,
+  "overrides": {
+   "gpu_dynamics": false,
+   "slide_target": {
+    "label": "digit_0",
+    "inst": "number_2_1",
+    "labelled": true,
+    "stem": "number_2",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.587077,
+     0.809531
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "arrange_largest_number__shipped_repeat",
+  "layout": 0,
+  "overrides": {
+   "slide_target": {
+    "label": "digit_0",
+    "inst": "number_2_1",
+    "labelled": true,
+    "stem": "number_2",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.587077,
+     0.809531
+    ]
+   }
+  }
+ }
+]

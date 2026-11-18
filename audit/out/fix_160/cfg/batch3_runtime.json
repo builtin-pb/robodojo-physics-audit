@@ -1,0 +1,32 @@
+{
+ "bottles": [
+  "L14_00022",
+  "L14_00055"
+ ],
+ "inputs": "audit/out/fix_160/witness_inputs.json",
+ "variants": [
+  {
+   "name": "base"
+  },
+  {
+   "name": "latch100_peak640",
+   "latch_at_freeze_frac": 1.0,
+   "joint7_effort_limit_n": 640.0
+  },
+  {
+   "name": "sdk_peak640",
+   "joint7_effort_limit_n": 640.0
+  },
+  {
+   "name": "latch100_cap160",
+   "latch_at_freeze_frac": 1.0
+  },
+  {
+   "name": "arm_none",
+   "armature_kg": [
+    0.0,
+    0.0
+   ]
+  }
+ ]
+}

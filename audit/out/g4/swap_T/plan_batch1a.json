@@ -1,0 +1,37 @@
+[
+ {
+  "name": "g4st_cb_ship",
+  "seed": 2,
+  "layouts": "0,1,6,8,9,14",
+  "procs": 3,
+  "args": "--task cover_blocks --policy script_cover_blocks --evaluator v2 --contact_log --physics_preset shipped"
+ },
+ {
+  "name": "g4st_sT_ship",
+  "seed": 2,
+  "layouts": "0-19",
+  "procs": 2,
+  "args": "--task swap_T --policy script_swap_T --evaluator v2 --contact_log --log_poses --physics_preset shipped"
+ },
+ {
+  "name": "g4st_sT_ship_rep",
+  "seed": 2,
+  "layouts": "0",
+  "procs": 1,
+  "args": "--task swap_T --policy script_swap_T --evaluator v2 --contact_log --log_poses --physics_preset shipped --repeats 2"
+ },
+ {
+  "name": "g4st_cb_ship_rep",
+  "seed": 2,
+  "layouts": "0",
+  "procs": 1,
+  "args": "--task cover_blocks --policy script_cover_blocks --evaluator v2 --contact_log --physics_preset shipped --repeats 2"
+ },
+ {
+  "name": "g4st_par_sT_corr_lp",
+  "seed": 0,
+  "layouts": "0",
+  "procs": 1,
+  "args": "--task swap_T --policy script_swap_T --evaluator v2 --contact_log --log_poses --physics_preset corrected --physics_params $W/wt-g4st/docs/params --physics_scenario_opt_in swap_T_primary"
+ }
+]

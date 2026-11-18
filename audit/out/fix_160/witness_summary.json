@@ -1,0 +1,5075 @@
+{
+ "tool": "audit/tools/fix160_summary.py",
+ "rows": [
+  {
+   "run": "b0_smoke",
+   "variant": "base",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.078,
+   "close_steps": 60,
+   "F_ss_N": 158.397,
+   "quiet_cv": 0.00068,
+   "lead_mm": 5.936,
+   "drive_est_N": -326.79,
+   "pen_mm": 0.0173,
+   "lost": {
+    "phase": "swing",
+    "step": 1541
+   },
+   "tap_readback_N": 1.113,
+   "swing_ik_err_mm_max": 0.009,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 158.71,
+    "f_min_N": 158.12,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 1.08,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 159.3,
+    "f_min_N": 157.05,
+    "rot_max_deg": 0.002,
+    "acc_peak_m_s2": 12.52,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 218.77,
+    "f_min_N": 77.61,
+    "rot_max_deg": 2.667,
+    "acc_peak_m_s2": 83.97,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 210,
+    "low20": 81,
+    "low32N": 81,
+    "f_max_N": 1720.13,
+    "f_min_N": 0.0,
+    "rot_max_deg": 24.493,
+    "acc_peak_m_s2": 70.78,
+    "by_phase_low20": {
+     "swing": 81
+    }
+   }
+  },
+  {
+   "run": "b1_runtime2",
+   "variant": "base",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.078,
+   "close_steps": 60,
+   "F_ss_N": 158.397,
+   "quiet_cv": 0.00068,
+   "lead_mm": 5.936,
+   "drive_est_N": -326.79,
+   "pen_mm": 0.0173,
+   "lost": {
+    "phase": "swing",
+    "step": 1541
+   },
+   "tap_readback_N": 1.113,
+   "swing_ik_err_mm_max": 0.009,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 158.71,
+    "f_min_N": 158.12,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 1.08,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 159.3,
+    "f_min_N": 157.05,
+    "rot_max_deg": 0.002,
+    "acc_peak_m_s2": 12.52,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 218.77,
+    "f_min_N": 77.61,
+    "rot_max_deg": 2.667,
+    "acc_peak_m_s2": 83.97,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 210,
+    "low20": 81,
+    "low32N": 81,
+    "f_max_N": 1720.13,
+    "f_min_N": 0.0,
+    "rot_max_deg": 24.493,
+    "acc_peak_m_s2": 70.78,
+    "by_phase_low20": {
+     "swing": 81
+    }
+   }
+  },
+  {
+   "run": "b1_runtime2",
+   "variant": "base",
+   "bottle": "L14_00055",
+   "asset": "00055",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.078,
+   "close_steps": 20,
+   "F_ss_N": 159.971,
+   "quiet_cv": 0.00127,
+   "lead_mm": 5.8576,
+   "drive_est_N": -321.79,
+   "pen_mm": 0.0338,
+   "lost": null,
+   "tap_readback_N": 1.005,
+   "swing_ik_err_mm_max": 0.005,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 160.42,
+    "f_min_N": 159.48,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 0.55,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 161.49,
+    "f_min_N": 158.36,
+    "rot_max_deg": 0.002,
+    "acc_peak_m_s2": 13.1,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 176.79,
+    "f_min_N": 140.08,
+    "rot_max_deg": 0.073,
+    "acc_peak_m_s2": 87.33,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 340,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 224.32,
+    "f_min_N": 105.92,
+    "rot_max_deg": 1.515,
+    "acc_peak_m_s2": 71.08,
+    "by_phase_low20": {
+     "swing": 0,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "b1_runtime2",
+   "variant": "retarget090",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.079,
+   "close_steps": 50,
+   "F_ss_N": 142.572,
+   "quiet_cv": 0.00068,
+   "lead_mm": 2.7553,
+   "drive_est_N": -144.08,
+   "pen_mm": 0.0234,
+   "lost": {
+    "phase": "swing",
+    "step": 1385
+   },
+   "tap_readback_N": 1.113,
+   "swing_ik_err_mm_max": 0.009,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 183.31,
+    "f_min_N": 68.44,
+    "rot_max_deg": 0.004,
+    "acc_peak_m_s2": 1.02,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 143.0,
+    "f_min_N": 142.11,
+    "rot_max_deg": 0.003,
+    "acc_peak_m_s2": 12.51,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 7,
+    "low32N": 7,
+    "f_max_N": 383.72,
+    "f_min_N": 0.0,
+    "rot_max_deg": 4.576,
+    "acc_peak_m_s2": 84.09,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 7,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 60,
+    "low20": 20,
+    "low32N": 20,
+    "f_max_N": 214.29,
+    "f_min_N": 0.0,
+    "rot_max_deg": 15.234,
+    "acc_peak_m_s2": 58.56,
+    "by_phase_low20": {
+     "swing": 20
+    }
+   }
+  },
+  {
+   "run": "b1_runtime2",
+   "variant": "retarget090",
+   "bottle": "L14_00055",
+   "asset": "00055",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.078,
+   "close_steps": 20,
+   "F_ss_N": null,
+   "quiet_cv": null,
+   "lead_mm": null,
+   "drive_est_N": null,
+   "pen_mm": null,
+   "lost": {
+    "phase": "settle",
+    "step": 20
+   },
+   "tap_readback_N": null,
+   "swing_ik_err_mm_max": null,
+   "quiet": null,
+   "taps": null,
+   "jerks": null,
+   "swing": null
+  },
+  {
+   "run": "b1_runtime2",
+   "variant": "sdk_trip320",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    320.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.002,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.078,
+   "close_steps": 40,
+   "F_ss_N": 314.731,
+   "quiet_cv": 0.00052,
+   "lead_mm": 6.0834,
+   "drive_est_N": -318.01,
+   "pen_mm": 0.0362,
+   "lost": null,
+   "tap_readback_N": 1.089,
+   "swing_ik_err_mm_max": 0.009,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 315.12,
+    "f_min_N": 314.43,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 1.08,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 315.17,
+    "f_min_N": 314.15,
+    "rot_max_deg": 0.002,
+    "acc_peak_m_s2": 12.46,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 319.55,
+    "f_min_N": 297.31,
+    "rot_max_deg": 5.626,
+    "acc_peak_m_s2": 83.6,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 340,
+    "low20": 10,
+    "low32N": 7,
+    "f_max_N": 1246.02,
+    "f_min_N": 1.63,
+    "rot_max_deg": 22.157,
+    "acc_peak_m_s2": 63.48,
+    "by_phase_low20": {
+     "swing": 10,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "b1_runtime2",
+   "variant": "sdk_trip320",
+   "bottle": "L14_00055",
+   "asset": "00055",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    320.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.078,
+   "close_steps": 20,
+   "F_ss_N": 310.852,
+   "quiet_cv": 0.00076,
+   "lead_mm": 5.9513,
+   "drive_est_N": -311.12,
+   "pen_mm": 0.0666,
+   "lost": null,
+   "tap_readback_N": 1.013,
+   "swing_ik_err_mm_max": 0.005,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 311.27,
+    "f_min_N": 310.35,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 0.55,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 311.3,
+    "f_min_N": 310.3,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 13.2,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 361.57,
+    "f_min_N": 261.28,
+    "rot_max_deg": 0.15,
+    "acc_peak_m_s2": 87.26,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 340,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 409.59,
+    "f_min_N": 207.34,
+    "rot_max_deg": 2.883,
+    "acc_peak_m_s2": 71.08,
+    "by_phase_low20": {
+     "swing": 0,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "b1_runtime2",
+   "variant": "sdk_peak640",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    640.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.079,
+   "close_steps": 40,
+   "F_ss_N": 310.965,
+   "quiet_cv": 0.00054,
+   "lead_mm": 6.0276,
+   "drive_est_N": -315.17,
+   "pen_mm": 0.051,
+   "lost": null,
+   "tap_readback_N": 1.074,
+   "swing_ik_err_mm_max": 0.009,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 311.32,
+    "f_min_N": 310.65,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 1.08,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 311.36,
+    "f_min_N": 310.59,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 12.52,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 316.25,
+    "f_min_N": 305.77,
+    "rot_max_deg": 0.051,
+    "acc_peak_m_s2": 83.72,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 340,
+    "low20": 12,
+    "low32N": 12,
+    "f_max_N": 1804.11,
+    "f_min_N": 0.0,
+    "rot_max_deg": 23.632,
+    "acc_peak_m_s2": 64.17,
+    "by_phase_low20": {
+     "swing": 12,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "b1_runtime2",
+   "variant": "sdk_peak640",
+   "bottle": "L14_00055",
+   "asset": "00055",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    640.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.078,
+   "close_steps": 20,
+   "F_ss_N": 311.627,
+   "quiet_cv": 0.0007,
+   "lead_mm": 5.9683,
+   "drive_est_N": -312.0,
+   "pen_mm": 0.0668,
+   "lost": null,
+   "tap_readback_N": 1.013,
+   "swing_ik_err_mm_max": 0.005,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 312.05,
+    "f_min_N": 311.12,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 0.56,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 312.1,
+    "f_min_N": 311.1,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 13.2,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 312.82,
+    "f_min_N": 309.66,
+    "rot_max_deg": 0.026,
+    "acc_peak_m_s2": 87.26,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 340,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 398.97,
+    "f_min_N": 207.66,
+    "rot_max_deg": 2.0,
+    "acc_peak_m_s2": 71.01,
+    "by_phase_low20": {
+     "swing": 0,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "b1_runtime2",
+   "variant": "arm_split",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    11.762,
+    11.762
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.079,
+   "close_steps": 70,
+   "F_ss_N": null,
+   "quiet_cv": null,
+   "lead_mm": null,
+   "drive_est_N": null,
+   "pen_mm": null,
+   "lost": {
+    "phase": "settle",
+    "step": 161
+   },
+   "tap_readback_N": null,
+   "swing_ik_err_mm_max": null,
+   "quiet": null,
+   "taps": null,
+   "jerks": null,
+   "swing": null
+  },
+  {
+   "run": "b1_runtime2",
+   "variant": "arm_split",
+   "bottle": "L14_00055",
+   "asset": "00055",
+   "armature_eng": [
+    11.762,
+    11.762
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.004,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.072,
+   "close_steps": 20,
+   "F_ss_N": null,
+   "quiet_cv": null,
+   "lead_mm": null,
+   "drive_est_N": null,
+   "pen_mm": null,
+   "lost": {
+    "phase": "settle",
+    "step": 20
+   },
+   "tap_readback_N": null,
+   "swing_ik_err_mm_max": null,
+   "quiet": null,
+   "taps": null,
+   "jerks": null,
+   "swing": null
+  },
+  {
+   "run": "b1_runtime2",
+   "variant": "arm_tenth",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    2.352,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.002,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.078,
+   "close_steps": 30,
+   "F_ss_N": 157.978,
+   "quiet_cv": 0.10183,
+   "lead_mm": 5.9713,
+   "drive_est_N": -308.23,
+   "pen_mm": 0.0013,
+   "lost": null,
+   "tap_readback_N": 1.075,
+   "swing_ik_err_mm_max": 0.009,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 174.09,
+    "f_min_N": 141.87,
+    "rot_max_deg": 0.011,
+    "acc_peak_m_s2": 1.13,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 174.16,
+    "f_min_N": 141.81,
+    "rot_max_deg": 0.019,
+    "acc_peak_m_s2": 12.58,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 176.01,
+    "f_min_N": 140.09,
+    "rot_max_deg": 0.338,
+    "acc_peak_m_s2": 83.63,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 340,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 250.46,
+    "f_min_N": 92.97,
+    "rot_max_deg": 17.941,
+    "acc_peak_m_s2": 63.95,
+    "by_phase_low20": {
+     "swing": 0,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "b1_runtime2",
+   "variant": "arm_tenth",
+   "bottle": "L14_00055",
+   "asset": "00055",
+   "armature_eng": [
+    2.352,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.078,
+   "close_steps": 20,
+   "F_ss_N": 159.728,
+   "quiet_cv": 0.09221,
+   "lead_mm": 5.4306,
+   "drive_est_N": -280.79,
+   "pen_mm": 0.0008,
+   "lost": null,
+   "tap_readback_N": 1.02,
+   "swing_ik_err_mm_max": 0.005,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 174.57,
+    "f_min_N": 144.91,
+    "rot_max_deg": 0.027,
+    "acc_peak_m_s2": 0.58,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 178.19,
+    "f_min_N": 142.97,
+    "rot_max_deg": 0.223,
+    "acc_peak_m_s2": 13.2,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 183.06,
+    "f_min_N": 142.32,
+    "rot_max_deg": 0.517,
+    "acc_peak_m_s2": 87.04,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 340,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 178.88,
+    "f_min_N": 143.07,
+    "rot_max_deg": 1.992,
+    "acc_peak_m_s2": 70.98,
+    "by_phase_low20": {
+     "swing": 0,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "b1_runtime2",
+   "variant": "arm_none",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    0.0,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.079,
+   "close_steps": 30,
+   "F_ss_N": 157.978,
+   "quiet_cv": 0.00054,
+   "lead_mm": 5.9662,
+   "drive_est_N": -309.33,
+   "pen_mm": 0.0003,
+   "lost": null,
+   "tap_readback_N": 1.107,
+   "swing_ik_err_mm_max": 0.009,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 158.2,
+    "f_min_N": 157.83,
+    "rot_max_deg": 0.007,
+    "acc_peak_m_s2": 1.5,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 158.2,
+    "f_min_N": 157.72,
+    "rot_max_deg": 0.009,
+    "acc_peak_m_s2": 13.24,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 159.01,
+    "f_min_N": 156.29,
+    "rot_max_deg": 0.251,
+    "acc_peak_m_s2": 83.29,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 340,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 159.99,
+    "f_min_N": 59.97,
+    "rot_max_deg": 19.043,
+    "acc_peak_m_s2": 63.63,
+    "by_phase_low20": {
+     "swing": 0,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "b1_runtime2",
+   "variant": "arm_none",
+   "bottle": "L14_00055",
+   "asset": "00055",
+   "armature_eng": [
+    0.0,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.078,
+   "close_steps": 20,
+   "F_ss_N": 159.705,
+   "quiet_cv": 8e-05,
+   "lead_mm": 4.7905,
+   "drive_est_N": -242.48,
+   "pen_mm": 0.0028,
+   "lost": null,
+   "tap_readback_N": 1.007,
+   "swing_ik_err_mm_max": 0.005,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 159.74,
+    "f_min_N": 159.67,
+    "rot_max_deg": 0.003,
+    "acc_peak_m_s2": 1.19,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 160.09,
+    "f_min_N": 159.47,
+    "rot_max_deg": 0.15,
+    "acc_peak_m_s2": 13.9,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 160.23,
+    "f_min_N": 159.58,
+    "rot_max_deg": 0.655,
+    "acc_peak_m_s2": 86.67,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 340,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 160.59,
+    "f_min_N": 159.51,
+    "rot_max_deg": 1.774,
+    "acc_peak_m_s2": 70.55,
+    "by_phase_low20": {
+     "swing": 0,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "b1_contactlast",
+   "variant": "base",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.078,
+   "close_steps": 30,
+   "F_ss_N": 157.809,
+   "quiet_cv": 0.00198,
+   "lead_mm": 5.6429,
+   "drive_est_N": -310.48,
+   "pen_mm": 0.0085,
+   "lost": {
+    "phase": "swing",
+    "step": 1502
+   },
+   "tap_readback_N": 1.1,
+   "swing_ik_err_mm_max": 0.009,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 159.4,
+    "f_min_N": 156.14,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 1.15,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 159.88,
+    "f_min_N": 155.8,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 12.88,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 23,
+    "low32N": 23,
+    "f_max_N": 1202.1,
+    "f_min_N": 0.0,
+    "rot_max_deg": 18.051,
+    "acc_peak_m_s2": 88.43,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 23,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 200,
+    "low20": 46,
+    "low32N": 46,
+    "f_max_N": 1547.0,
+    "f_min_N": 0.0,
+    "rot_max_deg": 16.532,
+    "acc_peak_m_s2": 70.04,
+    "by_phase_low20": {
+     "swing": 46
+    }
+   }
+  },
+  {
+   "run": "b1_contactlast",
+   "variant": "base",
+   "bottle": "L14_00055",
+   "asset": "00055",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.078,
+   "close_steps": 20,
+   "F_ss_N": 159.987,
+   "quiet_cv": 0.00142,
+   "lead_mm": 5.8782,
+   "drive_est_N": -322.75,
+   "pen_mm": 0.0187,
+   "lost": null,
+   "tap_readback_N": 1.003,
+   "swing_ik_err_mm_max": 0.005,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 160.48,
+    "f_min_N": 159.38,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 0.82,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 160.66,
+    "f_min_N": 159.31,
+    "rot_max_deg": 0.002,
+    "acc_peak_m_s2": 13.48,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 162.16,
+    "f_min_N": 157.14,
+    "rot_max_deg": 0.028,
+    "acc_peak_m_s2": 86.95,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 340,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 208.97,
+    "f_min_N": 109.45,
+    "rot_max_deg": 0.992,
+    "acc_peak_m_s2": 70.84,
+    "by_phase_low20": {
+     "swing": 0,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "b1_veliter4",
+   "variant": "base",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.078,
+   "close_steps": 50,
+   "F_ss_N": 158.281,
+   "quiet_cv": 0.00081,
+   "lead_mm": 5.6324,
+   "drive_est_N": -309.96,
+   "pen_mm": 0.0179,
+   "lost": {
+    "phase": "swing",
+    "step": 1525
+   },
+   "tap_readback_N": 1.138,
+   "swing_ik_err_mm_max": 0.009,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 158.57,
+    "f_min_N": 157.93,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 1.1,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 159.07,
+    "f_min_N": 157.35,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 12.53,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 212.2,
+    "f_min_N": 98.74,
+    "rot_max_deg": 2.481,
+    "acc_peak_m_s2": 84.28,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 200,
+    "low20": 66,
+    "low32N": 66,
+    "f_max_N": 1295.51,
+    "f_min_N": 0.0,
+    "rot_max_deg": 23.91,
+    "acc_peak_m_s2": 68.33,
+    "by_phase_low20": {
+     "swing": 66
+    }
+   }
+  },
+  {
+   "run": "b1_veliter4",
+   "variant": "base",
+   "bottle": "L14_00055",
+   "asset": "00055",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.078,
+   "close_steps": 20,
+   "F_ss_N": 159.865,
+   "quiet_cv": 0.00095,
+   "lead_mm": 5.9461,
+   "drive_est_N": -326.51,
+   "pen_mm": 0.0345,
+   "lost": null,
+   "tap_readback_N": 1.01,
+   "swing_ik_err_mm_max": 0.005,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 160.4,
+    "f_min_N": 159.44,
+    "rot_max_deg": 0.0,
+    "acc_peak_m_s2": 0.54,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 160.34,
+    "f_min_N": 159.3,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 13.09,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 164.26,
+    "f_min_N": 154.25,
+    "rot_max_deg": 0.023,
+    "acc_peak_m_s2": 87.13,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 340,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 281.29,
+    "f_min_N": 75.1,
+    "rot_max_deg": 1.935,
+    "acc_peak_m_s2": 71.21,
+    "by_phase_low20": {
+     "swing": 0,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "b1_padhard",
+   "variant": "base",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.078,
+   "close_steps": 30,
+   "F_ss_N": null,
+   "quiet_cv": null,
+   "lead_mm": null,
+   "drive_est_N": null,
+   "pen_mm": null,
+   "lost": {
+    "phase": "settle",
+    "step": 98
+   },
+   "tap_readback_N": null,
+   "swing_ik_err_mm_max": null,
+   "quiet": null,
+   "taps": null,
+   "jerks": null,
+   "swing": null
+  },
+  {
+   "run": "b1_padhard",
+   "variant": "base",
+   "bottle": "L14_00055",
+   "asset": "00055",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.004,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.072,
+   "close_steps": 20,
+   "F_ss_N": null,
+   "quiet_cv": null,
+   "lead_mm": null,
+   "drive_est_N": null,
+   "pen_mm": null,
+   "lost": {
+    "phase": "settle",
+    "step": 20
+   },
+   "tap_readback_N": null,
+   "swing_ik_err_mm_max": null,
+   "quiet": null,
+   "taps": null,
+   "jerks": null,
+   "swing": null
+  },
+  {
+   "run": "b1_padsoft",
+   "variant": "base",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.078,
+   "close_steps": 30,
+   "F_ss_N": null,
+   "quiet_cv": null,
+   "lead_mm": null,
+   "drive_est_N": null,
+   "pen_mm": null,
+   "lost": {
+    "phase": "settle",
+    "step": 33
+   },
+   "tap_readback_N": null,
+   "swing_ik_err_mm_max": null,
+   "quiet": null,
+   "taps": null,
+   "jerks": null,
+   "swing": null
+  },
+  {
+   "run": "b1_padsoft",
+   "variant": "base",
+   "bottle": "L14_00055",
+   "asset": "00055",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.004,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.072,
+   "close_steps": 20,
+   "F_ss_N": null,
+   "quiet_cv": null,
+   "lead_mm": null,
+   "drive_est_N": null,
+   "pen_mm": null,
+   "lost": {
+    "phase": "settle",
+    "step": 23
+   },
+   "tap_readback_N": null,
+   "swing_ik_err_mm_max": null,
+   "quiet": null,
+   "taps": null,
+   "jerks": null,
+   "swing": null
+  },
+  {
+   "run": "b2_runtime",
+   "variant": "base",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.078,
+   "close_steps": 40,
+   "F_ss_N": 158.798,
+   "quiet_cv": 0.00096,
+   "lead_mm": 6.0641,
+   "drive_est_N": -333.84,
+   "pen_mm": 0.0177,
+   "lost": {
+    "phase": "swing",
+    "step": 1514
+   },
+   "tap_readback_N": 1.12,
+   "swing_ik_err_mm_max": 0.009,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 159.29,
+    "f_min_N": 158.29,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 1.08,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 159.87,
+    "f_min_N": 157.36,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 12.58,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 196.01,
+    "f_min_N": 113.42,
+    "rot_max_deg": 0.659,
+    "acc_peak_m_s2": 83.89,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 150,
+    "low20": 57,
+    "low32N": 57,
+    "f_max_N": 1199.3,
+    "f_min_N": 0.0,
+    "rot_max_deg": 20.691,
+    "acc_peak_m_s2": 63.83,
+    "by_phase_low20": {
+     "swing": 57
+    }
+   }
+  },
+  {
+   "run": "b2_runtime",
+   "variant": "base",
+   "bottle": "L14_00055",
+   "asset": "00055",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.0,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.077,
+   "close_steps": 20,
+   "F_ss_N": 159.797,
+   "quiet_cv": 0.00091,
+   "lead_mm": 5.8669,
+   "drive_est_N": -322.18,
+   "pen_mm": 0.0197,
+   "lost": null,
+   "tap_readback_N": 1.003,
+   "swing_ik_err_mm_max": 0.005,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 160.16,
+    "f_min_N": 159.36,
+    "rot_max_deg": 0.0,
+    "acc_peak_m_s2": 0.59,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 160.31,
+    "f_min_N": 159.1,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 13.14,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 194.83,
+    "f_min_N": 112.06,
+    "rot_max_deg": 0.103,
+    "acc_peak_m_s2": 87.22,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 340,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 238.62,
+    "f_min_N": 84.92,
+    "rot_max_deg": 1.487,
+    "acc_peak_m_s2": 70.99,
+    "by_phase_low20": {
+     "swing": 0,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "b2_runtime",
+   "variant": "retarget090",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.079,
+   "close_steps": 50,
+   "F_ss_N": 142.833,
+   "quiet_cv": 0.00041,
+   "lead_mm": 2.7551,
+   "drive_est_N": -144.07,
+   "pen_mm": 0.0236,
+   "lost": {
+    "phase": "swing",
+    "step": 1445
+   },
+   "tap_readback_N": 1.12,
+   "swing_ik_err_mm_max": 0.009,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 183.45,
+    "f_min_N": 68.97,
+    "rot_max_deg": 0.027,
+    "acc_peak_m_s2": 1.04,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 143.39,
+    "f_min_N": 142.04,
+    "rot_max_deg": 0.022,
+    "acc_peak_m_s2": 12.53,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 162.49,
+    "f_min_N": 107.96,
+    "rot_max_deg": 3.574,
+    "acc_peak_m_s2": 83.78,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 70,
+    "low20": 17,
+    "low32N": 17,
+    "f_max_N": 286.13,
+    "f_min_N": 0.0,
+    "rot_max_deg": 11.246,
+    "acc_peak_m_s2": 65.45,
+    "by_phase_low20": {
+     "swing": 17
+    }
+   }
+  },
+  {
+   "run": "b2_runtime",
+   "variant": "retarget090",
+   "bottle": "L14_00055",
+   "asset": "00055",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.005,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.077,
+   "close_steps": 20,
+   "F_ss_N": null,
+   "quiet_cv": null,
+   "lead_mm": null,
+   "drive_est_N": null,
+   "pen_mm": null,
+   "lost": {
+    "phase": "settle",
+    "step": 20
+   },
+   "tap_readback_N": null,
+   "swing_ik_err_mm_max": null,
+   "quiet": null,
+   "taps": null,
+   "jerks": null,
+   "swing": null
+  },
+  {
+   "run": "b2_runtime",
+   "variant": "sdk_peak640",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    640.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.002,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.078,
+   "close_steps": 40,
+   "F_ss_N": 305.121,
+   "quiet_cv": 0.0006,
+   "lead_mm": 5.9071,
+   "drive_est_N": -308.87,
+   "pen_mm": 0.0501,
+   "lost": null,
+   "tap_readback_N": 1.075,
+   "swing_ik_err_mm_max": 0.009,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 305.52,
+    "f_min_N": 304.8,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 1.14,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 305.59,
+    "f_min_N": 304.73,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 12.46,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 314.8,
+    "f_min_N": 290.96,
+    "rot_max_deg": 0.103,
+    "acc_peak_m_s2": 83.71,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 340,
+    "low20": 8,
+    "low32N": 6,
+    "f_max_N": 1888.97,
+    "f_min_N": 0.0,
+    "rot_max_deg": 15.619,
+    "acc_peak_m_s2": 63.98,
+    "by_phase_low20": {
+     "swing": 8,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "b2_runtime",
+   "variant": "sdk_peak640",
+   "bottle": "L14_00055",
+   "asset": "00055",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    640.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.078,
+   "close_steps": 20,
+   "F_ss_N": 309.615,
+   "quiet_cv": 0.00013,
+   "lead_mm": 5.9107,
+   "drive_est_N": -308.95,
+   "pen_mm": 0.0403,
+   "lost": null,
+   "tap_readback_N": 1.005,
+   "swing_ik_err_mm_max": 0.005,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 309.71,
+    "f_min_N": 309.48,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 0.49,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 309.97,
+    "f_min_N": 309.27,
+    "rot_max_deg": 0.002,
+    "acc_peak_m_s2": 13.08,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 313.44,
+    "f_min_N": 305.84,
+    "rot_max_deg": 0.031,
+    "acc_peak_m_s2": 87.26,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 340,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 464.81,
+    "f_min_N": 131.54,
+    "rot_max_deg": 1.017,
+    "acc_peak_m_s2": 71.02,
+    "by_phase_low20": {
+     "swing": 0,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "b2_runtime",
+   "variant": "arm_split",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    11.762,
+    11.762
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.079,
+   "close_steps": 30,
+   "F_ss_N": 159.37,
+   "quiet_cv": 2.40888,
+   "lead_mm": 6.7595,
+   "drive_est_N": -408.38,
+   "pen_mm": 0.006,
+   "lost": {
+    "phase": "quiet",
+    "step": 231
+   },
+   "tap_readback_N": null,
+   "swing_ik_err_mm_max": null,
+   "quiet": {
+    "steps": 60,
+    "low20": 30,
+    "low32N": 30,
+    "f_max_N": 2496.53,
+    "f_min_N": 0.0,
+    "rot_max_deg": 13.995,
+    "acc_peak_m_s2": 11.97,
+    "by_phase_low20": {
+     "quiet": 30
+    }
+   },
+   "taps": null,
+   "jerks": null,
+   "swing": null
+  },
+  {
+   "run": "b2_runtime",
+   "variant": "arm_split",
+   "bottle": "L14_00055",
+   "asset": "00055",
+   "armature_eng": [
+    11.762,
+    11.762
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.004,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.072,
+   "close_steps": 20,
+   "F_ss_N": null,
+   "quiet_cv": null,
+   "lead_mm": null,
+   "drive_est_N": null,
+   "pen_mm": null,
+   "lost": {
+    "phase": "settle",
+    "step": 20
+   },
+   "tap_readback_N": null,
+   "swing_ik_err_mm_max": null,
+   "quiet": null,
+   "taps": null,
+   "jerks": null,
+   "swing": null
+  },
+  {
+   "run": "b2_armsweep",
+   "variant": "arm_none",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    0.0,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.078,
+   "close_steps": 30,
+   "F_ss_N": 157.894,
+   "quiet_cv": 0.00091,
+   "lead_mm": 5.4052,
+   "drive_est_N": -280.8,
+   "pen_mm": 0.0009,
+   "lost": null,
+   "tap_readback_N": 1.095,
+   "swing_ik_err_mm_max": 0.009,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 158.19,
+    "f_min_N": 157.67,
+    "rot_max_deg": 0.004,
+    "acc_peak_m_s2": 1.4,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 158.21,
+    "f_min_N": 157.56,
+    "rot_max_deg": 0.005,
+    "acc_peak_m_s2": 13.24,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 159.04,
+    "f_min_N": 156.24,
+    "rot_max_deg": 0.62,
+    "acc_peak_m_s2": 83.37,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 340,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 161.63,
+    "f_min_N": 74.35,
+    "rot_max_deg": 17.733,
+    "acc_peak_m_s2": 63.43,
+    "by_phase_low20": {
+     "swing": 0,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "b2_armsweep",
+   "variant": "arm_0.588",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    0.588,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.002,
+    0.001
+   ],
+   "l6_hold_err_mm": 0.079,
+   "close_steps": 30,
+   "F_ss_N": 157.895,
+   "quiet_cv": 0.00694,
+   "lead_mm": 5.4057,
+   "drive_est_N": -275.68,
+   "pen_mm": 0.0003,
+   "lost": null,
+   "tap_readback_N": 1.063,
+   "swing_ik_err_mm_max": 0.009,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 159.09,
+    "f_min_N": 156.71,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 1.06,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 159.09,
+    "f_min_N": 156.62,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 12.46,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 159.82,
+    "f_min_N": 155.24,
+    "rot_max_deg": 0.788,
+    "acc_peak_m_s2": 83.66,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 340,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 177.97,
+    "f_min_N": 36.72,
+    "rot_max_deg": 17.44,
+    "acc_peak_m_s2": 63.82,
+    "by_phase_low20": {
+     "swing": 0,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "b2_armsweep",
+   "variant": "arm_1.176",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    1.176,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.002,
+    0.001
+   ],
+   "l6_hold_err_mm": 0.079,
+   "close_steps": 30,
+   "F_ss_N": 157.899,
+   "quiet_cv": 0.00146,
+   "lead_mm": 5.4066,
+   "drive_est_N": -278.97,
+   "pen_mm": 0.0,
+   "lost": null,
+   "tap_readback_N": 1.069,
+   "swing_ik_err_mm_max": 0.009,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 159.04,
+    "f_min_N": 156.72,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 1.02,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 159.13,
+    "f_min_N": 156.64,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 12.58,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 162.47,
+    "f_min_N": 153.39,
+    "rot_max_deg": 0.825,
+    "acc_peak_m_s2": 83.61,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 340,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 177.33,
+    "f_min_N": 70.52,
+    "rot_max_deg": 18.802,
+    "acc_peak_m_s2": 63.89,
+    "by_phase_low20": {
+     "swing": 0,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "b2_armsweep",
+   "variant": "arm_2.352",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    2.352,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.002,
+    0.001
+   ],
+   "l6_hold_err_mm": 0.079,
+   "close_steps": 30,
+   "F_ss_N": 157.898,
+   "quiet_cv": 0.10328,
+   "lead_mm": 6.0098,
+   "drive_est_N": -310.38,
+   "pen_mm": 0.0016,
+   "lost": null,
+   "tap_readback_N": 1.068,
+   "swing_ik_err_mm_max": 0.009,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 174.76,
+    "f_min_N": 141.27,
+    "rot_max_deg": 0.005,
+    "acc_peak_m_s2": 1.19,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 174.76,
+    "f_min_N": 141.27,
+    "rot_max_deg": 0.007,
+    "acc_peak_m_s2": 12.33,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 174.95,
+    "f_min_N": 140.45,
+    "rot_max_deg": 0.62,
+    "acc_peak_m_s2": 83.67,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 340,
+    "low20": 1,
+    "low32N": 1,
+    "f_max_N": 229.98,
+    "f_min_N": 13.82,
+    "rot_max_deg": 17.125,
+    "acc_peak_m_s2": 63.89,
+    "by_phase_low20": {
+     "swing": 1,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "b2_armsweep",
+   "variant": "arm_4.705",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    4.705,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.002,
+    0.001
+   ],
+   "l6_hold_err_mm": 0.079,
+   "close_steps": 30,
+   "F_ss_N": 157.892,
+   "quiet_cv": 0.10205,
+   "lead_mm": 6.0095,
+   "drive_est_N": -325.52,
+   "pen_mm": 0.0073,
+   "lost": null,
+   "tap_readback_N": 1.048,
+   "swing_ik_err_mm_max": 0.009,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 174.1,
+    "f_min_N": 141.69,
+    "rot_max_deg": 0.008,
+    "acc_peak_m_s2": 1.15,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 177.66,
+    "f_min_N": 136.03,
+    "rot_max_deg": 0.015,
+    "acc_peak_m_s2": 12.19,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 216.84,
+    "f_min_N": 86.6,
+    "rot_max_deg": 0.767,
+    "acc_peak_m_s2": 84.11,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 340,
+    "low20": 3,
+    "low32N": 3,
+    "f_max_N": 440.2,
+    "f_min_N": 5.06,
+    "rot_max_deg": 18.17,
+    "acc_peak_m_s2": 64.22,
+    "by_phase_low20": {
+     "swing": 3,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "b2_armsweep",
+   "variant": "arm_11.762",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    11.762,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.002,
+    0.001
+   ],
+   "l6_hold_err_mm": 0.079,
+   "close_steps": 30,
+   "F_ss_N": 157.386,
+   "quiet_cv": 0.07585,
+   "lead_mm": 6.1904,
+   "drive_est_N": -281.21,
+   "pen_mm": 0.0,
+   "lost": null,
+   "tap_readback_N": 1.146,
+   "swing_ik_err_mm_max": 0.009,
+   "quiet": {
+    "steps": 250,
+    "low20": 12,
+    "low32N": 12,
+    "f_max_N": 362.09,
+    "f_min_N": 1.28,
+    "rot_max_deg": 1.22,
+    "acc_peak_m_s2": 2.69,
+    "by_phase_low20": {
+     "quiet": 12
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 6,
+    "low32N": 6,
+    "f_max_N": 325.34,
+    "f_min_N": 1.35,
+    "rot_max_deg": 1.65,
+    "acc_peak_m_s2": 12.58,
+    "by_phase_low20": {
+     "tap_close": 6,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 197.53,
+    "f_min_N": 124.03,
+    "rot_max_deg": 2.028,
+    "acc_peak_m_s2": 83.77,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 340,
+    "low20": 40,
+    "low32N": 40,
+    "f_max_N": 772.36,
+    "f_min_N": 0.0,
+    "rot_max_deg": 25.37,
+    "acc_peak_m_s2": 66.89,
+    "by_phase_low20": {
+     "swing": 40,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "b2_iter255",
+   "variant": "base",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.081,
+   "close_steps": 30,
+   "F_ss_N": 157.742,
+   "quiet_cv": 0.21585,
+   "lead_mm": 6.0013,
+   "drive_est_N": -305.96,
+   "pen_mm": 0.0007,
+   "lost": {
+    "phase": "swing",
+    "step": 1592
+   },
+   "tap_readback_N": 1.088,
+   "swing_ik_err_mm_max": 0.009,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 247.76,
+    "f_min_N": 93.15,
+    "rot_max_deg": 0.315,
+    "acc_peak_m_s2": 1.23,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 2,
+    "low32N": 2,
+    "f_max_N": 361.5,
+    "f_min_N": 4.92,
+    "rot_max_deg": 0.637,
+    "acc_peak_m_s2": 12.45,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 1,
+     "tap_down": 1
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 3,
+    "low32N": 3,
+    "f_max_N": 334.78,
+    "f_min_N": 0.0,
+    "rot_max_deg": 0.662,
+    "acc_peak_m_s2": 83.72,
+    "by_phase_low20": {
+     "jerk_close_1cm": 1,
+     "jerk_close_2cm": 2,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 240,
+    "low20": 104,
+    "low32N": 105,
+    "f_max_N": 1275.42,
+    "f_min_N": 0.0,
+    "rot_max_deg": 33.343,
+    "acc_peak_m_s2": 67.18,
+    "by_phase_low20": {
+     "swing": 104
+    }
+   }
+  },
+  {
+   "run": "b2_iter255",
+   "variant": "base",
+   "bottle": "L14_00055",
+   "asset": "00055",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.081,
+   "close_steps": 20,
+   "F_ss_N": 159.886,
+   "quiet_cv": 0.14198,
+   "lead_mm": 6.024,
+   "drive_est_N": -310.35,
+   "pen_mm": 0.0009,
+   "lost": null,
+   "tap_readback_N": 0.94,
+   "swing_ik_err_mm_max": 0.005,
+   "quiet": {
+    "steps": 250,
+    "low20": 1,
+    "low32N": 1,
+    "f_max_N": 279.91,
+    "f_min_N": 30.96,
+    "rot_max_deg": 0.15,
+    "acc_peak_m_s2": 0.95,
+    "by_phase_low20": {
+     "quiet": 1
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 4,
+    "low32N": 4,
+    "f_max_N": 399.99,
+    "f_min_N": 0.0,
+    "rot_max_deg": 0.913,
+    "acc_peak_m_s2": 13.08,
+    "by_phase_low20": {
+     "tap_close": 3,
+     "tap_axis": 0,
+     "tap_down": 1
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 1,
+    "low32N": 1,
+    "f_max_N": 297.69,
+    "f_min_N": 19.53,
+    "rot_max_deg": 1.268,
+    "acc_peak_m_s2": 87.17,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 1,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 340,
+    "low20": 8,
+    "low32N": 8,
+    "f_max_N": 354.67,
+    "f_min_N": 4.85,
+    "rot_max_deg": 1.956,
+    "acc_peak_m_s2": 71.18,
+    "by_phase_low20": {
+     "swing": 8,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "b2_padhard",
+   "variant": "base",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.078,
+   "close_steps": 50,
+   "F_ss_N": 158.887,
+   "quiet_cv": 0.00106,
+   "lead_mm": 6.0925,
+   "drive_est_N": -336.9,
+   "pen_mm": 0.0112,
+   "lost": {
+    "phase": "swing",
+    "step": 1591
+   },
+   "tap_readback_N": 1.097,
+   "swing_ik_err_mm_max": 0.009,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 159.25,
+    "f_min_N": 158.5,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 1.08,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 160.01,
+    "f_min_N": 157.62,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 12.47,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 192.22,
+    "f_min_N": 131.77,
+    "rot_max_deg": 0.708,
+    "acc_peak_m_s2": 83.83,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 220,
+    "low20": 99,
+    "low32N": 99,
+    "f_max_N": 1531.23,
+    "f_min_N": 0.0,
+    "rot_max_deg": 54.31,
+    "acc_peak_m_s2": 68.17,
+    "by_phase_low20": {
+     "swing": 99
+    }
+   }
+  },
+  {
+   "run": "b2_padsoft",
+   "variant": "base",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.078,
+   "close_steps": 30,
+   "F_ss_N": 157.408,
+   "quiet_cv": 0.00034,
+   "lead_mm": 6.8926,
+   "drive_est_N": -376.37,
+   "pen_mm": 0.2059,
+   "lost": {
+    "phase": "swing",
+    "step": 1495
+   },
+   "tap_readback_N": 1.133,
+   "swing_ik_err_mm_max": 0.009,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 161.74,
+    "f_min_N": 152.22,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 1.14,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 157.96,
+    "f_min_N": 156.86,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 12.58,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 203.19,
+    "f_min_N": 118.92,
+    "rot_max_deg": 1.365,
+    "acc_peak_m_s2": 83.64,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 140,
+    "low20": 8,
+    "low32N": 8,
+    "f_max_N": 704.96,
+    "f_min_N": 0.0,
+    "rot_max_deg": 15.462,
+    "acc_peak_m_s2": 63.14,
+    "by_phase_low20": {
+     "swing": 8
+    }
+   }
+  },
+  {
+   "run": "b3_runtime",
+   "variant": "base",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.078,
+   "close_steps": 40,
+   "F_ss_N": 158.798,
+   "quiet_cv": 0.00096,
+   "lead_mm": 6.0641,
+   "drive_est_N": -333.84,
+   "pen_mm": 0.0177,
+   "lost": {
+    "phase": "swing",
+    "step": 1514
+   },
+   "tap_readback_N": 1.12,
+   "swing_ik_err_mm_max": 0.009,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 159.29,
+    "f_min_N": 158.29,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 1.08,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 159.87,
+    "f_min_N": 157.36,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 12.58,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 196.01,
+    "f_min_N": 113.42,
+    "rot_max_deg": 0.659,
+    "acc_peak_m_s2": 83.89,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 150,
+    "low20": 57,
+    "low32N": 57,
+    "f_max_N": 1199.3,
+    "f_min_N": 0.0,
+    "rot_max_deg": 20.691,
+    "acc_peak_m_s2": 63.83,
+    "by_phase_low20": {
+     "swing": 57
+    }
+   }
+  },
+  {
+   "run": "b3_runtime",
+   "variant": "base",
+   "bottle": "L14_00055",
+   "asset": "00055",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.0,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.077,
+   "close_steps": 20,
+   "F_ss_N": 159.893,
+   "quiet_cv": 0.00131,
+   "lead_mm": 5.8628,
+   "drive_est_N": -321.95,
+   "pen_mm": 0.0197,
+   "lost": null,
+   "tap_readback_N": 1.003,
+   "swing_ik_err_mm_max": 0.005,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 160.38,
+    "f_min_N": 159.32,
+    "rot_max_deg": 0.0,
+    "acc_peak_m_s2": 0.52,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 160.51,
+    "f_min_N": 159.1,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 13.14,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 164.42,
+    "f_min_N": 153.42,
+    "rot_max_deg": 0.03,
+    "acc_peak_m_s2": 87.12,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 340,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 232.16,
+    "f_min_N": 88.2,
+    "rot_max_deg": 1.847,
+    "acc_peak_m_s2": 70.73,
+    "by_phase_low20": {
+     "swing": 0,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "b3_runtime",
+   "variant": "latch100_peak640",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    640.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.079,
+   "close_steps": 40,
+   "F_ss_N": 162.001,
+   "quiet_cv": 0.00058,
+   "lead_mm": 3.1129,
+   "drive_est_N": -162.7,
+   "pen_mm": 0.0187,
+   "lost": {
+    "phase": "swing",
+    "step": 1445
+   },
+   "tap_readback_N": 1.072,
+   "swing_ik_err_mm_max": 0.009,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 162.36,
+    "f_min_N": 161.68,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 1.1,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 162.48,
+    "f_min_N": 161.52,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 12.53,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 167.55,
+    "f_min_N": 150.17,
+    "rot_max_deg": 0.149,
+    "acc_peak_m_s2": 83.72,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 80,
+    "low20": 31,
+    "low32N": 30,
+    "f_max_N": 486.22,
+    "f_min_N": 0.0,
+    "rot_max_deg": 24.231,
+    "acc_peak_m_s2": 65.31,
+    "by_phase_low20": {
+     "swing": 31
+    }
+   }
+  },
+  {
+   "run": "b3_runtime",
+   "variant": "latch100_peak640",
+   "bottle": "L14_00055",
+   "asset": "00055",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    640.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.0,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.077,
+   "close_steps": 20,
+   "F_ss_N": 167.037,
+   "quiet_cv": 0.00095,
+   "lead_mm": 3.2068,
+   "drive_est_N": -167.65,
+   "pen_mm": 0.0357,
+   "lost": null,
+   "tap_readback_N": 1.016,
+   "swing_ik_err_mm_max": 0.005,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 167.43,
+    "f_min_N": 166.52,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 0.56,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 181.85,
+    "f_min_N": 156.39,
+    "rot_max_deg": 0.048,
+    "acc_peak_m_s2": 13.14,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 435.93,
+    "f_min_N": 35.9,
+    "rot_max_deg": 1.473,
+    "acc_peak_m_s2": 87.42,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 340,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 216.88,
+    "f_min_N": 92.43,
+    "rot_max_deg": 1.952,
+    "acc_peak_m_s2": 71.02,
+    "by_phase_low20": {
+     "swing": 0,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "b3_runtime",
+   "variant": "sdk_peak640",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    640.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.079,
+   "close_steps": 40,
+   "F_ss_N": 311.471,
+   "quiet_cv": 0.00048,
+   "lead_mm": 6.0346,
+   "drive_est_N": -315.54,
+   "pen_mm": 0.0511,
+   "lost": null,
+   "tap_readback_N": 1.074,
+   "swing_ik_err_mm_max": 0.009,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 311.83,
+    "f_min_N": 311.18,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 1.08,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 311.99,
+    "f_min_N": 311.06,
+    "rot_max_deg": 0.002,
+    "acc_peak_m_s2": 12.52,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 329.12,
+    "f_min_N": 295.63,
+    "rot_max_deg": 0.098,
+    "acc_peak_m_s2": 83.7,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 340,
+    "low20": 6,
+    "low32N": 5,
+    "f_max_N": 1826.17,
+    "f_min_N": 0.0,
+    "rot_max_deg": 20.778,
+    "acc_peak_m_s2": 64.01,
+    "by_phase_low20": {
+     "swing": 6,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "b3_runtime",
+   "variant": "sdk_peak640",
+   "bottle": "L14_00055",
+   "asset": "00055",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    640.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.078,
+   "close_steps": 20,
+   "F_ss_N": 312.958,
+   "quiet_cv": 0.0006,
+   "lead_mm": 5.9994,
+   "drive_est_N": -313.63,
+   "pen_mm": 0.0665,
+   "lost": null,
+   "tap_readback_N": 1.014,
+   "swing_ik_err_mm_max": 0.005,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 313.41,
+    "f_min_N": 312.36,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 0.53,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 313.5,
+    "f_min_N": 312.27,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 13.21,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 314.5,
+    "f_min_N": 310.77,
+    "rot_max_deg": 0.026,
+    "acc_peak_m_s2": 87.26,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 340,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 419.99,
+    "f_min_N": 195.07,
+    "rot_max_deg": 2.125,
+    "acc_peak_m_s2": 71.06,
+    "by_phase_low20": {
+     "swing": 0,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "b3_runtime",
+   "variant": "latch100_cap160",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.079,
+   "close_steps": 50,
+   "F_ss_N": 157.688,
+   "quiet_cv": 0.00136,
+   "lead_mm": 3.0641,
+   "drive_est_N": -160.27,
+   "pen_mm": 0.0256,
+   "lost": {
+    "phase": "jerk_close_2cm",
+    "step": 1105
+   },
+   "tap_readback_N": 1.07,
+   "swing_ik_err_mm_max": null,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 158.31,
+    "f_min_N": 157.08,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 1.08,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 158.28,
+    "f_min_N": 156.96,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 12.6,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 180,
+    "low20": 8,
+    "low32N": 8,
+    "f_max_N": 193.43,
+    "f_min_N": 0.0,
+    "rot_max_deg": 12.698,
+    "acc_peak_m_s2": 83.78,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 8
+    }
+   },
+   "swing": null
+  },
+  {
+   "run": "b3_runtime",
+   "variant": "latch100_cap160",
+   "bottle": "L14_00055",
+   "asset": "00055",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.004,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.072,
+   "close_steps": 20,
+   "F_ss_N": 159.22,
+   "quiet_cv": 0.00087,
+   "lead_mm": 3.1855,
+   "drive_est_N": -167.81,
+   "pen_mm": 0.0348,
+   "lost": null,
+   "tap_readback_N": 1.003,
+   "swing_ik_err_mm_max": 0.005,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 159.55,
+    "f_min_N": 158.83,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 0.61,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 160.66,
+    "f_min_N": 158.11,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 13.13,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 253.94,
+    "f_min_N": 98.46,
+    "rot_max_deg": 1.068,
+    "acc_peak_m_s2": 87.39,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 340,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 213.98,
+    "f_min_N": 94.12,
+    "rot_max_deg": 2.197,
+    "acc_peak_m_s2": 71.0,
+    "by_phase_low20": {
+     "swing": 0,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "b3_runtime",
+   "variant": "arm_none",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    0.0,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.079,
+   "close_steps": 30,
+   "F_ss_N": 157.894,
+   "quiet_cv": 0.00102,
+   "lead_mm": 5.4052,
+   "drive_est_N": -280.45,
+   "pen_mm": 0.0009,
+   "lost": null,
+   "tap_readback_N": 1.068,
+   "swing_ik_err_mm_max": 0.009,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 158.19,
+    "f_min_N": 157.67,
+    "rot_max_deg": 0.005,
+    "acc_peak_m_s2": 1.52,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 158.19,
+    "f_min_N": 157.56,
+    "rot_max_deg": 0.006,
+    "acc_peak_m_s2": 13.17,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 158.99,
+    "f_min_N": 156.23,
+    "rot_max_deg": 0.865,
+    "acc_peak_m_s2": 83.37,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 340,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 161.88,
+    "f_min_N": 69.67,
+    "rot_max_deg": 18.326,
+    "acc_peak_m_s2": 63.53,
+    "by_phase_low20": {
+     "swing": 0,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "b3_runtime",
+   "variant": "arm_none",
+   "bottle": "L14_00055",
+   "asset": "00055",
+   "armature_eng": [
+    0.0,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.078,
+   "close_steps": 20,
+   "F_ss_N": 159.485,
+   "quiet_cv": 1e-05,
+   "lead_mm": 4.8409,
+   "drive_est_N": -249.84,
+   "pen_mm": 0.0012,
+   "lost": null,
+   "tap_readback_N": 1.049,
+   "swing_ik_err_mm_max": 0.005,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 159.49,
+    "f_min_N": 159.48,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 1.16,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 159.7,
+    "f_min_N": 159.31,
+    "rot_max_deg": 0.018,
+    "acc_peak_m_s2": 13.94,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 159.92,
+    "f_min_N": 159.27,
+    "rot_max_deg": 0.509,
+    "acc_peak_m_s2": 86.7,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 340,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 160.17,
+    "f_min_N": 159.5,
+    "rot_max_deg": 2.475,
+    "acc_peak_m_s2": 70.41,
+    "by_phase_low20": {
+     "swing": 0,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "b3_dt2",
+   "variant": "base",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.079,
+   "close_steps": 100,
+   "F_ss_N": 157.67,
+   "quiet_cv": 0.00799,
+   "lead_mm": 6.6969,
+   "drive_est_N": -359.2,
+   "pen_mm": 0.0059,
+   "lost": {
+    "phase": "swing",
+    "step": 3150
+   },
+   "tap_readback_N": 1.056,
+   "swing_ik_err_mm_max": 0.009,
+   "quiet": {
+    "steps": 500,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 162.96,
+    "f_min_N": 152.28,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 1.37,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 960,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 163.09,
+    "f_min_N": 152.44,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 8.93,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 900,
+    "low20": 116,
+    "low32N": 116,
+    "f_max_N": 1598.01,
+    "f_min_N": 0.0,
+    "rot_max_deg": 15.088,
+    "acc_peak_m_s2": 87.09,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 20,
+     "jerk_up_1cm": 96
+    }
+   },
+   "swing": {
+    "steps": 400,
+    "low20": 114,
+    "low32N": 114,
+    "f_max_N": 2946.79,
+    "f_min_N": 0.0,
+    "rot_max_deg": 41.587,
+    "acc_peak_m_s2": 83.4,
+    "by_phase_low20": {
+     "swing": 114
+    }
+   }
+  },
+  {
+   "run": "b3_dt2",
+   "variant": "base",
+   "bottle": "L14_00055",
+   "asset": "00055",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.079,
+   "close_steps": 60,
+   "F_ss_N": 159.836,
+   "quiet_cv": 0.00565,
+   "lead_mm": 5.5997,
+   "drive_est_N": -300.1,
+   "pen_mm": 0.0085,
+   "lost": null,
+   "tap_readback_N": 1.003,
+   "swing_ik_err_mm_max": 0.005,
+   "quiet": {
+    "steps": 500,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 162.0,
+    "f_min_N": 157.15,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 1.03,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 960,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 161.94,
+    "f_min_N": 158.08,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 9.25,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 900,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 165.36,
+    "f_min_N": 154.48,
+    "rot_max_deg": 0.004,
+    "acc_peak_m_s2": 92.17,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 680,
+    "low20": 6,
+    "low32N": 6,
+    "f_max_N": 324.38,
+    "f_min_N": 7.0,
+    "rot_max_deg": 1.385,
+    "acc_peak_m_s2": 84.29,
+    "by_phase_low20": {
+     "swing": 6,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "b3_dt2",
+   "variant": "latch100_peak640",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    640.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.079,
+   "close_steps": 80,
+   "F_ss_N": 161.974,
+   "quiet_cv": 0.00478,
+   "lead_mm": 3.1421,
+   "drive_est_N": -164.28,
+   "pen_mm": 0.0066,
+   "lost": {
+    "phase": "swing",
+    "step": 2871
+   },
+   "tap_readback_N": 1.049,
+   "swing_ik_err_mm_max": 0.009,
+   "quiet": {
+    "steps": 500,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 165.01,
+    "f_min_N": 159.17,
+    "rot_max_deg": 0.002,
+    "acc_peak_m_s2": 1.6,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 960,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 166.5,
+    "f_min_N": 157.8,
+    "rot_max_deg": 0.002,
+    "acc_peak_m_s2": 8.86,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 900,
+    "low20": 4,
+    "low32N": 4,
+    "f_max_N": 459.99,
+    "f_min_N": 0.49,
+    "rot_max_deg": 1.668,
+    "acc_peak_m_s2": 86.92,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 4,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 160,
+    "low20": 86,
+    "low32N": 86,
+    "f_max_N": 436.14,
+    "f_min_N": 0.0,
+    "rot_max_deg": 31.212,
+    "acc_peak_m_s2": 86.25,
+    "by_phase_low20": {
+     "swing": 86
+    }
+   }
+  },
+  {
+   "run": "b3_dt2",
+   "variant": "latch100_peak640",
+   "bottle": "L14_00055",
+   "asset": "00055",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    640.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.0,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.078,
+   "close_steps": 60,
+   "F_ss_N": 152.85,
+   "quiet_cv": 0.00133,
+   "lead_mm": 2.924,
+   "drive_est_N": -152.84,
+   "pen_mm": 0.005,
+   "lost": null,
+   "tap_readback_N": 1.005,
+   "swing_ik_err_mm_max": 0.005,
+   "quiet": {
+    "steps": 500,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 153.5,
+    "f_min_N": 152.24,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 1.03,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 960,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 153.95,
+    "f_min_N": 151.63,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 9.1,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 900,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 223.9,
+    "f_min_N": 103.54,
+    "rot_max_deg": 0.193,
+    "acc_peak_m_s2": 91.56,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 680,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 196.49,
+    "f_min_N": 90.21,
+    "rot_max_deg": 0.645,
+    "acc_peak_m_s2": 83.91,
+    "by_phase_low20": {
+     "swing": 0,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "b4_witness",
+   "variant": "fix",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    640.2,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.078,
+   "close_steps": 40,
+   "F_ss_N": 314.029,
+   "quiet_cv": 0.00057,
+   "lead_mm": 6.0864,
+   "drive_est_N": -318.17,
+   "pen_mm": 0.0363,
+   "lost": null,
+   "tap_readback_N": 1.075,
+   "swing_ik_err_mm_max": 0.009,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 314.43,
+    "f_min_N": 313.63,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 1.16,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 314.49,
+    "f_min_N": 313.34,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 12.53,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 324.26,
+    "f_min_N": 298.49,
+    "rot_max_deg": 0.082,
+    "acc_peak_m_s2": 83.71,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 340,
+    "low20": 6,
+    "low32N": 4,
+    "f_max_N": 1475.13,
+    "f_min_N": 0.0,
+    "rot_max_deg": 16.506,
+    "acc_peak_m_s2": 63.89,
+    "by_phase_low20": {
+     "swing": 6,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "b4_witness",
+   "variant": "fix",
+   "bottle": "L14_00055",
+   "asset": "00055",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    640.2,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.078,
+   "close_steps": 20,
+   "F_ss_N": 309.621,
+   "quiet_cv": 0.00014,
+   "lead_mm": 5.9107,
+   "drive_est_N": -308.96,
+   "pen_mm": 0.0403,
+   "lost": null,
+   "tap_readback_N": 1.005,
+   "swing_ik_err_mm_max": 0.005,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 309.78,
+    "f_min_N": 309.46,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 0.49,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 309.97,
+    "f_min_N": 309.28,
+    "rot_max_deg": 0.002,
+    "acc_peak_m_s2": 13.08,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 313.52,
+    "f_min_N": 305.98,
+    "rot_max_deg": 0.031,
+    "acc_peak_m_s2": 87.26,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 340,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 460.73,
+    "f_min_N": 130.41,
+    "rot_max_deg": 1.141,
+    "acc_peak_m_s2": 71.07,
+    "by_phase_low20": {
+     "swing": 0,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "b4_witness",
+   "variant": "d3_cap160",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.079,
+   "close_steps": 40,
+   "F_ss_N": 158.795,
+   "quiet_cv": 0.00042,
+   "lead_mm": 6.0657,
+   "drive_est_N": -333.93,
+   "pen_mm": 0.0177,
+   "lost": {
+    "phase": "swing",
+    "step": 1446
+   },
+   "tap_readback_N": 1.12,
+   "swing_ik_err_mm_max": 0.009,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 159.26,
+    "f_min_N": 158.35,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 1.1,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 159.76,
+    "f_min_N": 157.6,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 12.6,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 186.35,
+    "f_min_N": 139.8,
+    "rot_max_deg": 1.305,
+    "acc_peak_m_s2": 83.84,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 90,
+    "low20": 46,
+    "low32N": 46,
+    "f_max_N": 1420.15,
+    "f_min_N": 0.0,
+    "rot_max_deg": 36.957,
+    "acc_peak_m_s2": 62.88,
+    "by_phase_low20": {
+     "swing": 46
+    }
+   }
+  },
+  {
+   "run": "b4_witness",
+   "variant": "d3_cap160",
+   "bottle": "L14_00055",
+   "asset": "00055",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.002,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.078,
+   "close_steps": 20,
+   "F_ss_N": null,
+   "quiet_cv": null,
+   "lead_mm": null,
+   "drive_est_N": null,
+   "pen_mm": null,
+   "lost": {
+    "phase": "settle",
+    "step": 20
+   },
+   "tap_readback_N": null,
+   "swing_ik_err_mm_max": null,
+   "quiet": null,
+   "taps": null,
+   "jerks": null,
+   "swing": null
+  },
+  {
+   "run": "b4_witness_dt2",
+   "variant": "fix",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    640.2,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.079,
+   "close_steps": 80,
+   "F_ss_N": 326.509,
+   "quiet_cv": 0.00034,
+   "lead_mm": 6.3279,
+   "drive_est_N": -330.83,
+   "pen_mm": 0.0135,
+   "lost": null,
+   "tap_readback_N": 1.049,
+   "swing_ik_err_mm_max": 0.009,
+   "quiet": {
+    "steps": 500,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 326.86,
+    "f_min_N": 326.09,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 1.54,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 960,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 327.15,
+    "f_min_N": 326.03,
+    "rot_max_deg": 0.002,
+    "acc_peak_m_s2": 8.69,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 900,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 336.69,
+    "f_min_N": 316.34,
+    "rot_max_deg": 0.043,
+    "acc_peak_m_s2": 86.64,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 680,
+    "low20": 12,
+    "low32N": 5,
+    "f_max_N": 1386.42,
+    "f_min_N": 0.0,
+    "rot_max_deg": 14.246,
+    "acc_peak_m_s2": 79.24,
+    "by_phase_low20": {
+     "swing": 12,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "b4_witness_dt2",
+   "variant": "fix",
+   "bottle": "L14_00055",
+   "asset": "00055",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    640.2,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.079,
+   "close_steps": 60,
+   "F_ss_N": 296.929,
+   "quiet_cv": 0.00074,
+   "lead_mm": 5.6927,
+   "drive_est_N": -297.56,
+   "pen_mm": 0.0096,
+   "lost": null,
+   "tap_readback_N": 1.007,
+   "swing_ik_err_mm_max": 0.005,
+   "quiet": {
+    "steps": 500,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 297.79,
+    "f_min_N": 296.15,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 1.03,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 960,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 297.7,
+    "f_min_N": 296.47,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 9.06,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 900,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 302.79,
+    "f_min_N": 292.37,
+    "rot_max_deg": 0.006,
+    "acc_peak_m_s2": 91.92,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 680,
+    "low20": 2,
+    "low32N": 1,
+    "f_max_N": 647.96,
+    "f_min_N": 9.1,
+    "rot_max_deg": 2.494,
+    "acc_peak_m_s2": 84.5,
+    "by_phase_low20": {
+     "swing": 2,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "b6_witness",
+   "variant": "trip",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    323.5,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.078,
+   "close_steps": 40,
+   "F_ss_N": 314.74,
+   "quiet_cv": 0.0006,
+   "lead_mm": 6.1011,
+   "drive_est_N": -318.94,
+   "pen_mm": 0.0364,
+   "lost": null,
+   "tap_readback_N": 1.074,
+   "swing_ik_err_mm_max": 0.009,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 315.14,
+    "f_min_N": 314.41,
+    "rot_max_deg": 0.002,
+    "acc_peak_m_s2": 1.16,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 315.31,
+    "f_min_N": 314.03,
+    "rot_max_deg": 0.002,
+    "acc_peak_m_s2": 12.53,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 324.94,
+    "f_min_N": 301.44,
+    "rot_max_deg": 0.056,
+    "acc_peak_m_s2": 83.71,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 340,
+    "low20": 13,
+    "low32N": 10,
+    "f_max_N": 1546.15,
+    "f_min_N": 0.0,
+    "rot_max_deg": 20.512,
+    "acc_peak_m_s2": 64.32,
+    "by_phase_low20": {
+     "swing": 13,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "b6_witness",
+   "variant": "trip",
+   "bottle": "L14_00055",
+   "asset": "00055",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    323.5,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.078,
+   "close_steps": 20,
+   "F_ss_N": 310.191,
+   "quiet_cv": 0.00018,
+   "lead_mm": 5.935,
+   "drive_est_N": -310.22,
+   "pen_mm": 0.041,
+   "lost": null,
+   "tap_readback_N": 1.005,
+   "swing_ik_err_mm_max": 0.005,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 310.45,
+    "f_min_N": 310.03,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 0.49,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 310.56,
+    "f_min_N": 309.88,
+    "rot_max_deg": 0.003,
+    "acc_peak_m_s2": 13.08,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 359.75,
+    "f_min_N": 270.25,
+    "rot_max_deg": 0.189,
+    "acc_peak_m_s2": 87.23,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 340,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 497.67,
+    "f_min_N": 134.18,
+    "rot_max_deg": 1.128,
+    "acc_peak_m_s2": 71.06,
+    "by_phase_low20": {
+     "swing": 0,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "b6_witness",
+   "variant": "motor_peak640",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    640.2,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.079,
+   "close_steps": 40,
+   "F_ss_N": 314.048,
+   "quiet_cv": 0.00059,
+   "lead_mm": 6.0866,
+   "drive_est_N": -318.18,
+   "pen_mm": 0.0363,
+   "lost": null,
+   "tap_readback_N": 1.075,
+   "swing_ik_err_mm_max": 0.009,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 314.49,
+    "f_min_N": 313.62,
+    "rot_max_deg": 0.002,
+    "acc_peak_m_s2": 1.03,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 314.52,
+    "f_min_N": 313.22,
+    "rot_max_deg": 0.002,
+    "acc_peak_m_s2": 12.53,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 319.95,
+    "f_min_N": 307.62,
+    "rot_max_deg": 0.041,
+    "acc_peak_m_s2": 83.72,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 340,
+    "low20": 9,
+    "low32N": 7,
+    "f_max_N": 1941.24,
+    "f_min_N": 0.0,
+    "rot_max_deg": 20.683,
+    "acc_peak_m_s2": 63.82,
+    "by_phase_low20": {
+     "swing": 9,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "b6_witness",
+   "variant": "motor_peak640",
+   "bottle": "L14_00055",
+   "asset": "00055",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    640.2,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.078,
+   "close_steps": 20,
+   "F_ss_N": 309.615,
+   "quiet_cv": 0.00016,
+   "lead_mm": 5.9107,
+   "drive_est_N": -308.95,
+   "pen_mm": 0.0403,
+   "lost": null,
+   "tap_readback_N": 1.005,
+   "swing_ik_err_mm_max": 0.005,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 309.73,
+    "f_min_N": 309.45,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 0.49,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 309.88,
+    "f_min_N": 309.3,
+    "rot_max_deg": 0.002,
+    "acc_peak_m_s2": 13.08,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 313.47,
+    "f_min_N": 305.88,
+    "rot_max_deg": 0.031,
+    "acc_peak_m_s2": 87.26,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 340,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 465.16,
+    "f_min_N": 131.63,
+    "rot_max_deg": 0.861,
+    "acc_peak_m_s2": 71.09,
+    "by_phase_low20": {
+     "swing": 0,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "b6_witness",
+   "variant": "d3_cap160",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.079,
+   "close_steps": 40,
+   "F_ss_N": 158.802,
+   "quiet_cv": 0.00098,
+   "lead_mm": 6.0645,
+   "drive_est_N": -333.87,
+   "pen_mm": 0.0177,
+   "lost": {
+    "phase": "swing",
+    "step": 1561
+   },
+   "tap_readback_N": 1.121,
+   "swing_ik_err_mm_max": 0.009,
+   "quiet": {
+    "steps": 250,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 159.29,
+    "f_min_N": 158.27,
+    "rot_max_deg": 0.0,
+    "acc_peak_m_s2": 1.1,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 480,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 159.56,
+    "f_min_N": 157.43,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 12.59,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 450,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 197.49,
+    "f_min_N": 136.4,
+    "rot_max_deg": 1.188,
+    "acc_peak_m_s2": 83.7,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 200,
+    "low20": 105,
+    "low32N": 105,
+    "f_max_N": 1688.56,
+    "f_min_N": 0.0,
+    "rot_max_deg": 47.208,
+    "acc_peak_m_s2": 69.88,
+    "by_phase_low20": {
+     "swing": 105
+    }
+   }
+  },
+  {
+   "run": "b6_witness",
+   "variant": "d3_cap160",
+   "bottle": "L14_00055",
+   "asset": "00055",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    160.0,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.078,
+   "close_steps": 20,
+   "F_ss_N": null,
+   "quiet_cv": null,
+   "lead_mm": null,
+   "drive_est_N": null,
+   "pen_mm": null,
+   "lost": {
+    "phase": "settle",
+    "step": 20
+   },
+   "tap_readback_N": null,
+   "swing_ik_err_mm_max": null,
+   "quiet": null,
+   "taps": null,
+   "jerks": null,
+   "swing": null
+  },
+  {
+   "run": "b6_witness_dt2",
+   "variant": "trip",
+   "bottle": "L14_00022",
+   "asset": "00022",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    323.5,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.079,
+   "close_steps": 80,
+   "F_ss_N": 311.352,
+   "quiet_cv": 0.00035,
+   "lead_mm": 6.0347,
+   "drive_est_N": -315.49,
+   "pen_mm": 0.0128,
+   "lost": null,
+   "tap_readback_N": 1.049,
+   "swing_ik_err_mm_max": 0.009,
+   "quiet": {
+    "steps": 500,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 311.87,
+    "f_min_N": 310.69,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 1.54,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 960,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 312.45,
+    "f_min_N": 310.5,
+    "rot_max_deg": 0.002,
+    "acc_peak_m_s2": 8.9,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 900,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 327.24,
+    "f_min_N": 294.98,
+    "rot_max_deg": 0.071,
+    "acc_peak_m_s2": 86.64,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 680,
+    "low20": 24,
+    "low32N": 19,
+    "f_max_N": 3463.69,
+    "f_min_N": 0.0,
+    "rot_max_deg": 20.031,
+    "acc_peak_m_s2": 79.3,
+    "by_phase_low20": {
+     "swing": 24,
+     "swing_rest": 0
+    }
+   }
+  },
+  {
+   "run": "b6_witness_dt2",
+   "variant": "trip",
+   "bottle": "L14_00055",
+   "asset": "00055",
+   "armature_eng": [
+    23.524,
+    0.0
+   ],
+   "fmax_eng": [
+    323.5,
+    100.0
+   ],
+   "hold_ik_err_mm_deg": [
+    0.001,
+    0.0
+   ],
+   "l6_hold_err_mm": 0.079,
+   "close_steps": 60,
+   "F_ss_N": 291.243,
+   "quiet_cv": 0.00098,
+   "lead_mm": 5.5643,
+   "drive_est_N": -290.86,
+   "pen_mm": 0.0094,
+   "lost": null,
+   "tap_readback_N": 1.007,
+   "swing_ik_err_mm_max": 0.005,
+   "quiet": {
+    "steps": 500,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 291.9,
+    "f_min_N": 290.35,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 1.12,
+    "by_phase_low20": {
+     "quiet": 0
+    }
+   },
+   "taps": {
+    "steps": 960,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 293.01,
+    "f_min_N": 289.77,
+    "rot_max_deg": 0.001,
+    "acc_peak_m_s2": 8.97,
+    "by_phase_low20": {
+     "tap_close": 0,
+     "tap_axis": 0,
+     "tap_down": 0
+    }
+   },
+   "jerks": {
+    "steps": 900,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 295.73,
+    "f_min_N": 287.66,
+    "rot_max_deg": 0.004,
+    "acc_peak_m_s2": 92.17,
+    "by_phase_low20": {
+     "jerk_close_1cm": 0,
+     "jerk_close_2cm": 0,
+     "jerk_up_1cm": 0
+    }
+   },
+   "swing": {
+    "steps": 680,
+    "low20": 0,
+    "low32N": 0,
+    "f_max_N": 354.85,
+    "f_min_N": 229.09,
+    "rot_max_deg": 0.307,
+    "acc_peak_m_s2": 84.5,
+    "by_phase_low20": {
+     "swing": 0,
+     "swing_rest": 0
+    }
+   }
+  }
+ ]
+}

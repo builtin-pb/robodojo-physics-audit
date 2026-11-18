@@ -1,0 +1,563 @@
+{
+  "is_not_moved_twice_same_step_v1": [
+    0.0,
+    1.0
+  ],
+  "is_not_moved_twice_same_step_v2": [
+    0.0,
+    0.0
+  ],
+  "organize_table": {
+    "v1_slide_run_reward_and_get_score": {
+      "score_tiers_after_each_step": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mouse_in_mat": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "score": 25.0
+    },
+    "v1_slide_get_score_only": {
+      "score_tiers_after_each_step": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "mouse_in_mat": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "score": 0.0
+    },
+    "v1_still_get_score_only": {
+      "score_tiers_after_each_step": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mouse_in_mat": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "score": 25.0
+    },
+    "v1_still_on_mat_from_init": {
+      "score_tiers_after_each_step": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mouse_in_mat": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "score": 25.0
+    },
+    "v2_slide_run_reward_and_get_score": {
+      "score_tiers_after_each_step": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "mouse_in_mat": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "score": 0.0
+    },
+    "v2_slide_from_mat_init": {
+      "score_tiers_after_each_step": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "mouse_in_mat": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "score": 0.0
+    },
+    "v2_still_after_place": {
+      "score_tiers_after_each_step": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mouse_in_mat": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "score": 25.0
+    },
+    "v2_still_on_mat_from_init": {
+      "score_tiers_after_each_step": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mouse_in_mat": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "score": 25.0
+    }
+  },
+  "hang_mugs_v1": [
+    {
+      "hung": [
+        "mug0",
+        "mug1"
+      ],
+      "swinging": "mug0",
+      "hung_geometry_passes": {
+        "mug0": true,
+        "mug1": true
+      },
+      "tiers_before_swing": 1,
+      "tiers_after_swing": 1,
+      "pair_tier_paid_on_swing_step": false,
+      "warmup": false
+    },
+    {
+      "hung": [
+        "mug0",
+        "mug1"
+      ],
+      "swinging": "mug0",
+      "hung_geometry_passes": {
+        "mug0": true,
+        "mug1": true
+      },
+      "tiers_before_swing": 1,
+      "tiers_after_swing": 1,
+      "pair_tier_paid_on_swing_step": false,
+      "warmup": true
+    },
+    {
+      "hung": [
+        "mug0",
+        "mug1"
+      ],
+      "swinging": "mug1",
+      "hung_geometry_passes": {
+        "mug0": true,
+        "mug1": true
+      },
+      "tiers_before_swing": 1,
+      "tiers_after_swing": 2,
+      "pair_tier_paid_on_swing_step": true,
+      "warmup": false
+    },
+    {
+      "hung": [
+        "mug0",
+        "mug1"
+      ],
+      "swinging": "mug1",
+      "hung_geometry_passes": {
+        "mug0": true,
+        "mug1": true
+      },
+      "tiers_before_swing": 1,
+      "tiers_after_swing": 1,
+      "pair_tier_paid_on_swing_step": false,
+      "warmup": true
+    },
+    {
+      "hung": [
+        "mug0",
+        "mug2"
+      ],
+      "swinging": "mug0",
+      "hung_geometry_passes": {
+        "mug0": true,
+        "mug2": true
+      },
+      "tiers_before_swing": 1,
+      "tiers_after_swing": 2,
+      "pair_tier_paid_on_swing_step": true,
+      "warmup": false
+    },
+    {
+      "hung": [
+        "mug0",
+        "mug2"
+      ],
+      "swinging": "mug0",
+      "hung_geometry_passes": {
+        "mug0": true,
+        "mug2": true
+      },
+      "tiers_before_swing": 1,
+      "tiers_after_swing": 2,
+      "pair_tier_paid_on_swing_step": true,
+      "warmup": true
+    },
+    {
+      "hung": [
+        "mug0",
+        "mug2"
+      ],
+      "swinging": "mug2",
+      "hung_geometry_passes": {
+        "mug0": true,
+        "mug2": true
+      },
+      "tiers_before_swing": 1,
+      "tiers_after_swing": 2,
+      "pair_tier_paid_on_swing_step": true,
+      "warmup": false
+    },
+    {
+      "hung": [
+        "mug0",
+        "mug2"
+      ],
+      "swinging": "mug2",
+      "hung_geometry_passes": {
+        "mug0": true,
+        "mug2": true
+      },
+      "tiers_before_swing": 1,
+      "tiers_after_swing": 1,
+      "pair_tier_paid_on_swing_step": false,
+      "warmup": true
+    },
+    {
+      "hung": [
+        "mug1",
+        "mug2"
+      ],
+      "swinging": "mug1",
+      "hung_geometry_passes": {
+        "mug1": true,
+        "mug2": true
+      },
+      "tiers_before_swing": 1,
+      "tiers_after_swing": 1,
+      "pair_tier_paid_on_swing_step": false,
+      "warmup": false
+    },
+    {
+      "hung": [
+        "mug1",
+        "mug2"
+      ],
+      "swinging": "mug1",
+      "hung_geometry_passes": {
+        "mug1": true,
+        "mug2": true
+      },
+      "tiers_before_swing": 1,
+      "tiers_after_swing": 1,
+      "pair_tier_paid_on_swing_step": false,
+      "warmup": true
+    },
+    {
+      "hung": [
+        "mug1",
+        "mug2"
+      ],
+      "swinging": "mug2",
+      "hung_geometry_passes": {
+        "mug1": true,
+        "mug2": true
+      },
+      "tiers_before_swing": 1,
+      "tiers_after_swing": 2,
+      "pair_tier_paid_on_swing_step": true,
+      "warmup": false
+    },
+    {
+      "hung": [
+        "mug1",
+        "mug2"
+      ],
+      "swinging": "mug2",
+      "hung_geometry_passes": {
+        "mug1": true,
+        "mug2": true
+      },
+      "tiers_before_swing": 1,
+      "tiers_after_swing": 1,
+      "pair_tier_paid_on_swing_step": false,
+      "warmup": true
+    }
+  ],
+  "hang_mugs_v2": [
+    {
+      "hung": [
+        "mug0",
+        "mug1"
+      ],
+      "swinging": "mug0",
+      "hung_geometry_passes": {
+        "mug0": true,
+        "mug1": true
+      },
+      "tiers_before_swing": 1,
+      "tiers_after_swing": 1,
+      "pair_tier_paid_on_swing_step": false,
+      "warmup": false
+    },
+    {
+      "hung": [
+        "mug0",
+        "mug1"
+      ],
+      "swinging": "mug0",
+      "hung_geometry_passes": {
+        "mug0": true,
+        "mug1": true
+      },
+      "tiers_before_swing": 1,
+      "tiers_after_swing": 1,
+      "pair_tier_paid_on_swing_step": false,
+      "warmup": true
+    },
+    {
+      "hung": [
+        "mug0",
+        "mug1"
+      ],
+      "swinging": "mug1",
+      "hung_geometry_passes": {
+        "mug0": true,
+        "mug1": true
+      },
+      "tiers_before_swing": 1,
+      "tiers_after_swing": 1,
+      "pair_tier_paid_on_swing_step": false,
+      "warmup": false
+    },
+    {
+      "hung": [
+        "mug0",
+        "mug1"
+      ],
+      "swinging": "mug1",
+      "hung_geometry_passes": {
+        "mug0": true,
+        "mug1": true
+      },
+      "tiers_before_swing": 1,
+      "tiers_after_swing": 1,
+      "pair_tier_paid_on_swing_step": false,
+      "warmup": true
+    },
+    {
+      "hung": [
+        "mug0",
+        "mug2"
+      ],
+      "swinging": "mug0",
+      "hung_geometry_passes": {
+        "mug0": true,
+        "mug2": true
+      },
+      "tiers_before_swing": 1,
+      "tiers_after_swing": 1,
+      "pair_tier_paid_on_swing_step": false,
+      "warmup": false
+    },
+    {
+      "hung": [
+        "mug0",
+        "mug2"
+      ],
+      "swinging": "mug0",
+      "hung_geometry_passes": {
+        "mug0": true,
+        "mug2": true
+      },
+      "tiers_before_swing": 1,
+      "tiers_after_swing": 1,
+      "pair_tier_paid_on_swing_step": false,
+      "warmup": true
+    },
+    {
+      "hung": [
+        "mug0",
+        "mug2"
+      ],
+      "swinging": "mug2",
+      "hung_geometry_passes": {
+        "mug0": true,
+        "mug2": true
+      },
+      "tiers_before_swing": 1,
+      "tiers_after_swing": 1,
+      "pair_tier_paid_on_swing_step": false,
+      "warmup": false
+    },
+    {
+      "hung": [
+        "mug0",
+        "mug2"
+      ],
+      "swinging": "mug2",
+      "hung_geometry_passes": {
+        "mug0": true,
+        "mug2": true
+      },
+      "tiers_before_swing": 1,
+      "tiers_after_swing": 1,
+      "pair_tier_paid_on_swing_step": false,
+      "warmup": true
+    },
+    {
+      "hung": [
+        "mug1",
+        "mug2"
+      ],
+      "swinging": "mug1",
+      "hung_geometry_passes": {
+        "mug1": true,
+        "mug2": true
+      },
+      "tiers_before_swing": 1,
+      "tiers_after_swing": 1,
+      "pair_tier_paid_on_swing_step": false,
+      "warmup": false
+    },
+    {
+      "hung": [
+        "mug1",
+        "mug2"
+      ],
+      "swinging": "mug1",
+      "hung_geometry_passes": {
+        "mug1": true,
+        "mug2": true
+      },
+      "tiers_before_swing": 1,
+      "tiers_after_swing": 1,
+      "pair_tier_paid_on_swing_step": false,
+      "warmup": true
+    },
+    {
+      "hung": [
+        "mug1",
+        "mug2"
+      ],
+      "swinging": "mug2",
+      "hung_geometry_passes": {
+        "mug1": true,
+        "mug2": true
+      },
+      "tiers_before_swing": 1,
+      "tiers_after_swing": 1,
+      "pair_tier_paid_on_swing_step": false,
+      "warmup": false
+    },
+    {
+      "hung": [
+        "mug1",
+        "mug2"
+      ],
+      "swinging": "mug2",
+      "hung_geometry_passes": {
+        "mug1": true,
+        "mug2": true
+      },
+      "tiers_before_swing": 1,
+      "tiers_after_swing": 1,
+      "pair_tier_paid_on_swing_step": false,
+      "warmup": true
+    }
+  ],
+  "hang_mugs_random_v2_paid_count": 0,
+  "hang_mugs_v2_still_control_paid_count": 6,
+  "v1_matches_archived_out_s130_exact": true
+}

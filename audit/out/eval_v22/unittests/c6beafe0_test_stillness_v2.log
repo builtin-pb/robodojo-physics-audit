@@ -1,0 +1,24 @@
+test_aggregation_refuses_mixed_stillness_rules (audit.tools.test_stillness_v2.StillnessV2StdlibTests.test_aggregation_refuses_mixed_stillness_rules) ... ok
+test_ledger_records_stillness_rule (audit.tools.test_stillness_v2.StillnessV2StdlibTests.test_ledger_records_stillness_rule) ... ok
+test_points_moved_beyond_v2 (audit.tools.test_stillness_v2.StillnessV2StdlibTests.test_points_moved_beyond_v2) ... ok
+test_resume_stillness_rule_check (audit.tools.test_stillness_v2.StillnessV2StdlibTests.test_resume_stillness_rule_check) ... ok
+test_snapshot_multi_env_isolation_stdlib (audit.tools.test_stillness_v2.StillnessV2StdlibTests.test_snapshot_multi_env_isolation_stdlib) ... ok
+test_stillness_snapshot_lifecycle_and_action_one_rule (audit.tools.test_stillness_v2.StillnessV2StdlibTests.test_stillness_snapshot_lifecycle_and_action_one_rule) ... ok
+test_build_tower_single_eval_unchanged_v1_vs_v2 (audit.tools.test_stillness_v2.StillnessV2TaskTests.test_build_tower_single_eval_unchanged_v1_vs_v2) ... ok
+test_cold_10mm_displacement_update_false_matches_v1 (audit.tools.test_stillness_v2.StillnessV2TaskTests.test_cold_10mm_displacement_update_false_matches_v1) ... ok
+test_eval_env_resume_manifest_union_with_181 (audit.tools.test_stillness_v2.StillnessV2TaskTests.test_eval_env_resume_manifest_union_with_181) ... ok
+test_first_action_boundary_v2 (audit.tools.test_stillness_v2.StillnessV2TaskTests.test_first_action_boundary_v2) ... ok
+test_hang_mugs_all_six_cases_and_random (audit.tools.test_stillness_v2.StillnessV2TaskTests.test_hang_mugs_all_six_cases_and_random) ... ok
+test_hang_mugs_rotational_swing_rejected_v2 (audit.tools.test_stillness_v2.StillnessV2TaskTests.test_hang_mugs_rotational_swing_rejected_v2) ... ok
+test_imitate_sorting_sequence_single_eval_unchanged_v1_vs_v2 (audit.tools.test_stillness_v2.StillnessV2TaskTests.test_imitate_sorting_sequence_single_eval_unchanged_v1_vs_v2) ... ok
+test_is_moved_update_false_and_reset_preserved (audit.tools.test_stillness_v2.StillnessV2TaskTests.test_is_moved_update_false_and_reset_preserved) ... ok
+test_multi_env_isolation_func_parser_and_reward_manager (audit.tools.test_stillness_v2.StillnessV2TaskTests.test_multi_env_isolation_func_parser_and_reward_manager) ... ok
+test_organize_table_sliding_vs_resting_mouse (audit.tools.test_stillness_v2.StillnessV2TaskTests.test_organize_table_sliding_vs_resting_mouse) ... ok
+test_predicate_twice_in_one_step_v1_vs_v2 (audit.tools.test_stillness_v2.StillnessV2TaskTests.test_predicate_twice_in_one_step_v1_vs_v2) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.386s
+
+OK
+[EvalEnv][v2 resume] save_dir=eval_result_v2/RoboDojo/put_bottles_into_dustbin/p/arx_x5/0_/2026-11-15_12-00-00 resolved=1/2
+[EvalEnv][v2 resume] save_dir=eval_result_v2/RoboDojo/put_bottles_into_dustbin/p/arx_x5/0_/2026-11-15_12-30-00 resolved=1/2

@@ -1,0 +1,56 @@
+{
+ "id": "hero",
+ "size": [
+  1440,
+  1348
+ ],
+ "panel": [
+  674,
+  758
+ ],
+ "steps": [
+  920,
+  1360,
+  5
+ ],
+ "rendered_frames": 89,
+ "out_frames": 111,
+ "seconds": 4.44,
+ "fps": 25,
+ "hold_first_frames": 12,
+ "hold_last_frames": 10,
+ "mp4": {
+  "file": "hero.mp4",
+  "bytes": 441648,
+  "crf": 23
+ },
+ "webp": {
+  "file": "hero.webp",
+  "bytes": 2083672,
+  "size": [
+   1200,
+   1123
+  ],
+  "quality": 70,
+  "frames_given": 89
+ },
+ "poster": {
+  "file": "hero_poster.png",
+  "bytes": 781725,
+  "step": 1360
+ },
+ "panels": [
+  {
+   "replay": "rp_fingers_shipped",
+   "trace": "fingers/runs51/b51_fingers_shipped.result.json.gz",
+   "chip": "as shipped",
+   "color": "#e3a35a"
+  },
+  {
+   "replay": "rp_fingers_main",
+   "trace": "fingers_v2/runs51/b51_fingers_main.result.json.gz",
+   "chip": "after our fix",
+   "color": "#5cc2c4"
+  }
+ ]
+}

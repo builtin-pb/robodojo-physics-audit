@@ -1,0 +1,177 @@
+{
+ "task": "swap_T",
+ "reference": "shipped",
+ "arms": {
+  "shipped": {
+   "what": "RoboDojo as released",
+   "batches": [
+    "g4st_sT_ship"
+   ]
+  },
+  "corrected": {
+   "what": "fully corrected (all seven fixes, v2b map)",
+   "batches": [
+    "g4st_sT_corr"
+   ]
+  },
+  "robot_limits": {
+   "what": "shipped + robot_limits",
+   "batches": [
+    "g4st_sT_limits"
+   ]
+  },
+  "corr_nolimits": {
+   "what": "fully corrected without robot_limits",
+   "batches": [
+    "g4st_sT_corr_nolimits"
+   ]
+  },
+  "ordval": {
+   "what": "shipped + order, values",
+   "batches": [
+    "g4st_sT_ordval"
+   ]
+  },
+  "masses": {
+   "what": "shipped + masses",
+   "batches": [
+    "g4st_sT_masses"
+   ]
+  },
+  "gripper": {
+   "what": "shipped + gripper (D3)",
+   "batches": [
+    "g4st_sT_gripper"
+   ]
+  },
+  "solver": {
+   "what": "shipped + solver",
+   "batches": [
+    "g4st_sT_solver"
+   ]
+  },
+  "PL_v3": {
+   "what": "corrected, pad-table 0.3319/0.2841 (lane-3 v3 fit), others v2b",
+   "batches": [
+    "g4st_sT_PL_v3"
+   ],
+   "ref": "corrected"
+  },
+  "MAP_v3": {
+   "what": "corrected, pad/table/T unaries of the lane-3 v3 fit",
+   "batches": [
+    "g4st_sT_MAP_v3"
+   ],
+   "ref": "corrected"
+  },
+  "PL_lo": {
+   "what": "corrected, pad-table 0.15/0.12",
+   "batches": [
+    "g4st_sT_PL_lo"
+   ],
+   "ref": "corrected"
+  },
+  "PL_hi": {
+   "what": "corrected, pad-table 0.50/0.40",
+   "batches": [
+    "g4st_sT_PL_hi"
+   ],
+   "ref": "corrected"
+  },
+  "PA_lo": {
+   "what": "corrected, pad-T 0.30/0.207",
+   "batches": [
+    "g4st_sT_PA_lo"
+   ],
+   "ref": "corrected"
+  },
+  "PA_hi": {
+   "what": "corrected, pad-T 0.70/0.55 (pad-table 0.61/0.48)",
+   "batches": [
+    "g4st_sT_PA_hi"
+   ],
+   "ref": "corrected"
+  },
+  "AL_lo": {
+   "what": "corrected, T-table 0.15/0.12",
+   "batches": [
+    "g4st_sT_AL_lo"
+   ],
+   "ref": "corrected"
+  },
+  "AL_hi": {
+   "what": "corrected, T-table 0.50/0.40",
+   "batches": [
+    "g4st_sT_AL_hi"
+   ],
+   "ref": "corrected"
+  },
+  "shipped_rep": {
+   "what": "shipped, seed 2 layout 0 twice in one process",
+   "batches": [
+    "g4st_sT_ship_rep"
+   ],
+   "control": true,
+   "same_as": "shipped"
+  },
+  "corrected_rep": {
+   "what": "corrected, seed 2 layout 0 twice in one process",
+   "batches": [
+    "g4st_sT_corr_rep"
+   ],
+   "control": true,
+   "same_as": "corrected"
+  },
+  "dev_shipped": {
+   "what": "seed 0 layout 0, shipped, with and without --contact_log",
+   "batches": [
+    "g4st_par_sT_ship",
+    "g4st_par_sT_ship_log"
+   ],
+   "control": true
+  },
+  "dev_corrected": {
+   "what": "seed 0 layout 0, corrected, without and with --contact_log and --log_poses",
+   "batches": [
+    "g4st_par_sT_corr",
+    "g4st_par_sT_corr_log",
+    "g4st_par_sT_corr_lp"
+   ],
+   "control": true
+  }
+ },
+ "cost_only_batches": [
+  "g4st_rb_sT_corr",
+  "g4st_rb_sT_ship",
+  "g4st_rb_cell_PL_lo",
+  "g4st_rb_cell_PL_hi",
+  "g4st_rb_cell_PA_lo",
+  "g4st_rb_cell_PA_hi",
+  "g4st_rb_cell_AL_lo",
+  "g4st_rb_cell_AL_hi"
+ ],
+ "detail_arms": [
+  "shipped",
+  "corrected",
+  "robot_limits",
+  "corr_nolimits"
+ ],
+ "cost_extra_batches": [
+  "g4st_cb_ship",
+  "g4st_cb_corr",
+  "g4st_cb_off3_ship",
+  "g4st_cb_off3_corr",
+  "g4st_cb_off10_ship",
+  "g4st_cb_off10_corr",
+  "g4st_cb_off14_ship",
+  "g4st_cb_off14_corr",
+  "g4st_cb_ship_rep",
+  "g4st_cb_corr_rep",
+  "g4st_par_cb_ship",
+  "g4st_par_cb_ship_log",
+  "g4st_par_cb_off0",
+  "g4st_rb_cb_corr",
+  "g4st_rb_cb_ship"
+ ],
+ "cost_note": "summary.json cost covers every g4st_ process of both tasks (swap_T's own batches plus cost_extra_batches, cover_blocks')"
+}

@@ -1,0 +1,1639 @@
+{
+ "versions": {
+  "repo_head": "aef53b55a600bef9eba4379a171ade796adc586e",
+  "repo_diff_sha1": "8b07437f5f6c079f77dfff1544719dd2f6d2581b",
+  "isaaclab": "afca7b09d60d8beb9c1cb28b43066499940b969b",
+  "container": "isaac-sim_5.1.0.sif",
+  "isaac_sim": [
+   "5.1.0",
+   "rc.19",
+   "5"
+  ]
+ },
+ "deviations": "- Kit experience audit/harness/robodojo_physics_only.kit instead of isaaclab.python.kit (no RTX, replicator, camera or\n  viewport extensions); AppLauncher is bypassed and its carb settings are set as evaluation sets them, except that\n  cameras and the offscreen flag are off (offscreen needs the viewport extension); evaluation's PARTIAL_RENDERING\n  render() (forward, then app.update with playSimulations off) is reproduced by patching SimulationContext.render;\n  evaluation's zero-delay render args and camera extensions are not added.\n- sys.modules stubs: CameraManager and TiledCaptureManager (null; reset keeps the per-env reseeding and the one\n  sim_step), create_mdl_material (USD-only Material + Shader, no physics API), WsModelClient (no-op),\n  CuroboPlanner (need_planner false; joint actions never use it), and the policy module (a local scripted policy).\n- `env`, `task` and `utils` are pinned to the repository (namespace packages that Kit's own `utils` shadows).\n- Assets: table and ground MDL files are empty placeholders (visual only); wrist and head camera prims are not created.",
+ "eval_carb_differences": {
+  "/isaaclab/render/offscreen": {
+   "eval": true,
+   "harness": false
+  },
+  "/isaaclab/cameras_enabled": {
+   "eval": true,
+   "harness": false
+  }
+ },
+ "namespace_shadowing_before_pin": {
+  "env": [
+   null,
+   [
+    "/scratch/<user>/isaac/robodojo-physics/env"
+   ]
+  ],
+  "task": [
+   null,
+   [
+    "/scratch/<user>/isaac/robodojo-physics/task"
+   ]
+  ],
+  "utils": [
+   "/isaac-sim/exts/omni.pip.compute/pip_prebundle/cv2/utils/__init__.py",
+   [
+    "/isaac-sim/exts/omni.pip.compute/pip_prebundle/cv2/utils"
+   ]
+  ]
+ },
+ "sim_config_after_process_config": {
+  "decimation": 1,
+  "dt": 0.004,
+  "render_interval": 10,
+  "scene": {
+   "num_envs": 1,
+   "env_spacing": 7
+  },
+  "seed": [
+   0
+  ]
+ },
+ "eval_num_from_task": 50,
+ "runs": [
+  {
+   "layout": 0,
+   "repeat": 0,
+   "policy": "readback",
+   "steps_through_reset": 844,
+   "renders_through_reset": 92,
+   "camera_reset_steps": 1,
+   "settled_poses": {},
+   "manifest": {
+    "overwrite_gpu_setting": 1,
+    "physics_scenes": {
+     "/physicsScene": {
+      "physxScene:enableGPUDynamics": false,
+      "physxScene:broadphaseType": "MBP",
+      "physxScene:solverType": "TGS",
+      "physxScene:minPositionIterationCount": 1.0,
+      "physxScene:maxPositionIterationCount": 255.0,
+      "physxScene:minVelocityIterationCount": 0.0,
+      "physxScene:maxVelocityIterationCount": 255.0,
+      "physxScene:enableStabilization": false,
+      "physxScene:enableCCD": false,
+      "physxScene:bounceThreshold": 0.5,
+      "physxScene:frictionOffsetThreshold": 0.03999999910593033,
+      "physxScene:frictionCorrelationDistance": 0.02500000037252903,
+      "physxScene:enableEnhancedDeterminism": false,
+      "physxScene:timeStepsPerSecond": 250.0,
+      "physics:gravityMagnitude": 9.8100004196167,
+      "default_material": {
+       "path": "/physicsScene/defaultMaterial",
+       "has_physics_material_api": true,
+       "staticFriction": 0.5,
+       "dynamicFriction": 0.5,
+       "restitution": 0.0,
+       "frictionCombineMode": "average",
+       "restitutionCombineMode": "average"
+      }
+     }
+    },
+    "statistics_api": {
+     "enable_carb_stats_upload": "enable_carb_stats_upload(self: omni.physx.bindings._physx.IPhysxStatistics, enable: bool) -> None\n\n\n        Enables/disables upload of Physx statistics for all PhysicsScenes into carb::stats.\n\n        Args:\n            enable: bool true=enable, false=disable.  \n    \n",
+     "get_physx_scene_statistics": "get_physx_scene_statistics(self: omni.physx.bindings._physx.IPhysxStatistics, stage_id: int, path: int, stats: omni.physx.bindings._physx.PhysicsSceneStats) -> bool\n\n\n        Get physics scene PhysX simulation statistics.\n\n        Args:\n            stage_id: current stageId\n            path: physics"
+    },
+    "scene_statistics": {
+     "compressed_contact_size": 0,
+     "gpu_mem_collision_stack_size": 0,
+     "gpu_mem_deformable_surface_contacts": 0,
+     "gpu_mem_deformable_surfaces": 0,
+     "gpu_mem_deformable_volume_contacts": 0,
+     "gpu_mem_deformable_volumes": 0,
+     "gpu_mem_found_lost_aggregate_pairs": 52,
+     "gpu_mem_found_lost_pairs": 40,
+     "gpu_mem_heap": 1476395008,
+     "gpu_mem_heap_articulation": 1960,
+     "gpu_mem_heap_broadphase": 1183604556,
+     "gpu_mem_heap_deformable_surfaces": 0,
+     "gpu_mem_heap_deformable_volumes": 0,
+     "gpu_mem_heap_narrowphase": 11041228,
+     "gpu_mem_heap_other": 0,
+     "gpu_mem_heap_particles": 0,
+     "gpu_mem_heap_simulation": 57340,
+     "gpu_mem_heap_simulation_articulation": 486936,
+     "gpu_mem_heap_simulation_deformable_surface": 8,
+     "gpu_mem_heap_simulation_deformable_volume": 12,
+     "gpu_mem_heap_simulation_particles": 0,
+     "gpu_mem_heap_solver": 220748200,
+     "gpu_mem_particle_contacts": 0,
+     "gpu_mem_particles": 0,
+     "gpu_mem_rigid_contact_count": 95,
+     "gpu_mem_rigid_patch_count": 29,
+     "gpu_mem_temp_buffer_capacity": 2808,
+     "gpu_mem_total_aggregate_pairs": 13,
+     "nb_active_constraints": 0,
+     "nb_active_dynamic_rigids": 6,
+     "nb_active_kinematic_rigids": 0,
+     "nb_aggregates": 2,
+     "nb_articulations": 2,
+     "nb_axis_solver_constaints": 0,
+     "nb_box_shapes": 19,
+     "nb_capsule_shapes": 0,
+     "nb_cone_shapes": 0,
+     "nb_convex_shapes": 130,
+     "nb_cylinder_shapes": 0,
+     "nb_discrete_contact_pairs_total": 31,
+     "nb_discrete_contact_pairs_with_cache_hits": 0,
+     "nb_discrete_contact_pairs_with_contacts": 0,
+     "nb_dynamic_rigids": 28,
+     "nb_kinematic_rigids": 0,
+     "nb_lost_pairs": 0,
+     "nb_lost_touches": 0,
+     "nb_new_pairs": 0,
+     "nb_new_touches": 0,
+     "nb_partitions": 0,
+     "nb_plane_shapes": 0,
+     "nb_sphere_shapes": 0,
+     "nb_static_rigids": 114,
+     "nb_trimesh_shapes": 90,
+     "peak_constraint_memory": 0,
+     "required_contact_constraint_memory": 0
+    },
+    "carb": {
+     "/physics/updateToUsd": false,
+     "/physics/fabricEnabled": false,
+     "/physics/fabricUpdateTransformations": true,
+     "/physics/suppressReadback": false,
+     "/physics/resetOnStop": true,
+     "/isaaclab/render/offscreen": false,
+     "/isaaclab/render/active_viewport": false,
+     "/isaaclab/cameras_enabled": false,
+     "/app/player/useFixedTimeStepping": false
+    },
+    "articulations": [
+     {
+      "path": "/World/envs/env_0/robot0",
+      "pos_iters": 8.0,
+      "vel_iters": 0.0,
+      "self_collisions": true
+     },
+     {
+      "path": "/World/envs/env_0/robot1",
+      "pos_iters": 8.0,
+      "vel_iters": 0.0,
+      "self_collisions": true
+     }
+    ],
+    "rigid_bodies_count": 28,
+    "rigid_bodies_authoring_iterations": [
+     {
+      "path": "/World/envs/env_0/rigid/cube/cube_4_1",
+      "enabled": true,
+      "pos_iters": 16.0,
+      "vel_iters": 1.0,
+      "stab_threshold": 9.999999747378752e-06,
+      "mass_attr": null
+     },
+     {
+      "path": "/World/envs/env_0/rigid/cube/cube_6_2",
+      "enabled": true,
+      "pos_iters": 16.0,
+      "vel_iters": 1.0,
+      "stab_threshold": 9.999999747378752e-06,
+      "mass_attr": null
+     },
+     {
+      "path": "/World/envs/env_0/rigid/cube/cube_5_3",
+      "enabled": true,
+      "pos_iters": 16.0,
+      "vel_iters": 1.0,
+      "stab_threshold": 9.999999747378752e-06,
+      "mass_attr": null
+     },
+     {
+      "path": "/World/envs/env_0/rigid/cup/cup_1_4",
+      "enabled": true,
+      "pos_iters": 16.0,
+      "vel_iters": 1.0,
+      "stab_threshold": 9.999999747378752e-06,
+      "mass_attr": null
+     },
+     {
+      "path": "/World/envs/env_0/rigid/cup/cup_1_5",
+      "enabled": true,
+      "pos_iters": 16.0,
+      "vel_iters": 1.0,
+      "stab_threshold": 9.999999747378752e-06,
+      "mass_attr": null
+     },
+     {
+      "path": "/World/envs/env_0/rigid/cup/cup_1_6",
+      "enabled": true,
+      "pos_iters": 16.0,
+      "vel_iters": 1.0,
+      "stab_threshold": 9.999999747378752e-06,
+      "mass_attr": null
+     }
+    ],
+    "objects": {
+     "red": {
+      "inst": "cube_4_1",
+      "prim": "/World/envs/env_0/rigid/cube/cube_4_1",
+      "type": "rigid",
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "contact_offsets": [],
+      "material": [
+       "physics-purpose",
+       {
+        "path": "/World/envs/env_0/rigid/cube/cube_4_1/physics_material",
+        "has_physics_material_api": true,
+        "staticFriction": 0.6000000238418579,
+        "dynamicFriction": 1.5,
+        "restitution": 0.0,
+        "frictionCombineMode": null,
+        "restitutionCombineMode": null
+       }
+      ],
+      "body": {
+       "path": "/World/envs/env_0/rigid/cube/cube_4_1",
+       "enabled": true,
+       "pos_iters": 16.0,
+       "vel_iters": 1.0,
+       "stab_threshold": 9.999999747378752e-06,
+       "mass_attr": null
+      },
+      "engine_mass": [
+       0.35
+      ],
+      "engine_material_props": [
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ]
+      ]
+     },
+     "green": {
+      "inst": "cube_6_2",
+      "prim": "/World/envs/env_0/rigid/cube/cube_6_2",
+      "type": "rigid",
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "contact_offsets": [],
+      "material": [
+       "physics-purpose",
+       {
+        "path": "/World/envs/env_0/rigid/cube/cube_6_2/physics_material",
+        "has_physics_material_api": true,
+        "staticFriction": 0.6000000238418579,
+        "dynamicFriction": 1.5,
+        "restitution": 0.0,
+        "frictionCombineMode": null,
+        "restitutionCombineMode": null
+       }
+      ],
+      "body": {
+       "path": "/World/envs/env_0/rigid/cube/cube_6_2",
+       "enabled": true,
+       "pos_iters": 16.0,
+       "vel_iters": 1.0,
+       "stab_threshold": 9.999999747378752e-06,
+       "mass_attr": null
+      },
+      "engine_mass": [
+       0.35
+      ],
+      "engine_material_props": [
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ]
+      ]
+     },
+     "blue": {
+      "inst": "cube_5_3",
+      "prim": "/World/envs/env_0/rigid/cube/cube_5_3",
+      "type": "rigid",
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "contact_offsets": [],
+      "material": [
+       "physics-purpose",
+       {
+        "path": "/World/envs/env_0/rigid/cube/cube_5_3/physics_material",
+        "has_physics_material_api": true,
+        "staticFriction": 0.6000000238418579,
+        "dynamicFriction": 1.5,
+        "restitution": 0.0,
+        "frictionCombineMode": null,
+        "restitutionCombineMode": null
+       }
+      ],
+      "body": {
+       "path": "/World/envs/env_0/rigid/cube/cube_5_3",
+       "enabled": true,
+       "pos_iters": 16.0,
+       "vel_iters": 1.0,
+       "stab_threshold": 9.999999747378752e-06,
+       "mass_attr": null
+      },
+      "engine_mass": [
+       0.35
+      ],
+      "engine_material_props": [
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ]
+      ]
+     },
+     "cup0": {
+      "inst": "cup_1_4",
+      "prim": "/World/envs/env_0/rigid/cup/cup_1_4",
+      "type": "rigid",
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "contact_offsets": [],
+      "material": [
+       "physics-purpose",
+       {
+        "path": "/World/envs/env_0/rigid/cup/cup_1_4/physics_material",
+        "has_physics_material_api": true,
+        "staticFriction": 0.6000000238418579,
+        "dynamicFriction": 1.5,
+        "restitution": 0.0,
+        "frictionCombineMode": null,
+        "restitutionCombineMode": null
+       }
+      ],
+      "body": {
+       "path": "/World/envs/env_0/rigid/cup/cup_1_4",
+       "enabled": true,
+       "pos_iters": 16.0,
+       "vel_iters": 1.0,
+       "stab_threshold": 9.999999747378752e-06,
+       "mass_attr": null
+      },
+      "engine_mass": [
+       0.15
+      ],
+      "engine_material_props": [
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ],
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ]
+      ]
+     },
+     "cup1": {
+      "inst": "cup_1_5",
+      "prim": "/World/envs/env_0/rigid/cup/cup_1_5",
+      "type": "rigid",
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "contact_offsets": [],
+      "material": [
+       "physics-purpose",
+       {
+        "path": "/World/envs/env_0/rigid/cup/cup_1_5/physics_material",
+        "has_physics_material_api": true,
+        "staticFriction": 0.6000000238418579,
+        "dynamicFriction": 1.5,
+        "restitution": 0.0,
+        "frictionCombineMode": null,
+        "restitutionCombineMode": null
+       }
+      ],
+      "body": {
+       "path": "/World/envs/env_0/rigid/cup/cup_1_5",
+       "enabled": true,
+       "pos_iters": 16.0,
+       "vel_iters": 1.0,
+       "stab_threshold": 9.999999747378752e-06,
+       "mass_attr": null
+      },
+      "engine_mass": [
+       0.15
+      ],
+      "engine_material_props": [
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ],
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ]
+      ]
+     },
+     "cup2": {
+      "inst": "cup_1_6",
+      "prim": "/World/envs/env_0/rigid/cup/cup_1_6",
+      "type": "rigid",
+      "colliders": 1,
+      "colliders_enabled": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "contact_offsets": [],
+      "material": [
+       "physics-purpose",
+       {
+        "path": "/World/envs/env_0/rigid/cup/cup_1_6/physics_material",
+        "has_physics_material_api": true,
+        "staticFriction": 0.6000000238418579,
+        "dynamicFriction": 1.5,
+        "restitution": 0.0,
+        "frictionCombineMode": null,
+        "restitutionCombineMode": null
+       }
+      ],
+      "body": {
+       "path": "/World/envs/env_0/rigid/cup/cup_1_6",
+       "enabled": true,
+       "pos_iters": 16.0,
+       "vel_iters": 1.0,
+       "stab_threshold": 9.999999747378752e-06,
+       "mass_attr": null
+      },
+      "engine_mass": [
+       0.15
+      ],
+      "engine_material_props": [
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ],
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ]
+      ]
+     },
+     "camera_stand": {
+      "inst": "camera_stand_0_7",
+      "prim": "/World/envs/env_0/geometry/camera_stand/camera_stand_0_7",
+      "type": "geometry",
+      "colliders": 12,
+      "colliders_enabled": 12,
+      "approximations": [
+       "none"
+      ],
+      "contact_offsets": [
+       -Infinity
+      ],
+      "material": [
+       "scene-default",
+       {
+        "all_purpose_bound": "/World/envs/env_0/geometry/camera_stand/camera_stand_0_7/base_br/_materials/wrought_iron"
+       }
+      ],
+      "body": null,
+      "engine_readback_error": "AttributeError(\"'NoneType' object has no attribute 'count'\")"
+     }
+    },
+    "fixtures": {
+     "Table": {
+      "colliders": 1,
+      "approximations": [
+       "convexDecomposition"
+      ],
+      "rigid_body": false,
+      "material": [
+       "scene-default",
+       {
+        "all_purpose_bound": "/World/envs/env_0/Table/material_0122/material_0122_0_9/Material"
+       }
+      ]
+     },
+     "Ground": {
+      "colliders": 1,
+      "approximations": [
+       "none"
+      ],
+      "rigid_body": false,
+      "material": [
+       "physics-purpose",
+       {
+        "path": "/World/envs/env_0/Ground/Ground/Ground_0_10/physics_material",
+        "has_physics_material_api": true,
+        "staticFriction": 1.0,
+        "dynamicFriction": 1.0,
+        "restitution": 0.0,
+        "frictionCombineMode": "multiply",
+        "restitutionCombineMode": "multiply"
+       }
+      ]
+     }
+    },
+    "robot": {
+     "masses": [
+      0.4399999976158142,
+      0.06700000166893005,
+      1.0794999599456787,
+      0.5453000068664551,
+      0.11710000038146973,
+      0.6348999738693237,
+      0.4408999979496002,
+      0.050200000405311584,
+      0.06480000168085098,
+      0.06480000168085098,
+      0.04479999840259552
+     ],
+     "stiffness": [
+      4400.0,
+      4400.0,
+      4400.0,
+      4400.0,
+      4400.0,
+      4400.0,
+      2300.0,
+      2300.0
+     ],
+     "damping": [
+      40.0,
+      40.0,
+      40.0,
+      40.0,
+      40.0,
+      40.0,
+      100.0,
+      100.0
+     ],
+     "effort_limits": [
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0
+     ],
+     "vel_limits": [
+      5.0,
+      5.0,
+      5.0,
+      5.0,
+      5.0,
+      5.0,
+      1000.0,
+      1000.0
+     ],
+     "joint_names": [
+      "joint1",
+      "joint2",
+      "joint3",
+      "joint4",
+      "joint5",
+      "joint6",
+      "joint7",
+      "joint8"
+     ]
+    },
+    "sim_cfg_physx": {
+     "solver_type": 1,
+     "enable_stabilization": false,
+     "enable_ccd": false,
+     "bounce_threshold_velocity": 0.5,
+     "friction_offset_threshold": 0.04,
+     "friction_correlation_distance": 0.025,
+     "min_position_iteration_count": 1,
+     "max_position_iteration_count": 255,
+     "min_velocity_iteration_count": 0,
+     "max_velocity_iteration_count": 255,
+     "enable_enhanced_determinism": false
+    },
+    "sim_cfg": {
+     "dt": 0.004,
+     "render_interval": 10,
+     "device": "cpu",
+     "use_fabric": false,
+     "decimation": 1
+    },
+    "interpolation_nums": 10.0
+   },
+   "episode_steps": 103,
+   "renders_total": 92,
+   "episode_seconds": 0.5,
+   "steps_per_second": 206.0,
+   "final_poses": {},
+   "success": true,
+   "take_action_cnt": 0,
+   "eval_result": {
+    "success_rate": 1.0,
+    "eval_time": 1,
+    "score": 100.0,
+    "details": {
+     "0": {
+      "layout_id": 0,
+      "success": true,
+      "score": 1.0
+     }
+    }
+   },
+   "unstable_nums": 0,
+   "policy_log": {
+    "materials": {
+     "usd": {
+      "red": [
+       {
+        "collider": "/World/envs/env_0/rigid/cube/cube_4_1/collision/model",
+        "approx": "convexDecomposition",
+        "resolved": [
+         "physics-purpose",
+         {
+          "path": "/World/envs/env_0/rigid/cube/cube_4_1/physics_material",
+          "has_physics_material_api": true,
+          "staticFriction": 0.6000000238418579,
+          "dynamicFriction": 1.5,
+          "restitution": 0.0,
+          "frictionCombineMode": null,
+          "restitutionCombineMode": null
+         }
+        ]
+       }
+      ],
+      "green": [
+       {
+        "collider": "/World/envs/env_0/rigid/cube/cube_6_2/collision/model",
+        "approx": "convexDecomposition",
+        "resolved": [
+         "physics-purpose",
+         {
+          "path": "/World/envs/env_0/rigid/cube/cube_6_2/physics_material",
+          "has_physics_material_api": true,
+          "staticFriction": 0.6000000238418579,
+          "dynamicFriction": 1.5,
+          "restitution": 0.0,
+          "frictionCombineMode": null,
+          "restitutionCombineMode": null
+         }
+        ]
+       }
+      ],
+      "blue": [
+       {
+        "collider": "/World/envs/env_0/rigid/cube/cube_5_3/collision/model",
+        "approx": "convexDecomposition",
+        "resolved": [
+         "physics-purpose",
+         {
+          "path": "/World/envs/env_0/rigid/cube/cube_5_3/physics_material",
+          "has_physics_material_api": true,
+          "staticFriction": 0.6000000238418579,
+          "dynamicFriction": 1.5,
+          "restitution": 0.0,
+          "frictionCombineMode": null,
+          "restitutionCombineMode": null
+         }
+        ]
+       }
+      ],
+      "cup0": [
+       {
+        "collider": "/World/envs/env_0/rigid/cup/cup_1_4/collision/model",
+        "approx": "convexDecomposition",
+        "resolved": [
+         "physics-purpose",
+         {
+          "path": "/World/envs/env_0/rigid/cup/cup_1_4/physics_material",
+          "has_physics_material_api": true,
+          "staticFriction": 0.6000000238418579,
+          "dynamicFriction": 1.5,
+          "restitution": 0.0,
+          "frictionCombineMode": null,
+          "restitutionCombineMode": null
+         }
+        ]
+       }
+      ],
+      "cup1": [
+       {
+        "collider": "/World/envs/env_0/rigid/cup/cup_1_5/collision/model",
+        "approx": "convexDecomposition",
+        "resolved": [
+         "physics-purpose",
+         {
+          "path": "/World/envs/env_0/rigid/cup/cup_1_5/physics_material",
+          "has_physics_material_api": true,
+          "staticFriction": 0.6000000238418579,
+          "dynamicFriction": 1.5,
+          "restitution": 0.0,
+          "frictionCombineMode": null,
+          "restitutionCombineMode": null
+         }
+        ]
+       }
+      ],
+      "cup2": [
+       {
+        "collider": "/World/envs/env_0/rigid/cup/cup_1_6/collision/model",
+        "approx": "convexDecomposition",
+        "resolved": [
+         "physics-purpose",
+         {
+          "path": "/World/envs/env_0/rigid/cup/cup_1_6/physics_material",
+          "has_physics_material_api": true,
+          "staticFriction": 0.6000000238418579,
+          "dynamicFriction": 1.5,
+          "restitution": 0.0,
+          "frictionCombineMode": null,
+          "restitutionCombineMode": null
+         }
+        ]
+       }
+      ],
+      "robot0/link7": [
+       {
+        "collider": "/World/envs/env_0/robot0/link7/collisions/link7/node_STL_BINARY_",
+        "approx": "convexHull",
+        "resolved": [
+         "scene-default",
+         {
+          "all_purpose_bound": null
+         }
+        ]
+       }
+      ],
+      "robot0/link8": [
+       {
+        "collider": "/World/envs/env_0/robot0/link8/collisions/link8/node_STL_BINARY_",
+        "approx": "convexHull",
+        "resolved": [
+         "scene-default",
+         {
+          "all_purpose_bound": null
+         }
+        ]
+       }
+      ],
+      "robot1/link7": [
+       {
+        "collider": "/World/envs/env_0/robot1/link7/collisions/link7/node_STL_BINARY_",
+        "approx": "convexHull",
+        "resolved": [
+         "scene-default",
+         {
+          "all_purpose_bound": null
+         }
+        ]
+       }
+      ],
+      "robot1/link8": [
+       {
+        "collider": "/World/envs/env_0/robot1/link8/collisions/link8/node_STL_BINARY_",
+        "approx": "convexHull",
+        "resolved": [
+         "scene-default",
+         {
+          "all_purpose_bound": null
+         }
+        ]
+       }
+      ],
+      "table": [
+       {
+        "collider": "/World/envs/env_0/Table/material_0122/material_0122_0_9",
+        "approx": "convexDecomposition",
+        "resolved": [
+         "scene-default",
+         {
+          "all_purpose_bound": "/World/envs/env_0/Table/material_0122/material_0122_0_9/Material"
+         }
+        ]
+       }
+      ],
+      "ground": [
+       {
+        "collider": "/World/envs/env_0/Ground/Ground/Ground_0_10",
+        "approx": "none",
+        "resolved": [
+         "physics-purpose",
+         {
+          "path": "/World/envs/env_0/Ground/Ground/Ground_0_10/physics_material",
+          "has_physics_material_api": true,
+          "staticFriction": 1.0,
+          "dynamicFriction": 1.0,
+          "restitution": 0.0,
+          "frictionCombineMode": "multiply",
+          "restitutionCombineMode": "multiply"
+         }
+        ]
+       }
+      ]
+     },
+     "engine_bottles": {
+      "red": [
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ]
+      ],
+      "green": [
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ]
+      ],
+      "blue": [
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ]
+      ],
+      "cup0": [
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ],
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ],
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ],
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ],
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ],
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ],
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ],
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ],
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ],
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ]
+      ],
+      "cup1": [
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ],
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ],
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ],
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ],
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ],
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ],
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ],
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ],
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ],
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ]
+      ],
+      "cup2": [
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ],
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ],
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ],
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ],
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ],
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ],
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ],
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ],
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ],
+       [
+        0.6000000238418579,
+        1.5,
+        0.0
+       ]
+      ]
+     },
+     "engine_robots": {
+      "robot0": {
+       "max_shapes": 42,
+       "links": [
+        "base_link",
+        "link1",
+        "link2",
+        "link3",
+        "link4",
+        "link5",
+        "link6",
+        "camera_base",
+        "link7",
+        "link8",
+        "camera"
+       ],
+       "shape_materials": [
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ]
+       ]
+      },
+      "robot1": {
+       "max_shapes": 42,
+       "links": [
+        "base_link",
+        "link1",
+        "link2",
+        "link3",
+        "link4",
+        "link5",
+        "link6",
+        "camera_base",
+        "link7",
+        "link8",
+        "camera"
+       ],
+       "shape_materials": [
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ],
+        [
+         0.5,
+         0.5,
+         0.0
+        ]
+       ]
+      }
+     }
+    },
+    "contacts_resting": [
+     {
+      "collider0": "/World/envs/env_0/rigid/cube/cube_6_2/collision/model",
+      "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_9",
+      "n": 4,
+      "materials": [
+       [
+        "/World/envs/env_0/rigid/cube/cube_6_2/physics_material",
+        "/physicsScene/defaultMaterial"
+       ]
+      ]
+     },
+     {
+      "collider0": "/World/envs/env_0/rigid/cube/cube_5_3/collision/model",
+      "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_9",
+      "n": 4,
+      "materials": [
+       [
+        "/World/envs/env_0/rigid/cube/cube_5_3/physics_material",
+        "/physicsScene/defaultMaterial"
+       ]
+      ]
+     },
+     {
+      "collider0": "/World/envs/env_0/rigid/cup/cup_1_4/collision/model",
+      "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_9",
+      "n": 25,
+      "materials": [
+       [
+        "/World/envs/env_0/rigid/cup/cup_1_4/physics_material",
+        "/physicsScene/defaultMaterial"
+       ]
+      ]
+     },
+     {
+      "collider0": "/World/envs/env_0/rigid/cup/cup_1_6/collision/model",
+      "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_9",
+      "n": 25,
+      "materials": [
+       [
+        "/World/envs/env_0/rigid/cup/cup_1_6/physics_material",
+        "/physicsScene/defaultMaterial"
+       ]
+      ]
+     },
+     {
+      "collider0": "/World/envs/env_0/rigid/cube/cube_4_1/collision/model",
+      "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_9",
+      "n": 4,
+      "materials": [
+       [
+        "/World/envs/env_0/rigid/cube/cube_4_1/physics_material",
+        "/physicsScene/defaultMaterial"
+       ]
+      ]
+     },
+     {
+      "collider0": "/World/envs/env_0/rigid/cup/cup_1_5/collision/model",
+      "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_9",
+      "n": 25,
+      "materials": [
+       [
+        "/World/envs/env_0/rigid/cup/cup_1_5/physics_material",
+        "/physicsScene/defaultMaterial"
+       ]
+      ]
+     }
+    ],
+    "slide_box": {
+     "label": "red",
+     "slide_x_mm": 7.32,
+     "lateral_mm": 0.12,
+     "vertical_mm": -0.0,
+     "rotation_deg": 9.0,
+     "predicted_mm": {
+      "pair_0.5": 25.5,
+      "pair_1.0": 12.7
+     }
+    },
+    "contacts_after_slide": [
+     {
+      "collider0": "/World/envs/env_0/rigid/cube/cube_6_2/collision/model",
+      "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_9",
+      "n": 4,
+      "materials": [
+       [
+        "/World/envs/env_0/rigid/cube/cube_6_2/physics_material",
+        "/physicsScene/defaultMaterial"
+       ]
+      ]
+     },
+     {
+      "collider0": "/World/envs/env_0/rigid/cube/cube_5_3/collision/model",
+      "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_9",
+      "n": 4,
+      "materials": [
+       [
+        "/World/envs/env_0/rigid/cube/cube_5_3/physics_material",
+        "/physicsScene/defaultMaterial"
+       ]
+      ]
+     },
+     {
+      "collider0": "/World/envs/env_0/rigid/cup/cup_1_4/collision/model",
+      "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_9",
+      "n": 25,
+      "materials": [
+       [
+        "/World/envs/env_0/rigid/cup/cup_1_4/physics_material",
+        "/physicsScene/defaultMaterial"
+       ]
+      ]
+     },
+     {
+      "collider0": "/World/envs/env_0/rigid/cup/cup_1_6/collision/model",
+      "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_9",
+      "n": 25,
+      "materials": [
+       [
+        "/World/envs/env_0/rigid/cup/cup_1_6/physics_material",
+        "/physicsScene/defaultMaterial"
+       ]
+      ]
+     },
+     {
+      "collider0": "/World/envs/env_0/rigid/cube/cube_4_1/collision/model",
+      "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_9",
+      "n": 4,
+      "materials": [
+       [
+        "/World/envs/env_0/rigid/cube/cube_4_1/physics_material",
+        "/physicsScene/defaultMaterial"
+       ]
+      ]
+     },
+     {
+      "collider0": "/World/envs/env_0/rigid/cup/cup_1_5/collision/model",
+      "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_9",
+      "n": 25,
+      "materials": [
+       [
+        "/World/envs/env_0/rigid/cup/cup_1_5/physics_material",
+        "/physicsScene/defaultMaterial"
+       ]
+      ]
+     }
+    ]
+   },
+   "wall_seconds": 10.7
+  }
+ ],
+ "render_emulation": true,
+ "order_variant": "RigidObject binds its physics material before SingleRigidPrim.__init__"
+}

@@ -1,0 +1,1926 @@
+{
+  "schema": "g3-play_Xylophone-rule-v2",
+  "task": "play_Xylophone",
+  "rule_env": "ROBODOJO_XYLOPHONE_STRIKE_RULE",
+  "rules": [
+    "v1",
+    "v2_contact"
+  ],
+  "replaced_unmerged_rules": [
+    "v2_strike"
+  ],
+  "default_rule": "v1",
+  "witness_episodes": [
+    {
+      "id": "W1a",
+      "group": "hover_shipped_124",
+      "check": "strike_z_window",
+      "verdict_kind": "hole",
+      "tag": "gx_b4_w1a_hover_v1",
+      "raw_gz_sha256": "0f0d5bf37645b4785ca9b14f030e1bb6205e336633865eb1e32b6b11d18e5e60",
+      "commit": "2e1e970bca759d4676b91c627a615c986c272457",
+      "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "evaluator": "v1",
+      "rule": "shipped_v1",
+      "stamped_rule": null,
+      "contact_reporting_readback": {
+        "disableContactProcessing": true,
+        "mallet_has_contact_report_api": false,
+        "mallet_stand_has_contact_report_api": false
+      },
+      "seed": 0,
+      "layout": 0,
+      "settled_state_sha256": "9c72203c3fb2008a3eb1dcb898e31cc4e1f1714258cc1e6a0f9249037a4a6311",
+      "success": true,
+      "score_pct": 100.0,
+      "actions": 269,
+      "stages_left_end": 0,
+      "keys_planned_ok": 0,
+      "physx_xyl_touching_points": 0,
+      "physx_xyl_impulse_total_ns": null,
+      "physx_keys_with_contact": [],
+      "v2_ledger_bar_impulse_keys": [],
+      "v2_ledger_held_bar_impulse_keys": [],
+      "v2_ledger_keys_struck": [],
+      "trimmed_fields": []
+    },
+    {
+      "id": "W1a",
+      "group": "hover_shipped_124",
+      "check": "strike_z_window",
+      "verdict_kind": "hole",
+      "tag": "gx_b4_w1a_hover_v2_r1",
+      "raw_gz_sha256": "6a7384151b3c7e647a201a9062559d818a43496bb6634a90bd1b1b18fee16aff",
+      "commit": "2e1e970bca759d4676b91c627a615c986c272457",
+      "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "evaluator": "v2",
+      "rule": "v1",
+      "stamped_rule": "v1",
+      "contact_reporting_readback": {
+        "disableContactProcessing": true,
+        "mallet_has_contact_report_api": false,
+        "mallet_stand_has_contact_report_api": false
+      },
+      "seed": 0,
+      "layout": 0,
+      "settled_state_sha256": "9c72203c3fb2008a3eb1dcb898e31cc4e1f1714258cc1e6a0f9249037a4a6311",
+      "success": true,
+      "score_pct": 100.0,
+      "actions": 269,
+      "stages_left_end": 0,
+      "keys_planned_ok": 0,
+      "physx_xyl_touching_points": 0,
+      "physx_xyl_impulse_total_ns": null,
+      "physx_keys_with_contact": [],
+      "v2_ledger_bar_impulse_keys": [],
+      "v2_ledger_held_bar_impulse_keys": [],
+      "v2_ledger_keys_struck": [],
+      "trimmed_fields": []
+    },
+    {
+      "id": "W1a",
+      "group": "hover_shipped_124",
+      "check": "strike_z_window",
+      "verdict_kind": "hole",
+      "tag": "gx_b4_w1a_hover_v2c",
+      "raw_gz_sha256": "e4ee19014e4326158ba33f943ff051dbbf95576c1f055cdcb2c2f7f93cec6e00",
+      "commit": "2e1e970bca759d4676b91c627a615c986c272457",
+      "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "evaluator": "v2",
+      "rule": "v2_contact",
+      "stamped_rule": "v2_contact",
+      "contact_reporting_readback": {
+        "disableContactProcessing": false,
+        "mallet_has_contact_report_api": true,
+        "mallet_stand_has_contact_report_api": false
+      },
+      "seed": 0,
+      "layout": 0,
+      "settled_state_sha256": "9c72203c3fb2008a3eb1dcb898e31cc4e1f1714258cc1e6a0f9249037a4a6311",
+      "success": false,
+      "score_pct": 0.0,
+      "actions": 500,
+      "stages_left_end": 15,
+      "keys_planned_ok": 0,
+      "physx_xyl_touching_points": 0,
+      "physx_xyl_impulse_total_ns": null,
+      "physx_keys_with_contact": [],
+      "v2_ledger_bar_impulse_keys": [],
+      "v2_ledger_held_bar_impulse_keys": [],
+      "v2_ledger_keys_struck": [],
+      "trimmed_fields": []
+    },
+    {
+      "id": "W1b",
+      "group": "hover_pitched_2layouts",
+      "check": "strike_z_window",
+      "verdict_kind": "hole",
+      "tag": "gx_b4_w1b_hoverall_v1",
+      "raw_gz_sha256": "36bddf8fb6229c7b1fd22c273047eb47bd82f473cd673175b0f95b0272876600",
+      "commit": "2e1e970bca759d4676b91c627a615c986c272457",
+      "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "evaluator": "v1",
+      "rule": "shipped_v1",
+      "stamped_rule": null,
+      "contact_reporting_readback": {
+        "disableContactProcessing": true,
+        "mallet_has_contact_report_api": false,
+        "mallet_stand_has_contact_report_api": false
+      },
+      "seed": 0,
+      "layout": 0,
+      "settled_state_sha256": "9c72203c3fb2008a3eb1dcb898e31cc4e1f1714258cc1e6a0f9249037a4a6311",
+      "success": true,
+      "score_pct": 100.0,
+      "actions": 227,
+      "stages_left_end": 0,
+      "keys_planned_ok": 8,
+      "physx_xyl_touching_points": 0,
+      "physx_xyl_impulse_total_ns": 0,
+      "physx_keys_with_contact": [],
+      "v2_ledger_bar_impulse_keys": [],
+      "v2_ledger_held_bar_impulse_keys": [],
+      "v2_ledger_keys_struck": [],
+      "trimmed_fields": []
+    },
+    {
+      "id": "W1b",
+      "group": "hover_pitched_2layouts",
+      "check": "strike_z_window",
+      "verdict_kind": "hole",
+      "tag": "gx_b4_w1b_hoverall_v1",
+      "raw_gz_sha256": "36bddf8fb6229c7b1fd22c273047eb47bd82f473cd673175b0f95b0272876600",
+      "commit": "2e1e970bca759d4676b91c627a615c986c272457",
+      "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "evaluator": "v1",
+      "rule": "shipped_v1",
+      "stamped_rule": null,
+      "contact_reporting_readback": {
+        "disableContactProcessing": true,
+        "mallet_has_contact_report_api": false,
+        "mallet_stand_has_contact_report_api": false
+      },
+      "seed": 0,
+      "layout": 1,
+      "settled_state_sha256": "cda9b0746666a55daac5957360314c8fbaeabc9b6ee957cdd10a73e305c092ea",
+      "success": true,
+      "score_pct": 100.0,
+      "actions": 227,
+      "stages_left_end": 0,
+      "keys_planned_ok": 8,
+      "physx_xyl_touching_points": 0,
+      "physx_xyl_impulse_total_ns": 0,
+      "physx_keys_with_contact": [],
+      "v2_ledger_bar_impulse_keys": [],
+      "v2_ledger_held_bar_impulse_keys": [],
+      "v2_ledger_keys_struck": [],
+      "trimmed_fields": []
+    },
+    {
+      "id": "W1b",
+      "group": "hover_pitched_2layouts",
+      "check": "strike_z_window",
+      "verdict_kind": "hole",
+      "tag": "gx_b4_w1b_hoverall_v2_r1",
+      "raw_gz_sha256": "066c8c283778689614e0c3b12910c3bd7ee6c04ea47ead2bae8679392297c24f",
+      "commit": "2e1e970bca759d4676b91c627a615c986c272457",
+      "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "evaluator": "v2",
+      "rule": "v1",
+      "stamped_rule": "v1",
+      "contact_reporting_readback": {
+        "disableContactProcessing": true,
+        "mallet_has_contact_report_api": false,
+        "mallet_stand_has_contact_report_api": false
+      },
+      "seed": 0,
+      "layout": 0,
+      "settled_state_sha256": "9c72203c3fb2008a3eb1dcb898e31cc4e1f1714258cc1e6a0f9249037a4a6311",
+      "success": true,
+      "score_pct": 100.0,
+      "actions": 227,
+      "stages_left_end": 0,
+      "keys_planned_ok": 8,
+      "physx_xyl_touching_points": 0,
+      "physx_xyl_impulse_total_ns": 0,
+      "physx_keys_with_contact": [],
+      "v2_ledger_bar_impulse_keys": [],
+      "v2_ledger_held_bar_impulse_keys": [],
+      "v2_ledger_keys_struck": [],
+      "trimmed_fields": []
+    },
+    {
+      "id": "W1b",
+      "group": "hover_pitched_2layouts",
+      "check": "strike_z_window",
+      "verdict_kind": "hole",
+      "tag": "gx_b4_w1b_hoverall_v2_r1",
+      "raw_gz_sha256": "066c8c283778689614e0c3b12910c3bd7ee6c04ea47ead2bae8679392297c24f",
+      "commit": "2e1e970bca759d4676b91c627a615c986c272457",
+      "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "evaluator": "v2",
+      "rule": "v1",
+      "stamped_rule": "v1",
+      "contact_reporting_readback": {
+        "disableContactProcessing": true,
+        "mallet_has_contact_report_api": false,
+        "mallet_stand_has_contact_report_api": false
+      },
+      "seed": 0,
+      "layout": 1,
+      "settled_state_sha256": "cda9b0746666a55daac5957360314c8fbaeabc9b6ee957cdd10a73e305c092ea",
+      "success": true,
+      "score_pct": 100.0,
+      "actions": 227,
+      "stages_left_end": 0,
+      "keys_planned_ok": 8,
+      "physx_xyl_touching_points": 0,
+      "physx_xyl_impulse_total_ns": 0,
+      "physx_keys_with_contact": [],
+      "v2_ledger_bar_impulse_keys": [],
+      "v2_ledger_held_bar_impulse_keys": [],
+      "v2_ledger_keys_struck": [],
+      "trimmed_fields": []
+    },
+    {
+      "id": "W1b",
+      "group": "hover_pitched_2layouts",
+      "check": "strike_z_window",
+      "verdict_kind": "hole",
+      "tag": "gx_b4_w1b_hoverall_v2c",
+      "raw_gz_sha256": "934ec48bba1b1debf92bed76073d86bec688167a33038a4b47881598bc710d19",
+      "commit": "2e1e970bca759d4676b91c627a615c986c272457",
+      "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "evaluator": "v2",
+      "rule": "v2_contact",
+      "stamped_rule": "v2_contact",
+      "contact_reporting_readback": {
+        "disableContactProcessing": false,
+        "mallet_has_contact_report_api": true,
+        "mallet_stand_has_contact_report_api": false
+      },
+      "seed": 0,
+      "layout": 0,
+      "settled_state_sha256": "9c72203c3fb2008a3eb1dcb898e31cc4e1f1714258cc1e6a0f9249037a4a6311",
+      "success": false,
+      "score_pct": 0.0,
+      "actions": 500,
+      "stages_left_end": 15,
+      "keys_planned_ok": 8,
+      "physx_xyl_touching_points": 0,
+      "physx_xyl_impulse_total_ns": 0,
+      "physx_keys_with_contact": [],
+      "v2_ledger_bar_impulse_keys": [],
+      "v2_ledger_held_bar_impulse_keys": [],
+      "v2_ledger_keys_struck": [],
+      "trimmed_fields": []
+    },
+    {
+      "id": "W1b",
+      "group": "hover_pitched_2layouts",
+      "check": "strike_z_window",
+      "verdict_kind": "hole",
+      "tag": "gx_b4_w1b_hoverall_v2c",
+      "raw_gz_sha256": "934ec48bba1b1debf92bed76073d86bec688167a33038a4b47881598bc710d19",
+      "commit": "2e1e970bca759d4676b91c627a615c986c272457",
+      "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "evaluator": "v2",
+      "rule": "v2_contact",
+      "stamped_rule": "v2_contact",
+      "contact_reporting_readback": {
+        "disableContactProcessing": false,
+        "mallet_has_contact_report_api": true,
+        "mallet_stand_has_contact_report_api": false
+      },
+      "seed": 0,
+      "layout": 1,
+      "settled_state_sha256": "cda9b0746666a55daac5957360314c8fbaeabc9b6ee957cdd10a73e305c092ea",
+      "success": false,
+      "score_pct": 0.0,
+      "actions": 500,
+      "stages_left_end": 15,
+      "keys_planned_ok": 8,
+      "physx_xyl_touching_points": 0,
+      "physx_xyl_impulse_total_ns": 0,
+      "physx_keys_with_contact": [],
+      "v2_ledger_bar_impulse_keys": [],
+      "v2_ledger_held_bar_impulse_keys": [],
+      "v2_ledger_keys_struck": [],
+      "trimmed_fields": []
+    },
+    {
+      "id": "W1c",
+      "group": "near_descent_40_20_2p2mm",
+      "check": "contact_free_near_descent_blocker1",
+      "verdict_kind": "hole_boundary",
+      "tag": "gx_b4c_w1c_neardesc_v1",
+      "raw_gz_sha256": "e7c5a29a1d46357136f7ec14765ab649f51bfe53b030f5ee701324f4c4658c51",
+      "commit": "188b81f6898d66cdac2af39be7f0df7c8c9b97ed",
+      "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "evaluator": "v1",
+      "rule": "shipped_v1",
+      "stamped_rule": null,
+      "contact_reporting_readback": {
+        "disableContactProcessing": false,
+        "mallet_has_contact_report_api": true,
+        "mallet_stand_has_contact_report_api": true
+      },
+      "seed": 0,
+      "layout": 0,
+      "settled_state_sha256": "9c72203c3fb2008a3eb1dcb898e31cc4e1f1714258cc1e6a0f9249037a4a6311",
+      "success": true,
+      "score_pct": 100.0,
+      "actions": 260,
+      "stages_left_end": 0,
+      "keys_planned_ok": 8,
+      "physx_xyl_touching_points": 0,
+      "physx_xyl_impulse_total_ns": 0.0,
+      "physx_keys_with_contact": [],
+      "v2_ledger_bar_impulse_keys": [],
+      "v2_ledger_held_bar_impulse_keys": [],
+      "v2_ledger_keys_struck": [],
+      "trimmed_fields": [
+        "runs[0].pose_log"
+      ]
+    },
+    {
+      "id": "W1c",
+      "group": "near_descent_40_20_2p2mm",
+      "check": "contact_free_near_descent_blocker1",
+      "verdict_kind": "hole_boundary",
+      "tag": "gx_b4c_w1c_neardesc_v2c",
+      "raw_gz_sha256": "47991b858a2baa855194a1986e68d971e2d6bfe1e31afecc3e55d239cbea2ec8",
+      "commit": "188b81f6898d66cdac2af39be7f0df7c8c9b97ed",
+      "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "evaluator": "v2",
+      "rule": "v2_contact",
+      "stamped_rule": "v2_contact",
+      "contact_reporting_readback": {
+        "disableContactProcessing": false,
+        "mallet_has_contact_report_api": true,
+        "mallet_stand_has_contact_report_api": false
+      },
+      "seed": 0,
+      "layout": 0,
+      "settled_state_sha256": "9c72203c3fb2008a3eb1dcb898e31cc4e1f1714258cc1e6a0f9249037a4a6311",
+      "success": false,
+      "score_pct": 0.0,
+      "actions": 500,
+      "stages_left_end": 15,
+      "keys_planned_ok": 8,
+      "physx_xyl_touching_points": 0,
+      "physx_xyl_impulse_total_ns": 0.0,
+      "physx_keys_with_contact": [],
+      "v2_ledger_bar_impulse_keys": [],
+      "v2_ledger_held_bar_impulse_keys": [],
+      "v2_ledger_keys_struck": [],
+      "trimmed_fields": [
+        "runs[0].pose_log"
+      ]
+    },
+    {
+      "id": "W2a",
+      "group": "drop_unheld_key7_25p6mm",
+      "check": "mallet_held_at_strike",
+      "verdict_kind": "hole",
+      "tag": "gx_b4_w2a_drop7_v1",
+      "raw_gz_sha256": "7a3a117177b04f5a2e715067f24d8b394206c64d44cfeb6ac36d0fb5a34e941e",
+      "commit": "2e1e970bca759d4676b91c627a615c986c272457",
+      "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "evaluator": "v1",
+      "rule": "shipped_v1",
+      "stamped_rule": null,
+      "contact_reporting_readback": {
+        "disableContactProcessing": false,
+        "mallet_has_contact_report_api": true,
+        "mallet_stand_has_contact_report_api": true
+      },
+      "seed": 0,
+      "layout": 0,
+      "settled_state_sha256": "9c72203c3fb2008a3eb1dcb898e31cc4e1f1714258cc1e6a0f9249037a4a6311",
+      "success": true,
+      "score_pct": 100.0,
+      "actions": 249,
+      "stages_left_end": 0,
+      "keys_planned_ok": 8,
+      "physx_xyl_touching_points": 53,
+      "physx_xyl_impulse_total_ns": 0.524408,
+      "physx_keys_with_contact": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "v2_ledger_bar_impulse_keys": [],
+      "v2_ledger_held_bar_impulse_keys": [],
+      "v2_ledger_keys_struck": [],
+      "trimmed_fields": [
+        "runs[0].pose_log"
+      ]
+    },
+    {
+      "id": "W2a",
+      "group": "drop_unheld_key7_25p6mm",
+      "check": "mallet_held_at_strike",
+      "verdict_kind": "hole",
+      "tag": "gx_b4_w2a_drop7_v2c",
+      "raw_gz_sha256": "f5dd5e7a15f7790f96655ffb83774789844e6c9bc6b6e5fa62ec9bb80e29743f",
+      "commit": "2e1e970bca759d4676b91c627a615c986c272457",
+      "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "evaluator": "v2",
+      "rule": "v2_contact",
+      "stamped_rule": "v2_contact",
+      "contact_reporting_readback": {
+        "disableContactProcessing": false,
+        "mallet_has_contact_report_api": true,
+        "mallet_stand_has_contact_report_api": false
+      },
+      "seed": 0,
+      "layout": 0,
+      "settled_state_sha256": "9c72203c3fb2008a3eb1dcb898e31cc4e1f1714258cc1e6a0f9249037a4a6311",
+      "success": false,
+      "score_pct": 0.0,
+      "actions": 500,
+      "stages_left_end": 1,
+      "keys_planned_ok": 8,
+      "physx_xyl_touching_points": 3224,
+      "physx_xyl_impulse_total_ns": 3.437978,
+      "physx_keys_with_contact": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "v2_ledger_bar_impulse_keys": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "v2_ledger_held_bar_impulse_keys": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "v2_ledger_keys_struck": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "trimmed_fields": [
+        "runs[0].pose_log"
+      ]
+    },
+    {
+      "id": "W2b",
+      "group": "unclamped_13mm_gap_key7",
+      "check": "unclamped_13mm_hold_blocker3",
+      "verdict_kind": "hole_boundary",
+      "tag": "gx_b4d_w2b_gap13_v1",
+      "raw_gz_sha256": "7aaab010ff0de747411700d00c50f119d767a36920235cfd5216784916a8d564",
+      "commit": "59c435fe890de1e180926538aa22a06970bb471d",
+      "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "evaluator": "v1",
+      "rule": "shipped_v1",
+      "stamped_rule": null,
+      "contact_reporting_readback": {
+        "disableContactProcessing": false,
+        "mallet_has_contact_report_api": true,
+        "mallet_stand_has_contact_report_api": true
+      },
+      "seed": 0,
+      "layout": 0,
+      "settled_state_sha256": "9c72203c3fb2008a3eb1dcb898e31cc4e1f1714258cc1e6a0f9249037a4a6311",
+      "success": true,
+      "score_pct": 100.0,
+      "actions": 247,
+      "stages_left_end": 0,
+      "keys_planned_ok": 8,
+      "physx_xyl_touching_points": 53,
+      "physx_xyl_impulse_total_ns": 0.524408,
+      "physx_keys_with_contact": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "v2_ledger_bar_impulse_keys": [],
+      "v2_ledger_held_bar_impulse_keys": [],
+      "v2_ledger_keys_struck": [],
+      "trimmed_fields": [
+        "runs[0].pose_log"
+      ],
+      "invariants": {
+        "key7_unclamped_gap_mm_range": null,
+        "final_action_gap_mm": 11.408
+      }
+    },
+    {
+      "id": "W2b",
+      "group": "unclamped_13mm_gap_key7",
+      "check": "unclamped_13mm_hold_blocker3",
+      "verdict_kind": "hole_boundary",
+      "tag": "gx_b4d_w2b_gap13_v2c",
+      "raw_gz_sha256": "6ba5b23517fe09fb908d94a7bca55c182f5b3f62a4128cdc304a1e6e38a35105",
+      "commit": "59c435fe890de1e180926538aa22a06970bb471d",
+      "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "evaluator": "v2",
+      "rule": "v2_contact",
+      "stamped_rule": "v2_contact",
+      "contact_reporting_readback": {
+        "disableContactProcessing": false,
+        "mallet_has_contact_report_api": true,
+        "mallet_stand_has_contact_report_api": false
+      },
+      "seed": 0,
+      "layout": 0,
+      "settled_state_sha256": "9c72203c3fb2008a3eb1dcb898e31cc4e1f1714258cc1e6a0f9249037a4a6311",
+      "success": false,
+      "score_pct": 0.0,
+      "actions": 500,
+      "stages_left_end": 1,
+      "keys_planned_ok": 8,
+      "physx_xyl_touching_points": 2782,
+      "physx_xyl_impulse_total_ns": 2.018524,
+      "physx_keys_with_contact": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "v2_ledger_bar_impulse_keys": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "v2_ledger_held_bar_impulse_keys": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "v2_ledger_keys_struck": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "trimmed_fields": [
+        "runs[0].pose_log"
+      ],
+      "invariants": {
+        "key7_unclamped_gap_mm_range": [
+          12.678,
+          12.965
+        ],
+        "final_action_gap_mm": 12.964
+      }
+    },
+    {
+      "id": "W3",
+      "group": "split_beat_independent_xy_z",
+      "check": "independent_2point_beat",
+      "verdict_kind": "hole",
+      "tag": "gx_b4_w3_split_v1",
+      "raw_gz_sha256": "b3d0e65fba82ace06d2ce6c5ae117e885be938cf7db35b0bfd10695df8855b01",
+      "commit": "2e1e970bca759d4676b91c627a615c986c272457",
+      "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "evaluator": "v1",
+      "rule": "shipped_v1",
+      "stamped_rule": null,
+      "contact_reporting_readback": {
+        "disableContactProcessing": false,
+        "mallet_has_contact_report_api": true,
+        "mallet_stand_has_contact_report_api": true
+      },
+      "seed": 0,
+      "layout": 0,
+      "settled_state_sha256": "9c72203c3fb2008a3eb1dcb898e31cc4e1f1714258cc1e6a0f9249037a4a6311",
+      "success": true,
+      "score_pct": 100.0,
+      "actions": 289,
+      "stages_left_end": 0,
+      "keys_planned_ok": 8,
+      "physx_xyl_touching_points": 0,
+      "physx_xyl_impulse_total_ns": 0,
+      "physx_keys_with_contact": [],
+      "v2_ledger_bar_impulse_keys": [],
+      "v2_ledger_held_bar_impulse_keys": [],
+      "v2_ledger_keys_struck": [],
+      "trimmed_fields": [
+        "runs[0].pose_log"
+      ],
+      "invariants": {
+        "any_single_beat_satisfies_both_xy_and_z": false,
+        "any_head_in_bbox": false
+      }
+    },
+    {
+      "id": "W3",
+      "group": "split_beat_independent_xy_z",
+      "check": "independent_2point_beat",
+      "verdict_kind": "hole",
+      "tag": "gx_b4_w3_split_v2c",
+      "raw_gz_sha256": "61b5cce2784f02b158930cbe69c57c2db8d986a25aca533cd138a196258d652a",
+      "commit": "2e1e970bca759d4676b91c627a615c986c272457",
+      "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "evaluator": "v2",
+      "rule": "v2_contact",
+      "stamped_rule": "v2_contact",
+      "contact_reporting_readback": {
+        "disableContactProcessing": false,
+        "mallet_has_contact_report_api": true,
+        "mallet_stand_has_contact_report_api": false
+      },
+      "seed": 0,
+      "layout": 0,
+      "settled_state_sha256": "9c72203c3fb2008a3eb1dcb898e31cc4e1f1714258cc1e6a0f9249037a4a6311",
+      "success": false,
+      "score_pct": 0.0,
+      "actions": 500,
+      "stages_left_end": 15,
+      "keys_planned_ok": 8,
+      "physx_xyl_touching_points": 0,
+      "physx_xyl_impulse_total_ns": 0,
+      "physx_keys_with_contact": [],
+      "v2_ledger_bar_impulse_keys": [],
+      "v2_ledger_held_bar_impulse_keys": [],
+      "v2_ledger_keys_struck": [],
+      "trimmed_fields": [
+        "runs[0].pose_log"
+      ],
+      "invariants": {
+        "any_single_beat_satisfies_both_xy_and_z": false,
+        "any_head_in_bbox": false
+      }
+    },
+    {
+      "id": "W4a",
+      "group": "side_glide_5act_pause",
+      "check": "horizontal_side_entry",
+      "verdict_kind": "hole",
+      "tag": "gx_b4_w4a_glide_v1",
+      "raw_gz_sha256": "0eb41e633bbc6162da419db1d3c9af88dc947081c8eb9d77f889d737581735f0",
+      "commit": "2e1e970bca759d4676b91c627a615c986c272457",
+      "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "evaluator": "v1",
+      "rule": "shipped_v1",
+      "stamped_rule": null,
+      "contact_reporting_readback": {
+        "disableContactProcessing": false,
+        "mallet_has_contact_report_api": true,
+        "mallet_stand_has_contact_report_api": true
+      },
+      "seed": 0,
+      "layout": 0,
+      "settled_state_sha256": "9c72203c3fb2008a3eb1dcb898e31cc4e1f1714258cc1e6a0f9249037a4a6311",
+      "success": true,
+      "score_pct": 100.0,
+      "actions": 309,
+      "stages_left_end": 0,
+      "keys_planned_ok": 8,
+      "physx_xyl_touching_points": 0,
+      "physx_xyl_impulse_total_ns": 0.0,
+      "physx_keys_with_contact": [],
+      "v2_ledger_bar_impulse_keys": [],
+      "v2_ledger_held_bar_impulse_keys": [],
+      "v2_ledger_keys_struck": [],
+      "trimmed_fields": [
+        "runs[0].pose_log"
+      ]
+    },
+    {
+      "id": "W4a",
+      "group": "side_glide_5act_pause",
+      "check": "horizontal_side_entry",
+      "verdict_kind": "hole",
+      "tag": "gx_b4_w4a_glide_v2c",
+      "raw_gz_sha256": "5c212195d60a1352d867414b9cd5259bafd9c3df5badf8ca47aad96e9d5d36bb",
+      "commit": "2e1e970bca759d4676b91c627a615c986c272457",
+      "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "evaluator": "v2",
+      "rule": "v2_contact",
+      "stamped_rule": "v2_contact",
+      "contact_reporting_readback": {
+        "disableContactProcessing": false,
+        "mallet_has_contact_report_api": true,
+        "mallet_stand_has_contact_report_api": false
+      },
+      "seed": 0,
+      "layout": 0,
+      "settled_state_sha256": "9c72203c3fb2008a3eb1dcb898e31cc4e1f1714258cc1e6a0f9249037a4a6311",
+      "success": false,
+      "score_pct": 0.0,
+      "actions": 500,
+      "stages_left_end": 15,
+      "keys_planned_ok": 8,
+      "physx_xyl_touching_points": 0,
+      "physx_xyl_impulse_total_ns": 0.0,
+      "physx_keys_with_contact": [],
+      "v2_ledger_bar_impulse_keys": [],
+      "v2_ledger_held_bar_impulse_keys": [],
+      "v2_ledger_keys_struck": [],
+      "trimmed_fields": [
+        "runs[0].pose_log"
+      ]
+    },
+    {
+      "id": "W4b",
+      "group": "side_entry_no_pause",
+      "check": "side_entry_nopause_blocker2",
+      "verdict_kind": "hole_boundary",
+      "tag": "gx_b4_w4b_nopause_v1",
+      "raw_gz_sha256": "4edd0bdcf99f7b11450a4f80f764d4d493f21164826ec79fc59f303c0cc7f618",
+      "commit": "2e1e970bca759d4676b91c627a615c986c272457",
+      "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "evaluator": "v1",
+      "rule": "shipped_v1",
+      "stamped_rule": null,
+      "contact_reporting_readback": {
+        "disableContactProcessing": false,
+        "mallet_has_contact_report_api": true,
+        "mallet_stand_has_contact_report_api": true
+      },
+      "seed": 0,
+      "layout": 0,
+      "settled_state_sha256": "9c72203c3fb2008a3eb1dcb898e31cc4e1f1714258cc1e6a0f9249037a4a6311",
+      "success": true,
+      "score_pct": 100.0,
+      "actions": 261,
+      "stages_left_end": 0,
+      "keys_planned_ok": 8,
+      "physx_xyl_touching_points": 0,
+      "physx_xyl_impulse_total_ns": 0.0,
+      "physx_keys_with_contact": [],
+      "v2_ledger_bar_impulse_keys": [],
+      "v2_ledger_held_bar_impulse_keys": [],
+      "v2_ledger_keys_struck": [],
+      "trimmed_fields": [
+        "runs[0].pose_log"
+      ]
+    },
+    {
+      "id": "W4b",
+      "group": "side_entry_no_pause",
+      "check": "side_entry_nopause_blocker2",
+      "verdict_kind": "hole_boundary",
+      "tag": "gx_b4_w4b_nopause_v2c",
+      "raw_gz_sha256": "ab782867e3ac3833bbab3d61fb92a3afa82f61577a764cc22fd243fa7058670c",
+      "commit": "2e1e970bca759d4676b91c627a615c986c272457",
+      "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "evaluator": "v2",
+      "rule": "v2_contact",
+      "stamped_rule": "v2_contact",
+      "contact_reporting_readback": {
+        "disableContactProcessing": false,
+        "mallet_has_contact_report_api": true,
+        "mallet_stand_has_contact_report_api": false
+      },
+      "seed": 0,
+      "layout": 0,
+      "settled_state_sha256": "9c72203c3fb2008a3eb1dcb898e31cc4e1f1714258cc1e6a0f9249037a4a6311",
+      "success": false,
+      "score_pct": 0.0,
+      "actions": 500,
+      "stages_left_end": 15,
+      "keys_planned_ok": 8,
+      "physx_xyl_touching_points": 0,
+      "physx_xyl_impulse_total_ns": 0.0,
+      "physx_keys_with_contact": [],
+      "v2_ledger_bar_impulse_keys": [],
+      "v2_ledger_held_bar_impulse_keys": [],
+      "v2_ledger_keys_struck": [],
+      "trimmed_fields": [
+        "runs[0].pose_log"
+      ]
+    },
+    {
+      "id": "W5",
+      "group": "wrong_order_7_to_0",
+      "check": "sequential_left_to_right",
+      "verdict_kind": "sound",
+      "tag": "gx_b4_w5_rtl_v1",
+      "raw_gz_sha256": "c18484c65e831dde540dc2bf09f3e7991f5f59d704de8cac5e66e8dbc8bdb0d2",
+      "commit": "2e1e970bca759d4676b91c627a615c986c272457",
+      "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "evaluator": "v1",
+      "rule": "shipped_v1",
+      "stamped_rule": null,
+      "contact_reporting_readback": {
+        "disableContactProcessing": false,
+        "mallet_has_contact_report_api": true,
+        "mallet_stand_has_contact_report_api": true
+      },
+      "seed": 0,
+      "layout": 0,
+      "settled_state_sha256": "9c72203c3fb2008a3eb1dcb898e31cc4e1f1714258cc1e6a0f9249037a4a6311",
+      "success": false,
+      "score_pct": 0.0,
+      "actions": 500,
+      "stages_left_end": 14,
+      "keys_planned_ok": 8,
+      "physx_xyl_touching_points": 3488,
+      "physx_xyl_impulse_total_ns": 2.317467,
+      "physx_keys_with_contact": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "v2_ledger_bar_impulse_keys": [],
+      "v2_ledger_held_bar_impulse_keys": [],
+      "v2_ledger_keys_struck": [],
+      "trimmed_fields": [
+        "runs[0].pose_log"
+      ]
+    },
+    {
+      "id": "W5",
+      "group": "wrong_order_7_to_0",
+      "check": "sequential_left_to_right",
+      "verdict_kind": "sound",
+      "tag": "gx_b4_w5_rtl_v2c",
+      "raw_gz_sha256": "7df14000bdf7e23e24ee9800f2f4145b929af8fd72f753e519925a167626654f",
+      "commit": "2e1e970bca759d4676b91c627a615c986c272457",
+      "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "evaluator": "v2",
+      "rule": "v2_contact",
+      "stamped_rule": "v2_contact",
+      "contact_reporting_readback": {
+        "disableContactProcessing": false,
+        "mallet_has_contact_report_api": true,
+        "mallet_stand_has_contact_report_api": false
+      },
+      "seed": 0,
+      "layout": 0,
+      "settled_state_sha256": "9c72203c3fb2008a3eb1dcb898e31cc4e1f1714258cc1e6a0f9249037a4a6311",
+      "success": false,
+      "score_pct": 0.0,
+      "actions": 500,
+      "stages_left_end": 15,
+      "keys_planned_ok": 8,
+      "physx_xyl_touching_points": 3488,
+      "physx_xyl_impulse_total_ns": 2.317467,
+      "physx_keys_with_contact": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "v2_ledger_bar_impulse_keys": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "v2_ledger_held_bar_impulse_keys": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "v2_ledger_keys_struck": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "trimmed_fields": [
+        "runs[0].pose_log"
+      ]
+    },
+    {
+      "id": "W6",
+      "group": "skip_key3",
+      "check": "all_8_keys_required",
+      "verdict_kind": "sound",
+      "tag": "gx_b4_w6_skip_v1",
+      "raw_gz_sha256": "d0602ec494cd8c76b907246f95fcb37ffdd3b02b56293079b16f10b010d3015e",
+      "commit": "2e1e970bca759d4676b91c627a615c986c272457",
+      "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "evaluator": "v1",
+      "rule": "shipped_v1",
+      "stamped_rule": null,
+      "contact_reporting_readback": {
+        "disableContactProcessing": false,
+        "mallet_has_contact_report_api": true,
+        "mallet_stand_has_contact_report_api": true
+      },
+      "seed": 0,
+      "layout": 0,
+      "settled_state_sha256": "9c72203c3fb2008a3eb1dcb898e31cc4e1f1714258cc1e6a0f9249037a4a6311",
+      "success": false,
+      "score_pct": 0.0,
+      "actions": 500,
+      "stages_left_end": 9,
+      "keys_planned_ok": 7,
+      "physx_xyl_touching_points": 50,
+      "physx_xyl_impulse_total_ns": 0.474002,
+      "physx_keys_with_contact": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "v2_ledger_bar_impulse_keys": [],
+      "v2_ledger_held_bar_impulse_keys": [],
+      "v2_ledger_keys_struck": [],
+      "trimmed_fields": [
+        "runs[0].pose_log"
+      ]
+    },
+    {
+      "id": "W6",
+      "group": "skip_key3",
+      "check": "all_8_keys_required",
+      "verdict_kind": "sound",
+      "tag": "gx_b4_w6_skip_v2c",
+      "raw_gz_sha256": "c73a1861bd47c0dd77bee549a084b285ade36f1edb8031a8c59c0ad432abe4d3",
+      "commit": "2e1e970bca759d4676b91c627a615c986c272457",
+      "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "evaluator": "v2",
+      "rule": "v2_contact",
+      "stamped_rule": "v2_contact",
+      "contact_reporting_readback": {
+        "disableContactProcessing": false,
+        "mallet_has_contact_report_api": true,
+        "mallet_stand_has_contact_report_api": false
+      },
+      "seed": 0,
+      "layout": 0,
+      "settled_state_sha256": "9c72203c3fb2008a3eb1dcb898e31cc4e1f1714258cc1e6a0f9249037a4a6311",
+      "success": false,
+      "score_pct": 0.0,
+      "actions": 500,
+      "stages_left_end": 9,
+      "keys_planned_ok": 7,
+      "physx_xyl_touching_points": 50,
+      "physx_xyl_impulse_total_ns": 0.474002,
+      "physx_keys_with_contact": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "v2_ledger_bar_impulse_keys": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "v2_ledger_held_bar_impulse_keys": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "v2_ledger_keys_struck": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "trimmed_fields": [
+        "runs[0].pose_log"
+      ]
+    },
+    {
+      "id": "W7",
+      "group": "bare_hand_mallet_on_stand",
+      "check": "mallet_actor_identity",
+      "verdict_kind": "sound",
+      "tag": "gx_b4_w7_hand_v1",
+      "raw_gz_sha256": "cf4c699a05ecafe8093f1cc1529e6e726f0524e3f168be11ca3b6d88e4186f52",
+      "commit": "2e1e970bca759d4676b91c627a615c986c272457",
+      "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "evaluator": "v1",
+      "rule": "shipped_v1",
+      "stamped_rule": null,
+      "contact_reporting_readback": {
+        "disableContactProcessing": false,
+        "mallet_has_contact_report_api": true,
+        "mallet_stand_has_contact_report_api": true
+      },
+      "seed": 0,
+      "layout": 0,
+      "settled_state_sha256": "9c72203c3fb2008a3eb1dcb898e31cc4e1f1714258cc1e6a0f9249037a4a6311",
+      "success": false,
+      "score_pct": 0.0,
+      "actions": 500,
+      "stages_left_end": 15,
+      "keys_planned_ok": 8,
+      "physx_xyl_touching_points": 0,
+      "physx_xyl_impulse_total_ns": 0,
+      "physx_keys_with_contact": [],
+      "v2_ledger_bar_impulse_keys": [],
+      "v2_ledger_held_bar_impulse_keys": [],
+      "v2_ledger_keys_struck": [],
+      "trimmed_fields": [
+        "runs[0].pose_log"
+      ]
+    },
+    {
+      "id": "W7",
+      "group": "bare_hand_mallet_on_stand",
+      "check": "mallet_actor_identity",
+      "verdict_kind": "sound",
+      "tag": "gx_b4_w7_hand_v2c",
+      "raw_gz_sha256": "83deb6f4ee32d8e03a93ae21babd4e38f88c1fc210b7d6a3f87c439442c58970",
+      "commit": "2e1e970bca759d4676b91c627a615c986c272457",
+      "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "evaluator": "v2",
+      "rule": "v2_contact",
+      "stamped_rule": "v2_contact",
+      "contact_reporting_readback": {
+        "disableContactProcessing": false,
+        "mallet_has_contact_report_api": true,
+        "mallet_stand_has_contact_report_api": false
+      },
+      "seed": 0,
+      "layout": 0,
+      "settled_state_sha256": "9c72203c3fb2008a3eb1dcb898e31cc4e1f1714258cc1e6a0f9249037a4a6311",
+      "success": false,
+      "score_pct": 0.0,
+      "actions": 500,
+      "stages_left_end": 15,
+      "keys_planned_ok": 8,
+      "physx_xyl_touching_points": 0,
+      "physx_xyl_impulse_total_ns": 0,
+      "physx_keys_with_contact": [],
+      "v2_ledger_bar_impulse_keys": [],
+      "v2_ledger_held_bar_impulse_keys": [],
+      "v2_ledger_keys_struck": [],
+      "trimmed_fields": [
+        "runs[0].pose_log"
+      ]
+    },
+    {
+      "id": "W8",
+      "group": "drag_unlifted_0_to_7",
+      "check": "post_strike_lift_25mm",
+      "verdict_kind": "sound",
+      "tag": "gx_b4_w8_drag_v1",
+      "raw_gz_sha256": "b7ce8a402831f3f3863af9dcecea0c534497e42d8bf30023d769a83cc3b60bbd",
+      "commit": "2e1e970bca759d4676b91c627a615c986c272457",
+      "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "evaluator": "v1",
+      "rule": "shipped_v1",
+      "stamped_rule": null,
+      "contact_reporting_readback": {
+        "disableContactProcessing": false,
+        "mallet_has_contact_report_api": true,
+        "mallet_stand_has_contact_report_api": true
+      },
+      "seed": 0,
+      "layout": 0,
+      "settled_state_sha256": "9c72203c3fb2008a3eb1dcb898e31cc4e1f1714258cc1e6a0f9249037a4a6311",
+      "success": false,
+      "score_pct": 0.0,
+      "actions": 500,
+      "stages_left_end": 14,
+      "keys_planned_ok": 0,
+      "physx_xyl_touching_points": 98,
+      "physx_xyl_impulse_total_ns": 0.668087,
+      "physx_keys_with_contact": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "v2_ledger_bar_impulse_keys": [],
+      "v2_ledger_held_bar_impulse_keys": [],
+      "v2_ledger_keys_struck": [],
+      "trimmed_fields": [
+        "runs[0].pose_log"
+      ]
+    },
+    {
+      "id": "W8",
+      "group": "drag_unlifted_0_to_7",
+      "check": "post_strike_lift_25mm",
+      "verdict_kind": "sound",
+      "tag": "gx_b4_w8_drag_v2c",
+      "raw_gz_sha256": "77d02be1157f06e86ef90c63f904b7244924bec0023a122b01612ad46183685d",
+      "commit": "2e1e970bca759d4676b91c627a615c986c272457",
+      "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "evaluator": "v2",
+      "rule": "v2_contact",
+      "stamped_rule": "v2_contact",
+      "contact_reporting_readback": {
+        "disableContactProcessing": false,
+        "mallet_has_contact_report_api": true,
+        "mallet_stand_has_contact_report_api": false
+      },
+      "seed": 0,
+      "layout": 0,
+      "settled_state_sha256": "9c72203c3fb2008a3eb1dcb898e31cc4e1f1714258cc1e6a0f9249037a4a6311",
+      "success": false,
+      "score_pct": 0.0,
+      "actions": 500,
+      "stages_left_end": 14,
+      "keys_planned_ok": 0,
+      "physx_xyl_touching_points": 98,
+      "physx_xyl_impulse_total_ns": 0.668087,
+      "physx_keys_with_contact": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "v2_ledger_bar_impulse_keys": [
+        0,
+        2,
+        4,
+        6,
+        7
+      ],
+      "v2_ledger_held_bar_impulse_keys": [
+        0,
+        2,
+        4,
+        6,
+        7
+      ],
+      "v2_ledger_keys_struck": [
+        0,
+        2,
+        4,
+        6,
+        7
+      ],
+      "trimmed_fields": [
+        "runs[0].pose_log"
+      ]
+    },
+    {
+      "id": "W9",
+      "group": "positive_real_strikes",
+      "check": "positive_control_and_parity",
+      "verdict_kind": "positive",
+      "tag": "gx_b4_w9_strike_v1",
+      "raw_gz_sha256": "417ccd50a65ee842526ea36eadf575e03d34d2ba119197820353d561af31936a",
+      "commit": "2e1e970bca759d4676b91c627a615c986c272457",
+      "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "evaluator": "v1",
+      "rule": "shipped_v1",
+      "stamped_rule": null,
+      "contact_reporting_readback": {
+        "disableContactProcessing": true,
+        "mallet_has_contact_report_api": false,
+        "mallet_stand_has_contact_report_api": false
+      },
+      "seed": 0,
+      "layout": 0,
+      "settled_state_sha256": "9c72203c3fb2008a3eb1dcb898e31cc4e1f1714258cc1e6a0f9249037a4a6311",
+      "success": true,
+      "score_pct": 100.0,
+      "actions": 246,
+      "stages_left_end": 0,
+      "keys_planned_ok": 8,
+      "physx_xyl_touching_points": 0,
+      "physx_xyl_impulse_total_ns": 0,
+      "physx_keys_with_contact": [],
+      "v2_ledger_bar_impulse_keys": [],
+      "v2_ledger_held_bar_impulse_keys": [],
+      "v2_ledger_keys_struck": [],
+      "trimmed_fields": []
+    },
+    {
+      "id": "W9",
+      "group": "positive_real_strikes",
+      "check": "positive_control_and_parity",
+      "verdict_kind": "positive",
+      "tag": "gx_b4_w9_strike_v1",
+      "raw_gz_sha256": "417ccd50a65ee842526ea36eadf575e03d34d2ba119197820353d561af31936a",
+      "commit": "2e1e970bca759d4676b91c627a615c986c272457",
+      "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "evaluator": "v1",
+      "rule": "shipped_v1",
+      "stamped_rule": null,
+      "contact_reporting_readback": {
+        "disableContactProcessing": true,
+        "mallet_has_contact_report_api": false,
+        "mallet_stand_has_contact_report_api": false
+      },
+      "seed": 0,
+      "layout": 1,
+      "settled_state_sha256": "cda9b0746666a55daac5957360314c8fbaeabc9b6ee957cdd10a73e305c092ea",
+      "success": true,
+      "score_pct": 100.0,
+      "actions": 246,
+      "stages_left_end": 0,
+      "keys_planned_ok": 8,
+      "physx_xyl_touching_points": 0,
+      "physx_xyl_impulse_total_ns": 0,
+      "physx_keys_with_contact": [],
+      "v2_ledger_bar_impulse_keys": [],
+      "v2_ledger_held_bar_impulse_keys": [],
+      "v2_ledger_keys_struck": [],
+      "trimmed_fields": []
+    },
+    {
+      "id": "W9",
+      "group": "positive_real_strikes",
+      "check": "positive_control_and_parity",
+      "verdict_kind": "positive",
+      "tag": "gx_b4_w9_strike_v2_r1",
+      "raw_gz_sha256": "534df092abee68ac75b046f839fe6ebd556fba0183c922d7145f777283e10e1c",
+      "commit": "2e1e970bca759d4676b91c627a615c986c272457",
+      "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "evaluator": "v2",
+      "rule": "v1",
+      "stamped_rule": "v1",
+      "contact_reporting_readback": {
+        "disableContactProcessing": true,
+        "mallet_has_contact_report_api": false,
+        "mallet_stand_has_contact_report_api": false
+      },
+      "seed": 0,
+      "layout": 0,
+      "settled_state_sha256": "9c72203c3fb2008a3eb1dcb898e31cc4e1f1714258cc1e6a0f9249037a4a6311",
+      "success": true,
+      "score_pct": 100.0,
+      "actions": 246,
+      "stages_left_end": 0,
+      "keys_planned_ok": 8,
+      "physx_xyl_touching_points": 0,
+      "physx_xyl_impulse_total_ns": 0,
+      "physx_keys_with_contact": [],
+      "v2_ledger_bar_impulse_keys": [],
+      "v2_ledger_held_bar_impulse_keys": [],
+      "v2_ledger_keys_struck": [],
+      "trimmed_fields": []
+    },
+    {
+      "id": "W9",
+      "group": "positive_real_strikes",
+      "check": "positive_control_and_parity",
+      "verdict_kind": "positive",
+      "tag": "gx_b4_w9_strike_v2_r1",
+      "raw_gz_sha256": "534df092abee68ac75b046f839fe6ebd556fba0183c922d7145f777283e10e1c",
+      "commit": "2e1e970bca759d4676b91c627a615c986c272457",
+      "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "evaluator": "v2",
+      "rule": "v1",
+      "stamped_rule": "v1",
+      "contact_reporting_readback": {
+        "disableContactProcessing": true,
+        "mallet_has_contact_report_api": false,
+        "mallet_stand_has_contact_report_api": false
+      },
+      "seed": 0,
+      "layout": 1,
+      "settled_state_sha256": "cda9b0746666a55daac5957360314c8fbaeabc9b6ee957cdd10a73e305c092ea",
+      "success": true,
+      "score_pct": 100.0,
+      "actions": 246,
+      "stages_left_end": 0,
+      "keys_planned_ok": 8,
+      "physx_xyl_touching_points": 0,
+      "physx_xyl_impulse_total_ns": 0,
+      "physx_keys_with_contact": [],
+      "v2_ledger_bar_impulse_keys": [],
+      "v2_ledger_held_bar_impulse_keys": [],
+      "v2_ledger_keys_struck": [],
+      "trimmed_fields": []
+    },
+    {
+      "id": "W9",
+      "group": "positive_real_strikes",
+      "check": "positive_control_and_parity",
+      "verdict_kind": "positive",
+      "tag": "gx_b4_w9_strike_v2c",
+      "raw_gz_sha256": "2898fd911fb3ab0f3e1cb8cce7f4a68698aa30b5e5ae502befb04a371ccbe6a6",
+      "commit": "2e1e970bca759d4676b91c627a615c986c272457",
+      "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "evaluator": "v2",
+      "rule": "v2_contact",
+      "stamped_rule": "v2_contact",
+      "contact_reporting_readback": {
+        "disableContactProcessing": false,
+        "mallet_has_contact_report_api": true,
+        "mallet_stand_has_contact_report_api": false
+      },
+      "seed": 0,
+      "layout": 0,
+      "settled_state_sha256": "9c72203c3fb2008a3eb1dcb898e31cc4e1f1714258cc1e6a0f9249037a4a6311",
+      "success": true,
+      "score_pct": 100.0,
+      "actions": 247,
+      "stages_left_end": 0,
+      "keys_planned_ok": 8,
+      "physx_xyl_touching_points": 66,
+      "physx_xyl_impulse_total_ns": 0.573901,
+      "physx_keys_with_contact": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "v2_ledger_bar_impulse_keys": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "v2_ledger_held_bar_impulse_keys": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "v2_ledger_keys_struck": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "trimmed_fields": []
+    },
+    {
+      "id": "W9",
+      "group": "positive_real_strikes",
+      "check": "positive_control_and_parity",
+      "verdict_kind": "positive",
+      "tag": "gx_b4_w9_strike_v2c",
+      "raw_gz_sha256": "2898fd911fb3ab0f3e1cb8cce7f4a68698aa30b5e5ae502befb04a371ccbe6a6",
+      "commit": "2e1e970bca759d4676b91c627a615c986c272457",
+      "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "evaluator": "v2",
+      "rule": "v2_contact",
+      "stamped_rule": "v2_contact",
+      "contact_reporting_readback": {
+        "disableContactProcessing": false,
+        "mallet_has_contact_report_api": true,
+        "mallet_stand_has_contact_report_api": false
+      },
+      "seed": 0,
+      "layout": 1,
+      "settled_state_sha256": "cda9b0746666a55daac5957360314c8fbaeabc9b6ee957cdd10a73e305c092ea",
+      "success": true,
+      "score_pct": 100.0,
+      "actions": 247,
+      "stages_left_end": 0,
+      "keys_planned_ok": 8,
+      "physx_xyl_touching_points": 56,
+      "physx_xyl_impulse_total_ns": 0.470746,
+      "physx_keys_with_contact": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "v2_ledger_bar_impulse_keys": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "v2_ledger_held_bar_impulse_keys": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "v2_ledger_keys_struck": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "trimmed_fields": []
+    },
+    {
+      "id": "W10",
+      "group": "fast_rebound_between_samples",
+      "check": "fast_rebound_false_negative_fix",
+      "verdict_kind": "positive_boundary",
+      "tag": "gx_b4_w10_rebound_v1",
+      "raw_gz_sha256": "be13dd8da139f15ee578379f7b60b645afb9702b6a72ba8869f163460f4c6b25",
+      "commit": "2e1e970bca759d4676b91c627a615c986c272457",
+      "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "evaluator": "v1",
+      "rule": "shipped_v1",
+      "stamped_rule": null,
+      "contact_reporting_readback": {
+        "disableContactProcessing": false,
+        "mallet_has_contact_report_api": true,
+        "mallet_stand_has_contact_report_api": true
+      },
+      "seed": 0,
+      "layout": 0,
+      "settled_state_sha256": "9c72203c3fb2008a3eb1dcb898e31cc4e1f1714258cc1e6a0f9249037a4a6311",
+      "success": true,
+      "score_pct": 100.0,
+      "actions": 206,
+      "stages_left_end": 0,
+      "keys_planned_ok": 8,
+      "physx_xyl_touching_points": 28,
+      "physx_xyl_impulse_total_ns": 0.206662,
+      "physx_keys_with_contact": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "v2_ledger_bar_impulse_keys": [],
+      "v2_ledger_held_bar_impulse_keys": [],
+      "v2_ledger_keys_struck": [],
+      "trimmed_fields": [
+        "runs[0].pose_log"
+      ]
+    },
+    {
+      "id": "W10",
+      "group": "fast_rebound_between_samples",
+      "check": "fast_rebound_false_negative_fix",
+      "verdict_kind": "positive_boundary",
+      "tag": "gx_b4_w10_rebound_v2c",
+      "raw_gz_sha256": "dcd94dd5870cadf392c85d49c6261f40d5f12ca17cd9eed4b05bda08e35fc00c",
+      "commit": "2e1e970bca759d4676b91c627a615c986c272457",
+      "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "evaluator": "v2",
+      "rule": "v2_contact",
+      "stamped_rule": "v2_contact",
+      "contact_reporting_readback": {
+        "disableContactProcessing": false,
+        "mallet_has_contact_report_api": true,
+        "mallet_stand_has_contact_report_api": false
+      },
+      "seed": 0,
+      "layout": 0,
+      "settled_state_sha256": "9c72203c3fb2008a3eb1dcb898e31cc4e1f1714258cc1e6a0f9249037a4a6311",
+      "success": true,
+      "score_pct": 100.0,
+      "actions": 211,
+      "stages_left_end": 0,
+      "keys_planned_ok": 8,
+      "physx_xyl_touching_points": 29,
+      "physx_xyl_impulse_total_ns": 0.243086,
+      "physx_keys_with_contact": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "v2_ledger_bar_impulse_keys": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "v2_ledger_held_bar_impulse_keys": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "v2_ledger_keys_struck": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "trimmed_fields": [],
+      "invariants": {
+        "strike_stage_sampled_clearances_mm": [
+          11.24,
+          12.99,
+          13.03,
+          13.13,
+          12.21,
+          12.65,
+          15.24,
+          10.31
+        ],
+        "preceding_action_clearances_mm": [
+          1.13,
+          0.98,
+          0.88,
+          0.89,
+          1.0,
+          1.03,
+          1.15,
+          1.37
+        ]
+      }
+    },
+    {
+      "id": "W11",
+      "group": "edge_strike_head_1mm_outside_quad",
+      "check": "edge_strike_false_negative_fix",
+      "verdict_kind": "positive_boundary",
+      "tag": "gx_b4e_w11_edge_v1",
+      "raw_gz_sha256": "5553f8238922f33fbe523227d60dbe00853bbe0ae51427ddd5e70f3d91dfc0f6",
+      "commit": "8b4decc52b2ecd1043db0c20882722c1910c379f",
+      "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "evaluator": "v1",
+      "rule": "shipped_v1",
+      "stamped_rule": null,
+      "contact_reporting_readback": {
+        "disableContactProcessing": false,
+        "mallet_has_contact_report_api": true,
+        "mallet_stand_has_contact_report_api": true
+      },
+      "seed": 0,
+      "layout": 0,
+      "settled_state_sha256": "9c72203c3fb2008a3eb1dcb898e31cc4e1f1714258cc1e6a0f9249037a4a6311",
+      "success": true,
+      "score_pct": 100.0,
+      "actions": 246,
+      "stages_left_end": 0,
+      "keys_planned_ok": 8,
+      "physx_xyl_touching_points": 39,
+      "physx_xyl_impulse_total_ns": 0.389911,
+      "physx_keys_with_contact": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "v2_ledger_bar_impulse_keys": [],
+      "v2_ledger_held_bar_impulse_keys": [],
+      "v2_ledger_keys_struck": [],
+      "trimmed_fields": [
+        "runs[0].pose_log"
+      ],
+      "invariants": {
+        "any_head_in_bbox_during_edge_strike": false
+      }
+    },
+    {
+      "id": "W11",
+      "group": "edge_strike_head_1mm_outside_quad",
+      "check": "edge_strike_false_negative_fix",
+      "verdict_kind": "positive_boundary",
+      "tag": "gx_b4e_w11_edge_v2c",
+      "raw_gz_sha256": "06280a4123f35573dd1d4d07e92d7382741910cd702839f39c720241faeb5fb0",
+      "commit": "8b4decc52b2ecd1043db0c20882722c1910c379f",
+      "repo_diff_sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "evaluator": "v2",
+      "rule": "v2_contact",
+      "stamped_rule": "v2_contact",
+      "contact_reporting_readback": {
+        "disableContactProcessing": false,
+        "mallet_has_contact_report_api": true,
+        "mallet_stand_has_contact_report_api": false
+      },
+      "seed": 0,
+      "layout": 0,
+      "settled_state_sha256": "9c72203c3fb2008a3eb1dcb898e31cc4e1f1714258cc1e6a0f9249037a4a6311",
+      "success": true,
+      "score_pct": 100.0,
+      "actions": 249,
+      "stages_left_end": 0,
+      "keys_planned_ok": 8,
+      "physx_xyl_touching_points": 49,
+      "physx_xyl_impulse_total_ns": 0.463251,
+      "physx_keys_with_contact": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "v2_ledger_bar_impulse_keys": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "v2_ledger_held_bar_impulse_keys": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "v2_ledger_keys_struck": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "trimmed_fields": [],
+      "invariants": {
+        "any_head_in_bbox_during_edge_strike": false
+      }
+    }
+  ],
+  "parity_checks": [
+    {
+      "pair": "W1a_v1_vs_v2_rule_v1",
+      "tag_a": "gx_b4_w1a_hover_v1",
+      "tag_b": "gx_b4_w1a_hover_v2_r1",
+      "episodes": [
+        {
+          "layout": 0,
+          "actions": 269,
+          "settled_state_bit_identical": true,
+          "obj_q_stages_logged_5dp_identical": true
+        }
+      ]
+    },
+    {
+      "pair": "W1b_v1_vs_v2_rule_v1",
+      "tag_a": "gx_b4_w1b_hoverall_v1",
+      "tag_b": "gx_b4_w1b_hoverall_v2_r1",
+      "episodes": [
+        {
+          "layout": 0,
+          "actions": 227,
+          "settled_state_bit_identical": true,
+          "obj_q_stages_logged_5dp_identical": true
+        },
+        {
+          "layout": 1,
+          "actions": 227,
+          "settled_state_bit_identical": true,
+          "obj_q_stages_logged_5dp_identical": true
+        }
+      ]
+    },
+    {
+      "pair": "W9_v1_vs_v2_rule_v1",
+      "tag_a": "gx_b4_w9_strike_v1",
+      "tag_b": "gx_b4_w9_strike_v2_r1",
+      "episodes": [
+        {
+          "layout": 0,
+          "actions": 246,
+          "settled_state_bit_identical": true,
+          "obj_q_stages_logged_5dp_identical": true
+        },
+        {
+          "layout": 1,
+          "actions": 246,
+          "settled_state_bit_identical": true,
+          "obj_q_stages_logged_5dp_identical": true
+        }
+      ]
+    }
+  ],
+  "contact_reporting_parity": [
+    {
+      "pair": "W1a_reporting_off_vs_on",
+      "tag_off": "gx_b4_w1a_hover_v1",
+      "tag_on": "gx_b4_w1a_hover_v2c",
+      "episodes": [
+        {
+          "layout": 0,
+          "actions_reporting_off": 269,
+          "actions_reporting_on": 500,
+          "shared_prefix_actions": 269,
+          "reporting_off_readback": {
+            "disableContactProcessing": true,
+            "mallet_has_contact_report_api": false,
+            "mallet_stand_has_contact_report_api": false
+          },
+          "reporting_on_readback": {
+            "disableContactProcessing": false,
+            "mallet_has_contact_report_api": true,
+            "mallet_stand_has_contact_report_api": false
+          },
+          "settled_state_bit_identical": true,
+          "shared_prefix_obj_q_logged_5dp_identical": false,
+          "first_obj_q_diff_index": 117
+        }
+      ]
+    },
+    {
+      "pair": "W1b_reporting_off_vs_on",
+      "tag_off": "gx_b4_w1b_hoverall_v1",
+      "tag_on": "gx_b4_w1b_hoverall_v2c",
+      "episodes": [
+        {
+          "layout": 0,
+          "actions_reporting_off": 227,
+          "actions_reporting_on": 500,
+          "shared_prefix_actions": 227,
+          "reporting_off_readback": {
+            "disableContactProcessing": true,
+            "mallet_has_contact_report_api": false,
+            "mallet_stand_has_contact_report_api": false
+          },
+          "reporting_on_readback": {
+            "disableContactProcessing": false,
+            "mallet_has_contact_report_api": true,
+            "mallet_stand_has_contact_report_api": false
+          },
+          "settled_state_bit_identical": true,
+          "shared_prefix_obj_q_logged_5dp_identical": true,
+          "first_obj_q_diff_index": null
+        },
+        {
+          "layout": 1,
+          "actions_reporting_off": 227,
+          "actions_reporting_on": 500,
+          "shared_prefix_actions": 227,
+          "reporting_off_readback": {
+            "disableContactProcessing": true,
+            "mallet_has_contact_report_api": false,
+            "mallet_stand_has_contact_report_api": false
+          },
+          "reporting_on_readback": {
+            "disableContactProcessing": false,
+            "mallet_has_contact_report_api": true,
+            "mallet_stand_has_contact_report_api": false
+          },
+          "settled_state_bit_identical": true,
+          "shared_prefix_obj_q_logged_5dp_identical": true,
+          "first_obj_q_diff_index": null
+        }
+      ]
+    },
+    {
+      "pair": "W9_reporting_off_vs_on",
+      "tag_off": "gx_b4_w9_strike_v1",
+      "tag_on": "gx_b4_w9_strike_v2c",
+      "episodes": [
+        {
+          "layout": 0,
+          "actions_reporting_off": 246,
+          "actions_reporting_on": 247,
+          "shared_prefix_actions": 246,
+          "reporting_off_readback": {
+            "disableContactProcessing": true,
+            "mallet_has_contact_report_api": false,
+            "mallet_stand_has_contact_report_api": false
+          },
+          "reporting_on_readback": {
+            "disableContactProcessing": false,
+            "mallet_has_contact_report_api": true,
+            "mallet_stand_has_contact_report_api": false
+          },
+          "settled_state_bit_identical": true,
+          "shared_prefix_obj_q_logged_5dp_identical": true,
+          "first_obj_q_diff_index": null
+        },
+        {
+          "layout": 1,
+          "actions_reporting_off": 246,
+          "actions_reporting_on": 247,
+          "shared_prefix_actions": 246,
+          "reporting_off_readback": {
+            "disableContactProcessing": true,
+            "mallet_has_contact_report_api": false,
+            "mallet_stand_has_contact_report_api": false
+          },
+          "reporting_on_readback": {
+            "disableContactProcessing": false,
+            "mallet_has_contact_report_api": true,
+            "mallet_stand_has_contact_report_api": false
+          },
+          "settled_state_bit_identical": true,
+          "shared_prefix_obj_q_logged_5dp_identical": true,
+          "first_obj_q_diff_index": null
+        }
+      ]
+    }
+  ],
+  "gpu_timing": {
+    "processes": 85,
+    "sum_process_wall_s": 30563.29
+  }
+}

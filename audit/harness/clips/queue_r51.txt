@@ -1,0 +1,9 @@
+# 5.1 references at this commit (VER=51, --no_render): the same harness cases as the committed evidence, state logged at the clip windows
+r51_bulldoze|bulldoze.json||--task put_bottles_into_dustbin --layouts 1 --policy exploit --exploit_mode shove_bottles --log_poses --evaluator v1
+r51_peek|peek.json||--task cover_blocks --layouts 1 --policy witness_cb --cb_mode peek_51 --log_poses --evaluator v1
+r51_buttons|buttons.json||--task press_by_number --layouts 0 --policy stress_hv --stress_cases <repo>/audit/harness/stress_hv/cases/press_buttons_clip.json
+r51_press40|press40.json||--task press_by_number --layouts 0 --policy stress_hv --stress_cases <repo>/audit/harness/stress_hv/cases/press_depth_b0_40_clip.json
+r51_coin|coin.json||--task deposit_coin --layouts 0 --policy stress_hv --stress_cases <repo>/audit/harness/stress_hv/cases/coin_side_speeds.json
+r51_d3_order|d3.json||--task cover_blocks --layouts 0 --policy readback --order_variant
+r51_d3_ship|d3.json||--task cover_blocks --layouts 0 --policy readback
+r51_zero|smoke_bottles.json||--task put_bottles_into_dustbin --layouts 0 --policy zero --evaluator v1

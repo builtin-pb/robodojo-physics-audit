@@ -1,0 +1,7 @@
+16:35:17 free=5255 foreign_big=1
+16:40:19 free=5261 foreign_big=1
+16:45:23 free=42828 foreign_big=0
+16:50:25 free=42815 foreign_big=0
+CLEAR
+
+[exited with code 0]

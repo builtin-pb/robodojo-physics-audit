@@ -1,0 +1,27 @@
+# Why NGX (DLSS, DLAA, the DLSS-RR denoiser) did not start in the 6.2 container on della-vis2, and the fix (November 13, 2026)
+# 1. NGX log lines per run (sim.log): the probes with the bind have none; the 3-episode check before the fix (t3_shipped_v1_r3) failed to create the NGX context.
+# 2. della-vis2 /etc/apptainer/nvliblist.conf (lines matching ngx|optix|nvidia-ml|libcuda): libnvoptix is listed, libnvidia-ngx is not; the host has it.
+# 3. What the container sees in /.singularity.d/libs with --nv alone and with the bind; Kit ships the DLSS feature libraries itself.
+
+probe_ngx_p1 ngx_lines=0 failed_ngx=0
+probe_ngx_p2_iso ngx_lines=0 failed_ngx=0
+t3_shipped_v1_r3 (before the fix) failed_ngx=2
+2026-11-13T21:17:37Z [40,407ms] [Warning] [omni.rtx] Trying to initialize NGX without vkGetInstanceProcAddr and vkGetDeviceProcAddr pointer-to-functions.
+2026-11-13T21:17:37Z [40,408ms] [Error] [omni.rtx] Could not get NGX parameters block because NGX isn't enabled.
+2026-11-13T21:17:37Z [40,408ms] [Error] [omni.rtx] Failed to create NGX context.
+2026-11-13T21:17:37Z [40,408ms] [Warning] [carb.scenerenderer-rtx.plugin] Failed to create NGX context.
+17:libcuda.so
+48:libnvidia-ml.so
+56:libnvoptix.so
+70:/usr/share/nvidia/nvoptix.bin
+lrwxrwxrwx. 1 root root      26 Sep 24 01:17 /lib64/libnvidia-ngx.so.1 -> libnvidia-ngx.so.615.71.10
+-rwxr-xr-x. 1 root root 5484832 Sep 23 19:17 /lib64/libnvidia-ngx.so.615.71.10
+== container /.singularity.d/libs, --nv only (ngx/optix entries):
+libnvoptix.so.1
+== with -B /lib64/libnvidia-ngx.so.615.71.10:/.singularity.d/libs/libnvidia-ngx.so.1:
+libnvidia-ngx.so.1
+libnvoptix.so.1
+== Kit DLSS feature libraries in the image:
+libnvidia-ngx-dlss.so.310.7.0
+libnvidia-ngx-dlssd.so.310.7.128
+libnvidia-ngx-dlssg.so.310.2.2

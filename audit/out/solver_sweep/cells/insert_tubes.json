@@ -1,0 +1,91 @@
+[
+ {
+  "cell_name": "insert_tubes__shipped",
+  "layout": 0,
+  "overrides": {
+   "slide_target": {
+    "label": "tube0",
+    "inst": "test_tube_2_1",
+    "labelled": true,
+    "stem": "test_tube_2",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     -0.552069,
+     0.833798
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "insert_tubes__dt2",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.002,
+   "slide_target": {
+    "label": "tube0",
+    "inst": "test_tube_2_1",
+    "labelled": true,
+    "stem": "test_tube_2",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     -0.552069,
+     0.833798
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "insert_tubes__dt1",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.001,
+   "slide_target": {
+    "label": "tube0",
+    "inst": "test_tube_2_1",
+    "labelled": true,
+    "stem": "test_tube_2",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     -0.552069,
+     0.833798
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "insert_tubes__iters4x",
+  "layout": 0,
+  "overrides": {
+   "min_pos_iters": 64,
+   "slide_target": {
+    "label": "tube0",
+    "inst": "test_tube_2_1",
+    "labelled": true,
+    "stem": "test_tube_2",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     -0.552069,
+     0.833798
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "insert_tubes__cpu",
+  "layout": 0,
+  "overrides": {
+   "gpu_dynamics": false,
+   "slide_target": {
+    "label": "tube0",
+    "inst": "test_tube_2_1",
+    "labelled": true,
+    "stem": "test_tube_2",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     -0.552069,
+     0.833798
+    ]
+   }
+  }
+ }
+]

@@ -1,0 +1,8 @@
+{
+ "purpose": "Blog clip, three finger versions: the bottle-hold witness (put_bottles_into_dustbin seed 0 layout 0, bottle/00025 at 0.50 kg, pad_hard_nom, 6 cm off-centre top-down grasp, 15 cm lift in 0.8 s, 1 s hold), 5.1 state log after every action and every physics step through the end of the hold (10 settle steps, then actions 1-90 approach, descend, close and squeeze on the table, 91-110 lift, 111-135 hold: steps 1-1360; logged to 1400)",
+ "cameras": [],
+ "windows": [
+  {"case": null, "unit": "action", "from": 1, "to": 200, "stride": 1},
+  {"case": null, "unit": "step", "from": 1, "to": 1400, "stride": 1}
+ ]
+}

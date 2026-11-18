@@ -1,0 +1,23 @@
+[
+ {
+  "cell_name": "stack_blocks_random__perturb",
+  "layout": 0,
+  "overrides": {
+   "spawn_lift": {
+    "stems": "*",
+    "dz_m": 1e-06
+   },
+   "slide_target": {
+    "label": "office_mail_1_14",
+    "inst": "office_mail_1_14",
+    "labelled": false,
+    "stem": "office_mail_1",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.992802,
+     -0.119764
+    ]
+   }
+  }
+ }
+]

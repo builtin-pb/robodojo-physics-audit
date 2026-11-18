@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/scratch/<user>/isaac/work/clips/robodojo-physics/audit/harness/run_harness.py", line 2454, in <module>
+    env.run_eval()
+  File "/scratch/<user>/isaac/work/clips/robodojo-physics/src/eval_client/eval_env.py", line 1198, in run_eval
+    self.eval_one_episode()
+  File "/scratch/<user>/isaac/work/clips/robodojo-physics/src/eval_client/eval_env.py", line 440, in eval_one_episode
+    eval_module.eval_one_episode(TASK_ENV=self, model_client=self.model_client)
+  File "/scratch/<user>/isaac/work/clips/robodojo-physics/audit/harness/clips/clip_run.py", line 482, in eval_one_episode
+    replay(env)
+  File "/scratch/<user>/isaac/work/clips/robodojo-physics/audit/harness/clips/clip_run.py", line 409, in replay
+    lm.get_scene_object(0, lm.get_instance_name(0, label)).set_joint_positions(np.asarray(q, dtype=float))
+  File "/isaac-sim/extsDeprecated/isaacsim.core.prims/isaacsim/core/prims/impl/single_articulation.py", line 431, in set_joint_positions
+    positions = self._backend_utils.expand_dims(positions, 0)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/isaac-sim/extsDeprecated/isaacsim.core.utils/isaacsim/core/utils/torch/tensor.py", line 169, in expand_dims
+    return torch.unsqueeze(data, axis)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unsqueeze(): argument 'input' (position 1) must be Tensor, not numpy.ndarray
+

@@ -1,0 +1,166 @@
+[
+ {
+  "cell_name": "classify_objects__shipped",
+  "layout": 0,
+  "overrides": {
+   "slide_target": {
+    "label": "cat0_0",
+    "inst": "pen_4_1",
+    "labelled": true,
+    "stem": "pen_4",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.990832,
+     -0.135101
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "classify_objects__pen_at_rest",
+  "layout": 0,
+  "overrides": {
+   "spawn_pose": {
+    "pen_1": [
+     0.0689674,
+     -0.2293969,
+     0.771296,
+     0.707235,
+     0.3526226,
+     0.6124117,
+     -0.020686
+    ]
+   },
+   "slide_target": {
+    "label": "cat0_0",
+    "inst": "pen_4_1",
+    "labelled": true,
+    "stem": "pen_4",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.990832,
+     -0.135101
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "classify_objects__cpu_pen_at_rest",
+  "layout": 0,
+  "overrides": {
+   "gpu_dynamics": false,
+   "spawn_pose": {
+    "pen_1": [
+     0.0689674,
+     -0.2293969,
+     0.771296,
+     0.707235,
+     0.3526226,
+     0.6124117,
+     -0.020686
+    ]
+   },
+   "slide_target": {
+    "label": "cat0_0",
+    "inst": "pen_4_1",
+    "labelled": true,
+    "stem": "pen_4",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.990832,
+     -0.135101
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "classify_objects__stab_off_dt2_pen_at_rest",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.002,
+   "enable_stabilization": false,
+   "spawn_pose": {
+    "pen_1": [
+     0.0689674,
+     -0.2293969,
+     0.771296,
+     0.707235,
+     0.3526226,
+     0.6124117,
+     -0.020686
+    ]
+   },
+   "slide_target": {
+    "label": "cat0_0",
+    "inst": "pen_4_1",
+    "labelled": true,
+    "stem": "pen_4",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.990832,
+     -0.135101
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "classify_objects__stab_off_dt1_pen_at_rest",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.001,
+   "enable_stabilization": false,
+   "spawn_pose": {
+    "pen_1": [
+     0.0689674,
+     -0.2293969,
+     0.771296,
+     0.707235,
+     0.3526226,
+     0.6124117,
+     -0.020686
+    ]
+   },
+   "slide_target": {
+    "label": "cat0_0",
+    "inst": "pen_4_1",
+    "labelled": true,
+    "stem": "pen_4",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.990832,
+     -0.135101
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "classify_objects__cpu_dt2_pen_at_rest",
+  "layout": 0,
+  "overrides": {
+   "gpu_dynamics": false,
+   "dt_s": 0.002,
+   "spawn_pose": {
+    "pen_1": [
+     0.0689674,
+     -0.2293969,
+     0.771296,
+     0.707235,
+     0.3526226,
+     0.6124117,
+     -0.020686
+    ]
+   },
+   "slide_target": {
+    "label": "cat0_0",
+    "inst": "pen_4_1",
+    "labelled": true,
+    "stem": "pen_4",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.990832,
+     -0.135101
+    ]
+   }
+  }
+ }
+]

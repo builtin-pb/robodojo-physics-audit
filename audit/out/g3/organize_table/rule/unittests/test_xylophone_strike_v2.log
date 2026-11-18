@@ -1,0 +1,22 @@
+test_bar_contact_attribution_exact_boundaries_and_edge_strike (audit.tools.test_xylophone_strike_v2.XylophoneContactBoundaryTests.test_bar_contact_attribution_exact_boundaries_and_edge_strike) ... ok
+test_ledger_rejects_blockers_and_accepts_fast_rebound_and_edge_strike (audit.tools.test_xylophone_strike_v2.XylophoneContactBoundaryTests.test_ledger_rejects_blockers_and_accepts_fast_rebound_and_edge_strike) ... ok
+test_mallet_head_and_shaft_exact_boundaries (audit.tools.test_xylophone_strike_v2.XylophoneContactBoundaryTests.test_mallet_head_and_shaft_exact_boundaries) ... ok
+test_point_in_quad_xy_and_bar_clearance (audit.tools.test_xylophone_strike_v2.XylophoneContactBoundaryTests.test_point_in_quad_xy_and_bar_clearance) ... ok
+test_robot_holds_mallet_shaft_substep_exact_boundaries (audit.tools.test_xylophone_strike_v2.XylophoneContactBoundaryTests.test_robot_holds_mallet_shaft_substep_exact_boundaries) ... ok
+test_default_and_env_selection (audit.tools.test_xylophone_strike_v2.XylophoneRuleConfigTests.test_default_and_env_selection) ... ok
+test_mixed_rule_aggregation_invalidates_task_and_dimension (audit.tools.test_xylophone_strike_v2.XylophoneRuleConfigTests.test_mixed_rule_aggregation_invalidates_task_and_dimension) ... ok
+test_params_stamped_in_result_and_legacy_loader (audit.tools.test_xylophone_strike_v2.XylophoneRuleConfigTests.test_params_stamped_in_result_and_legacy_loader) ... ok
+test_resume_guard_refuses_rule_change (audit.tools.test_xylophone_strike_v2.XylophoneRuleConfigTests.test_resume_guard_refuses_rule_change) ... ok
+test_unknown_and_replaced_v2_strike_rejected (audit.tools.test_xylophone_strike_v2.XylophoneRuleConfigTests.test_unknown_and_replaced_v2_strike_rejected) ... ok
+test_hover_and_near_descent_pass_v1_but_fail_v2_contact (audit.tools.test_xylophone_strike_v2.XylophoneTaskIntegrationTests.test_hover_and_near_descent_pass_v1_but_fail_v2_contact) ... ok
+test_missing_assets_skips_cleanly (audit.tools.test_xylophone_strike_v2.XylophoneTaskIntegrationTests.test_missing_assets_skips_cleanly) ... ok
+test_real_strikes_fast_rebound_and_edge_pass_v2_contact_while_drop_and_13mm_fail (audit.tools.test_xylophone_strike_v2.XylophoneTaskIntegrationTests.test_real_strikes_fast_rebound_and_edge_pass_v2_contact_while_drop_and_13mm_fail) ... ok
+test_reset_restores_contact_processing_when_leaving_v2_contact (audit.tools.test_xylophone_strike_v2.XylophoneTaskIntegrationTests.test_reset_restores_contact_processing_when_leaving_v2_contact) ... ok
+test_v1_rule_bit_identical_digest_on_150_random_episodes (audit.tools.test_xylophone_strike_v2.XylophoneTaskIntegrationTests.test_v1_rule_bit_identical_digest_on_150_random_episodes) ... ok
+test_v2_contact_asserts_decimation_equals_1 (audit.tools.test_xylophone_strike_v2.XylophoneTaskIntegrationTests.test_v2_contact_asserts_decimation_equals_1) ... ok
+test_zero_action_period_raises (audit.tools.test_xylophone_strike_v2.XylophoneTaskIntegrationTests.test_zero_action_period_raises) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 4.318s
+
+OK

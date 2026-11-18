@@ -1,0 +1,337 @@
+{
+ "purpose": "Harness fidelity (#106): the same policy and layouts through run_harness.py, the fork main.py and upstream f57e163 main.py; per-finding main.py reproductions.",
+ "gpu": "della-vis2 GPU 0 (A40, shared with another user holding 17.8 to 20 GB), Isaac Sim 5.1.0, Isaac Lab afca7b0, device cpu, seed 0",
+ "upstream_leg": "commit = f57e163 tree plus audit/ of the fork commit named in its message (built with git read-tree/commit-tree; `git diff f57e163 <leg> -- . ':!audit'` empty, checked on Della before each batch); Assets links to the same folder as the fork checkout",
+ "gpu_hours_total": 1.334,
+ "runs": [
+  {
+   "tag": "fh_fasten_drop",
+   "role": "#114 positive control with about 25 GB free (the original harness command)",
+   "path": "harness",
+   "commit": "0c5517210851f5285763a64721b50fda88145558",
+   "gpu_wall_s": 45,
+   "exit_code": 0,
+   "queue": "q2",
+   "repo": "fork",
+   "args": "--task fasten_screws --seed 0 --layouts 0 --policy sweep --sweep_steps 250 --sweep_drop_m 0.03"
+  },
+  {
+   "tag": "fh_peek_L01",
+   "role": "comparison: harness with contact reports, #51 peek, layouts 0 and 1",
+   "path": "harness",
+   "commit": "4cfffe6485a173483f8160cb75c26976d9464898",
+   "gpu_wall_s": 575,
+   "exit_code": 0,
+   "queue": "q1",
+   "repo": "fork",
+   "args": "--task cover_blocks --layouts 0,1 --policy witness_cb --cb_mode peek_51 --log_poses --evaluator v1"
+  },
+  {
+   "tag": "fh_presslit_L0",
+   "role": "comparison: harness, #125 literal order",
+   "path": "harness",
+   "commit": "4cfffe6485a173483f8160cb75c26976d9464898",
+   "gpu_wall_s": 165,
+   "exit_code": 0,
+   "queue": "q1",
+   "repo": "fork",
+   "args": "--task press_by_number --layouts 0 --policy exploit --exploit_mode press_by_number --exploit_args '{\"order\":\"literal\"}' --log_poses --evaluator v1"
+  },
+  {
+   "tag": "fh_shove_L01",
+   "role": "comparison: harness, #109 bulldozer, layouts 0 then 1",
+   "path": "harness",
+   "commit": "259ef76dba9d0c6063bf8289d0cb8766db68443a",
+   "gpu_wall_s": 524,
+   "exit_code": 0,
+   "queue": "q1",
+   "repo": "fork",
+   "args": "--task put_bottles_into_dustbin --layouts 0,1 --policy exploit --exploit_mode shove_bottles --log_poses --evaluator v1"
+  },
+  {
+   "tag": "fm_buttons",
+   "role": "#111 through main.py (stress case list as the policy), PhysX monitor on",
+   "path": "main.py",
+   "commit": "0c5517210851f5285763a64721b50fda88145558",
+   "gpu_wall_s": 140,
+   "exit_code": 0,
+   "queue": "q2",
+   "repo": "fork",
+   "args": "--mode stress_hv --stress_cases @REPO@/audit/harness/stress_hv/cases/press_buttons_eval.json --task press_by_number --evaluator v1 --eval_num 1 --log_poses --run_id fid_buttons"
+  },
+  {
+   "tag": "fm_cb52_down",
+   "role": "A7 (#52) mouth-down cup held at cube-top height, through main.py",
+   "path": "main.py",
+   "commit": "0c5517210851f5285763a64721b50fda88145558",
+   "gpu_wall_s": 50,
+   "exit_code": 0,
+   "queue": "q2",
+   "repo": "fork",
+   "args": "--mode witness_cb --cb_mode cup_on_cube_52 --task cover_blocks --evaluator v1 --eval_num 1 --log_poses --run_id fid_cb52_down"
+  },
+  {
+   "tag": "fm_cb52_up",
+   "role": "A7 (#52) upright cup set on the cube, through main.py",
+   "path": "main.py",
+   "commit": "0c5517210851f5285763a64721b50fda88145558",
+   "gpu_wall_s": 37,
+   "exit_code": 0,
+   "queue": "q2",
+   "repo": "fork",
+   "args": "--mode witness_cb --cb_mode cup_on_cube_upright_52 --task cover_blocks --evaluator v1 --eval_num 1 --log_poses --run_id fid_cb52_up"
+  },
+  {
+   "tag": "fm_peek",
+   "role": "comparison: main.py (fork), no contact reports; G1 from the logged targets",
+   "path": "main.py",
+   "commit": "4cfffe6485a173483f8160cb75c26976d9464898",
+   "gpu_wall_s": 588,
+   "exit_code": 0,
+   "queue": "q1",
+   "repo": "fork",
+   "args": "--mode witness_cb --cb_mode peek_51 --task cover_blocks --evaluator v1 --eval_num 2 --log_poses --run_id fid_peek"
+  },
+  {
+   "tag": "fm_presslit",
+   "role": "comparison: main.py (fork); PhysX monitor on",
+   "path": "main.py",
+   "commit": "4cfffe6485a173483f8160cb75c26976d9464898",
+   "gpu_wall_s": 171,
+   "exit_code": 0,
+   "queue": "q1",
+   "repo": "fork",
+   "args": "--mode exploit --exploit_mode press_by_number --exploit_args '{\"order\":\"literal\"}' --task press_by_number --evaluator v1 --eval_num 1 --log_poses --run_id fid_presslit"
+  },
+  {
+   "tag": "fm_presspro",
+   "role": "#125 protocol through main.py without pose logging (logging-perturbation check)",
+   "path": "main.py",
+   "commit": "0c5517210851f5285763a64721b50fda88145558",
+   "gpu_wall_s": 100,
+   "exit_code": 0,
+   "queue": "q2",
+   "repo": "fork",
+   "args": "--mode exploit --exploit_mode press_by_number --exploit_args '{\"order\":\"protocol\"}' --task press_by_number --evaluator v1 --eval_num 1 --run_id fid_presspro"
+  },
+  {
+   "tag": "fm_rb_bottles",
+   "role": "readback + slide through main.py (smoke test of the mode; D1, V1, D8)",
+   "path": "main.py",
+   "commit": "70186ec9ffaaac23cda37d4f6e53b6216ae3cc5f",
+   "gpu_wall_s": 37,
+   "exit_code": 0,
+   "queue": "smoke (same line as q2)",
+   "repo": "fork",
+   "args": "--mode readback --slide --task put_bottles_into_dustbin --evaluator v1 --eval_num 1 --run_id fid_rb_bottles"
+  },
+  {
+   "tag": "fm_rb_cb",
+   "role": "readback + slide (D1, V3, D9 cube)",
+   "path": "main.py",
+   "commit": "0c5517210851f5285763a64721b50fda88145558",
+   "gpu_wall_s": 36,
+   "exit_code": 0,
+   "queue": "q2",
+   "repo": "fork",
+   "args": "--mode readback --slide --task cover_blocks --evaluator v1 --eval_num 1 --run_id fid_rb_cb"
+  },
+  {
+   "tag": "fm_rb_pack",
+   "role": "readback (V2 hammer, D9 shoe)",
+   "path": "main.py",
+   "commit": "0c5517210851f5285763a64721b50fda88145558",
+   "gpu_wall_s": 37,
+   "exit_code": 0,
+   "queue": "q2",
+   "repo": "fork",
+   "args": "--mode readback --task pack_objects_into_box --evaluator v1 --eval_num 1 --run_id fid_rb_pack"
+  },
+  {
+   "tag": "fm_rb_press_a",
+   "role": "step-count probe: physics steps inside RoboDojo articulation calls",
+   "path": "main.py",
+   "commit": "a6ccdda48629129967f6ccff16b4a2bc1f01466d",
+   "gpu_wall_s": 38,
+   "exit_code": 0,
+   "queue": "q3",
+   "repo": "fork",
+   "args": "--mode readback --task press_by_number --evaluator v1 --eval_num 1 --log_poses --run_id fid_rb_press_a"
+  },
+  {
+   "tag": "fm_rb_press_b",
+   "role": "step-count probe, repeat",
+   "path": "main.py",
+   "commit": "a6ccdda48629129967f6ccff16b4a2bc1f01466d",
+   "gpu_wall_s": 37,
+   "exit_code": 0,
+   "queue": "q3",
+   "repo": "fork",
+   "args": "--mode readback --task press_by_number --evaluator v1 --eval_num 1 --log_poses --run_id fid_rb_press_b"
+  },
+  {
+   "tag": "fm_rb_pushT",
+   "role": "readback (D9, V4)",
+   "path": "main.py",
+   "commit": "0c5517210851f5285763a64721b50fda88145558",
+   "gpu_wall_s": 34,
+   "exit_code": 0,
+   "queue": "q2",
+   "repo": "fork",
+   "args": "--mode readback --task push_T --evaluator v1 --eval_num 1 --run_id fid_rb_pushT"
+  },
+  {
+   "tag": "fm_rb_pushTr",
+   "role": "readback (V2 coin task; T-block)",
+   "path": "main.py",
+   "commit": "0c5517210851f5285763a64721b50fda88145558",
+   "gpu_wall_s": 39,
+   "exit_code": 0,
+   "queue": "q2",
+   "repo": "fork",
+   "args": "--mode readback --task push_T_random --evaluator v1 --eval_num 1 --run_id fid_rb_pushTr"
+  },
+  {
+   "tag": "fm_rb_swapT",
+   "role": "readback (D9, V4)",
+   "path": "main.py",
+   "commit": "0c5517210851f5285763a64721b50fda88145558",
+   "gpu_wall_s": 34,
+   "exit_code": 0,
+   "queue": "q2",
+   "repo": "fork",
+   "args": "--mode readback --task swap_T --evaluator v1 --eval_num 1 --run_id fid_rb_swapT"
+  },
+  {
+   "tag": "fm_shove",
+   "role": "comparison: main.py (fork)",
+   "path": "main.py",
+   "commit": "4cfffe6485a173483f8160cb75c26976d9464898",
+   "gpu_wall_s": 516,
+   "exit_code": 0,
+   "queue": "q1",
+   "repo": "fork",
+   "args": "--mode exploit --exploit_mode shove_bottles --task put_bottles_into_dustbin --evaluator v1 --eval_num 2 --log_poses --run_id fid_shove"
+  },
+  {
+   "tag": "fm_vase",
+   "role": "#123 through main.py, against committed x2_vase_L0_v1",
+   "path": "main.py",
+   "commit": "0c5517210851f5285763a64721b50fda88145558",
+   "gpu_wall_s": 79,
+   "exit_code": 0,
+   "queue": "q2",
+   "repo": "fork",
+   "args": "--mode exploit --exploit_mode vase_pour_beside --task pour_balls_into_vase --evaluator v1 --eval_num 1 --log_poses --run_id fid_vase"
+  },
+  {
+   "tag": "fm_xylo",
+   "role": "#124 through main.py, against committed x2_xylo_L0_v1c",
+   "path": "main.py",
+   "commit": "0c5517210851f5285763a64721b50fda88145558",
+   "gpu_wall_s": 100,
+   "exit_code": 0,
+   "queue": "q2",
+   "repo": "fork",
+   "args": "--mode exploit --exploit_mode xylophone_hover --task play_Xylophone --evaluator v1 --eval_num 1 --log_poses --run_id fid_xylo"
+  },
+  {
+   "tag": "fu_peek",
+   "role": "comparison: main.py (upstream)",
+   "path": "main.py upstream",
+   "commit": "80eca66ede45035a2ff873952fc3a3779d9c59e8",
+   "gpu_wall_s": 572,
+   "exit_code": 0,
+   "queue": "q1",
+   "repo": "up",
+   "args": "--mode witness_cb --cb_mode peek_51 --task cover_blocks --eval_num 2 --log_poses --upstream --run_id fid_peek_up"
+  },
+  {
+   "tag": "fu_presslit",
+   "role": "comparison: main.py (upstream)",
+   "path": "main.py upstream",
+   "commit": "80eca66ede45035a2ff873952fc3a3779d9c59e8",
+   "gpu_wall_s": 168,
+   "exit_code": 0,
+   "queue": "q1",
+   "repo": "up",
+   "args": "--mode exploit --exploit_mode press_by_number --exploit_args '{\"order\":\"literal\"}' --task press_by_number --eval_num 1 --log_poses --upstream --run_id fid_presslit_up"
+  },
+  {
+   "tag": "fu_rb_bottles",
+   "role": "readback + slide, upstream",
+   "path": "main.py upstream",
+   "commit": "7a931fe560e7d5ddc64297e4d12c86066b21424d",
+   "gpu_wall_s": 36,
+   "exit_code": 0,
+   "queue": "q2",
+   "repo": "up",
+   "args": "--mode readback --slide --task put_bottles_into_dustbin --eval_num 1 --upstream --run_id fid_rb_bottles_up"
+  },
+  {
+   "tag": "fu_rb_cb",
+   "role": "readback + slide, upstream",
+   "path": "main.py upstream",
+   "commit": "7a931fe560e7d5ddc64297e4d12c86066b21424d",
+   "gpu_wall_s": 36,
+   "exit_code": 0,
+   "queue": "q2",
+   "repo": "up",
+   "args": "--mode readback --slide --task cover_blocks --eval_num 1 --upstream --run_id fid_rb_cb_up"
+  },
+  {
+   "tag": "fu_rb_pack",
+   "role": "readback, upstream",
+   "path": "main.py upstream",
+   "commit": "7a931fe560e7d5ddc64297e4d12c86066b21424d",
+   "gpu_wall_s": 37,
+   "exit_code": 0,
+   "queue": "q2",
+   "repo": "up",
+   "args": "--mode readback --task pack_objects_into_box --eval_num 1 --upstream --run_id fid_rb_pack_up"
+  },
+  {
+   "tag": "fu_shove",
+   "role": "comparison: main.py (upstream f57e163)",
+   "path": "main.py upstream",
+   "commit": "80eca66ede45035a2ff873952fc3a3779d9c59e8",
+   "gpu_wall_s": 541,
+   "exit_code": 0,
+   "queue": "q1",
+   "repo": "up",
+   "args": "--mode exploit --exploit_mode shove_bottles --task put_bottles_into_dustbin --eval_num 2 --log_poses --upstream --run_id fid_shove_up"
+  },
+  {
+   "tag": "fm_rb_pushTr2",
+   "role": "V2's coin (an unlabelled distractor) through main.py",
+   "path": "main.py",
+   "commit": "7b86a7a",
+   "gpu_wall_s": 30,
+   "exit_code": 0,
+   "queue": "q4",
+   "repo": "fork",
+   "args": "--mode readback --task push_T_random --evaluator v1 --eval_num 1 --run_id fid_rb_pushTr2"
+  }
+ ],
+ "upstream_leg_commits_used": {
+  "80eca66": {
+   "audit_from": "4cfffe6",
+   "tree": "1295cc1fcc8cc0ce81991860ccb67fe156ee91ad",
+   "runs": [
+    "fu_shove",
+    "fu_presslit",
+    "fu_peek"
+   ]
+  },
+  "7a931fe": {
+   "audit_from": "0c55172",
+   "tree": "08c254bd5e9391c0620e42063862ae9eb04b98a4",
+   "runs": [
+    "fu_rb_bottles",
+    "fu_rb_cb",
+    "fu_rb_pack"
+   ]
+  }
+ },
+ "upstream_leg_rebuild": "bash audit/out/fidelity/repro/build_upstream_leg.sh <audit_from>; the new commit has the same tree hash"
+}

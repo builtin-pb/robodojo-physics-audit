@@ -1,0 +1,928 @@
+{
+  "schema": "usd_geometry_facts_v1",
+  "hf_dataset": "RoboDojo-Benchmark/RoboDojo",
+  "hf_dataset_revision": "1127bda94f172d757386945af3eb3a6754d1a4e6",
+  "generator": "audit/tools/extract_usd_geometry_facts.py --models",
+  "rigid_objects": {
+    "Rigid/cube/00004": {
+      "usd_relpath": "Assets/Object/RoboDojo/Rigid/cube/00004/object.usdz",
+      "usd_sha256": "5de13bc5a5ba93f1bf1a69d70206ec921c384a24a2b582877a3334b53f048be9",
+      "metadata_sha256": "1422d5df6ec99dc6aecbaa102b297a3b6747a0fa04a8a9238507f2bd5850520a",
+      "metadata_aligned_bbox_min_m": [
+        -0.0125,
+        -0.0125,
+        -0.0125
+      ],
+      "metadata_aligned_bbox_extents_m": [
+        0.025,
+        0.025,
+        0.025
+      ],
+      "metadata_declared_mass_kg": 0.35,
+      "metadata_declared_friction": 0.25,
+      "collider_union_min_m": [
+        -0.0125,
+        -0.0125,
+        -0.0125
+      ],
+      "collider_union_max_m": [
+        0.0125,
+        0.0125,
+        0.0125
+      ],
+      "collider_union_extents_m": [
+        0.025,
+        0.025,
+        0.025
+      ],
+      "enabled_gprim_collider_count": 1,
+      "colliders": [
+        {
+          "prim_path": "/root/collision/model",
+          "approximation": "convexDecomposition",
+          "local_min_m": [
+            -0.0125,
+            -0.0125,
+            -0.0125
+          ],
+          "local_max_m": [
+            0.0125,
+            0.0125,
+            0.0125
+          ],
+          "extents_m": [
+            0.025,
+            0.025,
+            0.025
+          ]
+        }
+      ],
+      "meshes": [
+        {
+          "prim_path": "/root/visual/model",
+          "collision_api": false,
+          "collision_enabled": false,
+          "points_sha256": "f5467d5396f591a0f869e0bbe5f4548694604e9bdd9e2fe7f3fe099580039b6e"
+        },
+        {
+          "prim_path": "/root/collision/model",
+          "collision_api": true,
+          "collision_enabled": true,
+          "points_sha256": "f5467d5396f591a0f869e0bbe5f4548694604e9bdd9e2fe7f3fe099580039b6e"
+        }
+      ],
+      "visual_surface": {
+        "triangle_count": 12,
+        "welded_vertex_count": 8,
+        "boundary_edge_count": 0,
+        "nonmanifold_edge_count": 0,
+        "closed_manifold": true,
+        "surface_area_m2": 0.00375,
+        "surface_shell_com_offset_m": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "surface_shell_inertia_over_mass_m2": [
+          0.000173611,
+          0.000173611,
+          0.000173611
+        ],
+        "surface_shell_offdiag_max_rel": 0.0,
+        "enclosed_volume_m3": 1.5625e-05,
+        "enclosed_solid_com_offset_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "enclosed_solid_inertia_over_mass_m2": [
+          0.000104167,
+          0.000104167,
+          0.000104167
+        ],
+        "enclosed_solid_offdiag_max_rel": 0.0
+      },
+      "outer_hull_all_mesh_points": {
+        "hull_vertex_count": 8,
+        "hull_face_count": 12,
+        "outer_hull_volume_m3": 1.5625e-05,
+        "outer_hull_area_m2": 0.00375,
+        "solid_com_offset_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "solid_inertia_over_mass_m2": [
+          0.00010417,
+          0.00010417,
+          0.00010417
+        ],
+        "solid_offdiag_max_rel": 0.0,
+        "shell_com_offset_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "shell_inertia_over_mass_m2": [
+          0.00017361,
+          0.00017361,
+          0.00017361
+        ],
+        "shell_offdiag_max_rel": 0.0,
+        "shell_over_solid_ratio": [
+          1.6667,
+          1.6667,
+          1.6667
+        ]
+      }
+    },
+    "Rigid/cube/00005": {
+      "usd_relpath": "Assets/Object/RoboDojo/Rigid/cube/00005/object.usdz",
+      "usd_sha256": "cd04c29d3f4bac5caa33266ea400e71b0bacbba4761260dc4fc61f82966b1c7d",
+      "metadata_sha256": "7dc944bb39dfbe7e360b82b7c243b0d087735456f28a8b8ba7dca2b7134a16ba",
+      "metadata_aligned_bbox_min_m": [
+        -0.0125,
+        -0.0125,
+        -0.0125
+      ],
+      "metadata_aligned_bbox_extents_m": [
+        0.025,
+        0.025,
+        0.025
+      ],
+      "metadata_declared_mass_kg": 0.35,
+      "metadata_declared_friction": 0.25,
+      "collider_union_min_m": [
+        -0.0125,
+        -0.0125,
+        -0.0125
+      ],
+      "collider_union_max_m": [
+        0.0125,
+        0.0125,
+        0.0125
+      ],
+      "collider_union_extents_m": [
+        0.025,
+        0.025,
+        0.025
+      ],
+      "enabled_gprim_collider_count": 1,
+      "colliders": [
+        {
+          "prim_path": "/root/collision/model",
+          "approximation": "convexDecomposition",
+          "local_min_m": [
+            -0.0125,
+            -0.0125,
+            -0.0125
+          ],
+          "local_max_m": [
+            0.0125,
+            0.0125,
+            0.0125
+          ],
+          "extents_m": [
+            0.025,
+            0.025,
+            0.025
+          ]
+        }
+      ],
+      "meshes": [
+        {
+          "prim_path": "/root/visual/model",
+          "collision_api": false,
+          "collision_enabled": false,
+          "points_sha256": "f5467d5396f591a0f869e0bbe5f4548694604e9bdd9e2fe7f3fe099580039b6e"
+        },
+        {
+          "prim_path": "/root/collision/model",
+          "collision_api": true,
+          "collision_enabled": true,
+          "points_sha256": "f5467d5396f591a0f869e0bbe5f4548694604e9bdd9e2fe7f3fe099580039b6e"
+        }
+      ],
+      "visual_surface": {
+        "triangle_count": 12,
+        "welded_vertex_count": 8,
+        "boundary_edge_count": 0,
+        "nonmanifold_edge_count": 0,
+        "closed_manifold": true,
+        "surface_area_m2": 0.00375,
+        "surface_shell_com_offset_m": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "surface_shell_inertia_over_mass_m2": [
+          0.000173611,
+          0.000173611,
+          0.000173611
+        ],
+        "surface_shell_offdiag_max_rel": 0.0,
+        "enclosed_volume_m3": 1.5625e-05,
+        "enclosed_solid_com_offset_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "enclosed_solid_inertia_over_mass_m2": [
+          0.000104167,
+          0.000104167,
+          0.000104167
+        ],
+        "enclosed_solid_offdiag_max_rel": 0.0
+      },
+      "outer_hull_all_mesh_points": {
+        "hull_vertex_count": 8,
+        "hull_face_count": 12,
+        "outer_hull_volume_m3": 1.5625e-05,
+        "outer_hull_area_m2": 0.00375,
+        "solid_com_offset_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "solid_inertia_over_mass_m2": [
+          0.00010417,
+          0.00010417,
+          0.00010417
+        ],
+        "solid_offdiag_max_rel": 0.0,
+        "shell_com_offset_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "shell_inertia_over_mass_m2": [
+          0.00017361,
+          0.00017361,
+          0.00017361
+        ],
+        "shell_offdiag_max_rel": 0.0,
+        "shell_over_solid_ratio": [
+          1.6667,
+          1.6667,
+          1.6667
+        ]
+      }
+    },
+    "Rigid/cube/00006": {
+      "usd_relpath": "Assets/Object/RoboDojo/Rigid/cube/00006/object.usdz",
+      "usd_sha256": "60b612d503c93ed0b24e83d64242040d35394d29ad0d4329b3bd072724bcc01c",
+      "metadata_sha256": "e27c6e3011dbf5897fa63f2cacab5a369b8733cb1f7c2ebfefcd18592dbb4497",
+      "metadata_aligned_bbox_min_m": [
+        -0.0125,
+        -0.0125,
+        -0.0125
+      ],
+      "metadata_aligned_bbox_extents_m": [
+        0.025,
+        0.025,
+        0.025
+      ],
+      "metadata_declared_mass_kg": 0.35,
+      "metadata_declared_friction": 0.25,
+      "collider_union_min_m": [
+        -0.0125,
+        -0.0125,
+        -0.0125
+      ],
+      "collider_union_max_m": [
+        0.0125,
+        0.0125,
+        0.0125
+      ],
+      "collider_union_extents_m": [
+        0.025,
+        0.025,
+        0.025
+      ],
+      "enabled_gprim_collider_count": 1,
+      "colliders": [
+        {
+          "prim_path": "/root/collision/model",
+          "approximation": "convexDecomposition",
+          "local_min_m": [
+            -0.0125,
+            -0.0125,
+            -0.0125
+          ],
+          "local_max_m": [
+            0.0125,
+            0.0125,
+            0.0125
+          ],
+          "extents_m": [
+            0.025,
+            0.025,
+            0.025
+          ]
+        }
+      ],
+      "meshes": [
+        {
+          "prim_path": "/root/visual/model",
+          "collision_api": false,
+          "collision_enabled": false,
+          "points_sha256": "f5467d5396f591a0f869e0bbe5f4548694604e9bdd9e2fe7f3fe099580039b6e"
+        },
+        {
+          "prim_path": "/root/collision/model",
+          "collision_api": true,
+          "collision_enabled": true,
+          "points_sha256": "f5467d5396f591a0f869e0bbe5f4548694604e9bdd9e2fe7f3fe099580039b6e"
+        }
+      ],
+      "visual_surface": {
+        "triangle_count": 12,
+        "welded_vertex_count": 8,
+        "boundary_edge_count": 0,
+        "nonmanifold_edge_count": 0,
+        "closed_manifold": true,
+        "surface_area_m2": 0.00375,
+        "surface_shell_com_offset_m": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "surface_shell_inertia_over_mass_m2": [
+          0.000173611,
+          0.000173611,
+          0.000173611
+        ],
+        "surface_shell_offdiag_max_rel": 0.0,
+        "enclosed_volume_m3": 1.5625e-05,
+        "enclosed_solid_com_offset_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "enclosed_solid_inertia_over_mass_m2": [
+          0.000104167,
+          0.000104167,
+          0.000104167
+        ],
+        "enclosed_solid_offdiag_max_rel": 0.0
+      },
+      "outer_hull_all_mesh_points": {
+        "hull_vertex_count": 8,
+        "hull_face_count": 12,
+        "outer_hull_volume_m3": 1.5625e-05,
+        "outer_hull_area_m2": 0.00375,
+        "solid_com_offset_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "solid_inertia_over_mass_m2": [
+          0.00010417,
+          0.00010417,
+          0.00010417
+        ],
+        "solid_offdiag_max_rel": 0.0,
+        "shell_com_offset_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "shell_inertia_over_mass_m2": [
+          0.00017361,
+          0.00017361,
+          0.00017361
+        ],
+        "shell_offdiag_max_rel": 0.0,
+        "shell_over_solid_ratio": [
+          1.6667,
+          1.6667,
+          1.6667
+        ]
+      }
+    },
+    "Rigid/cup/00001": {
+      "usd_relpath": "Assets/Object/RoboDojo/Rigid/cup/00001/object.usdz",
+      "usd_sha256": "ccee68b7e35e05728db3c4d9b95920b6b7ebe7f22159c9dcbfce63098accf52b",
+      "metadata_sha256": "d7dd85a2bc84ee0d9705776bd83c10c6aca53cd58b5b4e5474397d4bec940a37",
+      "metadata_aligned_bbox_min_m": [
+        -0.036,
+        -0.0362,
+        -0.038
+      ],
+      "metadata_aligned_bbox_extents_m": [
+        0.072,
+        0.072,
+        0.072
+      ],
+      "metadata_declared_mass_kg": 0.15,
+      "metadata_declared_friction": 0.25,
+      "collider_union_min_m": [
+        -0.036,
+        -0.035991,
+        -0.035912
+      ],
+      "collider_union_max_m": [
+        0.036,
+        0.036009,
+        0.036088
+      ],
+      "collider_union_extents_m": [
+        0.072,
+        0.072,
+        0.072
+      ],
+      "enabled_gprim_collider_count": 1,
+      "colliders": [
+        {
+          "prim_path": "/root/collision/model",
+          "approximation": "convexDecomposition",
+          "local_min_m": [
+            -0.036,
+            -0.035991,
+            -0.035912
+          ],
+          "local_max_m": [
+            0.036,
+            0.036009,
+            0.036088
+          ],
+          "extents_m": [
+            0.072,
+            0.072,
+            0.072
+          ]
+        }
+      ],
+      "meshes": [
+        {
+          "prim_path": "/root/visual/model",
+          "collision_api": false,
+          "collision_enabled": false,
+          "points_sha256": "897fa9e39b6dc45b0c33799606db2cf6cf57485f20629bafc8891396438fa14f"
+        },
+        {
+          "prim_path": "/root/collision/model",
+          "collision_api": true,
+          "collision_enabled": true,
+          "points_sha256": "897fa9e39b6dc45b0c33799606db2cf6cf57485f20629bafc8891396438fa14f"
+        }
+      ],
+      "visual_surface": {
+        "triangle_count": 83924,
+        "welded_vertex_count": 41964,
+        "boundary_edge_count": 0,
+        "nonmanifold_edge_count": 0,
+        "closed_manifold": true,
+        "surface_area_m2": 0.02902135,
+        "surface_shell_com_offset_m": [
+          3e-06,
+          1e-05,
+          0.000718
+        ],
+        "surface_shell_inertia_over_mass_m2": [
+          0.000905147,
+          0.000904908,
+          0.000862147
+        ],
+        "surface_shell_offdiag_max_rel": 4.3e-05,
+        "enclosed_volume_m3": 6.92389e-05,
+        "enclosed_solid_com_offset_m": [
+          3e-06,
+          -4e-06,
+          -0.010698
+        ],
+        "enclosed_solid_inertia_over_mass_m2": [
+          0.000744114,
+          0.000744696,
+          0.000676986
+        ],
+        "enclosed_solid_offdiag_max_rel": 0.000128
+      },
+      "outer_hull_all_mesh_points": {
+        "hull_vertex_count": 2714,
+        "hull_face_count": 5424,
+        "outer_hull_volume_m3": 0.000224734,
+        "outer_hull_area_m2": 0.02037607,
+        "solid_com_offset_m": [
+          -0.0,
+          1e-05,
+          0.003712
+        ],
+        "solid_inertia_over_mass_m2": [
+          0.0006757,
+          0.00067582,
+          0.00051237
+        ],
+        "solid_offdiag_max_rel": 8.5e-05,
+        "shell_com_offset_m": [
+          2e-06,
+          1.4e-05,
+          0.004655
+        ],
+        "shell_inertia_over_mass_m2": [
+          0.00109904,
+          0.00109916,
+          0.00086662
+        ],
+        "shell_offdiag_max_rel": 2e-05,
+        "shell_over_solid_ratio": [
+          1.6265,
+          1.6264,
+          1.6914
+        ]
+      }
+    },
+    "Rigid/t/00000": {
+      "usd_relpath": "Assets/Object/RoboDojo/Rigid/t/00000/object.usdz",
+      "usd_sha256": "98bae9ae3dddf67e58004695930c09f3d36f715dfa2bf5d65d1ed2b7179fa493",
+      "metadata_sha256": "4b40f7225308b3bede5b33947853800b86b20266ff2a0c5947b1a884182e1a25",
+      "metadata_aligned_bbox_min_m": [
+        -0.04,
+        -0.03,
+        -0.0075
+      ],
+      "metadata_aligned_bbox_extents_m": [
+        0.08,
+        0.06,
+        0.015
+      ],
+      "metadata_declared_mass_kg": 0.35,
+      "metadata_declared_friction": 0.45,
+      "collider_union_min_m": [
+        -0.04,
+        -0.03,
+        -0.0075
+      ],
+      "collider_union_max_m": [
+        0.04,
+        0.03,
+        0.0075
+      ],
+      "collider_union_extents_m": [
+        0.08,
+        0.06,
+        0.015
+      ],
+      "enabled_gprim_collider_count": 2,
+      "colliders": [
+        {
+          "prim_path": "/World/collision/box_bar",
+          "approximation": "none",
+          "local_min_m": [
+            -0.02,
+            -0.01,
+            -0.0075
+          ],
+          "local_max_m": [
+            0.04,
+            0.01,
+            0.0075
+          ],
+          "extents_m": [
+            0.06,
+            0.02,
+            0.015
+          ]
+        },
+        {
+          "prim_path": "/World/collision/box_stem",
+          "approximation": "none",
+          "local_min_m": [
+            -0.04,
+            -0.03,
+            -0.0075
+          ],
+          "local_max_m": [
+            -0.02,
+            0.03,
+            0.0075
+          ],
+          "extents_m": [
+            0.02,
+            0.06,
+            0.015
+          ]
+        }
+      ],
+      "meshes": [
+        {
+          "prim_path": "/World/visual/model",
+          "collision_api": false,
+          "collision_enabled": false,
+          "points_sha256": "de4c5f72dd85152a475853ee8acb307061073172e2c0e0da13fc7f9a1e13fb74"
+        },
+        {
+          "prim_path": "/World/collision/model",
+          "collision_api": true,
+          "collision_enabled": false,
+          "points_sha256": "de4c5f72dd85152a475853ee8acb307061073172e2c0e0da13fc7f9a1e13fb74"
+        }
+      ],
+      "visual_surface": {
+        "triangle_count": 36,
+        "welded_vertex_count": 20,
+        "boundary_edge_count": 0,
+        "nonmanifold_edge_count": 0,
+        "closed_manifold": true,
+        "surface_area_m2": 0.009,
+        "surface_shell_com_offset_m": [
+          -0.009333,
+          -0.0,
+          0.0
+        ],
+        "surface_shell_inertia_over_mass_m2": [
+          0.000267639,
+          0.000689417,
+          0.000879556
+        ],
+        "surface_shell_offdiag_max_rel": 0.0,
+        "enclosed_volume_m3": 3.6e-05,
+        "enclosed_solid_com_offset_m": [
+          -0.01,
+          0.0,
+          0.0
+        ],
+        "enclosed_solid_inertia_over_mass_m2": [
+          0.000185417,
+          0.000585417,
+          0.000733333
+        ],
+        "enclosed_solid_offdiag_max_rel": 0.0
+      },
+      "box_primitive_colliders": {
+        "boxes": [
+          {
+            "prim_path": "/World/collision/box_bar",
+            "cube_size_attr": 1.0,
+            "center_m": [
+              0.01,
+              0.0,
+              0.0
+            ],
+            "dims_m": [
+              0.06,
+              0.02,
+              0.015
+            ]
+          },
+          {
+            "prim_path": "/World/collision/box_stem",
+            "cube_size_attr": 1.0,
+            "center_m": [
+              -0.03,
+              0.0,
+              0.0
+            ],
+            "dims_m": [
+              0.02,
+              0.06,
+              0.015
+            ]
+          }
+        ],
+        "pairwise_overlap_volume_m3": 0.0,
+        "sum_volume_m3": 3.6e-05,
+        "union_solid_com_offset_m": [
+          -0.01,
+          0.0,
+          0.0
+        ],
+        "union_solid_inertia_over_mass_m2": [
+          0.000185417,
+          0.000585417,
+          0.000733333
+        ],
+        "union_solid_offdiag_max_rel": 0.0
+      },
+      "outer_hull_all_mesh_points": {
+        "hull_vertex_count": 12,
+        "hull_face_count": 20,
+        "outer_hull_volume_m3": 5.4e-05,
+        "outer_hull_area_m2": 0.01089737,
+        "solid_com_offset_m": [
+          -0.006667,
+          0.0,
+          -0.0
+        ],
+        "solid_inertia_over_mass_m2": [
+          0.00022986,
+          0.00048542,
+          0.00067778
+        ],
+        "solid_offdiag_max_rel": 0.0,
+        "shell_com_offset_m": [
+          -0.006518,
+          0.0,
+          0.0
+        ],
+        "shell_inertia_over_mass_m2": [
+          0.00033371,
+          0.00063596,
+          0.00088262
+        ],
+        "shell_offdiag_max_rel": 0.0,
+        "shell_over_solid_ratio": [
+          1.4518,
+          1.3101,
+          1.3022
+        ]
+      }
+    },
+    "Rigid/t/00001": {
+      "usd_relpath": "Assets/Object/RoboDojo/Rigid/t/00001/object.usdz",
+      "usd_sha256": "f6634d82aa7e5a389b17f8ce40af445a82e156a02c1c45d08c64838b6c41b7c2",
+      "metadata_sha256": "4b40f7225308b3bede5b33947853800b86b20266ff2a0c5947b1a884182e1a25",
+      "metadata_aligned_bbox_min_m": [
+        -0.04,
+        -0.03,
+        -0.0075
+      ],
+      "metadata_aligned_bbox_extents_m": [
+        0.08,
+        0.06,
+        0.015
+      ],
+      "metadata_declared_mass_kg": 0.35,
+      "metadata_declared_friction": 0.45,
+      "collider_union_min_m": [
+        -0.04,
+        -0.03,
+        -0.0075
+      ],
+      "collider_union_max_m": [
+        0.04,
+        0.03,
+        0.0075
+      ],
+      "collider_union_extents_m": [
+        0.08,
+        0.06,
+        0.015
+      ],
+      "enabled_gprim_collider_count": 2,
+      "colliders": [
+        {
+          "prim_path": "/World/collision/box_bar",
+          "approximation": "none",
+          "local_min_m": [
+            -0.02,
+            -0.01,
+            -0.0075
+          ],
+          "local_max_m": [
+            0.04,
+            0.01,
+            0.0075
+          ],
+          "extents_m": [
+            0.06,
+            0.02,
+            0.015
+          ]
+        },
+        {
+          "prim_path": "/World/collision/box_stem",
+          "approximation": "none",
+          "local_min_m": [
+            -0.04,
+            -0.03,
+            -0.0075
+          ],
+          "local_max_m": [
+            -0.02,
+            0.03,
+            0.0075
+          ],
+          "extents_m": [
+            0.02,
+            0.06,
+            0.015
+          ]
+        }
+      ],
+      "meshes": [
+        {
+          "prim_path": "/World/visual/model",
+          "collision_api": false,
+          "collision_enabled": false,
+          "points_sha256": "de4c5f72dd85152a475853ee8acb307061073172e2c0e0da13fc7f9a1e13fb74"
+        },
+        {
+          "prim_path": "/World/collision/model",
+          "collision_api": true,
+          "collision_enabled": false,
+          "points_sha256": "de4c5f72dd85152a475853ee8acb307061073172e2c0e0da13fc7f9a1e13fb74"
+        }
+      ],
+      "visual_surface": {
+        "triangle_count": 36,
+        "welded_vertex_count": 20,
+        "boundary_edge_count": 0,
+        "nonmanifold_edge_count": 0,
+        "closed_manifold": true,
+        "surface_area_m2": 0.009,
+        "surface_shell_com_offset_m": [
+          -0.009333,
+          -0.0,
+          0.0
+        ],
+        "surface_shell_inertia_over_mass_m2": [
+          0.000267639,
+          0.000689417,
+          0.000879556
+        ],
+        "surface_shell_offdiag_max_rel": 0.0,
+        "enclosed_volume_m3": 3.6e-05,
+        "enclosed_solid_com_offset_m": [
+          -0.01,
+          0.0,
+          0.0
+        ],
+        "enclosed_solid_inertia_over_mass_m2": [
+          0.000185417,
+          0.000585417,
+          0.000733333
+        ],
+        "enclosed_solid_offdiag_max_rel": 0.0
+      },
+      "box_primitive_colliders": {
+        "boxes": [
+          {
+            "prim_path": "/World/collision/box_bar",
+            "cube_size_attr": 1.0,
+            "center_m": [
+              0.01,
+              0.0,
+              0.0
+            ],
+            "dims_m": [
+              0.06,
+              0.02,
+              0.015
+            ]
+          },
+          {
+            "prim_path": "/World/collision/box_stem",
+            "cube_size_attr": 1.0,
+            "center_m": [
+              -0.03,
+              0.0,
+              0.0
+            ],
+            "dims_m": [
+              0.02,
+              0.06,
+              0.015
+            ]
+          }
+        ],
+        "pairwise_overlap_volume_m3": 0.0,
+        "sum_volume_m3": 3.6e-05,
+        "union_solid_com_offset_m": [
+          -0.01,
+          0.0,
+          0.0
+        ],
+        "union_solid_inertia_over_mass_m2": [
+          0.000185417,
+          0.000585417,
+          0.000733333
+        ],
+        "union_solid_offdiag_max_rel": 0.0
+      },
+      "outer_hull_all_mesh_points": {
+        "hull_vertex_count": 12,
+        "hull_face_count": 20,
+        "outer_hull_volume_m3": 5.4e-05,
+        "outer_hull_area_m2": 0.01089737,
+        "solid_com_offset_m": [
+          -0.006667,
+          0.0,
+          -0.0
+        ],
+        "solid_inertia_over_mass_m2": [
+          0.00022986,
+          0.00048542,
+          0.00067778
+        ],
+        "solid_offdiag_max_rel": 0.0,
+        "shell_com_offset_m": [
+          -0.006518,
+          0.0,
+          0.0
+        ],
+        "shell_inertia_over_mass_m2": [
+          0.00033371,
+          0.00063596,
+          0.00088262
+        ],
+        "shell_offdiag_max_rel": 0.0,
+        "shell_over_solid_ratio": [
+          1.4518,
+          1.3101,
+          1.3022
+        ]
+      }
+    }
+  }
+}

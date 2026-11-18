@@ -1,0 +1,23 @@
+[
+ {
+  "cell_name": "push_T_random__perturb",
+  "layout": 0,
+  "overrides": {
+   "spawn_lift": {
+    "stems": "*",
+    "dz_m": 1e-06
+   },
+   "slide_target": {
+    "label": "coin_1_15",
+    "inst": "coin_1_15",
+    "labelled": false,
+    "stem": "coin_1",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.900551,
+     0.434751
+    ]
+   }
+  }
+ }
+]

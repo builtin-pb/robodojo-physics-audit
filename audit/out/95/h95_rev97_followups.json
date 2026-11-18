@@ -1,0 +1,15 @@
+[
+  {"cell_name": "f_00041_dt4_it16_stab_on", "layout": 1, "overrides": {"dt_s": 0.004, "pos_iters": 16, "enable_stabilization": true, "target_label": "bottle2", "fast_settle": false}},
+  {"cell_name": "f_00041_dt4_it16_stab_off", "layout": 1, "overrides": {"dt_s": 0.004, "pos_iters": 16, "enable_stabilization": false, "target_label": "bottle2", "fast_settle": false}},
+  {"cell_name": "f_00041_dt1_it16_stab_on", "layout": 1, "overrides": {"dt_s": 0.001, "pos_iters": 16, "enable_stabilization": true, "target_label": "bottle2", "fast_settle": false}},
+  {"cell_name": "f_00041_dt1_it16_stab_off", "layout": 1, "overrides": {"dt_s": 0.001, "pos_iters": 16, "enable_stabilization": false, "target_label": "bottle2", "fast_settle": false}},
+  {"cell_name": "f_00000_dt4_it16_stab_on", "layout": 5, "overrides": {"dt_s": 0.004, "pos_iters": 16, "enable_stabilization": true, "target_label": "bottle3", "fast_settle": false}},
+  {"cell_name": "f_00000_dt4_it16_stab_off", "layout": 5, "overrides": {"dt_s": 0.004, "pos_iters": 16, "enable_stabilization": false, "target_label": "bottle3", "fast_settle": false}},
+  {"cell_name": "f_00000_dt1_it16_stab_on", "layout": 5, "overrides": {"dt_s": 0.001, "pos_iters": 16, "enable_stabilization": true, "target_label": "bottle3", "fast_settle": false}},
+  {"cell_name": "f_00000_dt1_it16_stab_off", "layout": 5, "overrides": {"dt_s": 0.001, "pos_iters": 16, "enable_stabilization": false, "target_label": "bottle3", "fast_settle": false}},
+  {"cell_name": "f_00000_dt1_it64_stab_off", "layout": 5, "overrides": {"dt_s": 0.001, "pos_iters": 64, "enable_stabilization": false, "target_label": "bottle3", "fast_settle": false}},
+  {"cell_name": "f_00000_m0p03_dt4_it16_stab_on", "layout": 5, "overrides": {"dt_s": 0.004, "pos_iters": 16, "enable_stabilization": true, "mass_kg": 0.03, "target_label": "bottle3", "fast_settle": false}},
+  {"cell_name": "f_00000_m0p03_dt4_it16_stab_off", "layout": 5, "overrides": {"dt_s": 0.004, "pos_iters": 16, "enable_stabilization": false, "mass_kg": 0.03, "target_label": "bottle3", "fast_settle": false}},
+  {"cell_name": "f_00000_m1p50_dt4_it16_stab_on", "layout": 5, "overrides": {"dt_s": 0.004, "pos_iters": 16, "enable_stabilization": true, "mass_kg": 1.5, "target_label": "bottle3", "fast_settle": false}},
+  {"cell_name": "f_00000_m1p50_dt4_it16_stab_off", "layout": 5, "overrides": {"dt_s": 0.004, "pos_iters": 16, "enable_stabilization": false, "mass_kg": 1.5, "target_label": "bottle3", "fast_settle": false}}
+]

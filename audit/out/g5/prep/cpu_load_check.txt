@@ -1,0 +1,17 @@
+INFO:wam.model.backbones.wan22.helpers.loader:Loading Wan2.2-TI2V-5B components...
+INFO:wam.model.backbones.wan22.helpers.loader:Skipping pretrained video DiT load (`skip_dit_load_from_pretrain=True`); initializing video expert randomly and expecting checkpoint override.
+INFO:wam.model.backbones.wan22.wan_video_dit:Using gradient checkpointing for DiT blocks. This will save memory but use more computation.
+INFO:wam.model.backbones.wan22.helpers.loader:Finished loading Wan2.2-TI2V-5B components in 71.40 seconds.
+INFO:wam.model.modules.experts.action_dit:Skipping ActionDiT pretrained load (`skip_dit_load_from_pretrain=True`); initializing action expert randomly and expecting checkpoint override.
+INFO:wam.model.modules.mot.mixture_of_transformers:Using gradient checkpointing for mixture attention. This will save memory but use more computation.
+INFO:wam.model.modules.mot.mixture_of_transformers:Using selective expert checkpointing every 2 layers.
+INFO:wam.model.modules.mot.mixture_of_transformers:Initialized MoT with experts: ['video', 'action'], num_layers=30, attention_backend=flex, compile_mode=off
+INFO:wam.model.world_action_model:Initialized action Qwen/state conditioning: qwen_dim=2048 state_dim=80 action_layers=30 interval=1 train_vlm=False
+INFO:wam.model.world_action_model:Initialized frame conditioning: anchor=1 recent=1 persistent_kv_memory=false deduplicate_anchor_batch=True
+INFO:wam.model.world_action_model:Initialized video-side Future Delta queries: tokens_per_frame=96 future_frames=2 patch_dim=192 action_video_freq_ratio=4 loss_weight=0.500
+INFO:wam.model.world_action_model:Initialized Semantic Future Alignment: student_layer=8 teacher_layer=20 max_sigma=0.500 loss_weight=0.100
+INFO:wam.runtime.checkpoint:Loaded mot checkpoint tensors: compatible=1654/1654 missing=0 skipped_shape=0 unexpected=0
+INFO:wam.runtime.checkpoint:Loaded proprio_encoder checkpoint tensors: compatible=3/3 missing=0 skipped_shape=0 unexpected=0
+INFO:wam.runtime.checkpoint:Loaded action_proprio_encoder checkpoint tensors: compatible=3/3 missing=0 skipped_shape=0 unexpected=0
+INFO:wam.runtime.checkpoint:Loaded understanding adapter checkpoint.
+CPU_LOAD_CHECK params=14.810e9 dtypes=['torch.bfloat16'] ckpt_step=9090 ckpt_keys=['action_proprio_encoder', 'mot', 'proprio_encoder', 'understanding'] build_s=86 load_s=5 torch=2.10.0+cu128

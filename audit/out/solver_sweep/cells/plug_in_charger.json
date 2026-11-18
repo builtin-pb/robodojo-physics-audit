@@ -1,0 +1,91 @@
+[
+ {
+  "cell_name": "plug_in_charger__shipped",
+  "layout": 0,
+  "overrides": {
+   "slide_target": {
+    "label": "charger",
+    "inst": "charger_0_1",
+    "labelled": true,
+    "stem": "charger_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.0782,
+     0.996938
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "plug_in_charger__dt2",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.002,
+   "slide_target": {
+    "label": "charger",
+    "inst": "charger_0_1",
+    "labelled": true,
+    "stem": "charger_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.0782,
+     0.996938
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "plug_in_charger__dt1",
+  "layout": 0,
+  "overrides": {
+   "dt_s": 0.001,
+   "slide_target": {
+    "label": "charger",
+    "inst": "charger_0_1",
+    "labelled": true,
+    "stem": "charger_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.0782,
+     0.996938
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "plug_in_charger__iters4x",
+  "layout": 0,
+  "overrides": {
+   "min_pos_iters": 128,
+   "slide_target": {
+    "label": "charger",
+    "inst": "charger_0_1",
+    "labelled": true,
+    "stem": "charger_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.0782,
+     0.996938
+    ]
+   }
+  }
+ },
+ {
+  "cell_name": "plug_in_charger__cpu",
+  "layout": 0,
+  "overrides": {
+   "gpu_dynamics": false,
+   "slide_target": {
+    "label": "charger",
+    "inst": "charger_0_1",
+    "labelled": true,
+    "stem": "charger_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.0782,
+     0.996938
+    ]
+   }
+  }
+ }
+]

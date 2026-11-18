@@ -1,0 +1,93 @@
+[
+ {
+  "name": "g4st_sT_PL_v3",
+  "seed": 2,
+  "layouts": "0-19",
+  "procs": 3,
+  "args": "--task swap_T --policy script_swap_T --evaluator v2 --contact_log --log_poses --physics_preset corrected --physics_params $W/wt-g4st/docs/params --physics_scenario_opt_in swap_T_primary --class_friction 'pad_hard=0.376220,0.320920;table_laminate=0.287562,0.247348;abs_toy_plastic=0.378865,0.313945'"
+ },
+ {
+  "name": "g4st_cb_off14_corr",
+  "seed": 2,
+  "layouts": "0,1,6,8,9,14",
+  "procs": 2,
+  "args": "--task cover_blocks --policy script_cover_blocks_offset --evaluator v2 --contact_log --log_poses --cb_offset_mm 14,0 --physics_preset corrected --physics_params $W/wt-g4st/docs/params --physics_scenario_opt_in cover_blocks_primary"
+ },
+ {
+  "name": "g4st_sT_gripper",
+  "seed": 2,
+  "layouts": "0-9",
+  "procs": 2,
+  "args": "--task swap_T --policy script_swap_T --evaluator v2 --contact_log --log_poses --physics_preset shipped --physics_fixes gripper --physics_params $W/wt-g4st/docs/params --physics_scenario_opt_in swap_T_primary"
+ },
+ {
+  "name": "g4st_sT_ordval",
+  "seed": 2,
+  "layouts": "0-9",
+  "procs": 2,
+  "args": "--task swap_T --policy script_swap_T --evaluator v2 --contact_log --log_poses --physics_preset shipped --physics_fixes order,values --physics_params $W/wt-g4st/docs/params --physics_scenario_opt_in swap_T_primary"
+ },
+ {
+  "name": "g4st_sT_masses",
+  "seed": 2,
+  "layouts": "0-9",
+  "procs": 2,
+  "args": "--task swap_T --policy script_swap_T --evaluator v2 --contact_log --log_poses --physics_preset shipped --physics_fixes masses --physics_params $W/wt-g4st/docs/params --physics_scenario_opt_in swap_T_primary"
+ },
+ {
+  "name": "g4st_sT_solver",
+  "seed": 2,
+  "layouts": "0-9",
+  "procs": 3,
+  "args": "--task swap_T --policy script_swap_T --evaluator v2 --contact_log --log_poses --physics_preset shipped --physics_fixes solver"
+ },
+ {
+  "name": "g4st_sT_PA_lo",
+  "seed": 2,
+  "layouts": "0,1,2,4,5,8,10,12",
+  "procs": 2,
+  "args": "--task swap_T --policy script_swap_T --evaluator v2 --contact_log --log_poses --physics_preset corrected --physics_params $W/wt-g4st/docs/params --physics_scenario_opt_in swap_T_primary --class_friction 'pad_hard=0.256481,0.175847;table_laminate=0.322908,0.322894;abs_toy_plastic=0.343519,0.238399'"
+ },
+ {
+  "name": "g4st_sT_PA_hi",
+  "seed": 2,
+  "layouts": "0,1,2,4,5,8,10,12",
+  "procs": 2,
+  "args": "--task swap_T --policy script_swap_T --evaluator v2 --contact_log --log_poses --physics_preset corrected --physics_params $W/wt-g4st/docs/params --physics_scenario_opt_in swap_T_primary --class_friction 'pad_hard=0.978939,0.751291'"
+ },
+ {
+  "name": "g4st_sT_AL_lo",
+  "seed": 2,
+  "layouts": "0,1,2,4,5,8,10,12",
+  "procs": 2,
+  "args": "--task swap_T --policy script_swap_T --evaluator v2 --contact_log --log_poses --physics_preset corrected --physics_params $W/wt-g4st/docs/params --physics_scenario_opt_in swap_T_primary --class_friction 'pad_hard=0.517237,0.446804;table_laminate=0.062152,0.051938;abs_toy_plastic=0.237848,0.188062'"
+ },
+ {
+  "name": "g4st_sT_AL_hi",
+  "seed": 2,
+  "layouts": "0,1,2,4,5,8,10,12",
+  "procs": 2,
+  "args": "--task swap_T --policy script_swap_T --evaluator v2 --contact_log --log_poses --physics_preset corrected --physics_params $W/wt-g4st/docs/params --physics_scenario_opt_in swap_T_primary --class_friction 'pad_hard=0.167237,0.166803;table_laminate=0.412153,0.331938;abs_toy_plastic=0.587848,0.468062'"
+ },
+ {
+  "name": "g4st_sT_MAP_v3",
+  "seed": 2,
+  "layouts": "0,1,2,4,5,8",
+  "procs": 2,
+  "args": "--task swap_T --policy script_swap_T --evaluator v2 --contact_log --log_poses --physics_preset corrected --physics_params $W/wt-g4st/docs/params --physics_scenario_opt_in swap_T_primary --class_friction 'pad_hard=0.381229,0.326088;table_laminate=0.282553,0.242180;abs_toy_plastic=0.371879,0.307531'"
+ },
+ {
+  "name": "g4st_sT_PL_lo",
+  "seed": 2,
+  "layouts": "0,1,2,4,5,8",
+  "procs": 2,
+  "args": "--task swap_T --policy script_swap_T --evaluator v2 --contact_log --log_poses --physics_preset corrected --physics_params $W/wt-g4st/docs/params --physics_scenario_opt_in swap_T_primary --class_friction 'pad_hard=0.194329,0.156786;table_laminate=0.105671,0.083214;abs_toy_plastic=0.560756,0.478079'"
+ },
+ {
+  "name": "g4st_sT_PL_hi",
+  "seed": 2,
+  "layouts": "0,1,2,4,5,8",
+  "procs": 2,
+  "args": "--task swap_T --policy script_swap_T --evaluator v2 --contact_log --log_poses --physics_preset corrected --physics_params $W/wt-g4st/docs/params --physics_scenario_opt_in swap_T_primary --class_friction 'pad_hard=0.544329,0.436786;table_laminate=0.455671,0.363214;abs_toy_plastic=0.210756,0.198079'"
+ }
+]

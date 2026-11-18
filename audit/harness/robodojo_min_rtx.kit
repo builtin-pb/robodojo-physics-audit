@@ -1,0 +1,59 @@
+# Minimal RTX Kit experience for Issue #40 Route 1 (1 camera, 1 frame reproduction on Isaac Sim 5.1.0).
+# Adds only the minimal RTX / camera / replicator extensions on top of robodojo_physics_only.kit,
+# pinning renderer to GPU 1 (Wenhao's side on della-vis2) with multi-GPU disabled.
+
+[package]
+title = "RoboDojo minimal RTX (1 camera, 1 frame)"
+version = "5.1.0"
+
+[dependencies]
+"isaacsim.core.api" = {}
+"isaacsim.core.cloner" = {}
+"isaacsim.core.prims" = {}
+"isaacsim.core.simulation_manager" = {}
+"isaacsim.core.utils" = {}
+"isaacsim.core.version" = {}
+"isaacsim.sensors.camera" = {}
+"omni.physx" = {}
+"omni.physx.tensors" = {}
+"omni.physics.stageupdate" = {}
+"omni.kit.primitive.mesh" = {}
+"omni.warp.core" = {}
+"omni.hydra.rtx" = {}
+"omni.kit.viewport.rtx" = {}
+"omni.kit.material.library" = {}
+"omni.replicator.core" = {}
+"omni.syntheticdata" = {}
+
+[settings.app]
+name = "Isaac-Sim Python MinRTX"
+version = "5.1.0"
+settings.persistent = false
+settings.fabricDefaultStageFrameHistoryCount = 3
+enableDeveloperWarnings = false
+player.useFixedTimeStepping = true
+vulkan = true
+asyncRendering = false
+asyncRenderingLowLatency = false
+runLoops.main.rateLimitFrequency = 120
+
+[settings.app.exts.folders]
+"++" = ["/isaac-sim/apps", "/isaac-sim/exts", "/isaac-sim/extscache", "/isaac-sim/extsUser", "/isaac-sim/extsDeprecated", "/isaac-sim/extsPhysics"]
+
+[settings]
+renderer.activeGpu = 1
+renderer.multiGpu.enabled = false
+renderer.multiGpu.maxGpuCount = 1
+renderer.gpuEnumeration.glInterop.enabled = false
+exts."omni.kit.renderer.core".present.enabled = false
+exts."omni.renderer.core".present.enabled = false
+omni.replicator.asyncRendering = false
+app.updateOrder.checkForHydraRenderComplete = 1000
+app.renderer.waitIdle = true
+app.hydraEngine.waitIdle = true
+rtx-transient.dlssg.enabled = false
+physics.visualizationDisplayJoints = false
+physics.visualizationSimulationOutput = false
+physics.resetOnStop = true
+persistent.app.primCreation.DefaultXformOpOrder = "xformOp:translate, xformOp:orient, xformOp:scale"
+persistent.app.primCreation.DefaultXformOpType = "Scale, Orient, Translate"

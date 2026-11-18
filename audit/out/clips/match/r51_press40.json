@@ -1,0 +1,65 @@
+{
+ "check": "stress",
+ "result": "/tmp/clipsref/r51_press40/result.json",
+ "reference": "audit/out/stress_hv/steps_shv_press_b0_40_clip_r1.json.gz",
+ "isaac_sim_62": [
+  "5.1.0",
+  "rc.19",
+  "5"
+ ],
+ "repo_head_62": "3155bf6ec2f5d56e44a766173d1afae4a69808f0",
+ "cases": {
+  "press_button0_40mm_hold3s": {
+   "kind": "robot_press",
+   "steps": [
+    1450,
+    1450
+   ],
+   "max_button_mm": 0.0,
+   "max_finger_z_mm": 0.0,
+   "first_step_over_tolerance": null,
+   "counters_equal": true,
+   "first_counter_difference": null,
+   "counters_end_62": [
+    145,
+    [
+     [
+      1,
+      1
+     ],
+     [
+      9,
+      0
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    false,
+    true
+   ],
+   "counters_end_51": [
+    145,
+    [
+     [
+      1,
+      1
+     ],
+     [
+      9,
+      0
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    false,
+    true
+   ],
+   "match": true
+  }
+ },
+ "match": true
+}

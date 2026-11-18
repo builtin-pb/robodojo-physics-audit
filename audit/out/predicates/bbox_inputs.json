@@ -1,0 +1,3097 @@
+{
+ "source": "metadata oriented_bbox / aligned_bbox, layouts, USD probe",
+ "unresolved": [],
+ "records": [
+  {
+   "task": "classify_objects",
+   "predicate": "is_all_A_in_B",
+   "role": "B",
+   "effect_of_inflation": "footprint: allows; floor: allows",
+   "model": "Geometry/basket/00002",
+   "labels": [
+    "basket0"
+   ],
+   "placements": 165,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true,
+   "open_table_inside_footprint": {
+    "footprint_cm2": 423.4,
+    "silhouette_cm2": 426.0,
+    "open_inside_footprint_cm2": 11.6,
+    "open_share": 0.027,
+    "vertices_per_silhouette_cell": 56.1
+   }
+  },
+  {
+   "task": "classify_objects",
+   "predicate": "is_all_A_in_B",
+   "role": "B",
+   "effect_of_inflation": "footprint: allows; floor: allows",
+   "model": "Geometry/basket/00003",
+   "labels": [
+    "basket1"
+   ],
+   "placements": 165,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true,
+   "open_table_inside_footprint": {
+    "footprint_cm2": 423.4,
+    "silhouette_cm2": 426.0,
+    "open_inside_footprint_cm2": 11.6,
+    "open_share": 0.027,
+    "vertices_per_silhouette_cell": 56.1
+   }
+  },
+  {
+   "task": "classify_objects",
+   "predicate": "is_all_A_in_B",
+   "role": "B",
+   "effect_of_inflation": "footprint: allows; floor: allows",
+   "model": "Geometry/basket/00004",
+   "labels": [
+    "basket2"
+   ],
+   "placements": 165,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true,
+   "open_table_inside_footprint": {
+    "footprint_cm2": 423.4,
+    "silhouette_cm2": 426.0,
+    "open_inside_footprint_cm2": 11.6,
+    "open_share": 0.027,
+    "vertices_per_silhouette_cell": 56.1
+   }
+  },
+  {
+   "task": "classify_objects",
+   "predicate": "is_all_A_z_lower_than_B_bbox_zmax",
+   "role": "B",
+   "effect_of_inflation": "ceiling: allows",
+   "model": "Geometry/basket/00002",
+   "labels": [
+    "basket0"
+   ],
+   "placements": 165,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true
+  },
+  {
+   "task": "classify_objects",
+   "predicate": "is_all_A_z_lower_than_B_bbox_zmax",
+   "role": "B",
+   "effect_of_inflation": "ceiling: allows",
+   "model": "Geometry/basket/00003",
+   "labels": [
+    "basket1"
+   ],
+   "placements": 165,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true
+  },
+  {
+   "task": "classify_objects",
+   "predicate": "is_all_A_z_lower_than_B_bbox_zmax",
+   "role": "B",
+   "effect_of_inflation": "ceiling: allows",
+   "model": "Geometry/basket/00004",
+   "labels": [
+    "basket2"
+   ],
+   "placements": 165,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true
+  },
+  {
+   "task": "classify_objects",
+   "predicate": "is_not_any_A_in_B",
+   "role": "B",
+   "effect_of_inflation": "footprint: forbids; floor: forbids",
+   "model": "Geometry/basket/00002",
+   "labels": [
+    "basket0"
+   ],
+   "placements": 165,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true,
+   "open_table_inside_footprint": {
+    "footprint_cm2": 423.4,
+    "silhouette_cm2": 426.0,
+    "open_inside_footprint_cm2": 11.6,
+    "open_share": 0.027,
+    "vertices_per_silhouette_cell": 56.1
+   }
+  },
+  {
+   "task": "classify_objects",
+   "predicate": "is_not_any_A_in_B",
+   "role": "B",
+   "effect_of_inflation": "footprint: forbids; floor: forbids",
+   "model": "Geometry/basket/00003",
+   "labels": [
+    "basket1"
+   ],
+   "placements": 165,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true,
+   "open_table_inside_footprint": {
+    "footprint_cm2": 423.4,
+    "silhouette_cm2": 426.0,
+    "open_inside_footprint_cm2": 11.6,
+    "open_share": 0.027,
+    "vertices_per_silhouette_cell": 56.1
+   }
+  },
+  {
+   "task": "classify_objects",
+   "predicate": "is_not_any_A_in_B",
+   "role": "B",
+   "effect_of_inflation": "footprint: forbids; floor: forbids",
+   "model": "Geometry/basket/00004",
+   "labels": [
+    "basket2"
+   ],
+   "placements": 165,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true,
+   "open_table_inside_footprint": {
+    "footprint_cm2": 423.4,
+    "silhouette_cm2": 426.0,
+    "open_inside_footprint_cm2": 11.6,
+    "open_share": 0.027,
+    "vertices_per_silhouette_cell": 56.1
+   }
+  },
+  {
+   "task": "classify_objects_by_language",
+   "predicate": "is_all_A_in_B",
+   "role": "B",
+   "effect_of_inflation": "footprint: allows; floor: allows",
+   "model": "Geometry/basket/00002",
+   "labels": [
+    "basket0"
+   ],
+   "placements": 165,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true,
+   "open_table_inside_footprint": {
+    "footprint_cm2": 423.4,
+    "silhouette_cm2": 426.0,
+    "open_inside_footprint_cm2": 11.6,
+    "open_share": 0.027,
+    "vertices_per_silhouette_cell": 56.1
+   }
+  },
+  {
+   "task": "classify_objects_by_language",
+   "predicate": "is_all_A_in_B",
+   "role": "B",
+   "effect_of_inflation": "footprint: allows; floor: allows",
+   "model": "Geometry/basket/00003",
+   "labels": [
+    "basket1"
+   ],
+   "placements": 165,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true,
+   "open_table_inside_footprint": {
+    "footprint_cm2": 423.4,
+    "silhouette_cm2": 426.0,
+    "open_inside_footprint_cm2": 11.6,
+    "open_share": 0.027,
+    "vertices_per_silhouette_cell": 56.1
+   }
+  },
+  {
+   "task": "classify_objects_by_language",
+   "predicate": "is_all_A_in_B",
+   "role": "B",
+   "effect_of_inflation": "footprint: allows; floor: allows",
+   "model": "Geometry/basket/00004",
+   "labels": [
+    "basket2"
+   ],
+   "placements": 165,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true,
+   "open_table_inside_footprint": {
+    "footprint_cm2": 423.4,
+    "silhouette_cm2": 426.0,
+    "open_inside_footprint_cm2": 11.6,
+    "open_share": 0.027,
+    "vertices_per_silhouette_cell": 56.1
+   }
+  },
+  {
+   "task": "classify_objects_by_language",
+   "predicate": "is_all_A_z_lower_than_B_bbox_zmax",
+   "role": "B",
+   "effect_of_inflation": "ceiling: allows",
+   "model": "Geometry/basket/00002",
+   "labels": [
+    "basket0"
+   ],
+   "placements": 165,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true
+  },
+  {
+   "task": "classify_objects_by_language",
+   "predicate": "is_all_A_z_lower_than_B_bbox_zmax",
+   "role": "B",
+   "effect_of_inflation": "ceiling: allows",
+   "model": "Geometry/basket/00003",
+   "labels": [
+    "basket1"
+   ],
+   "placements": 165,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true
+  },
+  {
+   "task": "classify_objects_by_language",
+   "predicate": "is_all_A_z_lower_than_B_bbox_zmax",
+   "role": "B",
+   "effect_of_inflation": "ceiling: allows",
+   "model": "Geometry/basket/00004",
+   "labels": [
+    "basket2"
+   ],
+   "placements": 165,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true
+  },
+  {
+   "task": "classify_objects_by_language",
+   "predicate": "is_not_any_A_in_B",
+   "role": "B",
+   "effect_of_inflation": "footprint: forbids; floor: forbids",
+   "model": "Geometry/basket/00002",
+   "labels": [
+    "basket0"
+   ],
+   "placements": 165,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true,
+   "open_table_inside_footprint": {
+    "footprint_cm2": 423.4,
+    "silhouette_cm2": 426.0,
+    "open_inside_footprint_cm2": 11.6,
+    "open_share": 0.027,
+    "vertices_per_silhouette_cell": 56.1
+   }
+  },
+  {
+   "task": "classify_objects_by_language",
+   "predicate": "is_not_any_A_in_B",
+   "role": "B",
+   "effect_of_inflation": "footprint: forbids; floor: forbids",
+   "model": "Geometry/basket/00003",
+   "labels": [
+    "basket1"
+   ],
+   "placements": 165,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true,
+   "open_table_inside_footprint": {
+    "footprint_cm2": 423.4,
+    "silhouette_cm2": 426.0,
+    "open_inside_footprint_cm2": 11.6,
+    "open_share": 0.027,
+    "vertices_per_silhouette_cell": 56.1
+   }
+  },
+  {
+   "task": "classify_objects_by_language",
+   "predicate": "is_not_any_A_in_B",
+   "role": "B",
+   "effect_of_inflation": "footprint: forbids; floor: forbids",
+   "model": "Geometry/basket/00004",
+   "labels": [
+    "basket2"
+   ],
+   "placements": 165,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true,
+   "open_table_inside_footprint": {
+    "footprint_cm2": 423.4,
+    "silhouette_cm2": 426.0,
+    "open_inside_footprint_cm2": 11.6,
+    "open_share": 0.027,
+    "vertices_per_silhouette_cell": 56.1
+   }
+  },
+  {
+   "task": "cover_blocks",
+   "predicate": "is_A_covered_by_any_of_B",
+   "role": "A",
+   "effect_of_inflation": "footprint: allows; ceiling: allows; floor: allows",
+   "model": "Rigid/cup/00001",
+   "labels": [
+    "cup0",
+    "cup1",
+    "cup2"
+   ],
+   "placements": 495,
+   "tilt_deg": 20.6,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0
+  },
+  {
+   "task": "cover_blocks",
+   "predicate": "is_A_covered_by_any_of_B",
+   "role": "B",
+   "effect_of_inflation": "footprint: forbids; ceiling: forbids; floor: forbids",
+   "model": "Rigid/cube/00004",
+   "labels": [
+    "red"
+   ],
+   "placements": 165,
+   "tilt_deg": 4.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0
+  },
+  {
+   "task": "cover_blocks",
+   "predicate": "is_A_covered_by_any_of_B",
+   "role": "B",
+   "effect_of_inflation": "footprint: forbids; ceiling: forbids; floor: forbids",
+   "model": "Rigid/cube/00005",
+   "labels": [
+    "blue"
+   ],
+   "placements": 165,
+   "tilt_deg": 4.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0
+  },
+  {
+   "task": "cover_blocks",
+   "predicate": "is_A_covered_by_any_of_B",
+   "role": "B",
+   "effect_of_inflation": "footprint: forbids; ceiling: forbids; floor: forbids",
+   "model": "Rigid/cube/00006",
+   "labels": [
+    "green"
+   ],
+   "placements": 165,
+   "tilt_deg": 4.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0
+  },
+  {
+   "task": "cover_blocks",
+   "predicate": "is_A_not_covered_by_any_of_B",
+   "role": "A",
+   "effect_of_inflation": "footprint: forbids (covered more often)",
+   "model": "Rigid/cup/00001",
+   "labels": [
+    "cup0",
+    "cup1",
+    "cup2"
+   ],
+   "placements": 495,
+   "tilt_deg": 20.6,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0
+  },
+  {
+   "task": "cover_blocks",
+   "predicate": "is_A_not_covered_by_any_of_B",
+   "role": "B",
+   "effect_of_inflation": "footprint: allows (covered less often)",
+   "model": "Rigid/cube/00004",
+   "labels": [
+    "red"
+   ],
+   "placements": 165,
+   "tilt_deg": 4.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0
+  },
+  {
+   "task": "cover_blocks",
+   "predicate": "is_A_not_covered_by_any_of_B",
+   "role": "B",
+   "effect_of_inflation": "footprint: allows (covered less often)",
+   "model": "Rigid/cube/00005",
+   "labels": [
+    "blue"
+   ],
+   "placements": 165,
+   "tilt_deg": 4.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0
+  },
+  {
+   "task": "cover_blocks",
+   "predicate": "is_A_not_covered_by_any_of_B",
+   "role": "B",
+   "effect_of_inflation": "footprint: allows (covered less often)",
+   "model": "Rigid/cube/00006",
+   "labels": [
+    "green"
+   ],
+   "placements": 165,
+   "tilt_deg": 4.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0
+  },
+  {
+   "task": "deposit_coin",
+   "predicate": "is_A_bbox_in_B_bbox",
+   "role": "A",
+   "effect_of_inflation": "footprint: forbids",
+   "model": "Rigid/coin/00000",
+   "labels": [
+    "coin0"
+   ],
+   "placements": 180,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.408,
+   "footprint_ratio_max": 1.408,
+   "floor_drop_mm_median": 5.8,
+   "ceiling_raise_mm_median": 5.8,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.007,
+     1.007,
+     1.0
+    ],
+    "max_face_gap_mm": 0.1
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.007,
+     1.007,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true
+  },
+  {
+   "task": "deposit_coin",
+   "predicate": "is_A_bbox_in_B_bbox",
+   "role": "B",
+   "effect_of_inflation": "footprint: allows",
+   "model": "Geometry/piggy_bank/00000",
+   "labels": [
+    "piggy_bank"
+   ],
+   "placements": 180,
+   "tilt_deg": 3.2,
+   "footprint_ratio_median": 1.021,
+   "footprint_ratio_max": 1.021,
+   "floor_drop_mm_median": 7.7,
+   "ceiling_raise_mm_median": 2.3,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true
+  },
+  {
+   "task": "fasten_screws",
+   "predicate": "is_A_depth_in_B",
+   "role": "A",
+   "effect_of_inflation": "floor: allows",
+   "model": "Rigid/factory_nut/00000",
+   "labels": [
+    "nut0",
+    "nut1",
+    "nut2"
+   ],
+   "placements": 94,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0
+  },
+  {
+   "task": "fasten_screws",
+   "predicate": "is_A_depth_in_B",
+   "role": "A",
+   "effect_of_inflation": "floor: allows",
+   "model": "Rigid/factory_nut/00001",
+   "labels": [
+    "nut0",
+    "nut1",
+    "nut2"
+   ],
+   "placements": 109,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0
+  },
+  {
+   "task": "fasten_screws",
+   "predicate": "is_A_depth_in_B",
+   "role": "A",
+   "effect_of_inflation": "floor: allows",
+   "model": "Rigid/factory_nut/00002",
+   "labels": [
+    "nut0",
+    "nut1",
+    "nut2"
+   ],
+   "placements": 90,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true
+  },
+  {
+   "task": "fasten_screws",
+   "predicate": "is_A_depth_in_B",
+   "role": "A",
+   "effect_of_inflation": "floor: allows",
+   "model": "Rigid/factory_nut/00003",
+   "labels": [
+    "nut0",
+    "nut1",
+    "nut2"
+   ],
+   "placements": 102,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0
+  },
+  {
+   "task": "fasten_screws",
+   "predicate": "is_A_depth_in_B",
+   "role": "A",
+   "effect_of_inflation": "floor: allows",
+   "model": "Rigid/factory_nut/00004",
+   "labels": [
+    "nut0",
+    "nut1",
+    "nut2"
+   ],
+   "placements": 100,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0
+  },
+  {
+   "task": "fasten_screws",
+   "predicate": "is_A_depth_in_B",
+   "role": "B",
+   "effect_of_inflation": "ceiling: allows",
+   "model": "Geometry/factory_bolt/00000",
+   "labels": [
+    "bolt0",
+    "bolt1",
+    "bolt2"
+   ],
+   "placements": 94,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0
+  },
+  {
+   "task": "fasten_screws",
+   "predicate": "is_A_depth_in_B",
+   "role": "B",
+   "effect_of_inflation": "ceiling: allows",
+   "model": "Geometry/factory_bolt/00001",
+   "labels": [
+    "bolt0",
+    "bolt1",
+    "bolt2"
+   ],
+   "placements": 109,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0
+  },
+  {
+   "task": "fasten_screws",
+   "predicate": "is_A_depth_in_B",
+   "role": "B",
+   "effect_of_inflation": "ceiling: allows",
+   "model": "Geometry/factory_bolt/00002",
+   "labels": [
+    "bolt0",
+    "bolt1",
+    "bolt2"
+   ],
+   "placements": 90,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.002
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     -26.2
+    ]
+   },
+   "probe_frame_matches_metadata": false
+  },
+  {
+   "task": "fasten_screws",
+   "predicate": "is_A_depth_in_B",
+   "role": "B",
+   "effect_of_inflation": "ceiling: allows",
+   "model": "Geometry/factory_bolt/00003",
+   "labels": [
+    "bolt0",
+    "bolt1",
+    "bolt2"
+   ],
+   "placements": 102,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0
+  },
+  {
+   "task": "fasten_screws",
+   "predicate": "is_A_depth_in_B",
+   "role": "B",
+   "effect_of_inflation": "ceiling: allows",
+   "model": "Geometry/factory_bolt/00004",
+   "labels": [
+    "bolt0",
+    "bolt1",
+    "bolt2"
+   ],
+   "placements": 100,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0
+  },
+  {
+   "task": "fill_egg_holder",
+   "predicate": "is_A_in_B",
+   "role": "B",
+   "effect_of_inflation": "footprint: allows; floor: allows",
+   "model": "Articulation/egg_holder/00000",
+   "labels": [
+    "egg_holder"
+   ],
+   "placements": 195,
+   "tilt_deg": 40.5,
+   "footprint_ratio_median": 1.46,
+   "footprint_ratio_max": 1.46,
+   "floor_drop_mm_median": 43.5,
+   "ceiling_raise_mm_median": 15.8,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.334,
+     1.334,
+     1.326
+    ],
+    "max_face_gap_mm": 40.9
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.334,
+     1.334,
+     1.326
+    ],
+    "centre_offset_mm": [
+     0.0,
+     4.8,
+     20.5
+    ]
+   },
+   "probe_frame_matches_metadata": false
+  },
+  {
+   "task": "fill_pen_holder",
+   "predicate": "is_A_depth_in_B",
+   "role": "A",
+   "effect_of_inflation": "floor: allows",
+   "model": "Rigid/oil_pen/00000",
+   "labels": [
+    "target2",
+    "target3"
+   ],
+   "placements": 158,
+   "tilt_deg": 1.9,
+   "footprint_ratio_median": 1.01,
+   "footprint_ratio_max": 1.01,
+   "floor_drop_mm_median": 3.6,
+   "ceiling_raise_mm_median": 1.1
+  },
+  {
+   "task": "fill_pen_holder",
+   "predicate": "is_A_depth_in_B",
+   "role": "A",
+   "effect_of_inflation": "floor: allows",
+   "model": "Rigid/oil_pen/00001",
+   "labels": [
+    "target2",
+    "target3"
+   ],
+   "placements": 172,
+   "tilt_deg": 1.9,
+   "footprint_ratio_median": 1.003,
+   "footprint_ratio_max": 1.003,
+   "floor_drop_mm_median": 1.3,
+   "ceiling_raise_mm_median": -0.9
+  },
+  {
+   "task": "fill_pen_holder",
+   "predicate": "is_A_depth_in_B",
+   "role": "A",
+   "effect_of_inflation": "floor: allows",
+   "model": "Rigid/pen/00000",
+   "labels": [
+    "target0",
+    "target1"
+   ],
+   "placements": 118,
+   "tilt_deg": 27.7,
+   "footprint_ratio_median": 1.206,
+   "footprint_ratio_max": 1.206,
+   "floor_drop_mm_median": 4.3,
+   "ceiling_raise_mm_median": 2.9
+  },
+  {
+   "task": "fill_pen_holder",
+   "predicate": "is_A_depth_in_B",
+   "role": "A",
+   "effect_of_inflation": "floor: allows",
+   "model": "Rigid/pen/00001",
+   "labels": [
+    "target0",
+    "target1"
+   ],
+   "placements": 105,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.312,
+   "footprint_ratio_max": 1.312,
+   "floor_drop_mm_median": 3.0,
+   "ceiling_raise_mm_median": 1.8
+  },
+  {
+   "task": "fill_pen_holder",
+   "predicate": "is_A_depth_in_B",
+   "role": "A",
+   "effect_of_inflation": "floor: allows",
+   "model": "Rigid/pen/00004",
+   "labels": [
+    "target0",
+    "target1"
+   ],
+   "placements": 107,
+   "tilt_deg": 4.4,
+   "footprint_ratio_median": 1.417,
+   "footprint_ratio_max": 1.417,
+   "floor_drop_mm_median": 6.6,
+   "ceiling_raise_mm_median": 3.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true
+  },
+  {
+   "task": "fill_pen_holder",
+   "predicate": "is_A_depth_in_B",
+   "role": "B",
+   "effect_of_inflation": "ceiling: allows",
+   "model": "Rigid/pen_holder/00000",
+   "labels": [
+    "pen_holder"
+   ],
+   "placements": 165,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true
+  },
+  {
+   "task": "imitate_sorting_sequence",
+   "predicate": "is_A_in_B",
+   "role": "B",
+   "effect_of_inflation": "footprint: allows; floor: allows",
+   "model": "Geometry/basket/00005",
+   "labels": [
+    "basket0",
+    "basket1"
+   ],
+   "placements": 390,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true,
+   "open_table_inside_footprint": {
+    "footprint_cm2": 609.6,
+    "silhouette_cm2": 626.5,
+    "open_inside_footprint_cm2": 6.3,
+    "open_share": 0.01,
+    "vertices_per_silhouette_cell": 38.2
+   }
+  },
+  {
+   "task": "imitate_sorting_sequence",
+   "predicate": "is_A_not_in_B",
+   "role": "B",
+   "effect_of_inflation": "footprint: forbids; floor: forbids",
+   "model": "Geometry/basket/00005",
+   "labels": [
+    "basket0"
+   ],
+   "placements": 195,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true,
+   "open_table_inside_footprint": {
+    "footprint_cm2": 609.6,
+    "silhouette_cm2": 626.5,
+    "open_inside_footprint_cm2": 6.3,
+    "open_share": 0.01,
+    "vertices_per_silhouette_cell": 38.2
+   }
+  },
+  {
+   "task": "insert_key",
+   "predicate": "is_A_depth_in_B",
+   "role": "A",
+   "effect_of_inflation": "floor: allows",
+   "model": "Rigid/key/00000",
+   "labels": [
+    "key"
+   ],
+   "placements": 165,
+   "tilt_deg": 5.7,
+   "footprint_ratio_median": 0.878,
+   "footprint_ratio_max": 0.878,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true
+  },
+  {
+   "task": "insert_key",
+   "predicate": "is_A_depth_in_B",
+   "role": "B",
+   "effect_of_inflation": "ceiling: allows",
+   "model": "Geometry/key_slot/00000",
+   "labels": [
+    "slot"
+   ],
+   "placements": 165,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 0.992,
+   "footprint_ratio_max": 0.992,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true
+  },
+  {
+   "task": "insert_tubes",
+   "predicate": "is_A_depth_in_B",
+   "role": "A",
+   "effect_of_inflation": "floor: allows",
+   "model": "Rigid/test_tube/00002",
+   "labels": [
+    "tube0",
+    "tube1",
+    "tube2"
+   ],
+   "placements": 495,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.245,
+   "footprint_ratio_max": 1.245,
+   "floor_drop_mm_median": 4.3,
+   "ceiling_raise_mm_median": 4.3,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.048,
+     0.833,
+     1.048
+    ],
+    "max_face_gap_mm": 23.4
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.048,
+     0.833,
+     1.048
+    ],
+    "centre_offset_mm": [
+     0.0,
+     -70.2,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": false
+  },
+  {
+   "task": "insert_tubes",
+   "predicate": "is_A_depth_in_B",
+   "role": "B",
+   "effect_of_inflation": "ceiling: allows",
+   "model": "Geometry/test_tube_slot/00000",
+   "labels": [
+    "slot"
+   ],
+   "placements": 165,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true
+  },
+  {
+   "task": "insert_tubes",
+   "predicate": "is_A_in_B",
+   "role": "B",
+   "effect_of_inflation": "footprint: allows; floor: allows",
+   "model": "Geometry/test_tube_slot/00000",
+   "labels": [
+    "slot"
+   ],
+   "placements": 165,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true,
+   "open_table_inside_footprint": {
+    "unreliable": true,
+    "silhouette_cm2": 168.0,
+    "hull_cm2": 210.0
+   }
+  },
+  {
+   "task": "make_toast",
+   "predicate": "is_N_A_in_B",
+   "role": "B",
+   "effect_of_inflation": "footprint and floor: change the count",
+   "model": "Geometry/bread_shelf/00000",
+   "labels": [
+    "bread_shelf"
+   ],
+   "placements": 210,
+   "tilt_deg": 0.1,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true,
+   "open_table_inside_footprint": {
+    "footprint_cm2": 132.3,
+    "silhouette_cm2": 124.0,
+    "open_inside_footprint_cm2": 16.5,
+    "open_share": 0.125,
+    "vertices_per_silhouette_cell": 433.2
+   }
+  },
+  {
+   "task": "make_toast_random",
+   "predicate": "is_N_A_in_B",
+   "role": "B",
+   "effect_of_inflation": "footprint and floor: change the count",
+   "model": "Geometry/bread_shelf/00000",
+   "labels": [
+    "bread_shelf"
+   ],
+   "placements": 135,
+   "tilt_deg": 0.1,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true,
+   "open_table_inside_footprint": {
+    "footprint_cm2": 132.3,
+    "silhouette_cm2": 124.0,
+    "open_inside_footprint_cm2": 16.5,
+    "open_share": 0.125,
+    "vertices_per_silhouette_cell": 433.2
+   }
+  },
+  {
+   "task": "organize_table",
+   "predicate": "is_A_bbox_cover_rect_region",
+   "role": "A",
+   "effect_of_inflation": "footprint: allows",
+   "model": "Rigid/keyboard/00000",
+   "labels": [
+    "keyboard"
+   ],
+   "placements": 59,
+   "tilt_deg": 0.1,
+   "footprint_ratio_median": 1.001,
+   "footprint_ratio_max": 1.001,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.1,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true
+  },
+  {
+   "task": "organize_table",
+   "predicate": "is_A_bbox_cover_rect_region",
+   "role": "A",
+   "effect_of_inflation": "footprint: allows",
+   "model": "Rigid/keyboard/00001",
+   "labels": [
+    "keyboard"
+   ],
+   "placements": 57,
+   "tilt_deg": 6.3,
+   "footprint_ratio_median": 1.016,
+   "footprint_ratio_max": 1.016,
+   "floor_drop_mm_median": 16.9,
+   "ceiling_raise_mm_median": 0.4
+  },
+  {
+   "task": "organize_table",
+   "predicate": "is_A_bbox_cover_rect_region",
+   "role": "A",
+   "effect_of_inflation": "footprint: allows",
+   "model": "Rigid/keyboard/00002",
+   "labels": [
+    "keyboard"
+   ],
+   "placements": 49,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 0.985,
+   "footprint_ratio_max": 0.985,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0
+  },
+  {
+   "task": "organize_table",
+   "predicate": "is_A_in_B",
+   "role": "B",
+   "effect_of_inflation": "footprint: allows; floor: allows",
+   "model": "Geometry/mousemat/00000",
+   "labels": [
+    "mousemat"
+   ],
+   "placements": 165,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true,
+   "open_table_inside_footprint": {
+    "unreliable": true,
+    "silhouette_cm2": 28.3,
+    "hull_cm2": 499.5
+   }
+  },
+  {
+   "task": "pick_from_conveyor_by_image",
+   "predicate": "is_A_on_B_bottom",
+   "role": "A",
+   "effect_of_inflation": "footprint: forbids; ceiling: forbids; floor: shifts the gap",
+   "model": "Rigid/can/00000",
+   "labels": [
+    "target"
+   ],
+   "placements": 7,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.192,
+   "footprint_ratio_max": 1.192,
+   "floor_drop_mm_median": 4.9,
+   "ceiling_raise_mm_median": 4.9,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   }
+  },
+  {
+   "task": "pick_from_conveyor_by_image",
+   "predicate": "is_A_on_B_bottom",
+   "role": "A",
+   "effect_of_inflation": "footprint: forbids; ceiling: forbids; floor: shifts the gap",
+   "model": "Rigid/car/00009",
+   "labels": [
+    "target"
+   ],
+   "placements": 8,
+   "tilt_deg": 0.4,
+   "footprint_ratio_median": 0.999,
+   "footprint_ratio_max": 0.999,
+   "floor_drop_mm_median": -0.4,
+   "ceiling_raise_mm_median": 0.0
+  },
+  {
+   "task": "pick_from_conveyor_by_image",
+   "predicate": "is_A_on_B_bottom",
+   "role": "A",
+   "effect_of_inflation": "footprint: forbids; ceiling: forbids; floor: shifts the gap",
+   "model": "Rigid/car/00010",
+   "labels": [
+    "target"
+   ],
+   "placements": 8,
+   "tilt_deg": 0.1,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0
+  },
+  {
+   "task": "pick_from_conveyor_by_image",
+   "predicate": "is_A_on_B_bottom",
+   "role": "A",
+   "effect_of_inflation": "footprint: forbids; ceiling: forbids; floor: shifts the gap",
+   "model": "Rigid/correction_tape/00000",
+   "labels": [
+    "target"
+   ],
+   "placements": 11,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0
+  },
+  {
+   "task": "pick_from_conveyor_by_image",
+   "predicate": "is_A_on_B_bottom",
+   "role": "A",
+   "effect_of_inflation": "footprint: forbids; ceiling: forbids; floor: shifts the gap",
+   "model": "Rigid/cup/00007",
+   "labels": [
+    "target"
+   ],
+   "placements": 9,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0
+  },
+  {
+   "task": "pick_from_conveyor_by_image",
+   "predicate": "is_A_on_B_bottom",
+   "role": "A",
+   "effect_of_inflation": "footprint: forbids; ceiling: forbids; floor: shifts the gap",
+   "model": "Rigid/donut/00000",
+   "labels": [
+    "target"
+   ],
+   "placements": 13,
+   "tilt_deg": 0.2,
+   "footprint_ratio_median": 1.002,
+   "footprint_ratio_max": 1.002,
+   "floor_drop_mm_median": 0.2,
+   "ceiling_raise_mm_median": 0.1
+  },
+  {
+   "task": "pick_from_conveyor_by_image",
+   "predicate": "is_A_on_B_bottom",
+   "role": "A",
+   "effect_of_inflation": "footprint: forbids; ceiling: forbids; floor: shifts the gap",
+   "model": "Rigid/figurine/00000",
+   "labels": [
+    "target"
+   ],
+   "placements": 19,
+   "tilt_deg": 4.4,
+   "footprint_ratio_median": 1.013,
+   "footprint_ratio_max": 1.013,
+   "floor_drop_mm_median": 4.2,
+   "ceiling_raise_mm_median": 3.2
+  },
+  {
+   "task": "pick_from_conveyor_by_image",
+   "predicate": "is_A_on_B_bottom",
+   "role": "A",
+   "effect_of_inflation": "footprint: forbids; ceiling: forbids; floor: shifts the gap",
+   "model": "Rigid/glue/00000",
+   "labels": [
+    "target"
+   ],
+   "placements": 10,
+   "tilt_deg": 0.1,
+   "footprint_ratio_median": 0.999,
+   "footprint_ratio_max": 0.999,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.1
+  },
+  {
+   "task": "pick_from_conveyor_by_image",
+   "predicate": "is_A_on_B_bottom",
+   "role": "A",
+   "effect_of_inflation": "footprint: forbids; ceiling: forbids; floor: shifts the gap",
+   "model": "Rigid/noodles/00000",
+   "labels": [
+    "target"
+   ],
+   "placements": 14,
+   "tilt_deg": 0.4,
+   "footprint_ratio_median": 0.974,
+   "footprint_ratio_max": 0.974,
+   "floor_drop_mm_median": -0.3,
+   "ceiling_raise_mm_median": -0.1,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   }
+  },
+  {
+   "task": "pick_from_conveyor_by_image",
+   "predicate": "is_A_on_B_bottom",
+   "role": "A",
+   "effect_of_inflation": "footprint: forbids; ceiling: forbids; floor: shifts the gap",
+   "model": "Rigid/peeler/00000",
+   "labels": [
+    "target"
+   ],
+   "placements": 9,
+   "tilt_deg": 1.0,
+   "footprint_ratio_median": 0.997,
+   "footprint_ratio_max": 0.997,
+   "floor_drop_mm_median": -1.5,
+   "ceiling_raise_mm_median": -0.6
+  },
+  {
+   "task": "pick_from_conveyor_by_image",
+   "predicate": "is_A_on_B_bottom",
+   "role": "A",
+   "effect_of_inflation": "footprint: forbids; ceiling: forbids; floor: shifts the gap",
+   "model": "Rigid/remote/00000",
+   "labels": [
+    "target"
+   ],
+   "placements": 9,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   }
+  },
+  {
+   "task": "pick_from_conveyor_by_image",
+   "predicate": "is_A_on_B_bottom",
+   "role": "A",
+   "effect_of_inflation": "footprint: forbids; ceiling: forbids; floor: shifts the gap",
+   "model": "Rigid/remote/00001",
+   "labels": [
+    "target"
+   ],
+   "placements": 11,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0
+  },
+  {
+   "task": "pick_from_conveyor_by_image",
+   "predicate": "is_A_on_B_bottom",
+   "role": "A",
+   "effect_of_inflation": "footprint: forbids; ceiling: forbids; floor: shifts the gap",
+   "model": "Rigid/sachet/00000",
+   "labels": [
+    "target"
+   ],
+   "placements": 8,
+   "tilt_deg": 7.7,
+   "footprint_ratio_median": 1.084,
+   "footprint_ratio_max": 1.084,
+   "floor_drop_mm_median": 23.0,
+   "ceiling_raise_mm_median": 12.8
+  },
+  {
+   "task": "pick_from_conveyor_by_image",
+   "predicate": "is_A_on_B_bottom",
+   "role": "A",
+   "effect_of_inflation": "footprint: forbids; ceiling: forbids; floor: shifts the gap",
+   "model": "Rigid/toy/00001",
+   "labels": [
+    "target"
+   ],
+   "placements": 14,
+   "tilt_deg": 1.1,
+   "footprint_ratio_median": 0.99,
+   "footprint_ratio_max": 0.99,
+   "floor_drop_mm_median": 0.3,
+   "ceiling_raise_mm_median": 0.3,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.01,
+     1.01,
+     1.01
+    ],
+    "max_face_gap_mm": 0.6
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.01,
+     1.01,
+     1.01
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.1,
+     0.1
+    ]
+   },
+   "probe_frame_matches_metadata": true
+  },
+  {
+   "task": "pick_from_conveyor_by_image",
+   "predicate": "is_A_on_B_bottom",
+   "role": "A",
+   "effect_of_inflation": "footprint: forbids; ceiling: forbids; floor: shifts the gap",
+   "model": "Rigid/yogurt/00001",
+   "labels": [
+    "target"
+   ],
+   "placements": 15,
+   "tilt_deg": 0.2,
+   "footprint_ratio_median": 0.948,
+   "footprint_ratio_max": 0.948,
+   "floor_drop_mm_median": 0.2,
+   "ceiling_raise_mm_median": 0.1
+  },
+  {
+   "task": "pick_from_conveyor_by_image",
+   "predicate": "is_A_on_B_bottom",
+   "role": "B",
+   "effect_of_inflation": "footprint: allows; ceiling: allows; floor: shifts the gap",
+   "model": "Rigid/basket_grasp/00002",
+   "labels": [
+    "basket"
+   ],
+   "placements": 165,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true
+  },
+  {
+   "task": "play_stacking_toy",
+   "predicate": "is_A_depth_in_B",
+   "role": "A",
+   "effect_of_inflation": "floor: allows",
+   "model": "Rigid/stackingblocks/00000",
+   "labels": [
+    "block0",
+    "block1",
+    "block2",
+    "block3",
+    "block4",
+    "block5",
+    "block6",
+    "block7",
+    "block8",
+    "block9"
+   ],
+   "placements": 380,
+   "tilt_deg": 0.2,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.1,
+   "ceiling_raise_mm_median": 0.2,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true
+  },
+  {
+   "task": "play_stacking_toy",
+   "predicate": "is_A_depth_in_B",
+   "role": "A",
+   "effect_of_inflation": "floor: allows",
+   "model": "Rigid/stackingblocks/00001",
+   "labels": [
+    "block0",
+    "block1",
+    "block2",
+    "block3",
+    "block4",
+    "block5",
+    "block6",
+    "block7",
+    "block8",
+    "block9"
+   ],
+   "placements": 412,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0
+  },
+  {
+   "task": "play_stacking_toy",
+   "predicate": "is_A_depth_in_B",
+   "role": "A",
+   "effect_of_inflation": "floor: allows",
+   "model": "Rigid/stackingblocks/00002",
+   "labels": [
+    "block0",
+    "block1",
+    "block2",
+    "block3",
+    "block4",
+    "block5",
+    "block6",
+    "block7",
+    "block8",
+    "block9"
+   ],
+   "placements": 438,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0
+  },
+  {
+   "task": "play_stacking_toy",
+   "predicate": "is_A_depth_in_B",
+   "role": "A",
+   "effect_of_inflation": "floor: allows",
+   "model": "Rigid/stackingblocks/00003",
+   "labels": [
+    "block0",
+    "block1",
+    "block2",
+    "block3",
+    "block4",
+    "block5",
+    "block6",
+    "block7",
+    "block8",
+    "block9"
+   ],
+   "placements": 420,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 0.997,
+   "footprint_ratio_max": 0.997,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true
+  },
+  {
+   "task": "play_stacking_toy",
+   "predicate": "is_A_depth_in_B",
+   "role": "B",
+   "effect_of_inflation": "ceiling: allows",
+   "model": "Geometry/stack_base/00000",
+   "labels": [
+    "stack_base"
+   ],
+   "placements": 165,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true
+  },
+  {
+   "task": "plug_in_charger",
+   "predicate": "is_A_depth_in_B",
+   "role": "A",
+   "effect_of_inflation": "floor: allows",
+   "model": "Rigid/charger/00000",
+   "labels": [
+    "charger"
+   ],
+   "placements": 165,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     0.901,
+     0.901,
+     0.9
+    ],
+    "max_face_gap_mm": 5.2
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     0.901,
+     0.901,
+     0.9
+    ],
+    "centre_offset_mm": [
+     0.0,
+     -1.8,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": false
+  },
+  {
+   "task": "plug_in_charger",
+   "predicate": "is_A_depth_in_B",
+   "role": "B",
+   "effect_of_inflation": "ceiling: allows",
+   "model": "Rigid/socket/00000",
+   "labels": [
+    "socket"
+   ],
+   "placements": 165,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true
+  },
+  {
+   "task": "plug_in_charger",
+   "predicate": "is_A_in_B",
+   "role": "B",
+   "effect_of_inflation": "footprint: allows; floor: allows",
+   "model": "Rigid/socket/00000",
+   "labels": [
+    "socket"
+   ],
+   "placements": 165,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true,
+   "open_table_inside_footprint": {
+    "unreliable": true,
+    "silhouette_cm2": 50.5,
+    "hull_cm2": 64.0
+   }
+  },
+  {
+   "task": "pour_balls_into_vase",
+   "predicate": "is_A_in_B",
+   "role": "B",
+   "effect_of_inflation": "footprint: allows; floor: allows",
+   "model": "Geometry/vase/00000",
+   "labels": [
+    "vase"
+   ],
+   "placements": 30,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 0.99,
+   "footprint_ratio_max": 0.99,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   }
+  },
+  {
+   "task": "pour_balls_into_vase",
+   "predicate": "is_A_in_B",
+   "role": "B",
+   "effect_of_inflation": "footprint: allows; floor: allows",
+   "model": "Geometry/vase/00001",
+   "labels": [
+    "vase"
+   ],
+   "placements": 30,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.1,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   }
+  },
+  {
+   "task": "pour_balls_into_vase",
+   "predicate": "is_A_in_B",
+   "role": "B",
+   "effect_of_inflation": "footprint: allows; floor: allows",
+   "model": "Geometry/vase/00002",
+   "labels": [
+    "vase"
+   ],
+   "placements": 33,
+   "tilt_deg": 44.1,
+   "footprint_ratio_median": 1.365,
+   "footprint_ratio_max": 1.365,
+   "floor_drop_mm_median": 85.2,
+   "ceiling_raise_mm_median": 42.6,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true,
+   "open_table_inside_footprint": {
+    "footprint_cm2": 442.3,
+    "silhouette_cm2": 270.0,
+    "open_inside_footprint_cm2": 172.3,
+    "open_share": 0.39,
+    "vertices_per_silhouette_cell": 515.4
+   }
+  },
+  {
+   "task": "pour_balls_into_vase",
+   "predicate": "is_A_in_B",
+   "role": "B",
+   "effect_of_inflation": "footprint: allows; floor: allows",
+   "model": "Geometry/vase/00003",
+   "labels": [
+    "vase"
+   ],
+   "placements": 36,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 0.999,
+   "footprint_ratio_max": 0.999,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   }
+  },
+  {
+   "task": "pour_balls_into_vase",
+   "predicate": "is_A_in_B",
+   "role": "B",
+   "effect_of_inflation": "footprint: allows; floor: allows",
+   "model": "Geometry/vase/00004",
+   "labels": [
+    "vase"
+   ],
+   "placements": 36,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 0.998,
+   "footprint_ratio_max": 0.998,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.1,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   }
+  },
+  {
+   "task": "put_bottles_into_dustbin",
+   "predicate": "is_A_on_B_bottom",
+   "role": "A",
+   "effect_of_inflation": "footprint: forbids; ceiling: forbids; floor: shifts the gap",
+   "model": "Rigid/bottle/00000",
+   "labels": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "placements": 63,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": -0.0,
+   "ceiling_raise_mm_median": -0.0
+  },
+  {
+   "task": "put_bottles_into_dustbin",
+   "predicate": "is_A_on_B_bottom",
+   "role": "A",
+   "effect_of_inflation": "footprint: forbids; ceiling: forbids; floor: shifts the gap",
+   "model": "Rigid/bottle/00002",
+   "labels": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "placements": 74,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 0.997,
+   "footprint_ratio_max": 1.389,
+   "floor_drop_mm_median": -0.0,
+   "ceiling_raise_mm_median": -0.0
+  },
+  {
+   "task": "put_bottles_into_dustbin",
+   "predicate": "is_A_on_B_bottom",
+   "role": "A",
+   "effect_of_inflation": "footprint: forbids; ceiling: forbids; floor: shifts the gap",
+   "model": "Rigid/bottle/00005",
+   "labels": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "placements": 54,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 0.998,
+   "footprint_ratio_max": 1.02,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0
+  },
+  {
+   "task": "put_bottles_into_dustbin",
+   "predicate": "is_A_on_B_bottom",
+   "role": "A",
+   "effect_of_inflation": "footprint: forbids; ceiling: forbids; floor: shifts the gap",
+   "model": "Rigid/bottle/00022",
+   "labels": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "placements": 74,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 0.999,
+   "footprint_ratio_max": 1.052,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true
+  },
+  {
+   "task": "put_bottles_into_dustbin",
+   "predicate": "is_A_on_B_bottom",
+   "role": "A",
+   "effect_of_inflation": "footprint: forbids; ceiling: forbids; floor: shifts the gap",
+   "model": "Rigid/bottle/00025",
+   "labels": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "placements": 82,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true
+  },
+  {
+   "task": "put_bottles_into_dustbin",
+   "predicate": "is_A_on_B_bottom",
+   "role": "A",
+   "effect_of_inflation": "footprint: forbids; ceiling: forbids; floor: shifts the gap",
+   "model": "Rigid/bottle/00041",
+   "labels": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "placements": 54,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 0.997,
+   "footprint_ratio_max": 1.086,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true
+  },
+  {
+   "task": "put_bottles_into_dustbin",
+   "predicate": "is_A_on_B_bottom",
+   "role": "A",
+   "effect_of_inflation": "footprint: forbids; ceiling: forbids; floor: shifts the gap",
+   "model": "Rigid/bottle/00050",
+   "labels": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "placements": 63,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.123,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0
+  },
+  {
+   "task": "put_bottles_into_dustbin",
+   "predicate": "is_A_on_B_bottom",
+   "role": "A",
+   "effect_of_inflation": "footprint: forbids; ceiling: forbids; floor: shifts the gap",
+   "model": "Rigid/bottle/00055",
+   "labels": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "placements": 60,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 0.964,
+   "footprint_ratio_max": 0.972,
+   "floor_drop_mm_median": -0.1,
+   "ceiling_raise_mm_median": -0.1
+  },
+  {
+   "task": "put_bottles_into_dustbin",
+   "predicate": "is_A_on_B_bottom",
+   "role": "A",
+   "effect_of_inflation": "footprint: forbids; ceiling: forbids; floor: shifts the gap",
+   "model": "Rigid/bottle/00059",
+   "labels": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "placements": 67,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 0.962,
+   "footprint_ratio_max": 1.117,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0
+  },
+  {
+   "task": "put_bottles_into_dustbin",
+   "predicate": "is_A_on_B_bottom",
+   "role": "A",
+   "effect_of_inflation": "footprint: forbids; ceiling: forbids; floor: shifts the gap",
+   "model": "Rigid/bottle/00060",
+   "labels": [
+    "bottle0",
+    "bottle1",
+    "bottle2",
+    "bottle3"
+   ],
+   "placements": 69,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 0.995,
+   "footprint_ratio_max": 0.995,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true
+  },
+  {
+   "task": "put_bottles_into_dustbin",
+   "predicate": "is_A_on_B_bottom",
+   "role": "B",
+   "effect_of_inflation": "footprint: allows; ceiling: allows; floor: shifts the gap",
+   "model": "Geometry/dustbin/00000",
+   "labels": [
+    "dustbin"
+   ],
+   "placements": 165,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true
+  },
+  {
+   "task": "store_tools_in_toolbox",
+   "predicate": "is_A_cover_B",
+   "role": "A",
+   "effect_of_inflation": "footprint: allows; ceiling: allows; floor: allows",
+   "model": "Geometry/toolbox/00000",
+   "labels": [
+    "toolbox"
+   ],
+   "placements": 165,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": 0.0,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true
+  },
+  {
+   "task": "store_tools_in_toolbox",
+   "predicate": "is_A_cover_B",
+   "role": "B",
+   "effect_of_inflation": "footprint: forbids; ceiling: forbids; floor: forbids",
+   "model": "Rigid/hammer/00005",
+   "labels": [
+    "hammer"
+   ],
+   "placements": 165,
+   "tilt_deg": 8.0,
+   "footprint_ratio_median": 0.994,
+   "footprint_ratio_max": 0.994,
+   "floor_drop_mm_median": 0.4,
+   "ceiling_raise_mm_median": -0.1,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true
+  },
+  {
+   "task": "store_tools_in_toolbox",
+   "predicate": "is_A_cover_B",
+   "role": "B",
+   "effect_of_inflation": "footprint: forbids; ceiling: forbids; floor: forbids",
+   "model": "Rigid/pliers/00000",
+   "labels": [
+    "pliers"
+   ],
+   "placements": 165,
+   "tilt_deg": 0.0,
+   "footprint_ratio_median": 1.0,
+   "footprint_ratio_max": 1.0,
+   "floor_drop_mm_median": 0.7,
+   "ceiling_raise_mm_median": 0.5,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true
+  },
+  {
+   "task": "store_tools_in_toolbox",
+   "predicate": "is_A_cover_B",
+   "role": "B",
+   "effect_of_inflation": "footprint: forbids; ceiling: forbids; floor: forbids",
+   "model": "Rigid/tape_measure/00000",
+   "labels": [
+    "tape_measure"
+   ],
+   "placements": 165,
+   "tilt_deg": 9.6,
+   "footprint_ratio_median": 0.968,
+   "footprint_ratio_max": 0.968,
+   "floor_drop_mm_median": 0.0,
+   "ceiling_raise_mm_median": -0.1,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true
+  },
+  {
+   "task": "store_tools_in_toolbox",
+   "predicate": "is_A_cover_B",
+   "role": "B",
+   "effect_of_inflation": "footprint: forbids; ceiling: forbids; floor: forbids",
+   "model": "Rigid/wrench/00000",
+   "labels": [
+    "wrench"
+   ],
+   "placements": 165,
+   "tilt_deg": 8.1,
+   "footprint_ratio_median": 0.983,
+   "footprint_ratio_max": 0.983,
+   "floor_drop_mm_median": 3.6,
+   "ceiling_raise_mm_median": 1.3,
+   "collider_vs_metadata_sim_frame": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "max_face_gap_mm": 0.0
+   },
+   "collider_vs_aabb": {
+    "extent_ratio": [
+     1.0,
+     1.0,
+     1.0
+    ],
+    "centre_offset_mm": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "probe_frame_matches_metadata": true
+  }
+ ]
+}

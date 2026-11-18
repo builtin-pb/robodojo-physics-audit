@@ -1,0 +1,23 @@
+[
+ {
+  "cell_name": "store_laptop_and_headphones_random__perturb",
+  "layout": 0,
+  "overrides": {
+   "spawn_lift": {
+    "stems": "*",
+    "dz_m": 1e-06
+   },
+   "slide_target": {
+    "label": "cereal_0_8",
+    "inst": "cereal_0_8",
+    "labelled": false,
+    "stem": "cereal_0",
+    "stem_rank": 0,
+    "dir_world_xy": [
+     0.887179,
+     -0.461425
+    ]
+   }
+  }
+ }
+]

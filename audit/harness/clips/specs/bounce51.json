@@ -1,0 +1,8 @@
+{
+ "purpose": "S16 #164 bounce: put_bottles_into_dustbin seed 0 layout 12, corrected physics with the gripper drive at the motor's peak (the #164 command); 5.1 state log after every action, and after every physics step of actions 121-215 (episode steps 1201-2150: release at action 146, impact in action 154, peak near 163, landing near 174, rest near 200)",
+ "cameras": [],
+ "windows": [
+  {"case": null, "unit": "action", "from": 1, "to": 700, "stride": 1},
+  {"case": null, "unit": "step", "from": 1201, "to": 2150, "stride": 1}
+ ]
+}

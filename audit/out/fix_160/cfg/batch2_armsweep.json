@@ -1,0 +1,50 @@
+{
+ "bottles": [
+  "L14_00022"
+ ],
+ "variants": [
+  {
+   "name": "arm_none",
+   "armature_kg": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "arm_0.588",
+   "armature_kg": [
+    0.588,
+    0.0
+   ]
+  },
+  {
+   "name": "arm_1.176",
+   "armature_kg": [
+    1.176,
+    0.0
+   ]
+  },
+  {
+   "name": "arm_2.352",
+   "armature_kg": [
+    2.3524,
+    0.0
+   ]
+  },
+  {
+   "name": "arm_4.705",
+   "armature_kg": [
+    4.7048,
+    0.0
+   ]
+  },
+  {
+   "name": "arm_11.762",
+   "armature_kg": [
+    11.762,
+    0.0
+   ]
+  }
+ ],
+ "inputs": "audit/out/fix_160/witness_inputs.json"
+}

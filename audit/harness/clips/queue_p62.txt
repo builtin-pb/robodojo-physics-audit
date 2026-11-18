@@ -1,0 +1,6 @@
+# 6.2 rollouts without cameras (VER=62 --no_render, one GPU): the D4 match check; their state logs at the clip windows are rendered by --replay
+p62_bulldoze|bulldoze.json|--no_render|--task put_bottles_into_dustbin --layouts 1 --policy exploit --exploit_mode shove_bottles --log_poses --evaluator v1
+p62_buttons|buttons.json|--no_render|--task press_by_number --layouts 0 --policy stress_hv --stress_cases <repo>/audit/harness/stress_hv/cases/press_buttons_clip.json
+p62_peek|peek.json|--no_render|--task cover_blocks --layouts 1 --policy witness_cb --cb_mode peek_51 --log_poses --evaluator v1
+p62_coin|coin.json|--no_render|--task deposit_coin --layouts 0 --policy stress_hv --stress_cases <repo>/audit/harness/stress_hv/cases/coin_side_speeds.json
+p62_press40|press40.json|--no_render|--task press_by_number --layouts 0 --policy stress_hv --stress_cases <repo>/audit/harness/stress_hv/cases/press_depth_b0_40_clip.json

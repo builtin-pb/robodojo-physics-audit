@@ -1,0 +1,12 @@
+lock held 2026-11-18T00:12:36Z
+== rp_fingers_main ver=62 cap=none free=28458 MiB 2026-11-18T00:12:43Z
+exit=0 wall=413s
+RESULT {"seed": 0, "layout": 0, "seed_batch": [0], "num_envs": 1, "device": "cpu", "repeat": 0, "policy": "zero", "evaluator": "v1", "layout_files": ["Eval_Layout/RoboDojo/arx_x5/0/put_bottles_into_dustbin_0.json"], "steps_through_reset": 844, "renders_through_reset": 52, "camera_reset_steps": 1, "settled_poses": {"bottle0": [0.11593, -0.24349, 0.8576, 0.96681, -1e-05, -0.0, -0.25551], "bottle1": [0.43501, -0.04072, 0.85973, 0.86391, -0.00322, -0.00022, 0.50364], "bottle2": [0.37058, -0.14476, 0.7963, 0.70819, 0.06199, 0.69881, -0.07931], "bottle3": [-0.22222, -0.0696, 0.88515, 0.97682, 0.0, 0
+HARNESS done
+2026-11-18T00:13:02Z [12,331ms] [Warning] [carb.omniclient.plugin]  2426322: OmniHub: ThreadId(03) Hub encountered error. Trying to reconnect to Hub. retry_reason="Hub failed to launch: Io(\"child exited with exit status: 1 without writing file \\\"/tmp/hub-<netid>-63B37A69.config.json\\\"\")"
+2026-11-18T00:13:28Z [38,074ms] [Error] [omni.rtx] Could not get NGX parameters block because NGX isn't enabled.
+2026-11-18T00:13:28Z [38,074ms] [Error] [omni.rtx] Failed to create NGX context.
+2026-11-18T00:14:23Z [92,596ms] [Error] [omni.physx.tensors.plugin] Pattern '/World/envs/env_0/geometry/dustbin/dustbin_0_5' did not match any rigid bodies
+2026-11-18T00:14:23Z [92,596ms] [Error] [omni.physx.tensors.plugin] Provided pattern list did not match any rigid bodies
+2026-11-18T00:14:23Z [92,597ms] [Error] [omni.physx.tensors.plugin] Provided pattern list did not match any rigid bodies
+QUEUE_DONE 2026-11-18T00:19:43Z

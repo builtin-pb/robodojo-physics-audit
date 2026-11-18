@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/scratch/<user>/isaac/work/predicates/repo/audit/harness/exploits2_geom.py", line 17, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+exit=1

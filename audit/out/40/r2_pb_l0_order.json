@@ -1,0 +1,1072 @@
+{
+  "isaac_sim_version": [
+    "6.2.0",
+    "rc.15",
+    "6",
+    "2"
+  ],
+  "kit": "/scratch/<user>/project/robodojo/wt-render/audit/harness/robodojo_full_rtx_62.kit",
+  "task": "put_bottles_into_dustbin",
+  "layout": 0,
+  "mode": "render_and_readback",
+  "order_variant": true,
+  "boot_seconds": 39.5,
+  "total_seconds": 99.24,
+  "steps_through_reset": 844,
+  "episode_steps": 1353,
+  "carb_settings": {
+    "/physics/updateToUsd": true,
+    "/physics/fabricEnabled": false,
+    "/physics/fabricUpdateTransformations": true,
+    "/physics/suppressReadback": false,
+    "/isaaclab/render/offscreen": true,
+    "/isaaclab/render/active_viewport": false,
+    "/isaaclab/cameras_enabled": true,
+    "/app/updateOrder/checkForHydraRenderComplete": 1000,
+    "/app/renderer/waitIdle": true,
+    "/app/hydraEngine/waitIdle": true
+  },
+  "settled_poses": {
+    "bottle0": [
+      0.11593,
+      -0.24349,
+      0.8576,
+      0.96681,
+      -1e-05,
+      -0.0,
+      -0.25551
+    ],
+    "bottle1": [
+      0.43501,
+      -0.04072,
+      0.85973,
+      0.86391,
+      -0.00322,
+      -0.00022,
+      0.50364
+    ],
+    "bottle2": [
+      0.37058,
+      -0.14474,
+      0.7963,
+      0.70817,
+      0.06215,
+      0.6988,
+      -0.07947
+    ],
+    "bottle3": [
+      -0.22222,
+      -0.0696,
+      0.88515,
+      0.97682,
+      0.0,
+      0.0,
+      -0.21408
+    ]
+  },
+  "policy_data": {
+    "cameras_settled": {
+      "cam_head": {
+        "prim_path": "/World/envs/env_0/Camera_0/cam_head",
+        "shape": [
+          480,
+          640,
+          3
+        ],
+        "min": 0,
+        "max": 255,
+        "mean": 80.58,
+        "std": 70.03,
+        "K": [
+          [
+            288.1325,
+            0.0,
+            320.0
+          ],
+          [
+            0.0,
+            288.1325,
+            240.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "T_cam_to_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.86603,
+            -0.5,
+            -0.41
+          ],
+          [
+            0.0,
+            0.5,
+            0.86603,
+            1.308
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "cam_left_wrist": {
+        "prim_path": "/World/envs/env_0/robot0/camera/Camera_1/cam_left_wrist",
+        "shape": [
+          480,
+          640,
+          3
+        ],
+        "min": 0,
+        "max": 255,
+        "mean": 75.48,
+        "std": 68.13,
+        "K": [
+          [
+            397.0413,
+            0.0,
+            320.0
+          ],
+          [
+            0.0,
+            397.0413,
+            240.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "T_cam_to_world": [
+          [
+            1.0,
+            -0.00015,
+            0.00026,
+            -0.29955
+          ],
+          [
+            0.00029,
+            0.50003,
+            -0.86601,
+            -0.26746
+          ],
+          [
+            0.0,
+            0.86601,
+            0.50003,
+            0.97244
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "cam_right_wrist": {
+        "prim_path": "/World/envs/env_0/robot1/camera/Camera_2/cam_right_wrist",
+        "shape": [
+          480,
+          640,
+          3
+        ],
+        "min": 0,
+        "max": 255,
+        "mean": 115.75,
+        "std": 82.5,
+        "K": [
+          [
+            397.0413,
+            0.0,
+            320.0
+          ],
+          [
+            0.0,
+            397.0413,
+            240.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "T_cam_to_world": [
+          [
+            1.0,
+            -0.00015,
+            0.00026,
+            0.30045
+          ],
+          [
+            0.00029,
+            0.50003,
+            -0.86601,
+            -0.26746
+          ],
+          [
+            0.0,
+            0.86601,
+            0.50003,
+            0.97244
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      }
+    },
+    "materials_after_render": {
+      "usd": {
+        "bottle0": [
+          {
+            "collider": "/World/envs/env_0/rigid/bottle/bottle_41_1/collision/model",
+            "approx": "convexHull",
+            "resolved": [
+              "physics-purpose",
+              {
+                "path": "/World/envs/env_0/rigid/bottle/bottle_41_1/physics_material",
+                "has_physics_material_api": true,
+                "staticFriction": 10000.0,
+                "dynamicFriction": 10000.0,
+                "restitution": 0.0,
+                "frictionCombineMode": null,
+                "restitutionCombineMode": null
+              }
+            ]
+          }
+        ],
+        "bottle1": [
+          {
+            "collider": "/World/envs/env_0/rigid/bottle/bottle_60_2/collision",
+            "approx": "convexDecomposition",
+            "resolved": [
+              "physics-purpose",
+              {
+                "path": "/World/envs/env_0/rigid/bottle/bottle_60_2/physics_material",
+                "has_physics_material_api": true,
+                "staticFriction": 10000.0,
+                "dynamicFriction": 10000.0,
+                "restitution": 0.0,
+                "frictionCombineMode": null,
+                "restitutionCombineMode": null
+              }
+            ]
+          }
+        ],
+        "bottle2": [
+          {
+            "collider": "/World/envs/env_0/rigid/bottle/bottle_25_3/collision/model",
+            "approx": "convexHull",
+            "resolved": [
+              "physics-purpose",
+              {
+                "path": "/World/envs/env_0/rigid/bottle/bottle_25_3/physics_material",
+                "has_physics_material_api": true,
+                "staticFriction": 10000.0,
+                "dynamicFriction": 10000.0,
+                "restitution": 0.0,
+                "frictionCombineMode": null,
+                "restitutionCombineMode": null
+              }
+            ]
+          }
+        ],
+        "bottle3": [
+          {
+            "collider": "/World/envs/env_0/rigid/bottle/bottle_22_4/collision/model",
+            "approx": "convexHull",
+            "resolved": [
+              "physics-purpose",
+              {
+                "path": "/World/envs/env_0/rigid/bottle/bottle_22_4/physics_material",
+                "has_physics_material_api": true,
+                "staticFriction": 10000.0,
+                "dynamicFriction": 10000.0,
+                "restitution": 0.0,
+                "frictionCombineMode": null,
+                "restitutionCombineMode": null
+              }
+            ]
+          }
+        ],
+        "robot0/link7": [
+          {
+            "collider": "/World/envs/env_0/robot0/link7/collisions/link7/node_STL_BINARY_",
+            "approx": "convexHull",
+            "resolved": [
+              "scene-default",
+              {
+                "all_purpose_bound": null
+              }
+            ]
+          }
+        ],
+        "robot0/link8": [
+          {
+            "collider": "/World/envs/env_0/robot0/link8/collisions/link8/node_STL_BINARY_",
+            "approx": "convexHull",
+            "resolved": [
+              "scene-default",
+              {
+                "all_purpose_bound": null
+              }
+            ]
+          }
+        ],
+        "robot1/link7": [
+          {
+            "collider": "/World/envs/env_0/robot1/link7/collisions/link7/node_STL_BINARY_",
+            "approx": "convexHull",
+            "resolved": [
+              "scene-default",
+              {
+                "all_purpose_bound": null
+              }
+            ]
+          }
+        ],
+        "robot1/link8": [
+          {
+            "collider": "/World/envs/env_0/robot1/link8/collisions/link8/node_STL_BINARY_",
+            "approx": "convexHull",
+            "resolved": [
+              "scene-default",
+              {
+                "all_purpose_bound": null
+              }
+            ]
+          }
+        ],
+        "table": [
+          {
+            "collider": "/World/envs/env_0/Table/material_0122/material_0122_0_8",
+            "approx": "convexDecomposition",
+            "resolved": [
+              "scene-default",
+              {
+                "all_purpose_bound": "/World/envs/env_0/Table/material_0122/material_0122_0_8/Material"
+              }
+            ]
+          }
+        ],
+        "ground": [
+          {
+            "collider": "/World/envs/env_0/Ground/Ground/Ground_0_9",
+            "approx": "none",
+            "resolved": [
+              "physics-purpose",
+              {
+                "path": "/World/envs/env_0/Ground/Ground/Ground_0_9/physics_material",
+                "has_physics_material_api": true,
+                "staticFriction": 1.0,
+                "dynamicFriction": 1.0,
+                "restitution": 0.0,
+                "frictionCombineMode": "multiply",
+                "restitutionCombineMode": "multiply"
+              }
+            ]
+          }
+        ]
+      },
+      "engine_objects": {
+        "bottle0": [
+          [
+            10000.0,
+            10000.0,
+            0.0
+          ]
+        ],
+        "bottle1": [
+          [
+            10000.0,
+            10000.0,
+            0.0
+          ]
+        ],
+        "bottle2": [
+          [
+            10000.0,
+            10000.0,
+            0.0
+          ]
+        ],
+        "bottle3": [
+          [
+            10000.0,
+            10000.0,
+            0.0
+          ]
+        ]
+      },
+      "engine_masses": {
+        "bottle0": [
+          0.15
+        ],
+        "bottle1": [
+          0.15
+        ],
+        "bottle2": [
+          0.15
+        ],
+        "bottle3": [
+          0.5
+        ]
+      },
+      "engine_robots": {
+        "robot0": {
+          "max_shapes": 42,
+          "links": [
+            "base_link",
+            "link1",
+            "link2",
+            "link3",
+            "link4",
+            "link5",
+            "link6",
+            "camera_base",
+            "link7",
+            "link8",
+            "camera"
+          ],
+          "shape_materials": [
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ]
+          ]
+        },
+        "robot1": {
+          "max_shapes": 42,
+          "links": [
+            "base_link",
+            "link1",
+            "link2",
+            "link3",
+            "link4",
+            "link5",
+            "link6",
+            "camera_base",
+            "link7",
+            "link8",
+            "camera"
+          ],
+          "shape_materials": [
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ]
+          ]
+        }
+      }
+    },
+    "contacts_resting": [
+      {
+        "collider0": "/World/envs/env_0/rigid/bottle/bottle_22_4/collision/model",
+        "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_8",
+        "n": 3,
+        "materials": [
+          [
+            "/World/envs/env_0/rigid/bottle/bottle_22_4/physics_material",
+            "/physicsScene/defaultMaterial"
+          ]
+        ]
+      },
+      {
+        "collider0": "/World/envs/env_0/rigid/bottle/bottle_25_3/collision/model",
+        "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_8",
+        "n": 3,
+        "materials": [
+          [
+            "/World/envs/env_0/rigid/bottle/bottle_25_3/physics_material",
+            "/physicsScene/defaultMaterial"
+          ]
+        ]
+      },
+      {
+        "collider0": "/World/envs/env_0/rigid/bottle/bottle_41_1/collision/model",
+        "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_8",
+        "n": 4,
+        "materials": [
+          [
+            "/World/envs/env_0/rigid/bottle/bottle_41_1/physics_material",
+            "/physicsScene/defaultMaterial"
+          ]
+        ]
+      },
+      {
+        "collider0": "/World/envs/env_0/rigid/bottle/bottle_60_2/collision",
+        "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_8",
+        "n": 4,
+        "materials": [
+          [
+            "/World/envs/env_0/rigid/bottle/bottle_60_2/physics_material",
+            "/physicsScene/defaultMaterial"
+          ]
+        ]
+      }
+    ],
+    "slide_witness": {
+      "label": "bottle2",
+      "axis_tilt_deg": 0.9,
+      "slide_along_axis_mm": 0.0,
+      "lateral_mm": 0.0,
+      "vertical_mm": 0.0
+    },
+    "contacts_after_slide": [
+      {
+        "collider0": "/World/envs/env_0/rigid/bottle/bottle_22_4/collision/model",
+        "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_8",
+        "n": 3,
+        "materials": [
+          [
+            "/World/envs/env_0/rigid/bottle/bottle_22_4/physics_material",
+            "/physicsScene/defaultMaterial"
+          ]
+        ]
+      },
+      {
+        "collider0": "/World/envs/env_0/rigid/bottle/bottle_25_3/collision/model",
+        "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_8",
+        "n": 3,
+        "materials": [
+          [
+            "/World/envs/env_0/rigid/bottle/bottle_25_3/physics_material",
+            "/physicsScene/defaultMaterial"
+          ]
+        ]
+      },
+      {
+        "collider0": "/World/envs/env_0/rigid/bottle/bottle_41_1/collision/model",
+        "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_8",
+        "n": 4,
+        "materials": [
+          [
+            "/World/envs/env_0/rigid/bottle/bottle_41_1/physics_material",
+            "/physicsScene/defaultMaterial"
+          ]
+        ]
+      },
+      {
+        "collider0": "/World/envs/env_0/rigid/bottle/bottle_60_2/collision",
+        "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_8",
+        "n": 4,
+        "materials": [
+          [
+            "/World/envs/env_0/rigid/bottle/bottle_60_2/physics_material",
+            "/physicsScene/defaultMaterial"
+          ]
+        ]
+      }
+    ],
+    "contacts_in_hand": [
+      {
+        "collider0": "/World/envs/env_0/rigid/bottle/bottle_22_4/collision/model",
+        "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_8",
+        "n": 3,
+        "materials": [
+          [
+            "/World/envs/env_0/rigid/bottle/bottle_22_4/physics_material",
+            "/physicsScene/defaultMaterial"
+          ]
+        ]
+      },
+      {
+        "collider0": "/World/envs/env_0/rigid/bottle/bottle_25_3/collision/model",
+        "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_8",
+        "n": 3,
+        "materials": [
+          [
+            "/World/envs/env_0/rigid/bottle/bottle_25_3/physics_material",
+            "/physicsScene/defaultMaterial"
+          ]
+        ]
+      },
+      {
+        "collider0": "/World/envs/env_0/rigid/bottle/bottle_41_1/collision/model",
+        "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_8",
+        "n": 4,
+        "materials": [
+          [
+            "/World/envs/env_0/rigid/bottle/bottle_41_1/physics_material",
+            "/physicsScene/defaultMaterial"
+          ]
+        ]
+      },
+      {
+        "collider0": "/World/envs/env_0/rigid/bottle/bottle_60_2/collision",
+        "collider1": "/World/envs/env_0/Table/material_0122/material_0122_0_8",
+        "n": 4,
+        "materials": [
+          [
+            "/World/envs/env_0/rigid/bottle/bottle_60_2/physics_material",
+            "/physicsScene/defaultMaterial"
+          ]
+        ]
+      },
+      {
+        "collider0": "/World/envs/env_0/robot1/link7/collisions/link7/node_STL_BINARY_",
+        "collider1": "/World/envs/env_0/rigid/bottle/bottle_25_3/collision/model",
+        "n": 4,
+        "materials": [
+          [
+            "/physicsScene/defaultMaterial",
+            "/World/envs/env_0/rigid/bottle/bottle_25_3/physics_material"
+          ]
+        ]
+      },
+      {
+        "collider0": "/World/envs/env_0/robot1/link8/collisions/link8/node_STL_BINARY_",
+        "collider1": "/World/envs/env_0/rigid/bottle/bottle_25_3/collision/model",
+        "n": 4,
+        "materials": [
+          [
+            "/physicsScene/defaultMaterial",
+            "/World/envs/env_0/rigid/bottle/bottle_25_3/physics_material"
+          ]
+        ]
+      }
+    ],
+    "hold_median": {
+      "q7_mm": 30.24,
+      "target7_mm": 19.44,
+      "drive_est_N": 24.8,
+      "contact_N": {
+        "link7": 24.6,
+        "link8": 24.4
+      }
+    },
+    "bottle_z_before_after_lift_mm": [
+      796.3,
+      946.2
+    ]
+  }
+}

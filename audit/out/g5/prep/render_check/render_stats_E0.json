@@ -1,0 +1,74 @@
+{
+ "cam_head": {
+  "demo_5.1_jpeg": {
+   "mean": 77.65,
+   "std": 53.59,
+   "channel_means": [
+    94.51,
+    73.77,
+    64.68
+   ],
+   "grain_mad_3x3": 1.0,
+   "grain_mean_abs_3x3": 1.42
+  },
+  "g5_6.2_raw": {
+   "mean": 80.52,
+   "std": 70.07,
+   "channel_means": [
+    100.29,
+    75.6,
+    65.67
+   ],
+   "grain_mad_3x3": 12.0,
+   "grain_mean_abs_3x3": 23.95
+  }
+ },
+ "cam_left_wrist": {
+  "demo_5.1_jpeg": {
+   "mean": 67.75,
+   "std": 51.92,
+   "channel_means": [
+    72.11,
+    75.95,
+    55.19
+   ],
+   "grain_mad_3x3": 0.0,
+   "grain_mean_abs_3x3": 1.39
+  },
+  "g5_6.2_raw": {
+   "mean": 75.26,
+   "std": 67.96,
+   "channel_means": [
+    102.55,
+    60.75,
+    62.49
+   ],
+   "grain_mad_3x3": 11.0,
+   "grain_mean_abs_3x3": 24.3
+  }
+ },
+ "cam_right_wrist": {
+  "demo_5.1_jpeg": {
+   "mean": 87.64,
+   "std": 44.63,
+   "channel_means": [
+    109.1,
+    82.73,
+    71.1
+   ],
+   "grain_mad_3x3": 1.0,
+   "grain_mean_abs_3x3": 1.63
+  },
+  "g5_6.2_raw": {
+   "mean": 115.7,
+   "std": 82.48,
+   "channel_means": [
+    134.0,
+    113.79,
+    99.3
+   ],
+   "grain_mad_3x3": 13.0,
+   "grain_mean_abs_3x3": 27.56
+  }
+ }
+}

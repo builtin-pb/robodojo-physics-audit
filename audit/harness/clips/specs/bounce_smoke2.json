@@ -1,0 +1,27 @@
+{
+ "purpose": "S16 bounce camera smoke 2 (6.2 replay of b51_bounce): smoke 1's views (51 to 63 degrees down) read as top views, the peak looked like a bottle lying on the table; three lower, farther views with a longer lens, 36, 40 and 44 degrees down, 2.15 to 2.2 m from the flight's middle; the same eight states",
+ "cameras": [
+  {"name": "e36", "eye": [-2.239, 0.33, 1.904], "target": [-0.50, 0.33, 0.64], "focal_mm": 22, "res": [960, 540]},
+  {"name": "e40", "eye": [-2.185, 0.33, 2.034], "target": [-0.50, 0.33, 0.62], "focal_mm": 22, "res": [960, 540]},
+  {"name": "e44", "eye": [-2.083, 0.33, 2.128], "target": [-0.50, 0.33, 0.60], "focal_mm": 22, "res": [960, 540]}
+ ],
+ "windows": [
+  {"case": null, "unit": "action", "from": 140, "to": 146, "stride": 6},
+  {"case": null, "unit": "step", "from": 1530, "to": 1546, "stride": 8},
+  {"case": null, "unit": "action", "from": 163, "to": 163, "stride": 1},
+  {"case": null, "unit": "action", "from": 174, "to": 174, "stride": 1},
+  {"case": null, "unit": "action", "from": 200, "to": 200, "stride": 1}
+ ],
+ "mode_sweep": [
+  {
+   "name": "pt8",
+   "carb": {
+    "/rtx/rendermode": "PathTracing",
+    "/rtx/pathtracing/spp": 8,
+    "/rtx/pathtracing/totalSpp": 8,
+    "/rtx/pathtracing/optixDenoiser/enabled": true
+   },
+   "warmup": 4
+  }
+ ]
+}

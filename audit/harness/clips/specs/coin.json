@@ -1,0 +1,58 @@
+{
+ "purpose": "#112 deposit_coin L0, coin_side_speeds.json; frames thinned to fit the GPU budget (path tracing costs about 0.4 s per frame after each physics change)",
+ "cameras": [
+  {
+   "name": "pig",
+   "eye": [
+    0.55,
+    -0.45,
+    0.9
+   ],
+   "target": [
+    0.3,
+    -0.22,
+    0.81
+   ],
+   "focal_mm": 35,
+   "res": [
+    960,
+    540
+   ]
+  }
+ ],
+ "windows": [
+  {
+   "case": "coin_side_2ms_ph0",
+   "unit": "step",
+   "from": 0,
+   "to": 60,
+   "stride": 1
+  },
+  {
+   "case": "coin_side_2ms_ph0",
+   "unit": "step",
+   "from": 60,
+   "to": 503,
+   "stride": 40
+  },
+  {
+   "case": "coin_side_4ms_ph2",
+   "unit": "step",
+   "from": 3,
+   "to": 49,
+   "stride": 2
+  }
+ ],
+ "mode_sweep": [
+  {
+   "name": "pt8",
+   "carb": {
+    "/rtx/rendermode": "PathTracing",
+    "/rtx/pathtracing/spp": 8,
+    "/rtx/pathtracing/totalSpp": 8,
+    "/rtx/pathtracing/optixDenoiser/enabled": true
+   },
+   "warmup": 4
+  }
+ ]
+}
